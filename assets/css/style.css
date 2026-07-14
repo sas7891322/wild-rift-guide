@@ -293,3 +293,73 @@
   border-color:rgba(199,160,255,.5)!important;
   background:rgba(124,80,181,.18)!important;
 }
+
+/* Wild Rift Guide V2.3.1－五類符文選取配色 */
+
+/* 關鍵符文：金色 */
+.rune-tab[data-key="keystone"].active{
+  color:#f3dc9b;
+  border-color:rgba(216,184,108,.76);
+  background:linear-gradient(160deg,rgba(105,81,30,.56),rgba(18,26,40,.97));
+  box-shadow:0 0 18px rgba(216,184,108,.14);
+}
+.rune-tab[data-key="keystone"].active img{
+  filter:drop-shadow(0 0 7px rgba(216,184,108,.65));
+}
+
+/* 征服：紅色 */
+.rune-tab[data-key="conquest"].active{
+  color:#ffadb5;
+  border-color:rgba(224,78,95,.78);
+  background:linear-gradient(160deg,rgba(104,31,42,.6),rgba(21,24,38,.97));
+  box-shadow:0 0 18px rgba(224,78,95,.14);
+}
+.rune-tab[data-key="conquest"].active img{
+  filter:drop-shadow(0 0 7px rgba(224,78,95,.68));
+}
+
+/* 精準：金橘色 */
+.rune-tab[data-key="precision"].active{
+  color:#f4c66e;
+  border-color:rgba(216,161,62,.78);
+  background:linear-gradient(160deg,rgba(100,69,25,.6),rgba(22,25,38,.97));
+  box-shadow:0 0 18px rgba(216,161,62,.14);
+}
+.rune-tab[data-key="precision"].active img{
+  filter:drop-shadow(0 0 7px rgba(216,161,62,.68));
+}
+
+/* 意志：綠色 */
+.rune-tab[data-key="resolve"].active{
+  color:#8ce7a0;
+  border-color:rgba(77,197,103,.78);
+  background:linear-gradient(160deg,rgba(31,93,46,.58),rgba(18,29,37,.97));
+  box-shadow:0 0 18px rgba(77,197,103,.14);
+}
+.rune-tab[data-key="resolve"].active img{
+  filter:drop-shadow(0 0 7px rgba(77,197,103,.68));
+}
+
+/* 巫術：淡紫色，只套用在左側分類與選取效果 */
+.rune-tab[data-key="sorcery"].active{
+  color:#e2d0ff;
+  border-color:rgba(199,160,255,.76);
+  background:linear-gradient(160deg,rgba(76,48,118,.62),rgba(19,24,48,.96));
+  box-shadow:0 0 18px rgba(199,160,255,.14);
+}
+.rune-tab[data-key="sorcery"] img{
+  filter:drop-shadow(0 0 5px rgba(199,160,255,.38));
+}
+.rune-tab[data-key="sorcery"].active img{
+  filter:drop-shadow(0 0 8px rgba(199,160,255,.72));
+}
+
+/* 還原巫術右側詳細資訊與分類標籤為原本配色 */
+.rune-accent-sorcery{
+  color:var(--gold)!important;
+}
+.rune-chip-sorcery{
+  color:var(--muted)!important;
+  border-color:var(--line)!important;
+  background:transparent!important;
+}
