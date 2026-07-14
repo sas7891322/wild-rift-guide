@@ -1,17 +1,14 @@
-# Wild Rift Guide V1
+# Wild Rift Guide－目前素材整合版
 
-1. 解壓縮 ZIP。
-2. 直接開啟 index.html 預覽。
-3. 內容包含首頁、五路分級頁、英雄攻略模板與手機版排版。
+已整合：
+- 召喚師技能 9 個
+- 關鍵符文 13 個
+- 征服符文 10 個
+- 精準符文 9 個
+- 意志目前收到 7 個素材（其中 1 個名稱待確認）
+- 五路官方風格圖示
 
+## 上傳 GitHub
+把解壓縮後資料夾內的 `index.html`、`pages`、`assets` 與 `README.md` 上傳到原本的 `wild-rift-guide` Repository 根目錄。
 
-V2 更新：首頁五路入口改為大型純圖示版，移除按鈕文字。
-
-
-V3：改用使用者提供的五張官方路線圖示；巴龍、打野以 CSS 統一銀色；首頁只留中文名稱。
-
-
-V4：首頁改用使用者自行裁切完成的五張路線圖示。
-
-
-V5：新增飛龍路凱莎英雄卡與完整攻略頁 `pages/kaisa.html`，並建立 `assets/data/kaisa.json`。
+Vercel 會在 Push 後自動部署。

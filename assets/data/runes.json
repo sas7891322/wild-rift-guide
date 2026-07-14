@@ -1,0 +1,343 @@
+{
+  "keystone": [
+    {
+      "id": "electrocute",
+      "order": 1,
+      "name": "死亡電刑",
+      "icon": "../assets/images/runes/keystone/electrocute.webp",
+      "tag": "爆發傷害",
+      "description": "3秒內以普攻或技能命中同一名敵方英雄3次時，造成額外適性傷害。",
+      "status": "已校對"
+    },
+    {
+      "id": "dark-harvest",
+      "order": 2,
+      "name": "黑暗收割",
+      "icon": "../assets/images/runes/keystone/dark-harvest.webp",
+      "tag": "額外傷害・堆疊增幅",
+      "description": "傷害生命低於50%的敵方英雄時造成適性傷害並收割靈魂，使黑暗收割傷害永久提升。",
+      "status": "已校對"
+    },
+    {
+      "id": "first-strike",
+      "order": 3,
+      "name": "先發制人",
+      "icon": "../assets/images/runes/keystone/first-strike.webp",
+      "tag": "開戰・額外金幣",
+      "description": "率先對敵方英雄發起戰鬥或造成傷害時，短時間提高傷害並依額外傷害獲得金幣。",
+      "status": "已校對"
+    },
+    {
+      "id": "lethal-tempo",
+      "order": 4,
+      "name": "致命節奏",
+      "icon": "../assets/images/runes/keystone/lethal-tempo.webp",
+      "tag": "攻速",
+      "description": "普攻命中敵方英雄時疊加攻速，滿層後提高攻擊範圍並突破攻速上限。",
+      "status": "已校對"
+    },
+    {
+      "id": "fleet-footwork",
+      "order": 5,
+      "name": "迅疾步法",
+      "icon": "../assets/images/runes/keystone/fleet-footwork.webp",
+      "tag": "機動性・治療",
+      "description": "移動、普攻與施放技能會累積能量；滿層後下一次普攻提高攻速與跑速並回復生命。",
+      "status": "已校對"
+    },
+    {
+      "id": "conqueror",
+      "order": 6,
+      "name": "征服者",
+      "icon": "../assets/images/runes/keystone/conqueror.webp",
+      "tag": "傷害累加・吸血",
+      "description": "以獨立普攻或技能命中英雄時累加適性之力，滿層時獲得額外全能吸血。",
+      "status": "已校對"
+    },
+    {
+      "id": "grasp",
+      "order": 7,
+      "name": "不死之握",
+      "icon": "../assets/images/runes/keystone/grasp.webp",
+      "tag": "坦克・治療",
+      "description": "戰鬥中蓄力後，下一次對英雄的普攻獲得強化，造成額外魔法傷害、治療並永久提升生命。",
+      "status": "已校對"
+    },
+    {
+      "id": "guardian",
+      "order": 8,
+      "name": "守護者",
+      "icon": "../assets/images/runes/keystone/guardian.webp",
+      "tag": "防禦・護盾",
+      "description": "守護附近友軍或被技能選為目標的友軍；承受一定傷害時，雙方獲得護盾。",
+      "status": "已校對"
+    },
+    {
+      "id": "aery",
+      "order": 9,
+      "name": "艾莉",
+      "icon": "../assets/images/runes/keystone/aery.webp",
+      "tag": "消耗・保護",
+      "description": "普攻與技能將艾莉送至目標；對敵軍造成傷害，對友軍提供護盾。",
+      "status": "已校對"
+    },
+    {
+      "id": "arcane-comet",
+      "order": 10,
+      "name": "奧術彗星",
+      "icon": "../assets/images/runes/keystone/arcane-comet.webp",
+      "tag": "消耗敵人血量・堆疊增幅",
+      "description": "技能傷害敵方英雄時召喚彗星；彗星命中後，下一顆彗星傷害提升。",
+      "status": "已校對"
+    },
+    {
+      "id": "phase-rush",
+      "order": 11,
+      "name": "相位衝擊",
+      "icon": "../assets/images/runes/keystone/phase-rush.webp",
+      "tag": "機動・技能加速",
+      "description": "短時間內以普攻或技能命中敵方英雄3次，提高跑速與基礎技能加速並縮短基礎技能剩餘冷卻。",
+      "status": "已校對"
+    },
+    {
+      "id": "empowerment",
+      "order": 12,
+      "name": "遇強則強",
+      "icon": "../assets/images/runes/keystone/empowerment.webp",
+      "tag": "對英雄造成更多傷害",
+      "description": "以普攻連續命中同一名敵方英雄3次，造成額外適性傷害並提高自身對英雄造成的傷害。",
+      "status": "已校對"
+    },
+    {
+      "id": "glacial-augment",
+      "order": 13,
+      "name": "冰霜霸主",
+      "icon": "../assets/images/runes/keystone/glacial-augment.webp",
+      "tag": "控制・緩速",
+      "description": "硬控敵方英雄時形成冰霜光束與緩速區域，並獲得環繞自身的冰霜防護。",
+      "status": "已校對"
+    }
+  ],
+  "conquest": [
+    {
+      "id": "cheap-shot",
+      "order": 1,
+      "name": "凌虐",
+      "icon": "../assets/images/runes/conquest/cheap-shot.webp",
+      "tag": "鎖定行動受限的敵軍",
+      "description": "傷害行動受限的敵軍時造成額外10–45真實傷害。冷卻時間7秒。"
+    },
+    {
+      "id": "sudden-impact",
+      "order": 2,
+      "name": "即刻衝擊",
+      "icon": "../assets/images/runes/conquest/sudden-impact.webp",
+      "tag": "潛行或衝刺時觸發",
+      "description": "衝刺、跳躍、瞬移、傳送或脫離潛行後，下一次普攻或技能造成額外真實傷害；高等級後額外獲得跑速。"
+    },
+    {
+      "id": "empowered-attack",
+      "order": 3,
+      "name": "強化普攻",
+      "icon": "../assets/images/runes/conquest/empowered-attack.webp",
+      "tag": "普攻時觸發",
+      "description": "每隔一段時間強化下一次普攻，對敵方英雄造成額外適性傷害。"
+    },
+    {
+      "id": "chain-assault",
+      "order": 4,
+      "name": "鎖鏈突擊",
+      "icon": "../assets/images/runes/conquest/chain-assault.webp",
+      "tag": "技能命中後以普攻觸發",
+      "description": "主動技能傷害英雄時施加標記，後續2次普攻或主動技能造成額外適性傷害。"
+    },
+    {
+      "id": "tyrant",
+      "order": 5,
+      "name": "暴君",
+      "icon": "../assets/images/runes/conquest/tyrant.webp",
+      "tag": "對低生命敵軍造成傷害",
+      "description": "對生命低於50%的敵方英雄造成傷害時，額外造成20–70適性傷害，並獲得物攻與魔攻係數。冷卻10秒。"
+    },
+    {
+      "id": "arrogance",
+      "order": 6,
+      "name": "傲慢",
+      "icon": "../assets/images/runes/conquest/arrogance.webp",
+      "tag": "擊殺時暫時增加物攻／魔攻",
+      "description": "對敵方英雄造成傷害後，在短時間內參與擊殺會獲得適性之力，持續30秒。"
+    },
+    {
+      "id": "eyeball-collector",
+      "order": 7,
+      "name": "眼球收集器",
+      "icon": "../assets/images/runes/conquest/eyeball-collector.webp",
+      "tag": "擊殺時增加物攻／魔攻",
+      "description": "參與擊殺英雄或史詩級野怪後獲得物攻或魔攻，最多累加8層。"
+    },
+    {
+      "id": "ingenious-hunter",
+      "order": 8,
+      "name": "狡詐獵人",
+      "icon": "../assets/images/runes/conquest/ingenious-hunter.webp",
+      "tag": "擊殺時增加道具技能加速",
+      "description": "獲得道具技能加速；參與擊殺英雄或史詩級野怪時額外獲得加速，最多累加5層。"
+    },
+    {
+      "id": "relentless-hunter",
+      "order": 9,
+      "name": "殘虐獵人",
+      "icon": "../assets/images/runes/conquest/relentless-hunter.webp",
+      "tag": "擊殺時賦予脫離戰鬥跑速",
+      "description": "獲得脫離戰鬥跑速；參與擊殺英雄或史詩級野怪後額外提高，最多累加5層。"
+    },
+    {
+      "id": "zombie-ward",
+      "order": 10,
+      "name": "殭屍守衛",
+      "icon": "../assets/images/runes/conquest/zombie-ward.webp",
+      "tag": "視野控制會增加物攻／魔攻",
+      "description": "參與摧毀敵軍偵察守衛後召喚我方殭屍守衛取代，並獲得物攻或魔攻，最多累加5層。"
+    }
+  ],
+  "precision": [
+    {
+      "id": "brutal",
+      "order": 1,
+      "name": "兇蠻",
+      "icon": "../assets/images/runes/precision/brutal.webp",
+      "tag": "普攻造成命中傷害",
+      "description": "普攻對敵方英雄造成額外適性傷害。"
+    },
+    {
+      "id": "triumph",
+      "order": 2,
+      "name": "凱旋",
+      "icon": "../assets/images/runes/precision/triumph.webp",
+      "tag": "參與擊殺英雄時回復生命",
+      "description": "參與擊殺敵方英雄後，回復已損失生命與最大魔力／能量，並短暫增加跑速。"
+    },
+    {
+      "id": "battle-fervor",
+      "order": 3,
+      "name": "熱忱戰鬥",
+      "icon": "../assets/images/runes/precision/battle-fervor.webp",
+      "tag": "戰鬥時提升技能傷害",
+      "description": "與英雄交戰時，每秒獲得可累加的基礎技能傷害增幅，最多3層，僅對英雄生效。"
+    },
+    {
+      "id": "last-stand",
+      "order": 4,
+      "name": "背水一戰",
+      "icon": "../assets/images/runes/precision/last-stand.webp",
+      "tag": "生命較低時增加傷害",
+      "description": "生命低於60%時，對敵方英雄的普攻造成額外傷害；低於30%時達到最大效果。"
+    },
+    {
+      "id": "cut-down",
+      "order": 5,
+      "name": "斷切",
+      "icon": "../assets/images/runes/precision/cut-down.webp",
+      "tag": "對高生命敵軍造成額外傷害",
+      "description": "普攻對生命高於60%的敵方英雄造成6.5%額外傷害。"
+    },
+    {
+      "id": "coup-de-grace",
+      "order": 6,
+      "name": "致命一擊",
+      "icon": "../assets/images/runes/precision/coup-de-grace.webp",
+      "tag": "增加對低生命敵軍的傷害",
+      "description": "對生命低於40%的敵方英雄造成8%額外傷害。"
+    },
+    {
+      "id": "legend-alacrity",
+      "order": 7,
+      "name": "傳奇：敏捷",
+      "icon": "../assets/images/runes/precision/legend-alacrity.webp",
+      "tag": "增加額外攻速",
+      "description": "增加3%攻速；參與擊殺野怪、英雄或士兵後，最多額外增加18%攻速。"
+    },
+    {
+      "id": "legend-tenacity",
+      "order": 8,
+      "name": "傳奇：韌性",
+      "icon": "../assets/images/runes/precision/legend-tenacity.webp",
+      "tag": "增加韌性與緩速抗性",
+      "description": "獲得韌性與緩速抗性；參與擊殺後可繼續提高，最多額外獲得15%韌性與20%緩速抗性。"
+    },
+    {
+      "id": "legend-bloodline",
+      "order": 9,
+      "name": "傳奇：血脈",
+      "icon": "../assets/images/runes/precision/legend-bloodline.webp",
+      "tag": "增加全能吸血",
+      "description": "獲得1%全能吸血；參與擊殺後最多額外獲得7%全能吸血。"
+    }
+  ],
+  "resolve": [
+    {
+      "id": "demolish",
+      "order": 1,
+      "name": "爆破",
+      "icon": "../assets/images/runes/resolve/demolish.webp",
+      "tag": "提升拆塔速度",
+      "description": "在敵方防禦塔範圍內累積充能，完成後下一次對防禦塔的普攻造成額外物理傷害。",
+      "status": "已校對"
+    },
+    {
+      "id": "font-of-life",
+      "order": 2,
+      "name": "生命之泉",
+      "icon": "../assets/images/runes/resolve/font-of-life.webp",
+      "tag": "團隊治療",
+      "description": "普攻或技能命中敵方英雄時，使自身與附近生命最低的友方英雄回復生命。",
+      "status": "已校對"
+    },
+    {
+      "id": "courage-of-colossus",
+      "order": 3,
+      "name": "巨像勇氣",
+      "icon": "../assets/images/runes/resolve/courage-of-colossus.webp",
+      "tag": "硬控場敵軍時獲得護盾",
+      "description": "硬控敵方英雄時獲得護盾，持續3秒。",
+      "status": "已校對"
+    },
+    {
+      "id": "steadfast-bulwark",
+      "order": 4,
+      "name": "堅定壁壘",
+      "icon": "../assets/images/runes/resolve/steadfast-bulwark.webp",
+      "tag": "增加雙防及緩速抗性",
+      "description": "增加物防與魔防；附近每有1位敵方英雄時額外提高雙防，達上限後獲得緩速抗性。",
+      "status": "已校對"
+    },
+    {
+      "id": "revitalize",
+      "order": 5,
+      "name": "復甦",
+      "icon": "../assets/images/runes/resolve/revitalize.webp",
+      "tag": "治療與護盾增幅",
+      "description": "圖示已收錄；完整遊戲說明尚待下一次截圖校對。",
+      "status": "待完整文字"
+    },
+    {
+      "id": "unknown-resolve",
+      "order": 6,
+      "name": "待確認符文",
+      "icon": "../assets/images/runes/resolve/unknown-resolve.webp",
+      "tag": "意志",
+      "description": "圖片已收錄，但名稱與效果尚未收到對應說明截圖。",
+      "status": "待確認"
+    },
+    {
+      "id": "bone-plating",
+      "order": 7,
+      "name": "骸骨鍍層",
+      "icon": "../assets/images/runes/resolve/bone-plating.webp",
+      "tag": "減傷",
+      "description": "圖片已收錄；完整遊戲說明尚待下一次截圖校對。",
+      "status": "待完整文字"
+    }
+  ],
+  "sorcery": []
+}
