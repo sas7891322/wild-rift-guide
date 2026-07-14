@@ -11,10 +11,17 @@
 <nav class="nav"><a href="heroes.html">英雄</a><a href="items.html">裝備</a><a href="runes.html">符文</a><a class="active" href="spells.html">召喚師技能</a></nav>
 </div></header>
 <main class="shell">
-<section class="page-head compact"><h1>召喚師技能</h1><p>使用遊戲內官方圖示與繁體中文說明。</p></section>
+<section class="page-head compact"><h1>召喚師技能</h1><p>電腦將滑鼠移到技能上，手機點擊技能，即可查看完整效果。</p></section>
 <div class="toolbar"><input id="q" class="search" placeholder="搜尋技能名稱或效果"><select id="cat" class="select"></select></div>
-<section id="cards" class="grid"></section>
+<div class="database-layout">
+  <section class="database-main">
+    <section id="spell-icons" class="spell-icon-grid"></section>
+    <section id="mobile-spell-detail" class="mobile-detail"></section>
+  </section>
+  <aside id="spell-detail" class="detail-panel"></aside>
+</div>
 </main>
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
-<script src="../assets/js/app.js"></script><script src="../assets/js/spells.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/spells-v21.js"></script>
 </body></html>

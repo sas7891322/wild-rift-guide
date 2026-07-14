@@ -125,3 +125,82 @@
 }
 
 .keystone-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.rune-row.cols-1{grid-template-columns:1fr}.rune-row.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.rune-row.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.rune-row.cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}@media(max-width:900px){.keystone-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.keystone-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.keystone-grid{grid-template-columns:1fr}}
+
+/* ===== Wild Rift Guide V2.1 interactive database layout ===== */
+.database-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 340px;
+  gap:22px;
+  align-items:start;
+}
+.database-main{min-width:0}
+.detail-panel{
+  position:sticky;
+  top:88px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:22px;
+  background:
+    radial-gradient(circle at 85% 12%,rgba(216,184,108,.13),transparent 28%),
+    linear-gradient(155deg,rgba(18,37,61,.98),rgba(7,18,31,.99));
+  box-shadow:0 20px 55px rgba(0,0,0,.32);
+  min-height:420px;
+  opacity:1;
+  transition:opacity .15s ease,transform .15s ease;
+}
+.detail-panel.is-changing{opacity:.35;transform:translateY(3px)}
+.detail-panel img{
+  width:112px;height:112px;object-fit:cover;border-radius:22px;
+  border:1px solid rgba(255,255,255,.11);display:block;margin-bottom:18px
+}
+.detail-panel h2{margin:0 0 6px;font-size:28px}
+.detail-meta{color:var(--gold);font-size:13px;font-weight:900;margin-bottom:18px}
+.detail-description{color:var(--muted);line-height:1.8}
+.detail-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}
+.interactive-card,.interactive-icon{
+  cursor:pointer;transition:transform .15s ease,border-color .15s ease,background .15s ease
+}
+.interactive-card:hover,.interactive-card.active,
+.interactive-icon:hover,.interactive-icon.active{
+  transform:translateY(-2px);
+  border-color:rgba(216,184,108,.55)!important;
+  background:linear-gradient(160deg,rgba(28,53,83,.98),rgba(9,22,37,.99))!important
+}
+.rune-card.interactive-card .desc{display:none}
+.rune-card.interactive-card{min-height:100px}
+.spell-icon-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px
+}
+.spell-icon{
+  border:1px solid var(--line);border-radius:18px;padding:14px;
+  background:linear-gradient(160deg,rgba(19,38,62,.98),rgba(8,20,34,.98));
+  text-align:center
+}
+.spell-icon img{
+  width:76px;height:76px;object-fit:cover;border-radius:16px;
+  display:block;margin:0 auto 10px
+}
+.spell-icon strong{display:block;font-size:16px}
+.spell-icon small{display:block;color:var(--muted);margin-top:5px}
+.mobile-detail{display:none}
+@media(max-width:900px){
+  .database-layout{grid-template-columns:1fr}
+  .detail-panel{display:none}
+  .mobile-detail{
+    display:block;
+    margin-top:16px;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:18px;
+    background:linear-gradient(155deg,rgba(18,37,61,.98),rgba(7,18,31,.99))
+  }
+  .mobile-detail img{width:88px;height:88px;border-radius:18px;object-fit:cover;margin-bottom:12px}
+  .mobile-detail h2{margin:0 0 6px}
+  .mobile-detail .detail-description{line-height:1.75}
+}
+@media(max-width:560px){
+  .spell-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .spell-icon{padding:10px}
+  .spell-icon img{width:60px;height:60px}
+  .spell-icon strong{font-size:14px}
+}

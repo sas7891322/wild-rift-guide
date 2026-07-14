@@ -7,41 +7,33 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<header class="topbar">
-  <div class="shell topbar-inner">
-    <a class="brand" href="../index.html"><span>Wild Rift</span> Guide</a>
-    <nav class="nav">
-      <a href="heroes.html">英雄</a>
-      <a href="items.html">裝備</a>
-      <a class="active" href="runes.html">符文</a>
-      <a href="spells.html">召喚師技能</a>
-    </nav>
-  </div>
-</header>
-
+<header class="topbar"><div class="shell topbar-inner">
+<a class="brand" href="../index.html"><span>Wild Rift</span> Guide</a>
+<nav class="nav"><a href="heroes.html">英雄</a><a href="items.html">裝備</a><a class="active" href="runes.html">符文</a><a href="spells.html">召喚師技能</a></nav>
+</div></header>
 <main class="shell">
-  <section class="page-head compact">
-    <h1>符文</h1>
-    <p>選擇分類後，依照遊戲內的列數與順序顯示符文。</p>
+<section class="page-head compact"><h1>符文</h1><p>電腦將滑鼠移到符文上，手機點擊符文，即可查看完整說明。</p></section>
+
+<div class="rune-tabs">
+<button class="rune-tab active" data-key="keystone"><img src="../assets/images/runes/categories/keystone.png" alt="">關鍵符文</button>
+<button class="rune-tab" data-key="conquest"><img src="../assets/images/runes/categories/conquest.webp" alt="">征服</button>
+<button class="rune-tab" data-key="precision"><img src="../assets/images/runes/categories/precision.webp" alt="">精準</button>
+<button class="rune-tab" data-key="resolve"><img src="../assets/images/runes/categories/resolve.webp" alt="">意志</button>
+<button class="rune-tab" data-key="sorcery"><img src="../assets/images/runes/categories/sorcery.webp" alt="">巫術</button>
+</div>
+
+<div class="toolbar"><input id="q" class="search" placeholder="搜尋符文名稱或效果"></div>
+
+<div class="database-layout">
+  <section class="database-main">
+    <section id="rune-content" class="rune-section"></section>
+    <section id="mobile-rune-detail" class="mobile-detail"></section>
   </section>
-
-  <div class="rune-tabs">
-    <button class="rune-tab active" data-key="keystone"><img src="../assets/images/runes/categories/keystone.webp" alt="">關鍵符文</button>
-    <button class="rune-tab" data-key="conquest"><img src="../assets/images/runes/categories/conquest.webp" alt="">征服</button>
-    <button class="rune-tab" data-key="precision"><img src="../assets/images/runes/categories/precision.webp" alt="">精準</button>
-    <button class="rune-tab" data-key="resolve"><img src="../assets/images/runes/categories/resolve.webp" alt="">意志</button>
-    <button class="rune-tab" data-key="sorcery"><img src="../assets/images/runes/categories/sorcery.webp" alt="">巫術</button>
-  </div>
-
-  <div class="toolbar">
-    <input id="q" class="search" placeholder="搜尋符文名稱或效果">
-  </div>
-
-  <section id="rune-content" class="rune-section"></section>
+  <aside id="rune-detail" class="detail-panel"></aside>
+</div>
 </main>
-
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
 <script src="../assets/js/app.js"></script>
-<script src="../assets/js/runes.js"></script>
+<script src="../assets/js/runes-v21.js"></script>
 </body>
 </html>
