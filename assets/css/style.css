@@ -204,3 +204,22 @@
   .spell-icon img{width:60px;height:60px}
   .spell-icon strong{font-size:14px}
 }
+
+/* V2.1.1 */
+.spell-icon img{
+  width:84px;
+  height:84px;
+  margin:0 auto 12px;
+}
+.spell-icon strong{
+  font-size:16px;
+}
+.spell-icon small{
+  display:none!important;
+}
+@media(max-width:560px){
+  .spell-icon img{
+    width:68px;
+    height:68px;
+  }
+}

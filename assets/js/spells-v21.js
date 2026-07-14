@@ -22,7 +22,7 @@ function render(){
   const rows=SPELLS.filter(x=>(x.name+x.description+x.category).toLowerCase().includes(q)&&(cat==="全部"||x.category===cat));
   const target=document.querySelector("#spell-icons");
   target.innerHTML=rows.length?rows.map(x=>`<article class="spell-icon interactive-icon" data-id="${x.id}">
-    <img src="${x.icon}" alt="${x.name}"><strong>${x.name}</strong><small>${x.cooldown} 秒</small>
+    <img src="${x.icon}" alt="${x.name}"><strong>${x.name}</strong>
   </article>`).join(""):'<div class="empty">沒有符合條件的召喚師技能。</div>';
   document.querySelectorAll(".spell-icon").forEach(el=>{
     const x=SPELLS.find(s=>s.id===el.dataset.id);
