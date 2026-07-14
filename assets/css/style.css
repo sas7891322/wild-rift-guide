@@ -271,3 +271,25 @@
   color:#c7a0ff;
   font-weight:800;
 }
+
+/* Wild Rift Guide V2.3－巫術淡紫色 */
+.rune-tab[data-key="sorcery"]{
+  --sorcery-accent:#c7a0ff;
+}
+.rune-tab[data-key="sorcery"].active{
+  color:#e2d0ff;
+  border-color:rgba(199,160,255,.72);
+  background:linear-gradient(160deg,rgba(76,48,118,.62),rgba(19,24,48,.96));
+  box-shadow:0 0 18px rgba(199,160,255,.13);
+}
+.rune-tab[data-key="sorcery"].active img{
+  filter:drop-shadow(0 0 7px rgba(199,160,255,.65));
+}
+.rune-accent-sorcery{
+  color:#c7a0ff!important;
+}
+.rune-chip-sorcery{
+  color:#e2d0ff!important;
+  border-color:rgba(199,160,255,.5)!important;
+  background:rgba(124,80,181,.18)!important;
+}

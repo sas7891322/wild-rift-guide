@@ -8,9 +8,9 @@ function detailMarkup(x){
   if(!x) return '<div class="empty">將滑鼠移到符文上，或點擊符文查看說明。</div>';
   return `<img src="${x.icon}" alt="${x.name}">
     <h2>${x.name}</h2>
-    <div class="detail-meta">${x.tag || labels[current]}</div>
+    <div class="detail-meta rune-accent-${current}">${x.tag || labels[current]}</div>
     <div class="detail-description">${x.description || "待補資料"}</div>
-    <div class="detail-chips"><span class="chip">${labels[current]}</span></div>`;
+    <div class="detail-chips"><span class="chip rune-chip-${current}">${labels[current]}</span></div>`;
 }
 function showDetail(x){
   selectedId = x.id;

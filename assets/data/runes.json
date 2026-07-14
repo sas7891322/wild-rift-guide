@@ -21,10 +21,10 @@
     {
       "id": "first-strike",
       "order": 3,
-      "name": "先發制人",
+      "name": "遇強則強",
       "icon": "../assets/images/runes/keystone/first-strike.webp",
-      "tag": "開戰・額外金幣",
-      "description": "率先對敵方英雄發起戰鬥或造成傷害時，短時間提高傷害並依額外傷害獲得金幣。",
+      "tag": "對英雄造成更多傷害",
+      "description": "以普攻連續命中同一名敵方英雄3次，造成額外適性傷害並提高自身對英雄造成的傷害。",
       "status": "已校對"
     },
     {
@@ -102,10 +102,10 @@
     {
       "id": "empowerment",
       "order": 12,
-      "name": "遇強則強",
+      "name": "先發制人",
       "icon": "../assets/images/runes/keystone/empowerment.webp",
-      "tag": "對英雄造成更多傷害",
-      "description": "以普攻連續命中同一名敵方英雄3次，造成額外適性傷害並提高自身對英雄造成的傷害。",
+      "tag": "開戰・額外金幣",
+      "description": "率先對敵方英雄發起戰鬥或造成傷害時，短時間提高傷害並依額外傷害獲得金幣。",
       "status": "已校對"
     },
     {
@@ -409,7 +409,7 @@
       "row": 3,
       "rowOrder": 3,
       "name": "堅毅",
-      "icon": "../assets/images/runes/resolve/steadfast-bulwark.webp",
+      "icon": "../assets/images/runes/resolve/perseverance.webp",
       "tag": "增加被控制時的生存能力",
       "description": "獲得韌性；受到硬控場時短暫增加物理防禦與魔法防禦。"
     }
