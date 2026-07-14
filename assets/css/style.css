@@ -223,3 +223,37 @@
     height:68px;
   }
 }
+
+/* ===== V3 shoes ===== */
+.item-tabs,.shoe-level-tabs{display:flex;gap:9px;overflow-x:auto;scrollbar-width:none}
+.item-tabs{margin:0 0 18px}.shoe-level-tabs{margin-bottom:16px}
+.item-tab,.shoe-level{
+  flex:0 0 auto;border:1px solid var(--line);background:var(--panel);
+  color:var(--muted);padding:10px 16px;border-radius:999px;cursor:pointer;font-weight:800
+}
+.item-tab.active,.shoe-level.active{color:var(--text);border-color:rgba(216,184,108,.55);background:var(--panel2)}
+.item-icon-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.item-icon{
+  border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center;
+  background:linear-gradient(160deg,rgba(19,38,62,.98),rgba(8,20,34,.98))
+}
+.item-icon img{width:82px;height:82px;object-fit:cover;border-radius:15px;display:block;margin:0 auto 10px}
+.item-icon strong{display:block;font-size:15px}.item-icon small{display:block;color:var(--muted);margin-top:5px}
+.item-detail-panel{min-height:630px}
+.item-stats{list-style:none;padding:0;margin:0 0 18px}
+.item-stats li{padding:6px 0;color:#7de49a;font-weight:800}
+.item-passives{border-top:1px solid var(--line);padding-top:14px;color:var(--muted);line-height:1.75}
+.item-passives p{margin:0 0 12px}
+.build-tree{border-top:1px solid var(--line);margin-top:18px;padding-top:16px}
+.build-tree h3{margin:0 0 13px;font-size:15px;color:#e7d5a4}
+.build-tree .upgrade-title{margin-top:18px}
+.tree-level{display:flex;justify-content:center;gap:16px}
+.tree-materials{flex-wrap:wrap}
+.build-node{border:1px solid var(--line);background:#0b192a;border-radius:12px;padding:8px;color:var(--text);cursor:pointer}
+.build-node:hover{border-color:rgba(216,184,108,.5)}
+.build-node img{width:52px;height:52px;border-radius:9px;margin:0 auto 6px}
+.build-node span{display:block;font-size:11px;max-width:82px}
+.tree-line{width:1px;height:22px;background:rgba(255,255,255,.2);margin:auto}
+.tree-branch{width:55%;height:22px;margin:auto;border-top:1px solid rgba(255,255,255,.2);border-left:1px solid rgba(255,255,255,.2);border-right:1px solid rgba(255,255,255,.2)}
+@media(max-width:900px){.item-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.item-icon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}

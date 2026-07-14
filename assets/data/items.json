@@ -1,1 +1,375 @@
-[]
+{
+  "items": [
+    {
+      "id": "boots-of-speed",
+      "name": "速度之靴",
+      "category": "鞋子",
+      "tier": 1,
+      "order": 1,
+      "icon": "../assets/images/items/shoes/boots-of-speed.png",
+      "stats": [
+        "+25 跑速"
+      ],
+      "passives": [],
+      "buildFrom": [],
+      "upgrades": [
+        "gluttonous-greaves",
+        "berserkers-greaves",
+        "mercurys-treads",
+        "plated-steelcaps",
+        "ionian-boots",
+        "mana-boots",
+        "burst-boots"
+      ]
+    },
+    {
+      "id": "gluttonous-greaves",
+      "name": "貪婪護脛",
+      "category": "鞋子",
+      "tier": 2,
+      "order": 2,
+      "icon": "../assets/images/items/shoes/gluttonous-greaves.png",
+      "stats": [
+        "+45 跑速",
+        "獲得 12 物攻或 20 魔攻（適性）",
+        "+5% 全能吸血"
+      ],
+      "passives": [
+        "鮮血轉換：參與擊殺英雄會額外獲得0.5%全能吸血效果，最高5%。"
+      ],
+      "buildFrom": [
+        "boots-of-speed"
+      ],
+      "upgrades": [
+        "immortal-boots"
+      ]
+    },
+    {
+      "id": "berserkers-greaves",
+      "name": "狂戰士護脛",
+      "category": "鞋子",
+      "tier": 2,
+      "order": 3,
+      "icon": "../assets/images/items/shoes/berserkers-greaves.png",
+      "stats": [
+        "+30% 攻擊速度",
+        "+45 跑速"
+      ],
+      "passives": [
+        "護佑之鋒：普攻命中時，回復10生命。"
+      ],
+      "buildFrom": [
+        "boots-of-speed",
+        "dagger"
+      ],
+      "upgrades": [
+        "gunsteel-greaves"
+      ]
+    },
+    {
+      "id": "mercurys-treads",
+      "name": "水星之靴",
+      "category": "鞋子",
+      "tier": 2,
+      "order": 4,
+      "icon": "../assets/images/items/shoes/mercurys-treads.png",
+      "stats": [
+        "+150 最大生命",
+        "+25 魔法防禦",
+        "+15% 韌性",
+        "+45 跑速"
+      ],
+      "passives": [],
+      "buildFrom": [
+        "boots-of-speed",
+        "ruby-crystal"
+      ],
+      "upgrades": [
+        "chain-army-boots"
+      ]
+    },
+    {
+      "id": "plated-steelcaps",
+      "name": "鍍板鋼蓋",
+      "category": "鞋子",
+      "tier": 2,
+      "order": 5,
+      "icon": "../assets/images/items/shoes/plated-steelcaps.png",
+      "stats": [
+        "+150 最大生命",
+        "+25 物理防禦",
+        "+45 跑速"
+      ],
+      "passives": [
+        "格擋：所受的英雄普攻傷害降低6%。"
+      ],
+      "buildFrom": [
+        "boots-of-speed",
+        "ruby-crystal"
+      ],
+      "upgrades": [
+        "armored-warboots"
+      ]
+    },
+    {
+      "id": "ionian-boots",
+      "name": "愛歐尼亞之靴",
+      "category": "鞋子",
+      "tier": 2,
+      "order": 6,
+      "icon": "../assets/images/items/shoes/ionian-boots.png",
+      "stats": [
+        "+50% 魔力回復",
+        "+15 技能加速",
+        "+45 跑速"
+      ],
+      "passives": [
+        "召喚加速：減少15%召喚師技能冷卻時間。"
+      ],
+      "buildFrom": [
+        "boots-of-speed",
+        "mana-ring"
+      ],
+      "upgrades": [
+        "blood-mage-boots"
+      ]
+    },
+    {
+      "id": "mana-boots",
+      "name": "魔力之靴",
+      "category": "鞋子",
+      "tier": 2,
+      "order": 7,
+      "icon": "../assets/images/items/shoes/mana-boots.png",
+      "stats": [
+        "+25 魔法攻擊",
+        "+8 魔法穿透",
+        "+75% 魔力回復",
+        "+45 跑速"
+      ],
+      "passives": [
+        "維持均衡：沒有魔力的英雄則增加50%基礎生命回復。",
+        "大惡霸：普攻和主動技能對士兵造成18額外真實傷害。"
+      ],
+      "buildFrom": [
+        "boots-of-speed",
+        "amp-tome"
+      ],
+      "upgrades": [
+        "sorcerers-shoes"
+      ]
+    },
+    {
+      "id": "burst-boots",
+      "name": "爆發之靴",
+      "category": "鞋子",
+      "tier": 2,
+      "order": 8,
+      "icon": "../assets/images/items/shoes/burst-boots.png",
+      "stats": [
+        "+15 物理攻擊",
+        "+10 物理穿透",
+        "+45 跑速"
+      ],
+      "passives": [],
+      "buildFrom": [
+        "boots-of-speed",
+        "long-sword"
+      ],
+      "upgrades": [
+        "armorbreaker-boots"
+      ]
+    },
+    {
+      "id": "immortal-boots",
+      "name": "不朽之靴",
+      "category": "鞋子",
+      "tier": 3,
+      "order": 9,
+      "icon": "../assets/images/items/shoes/immortal-boots.png",
+      "stats": [
+        "+45 跑速",
+        "獲得 12 物攻或 20 魔攻（適性）",
+        "+5% 全能吸血"
+      ],
+      "passives": [
+        "鮮血轉換：參與擊殺英雄會額外獲得0.5%全能吸血，最高5%。",
+        "永恆不滅：生命高於50%時造成5%額外傷害；生命低於50%時，治療與護盾量增加12%。"
+      ],
+      "buildFrom": [
+        "gluttonous-greaves"
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "gunsteel-greaves",
+      "name": "槍鋼護脛",
+      "category": "鞋子",
+      "tier": 3,
+      "order": 10,
+      "icon": "../assets/images/items/shoes/gunsteel-greaves.png",
+      "stats": [
+        "+50% 攻擊速度",
+        "+5% 物理吸血",
+        "+45 跑速"
+      ],
+      "passives": [
+        "諾克薩斯步法：普攻敵方英雄可增加跑速（近戰15%、遠程12%），2秒內逐漸衰減。",
+        "護佑之鋒：普攻命中時，回復12生命。"
+      ],
+      "buildFrom": [
+        "berserkers-greaves"
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "chain-army-boots",
+      "name": "鎖鏈軍靴",
+      "category": "鞋子",
+      "tier": 3,
+      "order": 11,
+      "icon": "../assets/images/items/shoes/chain-army-boots.png",
+      "stats": [
+        "+150 最大生命",
+        "+35 魔法防禦",
+        "+30% 韌性",
+        "+45 跑速"
+      ],
+      "passives": [
+        "諾克薩斯意志力：受到來自英雄的魔法傷害時，獲得可吸收20–140＋5%最大生命傷害的魔法護盾，持續5秒（冷卻12秒）。"
+      ],
+      "buildFrom": [
+        "mercurys-treads"
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "armored-warboots",
+      "name": "裝甲戰靴",
+      "category": "鞋子",
+      "tier": 3,
+      "order": 12,
+      "icon": "../assets/images/items/shoes/armored-warboots.png",
+      "stats": [
+        "+150 最大生命",
+        "+35 物理防禦",
+        "+45 跑速"
+      ],
+      "passives": [
+        "格擋：所受的英雄普攻傷害降低10%。",
+        "諾克薩斯耐力：受到來自英雄的物理傷害後，獲得可吸收20–140＋5%最大生命傷害的物理護盾，持續5秒（冷卻12秒）。"
+      ],
+      "buildFrom": [
+        "plated-steelcaps"
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "blood-mage-boots",
+      "name": "血色法靴",
+      "category": "鞋子",
+      "tier": 3,
+      "order": 13,
+      "icon": "../assets/images/items/shoes/blood-mage-boots.png",
+      "stats": [
+        "+75% 魔力回復",
+        "+25 技能加速",
+        "+45 跑速"
+      ],
+      "passives": [
+        "召喚加速：減少20%召喚師技能冷卻時間。",
+        "諾克薩斯加速：治療、賦予護盾、施放技能，或技能對敵方造成傷害時獲得跑速（近戰10%、遠程8%），持續4秒；每項技能每4秒只觸發一次。"
+      ],
+      "buildFrom": [
+        "ionian-boots"
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "sorcerers-shoes",
+      "name": "魔法使之鞋",
+      "category": "鞋子",
+      "tier": 3,
+      "order": 14,
+      "icon": "../assets/images/items/shoes/sorcerers-shoes.png",
+      "stats": [
+        "+40 魔法攻擊",
+        "+18 魔法穿透",
+        "+8% 魔法穿透",
+        "+100% 魔力回復",
+        "+45 跑速"
+      ],
+      "passives": [
+        "維持均衡：沒有魔力的英雄則增加50%基礎生命回復。",
+        "大惡霸：普攻和主動技能對士兵造成22額外真實傷害。"
+      ],
+      "buildFrom": [
+        "mana-boots"
+      ],
+      "upgrades": []
+    },
+    {
+      "id": "armorbreaker-boots",
+      "name": "碎甲者之靴",
+      "category": "鞋子",
+      "tier": 3,
+      "order": 15,
+      "icon": "../assets/images/items/shoes/armorbreaker-boots.png",
+      "stats": [
+        "+25 物理攻擊",
+        "+12 物理穿透",
+        "+6% 物理穿透",
+        "+45 跑速"
+      ],
+      "passives": [
+        "雲行者：獲得20脫離戰鬥跑速。"
+      ],
+      "buildFrom": [
+        "burst-boots"
+      ],
+      "upgrades": []
+    }
+  ],
+  "materials": [
+    {
+      "id": "dagger",
+      "name": "短劍",
+      "icon": "../assets/images/items/shoes/dagger.png",
+      "stats": [
+        "攻擊速度材料"
+      ]
+    },
+    {
+      "id": "ruby-crystal",
+      "name": "紅水晶",
+      "icon": "../assets/images/items/shoes/ruby-crystal.png",
+      "stats": [
+        "生命值材料"
+      ]
+    },
+    {
+      "id": "amp-tome",
+      "name": "增幅典籍",
+      "icon": "../assets/images/items/shoes/amp-tome.png",
+      "stats": [
+        "魔法攻擊材料"
+      ]
+    },
+    {
+      "id": "mana-ring",
+      "name": "魔力戒指",
+      "icon": "../assets/images/items/shoes/mana-ring.png",
+      "stats": [
+        "魔力相關材料"
+      ]
+    },
+    {
+      "id": "long-sword",
+      "name": "長劍",
+      "icon": "../assets/images/items/shoes/long-sword.png",
+      "stats": [
+        "物理攻擊材料"
+      ]
+    }
+  ]
+}
