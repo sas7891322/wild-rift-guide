@@ -257,6 +257,7 @@
 .tree-branch{width:55%;height:22px;margin:auto;border-top:1px solid rgba(255,255,255,.2);border-left:1px solid rgba(255,255,255,.2);border-right:1px solid rgba(255,255,255,.2)}
 @media(max-width:900px){.item-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.item-icon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+<<<<<<< HEAD
 
 
 /* ===== Integrated equipment database update ===== */
@@ -284,3 +285,5 @@
 @media(max-width:900px){
   .equipment-stage-tabs{margin-top:4px}
 }
+=======
+>>>>>>> parent of 36c25e8 (Wild Rift Guide V2.2)

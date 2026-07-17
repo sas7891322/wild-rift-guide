@@ -5,7 +5,7 @@ function detailMarkup(x){
   return `<img src="${x.icon}" alt="${x.name}">
   <h2>${x.name}</h2>
   <div class="detail-meta">${x.category}｜冷卻 ${x.cooldown} 秒</div>
-  <div class="detail-description">${x.descriptionHtml || x.description}</div>
+  <div class="detail-description">${x.description}</div>
   <div class="detail-chips">${(x.maps||[]).map(m=>`<span class="chip">${m}</span>`).join("")}</div>`;
 }
 function show(x){
