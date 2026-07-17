@@ -11,26 +11,30 @@
 <nav class="nav"><a href="heroes.html">英雄</a><a class="active" href="items.html">裝備</a><a href="runes.html">符文</a><a href="spells.html">召喚師技能</a></nav>
 </div></header>
 <main class="shell">
-<section class="page-head compact"><h1>裝備</h1><p>目前先完成 7.2 版本鞋子。電腦將滑鼠移到裝備上，手機點擊查看完整屬性與合成樹。</p></section>
+<section class="page-head compact">
+  <h1>裝備</h1>
+  <p>電腦將滑鼠移到裝備上，右側會立即顯示完整資料；手機點擊裝備查看。現有鞋子與基本素材完整保留，並加入目前完成的中階裝備。</p>
+</section>
 
 <div class="item-tabs">
 <button class="item-tab" data-category="全部">全部</button>
-<button class="item-tab" data-category="物理">物理</button>
-<button class="item-tab" data-category="魔法">魔法</button>
-<button class="item-tab" data-category="防禦">防禦</button>
-<button class="item-tab" data-category="輔助">輔助</button>
+<button class="item-tab" data-category="物理">物理 18</button>
+<button class="item-tab" data-category="魔法">魔法 18</button>
+<button class="item-tab" data-category="防禦">防禦 15</button>
+<button class="item-tab" data-category="輔助">輔助 13</button>
 <button class="item-tab active" data-category="鞋子">鞋子</button>
 </div>
 
-<div class="toolbar"><input id="item-search" class="search" placeholder="搜尋裝備名稱或效果"></div>
+<div class="toolbar"><input id="item-search" class="search" placeholder="搜尋裝備名稱、屬性或效果"></div>
 
 <div class="database-layout">
 <section class="database-main">
-  <div class="shoe-level-tabs">
-    <button class="shoe-level active" data-tier="all">全部鞋子</button>
-    <button class="shoe-level" data-tier="1">一級鞋</button>
-    <button class="shoe-level" data-tier="2">二級鞋</button>
-    <button class="shoe-level" data-tier="3">三級鞋</button>
+  <div class="equipment-stage-tabs">
+    <button class="equipment-stage active" data-stage="all">全部階級</button>
+    <button class="equipment-stage" data-stage="basic">基本</button>
+    <button class="equipment-stage" data-stage="intermediate">中階</button>
+    <button class="equipment-stage" data-stage="shoes">鞋子</button>
+    <button class="equipment-stage" data-stage="advanced">高階</button>
   </div>
   <section id="item-grid" class="item-icon-grid"></section>
   <section id="mobile-item-detail" class="mobile-detail"></section>
