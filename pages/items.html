@@ -8,37 +8,39 @@
 <body>
 <header class="topbar"><div class="shell topbar-inner">
 <a class="brand" href="../index.html"><span>Wild Rift</span> Guide</a>
-<nav class="nav"><a href="heroes.html">英雄</a><a class="active" href="items.html">裝備</a><a href="runes.html">符文</a><a href="spells.html">召喚師技能</a></nav>
-</div></header>
+<nav class="nav">
+<a href="heroes.html">英雄</a>
+<a class="active" href="items.html">裝備</a>
+<a href="runes.html">符文</a>
+<a href="spells.html">召喚師技能</a>
+</nav></div></header>
+
 <main class="shell">
-<section class="page-head compact"><h1>裝備</h1><p>目前先完成 7.2 版本鞋子。電腦將滑鼠移到裝備上，手機點擊查看完整屬性與合成樹。</p></section>
+<section class="page-head compact">
+<h1>裝備</h1>
+<p>電腦將滑鼠移到裝備上，右側顯示詳細資訊；手機點擊裝備查看。</p>
+</section>
 
 <div class="item-tabs">
-<button class="item-tab" data-category="全部">全部</button>
-<button class="item-tab" data-category="物理">物理</button>
+<button class="item-tab active" data-category="物理">物理</button>
 <button class="item-tab" data-category="魔法">魔法</button>
 <button class="item-tab" data-category="防禦">防禦</button>
 <button class="item-tab" data-category="輔助">輔助</button>
-<button class="item-tab active" data-category="鞋子">鞋子</button>
+<button class="item-tab" data-category="鞋子">鞋子</button>
 </div>
 
-<div class="toolbar"><input id="item-search" class="search" placeholder="搜尋裝備名稱或效果"></div>
+<div class="toolbar"><input id="item-search" class="search" placeholder="搜尋裝備名稱、屬性或效果"></div>
 
 <div class="database-layout">
 <section class="database-main">
-  <div class="shoe-level-tabs">
-    <button class="shoe-level active" data-tier="all">全部鞋子</button>
-    <button class="shoe-level" data-tier="1">一級鞋</button>
-    <button class="shoe-level" data-tier="2">二級鞋</button>
-    <button class="shoe-level" data-tier="3">三級鞋</button>
-  </div>
-  <section id="item-grid" class="item-icon-grid"></section>
-  <section id="mobile-item-detail" class="mobile-detail"></section>
+<section id="item-content"></section>
+<section id="mobile-item-detail" class="mobile-detail"></section>
 </section>
 <aside id="item-detail" class="detail-panel item-detail-panel"></aside>
 </div>
 </main>
+
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
 <script src="../assets/js/app.js"></script>
-<script src="../assets/js/items-v3.js"></script>
+<script src="../assets/js/items-final.js"></script>
 </body></html>

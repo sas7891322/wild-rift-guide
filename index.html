@@ -1,47 +1,41 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wild Rift Guide｜中階裝備</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wild Rift Guide</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="index.html"><span>WILD RIFT</span><small>GUIDE</small></a>
-  <nav><a class="active" href="index.html">裝備</a><a href="#">符文</a><a href="#">召喚師技能</a></nav>
-</header>
+<header class="topbar"><div class="shell topbar-inner">
+<a class="brand" href="index.html"><span>Wild Rift</span> Guide</a>
+<nav class="nav">
+<a href="pages/heroes.html">英雄</a>
+<a href="pages/items.html">裝備</a>
+<a href="pages/runes.html">符文</a>
+<a href="pages/spells.html">召喚師技能</a>
+</nav></div></header>
 
 <main>
-  <section class="hero">
-    <p class="eyebrow">ITEM DATABASE</p>
-    <h1>中階裝備資料庫</h1>
-    <p>依照激鬥峽谷遊戲內分類顯示；同一件裝備可同時出現在多個分類，不另外建立共用素材分類。</p>
-    <div id="counts" class="counts"></div>
-  </section>
-
-  <section class="toolbar">
-    <div id="tabs" class="tabs"></div>
-    <label class="search"><span>搜尋</span><input id="search" placeholder="輸入裝備名稱、屬性或效果"></label>
-  </section>
-
-  <section id="grid" class="item-grid"></section>
-</main>
-
-<div id="modal" class="modal" aria-hidden="true">
-  <button class="modal-backdrop" data-close aria-label="關閉"></button>
-  <article class="modal-card">
-    <button class="close" data-close aria-label="關閉">×</button>
-    <div class="detail-head">
-      <img id="detailIcon" alt="">
-      <div><p id="detailCategory" class="eyebrow"></p><h2 id="detailName"></h2><strong id="detailPrice"></strong></div>
-    </div>
-    <ul id="detailStats" class="detail-stats"></ul>
-    <p id="detailDesc" class="detail-desc"></p>
-  </article>
+<section class="hero shell">
+<div class="eyebrow">WILD RIFT DATABASE</div>
+<h1>Wild Rift Guide</h1>
+<p>激鬥峽谷英雄、裝備、符文與召喚師技能資料庫。</p>
+<div class="role-strip">
+<img src="assets/images/roles/baron.png" alt="巴龍路">
+<img src="assets/images/roles/jungle.png" alt="打野">
+<img src="assets/images/roles/mid.png" alt="中路">
+<img src="assets/images/roles/duo.png" alt="飛龍路">
+<img src="assets/images/roles/support.png" alt="輔助">
 </div>
+</section>
 
-<footer>© 2026 Wild Rift Guide</footer>
+<section class="shell home-grid">
+<a class="home-card" href="pages/heroes.html"><div class="home-icon">英雄</div><div><span class="kicker">資料庫入口</span><h2>英雄</h2><p>英雄資料頁面與後續攻略內容。</p><span class="link-label">查看英雄 →</span></div></a>
+<a class="home-card" href="pages/items.html"><div class="home-icon">裝備</div><div><span class="kicker">目前整理中</span><h2>裝備</h2><p>物理、魔法、防禦、輔助與鞋子，滑鼠移入即可查看詳細資訊。</p><span class="link-label">查看裝備 →</span></div></a>
+<a class="home-card" href="pages/runes.html"><div class="home-icon">符文</div><div><span class="kicker">已完成</span><h2>符文</h2><p>關鍵符文、征服、精準、意志與巫術。</p><span class="link-label">查看符文 →</span></div></a>
+<a class="home-card" href="pages/spells.html"><div class="home-icon">技能</div><div><span class="kicker">已完成</span><h2>召喚師技能</h2><p>召喚師技能圖示、冷卻時間與效果說明。</p><span class="link-label">查看技能 →</span></div></a>
+</section>
+</main>
+<footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
 <script src="assets/js/app.js"></script>
-</body>
-</html>
+</body></html>
