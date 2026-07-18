@@ -2,7 +2,7 @@
 let DATA={items:[]};
 let category="物理";
 let selectedId=null;
-const stageOrder=["基本","中階","高階","鞋子"];
+const stageOrder=["基本裝備","基本配置","中階","高階裝備","基礎鞋","二級鞋","三級鞋"];
 
 function findItem(id){return DATA.items.find(x=>x.id===id)}
 function categoriesOf(x){return Array.isArray(x.categories)?x.categories:[x.category].filter(Boolean)}
@@ -67,7 +67,7 @@ function render(){
   const stages=[...new Set(rows.map(stageOf))].sort((a,b)=>stageOrder.indexOf(a)-stageOrder.indexOf(b));
   target.innerHTML=stages.map(stage=>{
     const items=rows.filter(x=>stageOf(x)===stage);
-    const title=stage==="鞋子"?"鞋子":`${stage}裝備`;
+    const title=stage==="中階"?"中階裝備":stage;
     return `<section class="item-stage-section"><h2>${title}</h2><div class="item-icon-grid">${items.map(card).join("")}</div></section>`;
   }).join("");
   document.querySelectorAll(".item-icon").forEach(el=>{

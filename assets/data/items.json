@@ -1,99 +1,189 @@
 {
-  "version": "Complete rebuild current state",
-  "counts": {
-    "physical": 18,
-    "magic": 18,
-    "defense": 15,
-    "support": 13
-  },
+  "version": "Equipment update 01",
+  "notes": "基本裝備、中階裝備、輔助基本配置，以及鞋子三級系統",
   "items": [
     {
-      "id": "dagger",
-      "name": "短劍",
-      "icon": "../assets/images/items/shoes/dagger.png",
-      "stats": [
-        "攻擊速度材料"
-      ],
-      "stage": "基本",
+      "id": "basic-sapphire",
+      "name": "藍水晶",
+      "stage": "基本裝備",
       "categories": [
-        "物理"
+        "物理",
+        "魔法",
+        "防禦"
       ],
-      "price": 0,
+      "price": 500,
+      "stats": [],
       "passives": [],
+      "icon": "../assets/images/items/basic/藍水晶.webp",
       "buildFrom": [],
       "upgrades": [],
       "order": 1
     },
     {
-      "id": "ruby-crystal",
-      "name": "紅水晶",
-      "icon": "../assets/images/items/shoes/ruby-crystal.png",
-      "stats": [
-        "生命值材料"
-      ],
-      "stage": "基本",
+      "id": "basic-long-sword",
+      "name": "長劍",
+      "stage": "基本裝備",
       "categories": [
-        "防禦",
-        "輔助"
+        "物理"
       ],
-      "price": 0,
+      "price": 500,
+      "stats": [],
       "passives": [],
+      "icon": "../assets/images/items/basic/長劍.webp",
       "buildFrom": [],
       "upgrades": [],
       "order": 2
     },
     {
-      "id": "amp-tome",
-      "name": "增幅典籍",
-      "icon": "../assets/images/items/shoes/amp-tome.png",
-      "stats": [
-        "魔法攻擊材料"
-      ],
-      "stage": "基本",
+      "id": "basic-iron-whip",
+      "name": "鐵刺鞭",
+      "stage": "基本裝備",
       "categories": [
-        "魔法",
-        "輔助"
+        "物理"
       ],
-      "price": 0,
+      "price": 500,
+      "stats": [],
       "passives": [],
+      "icon": "../assets/images/items/basic/鐵刺鞭.webp",
       "buildFrom": [],
       "upgrades": [],
       "order": 3
     },
     {
-      "id": "mana-ring",
-      "name": "魔力戒指",
-      "icon": "../assets/images/items/shoes/mana-ring.png",
-      "stats": [
-        "魔力相關材料"
-      ],
-      "stage": "基本",
+      "id": "basic-dagger",
+      "name": "短劍",
+      "stage": "基本裝備",
       "categories": [
-        "魔法",
-        "輔助"
+        "物理"
       ],
-      "price": 0,
+      "price": 500,
+      "stats": [],
       "passives": [],
+      "icon": "../assets/images/items/basic/短劍.webp",
       "buildFrom": [],
       "upgrades": [],
       "order": 4
     },
     {
-      "id": "long-sword",
-      "name": "長劍",
-      "icon": "../assets/images/items/shoes/long-sword.png",
-      "stats": [
-        "物理攻擊材料"
-      ],
-      "stage": "基本",
+      "id": "basic-ruby",
+      "name": "紅水晶",
+      "stage": "基本裝備",
       "categories": [
-        "物理"
+        "魔法",
+        "防禦"
       ],
-      "price": 0,
+      "price": 500,
+      "stats": [],
       "passives": [],
+      "icon": "../assets/images/items/basic/紅水晶.webp",
       "buildFrom": [],
       "upgrades": [],
       "order": 5
+    },
+    {
+      "id": "basic-amp-tome",
+      "name": "增幅典籍",
+      "stage": "基本裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 500,
+      "stats": [],
+      "passives": [],
+      "icon": "../assets/images/items/basic/增幅典籍.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 6
+    },
+    {
+      "id": "basic-mana-ring",
+      "name": "魔力戒指",
+      "stage": "基本裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 300,
+      "stats": [],
+      "passives": [],
+      "icon": "../assets/images/items/basic/魔力戒指.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 7
+    },
+    {
+      "id": "basic-cloth-armor",
+      "name": "布甲",
+      "stage": "基本裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 500,
+      "stats": [],
+      "passives": [],
+      "icon": "../assets/images/items/basic/布甲.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 8
+    },
+    {
+      "id": "basic-null-cloak",
+      "name": "抗魔斗篷",
+      "stage": "基本裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 500,
+      "stats": [],
+      "passives": [],
+      "icon": "../assets/images/items/basic/抗魔斗篷.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 9
+    },
+    {
+      "id": "basic-ember",
+      "name": "熾火",
+      "stage": "基本裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 500,
+      "stats": [],
+      "passives": [],
+      "icon": "../assets/images/items/basic/熾火.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 10
+    },
+    {
+      "id": "support-spectral-sickle",
+      "name": "幽魂鐮刀",
+      "stage": "基本配置",
+      "categories": [
+        "輔助"
+      ],
+      "price": 500,
+      "stats": [],
+      "passives": [],
+      "icon": "../assets/images/items/basic/幽魂鐮刀.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 1
+    },
+    {
+      "id": "support-relic-shield",
+      "name": "聖物之盾",
+      "stage": "基本配置",
+      "categories": [
+        "輔助"
+      ],
+      "price": 500,
+      "stats": [],
+      "passives": [],
+      "icon": "../assets/images/items/basic/聖物之盾.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 2
     },
     {
       "id": "intermediate-01",
@@ -917,10 +1007,11 @@
         "mana-boots",
         "burst-boots"
       ],
-      "stage": "鞋子",
+      "stage": "基礎鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 400
     },
     {
       "id": "gluttonous-greaves",
@@ -943,10 +1034,11 @@
       "upgrades": [
         "immortal-boots"
       ],
-      "stage": "鞋子",
+      "stage": "二級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 1000
     },
     {
       "id": "berserkers-greaves",
@@ -969,10 +1061,11 @@
       "upgrades": [
         "gunsteel-greaves"
       ],
-      "stage": "鞋子",
+      "stage": "二級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 1200
     },
     {
       "id": "mercurys-treads",
@@ -995,10 +1088,11 @@
       "upgrades": [
         "chain-army-boots"
       ],
-      "stage": "鞋子",
+      "stage": "二級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 1200
     },
     {
       "id": "plated-steelcaps",
@@ -1022,10 +1116,11 @@
       "upgrades": [
         "armored-warboots"
       ],
-      "stage": "鞋子",
+      "stage": "二級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 1200
     },
     {
       "id": "ionian-boots",
@@ -1049,10 +1144,11 @@
       "upgrades": [
         "blood-mage-boots"
       ],
-      "stage": "鞋子",
+      "stage": "二級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 1000
     },
     {
       "id": "mana-boots",
@@ -1078,10 +1174,11 @@
       "upgrades": [
         "sorcerers-shoes"
       ],
-      "stage": "鞋子",
+      "stage": "二級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 1200
     },
     {
       "id": "burst-boots",
@@ -1103,10 +1200,11 @@
       "upgrades": [
         "armorbreaker-boots"
       ],
-      "stage": "鞋子",
+      "stage": "二級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 1200
     },
     {
       "id": "immortal-boots",
@@ -1128,10 +1226,11 @@
         "gluttonous-greaves"
       ],
       "upgrades": [],
-      "stage": "鞋子",
+      "stage": "三級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 2000
     },
     {
       "id": "gunsteel-greaves",
@@ -1153,10 +1252,11 @@
         "berserkers-greaves"
       ],
       "upgrades": [],
-      "stage": "鞋子",
+      "stage": "三級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 2200
     },
     {
       "id": "chain-army-boots",
@@ -1178,10 +1278,11 @@
         "mercurys-treads"
       ],
       "upgrades": [],
-      "stage": "鞋子",
+      "stage": "三級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 2200
     },
     {
       "id": "armored-warboots",
@@ -1203,10 +1304,11 @@
         "plated-steelcaps"
       ],
       "upgrades": [],
-      "stage": "鞋子",
+      "stage": "三級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 2200
     },
     {
       "id": "blood-mage-boots",
@@ -1228,10 +1330,11 @@
         "ionian-boots"
       ],
       "upgrades": [],
-      "stage": "鞋子",
+      "stage": "三級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 2000
     },
     {
       "id": "sorcerers-shoes",
@@ -1255,10 +1358,11 @@
         "mana-boots"
       ],
       "upgrades": [],
-      "stage": "鞋子",
+      "stage": "三級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 2200
     },
     {
       "id": "armorbreaker-boots",
@@ -1280,10 +1384,11 @@
         "burst-boots"
       ],
       "upgrades": [],
-      "stage": "鞋子",
+      "stage": "三級鞋",
       "categories": [
         "鞋子"
-      ]
+      ],
+      "price": 2200
     }
   ]
 }
