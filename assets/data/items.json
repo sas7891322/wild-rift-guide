@@ -1,6 +1,6 @@
 {
-  "version": "Basic equipment effects update 01",
-  "notes": "依使用者提供的遊戲內截圖，補齊基本裝備與輔助基本配置的屬性及效果。",
+  "version": "Wild Rift 7.2a physical items and boots update",
+  "notes": "更新 42 件物理高階裝備的屬性、效果與合成路徑；修正二級／三級鞋合成鏈；終極魔劍改為魔劍正宗的自動升級型態。",
   "items": [
     {
       "id": "basic-sapphire",
@@ -22,7 +22,10 @@
       ],
       "icon": "../assets/images/items/basic/藍水晶.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-19",
+        "physical-high-26"
+      ],
       "order": 1
     },
     {
@@ -39,7 +42,13 @@
       "passives": [],
       "icon": "../assets/images/items/basic/長劍.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "burst-boots",
+        "physical-high-04",
+        "physical-high-05",
+        "physical-high-06",
+        "physical-high-42"
+      ],
       "order": 2
     },
     {
@@ -73,7 +82,11 @@
       "passives": [],
       "icon": "../assets/images/items/basic/短劍.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "berserkers-greaves",
+        "physical-high-01",
+        "physical-high-07"
+      ],
       "order": 4
     },
     {
@@ -91,7 +104,10 @@
       "passives": [],
       "icon": "../assets/images/items/basic/紅水晶.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "mercurys-treads",
+        "plated-steelcaps"
+      ],
       "order": 5
     },
     {
@@ -108,7 +124,9 @@
       "passives": [],
       "icon": "../assets/images/items/basic/增幅典籍.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "mana-boots"
+      ],
       "order": 6
     },
     {
@@ -125,7 +143,10 @@
       "passives": [],
       "icon": "../assets/images/items/basic/魔力戒指.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "ionian-boots",
+        "physical-high-02"
+      ],
       "order": 7
     },
     {
@@ -244,7 +265,10 @@
       ],
       "icon": "../assets/images/items/閃耀劍.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-21",
+        "physical-high-30"
+      ],
       "order": 1
     },
     {
@@ -262,7 +286,10 @@
       "passives": [],
       "icon": "../assets/images/items/吸血鬼權杖.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-04",
+        "physical-high-12"
+      ],
       "order": 2
     },
     {
@@ -281,7 +308,15 @@
       "passives": [],
       "icon": "../assets/images/items/狂熱雙刀.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-03",
+        "physical-high-13",
+        "physical-high-21",
+        "physical-high-23",
+        "physical-high-24",
+        "physical-high-28",
+        "physical-high-43"
+      ],
       "order": 3
     },
     {
@@ -300,7 +335,9 @@
       ],
       "icon": "../assets/images/items/科奇碎片.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-23"
+      ],
       "order": 4
     },
     {
@@ -318,7 +355,9 @@
       "passives": [],
       "icon": "../assets/images/items/正午箭筒.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-08"
+      ],
       "order": 5
     },
     {
@@ -336,7 +375,10 @@
       ],
       "icon": "../assets/images/items/納什之爪.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-09",
+        "physical-high-35"
+      ],
       "order": 6
     },
     {
@@ -354,7 +396,14 @@
       "passives": [],
       "icon": "../assets/images/items/殘暴之力.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-29",
+        "physical-high-31",
+        "physical-high-32",
+        "physical-high-36"
+      ],
       "order": 7
     },
     {
@@ -373,7 +422,14 @@
       ],
       "icon": "../assets/images/items/反曲弓.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-07",
+        "physical-high-08",
+        "physical-high-12",
+        "physical-high-13",
+        "physical-high-25",
+        "physical-high-35"
+      ],
       "order": 8
     },
     {
@@ -390,7 +446,13 @@
       "passives": [],
       "icon": "../assets/images/items/暴風之劍.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-03",
+        "physical-high-10",
+        "physical-high-11",
+        "physical-high-17",
+        "physical-high-39"
+      ],
       "order": 9
     },
     {
@@ -407,7 +469,14 @@
       "passives": [],
       "icon": "../assets/images/items/靈巧披風.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-05",
+        "physical-high-17",
+        "physical-high-18",
+        "physical-high-24",
+        "physical-high-26",
+        "physical-high-32"
+      ],
       "order": 10
     },
     {
@@ -424,7 +493,12 @@
       ],
       "icon": "../assets/images/items/最後耳語.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-05",
+        "physical-high-18",
+        "physical-high-27",
+        "physical-high-35"
+      ],
       "order": 11
     },
     {
@@ -443,7 +517,10 @@
       ],
       "icon": "../assets/images/items/死刑宣告.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-18",
+        "physical-high-33"
+      ],
       "order": 12
     },
     {
@@ -463,7 +540,13 @@
       ],
       "icon": "../assets/images/items/淨蝕之槌.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-01",
+        "physical-high-02",
+        "physical-high-21",
+        "physical-high-38",
+        "physical-high-41"
+      ],
       "order": 13
     },
     {
@@ -482,7 +565,11 @@
       "passives": [],
       "icon": "../assets/images/items/刺針劍.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-07",
+        "physical-high-09",
+        "physical-high-28"
+      ],
       "order": 14
     },
     {
@@ -500,7 +587,10 @@
       "passives": [],
       "icon": "../assets/images/items/吸魔劍.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-22",
+        "physical-high-25"
+      ],
       "order": 15
     },
     {
@@ -518,7 +608,23 @@
       "passives": [],
       "icon": "../assets/images/items/考菲爾德的戰槌.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-19",
+        "physical-high-22",
+        "physical-high-26",
+        "physical-high-27",
+        "physical-high-30",
+        "physical-high-31",
+        "physical-high-33",
+        "physical-high-34",
+        "physical-high-36",
+        "physical-high-37",
+        "physical-high-38",
+        "physical-high-39",
+        "physical-high-42"
+      ],
       "order": 16
     },
     {
@@ -539,7 +645,11 @@
       "passives": [],
       "icon": "../assets/images/items/燃燒寶石.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-34",
+        "physical-high-38",
+        "physical-high-43"
+      ],
       "order": 17
     },
     {
@@ -558,7 +668,21 @@
       "passives": [],
       "icon": "../assets/images/items/約瑞姆之拳.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-01",
+        "physical-high-02",
+        "physical-high-06",
+        "physical-high-11",
+        "physical-high-16",
+        "physical-high-29",
+        "physical-high-30",
+        "physical-high-33",
+        "physical-high-34",
+        "physical-high-37",
+        "physical-high-40",
+        "physical-high-41",
+        "physical-high-43"
+      ],
       "order": 18
     },
     {
@@ -892,7 +1016,11 @@
       "passives": [],
       "icon": "../assets/images/items/巨人腰帶.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-06",
+        "physical-high-16",
+        "physical-high-40"
+      ],
       "order": 35
     },
     {
@@ -930,7 +1058,11 @@
       "passives": [],
       "icon": "../assets/images/items/鎖子甲.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-10",
+        "physical-high-41",
+        "physical-high-42"
+      ],
       "order": 37
     },
     {
@@ -1097,7 +1229,7 @@
       ],
       "buildFrom": [
         "boots-of-speed",
-        "dagger"
+        "basic-dagger"
       ],
       "upgrades": [
         "gunsteel-greaves"
@@ -1124,7 +1256,7 @@
       "passives": [],
       "buildFrom": [
         "boots-of-speed",
-        "ruby-crystal"
+        "basic-ruby"
       ],
       "upgrades": [
         "chain-army-boots"
@@ -1152,7 +1284,7 @@
       ],
       "buildFrom": [
         "boots-of-speed",
-        "ruby-crystal"
+        "basic-ruby"
       ],
       "upgrades": [
         "armored-warboots"
@@ -1180,7 +1312,7 @@
       ],
       "buildFrom": [
         "boots-of-speed",
-        "mana-ring"
+        "basic-mana-ring"
       ],
       "upgrades": [
         "blood-mage-boots"
@@ -1210,7 +1342,7 @@
       ],
       "buildFrom": [
         "boots-of-speed",
-        "amp-tome"
+        "basic-amp-tome"
       ],
       "upgrades": [
         "sorcerers-shoes"
@@ -1236,7 +1368,7 @@
       "passives": [],
       "buildFrom": [
         "boots-of-speed",
-        "long-sword"
+        "basic-long-sword"
       ],
       "upgrades": [
         "armorbreaker-boots"
@@ -1286,8 +1418,8 @@
         "+45 跑速"
       ],
       "passives": [
-        "諾克薩斯步法：普攻敵方英雄可增加跑速（近戰15%、遠程12%），2秒內逐漸衰減。",
-        "護佑之鋒：普攻命中時，回復12生命。"
+        "護佑之鋒：普攻命中時回復 12 生命。",
+        "諾克薩斯步法：普攻命中敵方英雄時獲得爆發跑速，近戰 15%、遠程 10%，持續 2 秒。"
       ],
       "buildFrom": [
         "berserkers-greaves"
@@ -1364,8 +1496,8 @@
         "+45 跑速"
       ],
       "passives": [
-        "召喚加速：減少20%召喚師技能冷卻時間。",
-        "諾克薩斯加速：治療、賦予護盾、施放技能，或技能對敵方造成傷害時獲得跑速（近戰10%、遠程8%），持續4秒；每項技能每4秒只觸發一次。"
+        "召喚加速：獲得 20% 召喚師技能加速。",
+        "諾克薩斯加速：技能傷害敵方英雄、治療或賦予友軍護盾，或施放召喚師技能後，獲得跑速（近戰 10%、遠程 8%），持續 4 秒；同一技能每 4 秒僅能觸發一次。"
       ],
       "buildFrom": [
         "ionian-boots"
@@ -1449,7 +1581,9 @@
       ],
       "icon": "../assets/images/items/水銀飾帶.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "physical-high-04"
+      ],
       "order": 95
     },
     {
@@ -1486,9 +1620,16 @@
         "+40 物理攻擊",
         "+15% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "破陣衝擊（主動）：向前短距離突進，對附近敵人造成 100% 物理攻擊傷害並緩速 40%，持續 3 秒（冷卻 25 秒）。",
+        "闊步：造成物理傷害時獲得 20 跑速，持續 2 秒。"
+      ],
       "icon": "../assets/images/items/high/步履破壞者.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-13",
+        "basic-dagger"
+      ],
       "upgrades": [],
       "order": 201
     },
@@ -1505,9 +1646,16 @@
         "+40 物理攻擊",
         "+15 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "+8% 全能吸血。",
+        "渴血斬擊（主動）：對附近敵人造成 175% 物理攻擊傷害；每命中一名敵人，回復相當於 20% 物理攻擊加 10% 已損失生命的生命（冷卻 12 秒）。"
+      ],
       "icon": "../assets/images/items/high/飲血戰錘.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-13",
+        "basic-mana-ring"
+      ],
       "upgrades": [],
       "order": 202
     },
@@ -1523,9 +1671,15 @@
         "+50 物理攻擊",
         "+25% 暴擊率"
       ],
-      "passives": [],
+      "passives": [
+        "+15% 攻擊速度、+5% 跑速。",
+        "暴雨（主動）：朝指定方向衝刺，並向終點附近生命最低的敵人發射 3 枚投射物，造成隨等級成長並受額外物攻加成的物理傷害（冷卻 60 秒）。"
+      ],
       "icon": "../assets/images/items/high/狂風之力.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-09",
+        "intermediate-03"
+      ],
       "upgrades": [],
       "order": 203
     },
@@ -1541,9 +1695,16 @@
         "+45 物理攻擊",
         "+10% 物理吸血"
       ],
-      "passives": [],
+      "passives": [
+        "+40 魔法防禦。",
+        "水銀（主動）：移除自身所有控制效果並免疫控制 0.25 秒，之後獲得 30% 韌性與 30% 緩速抗性，持續 1.5 秒（冷卻 60 秒）。"
+      ],
       "icon": "../assets/images/items/high/水星彎刀.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-quicksilver-sash",
+        "intermediate-02",
+        "basic-long-sword"
+      ],
       "upgrades": [],
       "order": 204
     },
@@ -1560,9 +1721,16 @@
         "+36% 物理穿透",
         "+25% 暴擊率"
       ],
-      "passives": [],
+      "passives": [
+        "最後耳語：獲得百分比物理穿透。",
+        "巨人殺手：對最大生命高於你的敵方英雄造成額外物理傷害，生命差距越大效果越高。"
+      ],
       "icon": "../assets/images/items/high/多明尼克的問候.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-11",
+        "intermediate-10",
+        "basic-long-sword"
+      ],
       "upgrades": [],
       "order": 205
     },
@@ -1578,9 +1746,16 @@
         "+450 最大生命",
         "+30 物理攻擊"
       ],
-      "passives": [],
+      "passives": [
+        "霸主：獲得相當於額外生命一定比例的物理攻擊。",
+        "報復：生命較低時，物理攻擊進一步提高。"
+      ],
       "icon": "../assets/images/items/high/狂霸血甲.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-35",
+        "basic-long-sword"
+      ],
       "upgrades": [],
       "order": 206
     },
@@ -1596,9 +1771,16 @@
         "+30% 攻擊速度",
         "+5% 跑速"
       ],
-      "passives": [],
+      "passives": [
+        "適性：獲得物理攻擊或魔法攻擊（適性）。",
+        "狂怒：普攻提供攻速層數；滿層後週期性額外觸發一次命中效果。"
+      ],
       "icon": "../assets/images/items/high/鬼索的狂暴之刃.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-08",
+        "intermediate-14",
+        "basic-dagger"
+      ],
       "upgrades": [],
       "order": 207
     },
@@ -1614,9 +1796,14 @@
         "+40 物理攻擊",
         "+30% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "擊倒：每第三次普攻對同一目標造成額外真實傷害。"
+      ],
       "icon": "../assets/images/items/high/海妖殺手.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-05",
+        "intermediate-08"
+      ],
       "upgrades": [],
       "order": 208
     },
@@ -1632,9 +1819,15 @@
         "+45% 攻擊速度",
         "+20 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "適性：獲得物理攻擊或魔法攻擊（適性）。",
+        "咬擊：普攻命中造成額外魔法傷害，傷害受魔法攻擊加成。"
+      ],
       "icon": "../assets/images/items/high/納什之牙.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-14",
+        "intermediate-06"
+      ],
       "upgrades": [],
       "order": 209
     },
@@ -1650,9 +1843,14 @@
         "+45 物理攻擊",
         "+40 物理防禦"
       ],
-      "passives": [],
+      "passives": [
+        "復活：受到致命傷害後進入凝滯，隨後在原地復活並回復部分基礎生命與魔力（冷卻 210 秒）。"
+      ],
       "icon": "../assets/images/items/high/守護天使.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-09",
+        "intermediate-37"
+      ],
       "upgrades": [],
       "order": 210
     },
@@ -1668,9 +1866,15 @@
         "+250 最大生命",
         "+55 物理攻擊"
       ],
-      "passives": [],
+      "passives": [
+        "+10% 全能吸血。",
+        "血誓：造成傷害可獲得超額治療護盾；護盾在脫離戰鬥後逐漸衰減。"
+      ],
       "icon": "../assets/images/items/high/嗜血者.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-09",
+        "intermediate-18"
+      ],
       "upgrades": [],
       "order": 211
     },
@@ -1686,9 +1890,16 @@
         "+40 物理攻擊",
         "+35% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "+10% 物理吸血。",
+        "殞落之擊：普攻造成目標目前生命一定比例的額外物理傷害，近戰效果較高。",
+        "汲取：連續普攻敵方英雄 3 次會造成額外魔法傷害並偷取跑速。"
+      ],
       "icon": "../assets/images/items/high/殞落王者之劍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-02",
+        "intermediate-08"
+      ],
       "upgrades": [],
       "order": 212
     },
@@ -1704,9 +1915,14 @@
         "+25% 暴擊率",
         "+35% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "風怒：普攻會向附近最多 2 名敵人發射弩箭，造成部分物理傷害並附帶命中效果；僅遠程英雄可購買。"
+      ],
       "icon": "../assets/images/items/high/芮蘭颶風箭.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-03",
+        "intermediate-08"
+      ],
       "upgrades": [],
       "order": 213
     },
@@ -1723,9 +1939,15 @@
         "+15 物理穿透",
         "+15 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "動能：移動時累積動能，滿層後獲得額外跑速；普攻消耗動能造成額外魔法傷害。",
+        "幽魂疾步：獲得脫離戰鬥跑速。"
+      ],
       "icon": "../assets/images/items/high/妖夢鬼刀.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-07",
+        "intermediate-16"
+      ],
       "upgrades": [],
       "order": 214
     },
@@ -1741,9 +1963,14 @@
         "+55 物理攻擊",
         "+18 物理穿透"
       ],
-      "passives": [],
+      "passives": [
+        "夜行者：脫離敵方視野後，對英雄的下一次普攻造成額外物理傷害並緩速；近戰緩速效果較高。"
+      ],
       "icon": "../assets/images/items/high/暮色黑刃.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-07",
+        "intermediate-16"
+      ],
       "upgrades": [],
       "order": 215
     },
@@ -1758,9 +1985,15 @@
       "stats": [
         "+400 最大生命"
       ],
-      "passives": [],
+      "passives": [
+        "重拳：獲得相當於基礎物理攻擊一定比例的額外物理攻擊。",
+        "命脈：生命降至低點時獲得隨額外生命成長的護盾與韌性。"
+      ],
       "icon": "../assets/images/items/high/史特拉克手套.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-35"
+      ],
       "upgrades": [],
       "order": 216
     },
@@ -1776,9 +2009,14 @@
         "+65 物理攻擊",
         "+25% 暴擊率"
       ],
-      "passives": [],
+      "passives": [
+        "無限：提高暴擊傷害。"
+      ],
       "icon": "../assets/images/items/high/無盡之刃.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-09",
+        "intermediate-10"
+      ],
       "upgrades": [],
       "order": 217
     },
@@ -1795,9 +2033,16 @@
         "+25% 暴擊率",
         "+15% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "最後耳語：獲得百分比物理穿透。",
+        "膿毒：對敵方英雄造成物理傷害時施加 40% 重創，持續 3 秒。"
+      ],
       "icon": "../assets/images/items/high/致死宣告.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-12",
+        "intermediate-11",
+        "intermediate-10"
+      ],
       "upgrades": [],
       "order": 218
     },
@@ -1814,30 +2059,33 @@
         "+300 最大魔力",
         "+20 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "敬畏：獲得相當於最大魔力 1.5% 的額外物理攻擊，並返還 15% 已消耗的魔力。",
+        "魔力補充：普攻或消耗魔力時增加最大魔力，最多增加 700；每 10 秒最多觸發 3 次。",
+        "升級型態—終極魔劍：魔力補充累積至 700 後，魔劍正宗自動轉化為終極魔劍；終極魔劍不是可單獨購買的裝備。",
+        "終極魔劍—衝擊：對英雄的普攻與技能命中會消耗目前魔力並造成額外物理傷害。"
+      ],
       "icon": "../assets/images/items/high/魔劍正宗.webp",
-      "buildFrom": [],
-      "upgrades": [],
-      "order": 219
-    },
-    {
-      "id": "physical-high-20",
-      "name": "終極魔劍",
-      "stage": "高階裝備",
-      "categories": [
-        "物理"
+      "buildFrom": [
+        "basic-sapphire",
+        "intermediate-16"
       ],
-      "price": 2700,
-      "stats": [
-        "+25 物理攻擊",
-        "+1000 最大魔力",
-        "+20 技能加速"
-      ],
-      "passives": [],
-      "icon": "../assets/images/items/high/終極魔劍.webp",
-      "buildFrom": [],
       "upgrades": [],
-      "order": 220
+      "order": 219,
+      "upgradeForm": {
+        "name": "終極魔劍",
+        "purchaseable": false,
+        "condition": "魔力補充累積至 700 後自動轉化",
+        "stats": [
+          "+25 物理攻擊",
+          "+1000 最大魔力",
+          "+20 技能加速"
+        ],
+        "passives": [
+          "敬畏：獲得相當於最大魔力 1.5% 的額外物理攻擊。",
+          "衝擊：對英雄的普攻與技能命中會消耗目前魔力並造成額外物理傷害。"
+        ]
+      }
     },
     {
       "id": "physical-high-21",
@@ -1852,11 +2100,18 @@
         "+30 物理攻擊",
         "+30% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "熱誠：普攻提供跑速，擊殺單位時提供更多跑速；遠程效果降低。",
+        "咒刃：施放技能後，下一次普攻造成高額額外物理傷害。"
+      ],
       "icon": "../assets/images/items/high/三相之力.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-01",
+        "intermediate-13",
+        "intermediate-03"
+      ],
       "upgrades": [],
-      "order": 221
+      "order": 220
     },
     {
       "id": "physical-high-22",
@@ -1871,11 +2126,17 @@
         "+45 魔法防禦",
         "+10 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "命脈：受到魔法傷害而生命降至低點時，獲得魔法護盾。",
+        "不屈：命脈觸發時獲得全能吸血，持續至脫離戰鬥。"
+      ],
       "icon": "../assets/images/items/high/魔提斯深淵.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-15",
+        "intermediate-16"
+      ],
       "upgrades": [],
-      "order": 222
+      "order": 221
     },
     {
       "id": "physical-high-23",
@@ -1889,11 +2150,16 @@
         "+25 物理攻擊",
         "+25% 暴擊率"
       ],
-      "passives": [],
+      "passives": [
+        "充能：移動與普攻累積充能；滿層普攻造成額外魔法傷害並彈射至附近敵人。"
+      ],
       "icon": "../assets/images/items/high/磁性雷射槍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-04",
+        "intermediate-03"
+      ],
       "upgrades": [],
-      "order": 223
+      "order": 222
     },
     {
       "id": "physical-high-24",
@@ -1907,11 +2173,16 @@
         "+20 物理攻擊",
         "+25% 暴擊率"
       ],
-      "passives": [],
+      "passives": [
+        "幽影華爾滋：普攻提供攻速與跑速層數；滿層時效果提高並可穿越單位。"
+      ],
       "icon": "../assets/images/items/high/幻影之舞.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-03",
+        "intermediate-10"
+      ],
       "upgrades": [],
-      "order": 224
+      "order": 223
     },
     {
       "id": "physical-high-25",
@@ -1925,11 +2196,16 @@
         "+45% 攻擊速度",
         "+45 魔法防禦"
       ],
-      "passives": [],
+      "passives": [
+        "智慧之末：普攻命中造成額外魔法傷害；生命較低時同時回復生命。"
+      ],
       "icon": "../assets/images/items/high/智慧末刃.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-08",
+        "intermediate-15"
+      ],
       "upgrades": [],
-      "order": 225
+      "order": 224
     },
     {
       "id": "physical-high-26",
@@ -1944,11 +2220,18 @@
         "+25% 暴擊率",
         "+20 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "精華閃耀：傷害型主動技能造成額外物理傷害，並依暴擊率提高。",
+        "魔力虹吸：普攻回復已消耗魔力。"
+      ],
       "icon": "../assets/images/items/high/奪魄之鐮.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-16",
+        "intermediate-10",
+        "basic-sapphire"
+      ],
       "upgrades": [],
-      "order": 226
+      "order": 225
     },
     {
       "id": "physical-high-27",
@@ -1962,11 +2245,17 @@
         "+40 物理攻擊",
         "+15 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "最後耳語：獲得百分比物理穿透。",
+        "嚴寒：傷害型技能使敵人緩速；目標生命較低時緩速效果提高。"
+      ],
       "icon": "../assets/images/items/high/席利妲咒怨.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-11",
+        "intermediate-16"
+      ],
       "upgrades": [],
-      "order": 227
+      "order": 226
     },
     {
       "id": "physical-high-28",
@@ -1980,11 +2269,17 @@
         "+25% 暴擊率",
         "+45% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "疾刃：普攻命中可縮短非終極技能剩餘冷卻時間。",
+        "超越：技能傷害會隨暴擊率提高。"
+      ],
       "icon": "../assets/images/items/high/那歐疾刃.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-03",
+        "intermediate-14"
+      ],
       "upgrades": [],
-      "order": 228
+      "order": 227
     },
     {
       "id": "physical-high-29",
@@ -1999,11 +2294,16 @@
         "+50 物理攻擊",
         "+8 物理穿透"
       ],
-      "passives": [],
+      "passives": [
+        "破魔：獲得一層可阻擋下一個敵方技能的法術護盾；受到英雄傷害後需重新等待才能刷新。"
+      ],
       "icon": "../assets/images/items/high/夜色緣界.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-07",
+        "intermediate-18"
+      ],
       "upgrades": [],
-      "order": 229
+      "order": 228
     },
     {
       "id": "physical-high-30",
@@ -2018,11 +2318,17 @@
         "+25 物理攻擊",
         "+25 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "咒刃：施放技能後，下一次普攻造成目標最大生命比例的額外物理傷害，並回復生命；對遠程英雄效果降低。"
+      ],
       "icon": "../assets/images/items/high/聖裂之杖.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-01",
+        "intermediate-18",
+        "intermediate-16"
+      ],
       "upgrades": [],
-      "order": 230
+      "order": 229
     },
     {
       "id": "physical-high-31",
@@ -2036,11 +2342,16 @@
         "+50 物理攻擊",
         "+15 物理穿透"
       ],
-      "passives": [],
+      "passives": [
+        "盾之收割者：對敵方英雄造成傷害時降低其獲得的護盾，並對現有護盾造成額外削減；近戰效果較高。"
+      ],
       "icon": "../assets/images/items/high/巨蛇鋒牙.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-07",
+        "intermediate-16"
+      ],
       "upgrades": [],
-      "order": 231
+      "order": 230
     },
     {
       "id": "physical-high-32",
@@ -2054,11 +2365,17 @@
         "+45 物理攻擊",
         "+10 物理穿透"
       ],
-      "passives": [],
+      "passives": [
+        "殺手：對生命低於 5% 的敵人造成傷害時直接處決。",
+        "合約：處決英雄時額外獲得金幣。"
+      ],
       "icon": "../assets/images/items/high/蒐集者.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-07",
+        "intermediate-10"
+      ],
       "upgrades": [],
-      "order": 232
+      "order": 231
     },
     {
       "id": "physical-high-33",
@@ -2073,11 +2390,17 @@
         "+45 物理攻擊",
         "+15 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "膿毒：對敵方英雄造成物理傷害時施加 40% 重創，持續 3 秒。"
+      ],
       "icon": "../assets/images/items/high/生化龐克鏈鋸之劍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-12",
+        "intermediate-18",
+        "intermediate-16"
+      ],
       "upgrades": [],
-      "order": 233
+      "order": 232
     },
     {
       "id": "physical-high-34",
@@ -2091,11 +2414,18 @@
         "+450 最大生命",
         "+40 物理攻擊"
       ],
-      "passives": [],
+      "passives": [
+        "龍之力：終極技能以外的技能獲得額外技能加速。",
+        "專注意志：技能命中英雄後獲得跑速。"
+      ],
       "icon": "../assets/images/items/high/精進之矛.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-16",
+        "intermediate-17"
+      ],
       "upgrades": [],
-      "order": 234
+      "order": 233
     },
     {
       "id": "physical-high-35",
@@ -2109,11 +2439,17 @@
         "+40 物理攻擊",
         "+30% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "暗影：普攻交替獲得光明與黑暗層數；滿層時獲得雙重穿透並強化命中效果。"
+      ],
       "icon": "../assets/images/items/high/臨界點.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-08",
+        "intermediate-11",
+        "intermediate-06"
+      ],
       "upgrades": [],
-      "order": 235
+      "order": 234
     },
     {
       "id": "physical-high-36",
@@ -2127,11 +2463,16 @@
         "+65 物理攻擊",
         "+20 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "永升之月：短時間內以 2 次獨立普攻或技能命中英雄時，造成其最大生命比例物理傷害並獲得護盾與跑速。"
+      ],
       "icon": "../assets/images/items/high/星蝕.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-16",
+        "intermediate-07"
+      ],
       "upgrades": [],
-      "order": 236
+      "order": 235
     },
     {
       "id": "physical-high-37",
@@ -2146,11 +2487,17 @@
         "+40 物理攻擊",
         "+15 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "輕擊：一段時間未普攻後，下次對英雄的普攻必定暴擊並回復生命。",
+        "天際：過量治療會轉化為額外最大生命，效果有上限。"
+      ],
       "icon": "../assets/images/items/high/突破天際.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-16"
+      ],
       "upgrades": [],
-      "order": 237
+      "order": 236
     },
     {
       "id": "physical-high-38",
@@ -2165,11 +2512,18 @@
         "+40 物理攻擊",
         "+20 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "切割：對英雄造成物理傷害會削減其物理防禦，可疊加。",
+        "狂怒：造成物理傷害時獲得跑速；擊殺時效果提高。"
+      ],
       "icon": "../assets/images/items/high/黑色切割者.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-13",
+        "intermediate-16",
+        "intermediate-17"
+      ],
       "upgrades": [],
-      "order": 238
+      "order": 237
     },
     {
       "id": "physical-high-39",
@@ -2183,11 +2537,16 @@
         "+25 物理攻擊",
         "+25% 暴擊率"
       ],
-      "passives": [],
+      "passives": [
+        "靈魂轉移（主動）：與指定友方英雄交換位置；施放期間雙方獲得短暫保護（冷卻依版本規則）。"
+      ],
       "icon": "../assets/images/items/high/移魂奪舍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-09",
+        "intermediate-16"
+      ],
       "upgrades": [],
-      "order": 239
+      "order": 238
     },
     {
       "id": "physical-high-40",
@@ -2201,11 +2560,17 @@
         "+450 最大生命",
         "+40 物理攻擊"
       ],
-      "passives": [],
+      "passives": [
+        "巨像：獲得相當於最大生命一定比例的額外物理攻擊。",
+        "順劈：普攻對目標及其後方敵人造成額外物理傷害，近戰效果較高。"
+      ],
       "icon": "../assets/images/items/high/泰坦九頭蛇.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-35"
+      ],
       "upgrades": [],
-      "order": 240
+      "order": 239
     },
     {
       "id": "physical-high-41",
@@ -2220,11 +2585,18 @@
         "+50 物理攻擊",
         "+5% 跑速"
       ],
-      "passives": [],
+      "passives": [
+        "船長：附近沒有友方英雄時獲得額外雙防，並強化大型士兵。",
+        "破城者：普攻對建築造成額外傷害。"
+      ],
       "icon": "../assets/images/items/high/破船戰斧.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-13",
+        "intermediate-37"
+      ],
       "upgrades": [],
-      "order": 241
+      "order": 240
     },
     {
       "id": "physical-high-42",
@@ -2239,11 +2611,18 @@
         "+40 物理防禦",
         "+15 技能加速"
       ],
-      "passives": [],
+      "passives": [
+        "灼燒：所受的部分物理與魔法傷害改為在數秒內承受；遠程英雄轉換比例較低。",
+        "蔑視：參與擊殺英雄時清除尚未承受的灼燒傷害並回復生命。"
+      ],
       "icon": "../assets/images/items/high/死亡之舞.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-16",
+        "intermediate-37",
+        "basic-long-sword"
+      ],
       "upgrades": [],
-      "order": 242
+      "order": 241
     },
     {
       "id": "physical-high-43",
@@ -2258,11 +2637,18 @@
         "+35 物理攻擊",
         "+30% 攻擊速度"
       ],
-      "passives": [],
+      "passives": [
+        "海克斯充能：移動與造成傷害可累積超載；施放終極技能後獲得攻速與跑速。",
+        "終極超載：獲得終極技能加速。"
+      ],
       "icon": "../assets/images/items/high/實驗型海克斯板甲.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-03",
+        "intermediate-17"
+      ],
       "upgrades": [],
-      "order": 243
+      "order": 242
     }
   ]
 }
