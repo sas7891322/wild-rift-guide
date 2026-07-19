@@ -1,16 +1,6 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "version": "Physical high equipment update 01",
-  "notes": "新增 43 件物理高階裝備官方圖示、名稱、價格與主要屬性",
-=======
-  "version": "Equipment update 01",
-  "notes": "基本裝備、中階裝備、輔助基本配置，以及鞋子三級系統",
->>>>>>> parent of 5d3a890 (123)
-=======
-  "version": "Equipment update 02",
-  "notes": "中階裝備圖示、分類、新裝備與被動顯示修正版",
->>>>>>> parent of a7cea1f (Physical high equipment update)
+  "version": "Physical high equipment corrected 02",
+  "notes": "依使用者提供的遊戲內截圖，重新校正 43 件物理高階裝備正式名稱。",
   "items": [
     {
       "id": "basic-sapphire",
@@ -151,8 +141,8 @@
       "order": 9
     },
     {
-      "id": "basic-ember",
-      "name": "熾火",
+      "id": "basic-glowing-spark",
+      "name": "光輝火花",
       "stage": "基本裝備",
       "categories": [
         "防禦"
@@ -160,7 +150,7 @@
       "price": 500,
       "stats": [],
       "passives": [],
-      "icon": "../assets/images/items/basic/熾火.webp",
+      "icon": "../assets/images/items/basic/光輝火花.webp",
       "buildFrom": [],
       "upgrades": [],
       "order": 10
@@ -299,10 +289,10 @@
         "魔法"
       ],
       "price": 800,
-      "stats": [
-        "+15 物理攻擊或 +30 魔法攻擊（適性）"
+      "stats": [],
+      "passives": [
+        "適性：獲得 +15 物理攻擊或 +30 魔法攻擊。"
       ],
-      "passives": [],
       "icon": "../assets/images/items/納什之爪.webp",
       "buildFrom": [],
       "upgrades": [],
@@ -387,10 +377,10 @@
         "物理"
       ],
       "price": 800,
-      "stats": [
-        "+12% 物理穿透"
+      "stats": [],
+      "passives": [
+        "獲得 +12% 物理穿透。"
       ],
-      "passives": [],
       "icon": "../assets/images/items/最後耳語.webp",
       "buildFrom": [],
       "upgrades": [],
@@ -536,8 +526,7 @@
       "stage": "中階",
       "categories": [
         "魔法",
-        "防禦",
-        "輔助"
+        "防禦"
       ],
       "price": 1600,
       "stats": [
@@ -557,8 +546,7 @@
       "name": "命定灰燼",
       "stage": "中階",
       "categories": [
-        "魔法",
-        "輔助"
+        "魔法"
       ],
       "price": 900,
       "stats": [
@@ -597,7 +585,8 @@
       "name": "蒼穹神火",
       "stage": "中階",
       "categories": [
-        "魔法"
+        "魔法",
+        "輔助"
       ],
       "price": 950,
       "stats": [
@@ -656,7 +645,8 @@
       "name": "爆裂魔杖",
       "stage": "中階",
       "categories": [
-        "魔法"
+        "魔法",
+        "輔助"
       ],
       "price": 800,
       "stats": [
@@ -889,7 +879,8 @@
       "name": "鎖子甲",
       "stage": "中階",
       "categories": [
-        "防禦"
+        "防禦",
+        "輔助"
       ],
       "price": 900,
       "stats": [
@@ -925,8 +916,7 @@
       "name": "飛翼月甲",
       "stage": "中階",
       "categories": [
-        "防禦",
-        "輔助"
+        "防禦"
       ],
       "price": 900,
       "stats": [
@@ -1399,7 +1389,6 @@
         "鞋子"
       ],
       "price": 2200
-<<<<<<< HEAD
     },
     {
       "id": "intermediate-quicksilver-sash",
@@ -1442,7 +1431,6 @@
       "buildFrom": [],
       "upgrades": [],
       "order": 96
-<<<<<<< HEAD
     },
     {
       "id": "physical-high-01",
@@ -2234,10 +2222,6 @@
       "buildFrom": [],
       "upgrades": [],
       "order": 243
-=======
->>>>>>> parent of 5d3a890 (123)
-=======
->>>>>>> parent of a7cea1f (Physical high equipment update)
     }
   ]
 }
