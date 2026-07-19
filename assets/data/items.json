@@ -1,6 +1,6 @@
 {
-  "version": "Wild Rift 7.2a physical items and boots update",
-  "notes": "更新 42 件物理高階裝備的屬性、效果與合成路徑；修正二級／三級鞋合成鏈；終極魔劍改為魔劍正宗的自動升級型態。",
+  "version": "7.2a-physical-mid-recipes-and-icon-remap",
+  "notes": "補齊物理中階裝備合成資訊，並重新校正物理高階裝備名稱與圖示對應。",
   "items": [
     {
       "id": "basic-sapphire",
@@ -24,7 +24,8 @@
       "buildFrom": [],
       "upgrades": [
         "physical-high-19",
-        "physical-high-26"
+        "physical-high-26",
+        "intermediate-01"
       ],
       "order": 1
     },
@@ -47,7 +48,19 @@
         "physical-high-04",
         "physical-high-05",
         "physical-high-06",
-        "physical-high-42"
+        "physical-high-42",
+        "intermediate-02",
+        "intermediate-04",
+        "intermediate-05",
+        "intermediate-06",
+        "intermediate-07",
+        "intermediate-09",
+        "intermediate-11",
+        "intermediate-12",
+        "intermediate-13",
+        "intermediate-15",
+        "intermediate-16",
+        "intermediate-18"
       ],
       "order": 2
     },
@@ -65,7 +78,10 @@
       "passives": [],
       "icon": "../assets/images/items/basic/鐵刺鞭.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "intermediate-03",
+        "intermediate-10"
+      ],
       "order": 3
     },
     {
@@ -85,7 +101,11 @@
       "upgrades": [
         "berserkers-greaves",
         "physical-high-01",
-        "physical-high-07"
+        "physical-high-07",
+        "intermediate-03",
+        "intermediate-05",
+        "intermediate-08",
+        "intermediate-14"
       ],
       "order": 4
     },
@@ -264,7 +284,9 @@
         "施放技能後，下一次普攻造成額外物理傷害；攻擊建築物時傷害降低。"
       ],
       "icon": "../assets/images/items/閃耀劍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-sapphire"
+      ],
       "upgrades": [
         "physical-high-21",
         "physical-high-30"
@@ -285,7 +307,9 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/吸血鬼權杖.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-04",
         "physical-high-12"
@@ -307,7 +331,10 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/狂熱雙刀.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-dagger",
+        "basic-iron-whip"
+      ],
       "upgrades": [
         "physical-high-03",
         "physical-high-13",
@@ -334,7 +361,9 @@
         "充能普攻造成額外魔法傷害；移動與攻擊可產生充能。"
       ],
       "icon": "../assets/images/items/科奇碎片.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-23"
       ],
@@ -354,7 +383,10 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/正午箭筒.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword",
+        "basic-dagger"
+      ],
       "upgrades": [
         "physical-high-08"
       ],
@@ -374,7 +406,9 @@
         "適性：獲得 +15 物理攻擊或 +30 魔法攻擊。"
       ],
       "icon": "../assets/images/items/納什之爪.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-09",
         "physical-high-35"
@@ -395,7 +429,9 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/殘暴之力.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-14",
         "physical-high-15",
@@ -421,7 +457,9 @@
         "普攻命中目標時造成額外物理傷害。"
       ],
       "icon": "../assets/images/items/反曲弓.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-dagger"
+      ],
       "upgrades": [
         "physical-high-07",
         "physical-high-08",
@@ -445,7 +483,9 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/暴風之劍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-03",
         "physical-high-10",
@@ -468,7 +508,9 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/靈巧披風.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-iron-whip"
+      ],
       "upgrades": [
         "physical-high-05",
         "physical-high-17",
@@ -492,7 +534,9 @@
         "獲得 +12% 物理穿透。"
       ],
       "icon": "../assets/images/items/最後耳語.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-05",
         "physical-high-18",
@@ -516,7 +560,9 @@
         "對敵方英雄造成物理傷害時附加 40% 重創，持續 3 秒。"
       ],
       "icon": "../assets/images/items/死刑宣告.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-18",
         "physical-high-33"
@@ -539,7 +585,10 @@
         "普攻增加跑速；擊殺時增加更多跑速，遠攻英雄效果減半。"
       ],
       "icon": "../assets/images/items/淨蝕之槌.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword",
+        "basic-ruby"
+      ],
       "upgrades": [
         "physical-high-01",
         "physical-high-02",
@@ -564,7 +613,9 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/刺針劍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-dagger"
+      ],
       "upgrades": [
         "physical-high-07",
         "physical-high-09",
@@ -586,7 +637,10 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/吸魔劍.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword",
+        "basic-null-cloak"
+      ],
       "upgrades": [
         "physical-high-22",
         "physical-high-25"
@@ -607,7 +661,9 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/考菲爾德的戰槌.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword"
+      ],
       "upgrades": [
         "physical-high-14",
         "physical-high-15",
@@ -644,7 +700,9 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/燃燒寶石.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-ruby"
+      ],
       "upgrades": [
         "physical-high-34",
         "physical-high-38",
@@ -667,7 +725,10 @@
       ],
       "passives": [],
       "icon": "../assets/images/items/約瑞姆之拳.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-long-sword",
+        "basic-ruby"
+      ],
       "upgrades": [
         "physical-high-01",
         "physical-high-02",
@@ -1580,7 +1641,9 @@
         "堅毅（被動）：水銀變異效果結束時，獲得 30% 韌性與 30% 緩速抗性，持續 1.5 秒。"
       ],
       "icon": "../assets/images/items/水銀飾帶.webp",
-      "buildFrom": [],
+      "buildFrom": [
+        "basic-null-cloak"
+      ],
       "upgrades": [
         "physical-high-04"
       ],
