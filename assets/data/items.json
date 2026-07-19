@@ -1,6 +1,6 @@
 {
-  "version": "Physical high equipment corrected 02",
-  "notes": "依使用者提供的遊戲內截圖，重新校正 43 件物理高階裝備正式名稱。",
+  "version": "Basic equipment effects update 01",
+  "notes": "依使用者提供的遊戲內截圖，補齊基本裝備與輔助基本配置的屬性及效果。",
   "items": [
     {
       "id": "basic-sapphire",
@@ -12,8 +12,14 @@
         "防禦"
       ],
       "price": 500,
-      "stats": [],
-      "passives": [],
+      "stats": [
+        "+200 最大魔力",
+        "+5 技能加速"
+      ],
+      "passives": [
+        "威嚇：返還 10% 已消耗的魔力。",
+        "魔力補充：每次消耗魔力時，增加 5 最大魔力值，增加上限為 700。每 10 秒最多觸發 3 次。一次只能裝備一個女神之淚道具。"
+      ],
       "icon": "../assets/images/items/basic/藍水晶.webp",
       "buildFrom": [],
       "upgrades": [],
@@ -27,7 +33,9 @@
         "物理"
       ],
       "price": 500,
-      "stats": [],
+      "stats": [
+        "+12 物理攻擊"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/長劍.webp",
       "buildFrom": [],
@@ -42,7 +50,9 @@
         "物理"
       ],
       "price": 500,
-      "stats": [],
+      "stats": [
+        "+10% 暴擊率"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/鐵刺鞭.webp",
       "buildFrom": [],
@@ -57,7 +67,9 @@
         "物理"
       ],
       "price": 500,
-      "stats": [],
+      "stats": [
+        "+15% 攻擊速度"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/短劍.webp",
       "buildFrom": [],
@@ -73,7 +85,9 @@
         "防禦"
       ],
       "price": 500,
-      "stats": [],
+      "stats": [
+        "+150 最大生命"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/紅水晶.webp",
       "buildFrom": [],
@@ -88,7 +102,9 @@
         "魔法"
       ],
       "price": 500,
-      "stats": [],
+      "stats": [
+        "+20 魔法攻擊"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/增幅典籍.webp",
       "buildFrom": [],
@@ -103,7 +119,9 @@
         "魔法"
       ],
       "price": 300,
-      "stats": [],
+      "stats": [
+        "+5 技能加速"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/魔力戒指.webp",
       "buildFrom": [],
@@ -118,7 +136,9 @@
         "防禦"
       ],
       "price": 500,
-      "stats": [],
+      "stats": [
+        "+20 物理防禦"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/布甲.webp",
       "buildFrom": [],
@@ -133,7 +153,9 @@
         "防禦"
       ],
       "price": 500,
-      "stats": [],
+      "stats": [
+        "+20 魔法防禦"
+      ],
       "passives": [],
       "icon": "../assets/images/items/basic/抗魔斗篷.webp",
       "buildFrom": [],
@@ -148,8 +170,12 @@
         "防禦"
       ],
       "price": 500,
-      "stats": [],
-      "passives": [],
+      "stats": [
+        "+50 最大生命"
+      ],
+      "passives": [
+        "燃燒：每秒對鄰近敵軍造成 5－10 魔法傷害。"
+      ],
       "icon": "../assets/images/items/basic/光輝火花.webp",
       "buildFrom": [],
       "upgrades": [],
@@ -164,7 +190,14 @@
       ],
       "price": 500,
       "stats": [],
-      "passives": [],
+      "passives": [
+        "此道具專為輔助設計。裝備此道具時，會減少擊殺士兵和野怪所獲得的金幣。即使隊中有多人裝備此道具，同時只有一個會生效。",
+        "萬能：增加 10 物理攻擊或 20 魔法攻擊（適性）。",
+        "獻祭：每 30 秒累積 1 顆能量球（最多 3 顆）。在友方附近時，使用技能或普攻對敵方英雄或建築造成傷害，或附近有士兵遭擊殺時會觸發效果。觸發獻祭時，最近的友軍獲得獻祭堆層。",
+        "哨兵：對清除者透視鏡、控域守衛以及真知之花揭露的偵察守衛造成額外 1 傷害。",
+        "克制：擊殺士兵無法獲得金幣，但會獲得 50% 的賞金。擊殺士兵的賞金會給予最近的友軍。擊殺野怪獲得的金錢減少 50%。",
+        "任務：透過此道具取得 750 枚金幣可升級成闇霧之鐮，且你和獻祭層數最多的友軍會結為完美隊友。"
+      ],
       "icon": "../assets/images/items/basic/幽魂鐮刀.webp",
       "buildFrom": [],
       "upgrades": [],
@@ -178,8 +211,16 @@
         "輔助"
       ],
       "price": 500,
-      "stats": [],
-      "passives": [],
+      "stats": [
+        "+125 最大生命"
+      ],
+      "passives": [
+        "此道具專為輔助設計。裝備此道具時，會減少擊殺士兵和野怪所獲得的金幣。即使隊中有多人裝備此道具，同時只有一個會生效。",
+        "獻祭：每 30 秒累積 1 顆能量球（最多 3 顆）。在友方附近時，普攻生命低於 65% 的士兵會將其處決；擊殺士兵產生的金錢將賦予最近的友軍。觸發獻祭時，最近的友軍獲得獻祭堆層。",
+        "哨兵：對清除者透視鏡、控域守衛以及真知之花揭露的偵察守衛造成額外 1 傷害。",
+        "克制：擊殺士兵無法獲得金幣，但會獲得 50% 的賞金。擊殺士兵的賞金會給予最近的友軍。擊殺野怪獲得的金錢減少 50%。",
+        "任務：透過此道具取得 750 枚金幣可升級成群山堡壘，且你和獻祭層數最多的友軍會結為完美隊友。"
+      ],
       "icon": "../assets/images/items/basic/聖物之盾.webp",
       "buildFrom": [],
       "upgrades": [],
