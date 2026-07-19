@@ -1,6 +1,6 @@
 {
-  "version": "Equipment update 02",
-  "notes": "中階裝備圖示、分類、新裝備與被動顯示修正版",
+  "version": "Physical high equipment update 01",
+  "notes": "新增 43 件物理高階裝備官方圖示、名稱、價格與主要屬性",
   "items": [
     {
       "id": "basic-sapphire",
@@ -1431,6 +1431,797 @@
       "buildFrom": [],
       "upgrades": [],
       "order": 96
+    },
+    {
+      "id": "physical-high-01",
+      "name": "步履破壞者",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+400 最大生命",
+        "+40 物理攻擊",
+        "+15% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/步履破壞者.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 201
+    },
+    {
+      "id": "physical-high-02",
+      "name": "飲血戰錘",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+350 最大生命",
+        "+40 物理攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/飲血戰錘.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 202
+    },
+    {
+      "id": "physical-high-03",
+      "name": "狂風之力",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+50 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/狂風之力.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 203
+    },
+    {
+      "id": "physical-high-04",
+      "name": "水星彎刀",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+45 物理攻擊",
+        "+10% 物理吸血"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/水星彎刀.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 204
+    },
+    {
+      "id": "physical-high-05",
+      "name": "多明尼克的問候",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3300,
+      "stats": [
+        "+25 物理攻擊",
+        "+36% 物理穿透",
+        "+25% 暴擊率"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/多明尼克的問候.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 205
+    },
+    {
+      "id": "physical-high-06",
+      "name": "狂霸血甲",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3200,
+      "stats": [
+        "+450 最大生命",
+        "+30 物理攻擊"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/狂霸血甲.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 206
+    },
+    {
+      "id": "physical-high-07",
+      "name": "鬼索的狂暴之刃",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+30% 攻擊速度",
+        "+5% 跑速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/鬼索的狂暴之刃.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 207
+    },
+    {
+      "id": "physical-high-08",
+      "name": "海妖殺手",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2800,
+      "stats": [
+        "+40 物理攻擊",
+        "+30% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/海妖殺手.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 208
+    },
+    {
+      "id": "physical-high-09",
+      "name": "納什之牙",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2800,
+      "stats": [
+        "+45% 攻擊速度",
+        "+20 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/納什之牙.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 209
+    },
+    {
+      "id": "physical-high-10",
+      "name": "守護天使",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3200,
+      "stats": [
+        "+45 物理攻擊",
+        "+40 物理防禦"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/守護天使.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 210
+    },
+    {
+      "id": "physical-high-11",
+      "name": "嗜血者",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+250 最大生命",
+        "+55 物理攻擊"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/嗜血者.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 211
+    },
+    {
+      "id": "physical-high-12",
+      "name": "殞落王者之劍",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3200,
+      "stats": [
+        "+40 物理攻擊",
+        "+35% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/殞落王者之劍.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 212
+    },
+    {
+      "id": "physical-high-13",
+      "name": "芮蘭颶風箭",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2900,
+      "stats": [
+        "+25% 暴擊率",
+        "+35% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/芮蘭颶風箭.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 213
+    },
+    {
+      "id": "physical-high-14",
+      "name": "妖夢鬼刀",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2800,
+      "stats": [
+        "+55 物理攻擊",
+        "+15 物理穿透",
+        "+15 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/妖夢鬼刀.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 214
+    },
+    {
+      "id": "physical-high-15",
+      "name": "暮色黑刃",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+55 物理攻擊",
+        "+18 物理穿透"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/暮色黑刃.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 215
+    },
+    {
+      "id": "physical-high-16",
+      "name": "史特拉克手套",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3200,
+      "stats": [
+        "+400 最大生命"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/史特拉克手套.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 216
+    },
+    {
+      "id": "physical-high-17",
+      "name": "無盡之刃",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3400,
+      "stats": [
+        "+65 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/無盡之刃.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 217
+    },
+    {
+      "id": "physical-high-18",
+      "name": "致死宣告",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3300,
+      "stats": [
+        "+25 物理攻擊",
+        "+25% 暴擊率",
+        "+15% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/致死宣告.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 218
+    },
+    {
+      "id": "physical-high-19",
+      "name": "魔劍正宗",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2700,
+      "stats": [
+        "+25 物理攻擊",
+        "+300 最大魔力",
+        "+20 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/魔劍正宗.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 219
+    },
+    {
+      "id": "physical-high-20",
+      "name": "終極魔劍",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2700,
+      "stats": [
+        "+25 物理攻擊",
+        "+1000 最大魔力",
+        "+20 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/終極魔劍.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 220
+    },
+    {
+      "id": "physical-high-21",
+      "name": "三相之力",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3333,
+      "stats": [
+        "+333 最大生命",
+        "+30 物理攻擊",
+        "+30% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/三相之力.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 221
+    },
+    {
+      "id": "physical-high-22",
+      "name": "魔提斯深淵",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2700,
+      "stats": [
+        "+55 物理攻擊",
+        "+45 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/魔提斯深淵.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 222
+    },
+    {
+      "id": "physical-high-23",
+      "name": "磁性雷射槍",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+25 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/磁性雷射槍.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 223
+    },
+    {
+      "id": "physical-high-24",
+      "name": "幻影之舞",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2900,
+      "stats": [
+        "+20 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/幻影之舞.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 224
+    },
+    {
+      "id": "physical-high-25",
+      "name": "智慧末刃",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2800,
+      "stats": [
+        "+45% 攻擊速度",
+        "+45 魔法防禦"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/智慧末刃.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 225
+    },
+    {
+      "id": "physical-high-26",
+      "name": "奪魄之鐮",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+40 物理攻擊",
+        "+25% 暴擊率",
+        "+20 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/奪魄之鐮.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 226
+    },
+    {
+      "id": "physical-high-27",
+      "name": "席利妲咒怨",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3300,
+      "stats": [
+        "+40 物理攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/席利妲咒怨.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 227
+    },
+    {
+      "id": "physical-high-28",
+      "name": "那歐疾刃",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2800,
+      "stats": [
+        "+25% 暴擊率",
+        "+45% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/那歐疾刃.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 228
+    },
+    {
+      "id": "physical-high-29",
+      "name": "夜色緣界",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+250 最大生命",
+        "+50 物理攻擊",
+        "+8 物理穿透"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/夜色緣界.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 229
+    },
+    {
+      "id": "physical-high-30",
+      "name": "聖裂之杖",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3400,
+      "stats": [
+        "+425 最大生命",
+        "+25 物理攻擊",
+        "+25 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/聖裂之杖.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 230
+    },
+    {
+      "id": "physical-high-31",
+      "name": "巨蛇鋒牙",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2800,
+      "stats": [
+        "+50 物理攻擊",
+        "+15 物理穿透"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/巨蛇鋒牙.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 231
+    },
+    {
+      "id": "physical-high-32",
+      "name": "蒐集者",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+45 物理攻擊",
+        "+10 物理穿透"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/蒐集者.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 232
+    },
+    {
+      "id": "physical-high-33",
+      "name": "生化龐克鏈鋸之劍",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2800,
+      "stats": [
+        "+400 最大生命",
+        "+45 物理攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/生化龐克鏈鋸之劍.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 233
+    },
+    {
+      "id": "physical-high-34",
+      "name": "精進之矛",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+450 最大生命",
+        "+40 物理攻擊"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/精進之矛.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 234
+    },
+    {
+      "id": "physical-high-35",
+      "name": "臨界點",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3300,
+      "stats": [
+        "+40 物理攻擊",
+        "+30% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/臨界點.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 235
+    },
+    {
+      "id": "physical-high-36",
+      "name": "星蝕",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+65 物理攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/星蝕.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 236
+    },
+    {
+      "id": "physical-high-37",
+      "name": "突破天際",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 2900,
+      "stats": [
+        "+350 最大生命",
+        "+40 物理攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/突破天際.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 237
+    },
+    {
+      "id": "physical-high-38",
+      "name": "黑色切割者",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+400 最大生命",
+        "+40 物理攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/黑色切割者.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 238
+    },
+    {
+      "id": "physical-high-39",
+      "name": "移魂奪舍",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3200,
+      "stats": [
+        "+25 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/移魂奪舍.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 239
+    },
+    {
+      "id": "physical-high-40",
+      "name": "泰坦九頭蛇",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+450 最大生命",
+        "+40 物理攻擊"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/泰坦九頭蛇.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 240
+    },
+    {
+      "id": "physical-high-41",
+      "name": "破船戰斧",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+400 最大生命",
+        "+50 物理攻擊",
+        "+5% 跑速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/破船戰斧.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 241
+    },
+    {
+      "id": "physical-high-42",
+      "name": "死亡之舞",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3100,
+      "stats": [
+        "+35 物理攻擊",
+        "+40 物理防禦",
+        "+15 技能加速"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/死亡之舞.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 242
+    },
+    {
+      "id": "physical-high-43",
+      "name": "實驗型海克斯板甲",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+400 最大生命",
+        "+35 物理攻擊",
+        "+30% 攻擊速度"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/實驗型海克斯板甲.webp",
+      "buildFrom": [],
+      "upgrades": [],
+      "order": 243
     }
   ]
 }
