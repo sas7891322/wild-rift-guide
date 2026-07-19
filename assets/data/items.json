@@ -1,11 +1,16 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "Physical high equipment update 01",
   "notes": "新增 43 件物理高階裝備官方圖示、名稱、價格與主要屬性",
 =======
   "version": "Equipment update 01",
   "notes": "基本裝備、中階裝備、輔助基本配置，以及鞋子三級系統",
 >>>>>>> parent of 5d3a890 (123)
+=======
+  "version": "Equipment update 02",
+  "notes": "中階裝備圖示、分類、新裝備與被動顯示修正版",
+>>>>>>> parent of a7cea1f (Physical high equipment update)
   "items": [
     {
       "id": "basic-sapphire",
@@ -1437,6 +1442,7 @@
       "buildFrom": [],
       "upgrades": [],
       "order": 96
+<<<<<<< HEAD
     },
     {
       "id": "physical-high-01",
@@ -2230,6 +2236,8 @@
       "order": 243
 =======
 >>>>>>> parent of 5d3a890 (123)
+=======
+>>>>>>> parent of a7cea1f (Physical high equipment update)
     }
   ]
 }
