@@ -24,16 +24,37 @@ function buildTree(x){
   if(upgrades.length)h+=`<h3 class="upgrade-title">可升級</h3><div class="tree-level tree-materials">${upgrades.map(treeNode).join("")}</div>`;
   return h+"</section>";
 }
+function detailSection(title,body,cls=""){
+  if(!body)return "";
+  return `<section class="equipment-detail-section ${cls}"><h3>${title}</h3>${body}</section>`;
+}
 function detailHTML(x){
   if(!x)return '<div class="empty">將滑鼠移到裝備上查看詳細資訊。</div>';
-  const stats=(x.stats||[]).map(s=>`<li>${s}</li>`).join("");
-  const passives=(x.passives||[]).filter(Boolean).map(p=>`<p>${p}</p>`).join("");
-  return `<img src="${x.icon}" alt="${x.name}">
-    <h2>${x.name}</h2>
-    <div class="detail-meta">${stageOf(x)}</div>
-    ${priceText(x)?`<div class="detail-price">${priceText(x)}</div>`:""}
-    <ul class="item-stats">${stats}</ul>
-    ${passives?`<div class="item-passives">${passives}</div>`:""}
+  const stats=(x.stats||[]).map(s=>`<li><span class="stat-dot"></span><span>${s}</span></li>`).join("");
+  const passives=(x.passives||[]).filter(Boolean).map(p=>{
+    if(typeof p==="object"){
+      const title=p.name?`<strong>${p.name}</strong>`:"";
+      return `<div class="passive-entry">${title}<p>${p.description||""}</p></div>`;
+    }
+    const parts=String(p).split(/[:：]/);
+    if(parts.length>1&&parts[0].length<=14){
+      return `<div class="passive-entry"><strong>${parts.shift()}</strong><p>${parts.join("：").trim()}</p></div>`;
+    }
+    return `<div class="passive-entry"><p>${p}</p></div>`;
+  }).join("");
+  const cats=categoriesOf(x).map(c=>`<span>${c}</span>`).join("");
+  return `<div class="equipment-detail-brand"><span class="brand-mark">WR</span><span>Wild Rift Guide</span></div>
+    <header class="equipment-detail-header">
+      <div class="equipment-detail-icon"><img src="${x.icon}" alt="${x.name}"></div>
+      <div class="equipment-detail-title">
+        <h2>${x.name}</h2>
+        <div class="detail-meta">${stageOf(x)}</div>
+        <div class="detail-categories">${cats}</div>
+      </div>
+      ${priceText(x)?`<div class="detail-price"><span class="coin-icon">●</span>${x.price}</div>`:""}
+    </header>
+    ${detailSection("能力值",stats?`<ul class="item-stats">${stats}</ul>`:"<p class=\"detail-empty-note\">尚未整理能力值</p>","stats-section")}
+    ${passives?detailSection("裝備效果",`<div class="item-passives">${passives}</div>`,"passive-section"):""}
     ${buildTree(x)}`;
 }
 function bindDetailNodes(panel){

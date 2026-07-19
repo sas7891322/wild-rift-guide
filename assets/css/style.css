@@ -299,3 +299,175 @@
 .tree-branch{width:55%;height:22px;margin:auto;border-top:1px solid rgba(255,255,255,.2);border-left:1px solid rgba(255,255,255,.2);border-right:1px solid rgba(255,255,255,.2)}
 @media(max-width:900px){.item-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.item-icon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ===== Equipment Detail V2：攻略資料卡風格 ===== */
+.item-detail-panel,
+.mobile-detail{
+  overflow:hidden;
+  padding:0;
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 90% 4%,rgba(40,181,210,.13),transparent 32%),
+    linear-gradient(165deg,#0d2136 0%,#071625 58%,#06111d 100%);
+  border:1px solid rgba(93,171,199,.24);
+}
+.equipment-detail-brand{
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  background:linear-gradient(90deg,#08667b,#0d8095,#08667b);
+  color:#eafaff;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.2px;
+}
+.brand-mark{
+  font-size:12px;
+  font-style:italic;
+  border:1px solid rgba(255,255,255,.55);
+  border-radius:5px;
+  padding:2px 5px;
+}
+.equipment-detail-header{
+  display:grid;
+  grid-template-columns:84px minmax(0,1fr) auto;
+  gap:15px;
+  align-items:center;
+  padding:20px 18px 18px;
+  border-bottom:1px solid rgba(94,157,186,.28);
+}
+.equipment-detail-icon img{
+  width:82px!important;
+  height:82px!important;
+  margin:0!important;
+  border-radius:14px!important;
+  border:1px solid rgba(216,184,108,.5)!important;
+  box-shadow:0 9px 22px rgba(0,0,0,.32);
+}
+.equipment-detail-title h2{
+  font-size:24px;
+  line-height:1.2;
+  margin:0 0 6px;
+}
+.equipment-detail-title .detail-meta{
+  margin:0 0 8px;
+  font-size:12px;
+  color:#d8b86c;
+}
+.detail-categories{display:flex;gap:5px;flex-wrap:wrap}
+.detail-categories span{
+  padding:3px 8px;
+  border-radius:999px;
+  background:rgba(83,163,194,.12);
+  border:1px solid rgba(83,163,194,.25);
+  color:#9dd9eb;
+  font-size:11px;
+  font-weight:800;
+}
+.equipment-detail-header .detail-price{
+  align-self:start;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin:2px 0 0;
+  color:#f0c85d;
+  font-size:20px;
+  white-space:nowrap;
+}
+.coin-icon{
+  color:#f0c85d;
+  font-size:12px;
+  filter:drop-shadow(0 0 4px rgba(240,200,93,.28));
+}
+.equipment-detail-section{
+  margin:0 16px;
+  padding:17px 2px;
+  border-bottom:1px solid rgba(94,157,186,.22);
+}
+.equipment-detail-section h3,
+.item-detail-panel .build-tree>h3,
+.mobile-detail .build-tree>h3{
+  margin:0 0 12px;
+  color:#e8d7aa;
+  font-size:13px;
+  letter-spacing:.8px;
+}
+.equipment-detail-section h3::before,
+.item-detail-panel .build-tree>h3::before,
+.mobile-detail .build-tree>h3::before{
+  content:"";
+  display:inline-block;
+  width:3px;
+  height:13px;
+  margin-right:8px;
+  vertical-align:-2px;
+  border-radius:2px;
+  background:#2eacc2;
+}
+.equipment-detail-section .item-stats{
+  margin:0;
+  display:grid;
+  gap:9px;
+}
+.equipment-detail-section .item-stats li{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:0;
+  color:#7fe39c;
+  font-size:15px;
+}
+.stat-dot{
+  width:8px;
+  height:8px;
+  flex:0 0 auto;
+  border-radius:50%;
+  background:#48c982;
+  box-shadow:0 0 8px rgba(72,201,130,.35);
+}
+.detail-empty-note{margin:0;color:#678398;font-size:13px}
+.equipment-detail-section .item-passives{
+  border:0;
+  padding:0;
+  color:#b9c8d4;
+  line-height:1.75;
+}
+.passive-entry+ .passive-entry{margin-top:13px}
+.passive-entry strong{
+  display:block;
+  margin-bottom:4px;
+  color:#69c6e4;
+  font-size:14px;
+}
+.passive-entry p{margin:0!important}
+.item-detail-panel .build-tree,
+.mobile-detail .build-tree{
+  margin:0 16px;
+  padding:17px 2px 20px;
+  border:0;
+}
+.item-detail-panel .build-tree .upgrade-title,
+.mobile-detail .build-tree .upgrade-title{margin-top:18px}
+.item-detail-panel .build-node,
+.mobile-detail .build-node{
+  min-width:72px;
+  border-radius:12px;
+  background:rgba(10,30,48,.94);
+  border-color:rgba(94,157,186,.25);
+}
+.item-detail-panel .build-node:hover,
+.mobile-detail .build-node:hover{
+  border-color:rgba(216,184,108,.62);
+  transform:translateY(-1px);
+}
+@media(max-width:900px){
+  .mobile-detail{padding:0}
+}
+@media(max-width:420px){
+  .equipment-detail-header{grid-template-columns:68px minmax(0,1fr);padding:16px 14px}
+  .equipment-detail-icon img{width:66px!important;height:66px!important}
+  .equipment-detail-title h2{font-size:20px}
+  .equipment-detail-header .detail-price{grid-column:2;font-size:16px;margin-top:-4px}
+}
