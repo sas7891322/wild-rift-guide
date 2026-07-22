@@ -1,6 +1,6 @@
 {
-  "version": "7.2a-physical-mid-recipes-and-icon-remap",
-  "notes": "補齊物理中階裝備合成資訊，並重新校正物理高階裝備名稱與圖示對應。",
+  "version": "7.2a-defense-high",
+  "notes": "新增防禦高階裝備 30 件分類（含既有跨分類裝備）與官方圖示；冬之降臨保留芬布爾之冬進化型態。",
   "items": [
     {
       "id": "basic-sapphire",
@@ -23,9 +23,11 @@
       "icon": "../assets/images/items/basic/藍水晶.webp",
       "buildFrom": [],
       "upgrades": [
+        "intermediate-01",
         "physical-high-19",
         "physical-high-26",
-        "intermediate-01"
+        "magic-high-19",
+        "defense-high-12"
       ],
       "order": 1
     },
@@ -44,11 +46,6 @@
       "icon": "../assets/images/items/basic/長劍.webp",
       "buildFrom": [],
       "upgrades": [
-        "burst-boots",
-        "physical-high-04",
-        "physical-high-05",
-        "physical-high-06",
-        "physical-high-42",
         "intermediate-02",
         "intermediate-04",
         "intermediate-05",
@@ -60,7 +57,12 @@
         "intermediate-13",
         "intermediate-15",
         "intermediate-16",
-        "intermediate-18"
+        "intermediate-18",
+        "burst-boots",
+        "physical-high-04",
+        "physical-high-05",
+        "physical-high-06",
+        "physical-high-42"
       ],
       "order": 2
     },
@@ -99,13 +101,14 @@
       "icon": "../assets/images/items/basic/短劍.webp",
       "buildFrom": [],
       "upgrades": [
-        "berserkers-greaves",
-        "physical-high-01",
-        "physical-high-07",
         "intermediate-03",
         "intermediate-05",
         "intermediate-08",
-        "intermediate-14"
+        "intermediate-14",
+        "berserkers-greaves",
+        "physical-high-01",
+        "physical-high-07",
+        "magic-high-11"
       ],
       "order": 4
     },
@@ -125,8 +128,31 @@
       "icon": "../assets/images/items/basic/紅水晶.webp",
       "buildFrom": [],
       "upgrades": [
+        "intermediate-13",
+        "intermediate-17",
+        "intermediate-18",
         "mercurys-treads",
-        "plated-steelcaps"
+        "plated-steelcaps",
+        "magic-high-01",
+        "magic-high-03",
+        "magic-high-13",
+        "magic-high-24",
+        "defense-high-01",
+        "defense-high-02",
+        "defense-high-03",
+        "defense-high-04",
+        "defense-high-05",
+        "defense-high-06",
+        "defense-high-07",
+        "defense-high-09",
+        "defense-high-10",
+        "defense-high-11",
+        "defense-high-12",
+        "defense-high-14",
+        "defense-high-18",
+        "defense-high-19",
+        "defense-high-20",
+        "defense-high-22"
       ],
       "order": 5
     },
@@ -145,7 +171,9 @@
       "icon": "../assets/images/items/basic/增幅典籍.webp",
       "buildFrom": [],
       "upgrades": [
-        "mana-boots"
+        "mana-boots",
+        "magic-high-01",
+        "magic-high-03"
       ],
       "order": 6
     },
@@ -165,7 +193,9 @@
       "buildFrom": [],
       "upgrades": [
         "ionian-boots",
-        "physical-high-02"
+        "physical-high-02",
+        "magic-high-03",
+        "defense-high-11"
       ],
       "order": 7
     },
@@ -183,7 +213,23 @@
       "passives": [],
       "icon": "../assets/images/items/basic/布甲.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-01",
+        "defense-high-03",
+        "defense-high-05",
+        "defense-high-06",
+        "defense-high-07",
+        "defense-high-08",
+        "defense-high-10",
+        "defense-high-11",
+        "defense-high-13",
+        "defense-high-15",
+        "defense-high-16",
+        "defense-high-17",
+        "defense-high-18",
+        "defense-high-20",
+        "defense-high-22"
+      ],
       "order": 8
     },
     {
@@ -200,7 +246,19 @@
       "passives": [],
       "icon": "../assets/images/items/basic/抗魔斗篷.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "intermediate-15",
+        "intermediate-quicksilver-sash",
+        "defense-high-01",
+        "defense-high-02",
+        "defense-high-03",
+        "defense-high-04",
+        "defense-high-14",
+        "defense-high-15",
+        "defense-high-16",
+        "defense-high-17",
+        "defense-high-21"
+      ],
       "order": 9
     },
     {
@@ -219,7 +277,22 @@
       ],
       "icon": "../assets/images/items/basic/光輝火花.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-01",
+        "magic-high-04",
+        "magic-high-13",
+        "magic-high-22",
+        "defense-high-02",
+        "defense-high-04",
+        "defense-high-05",
+        "defense-high-06",
+        "defense-high-09",
+        "defense-high-11",
+        "defense-high-12",
+        "defense-high-18",
+        "defense-high-19",
+        "defense-high-20"
+      ],
       "order": 10
     },
     {
@@ -289,7 +362,9 @@
       ],
       "upgrades": [
         "physical-high-21",
-        "physical-high-30"
+        "physical-high-30",
+        "magic-high-18",
+        "defense-high-11"
       ],
       "order": 1
     },
@@ -337,12 +412,12 @@
       ],
       "upgrades": [
         "physical-high-03",
+        "physical-high-43",
         "physical-high-13",
         "physical-high-21",
         "physical-high-23",
         "physical-high-24",
-        "physical-high-28",
-        "physical-high-43"
+        "physical-high-28"
       ],
       "order": 3
     },
@@ -411,7 +486,9 @@
       ],
       "upgrades": [
         "physical-high-09",
-        "physical-high-35"
+        "physical-high-35",
+        "magic-high-11",
+        "magic-high-20"
       ],
       "order": 6
     },
@@ -619,7 +696,9 @@
       "upgrades": [
         "physical-high-07",
         "physical-high-09",
-        "physical-high-28"
+        "physical-high-28",
+        "magic-high-11",
+        "magic-high-20"
       ],
       "order": 14
     },
@@ -704,9 +783,11 @@
         "basic-ruby"
       ],
       "upgrades": [
+        "physical-high-43",
         "physical-high-34",
         "physical-high-38",
-        "physical-high-43"
+        "defense-high-22",
+        "defense-high-23"
       ],
       "order": 17
     },
@@ -732,6 +813,7 @@
       "upgrades": [
         "physical-high-01",
         "physical-high-02",
+        "physical-high-43",
         "physical-high-06",
         "physical-high-11",
         "physical-high-16",
@@ -741,8 +823,7 @@
         "physical-high-34",
         "physical-high-37",
         "physical-high-40",
-        "physical-high-41",
-        "physical-high-43"
+        "physical-high-41"
       ],
       "order": 18
     },
@@ -764,7 +845,16 @@
       ],
       "icon": "../assets/images/items/蒼翠屏障.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-05",
+        "defense-high-01",
+        "defense-high-02",
+        "defense-high-03",
+        "defense-high-04",
+        "defense-high-16",
+        "defense-high-21",
+        "defense-high-23"
+      ],
       "order": 19
     },
     {
@@ -783,7 +873,9 @@
       ],
       "icon": "../assets/images/items/命定灰燼.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-10"
+      ],
       "order": 20
     },
     {
@@ -803,7 +895,11 @@
       ],
       "icon": "../assets/images/items/靈魂竊取者.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-06",
+        "magic-high-07",
+        "magic-high-23"
+      ],
       "order": 21
     },
     {
@@ -822,7 +918,16 @@
       "passives": [],
       "icon": "../assets/images/items/蒼穹神火.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-04",
+        "magic-high-05",
+        "magic-high-09",
+        "magic-high-12",
+        "magic-high-18",
+        "magic-high-22",
+        "magic-high-24",
+        "magic-high-26"
+      ],
       "order": 22
     },
     {
@@ -844,7 +949,14 @@
       ],
       "icon": "../assets/images/items/失落之章.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-10",
+        "magic-high-12",
+        "magic-high-19",
+        "magic-high-22",
+        "magic-high-25",
+        "magic-high-26"
+      ],
       "order": 23
     },
     {
@@ -863,7 +975,9 @@
       "passives": [],
       "icon": "../assets/images/items/惡魔法典.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-02"
+      ],
       "order": 24
     },
     {
@@ -881,7 +995,11 @@
       "passives": [],
       "icon": "../assets/images/items/爆裂魔杖.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-15",
+        "magic-high-16",
+        "magic-high-17"
+      ],
       "order": 25
     },
     {
@@ -898,7 +1016,10 @@
       "passives": [],
       "icon": "../assets/images/items/巨型魔棒.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-08",
+        "magic-high-14"
+      ],
       "order": 26
     },
     {
@@ -918,7 +1039,10 @@
       ],
       "icon": "../assets/images/items/幽魂面具.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-16",
+        "magic-high-23"
+      ],
       "order": 27
     },
     {
@@ -940,7 +1064,10 @@
       ],
       "icon": "../assets/images/items/催化魔方.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-04",
+        "magic-high-17"
+      ],
       "order": 28
     },
     {
@@ -959,7 +1086,10 @@
       ],
       "icon": "../assets/images/items/遺忘寶珠.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-07",
+        "magic-high-13"
+      ],
       "order": 29
     },
     {
@@ -979,7 +1109,11 @@
       ],
       "icon": "../assets/images/items/虛空紫晶.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-06",
+        "magic-high-08",
+        "magic-high-21"
+      ],
       "order": 30
     },
     {
@@ -998,7 +1132,11 @@
       ],
       "icon": "../assets/images/items/海克斯科技發電機.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-01",
+        "magic-high-09",
+        "magic-high-21"
+      ],
       "order": 31
     },
     {
@@ -1019,7 +1157,10 @@
       "passives": [],
       "icon": "../assets/images/items/禁忌之像.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-03",
+        "magic-high-24"
+      ],
       "order": 32
     },
     {
@@ -1038,7 +1179,11 @@
       ],
       "icon": "../assets/images/items/巴米灰燼.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-04",
+        "defense-high-06",
+        "defense-high-18"
+      ],
       "order": 33
     },
     {
@@ -1059,7 +1204,12 @@
       ],
       "icon": "../assets/images/items/亡靈斗篷.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-14",
+        "defense-high-15",
+        "defense-high-17",
+        "defense-high-21"
+      ],
       "order": 34
     },
     {
@@ -1080,7 +1230,10 @@
       "upgrades": [
         "physical-high-06",
         "physical-high-16",
-        "physical-high-40"
+        "physical-high-40",
+        "magic-high-15",
+        "defense-high-09",
+        "defense-high-19"
       ],
       "order": 35
     },
@@ -1101,7 +1254,10 @@
       ],
       "icon": "../assets/images/items/守望者鎧甲.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-07",
+        "defense-high-13"
+      ],
       "order": 36
     },
     {
@@ -1122,7 +1278,9 @@
       "upgrades": [
         "physical-high-10",
         "physical-high-41",
-        "physical-high-42"
+        "physical-high-42",
+        "defense-high-07",
+        "defense-high-22"
       ],
       "order": 37
     },
@@ -1142,7 +1300,9 @@
       ],
       "icon": "../assets/images/items/刺藤胸甲.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-08"
+      ],
       "order": 38
     },
     {
@@ -1160,7 +1320,10 @@
       "passives": [],
       "icon": "../assets/images/items/飛翼月甲.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-10",
+        "defense-high-14"
+      ],
       "order": 39
     },
     {
@@ -1198,7 +1361,11 @@
       "passives": [],
       "icon": "../assets/images/items/冰川護甲.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-11",
+        "defense-high-13",
+        "defense-high-20"
+      ],
       "order": 41
     },
     {
@@ -1217,7 +1384,18 @@
       ],
       "icon": "../assets/images/items/波濤鱗甲.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-01",
+        "defense-high-03",
+        "defense-high-05",
+        "defense-high-08",
+        "defense-high-10",
+        "defense-high-15",
+        "defense-high-16",
+        "defense-high-17",
+        "defense-high-18",
+        "defense-high-23"
+      ],
       "order": 42
     },
     {
@@ -1667,7 +1845,9 @@
       ],
       "icon": "../assets/images/items/探索者護腕.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "magic-high-02"
+      ],
       "order": 96
     },
     {
@@ -1798,11 +1978,38 @@
       "order": 205
     },
     {
+      "id": "physical-high-43",
+      "name": "實驗型海克斯板甲",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+400 最大生命",
+        "+35 物理攻擊",
+        "+30% 攻擊速度"
+      ],
+      "passives": [
+        "海克斯充能：移動與造成傷害可累積超載；施放終極技能後獲得攻速與跑速。",
+        "終極超載：獲得終極技能加速。"
+      ],
+      "icon": "../assets/images/items/high/狂霸血甲.webp",
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-03",
+        "intermediate-17"
+      ],
+      "upgrades": [],
+      "order": 242
+    },
+    {
       "id": "physical-high-06",
       "name": "狂霸血甲",
       "stage": "高階裝備",
       "categories": [
-        "物理"
+        "物理",
+        "防禦"
       ],
       "price": 3200,
       "stats": [
@@ -1813,7 +2020,7 @@
         "霸主：獲得相當於額外生命一定比例的物理攻擊。",
         "報復：生命較低時，物理攻擊進一步提高。"
       ],
-      "icon": "../assets/images/items/high/狂霸血甲.webp",
+      "icon": "../assets/images/items/high/鬼索的狂暴之刃.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-35",
@@ -1838,7 +2045,7 @@
         "適性：獲得物理攻擊或魔法攻擊（適性）。",
         "狂怒：普攻提供攻速層數；滿層後週期性額外觸發一次命中效果。"
       ],
-      "icon": "../assets/images/items/high/鬼索的狂暴之刃.webp",
+      "icon": "../assets/images/items/high/海妖殺手.webp",
       "buildFrom": [
         "intermediate-08",
         "intermediate-14",
@@ -1862,7 +2069,7 @@
       "passives": [
         "擊倒：每第三次普攻對同一目標造成額外真實傷害。"
       ],
-      "icon": "../assets/images/items/high/海妖殺手.webp",
+      "icon": "../assets/images/items/high/納什之牙.webp",
       "buildFrom": [
         "intermediate-05",
         "intermediate-08"
@@ -1886,7 +2093,7 @@
         "適性：獲得物理攻擊或魔法攻擊（適性）。",
         "咬擊：普攻命中造成額外魔法傷害，傷害受魔法攻擊加成。"
       ],
-      "icon": "../assets/images/items/high/納什之牙.webp",
+      "icon": "../assets/images/items/high/守護天使.webp",
       "buildFrom": [
         "intermediate-14",
         "intermediate-06"
@@ -1899,7 +2106,8 @@
       "name": "守護天使",
       "stage": "高階裝備",
       "categories": [
-        "物理"
+        "物理",
+        "防禦"
       ],
       "price": 3200,
       "stats": [
@@ -1909,7 +2117,7 @@
       "passives": [
         "復活：受到致命傷害後進入凝滯，隨後在原地復活並回復部分基礎生命與魔力（冷卻 210 秒）。"
       ],
-      "icon": "../assets/images/items/high/守護天使.webp",
+      "icon": "../assets/images/items/high/嗜血者.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-37"
@@ -1933,7 +2141,7 @@
         "+10% 全能吸血。",
         "血誓：造成傷害可獲得超額治療護盾；護盾在脫離戰鬥後逐漸衰減。"
       ],
-      "icon": "../assets/images/items/high/嗜血者.webp",
+      "icon": "../assets/images/items/high/殞落王者之劍.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-18"
@@ -1958,7 +2166,7 @@
         "殞落之擊：普攻造成目標目前生命一定比例的額外物理傷害，近戰效果較高。",
         "汲取：連續普攻敵方英雄 3 次會造成額外魔法傷害並偷取跑速。"
       ],
-      "icon": "../assets/images/items/high/殞落王者之劍.webp",
+      "icon": "../assets/images/items/high/芮蘭颶風箭.webp",
       "buildFrom": [
         "intermediate-02",
         "intermediate-08"
@@ -1981,7 +2189,7 @@
       "passives": [
         "風怒：普攻會向附近最多 2 名敵人發射弩箭，造成部分物理傷害並附帶命中效果；僅遠程英雄可購買。"
       ],
-      "icon": "../assets/images/items/high/芮蘭颶風箭.webp",
+      "icon": "../assets/images/items/high/妖夢鬼刀.webp",
       "buildFrom": [
         "intermediate-03",
         "intermediate-08"
@@ -2006,7 +2214,7 @@
         "動能：移動時累積動能，滿層後獲得額外跑速；普攻消耗動能造成額外魔法傷害。",
         "幽魂疾步：獲得脫離戰鬥跑速。"
       ],
-      "icon": "../assets/images/items/high/妖夢鬼刀.webp",
+      "icon": "../assets/images/items/high/暮色黑刃.webp",
       "buildFrom": [
         "intermediate-07",
         "intermediate-16"
@@ -2029,7 +2237,7 @@
       "passives": [
         "夜行者：脫離敵方視野後，對英雄的下一次普攻造成額外物理傷害並緩速；近戰緩速效果較高。"
       ],
-      "icon": "../assets/images/items/high/暮色黑刃.webp",
+      "icon": "../assets/images/items/high/史特拉克手套.webp",
       "buildFrom": [
         "intermediate-07",
         "intermediate-16"
@@ -2042,7 +2250,8 @@
       "name": "史特拉克手套",
       "stage": "高階裝備",
       "categories": [
-        "物理"
+        "物理",
+        "防禦"
       ],
       "price": 3200,
       "stats": [
@@ -2052,7 +2261,7 @@
         "重拳：獲得相當於基礎物理攻擊一定比例的額外物理攻擊。",
         "命脈：生命降至低點時獲得隨額外生命成長的護盾與韌性。"
       ],
-      "icon": "../assets/images/items/high/史特拉克手套.webp",
+      "icon": "../assets/images/items/high/無盡之刃.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-35"
@@ -2075,7 +2284,7 @@
       "passives": [
         "無限：提高暴擊傷害。"
       ],
-      "icon": "../assets/images/items/high/無盡之刃.webp",
+      "icon": "../assets/images/items/high/致死宣告.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-10"
@@ -2100,7 +2309,7 @@
         "最後耳語：獲得百分比物理穿透。",
         "膿毒：對敵方英雄造成物理傷害時施加 40% 重創，持續 3 秒。"
       ],
-      "icon": "../assets/images/items/high/致死宣告.webp",
+      "icon": "../assets/images/items/high/魔劍正宗.webp",
       "buildFrom": [
         "intermediate-12",
         "intermediate-11",
@@ -2128,7 +2337,7 @@
         "升級型態—終極魔劍：魔力補充累積至 700 後，魔劍正宗自動轉化為終極魔劍；終極魔劍不是可單獨購買的裝備。",
         "終極魔劍—衝擊：對英雄的普攻與技能命中會消耗目前魔力並造成額外物理傷害。"
       ],
-      "icon": "../assets/images/items/high/魔劍正宗.webp",
+      "icon": "../assets/images/items/high/manamune-fixed.webp",
       "buildFrom": [
         "basic-sapphire",
         "intermediate-16"
@@ -2167,7 +2376,7 @@
         "熱誠：普攻提供跑速，擊殺單位時提供更多跑速；遠程效果降低。",
         "咒刃：施放技能後，下一次普攻造成高額額外物理傷害。"
       ],
-      "icon": "../assets/images/items/high/三相之力.webp",
+      "icon": "../assets/images/items/high/trinity-force-fixed.webp",
       "buildFrom": [
         "intermediate-01",
         "intermediate-13",
@@ -2193,7 +2402,7 @@
         "命脈：受到魔法傷害而生命降至低點時，獲得魔法護盾。",
         "不屈：命脈觸發時獲得全能吸血，持續至脫離戰鬥。"
       ],
-      "icon": "../assets/images/items/high/魔提斯深淵.webp",
+      "icon": "../assets/images/items/high/maw-of-malmortius-fixed.webp",
       "buildFrom": [
         "intermediate-15",
         "intermediate-16"
@@ -2216,7 +2425,7 @@
       "passives": [
         "充能：移動與普攻累積充能；滿層普攻造成額外魔法傷害並彈射至附近敵人。"
       ],
-      "icon": "../assets/images/items/high/磁性雷射槍.webp",
+      "icon": "../assets/images/items/high/magnetic-blaster-fixed.webp",
       "buildFrom": [
         "intermediate-04",
         "intermediate-03"
@@ -2239,7 +2448,7 @@
       "passives": [
         "幽影華爾滋：普攻提供攻速與跑速層數；滿層時效果提高並可穿越單位。"
       ],
-      "icon": "../assets/images/items/high/幻影之舞.webp",
+      "icon": "../assets/images/items/high/phantom-dancer-fixed.webp",
       "buildFrom": [
         "intermediate-03",
         "intermediate-10"
@@ -2262,7 +2471,7 @@
       "passives": [
         "智慧之末：普攻命中造成額外魔法傷害；生命較低時同時回復生命。"
       ],
-      "icon": "../assets/images/items/high/智慧末刃.webp",
+      "icon": "../assets/images/items/high/wits-end-fixed.webp",
       "buildFrom": [
         "intermediate-08",
         "intermediate-15"
@@ -2287,7 +2496,7 @@
         "精華閃耀：傷害型主動技能造成額外物理傷害，並依暴擊率提高。",
         "魔力虹吸：普攻回復已消耗魔力。"
       ],
-      "icon": "../assets/images/items/high/奪魄之鐮.webp",
+      "icon": "../assets/images/items/high/essence-reaver-fixed.webp",
       "buildFrom": [
         "intermediate-16",
         "intermediate-10",
@@ -2408,7 +2617,7 @@
       "passives": [
         "盾之收割者：對敵方英雄造成傷害時降低其獲得的護盾，並對現有護盾造成額外削減；近戰效果較高。"
       ],
-      "icon": "../assets/images/items/high/巨蛇鋒牙.webp",
+      "icon": "../assets/images/items/high/serpents-fang-fixed.webp",
       "buildFrom": [
         "intermediate-07",
         "intermediate-16"
@@ -2481,7 +2690,7 @@
         "龍之力：終極技能以外的技能獲得額外技能加速。",
         "專注意志：技能命中英雄後獲得跑速。"
       ],
-      "icon": "../assets/images/items/high/精進之矛.webp",
+      "icon": "../assets/images/items/high/spear-of-shojin-fixed.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-16",
@@ -2505,7 +2714,7 @@
       "passives": [
         "暗影：普攻交替獲得光明與黑暗層數；滿層時獲得雙重穿透並強化命中效果。"
       ],
-      "icon": "../assets/images/items/high/臨界點.webp",
+      "icon": "../assets/images/items/high/lich-bane-fixed.webp",
       "buildFrom": [
         "intermediate-08",
         "intermediate-11",
@@ -2554,7 +2763,7 @@
         "輕擊：一段時間未普攻後，下次對英雄的普攻必定暴擊並回復生命。",
         "天際：過量治療會轉化為額外最大生命，效果有上限。"
       ],
-      "icon": "../assets/images/items/high/突破天際.webp",
+      "icon": "../assets/images/items/high/黑色切割者.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-16"
@@ -2579,7 +2788,7 @@
         "切割：對英雄造成物理傷害會削減其物理防禦，可疊加。",
         "狂怒：造成物理傷害時獲得跑速；擊殺時效果提高。"
       ],
-      "icon": "../assets/images/items/high/黑色切割者.webp",
+      "icon": "../assets/images/items/high/移魂奪舍.webp",
       "buildFrom": [
         "intermediate-13",
         "intermediate-16",
@@ -2603,7 +2812,7 @@
       "passives": [
         "靈魂轉移（主動）：與指定友方英雄交換位置；施放期間雙方獲得短暫保護（冷卻依版本規則）。"
       ],
-      "icon": "../assets/images/items/high/移魂奪舍.webp",
+      "icon": "../assets/images/items/high/泰坦九頭蛇.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-16"
@@ -2616,7 +2825,8 @@
       "name": "泰坦九頭蛇",
       "stage": "高階裝備",
       "categories": [
-        "物理"
+        "物理",
+        "防禦"
       ],
       "price": 3000,
       "stats": [
@@ -2627,7 +2837,7 @@
         "巨像：獲得相當於最大生命一定比例的額外物理攻擊。",
         "順劈：普攻對目標及其後方敵人造成額外物理傷害，近戰效果較高。"
       ],
-      "icon": "../assets/images/items/high/泰坦九頭蛇.webp",
+      "icon": "../assets/images/items/high/破船戰斧.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-35"
@@ -2652,7 +2862,7 @@
         "船長：附近沒有友方英雄時獲得額外雙防，並強化大型士兵。",
         "破城者：普攻對建築造成額外傷害。"
       ],
-      "icon": "../assets/images/items/high/破船戰斧.webp",
+      "icon": "../assets/images/items/high/死亡之舞.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-13",
@@ -2666,7 +2876,8 @@
       "name": "死亡之舞",
       "stage": "高階裝備",
       "categories": [
-        "物理"
+        "物理",
+        "防禦"
       ],
       "price": 3100,
       "stats": [
@@ -2678,7 +2889,7 @@
         "灼燒：所受的部分物理與魔法傷害改為在數秒內承受；遠程英雄轉換比例較低。",
         "蔑視：參與擊殺英雄時清除尚未承受的灼燒傷害並回復生命。"
       ],
-      "icon": "../assets/images/items/high/死亡之舞.webp",
+      "icon": "../assets/images/items/high/實驗型海克斯板甲.webp",
       "buildFrom": [
         "intermediate-16",
         "intermediate-37",
@@ -2688,30 +2899,1267 @@
       "order": 241
     },
     {
-      "id": "physical-high-43",
-      "name": "實驗型海克斯板甲",
+      "id": "magic-high-01",
+      "name": "海克斯科技火箭腰帶",
       "stage": "高階裝備",
       "categories": [
-        "物理"
+        "魔法"
+      ],
+      "price": 2700,
+      "stats": [
+        "+250 最大生命",
+        "+70 魔法攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "腰帶（主動）：向前衝刺並朝扇形範圍發射飛彈，造成魔法傷害；多枚飛彈命中同一目標時，後續飛彈傷害降低。"
+      ],
+      "icon": "../assets/images/items/high/magic-hextech-rocketbelt.png",
+      "buildFrom": [
+        "intermediate-31",
+        "basic-glowing-spark",
+        "basic-amp-tome",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 1
+    },
+    {
+      "id": "magic-high-02",
+      "name": "中婭沙漏",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法",
+        "防禦"
+      ],
+      "price": 3300,
+      "stats": [
+        "+40 物理防禦",
+        "+110 魔法攻擊"
+      ],
+      "passives": [
+        "凝滯（主動）：進入無敵且無法被指定狀態 2.5 秒，期間無法移動、普攻、施放技能或使用道具。"
+      ],
+      "icon": "../assets/images/items/high/magic-zhonyas-hourglass.png",
+      "buildFrom": [
+        "intermediate-seekers-armguard",
+        "intermediate-24"
+      ],
+      "upgrades": [],
+      "order": 2
+    },
+    {
+      "id": "magic-high-03",
+      "name": "贖罪神石",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2600,
+      "stats": [
+        "+150 最大生命",
+        "+50 魔法攻擊",
+        "+50% 魔力回復",
+        "+15 技能加速",
+        "+5% 治療和護盾量"
+      ],
+      "passives": [
+        "審判（主動）：指定一大片區域，延遲後治療友軍並對敵方英雄造成真實傷害；可在死亡時施放。"
+      ],
+      "icon": "../assets/images/items/high/magic-redemption.png",
+      "buildFrom": [
+        "intermediate-32",
+        "basic-mana-ring",
+        "basic-amp-tome",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 3
+    },
+    {
+      "id": "magic-high-04",
+      "name": "暮夜與黎明",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3100,
+      "stats": [
+        "+350 最大生命",
+        "+25% 攻擊速度",
+        "+70 魔法攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "魔法彎刀：使用技能後，下一次普攻造成額外魔法傷害並附加命中效果；對建築造成的傷害降低。"
+      ],
+      "icon": "../assets/images/items/high/magic-dusk-and-dawn.png",
+      "buildFrom": [
+        "intermediate-22",
+        "intermediate-28",
+        "basic-glowing-spark"
+      ],
+      "upgrades": [],
+      "order": 4
+    },
+    {
+      "id": "magic-high-05",
+      "name": "女妖面紗",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法",
+        "防禦"
+      ],
+      "price": 3000,
+      "stats": [
+        "+105 魔法攻擊",
+        "+40 魔法防禦"
+      ],
+      "passives": [
+        "無效：獲得一個法術護盾，可抵擋下一個敵方技能。"
+      ],
+      "icon": "../assets/images/items/high/magic-banshees-veil.png",
+      "buildFrom": [
+        "intermediate-19",
+        "intermediate-22"
+      ],
+      "upgrades": [],
+      "order": 5
+    },
+    {
+      "id": "magic-high-06",
+      "name": "死靈之花",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3000,
+      "stats": [
+        "+75 魔法攻擊",
+        "+30% 魔法穿透",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "一命換一命：遭受傷害的英雄在短時間內死亡時，治療新星會從其屍體擴散，為友軍恢復生命。"
+      ],
+      "icon": "../assets/images/items/high/magic-soul-flower.png",
+      "buildFrom": [
+        "intermediate-21",
+        "intermediate-30"
+      ],
+      "upgrades": [],
+      "order": 6
+    },
+    {
+      "id": "magic-high-07",
+      "name": "血書詛咒",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2900,
+      "stats": [
+        "+350 最大生命",
+        "+65 魔法攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "惡毒腐蝕：以技能或被動對英雄造成魔法傷害時，降低其魔法防禦，效果可疊加。"
+      ],
+      "icon": "../assets/images/items/high/magic-bloodletter-curse.png",
+      "buildFrom": [
+        "intermediate-21",
+        "intermediate-29"
+      ],
+      "upgrades": [],
+      "order": 7
+    },
+    {
+      "id": "magic-high-08",
+      "name": "虛空之杖",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3000,
+      "stats": [
+        "+95 魔法攻擊",
+        "+40% 魔法穿透"
+      ],
+      "passives": [],
+      "icon": "../assets/images/items/high/magic-void-staff.png",
+      "buildFrom": [
+        "intermediate-30",
+        "intermediate-26"
+      ],
+      "upgrades": [],
+      "order": 8
+    },
+    {
+      "id": "magic-high-09",
+      "name": "雷霆風暴",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2900,
+      "stats": [
+        "+90 魔法攻擊",
+        "+15 魔法穿透",
+        "+6% 跑速"
+      ],
+      "passives": [
+        "暴風突襲者：短時間內對英雄造成大量傷害時附加暴風並提升跑速；延遲後落下雷擊，擊殺時會引發範圍爆炸。"
+      ],
+      "icon": "../assets/images/items/high/magic-stormsurge.png",
+      "buildFrom": [
+        "intermediate-22",
+        "intermediate-31"
+      ],
+      "upgrades": [],
+      "order": 9
+    },
+    {
+      "id": "magic-high-10",
+      "name": "黑焰火炬",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2800,
+      "stats": [
+        "+80 魔法攻擊",
+        "+500 最大魔力",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "厄夜灼炎：技能傷害會燃燒敵軍，持續造成魔法傷害。",
+        "黑焰：每有一名敵方英雄或野怪遭受燃燒，便增加自身魔法攻擊。"
+      ],
+      "icon": "../assets/images/items/high/magic-blackfire-torch.png",
+      "buildFrom": [
+        "intermediate-20",
+        "intermediate-23"
+      ],
+      "upgrades": [],
+      "order": 10
+    },
+    {
+      "id": "magic-high-11",
+      "name": "鬼索的狂暴之刃",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3100,
+      "stats": [
+        "+30% 攻擊速度",
+        "+5% 跑速"
+      ],
+      "passives": [
+        "混沌：增加物理攻擊或魔法攻擊（適性）。",
+        "憤怒：普攻造成額外魔法傷害；暴擊率可轉換為額外魔法傷害。",
+        "沸騰打擊：普攻累積攻速，滿層後定期額外附加命中效果。"
+      ],
+      "icon": "../assets/images/items/high/magic-guinsoos-rageblade.png",
+      "buildFrom": [
+        "intermediate-14",
+        "intermediate-06",
+        "basic-dagger"
+      ],
+      "upgrades": [],
+      "order": 11
+    },
+    {
+      "id": "magic-high-12",
+      "name": "盧登回音",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2800,
+      "stats": [
+        "+100 魔法攻擊",
+        "+500 最大魔力",
+        "+10 技能加速"
+      ],
+      "passives": [
+        "回音：下一次傷害性技能或強化普攻，對目標及附近敵軍造成額外魔法傷害。"
+      ],
+      "icon": "../assets/images/items/high/magic-ludens-echo.png",
+      "buildFrom": [
+        "intermediate-23",
+        "intermediate-22"
+      ],
+      "upgrades": [],
+      "order": 12
+    },
+    {
+      "id": "magic-high-13",
+      "name": "黑魔禁書",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2650,
+      "stats": [
+        "+300 最大生命",
+        "+75 魔法攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "苦難：對敵方英雄造成魔法傷害時附加重創效果。"
+      ],
+      "icon": "../assets/images/items/high/magic-morellonomicon.png",
+      "buildFrom": [
+        "intermediate-29",
+        "basic-glowing-spark",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 13
+    },
+    {
+      "id": "magic-high-14",
+      "name": "死亡之帽",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3400,
+      "stats": [
+        "+130 魔法攻擊"
+      ],
+      "passives": [
+        "狂熱：增加 30% 魔法攻擊。"
+      ],
+      "icon": "../assets/images/items/high/magic-rabadons-deathcap.png",
+      "buildFrom": [
+        "intermediate-26",
+        "intermediate-26"
+      ],
+      "upgrades": [],
+      "order": 14
+    },
+    {
+      "id": "magic-high-15",
+      "name": "瑞萊的冰晶節杖",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2700,
+      "stats": [
+        "+350 最大生命",
+        "+65 魔法攻擊"
+      ],
+      "passives": [
+        "寒冰：傷害性技能和強化普攻可使敵軍緩速。"
+      ],
+      "icon": "../assets/images/items/high/magic-rylais-crystal-scepter.png",
+      "buildFrom": [
+        "intermediate-25",
+        "intermediate-35"
+      ],
+      "upgrades": [],
+      "order": 15
+    },
+    {
+      "id": "magic-high-16",
+      "name": "黎安卓的折磨",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3000,
+      "stats": [
+        "+300 最大生命",
+        "+70 魔法攻擊"
+      ],
+      "passives": [
+        "折磨：傷害性技能和強化普攻會燃燒敵軍，持續造成其最大生命百分比的魔法傷害。",
+        "狂亂：與敵方英雄戰鬥時逐步提升造成的傷害。"
+      ],
+      "icon": "../assets/images/items/high/magic-liandrys-torment.png",
+      "buildFrom": [
+        "intermediate-27",
+        "intermediate-25"
+      ],
+      "upgrades": [],
+      "order": 16
+    },
+    {
+      "id": "magic-high-17",
+      "name": "時光之杖",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2700,
+      "stats": [
+        "+350 最大生命",
+        "+50 魔法攻擊",
+        "+400 最大魔力"
+      ],
+      "passives": [
+        "永續：受到敵方英雄傷害後回復魔力；消耗魔力後回復生命。",
+        "熟練：隨時間獲得層數，逐步增加生命、魔力與魔法攻擊。"
+      ],
+      "icon": "../assets/images/items/high/magic-rod-of-ages.png",
+      "buildFrom": [
+        "intermediate-28",
+        "intermediate-25"
+      ],
+      "upgrades": [],
+      "order": 17
+    },
+    {
+      "id": "magic-high-18",
+      "name": "巫妖之禍",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2800,
+      "stats": [
+        "+80 魔法攻擊",
+        "+10 技能加速",
+        "+5% 跑速"
+      ],
+      "passives": [
+        "魔法彎刀：使用技能後，下一次普攻造成額外魔法傷害。"
+      ],
+      "icon": "../assets/images/items/high/magic-lich-bane.png",
+      "buildFrom": [
+        "intermediate-01",
+        "intermediate-22"
+      ],
+      "upgrades": [],
+      "order": 18
+    },
+    {
+      "id": "magic-high-19",
+      "name": "大天使之杖",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3000,
+      "stats": [
+        "+35 魔法攻擊",
+        "+500 最大魔力",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "敬畏：依最大魔力獲得魔法攻擊。",
+        "魔力補充：消耗魔力時增加最大魔力，疊滿後轉化為熾天使之擁。"
+      ],
+      "icon": "../assets/images/items/high/magic-archangels-staff.png",
+      "buildFrom": [
+        "intermediate-23",
+        "basic-sapphire"
+      ],
+      "upgrades": [],
+      "order": 19
+    },
+    {
+      "id": "magic-high-20",
+      "name": "納什之牙",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2800,
+      "stats": [
+        "+45% 攻擊速度",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "魔牙：增加物理攻擊或魔法攻擊（適性）。",
+        "啃咬：普攻命中時造成適性傷害。"
+      ],
+      "icon": "../assets/images/items/high/magic-nashors-tooth.png",
+      "buildFrom": [
+        "intermediate-14",
+        "intermediate-06"
+      ],
+      "upgrades": [],
+      "order": 20
+    },
+    {
+      "id": "magic-high-21",
+      "name": "無限寶珠",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3100,
+      "stats": [
+        "+110 魔法攻擊",
+        "+15 魔法穿透"
+      ],
+      "passives": [
+        "難逃死劫：技能和強化普攻對低生命敵軍造成暴擊，並造成額外傷害。"
+      ],
+      "icon": "../assets/images/items/high/magic-infinity-orb.png",
+      "buildFrom": [
+        "intermediate-30",
+        "intermediate-31"
+      ],
+      "upgrades": [],
+      "order": 21
+    },
+    {
+      "id": "magic-high-22",
+      "name": "星河馳騁",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3000,
+      "stats": [
+        "+300 最大生命",
+        "+70 魔法攻擊",
+        "+25 技能加速",
+        "+5% 跑速"
+      ],
+      "passives": [
+        "技能狂舞：對英雄造成魔法傷害或真實傷害時，短暫增加跑速。"
+      ],
+      "icon": "../assets/images/items/high/magic-cosmic-drive.png",
+      "buildFrom": [
+        "intermediate-22",
+        "intermediate-23",
+        "basic-glowing-spark"
+      ],
+      "upgrades": [],
+      "order": 22
+    },
+    {
+      "id": "magic-high-23",
+      "name": "峽谷製造者",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 3100,
+      "stats": [
+        "+350 最大生命",
+        "+70 魔法攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "虛空腐化：與敵方英雄戰鬥時持續增加傷害，達到最大強度時獲得全能吸血。",
+        "虛空注入：依額外生命增加魔法攻擊。"
+      ],
+      "icon": "../assets/images/items/high/magic-riftmaker.png",
+      "buildFrom": [
+        "intermediate-21",
+        "intermediate-27"
+      ],
+      "upgrades": [],
+      "order": 23
+    },
+    {
+      "id": "magic-high-24",
+      "name": "水仙三叉戟",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2600,
+      "stats": [
+        "+200 最大生命",
+        "+80 魔法攻擊",
+        "+10 技能加速"
+      ],
+      "passives": [
+        "致命武裝：對敵方英雄造成技能傷害時降低其護盾效果；範圍與單體技能的削減比例不同。"
+      ],
+      "icon": "../assets/images/items/high/magic-oceanids-trident.png",
+      "buildFrom": [
+        "intermediate-32",
+        "intermediate-22",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 24
+    },
+    {
+      "id": "magic-high-25",
+      "name": "視界專注",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2700,
+      "stats": [
+        "+80 魔法攻擊",
+        "+25 技能加速"
+      ],
+      "passives": [
+        "超能之火：從遠距離對敵方英雄造成技能傷害後揭露目標並增加其受到的傷害。",
+        "專注：觸發後揭露目標附近的敵方英雄。"
+      ],
+      "icon": "../assets/images/items/high/magic-horizon-focus.png",
+      "buildFrom": [
+        "intermediate-23",
+        "intermediate-23"
+      ],
+      "upgrades": [],
+      "order": 25
+    },
+    {
+      "id": "magic-high-26",
+      "name": "惡意",
+      "stage": "高階裝備",
+      "categories": [
+        "魔法"
+      ],
+      "price": 2700,
+      "stats": [
+        "+90 魔法攻擊",
+        "+500 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "輕蔑：大絕增加技能加速。",
+        "仇恨酸霧：以大絕對英雄造成傷害時點燃地面，持續造成魔法傷害並降低魔法防禦。"
+      ],
+      "icon": "../assets/images/items/high/magic-malignance.png",
+      "buildFrom": [
+        "intermediate-23",
+        "intermediate-22"
+      ],
+      "upgrades": [],
+      "order": 26
+    },
+    {
+      "id": "defense-high-01",
+      "name": "石像鬼磐核",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2900,
+      "stats": [
+        "+200 最大生命",
+        "+45 物理防禦",
+        "+45 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        "磐核（主動）：獲得可吸收傷害的護盾，並增加體型；護盾會在短時間內逐漸衰減。"
+      ],
+      "icon": "../assets/images/items/high/defense-gargoyle-enchant.png",
+      "buildFrom": [
+        "intermediate-42",
+        "intermediate-19",
+        "basic-ruby",
+        "basic-cloth-armor",
+        "basic-null-cloak"
+      ],
+      "upgrades": [],
+      "order": 1
+    },
+    {
+      "id": "defense-high-02",
+      "name": "深淵面具",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
       ],
       "price": 3000,
       "stats": [
         "+400 最大生命",
-        "+35 物理攻擊",
-        "+30% 攻擊速度"
+        "+55 魔法防禦",
+        "+10 技能加速"
       ],
       "passives": [
-        "海克斯充能：移動與造成傷害可累積超載；施放終極技能後獲得攻速與跑速。",
-        "終極超載：獲得終極技能加速。"
+        "毀滅：詛咒附近敵方英雄，削減其魔法防禦；附近每有一名被詛咒的敵方英雄，自身額外獲得魔法防禦。"
       ],
-      "icon": "../assets/images/items/high/實驗型海克斯板甲.webp",
+      "icon": "../assets/images/items/high/defense-abyssal-mask.png",
       "buildFrom": [
-        "intermediate-18",
-        "intermediate-03",
-        "intermediate-17"
+        "basic-glowing-spark",
+        "intermediate-19",
+        "basic-ruby",
+        "basic-null-cloak"
       ],
       "upgrades": [],
-      "order": 242
+      "order": 4
+    },
+    {
+      "id": "defense-high-03",
+      "name": "無盡絕望",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 3000,
+      "stats": [
+        "+200 最大生命",
+        "+45 物理防禦",
+        "+45 魔法防禦"
+      ],
+      "passives": [
+        "悲痛：與英雄戰鬥時，週期性對附近敵方英雄造成依自身最大生命計算的魔法傷害，並回復所造成傷害一定比例的生命。"
+      ],
+      "icon": "../assets/images/items/high/defense-unending-despair.png",
+      "buildFrom": [
+        "intermediate-42",
+        "intermediate-19",
+        "basic-ruby",
+        "basic-cloth-armor",
+        "basic-null-cloak"
+      ],
+      "upgrades": [],
+      "order": 5
+    },
+    {
+      "id": "defense-high-04",
+      "name": "虛偽光彩",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2800,
+      "stats": [
+        "+400 最大生命",
+        "+40 魔法防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "焚燒：交戰時持續對附近敵軍造成依額外生命計算的魔法傷害。",
+        "荒蕪：擊殺中立野怪或敵軍時，對其周圍造成魔法傷害。"
+      ],
+      "icon": "../assets/images/items/high/defense-searing-crown.png",
+      "buildFrom": [
+        "intermediate-33",
+        "intermediate-19",
+        "basic-ruby",
+        "basic-glowing-spark",
+        "basic-null-cloak"
+      ],
+      "upgrades": [],
+      "order": 6
+    },
+    {
+      "id": "defense-high-05",
+      "name": "騎士誓願",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2600,
+      "stats": [
+        "+400 最大生命",
+        "+100% 生命回復",
+        "+40 物理防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        "犧牲：與指定友軍互許；替其承受部分傷害，並依該友軍對敵方英雄造成的傷害回復生命。"
+      ],
+      "icon": "../assets/images/items/high/defense-knights-vow.png",
+      "buildFrom": [
+        "basic-glowing-spark",
+        "intermediate-42",
+        "basic-ruby",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 7
+    },
+    {
+      "id": "defense-high-06",
+      "name": "日炎聖盾",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2900,
+      "stats": [
+        "+425 最大生命",
+        "+20 物理防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "獻祭：交戰時持續灼燒附近敵軍，傷害可累積提高。",
+        "炎之觸：獻祭滿層時，普通攻擊會燃燒附近敵軍。"
+      ],
+      "icon": "../assets/images/items/high/defense-sunfire-aegis.png",
+      "buildFrom": [
+        "intermediate-33",
+        "basic-ruby",
+        "basic-cloth-armor",
+        "basic-glowing-spark"
+      ],
+      "upgrades": [],
+      "order": 11
+    },
+    {
+      "id": "defense-high-07",
+      "name": "蘭頓之兆",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2800,
+      "stats": [
+        "+400 最大生命",
+        "+75 物理防禦"
+      ],
+      "passives": [
+        "逆流：受到物理暴擊時獲得逆流層數，提供跑速與緩速抗性。",
+        "抗壓：降低暴擊對你造成的物理傷害。"
+      ],
+      "icon": "../assets/images/items/high/defense-randuins-omen.png",
+      "buildFrom": [
+        "intermediate-36",
+        "intermediate-37",
+        "basic-ruby",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 12
+    },
+    {
+      "id": "defense-high-08",
+      "name": "荊棘之甲",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2700,
+      "stats": [
+        "+200 最大生命",
+        "+75 物理防禦"
+      ],
+      "passives": [
+        "刺甲：遭普通攻擊命中時反彈魔法傷害。",
+        "交纏：敵方英雄普通攻擊命中或受到你傷害時，附加重創效果。"
+      ],
+      "icon": "../assets/images/items/high/defense-thornmail.png",
+      "buildFrom": [
+        "intermediate-42",
+        "intermediate-38",
+        "basic-cloth-armor",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 13
+    },
+    {
+      "id": "defense-high-09",
+      "name": "好戰者鎧甲",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2850,
+      "stats": [
+        "+700 最大生命",
+        "+100% 生命回復",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "恩寵：所有針對自身的治療與護盾效果提升。",
+        "好戰之心：擁有足夠額外生命且數秒未受傷害時，每秒回復最大生命。"
+      ],
+      "icon": "../assets/images/items/high/defense-warmogs-armor.png",
+      "buildFrom": [
+        "basic-glowing-spark",
+        "intermediate-35",
+        "basic-ruby",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 14
+    },
+    {
+      "id": "defense-high-10",
+      "name": "死者肩甲",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2800,
+      "stats": [
+        "+350 最大生命",
+        "+70 物理防禦",
+        "+5% 跑速"
+      ],
+      "passives": [
+        "衝動：移動時累加衝動層數，滿層提供額外跑速。",
+        "大刀一砍：普通攻擊消耗衝動，造成依層數增加的額外魔法傷害。"
+      ],
+      "icon": "../assets/images/items/high/defense-dead-mans-plate.png",
+      "buildFrom": [
+        "intermediate-39",
+        "intermediate-42",
+        "basic-ruby",
+        "basic-cloth-armor",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 15
+    },
+    {
+      "id": "defense-high-11",
+      "name": "寒冰霸拳",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 3100,
+      "stats": [
+        "+250 最大生命",
+        "+50 物理防禦",
+        "+250 最大魔力",
+        "+30 技能加速"
+      ],
+      "passives": [
+        "魔法彎刀：施放技能後的下一次普通攻擊造成額外物理傷害，並形成霜凍緩速領域。"
+      ],
+      "icon": "../assets/images/items/high/defense-iceborn-gauntlet.png",
+      "buildFrom": [
+        "intermediate-01",
+        "basic-glowing-spark",
+        "intermediate-41",
+        "basic-mana-ring",
+        "basic-ruby",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 16
+    },
+    {
+      "id": "defense-high-12",
+      "name": "冬之降臨",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2600,
+      "stats": [
+        "+350 最大生命",
+        "+500 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "威嚇：依最大魔力獲得額外生命並返還部分已消耗魔力。",
+        "魔力補充：普通攻擊、消耗魔力及承受特定傷害時增加最大魔力；達到上限後進化為芬布爾之冬。"
+      ],
+      "icon": "../assets/images/items/high/defense-winters-approach.png",
+      "buildFrom": [
+        "basic-sapphire",
+        "basic-glowing-spark",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 17,
+      "upgradeForm": {
+        "name": "芬布爾之冬",
+        "icon": "../assets/images/items/high/defense-fimbulwinter.png",
+        "stats": [
+          "+350 最大生命",
+          "+1200 最大魔力",
+          "+15 技能加速"
+        ],
+        "passives": [
+          "威嚇：依最大魔力獲得額外生命。",
+          "冰結巨像：對敵方英雄造成硬控或緩速時消耗魔力並獲得護盾。"
+        ]
+      }
+    },
+    {
+      "id": "defense-high-13",
+      "name": "冰霜之心",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2650,
+      "stats": [
+        "+80 物理防禦",
+        "+250 最大魔力",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "冬之輕撫：造成或受到普通攻擊與魔法傷害時，對敵方英雄施加冷顫，降低其攻速，可堆疊。"
+      ],
+      "icon": "../assets/images/items/high/defense-frozen-heart.png",
+      "buildFrom": [
+        "intermediate-41",
+        "intermediate-36",
+        "basic-cloth-armor",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 18
+    },
+    {
+      "id": "defense-high-14",
+      "name": "自然之力",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2750,
+      "stats": [
+        "+350 最大生命",
+        "+60 魔法防禦",
+        "+5% 跑速"
+      ],
+      "passives": [
+        "吸收：承受敵方英雄技能傷害時獲得堅定層數；滿層提高跑速並降低所受魔法傷害。"
+      ],
+      "icon": "../assets/images/items/high/defense-force-of-nature.png",
+      "buildFrom": [
+        "intermediate-34",
+        "intermediate-39",
+        "basic-null-cloak",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 19
+    },
+    {
+      "id": "defense-high-15",
+      "name": "黎明法衣",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2700,
+      "stats": [
+        "+250 最大生命",
+        "+50 物理防禦",
+        "+30 魔法防禦"
+      ],
+      "passives": [
+        "黎明使者：靠近敵方英雄且造成或受到硬控時，揭露附近敵方英雄並造成依額外生命計算的魔法傷害，同時獲得物防與魔防。"
+      ],
+      "icon": "../assets/images/items/high/defense-dawnshroud.png",
+      "buildFrom": [
+        "intermediate-34",
+        "intermediate-42",
+        "basic-null-cloak",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 20
+    },
+    {
+      "id": "defense-high-16",
+      "name": "雅瑪蘭守護像",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 3100,
+      "stats": [
+        "+60 物理防禦",
+        "+60 魔法防禦"
+      ],
+      "passives": [
+        "堅毅：與敵方英雄戰鬥時累積堅毅；滿層時增加體型、韌性、物理防禦與魔法防禦，直到脫離戰鬥。"
+      ],
+      "icon": "../assets/images/items/high/defense-amaranths-twinguard.png",
+      "buildFrom": [
+        "intermediate-42",
+        "intermediate-19",
+        "basic-null-cloak",
+        "basic-cloth-armor",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 21
+    },
+    {
+      "id": "defense-high-17",
+      "name": "午時斗篷",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2900,
+      "stats": [
+        "+200 最大生命",
+        "+40 物理防禦",
+        "+40 魔法防禦"
+      ],
+      "passives": [
+        "命脈：生命降至一定比例以下時，短時間獲得大量額外最大生命、緩速抗性與跑速。"
+      ],
+      "icon": "../assets/images/items/high/defense-mantle-of-the-twelfth-hour.png",
+      "buildFrom": [
+        "intermediate-42",
+        "intermediate-34",
+        "basic-null-cloak",
+        "basic-cloth-armor",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 22
+    },
+    {
+      "id": "defense-high-18",
+      "name": "熾灼之冠",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2700,
+      "stats": [
+        "+300 最大生命",
+        "+50 物理防禦"
+      ],
+      "passives": [
+        "熾熱之觸：普通攻擊或技能造成傷害後，燃燒目標並持續造成依目標最大生命計算的魔法傷害。"
+      ],
+      "icon": "../assets/images/items/high/defense-searing-crown-2.png",
+      "buildFrom": [
+        "intermediate-33",
+        "intermediate-42",
+        "basic-ruby",
+        "basic-glowing-spark",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 23
+    },
+    {
+      "id": "defense-high-19",
+      "name": "雄心之鋼",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2800,
+      "stats": [
+        "+700 最大生命",
+        "+150% 生命回復",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "龐然巨噬：靠近敵方英雄後充能，充能普通攻擊造成依自身最大生命計算的額外物理傷害，並永久提高最大生命。"
+      ],
+      "icon": "../assets/images/items/high/defense-heartsteel.png",
+      "buildFrom": [
+        "basic-glowing-spark",
+        "intermediate-35",
+        "basic-ruby",
+        "basic-ruby",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 24
+    },
+    {
+      "id": "defense-high-20",
+      "name": "錫柯的聚合之力",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2700,
+      "stats": [
+        "+350 最大生命",
+        "+40 物理防禦",
+        "+150 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "號角：施放大絕時產生冰霜風暴，對附近敵軍造成傷害與緩速，並為身後友軍留下加速軌跡。"
+      ],
+      "icon": "../assets/images/items/high/defense-zekes-convergence.png",
+      "buildFrom": [
+        "basic-glowing-spark",
+        "intermediate-41",
+        "basic-ruby",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 26
+    },
+    {
+      "id": "defense-high-21",
+      "name": "凱尼克欺瞞者",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2800,
+      "stats": [
+        "+350 最大生命",
+        "+100% 生命回復",
+        "+75 魔法防禦"
+      ],
+      "passives": [
+        "法師殺手：一段時間未受到魔法傷害時，獲得可吸收依最大生命計算魔法傷害的護盾。"
+      ],
+      "icon": "../assets/images/items/high/defense-kaenic-rookern.png",
+      "buildFrom": [
+        "intermediate-34",
+        "intermediate-19",
+        "basic-null-cloak",
+        "basic-null-cloak"
+      ],
+      "upgrades": [],
+      "order": 27
+    },
+    {
+      "id": "defense-high-22",
+      "name": "約德爾陷阱",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2600,
+      "stats": [
+        "+300 最大生命",
+        "+40 物理防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "推薦配合位移技能使用；觸發後可限制或干擾附近敵軍。"
+      ],
+      "icon": "../assets/images/items/high/defense-yordle-trap.png",
+      "buildFrom": [
+        "intermediate-17",
+        "intermediate-37",
+        "basic-ruby",
+        "basic-cloth-armor"
+      ],
+      "upgrades": [],
+      "order": 28
+    },
+    {
+      "id": "defense-high-23",
+      "name": "聖光美德",
+      "stage": "高階裝備",
+      "categories": [
+        "防禦"
+      ],
+      "price": 2850,
+      "stats": [
+        "+350 最大生命",
+        "+30 物理防禦",
+        "+30 魔法防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        "聖光：施放大絕時強化自身並治療附近友軍。"
+      ],
+      "icon": "../assets/images/items/high/defense-radiant-virtue.png",
+      "buildFrom": [
+        "intermediate-17",
+        "intermediate-42",
+        "intermediate-19"
+      ],
+      "upgrades": [],
+      "order": 30
     }
   ]
 }
