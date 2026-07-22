@@ -1798,32 +1798,6 @@
       "order": 205
     },
     {
-      "id": "physical-high-43",
-      "name": "實驗型海克斯板甲",
-      "stage": "高階裝備",
-      "categories": [
-        "物理"
-      ],
-      "price": 3000,
-      "stats": [
-        "+400 最大生命",
-        "+35 物理攻擊",
-        "+30% 攻擊速度"
-      ],
-      "passives": [
-        "海克斯充能：移動與造成傷害可累積超載；施放終極技能後獲得攻速與跑速。",
-        "終極超載：獲得終極技能加速。"
-      ],
-      "icon": "../assets/images/items/high/狂霸血甲.webp",
-      "buildFrom": [
-        "intermediate-18",
-        "intermediate-03",
-        "intermediate-17"
-      ],
-      "upgrades": [],
-      "order": 242
-    },
-    {
       "id": "physical-high-06",
       "name": "狂霸血甲",
       "stage": "高階裝備",
@@ -1839,7 +1813,7 @@
         "霸主：獲得相當於額外生命一定比例的物理攻擊。",
         "報復：生命較低時，物理攻擊進一步提高。"
       ],
-      "icon": "../assets/images/items/high/鬼索的狂暴之刃.webp",
+      "icon": "../assets/images/items/high/狂霸血甲.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-35",
@@ -1864,7 +1838,7 @@
         "適性：獲得物理攻擊或魔法攻擊（適性）。",
         "狂怒：普攻提供攻速層數；滿層後週期性額外觸發一次命中效果。"
       ],
-      "icon": "../assets/images/items/high/海妖殺手.webp",
+      "icon": "../assets/images/items/high/鬼索的狂暴之刃.webp",
       "buildFrom": [
         "intermediate-08",
         "intermediate-14",
@@ -1888,7 +1862,7 @@
       "passives": [
         "擊倒：每第三次普攻對同一目標造成額外真實傷害。"
       ],
-      "icon": "../assets/images/items/high/納什之牙.webp",
+      "icon": "../assets/images/items/high/海妖殺手.webp",
       "buildFrom": [
         "intermediate-05",
         "intermediate-08"
@@ -1912,7 +1886,7 @@
         "適性：獲得物理攻擊或魔法攻擊（適性）。",
         "咬擊：普攻命中造成額外魔法傷害，傷害受魔法攻擊加成。"
       ],
-      "icon": "../assets/images/items/high/守護天使.webp",
+      "icon": "../assets/images/items/high/納什之牙.webp",
       "buildFrom": [
         "intermediate-14",
         "intermediate-06"
@@ -1935,7 +1909,7 @@
       "passives": [
         "復活：受到致命傷害後進入凝滯，隨後在原地復活並回復部分基礎生命與魔力（冷卻 210 秒）。"
       ],
-      "icon": "../assets/images/items/high/嗜血者.webp",
+      "icon": "../assets/images/items/high/守護天使.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-37"
@@ -1959,7 +1933,7 @@
         "+10% 全能吸血。",
         "血誓：造成傷害可獲得超額治療護盾；護盾在脫離戰鬥後逐漸衰減。"
       ],
-      "icon": "../assets/images/items/high/殞落王者之劍.webp",
+      "icon": "../assets/images/items/high/嗜血者.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-18"
@@ -1984,7 +1958,7 @@
         "殞落之擊：普攻造成目標目前生命一定比例的額外物理傷害，近戰效果較高。",
         "汲取：連續普攻敵方英雄 3 次會造成額外魔法傷害並偷取跑速。"
       ],
-      "icon": "../assets/images/items/high/芮蘭颶風箭.webp",
+      "icon": "../assets/images/items/high/殞落王者之劍.webp",
       "buildFrom": [
         "intermediate-02",
         "intermediate-08"
@@ -2007,7 +1981,7 @@
       "passives": [
         "風怒：普攻會向附近最多 2 名敵人發射弩箭，造成部分物理傷害並附帶命中效果；僅遠程英雄可購買。"
       ],
-      "icon": "../assets/images/items/high/妖夢鬼刀.webp",
+      "icon": "../assets/images/items/high/芮蘭颶風箭.webp",
       "buildFrom": [
         "intermediate-03",
         "intermediate-08"
@@ -2032,7 +2006,7 @@
         "動能：移動時累積動能，滿層後獲得額外跑速；普攻消耗動能造成額外魔法傷害。",
         "幽魂疾步：獲得脫離戰鬥跑速。"
       ],
-      "icon": "../assets/images/items/high/暮色黑刃.webp",
+      "icon": "../assets/images/items/high/妖夢鬼刀.webp",
       "buildFrom": [
         "intermediate-07",
         "intermediate-16"
@@ -2055,7 +2029,7 @@
       "passives": [
         "夜行者：脫離敵方視野後，對英雄的下一次普攻造成額外物理傷害並緩速；近戰緩速效果較高。"
       ],
-      "icon": "../assets/images/items/high/史特拉克手套.webp",
+      "icon": "../assets/images/items/high/暮色黑刃.webp",
       "buildFrom": [
         "intermediate-07",
         "intermediate-16"
@@ -2078,7 +2052,7 @@
         "重拳：獲得相當於基礎物理攻擊一定比例的額外物理攻擊。",
         "命脈：生命降至低點時獲得隨額外生命成長的護盾與韌性。"
       ],
-      "icon": "../assets/images/items/high/無盡之刃.webp",
+      "icon": "../assets/images/items/high/史特拉克手套.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-35"
@@ -2101,7 +2075,7 @@
       "passives": [
         "無限：提高暴擊傷害。"
       ],
-      "icon": "../assets/images/items/high/致死宣告.webp",
+      "icon": "../assets/images/items/high/無盡之刃.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-10"
@@ -2126,7 +2100,7 @@
         "最後耳語：獲得百分比物理穿透。",
         "膿毒：對敵方英雄造成物理傷害時施加 40% 重創，持續 3 秒。"
       ],
-      "icon": "../assets/images/items/high/魔劍正宗.webp",
+      "icon": "../assets/images/items/high/致死宣告.webp",
       "buildFrom": [
         "intermediate-12",
         "intermediate-11",
@@ -2154,7 +2128,7 @@
         "升級型態—終極魔劍：魔力補充累積至 700 後，魔劍正宗自動轉化為終極魔劍；終極魔劍不是可單獨購買的裝備。",
         "終極魔劍—衝擊：對英雄的普攻與技能命中會消耗目前魔力並造成額外物理傷害。"
       ],
-      "icon": "../assets/images/items/high/manamune-fixed.webp",
+      "icon": "../assets/images/items/high/魔劍正宗.webp",
       "buildFrom": [
         "basic-sapphire",
         "intermediate-16"
@@ -2193,7 +2167,7 @@
         "熱誠：普攻提供跑速，擊殺單位時提供更多跑速；遠程效果降低。",
         "咒刃：施放技能後，下一次普攻造成高額額外物理傷害。"
       ],
-      "icon": "../assets/images/items/high/trinity-force-fixed.webp",
+      "icon": "../assets/images/items/high/三相之力.webp",
       "buildFrom": [
         "intermediate-01",
         "intermediate-13",
@@ -2219,7 +2193,7 @@
         "命脈：受到魔法傷害而生命降至低點時，獲得魔法護盾。",
         "不屈：命脈觸發時獲得全能吸血，持續至脫離戰鬥。"
       ],
-      "icon": "../assets/images/items/high/maw-of-malmortius-fixed.webp",
+      "icon": "../assets/images/items/high/魔提斯深淵.webp",
       "buildFrom": [
         "intermediate-15",
         "intermediate-16"
@@ -2242,7 +2216,7 @@
       "passives": [
         "充能：移動與普攻累積充能；滿層普攻造成額外魔法傷害並彈射至附近敵人。"
       ],
-      "icon": "../assets/images/items/high/magnetic-blaster-fixed.webp",
+      "icon": "../assets/images/items/high/磁性雷射槍.webp",
       "buildFrom": [
         "intermediate-04",
         "intermediate-03"
@@ -2265,7 +2239,7 @@
       "passives": [
         "幽影華爾滋：普攻提供攻速與跑速層數；滿層時效果提高並可穿越單位。"
       ],
-      "icon": "../assets/images/items/high/phantom-dancer-fixed.webp",
+      "icon": "../assets/images/items/high/幻影之舞.webp",
       "buildFrom": [
         "intermediate-03",
         "intermediate-10"
@@ -2288,7 +2262,7 @@
       "passives": [
         "智慧之末：普攻命中造成額外魔法傷害；生命較低時同時回復生命。"
       ],
-      "icon": "../assets/images/items/high/wits-end-fixed.webp",
+      "icon": "../assets/images/items/high/智慧末刃.webp",
       "buildFrom": [
         "intermediate-08",
         "intermediate-15"
@@ -2313,7 +2287,7 @@
         "精華閃耀：傷害型主動技能造成額外物理傷害，並依暴擊率提高。",
         "魔力虹吸：普攻回復已消耗魔力。"
       ],
-      "icon": "../assets/images/items/high/essence-reaver-fixed.webp",
+      "icon": "../assets/images/items/high/奪魄之鐮.webp",
       "buildFrom": [
         "intermediate-16",
         "intermediate-10",
@@ -2434,7 +2408,7 @@
       "passives": [
         "盾之收割者：對敵方英雄造成傷害時降低其獲得的護盾，並對現有護盾造成額外削減；近戰效果較高。"
       ],
-      "icon": "../assets/images/items/high/serpents-fang-fixed.webp",
+      "icon": "../assets/images/items/high/巨蛇鋒牙.webp",
       "buildFrom": [
         "intermediate-07",
         "intermediate-16"
@@ -2507,7 +2481,7 @@
         "龍之力：終極技能以外的技能獲得額外技能加速。",
         "專注意志：技能命中英雄後獲得跑速。"
       ],
-      "icon": "../assets/images/items/high/spear-of-shojin-fixed.webp",
+      "icon": "../assets/images/items/high/精進之矛.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-16",
@@ -2531,7 +2505,7 @@
       "passives": [
         "暗影：普攻交替獲得光明與黑暗層數；滿層時獲得雙重穿透並強化命中效果。"
       ],
-      "icon": "../assets/images/items/high/lich-bane-fixed.webp",
+      "icon": "../assets/images/items/high/臨界點.webp",
       "buildFrom": [
         "intermediate-08",
         "intermediate-11",
@@ -2580,7 +2554,7 @@
         "輕擊：一段時間未普攻後，下次對英雄的普攻必定暴擊並回復生命。",
         "天際：過量治療會轉化為額外最大生命，效果有上限。"
       ],
-      "icon": "../assets/images/items/high/黑色切割者.webp",
+      "icon": "../assets/images/items/high/突破天際.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-16"
@@ -2605,7 +2579,7 @@
         "切割：對英雄造成物理傷害會削減其物理防禦，可疊加。",
         "狂怒：造成物理傷害時獲得跑速；擊殺時效果提高。"
       ],
-      "icon": "../assets/images/items/high/移魂奪舍.webp",
+      "icon": "../assets/images/items/high/黑色切割者.webp",
       "buildFrom": [
         "intermediate-13",
         "intermediate-16",
@@ -2629,7 +2603,7 @@
       "passives": [
         "靈魂轉移（主動）：與指定友方英雄交換位置；施放期間雙方獲得短暫保護（冷卻依版本規則）。"
       ],
-      "icon": "../assets/images/items/high/泰坦九頭蛇.webp",
+      "icon": "../assets/images/items/high/移魂奪舍.webp",
       "buildFrom": [
         "intermediate-09",
         "intermediate-16"
@@ -2653,7 +2627,7 @@
         "巨像：獲得相當於最大生命一定比例的額外物理攻擊。",
         "順劈：普攻對目標及其後方敵人造成額外物理傷害，近戰效果較高。"
       ],
-      "icon": "../assets/images/items/high/破船戰斧.webp",
+      "icon": "../assets/images/items/high/泰坦九頭蛇.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-35"
@@ -2678,7 +2652,7 @@
         "船長：附近沒有友方英雄時獲得額外雙防，並強化大型士兵。",
         "破城者：普攻對建築造成額外傷害。"
       ],
-      "icon": "../assets/images/items/high/死亡之舞.webp",
+      "icon": "../assets/images/items/high/破船戰斧.webp",
       "buildFrom": [
         "intermediate-18",
         "intermediate-13",
@@ -2704,7 +2678,7 @@
         "灼燒：所受的部分物理與魔法傷害改為在數秒內承受；遠程英雄轉換比例較低。",
         "蔑視：參與擊殺英雄時清除尚未承受的灼燒傷害並回復生命。"
       ],
-      "icon": "../assets/images/items/high/實驗型海克斯板甲.webp",
+      "icon": "../assets/images/items/high/死亡之舞.webp",
       "buildFrom": [
         "intermediate-16",
         "intermediate-37",
@@ -2712,6 +2686,32 @@
       ],
       "upgrades": [],
       "order": 241
+    },
+    {
+      "id": "physical-high-43",
+      "name": "實驗型海克斯板甲",
+      "stage": "高階裝備",
+      "categories": [
+        "物理"
+      ],
+      "price": 3000,
+      "stats": [
+        "+400 最大生命",
+        "+35 物理攻擊",
+        "+30% 攻擊速度"
+      ],
+      "passives": [
+        "海克斯充能：移動與造成傷害可累積超載；施放終極技能後獲得攻速與跑速。",
+        "終極超載：獲得終極技能加速。"
+      ],
+      "icon": "../assets/images/items/high/實驗型海克斯板甲.webp",
+      "buildFrom": [
+        "intermediate-18",
+        "intermediate-03",
+        "intermediate-17"
+      ],
+      "upgrades": [],
+      "order": 242
     }
   ]
 }
