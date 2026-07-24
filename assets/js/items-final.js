@@ -82,7 +82,7 @@ function render(){
   const q=document.querySelector("#item-search").value.trim().toLowerCase();
   const rows=DATA.items.filter(x=>categoriesOf(x).includes(category))
     .filter(x=>(x.name+(x.stats||[]).join("")+(x.passives||[]).join("")).toLowerCase().includes(q))
-    .sort((a,b)=>(a.order||999)-(b.order||999));
+    .sort((a,b)=>category==="輔助"?((a.supportOrder||999)-(b.supportOrder||999)):((a.order||999)-(b.order||999)));
   const target=document.querySelector("#item-content");
   if(!rows.length){target.innerHTML='<div class="empty">此分類目前尚未整理資料。</div>';return;}
   const stages=[...new Set(rows.map(stageOf))].sort((a,b)=>stageOrder.indexOf(a)-stageOrder.indexOf(b));

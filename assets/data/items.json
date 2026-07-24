@@ -1,6 +1,6 @@
 {
-  "version": "7.2a-defense-high",
-  "notes": "新增防禦高階裝備 30 件分類（含既有跨分類裝備）與官方圖示；冬之降臨保留芬布爾之冬進化型態。",
+  "version": "7.2a-support-high",
+  "notes": "校正輔助高階裝備共 17 件：新增 7 件輔助專屬裝備，10 件沿用物理／魔法／防禦既有資料並加入輔助分類；補齊官方圖示、屬性、效果、合成與輔助分類排序。",
   "items": [
     {
       "id": "basic-sapphire",
@@ -2953,7 +2953,8 @@
       "name": "贖罪神石",
       "stage": "高階裝備",
       "categories": [
-        "魔法"
+        "魔法",
+        "輔助"
       ],
       "price": 2600,
       "stats": [
@@ -2974,7 +2975,8 @@
         "basic-ruby"
       ],
       "upgrades": [],
-      "order": 3
+      "order": 3,
+      "supportOrder": 4
     },
     {
       "id": "magic-high-04",
@@ -3031,7 +3033,8 @@
       "name": "死靈之花",
       "stage": "高階裝備",
       "categories": [
-        "魔法"
+        "魔法",
+        "輔助"
       ],
       "price": 3000,
       "stats": [
@@ -3048,7 +3051,8 @@
         "intermediate-30"
       ],
       "upgrades": [],
-      "order": 6
+      "order": 6,
+      "supportOrder": 5
     },
     {
       "id": "magic-high-07",
@@ -3199,7 +3203,8 @@
       "name": "黑魔禁書",
       "stage": "高階裝備",
       "categories": [
-        "魔法"
+        "魔法",
+        "輔助"
       ],
       "price": 2650,
       "stats": [
@@ -3217,7 +3222,8 @@
         "basic-ruby"
       ],
       "upgrades": [],
-      "order": 13
+      "order": 13,
+      "supportOrder": 7
     },
     {
       "id": "magic-high-14",
@@ -3465,7 +3471,8 @@
       "name": "水仙三叉戟",
       "stage": "高階裝備",
       "categories": [
-        "魔法"
+        "魔法",
+        "輔助"
       ],
       "price": 2600,
       "stats": [
@@ -3483,7 +3490,8 @@
         "basic-ruby"
       ],
       "upgrades": [],
-      "order": 24
+      "order": 24,
+      "supportOrder": 12
     },
     {
       "id": "magic-high-25",
@@ -3648,7 +3656,8 @@
       "name": "騎士誓願",
       "stage": "高階裝備",
       "categories": [
-        "防禦"
+        "防禦",
+        "輔助"
       ],
       "price": 2600,
       "stats": [
@@ -3668,7 +3677,8 @@
         "basic-cloth-armor"
       ],
       "upgrades": [],
-      "order": 7
+      "order": 7,
+      "supportOrder": 6
     },
     {
       "id": "defense-high-06",
@@ -3877,7 +3887,8 @@
       "name": "冰霜之心",
       "stage": "高階裝備",
       "categories": [
-        "防禦"
+        "防禦",
+        "輔助"
       ],
       "price": 2650,
       "stats": [
@@ -3896,7 +3907,8 @@
         "basic-cloth-armor"
       ],
       "upgrades": [],
-      "order": 18
+      "order": 18,
+      "supportOrder": 13
     },
     {
       "id": "defense-high-14",
@@ -3929,7 +3941,8 @@
       "name": "黎明法衣",
       "stage": "高階裝備",
       "categories": [
-        "防禦"
+        "防禦",
+        "輔助"
       ],
       "price": 2700,
       "stats": [
@@ -3948,7 +3961,8 @@
         "basic-cloth-armor"
       ],
       "upgrades": [],
-      "order": 20
+      "order": 20,
+      "supportOrder": 14
     },
     {
       "id": "defense-high-16",
@@ -4061,7 +4075,8 @@
       "name": "錫柯的聚合之力",
       "stage": "高階裝備",
       "categories": [
-        "防禦"
+        "防禦",
+        "輔助"
       ],
       "price": 2700,
       "stats": [
@@ -4081,7 +4096,8 @@
         "basic-cloth-armor"
       ],
       "upgrades": [],
-      "order": 26
+      "order": 26,
+      "supportOrder": 15
     },
     {
       "id": "defense-high-21",
@@ -4114,7 +4130,8 @@
       "name": "約德爾陷阱",
       "stage": "高階裝備",
       "categories": [
-        "防禦"
+        "防禦",
+        "輔助"
       ],
       "price": 2600,
       "stats": [
@@ -4133,14 +4150,16 @@
         "basic-cloth-armor"
       ],
       "upgrades": [],
-      "order": 28
+      "order": 28,
+      "supportOrder": 16
     },
     {
       "id": "defense-high-23",
       "name": "聖光美德",
       "stage": "高階裝備",
       "categories": [
-        "防禦"
+        "防禦",
+        "輔助"
       ],
       "price": 2850,
       "stats": [
@@ -4159,7 +4178,211 @@
         "intermediate-19"
       ],
       "upgrades": [],
-      "order": 30
+      "order": 30,
+      "supportOrder": 17
+    },
+    {
+      "id": "support-high-01",
+      "name": "米凱的祝福",
+      "stage": "高階裝備",
+      "categories": [
+        "輔助"
+      ],
+      "price": 2500,
+      "stats": [
+        "+300 最大生命",
+        "+50% 魔力回復",
+        "+15 技能加速",
+        "+6% 治療和護盾量"
+      ],
+      "passives": [
+        "淨化（主動）：移除一名友方英雄身上所有控場減益效果（不包括擊飛與壓制），使其在 0.2 秒內免疫控場，並使其回復 150－250 生命。（冷卻時間 90 秒）"
+      ],
+      "icon": "../assets/images/items/high/support-mikaels-blessing.png",
+      "buildFrom": [
+        "intermediate-32",
+        "intermediate-17",
+        "basic-mana-ring",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 201,
+      "supportOrder": 1
+    },
+    {
+      "id": "support-high-02",
+      "name": "日輪的加冕",
+      "stage": "高階裝備",
+      "categories": [
+        "輔助"
+      ],
+      "price": 2600,
+      "stats": [
+        "+200 最大生命",
+        "+30 物理防禦",
+        "+30 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        "加冕（主動）：賦予自身及所有鄰近友方英雄護盾，各可吸收 250－370 傷害，持續 2.5 秒。（冷卻時間 60 秒）",
+        "若目標在最近 20 秒內已經獲得其他「壁飾」效果，則此效果會減少 50%。"
+      ],
+      "icon": "../assets/images/items/high/support-locket-of-the-iron-solari.png",
+      "buildFrom": [
+        "intermediate-17",
+        "basic-cloth-armor",
+        "basic-null-cloak",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 202,
+      "supportOrder": 2
+    },
+    {
+      "id": "support-high-03",
+      "name": "蘇瑞亞的戰歌",
+      "stage": "高階裝備",
+      "categories": [
+        "輔助"
+      ],
+      "price": 2600,
+      "stats": [
+        "+55 魔法攻擊",
+        "+50% 魔力回復",
+        "+20 技能加速",
+        "+5% 跑速"
+      ],
+      "passives": [
+        "鼓舞談話（主動）：賦予附近友軍 30% 跑速，持續 4 秒。（冷卻時間 60 秒）"
+      ],
+      "icon": "../assets/images/items/high/support-shurelyas-battlesong.png",
+      "buildFrom": [
+        "intermediate-22",
+        "basic-amp-tome",
+        "basic-mana-ring",
+        "basic-amp-tome"
+      ],
+      "upgrades": [],
+      "order": 203,
+      "supportOrder": 3
+    },
+    {
+      "id": "support-high-04",
+      "name": "熾灼魔器",
+      "stage": "高階裝備",
+      "categories": [
+        "輔助"
+      ],
+      "price": 2700,
+      "stats": [
+        "+250 最大生命",
+        "+45 魔法攻擊",
+        "+50% 魔力回復",
+        "+10 技能加速",
+        "+5% 治療和護盾量",
+        "+5% 跑速"
+      ],
+      "passives": [
+        "魔器：每當治療自己以外的友方英雄或者賦予其護盾時，該友軍將增加 15%－34% 攻速，且普攻可造成 16－22 額外魔法傷害，持續 6 秒。該傷害可暴擊。"
+      ],
+      "icon": "../assets/images/items/high/support-ardent-censer.png",
+      "buildFrom": [
+        "intermediate-22",
+        "intermediate-32",
+        "basic-amp-tome",
+        "basic-mana-ring",
+        "basic-mana-ring"
+      ],
+      "upgrades": [],
+      "order": 208,
+      "supportOrder": 8
+    },
+    {
+      "id": "support-high-05",
+      "name": "和諧回音",
+      "stage": "高階裝備",
+      "categories": [
+        "輔助"
+      ],
+      "price": 2800,
+      "stats": [
+        "+100 最大生命",
+        "+50 魔法攻擊",
+        "+300 最大魔力",
+        "+50% 魔力回復",
+        "+15 技能加速",
+        "+5% 治療和護盾量"
+      ],
+      "passives": [
+        "和諧回音：移動和施放技能會累積和音。達 100 層和音時，下一個施放在友軍身上的治療或賦予護盾的技能，將為目標額外回復 100－160 + 15% 魔法攻擊的生命。如果目標的生命低於 30%，治療效果會提升至原來的 130%。"
+      ],
+      "icon": "../assets/images/items/high/support-harmonic-echo.png",
+      "buildFrom": [
+        "intermediate-23",
+        "intermediate-32",
+        "basic-amp-tome",
+        "basic-mana-ring",
+        "basic-mana-ring"
+      ],
+      "upgrades": [],
+      "order": 209,
+      "supportOrder": 9
+    },
+    {
+      "id": "support-high-06",
+      "name": "流水之杖",
+      "stage": "高階裝備",
+      "categories": [
+        "輔助"
+      ],
+      "price": 2500,
+      "stats": [
+        "+100 最大生命",
+        "+50 魔法攻擊",
+        "+50% 魔力回復",
+        "+15 技能加速",
+        "+5% 治療和護盾量"
+      ],
+      "passives": [
+        "激流：治療或賦予友軍護盾時，自身和友軍皆增加 15 技能加速及 30－50 魔法攻擊（隨友軍等級提高而提升），持續 6 秒。"
+      ],
+      "icon": "../assets/images/items/high/support-staff-of-flowing-water.png",
+      "buildFrom": [
+        "intermediate-24",
+        "intermediate-32",
+        "basic-amp-tome",
+        "basic-mana-ring"
+      ],
+      "upgrades": [],
+      "order": 210,
+      "supportOrder": 10
+    },
+    {
+      "id": "support-high-07",
+      "name": "帝王命令",
+      "stage": "高階裝備",
+      "categories": [
+        "輔助"
+      ],
+      "price": 2500,
+      "stats": [
+        "+200 最大生命",
+        "+50 魔法攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [
+        "齊心火焰：使英雄緩速或硬控場的技能可造成 47－75 額外魔法傷害，並標記目標，持續 4 秒（冷卻時間：每名敵方英雄 6 秒）。友方英雄對其造成傷害時可引爆標記，額外造成 94－150 魔法傷害（取決於友方英雄等級），且自身和友方英雄增加 20% 跑速，持續 2 秒。"
+      ],
+      "icon": "../assets/images/items/high/support-imperial-mandate.png",
+      "buildFrom": [
+        "intermediate-24",
+        "intermediate-17",
+        "basic-amp-tome",
+        "basic-ruby"
+      ],
+      "upgrades": [],
+      "order": 211,
+      "supportOrder": 11
     }
   ]
 }
