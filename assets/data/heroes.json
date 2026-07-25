@@ -126,7 +126,30 @@
           "icon": "../assets/images/heroes/smolder/r.png",
           "summary": "遠距離的大招可用來先手壓血、支援遠方會戰，或在混戰中完成收割。"
         }
-      ]
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
     }
   ]
 }

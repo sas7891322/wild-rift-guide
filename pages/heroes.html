@@ -23,7 +23,7 @@
     <h1>英雄資料庫</h1>
     <p>依路線查看英雄 Tier、推薦度、符文、出裝與對局重點。</p>
   </div>
-  <div class="hero-version-badge"><span>試作版</span><strong>飛龍路 · 史矛德</strong></div>
+  <div class="hero-version-badge"><span>英雄資料庫</span><strong>Tier 總覽 → 英雄詳細頁</strong></div>
 </section>
 
 <section class="hero-role-tabs" id="heroRoleTabs" aria-label="路線篩選">
@@ -34,21 +34,10 @@
   <button class="hero-role-tab" data-role="support"><img src="../assets/images/roles/support.png" alt=""><span>輔助</span></button>
 </section>
 
-<div class="hero-database-layout">
-  <aside class="hero-list-panel">
-    <div class="hero-list-heading">
-      <div><span class="hero-list-kicker">DRAGON LANE</span><h2>飛龍路</h2></div>
-      <span class="hero-count" id="heroCount">1</span>
-    </div>
-    <div class="hero-tier-legend"><span class="tier-pill tier-sp">S+</span><span>目前先試作 1 隻英雄</span></div>
-    <div id="heroList" class="hero-list"></div>
-    <div class="hero-list-empty" id="heroListEmpty" hidden>這個路線尚未匯入英雄資料。</div>
-  </aside>
+<section id="heroContent" class="hero-content-shell">
+  <div class="hero-loading">正在載入英雄資料…</div>
+</section>
 
-  <section class="hero-profile" id="heroProfile">
-    <div class="hero-loading">正在載入史矛德資料…</div>
-  </section>
-</div>
 </main>
 
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
