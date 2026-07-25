@@ -66,16 +66,19 @@
         {
           "stacks": 25,
           "title": "範圍強化",
+          "icon": "../assets/images/heroes/smolder/q-25.png",
           "text": "1 技開始對主要目標周圍的敵人造成範圍傷害。"
         },
         {
           "stacks": 100,
           "title": "後方爆炸",
+          "icon": "../assets/images/heroes/smolder/q-100.png",
           "text": "1 技會在目標後方觸發額外爆炸，清線與消耗能力進一步提升。"
         },
         {
           "stacks": 175,
           "title": "燃燒與斬殺",
+          "icon": "../assets/images/heroes/smolder/q-175.png",
           "text": "1 技附加真實傷害燃燒，並可斬殺生命值低於門檻的燃燒中敵方英雄。"
         }
       ],
@@ -85,7 +88,45 @@
         "後期": "175 層後保持距離持續用 1 技消耗與收割；3 技優先保留作為穿牆與自保位移。"
       },
       "summary": "前期安全補兵疊層，避免無謂換血；175 層後保持距離持續消耗，利用真實傷害燃燒與斬殺能力接管團戰。",
-      "sourceNote": "7.2a 試作資料；之後所有飛龍路英雄沿用相同欄位結構。"
+      "sourceNote": "7.2a 試作資料：已補入史矛德頭像、被動與技能圖示，作為後續所有英雄頁的技能展示母版。",
+      "avatar": "../assets/images/heroes/smolder/avatar.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "被動堆層",
+          "icon": "../assets/images/heroes/smolder/passive.png",
+          "summary": "透過尾兵與技能命中逐步堆疊層數，讓一技能隨層數進化，是史矛德整場最核心的成長機制。"
+        },
+        {
+          "key": "Q",
+          "label": "一技能",
+          "title": "主力尾兵／消耗",
+          "icon": "../assets/images/heroes/smolder/q-base.png",
+          "summary": "前中後期最重要的主力技能，用來尾兵、消耗與收割；層數越高，清線與斬殺能力越完整。"
+        },
+        {
+          "key": "W",
+          "label": "二技能",
+          "title": "範圍消耗",
+          "icon": "../assets/images/heroes/smolder/w.png",
+          "summary": "中距離範圍技能，適合配合對線換血與團戰前壓低血量，幫助後續一技能收頭。"
+        },
+        {
+          "key": "E",
+          "label": "三技能",
+          "title": "位移自保",
+          "icon": "../assets/images/heroes/smolder/e.png",
+          "summary": "主要的位移與拉打技能，可用來調整站位、追擊或撤退；通常保留給自保會更穩。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "遠距開戰／收頭",
+          "icon": "../assets/images/heroes/smolder/r.png",
+          "summary": "遠距離的大招可用來先手壓血、支援遠方會戰，或在混戰中完成收割。"
+        }
+      ]
     }
   ]
 }

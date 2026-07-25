@@ -12,6 +12,7 @@
   function normalizeItems(data){ return Array.isArray(data) ? data : (data?.items || []); }
   function byId(arr,id){ return arr.find(x=>x.id===id); }
   function safeIcon(x){ return x?.icon || ''; }
+  function safeText(x){ return x || ''; }
 
   function buildMiniCard(x, type='item'){
     if(!x) return '<div class="build-mini missing">資料待補</div>';
@@ -39,7 +40,7 @@
     heroes.forEach(h=>{
       const el=document.createElement('button');
       el.className='hero-list-card'+(h.id===state.heroId?' active':'');
-      el.innerHTML=`<div class="hero-monogram">${h.name.slice(0,1)}</div>
+      el.innerHTML=`${h.avatar ? `<img class="hero-list-avatar" src="${h.avatar}" alt="${h.name}" loading="lazy">` : `<div class="hero-monogram">${h.name.slice(0,1)}</div>`}
         <div class="hero-list-info"><strong>${h.name}</strong><span>${h.enName}</span><small>${h.position}</small></div>
         <span class="tier-pill tier-sp">${h.tier}</span>`;
       el.addEventListener('click',()=>{state.heroId=h.id;renderList();renderProfile();});
@@ -69,10 +70,18 @@
     const itemHTML=items.map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
     const bootHTML=boots.map((x,i)=>`<div class="hero-build-slot boot"><b>${i===0?'II':'III'}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
     const spellHTML=spells.map(x=>buildMiniCard(x,'spell')).join('');
+    const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
+    const abilityHTML = abilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}">
+      <div class="ability-head">
+        <img src="${safeIcon(x)}" alt="${x.label || x.title || hero.name}" loading="lazy">
+        <div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div>
+      </div>
+      <p>${safeText(x.summary)}</p>
+    </div>`).join('');
 
     $('#heroProfile').innerHTML=`
       <section class="hero-profile-hero">
-        <div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span><small>官方頭像待補</small></div>
+        ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span><small>官方頭像待補</small></div>`}
         <div class="hero-title-block">
           <div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div>
           <div class="hero-en">${hero.enName} · ${hero.role}</div>
@@ -120,8 +129,13 @@
       </section>
 
       <section class="hero-section">
+        <div class="hero-section-title"><h3>技能組圖示</h3><span>被動 / Q / W / E / R</span></div>
+        <div class="ability-grid">${abilityHTML}</div>
+      </section>
+
+      <section class="hero-section">
         <div class="hero-section-title"><h3>被動堆層節點</h3><span>25 / 100 / 175</span></div>
-        <div class="stack-grid">${hero.stackBreakpoints.map(x=>`<div class="stack-card"><strong>${x.stacks}</strong><span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div>
+        <div class="stack-grid">${hero.stackBreakpoints.map(x=>`<div class="stack-card">${x.icon ? `<img src="${x.icon}" alt="${x.title}" loading="lazy">` : ''}<strong>${x.stacks}</strong><span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div>
       </section>
 
       <section class="hero-section">
