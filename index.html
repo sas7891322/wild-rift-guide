@@ -1,41 +1,57 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wild Rift Guide</title>
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="全球 League of Legends 職業賽戰隊、選手與版本英雄統計資料庫" />
+  <title>RIFT DB — LoL Esports Database</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="topbar"><div class="shell topbar-inner">
-<a class="brand" href="index.html"><span>Wild Rift</span> Guide</a>
-<nav class="nav">
-<a href="pages/heroes.html">英雄</a>
-<a href="pages/items.html">裝備</a>
-<a href="pages/runes.html">符文</a>
-<a href="pages/spells.html">召喚師技能</a>
-</nav></div></header>
+  <div class="noise"></div>
+  <header class="topbar">
+    <button class="brand" data-nav-home aria-label="回到首頁">
+      <span class="brand-mark">R</span>
+      <span><strong>RIFT DB</strong><small>LoL Esports Database</small></span>
+    </button>
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input id="globalSearch" placeholder="搜尋戰隊、選手、英雄…" autocomplete="off" />
+      <kbd>⌘ K</kbd>
+      <div id="searchResults" class="search-results hidden"></div>
+    </div>
+    <div class="top-actions">
+      <span class="live-dot"></span><span class="snapshot">26.14 Snapshot</span>
+      <button class="ghost-btn" id="compareBtn">戰隊比較</button>
+    </div>
+  </header>
 
-<main>
-<section class="hero shell">
-<div class="eyebrow">WILD RIFT DATABASE</div>
-<h1>Wild Rift Guide</h1>
-<p>激鬥峽谷英雄、裝備、符文與召喚師技能資料庫。</p>
-<div class="role-strip">
-<img src="assets/images/roles/baron.png" alt="巴龍路">
-<img src="assets/images/roles/jungle.png" alt="打野">
-<img src="assets/images/roles/mid.png" alt="中路">
-<img src="assets/images/roles/duo.png" alt="飛龍路">
-<img src="assets/images/roles/support.png" alt="輔助">
-</div>
-</section>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="side-label">全球聯賽</div>
+      <nav id="leagueNav" class="league-nav"></nav>
+      <div class="side-divider"></div>
+      <div class="side-label">資料層</div>
+      <button class="side-action active" data-view="teams">戰隊資料</button>
+      <button class="side-action" data-view="matches">原始比賽</button>
+      <div class="sidebar-foot">
+        <div class="db-status"><span></span>Database Online</div>
+        <small>Prototype · 2026</small>
+      </div>
+    </aside>
 
-<section class="shell home-grid">
-<a class="home-card" href="pages/heroes.html"><div class="home-icon">英雄</div><div><span class="kicker">資料庫入口</span><h2>英雄</h2><p>英雄資料頁面與後續攻略內容。</p><span class="link-label">查看英雄 →</span></div></a>
-<a class="home-card" href="pages/items.html"><div class="home-icon">裝備</div><div><span class="kicker">目前整理中</span><h2>裝備</h2><p>物理、魔法、防禦、輔助與鞋子，滑鼠移入即可查看詳細資訊。</p><span class="link-label">查看裝備 →</span></div></a>
-<a class="home-card" href="pages/runes.html"><div class="home-icon">符文</div><div><span class="kicker">已完成</span><h2>符文</h2><p>關鍵符文、征服、精準、意志與巫術。</p><span class="link-label">查看符文 →</span></div></a>
-<a class="home-card" href="pages/spells.html"><div class="home-icon">技能</div><div><span class="kicker">已完成</span><h2>召喚師技能</h2><p>召喚師技能圖示、冷卻時間與效果說明。</p><span class="link-label">查看技能 →</span></div></a>
-</section>
-</main>
-<footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
-<script src="assets/js/app.js"></script>
-</body></html>
+    <main id="main" class="main"></main>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal>×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

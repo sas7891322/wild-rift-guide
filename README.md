@@ -1,45 +1,46 @@
-# Wild Rift Guide V2.1
+# RIFT DB — LoL Esports Database Prototype
 
-更新內容：
-- 符文頁改成固定右側詳細資訊面板
-- 召喚師技能改成固定右側詳細資訊面板
-- 電腦：Hover 顯示詳細資訊
-- 手機：點擊後於下方展開詳細資訊
-- 不跳轉新頁面
-- 保留符文的遊戲分列方式
-- 關鍵符文不顯示列數
-- 支援搜尋與分類篩選
+A static, responsive prototype for a global League of Legends esports database.
 
-上傳方式：
-1. 解壓縮
-2. 將資料夾內所有檔案覆蓋到原本 GitHub Repository
-3. Commit and Push
-4. Vercel 會自動更新原本網址
+## Included
+- Global league scaffold: LPL, LCK, LEC, LCP, LCS, CBLOL
+- 2026 LPL Split 3 / Patch 26.14 sample dataset
+- Team pages
+- Player champion usage / wins / losses / win rate
+- Taiwan Traditional Chinese champion names
+- Global search for teams, players, champions
+- Team comparison modal
+- Raw-series data view
+- Responsive desktop/mobile layout
 
-## V2.1.1
-- 修正關鍵符文分類圖示，改用正確金色圖示並使用新檔名避免快取。
-- 召喚師技能左側卡片移除冷卻秒數。
-- 召喚師技能圖示稍微放大。
+## Run locally
+Open `index.html` directly in a browser, or serve this folder with any static server.
 
-## V3 鞋子試作版
-- 新增裝備頁分類：全部、物理、魔法、防禦、輔助、鞋子
-- 目前完成 7.2 鞋子資料
-- 二級鞋依使用者指定順序：
-  貪婪護脛、狂戰士護脛、水星之靴、鍍板鋼蓋、愛歐尼亞之靴、魔力之靴、爆發之靴
-- Hover／點擊顯示屬性、效果與合成樹
-- 合成樹節點可互動查看
+## Deploy
+This folder can be deployed as a static site to Vercel, Netlify, GitHub Pages, Cloudflare Pages, etc.
 
-## V3.0.1
-- 僅更新 7 張三級鞋圖片。
-- 其他頁面、資料、互動與排序皆維持不變。
+## Data note
+This is a UI/data-architecture prototype. The sample LPL snapshot is intentionally finite and should be replaced by a verified per-game ingestion pipeline before public production use.
 
-## V2.2－召喚師技能文字校正版
-只修改召喚師技能，不影響符文、鞋子與其他頁面。
+## 2026-07-24 update
 
-修正：
-- 治療：110生命改為綠色；30%額外跑速改為白色。
-- 鬼步：跑速、額外25%跑速改為白色。
-- 光盾：120傷害、護盾改為綠色。
-- 虛弱：補回「變得虛弱」、「降低傷害40%」與「逐漸衰減至失效」；緩速35%為白色。
-- 淨化：「（包括召喚師技能減益）」為白色。
-- 點燃：改為「對目標附加重創效果，並獲得其視野」；72真實傷害為白色、重創為淡紫色。
+- Activated LEC in the global league navigation.
+- Added all 10 LEC 2026 Summer teams and current starting rosters.
+- Added LEC team logos.
+- Added per-league season/split/patch rendering so LPL can remain on `2026 Split 3` while LEC uses `2026 Summer`.
+- LEC champion statistics intentionally start empty and will be added only after completed Bo3 series.
+
+## 2026-07-25 LCP update
+
+- Activated LCP on the global homepage and sidebar.
+- Added all 8 LCP 2026 Split 3 teams and current active/opening rosters.
+- Added current LoL Esports team-logo assets for LCP cards.
+- LCP uses a Swiss Stage in Split 3; team records and champion statistics begin at 0-0 / empty before opening matches.
+- LCP champion data will only be added after completed series, without importing Split 1 or Split 2 champion usage.
+- Patch display is initialized to 26.14 and should be verified against the first completed Split 3 match record before stats are added.
+
+
+## 2026-07-26 Patch 26.14 update
+- LPL: all completed series through July 25 are included with player/champion win-loss aggregation.
+- LEC: MKOI 1-2 G2 and KC 2-0 VIT are included; VIT vs G2 is intentionally excluded for now.
+- LCP: GZ 0-2 MVK and SHG 0-2 TSW series results are included. Champion-level picks remain pending until a reliable post-match source is available.
