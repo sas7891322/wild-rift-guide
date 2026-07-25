@@ -1,1 +1,91 @@
-[]
+{
+  "version": "7.2a",
+  "updated": "2026-07-26",
+  "notes": "飛龍路英雄試作版：先建立史矛德 1 隻，作為後續英雄資料與介面母版。",
+  "heroes": [
+    {
+      "id": "smolder",
+      "name": "史矛德",
+      "enName": "Smolder",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S+",
+      "position": "後期堆層／技能型射手",
+      "tags": [
+        "遠距消耗",
+        "後期核心",
+        "真實傷害",
+        "斬殺"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 4,
+        "對線強度": 2,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "fleet-footwork",
+        "battle-fervor",
+        "cut-down",
+        "legend-bloodline",
+        "transcendence"
+      ],
+      "items": [
+        "physical-high-26",
+        "physical-high-34",
+        "physical-high-23",
+        "physical-high-17",
+        "physical-high-18",
+        "physical-high-10"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "1 > 2 > 3",
+      "matchups": {
+        "good": [
+          "汎",
+          "吉茵珂絲",
+          "寇格魔"
+        ],
+        "bad": [
+          "達瑞文",
+          "路西恩",
+          "凱特琳"
+        ],
+        "ban": "達瑞文"
+      },
+      "stackBreakpoints": [
+        {
+          "stacks": 25,
+          "title": "範圍強化",
+          "text": "1 技開始對主要目標周圍的敵人造成範圍傷害。"
+        },
+        {
+          "stacks": 100,
+          "title": "後方爆炸",
+          "text": "1 技會在目標後方觸發額外爆炸，清線與消耗能力進一步提升。"
+        },
+        {
+          "stacks": 175,
+          "title": "燃燒與斬殺",
+          "text": "1 技附加真實傷害燃燒，並可斬殺生命值低於門檻的燃燒中敵方英雄。"
+        }
+      ],
+      "playstyle": {
+        "前期": "以安全補兵與 1 技尾兵疊層為第一優先，不為了多一層被迫換成殘血。",
+        "中期": "25／100 層後清線與消耗逐步成形，盡量在物件團前先用遠距技能壓低敵方血量。",
+        "後期": "175 層後保持距離持續用 1 技消耗與收割；3 技優先保留作為穿牆與自保位移。"
+      },
+      "summary": "前期安全補兵疊層，避免無謂換血；175 層後保持距離持續消耗，利用真實傷害燃燒與斬殺能力接管團戰。",
+      "sourceNote": "7.2a 試作資料；之後所有飛龍路英雄沿用相同欄位結構。"
+    }
+  ]
+}
