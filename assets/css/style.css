@@ -523,7 +523,7 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 .build-group .build-mini{padding:7px;border-radius:12px}
 .build-group .build-mini img{width:48px;height:48px;border-radius:9px;margin-bottom:5px}
 .build-group .build-mini span{font-size:10px}
-.build-group .hero-build-slot>b{width:18px;height:18px;font-size:9px}
+.build-group .hero-build-slot>b{display:none}
 .starter-group .build-group-items{max-width:none}
 .core-group .build-group-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
 .boots-group .build-group-items{display:block}
