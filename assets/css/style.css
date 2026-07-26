@@ -514,3 +514,22 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 .matchup-chip{display:inline-flex!important;align-items:center;gap:7px;padding:5px 8px!important;border-radius:999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035)}.matchup-chip img{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid rgba(216,184,108,.28)}.matchup-chip b{padding:0!important;border:0!important;background:none!important;color:inherit!important}.matchup-box.ban>div{display:flex}.matchup-box.ban .matchup-chip{border-color:rgba(245,199,103,.3);color:#f5d58b}
 @media(max-width:1050px){.summoner-rune-layout{grid-template-columns:1fr}.rune-box .hero-runes{grid-template-columns:repeat(3,1fr)}.build-groups{grid-template-columns:1fr}.final-group{grid-column:auto}.final-group .build-group-items{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:800px){.summoner-box .hero-spells{grid-template-columns:repeat(2,120px);overflow-x:auto}.rune-box .hero-runes{grid-template-columns:repeat(5,140px)}.core-group .build-group-items{grid-template-columns:repeat(3,120px);overflow-x:auto}.final-group .build-group-items{grid-template-columns:repeat(6,110px);overflow-x:auto}.skill-priority-row{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}.skill-priority-step{min-width:190px}}
+
+/* Hero detail layout v22: compact two-row build layout + larger matchup portraits */
+.build-groups{grid-template-columns:.78fr 1.65fr 1fr;gap:10px;align-items:stretch}
+.build-group{padding:11px 12px;border-radius:15px}
+.build-group-head{margin-bottom:9px;padding-bottom:7px}
+.build-group-head strong{font-size:13px}.build-group-head small{font-size:8px}
+.build-group .build-mini{padding:7px;border-radius:12px}
+.build-group .build-mini img{width:48px;height:48px;border-radius:9px;margin-bottom:5px}
+.build-group .build-mini span{font-size:10px}
+.build-group .hero-build-slot>b{width:18px;height:18px;font-size:9px}
+.starter-group .build-group-items{max-width:none}
+.core-group .build-group-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.boots-group .build-group-items{display:block}
+.build-group .hero-boot-path{gap:7px}.build-group .hero-build-slot.boot{width:88px}.build-group .build-arrow{font-size:13px}
+.final-group{grid-column:1/-1}
+.final-group .build-group-items{grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}
+.matchup-chip{gap:9px;padding:7px 10px!important}.matchup-chip img{width:42px;height:42px;border-width:2px}.matchup-chip b{font-size:13px!important}
+@media(max-width:1050px){.build-groups{grid-template-columns:1fr 1.6fr}.boots-group{grid-column:1/-1}.final-group{grid-column:1/-1}}
+@media(max-width:800px){.build-groups{grid-template-columns:1fr}.boots-group,.final-group{grid-column:auto}.core-group .build-group-items{grid-template-columns:repeat(3,105px);overflow-x:auto}.final-group .build-group-items{grid-template-columns:repeat(6,96px);overflow-x:auto}.matchup-chip img{width:38px;height:38px}}
