@@ -12,6 +12,7 @@
   function byId(arr,id){ return arr.find(x=>x.id===id); }
   function safeIcon(x){ return x?.icon || ''; }
   function safeText(x){ return x || ''; }
+  function abilityMedia(x, cls='ability-icon-placeholder'){ return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${safeText(x?.key)||'?'}</span>`; }
 
   function buildMiniCard(x, type='item'){
     if(!x) return '<div class="build-mini missing">資料待補</div>';
@@ -70,7 +71,7 @@
     const rows = ['Q','W','E','R'].map(key=>{
       const a=abilities[key]||{};
       return `<div class="skill-grid-row">
-        <div class="skill-grid-skill"><img src="${safeIcon(a)}" alt="${safeText(a.label)}"><div><b>${safeText(a.label)||key}</b><small>${safeText(a.title)}</small></div></div>
+        <div class="skill-grid-skill">${abilityMedia(a,'skill-icon-placeholder')}<div><b>${safeText(a.label)||key}</b><small>${safeText(a.title)}</small></div></div>
         ${levels.map((lvl,i)=>`<div class="skill-grid-cell ${sequence[i]===key?'active':''}" aria-label="等級 ${lvl}${sequence[i]===key?' 點 '+key:''}">${sequence[i]===key?'<span>●</span>':''}</div>`).join('')}
       </div>`;
     }).join('');
@@ -92,7 +93,7 @@
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
-    const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head"><img src="${safeIcon(x)}" alt="${x.label || x.title || hero.name}" loading="lazy"><div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div><p>${safeText(x.summary)}</p></div>`).join('');
+    const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head">${abilityMedia(x)}<div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div><p>${safeText(x.summary)}</p></div>`).join('');
 
     $('#heroContent').innerHTML=`
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${roleNames[state.role]} Tier 總覽</button></div>
@@ -107,10 +108,10 @@
         <section class="hero-section"><div class="hero-section-title"><h3>推薦出裝</h3><span>6 件完整出裝</span></div><div class="hero-item-build">${itemHTML}</div><div class="hero-build-subrow"><strong>鞋子</strong><div class="hero-boot-path">${bootHTML}</div></div></section>
         <section class="hero-section hero-section-split"><div><div class="hero-section-title"><h3>召喚師技能</h3></div><div class="hero-spells">${spellHTML}</div></div><div><div class="hero-section-title"><h3>技能優先級</h3></div><div class="skill-order"><span>主升順序</span><strong>${hero.skillOrder}</strong></div></div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
-        ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature"><img src="${safeIcon(passive)}" alt="${safeText(passive.title)}"><div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong><p>${safeText(passive.summary)}</p></div></div></section>`:''}
+        ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong><p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(x=>`<b>${x}</b>`).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(x=>`<b>${x}</b>`).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><strong>${hero.matchups.ban}</strong></div></div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>被動堆層節點</h3><span>25 / 100 / 175</span></div><div class="stack-grid">${hero.stackBreakpoints.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}<strong>${x.stacks}</strong><span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>
+        ${Array.isArray(hero.mechanics)&&hero.mechanics.length?`<section class="hero-section"><div class="hero-section-title"><h3>${hero.mechanicsTitle||'特殊機制'}</h3><span>Champion Mechanic</span></div><div class="stack-grid">${hero.mechanics.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}${x.stacks!=null?`<strong>${x.stacks}</strong>`:''}<span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>實戰節奏</h3></div><div class="playstyle-timeline">${Object.entries(hero.playstyle).map(([k,v])=>`<div class="playstyle-step"><b>${k}</b><p>${v}</p></div>`).join('')}</div></section>
         <div class="hero-source-note">${hero.sourceNote}</div>
       </section>`;

@@ -1,7 +1,7 @@
 {
   "version": "7.2a",
   "updated": "2026-07-26",
-  "notes": "飛龍路英雄試作版：先建立史矛德 1 隻，作為後續英雄資料與介面母版。",
+  "notes": "飛龍路完整資料版：23 位英雄已建立 Tier 總覽與完整資料頁；除史矛德外，技能／被動圖示保留待補官方素材。",
   "heroes": [
     {
       "id": "smolder",
@@ -62,33 +62,13 @@
         ],
         "ban": "達瑞文"
       },
-      "stackBreakpoints": [
-        {
-          "stacks": 25,
-          "title": "範圍強化",
-          "icon": "../assets/images/heroes/smolder/q-25.png",
-          "text": "1 技開始對主要目標周圍的敵人造成範圍傷害。"
-        },
-        {
-          "stacks": 100,
-          "title": "後方爆炸",
-          "icon": "../assets/images/heroes/smolder/q-100.png",
-          "text": "1 技會在目標後方觸發額外爆炸，清線與消耗能力進一步提升。"
-        },
-        {
-          "stacks": 175,
-          "title": "燃燒與斬殺",
-          "icon": "../assets/images/heroes/smolder/q-175.png",
-          "text": "1 技附加真實傷害燃燒，並可斬殺生命值低於門檻的燃燒中敵方英雄。"
-        }
-      ],
       "playstyle": {
         "前期": "以安全補兵與 1 技尾兵疊層為第一優先，不為了多一層被迫換成殘血。",
         "中期": "25／100 層後清線與消耗逐步成形，盡量在物件團前先用遠距技能壓低敵方血量。",
         "後期": "175 層後保持距離持續用 1 技消耗與收割；3 技優先保留作為穿牆與自保位移。"
       },
       "summary": "前期安全補兵疊層，避免無謂換血；175 層後保持距離持續消耗，利用真實傷害燃燒與斬殺能力接管團戰。",
-      "sourceNote": "7.2a 試作資料：已補入史矛德頭像、被動與技能圖示，作為後續所有英雄頁的技能展示母版。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理。",
       "avatar": "../assets/images/heroes/smolder/avatar.png",
       "abilities": [
         {
@@ -149,7 +129,2881 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
+      },
+      "mechanicsTitle": "龍之修行層數",
+      "mechanics": [
+        {
+          "stacks": 25,
+          "title": "範圍強化",
+          "icon": "../assets/images/heroes/smolder/q-25.png",
+          "text": "1 技開始對主要目標周圍的敵人造成範圍傷害。"
+        },
+        {
+          "stacks": 100,
+          "title": "後方爆炸",
+          "icon": "../assets/images/heroes/smolder/q-100.png",
+          "text": "1 技會在目標後方觸發額外爆炸，清線與消耗能力進一步提升。"
+        },
+        {
+          "stacks": 175,
+          "title": "燃燒與斬殺",
+          "icon": "../assets/images/heroes/smolder/q-175.png",
+          "text": "1 技附加真實傷害燃燒，並可斬殺生命值低於門檻的燃燒中敵方英雄。"
+        }
+      ]
+    },
+    {
+      "id": "miss-fortune",
+      "name": "好運姐",
+      "enName": "Miss Fortune",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S+",
+      "position": "前期壓制／團戰大絕射手",
+      "tags": [
+        "強勢對線",
+        "團戰爆發",
+        "容易上手"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 5,
+        "操作難度": 2,
+        "Blind Pick": 5,
+        "對線強度": 5,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-15",
+        "physical-high-32",
+        "physical-high-27",
+        "physical-high-31",
+        "physical-high-10",
+        "physical-high-17"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "汎",
+          "凱莎",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "伊澤瑞爾",
+          "法洛士",
+          "剎雅"
+        ],
+        "ban": "伊澤瑞爾"
+      },
+      "playstyle": {
+        "前期": "利用 1 技彈射與被動打短換血，先建立血量與線權優勢。",
+        "中期": "跟著物件團移動，等隊友控制或敵人進窄口再開大絕。",
+        "後期": "保持後排站位，優先找不易被打斷的大絕角度，不要為了普攻走進危險區。"
+      },
+      "summary": "前期利用彈射與被動壓血量，中期抓地形與控制接大絕，團戰只要有安全角度就能快速改變勝負。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/miss-fortune.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "目標切換增傷",
+          "icon": "",
+          "summary": "切換攻擊目標能提高換血效率，對線要善用短點射。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "彈射消耗",
+          "icon": "",
+          "summary": "主要對線消耗技能，利用小兵彈射命中後排英雄。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "加速與攻速",
+          "icon": "",
+          "summary": "提供跑速與攻速，是追擊、拉扯與輸出的核心增益。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "範圍緩速",
+          "icon": "",
+          "summary": "遠距離鋪設緩速區，方便接大絕或限制走位。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "扇形彈幕",
+          "icon": "",
+          "summary": "大範圍持續傷害；配合硬控、狹窄地形時威脅最高。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
       }
+    },
+    {
+      "id": "ezreal",
+      "name": "伊澤瑞爾",
+      "enName": "Ezreal",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S+",
+      "position": "高機動／技能消耗射手",
+      "tags": [
+        "安全輸出",
+        "高機動",
+        "技能命中"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 2,
+        "操作難度": 5,
+        "Blind Pick": 5,
+        "對線強度": 3,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-19",
+        "physical-high-21",
+        "physical-high-27",
+        "physical-high-12",
+        "physical-high-34",
+        "physical-high-10"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "煞蜜拉",
+          "汎",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "凱特琳",
+          "寇格魔",
+          "好運姐"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "以 1 技補刀與消耗，保留 3 技應對對方先手，不要無意義往前跳。",
+        "中期": "兩件裝後靠技能命中持續壓血量，先消耗再進物件團。",
+        "後期": "保持最大射程打前排也沒問題，3 技優先拿來調整站位而非貪輸出。"
+      },
+      "summary": "用技能距離與位移保持安全輸出，持續命中 1 技降低節奏空窗，是非常穩定的 Blind Pick。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/ezreal.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "技能命中疊攻速",
+          "icon": "",
+          "summary": "連續命中技能後能提高輸出節奏，團戰前先疊狀態。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "主力魔法箭",
+          "icon": "",
+          "summary": "遠距離消耗與主要輸出來源，命中品質決定英雄上限。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "標記增傷",
+          "icon": "",
+          "summary": "標記後再以攻擊或技能觸發，適合補爆發與拆塔。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "瞬移位移",
+          "icon": "",
+          "summary": "核心保命與追擊工具，最好在敵方關鍵控制交掉後再進場。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "全圖能量波",
+          "icon": "",
+          "summary": "可遠距離支援、清線與開戰前壓血量。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "varus",
+      "name": "法洛士",
+      "enName": "Varus",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "position": "持續輸出／開戰功能射手",
+      "tags": [
+        "混合傷害",
+        "團隊控制",
+        "打坦能力"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 5,
+        "對線強度": 3,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-12",
+        "physical-high-07",
+        "physical-high-35",
+        "physical-high-13",
+        "magic-high-02",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "凱莎",
+          "崔絲塔娜",
+          "煞蜜拉"
+        ],
+        "bad": [
+          "史矛德",
+          "好運姐",
+          "汎"
+        ],
+        "ban": "史矛德"
+      },
+      "playstyle": {
+        "前期": "先以技能和普攻疊印記，不必為了短換血硬追。",
+        "中期": "利用大絕先手或反手鎖住關鍵目標，再引爆印記打爆發。",
+        "後期": "站在前排後持續輸出，打坦與控制能力讓他後期仍有很高團戰價值。"
+      },
+      "summary": "兼具持續輸出、遠距消耗與大絕開戰，能依敵方前排厚度穩定調整輸出節奏。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/varus.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "擊殺後攻速提升",
+          "icon": "",
+          "summary": "參與擊殺後提高攻速，連續收割時輸出會快速上升。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "蓄力穿刺箭",
+          "icon": "",
+          "summary": "主要遠距消耗技能，蓄力越完整距離與傷害越高。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "枯萎印記",
+          "icon": "",
+          "summary": "普攻疊加印記後由技能引爆，提供重要的百分比傷害。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "範圍減療緩速",
+          "icon": "",
+          "summary": "限制回血並封鎖走位，適合接控制與物件團。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "鎖鏈禁錮",
+          "icon": "",
+          "summary": "遠距離強控並可向附近敵人擴散，是團戰開戰核心。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "zeri",
+      "name": "婕莉",
+      "enName": "Zeri",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "position": "高機動／後期拉打射手",
+      "tags": [
+        "高機動",
+        "持續輸出",
+        "團戰收割"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 1,
+        "操作難度": 5,
+        "Blind Pick": 3,
+        "對線強度": 2,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "axiom-arcanist"
+      ],
+      "items": [
+        "physical-high-26",
+        "physical-high-11",
+        "physical-high-18",
+        "physical-high-17",
+        "physical-high-28",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "汎",
+          "希維爾",
+          "圖奇"
+        ],
+        "bad": [
+          "寇格魔",
+          "凱特琳",
+          "路西恩"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "先穩定補刀，不為短射程硬拚；3 技主要留作撤退。",
+        "中期": "有兩件裝後開始主動找長時間團戰，用大絕維持移速與輸出。",
+        "後期": "沿牆與隊友前排拉扯，持續輸出而不是一次性衝進敵陣。"
+      },
+      "summary": "前期偏弱，但裝備成形後能靠位移與大絕長時間拉打；操作上限非常高。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/zeri.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "特殊普攻機制",
+          "icon": "",
+          "summary": "普攻以方向性射擊呈現，需要自行瞄準並管理攻速上限。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "電擊緩速",
+          "icon": "",
+          "summary": "提供傷害與緩速，補刀或拉打都很實用。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "遠距雷射",
+          "icon": "",
+          "summary": "穿牆後效果更強，適合團戰前消耗。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "跨牆位移",
+          "icon": "",
+          "summary": "核心機動技能，可穿越地形切入或撤退。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "超載團戰",
+          "icon": "",
+          "summary": "命中多名敵人後進入強勢拉打狀態，適合長時間團戰。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "lucian",
+      "name": "路西恩",
+      "enName": "Lucian",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "position": "前中期爆發／機動射手",
+      "tags": [
+        "強勢對線",
+        "高爆發",
+        "高機動"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 2,
+        "操作難度": 5,
+        "Blind Pick": 3,
+        "對線強度": 5,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "empowerment",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "sudden-impact"
+      ],
+      "items": [
+        "physical-high-26",
+        "physical-high-23",
+        "physical-high-05",
+        "physical-high-03",
+        "physical-high-17",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "汎",
+          "凱莎",
+          "婕莉"
+        ],
+        "bad": [
+          "凱特琳",
+          "寇格魔",
+          "艾希"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "主動找短換血，技能後一定接被動雙槍，把強勢期變成血量優勢。",
+        "中期": "利用高機動快速轉火，優先打可安全觸及的目標，不要盲目追後排。",
+        "後期": "後期射程劣勢更明顯，必須靠位移和大絕保持安全輸出。"
+      },
+      "summary": "善用每次施法後的雙槍被動打短爆發，靠位移重置與節奏壓制在前中期建立優勢。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/lucian.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "技能後雙槍",
+          "icon": "",
+          "summary": "每次施放技能後強化下一次普攻，是連招爆發核心。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "穿透射擊",
+          "icon": "",
+          "summary": "穩定直線傷害，可隔著小兵消耗英雄。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "標記射擊",
+          "icon": "",
+          "summary": "命中後方便追擊與拉扯，常作為連招銜接。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "短距位移",
+          "icon": "",
+          "summary": "可被被動與攻擊縮短冷卻，是路西恩操作上限來源。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "持續槍林",
+          "icon": "",
+          "summary": "長距離持續輸出，可收頭、壓走位或先打殘敵人。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "xayah",
+      "name": "剎雅",
+      "enName": "Xayah",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "position": "反開／自保型持續輸出射手",
+      "tags": [
+        "自保能力",
+        "反開團戰",
+        "羽毛控制"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 3,
+        "操作難度": 4,
+        "Blind Pick": 5,
+        "對線強度": 3,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-11",
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-17",
+        "physical-high-28",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "E > W > Q",
+      "matchups": {
+        "good": [
+          "煞蜜拉",
+          "達瑞文",
+          "路西恩"
+        ],
+        "bad": [
+          "凱特琳",
+          "好運姐",
+          "史矛德"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "透過羽毛位置逼走位，不一定要每次都急著拉回。",
+        "中期": "物件團先鋪羽毛，敵人進場後用倒鉤與大絕反開。",
+        "後期": "大絕盡量拿來躲關鍵技能，活著拉回羽毛往往比先手輸出更重要。"
+      },
+      "summary": "利用羽毛佈局與倒鉤反打，兼具高輸出、禁錮與大絕自保，團戰容錯很高。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/xayah.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "攻擊留下羽毛",
+          "icon": "",
+          "summary": "技能後普攻會穿透並留下羽毛，是所有控制與爆發的基礎。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "雙刃投擲",
+          "icon": "",
+          "summary": "快速放置羽毛並補傷害，常用來建立倒鉤角度。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "強化普攻",
+          "icon": "",
+          "summary": "增加攻速與傷害，提升正面持續輸出。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "羽毛回收",
+          "icon": "",
+          "summary": "召回羽毛造成傷害，多枚命中可禁錮，是核心反打技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "羽刃風暴",
+          "icon": "",
+          "summary": "短暫不可被選取並留下大量羽毛，是最重要的自保工具。"
+        }
+      ],
+      "skillSequence": [
+        "E",
+        "W",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "jhin",
+      "name": "燼",
+      "enName": "Jhin",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "position": "爆發／遠距功能型射手",
+      "tags": [
+        "遠距控制",
+        "爆發收割",
+        "團隊功能"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 4,
+        "操作難度": 3,
+        "Blind Pick": 4,
+        "對線強度": 4,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "dark-harvest",
+        "battle-fervor",
+        "cut-down",
+        "legend-bloodline",
+        "celerity"
+      ],
+      "items": [
+        "physical-high-32",
+        "physical-high-03",
+        "physical-high-05",
+        "physical-high-23",
+        "physical-high-17",
+        "physical-high-10"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "汎",
+          "煞蜜拉",
+          "圖奇"
+        ],
+        "bad": [
+          "伊澤瑞爾",
+          "凱特琳",
+          "史矛德"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "用 1 技彈跳與第四發建立血量差，保持換彈節奏。",
+        "中期": "先用 2 技遠距定身配合隊友開戰，再決定是否開大收尾。",
+        "後期": "站位比持續普攻更重要，利用超遠距技能先控制與收殘血。"
+      },
+      "summary": "利用第四發與技能控制掌握節奏，不必追求最高攻速；遠距離支援與收尾能力非常完整。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/jhin.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "四發彈匣",
+          "icon": "",
+          "summary": "第四發傷害極高並具斬殺味道，換彈期間要主動拉開。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "彈跳手榴彈",
+          "icon": "",
+          "summary": "可連續彈跳，對線清兵與消耗都很實用。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "遠距定身",
+          "icon": "",
+          "summary": "攻擊過目標後可遠距離禁錮，團隊配合價值很高。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "陷阱區域",
+          "icon": "",
+          "summary": "提供減速、視野與爆炸傷害，可預先佈置物件區。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "超遠距狙擊",
+          "icon": "",
+          "summary": "遠距離連續射擊，用於開戰、逼位或收割。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "kogmaw",
+      "name": "寇格魔",
+      "enName": "Kog'Maw",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "position": "超遠距／打坦型後期射手",
+      "tags": [
+        "超高 DPS",
+        "打坦核心",
+        "需要保護"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 2,
+        "操作難度": 3,
+        "Blind Pick": 2,
+        "對線強度": 2,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-07",
+        "physical-high-28",
+        "physical-high-13",
+        "physical-high-12",
+        "physical-high-35",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "W > Q > E",
+      "matchups": {
+        "good": [
+          "汎",
+          "凱莎",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "路西恩",
+          "達瑞文",
+          "煞蜜拉"
+        ],
+        "ban": "達瑞文"
+      },
+      "playstyle": {
+        "前期": "前期以補刀為主，避免沒有保護時長時間站樁。",
+        "中期": "兩三件裝後跟緊前排，開射程技能再進入輸出位置。",
+        "後期": "不要單獨走線，保持最大射程持續打最近目標即可造成巨大團戰壓力。"
+      },
+      "summary": "需要隊友保護，但開啟射程強化後能從安全位置快速融化前排，是版本頂級後期火力。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/kogmaw.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "死亡爆炸",
+          "icon": "",
+          "summary": "死亡後仍可移動並爆炸造成真實傷害，能在必死時換取價值。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "腐蝕投射",
+          "icon": "",
+          "summary": "遠距離傷害並削弱敵方抗性，方便後續持續輸出。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "射程強化",
+          "icon": "",
+          "summary": "短時間大幅提高射程並附加百分比傷害，是整套玩法核心。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "地面緩速",
+          "icon": "",
+          "summary": "鋪設緩速區阻擋進場，協助自己拉開距離。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "遠距砲擊",
+          "icon": "",
+          "summary": "可連續用於探草、消耗與收尾，但要管理魔力消耗。"
+        }
+      ],
+      "skillSequence": [
+        "W",
+        "Q",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "vayne",
+      "name": "汎",
+      "enName": "Vayne",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "position": "反坦／單挑型後期射手",
+      "tags": [
+        "真實傷害",
+        "高機動",
+        "單挑強勢"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 2,
+        "操作難度": 5,
+        "Blind Pick": 2,
+        "對線強度": 2,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-23",
+        "physical-high-07",
+        "physical-high-12",
+        "physical-high-35",
+        "physical-high-10",
+        "physical-high-25"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "W > Q > E",
+      "matchups": {
+        "good": [
+          "寇格魔",
+          "凱莎",
+          "坦克前排陣容"
+        ],
+        "bad": [
+          "凱特琳",
+          "達瑞文",
+          "好運姐"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "以生存與補刀優先，不能因為想打三環就吃大量遠程消耗。",
+        "中期": "兩件攻速裝後開始主動找邊線與小規模戰。",
+        "後期": "大絕後靠翻滾隱身與走位持續輸出，優先打最近且安全的目標。"
+      },
+      "summary": "前期承受射程劣勢，後期靠三環真實傷害、翻滾與大絕單挑任何高生命前排。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/vayne.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "追獵加速",
+          "icon": "",
+          "summary": "朝敵方英雄移動時提升追擊能力，適合收割與黏人。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "翻滾強化攻擊",
+          "icon": "",
+          "summary": "短位移並強化下一擊，是重置站位與躲技能的核心。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "三環真實傷害",
+          "icon": "",
+          "summary": "連續攻擊同一目標觸發高額真實傷害，是打坦核心。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "擊退釘牆",
+          "icon": "",
+          "summary": "將敵人擊退，撞牆時造成控制，是重要自保與反殺技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "終極獵殺",
+          "icon": "",
+          "summary": "強化攻擊與翻滾，提升機動與隱蔽性，後期團戰上限極高。"
+        }
+      ],
+      "skillSequence": [
+        "W",
+        "Q",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "corki",
+      "name": "庫奇",
+      "enName": "Corki",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "A",
+      "position": "混合傷害／技能消耗射手",
+      "tags": [
+        "真實傷害",
+        "技能消耗",
+        "安全發育"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 3,
+        "操作難度": 4,
+        "Blind Pick": 4,
+        "對線強度": 3,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-26",
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-17",
+        "physical-high-11",
+        "physical-high-10"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "汎",
+          "煞蜜拉",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "伊澤瑞爾",
+          "史矛德",
+          "好運姐"
+        ],
+        "ban": "史矛德"
+      },
+      "playstyle": {
+        "前期": "利用技能清線與消耗，2 技不要隨意往前交。",
+        "中期": "累積大招資源後先遠距離消耗，再配合隊伍進場。",
+        "後期": "保持技能命中率與安全位移，持續輸出比一次爆發更重要。"
+      },
+      "summary": "以技能消耗與真實傷害輸出，能穩定打前排並在中期物件戰形成高壓力。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/corki.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "海克斯彈藥",
+          "icon": "",
+          "summary": "普攻與特定強化效果附加真實傷害，讓敵方難以單靠護甲應對。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "範圍炸彈",
+          "icon": "",
+          "summary": "穩定清線與消耗技能，亦可提供區域視野。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "女武神位移",
+          "icon": "",
+          "summary": "向指定方向位移並留下燃燒路徑，主要用於調整站位。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "機槍掃射",
+          "icon": "",
+          "summary": "持續對前方造成傷害並削弱防禦，適合貼著前排輸出。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "飛彈連射",
+          "icon": "",
+          "summary": "可儲存並遠距離持續消耗，是中後期團戰前壓血核心。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "kalista",
+      "name": "克黎思妲",
+      "enName": "Kalista",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "A",
+      "position": "高機動／長時間拉打射手",
+      "tags": [
+        "跳躍走砍",
+        "疊矛爆發",
+        "支援聯動"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 2,
+        "操作難度": 5,
+        "Blind Pick": 2,
+        "對線強度": 4,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-12",
+        "physical-high-07",
+        "physical-high-13",
+        "physical-high-35",
+        "defense-high-16",
+        "physical-high-25"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "E > Q > W",
+      "matchups": {
+        "good": [
+          "汎",
+          "婕莉",
+          "圖奇"
+        ],
+        "bad": [
+          "凱特琳",
+          "艾希",
+          "好運姐"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "利用普攻跳躍維持安全距離，疊矛後再拉掉，不要為追人破壞站位。",
+        "中期": "與綁定隊友一起找小規模戰，善用大絕保人或開戰。",
+        "後期": "持續跳躍輸出並觀察疊矛數量，處理龍與巴龍時有額外斬殺價值。"
+      },
+      "summary": "普攻位移讓她有極高拉打上限，但很吃走位與輔助默契；疊矛後的瞬間斬殺能主導物件戰。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/kalista.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "普攻跳躍",
+          "icon": "",
+          "summary": "每次普攻後可位移，是操作核心，也讓減速效果特別克制她。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "投矛穿刺",
+          "icon": "",
+          "summary": "直線投矛並可傳遞疊矛效果，用於消耗與補刀。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "哨兵與契約",
+          "icon": "",
+          "summary": "與隊友建立連結並提供協同效果，視野與團隊價值高。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "撕裂引爆",
+          "icon": "",
+          "summary": "拔出目標身上的長矛造成爆發，疊層越高傷害越高。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "命運召喚",
+          "icon": "",
+          "summary": "將契約隊友拉回並可讓其再次衝出，是開戰或保命工具。"
+        }
+      ],
+      "skillSequence": [
+        "E",
+        "Q",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "sivir",
+      "name": "希維爾",
+      "enName": "Sivir",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "A",
+      "position": "清線／團隊加速射手",
+      "tags": [
+        "快速清線",
+        "法術護盾",
+        "團隊加速"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 5,
+        "操作難度": 2,
+        "Blind Pick": 4,
+        "對線強度": 3,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-11",
+        "physical-high-23",
+        "physical-high-05",
+        "physical-high-28",
+        "physical-high-17",
+        "physical-high-10"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "圖奇",
+          "汎",
+          "煞蜜拉"
+        ],
+        "bad": [
+          "凱特琳",
+          "史矛德",
+          "寇格魔"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "先用 1、2 技清線，保留護盾擋關鍵控制而不是普通消耗。",
+        "中期": "利用推線速度先動支援物件，開大帶動整隊節奏。",
+        "後期": "站在安全位置讓彈射持續擴散，大絕可用來追擊也能救整隊撤退。"
+      },
+      "summary": "清線速度快又有法術護盾，能穩定發育並用大絕加速全隊開戰或撤退。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/sivir.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "命中加速",
+          "icon": "",
+          "summary": "攻擊英雄後提升移速，讓走砍與追擊更順暢。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "迴旋飛刃",
+          "icon": "",
+          "summary": "往返兩段傷害的主要消耗與清線技能。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "彈射普攻",
+          "icon": "",
+          "summary": "讓普攻在多個目標間彈跳，是團戰範圍輸出核心。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "法術護盾",
+          "icon": "",
+          "summary": "正確時機可免疫關鍵技能並回補資源，容錯很高。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "團隊加速",
+          "icon": "",
+          "summary": "為自己與隊友提供移速，能主動開戰、追擊或撤退。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "kaisa",
+      "name": "凱莎",
+      "enName": "Kai'Sa",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "A",
+      "position": "進化型／機動爆發射手",
+      "tags": [
+        "技能進化",
+        "混合傷害",
+        "後排切入"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 3,
+        "操作難度": 4,
+        "Blind Pick": 3,
+        "對線強度": 3,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-08",
+        "physical-high-07",
+        "physical-high-35",
+        "physical-high-13",
+        "physical-high-12",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "圖奇",
+          "汎",
+          "婕莉"
+        ],
+        "bad": [
+          "凱特琳",
+          "達瑞文",
+          "寇格魔"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "射程不長，先穩定補刀並等第一個完整裝備觸發技能進化。",
+        "中期": "技能進化後開始找孤立目標與小規模戰，別急著大絕衝進五人中。",
+        "後期": "利用大絕盾與 3 技機動反覆調整位置，優先處理能安全擊殺的目標。"
+      },
+      "summary": "完整裝備會逐步進化技能，既能正面持續輸出，也能抓標記用大絕切入後排。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/kaisa.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "電漿與進化",
+          "icon": "",
+          "summary": "攻擊疊加電漿；完整裝備能逐步進化基本技能。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "多枚飛彈",
+          "icon": "",
+          "summary": "對孤立目標爆發極高，是清線與單體傷害核心。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "虛空標記",
+          "icon": "",
+          "summary": "遠距離命中後疊加電漿，亦可作為大絕切入標記。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "蓄力加速",
+          "icon": "",
+          "summary": "提供移速與攻速，進化後可短暫隱形調整站位。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "獵殺突進",
+          "icon": "",
+          "summary": "突進到已標記敵人附近並獲得護盾，可追擊或躲技能。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      },
+      "mechanicsTitle": "技能進化",
+      "mechanics": [
+        {
+          "title": "1 技進化",
+          "text": "完成第一個符合條件的完整裝備後，飛彈數量提升，單體爆發大幅成長。"
+        },
+        {
+          "title": "3 技進化",
+          "text": "提供更強的機動與隱形調位，團戰生存力明顯提升。"
+        },
+        {
+          "title": "2 技進化",
+          "text": "額外增加電漿層數並降低命中後冷卻，偏向後續完整進化。"
+        }
+      ]
+    },
+    {
+      "id": "draven",
+      "name": "達瑞文",
+      "enName": "Draven",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "A",
+      "position": "前期壓制／滾雪球射手",
+      "tags": [
+        "極強前期",
+        "高爆發",
+        "高操作"
+      ],
+      "ratings": {
+        "單排推薦": 5,
+        "新手推薦": 1,
+        "操作難度": 5,
+        "Blind Pick": 2,
+        "對線強度": 5,
+        "團戰影響力": 3
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-11",
+        "physical-high-26",
+        "physical-high-18",
+        "physical-high-23",
+        "physical-high-17",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "史矛德",
+          "汎",
+          "凱莎"
+        ],
+        "bad": [
+          "凱特琳",
+          "艾希",
+          "剎雅"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "主動利用 1 技斧頭壓制，盡量保持雙斧並累積賞金。",
+        "中期": "有賞金時優先找安全擊殺，不要為了接斧走進控制技能。",
+        "後期": "團戰接斧安全性優先於維持滿輸出，活著才能持續投斧。"
+      },
+      "summary": "接斧與被動賞金讓他能把前期優勢快速轉成經濟雪球，但落後後的回復能力較差。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/draven.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "崇拜賞金",
+          "icon": "",
+          "summary": "接斧與補刀累積層數，擊殺英雄時兌換額外金錢。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "旋轉飛斧",
+          "icon": "",
+          "summary": "強化普攻並在命中後彈落地面，接回可持續維持高傷害。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "加速衝刺",
+          "icon": "",
+          "summary": "提供跑速與攻速，接斧後可頻繁刷新。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "橫向擊退",
+          "icon": "",
+          "summary": "打斷與推開敵人，適合阻止突進或補控制。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "雙斧全圖",
+          "icon": "",
+          "summary": "飛出並返回的遠距離傷害，可收割遠方殘血。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      },
+      "mechanicsTitle": "賞金機制",
+      "mechanics": [
+        {
+          "title": "累積崇拜",
+          "text": "補刀與接斧持續堆層，越久沒有死亡，下一次擊殺的經濟爆發越高。"
+        },
+        {
+          "title": "死亡懲罰",
+          "text": "死亡會失去部分層數，因此不必要的冒險會直接降低滾雪球能力。"
+        }
+      ]
+    },
+    {
+      "id": "ashe",
+      "name": "艾希",
+      "enName": "Ashe",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "A",
+      "position": "功能型／持續輸出射手",
+      "tags": [
+        "穩定緩速",
+        "全圖開戰",
+        "新手友善"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 5,
+        "操作難度": 2,
+        "Blind Pick": 4,
+        "對線強度": 3,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-08",
+        "physical-high-12",
+        "physical-high-18",
+        "physical-high-13",
+        "physical-high-24",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "W > Q > E",
+      "matchups": {
+        "good": [
+          "汎",
+          "圖奇",
+          "煞蜜拉"
+        ],
+        "bad": [
+          "好運姐",
+          "路西恩",
+          "凱特琳"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "利用 2 技遠距消耗與普攻緩速換血，別無位移地走太深。",
+        "中期": "多用大絕主動抓人或支援其他路，讓功能性轉成團隊優勢。",
+        "後期": "正面戰持續緩速最近目標，保留視野技能檢查側翼與草叢。"
+      },
+      "summary": "普攻緩速與全圖大絕讓她即使經濟普通也有高團隊價值，是穩定且好理解的功能型射手。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/ashe.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "冰霜減速",
+          "icon": "",
+          "summary": "普攻與技能附帶緩速，能穩定限制敵方走位。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "專注連射",
+          "icon": "",
+          "summary": "累積後強化普攻攻速與傷害，是持續輸出核心。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "扇形箭雨",
+          "icon": "",
+          "summary": "遠距離扇形消耗，對線與團戰前壓血都實用。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "鷹靈視野",
+          "icon": "",
+          "summary": "遠距離偵查區域，能降低被埋伏與物件偷打風險。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "全圖魔法箭",
+          "icon": "",
+          "summary": "可跨圖暈眩第一名英雄，是開戰與支援核心。"
+        }
+      ],
+      "skillSequence": [
+        "W",
+        "Q",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "jinx",
+      "name": "吉茵珂絲",
+      "enName": "Jinx",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "position": "後期團戰／重置型射手",
+      "tags": [
+        "超遠射程",
+        "團戰重置",
+        "後期核心"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 5,
+        "操作難度": 2,
+        "Blind Pick": 3,
+        "對線強度": 2,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-03",
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-13",
+        "physical-high-17",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "汎",
+          "希維爾",
+          "圖奇"
+        ],
+        "bad": [
+          "達瑞文",
+          "路西恩",
+          "好運姐"
+        ],
+        "ban": "達瑞文"
+      },
+      "playstyle": {
+        "前期": "利用火箭安全補刀與消耗，避免沒位移時被強開。",
+        "中期": "有核心裝後跟隊打物件，先等隊友創造第一個擊殺或助攻。",
+        "後期": "觸發被動後立即利用高移速與攻速追擊，團戰容易形成連鎖收割。"
+      },
+      "summary": "需要發育時間，但任何擊殺或拆塔都能觸發加速重置，一旦團戰起飛就有連續收割能力。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/jinx.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "擊殺後暴走",
+          "icon": "",
+          "summary": "參與擊殺或拆塔後獲得大量移速與攻速，是團戰重置核心。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "武器切換",
+          "icon": "",
+          "summary": "火箭提供射程與範圍，機槍提供高攻速，需依距離切換。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "遠距電擊",
+          "icon": "",
+          "summary": "直線消耗並緩速，可收割或留人。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "咬咬陷阱",
+          "icon": "",
+          "summary": "地面控制區，適合封鎖突進與狹窄入口。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "全圖火箭",
+          "icon": "",
+          "summary": "距離越遠威脅越高，可支援與收割殘血。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "caitlyn",
+      "name": "凱特琳",
+      "enName": "Caitlyn",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "position": "長射程／對線壓制射手",
+      "tags": [
+        "超長射程",
+        "陷阱控制",
+        "前期壓線"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 4,
+        "操作難度": 3,
+        "Blind Pick": 4,
+        "對線強度": 5,
+        "團戰影響力": 3
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-32",
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-17",
+        "physical-high-11",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "汎",
+          "凱莎",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "好運姐",
+          "伊澤瑞爾",
+          "史矛德"
+        ],
+        "ban": "好運姐"
+      },
+      "playstyle": {
+        "前期": "用射程不停白嫖普攻，配合陷阱卡住塔前與草叢位置。",
+        "中期": "推線後圍繞物件提前擺陷阱，限制敵方前排進場。",
+        "後期": "維持最大射程，不要為了大絕或爆頭走進刺客可接近的距離。"
+      },
+      "summary": "利用射程與陷阱取得對線主導權，若沒在前中期建立優勢，後期主要靠爆頭與安全輸出維持價值。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/caitlyn.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "爆頭強化",
+          "icon": "",
+          "summary": "累積攻擊後獲得高傷害強化普攻，陷阱與位移技能也能配合觸發。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "穿透步槍",
+          "icon": "",
+          "summary": "直線清線與消耗技能，對線期非常穩定。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "約德爾陷阱",
+          "icon": "",
+          "summary": "踩中後限制移動並強化後續爆頭，是控制與封路核心。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "反衝網",
+          "icon": "",
+          "summary": "向後位移並緩速敵人，是主要自保工具。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "鎖定狙擊",
+          "icon": "",
+          "summary": "長距離單體收尾技能，但可被其他英雄擋下。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "twitch",
+      "name": "圖奇",
+      "enName": "Twitch",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "position": "隱形突襲／後期範圍射手",
+      "tags": [
+        "偽裝繞後",
+        "毒層爆發",
+        "後期團戰"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 2,
+        "操作難度": 4,
+        "Blind Pick": 2,
+        "對線強度": 2,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-12",
+        "physical-high-13",
+        "physical-high-35",
+        "physical-high-07",
+        "physical-high-24",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "E > Q > W",
+      "matchups": {
+        "good": [
+          "汎",
+          "希維爾",
+          "婕莉"
+        ],
+        "bad": [
+          "凱特琳",
+          "好運姐",
+          "路西恩"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "保守發育，不要為了補刀被遠程射手反覆換血。",
+        "中期": "利用偽裝轉線或繞側，開戰前先確認敵方關鍵控制位置。",
+        "後期": "大絕期間站在可同時穿透多人的角度輸出，毒層滿後再引爆。"
+      },
+      "summary": "對線弱但後期偽裝繞側配合大絕能打出極高範圍傷害，適合抓敵方視野空檔。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/twitch.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "致命毒液",
+          "icon": "",
+          "summary": "普攻疊毒並造成持續傷害，滿層後能強化自身輸出節奏。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "偽裝伏擊",
+          "icon": "",
+          "summary": "進入偽裝並提升移速，適合繞後、抓人與重新站位。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "毒性區域",
+          "icon": "",
+          "summary": "投擲毒液減速並加快疊毒，幫助留人。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "毒層引爆",
+          "icon": "",
+          "summary": "依敵人身上的毒層造成額外爆發，是收割核心。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "超遠穿透射擊",
+          "icon": "",
+          "summary": "短時間提升射程與攻擊力，普攻可穿透多名敵人。"
+        }
+      ],
+      "skillSequence": [
+        "E",
+        "Q",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "tristana",
+      "name": "崔絲塔娜",
+      "enName": "Tristana",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "position": "後期射程／爆破收割射手",
+      "tags": [
+        "射程成長",
+        "跳躍重置",
+        "拆塔快速"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 4,
+        "操作難度": 3,
+        "Blind Pick": 3,
+        "對線強度": 2,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-11",
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-28",
+        "physical-high-17",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "E > Q > W",
+      "matchups": {
+        "good": [
+          "汎",
+          "圖奇",
+          "婕莉"
+        ],
+        "bad": [
+          "寇格魔",
+          "凱特琳",
+          "達瑞文"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "穩定補刀並利用 3 技炸彈抓對方失誤，不要隨便跳進去。",
+        "中期": "炸彈滿層後可刷新跳躍，適合小規模戰快速連殺。",
+        "後期": "射程成長後保持後排，大絕主要拿來推走刺客或完成斬殺。"
+      },
+      "summary": "前期射程有限，後期射程成長後非常安全；炸彈與跳躍重置讓她有高拆塔與收割能力。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/tristana.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "射程成長",
+          "icon": "",
+          "summary": "隨等級提升普攻與技能射程，越後期越安全。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "快速射擊",
+          "icon": "",
+          "summary": "短時間大幅提升攻速，配合炸彈快速疊層。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "火箭跳躍",
+          "icon": "",
+          "summary": "位移並造成傷害，擊殺或炸彈爆炸可刷新。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "爆炸炸彈",
+          "icon": "",
+          "summary": "附著目標並透過攻擊疊層爆炸，是爆發與拆塔核心。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "強力轟擊",
+          "icon": "",
+          "summary": "單體高傷害並擊退，可保命或收割。"
+        }
+      ],
+      "skillSequence": [
+        "E",
+        "Q",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      }
+    },
+    {
+      "id": "samira",
+      "name": "煞蜜拉",
+      "enName": "Samira",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "position": "近身連招／收割型射手",
+      "tags": [
+        "連招爆發",
+        "近身收割",
+        "高風險高報酬"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 1,
+        "操作難度": 5,
+        "Blind Pick": 1,
+        "對線強度": 4,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-bloodline",
+        "sudden-impact"
+      ],
+      "items": [
+        "physical-high-32",
+        "physical-high-17",
+        "physical-high-05",
+        "physical-high-11",
+        "physical-high-10",
+        "physical-high-04"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "婕莉",
+          "汎",
+          "圖奇"
+        ],
+        "bad": [
+          "艾希",
+          "凱特琳",
+          "剎雅"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "以短換血累積節奏，沒有隊友控制時不要強行近身。",
+        "中期": "等隊友先手後快速疊風格，確保有大絕再真正衝進人群。",
+        "後期": "關鍵是判斷進場時間；太早進會被控死，太晚進又無法收割。"
+      },
+      "summary": "要先用不同攻擊與技能疊滿風格再進場開大；非常吃開戰時機與隊伍控制。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/samira.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "風格評級",
+          "icon": "",
+          "summary": "交替使用不同攻擊與技能提升評級，達到最高等級才能開大。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "槍刃射擊",
+          "icon": "",
+          "summary": "遠距離是射擊，近距離變為範圍斬擊，是低冷卻主要輸出。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "刀鋒旋舞",
+          "icon": "",
+          "summary": "旋轉斬擊並阻擋飛行道具，是進場保命關鍵。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "突進斬擊",
+          "icon": "",
+          "summary": "穿越目標並造成傷害，擊殺後能重置，是連續收割工具。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "煉獄扳機",
+          "icon": "",
+          "summary": "達到最高風格後才能施放的範圍持續爆發。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      },
+      "mechanicsTitle": "風格機制",
+      "mechanics": [
+        {
+          "title": "E → S",
+          "text": "每次使用與上一次不同的攻擊或技能命中英雄，就提高風格評級。"
+        },
+        {
+          "title": "S 級開大",
+          "text": "只有達到最高風格後才能使用大絕，因此進場前必須先規劃連招。"
+        }
+      ]
+    },
+    {
+      "id": "yunara",
+      "name": "尤娜拉",
+      "enName": "Yunara",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "position": "成長型／強化狀態射手",
+      "tags": [
+        "新英雄",
+        "攻速強化",
+        "狀態轉換"
+      ],
+      "ratings": {
+        "單排推薦": 3,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 3,
+        "對線強度": 3,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "lethal-tempo",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-12",
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-17",
+        "physical-high-11",
+        "physical-high-10"
+      ],
+      "boots": [
+        "berserkers-greaves",
+        "gunsteel-greaves"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "圖奇",
+          "汎",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "凱特琳",
+          "達瑞文",
+          "好運姐"
+        ],
+        "ban": "凱特琳"
+      },
+      "playstyle": {
+        "前期": "先利用普攻安全堆疊資源，不必急著每次都強開強化狀態。",
+        "中期": "資源與大絕都齊全時再主動打物件團，最大化強化技能收益。",
+        "後期": "保持強化狀態期間的輸出時間，別在沒資源時硬追深。"
+      },
+      "summary": "以普攻堆疊資源後進入強化輸出狀態，熟悉技能變化後能在中後期團戰持續製造壓力。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/yunara.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "暴擊附魔",
+          "icon": "",
+          "summary": "暴擊會附加額外魔法傷害，讓輸出類型更難被單一防禦針對。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "靈性修煉",
+          "icon": "",
+          "summary": "普攻累積資源，主動後提高攻速並強化普攻擴散。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "遠距靈能技",
+          "icon": "",
+          "summary": "主要遠距消耗技能，強化狀態下會獲得更高威脅。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "步法位移",
+          "icon": "",
+          "summary": "用於調整距離與躲技能，強化狀態能刷新或升級效果。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "超然狀態",
+          "icon": "",
+          "summary": "進入強化型態並同步升級多個基本技能，是主要爆發窗口。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      },
+      "mechanicsTitle": "超然狀態",
+      "mechanics": [
+        {
+          "title": "進入超然",
+          "text": "大絕開啟後會強化多個基本技能，形成主要團戰爆發期。"
+        },
+        {
+          "title": "技能刷新",
+          "text": "進出強化狀態會影響部分技能冷卻，需把握轉換時間最大化輸出。"
+        }
+      ]
+    },
+    {
+      "id": "senna",
+      "name": "姍娜",
+      "enName": "Senna",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "position": "成長型／功能射手",
+      "tags": [
+        "遠距成長",
+        "治療護盾",
+        "全圖支援"
+      ],
+      "ratings": {
+        "單排推薦": 3,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 3,
+        "對線強度": 3,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "fleet-footwork",
+        "empowered-attack",
+        "chain-assault",
+        "zombie-ward",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-31",
+        "physical-high-38",
+        "physical-high-17",
+        "physical-high-10"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "汎",
+          "圖奇",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "布里茨",
+          "派克",
+          "納帝魯斯"
+        ],
+        "ban": "布里茨"
+      },
+      "playstyle": {
+        "前期": "重點是穩定收集靈魂與用 1 技換血治療，不必為了擊殺冒險。",
+        "中期": "跟隊伍移動收集更多靈魂，利用控制和全圖大絕支援其他路。",
+        "後期": "射程成長後站在極遠距離輸出與治療，優先維持隊友狀態。"
+      },
+      "summary": "透過黑霧靈魂永久成長射程與傷害，兼具治療、控制與全圖護盾，偏功能與發育型飛龍路選擇。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "avatar": "../assets/images/heroes/duo/senna.png",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "黑霧靈魂",
+          "icon": "",
+          "summary": "收集靈魂永久提升物攻、射程與暴擊，成長性極高。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "穿透聖光",
+          "icon": "",
+          "summary": "同一直線同時傷害敵人並治療隊友，是主要消耗與續戰技能。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "延遲禁錮",
+          "icon": "",
+          "summary": "命中後延遲爆發禁錮附近目標，適合配合隊友控制。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "黑霧偽裝",
+          "icon": "",
+          "summary": "讓自己與附近隊友進入黑霧，提升轉線與保命能力。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "全圖曙光",
+          "icon": "",
+          "summary": "全圖直線傷害敵人並為隊友提供護盾，是跨圖支援核心。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "W",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "大絕"
+      },
+      "mechanicsTitle": "靈魂成長",
+      "mechanics": [
+        {
+          "title": "持續收魂",
+          "text": "死亡單位與攻擊英雄都能產生黑霧靈魂，累積越多射程與傷害越高。"
+        },
+        {
+          "title": "每 20 層",
+          "text": "達到固定靈魂門檻後可獲得額外射程與暴擊等永久成長。"
+        }
+      ]
     }
   ]
 }
