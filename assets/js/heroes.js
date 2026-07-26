@@ -14,6 +14,40 @@
   function safeText(x){ return x || ''; }
   function abilityMedia(x, cls='ability-icon-placeholder'){ return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${safeText(x?.key)||'?'}</span>`; }
 
+  function heroByName(name){ return state.heroes.find(h=>h.name===name); }
+  function matchupChip(name){
+    const h=heroByName(name);
+    return h?.avatar
+      ? `<span class="matchup-chip has-icon"><img src="${h.avatar}" alt="${name}" loading="lazy"><b>${name}</b></span>`
+      : `<span class="matchup-chip"><b>${name}</b></span>`;
+  }
+  function getSkillPriority(hero){
+    const raw=String(hero.skillOrder||'').split('>').map(x=>x.trim()).filter(Boolean);
+    const numMap={'1':'Q','2':'W','3':'E','4':'R'};
+    return raw.map(x=>numMap[x]||x.toUpperCase());
+  }
+  function renderSkillPriority(hero){
+    const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
+    return `<div class="skill-priority-row">${getSkillPriority(hero).map((key,i)=>{
+      const a=abilities[key]||{key,label:key,title:''};
+      return `<div class="skill-priority-step"><span class="skill-priority-rank">${i+1}</span>${abilityMedia(a,'skill-priority-placeholder')}<div><b>${safeText(a.label)||key}</b><small>${safeText(a.title)}</small></div></div>${i<getSkillPriority(hero).length-1?'<span class="skill-priority-arrow">→</span>':''}`;
+    }).join('')}</div>`;
+  }
+  function firstBasicComponent(item, seen=new Set()){
+    if(!item || seen.has(item.id)) return null;
+    seen.add(item.id);
+    if(String(item.id||'').startsWith('basic-') || String(item.id||'').startsWith('support-')) return item;
+    for(const id of (item.buildFrom||[])){
+      const child=byId(state.items,id);
+      const found=firstBasicComponent(child,seen);
+      if(found) return found;
+    }
+    return null;
+  }
+  function buildSet(title, subtitle, cards, cls=''){
+    return `<div class="build-group ${cls}"><div class="build-group-head"><strong>${title}</strong>${subtitle?`<small>${subtitle}</small>`:''}</div><div class="build-group-items">${cards}</div></div>`;
+  }
+
   function buildMiniCard(x, type='item'){
     if(!x) return '<div class="build-mini missing">資料待補</div>';
     return `<div class="build-mini ${type}"><img src="${safeIcon(x)}" alt="${x.name}" loading="lazy"><span>${x.name}</span></div>`;
@@ -87,9 +121,12 @@
     const spells=hero.spells.map(id=>byId(state.spells,id));
     const tags=hero.tags.map(t=>`<span>${t}</span>`).join('');
     const runeHTML=runes.map((x,i)=>`<div class="hero-rune-card ${i===0?'keystone':''}">${x?`<img src="${safeIcon(x)}" alt="${x.name}"><div><small>${i===0?'關鍵符文':'副符文'}</small><strong>${x.name}</strong><p>${x.tag||''}</p></div>`:'<span>資料待補</span>'}</div>`).join('');
-    const itemHTML=items.map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
-    const bootHTML=boots.map((x,i)=>`<div class="hero-build-slot boot"><b>${i===0?'II':'III'}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
     const spellHTML=spells.map(x=>buildMiniCard(x,'spell')).join('');
+    const starter=firstBasicComponent(items[0]);
+    const starterHTML=buildMiniCard(starter,'starter');
+    const coreHTML=items.slice(0,3).map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
+    const bootHTML=boots.map((x,i)=>`<div class="hero-build-slot boot"><b>${i===0?'II':'III'}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
+    const finalHTML=[...items.slice(0,5),boots[1]].map((x,i)=>`<div class="hero-build-slot final"><b>${i<5?i+1:'III'}</b>${buildMiniCard(x,i===5?'boot':'item')}</div>`).join('');
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
@@ -103,14 +140,14 @@
           <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
         </section>
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>綜合評分</h3><span>7.2a</span></div><div class="hero-ratings">${renderRatings(hero)}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>符文</h3><span>主流配置</span></div><div class="hero-runes">${runeHTML}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>推薦出裝</h3><span>6 件完整出裝</span></div><div class="hero-item-build">${itemHTML}</div><div class="hero-build-subrow"><strong>鞋子</strong><div class="hero-boot-path">${bootHTML}</div></div></section>
-        <section class="hero-section hero-section-split"><div><div class="hero-section-title"><h3>召喚師技能</h3></div><div class="hero-spells">${spellHTML}</div></div><div><div class="hero-section-title"><h3>技能優先級</h3></div><div class="skill-order"><span>主升順序</span><strong>${hero.skillOrder}</strong></div></div></section>
+        <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
+        <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
+        <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
+        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
         ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong><p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(x=>`<b>${x}</b>`).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(x=>`<b>${x}</b>`).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><strong>${hero.matchups.ban}</strong></div></div></section>
+        <section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(matchupChip).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div></div></section>
         ${Array.isArray(hero.mechanics)&&hero.mechanics.length?`<section class="hero-section"><div class="hero-section-title"><h3>${hero.mechanicsTitle||'特殊機制'}</h3><span>Champion Mechanic</span></div><div class="stack-grid">${hero.mechanics.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}${x.stacks!=null?`<strong>${x.stacks}</strong>`:''}<span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>實戰節奏</h3></div><div class="playstyle-timeline">${Object.entries(hero.playstyle).map(([k,v])=>`<div class="playstyle-step"><b>${k}</b><p>${v}</p></div>`).join('')}</div></section>
         <div class="hero-source-note">${hero.sourceNote}</div>
