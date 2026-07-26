@@ -863,3 +863,13 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 .tier-hero-card.is-pending:hover{transform:none;border-color:var(--line);background:rgba(8,20,34,.72);box-shadow:none}
 .tier-hero-card.is-pending .tier-hero-avatar-wrap{filter:saturate(.72)}
 .tier-cross-tag{display:inline-flex;margin-top:6px;padding:2px 6px;border:1px solid rgba(216,184,108,.34);border-radius:999px;color:var(--gold);background:rgba(216,184,108,.07);font-size:8px;font-weight:900;letter-spacing:.05em}
+
+/* v29 ALL champion browser + multi-lane detail switch */
+.all-hero-grid{align-items:stretch}
+.all-hero-card{min-height:150px}
+.all-role-badges{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin-top:6px}
+.all-role-badges i{font-style:normal;font-size:11px;padding:2px 6px;border:1px solid rgba(214,180,92,.35);border-radius:999px;color:var(--muted,#b8b8b8);background:rgba(255,255,255,.03)}
+.hero-lane-switch{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.hero-lane-switch button{border:1px solid rgba(214,180,92,.35);background:rgba(255,255,255,.03);color:inherit;border-radius:999px;padding:8px 12px;cursor:pointer}
+.hero-lane-switch button.active{border-color:#d6b45c;box-shadow:0 0 0 1px rgba(214,180,92,.18) inset}
+@media(max-width:720px){.all-hero-card{min-height:132px}.all-role-badges i{font-size:10px;padding:2px 5px}.hero-detail-toolbar{gap:8px;flex-wrap:wrap}.hero-lane-switch{width:100%;margin-left:0}.hero-lane-switch button{flex:1;min-width:86px}}
