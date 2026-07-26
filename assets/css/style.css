@@ -741,3 +741,118 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
   .ability-grid{grid-template-columns:1fr 1fr}
   .matchup-chip img{width:44px;height:44px}
 }
+
+/* ===== Mobile RWD V26 · cleaner databases + polished equipment ===== */
+@media (max-width: 900px){
+  /* Mobile no longer uses the duplicated detail/explanation panels. */
+  .mobile-detail{display:none!important}
+}
+
+@media (max-width: 800px){
+  /* Database cards become the content itself on mobile. */
+  .database-layout{gap:0}
+  .database-main{width:100%}
+  .interactive-card:hover,.interactive-card.active,
+  .interactive-icon:hover,.interactive-icon.active{
+    transform:none;
+  }
+
+  /* Equipment database: compact game-like icon shelf. */
+  .item-stage-section{margin-bottom:24px}
+  .item-stage-section>h2{
+    display:flex;align-items:center;gap:8px;
+    margin:0 0 10px;padding:0 1px 8px;
+    font-size:14px;letter-spacing:.02em;
+    border-bottom:1px solid rgba(216,184,108,.18)
+  }
+  .item-stage-section>h2::before{
+    content:"";width:3px;height:15px;border-radius:99px;
+    background:linear-gradient(180deg,#f1d78f,#a96a25);
+    box-shadow:0 0 10px rgba(216,184,108,.18)
+  }
+  .item-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+  .item-icon{
+    position:relative;min-width:0;padding:9px 5px 8px;border-radius:13px;
+    border-color:rgba(255,255,255,.07);
+    background:linear-gradient(165deg,rgba(18,38,61,.82),rgba(7,18,31,.92));
+    box-shadow:0 7px 17px rgba(0,0,0,.16)
+  }
+  .item-icon img{
+    width:60px;height:60px;margin:0 auto 7px;border-radius:11px;
+    border:1px solid rgba(216,184,108,.2);
+    box-shadow:0 5px 13px rgba(0,0,0,.22)
+  }
+  .item-icon strong{
+    display:block;min-height:30px;font-size:10px;line-height:1.35;
+    text-align:center;word-break:keep-all
+  }
+  .item-icon .item-price{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-width:44px;margin-top:5px;padding:2px 6px;border-radius:999px;
+    border:1px solid rgba(216,184,108,.18);
+    background:rgba(216,184,108,.07);font-size:8px;color:#e3c77e
+  }
+
+  /* Hero build: less "boxes inside boxes", stronger visual hierarchy. */
+  .build-groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .build-group{
+    position:relative;overflow:hidden;padding:10px;border-radius:14px;
+    border:1px solid rgba(216,184,108,.12);
+    background:linear-gradient(155deg,rgba(17,37,59,.68),rgba(7,18,31,.72));
+    box-shadow:0 8px 22px rgba(0,0,0,.13)
+  }
+  .build-group::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:2px;
+    background:linear-gradient(180deg,rgba(241,215,143,.9),rgba(169,106,37,.16))
+  }
+  .build-group-head{
+    margin-bottom:9px;padding:0 0 7px 2px;border-bottom:1px solid rgba(255,255,255,.055)
+  }
+  .build-group-head strong{font-size:11px;letter-spacing:.02em}
+  .build-group-head small{font-size:7px;color:#c9ad69;opacity:.82}
+  .starter-group{grid-column:1}
+  .boots-group{grid-column:2!important}
+  .core-group,.final-group{grid-column:1/-1}
+
+  .build-group .build-mini{
+    padding:6px 4px 5px;border-radius:11px;
+    border:1px solid rgba(255,255,255,.055);
+    background:rgba(4,14,25,.46);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.025)
+  }
+  .build-group .build-mini img{
+    width:48px;height:48px;margin:0 auto 5px;border-radius:9px;
+    border:1px solid rgba(216,184,108,.16);
+    box-shadow:0 5px 12px rgba(0,0,0,.2)
+  }
+  .build-group .build-mini span{
+    font-size:8px;line-height:1.28;min-height:20px;
+    display:flex;align-items:flex-start;justify-content:center
+  }
+  .starter-group .build-group-items{display:block}
+  .starter-group .build-mini{max-width:none;margin:0}
+  .core-group .build-group-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;overflow:visible}
+  .boots-group .hero-boot-path{justify-content:center;gap:5px}
+  .build-group .hero-build-slot.boot{width:auto;min-width:0;flex:1}
+  .build-group .build-arrow{font-size:12px;color:#c9ad69;opacity:.8}
+  .final-group .build-group-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;overflow:visible}
+
+  /* Summoner/rune cards on hero profiles keep data, but use a lighter shell. */
+  .summoner-box,.rune-box{
+    border-color:rgba(216,184,108,.1);
+    background:rgba(5,16,28,.42);
+    box-shadow:none
+  }
+}
+
+@media (max-width: 420px){
+  .item-icon-grid{gap:6px}
+  .item-icon{padding:8px 4px 7px}
+  .item-icon img{width:56px;height:56px}
+  .item-icon strong{font-size:9px;min-height:27px}
+  .item-icon .item-price{font-size:7px}
+
+  .build-group{padding:9px 8px}
+  .build-group .build-mini img{width:44px;height:44px}
+  .build-group .build-mini span{font-size:7px;min-height:18px}
+}
