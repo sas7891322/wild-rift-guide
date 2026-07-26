@@ -533,3 +533,7 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 .matchup-chip{gap:9px;padding:7px 10px!important}.matchup-chip img{width:42px;height:42px;border-width:2px}.matchup-chip b{font-size:13px!important}
 @media(max-width:1050px){.build-groups{grid-template-columns:1fr 1.6fr}.boots-group{grid-column:1/-1}.final-group{grid-column:1/-1}}
 @media(max-width:800px){.build-groups{grid-template-columns:1fr}.boots-group,.final-group{grid-column:auto}.core-group .build-group-items{grid-template-columns:repeat(3,105px);overflow-x:auto}.final-group .build-group-items{grid-template-columns:repeat(6,96px);overflow-x:auto}.matchup-chip img{width:38px;height:38px}}
+
+/* v24 - extra / evolved ability icon variants */
+.ability-variants{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0 2px}.ability-variants img{width:34px;height:34px;border-radius:9px;object-fit:cover;border:1px solid rgba(216,184,108,.26);background:rgba(5,14,25,.8)}
+.passive-feature .ability-variants{margin-top:8px}.passive-feature .ability-variants img{width:36px;height:36px}

@@ -13,6 +13,7 @@
   function safeIcon(x){ return x?.icon || ''; }
   function safeText(x){ return x || ''; }
   function abilityMedia(x, cls='ability-icon-placeholder'){ return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${safeText(x?.key)||'?'}</span>`; }
+  function abilityVariants(x){ const arr=Array.isArray(x?.variantIcons)?x.variantIcons:[]; if(arr.length<=1) return ''; return `<div class="ability-variants">${arr.map((src,i)=>`<img src="${src}" alt="${safeText(x?.label)||safeText(x?.title)} ${i+1}" loading="lazy">`).join('')}</div>`; }
 
   function heroByName(name){ return state.heroes.find(h=>h.name===name); }
   function matchupChip(name){
@@ -130,7 +131,7 @@
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
-    const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head">${abilityMedia(x)}<div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div><p>${safeText(x.summary)}</p></div>`).join('');
+    const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head">${abilityMedia(x)}<div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div>${abilityVariants(x)}<p>${safeText(x.summary)}</p></div>`).join('');
 
     $('#heroContent').innerHTML=`
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${roleNames[state.role]} Tier 總覽</button></div>
@@ -145,7 +146,7 @@
         <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
-        ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong><p>${safeText(passive.summary)}</p></div></div></section>`:''}
+        ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(matchupChip).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div></div></section>
         ${Array.isArray(hero.mechanics)&&hero.mechanics.length?`<section class="hero-section"><div class="hero-section-title"><h3>${hero.mechanicsTitle||'特殊機制'}</h3><span>Champion Mechanic</span></div><div class="stack-grid">${hero.mechanics.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}${x.stacks!=null?`<strong>${x.stacks}</strong>`:''}<span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>`:''}

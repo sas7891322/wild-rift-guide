@@ -1,7 +1,7 @@
 {
   "version": "7.2a",
   "updated": "2026-07-26",
-  "notes": "飛龍路完整資料版：23 位英雄已建立 Tier 總覽與完整資料頁；除史矛德外，技能／被動圖示保留待補官方素材。",
+  "notes": "飛龍路英雄資料庫：23 位英雄已建檔；目前已補齊 15 位（含史矛德）的技能／被動圖示。其餘英雄待後續補圖。",
   "heroes": [
     {
       "id": "smolder",
@@ -216,42 +216,42 @@
         "後期": "保持後排站位，優先找不易被打斷的大絕角度，不要為了普攻走進危險區。"
       },
       "summary": "前期利用彈射與被動壓血量，中期抓地形與控制接大絕，團戰只要有安全角度就能快速改變勝負。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/miss-fortune.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "目標切換增傷",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/miss-fortune/01.png",
           "summary": "切換攻擊目標能提高換血效率，對線要善用短點射。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "彈射消耗",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/miss-fortune/02.png",
           "summary": "主要對線消耗技能，利用小兵彈射命中後排英雄。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "加速與攻速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/miss-fortune/03.png",
           "summary": "提供跑速與攻速，是追擊、拉扯與輸出的核心增益。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "範圍緩速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/miss-fortune/04.png",
           "summary": "遠距離鋪設緩速區，方便接大絕或限制走位。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "扇形彈幕",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/miss-fortune/05.png",
           "summary": "大範圍持續傷害；配合硬控、狹窄地形時威脅最高。"
         }
       ],
@@ -277,7 +277,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "ezreal",
@@ -343,42 +345,42 @@
         "後期": "保持最大射程打前排也沒問題，3 技優先拿來調整站位而非貪輸出。"
       },
       "summary": "用技能距離與位移保持安全輸出，持續命中 1 技降低節奏空窗，是非常穩定的 Blind Pick。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/ezreal.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "技能命中疊攻速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ezreal/01.png",
           "summary": "連續命中技能後能提高輸出節奏，團戰前先疊狀態。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "主力魔法箭",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ezreal/02.png",
           "summary": "遠距離消耗與主要輸出來源，命中品質決定英雄上限。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "標記增傷",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ezreal/03.png",
           "summary": "標記後再以攻擊或技能觸發，適合補爆發與拆塔。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "瞬移位移",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ezreal/04.png",
           "summary": "核心保命與追擊工具，最好在敵方關鍵控制交掉後再進場。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "全圖能量波",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ezreal/05.png",
           "summary": "可遠距離支援、清線與開戰前壓血量。"
         }
       ],
@@ -404,7 +406,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "varus",
@@ -470,42 +474,46 @@
         "後期": "站在前排後持續輸出，打坦與控制能力讓他後期仍有很高團戰價值。"
       },
       "summary": "兼具持續輸出、遠距消耗與大絕開戰，能依敵方前排厚度穩定調整輸出節奏。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
       "avatar": "../assets/images/heroes/duo/varus.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "擊殺後攻速提升",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/varus/01.png",
           "summary": "參與擊殺後提高攻速，連續收割時輸出會快速上升。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "蓄力穿刺箭",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/varus/02.png",
           "summary": "主要遠距消耗技能，蓄力越完整距離與傷害越高。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "枯萎印記",
-          "icon": "",
-          "summary": "普攻疊加印記後由技能引爆，提供重要的百分比傷害。"
+          "icon": "../assets/images/heroes/skills/varus/03.png",
+          "summary": "普攻疊加印記後由技能引爆，提供重要的百分比傷害。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/varus/03.png",
+            "../assets/images/heroes/skills/varus/06.png"
+          ]
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "範圍減療緩速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/varus/05.png",
           "summary": "限制回血並封鎖走位，適合接控制與物件團。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "鎖鏈禁錮",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/varus/04.png",
           "summary": "遠距離強控並可向附近敵人擴散，是團戰開戰核心。"
         }
       ],
@@ -531,7 +539,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 6
     },
     {
       "id": "zeri",
@@ -597,42 +607,46 @@
         "後期": "沿牆與隊友前排拉扯，持續輸出而不是一次性衝進敵陣。"
       },
       "summary": "前期偏弱，但裝備成形後能靠位移與大絕長時間拉打；操作上限非常高。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
       "avatar": "../assets/images/heroes/duo/zeri.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "特殊普攻機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zeri/01.png",
           "summary": "普攻以方向性射擊呈現，需要自行瞄準並管理攻速上限。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "電擊緩速",
-          "icon": "",
-          "summary": "提供傷害與緩速，補刀或拉打都很實用。"
+          "icon": "../assets/images/heroes/skills/zeri/02.png",
+          "summary": "提供傷害與緩速，補刀或拉打都很實用。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/zeri/02.png",
+            "../assets/images/heroes/skills/zeri/05.png"
+          ]
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "遠距雷射",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zeri/03.png",
           "summary": "穿牆後效果更強，適合團戰前消耗。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "跨牆位移",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zeri/04.png",
           "summary": "核心機動技能，可穿越地形切入或撤退。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "超載團戰",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zeri/06.png",
           "summary": "命中多名敵人後進入強勢拉打狀態，適合長時間團戰。"
         }
       ],
@@ -658,7 +672,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 6
     },
     {
       "id": "lucian",
@@ -724,42 +740,42 @@
         "後期": "後期射程劣勢更明顯，必須靠位移和大絕保持安全輸出。"
       },
       "summary": "善用每次施法後的雙槍被動打短爆發，靠位移重置與節奏壓制在前中期建立優勢。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/lucian.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "技能後雙槍",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/lucian/01.png",
           "summary": "每次施放技能後強化下一次普攻，是連招爆發核心。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "穿透射擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/lucian/02.png",
           "summary": "穩定直線傷害，可隔著小兵消耗英雄。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "標記射擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/lucian/03.png",
           "summary": "命中後方便追擊與拉扯，常作為連招銜接。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "短距位移",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/lucian/04.png",
           "summary": "可被被動與攻擊縮短冷卻，是路西恩操作上限來源。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "持續槍林",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/lucian/05.png",
           "summary": "長距離持續輸出，可收頭、壓走位或先打殘敵人。"
         }
       ],
@@ -785,7 +801,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "xayah",
@@ -851,42 +869,46 @@
         "後期": "大絕盡量拿來躲關鍵技能，活著拉回羽毛往往比先手輸出更重要。"
       },
       "summary": "利用羽毛佈局與倒鉤反打，兼具高輸出、禁錮與大絕自保，團戰容錯很高。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
       "avatar": "../assets/images/heroes/duo/xayah.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "攻擊留下羽毛",
-          "icon": "",
-          "summary": "技能後普攻會穿透並留下羽毛，是所有控制與爆發的基礎。"
+          "icon": "../assets/images/heroes/skills/xayah/01.png",
+          "summary": "技能後普攻會穿透並留下羽毛，是所有控制與爆發的基礎。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/xayah/01.png",
+            "../assets/images/heroes/skills/xayah/02.png"
+          ]
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "雙刃投擲",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xayah/03.png",
           "summary": "快速放置羽毛並補傷害，常用來建立倒鉤角度。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "強化普攻",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xayah/04.png",
           "summary": "增加攻速與傷害，提升正面持續輸出。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "羽毛回收",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xayah/05.png",
           "summary": "召回羽毛造成傷害，多枚命中可禁錮，是核心反打技能。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "羽刃風暴",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xayah/06.png",
           "summary": "短暫不可被選取並留下大量羽毛，是最重要的自保工具。"
         }
       ],
@@ -912,7 +934,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 6
     },
     {
       "id": "jhin",
@@ -978,42 +1002,42 @@
         "後期": "站位比持續普攻更重要，利用超遠距技能先控制與收殘血。"
       },
       "summary": "利用第四發與技能控制掌握節奏，不必追求最高攻速；遠距離支援與收尾能力非常完整。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/jhin.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "四發彈匣",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/jhin/01.png",
           "summary": "第四發傷害極高並具斬殺味道，換彈期間要主動拉開。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "彈跳手榴彈",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/jhin/02.png",
           "summary": "可連續彈跳，對線清兵與消耗都很實用。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "遠距定身",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/jhin/03.png",
           "summary": "攻擊過目標後可遠距離禁錮，團隊配合價值很高。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "陷阱區域",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/jhin/04.png",
           "summary": "提供減速、視野與爆炸傷害，可預先佈置物件區。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "超遠距狙擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/jhin/05.png",
           "summary": "遠距離連續射擊，用於開戰、逼位或收割。"
         }
       ],
@@ -1039,7 +1063,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "kogmaw",
@@ -1105,42 +1131,42 @@
         "後期": "不要單獨走線，保持最大射程持續打最近目標即可造成巨大團戰壓力。"
       },
       "summary": "需要隊友保護，但開啟射程強化後能從安全位置快速融化前排，是版本頂級後期火力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/kogmaw.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "死亡爆炸",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kogmaw/01.png",
           "summary": "死亡後仍可移動並爆炸造成真實傷害，能在必死時換取價值。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "腐蝕投射",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kogmaw/02.png",
           "summary": "遠距離傷害並削弱敵方抗性，方便後續持續輸出。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "射程強化",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kogmaw/03.png",
           "summary": "短時間大幅提高射程並附加百分比傷害，是整套玩法核心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "地面緩速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kogmaw/04.png",
           "summary": "鋪設緩速區阻擋進場，協助自己拉開距離。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "遠距砲擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kogmaw/05.png",
           "summary": "可連續用於探草、消耗與收尾，但要管理魔力消耗。"
         }
       ],
@@ -1166,7 +1192,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "vayne",
@@ -1232,42 +1260,42 @@
         "後期": "大絕後靠翻滾隱身與走位持續輸出，優先打最近且安全的目標。"
       },
       "summary": "前期承受射程劣勢，後期靠三環真實傷害、翻滾與大絕單挑任何高生命前排。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/vayne.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "追獵加速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vayne/01.png",
           "summary": "朝敵方英雄移動時提升追擊能力，適合收割與黏人。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "翻滾強化攻擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vayne/02.png",
           "summary": "短位移並強化下一擊，是重置站位與躲技能的核心。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "三環真實傷害",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vayne/03.png",
           "summary": "連續攻擊同一目標觸發高額真實傷害，是打坦核心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "擊退釘牆",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vayne/04.png",
           "summary": "將敵人擊退，撞牆時造成控制，是重要自保與反殺技能。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極獵殺",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vayne/05.png",
           "summary": "強化攻擊與翻滾，提升機動與隱蔽性，後期團戰上限極高。"
         }
       ],
@@ -1293,7 +1321,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "corki",
@@ -1359,43 +1389,47 @@
         "後期": "保持技能命中率與安全位移，持續輸出比一次爆發更重要。"
       },
       "summary": "以技能消耗與真實傷害輸出，能穩定打前排並在中期物件戰形成高壓力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
       "avatar": "../assets/images/heroes/duo/corki.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "海克斯彈藥",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/corki/01.png",
           "summary": "普攻與特定強化效果附加真實傷害，讓敵方難以單靠護甲應對。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "範圍炸彈",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/corki/02.png",
           "summary": "穩定清線與消耗技能，亦可提供區域視野。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "女武神位移",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/corki/03.png",
           "summary": "向指定方向位移並留下燃燒路徑，主要用於調整站位。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "機槍掃射",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/corki/04.png",
           "summary": "持續對前方造成傷害並削弱防禦，適合貼著前排輸出。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "飛彈連射",
-          "icon": "",
-          "summary": "可儲存並遠距離持續消耗，是中後期團戰前壓血核心。"
+          "icon": "../assets/images/heroes/skills/corki/05.png",
+          "summary": "可儲存並遠距離持續消耗，是中後期團戰前壓血核心。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/corki/05.png",
+            "../assets/images/heroes/skills/corki/06.png"
+          ]
         }
       ],
       "skillSequence": [
@@ -1420,7 +1454,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 6
     },
     {
       "id": "kalista",
@@ -1486,42 +1522,47 @@
         "後期": "持續跳躍輸出並觀察疊矛數量，處理龍與巴龍時有額外斬殺價值。"
       },
       "summary": "普攻位移讓她有極高拉打上限，但很吃走位與輔助默契；疊矛後的瞬間斬殺能主導物件戰。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 7 張）。",
       "avatar": "../assets/images/heroes/duo/kalista.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "普攻跳躍",
-          "icon": "",
-          "summary": "每次普攻後可位移，是操作核心，也讓減速效果特別克制她。"
+          "icon": "../assets/images/heroes/skills/kalista/01.png",
+          "summary": "每次普攻後可位移，是操作核心，也讓減速效果特別克制她。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/kalista/01.png",
+            "../assets/images/heroes/skills/kalista/03.png",
+            "../assets/images/heroes/skills/kalista/04.png"
+          ]
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "投矛穿刺",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kalista/02.png",
           "summary": "直線投矛並可傳遞疊矛效果，用於消耗與補刀。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "哨兵與契約",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kalista/05.png",
           "summary": "與隊友建立連結並提供協同效果，視野與團隊價值高。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "撕裂引爆",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kalista/06.png",
           "summary": "拔出目標身上的長矛造成爆發，疊層越高傷害越高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "命運召喚",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kalista/07.png",
           "summary": "將契約隊友拉回並可讓其再次衝出，是開戰或保命工具。"
         }
       ],
@@ -1547,7 +1588,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 7
     },
     {
       "id": "sivir",
@@ -1613,42 +1656,42 @@
         "後期": "站在安全位置讓彈射持續擴散，大絕可用來追擊也能救整隊撤退。"
       },
       "summary": "清線速度快又有法術護盾，能穩定發育並用大絕加速全隊開戰或撤退。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/sivir.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "命中加速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sivir/01.png",
           "summary": "攻擊英雄後提升移速，讓走砍與追擊更順暢。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "迴旋飛刃",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sivir/02.png",
           "summary": "往返兩段傷害的主要消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "彈射普攻",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sivir/03.png",
           "summary": "讓普攻在多個目標間彈跳，是團戰範圍輸出核心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "法術護盾",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sivir/04.png",
           "summary": "正確時機可免疫關鍵技能並回補資源，容錯很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "團隊加速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sivir/05.png",
           "summary": "為自己與隊友提供移速，能主動開戰、追擊或撤退。"
         }
       ],
@@ -1674,7 +1717,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "kaisa",
@@ -1740,42 +1785,58 @@
         "後期": "利用大絕盾與 3 技機動反覆調整位置，優先處理能安全擊殺的目標。"
       },
       "summary": "完整裝備會逐步進化技能，既能正面持續輸出，也能抓標記用大絕切入後排。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 9 張）。",
       "avatar": "../assets/images/heroes/duo/kaisa.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "電漿與進化",
-          "icon": "",
-          "summary": "攻擊疊加電漿；完整裝備能逐步進化基本技能。"
+          "icon": "../assets/images/heroes/skills/kaisa/02.png",
+          "summary": "攻擊疊加電漿；完整裝備能逐步進化基本技能。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/kaisa/02.png",
+            "../assets/images/heroes/skills/kaisa/01.png"
+          ]
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "多枚飛彈",
-          "icon": "",
-          "summary": "對孤立目標爆發極高，是清線與單體傷害核心。"
+          "icon": "../assets/images/heroes/skills/kaisa/03.png",
+          "summary": "對孤立目標爆發極高，是清線與單體傷害核心。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/kaisa/03.png",
+            "../assets/images/heroes/skills/kaisa/04.png"
+          ]
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "虛空標記",
-          "icon": "",
-          "summary": "遠距離命中後疊加電漿，亦可作為大絕切入標記。"
+          "icon": "../assets/images/heroes/skills/kaisa/05.png",
+          "summary": "遠距離命中後疊加電漿，亦可作為大絕切入標記。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/kaisa/05.png",
+            "../assets/images/heroes/skills/kaisa/06.png"
+          ]
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "蓄力加速",
-          "icon": "",
-          "summary": "提供移速與攻速，進化後可短暫隱形調整站位。"
+          "icon": "../assets/images/heroes/skills/kaisa/07.png",
+          "summary": "提供移速與攻速，進化後可短暫隱形調整站位。",
+          "variantIcons": [
+            "../assets/images/heroes/skills/kaisa/07.png",
+            "../assets/images/heroes/skills/kaisa/08.png"
+          ]
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "獵殺突進",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/kaisa/09.png",
           "summary": "突進到已標記敵人附近並獲得護盾，可追擊或躲技能。"
         }
       ],
@@ -1816,7 +1877,9 @@
           "title": "2 技進化",
           "text": "額外增加電漿層數並降低命中後冷卻，偏向後續完整進化。"
         }
-      ]
+      ],
+      "skillIconStatus": "complete",
+      "skillIconCount": 9
     },
     {
       "id": "draven",
@@ -2020,42 +2083,42 @@
         "後期": "正面戰持續緩速最近目標，保留視野技能檢查側翼與草叢。"
       },
       "summary": "普攻緩速與全圖大絕讓她即使經濟普通也有高團隊價值，是穩定且好理解的功能型射手。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
       "avatar": "../assets/images/heroes/duo/ashe.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "冰霜減速",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ashe/01.png",
           "summary": "普攻與技能附帶緩速，能穩定限制敵方走位。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "專注連射",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ashe/02.png",
           "summary": "累積後強化普攻攻速與傷害，是持續輸出核心。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "扇形箭雨",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ashe/03.png",
           "summary": "遠距離扇形消耗，對線與團戰前壓血都實用。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鷹靈視野",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ashe/04.png",
           "summary": "遠距離偵查區域，能降低被埋伏與物件偷打風險。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "全圖魔法箭",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ashe/05.png",
           "summary": "可跨圖暈眩第一名英雄，是開戰與支援核心。"
         }
       ],
@@ -2081,7 +2144,9 @@
         "W": "2 技",
         "E": "3 技",
         "R": "大絕"
-      }
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5
     },
     {
       "id": "jinx",
