@@ -1,7 +1,7 @@
 {
-  "version": "7.2a-v27",
-  "updated": "2026-07-26",
-  "notes": "五路 Tier 資料結構升級：巴龍49、打野50、中路46、飛龍23、輔助32。四路先以文字頭像佔位；飛龍路保留既有23位詳細資料。未來跨路英雄可獨立設定 Tier。",
+  "version": "7.2a-v28",
+  "updated": "2026-07-27",
+  "notes": "v28：完成巴龍路 49 位與打野 50 位英雄頭像；巴龍名單依遊戲內篩選截圖校正；打野依已上傳完整素材校正並共用跨路英雄頭像。詳細攻略頁後續逐隻補齊。",
   "heroes": [
     {
       "id": "smolder",
@@ -3075,12 +3075,20 @@
     "baron": {
       "name": "巴龍路",
       "nativeCount": 49,
-      "crossCount": 0
+      "crossCount": 0,
+      "avatarComplete": true,
+      "detailComplete": false,
+      "portraitMode": "shared",
+      "verification": "遊戲內巴龍路篩選 49 位已人工核對完成"
     },
     "jungle": {
       "name": "打野",
       "nativeCount": 50,
-      "crossCount": 0
+      "crossCount": 0,
+      "avatarComplete": true,
+      "detailComplete": false,
+      "portraitMode": "shared",
+      "verification": "打野 50 位：25 位共用巴龍頭像＋25 位打野專屬上傳頭像"
     },
     "mid": {
       "name": "中路",
@@ -3107,7 +3115,8 @@
         "enName": "Aatrox",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/aatrox.webp"
       },
       {
         "id": "akali",
@@ -3115,7 +3124,8 @@
         "enName": "Akali",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/akali.png"
       },
       {
         "id": "ambessa",
@@ -3123,7 +3133,8 @@
         "enName": "Ambessa",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/ambessa.png"
       },
       {
         "id": "aurora",
@@ -3131,7 +3142,8 @@
         "enName": "Aurora",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/aurora.png"
       },
       {
         "id": "camille",
@@ -3139,15 +3151,8 @@
         "enName": "Camille",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
-      },
-      {
-        "id": "chogath",
-        "name": "科加斯",
-        "enName": "Cho'Gath",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/camille.webp"
       },
       {
         "id": "darius",
@@ -3155,15 +3160,8 @@
         "enName": "Darius",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
-      },
-      {
-        "id": "diana",
-        "name": "黛安娜",
-        "enName": "Diana",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/darius.webp"
       },
       {
         "id": "dr-mundo",
@@ -3171,7 +3169,8 @@
         "enName": "Dr. Mundo",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
       },
       {
         "id": "fiora",
@@ -3179,7 +3178,8 @@
         "enName": "Fiora",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/fiora.webp"
       },
       {
         "id": "garen",
@@ -3187,7 +3187,8 @@
         "enName": "Garen",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/garen.png"
       },
       {
         "id": "gnar",
@@ -3195,7 +3196,8 @@
         "enName": "Gnar",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/gnar.png"
       },
       {
         "id": "gragas",
@@ -3203,7 +3205,8 @@
         "enName": "Gragas",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/gragas.png"
       },
       {
         "id": "gwen",
@@ -3211,15 +3214,8 @@
         "enName": "Gwen",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
-      },
-      {
-        "id": "heimerdinger",
-        "name": "漢默丁格",
-        "enName": "Heimerdinger",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/gwen.webp"
       },
       {
         "id": "irelia",
@@ -3227,7 +3223,17 @@
         "enName": "Irelia",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/irelia.png"
+      },
+      {
+        "id": "jarvan-iv",
+        "name": "嘉文四世",
+        "enName": "Jarvan IV",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/jarvan-iv.png"
       },
       {
         "id": "jax",
@@ -3235,7 +3241,8 @@
         "enName": "Jax",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/jax.png"
       },
       {
         "id": "jayce",
@@ -3243,7 +3250,8 @@
         "enName": "Jayce",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/jayce.png"
       },
       {
         "id": "ksante",
@@ -3251,15 +3259,8 @@
         "enName": "K'Sante",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
-      },
-      {
-        "id": "kalista",
-        "name": "克黎思妲",
-        "enName": "Kalista",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/ksante.webp"
       },
       {
         "id": "kayle",
@@ -3267,7 +3268,8 @@
         "enName": "Kayle",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/kayle.webp"
       },
       {
         "id": "kennen",
@@ -3275,7 +3277,8 @@
         "enName": "Kennen",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/kennen.png"
       },
       {
         "id": "malphite",
@@ -3283,7 +3286,8 @@
         "enName": "Malphite",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/malphite.webp"
       },
       {
         "id": "maokai",
@@ -3291,7 +3295,8 @@
         "enName": "Maokai",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/maokai.png"
       },
       {
         "id": "mordekaiser",
@@ -3299,7 +3304,8 @@
         "enName": "Mordekaiser",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/mordekaiser.png"
       },
       {
         "id": "nasus",
@@ -3307,7 +3313,26 @@
         "enName": "Nasus",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/nasus.png"
+      },
+      {
+        "id": "nautilus",
+        "name": "納帝魯斯",
+        "enName": "Nautilus",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/nautilus.png"
+      },
+      {
+        "id": "nidalee",
+        "name": "奈德麗",
+        "enName": "Nidalee",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/nidalee.png"
       },
       {
         "id": "olaf",
@@ -3315,7 +3340,8 @@
         "enName": "Olaf",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/olaf.webp"
       },
       {
         "id": "ornn",
@@ -3323,7 +3349,8 @@
         "enName": "Ornn",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/ornn.png"
       },
       {
         "id": "pantheon",
@@ -3331,7 +3358,8 @@
         "enName": "Pantheon",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/pantheon.png"
       },
       {
         "id": "poppy",
@@ -3339,7 +3367,8 @@
         "enName": "Poppy",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/poppy.webp"
       },
       {
         "id": "renekton",
@@ -3347,7 +3376,8 @@
         "enName": "Renekton",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/renekton.png"
       },
       {
         "id": "riven",
@@ -3355,7 +3385,8 @@
         "enName": "Riven",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/riven.png"
       },
       {
         "id": "rumble",
@@ -3363,7 +3394,8 @@
         "enName": "Rumble",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/rumble.webp"
       },
       {
         "id": "ryze",
@@ -3371,7 +3403,8 @@
         "enName": "Ryze",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/ryze.webp"
       },
       {
         "id": "sett",
@@ -3379,7 +3412,8 @@
         "enName": "Sett",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/sett.webp"
       },
       {
         "id": "shen",
@@ -3387,7 +3421,8 @@
         "enName": "Shen",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/shen.webp"
       },
       {
         "id": "singed",
@@ -3395,7 +3430,8 @@
         "enName": "Singed",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/singed.webp"
       },
       {
         "id": "sion",
@@ -3403,7 +3439,8 @@
         "enName": "Sion",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/sion.webp"
       },
       {
         "id": "skarner",
@@ -3411,7 +3448,8 @@
         "enName": "Skarner",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/skarner.png"
       },
       {
         "id": "swain",
@@ -3419,7 +3457,8 @@
         "enName": "Swain",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/swain.webp"
       },
       {
         "id": "teemo",
@@ -3427,7 +3466,8 @@
         "enName": "Teemo",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/teemo.png"
       },
       {
         "id": "tryndamere",
@@ -3435,7 +3475,8 @@
         "enName": "Tryndamere",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
       },
       {
         "id": "urgot",
@@ -3443,15 +3484,17 @@
         "enName": "Urgot",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/urgot.webp"
       },
       {
-        "id": "vayne",
-        "name": "汎",
-        "enName": "Vayne",
-        "tier": "S",
+        "id": "viego",
+        "name": "維爾戈",
+        "enName": "Viego",
+        "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/viego.png"
       },
       {
         "id": "vladimir",
@@ -3459,7 +3502,8 @@
         "enName": "Vladimir",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/vladimir.png"
       },
       {
         "id": "volibear",
@@ -3467,7 +3511,17 @@
         "enName": "Volibear",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/volibear.png"
+      },
+      {
+        "id": "warwick",
+        "name": "沃維克",
+        "enName": "Warwick",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/warwick.png"
       },
       {
         "id": "wukong",
@@ -3475,7 +3529,8 @@
         "enName": "Wukong",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/wukong.webp"
       },
       {
         "id": "yasuo",
@@ -3483,7 +3538,8 @@
         "enName": "Yasuo",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/yasuo.webp"
       },
       {
         "id": "yone",
@@ -3491,7 +3547,8 @@
         "enName": "Yone",
         "tier": "S+",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/yone.webp"
       }
     ],
     "jungle": [
@@ -3501,7 +3558,8 @@
         "enName": "Aatrox",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/aatrox.webp"
       },
       {
         "id": "ambessa",
@@ -3509,7 +3567,8 @@
         "enName": "Ambessa",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/ambessa.png"
       },
       {
         "id": "amumu",
@@ -3517,7 +3576,8 @@
         "enName": "Amumu",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/amumu.png"
       },
       {
         "id": "camille",
@@ -3525,7 +3585,8 @@
         "enName": "Camille",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/camille.webp"
       },
       {
         "id": "darius",
@@ -3533,7 +3594,8 @@
         "enName": "Darius",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/darius.webp"
       },
       {
         "id": "diana",
@@ -3541,7 +3603,8 @@
         "enName": "Diana",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/diana.png"
       },
       {
         "id": "dr-mundo",
@@ -3549,7 +3612,8 @@
         "enName": "Dr. Mundo",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
       },
       {
         "id": "ekko",
@@ -3557,7 +3621,8 @@
         "enName": "Ekko",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/ekko.png"
       },
       {
         "id": "evelynn",
@@ -3565,7 +3630,8 @@
         "enName": "Evelynn",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/evelynn.png"
       },
       {
         "id": "fiddlesticks",
@@ -3573,7 +3639,8 @@
         "enName": "Fiddlesticks",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/fiddlesticks.png"
       },
       {
         "id": "fiora",
@@ -3581,7 +3648,8 @@
         "enName": "Fiora",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/fiora.webp"
       },
       {
         "id": "fizz",
@@ -3589,7 +3657,8 @@
         "enName": "Fizz",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/fizz.png"
       },
       {
         "id": "gragas",
@@ -3597,7 +3666,8 @@
         "enName": "Gragas",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/gragas.png"
       },
       {
         "id": "graves",
@@ -3605,7 +3675,8 @@
         "enName": "Graves",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/graves.png"
       },
       {
         "id": "gwen",
@@ -3613,7 +3684,8 @@
         "enName": "Gwen",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/gwen.webp"
       },
       {
         "id": "hecarim",
@@ -3621,7 +3693,8 @@
         "enName": "Hecarim",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/hecarim.png"
       },
       {
         "id": "irelia",
@@ -3629,7 +3702,8 @@
         "enName": "Irelia",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/irelia.png"
       },
       {
         "id": "jarvan-iv",
@@ -3637,7 +3711,8 @@
         "enName": "Jarvan IV",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/jarvan-iv.png"
       },
       {
         "id": "jax",
@@ -3645,7 +3720,8 @@
         "enName": "Jax",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/jax.png"
       },
       {
         "id": "kayn",
@@ -3653,7 +3729,8 @@
         "enName": "Kayn",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/kayn.png"
       },
       {
         "id": "khazix",
@@ -3661,7 +3738,8 @@
         "enName": "Kha'Zix",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/khazix.png"
       },
       {
         "id": "kindred",
@@ -3669,7 +3747,8 @@
         "enName": "Kindred",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/kindred.png"
       },
       {
         "id": "lee-sin",
@@ -3677,7 +3756,8 @@
         "enName": "Lee Sin",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/lee-sin.png"
       },
       {
         "id": "lillia",
@@ -3685,7 +3765,8 @@
         "enName": "Lillia",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/lillia.png"
       },
       {
         "id": "maokai",
@@ -3693,15 +3774,17 @@
         "enName": "Maokai",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/maokai.png"
       },
       {
-        "id": "master-yi",
-        "name": "易大師",
-        "enName": "Master Yi",
+        "id": "morgana",
+        "name": "魔甘娜",
+        "enName": "Morgana",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/morgana.png"
       },
       {
         "id": "nidalee",
@@ -3709,7 +3792,8 @@
         "enName": "Nidalee",
         "tier": "S+",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/nidalee.png"
       },
       {
         "id": "nilah",
@@ -3717,7 +3801,8 @@
         "enName": "Nilah",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/nilah.png"
       },
       {
         "id": "nocturne",
@@ -3725,7 +3810,8 @@
         "enName": "Nocturne",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/nocturne.png"
       },
       {
         "id": "nunu-and-willump",
@@ -3733,7 +3819,8 @@
         "enName": "Nunu & Willump",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/nunu-and-willump.png"
       },
       {
         "id": "olaf",
@@ -3741,7 +3828,8 @@
         "enName": "Olaf",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/olaf.webp"
       },
       {
         "id": "pantheon",
@@ -3749,7 +3837,8 @@
         "enName": "Pantheon",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/pantheon.png"
       },
       {
         "id": "poppy",
@@ -3757,7 +3846,8 @@
         "enName": "Poppy",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/poppy.webp"
       },
       {
         "id": "rammus",
@@ -3765,7 +3855,8 @@
         "enName": "Rammus",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/rammus.png"
       },
       {
         "id": "rengar",
@@ -3773,7 +3864,8 @@
         "enName": "Rengar",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/rengar.png"
       },
       {
         "id": "riven",
@@ -3781,7 +3873,8 @@
         "enName": "Riven",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/riven.png"
       },
       {
         "id": "shyvana",
@@ -3789,7 +3882,8 @@
         "enName": "Shyvana",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/shyvana.png"
       },
       {
         "id": "singed",
@@ -3797,7 +3891,8 @@
         "enName": "Singed",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/singed.webp"
       },
       {
         "id": "skarner",
@@ -3805,7 +3900,8 @@
         "enName": "Skarner",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/skarner.png"
       },
       {
         "id": "taliyah",
@@ -3813,7 +3909,8 @@
         "enName": "Taliyah",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/taliyah.png"
       },
       {
         "id": "talon",
@@ -3821,7 +3918,8 @@
         "enName": "Talon",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/talon.png"
       },
       {
         "id": "tryndamere",
@@ -3829,7 +3927,8 @@
         "enName": "Tryndamere",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
       },
       {
         "id": "vi",
@@ -3837,7 +3936,8 @@
         "enName": "Vi",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/vi.png"
       },
       {
         "id": "viego",
@@ -3845,7 +3945,8 @@
         "enName": "Viego",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/viego.png"
       },
       {
         "id": "volibear",
@@ -3853,7 +3954,8 @@
         "enName": "Volibear",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/volibear.png"
       },
       {
         "id": "warwick",
@@ -3861,7 +3963,8 @@
         "enName": "Warwick",
         "tier": "S+",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/warwick.png"
       },
       {
         "id": "wukong",
@@ -3869,7 +3972,8 @@
         "enName": "Wukong",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/wukong.webp"
       },
       {
         "id": "xin-zhao",
@@ -3877,7 +3981,8 @@
         "enName": "Xin Zhao",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/xin-zhao.png"
       },
       {
         "id": "yone",
@@ -3885,7 +3990,8 @@
         "enName": "Yone",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/yone.webp"
       },
       {
         "id": "zed",
@@ -3893,7 +3999,8 @@
         "enName": "Zed",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": null
+        "detailHeroId": null,
+        "avatar": "../assets/images/heroes/portraits/zed.png"
       }
     ],
     "mid": [
