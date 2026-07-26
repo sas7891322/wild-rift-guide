@@ -1,7 +1,7 @@
 {
-  "version": "7.2a",
+  "version": "7.2a-v27",
   "updated": "2026-07-26",
-  "notes": "飛龍路英雄資料庫：23 位英雄已建檔；目前已補齊 15 位（含史矛德）的技能／被動圖示。其餘英雄待後續補圖。",
+  "notes": "五路 Tier 資料結構升級：巴龍49、打野50、中路46、飛龍23、輔助32。四路先以文字頭像佔位；飛龍路保留既有23位詳細資料。未來跨路英雄可獨立設定 Tier。",
   "heroes": [
     {
       "id": "smolder",
@@ -3070,5 +3070,1668 @@
         }
       ]
     }
-  ]
+  ],
+  "laneMeta": {
+    "baron": {
+      "name": "巴龍路",
+      "nativeCount": 49,
+      "crossCount": 0
+    },
+    "jungle": {
+      "name": "打野",
+      "nativeCount": 50,
+      "crossCount": 0
+    },
+    "mid": {
+      "name": "中路",
+      "nativeCount": 46,
+      "crossCount": 0
+    },
+    "duo": {
+      "name": "飛龍路",
+      "nativeCount": 23,
+      "crossCount": 0,
+      "crossRule": "遊戲內原生中路英雄只有在飛龍路評價達 S 或 S+ 時才加入。"
+    },
+    "support": {
+      "name": "輔助",
+      "nativeCount": 32,
+      "crossCount": 0
+    }
+  },
+  "laneTiers": {
+    "baron": [
+      {
+        "id": "aatrox",
+        "name": "厄薩斯",
+        "enName": "Aatrox",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "akali",
+        "name": "阿卡莉",
+        "enName": "Akali",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ambessa",
+        "name": "安比薩",
+        "enName": "Ambessa",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "aurora",
+        "name": "歐羅拉",
+        "enName": "Aurora",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "camille",
+        "name": "卡蜜兒",
+        "enName": "Camille",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "chogath",
+        "name": "科加斯",
+        "enName": "Cho'Gath",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "darius",
+        "name": "達瑞斯",
+        "enName": "Darius",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "diana",
+        "name": "黛安娜",
+        "enName": "Diana",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "dr-mundo",
+        "name": "蒙多醫生",
+        "enName": "Dr. Mundo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "fiora",
+        "name": "菲歐拉",
+        "enName": "Fiora",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "garen",
+        "name": "蓋倫",
+        "enName": "Garen",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "gnar",
+        "name": "吶兒",
+        "enName": "Gnar",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "gragas",
+        "name": "古拉格斯",
+        "enName": "Gragas",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "gwen",
+        "name": "關",
+        "enName": "Gwen",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "heimerdinger",
+        "name": "漢默丁格",
+        "enName": "Heimerdinger",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "irelia",
+        "name": "伊瑞莉雅",
+        "enName": "Irelia",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "jax",
+        "name": "賈克斯",
+        "enName": "Jax",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "jayce",
+        "name": "杰西",
+        "enName": "Jayce",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ksante",
+        "name": "卡桑帝",
+        "enName": "K'Sante",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kalista",
+        "name": "克黎思妲",
+        "enName": "Kalista",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kayle",
+        "name": "凱爾",
+        "enName": "Kayle",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kennen",
+        "name": "凱能",
+        "enName": "Kennen",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "malphite",
+        "name": "墨菲特",
+        "enName": "Malphite",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "maokai",
+        "name": "茂凱",
+        "enName": "Maokai",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "mordekaiser",
+        "name": "魔鬥凱薩",
+        "enName": "Mordekaiser",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nasus",
+        "name": "納瑟斯",
+        "enName": "Nasus",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "olaf",
+        "name": "歐拉夫",
+        "enName": "Olaf",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ornn",
+        "name": "鄂爾",
+        "enName": "Ornn",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "pantheon",
+        "name": "潘森",
+        "enName": "Pantheon",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "poppy",
+        "name": "波比",
+        "enName": "Poppy",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "renekton",
+        "name": "雷尼克頓",
+        "enName": "Renekton",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "riven",
+        "name": "雷玟",
+        "enName": "Riven",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "rumble",
+        "name": "藍寶",
+        "enName": "Rumble",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ryze",
+        "name": "雷茲",
+        "enName": "Ryze",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "sett",
+        "name": "賽特",
+        "enName": "Sett",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "shen",
+        "name": "慎",
+        "enName": "Shen",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "singed",
+        "name": "辛吉德",
+        "enName": "Singed",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "sion",
+        "name": "賽恩",
+        "enName": "Sion",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "skarner",
+        "name": "史加納",
+        "enName": "Skarner",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "swain",
+        "name": "斯溫",
+        "enName": "Swain",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "teemo",
+        "name": "提摩",
+        "enName": "Teemo",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "tryndamere",
+        "name": "泰達米爾",
+        "enName": "Tryndamere",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "urgot",
+        "name": "烏爾加特",
+        "enName": "Urgot",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "vayne",
+        "name": "汎",
+        "enName": "Vayne",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "vladimir",
+        "name": "弗拉迪米爾",
+        "enName": "Vladimir",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "volibear",
+        "name": "弗力貝爾",
+        "enName": "Volibear",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "wukong",
+        "name": "悟空",
+        "enName": "Wukong",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "yasuo",
+        "name": "犽宿",
+        "enName": "Yasuo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "yone",
+        "name": "犽凝",
+        "enName": "Yone",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      }
+    ],
+    "jungle": [
+      {
+        "id": "aatrox",
+        "name": "厄薩斯",
+        "enName": "Aatrox",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ambessa",
+        "name": "安比薩",
+        "enName": "Ambessa",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "amumu",
+        "name": "阿姆姆",
+        "enName": "Amumu",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "camille",
+        "name": "卡蜜兒",
+        "enName": "Camille",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "darius",
+        "name": "達瑞斯",
+        "enName": "Darius",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "diana",
+        "name": "黛安娜",
+        "enName": "Diana",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "dr-mundo",
+        "name": "蒙多醫生",
+        "enName": "Dr. Mundo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ekko",
+        "name": "艾克",
+        "enName": "Ekko",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "evelynn",
+        "name": "伊芙琳",
+        "enName": "Evelynn",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "fiddlesticks",
+        "name": "費德提克",
+        "enName": "Fiddlesticks",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "fiora",
+        "name": "菲歐拉",
+        "enName": "Fiora",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "fizz",
+        "name": "飛斯",
+        "enName": "Fizz",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "gragas",
+        "name": "古拉格斯",
+        "enName": "Gragas",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "graves",
+        "name": "葛雷夫",
+        "enName": "Graves",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "gwen",
+        "name": "關",
+        "enName": "Gwen",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "hecarim",
+        "name": "赫克林",
+        "enName": "Hecarim",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "irelia",
+        "name": "伊瑞莉雅",
+        "enName": "Irelia",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "jarvan-iv",
+        "name": "嘉文四世",
+        "enName": "Jarvan IV",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "jax",
+        "name": "賈克斯",
+        "enName": "Jax",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kayn",
+        "name": "慨影",
+        "enName": "Kayn",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "khazix",
+        "name": "卡力斯",
+        "enName": "Kha'Zix",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kindred",
+        "name": "鏡爪",
+        "enName": "Kindred",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "lee-sin",
+        "name": "李星",
+        "enName": "Lee Sin",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "lillia",
+        "name": "莉莉亞",
+        "enName": "Lillia",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "maokai",
+        "name": "茂凱",
+        "enName": "Maokai",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "master-yi",
+        "name": "易大師",
+        "enName": "Master Yi",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nidalee",
+        "name": "奈德麗",
+        "enName": "Nidalee",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nilah",
+        "name": "淣菈",
+        "enName": "Nilah",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nocturne",
+        "name": "夜曲",
+        "enName": "Nocturne",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nunu-and-willump",
+        "name": "努努和威朗普",
+        "enName": "Nunu & Willump",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "olaf",
+        "name": "歐拉夫",
+        "enName": "Olaf",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "pantheon",
+        "name": "潘森",
+        "enName": "Pantheon",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "poppy",
+        "name": "波比",
+        "enName": "Poppy",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "rammus",
+        "name": "拉姆斯",
+        "enName": "Rammus",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "rengar",
+        "name": "雷葛爾",
+        "enName": "Rengar",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "riven",
+        "name": "雷玟",
+        "enName": "Riven",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "shyvana",
+        "name": "希瓦娜",
+        "enName": "Shyvana",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "singed",
+        "name": "辛吉德",
+        "enName": "Singed",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "skarner",
+        "name": "史加納",
+        "enName": "Skarner",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "taliyah",
+        "name": "塔莉雅",
+        "enName": "Taliyah",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "talon",
+        "name": "塔隆",
+        "enName": "Talon",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "tryndamere",
+        "name": "泰達米爾",
+        "enName": "Tryndamere",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "vi",
+        "name": "菲艾",
+        "enName": "Vi",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "viego",
+        "name": "維爾戈",
+        "enName": "Viego",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "volibear",
+        "name": "弗力貝爾",
+        "enName": "Volibear",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "warwick",
+        "name": "沃維克",
+        "enName": "Warwick",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "wukong",
+        "name": "悟空",
+        "enName": "Wukong",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "xin-zhao",
+        "name": "趙信",
+        "enName": "Xin Zhao",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "yone",
+        "name": "犽凝",
+        "enName": "Yone",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "zed",
+        "name": "劫",
+        "enName": "Zed",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      }
+    ],
+    "mid": [
+      {
+        "id": "ahri",
+        "name": "阿璃",
+        "enName": "Ahri",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "akali",
+        "name": "阿卡莉",
+        "enName": "Akali",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "akshan",
+        "name": "阿克尚",
+        "enName": "Akshan",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "annie",
+        "name": "安妮",
+        "enName": "Annie",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "aurelion-sol",
+        "name": "翱銳龍獸",
+        "enName": "Aurelion Sol",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "aurora",
+        "name": "歐羅拉",
+        "enName": "Aurora",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "brand",
+        "name": "布蘭德",
+        "enName": "Brand",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "diana",
+        "name": "黛安娜",
+        "enName": "Diana",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ekko",
+        "name": "艾克",
+        "enName": "Ekko",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "fizz",
+        "name": "飛斯",
+        "enName": "Fizz",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "galio",
+        "name": "加里歐",
+        "enName": "Galio",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "garen",
+        "name": "蓋倫",
+        "enName": "Garen",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "heimerdinger",
+        "name": "漢默丁格",
+        "enName": "Heimerdinger",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "irelia",
+        "name": "伊瑞莉雅",
+        "enName": "Irelia",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "jayce",
+        "name": "杰西",
+        "enName": "Jayce",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kassadin",
+        "name": "卡薩丁",
+        "enName": "Kassadin",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "katarina",
+        "name": "卡特蓮娜",
+        "enName": "Katarina",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kayle",
+        "name": "凱爾",
+        "enName": "Kayle",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kennen",
+        "name": "凱能",
+        "enName": "Kennen",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "kogmaw",
+        "name": "寇格魔",
+        "enName": "Kog'Maw",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "lissandra",
+        "name": "麗珊卓",
+        "enName": "Lissandra",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "lucian",
+        "name": "路西恩",
+        "enName": "Lucian",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "lux",
+        "name": "拉克絲",
+        "enName": "Lux",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "mel",
+        "name": "梅爾",
+        "enName": "Mel",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "morgana",
+        "name": "魔甘娜",
+        "enName": "Morgana",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nasus",
+        "name": "納瑟斯",
+        "enName": "Nasus",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "norra",
+        "name": "諾拉",
+        "enName": "Norra",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "orianna",
+        "name": "奧莉安娜",
+        "enName": "Orianna",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ryze",
+        "name": "雷茲",
+        "enName": "Ryze",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "singed",
+        "name": "辛吉德",
+        "enName": "Singed",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "swain",
+        "name": "斯溫",
+        "enName": "Swain",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "syndra",
+        "name": "星朵拉",
+        "enName": "Syndra",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "taliyah",
+        "name": "塔莉雅",
+        "enName": "Taliyah",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "teemo",
+        "name": "提摩",
+        "enName": "Teemo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "twisted-fate",
+        "name": "逆命",
+        "enName": "Twisted Fate",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "veigar",
+        "name": "維迦",
+        "enName": "Veigar",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "velkoz",
+        "name": "威寇茲",
+        "enName": "Vel'Koz",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "vex",
+        "name": "薇可絲",
+        "enName": "Vex",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "viktor",
+        "name": "維克特",
+        "enName": "Viktor",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "vladimir",
+        "name": "弗拉迪米爾",
+        "enName": "Vladimir",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "yasuo",
+        "name": "犽宿",
+        "enName": "Yasuo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "yone",
+        "name": "犽凝",
+        "enName": "Yone",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "zed",
+        "name": "劫",
+        "enName": "Zed",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "ziggs",
+        "name": "希格斯",
+        "enName": "Ziggs",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "zoe",
+        "name": "柔依",
+        "enName": "Zoe",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "zyra",
+        "name": "枷蘿",
+        "enName": "Zyra",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      }
+    ],
+    "duo": [
+      {
+        "id": "smolder",
+        "name": "史矛德",
+        "enName": "Smolder",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": "smolder",
+        "avatar": "../assets/images/heroes/smolder/avatar.png"
+      },
+      {
+        "id": "miss-fortune",
+        "name": "好運姐",
+        "enName": "Miss Fortune",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": "miss-fortune",
+        "avatar": "../assets/images/heroes/duo/miss-fortune.png"
+      },
+      {
+        "id": "ezreal",
+        "name": "伊澤瑞爾",
+        "enName": "Ezreal",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": "ezreal",
+        "avatar": "../assets/images/heroes/duo/ezreal.png"
+      },
+      {
+        "id": "varus",
+        "name": "法洛士",
+        "enName": "Varus",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "varus",
+        "avatar": "../assets/images/heroes/duo/varus.png"
+      },
+      {
+        "id": "zeri",
+        "name": "婕莉",
+        "enName": "Zeri",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "zeri",
+        "avatar": "../assets/images/heroes/duo/zeri.png"
+      },
+      {
+        "id": "lucian",
+        "name": "路西恩",
+        "enName": "Lucian",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "lucian",
+        "avatar": "../assets/images/heroes/duo/lucian.png"
+      },
+      {
+        "id": "xayah",
+        "name": "剎雅",
+        "enName": "Xayah",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "xayah",
+        "avatar": "../assets/images/heroes/duo/xayah.png"
+      },
+      {
+        "id": "jhin",
+        "name": "燼",
+        "enName": "Jhin",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "jhin",
+        "avatar": "../assets/images/heroes/duo/jhin.png"
+      },
+      {
+        "id": "kogmaw",
+        "name": "寇格魔",
+        "enName": "Kog'Maw",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "kogmaw",
+        "avatar": "../assets/images/heroes/duo/kogmaw.png"
+      },
+      {
+        "id": "vayne",
+        "name": "汎",
+        "enName": "Vayne",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "vayne",
+        "avatar": "../assets/images/heroes/duo/vayne.png"
+      },
+      {
+        "id": "corki",
+        "name": "庫奇",
+        "enName": "Corki",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "corki",
+        "avatar": "../assets/images/heroes/duo/corki.png"
+      },
+      {
+        "id": "kalista",
+        "name": "克黎思妲",
+        "enName": "Kalista",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "kalista",
+        "avatar": "../assets/images/heroes/duo/kalista.png"
+      },
+      {
+        "id": "sivir",
+        "name": "希維爾",
+        "enName": "Sivir",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "sivir",
+        "avatar": "../assets/images/heroes/duo/sivir.png"
+      },
+      {
+        "id": "kaisa",
+        "name": "凱莎",
+        "enName": "Kai'Sa",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "kaisa",
+        "avatar": "../assets/images/heroes/duo/kaisa.png"
+      },
+      {
+        "id": "draven",
+        "name": "達瑞文",
+        "enName": "Draven",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "draven",
+        "avatar": "../assets/images/heroes/duo/draven.png"
+      },
+      {
+        "id": "ashe",
+        "name": "艾希",
+        "enName": "Ashe",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "ashe",
+        "avatar": "../assets/images/heroes/duo/ashe.png"
+      },
+      {
+        "id": "jinx",
+        "name": "吉茵珂絲",
+        "enName": "Jinx",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "jinx",
+        "avatar": "../assets/images/heroes/duo/jinx.png"
+      },
+      {
+        "id": "caitlyn",
+        "name": "凱特琳",
+        "enName": "Caitlyn",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "caitlyn",
+        "avatar": "../assets/images/heroes/duo/caitlyn.png"
+      },
+      {
+        "id": "twitch",
+        "name": "圖奇",
+        "enName": "Twitch",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "twitch",
+        "avatar": "../assets/images/heroes/duo/twitch.png"
+      },
+      {
+        "id": "tristana",
+        "name": "崔絲塔娜",
+        "enName": "Tristana",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "tristana",
+        "avatar": "../assets/images/heroes/duo/tristana.png"
+      },
+      {
+        "id": "samira",
+        "name": "煞蜜拉",
+        "enName": "Samira",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "samira",
+        "avatar": "../assets/images/heroes/duo/samira.png"
+      },
+      {
+        "id": "yunara",
+        "name": "尤娜拉",
+        "enName": "Yunara",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "yunara",
+        "avatar": "../assets/images/heroes/duo/yunara.png"
+      },
+      {
+        "id": "senna",
+        "name": "姍娜",
+        "enName": "Senna",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "senna",
+        "avatar": "../assets/images/heroes/duo/senna.png"
+      }
+    ],
+    "support": [
+      {
+        "id": "alistar",
+        "name": "亞歷斯塔",
+        "enName": "Alistar",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "bard",
+        "name": "巴德",
+        "enName": "Bard",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "blitzcrank",
+        "name": "布里茨",
+        "enName": "Blitzcrank",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "brand",
+        "name": "布蘭德",
+        "enName": "Brand",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "braum",
+        "name": "布郎姆",
+        "enName": "Braum",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "galio",
+        "name": "加里歐",
+        "enName": "Galio",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "janna",
+        "name": "珍娜",
+        "enName": "Janna",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "karma",
+        "name": "卡瑪",
+        "enName": "Karma",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "leona",
+        "name": "雷歐娜",
+        "enName": "Leona",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "lulu",
+        "name": "露璐",
+        "enName": "Lulu",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "lux",
+        "name": "拉克絲",
+        "enName": "Lux",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "malphite",
+        "name": "墨菲特",
+        "enName": "Malphite",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "maokai",
+        "name": "茂凱",
+        "enName": "Maokai",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "milio",
+        "name": "米里歐",
+        "enName": "Milio",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "morgana",
+        "name": "魔甘娜",
+        "enName": "Morgana",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nami",
+        "name": "娜米",
+        "enName": "Nami",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "nautilus",
+        "name": "納帝魯斯",
+        "enName": "Nautilus",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "pyke",
+        "name": "派克",
+        "enName": "Pyke",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "rakan",
+        "name": "銳空",
+        "enName": "Rakan",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "rell",
+        "name": "銳兒",
+        "enName": "Rell",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "senna",
+        "name": "姍娜",
+        "enName": "Senna",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "seraphine",
+        "name": "瑟菈紛",
+        "enName": "Seraphine",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "sett",
+        "name": "賽特",
+        "enName": "Sett",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "sona",
+        "name": "索娜",
+        "enName": "Sona",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "soraka",
+        "name": "索拉卡",
+        "enName": "Soraka",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "swain",
+        "name": "斯溫",
+        "enName": "Swain",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "thresh",
+        "name": "瑟雷西",
+        "enName": "Thresh",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "veigar",
+        "name": "維迦",
+        "enName": "Veigar",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "velkoz",
+        "name": "威寇茲",
+        "enName": "Vel'Koz",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "yuumi",
+        "name": "悠咪",
+        "enName": "Yuumi",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "zilean",
+        "name": "極靈",
+        "enName": "Zilean",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": null
+      },
+      {
+        "id": "zyra",
+        "name": "枷蘿",
+        "enName": "Zyra",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": null
+      }
+    ]
+  }
 }

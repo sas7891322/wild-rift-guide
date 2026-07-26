@@ -5,7 +5,7 @@
   const roleNames = {baron:'巴龍路', jungle:'打野', mid:'中路', duo:'飛龍路', support:'輔助'};
   const tierOrder = ['S+','S','A','B'];
 
-  const state = { role:'duo', heroId:'', heroes:[], runes:[], items:[], spells:[] };
+  const state = { role:'duo', heroId:'', heroes:[], laneTiers:{}, laneMeta:{}, runes:[], items:[], spells:[] };
 
   function flattenRunes(data){ return Object.values(data || {}).flatMap(v => Array.isArray(v) ? v : []); }
   function normalizeItems(data){ return Array.isArray(data) ? data : (data?.items || []); }
@@ -54,7 +54,11 @@
     return `<div class="build-mini ${type}"><img src="${safeIcon(x)}" alt="${x.name}" loading="lazy"><span>${x.name}</span></div>`;
   }
 
-  function roleHeroes(){ return state.heroes.filter(h=>h.roleId===state.role); }
+  function roleHeroes(){
+    const lane=state.laneTiers?.[state.role];
+    if(Array.isArray(lane)) return lane;
+    return state.heroes.filter(h=>h.roleId===state.role).map(h=>({...h,detailHeroId:h.id,origin:'native'}));
+  }
 
   function syncUrl(){
     const p = new URLSearchParams(location.search);
@@ -70,6 +74,9 @@
   function renderOverview(){
     const heroes = roleHeroes();
     const title = roleNames[state.role] || '英雄';
+    const meta = state.laneMeta?.[state.role] || {};
+    const nativeCount = Number(meta.nativeCount ?? heroes.filter(h=>h.origin!=='cross').length);
+    const crossCount = Number(meta.crossCount ?? heroes.filter(h=>h.origin==='cross').length);
     const content = $('#heroContent');
     const groups = tierOrder.map(tier => {
       const members = heroes.filter(h=>h.tier===tier);
@@ -77,20 +84,25 @@
       return `<section class="tier-overview-section">
         <div class="tier-overview-heading"><span class="tier-overview-badge tier-${tier.toLowerCase().replace('+','p')}">${tier}</span><strong>${tier} Tier</strong><small>${members.length} 位英雄</small></div>
         <div class="tier-hero-grid">
-          ${members.map(h=>`<button class="tier-hero-card" data-hero="${h.id}">
-            <span class="tier-hero-avatar-wrap">${h.avatar?`<img src="${h.avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>
-            <strong>${h.name}</strong><small>${h.enName}</small>
-          </button>`).join('')}
+          ${members.map(h=>{
+            const avatar=h.avatar||'';
+            const media=`<span class="tier-hero-avatar-wrap">${avatar?`<img src="${avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
+            const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}`;
+            return h.detailHeroId
+              ? `<button class="tier-hero-card" data-hero="${h.detailHeroId}">${label}</button>`
+              : `<div class="tier-hero-card is-pending" title="頭像與詳細資料待補">${label}</div>`;
+          }).join('')}
         </div>
       </section>`;
     }).join('');
 
+    const countCopy = crossCount>0 ? `原生 ${nativeCount}＋跨路 ${crossCount}` : `原生 ${nativeCount}`;
     content.innerHTML = `<section class="hero-overview-shell">
-      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>先看版本分級，再點英雄頭像進入完整資料。</p></div><span class="hero-overview-count">${heroes.length}</span></div>
+      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>各路線獨立評級 · ${countCopy}${state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':' · 頭像與詳細資料後續補齊'}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
       ${groups || `<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`}
     </section>`;
 
-    $$('.tier-hero-card', content).forEach(btn=>btn.addEventListener('click',()=>{
+    $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>{
       state.heroId=btn.dataset.hero; syncUrl(); renderDetail();
     }));
   }
@@ -164,7 +176,7 @@
       const [heroData,runeData,itemData,spellData]=await Promise.all([
         getJSON('../assets/data/heroes.json'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
-      state.heroes=heroData.heroes||heroData||[]; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
+      state.heroes=heroData.heroes||heroData||[]; state.laneTiers=heroData.laneTiers||{}; state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
       const params=new URLSearchParams(location.search);
       if(params.get('role')) state.role=params.get('role');
       if(params.get('hero')) state.heroId=params.get('hero');

@@ -856,3 +856,10 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
   .build-group .build-mini img{width:44px;height:44px}
   .build-group .build-mini span{font-size:7px;min-height:18px}
 }
+
+
+/* v27 · multi-role tier database */
+.tier-hero-card.is-pending{cursor:default;opacity:.92}
+.tier-hero-card.is-pending:hover{transform:none;border-color:var(--line);background:rgba(8,20,34,.72);box-shadow:none}
+.tier-hero-card.is-pending .tier-hero-avatar-wrap{filter:saturate(.72)}
+.tier-cross-tag{display:inline-flex;margin-top:6px;padding:2px 6px;border:1px solid rgba(216,184,108,.34);border-radius:999px;color:var(--gold);background:rgba(216,184,108,.07);font-size:8px;font-weight:900;letter-spacing:.05em}
