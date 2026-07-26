@@ -489,3 +489,18 @@
 .ability-icon-placeholder{width:54px;height:54px;border-radius:14px;font-size:18px}
 .skill-icon-placeholder{width:46px;height:46px;border-radius:12px;font-size:15px}
 .passive-icon-placeholder{width:72px;height:72px;border-radius:16px;font-size:20px}
+
+
+/* v20 homepage Summoner's Rift background trial */
+body.home-map-bg{position:relative;background:#06111d;isolation:isolate}
+body.home-map-bg::before{content:"";position:fixed;inset:0;z-index:-3;background-image:url("https://www.touchtapplay.com/wp-content/uploads/2021/07/league-of-legends-map.jpg?fit=1200%2C628");background-size:cover;background-position:center 28%;background-repeat:no-repeat;filter:saturate(.82) contrast(1.08);transform:scale(1.02)}
+body.home-map-bg::after{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(3,10,18,.77) 0%,rgba(4,13,23,.72) 34%,rgba(4,13,23,.86) 100%),radial-gradient(circle at 50% 18%,rgba(18,76,111,.22),transparent 42%)}
+body.home-map-bg .topbar{background:rgba(4,13,23,.76)}
+body.home-map-bg .hero{margin-top:18px;padding:72px 26px 46px;border:1px solid rgba(216,184,108,.16);border-radius:28px;background:linear-gradient(180deg,rgba(5,16,28,.48),rgba(5,16,28,.68));backdrop-filter:blur(2px);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+body.home-map-bg .hero h1{text-shadow:0 4px 24px rgba(0,0,0,.72)}
+body.home-map-bg .hero p{color:#b7c5d4;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+body.home-map-bg .role-link{background:rgba(5,17,29,.76);backdrop-filter:blur(7px)}
+body.home-map-bg .role-link img{background:rgba(5,17,29,.82)}
+body.home-map-bg .home-card{background:radial-gradient(circle at 90% 10%,rgba(216,184,108,.13),transparent 30%),linear-gradient(155deg,rgba(16,39,62,.91),rgba(5,17,29,.95));backdrop-filter:blur(9px)}
+body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
+@media(max-width:700px){body.home-map-bg::before{background-position:46% center}body.home-map-bg .hero{padding:48px 15px 30px;border-radius:20px}}
