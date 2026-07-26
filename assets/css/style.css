@@ -537,3 +537,207 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 /* v24 - extra / evolved ability icon variants */
 .ability-variants{display:flex;gap:6px;flex-wrap:wrap;margin:9px 0 2px}.ability-variants img{width:34px;height:34px;border-radius:9px;object-fit:cover;border:1px solid rgba(216,184,108,.26);background:rgba(5,14,25,.8)}
 .passive-feature .ability-variants{margin-top:8px}.passive-feature .ability-variants img{width:36px;height:36px}
+
+/* ===== v25 Mobile RWD first-pass polish =====
+   Desktop rules stay untouched; these overrides apply only to narrow screens. */
+@media (max-width: 800px){
+  html,body{max-width:100%;overflow-x:hidden}
+  body{font-size:15px}
+  .shell{width:min(100% - 20px,1160px)}
+
+  /* Header / navigation */
+  .topbar{position:sticky;top:0}
+  .topbar-inner{min-height:0;height:auto;padding:9px 0 8px;display:block}
+  .brand{display:block;text-align:center;margin:0 0 7px;font-size:15px}
+  .nav{display:flex!important;position:static!important;left:auto!important;transform:none!important;justify-content:flex-start;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 2px 2px;font-size:12px}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{flex:0 0 auto;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.025);border:1px solid transparent}
+  .nav a.active{border-color:rgba(216,184,108,.28);background:rgba(216,184,108,.07)}
+
+  /* Generic page spacing */
+  .page-head{padding:24px 0 12px}
+  .page-head h1{font-size:29px;line-height:1.2}
+  .page-head p{font-size:13px;line-height:1.65;margin-bottom:0}
+  footer{margin-top:36px;padding:18px 0 28px;text-align:center}
+
+  /* Homepage */
+  body.home-map-bg .hero{margin-top:10px;padding:34px 12px 22px;border-radius:18px}
+  body.home-map-bg .hero h1{font-size:34px;margin:8px 0 6px}
+  body.home-map-bg .hero p{font-size:13px;line-height:1.55}
+  .role-strip{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:6px;margin-top:18px}
+  .role-link{border-radius:12px;box-shadow:0 7px 18px rgba(0,0,0,.18)}
+  .role-strip img{border-radius:12px}
+  .role-link span{left:4px;right:4px;bottom:4px;padding:4px 2px;border-radius:7px;font-size:9px;letter-spacing:0}
+  .home-grid{grid-template-columns:1fr!important;gap:11px;padding-bottom:32px;margin-top:12px}
+  .home-card,.home-card.wide{grid-column:auto;grid-template-columns:62px 1fr;min-height:0;padding:14px;border-radius:17px;gap:13px}
+  .home-icon{width:62px;height:62px;border-radius:15px;font-size:15px}
+  .home-card h2{font-size:21px;margin:2px 0 6px}
+  .home-card p{font-size:12px;line-height:1.55;margin-bottom:8px}
+  .home-card .kicker,.home-card .link-label{font-size:10px}
+
+  /* Hero page top */
+  .hero-page{padding-bottom:10px}
+  .hero-page-head{padding-top:22px;display:block}
+  .hero-page-head h1{font-size:29px}
+  .hero-version-badge{min-width:0;width:100%;margin-top:12px;text-align:left;padding:9px 11px;border-radius:12px}
+  .hero-version-badge span{font-size:9px}.hero-version-badge strong{font-size:11px}
+  .hero-role-tabs{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin:4px 0 13px;overflow:visible;padding:0}
+  .hero-role-tab{min-width:0;padding:7px 3px;border-radius:12px;gap:3px;flex-direction:column;font-size:10px;line-height:1.2}
+  .hero-role-tab img{width:30px;height:30px;border-radius:8px}
+  .hero-role-tab:hover,.hero-role-tab.active{transform:none}
+
+  /* Tier overview */
+  .hero-overview-shell{padding:12px;border-radius:16px}
+  .hero-overview-head{gap:10px;margin-bottom:12px}
+  .hero-overview-head h2{font-size:22px;margin:4px 0}
+  .hero-overview-head p{font-size:11px;line-height:1.45;margin:0}
+  .hero-overview-count{width:38px;height:38px;flex:0 0 38px;font-size:13px}
+  .tier-overview-section{padding:12px 8px;margin-bottom:10px;border-radius:14px}
+  .tier-overview-heading{margin-bottom:10px;gap:7px}
+  .tier-overview-heading strong{font-size:14px}
+  .tier-overview-heading small{display:none}
+  .tier-overview-badge{min-width:38px;padding:5px 7px}
+  .tier-hero-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px 5px}
+  .tier-hero-card{padding:6px 2px;min-width:0}
+  .tier-hero-avatar-wrap{width:66px;height:66px}
+  .tier-hero-avatar,.tier-hero-placeholder{width:60px;height:60px}
+  .tier-hero-card strong{font-size:12px;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+  .tier-hero-card small{font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+
+  /* Hero detail header */
+  .hero-detail-toolbar{margin:0 0 8px}
+  .hero-back-button{width:100%;text-align:left;padding:9px 11px;border-radius:11px;font-size:11px}
+  .hero-profile{border-radius:17px}
+  .hero-profile-hero{grid-template-columns:76px minmax(0,1fr);gap:12px;padding:15px}
+  .hero-avatar{width:76px;height:76px;border-radius:18px}
+  .hero-title-row{gap:7px}
+  .hero-title-row h2{font-size:25px}
+  .tier-badge-large{padding:4px 8px;border-radius:9px;font-size:13px}
+  .hero-en{font-size:10px}.hero-position{font-size:12px;margin-top:5px}
+  .hero-tags{gap:4px;margin-top:7px}.hero-tags span{font-size:9px;padding:3px 6px}
+  .hero-summary-box{margin:11px 11px 0;padding:11px 12px;border-radius:12px}
+  .hero-summary-box span{font-size:9px}.hero-summary-box p{font-size:12px;line-height:1.55;margin-top:4px}
+  .hero-section{margin:0 11px;padding:15px 0}
+  .hero-section-title{margin-bottom:10px}
+  .hero-section-title h3{font-size:15px}.hero-section-title span{font-size:9px}
+
+  /* Ratings accordion */
+  .hero-rating-details summary{padding:14px 0}
+  .hero-rating-details summary b{font-size:15px}.hero-rating-details summary small{font-size:8px}
+  .hero-rating-details summary i{font-size:18px}
+  .rating-details-body{padding-bottom:14px}
+  .hero-ratings{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .hero-rating{padding:9px;border-radius:11px}
+  .rating-label{font-size:10px}.rating-stars{font-size:10px;margin-top:5px}
+
+  /* Summoner + runes */
+  .summoner-rune-layout{grid-template-columns:1fr;gap:8px}
+  .summoner-box,.rune-box{padding:10px;border-radius:13px}
+  .subsection-label{font-size:9px;margin-bottom:8px}
+  .summoner-box .hero-spells{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;overflow:visible}
+  .summoner-box .hero-spells .build-mini{width:auto;min-width:0}
+  .summoner-box .build-mini{display:grid;grid-template-columns:42px 1fr;align-items:center;gap:7px;text-align:left;padding:7px}
+  .summoner-box .build-mini img{width:42px;height:42px;margin:0;border-radius:9px}
+  .summoner-box .build-mini span{font-size:10px}
+  .rune-box .hero-runes{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;overflow:visible}
+  .rune-box .hero-rune-card{padding:8px;border-radius:11px}
+  .rune-box .hero-rune-card:first-child{grid-column:1/-1;display:grid;grid-template-columns:48px 1fr;gap:8px;align-items:center}
+  .rune-box .hero-rune-card:first-child img{margin:0}
+  .hero-rune-card img{width:44px;height:44px;margin-bottom:6px;border-radius:10px}
+  .hero-rune-card small{font-size:8px}.hero-rune-card strong{font-size:11px}.hero-rune-card p{font-size:8px;line-height:1.35}
+
+  /* Build groups: readable stacking without sideways scrolling */
+  .build-groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .build-group{padding:9px;border-radius:12px}
+  .build-group-head{margin-bottom:7px;padding-bottom:6px}
+  .build-group-head strong{font-size:11px}.build-group-head small{font-size:7px}
+  .starter-group{grid-column:1}
+  .boots-group{grid-column:2!important}
+  .core-group{grid-column:1/-1}
+  .final-group{grid-column:1/-1}
+  .build-group .build-mini{padding:5px;border-radius:9px}
+  .build-group .build-mini img{width:42px;height:42px;border-radius:8px;margin-bottom:4px}
+  .build-group .build-mini span{font-size:8px;line-height:1.25}
+  .starter-group .build-group-items{display:block}
+  .starter-group .build-mini{max-width:90px;margin:auto}
+  .core-group .build-group-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;overflow:visible}
+  .boots-group .hero-boot-path{justify-content:center;gap:4px}
+  .build-group .hero-build-slot.boot{width:auto;min-width:0;flex:1}
+  .final-group .build-group-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;overflow:visible}
+  .build-group .build-arrow{font-size:11px}
+
+  /* Skill priority: all visible at once */
+  .skill-priority-row{display:grid;grid-template-columns:repeat(5,auto);justify-content:start;align-items:center;gap:5px;overflow:visible;padding:0}
+  .skill-priority-step{min-width:0;width:auto;grid-template-columns:42px;gap:4px;padding:7px;text-align:center;border-radius:11px}
+  .skill-priority-step>img,.skill-priority-placeholder{width:42px;height:42px;border-radius:9px;margin:auto}
+  .skill-priority-step>div{display:none}
+  .skill-priority-rank{left:-5px;top:-5px;width:18px;height:18px;font-size:8px}
+  .skill-priority-arrow{font-size:15px}
+
+  /* Lv.1-15 skill table: deliberate horizontal swipe only here */
+  .skill-level-grid{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-radius:12px}
+  .skill-level-grid::-webkit-scrollbar{display:none}
+  .skill-grid-row{grid-template-columns:82px repeat(15,32px);min-width:562px}
+  .skill-grid-skill{position:sticky;left:0;z-index:2;grid-template-columns:34px 1fr;gap:5px;padding:6px;background:#0c1c2d}
+  .skill-grid-skill img,.skill-grid-skill .skill-icon-placeholder{width:34px;height:34px;border-radius:8px}
+  .skill-grid-skill b{font-size:9px}.skill-grid-skill small{display:none}
+  .skill-grid-cell{min-height:44px;font-size:8px}
+  .skill-grid-cell.active span{width:18px;height:18px;font-size:8px}
+
+  /* Passive / abilities */
+  .passive-feature{grid-template-columns:58px 1fr;gap:10px;padding:10px;border-radius:12px}
+  .passive-feature img,.passive-icon-placeholder{width:58px;height:58px;border-radius:12px}
+  .passive-feature strong{font-size:12px}.passive-feature p{font-size:10px;line-height:1.5}
+  .ability-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;overflow:visible;padding:0}
+  .ability-card{padding:9px;border-radius:12px}
+  .ability-head{grid-template-columns:42px 1fr;gap:7px}
+  .ability-head img,.ability-icon-placeholder{width:42px;height:42px;border-radius:9px}
+  .ability-head small{font-size:8px}.ability-head strong{font-size:10px}
+  .ability-card p{font-size:9px;line-height:1.45;margin-top:7px}
+  .ability-variants img{width:28px;height:28px;border-radius:7px}
+
+  /* Matchups */
+  .matchup-grid{grid-template-columns:1fr;gap:7px}
+  .matchup-box.ban{grid-column:auto}
+  .matchup-box{padding:10px;border-radius:12px}
+  .matchup-box>span{font-size:9px;margin-bottom:6px}
+  .matchup-box>div{gap:6px}
+  .matchup-chip{gap:7px;padding:5px 7px!important}
+  .matchup-chip img{width:46px;height:46px}
+  .matchup-chip b{font-size:11px!important}
+
+  /* Mechanics / playstyle */
+  .stack-grid{grid-template-columns:1fr;gap:7px}
+  .stack-card{padding:10px;border-radius:12px}
+  .stack-card img{width:48px;height:48px;border-radius:10px;margin-bottom:7px}
+  .stack-card>strong{font-size:22px}.stack-card>span{font-size:11px}.stack-card p{font-size:10px;line-height:1.5;margin-top:5px}
+  .playstyle-step{grid-template-columns:42px 1fr;gap:7px;padding-left:9px}
+  .playstyle-step b{font-size:10px}.playstyle-step p{font-size:10px;line-height:1.55}
+  .hero-source-note{padding:10px 12px 14px;font-size:8px}
+
+  /* Other database pages */
+  .toolbar{gap:7px}.search,.select{width:100%;min-width:0;padding:10px 11px;font-size:13px}
+  .tabs,.item-tabs,.shoe-level-tabs,.rune-tabs{scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+  .tab,.item-tab,.shoe-level,.rune-tab{scroll-snap-align:start}
+  .database-layout{grid-template-columns:1fr;gap:12px}
+  .item-icon-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .item-icon{padding:10px;border-radius:13px}.item-icon img{width:66px;height:66px;border-radius:12px;margin-bottom:7px}.item-icon strong{font-size:12px}.item-icon small{font-size:9px}
+  .spell-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.spell-icon{padding:8px;border-radius:12px}.spell-icon img{width:56px;height:56px;border-radius:11px;margin-bottom:7px}.spell-icon strong{font-size:11px}
+  .rune-section{padding:12px;border-radius:14px}.rune-row,.keystone-grid{gap:8px}.rune-card{padding:10px;border-radius:12px}.rune-card img{width:52px;height:52px;flex-basis:52px;border-radius:11px}.rune-card h3{font-size:13px}.rune-card .desc{font-size:10px}
+  .mobile-detail{padding:13px;border-radius:14px}
+}
+
+@media (max-width: 420px){
+  .shell{width:calc(100% - 16px)}
+  .nav{gap:5px;font-size:11px}.nav a{padding:5px 7px}
+  body.home-map-bg .hero{padding:28px 9px 19px}.role-strip{gap:4px}.role-link span{font-size:8px}
+  .hero-role-tab{font-size:9px;padding:6px 2px}.hero-role-tab img{width:27px;height:27px}
+  .tier-hero-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 3px}
+  .tier-hero-avatar-wrap{width:60px;height:60px}.tier-hero-avatar,.tier-hero-placeholder{width:54px;height:54px}
+  .hero-profile-hero{grid-template-columns:68px minmax(0,1fr);gap:10px;padding:13px 11px}.hero-avatar{width:68px;height:68px}.hero-title-row h2{font-size:22px}
+  .rune-box .hero-runes{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .build-group .build-mini img{width:38px;height:38px}.build-group .build-mini span{font-size:7px}
+  .skill-priority-step{grid-template-columns:38px;padding:6px}.skill-priority-step>img,.skill-priority-placeholder{width:38px;height:38px}
+  .ability-grid{grid-template-columns:1fr 1fr}
+  .matchup-chip img{width:44px;height:44px}
+}
