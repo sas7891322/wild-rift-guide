@@ -815,8 +815,37 @@
         "布郎姆",
         "銳空"
       ],
-      "combo": "E → 普攻 → Q → 普攻 → W → 普攻",
-      "comboNote": "常用換血／追擊連招；利用技能穿插普攻觸發被動雙槍。"
+      "combo": "3技 → 普攻 → 1技 → 普攻 → 2技 → 普攻",
+      "comboNote": "常用換血／追擊連招；利用技能穿插普攻觸發被動雙槍。",
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/lucian/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/lucian/02.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/lucian/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        }
+      ]
     },
     {
       "id": "xayah",
