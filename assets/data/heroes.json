@@ -751,37 +751,37 @@
         {
           "key": "P",
           "label": "被動",
-          "title": "技能後雙槍",
+          "title": "光之獵手",
           "icon": "../assets/images/heroes/skills/lucian/01.png",
-          "summary": "每次施放技能後強化下一次普攻，是連招爆發核心。"
+          "summary": "每次施放技能後，下一次普攻會連射兩發；也是路西恩技能穿插普攻的核心。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "穿透射擊",
+          "title": "鋒芒貫穿",
           "icon": "../assets/images/heroes/skills/lucian/02.png",
-          "summary": "穩定直線傷害，可隔著小兵消耗英雄。"
+          "summary": "對目標發射鋒芒貫穿，並延伸傷害到其後方敵人，可用來隔兵消耗。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "標記射擊",
+          "title": "烈炎鐵血",
           "icon": "../assets/images/heroes/skills/lucian/03.png",
-          "summary": "命中後方便追擊與拉扯，常作為連招銜接。"
+          "summary": "發射一枚導彈並留下標記；攻擊被標記的敵人可協助追擊與拉扯。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "短距位移",
+          "title": "冷酷進擊",
           "icon": "../assets/images/heroes/skills/lucian/04.png",
-          "summary": "可被被動與攻擊縮短冷卻，是路西恩操作上限來源。"
+          "summary": "向指定方向快速位移，是調整站位、追擊與連招銜接的核心技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "持續槍林",
+          "label": "4 技",
+          "title": "赤色屠戮",
           "icon": "../assets/images/heroes/skills/lucian/05.png",
-          "summary": "長距離持續輸出，可收頭、壓走位或先打殘敵人。"
+          "summary": "朝指定方向持續射擊，適合遠距離壓血線、追擊或收尾。"
         }
       ],
       "skillSequence": [
