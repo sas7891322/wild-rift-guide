@@ -1,7 +1,7 @@
 {
   "version": "7.2a-v31",
   "updated": "2026-07-27",
-  "notes": "v31：巴龍路 49/49 正式校正版。完成 7.2a Tier、出裝/符文/召喚師技能、技能優先、Lv.1-15、對局、Ban 與英雄專屬前中後期策略；五路既有資料與頭像保持不變。",
+  "notes": "飛龍路 23/23 正式手機版：套用路西恩確認 UI；二級鞋、手機 Lv.1～15 全表免左右滑、移除優先 Ban、加入合適輔助與常用連招，並校正台灣官方繁中技能名稱。",
   "heroes": [
     {
       "id": "smolder",
@@ -59,8 +59,7 @@
           "達瑞文",
           "路西恩",
           "凱特琳"
-        ],
-        "ban": "達瑞文"
+        ]
       },
       "playstyle": {
         "前期": "以安全補兵與 1 技尾兵疊層為第一優先，不為了多一層被迫換成殘血。",
@@ -68,41 +67,41 @@
         "後期": "175 層後保持距離持續用 1 技消耗與收割；3 技優先保留作為穿牆與自保位移。"
       },
       "summary": "前期安全補兵疊層，避免無謂換血；175 層後保持距離持續消耗，利用真實傷害燃燒與斬殺能力接管團戰。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/smolder/avatar.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "被動堆層",
+          "title": "龍性精通",
           "icon": "../assets/images/heroes/smolder/passive.png",
           "summary": "透過尾兵與技能命中逐步堆疊層數，讓一技能隨層數進化，是史矛德整場最核心的成長機制。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主力尾兵／消耗",
+          "label": "1 技",
+          "title": "激灼龍息",
           "icon": "../assets/images/heroes/smolder/q-base.png",
           "summary": "前中後期最重要的主力技能，用來尾兵、消耗與收割；層數越高，清線與斬殺能力越完整。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "範圍消耗",
+          "label": "2 技",
+          "title": "悶燃黏嚏",
           "icon": "../assets/images/heroes/smolder/w.png",
           "summary": "中距離範圍技能，適合配合對線換血與團戰前壓低血量，幫助後續一技能收頭。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "位移自保",
+          "label": "3 技",
+          "title": "振翼高飛",
           "icon": "../assets/images/heroes/smolder/e.png",
           "summary": "主要的位移與拉打技能，可用來調整站位、追擊或撤退；通常保留給自保會更穩。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "遠距開戰／收頭",
+          "label": "4 技",
+          "title": "媽媽幫我！",
           "icon": "../assets/images/heroes/smolder/r.png",
           "summary": "遠距離的大招可用來先手壓血、支援遠方會戰，或在混戰中完成收割。"
         }
@@ -128,7 +127,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "mechanicsTitle": "龍之修行層數",
       "mechanics": [
@@ -151,7 +150,38 @@
           "text": "1 技附加真實傷害燃燒，並可斬殺生命值低於門檻的燃燒中敵方英雄。"
         }
       ],
-      "baseId": "smolder"
+      "baseId": "smolder",
+      "synergySupports": [
+        "布朗姆",
+        "米里歐",
+        "雷歐娜"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/smolder/q-base.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/smolder/w.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/smolder/e.png"
+        }
+      ],
+      "combo": "1技 → 2技 → 3技"
     },
     {
       "id": "miss-fortune",
@@ -208,8 +238,7 @@
           "伊澤瑞爾",
           "法洛士",
           "剎雅"
-        ],
-        "ban": "伊澤瑞爾"
+        ]
       },
       "playstyle": {
         "前期": "利用 1 技彈射與被動打短換血，先建立血量與線權優勢。",
@@ -217,41 +246,41 @@
         "後期": "保持後排站位，優先找不易被打斷的大絕角度，不要為了普攻走進危險區。"
       },
       "summary": "前期利用彈射與被動壓血量，中期抓地形與控制接大絕，團戰只要有安全角度就能快速改變勝負。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/miss-fortune.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "目標切換增傷",
+          "title": "愛的拍拍",
           "icon": "../assets/images/heroes/skills/miss-fortune/01.png",
           "summary": "切換攻擊目標能提高換血效率，對線要善用短點射。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "彈射消耗",
+          "title": "彈射",
           "icon": "../assets/images/heroes/skills/miss-fortune/02.png",
           "summary": "主要對線消耗技能，利用小兵彈射命中後排英雄。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "加速與攻速",
+          "title": "趾高氣揚",
           "icon": "../assets/images/heroes/skills/miss-fortune/03.png",
           "summary": "提供跑速與攻速，是追擊、拉扯與輸出的核心增益。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "範圍緩速",
+          "title": "槍林彈雨",
           "icon": "../assets/images/heroes/skills/miss-fortune/04.png",
           "summary": "遠距離鋪設緩速區，方便接大絕或限制走位。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "扇形彈幕",
+          "label": "4 技",
+          "title": "彈幕",
           "icon": "../assets/images/heroes/skills/miss-fortune/05.png",
           "summary": "大範圍持續傷害；配合硬控、狹窄地形時威脅最高。"
         }
@@ -277,11 +306,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "miss-fortune"
+      "baseId": "miss-fortune",
+      "synergySupports": [
+        "雷歐娜",
+        "納帝魯斯",
+        "瑟雷西"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/miss-fortune/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/miss-fortune/02.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "4技",
+          "icon": "../assets/images/heroes/skills/miss-fortune/05.png"
+        }
+      ],
+      "combo": "3技 → 1技 → 4技"
     },
     {
       "id": "ezreal",
@@ -338,8 +398,7 @@
           "凱特琳",
           "寇格魔",
           "好運姐"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "以 1 技補刀與消耗，保留 3 技應對對方先手，不要無意義往前跳。",
@@ -347,41 +406,41 @@
         "後期": "保持最大射程打前排也沒問題，3 技優先拿來調整站位而非貪輸出。"
       },
       "summary": "用技能距離與位移保持安全輸出，持續命中 1 技降低節奏空窗，是非常穩定的 Blind Pick。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/ezreal.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "技能命中疊攻速",
+          "title": "咒能高漲",
           "icon": "../assets/images/heroes/skills/ezreal/01.png",
           "summary": "連續命中技能後能提高輸出節奏，團戰前先疊狀態。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "主力魔法箭",
+          "title": "秘術射擊",
           "icon": "../assets/images/heroes/skills/ezreal/02.png",
           "summary": "遠距離消耗與主要輸出來源，命中品質決定英雄上限。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "標記增傷",
+          "title": "精華躍動",
           "icon": "../assets/images/heroes/skills/ezreal/03.png",
           "summary": "標記後再以攻擊或技能觸發，適合補爆發與拆塔。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "瞬移位移",
+          "title": "奧術躍遷",
           "icon": "../assets/images/heroes/skills/ezreal/04.png",
           "summary": "核心保命與追擊工具，最好在敵方關鍵控制交掉後再進場。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "全圖能量波",
+          "label": "4 技",
+          "title": "精準彈幕",
           "icon": "../assets/images/heroes/skills/ezreal/05.png",
           "summary": "可遠距離支援、清線與開戰前壓血量。"
         }
@@ -407,11 +466,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "ezreal"
+      "baseId": "ezreal",
+      "synergySupports": [
+        "卡瑪",
+        "娜米",
+        "米里歐"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/ezreal/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/ezreal/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/ezreal/02.png"
+        }
+      ],
+      "combo": "3技 → 2技 → 1技"
     },
     {
       "id": "varus",
@@ -468,8 +558,7 @@
           "史矛德",
           "好運姐",
           "汎"
-        ],
-        "ban": "史矛德"
+        ]
       },
       "playstyle": {
         "前期": "先以技能和普攻疊印記，不必為了短換血硬追。",
@@ -477,27 +566,27 @@
         "後期": "站在前排後持續輸出，打坦與控制能力讓他後期仍有很高團戰價值。"
       },
       "summary": "兼具持續輸出、遠距消耗與大絕開戰，能依敵方前排厚度穩定調整輸出節奏。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/varus.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "擊殺後攻速提升",
+          "title": "復仇怒火",
           "icon": "../assets/images/heroes/skills/varus/01.png",
           "summary": "參與擊殺後提高攻速，連續收割時輸出會快速上升。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "蓄力穿刺箭",
+          "title": "破甲箭",
           "icon": "../assets/images/heroes/skills/varus/02.png",
           "summary": "主要遠距消耗技能，蓄力越完整距離與傷害越高。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "枯萎印記",
+          "title": "荒蕪箭袋",
           "icon": "../assets/images/heroes/skills/varus/03.png",
           "summary": "普攻疊加印記後由技能引爆，提供重要的百分比傷害。",
           "variantIcons": [
@@ -508,14 +597,14 @@
         {
           "key": "E",
           "label": "3 技",
-          "title": "範圍減療緩速",
+          "title": "腐敗箭雨",
           "icon": "../assets/images/heroes/skills/varus/05.png",
           "summary": "限制回血並封鎖走位，適合接控制與物件團。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "鎖鏈禁錮",
+          "label": "4 技",
+          "title": "墮落連鎖",
           "icon": "../assets/images/heroes/skills/varus/04.png",
           "summary": "遠距離強控並可向附近敵人擴散，是團戰開戰核心。"
         }
@@ -541,11 +630,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 6,
-      "baseId": "varus"
+      "baseId": "varus",
+      "synergySupports": [
+        "瑟雷西",
+        "卡瑪",
+        "娜米"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/varus/05.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "4技",
+          "icon": "../assets/images/heroes/skills/varus/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/varus/02.png"
+        }
+      ],
+      "combo": "3技 → 4技 → 1技"
     },
     {
       "id": "zeri",
@@ -602,8 +722,7 @@
           "寇格魔",
           "凱特琳",
           "路西恩"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "先穩定補刀，不為短射程硬拚；3 技主要留作撤退。",
@@ -611,20 +730,20 @@
         "後期": "沿牆與隊友前排拉扯，持續輸出而不是一次性衝進敵陣。"
       },
       "summary": "前期偏弱，但裝備成形後能靠位移與大絕長時間拉打；操作上限非常高。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/zeri.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "特殊普攻機制",
+          "title": "人體蓄電池",
           "icon": "../assets/images/heroes/skills/zeri/01.png",
           "summary": "普攻以方向性射擊呈現，需要自行瞄準並管理攻速上限。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "電擊緩速",
+          "title": "激電連彈",
           "icon": "../assets/images/heroes/skills/zeri/02.png",
           "summary": "提供傷害與緩速，補刀或拉打都很實用。",
           "variantIcons": [
@@ -635,21 +754,21 @@
         {
           "key": "W",
           "label": "2 技",
-          "title": "遠距雷射",
+          "title": "超激爆電磁炮",
           "icon": "../assets/images/heroes/skills/zeri/03.png",
           "summary": "穿牆後效果更強，適合團戰前消耗。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "跨牆位移",
+          "title": "電光石火",
           "icon": "../assets/images/heroes/skills/zeri/04.png",
           "summary": "核心機動技能，可穿越地形切入或撤退。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "超載團戰",
+          "label": "4 技",
+          "title": "雷霆萬鈞",
           "icon": "../assets/images/heroes/skills/zeri/06.png",
           "summary": "命中多名敵人後進入強勢拉打狀態，適合長時間團戰。"
         }
@@ -675,11 +794,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 6,
-      "baseId": "zeri"
+      "baseId": "zeri",
+      "synergySupports": [
+        "露璐",
+        "悠咪",
+        "米里歐"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/zeri/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/zeri/02.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "4技",
+          "icon": "../assets/images/heroes/skills/zeri/06.png"
+        }
+      ],
+      "combo": "3技 → 1技 → 4技"
     },
     {
       "id": "lucian",
@@ -736,8 +886,7 @@
           "凱特琳",
           "寇格魔",
           "艾希"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "主動找短換血，技能後一定接被動雙槍，把強勢期變成血量優勢。",
@@ -745,7 +894,7 @@
         "後期": "後期射程劣勢更明顯，必須靠位移和大絕保持安全輸出。"
       },
       "summary": "善用每次施法後的雙槍被動打短爆發，靠位移重置與節奏壓制在前中期建立優勢。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜合適輔助：依 7.2a Duo Lane synergy 資料整理，路西恩優先搭配娜米、布郎姆、銳空。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜合適輔助：依 7.2a Duo Lane synergy 資料整理，路西恩優先搭配娜米、布郎姆、銳空。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/lucian.png",
       "abilities": [
         {
@@ -805,17 +954,17 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "baseId": "lucian",
       "synergySupports": [
         "娜米",
-        "布郎姆",
+        "布朗姆",
         "銳空"
       ],
-      "combo": "3技 → 普攻 → 1技 → 普攻 → 2技 → 普攻",
+      "combo": "3技 → 1技 → 2技",
       "comboNote": "常用換血／追擊連招；利用技能穿插普攻觸發被動雙槍。",
       "comboSteps": [
         {
@@ -840,10 +989,6 @@
           "type": "skill",
           "label": "2技",
           "icon": "../assets/images/heroes/skills/lucian/03.png"
-        },
-        {
-          "type": "attack",
-          "label": "普攻"
         }
       ]
     },
@@ -902,8 +1047,7 @@
           "凱特琳",
           "好運姐",
           "史矛德"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "透過羽毛位置逼走位，不一定要每次都急著拉回。",
@@ -911,13 +1055,13 @@
         "後期": "大絕盡量拿來躲關鍵技能，活著拉回羽毛往往比先手輸出更重要。"
       },
       "summary": "利用羽毛佈局與倒鉤反打，兼具高輸出、禁錮與大絕自保，團戰容錯很高。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/xayah.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "攻擊留下羽毛",
+          "title": "一翦兩斷",
           "icon": "../assets/images/heroes/skills/xayah/01.png",
           "summary": "技能後普攻會穿透並留下羽毛，是所有控制與爆發的基礎。",
           "variantIcons": [
@@ -928,28 +1072,28 @@
         {
           "key": "Q",
           "label": "1 技",
-          "title": "雙刃投擲",
+          "title": "赤落連匕",
           "icon": "../assets/images/heroes/skills/xayah/03.png",
           "summary": "快速放置羽毛並補傷害，常用來建立倒鉤角度。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "強化普攻",
+          "title": "奪命疾翼",
           "icon": "../assets/images/heroes/skills/xayah/04.png",
           "summary": "增加攻速與傷害，提升正面持續輸出。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "羽毛回收",
+          "title": "漫天血刃",
           "icon": "../assets/images/heroes/skills/xayah/05.png",
           "summary": "召回羽毛造成傷害，多枚命中可禁錮，是核心反打技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "羽刃風暴",
+          "label": "4 技",
+          "title": "驟羽暴風",
           "icon": "../assets/images/heroes/skills/xayah/06.png",
           "summary": "短暫不可被選取並留下大量羽毛，是最重要的自保工具。"
         }
@@ -975,11 +1119,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 6,
-      "baseId": "xayah"
+      "baseId": "xayah",
+      "synergySupports": [
+        "銳空",
+        "瑟雷西",
+        "布朗姆"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/xayah/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/xayah/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/xayah/05.png"
+        }
+      ],
+      "combo": "2技 → 1技 → 3技"
     },
     {
       "id": "jhin",
@@ -1036,8 +1211,7 @@
           "伊澤瑞爾",
           "凱特琳",
           "史矛德"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "用 1 技彈跳與第四發建立血量差，保持換彈節奏。",
@@ -1045,41 +1219,41 @@
         "後期": "站位比持續普攻更重要，利用超遠距技能先控制與收殘血。"
       },
       "summary": "利用第四發與技能控制掌握節奏，不必追求最高攻速；遠距離支援與收尾能力非常完整。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/jhin.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "四發彈匣",
+          "title": "低語",
           "icon": "../assets/images/heroes/skills/jhin/01.png",
           "summary": "第四發傷害極高並具斬殺味道，換彈期間要主動拉開。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "彈跳手榴彈",
+          "title": "狂舞手雷",
           "icon": "../assets/images/heroes/skills/jhin/02.png",
           "summary": "可連續彈跳，對線清兵與消耗都很實用。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "遠距定身",
+          "title": "致命伏筆",
           "icon": "../assets/images/heroes/skills/jhin/03.png",
           "summary": "攻擊過目標後可遠距離禁錮，團隊配合價值很高。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "陷阱區域",
+          "title": "魔幻時刻",
           "icon": "../assets/images/heroes/skills/jhin/04.png",
           "summary": "提供減速、視野與爆炸傷害，可預先佈置物件區。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "超遠距狙擊",
+          "label": "4 技",
+          "title": "華麗謝幕",
           "icon": "../assets/images/heroes/skills/jhin/05.png",
           "summary": "遠距離連續射擊，用於開戰、逼位或收割。"
         }
@@ -1105,11 +1279,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "jhin"
+      "baseId": "jhin",
+      "synergySupports": [
+        "瑟雷西",
+        "娜米",
+        "雷歐娜"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/jhin/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/jhin/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/jhin/02.png"
+        }
+      ],
+      "combo": "3技 → 2技 → 1技"
     },
     {
       "id": "kogmaw",
@@ -1166,8 +1371,7 @@
           "路西恩",
           "達瑞文",
           "煞蜜拉"
-        ],
-        "ban": "達瑞文"
+        ]
       },
       "playstyle": {
         "前期": "前期以補刀為主，避免沒有保護時長時間站樁。",
@@ -1175,41 +1379,41 @@
         "後期": "不要單獨走線，保持最大射程持續打最近目標即可造成巨大團戰壓力。"
       },
       "summary": "需要隊友保護，但開啟射程強化後能從安全位置快速融化前排，是版本頂級後期火力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/kogmaw.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "死亡爆炸",
+          "title": "來自伊卡西亞的驚喜",
           "icon": "../assets/images/heroes/skills/kogmaw/01.png",
           "summary": "死亡後仍可移動並爆炸造成真實傷害，能在必死時換取價值。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "腐蝕投射",
+          "title": "腐蝕唾液",
           "icon": "../assets/images/heroes/skills/kogmaw/02.png",
           "summary": "遠距離傷害並削弱敵方抗性，方便後續持續輸出。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "射程強化",
+          "title": "生化彈幕",
           "icon": "../assets/images/heroes/skills/kogmaw/03.png",
           "summary": "短時間大幅提高射程並附加百分比傷害，是整套玩法核心。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "地面緩速",
+          "title": "虛空淤泥",
           "icon": "../assets/images/heroes/skills/kogmaw/04.png",
           "summary": "鋪設緩速區阻擋進場，協助自己拉開距離。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "遠距砲擊",
+          "label": "4 技",
+          "title": "生化巨炮",
           "icon": "../assets/images/heroes/skills/kogmaw/05.png",
           "summary": "可連續用於探草、消耗與收尾，但要管理魔力消耗。"
         }
@@ -1235,11 +1439,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "kogmaw"
+      "baseId": "kogmaw",
+      "synergySupports": [
+        "露璐",
+        "米里歐",
+        "布朗姆"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/kogmaw/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/kogmaw/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/kogmaw/02.png"
+        }
+      ],
+      "combo": "2技 → 3技 → 1技"
     },
     {
       "id": "vayne",
@@ -1296,8 +1531,7 @@
           "凱特琳",
           "達瑞文",
           "好運姐"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "以生存與補刀優先，不能因為想打三環就吃大量遠程消耗。",
@@ -1305,41 +1539,41 @@
         "後期": "大絕後靠翻滾隱身與走位持續輸出，優先打最近且安全的目標。"
       },
       "summary": "前期承受射程劣勢，後期靠三環真實傷害、翻滾與大絕單挑任何高生命前排。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/vayne.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "追獵加速",
+          "title": "夜之狩獵",
           "icon": "../assets/images/heroes/skills/vayne/01.png",
           "summary": "朝敵方英雄移動時提升追擊能力，適合收割與黏人。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "翻滾強化攻擊",
+          "title": "翻滾瞄準",
           "icon": "../assets/images/heroes/skills/vayne/02.png",
           "summary": "短位移並強化下一擊，是重置站位與躲技能的核心。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "三環真實傷害",
+          "title": "神聖銀箭",
           "icon": "../assets/images/heroes/skills/vayne/03.png",
           "summary": "連續攻擊同一目標觸發高額真實傷害，是打坦核心。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "擊退釘牆",
+          "title": "重型弩箭",
           "icon": "../assets/images/heroes/skills/vayne/04.png",
           "summary": "將敵人擊退，撞牆時造成控制，是重要自保與反殺技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "終極獵殺",
+          "label": "4 技",
+          "title": "死亡通緝",
           "icon": "../assets/images/heroes/skills/vayne/05.png",
           "summary": "強化攻擊與翻滾，提升機動與隱蔽性，後期團戰上限極高。"
         }
@@ -1365,11 +1599,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "vayne"
+      "baseId": "vayne",
+      "synergySupports": [
+        "露璐",
+        "米里歐",
+        "娜米"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "4技",
+          "icon": "../assets/images/heroes/skills/vayne/05.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/vayne/02.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/vayne/04.png"
+        }
+      ],
+      "combo": "4技 → 1技 → 3技"
     },
     {
       "id": "corki",
@@ -1426,8 +1691,7 @@
           "伊澤瑞爾",
           "史矛德",
           "好運姐"
-        ],
-        "ban": "史矛德"
+        ]
       },
       "playstyle": {
         "前期": "利用技能清線與消耗，2 技不要隨意往前交。",
@@ -1435,41 +1699,41 @@
         "後期": "保持技能命中率與安全位移，持續輸出比一次爆發更重要。"
       },
       "summary": "以技能消耗與真實傷害輸出，能穩定打前排並在中期物件戰形成高壓力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/corki.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "海克斯彈藥",
+          "title": "海克斯軍火",
           "icon": "../assets/images/heroes/skills/corki/01.png",
           "summary": "普攻與特定強化效果附加真實傷害，讓敵方難以單靠護甲應對。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "範圍炸彈",
+          "title": "磷光炸彈",
           "icon": "../assets/images/heroes/skills/corki/02.png",
           "summary": "穩定清線與消耗技能，亦可提供區域視野。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "女武神位移",
+          "title": "女武神特攻",
           "icon": "../assets/images/heroes/skills/corki/03.png",
           "summary": "向指定方向位移並留下燃燒路徑，主要用於調整站位。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "機槍掃射",
+          "title": "格林機槍",
           "icon": "../assets/images/heroes/skills/corki/04.png",
           "summary": "持續對前方造成傷害並削弱防禦，適合貼著前排輸出。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "飛彈連射",
+          "label": "4 技",
+          "title": "火箭轟擊",
           "icon": "../assets/images/heroes/skills/corki/05.png",
           "summary": "可儲存並遠距離持續消耗，是中後期團戰前壓血核心。",
           "variantIcons": [
@@ -1499,11 +1763,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 6,
-      "baseId": "corki"
+      "baseId": "corki",
+      "synergySupports": [
+        "娜米",
+        "卡瑪",
+        "米里歐"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/corki/04.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/corki/02.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/corki/03.png"
+        }
+      ],
+      "combo": "3技 → 1技 → 2技"
     },
     {
       "id": "kalista",
@@ -1560,8 +1855,7 @@
           "凱特琳",
           "艾希",
           "好運姐"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "利用普攻跳躍維持安全距離，疊矛後再拉掉，不要為追人破壞站位。",
@@ -1569,13 +1863,13 @@
         "後期": "持續跳躍輸出並觀察疊矛數量，處理龍與巴龍時有額外斬殺價值。"
       },
       "summary": "普攻位移讓她有極高拉打上限，但很吃走位與輔助默契；疊矛後的瞬間斬殺能主導物件戰。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 7 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 7 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/kalista.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "普攻跳躍",
+          "title": "好戰突進",
           "icon": "../assets/images/heroes/skills/kalista/01.png",
           "summary": "每次普攻後可位移，是操作核心，也讓減速效果特別克制她。",
           "variantIcons": [
@@ -1587,28 +1881,28 @@
         {
           "key": "Q",
           "label": "1 技",
-          "title": "投矛穿刺",
+          "title": "赦罪穿刺",
           "icon": "../assets/images/heroes/skills/kalista/02.png",
           "summary": "直線投矛並可傳遞疊矛效果，用於消耗與補刀。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "哨兵與契約",
+          "title": "憎靈守衛",
           "icon": "../assets/images/heroes/skills/kalista/05.png",
           "summary": "與隊友建立連結並提供協同效果，視野與團隊價值高。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "撕裂引爆",
+          "title": "痛苦撕扯",
           "icon": "../assets/images/heroes/skills/kalista/06.png",
           "summary": "拔出目標身上的長矛造成爆發，疊層越高傷害越高。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "命運召喚",
+          "label": "4 技",
+          "title": "命運呼喚",
           "icon": "../assets/images/heroes/skills/kalista/07.png",
           "summary": "將契約隊友拉回並可讓其再次衝出，是開戰或保命工具。"
         }
@@ -1634,11 +1928,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 7,
-      "baseId": "kalista"
+      "baseId": "kalista",
+      "synergySupports": [
+        "瑟雷西",
+        "雷歐娜",
+        "納帝魯斯"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/kalista/02.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/kalista/06.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/kalista/05.png"
+        }
+      ],
+      "combo": "1技 → 3技 → 2技"
     },
     {
       "id": "sivir",
@@ -1695,8 +2020,7 @@
           "凱特琳",
           "史矛德",
           "寇格魔"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "先用 1、2 技清線，保留護盾擋關鍵控制而不是普通消耗。",
@@ -1704,27 +2028,27 @@
         "後期": "站在安全位置讓彈射持續擴散，大絕可用來追擊也能救整隊撤退。"
       },
       "summary": "清線速度快又有法術護盾，能穩定發育並用大絕加速全隊開戰或撤退。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/sivir.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "命中加速",
+          "title": "戰鬥動能",
           "icon": "../assets/images/heroes/skills/sivir/01.png",
           "summary": "攻擊英雄後提升移速，讓走砍與追擊更順暢。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "迴旋飛刃",
+          "title": "迴旋之刃",
           "icon": "../assets/images/heroes/skills/sivir/02.png",
           "summary": "往返兩段傷害的主要消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "彈射普攻",
+          "title": "十字彈射",
           "icon": "../assets/images/heroes/skills/sivir/03.png",
           "summary": "讓普攻在多個目標間彈跳，是團戰範圍輸出核心。"
         },
@@ -1737,8 +2061,8 @@
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "團隊加速",
+          "label": "4 技",
+          "title": "狩獵",
           "icon": "../assets/images/heroes/skills/sivir/05.png",
           "summary": "為自己與隊友提供移速，能主動開戰、追擊或撤退。"
         }
@@ -1764,11 +2088,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "sivir"
+      "baseId": "sivir",
+      "synergySupports": [
+        "娜米",
+        "卡瑪",
+        "米里歐"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/sivir/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/sivir/02.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/sivir/04.png"
+        }
+      ],
+      "combo": "2技 → 1技 → 3技"
     },
     {
       "id": "kaisa",
@@ -1825,8 +2180,7 @@
           "凱特琳",
           "達瑞文",
           "寇格魔"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "射程不長，先穩定補刀並等第一個完整裝備觸發技能進化。",
@@ -1834,13 +2188,13 @@
         "後期": "利用大絕盾與 3 技機動反覆調整位置，優先處理能安全擊殺的目標。"
       },
       "summary": "完整裝備會逐步進化技能，既能正面持續輸出，也能抓標記用大絕切入後排。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 9 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 9 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/kaisa.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "電漿與進化",
+          "title": "二階蟲甲",
           "icon": "../assets/images/heroes/skills/kaisa/02.png",
           "summary": "攻擊疊加電漿；完整裝備能逐步進化基本技能。",
           "variantIcons": [
@@ -1851,7 +2205,7 @@
         {
           "key": "Q",
           "label": "1 技",
-          "title": "多枚飛彈",
+          "title": "伊卡西亞魔雨",
           "icon": "../assets/images/heroes/skills/kaisa/03.png",
           "summary": "對孤立目標爆發極高，是清線與單體傷害核心。",
           "variantIcons": [
@@ -1862,7 +2216,7 @@
         {
           "key": "W",
           "label": "2 技",
-          "title": "虛空標記",
+          "title": "虛空探索者",
           "icon": "../assets/images/heroes/skills/kaisa/05.png",
           "summary": "遠距離命中後疊加電漿，亦可作為大絕切入標記。",
           "variantIcons": [
@@ -1873,7 +2227,7 @@
         {
           "key": "E",
           "label": "3 技",
-          "title": "蓄力加速",
+          "title": "極速充能",
           "icon": "../assets/images/heroes/skills/kaisa/07.png",
           "summary": "提供移速與攻速，進化後可短暫隱形調整站位。",
           "variantIcons": [
@@ -1883,8 +2237,8 @@
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "獵殺突進",
+          "label": "4 技",
+          "title": "殺手本能",
           "icon": "../assets/images/heroes/skills/kaisa/09.png",
           "summary": "突進到已標記敵人附近並獲得護盾，可追擊或躲技能。"
         }
@@ -1910,7 +2264,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "mechanicsTitle": "技能進化",
       "mechanics": [
@@ -1929,7 +2283,38 @@
       ],
       "skillIconStatus": "complete",
       "skillIconCount": 9,
-      "baseId": "kaisa"
+      "baseId": "kaisa",
+      "synergySupports": [
+        "納帝魯斯",
+        "雷歐娜",
+        "瑟雷西"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技",
+          "icon": "../assets/images/heroes/skills/kaisa/07.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/kaisa/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/kaisa/05.png"
+        }
+      ],
+      "combo": "3技 → 1技 → 2技"
     },
     {
       "id": "draven",
@@ -1986,8 +2371,7 @@
           "凱特琳",
           "艾希",
           "剎雅"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "主動利用 1 技斧頭壓制，盡量保持雙斧並累積賞金。",
@@ -1995,41 +2379,41 @@
         "後期": "團戰接斧安全性優先於維持滿輸出，活著才能持續投斧。"
       },
       "summary": "接斧與被動賞金讓他能把前期優勢快速轉成經濟雪球，但落後後的回復能力較差。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/draven.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "崇拜賞金",
+          "title": "瑞文聯盟",
           "icon": "",
           "summary": "接斧與補刀累積層數，擊殺英雄時兌換額外金錢。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "旋轉飛斧",
+          "title": "迴旋飛斧",
           "icon": "",
           "summary": "強化普攻並在命中後彈落地面，接回可持續維持高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "加速衝刺",
+          "title": "好戲上場",
           "icon": "",
           "summary": "提供跑速與攻速，接斧後可頻繁刷新。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "橫向擊退",
+          "title": "給我閃！",
           "icon": "",
           "summary": "打斷與推開敵人，適合阻止突進或補控制。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "雙斧全圖",
+          "label": "4 技",
+          "title": "迴轉死神",
           "icon": "",
           "summary": "飛出並返回的遠距離傷害，可收割遠方殘血。"
         }
@@ -2055,7 +2439,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "mechanicsTitle": "賞金機制",
       "mechanics": [
@@ -2068,7 +2452,35 @@
           "text": "死亡會失去部分層數，因此不必要的冒險會直接降低滾雪球能力。"
         }
       ],
-      "baseId": "draven"
+      "baseId": "draven",
+      "synergySupports": [
+        "瑟雷西",
+        "雷歐娜",
+        "納帝魯斯"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "2技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技"
+        }
+      ],
+      "combo": "2技 → 3技 → 1技"
     },
     {
       "id": "ashe",
@@ -2125,8 +2537,7 @@
           "好運姐",
           "路西恩",
           "凱特琳"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "利用 2 技遠距消耗與普攻緩速換血，別無位移地走太深。",
@@ -2134,41 +2545,41 @@
         "後期": "正面戰持續緩速最近目標，保留視野技能檢查側翼與草叢。"
       },
       "summary": "普攻緩速與全圖大絕讓她即使經濟普通也有高團隊價值，是穩定且好理解的功能型射手。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/ashe.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "冰霜減速",
+          "title": "冰霜射擊",
           "icon": "../assets/images/heroes/skills/ashe/01.png",
           "summary": "普攻與技能附帶緩速，能穩定限制敵方走位。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "專注連射",
+          "title": "專注射擊",
           "icon": "../assets/images/heroes/skills/ashe/02.png",
           "summary": "累積後強化普攻攻速與傷害，是持續輸出核心。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "扇形箭雨",
+          "title": "萬箭齊發",
           "icon": "../assets/images/heroes/skills/ashe/03.png",
           "summary": "遠距離扇形消耗，對線與團戰前壓血都實用。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "鷹靈視野",
+          "title": "鷹擊長空",
           "icon": "../assets/images/heroes/skills/ashe/04.png",
           "summary": "遠距離偵查區域，能降低被埋伏與物件偷打風險。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "全圖魔法箭",
+          "label": "4 技",
+          "title": "魔法水晶箭",
           "icon": "../assets/images/heroes/skills/ashe/05.png",
           "summary": "可跨圖暈眩第一名英雄，是開戰與支援核心。"
         }
@@ -2194,11 +2605,42 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "ashe"
+      "baseId": "ashe",
+      "synergySupports": [
+        "布朗姆",
+        "雷歐娜",
+        "瑟雷西"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "4技",
+          "icon": "../assets/images/heroes/skills/ashe/05.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技",
+          "icon": "../assets/images/heroes/skills/ashe/03.png"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技",
+          "icon": "../assets/images/heroes/skills/ashe/02.png"
+        }
+      ],
+      "combo": "4技 → 2技 → 1技"
     },
     {
       "id": "jinx",
@@ -2255,8 +2697,7 @@
           "達瑞文",
           "路西恩",
           "好運姐"
-        ],
-        "ban": "達瑞文"
+        ]
       },
       "playstyle": {
         "前期": "利用火箭安全補刀與消耗，避免沒位移時被強開。",
@@ -2264,41 +2705,41 @@
         "後期": "觸發被動後立即利用高移速與攻速追擊，團戰容易形成連鎖收割。"
       },
       "summary": "需要發育時間，但任何擊殺或拆塔都能觸發加速重置，一旦團戰起飛就有連續收割能力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/jinx.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "擊殺後暴走",
+          "title": "狂躁！",
           "icon": "",
           "summary": "參與擊殺或拆塔後獲得大量移速與攻速，是團戰重置核心。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "武器切換",
+          "title": "鬼靈精怪！",
           "icon": "",
           "summary": "火箭提供射程與範圍，機槍提供高攻速，需依距離切換。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "遠距電擊",
+          "title": "咻咻！",
           "icon": "",
           "summary": "直線消耗並緩速，可收割或留人。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "咬咬陷阱",
+          "title": "咬咬手榴彈！",
           "icon": "",
           "summary": "地面控制區，適合封鎖突進與狹窄入口。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "全圖火箭",
+          "label": "4 技",
+          "title": "超威能死亡火箭！",
           "icon": "",
           "summary": "距離越遠威脅越高，可支援與收割殘血。"
         }
@@ -2324,9 +2765,37 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "baseId": "jinx"
+      "baseId": "jinx",
+      "synergySupports": [
+        "露璐",
+        "米里歐",
+        "瑟雷西"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技"
+        }
+      ],
+      "combo": "3技 → 2技 → 1技"
     },
     {
       "id": "caitlyn",
@@ -2383,8 +2852,7 @@
           "好運姐",
           "伊澤瑞爾",
           "史矛德"
-        ],
-        "ban": "好運姐"
+        ]
       },
       "playstyle": {
         "前期": "用射程不停白嫖普攻，配合陷阱卡住塔前與草叢位置。",
@@ -2392,41 +2860,41 @@
         "後期": "維持最大射程，不要為了大絕或爆頭走進刺客可接近的距離。"
       },
       "summary": "利用射程與陷阱取得對線主導權，若沒在前中期建立優勢，後期主要靠爆頭與安全輸出維持價值。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/caitlyn.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "爆頭強化",
+          "title": "爆頭",
           "icon": "",
           "summary": "累積攻擊後獲得高傷害強化普攻，陷阱與位移技能也能配合觸發。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "穿透步槍",
+          "title": "鎮暴射擊",
           "icon": "",
           "summary": "直線清線與消耗技能，對線期非常穩定。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "約德爾陷阱",
+          "title": "捕獲陷阱",
           "icon": "",
           "summary": "踩中後限制移動並強化後續爆頭，是控制與封路核心。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "反衝網",
+          "title": "九零式獵網",
           "icon": "",
           "summary": "向後位移並緩速敵人，是主要自保工具。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "鎖定狙擊",
+          "label": "4 技",
+          "title": "王牌射手",
           "icon": "",
           "summary": "長距離單體收尾技能，但可被其他英雄擋下。"
         }
@@ -2452,9 +2920,37 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "baseId": "caitlyn"
+      "baseId": "caitlyn",
+      "synergySupports": [
+        "拉克絲",
+        "卡瑪",
+        "魔甘娜"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技"
+        }
+      ],
+      "combo": "3技 → 2技 → 1技"
     },
     {
       "id": "twitch",
@@ -2511,8 +3007,7 @@
           "凱特琳",
           "好運姐",
           "路西恩"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "保守發育，不要為了補刀被遠程射手反覆換血。",
@@ -2520,41 +3015,41 @@
         "後期": "大絕期間站在可同時穿透多人的角度輸出，毒層滿後再引爆。"
       },
       "summary": "對線弱但後期偽裝繞側配合大絕能打出極高範圍傷害，適合抓敵方視野空檔。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/twitch.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "致命毒液",
+          "title": "死亡毒液",
           "icon": "",
           "summary": "普攻疊毒並造成持續傷害，滿層後能強化自身輸出節奏。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "偽裝伏擊",
+          "title": "潛伏",
           "icon": "",
           "summary": "進入偽裝並提升移速，適合繞後、抓人與重新站位。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "毒性區域",
+          "title": "虛弱之毒",
           "icon": "",
           "summary": "投擲毒液減速並加快疊毒，幫助留人。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "毒層引爆",
+          "title": "毒性爆發",
           "icon": "",
           "summary": "依敵人身上的毒層造成額外爆發，是收割核心。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "超遠穿透射擊",
+          "label": "4 技",
+          "title": "噴射，然後祈禱吧！",
           "icon": "",
           "summary": "短時間提升射程與攻擊力，普攻可穿透多名敵人。"
         }
@@ -2580,9 +3075,37 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "baseId": "twitch"
+      "baseId": "twitch",
+      "synergySupports": [
+        "露璐",
+        "悠咪",
+        "娜米"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "1技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "4技"
+        }
+      ],
+      "combo": "1技 → 3技 → 4技"
     },
     {
       "id": "tristana",
@@ -2639,8 +3162,7 @@
           "寇格魔",
           "凱特琳",
           "達瑞文"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "穩定補刀並利用 3 技炸彈抓對方失誤，不要隨便跳進去。",
@@ -2648,20 +3170,20 @@
         "後期": "射程成長後保持後排，大絕主要拿來推走刺客或完成斬殺。"
       },
       "summary": "前期射程有限，後期射程成長後非常安全；炸彈與跳躍重置讓她有高拆塔與收割能力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/tristana.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "射程成長",
+          "title": "校準射擊",
           "icon": "",
           "summary": "隨等級提升普攻與技能射程，越後期越安全。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "快速射擊",
+          "title": "急速射擊",
           "icon": "",
           "summary": "短時間大幅提升攻速，配合炸彈快速疊層。"
         },
@@ -2675,14 +3197,14 @@
         {
           "key": "E",
           "label": "3 技",
-          "title": "爆炸炸彈",
+          "title": "爆炸射擊",
           "icon": "",
           "summary": "附著目標並透過攻擊疊層爆炸，是爆發與拆塔核心。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "強力轟擊",
+          "label": "4 技",
+          "title": "毀滅射擊",
           "icon": "",
           "summary": "單體高傷害並擊退，可保命或收割。"
         }
@@ -2708,9 +3230,37 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "baseId": "tristana"
+      "baseId": "tristana",
+      "synergySupports": [
+        "米里歐",
+        "露璐",
+        "娜米"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "4技"
+        }
+      ],
+      "combo": "3技 → 1技 → 4技"
     },
     {
       "id": "samira",
@@ -2767,8 +3317,7 @@
           "艾希",
           "凱特琳",
           "剎雅"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "以短換血累積節奏，沒有隊友控制時不要強行近身。",
@@ -2776,41 +3325,41 @@
         "後期": "關鍵是判斷進場時間；太早進會被控死，太晚進又無法收割。"
       },
       "summary": "要先用不同攻擊與技能疊滿風格再進場開大；非常吃開戰時機與隊伍控制。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/samira.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "風格評級",
+          "title": "敢死風采",
           "icon": "",
           "summary": "交替使用不同攻擊與技能提升評級，達到最高等級才能開大。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "槍刃射擊",
+          "title": "狂戰本能",
           "icon": "",
           "summary": "遠距離是射擊，近距離變為範圍斬擊，是低冷卻主要輸出。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "刀鋒旋舞",
+          "title": "劍刃風暴",
           "icon": "",
           "summary": "旋轉斬擊並阻擋飛行道具，是進場保命關鍵。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "突進斬擊",
+          "title": "狂野突進",
           "icon": "",
           "summary": "穿越目標並造成傷害，擊殺後能重置，是連續收割工具。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "煉獄扳機",
+          "label": "4 技",
+          "title": "地獄火狂襲",
           "icon": "",
           "summary": "達到最高風格後才能施放的範圍持續爆發。"
         }
@@ -2836,7 +3385,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "mechanicsTitle": "風格機制",
       "mechanics": [
@@ -2849,7 +3398,35 @@
           "text": "只有達到最高風格後才能使用大絕，因此進場前必須先規劃連招。"
         }
       ],
-      "baseId": "samira"
+      "baseId": "samira",
+      "synergySupports": [
+        "納帝魯斯",
+        "雷歐娜",
+        "銳空"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技"
+        }
+      ],
+      "combo": "3技 → 2技 → 1技"
     },
     {
       "id": "yunara",
@@ -2906,8 +3483,7 @@
           "凱特琳",
           "達瑞文",
           "好運姐"
-        ],
-        "ban": "凱特琳"
+        ]
       },
       "playstyle": {
         "前期": "先利用普攻安全堆疊資源，不必急著每次都強開強化狀態。",
@@ -2915,41 +3491,41 @@
         "後期": "保持強化狀態期間的輸出時間，別在沒資源時硬追深。"
       },
       "summary": "以普攻堆疊資源後進入強化輸出狀態，熟悉技能變化後能在中後期團戰持續製造壓力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/yunara.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "暴擊附魔",
+          "title": "淨土之誓",
           "icon": "",
           "summary": "暴擊會附加額外魔法傷害，讓輸出類型更難被單一防禦針對。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "靈性修煉",
+          "title": "靈心修真",
           "icon": "",
           "summary": "普攻累積資源，主動後提高攻速並強化普攻擴散。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "遠距靈能技",
+          "title": "審判靈珠 | 毀滅弧光",
           "icon": "",
           "summary": "主要遠距消耗技能，強化狀態下會獲得更高威脅。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "步法位移",
+          "title": "感銘迅步 | 追風躡影",
           "icon": "",
           "summary": "用於調整距離與躲技能，強化狀態能刷新或升級效果。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "超然狀態",
+          "label": "4 技",
+          "title": "超逸絕塵",
           "icon": "",
           "summary": "進入強化型態並同步升級多個基本技能，是主要爆發窗口。"
         }
@@ -2975,7 +3551,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "mechanicsTitle": "超然狀態",
       "mechanics": [
@@ -2988,7 +3564,35 @@
           "text": "進出強化狀態會影響部分技能冷卻，需把握轉換時間最大化輸出。"
         }
       ],
-      "baseId": "yunara"
+      "baseId": "yunara",
+      "synergySupports": [
+        "露璐",
+        "米里歐",
+        "娜米"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "3技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "2技"
+        }
+      ],
+      "combo": "3技 → 1技 → 2技"
     },
     {
       "id": "senna",
@@ -3045,8 +3649,7 @@
           "布里茨",
           "派克",
           "納帝魯斯"
-        ],
-        "ban": "布里茨"
+        ]
       },
       "playstyle": {
         "前期": "重點是穩定收集靈魂與用 1 技換血治療，不必為了擊殺冒險。",
@@ -3054,41 +3657,41 @@
         "後期": "射程成長後站在極遠距離輸出與治療，優先維持隊友狀態。"
       },
       "summary": "透過黑霧靈魂永久成長射程與傷害，兼具治療、控制與全圖護盾，偏功能與發育型飛龍路選擇。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能名稱已依 Riot 台灣繁中官方名稱校正。",
       "avatar": "../assets/images/heroes/duo/senna.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "黑霧靈魂",
+          "title": "赦罪",
           "icon": "",
           "summary": "收集靈魂永久提升物攻、射程與暴擊，成長性極高。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "穿透聖光",
+          "title": "刺骨幽闇",
           "icon": "",
           "summary": "同一直線同時傷害敵人並治療隊友，是主要消耗與續戰技能。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "延遲禁錮",
+          "title": "終末之擁",
           "icon": "",
           "summary": "命中後延遲爆發禁錮附近目標，適合配合隊友控制。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "黑霧偽裝",
+          "title": "黯霧詛咒",
           "icon": "",
           "summary": "讓自己與附近隊友進入黑霧，提升轉線與保命能力。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "全圖曙光",
+          "label": "4 技",
+          "title": "黎明之影",
           "icon": "",
           "summary": "全圖直線傷害敵人並為隊友提供護盾，是跨圖支援核心。"
         }
@@ -3114,7 +3717,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "mechanicsTitle": "靈魂成長",
       "mechanics": [
@@ -3127,7 +3730,35 @@
           "text": "達到固定靈魂門檻後可獲得額外射程與暴擊等永久成長。"
         }
       ],
-      "baseId": "senna"
+      "baseId": "senna",
+      "synergySupports": [
+        "納帝魯斯",
+        "布朗姆",
+        "瑟雷西"
+      ],
+      "comboSteps": [
+        {
+          "type": "skill",
+          "label": "2技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "1技"
+        },
+        {
+          "type": "attack",
+          "label": "普攻"
+        },
+        {
+          "type": "skill",
+          "label": "3技"
+        }
+      ],
+      "combo": "2技 → 1技 → 3技"
     },
     {
       "id": "aatrox-baron",
