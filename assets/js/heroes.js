@@ -188,7 +188,7 @@
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('鞋子',lucianPilot?'二級鞋':'二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('完整成裝',lucianPilot?'5 件裝備＋二級鞋':'5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
+        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}${lucianPilot&&hero.combo?`<div class="lucian-combo-row"><span>常用連招</span><strong>${safeText(hero.combo)}</strong></div>`:''}</section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
         ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
@@ -221,3 +221,68 @@
   }
   init();
 })();
+
+
+function ensureLucianPilotMobileStyle(){
+  if(document.getElementById('lucian-pilot-mobile-style')) return;
+  const style=document.createElement('style');
+  style.id='lucian-pilot-mobile-style';
+  style.textContent=`
+    @media (max-width:800px){
+      .hero-role-tabs{
+        display:grid!important;
+        grid-template-columns:repeat(6,minmax(0,1fr))!important;
+        gap:3px!important;
+        overflow:visible!important;
+        padding:0!important;
+      }
+      .hero-role-tab{
+        min-width:0!important;
+        width:auto!important;
+        padding:6px 1px!important;
+        gap:2px!important;
+        border-radius:10px!important;
+        font-size:9px!important;
+        line-height:1.1!important;
+        flex-direction:column!important;
+        white-space:nowrap!important;
+      }
+      .hero-role-tab img{
+        width:24px!important;
+        height:24px!important;
+        border-radius:7px!important;
+      }
+      .lucian-combo-row{
+        margin-top:9px;
+        display:flex;
+        align-items:center;
+        gap:8px;
+        padding:8px 10px;
+        border:1px solid rgba(216,184,108,.14);
+        border-radius:11px;
+        background:rgba(5,16,28,.32);
+      }
+      .lucian-combo-row span{
+        flex:0 0 auto;
+        color:#d8b86c;
+        font-size:10px;
+        font-weight:900;
+      }
+      .lucian-combo-row strong{
+        min-width:0;
+        font-size:11px;
+        line-height:1.35;
+        white-space:normal;
+      }
+    }
+    @media (max-width:420px){
+      .hero-role-tabs{gap:2px!important}
+      .hero-role-tab{font-size:8px!important;padding:5px 0!important}
+      .hero-role-tab img{width:22px!important;height:22px!important}
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+
+try{ensureLucianPilotMobileStyle();}catch(e){}
