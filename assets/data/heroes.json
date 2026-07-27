@@ -745,7 +745,7 @@
         "後期": "後期射程劣勢更明顯，必須靠位移和大絕保持安全輸出。"
       },
       "summary": "善用每次施法後的雙槍被動打短爆發，靠位移重置與節奏壓制在前中期建立優勢。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。｜合適輔助：依 7.2a Duo Lane synergy 資料整理，路西恩優先搭配娜米、布郎姆、銳空。",
       "avatar": "../assets/images/heroes/duo/lucian.png",
       "abilities": [
         {
@@ -809,7 +809,12 @@
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "lucian"
+      "baseId": "lucian",
+      "synergySupports": [
+        "娜米",
+        "布郎姆",
+        "銳空"
+      ]
     },
     {
       "id": "xayah",
