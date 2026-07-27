@@ -12,7 +12,7 @@
   function byId(arr,id){ return arr.find(x=>x.id===id); }
   function safeIcon(x){ return x?.icon || ''; }
   function safeText(x){ return x || ''; }
-  function abilityMedia(x, cls='ability-icon-placeholder'){ return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${safeText(x?.key)||'?'}</span>`; }
+  function abilityMedia(x, cls='ability-icon-placeholder'){ const n={Q:'1',W:'2',E:'3',R:'4',P:'P'}[x?.key]||safeText(x?.key)||'?'; return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${n}</span>`; }
   function abilityVariants(x){ const arr=Array.isArray(x?.variantIcons)?x.variantIcons:[]; if(arr.length<=1) return ''; return `<div class="ability-variants">${arr.map((src,i)=>`<img src="${src}" alt="${safeText(x?.label)||safeText(x?.title)} ${i+1}" loading="lazy">`).join('')}</div>`; }
 
   function heroByName(name){ return state.heroes.find(h=>h.name===name); }
@@ -167,7 +167,7 @@
     const starter=firstBasicComponent(items[0]);
     const starterHTML=buildMiniCard(starter,'starter');
     const coreHTML=items.slice(0,3).map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
-    const lucianPilot = hero.id==='lucian';
+    const lucianPilot = ['smolder','miss-fortune','ezreal','varus','zeri','lucian','xayah','jhin','kogmaw','vayne','corki','kalista','sivir','kaisa','draven','ashe','jinx','caitlyn','twitch','tristana','samira','yunara','senna'].includes(hero.id);
     const shownBoots = lucianPilot ? boots.slice(0,1) : boots;
     const bootHTML=shownBoots.map((x,i)=>`<div class="hero-build-slot boot"><b>${lucianPilot?'II':(i===0?'II':'III')}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
     const finalBoot = lucianPilot ? boots[0] : boots[1];
@@ -188,7 +188,7 @@
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('鞋子',lucianPilot?'二級鞋':'二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('完整成裝',lucianPilot?'5 件裝備＋二級鞋':'5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}${lucianPilot&&hero.combo?`<div class="lucian-combo-row"><span>常用連招</span><div class="lucian-combo-seq">${(hero.comboSteps||[]).map(step=>step.type==='skill'?`<div class="lucian-combo-step"><img src="${safeText(step.icon)}" alt="${safeText(step.label)}"><small>${safeText(step.label)}</small></div>`:`<div class="lucian-combo-aa"><b>普攻</b></div>`).join('<i>→</i>')}</div></div>`:''}</section>
+        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}${lucianPilot&&hero.combo?`<div class="lucian-combo-row"><span>常用連招</span><div class="lucian-combo-seq">${(hero.comboSteps||[]).map(step=>step.type==='skill'?`<div class="lucian-combo-step">${step.icon?`<img src="${safeText(step.icon)}" alt="${safeText(step.label)}">`:`<b class="combo-number-fallback">${safeText(step.label.replace('技',''))}</b>`}<small>${safeText(step.label)}</small></div>`:`<div class="lucian-combo-aa"><b>普攻</b></div>`).join('<i>→</i>')}</div></div>`:''}</section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
         ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
@@ -251,6 +251,58 @@ function ensureLucianPilotMobileStyle(){
         width:24px!important;
         height:24px!important;
         border-radius:7px!important;
+      }
+      /* 飛龍路正式手機版：技能優先顯示縮圖＋1/2/3/4 技；Lv.1~15 全表同屏，不左右滑 */
+      .lucian-mobile-pilot .skill-priority-step>div{
+        display:block!important;
+      }
+      .lucian-mobile-pilot .skill-priority-step>div b{
+        display:block;
+        font-size:7px;
+        line-height:1.1;
+        white-space:nowrap;
+      }
+      .lucian-mobile-pilot .skill-priority-step>div small{
+        display:none!important;
+      }
+      .lucian-mobile-pilot .skill-level-grid{
+        overflow:visible!important;
+        padding:4px!important;
+      }
+      .lucian-mobile-pilot .skill-grid-row{
+        grid-template-columns:58px repeat(15,minmax(0,1fr))!important;
+        min-width:0!important;
+        width:100%!important;
+      }
+      .lucian-mobile-pilot .skill-grid-skill{
+        position:static!important;
+        grid-template-columns:22px minmax(0,1fr)!important;
+        gap:2px!important;
+        padding:3px!important;
+      }
+      .lucian-mobile-pilot .skill-grid-skill img,
+      .lucian-mobile-pilot .skill-grid-skill .skill-icon-placeholder{
+        width:22px!important;
+        height:22px!important;
+        border-radius:6px!important;
+      }
+      .lucian-mobile-pilot .skill-grid-skill b{
+        font-size:7px!important;
+        white-space:nowrap!important;
+      }
+      .lucian-mobile-pilot .skill-grid-skill small{
+        display:none!important;
+      }
+      .lucian-mobile-pilot .skill-grid-cell{
+        min-width:0!important;
+        min-height:31px!important;
+        font-size:6.5px!important;
+        padding:0!important;
+      }
+      .lucian-mobile-pilot .skill-grid-cell.active span{
+        width:13px!important;
+        height:13px!important;
+        font-size:6px!important;
       }
       .lucian-combo-row{
         margin-top:9px;
@@ -323,6 +375,11 @@ function ensureLucianPilotMobileStyle(){
       .hero-role-tabs{gap:2px!important}
       .hero-role-tab{font-size:8px!important;padding:5px 0!important}
       .hero-role-tab img{width:22px!important;height:22px!important}
+      .lucian-mobile-pilot .skill-grid-row{grid-template-columns:50px repeat(15,minmax(0,1fr))!important}
+      .lucian-mobile-pilot .skill-grid-skill{grid-template-columns:18px minmax(0,1fr)!important}
+      .lucian-mobile-pilot .skill-grid-skill img,.lucian-mobile-pilot .skill-grid-skill .skill-icon-placeholder{width:18px!important;height:18px!important}
+      .lucian-mobile-pilot .skill-grid-skill b{font-size:6.5px!important}
+      .lucian-mobile-pilot .skill-grid-cell{font-size:6px!important;min-height:29px!important}
     }
   `;
   document.head.appendChild(style);
