@@ -167,8 +167,11 @@
     const starter=firstBasicComponent(items[0]);
     const starterHTML=buildMiniCard(starter,'starter');
     const coreHTML=items.slice(0,3).map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
-    const bootHTML=boots.map((x,i)=>`<div class="hero-build-slot boot"><b>${i===0?'II':'III'}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
-    const finalHTML=[...items.slice(0,5),boots[1]].map((x,i)=>`<div class="hero-build-slot final"><b>${i<5?i+1:'III'}</b>${buildMiniCard(x,i===5?'boot':'item')}</div>`).join('');
+    const lucianPilot = hero.id==='lucian';
+    const shownBoots = lucianPilot ? boots.slice(0,1) : boots;
+    const bootHTML=shownBoots.map((x,i)=>`<div class="hero-build-slot boot"><b>${lucianPilot?'II':(i===0?'II':'III')}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
+    const finalBoot = lucianPilot ? boots[0] : boots[1];
+    const finalHTML=[...items.slice(0,5),finalBoot].map((x,i)=>`<div class="hero-build-slot final"><b>${i<5?i+1:(lucianPilot?'II':'III')}</b>${buildMiniCard(x,i===5?'boot':'item')}</div>`).join('');
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
@@ -176,7 +179,7 @@
 
     $('#heroContent').innerHTML=`
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button>${laneSwitch}</div>
-      <section class="hero-profile">
+      <section class="hero-profile ${lucianPilot?'lucian-mobile-pilot':''}">
         <section class="hero-profile-hero">
           ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
           <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
@@ -184,7 +187,7 @@
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
+        <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子',lucianPilot?'二級鞋':'二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝',lucianPilot?'5 件裝備＋二級鞋':'5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
         ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
