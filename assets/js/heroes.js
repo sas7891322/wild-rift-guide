@@ -188,7 +188,7 @@
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('鞋子',lucianPilot?'二級鞋':'二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('完整成裝',lucianPilot?'5 件裝備＋二級鞋':'5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}${lucianPilot&&hero.combo?`<div class="lucian-combo-row"><span>常用連招</span><strong>${safeText(hero.combo)}</strong></div>`:''}</section>
+        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}${lucianPilot&&hero.combo?`<div class="lucian-combo-row"><span>常用連招</span><div class="lucian-combo-seq">${(hero.comboSteps||[]).map(step=>step.type==='skill'?`<div class="lucian-combo-step"><img src="${safeText(step.icon)}" alt="${safeText(step.label)}"><small>${safeText(step.label)}</small></div>`:`<div class="lucian-combo-aa"><b>普攻</b></div>`).join('<i>→</i>')}</div></div>`:''}</section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
         ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
@@ -273,6 +273,50 @@ function ensureLucianPilotMobileStyle(){
         font-size:11px;
         line-height:1.35;
         white-space:normal;
+      }
+      .lucian-combo-seq{
+        display:flex;
+        align-items:center;
+        gap:4px;
+        min-width:0;
+        overflow:hidden;
+      }
+      .lucian-combo-seq>i{
+        font-style:normal;
+        color:#d8b86c;
+        font-size:10px;
+        flex:0 0 auto;
+      }
+      .lucian-combo-step{
+        width:34px;
+        flex:0 0 34px;
+        text-align:center;
+      }
+      .lucian-combo-step img{
+        display:block;
+        width:30px;
+        height:30px;
+        margin:0 auto 2px;
+        border-radius:8px;
+        object-fit:cover;
+        border:1px solid rgba(216,184,108,.25);
+      }
+      .lucian-combo-step small{
+        display:block;
+        font-size:7px;
+        color:#c9d4df;
+        line-height:1;
+      }
+      .lucian-combo-aa{
+        flex:0 0 auto;
+        padding:5px 6px;
+        border-radius:8px;
+        border:1px solid rgba(255,255,255,.08);
+        background:rgba(255,255,255,.03);
+      }
+      .lucian-combo-aa b{
+        font-size:8px;
+        white-space:nowrap;
       }
     }
     @media (max-width:420px){
