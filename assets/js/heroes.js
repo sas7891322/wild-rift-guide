@@ -12,7 +12,7 @@
   function byId(arr,id){ return arr.find(x=>x.id===id); }
   function safeIcon(x){ return x?.icon || ''; }
   function safeText(x){ return x || ''; }
-  function abilityMedia(x, cls='ability-icon-placeholder'){ const n={Q:'1',W:'2',E:'3',R:'4',P:'P'}[x?.key]||safeText(x?.key)||'?'; return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${n}</span>`; }
+  function abilityMedia(x, cls='ability-icon-placeholder'){ return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${safeText(x?.key)||'?'}</span>`; }
   function abilityVariants(x){ const arr=Array.isArray(x?.variantIcons)?x.variantIcons:[]; if(arr.length<=1) return ''; return `<div class="ability-variants">${arr.map((src,i)=>`<img src="${src}" alt="${safeText(x?.label)||safeText(x?.title)} ${i+1}" loading="lazy">`).join('')}</div>`; }
 
   function heroByName(name){ return state.heroes.find(h=>h.name===name); }
@@ -142,6 +142,7 @@
     const abilities = Object.fromEntries((hero.abilities||[]).filter(a=>['Q','W','E','R'].includes(a.key)).map(a=>[a.key,a]));
     const sequence = hero.skillSequence || [];
     const levels = Array.from({length:15},(_,i)=>i+1);
+    const compact = hero.detailTemplate==='lucian-mobile-formal-v2';
     const rows = ['Q','W','E','R'].map(key=>{
       const a=abilities[key]||{};
       return `<div class="skill-grid-row">
@@ -149,7 +150,23 @@
         ${levels.map((lvl,i)=>`<div class="skill-grid-cell ${sequence[i]===key?'active':''}" aria-label="等級 ${lvl}${sequence[i]===key?' 點 '+key:''}">${sequence[i]===key?'<span>●</span>':''}</div>`).join('')}
       </div>`;
     }).join('');
-    return `<div class="skill-level-grid"><div class="skill-grid-row skill-grid-header"><div class="skill-grid-skill label">技能</div>${levels.map(x=>`<div class="skill-grid-cell">${x}</div>`).join('')}</div>${rows}</div>`;
+    return `<div class="skill-level-grid ${compact?'no-swipe':''}"><div class="skill-grid-row skill-grid-header"><div class="skill-grid-skill label">技能</div>${levels.map(x=>`<div class="skill-grid-cell">${x}</div>`).join('')}</div>${rows}</div>`;
+  }
+
+  function renderCombos(hero){
+    const combos=Array.isArray(hero.combos)?hero.combos:[];
+    if(!combos.length) return '';
+    const names={Q:'1 技',Q3:'1 技擊飛',W:'2 技',E:'3 技',E2:'返回',R:'4 技',AA:'普攻'};
+    const abilityByKey=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
+    const stepHTML=step=>{
+      const base=step==='Q3'?'Q':step==='E2'?'E':step;
+      const ability=abilityByKey[base];
+      const media=ability&&['Q','W','E','R'].includes(base)
+        ? abilityMedia(ability,'combo-icon-placeholder')
+        : `<span class="combo-text-icon">${step==='AA'?'A':'↩'}</span>`;
+      return `<span class="combo-step">${media}<b>${names[step]||step}</b></span>`;
+    };
+    return `<section class="hero-section hero-combo-section"><div class="hero-section-title"><h3>技能連招</h3><span>Combo</span></div><div class="hero-combo-list">${combos.map(combo=>`<article class="hero-combo-card"><strong>${safeText(combo.name)}</strong><div class="combo-steps">${combo.steps.map((step,i)=>`${stepHTML(step)}${i<combo.steps.length-1?'<i>→</i>':''}`).join('')}</div><p>${safeText(combo.note)}</p></article>`).join('')}</div></section>`;
   }
 
   function renderDetail(){
@@ -164,14 +181,19 @@
     const laneSwitch=profiles.length>1?`<div class="hero-lane-switch">${profiles.map(x=>`<button data-profile="${x.id}" class="${x.id===hero.id?'active':''}">${roleNames[x.roleId]||x.role}</button>`).join('')}</div>`:'';
     const runeHTML=runes.map((x,i)=>`<div class="hero-rune-card ${i===0?'keystone':''}">${x?`<img src="${safeIcon(x)}" alt="${x.name}"><div><small>${i===0?'關鍵符文':'副符文'}</small><strong>${x.name}</strong><p>${x.tag||''}</p></div>`:'<span>資料待補</span>'}</div>`).join('');
     const spellHTML=spells.map(x=>buildMiniCard(x,'spell')).join('');
-    const starter=firstBasicComponent(items[0]);
-    const starterHTML=buildMiniCard(starter,'starter');
-    const coreHTML=items.slice(0,3).map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
-    const lucianPilot = ['smolder','miss-fortune','ezreal','varus','zeri','lucian','xayah','jhin','kogmaw','vayne','corki','kalista','sivir','kaisa','draven','ashe','jinx','caitlyn','twitch','tristana','samira','yunara','senna'].includes(hero.id);
-    const shownBoots = lucianPilot ? boots.slice(0,1) : boots;
-    const bootHTML=shownBoots.map((x,i)=>`<div class="hero-build-slot boot"><b>${lucianPilot?'II':(i===0?'II':'III')}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
-    const finalBoot = lucianPilot ? boots[0] : boots[1];
-    const finalHTML=[...items.slice(0,5),finalBoot].map((x,i)=>`<div class="hero-build-slot final"><b>${i<5?i+1:(lucianPilot?'II':'III')}</b>${buildMiniCard(x,i===5?'boot':'item')}</div>`).join('');
+    const isLucianFormal=hero.detailTemplate==='lucian-mobile-formal-v2';
+    const starterIds=Array.isArray(hero.starterItems)&&hero.starterItems.length?hero.starterItems:[];
+    const starterItems=starterIds.map(id=>byId(state.items,id)).filter(Boolean);
+    const starter=starterItems[0]||firstBasicComponent(items[0]);
+    const starterHTML=(starterItems.length?starterItems:[starter]).map(x=>buildMiniCard(x,'starter')).join('');
+    const coreItems=(Array.isArray(hero.coreItems)&&hero.coreItems.length?hero.coreItems.map(id=>byId(state.items,id)).filter(Boolean):items.slice(0,3));
+    const coreHTML=coreItems.map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
+    const bootHTML=boots.map((x,i)=>`<div class="hero-build-slot boot"><b>${i===0?'II':'III'}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
+    const finalHTML=[...items.slice(0,5),boots[1]].map((x,i)=>`<div class="hero-build-slot final"><b>${i<5?i+1:'III'}</b>${buildMiniCard(x,i===5?'boot':'item')}</div>`).join('');
+    const buildSection=isLucianFormal
+      ? `<section class="hero-section lucian-formal-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups lucian-formal-build">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('核心裝備','三件核心',coreHTML,'core-group')}</div></section>`
+      : `<section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>`;
+    const matchupSection=`<section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid ${hero.hideBan||!hero.matchups?.ban?'no-ban':''}"><div class="matchup-box good"><span>較好打</span><div>${(hero.matchups?.good||[]).map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${(hero.matchups?.bad||[]).map(matchupChip).join('')}</div></div>${hero.hideBan||!hero.matchups?.ban?'':`<div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div>`}</div></section>`;
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
@@ -179,7 +201,7 @@
 
     $('#heroContent').innerHTML=`
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button>${laneSwitch}</div>
-      <section class="hero-profile ${lucianPilot?'lucian-mobile-pilot':''}">
+      <section class="hero-profile">
         <section class="hero-profile-hero">
           ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
           <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
@@ -187,12 +209,13 @@
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('鞋子',lucianPilot?'二級鞋':'二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('完整成裝',lucianPilot?'5 件裝備＋二級鞋':'5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}${lucianPilot&&hero.combo?`<div class="lucian-combo-row"><span>常用連招</span><div class="lucian-combo-seq">${(hero.comboSteps||[]).map(step=>step.type==='skill'?`<div class="lucian-combo-step">${step.icon?`<img src="${safeText(step.icon)}" alt="${safeText(step.label)}">`:`<b class="combo-number-fallback">${safeText(step.label.replace('技',''))}</b>`}<small>${safeText(step.label)}</small></div>`:`<div class="lucian-combo-aa"><b>普攻</b></div>`).join('<i>→</i>')}</div></div>`:''}</section>
+        ${buildSection}
+        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
+        ${renderCombos(hero)}
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
         ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(matchupChip).join('')}</div></div>${lucianPilot&&Array.isArray(hero.synergySupports)?`<div class="matchup-box good"><span>合適輔助</span><div>${hero.synergySupports.map(matchupChip).join('')}</div></div>`:`<div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div>`}</div></section>
+        ${matchupSection}
         ${Array.isArray(hero.mechanics)&&hero.mechanics.length?`<section class="hero-section"><div class="hero-section-title"><h3>${hero.mechanicsTitle||'特殊機制'}</h3><span>Champion Mechanic</span></div><div class="stack-grid">${hero.mechanics.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}${x.stacks!=null?`<strong>${x.stacks}</strong>`:''}<span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>實戰節奏</h3></div><div class="playstyle-timeline">${Object.entries(hero.playstyle).map(([k,v])=>`<div class="playstyle-step"><b>${k}</b><p>${v}</p></div>`).join('')}</div></section>
         <div class="hero-source-note">${hero.sourceNote}</div>
@@ -221,169 +244,3 @@
   }
   init();
 })();
-
-
-function ensureLucianPilotMobileStyle(){
-  if(document.getElementById('lucian-pilot-mobile-style')) return;
-  const style=document.createElement('style');
-  style.id='lucian-pilot-mobile-style';
-  style.textContent=`
-    @media (max-width:800px){
-      .hero-role-tabs{
-        display:grid!important;
-        grid-template-columns:repeat(6,minmax(0,1fr))!important;
-        gap:3px!important;
-        overflow:visible!important;
-        padding:0!important;
-      }
-      .hero-role-tab{
-        min-width:0!important;
-        width:auto!important;
-        padding:6px 1px!important;
-        gap:2px!important;
-        border-radius:10px!important;
-        font-size:9px!important;
-        line-height:1.1!important;
-        flex-direction:column!important;
-        white-space:nowrap!important;
-      }
-      .hero-role-tab img{
-        width:24px!important;
-        height:24px!important;
-        border-radius:7px!important;
-      }
-      /* 飛龍路正式手機版：技能優先顯示縮圖＋1/2/3/4 技；Lv.1~15 全表同屏，不左右滑 */
-      .lucian-mobile-pilot .skill-priority-step>div{
-        display:block!important;
-      }
-      .lucian-mobile-pilot .skill-priority-step>div b{
-        display:block;
-        font-size:7px;
-        line-height:1.1;
-        white-space:nowrap;
-      }
-      .lucian-mobile-pilot .skill-priority-step>div small{
-        display:none!important;
-      }
-      .lucian-mobile-pilot .skill-level-grid{
-        overflow:visible!important;
-        padding:4px!important;
-      }
-      .lucian-mobile-pilot .skill-grid-row{
-        grid-template-columns:58px repeat(15,minmax(0,1fr))!important;
-        min-width:0!important;
-        width:100%!important;
-      }
-      .lucian-mobile-pilot .skill-grid-skill{
-        position:static!important;
-        grid-template-columns:22px minmax(0,1fr)!important;
-        gap:2px!important;
-        padding:3px!important;
-      }
-      .lucian-mobile-pilot .skill-grid-skill img,
-      .lucian-mobile-pilot .skill-grid-skill .skill-icon-placeholder{
-        width:22px!important;
-        height:22px!important;
-        border-radius:6px!important;
-      }
-      .lucian-mobile-pilot .skill-grid-skill b{
-        font-size:7px!important;
-        white-space:nowrap!important;
-      }
-      .lucian-mobile-pilot .skill-grid-skill small{
-        display:none!important;
-      }
-      .lucian-mobile-pilot .skill-grid-cell{
-        min-width:0!important;
-        min-height:31px!important;
-        font-size:6.5px!important;
-        padding:0!important;
-      }
-      .lucian-mobile-pilot .skill-grid-cell.active span{
-        width:13px!important;
-        height:13px!important;
-        font-size:6px!important;
-      }
-      .lucian-combo-row{
-        margin-top:9px;
-        display:flex;
-        align-items:center;
-        gap:8px;
-        padding:8px 10px;
-        border:1px solid rgba(216,184,108,.14);
-        border-radius:11px;
-        background:rgba(5,16,28,.32);
-      }
-      .lucian-combo-row span{
-        flex:0 0 auto;
-        color:#d8b86c;
-        font-size:10px;
-        font-weight:900;
-      }
-      .lucian-combo-row strong{
-        min-width:0;
-        font-size:11px;
-        line-height:1.35;
-        white-space:normal;
-      }
-      .lucian-combo-seq{
-        display:flex;
-        align-items:center;
-        gap:4px;
-        min-width:0;
-        overflow:hidden;
-      }
-      .lucian-combo-seq>i{
-        font-style:normal;
-        color:#d8b86c;
-        font-size:10px;
-        flex:0 0 auto;
-      }
-      .lucian-combo-step{
-        width:34px;
-        flex:0 0 34px;
-        text-align:center;
-      }
-      .lucian-combo-step img{
-        display:block;
-        width:30px;
-        height:30px;
-        margin:0 auto 2px;
-        border-radius:8px;
-        object-fit:cover;
-        border:1px solid rgba(216,184,108,.25);
-      }
-      .lucian-combo-step small{
-        display:block;
-        font-size:7px;
-        color:#c9d4df;
-        line-height:1;
-      }
-      .lucian-combo-aa{
-        flex:0 0 auto;
-        padding:5px 6px;
-        border-radius:8px;
-        border:1px solid rgba(255,255,255,.08);
-        background:rgba(255,255,255,.03);
-      }
-      .lucian-combo-aa b{
-        font-size:8px;
-        white-space:nowrap;
-      }
-    }
-    @media (max-width:420px){
-      .hero-role-tabs{gap:2px!important}
-      .hero-role-tab{font-size:8px!important;padding:5px 0!important}
-      .hero-role-tab img{width:22px!important;height:22px!important}
-      .lucian-mobile-pilot .skill-grid-row{grid-template-columns:50px repeat(15,minmax(0,1fr))!important}
-      .lucian-mobile-pilot .skill-grid-skill{grid-template-columns:18px minmax(0,1fr)!important}
-      .lucian-mobile-pilot .skill-grid-skill img,.lucian-mobile-pilot .skill-grid-skill .skill-icon-placeholder{width:18px!important;height:18px!important}
-      .lucian-mobile-pilot .skill-grid-skill b{font-size:6.5px!important}
-      .lucian-mobile-pilot .skill-grid-cell{font-size:6px!important;min-height:29px!important}
-    }
-  `;
-  document.head.appendChild(style);
-}
-
-
-try{ensureLucianPilotMobileStyle();}catch(e){}
