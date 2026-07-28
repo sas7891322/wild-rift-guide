@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v44-baron-fifth5",
+  "version": "7.2a-v45-baron-sixth5",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -104,7 +104,8 @@
     "v41：巴龍路第 2 批完成安比薩、阿卡莉、古拉格斯、關、歐羅拉；並修正點進英雄詳細頁時的捲動位置。",
     "v42：巴龍路第 3 批完成伊瑞莉雅、賈克斯、杰西、卡桑帝、吶兒；伊羅旖不在目前專案英雄名單中，因此由吶兒補入。",
     "v43：巴龍路第 4 批完成凱能、凱爾、雷尼克頓、墨菲特、蒙多醫生。",
-    "v44：巴龍路第 5 批完成魔鬥凱薩、納瑟斯、鄂爾、波比、雷玟。"
+    "v44：巴龍路第 5 批完成魔鬥凱薩、納瑟斯、鄂爾、波比、雷玟。",
+    "v45：巴龍路第 6 批完成藍寶、賽恩、辛吉德、慎、提摩。"
   ],
   "heroes": [
     {
@@ -9544,8 +9545,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期控制熱能在高效區間，用 Q 推線消耗，不要在過熱前亂交關鍵技能。",
@@ -9553,43 +9553,43 @@
         "後期": "後期先用大絕切割陣型，再決定是否貼近輸出；避免過熱時毫無技能可用。"
       },
       "summary": "熱能管理、持續火焰與大絕地形封鎖讓他在狹窄物件區極強。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v45：巴龍路第 6 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/rumble.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "泰坦熱能",
           "icon": "../assets/images/heroes/skills/rumble_01.webp",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "施放技能累積熱能；進入危險禁區會強化基礎技能，過熱則提升普攻但暫時無法施法。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "火焰噴射器",
           "icon": "../assets/images/heroes/skills/rumble_02.webp",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "持續灼燒前方扇形區域，對近戰換血與清線都很強，危險禁區時傷害更高。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "鐵屑電磁盾",
           "icon": "../assets/images/heroes/skills/rumble_03.webp",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "獲得護盾與跑速，危險禁區時兩者都會提升，適合進退與吸收主要傷害。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "高壓電魚叉",
           "icon": "../assets/images/heroes/skills/rumble_04.webp",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "發射可充能的魚叉造成傷害與緩速，多次命中可持續限制敵人。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "等離子飛彈",
           "icon": "../assets/images/heroes/skills/rumble_05.webp",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "在地面鋪設燃燒帶，造成持續傷害與緩速，狹窄物件區能大幅分割戰場。"
         }
       ],
       "skillSequence": [
@@ -9613,12 +9613,89 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-sixth5-formal-v45",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-16",
+        "magic-high-10",
+        "magic-high-15"
+      ],
+      "combos": [
+        {
+          "name": "魚叉消耗",
+          "steps": [
+            {
+              "key": "E",
+              "label": "一段3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            }
+          ],
+          "note": "先用魚叉減速再讓火焰完整灼燒，第二發魚叉用來延長緩速。"
+        },
+        {
+          "name": "大絕封路",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "大絕橫切敵人退路後開盾加速貼近，以魚叉與火焰持續輸出。"
+        },
+        {
+          "name": "過熱近戰",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "過熱普攻"
+            }
+          ],
+          "note": "控制熱能在危險區間，技能打完進入過熱後利用強化普攻完成收尾。"
+        }
+      ]
     },
     {
       "id": "ryze-baron",
@@ -9940,8 +10017,7 @@
           "關",
           "菲歐拉",
           "弗力貝爾"
-        ],
-        "ban": "關"
+        ]
       },
       "playstyle": {
         "前期": "前期拉魂刃穿過敵人強化 Q，E 沒視野時保守使用。",
@@ -9949,43 +10025,43 @@
         "後期": "後期團戰可保排也可分推，重點是別在大絕前把自己血量換得太低。"
       },
       "summary": "劍陣格擋普攻、嘲諷與全球支援大絕讓他能用邊線換取全圖人數差。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v45：巴龍路第 6 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/shen.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "凝氣盾",
           "icon": "../assets/images/heroes/skills/shen_01.png",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "施放技能後獲得護盾；技能影響英雄時可縮短被動冷卻，提高持續承傷能力。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "暮光強襲",
           "icon": "../assets/images/heroes/skills/shen_02.webp",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "召回靈氣利刃並強化接下來數次普攻；穿過敵方英雄時效果更強並造成緩速。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "靈氣庇護",
           "icon": "../assets/images/heroes/skills/shen_03.webp",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "以靈氣利刃為中心形成防護區，區域內友軍可格擋敵方普攻。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "影襲",
           "icon": "../assets/images/heroes/skills/shen_04.png",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "向前突進並嘲諷沿途敵人；成功命中英雄可回復能量。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "並肩作戰",
           "icon": "../assets/images/heroes/skills/shen_05.png",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "替遠方友軍套上大型護盾，短暫引導後傳送到其身邊，創造跨圖人數優勢。"
         }
       ],
       "skillSequence": [
@@ -10009,12 +10085,93 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-sixth5-formal-v45",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-ruby"
+      ],
+      "coreItems": [
+        "defense-high-19",
+        "defense-high-06",
+        "defense-high-08"
+      ],
+      "combos": [
+        {
+          "name": "拉劍換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技嘲諷"
+            },
+            {
+              "key": "Q",
+              "label": "1技拉劍"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "嘲諷命中後讓魂刃穿過敵人，打出三次強化普攻並用二技格擋反擊。"
+        },
+        {
+          "name": "對線短打",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技撤退"
+            }
+          ],
+          "note": "先拉劍取得強化普攻，二技阻擋敵方攻擊，三技保留作撤退或追擊。"
+        },
+        {
+          "name": "大絕支援",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "大絕落地後立刻嘲諷威脅隊友的敵人，再用魂刃與格擋區保護核心。"
+        }
+      ]
     },
     {
       "id": "singed-baron",
@@ -10072,8 +10229,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期視對局決定正常補兵或斷線，避免在沒視野時長時間深入。",
@@ -10081,43 +10237,43 @@
         "後期": "後期持續製造混亂，讓敵人追你比你追人更有價值；不要停下來對砍。"
       },
       "summary": "毒霧、過肩摔與高移速讓他以擾亂陣型取勝，不靠正面站樁輸出。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v45：巴龍路第 6 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/singed.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "毒氣推進",
           "icon": "../assets/images/heroes/skills/singed_01.png",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "經過其他英雄身邊時獲得大量跑速，讓辛吉德能在混戰中反覆穿梭。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "劇毒蹤跡",
           "icon": "../assets/images/heroes/skills/singed_02.png",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "開關式留下持續毒霧，追擊、清線與擾亂陣型都依賴走位讓敵人穿過毒區。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "強力粘膠",
           "icon": "../assets/images/heroes/skills/singed_03.png",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "在地面製造緩速與禁位移區域，能封住入口並配合過肩摔觸發定身。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "過肩摔",
           "icon": "../assets/images/heroes/skills/singed_04.png",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "把目標投到自己身後；若落在強力粘膠上會被定身。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "瘋狂藥劑",
           "icon": "../assets/images/heroes/skills/singed_05.png",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "長時間提升多項戰鬥能力與續航，開啟後適合深入敵陣持續拉扯。"
         }
       ],
       "skillSequence": [
@@ -10141,12 +10297,85 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-sixth5-formal-v45",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-16",
+        "magic-high-10",
+        "magic-high-15"
+      ],
+      "combos": [
+        {
+          "name": "黏膠背摔",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技黏膠"
+            },
+            {
+              "key": "E",
+              "label": "3技背摔"
+            },
+            {
+              "key": "Q",
+              "label": "1技毒霧"
+            }
+          ],
+          "note": "先在敵人退路放黏膠，再背摔進黏膠觸發定身，開毒霧持續拉扯。"
+        },
+        {
+          "name": "開大攪局",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "大絕提升跑速與耐久後穿過敵陣，把關鍵目標背回己方並封住位移。"
+        },
+        {
+          "name": "過肩撤退",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技背摔"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "被追擊時保持毒霧，將最近敵人背到身後並在路線上放黏膠阻止追擊。"
+        }
+      ]
     },
     {
       "id": "sion-baron",
@@ -10204,8 +10433,7 @@
           "關",
           "菲歐拉",
           "弗力貝爾"
-        ],
-        "ban": "關"
+        ]
       },
       "playstyle": {
         "前期": "前期用 Q 控線與威懾，W 層數能安全累積最大生命。",
@@ -10213,43 +10441,43 @@
         "後期": "後期站前排吸傷並用 Q 封走位；死後被動仍可逼退殘血敵人或拆塔。"
       },
       "summary": "蓄力一技能、護盾與高生命成長讓他既能坦又能拆塔，大絕提供長距離開戰。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v45：巴龍路第 6 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/sion.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "光榮戰死",
           "icon": "../assets/images/heroes/skills/sion_01.png",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "死亡後短暫以屍體繼續戰鬥，獲得高攻速與吸血，但生命會快速衰減。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "巨幅毀滅",
           "icon": "../assets/images/heroes/skills/sion_02.png",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "蓄力重擊前方區域，蓄力越久傷害與控制越強，是草叢埋伏與接控制核心。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "第二優先技能",
+          "label": "2 技",
+          "title": "魂魄熔爐",
           "icon": "../assets/images/heroes/skills/sion_03.png",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "被動永久增加生命；主動獲得護盾，再次施放可爆炸並造成最大生命百分比傷害。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "最後升滿技能",
+          "label": "3 技",
+          "title": "殺戮怒吼",
           "icon": "../assets/images/heroes/skills/sion_04.png",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "發出衝擊波造成傷害、緩速與物防削減；命中士兵時可把士兵撞向後方敵人。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "猛烈狂擊",
           "icon": "../assets/images/heroes/skills/sion_05.png",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "朝指定方向長距離衝鋒，撞上英雄或地形後造成範圍傷害與擊飛。"
         }
       ],
       "skillSequence": [
@@ -10273,12 +10501,89 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-sixth5-formal-v45",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-ruby"
+      ],
+      "coreItems": [
+        "defense-high-19",
+        "defense-high-06",
+        "defense-high-08"
+      ],
+      "combos": [
+        {
+          "name": "緩速蓄力",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "蓄力1技"
+            },
+            {
+              "key": "W",
+              "label": "2技護盾"
+            },
+            {
+              "key": "W",
+              "label": "引爆2技"
+            }
+          ],
+          "note": "先用三技緩速並削甲，接蓄力一技擊飛，開盾吸收傷害後引爆。"
+        },
+        {
+          "name": "大絕開戰",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "大絕撞中後立刻蓄一技接續控制，利用護盾與範圍傷害站住前排。"
+        },
+        {
+          "name": "草叢蓄力",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "草叢蓄力1技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "在無視野處提前蓄力提高命中率，擊飛後再開盾與緩速追擊。"
+        }
+      ]
     },
     {
       "id": "skarner-baron",
@@ -10600,8 +10905,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期用射程壓補兵，Q 致盲留給對手準備強化普攻時。",
@@ -10609,43 +10913,43 @@
         "後期": "後期以視野與消耗為主，避免單獨走進無視野區，被抓到通常很難脫身。"
       },
       "summary": "射程、致盲與蘑菇地圖控制讓他克制依賴普攻的近戰，但正面團戰容錯較低。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v45：巴龍路第 6 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/teemo.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "劇毒射擊",
           "icon": "../assets/images/heroes/skills/teemo_01.webp",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "普攻附加持續魔法傷害，適合利用射程反覆消耗近戰英雄。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "致盲吹箭",
           "icon": "../assets/images/heroes/skills/teemo_02.webp",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "造成魔法傷害並使目標致盲，能直接降低依賴普攻英雄的換血能力。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "衝刺",
           "icon": "../assets/images/heroes/skills/teemo_03.png",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "被動提高跑速，主動後短時間大幅加速，用來躲技能、拉距離或追擊。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "約德爾游擊隊",
           "icon": "../assets/images/heroes/skills/teemo_04.png",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "進入偽裝並調整站位，脫離偽裝後獲得攻速，適合伏擊與重新拉開距離。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "毒性陷阱",
           "icon": "../assets/images/heroes/skills/teemo_05.png",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "放置會爆炸的蘑菇，造成持續傷害與緩速；可連續彈跳擴大佈雷範圍。"
         }
       ],
       "skillSequence": [
@@ -10669,12 +10973,89 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-sixth5-formal-v45",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-16",
+        "magic-high-10",
+        "magic-high-15"
+      ],
+      "combos": [
+        {
+          "name": "致盲換血",
+          "steps": [
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技致盲"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先普攻掛毒，再用致盲阻止反擊並補一發普攻，對依賴普攻英雄特別有效。"
+        },
+        {
+          "name": "偽裝伏擊",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技偽裝"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "利用偽裝接近並取得攻速，現身後快速普攻接致盲，打完用跑速拉開。"
+        },
+        {
+          "name": "蘑菇追擊",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技陷阱"
+            },
+            {
+              "key": "W",
+              "label": "2技加速"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "敵人踩到蘑菇後利用緩速開二技追上，再以普攻與致盲完成收尾。"
+        }
+      ]
     },
     {
       "id": "tryndamere-baron",
