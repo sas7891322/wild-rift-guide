@@ -3,9 +3,9 @@
   const $$ = (s, root=document) => [...root.querySelectorAll(s)];
   const star = n => '★'.repeat(n) + '☆'.repeat(5-n);
   const roleNames = {all:'ALL', baron:'巴龍路', jungle:'打野', mid:'中路', duo:'飛龍路', support:'輔助'};
-  const tierOrder = ['S+','S','A','B'];
+  const tierOrder = ['S+','S','A','B','C'];
 
-  const state = { role:'all', heroId:'', heroes:[], laneTiers:{}, laneMeta:{}, runes:[], items:[], spells:[] };
+  const state = { role:'all', heroId:'', query:'', heroes:[], laneTiers:{}, laneMeta:{}, runes:[], items:[], spells:[] };
 
   function flattenRunes(data){ return Object.values(data || {}).flatMap(v => Array.isArray(v) ? v : []); }
   function normalizeItems(data){ return Array.isArray(data) ? data : (data?.items || []); }
@@ -70,18 +70,54 @@
     }
     return [...map.values()].sort((a,b)=>(a.enName||a.name).localeCompare(b.enName||b.name,'en'));
   }
-  function roleHeroes(){
+  function roleHeroesRaw(){
     if(state.role==='all') return allHeroes();
     const lane=state.laneTiers?.[state.role];
     if(Array.isArray(lane)) return lane;
     return state.heroes.filter(h=>h.roleId===state.role).map(h=>({...h,detailHeroId:h.id,origin:'native'}));
   }
+  function roleHeroes(){
+    const heroes=roleHeroesRaw();
+    const query=state.query.trim();
+    return query ? heroes.filter(h=>String(h.name||'').includes(query)) : heroes;
+  }
 
-  function syncUrl(){
-    const p = new URLSearchParams(location.search);
-    if(state.role==='all') p.delete('role'); else p.set('role', state.role);
-    if(state.heroId) p.set('hero', state.heroId); else p.delete('hero');
-    history.replaceState(null,'',`${location.pathname}?${p.toString()}`);
+  function buildUrl({role=state.role,heroId=state.heroId,query=state.query}={}){
+    const p=new URLSearchParams();
+    if(role && role!=='all') p.set('role',role);
+    if(heroId) p.set('hero',heroId);
+    if(query) p.set('q',query);
+    const qs=p.toString();
+    return `${location.pathname}${qs?`?${qs}`:''}`;
+  }
+  function makeHistoryState(view=state.heroId?'detail':'list',scrollY=0){
+    return {wrgHeroes:true,view,role:state.role,heroId:view==='detail'?state.heroId:'',query:state.query,scrollY:Number(scrollY)||0};
+  }
+  function syncUrl(view=state.heroId?'detail':'list',scrollY=state.heroId?0:window.scrollY){
+    history.replaceState(makeHistoryState(view,scrollY),'',buildUrl());
+  }
+  function openHero(heroId){
+    if(!heroId) return;
+    history.replaceState(makeHistoryState('list',window.scrollY),'',buildUrl({heroId:''}));
+    state.heroId=heroId;
+    history.pushState(makeHistoryState('detail',0),'',buildUrl());
+    renderDetail();
+  }
+  function restoreListScroll(scrollY){
+    const y=Number(scrollY)||0;
+    requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo(0,y)));
+  }
+  function syncSearchUI(){
+    const input=$('#heroSearchInput');
+    const clear=$('#heroSearchClear');
+    const status=$('#heroSearchStatus');
+    if(input && input.value!==state.query) input.value=state.query;
+    if(clear) clear.hidden=!state.query;
+    if(status){
+      const total=roleHeroesRaw().length;
+      const visible=roleHeroes().length;
+      status.textContent=state.query?`找到 ${visible} / ${total} 位英雄`:`共 ${total} 位英雄`;
+    }
   }
 
   function renderRoleTabs(){
@@ -91,18 +127,19 @@
   function renderOverview(){
     const heroes = roleHeroes();
     const content = $('#heroContent');
+    syncSearchUI();
     if(state.role==='all'){
       content.innerHTML = `<section class="hero-overview-shell all-heroes-shell">
         <div class="hero-overview-head"><div><span class="eyebrow">ALL CHAMPIONS</span><h2>全英雄列表</h2><p>同一英雄只顯示一次；下方位置標籤代表目前遊戲內可選路線。已完成詳細資料的英雄可直接點入。</p></div><span class="hero-overview-count">${heroes.length}</span></div>
-        <div class="tier-hero-grid all-hero-grid">${heroes.map(h=>{
+        ${heroes.length?`<div class="tier-hero-grid all-hero-grid">${heroes.map(h=>{
           const media=`<span class="tier-hero-avatar-wrap">${h.avatar?`<img src="${h.avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
           const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>`<i>${roleNames[r]}</i>`).join('')}</span>`;
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
           return detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
-        }).join('')}</div>
+        }).join('')}</div>`:'<div class="hero-search-no-result">找不到符合的英雄。</div>'}
       </section>`;
-      $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>{ state.heroId=btn.dataset.hero; syncUrl(); renderDetail(); }));
+      $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
       return;
     }
     const title = roleNames[state.role] || '英雄';
@@ -129,9 +166,9 @@
     const countCopy = crossCount>0 ? `原生 ${nativeCount}＋跨路 ${crossCount}` : `原生 ${nativeCount}`;
     content.innerHTML = `<section class="hero-overview-shell">
       <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>各路線獨立評級 · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
-      ${groups || `<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`}
+      ${groups || (state.query?'<div class="hero-search-no-result">找不到符合的英雄。</div>':`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
     </section>`;
-    $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>{ state.heroId=btn.dataset.hero; syncUrl(); renderDetail(); }));
+    $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
   }
 
   function renderRatings(hero){
@@ -331,7 +368,7 @@
 
   function renderDetail(){
     const hero=state.heroes.find(h=>h.id===state.heroId);
-    if(!hero){ state.heroId=''; syncUrl(); renderOverview(); return; }
+    if(!hero){ state.heroId=''; syncUrl('list',0); renderOverview(); return; }
     const runes=(hero.runes||[]).map(id=>byId(state.runes,id));
     const items=(hero.items||[]).map(id=>byId(state.items,id));
     const boots=(hero.boots||[]).map(id=>byId(state.items,id));
@@ -391,8 +428,11 @@
         <div class="hero-source-note">${hero.sourceNote}</div>
       </section>`;
 
-    $('#backToTier').addEventListener('click',()=>{ state.heroId=''; syncUrl(); renderOverview(); });
-    $$('.hero-lane-switch button').forEach(btn=>btn.addEventListener('click',()=>{ const p=state.heroes.find(x=>x.id===btn.dataset.profile); if(!p) return; state.heroId=p.id; if(state.role!=='all') state.role=p.roleId; syncUrl(); render(); }));
+    $('#backToTier').addEventListener('click',()=>{
+      if(history.state?.wrgHeroes && history.state.view==='detail') history.back();
+      else { state.heroId=''; syncUrl('list',0); renderOverview(); restoreListScroll(0); }
+    });
+    $$('.hero-lane-switch button').forEach(btn=>btn.addEventListener('click',()=>{ const p=state.heroes.find(x=>x.id===btn.dataset.profile); if(!p) return; state.heroId=p.id; if(state.role!=='all') state.role=p.roleId; syncUrl('detail',0); render(); }));
     resetHeroDetailScroll();
   }
 
@@ -401,14 +441,94 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=49'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=57'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.laneTiers=heroData.laneTiers||{}; state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
+
       const params=new URLSearchParams(location.search);
-      if(params.get('role') && ['baron','jungle','mid','duo','support','all'].includes(params.get('role'))) state.role=params.get('role');
-      if(params.get('hero')) state.heroId=params.get('hero');
-      $$('.hero-role-tab').forEach(btn=>btn.addEventListener('click',()=>{ state.role=btn.dataset.role; state.heroId=''; syncUrl(); render(); }));
+      const saved=history.state?.wrgHeroes?history.state:null;
+      const validRoles=['baron','jungle','mid','duo','support','all'];
+      if(saved){
+        if(validRoles.includes(saved.role)) state.role=saved.role;
+        state.query=String(saved.query||'');
+        state.heroId=saved.view==='detail'?String(saved.heroId||''):'';
+      }else{
+        if(params.get('role') && validRoles.includes(params.get('role'))) state.role=params.get('role');
+        state.query=String(params.get('q')||'');
+        const initialHero=String(params.get('hero')||'');
+        if(initialHero){
+          const detailUrl=buildUrl({heroId:initialHero});
+          state.heroId='';
+          history.replaceState(makeHistoryState('list',0),'',buildUrl({heroId:''}));
+          state.heroId=initialHero;
+          history.pushState(makeHistoryState('detail',0),'',detailUrl);
+        }else{
+          state.heroId='';
+          syncUrl('list',0);
+        }
+      }
+
+      $$('.hero-role-tab').forEach(btn=>btn.addEventListener('click',()=>{
+        state.role=btn.dataset.role;
+        state.heroId='';
+        syncUrl('list',0);
+        render();
+        restoreListScroll(0);
+      }));
+
+      const searchInput=$('#heroSearchInput');
+      const searchClear=$('#heroSearchClear');
+      if(searchInput){
+        searchInput.value=state.query;
+        searchInput.addEventListener('input',()=>{
+          state.query=searchInput.value.trim();
+          state.heroId='';
+          syncUrl('list',window.scrollY);
+          renderOverview();
+        });
+        searchInput.addEventListener('keydown',event=>{
+          if(event.key==='Escape' && state.query){
+            searchInput.value='';
+            state.query='';
+            syncUrl('list',window.scrollY);
+            renderOverview();
+          }
+        });
+      }
+      if(searchClear) searchClear.addEventListener('click',()=>{
+        state.query='';
+        if(searchInput){ searchInput.value=''; searchInput.focus(); }
+        syncUrl('list',window.scrollY);
+        renderOverview();
+      });
+
+      let scrollTimer=0;
+      window.addEventListener('scroll',()=>{
+        if(state.heroId) return;
+        window.clearTimeout(scrollTimer);
+        scrollTimer=window.setTimeout(()=>syncUrl('list',window.scrollY),80);
+      },{passive:true});
+
+      window.addEventListener('popstate',event=>{
+        const entry=event.state?.wrgHeroes?event.state:null;
+        const urlParams=new URLSearchParams(location.search);
+        if(entry){
+          state.role=validRoles.includes(entry.role)?entry.role:'all';
+          state.query=String(entry.query||'');
+          state.heroId=entry.view==='detail'?String(entry.heroId||''):'';
+          render();
+          if(!state.heroId) restoreListScroll(entry.scrollY||0);
+          return;
+        }
+        state.role=validRoles.includes(urlParams.get('role'))?urlParams.get('role'):'all';
+        state.query=String(urlParams.get('q')||'');
+        state.heroId=String(urlParams.get('hero')||'');
+        render();
+        if(!state.heroId) restoreListScroll(0);
+      });
+
       render();
+      if(!state.heroId) restoreListScroll(saved?.scrollY||0);
     }catch(err){
       console.error(err); $('#heroContent').innerHTML='<div class="hero-profile-empty">英雄資料載入失敗。<small>請確認網站是透過 HTTP / GitHub Pages 開啟。</small></div>';
     }
