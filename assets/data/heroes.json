@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v41-baron-second5",
+  "version": "7.2a-v42-baron-third5",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -101,7 +101,8 @@
     "v34：完成第71～139隻英雄及尤娜拉的最新版圖片覆蓋；每隻僅保留1張頭像與5張技能圖，技能採手機友善平面檔名。",
     "v38：修正 v37 未實際套用新模板的問題；新版結構目前只套用犽凝。",
     "v40 首批：厄薩斯、卡蜜兒、達瑞斯、菲歐拉、蓋倫套用犽凝正式母版。",
-    "v41：巴龍路第 2 批完成安比薩、阿卡莉、古拉格斯、關、歐羅拉；並修正點進英雄詳細頁時的捲動位置。"
+    "v41：巴龍路第 2 批完成安比薩、阿卡莉、古拉格斯、關、歐羅拉；並修正點進英雄詳細頁時的捲動位置。",
+    "v42：巴龍路第 3 批完成伊瑞莉雅、賈克斯、杰西、卡桑帝、吶兒；伊羅旖不在目前專案英雄名單中，因此由吶兒補入。"
   ],
   "heroes": [
     {
@@ -5210,8 +5211,7 @@
           "菲歐拉",
           "凱能",
           "波比"
-        ],
-        "ban": "菲歐拉"
+        ]
       },
       "playstyle": {
         "前期": "前期以回力鏢與普攻磨血，怒氣接近滿值時才準備主動換血。",
@@ -5219,7 +5219,7 @@
         "後期": "後期找牆角大絕開團；若怒氣不對就先拉扯，避免用迷你型態硬接正面。"
       },
       "summary": "迷你型態靠射程消耗，巨型態靠控制開戰；怒氣管理比單純技能命中更重要。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/gnar.webp",
       "abilities": [
         {
@@ -5283,11 +5283,85 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-third5-formal-v42",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-01",
+        "physical-high-06",
+        "physical-high-38"
+      ],
+      "combos": [
+        {
+          "name": "迷你吶兒消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "迴力鏢"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "被動三環"
+            }
+          ],
+          "note": "利用射程以迴力鏢和普攻疊出三環加速，打完後立即保持距離。"
+        },
+        {
+          "name": "變身牆暈",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技跳躍變身"
+            },
+            {
+              "key": "R",
+              "label": "4技推牆"
+            },
+            {
+              "key": "W",
+              "label": "2技暈眩"
+            },
+            {
+              "key": "Q",
+              "label": "1技巨岩"
+            }
+          ],
+          "note": "怒氣接近滿值時用三技進場變身，把敵人推向牆面後接續暈眩。"
+        },
+        {
+          "name": "團戰連控",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "巨型型態從側面切入，優先用大絕命中多人，再補二技與巨岩控制。"
+        }
+      ]
     },
     {
       "id": "gragas-baron",
@@ -5789,8 +5863,7 @@
           "墨菲特",
           "波比",
           "凱能"
-        ],
-        "ban": "波比"
+        ]
       },
       "playstyle": {
         "前期": "前期先用殘血兵墊位移與被動層數，沒有層數時不要硬拚。",
@@ -5798,7 +5871,7 @@
         "後期": "後期進場前先確認敵方硬控，大絕命中多人後再利用標記連續 Q。"
       },
       "summary": "利用低血量小兵刷新一技能位移並疊被動，滿層後的持續輸出極強。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/irelia.webp",
       "abilities": [
         {
@@ -5862,11 +5935,101 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-third5-formal-v42",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-dagger"
+      ],
+      "coreItems": [
+        "physical-high-12",
+        "physical-high-25",
+        "physical-high-07"
+      ],
+      "combos": [
+        {
+          "name": "標記換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技暈眩"
+            },
+            {
+              "key": "Q",
+              "label": "1技突進"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "重置1技"
+            }
+          ],
+          "note": "三技命中後利用標記重置一技，穿插普攻並保留第二次突進追擊或撤退。"
+        },
+        {
+          "name": "大絕多段追擊",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "重置1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "大絕命中多人後逐一利用標記重置，先確保被動層數再貼近核心輸出。"
+        },
+        {
+          "name": "兵線位移進場",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技小兵"
+            },
+            {
+              "key": "E",
+              "label": "一段3技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技英雄"
+            }
+          ],
+          "note": "先借小兵縮短距離並隱藏三技角度，再以大絕與暈眩製造多次重置。"
+        }
+      ]
     },
     {
       "id": "jarvan-iv-baron",
@@ -6059,8 +6222,7 @@
           "墨菲特",
           "波比",
           "凱能"
-        ],
-        "ban": "波比"
+        ]
       },
       "playstyle": {
         "前期": "前期用 E 擋關鍵普攻後短換血，Q 不一定要跳敵人，也可留作撤退。",
@@ -6068,7 +6230,7 @@
         "後期": "後期分推是主要勝法；團戰則等第一波控制後跳後排，開大提升雙防。"
       },
       "summary": "反擊風暴對普攻角特別強，二技能強化普攻與大絕雙防讓他越後期越難處理。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/jax.webp",
       "abilities": [
         {
@@ -6132,11 +6294,97 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-third5-formal-v42",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-21",
+        "physical-high-12",
+        "physical-high-42"
+      ],
+      "combos": [
+        {
+          "name": "普攻重置",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技重置"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "跳斬貼近後立刻用二技重置普攻，最後開反擊風暴避免被反打。"
+        },
+        {
+          "name": "蓄暈進場",
+          "steps": [
+            {
+              "key": "E",
+              "label": "開啟3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技跳斬"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "先開反擊風暴再跳入，使敵人難以躲開暈眩，接著用普攻重置輸出。"
+        },
+        {
+          "name": "開大長打",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "大絕提升耐久後黏住目標，保留反擊風暴處理敵方普攻核心。"
+        }
+      ]
     },
     {
       "id": "jayce-baron",
@@ -6187,14 +6435,14 @@
       "matchups": {
         "good": [
           "賽恩",
-          "斯溫"
+          "斯溫",
+          "納瑟斯"
         ],
         "bad": [
           "墨菲特",
           "波比",
           "慎"
-        ],
-        "ban": "墨菲特"
+        ]
       },
       "playstyle": {
         "前期": "前期以炮形態 Q+E 消耗，錘形態只在能安全打一套或回魔時切入。",
@@ -6202,7 +6450,7 @@
         "後期": "後期避免正面先手，持續用遠程炮創造血量差，找到落單才切近戰收頭。"
       },
       "summary": "雙形態六技能帶來線上壓制與遠距消耗；魔力與技能冷卻管理是核心。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/jayce.webp",
       "abilities": [
         {
@@ -6266,11 +6514,93 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-third5-formal-v42",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-32"
+      ],
+      "combos": [
+        {
+          "name": "遠程加速砲",
+          "steps": [
+            {
+              "key": "E",
+              "label": "加速之門"
+            },
+            {
+              "key": "Q",
+              "label": "電磁脈衝"
+            }
+          ],
+          "note": "先放加速之門再發射電磁脈衝，大幅提升射程與傷害，用於消耗和清線。"
+        },
+        {
+          "name": "近戰爆發",
+          "steps": [
+            {
+              "key": "R",
+              "label": "切換戰鎚"
+            },
+            {
+              "key": "Q",
+              "label": "近戰1技"
+            },
+            {
+              "key": "W",
+              "label": "近戰2技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "近戰3技擊退"
+            }
+          ],
+          "note": "切換近戰後跳向目標，開啟電場並普攻，最後用擊退安全收尾。"
+        },
+        {
+          "name": "完整形態連段",
+          "steps": [
+            {
+              "key": "E",
+              "label": "加速之門"
+            },
+            {
+              "key": "Q",
+              "label": "遠程1技"
+            },
+            {
+              "key": "R",
+              "label": "切換戰鎚"
+            },
+            {
+              "key": "Q",
+              "label": "近戰1技"
+            },
+            {
+              "key": "W",
+              "label": "近戰2技"
+            },
+            {
+              "key": "E",
+              "label": "近戰3技"
+            }
+          ],
+          "note": "先以遠程加速砲壓低生命，再切近戰完成貼身爆發與擊退。"
+        }
+      ]
     },
     {
       "id": "ksante-baron",
@@ -6328,8 +6658,7 @@
           "關",
           "菲歐拉",
           "弗力貝爾"
-        ],
-        "ban": "關"
+        ]
       },
       "playstyle": {
         "前期": "前期以 Q 疊擊飛與 W 減傷交換，靠牆位置更容易製造控制。",
@@ -6337,7 +6666,7 @@
         "後期": "後期不要太早開大丟失坦度；確定能隔離並擊殺目標時才轉鬥士型態。"
       },
       "summary": "坦克型態提供高承傷與控制，大絕後轉成高機動鬥士；何時開大決定成敗。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/ksante.webp",
       "abilities": [
         {
@@ -6401,11 +6730,93 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-third5-formal-v42",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-ruby"
+      ],
+      "coreItems": [
+        "defense-high-06",
+        "defense-high-11",
+        "defense-high-08"
+      ],
+      "combos": [
+        {
+          "name": "對線短換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技護盾"
+            },
+            {
+              "key": "W",
+              "label": "2技蓄力"
+            }
+          ],
+          "note": "一技命中後穿插普攻，三技取得護盾並用二技抵抗控制或推動敵人。"
+        },
+        {
+          "name": "三段擊飛接大",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "第三段1技"
+            },
+            {
+              "key": "W",
+              "label": "2技推牆"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先用第三段一技拉近，將敵人推向牆體後大絕帶離戰場，進入全盛姿態追擊。"
+        },
+        {
+          "name": "保排反打",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技位移"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            }
+          ],
+          "note": "先用三技靠近隊友取得護盾，再用二技擋下進場，必要時以大絕帶走威脅。"
+        }
+      ]
     },
     {
       "id": "kayle-baron",
