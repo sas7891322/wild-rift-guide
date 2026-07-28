@@ -142,7 +142,6 @@
     const abilities = Object.fromEntries((hero.abilities||[]).filter(a=>['Q','W','E','R'].includes(a.key)).map(a=>[a.key,a]));
     const sequence = hero.skillSequence || [];
     const levels = Array.from({length:15},(_,i)=>i+1);
-    const compact = hero.detailTemplate==='lucian-mobile-formal-v2';
     const rows = ['Q','W','E','R'].map(key=>{
       const a=abilities[key]||{};
       return `<div class="skill-grid-row">
@@ -150,23 +149,120 @@
         ${levels.map((lvl,i)=>`<div class="skill-grid-cell ${sequence[i]===key?'active':''}" aria-label="等級 ${lvl}${sequence[i]===key?' 點 '+key:''}">${sequence[i]===key?'<span>●</span>':''}</div>`).join('')}
       </div>`;
     }).join('');
-    return `<div class="skill-level-grid ${compact?'no-swipe':''}"><div class="skill-grid-row skill-grid-header"><div class="skill-grid-skill label">技能</div>${levels.map(x=>`<div class="skill-grid-cell">${x}</div>`).join('')}</div>${rows}</div>`;
+    return `<div class="skill-level-grid"><div class="skill-grid-row skill-grid-header"><div class="skill-grid-skill label">技能</div>${levels.map(x=>`<div class="skill-grid-cell">${x}</div>`).join('')}</div>${rows}</div>`;
   }
 
-  function renderCombos(hero){
+  function renderLucianPriorityIcons(hero){
+    const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
+    const priority=getSkillPriority(hero);
+    return `<div class="lucian-priority-icons">${priority.map((key,i)=>{
+      const a=abilities[key]||{key};
+      return `<span class="lucian-priority-step">${abilityMedia(a,'lucian-priority-media')}<i>${i+1}</i></span>${i<priority.length-1?'<b>＞</b>':''}`;
+    }).join('')}</div>`;
+  }
+
+  function renderLucianSkillGrid(hero){
+    const abilities = Object.fromEntries((hero.abilities||[]).filter(a=>['Q','W','E','R'].includes(a.key)).map(a=>[a.key,a]));
+    const sequence = hero.skillSequence || [];
+    const levels = Array.from({length:15},(_,i)=>i+1);
+    const labelMap = {Q:'1', W:'2', E:'3', R:'4'};
+    const rows = ['Q','W','E','R'].map(key=>{
+      const a=abilities[key]||{};
+      return `<div class="lucian-skill-grid-row">
+        <div class="lucian-skill-grid-label">${abilityMedia(a,'lucian-grid-placeholder')}<span>${labelMap[key]}</span></div>
+        ${levels.map((lvl,i)=>`<div class="lucian-skill-grid-cell ${sequence[i]===key?'active':''}">${sequence[i]===key?'<i></i>':''}</div>`).join('')}
+      </div>`;
+    }).join('');
+    return `<div class="lucian-skill-grid-wrap">
+      <div class="lucian-skill-grid-head"><strong>技能加點順序</strong>${renderLucianPriorityIcons(hero)}</div>
+      <div class="lucian-skill-grid-table">
+        <div class="lucian-skill-grid-row header">
+          <div class="lucian-skill-grid-label head">1～15等</div>
+          ${levels.map(x=>`<div class="lucian-skill-grid-cell">${x}</div>`).join('')}
+        </div>
+        ${rows}
+      </div>
+    </div>`;
+  }
+
+  function renderLucianSkillInfo(hero){
+    const order=['P','Q','W','E','R'];
+    const labels={P:'被動',Q:'1技',W:'2技',E:'3技',R:'4技'};
+    const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
+    return `<div class="lucian-skill-info-list">${order.map(key=>{
+      const a=abilities[key]||{};
+      return `<div class="lucian-skill-info-row">
+        <div class="lucian-skill-icon">${abilityMedia(a,'lucian-skill-placeholder')}</div>
+        <div class="lucian-skill-copy"><strong>${labels[key]}｜${safeText(a.title)}</strong><p>${safeText(a.summary)}</p></div>
+      </div>`;
+    }).join('')}</div>`;
+  }
+
+  function renderLucianCombos(hero){
     const combos=Array.isArray(hero.combos)?hero.combos:[];
     if(!combos.length) return '';
-    const names={Q:'1 技',Q3:'1 技擊飛',W:'2 技',E:'3 技',E2:'返回',R:'4 技',AA:'普攻'};
     const abilityByKey=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
-    const stepHTML=step=>{
+    const labels={Q:'1技',Q3:'1技擊飛',W:'2技',E:'3技',E2:'返回',R:'4技',AA:'普攻'};
+    function stepMedia(step){
       const base=step==='Q3'?'Q':step==='E2'?'E':step;
+      if(base==='AA') return '<span class="lucian-combo-text">A</span>';
       const ability=abilityByKey[base];
-      const media=ability&&['Q','W','E','R'].includes(base)
-        ? abilityMedia(ability,'combo-icon-placeholder')
-        : `<span class="combo-text-icon">${step==='AA'?'A':'↩'}</span>`;
-      return `<span class="combo-step">${media}<b>${names[step]||step}</b></span>`;
-    };
-    return `<section class="hero-section hero-combo-section"><div class="hero-section-title"><h3>技能連招</h3><span>Combo</span></div><div class="hero-combo-list">${combos.map(combo=>`<article class="hero-combo-card"><strong>${safeText(combo.name)}</strong><div class="combo-steps">${combo.steps.map((step,i)=>`${stepHTML(step)}${i<combo.steps.length-1?'<i>→</i>':''}`).join('')}</div><p>${safeText(combo.note)}</p></article>`).join('')}</div></section>`;
+      if(!ability) return `<span class="lucian-combo-text">${safeText(step)}</span>`;
+      return abilityMedia(ability,'lucian-combo-media');
+    }
+    return `<div class="lucian-combo-block"><div class="lucian-subtitle">技能連招</div>${combos.map((combo,idx)=>`<details class="lucian-combo-item"${idx===0?' open':''}><summary>${safeText(combo.name)}</summary><div class="lucian-combo-body"><div class="lucian-combo-steps">${combo.steps.map((step,i)=>`${`<span class="lucian-combo-step">${stepMedia(step)}<small>${labels[step]||step}</small></span>`}${i<combo.steps.length-1?'<em>→</em>':''}`).join('')}</div><p>${safeText(combo.note)}</p></div></details>`).join('')}</div>`;
+  }
+
+  function renderLucianSkillSection(hero){
+    return `<section class="hero-section lucian-skill-section">
+      <div class="hero-section-title"><h3>技能</h3><span>Skills</span></div>
+      <div class="lucian-subtitle">技能說明</div>
+      ${renderLucianSkillInfo(hero)}
+      ${renderLucianSkillGrid(hero)}
+      ${renderLucianCombos(hero)}
+    </section>`;
+  }
+
+  function renderLucianBuildSection(hero, items, boots){
+    const starterIds=Array.isArray(hero.starterItems)&&hero.starterItems.length?hero.starterItems:[];
+    const starterItems=starterIds.map(id=>byId(state.items,id)).filter(Boolean);
+    const starter=starterItems[0]||firstBasicComponent(items[0]);
+    const coreItems=(Array.isArray(hero.coreItems)&&hero.coreItems.length?hero.coreItems.map(id=>byId(state.items,id)).filter(Boolean):items.slice(0,3));
+    const build6=[...items.slice(0,5), boots[0]].filter(Boolean).slice(0,6);
+    const circleCard=(item, cls='')=> item?`<div class="lucian-circle-card ${cls}"><div class="lucian-circle-media">${buildMiniCard(item)}</div><small>${safeText(item.name)}</small></div>`:'';
+    return `<section class="hero-section lucian-build-section">
+      <div class="hero-section-title"><h3>裝備配置</h3><span>Build</span></div>
+      <div class="lucian-build-top">
+        <div class="lucian-build-col"><span>起手裝備</span>${circleCard(starter,'starter')}</div>
+        <div class="lucian-build-col"><span>鞋子</span>${circleCard(boots[0],'boot')}</div>
+        <div class="lucian-build-col core"><span>核心三件裝</span><div class="lucian-core-row">${coreItems.map(item=>circleCard(item,'core')).join('')}</div></div>
+      </div>
+      <div class="lucian-build-six"><div class="lucian-subtitle">六件裝備</div><div class="lucian-build-six-grid">${build6.map(item=>circleCard(item,'final')).join('')}</div></div>
+    </section>`;
+  }
+
+  function renderLucianMatchups(hero){
+    return `<section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid no-ban"><div class="matchup-box good"><span>較好打</span><div>${(hero.matchups?.good||[]).map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${(hero.matchups?.bad||[]).map(matchupChip).join('')}</div></div></div></section>`;
+  }
+
+  function renderSkillPriorityBlock(hero){
+    return `<section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>`;
+  }
+
+  function renderSkillGridBlock(hero){
+    return `<section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>`;
+  }
+
+  function renderPassiveBlock(hero){
+    const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
+    const passive = abilities.find(x=>x.key==='P');
+    return passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="hero-passive">${abilityMedia(passive)}<div><b>${safeText(passive.title)}</b>${renderAbilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:'';
+  }
+
+  function renderActiveAbilitiesBlock(hero){
+    const abilities = (Array.isArray(hero.abilities) ? hero.abilities : []).filter(x=>x.key!=='P');
+    const abilityHTML = abilities.map(x=>`<div class="ability-card">${abilityMedia(x)}<div><b>${safeText(x.label)}｜${safeText(x.title)}</b>${renderAbilityVariants(x)}<p>${safeText(x.summary)}</p></div></div>`).join('');
+    return `<section class="hero-section"><div class="hero-section-title"><h3>技能說明</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>`;
   }
 
   function renderDetail(){
@@ -181,19 +277,18 @@
     const laneSwitch=profiles.length>1?`<div class="hero-lane-switch">${profiles.map(x=>`<button data-profile="${x.id}" class="${x.id===hero.id?'active':''}">${roleNames[x.roleId]||x.role}</button>`).join('')}</div>`:'';
     const runeHTML=runes.map((x,i)=>`<div class="hero-rune-card ${i===0?'keystone':''}">${x?`<img src="${safeIcon(x)}" alt="${x.name}"><div><small>${i===0?'關鍵符文':'副符文'}</small><strong>${x.name}</strong><p>${x.tag||''}</p></div>`:'<span>資料待補</span>'}</div>`).join('');
     const spellHTML=spells.map(x=>buildMiniCard(x,'spell')).join('');
-    const isLucianFormal=hero.detailTemplate==='lucian-mobile-formal-v2';
-    const starterIds=Array.isArray(hero.starterItems)&&hero.starterItems.length?hero.starterItems:[];
-    const starterItems=starterIds.map(id=>byId(state.items,id)).filter(Boolean);
-    const starter=starterItems[0]||firstBasicComponent(items[0]);
-    const starterHTML=(starterItems.length?starterItems:[starter]).map(x=>buildMiniCard(x,'starter')).join('');
-    const coreItems=(Array.isArray(hero.coreItems)&&hero.coreItems.length?hero.coreItems.map(id=>byId(state.items,id)).filter(Boolean):items.slice(0,3));
-    const coreHTML=coreItems.map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
+    const starter=firstBasicComponent(items[0]);
+    const starterHTML=buildMiniCard(starter,'starter');
+    const coreHTML=items.slice(0,3).map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
     const bootHTML=boots.map((x,i)=>`<div class="hero-build-slot boot"><b>${i===0?'II':'III'}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
     const finalHTML=[...items.slice(0,5),boots[1]].map((x,i)=>`<div class="hero-build-slot final"><b>${i<5?i+1:'III'}</b>${buildMiniCard(x,i===5?'boot':'item')}</div>`).join('');
-    const buildSection=isLucianFormal
-      ? `<section class="hero-section lucian-formal-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups lucian-formal-build">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('核心裝備','三件核心',coreHTML,'core-group')}</div></section>`
-      : `<section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>`;
-    const matchupSection=`<section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid ${hero.hideBan||!hero.matchups?.ban?'no-ban':''}"><div class="matchup-box good"><span>較好打</span><div>${(hero.matchups?.good||[]).map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${(hero.matchups?.bad||[]).map(matchupChip).join('')}</div></div>${hero.hideBan||!hero.matchups?.ban?'':`<div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div>`}</div></section>`;
+    const isLucianStructured=hero.detailTemplate==='lucian-structured-v1';
+    const buildSection=isLucianStructured
+      ? renderLucianBuildSection(hero, items, boots)
+      : `${buildSection}
+        ${skillSection}
+        ${matchupSection}
+        `;
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
@@ -209,13 +304,12 @@
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
-        ${buildSection}
+        <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
         <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
-        ${renderCombos(hero)}
         <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
         ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
-        ${matchupSection}
+        <section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(matchupChip).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div></div></section>
         ${Array.isArray(hero.mechanics)&&hero.mechanics.length?`<section class="hero-section"><div class="hero-section-title"><h3>${hero.mechanicsTitle||'特殊機制'}</h3><span>Champion Mechanic</span></div><div class="stack-grid">${hero.mechanics.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}${x.stacks!=null?`<strong>${x.stacks}</strong>`:''}<span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>實戰節奏</h3></div><div class="playstyle-timeline">${Object.entries(hero.playstyle).map(([k,v])=>`<div class="playstyle-step"><b>${k}</b><p>${v}</p></div>`).join('')}</div></section>
         <div class="hero-source-note">${hero.sourceNote}</div>
