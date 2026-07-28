@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v49-baron-complete",
+  "version": "7.2a-v50-jungle-roster-50",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -110,7 +110,8 @@
     "v47：巴龍路第 8 批完成嘉文四世、茂凱、納帝魯斯、奈德麗、歐拉夫。",
     "v48：巴龍路第 9 批完成潘森、雷茲、史加納、斯溫。",
     "v49：巴龍路第 10 批完成維爾戈、弗力貝爾、沃維克、犽宿。",
-    "v49：巴龍路正式版已 100% 完成。"
+    "v49：巴龍路正式版已 100% 完成。",
+    "v50：依遊戲內打野定位截圖校正為 50 位；移除辛吉德、菲歐拉、伊瑞莉雅，新增慎、納帝魯斯。本版只更新英雄名單，不更動任何英雄詳細攻略資料。"
   ],
   "heroes": [
     {
@@ -30810,12 +30811,12 @@
     },
     "jungle": {
       "name": "打野",
-      "nativeCount": 51,
+      "nativeCount": 50,
       "crossCount": 0,
       "avatarComplete": true,
-      "detailComplete": true,
+      "detailComplete": false,
       "portraitMode": "shared",
-      "verification": "打野 51 位；本版新增易大師詳細資料與使用者提供頭像。",
+      "verification": "打野官方定位 50 位；本版僅校正英雄名單，慎與納帝魯斯的打野詳細攻略待後續正式更新。",
       "detailVersion": "v32-first70"
     },
     "mid": {
@@ -31379,15 +31380,6 @@
         "avatar": "../assets/images/heroes/portraits/fiddlesticks.webp"
       },
       {
-        "id": "fiora",
-        "name": "菲歐拉",
-        "enName": "Fiora",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "fiora-jungle",
-        "avatar": "../assets/images/heroes/portraits/fiora.webp"
-      },
-      {
         "id": "fizz",
         "name": "飛斯",
         "enName": "Fizz",
@@ -31431,15 +31423,6 @@
         "origin": "native",
         "detailHeroId": "hecarim-jungle",
         "avatar": "../assets/images/heroes/portraits/hecarim.webp"
-      },
-      {
-        "id": "irelia",
-        "name": "伊瑞莉雅",
-        "enName": "Irelia",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "irelia-jungle",
-        "avatar": "../assets/images/heroes/portraits/irelia.webp"
       },
       {
         "id": "jarvan-iv",
@@ -31521,6 +31504,14 @@
         "origin": "native",
         "detailHeroId": "morgana-jungle",
         "avatar": "../assets/images/heroes/portraits/morgana.png"
+      },
+      {
+        "id": "nautilus",
+        "name": "納帝魯斯",
+        "enName": "Nautilus",
+        "tier": "B",
+        "origin": "native",
+        "avatar": "../assets/images/heroes/portraits/nautilus.png"
       },
       {
         "id": "nidalee",
@@ -31613,6 +31604,14 @@
         "avatar": "../assets/images/heroes/portraits/riven.png"
       },
       {
+        "id": "shen",
+        "name": "慎",
+        "enName": "Shen",
+        "tier": "S",
+        "origin": "native",
+        "avatar": "../assets/images/heroes/portraits/shen.webp"
+      },
+      {
         "id": "shyvana",
         "name": "希瓦娜",
         "enName": "Shyvana",
@@ -31620,15 +31619,6 @@
         "origin": "native",
         "detailHeroId": "shyvana-jungle",
         "avatar": "../assets/images/heroes/portraits/shyvana.png"
-      },
-      {
-        "id": "singed",
-        "name": "辛吉德",
-        "enName": "Singed",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "singed-jungle",
-        "avatar": "../assets/images/heroes/portraits/singed.webp"
       },
       {
         "id": "skarner",
