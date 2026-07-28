@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v40-first5",
+  "version": "7.2a-v41-baron-second5",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -100,7 +100,8 @@
     "v33：前70英雄圖片改為最新版單一頭像＋技能平面檔名；移除該70英雄舊圖重複與舊技能子資料夾。",
     "v34：完成第71～139隻英雄及尤娜拉的最新版圖片覆蓋；每隻僅保留1張頭像與5張技能圖，技能採手機友善平面檔名。",
     "v38：修正 v37 未實際套用新模板的問題；新版結構目前只套用犽凝。",
-    "v40 首批：厄薩斯、卡蜜兒、達瑞斯、菲歐拉、蓋倫套用犽凝正式母版。"
+    "v40 首批：厄薩斯、卡蜜兒、達瑞斯、菲歐拉、蓋倫套用犽凝正式母版。",
+    "v41：巴龍路第 2 批完成安比薩、阿卡莉、古拉格斯、關、歐羅拉；並修正點進英雄詳細頁時的捲動位置。"
   ],
   "heroes": [
     {
@@ -3510,8 +3511,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期以一技能邊緣命中觸發被動，煙霧保留給關鍵換血或躲 Gank。",
@@ -3519,7 +3519,7 @@
         "後期": "後期不要第一時間正面進場，等控制交掉後從視野死角切主力輸出。"
       },
       "summary": "利用煙霧、被動強化普攻與雙段大絕打短爆發；巴龍路重點是避免被長手消耗到失去進場血量。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v41：巴龍路第 2 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/akali.webp",
       "abilities": [
         {
@@ -3583,11 +3583,109 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-second5-formal-v41",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-21",
+        "magic-high-14",
+        "magic-high-08"
+      ],
+      "combos": [
+        {
+          "name": "對線短換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技標記"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            }
+          ],
+          "note": "一技邊緣命中後拉出被動，再用三技二段追上；傷害打完後利用煙霧或走位撤離。"
+        },
+        {
+          "name": "完整爆發",
+          "steps": [
+            {
+              "key": "R",
+              "label": "一段4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            },
+            {
+              "key": "R",
+              "label": "二段4技"
+            }
+          ],
+          "note": "先用第一段大絕接近並掛上三技，二段三技回身後補一技與被動，最後以二段大絕收尾。"
+        },
+        {
+          "name": "煙霧拉扯",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "R",
+              "label": "二段4技"
+            }
+          ],
+          "note": "煙霧中反覆進出視野，等敵人關鍵控制落空後再用三技與大絕完成擊殺。"
+        }
+      ]
     },
     {
       "id": "ambessa-baron",
@@ -3645,8 +3743,7 @@
           "菲歐拉",
           "凱能",
           "波比"
-        ],
-        "ban": "菲歐拉"
+        ]
       },
       "playstyle": {
         "前期": "前期打短換血，技能後至少穿插一次強化普攻，二技能優先擋對手爆發。",
@@ -3654,7 +3751,7 @@
         "後期": "後期以側翼刺入為主，避免當主坦正面吃滿控制；擊殺後再靠位移轉火。"
       },
       "summary": "技能後位移並穿插強化普攻是核心；要把能量、護盾與進退方向一起管理。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v41：巴龍路第 2 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/ambessa.png",
       "abilities": [
         {
@@ -3718,11 +3815,109 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-second5-formal-v41",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-36",
+        "physical-high-21",
+        "physical-high-27"
+      ],
+      "combos": [
+        {
+          "name": "對線換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "P",
+              "label": "被動位移"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "每次施放技能後穿插被動位移與普攻，用一技兩段和三技完成短換血。"
+        },
+        {
+          "name": "大絕切後排",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "P",
+              "label": "被動位移"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "大絕鎖定後排後立即開二技吸收反打，再靠技能後位移黏住目標。"
+        },
+        {
+          "name": "持續追擊",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "P",
+              "label": "被動位移"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "利用三技起手減速，技能間持續觸發被動位移，避免一次把所有技能同時交完。"
+        }
+      ]
     },
     {
       "id": "aurora-baron",
@@ -3780,8 +3975,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期以一技能往返傷害配普攻消耗，位移技能別輕易交掉。",
@@ -3789,7 +3983,7 @@
         "後期": "後期保持側面輸出位置，利用隱匿與位移反覆進出戰場，不要停在前排射程內。"
       },
       "summary": "靠多段技能觸發被動、靈活位移與大絕區域控制拉扯；巴龍路偏消耗與機會型爆發。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v41：巴龍路第 2 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/aurora.png",
       "abilities": [
         {
@@ -3853,11 +4047,97 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-second5-formal-v41",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-21",
+        "magic-high-14",
+        "magic-high-08"
+      ],
+      "combos": [
+        {
+          "name": "對線消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技後跳"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "先掛上一技，再用普攻與三技拉開距離，最後收回靈能造成第二段傷害。"
+        },
+        {
+          "name": "隱身追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "二技跨越地形或進入隱身後接近，打出被動層數後用三技保持安全距離。"
+        },
+        {
+          "name": "大絕團戰",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "大絕封鎖區域後利用邊界反覆位移，集中攻擊被困住的脆皮目標。"
+        }
+      ]
     },
     {
       "id": "camille-baron",
@@ -5065,8 +5345,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期用 Q 控線消耗，E 留作反打或配合打野，不必每次主動撞。",
@@ -5074,7 +5353,7 @@
         "後期": "後期優先做反開與陣型分割，錯誤大絕可能把敵人救走，寧可晚一拍。"
       },
       "summary": "酒桶消耗、位移控制與大絕分割能力兼具，可坦可輸出；關鍵在大絕落點。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v41：巴龍路第 2 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/gragas.webp",
       "abilities": [
         {
@@ -5138,11 +5417,97 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-second5-formal-v41",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-21",
+        "magic-high-14",
+        "magic-high-08"
+      ],
+      "combos": [
+        {
+          "name": "對線換血",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "Q",
+              "label": "引爆1技"
+            }
+          ],
+          "note": "先喝酒強化普攻，再以三技撞擊接酒桶；利用被動回血維持線上。"
+        },
+        {
+          "name": "桶子爆發",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "放置1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "R",
+              "label": "4技炸回"
+            },
+            {
+              "key": "Q",
+              "label": "引爆1技"
+            }
+          ],
+          "note": "先放酒桶蓄力，肉彈命中後以大絕將敵人炸回酒桶區域再引爆。"
+        },
+        {
+          "name": "大絕開戰",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "大絕拆散陣型或把核心炸向己方，接著用三技控制並補足近身傷害。"
+        }
+      ]
     },
     {
       "id": "gwen-baron",
@@ -5200,8 +5565,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期疊普攻層數後再用 Q 中心換血，W 用來擋遠程關鍵技能。",
@@ -5209,7 +5573,7 @@
         "後期": "後期不要急著越過前排，靠 Q 真傷與大絕穿透逐步撕開陣型。"
       },
       "summary": "百分比魔傷、中心區一技能與免疫區讓她擅長切坦與長戰；裝備成形後側線很強。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v41：巴龍路第 2 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/gwen.webp",
       "abilities": [
         {
@@ -5273,11 +5637,101 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-second5-formal-v41",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-23",
+        "magic-high-20",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "剪刀短換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技中心"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先用三技獲得攻速並疊剪刀層數，再讓一技中心線命中目標。"
+        },
+        {
+          "name": "大絕追擊",
+          "steps": [
+            {
+              "key": "R",
+              "label": "一段4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "二段4技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "三段4技"
+            }
+          ],
+          "note": "第一段大絕減速後貼近，技能與普攻間穿插後續飛針，維持被動傷害。"
+        },
+        {
+          "name": "聖霧團戰",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "在聖霧邊緣作戰，逼迫遠程敵人進入範圍，再集中攻擊前排或落單目標。"
+        }
+      ]
     },
     {
       "id": "irelia-baron",
