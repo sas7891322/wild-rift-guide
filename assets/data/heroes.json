@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v58-mid-ahri-master-template",
+  "version": "7.2a-v59-mid-first-batch-12of46",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -118,7 +118,8 @@
     "v54：完成打野第三批 30/50 正式版。新增完成納帝魯斯、希瓦娜、赫克林、塔莉雅、費德提克、奈德麗、安比薩、慨影、拉姆斯、莉莉亞；全數套用李星固定打野母版。納帝魯斯新增獨立打野攻略，不影響輔助版本。",
     "v55：完成打野第四批 40/50 正式版。新增完成關、劫、卡蜜兒、厄薩斯、史加納、塔隆、易大師、歐拉夫、波比、泰達米爾；全數套用李星固定打野母版。",
     "v56：完成打野第五批與全路線 50/50 正式版。新增完成淣菈、犽凝、賈克斯、達瑞斯、鏡爪、雷玟、魔甘娜、古拉格斯、蒙多醫生、飛斯；全數沿用李星固定打野母版。",
-    "v58：完成中路阿璃正式版並固定為中路英雄母版。套用既有結構化英雄頁版型，更新 7.2a 出裝、符文、召喚師技能、完整技能加點、三組實戰連招、對局與前中後期策略；其餘英雄資料、CSS、JS 與版型均未修改。"
+    "v58：完成中路阿璃正式版並固定為中路英雄母版。套用既有結構化英雄頁版型，更新 7.2a 出裝、符文、召喚師技能、完整技能加點、三組實戰連招、對局與前中後期策略；其餘英雄資料、CSS、JS 與版型均未修改。",
+    "v59：校正遊戲內中路 46 位正式名單；完成第一批 12/46：阿璃、拉克絲、奧莉安娜、星朵拉、瑟菈紛、安妮、維克特、雷茲、薇可絲、歐羅拉、梅爾、斯溫。全數沿用阿璃固定中路母版。"
   ],
   "heroes": [
     {
@@ -25085,41 +25086,42 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "S",
-      "position": "控制法師／遠距消耗",
+      "position": "爆發法師／穩定暈眩／範圍開戰",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "暈眩",
+        "爆發",
+        "召喚物",
+        "強開"
       ],
       "ratings": {
-        "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 3,
+        "單排推薦": 5,
+        "新手推薦": 5,
+        "操作難度": 1,
+        "Blind Pick": 4,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
-        "transcendence",
-        "manaflow-band",
-        "bone-plating"
+        "electrocute",
+        "cheap-shot",
+        "eyeball-collector",
+        "relentless-hunter",
+        "manaflow-band"
       ],
       "items": [
         "magic-high-12",
-        "magic-high-25",
+        "magic-high-21",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-13"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
       "skillOrder": "Q > W > E",
       "skillSequence": [
@@ -25147,24 +25149,24 @@
       },
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "斯溫"
+          "阿卡莉",
+          "卡特蓮娜",
+          "飛斯"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "卡薩丁"
+          "拉克絲",
+          "奧莉安娜",
+          "星朵拉"
         ],
-        "ban": "劫"
+        "ban": "拉克絲"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技尾刀可穩定控制魔力，透過空放三技累積嗜火層數。準備暈眩時可藏在三層，等敵人靠近再用技能瞬間疊滿，降低對方提前後退的時間。",
+        "中期": "推線後跟隨打野尋找草叢與側翼，閃現接大絕能瞬間控制多人。沒有閃現時不要正面硬走，利用視野差或隊友先手提高泰貝爾命中率。",
+        "後期": "優先威脅敵方後排或保護己方主力。暈眩不必一定交給大絕，一技穩定點控刺客往往更可靠；泰貝爾存活時持續指揮其追擊或阻擋走位。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以嗜火提供穩定暈眩，閃現大絕能完成簡單而高效的範圍開戰；射程較短，必須靠視野差與進場時機彌補。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/annie.webp",
       "abilities": [
         {
@@ -25172,49 +25174,132 @@
           "label": "被動",
           "title": "嗜火",
           "icon": "../assets/images/heroes/skills/annie_01.webp",
-          "summary": "施放數次技能後，下個傷害技能會暈眩命中的敵人。"
+          "summary": "施放四個技能後，下一個攻擊性技能會使命中的敵人暈眩；可透過技能圖示掌握目前層數。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "瓦解怒焰",
           "icon": "../assets/images/heroes/skills/annie_02.png",
-          "summary": "對目標造成魔法傷害；若擊殺目標可返還部分資源並縮短冷卻。"
+          "summary": "向單一目標投出火球造成魔法傷害；擊殺目標時返還魔力並縮短冷卻，適合穩定尾刀。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "烈焰衝擊",
           "icon": "../assets/images/heroes/skills/annie_03.png",
-          "summary": "向前方扇形區域噴火，對範圍敵人造成魔法傷害。"
+          "summary": "向前方錐形區域噴出烈焰，對範圍敵人造成魔法傷害，可配合被動暈眩多人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "熔炎護盾",
           "icon": "../assets/images/heroes/skills/annie_04.png",
-          "summary": "為自己或友軍提供護盾與跑速，並反擊攻擊護盾目標的敵人。"
+          "summary": "為自己或泰貝爾提供護盾與跑速，並反擊攻擊者；也能用來快速累積嗜火層數。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "召喚：泰貝爾",
           "icon": "../assets/images/heroes/skills/annie_05.webp",
-          "summary": "召喚泰貝爾造成範圍傷害；泰貝爾會持續追擊並灼燒附近敵人。"
+          "summary": "召喚泰貝爾造成範圍傷害；泰貝爾可猛撲並擊飛目標，持續灼燒周圍敵人。"
         }
       ],
-      "mechanics": [],
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-21",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "基礎暈眩換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技暈眩"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技撤退"
+            }
+          ],
+          "note": "嗜火準備好後以一技穩定點控，接二技與普攻觸發死亡電刑，再用三技加速拉開。"
+        },
+        {
+          "name": "閃現泰貝爾開團",
+          "steps": [
+            {
+              "key": "FLASH",
+              "label": "閃現"
+            },
+            {
+              "key": "R",
+              "label": "4技暈眩"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃"
+            }
+          ],
+          "note": "從視野外閃現大絕命中核心，接二技與一技完成爆發；點燃只交給確定能擊殺的目標。"
+        },
+        {
+          "name": "反刺客點控",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技護盾"
+            },
+            {
+              "key": "Q",
+              "label": "1技暈眩"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "刺客進場時先用護盾承受傷害，再以一技穩定暈眩；不必冒險把大絕丟向遠處。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "aurelion-sol-mid",
       "baseId": "aurelion-sol",
-      "name": "翱銳龍獸",
+      "name": "翱鋭龍獸",
       "enName": "Aurelion Sol",
       "roleId": "mid",
       "role": "中路",
@@ -25353,63 +25438,64 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "A",
-      "position": "持續法傷／中距離團戰",
+      "position": "機動法師／靈界拉扯／區域封鎖",
       "tags": [
-        "持續輸出",
-        "團戰",
-        "成長"
+        "機動",
+        "隱形",
+        "往返傷害",
+        "範圍控制"
       ],
       "ratings": {
         "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 2,
+        "操作難度": 4,
         "Blind Pick": 3,
         "對線強度": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
-        "conqueror",
-        "brutal",
-        "coup-de-grace",
-        "legend-tenacity",
-        "transcendence"
+        "electrocute",
+        "sudden-impact",
+        "eyeball-collector",
+        "relentless-hunter",
+        "coup-de-grace"
       ],
       "items": [
-        "magic-high-17",
-        "magic-high-23",
-        "magic-high-16",
+        "magic-high-21",
+        "magic-high-25",
         "magic-high-14",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-18"
       ],
       "boots": [
         "mana-boots",
-        "blood-mage-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
-      "skillOrder": "Q > W > E",
+      "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "卡特蓮娜"
+          "奧莉安娜",
+          "維克特",
+          "斯溫"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "麗珊卓"
+          "加里歐",
+          "麗珊卓",
+          "安妮"
         ],
-        "ban": "劫"
+        "ban": "加里歐"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技往返配普攻累積被動，三技後跳同時消耗並保持距離。二技是唯一可靠的隱形與位移工具，沒有敵方打野資訊時不要拿來單純補傷害。",
+        "中期": "推線後利用二技穿越地形與隱形尋找側翼，大絕可把敵方核心限制在區域內。進場後不要停在原地，沿大絕邊界反覆位移並以一技回收傷害。",
+        "後期": "等待第一輪控制交掉再從側面切入，三技與二技輪流保持安全距離。大絕既可開團也可分割戰場，優先困住沒有閃現的後排或阻止敵方支援前排。"
       },
-      "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以一技往返、隱形位移與大絕邊界反覆拉扯，可快速切換消耗與收割；技能全交後身板脆弱，進場時機要求高。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/aurora.png",
       "abilities": [
         {
@@ -25450,20 +25536,20 @@
       ],
       "skillSequence": [
         "Q",
-        "W",
         "E",
+        "W",
         "Q",
         "R",
         "Q",
         "Q",
-        "W",
-        "R",
-        "W",
-        "W",
         "E",
         "R",
         "E",
-        "E"
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
       ],
       "skillLabels": {
         "Q": "1 技",
@@ -25473,12 +25559,99 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": [],
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-21",
+        "magic-high-25",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "對線消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技後跳"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "先掛上一技，再用普攻與三技拉開距離，最後收回靈能造成第二段傷害。"
+        },
+        {
+          "name": "隱身追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "二技跨越地形或進入隱身後接近，打出被動層數後用三技保持安全距離。"
+        },
+        {
+          "name": "大絕團戰",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "大絕封鎖區域後利用邊界反覆位移，集中攻擊被困住的脆皮目標。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "brand-mid",
@@ -26096,7 +26269,7 @@
         "bad": [
           "弗拉迪米爾",
           "維克特",
-          "翱銳龍獸"
+          "翱鋭龍獸"
         ],
         "ban": "弗拉迪米爾"
       },
@@ -26147,141 +26320,6 @@
       ],
       "mechanics": [],
       "skillIconStatus": "complete",
-      "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
-    },
-    {
-      "id": "garen-mid",
-      "baseId": "garen",
-      "name": "蓋倫",
-      "enName": "Garen",
-      "role": "中路",
-      "roleId": "mid",
-      "tier": "B",
-      "position": "前排法坦／開戰支援",
-      "tags": [
-        "坦度",
-        "開戰",
-        "支援"
-      ],
-      "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
-        "對線強度": 4,
-        "團戰影響力": 5
-      },
-      "runes": [
-        "grasp",
-        "courage-of-colossus",
-        "bone-plating",
-        "overgrowth",
-        "triumph"
-      ],
-      "items": [
-        "defense-high-19",
-        "defense-high-06",
-        "defense-high-08",
-        "defense-high-14",
-        "defense-high-15"
-      ],
-      "boots": [
-        "chain-army-boots",
-        "armored-warboots"
-      ],
-      "spells": [
-        "flash",
-        "ignite"
-      ],
-      "skillOrder": "Q > W > E",
-      "matchups": {
-        "good": [
-          "劫",
-          "飛斯",
-          "卡特蓮娜"
-        ],
-        "bad": [
-          "弗拉迪米爾",
-          "維克特",
-          "翱銳龍獸"
-        ],
-        "ban": "弗拉迪米爾"
-      },
-      "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
-      },
-      "summary": "先穩住中線與血量，利用控制或高坦度主動支援河道；中後期以開戰與保護後排為第一優先。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
-      "avatar": "../assets/images/heroes/portraits/garen.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "堅毅",
-          "icon": "../assets/images/heroes/skills/garen_01.webp",
-          "summary": "一段時間未受敵方傷害後快速回復生命，提升對線續航。"
-        },
-        {
-          "key": "Q",
-          "label": "1 技",
-          "title": "致命打擊",
-          "icon": "../assets/images/heroes/skills/garen_02.webp",
-          "summary": "解除緩速並提高跑速，下一次普攻造成額外傷害與沉默。"
-        },
-        {
-          "key": "W",
-          "label": "2 技",
-          "title": "勇氣",
-          "icon": "../assets/images/heroes/skills/garen_03.webp",
-          "summary": "被動增加防禦；主動短暫獲得高額韌性與減傷，之後維持較低減傷。"
-        },
-        {
-          "key": "E",
-          "label": "3 技",
-          "title": "審判",
-          "icon": "../assets/images/heroes/skills/garen_04.png",
-          "summary": "快速旋轉大劍持續造成物理傷害，對單一目標時傷害更高。"
-        },
-        {
-          "key": "R",
-          "label": "4 技",
-          "title": "蒂瑪西亞制裁",
-          "icon": "../assets/images/heroes/skills/garen_05.webp",
-          "summary": "召喚蒂瑪西亞之力處決指定英雄，依其已損生命造成大量真實傷害。"
-        }
-      ],
-      "skillSequence": [
-        "Q",
-        "W",
-        "E",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "W",
-        "R",
-        "W",
-        "W",
-        "E",
-        "R",
-        "E",
-        "E"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "4 技"
-      },
-      "skillIconStatus": "complete",
-      "generatedV29": true,
-      "mechanics": [],
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -27231,140 +27269,6 @@
       "reviewedAt": "2026-07-28"
     },
     {
-      "id": "kogmaw-mid",
-      "name": "寇格魔",
-      "enName": "Kog'Maw",
-      "role": "中路",
-      "roleId": "mid",
-      "tier": "A",
-      "position": "控制法師／遠距消耗",
-      "tags": [
-        "清線",
-        "消耗",
-        "團戰"
-      ],
-      "ratings": {
-        "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 3,
-        "對線強度": 4,
-        "團戰影響力": 5
-      },
-      "runes": [
-        "arcane-comet",
-        "scorch",
-        "transcendence",
-        "manaflow-band",
-        "bone-plating"
-      ],
-      "items": [
-        "magic-high-12",
-        "magic-high-25",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-13"
-      ],
-      "boots": [
-        "mana-boots",
-        "burst-boots"
-      ],
-      "spells": [
-        "flash",
-        "barrier"
-      ],
-      "skillOrder": "Q > W > E",
-      "matchups": {
-        "good": [
-          "安妮",
-          "維迦",
-          "斯溫"
-        ],
-        "bad": [
-          "劫",
-          "飛斯",
-          "卡薩丁"
-        ],
-        "ban": "劫"
-      },
-      "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
-      },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
-      "avatar": "../assets/images/heroes/portraits/kogmaw.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "來自伊卡西亞的驚喜",
-          "icon": "../assets/images/heroes/skills/kogmaw_01.webp",
-          "summary": "死亡後仍可短暫移動並提高跑速，隨後爆炸對附近敵人造成真實傷害。"
-        },
-        {
-          "key": "Q",
-          "label": "1 技",
-          "title": "腐蝕唾液",
-          "icon": "../assets/images/heroes/skills/kogmaw_02.webp",
-          "summary": "射出腐蝕唾液造成魔法傷害並降低目標雙防；被動提高攻速。"
-        },
-        {
-          "key": "W",
-          "label": "2 技",
-          "title": "生化彈幕",
-          "icon": "../assets/images/heroes/skills/kogmaw_03.webp",
-          "summary": "短時間提高普攻距離，並讓普攻附加依目標最大生命計算的魔法傷害。"
-        },
-        {
-          "key": "E",
-          "label": "3 技",
-          "title": "虛空淤泥",
-          "icon": "../assets/images/heroes/skills/kogmaw_04.webp",
-          "summary": "吐出一條虛空淤泥造成魔法傷害並留下緩速地帶。"
-        },
-        {
-          "key": "R",
-          "label": "4 技",
-          "title": "生化巨炮",
-          "icon": "../assets/images/heroes/skills/kogmaw_05.webp",
-          "summary": "遠距離砲擊指定位置，造成魔法傷害並揭露敵人；對低生命目標傷害更高，連續施放提高耗魔。"
-        }
-      ],
-      "skillSequence": [
-        "Q",
-        "W",
-        "E",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "W",
-        "R",
-        "W",
-        "W",
-        "E",
-        "R",
-        "E",
-        "E"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "4 技"
-      },
-      "skillIconStatus": "complete",
-      "skillIconCount": 5,
-      "baseId": "kogmaw",
-      "mechanics": [],
-      "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
-    },
-    {
       "id": "lissandra-mid",
       "baseId": "lissandra",
       "name": "麗珊卓",
@@ -27499,140 +27403,6 @@
       "reviewedAt": "2026-07-28"
     },
     {
-      "id": "lucian-mid",
-      "name": "路西恩",
-      "enName": "Lucian",
-      "role": "中路",
-      "roleId": "mid",
-      "tier": "B",
-      "position": "物理輸出／單線壓制",
-      "tags": [
-        "物理輸出",
-        "換血",
-        "邊線"
-      ],
-      "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
-        "對線強度": 4,
-        "團戰影響力": 4
-      },
-      "runes": [
-        "conqueror",
-        "brutal",
-        "last-stand",
-        "legend-alacrity",
-        "bone-plating"
-      ],
-      "items": [
-        "physical-high-21",
-        "physical-high-12",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-10"
-      ],
-      "boots": [
-        "gluttonous-greaves",
-        "immortal-boots"
-      ],
-      "spells": [
-        "flash",
-        "ignite"
-      ],
-      "skillOrder": "Q > E > W",
-      "matchups": {
-        "good": [
-          "維迦",
-          "希格斯",
-          "奧莉安娜"
-        ],
-        "bad": [
-          "安妮",
-          "加里歐",
-          "麗珊卓"
-        ],
-        "ban": "安妮"
-      },
-      "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
-      },
-      "summary": "以對線換血與兵線節奏建立優勢，中期利用機動性進邊線或河道支援，團戰避免第一時間吃滿控制。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
-      "avatar": "../assets/images/heroes/portraits/lucian.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "光之獵手",
-          "icon": "../assets/images/heroes/skills/lucian_01.png",
-          "summary": "每次施放技能後，下一次普攻會連射兩發，是技能穿插普攻的核心。"
-        },
-        {
-          "key": "Q",
-          "label": "1 技",
-          "title": "鋒芒貫穿",
-          "icon": "../assets/images/heroes/skills/lucian_02.webp",
-          "summary": "對指定目標射出穿透光束，並傷害其後方直線上的敵人。"
-        },
-        {
-          "key": "W",
-          "label": "2 技",
-          "title": "烈炎鐵血",
-          "icon": "../assets/images/heroes/skills/lucian_03.png",
-          "summary": "發射星形爆炸彈並標記敵人；攻擊被標記目標可提高跑速。"
-        },
-        {
-          "key": "E",
-          "label": "3 技",
-          "title": "冷酷進擊",
-          "icon": "../assets/images/heroes/skills/lucian_04.webp",
-          "summary": "向指定方向短距位移，雙槍普攻可縮短冷卻，利於連招與拉扯。"
-        },
-        {
-          "key": "R",
-          "label": "4 技",
-          "title": "赤色屠戮",
-          "icon": "../assets/images/heroes/skills/lucian_05.webp",
-          "summary": "朝指定方向持續高速射擊，可邊移動邊輸出，用於壓血、追擊與收尾。"
-        }
-      ],
-      "skillSequence": [
-        "Q",
-        "E",
-        "W",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "E",
-        "R",
-        "E",
-        "E",
-        "W",
-        "R",
-        "W",
-        "W"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "4 技"
-      },
-      "skillIconStatus": "complete",
-      "skillIconCount": 5,
-      "baseId": "lucian",
-      "mechanics": [],
-      "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
-    },
-    {
       "id": "lux-mid",
       "baseId": "lux",
       "name": "拉克絲",
@@ -27640,19 +27410,20 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "B",
-      "position": "控制法師／遠距消耗",
+      "position": "控制法師／遠距消耗／全圖收尾",
       "tags": [
-        "清線",
         "消耗",
-        "團戰"
+        "束縛",
+        "護盾",
+        "遠距爆發"
       ],
       "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
+        "單排推薦": 4,
+        "新手推薦": 5,
+        "操作難度": 2,
+        "Blind Pick": 4,
         "對線強度": 4,
-        "團戰影響力": 5
+        "團戰影響力": 4
       },
       "runes": [
         "arcane-comet",
@@ -27665,12 +27436,12 @@
         "magic-high-12",
         "magic-high-25",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-13"
+        "magic-high-21",
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
@@ -27704,22 +27475,22 @@
         "good": [
           "安妮",
           "維迦",
-          "斯溫"
+          "雷茲"
         ],
         "bad": [
-          "劫",
           "飛斯",
-          "卡薩丁"
+          "劫",
+          "犽宿"
         ],
-        "ban": "劫"
+        "ban": "飛斯"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "以三技同時清兵與消耗，光芒四射標記能安全引爆時再補普攻。斜角施放一技比正面穿兵更容易命中；沒有視野時不要為了壓線站過河道。",
+        "中期": "推線後先到河道與物件區佈置技能角度，利用三技探草並緩速，一技命中後立刻接大絕。護盾要穿過多名隊友，往返兩段都命中才能放大團戰價值。",
+        "後期": "保持在前排後方，以三技消耗與一技阻止刺客進場。大絕可用來收尾、清線或壓低物件團血量，但不要在敵方仍可直接切入時站樁蓄力。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以超遠射程控制兵線，一技束縛接大絕完成抓人，二技往返護盾兼顧團隊保護；弱點是技能落空後容易被刺客貼近。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/lux.webp",
       "abilities": [
         {
@@ -27727,44 +27498,123 @@
           "label": "被動",
           "title": "光芒四射",
           "icon": "../assets/images/heroes/skills/lux_01.webp",
-          "summary": "傷害技能會標記敵人；下一次普攻引爆標記造成額外魔法傷害。"
+          "summary": "傷害技能會標記敵人；下一次普攻可引爆標記造成額外魔法傷害，大絕也能觸發並刷新標記。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "光明束縛",
           "icon": "../assets/images/heroes/skills/lux_02.webp",
-          "summary": "發射光球束縛並傷害最多兩個敵人。"
+          "summary": "發射光球，對前兩個命中的敵人造成魔法傷害與束縛，是抓人和自保的核心技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "稜光障壁",
           "icon": "../assets/images/heroes/skills/lux_03.png",
-          "summary": "丟出光杖，去程與回程都能為碰到的友軍提供護盾。"
+          "summary": "投出光杖，去程與回程都能為碰到的友軍提供護盾；調整站位可讓同一名隊友吃到兩段。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "光明異點",
           "icon": "../assets/images/heroes/skills/lux_04.webp",
-          "summary": "創造光區造成緩速並提供視野，可再次施放引爆造成魔法傷害。"
+          "summary": "放置光區提供視野並緩速敵人，再次施放會引爆造成範圍魔法傷害，是主要清線與消耗技能。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "終極閃光",
           "icon": "../assets/images/heroes/skills/lux_05.webp",
-          "summary": "短暫蓄力後發射超遠距光束，對直線所有敵人造成大量魔法傷害並觸發被動標記。"
+          "summary": "短暫蓄力後發射超遠距光束，對直線敵人造成大量魔法傷害，並觸發與刷新被動標記。"
         }
       ],
-      "mechanics": [],
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-25",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "對線安全消耗",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技緩速"
+            },
+            {
+              "key": "E",
+              "label": "引爆3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻引爆標記"
+            }
+          ],
+          "note": "先用三技緩速後再決定引爆時機；距離安全才補普攻，避免為了被動走進對方反打範圍。"
+        },
+        {
+          "name": "束縛完整爆發",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技束縛"
+            },
+            {
+              "key": "E",
+              "label": "3技放置"
+            },
+            {
+              "key": "R",
+              "label": "4技光束"
+            },
+            {
+              "key": "E",
+              "label": "引爆3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "一技命中後把三技放在腳下再接大絕，最後引爆三技；能安全靠近時才補普攻收尾。"
+        },
+        {
+          "name": "物件區抓人",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技探草"
+            },
+            {
+              "key": "Q",
+              "label": "1技束縛"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技護盾"
+            }
+          ],
+          "note": "先用三技取得視野與減速，再以一技鎖定目標；施放大絕後立即用護盾保護跟進的前排。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "mel-mid",
@@ -27774,37 +27624,38 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "B",
-      "position": "控制法師／遠距消耗",
+      "position": "遠距法師／投射反制／奪目處決",
       "tags": [
-        "清線",
         "消耗",
-        "團戰"
+        "反射",
+        "禁錮",
+        "處決"
       ],
       "ratings": {
-        "單排推薦": 3,
+        "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 2,
+        "Blind Pick": 4,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
         "arcane-comet",
         "scorch",
-        "transcendence",
         "manaflow-band",
+        "transcendence",
         "bone-plating"
       ],
       "items": [
         "magic-high-12",
         "magic-high-25",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-13"
+        "magic-high-21",
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
@@ -27836,24 +27687,24 @@
       },
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "斯溫"
+          "拉克絲",
+          "薇可絲",
+          "瑟菈紛"
         ],
         "bad": [
-          "劫",
           "飛斯",
-          "卡薩丁"
+          "劫",
+          "卡特蓮娜"
         ],
-        "ban": "劫"
+        "ban": "飛斯"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技與強化普攻累積奪目層數，三技限制敵人走位。二技的反制價值遠高於一般換血，面對關鍵投射技能時務必保留，不要為了小傷害提前交掉。",
+        "中期": "推線後與隊友控制鏈配合，三技命中便能接一技與強化普攻快速疊層。物件團留意敵方大招方向，成功反制投射技能可能直接改變整場會戰。",
+        "後期": "保持遠距離持續疊加奪目，等多名敵人累積足夠層數後再施放大絕。二技用來保護自己或核心隊友周圍的關鍵角度，避免走到刺客可直接貼臉的位置。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以技能和強化普攻持續疊加奪目，再用大絕完成範圍處決；二技能反制關鍵投射技能，但對近身刺客的容錯較低。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/mel.webp",
       "abilities": [
         {
@@ -27861,44 +27712,119 @@
           "label": "被動",
           "title": "炙灼耀輝",
           "icon": "../assets/images/heroes/skills/mel_01.png",
-          "summary": "施放技能會累積額外射彈強化下次普攻；造成傷害會疊加奪目，達處決門檻時消耗層數擊殺目標。"
+          "summary": "施放技能後，下一次普攻會增加額外射彈，最多累積多發；技能與普攻會疊加奪目，達到斬殺條件時可處決目標。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "絢輝彈幕",
           "icon": "../assets/images/heroes/skills/mel_02.png",
-          "summary": "向指定區域發射多枚光彈，連續命中可快速疊加奪目並造成範圍魔法傷害。"
+          "summary": "向指定區域發射多枚光彈造成連續魔法傷害，適合清線、消耗與快速疊加奪目。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "叱返金身",
           "icon": "../assets/images/heroes/skills/mel_03.webp",
-          "summary": "製造防護屏障並反射可反射的敵方投射物，是對抗關鍵遠程技能的核心。"
+          "summary": "進入短暫防護狀態，反制符合條件的敵方投射技能並將其返還；是梅爾最重要的防守與反打工具。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "烈陽羅網",
           "icon": "../assets/images/heroes/skills/mel_04.png",
-          "summary": "投出光能束縛區域，對敵人造成傷害與控制，限制其走位。"
+          "summary": "向前釋放光束形成控制區域，對敵人造成傷害、緩速並限制移動，方便接續一技與普攻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "無垠天照",
           "icon": "../assets/images/heroes/skills/mel_05.webp",
-          "summary": "引爆所有帶有奪目層數的敵人，依疊層造成大範圍魔法傷害，適合團戰收尾。"
+          "summary": "引爆敵方英雄身上的奪目層數，對所有已被標記的目標造成傷害；層數越高，收尾威脅越大。"
         }
       ],
-      "mechanics": [],
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-25",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "對線疊層消耗",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技限制走位"
+            },
+            {
+              "key": "Q",
+              "label": "1技彈幕"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            }
+          ],
+          "note": "先用三技讓敵人難以離開一技區域，接強化普攻快速累積奪目；不要為了補普攻越過兵線。"
+        },
+        {
+          "name": "反射反打",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技反制"
+            },
+            {
+              "key": "E",
+              "label": "3技控制"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            }
+          ],
+          "note": "看準關鍵投射技能開二技，成功反制後立刻用三技限制對手，再接一技與普攻。"
+        },
+        {
+          "name": "團戰範圍處決",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技命中多人"
+            },
+            {
+              "key": "Q",
+              "label": "1技疊層"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技引爆"
+            }
+          ],
+          "note": "先對多名敵人疊加奪目，確認血量與層數進入收尾範圍後再開大，不要把大絕當成固定起手。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "morgana-mid",
@@ -28036,136 +27962,6 @@
       "reviewedAt": "2026-07-28"
     },
     {
-      "id": "nasus-mid",
-      "baseId": "nasus",
-      "name": "納瑟斯",
-      "enName": "Nasus",
-      "role": "中路",
-      "roleId": "mid",
-      "tier": "B",
-      "position": "前排法坦／開戰支援",
-      "tags": [
-        "坦度",
-        "開戰",
-        "支援"
-      ],
-      "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
-        "對線強度": 4,
-        "團戰影響力": 5
-      },
-      "runes": [
-        "grasp",
-        "courage-of-colossus",
-        "bone-plating",
-        "overgrowth",
-        "triumph"
-      ],
-      "items": [
-        "defense-high-19",
-        "defense-high-06",
-        "defense-high-08",
-        "defense-high-14",
-        "defense-high-15"
-      ],
-      "boots": [
-        "chain-army-boots",
-        "armored-warboots"
-      ],
-      "spells": [
-        "flash",
-        "ignite"
-      ],
-      "skillOrder": "Q > W > E",
-      "matchups": {
-        "good": [
-          "劫",
-          "飛斯",
-          "卡特蓮娜"
-        ],
-        "bad": [
-          "弗拉迪米爾",
-          "維克特",
-          "翱銳龍獸"
-        ],
-        "ban": "弗拉迪米爾"
-      },
-      "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
-      },
-      "summary": "先穩住中線與血量，利用控制或高坦度主動支援河道；中後期以開戰與保護後排為第一優先。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/nasus.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "核心被動機制",
-          "icon": "../assets/images/heroes/skills/nasus_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
-        },
-        {
-          "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
-          "icon": "../assets/images/heroes/skills/nasus_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "W",
-          "label": "二技能",
-          "title": "第二優先技能",
-          "icon": "../assets/images/heroes/skills/nasus_03.png",
-          "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "E",
-          "label": "三技能",
-          "title": "最後升滿技能",
-          "icon": "../assets/images/heroes/skills/nasus_04.png",
-          "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
-          "icon": "../assets/images/heroes/skills/nasus_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
-        }
-      ],
-      "skillSequence": [
-        "Q",
-        "W",
-        "E",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "W",
-        "R",
-        "W",
-        "W",
-        "E",
-        "R",
-        "E",
-        "E"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "大絕"
-      },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true,
-      "mechanics": []
-    },
-    {
       "id": "norra-mid",
       "baseId": "norra",
       "name": "諾拉",
@@ -28301,37 +28097,38 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "S+",
-      "position": "控制法師／遠距消耗",
+      "position": "控制法師／球體拉扯／團戰核心",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "持續輸出",
+        "護盾",
+        "加減速",
+        "範圍控制"
       ],
       "ratings": {
         "單排推薦": 5,
         "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 4,
+        "操作難度": 4,
+        "Blind Pick": 5,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
-        "transcendence",
+        "phase-rush",
         "manaflow-band",
+        "transcendence",
+        "gathering-storm",
         "bone-plating"
       ],
       "items": [
+        "magic-high-19",
         "magic-high-12",
-        "magic-high-25",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-13"
+        "magic-high-25",
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
@@ -28359,67 +28156,151 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
+          "雷茲",
           "安妮",
-          "維迦",
           "斯溫"
         ],
         "bad": [
-          "劫",
           "飛斯",
-          "卡薩丁"
+          "劫",
+          "卡特蓮娜"
         ],
-        "ban": "劫"
+        "ban": "飛斯"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技改變球體位置後接二技消耗，普攻對同一目標會逐步增傷，可在安全距離補上。球體離自己太遠時先收回，不要在沒有球的情況下與刺客換血。",
+        "中期": "推完線後把球交給有進場能力的隊友，利用三技護盾與雙防陪同進河道。大絕不一定要追求五人，拉到敵方核心或阻止刺客切入就能創造勝勢。",
+        "後期": "持續以一技與二技控制狹窄入口，球體位置比自身站位更重要。團戰先確認球在誰身上，再決定大絕；錯認球位是最容易造成空大的失誤。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "以球體位置同時完成消耗、護盾與範圍控制，對線穩定且團戰上限極高；熟練球位管理後能成為可靠的 Blind Pick。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/orianna.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "魔法發條",
+          "icon": "../assets/images/heroes/skills/orianna_01.webp",
+          "summary": "普攻附帶額外魔法傷害，連續攻擊同一目標時額外傷害會提高，適合在技能間穿插普攻。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/orianna_01.webp",
-          "summary": "主要遠距消耗與清線技能。"
+          "title": "指令：貫穿",
+          "icon": "../assets/images/heroes/skills/orianna_02.webp",
+          "summary": "指揮球體飛向指定位置，對路徑敵人造成魔法傷害；所有其他技能都以球體所在位置為中心。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/orianna_02.webp",
-          "summary": "第二輸出或功能技能。"
+          "title": "指令：失衡",
+          "icon": "../assets/images/heroes/skills/orianna_03.png",
+          "summary": "球體釋放脈衝造成範圍傷害，留下使友軍加速、敵軍緩速的區域，用於換血與拉扯。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/orianna_03.png",
-          "summary": "控制／限制走位技能，物件團前價值很高。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "指令：守護",
           "icon": "../assets/images/heroes/skills/orianna_04.webp",
-          "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+          "summary": "使球體附著友軍並提供護盾與雙防，飛行路徑也會傷害敵人；可把球安全送到進場隊友身上。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/orianna_05.webp"
+          "label": "4 技",
+          "title": "終極指令：脈衝",
+          "icon": "../assets/images/heroes/skills/orianna_05.webp",
+          "summary": "短暫延遲後將球體周圍敵人拉向中心並造成大量魔法傷害，是開團與反開的關鍵。"
         }
       ],
-      "mechanics": []
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-sapphire"
+      ],
+      "coreItems": [
+        "magic-high-19",
+        "magic-high-12",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "基礎換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技移球"
+            },
+            {
+              "key": "W",
+              "label": "2技脈衝"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技收球"
+            }
+          ],
+          "note": "一技接二技命中後補普攻，再用三技收回球體與護盾自己，完成安全短換血。"
+        },
+        {
+          "name": "前排帶球開戰",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技附著前排"
+            },
+            {
+              "key": "R",
+              "label": "4技拉人"
+            },
+            {
+              "key": "W",
+              "label": "2技傷害"
+            },
+            {
+              "key": "Q",
+              "label": "1技追擊"
+            }
+          ],
+          "note": "先把球交給進場隊友，等敵人聚集後開大；二技接續減速，最後用一技調整球位追擊。"
+        },
+        {
+          "name": "反刺客保排",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技護盾主力"
+            },
+            {
+              "key": "W",
+              "label": "2技減速"
+            },
+            {
+              "key": "R",
+              "label": "4技反拉"
+            },
+            {
+              "key": "Q",
+              "label": "1技輸出"
+            }
+          ],
+          "note": "刺客切入時先保護己方主力，再用二技與大絕把敵人留在球體區域，不必冒險向前開團。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "ryze-mid",
@@ -28429,257 +28310,215 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "S+",
-      "position": "持續法傷／中距離團戰",
+      "position": "戰鬥法師／法力成長／持續連鎖",
       "tags": [
         "持續輸出",
-        "團戰",
-        "成長"
+        "禁錮",
+        "擴散傷害",
+        "團隊傳送"
       ],
       "ratings": {
         "單排推薦": 5,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 4,
-        "對線強度": 4,
-        "團戰影響力": 4
+        "新手推薦": 2,
+        "操作難度": 4,
+        "Blind Pick": 3,
+        "對線強度": 3,
+        "團戰影響力": 5
       },
       "runes": [
-        "conqueror",
-        "brutal",
-        "coup-de-grace",
-        "legend-tenacity",
-        "transcendence"
+        "phase-rush",
+        "manaflow-band",
+        "transcendence",
+        "gathering-storm",
+        "bone-plating"
       ],
       "items": [
         "magic-high-17",
-        "magic-high-23",
-        "magic-high-16",
+        "magic-high-19",
         "magic-high-14",
+        "magic-high-23",
         "magic-high-08"
       ],
       "boots": [
-        "mana-boots",
+        "ionian-boots",
         "blood-mage-boots"
       ],
       "spells": [
         "flash",
         "barrier"
       ],
-      "skillOrder": "Q > W > E",
+      "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "卡特蓮娜"
+          "斯溫",
+          "加里歐",
+          "卡薩丁"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "麗珊卓"
+          "星朵拉",
+          "拉克絲",
+          "薇可絲"
         ],
-        "ban": "劫"
+        "ban": "星朵拉"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "前期魔力與射程有限，以三技接一技清線並控制藍量。二技不要固定拿來消耗，面對打野或刺客時保留法術湧動接禁錮能大幅提高生存率。",
+        "中期": "時光與大天使成形後開始進入強勢期，推線後用大絕帶隊轉線、包夾或快速進入物件區。連招中觸發相位衝擊，保持中距離反覆輸出。",
+        "後期": "不要站在最前方硬吃控制，沿著前排以三技與一技擴散傷害。大絕可用於拆塔轉線、撤退或封住敵方退路，施放前先以標記確認隊友願意同行。"
       },
-      "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "最大魔力同時轉化為輸出與續戰，透過技能刷新反覆連鎖，並以大絕改變轉線節奏；短射程與高操作密度是主要門檻。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/ryze.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "奧術專精",
           "icon": "../assets/images/heroes/skills/ryze_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "技能會依額外魔力提高傷害，魔攻也會增加最大魔力，使法力與輸出互相成長。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "超負荷",
           "icon": "../assets/images/heroes/skills/ryze_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "發射直線能量彈；其他基礎技能會重置冷卻，疊滿符文後命中可獲得爆發跑速。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "符文禁錮",
           "icon": "../assets/images/heroes/skills/ryze_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "對單一目標造成魔法傷害與控制；目標帶有法術湧動時能形成更穩定的束縛。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "法術湧動",
           "icon": "../assets/images/heroes/skills/ryze_04.webp",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "標記目標並讓超負荷產生擴散與增傷效果，是清線與連招的核心中繼技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "扭轉之境",
           "icon": "../assets/images/heroes/skills/ryze_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "開啟延遲傳送門，把範圍內友軍與士兵送往目標區域，適合轉線與繞後。"
         }
       ],
       "skillSequence": [
         "Q",
-        "W",
         "E",
+        "W",
         "Q",
         "R",
         "Q",
         "Q",
-        "W",
-        "R",
-        "W",
-        "W",
         "E",
         "R",
         "E",
-        "E"
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
       ],
       "skillLabels": {
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": []
-    },
-    {
-      "id": "singed-mid",
-      "baseId": "singed",
-      "name": "辛吉德",
-      "enName": "Singed",
-      "role": "中路",
-      "roleId": "mid",
-      "tier": "B",
-      "position": "前排法坦／開戰支援",
-      "tags": [
-        "坦度",
-        "開戰",
-        "支援"
+      "skillIconCount": 5,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-sapphire"
       ],
-      "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
-        "對線強度": 4,
-        "團戰影響力": 5
-      },
-      "runes": [
-        "grasp",
-        "courage-of-colossus",
-        "bone-plating",
-        "overgrowth",
-        "triumph"
+      "coreItems": [
+        "magic-high-17",
+        "magic-high-19",
+        "magic-high-14"
       ],
-      "items": [
-        "defense-high-19",
-        "defense-high-06",
-        "defense-high-08",
-        "defense-high-14",
-        "defense-high-15"
-      ],
-      "boots": [
-        "chain-army-boots",
-        "armored-warboots"
-      ],
-      "spells": [
-        "flash",
-        "ignite"
-      ],
-      "skillOrder": "Q > W > E",
-      "matchups": {
-        "good": [
-          "劫",
-          "飛斯",
-          "卡特蓮娜"
-        ],
-        "bad": [
-          "弗拉迪米爾",
-          "維克特",
-          "翱銳龍獸"
-        ],
-        "ban": "弗拉迪米爾"
-      },
-      "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
-      },
-      "summary": "先穩住中線與血量，利用控制或高坦度主動支援河道；中後期以開戰與保護後排為第一優先。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/singed.webp",
-      "abilities": [
+      "combos": [
         {
-          "key": "P",
-          "label": "被動",
-          "title": "核心被動機制",
-          "icon": "../assets/images/heroes/skills/singed_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "name": "定身爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技標記"
+            },
+            {
+              "key": "W",
+              "label": "2技定身"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "先用三技掛上湧泉再接二技定身，接續兩次一技刷新輸出。"
         },
         {
-          "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
-          "icon": "../assets/images/heroes/skills/singed_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "name": "快速消耗",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "不需要長時間站樁時，以三技接一技先打傷害，再用二技減速後補一技。"
         },
         {
-          "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
-          "icon": "../assets/images/heroes/skills/singed_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
-          "icon": "../assets/images/heroes/skills/singed_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
-          "icon": "../assets/images/heroes/skills/singed_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "name": "大絕轉線",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "用大絕帶隊友繞後或轉移物件，落地後立刻定身優先目標。"
         }
       ],
-      "skillSequence": [
-        "Q",
-        "W",
-        "E",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "W",
-        "R",
-        "W",
-        "W",
-        "E",
-        "R",
-        "E",
-        "E"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "大絕"
-      },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true,
-      "mechanics": []
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "swain-mid",
@@ -28689,127 +28528,215 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "B",
-      "position": "持續法傷／中距離團戰",
+      "position": "戰鬥法師／靈魂成長／吸血前排",
       "tags": [
-        "持續輸出",
-        "團戰",
-        "成長"
+        "持續傷害",
+        "拉回控制",
+        "永久生命",
+        "範圍吸血"
       ],
       "ratings": {
         "單排推薦": 3,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 2,
-        "對線強度": 4,
-        "團戰影響力": 4
+        "Blind Pick": 3,
+        "對線強度": 3,
+        "團戰影響力": 5
       },
       "runes": [
         "conqueror",
         "brutal",
-        "coup-de-grace",
+        "last-stand",
         "legend-tenacity",
-        "transcendence"
+        "overgrowth"
       ],
       "items": [
-        "magic-high-17",
         "magic-high-23",
         "magic-high-16",
+        "magic-high-15",
         "magic-high-14",
         "magic-high-08"
       ],
       "boots": [
-        "mana-boots",
+        "ionian-boots",
         "blood-mage-boots"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
-      "skillOrder": "Q > W > E",
+      "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "卡特蓮娜"
+          "阿卡莉",
+          "卡特蓮娜",
+          "犽宿"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "麗珊卓"
+          "拉克絲",
+          "奧莉安娜",
+          "星朵拉"
         ],
-        "ban": "劫"
+        "ban": "拉克絲"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用三技往返抓住敵人後拉回，接二技封住落點與近距離一技。每次取得靈魂碎片都會提高續戰，但魔力有限，不要為了遠距二技頻繁空放。",
+        "中期": "裝備成形後在飛龍與預示者區的狹窄團戰最強，開大後盡量同時汲取多名敵人。三技留住想離開範圍的目標，二段大絕等敵方血量降低再引爆。",
+        "後期": "站在己方前排與後排之間，既能承受傷害也能用拉回保護主力。面對長射程陣容不要直線追擊，等待隊友控制或從側翼進入吸血範圍。"
       },
-      "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "收集靈魂碎片永久提高生命，靠拉回控制與大絕範圍吸血主宰多人長戰；面對遠距離消耗時較難靠近並維持大絕。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/swain.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "群鴉盛宴",
           "icon": "../assets/images/heroes/skills/swain_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "收集靈魂碎片時治療自己並永久增加最大生命，讓斯溫越打越能承受長戰。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "靈魂拷問",
           "icon": "../assets/images/heroes/skills/swain_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前釋放多道魔法彈，距離越近命中越多，貼身時爆發最高。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "真知魔眼",
           "icon": "../assets/images/heroes/skills/swain_03.webp",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "在遠距區域引爆魔眼，造成傷害、緩速與揭露，命中英雄可取得靈魂碎片。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "影之爪",
           "icon": "../assets/images/heroes/skills/swain_04.webp",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "魔爪往返造成控制；命中後可把目標拉近並取得靈魂碎片。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "魔君降生",
           "icon": "../assets/images/heroes/skills/swain_05.webp",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "持續汲取周圍敵人生命並維持惡魔型態，之後可施放魔燄造成範圍傷害與緩速。"
         }
       ],
       "skillSequence": [
         "Q",
-        "W",
         "E",
+        "W",
         "Q",
         "R",
         "Q",
         "Q",
-        "W",
-        "R",
-        "W",
-        "W",
         "E",
         "R",
         "E",
-        "E"
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
       ],
       "skillLabels": {
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": []
+      "skillIconCount": 5,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-23",
+        "magic-high-16",
+        "magic-high-15"
+      ],
+      "combos": [
+        {
+          "name": "拉回爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "一段3技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技拉回"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "三技命中後拉回並疊加魂屑，二技封住落點，再近距離用一技打滿傷害。"
+        },
+        {
+          "name": "大絕長打",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "R",
+              "label": "二段4技"
+            }
+          ],
+          "note": "大絕開啟後留在多人範圍內吸取生命，敵人血量降低時再引爆。"
+        },
+        {
+          "name": "遠程留人",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "E",
+              "label": "拉回"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "先用二技逼迫走位，再用三技抓住退路，拉回後貼近施放一技。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "syndra-mid",
@@ -28819,37 +28746,38 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "A",
-      "position": "控制法師／遠距消耗",
+      "position": "爆發法師／遠距暈眩／單點處決",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "爆發",
+        "推球暈眩",
+        "區域控制",
+        "處決"
       ],
       "ratings": {
         "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 3,
+        "新手推薦": 2,
+        "操作難度": 4,
+        "Blind Pick": 4,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
-        "transcendence",
-        "manaflow-band",
-        "bone-plating"
+        "electrocute",
+        "cheap-shot",
+        "eyeball-collector",
+        "relentless-hunter",
+        "manaflow-band"
       ],
       "items": [
         "magic-high-12",
         "magic-high-25",
+        "magic-high-21",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-13"
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
@@ -28877,67 +28805,155 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
           "安妮",
-          "維迦",
+          "雷茲",
           "斯溫"
         ],
         "bad": [
-          "劫",
           "飛斯",
-          "卡薩丁"
+          "劫",
+          "犽宿"
         ],
-        "ban": "劫"
+        "ban": "飛斯"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "一技生成星體並消耗，三技留作推球暈眩或阻止近戰切入。忿怒碎片需要穩定命中技能累積，不要為了多打一段傷害把全部控制交空。",
+        "中期": "物件刷新前先在入口累積星體，利用一技接三技從遠處暈眩關鍵目標。大絕的傷害會隨場上星體增加，先佈球再施放才能打出完整處決。",
+        "後期": "站在側後方以推球暈眩控制狹窄地形，敵方刺客未現身前保留三技。大絕優先處理已被控制的核心，不要把所有星體浪費在難以擊殺的前排。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "透過星體佈置與三技推球提供超遠暈眩，再以多顆星體大絕處決單一目標；控制技能空掉時自保能力明顯下降。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/syndra.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "卓越",
+          "icon": "../assets/images/heroes/skills/syndra_01.png",
+          "summary": "升級技能或以技能傷害英雄可取得忿怒碎片；累積碎片會強化各技能，並提高魔法攻擊。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/syndra_01.png",
-          "summary": "主要遠距消耗與清線技能。"
+          "title": "黑暗星體",
+          "icon": "../assets/images/heroes/skills/syndra_02.webp",
+          "summary": "在指定位置生成黑暗星體並造成魔法傷害；星體會留在場上一段時間，供其他技能操控。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/syndra_02.webp",
-          "summary": "第二輸出或功能技能。"
+          "title": "意志之力",
+          "icon": "../assets/images/heroes/skills/syndra_03.png",
+          "summary": "抓取附近星體或可作用單位，再次施放將其投向指定區域，造成範圍傷害與緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/syndra_03.png",
-          "summary": "控制／限制走位技能，物件團前價值很高。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "虛弱潰散",
           "icon": "../assets/images/heroes/skills/syndra_04.png",
-          "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+          "summary": "向前釋放扇形衝擊並擊退敵人；若推動黑暗星體，星體會沿路暈眩命中的敵人。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/syndra_05.png"
+          "label": "4 技",
+          "title": "超能解放",
+          "icon": "../assets/images/heroes/skills/syndra_05.png",
+          "summary": "將自身與附近所有黑暗星體射向指定敵方英雄，星體越多傷害越高；強化後能處決低血量目標。"
         }
       ],
-      "mechanics": []
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-25",
+        "magic-high-21"
+      ],
+      "combos": [
+        {
+          "name": "遠距推球暈眩",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技生成星體"
+            },
+            {
+              "key": "E",
+              "label": "3技推球"
+            },
+            {
+              "key": "W",
+              "label": "2技抓球"
+            },
+            {
+              "key": "W",
+              "label": "投擲2技"
+            }
+          ],
+          "note": "一技與三技快速連放可從遠距暈眩；控制命中後再用二技補上範圍傷害與緩速。"
+        },
+        {
+          "name": "完整單點爆發",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技暈眩"
+            },
+            {
+              "key": "W",
+              "label": "2技投擲"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "4技處決"
+            }
+          ],
+          "note": "先用控制確保後續技能命中，盡量在場上留下更多星體後再開大，提高單點爆發。"
+        },
+        {
+          "name": "反突進自保",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技擊退"
+            },
+            {
+              "key": "Q",
+              "label": "1技腳下"
+            },
+            {
+              "key": "W",
+              "label": "2技緩速"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            }
+          ],
+          "note": "刺客貼近時優先用三技直接擊退，不必強求推球暈眩；拉開後再補星體與大絕反殺。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "taliyah-mid",
@@ -29591,41 +29607,42 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "B",
-      "position": "控制法師／遠距消耗",
+      "position": "反突進法師／恐懼控制／大絕收割",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "恐懼",
+        "反位移",
+        "爆發",
+        "遠距追擊"
       ],
       "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
+        "單排推薦": 4,
+        "新手推薦": 4,
+        "操作難度": 2,
+        "Blind Pick": 4,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
-        "transcendence",
-        "manaflow-band",
-        "bone-plating"
+        "electrocute",
+        "cheap-shot",
+        "eyeball-collector",
+        "relentless-hunter",
+        "manaflow-band"
       ],
       "items": [
         "magic-high-12",
-        "magic-high-25",
+        "magic-high-21",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-13"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
       "skillOrder": "Q > W > E",
       "skillSequence": [
@@ -29649,67 +29666,151 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "斯溫"
+          "犽宿",
+          "犽凝",
+          "阿卡莉"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "卡薩丁"
+          "拉克絲",
+          "星朵拉",
+          "奧莉安娜"
         ],
-        "ban": "劫"
+        "ban": "拉克絲"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "觀察被動恐懼是否可用，再決定用一技清線或保留給對方突進。敵人使用位移會留下陰影標記，普攻或技能消耗標記可加快被動回復。",
+        "中期": "大絕命中脆皮後不要立刻二段進場，先確認敵方控制與隊友距離。對方交掉關鍵技能後再飛入，以二技恐懼周圍敵人並完成爆發。",
+        "後期": "主要任務是限制突進英雄與尋找收割角度。被動準備好時站在己方主力附近反開；若敵方後排殘血，再用大絕跨越前排完成追擊。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "被動恐懼能中斷位移並懲罰頻繁突進的英雄，大絕命中後可遠距切入收割；面對超長射程法師時較難取得主動。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/vex.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "無望厄障",
+          "icon": "../assets/images/heroes/skills/vex_01.webp",
+          "summary": "週期性強化下一個基礎技能，使其恐懼並中斷突進；附近敵人位移時會被標記，消耗標記可造成額外傷害並降低被動冷卻。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/vex_01.webp",
-          "summary": "主要遠距消耗與清線技能。"
+          "title": "冷酷暗箭",
+          "icon": "../assets/images/heroes/skills/vex_02.webp",
+          "summary": "向前發射闇影波，起初寬而慢，隨後變窄加速；是主要清線與遠距輸出技能。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/vex_02.webp",
-          "summary": "第二輸出或功能技能。"
+          "title": "個人舒適圈",
+          "icon": "../assets/images/heroes/skills/vex_03.webp",
+          "summary": "對周圍敵人造成魔法傷害並獲得護盾；搭配被動可在刺客貼近時立即範圍恐懼。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/vex_03.webp",
-          "summary": "控制／限制走位技能，物件團前價值很高。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "闇黑迫近",
           "icon": "../assets/images/heroes/skills/vex_04.png",
-          "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+          "summary": "向指定區域投出闇影造成傷害與緩速，並標記命中的敵人；距離越遠範圍越大。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/vex_05.png"
+          "label": "4 技",
+          "title": "飛影急襲",
+          "icon": "../assets/images/heroes/skills/vex_05.png",
+          "summary": "向前射出闇影並標記首名英雄，再次施放可飛向目標造成傷害；參與擊殺後可重置追擊。"
         }
       ],
-      "mechanics": []
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-21",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "對線標記消耗",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技緩速標記"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻消耗標記"
+            }
+          ],
+          "note": "三技緩速提高一技命中率，最後補普攻消耗陰影標記並加快恐懼回復。"
+        },
+        {
+          "name": "反突進恐懼",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技範圍恐懼"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "被動準備好時用二技立即中斷貼臉英雄，再以三技與一技拉開輸出。"
+        },
+        {
+          "name": "大絕收割",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技命中"
+            },
+            {
+              "key": "R",
+              "label": "二段飛入"
+            },
+            {
+              "key": "W",
+              "label": "2技恐懼"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "確認敵方控制已交或目標進入斬殺線再二段進場；落地後用二技恐懼提高安全性。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "viktor-mid",
@@ -29719,37 +29820,38 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "A",
-      "position": "控制法師／遠距消耗",
+      "position": "成長法師／雷射消耗／區域控制",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "成長",
+        "遠距消耗",
+        "緩速",
+        "持續團戰"
       ],
       "ratings": {
         "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 3,
+        "新手推薦": 2,
+        "操作難度": 4,
+        "Blind Pick": 4,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
         "arcane-comet",
         "scorch",
-        "transcendence",
         "manaflow-band",
+        "transcendence",
         "bone-plating"
       ],
       "items": [
         "magic-high-12",
         "magic-high-25",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-13"
+        "magic-high-22",
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
@@ -29777,67 +29879,151 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "斯溫"
+          "斯溫",
+          "雷茲",
+          "安妮"
         ],
         "bad": [
-          "劫",
           "飛斯",
-          "卡薩丁"
+          "劫",
+          "伊瑞莉雅"
         ],
-        "ban": "劫"
+        "ban": "飛斯"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "以三技從安全距離同時清兵與消耗，一技護盾可用來完成短換血。擊殺單位累積進化資源後優先強化主要輸出技能，但不要為了貪兵站在刺客可直接進場的位置。",
+        "中期": "兩件裝與技能進化後，物件區的狹窄入口最適合引力場與大絕。先用三技壓低血量，敵人進場時再放二技限制走位，避免把控制區域放得太早。",
+        "後期": "維持最大雷射距離持續輸出，大絕可跟隨目標打斷施法並逼迫後排移動。團戰不必追求一次爆發，反覆三技與強化技能的持續壓力更重要。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "擊殺單位取得進化後逐步成長，以雷射遠距消耗、引力場封路與大絕持續追擊掌控團戰；需要熟練技能方向與安全站位。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
       "avatar": "../assets/images/heroes/portraits/viktor.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "榮光進化",
+          "icon": "../assets/images/heroes/skills/viktor_01.png",
+          "summary": "擊殺敵軍後取得進化資源，可依序強化基礎技能；完成多次強化後，持續技能也能附加緩速。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/viktor_01.png",
-          "summary": "主要遠距消耗與清線技能。"
+          "title": "能量守恆",
+          "icon": "../assets/images/heroes/skills/viktor_02.png",
+          "summary": "對目標造成魔法傷害並獲得護盾，下一次普攻會被強化；進化後可提高機動性與換血效率。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/viktor_02.png",
-          "summary": "第二輸出或功能技能。"
+          "title": "萬有引力產生裝置",
+          "icon": "../assets/images/heroes/skills/viktor_03.png",
+          "summary": "在指定區域製造引力場，持續緩速敵人；停留過久的目標會被暈眩，用於封路與反開。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/viktor_03.png",
-          "summary": "控制／限制走位技能，物件團前價值很高。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "海克斯科技射線",
           "icon": "../assets/images/heroes/skills/viktor_04.png",
-          "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+          "summary": "沿指定方向發射雷射造成魔法傷害；進化後會產生延遲爆炸，是主要清線與遠距輸出技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/viktor_05.png"
+          "label": "4 技",
+          "title": "奧術風暴",
+          "icon": "../assets/images/heroes/skills/viktor_05.png",
+          "summary": "在目標區域召喚可持續移動的風暴，造成初始與持續傷害，並能干擾敵方關鍵施法。"
         }
       ],
-      "mechanics": []
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-25",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "雷射短換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技雷射"
+            },
+            {
+              "key": "Q",
+              "label": "1技護盾"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            }
+          ],
+          "note": "先用雷射消耗，對方靠近時以一技取得護盾並補強化普攻，完成後立即退回安全距離。"
+        },
+        {
+          "name": "引力場完整輸出",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技封路"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "R",
+              "label": "4技風暴"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            }
+          ],
+          "note": "先把引力場放在敵人退路，再接雷射與大絕；目標被迫停留時再靠近補一技與普攻。"
+        },
+        {
+          "name": "反突進拉扯",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技護盾"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技腳下"
+            },
+            {
+              "key": "E",
+              "label": "3技後撤輸出"
+            }
+          ],
+          "note": "近戰突進時先取得護盾，將引力場放在自己腳下，邊後退邊用雷射輸出，不要原地站樁。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "vladimir-mid",
@@ -35612,6 +35798,911 @@
           "note": "敵方刺客切入時可直接閃現普攻定身，接大絕防止其撤退，再以一技追擊。"
         }
       ]
+    },
+    {
+      "id": "corki-mid",
+      "name": "庫奇",
+      "enName": "Corki",
+      "role": "中路",
+      "roleId": "mid",
+      "tier": "A",
+      "position": "混合傷害／遠距消耗／遊走支援",
+      "tags": [
+        "混合傷害",
+        "消耗",
+        "遊走"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 3,
+        "操作難度": 4,
+        "Blind Pick": 4,
+        "對線強度": 3,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "conqueror",
+        "brutal",
+        "cut-down",
+        "legend-alacrity",
+        "bone-plating"
+      ],
+      "items": [
+        "physical-high-26",
+        "physical-high-23",
+        "physical-high-18",
+        "physical-high-17",
+        "physical-high-11",
+        "physical-high-10"
+      ],
+      "boots": [
+        "gluttonous-greaves",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "汎",
+          "煞蜜拉",
+          "崔絲塔娜"
+        ],
+        "bad": [
+          "伊澤瑞爾",
+          "史矛德",
+          "好運姐"
+        ],
+        "ban": "史矛德"
+      },
+      "playstyle": {
+        "前期": "利用技能清線與消耗，2 技不要隨意往前交。",
+        "中期": "累積大招資源後先遠距離消耗，再配合隊伍進場。",
+        "後期": "保持技能命中率與安全位移，持續輸出比一次爆發更重要。"
+      },
+      "summary": "以技能消耗與強化包裹創造支援角度；正式中路攻略將於後續批次完成。",
+      "sourceNote": "v59 中路名單校正：依使用者提供的遊戲內中路位置篩選截圖新增中路獨立條目；正式攻略將於所屬批次完成。",
+      "avatar": "../assets/images/heroes/portraits/corki.webp",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "海克斯軍火",
+          "icon": "../assets/images/heroes/skills/corki_01.webp",
+          "summary": "普攻傷害轉為混合傷害；週期性可取得特殊補給，大幅強化下一次女武神特攻。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "磷光炸彈",
+          "icon": "../assets/images/heroes/skills/corki_02.webp",
+          "summary": "投擲磷光炸彈造成範圍魔法傷害並短暫揭露區域。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "女武神特攻",
+          "icon": "../assets/images/heroes/skills/corki_03.webp",
+          "summary": "向前飛行並留下燃燒地帶造成持續傷害；特殊補給版本距離與控制效果更強。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "格林機槍",
+          "icon": "../assets/images/heroes/skills/corki_04.webp",
+          "summary": "向前方持續掃射，造成混合傷害並降低敵人的物防與魔防。"
+        },
+        {
+          "key": "R",
+          "label": "4 技",
+          "title": "火箭轟擊",
+          "icon": "../assets/images/heroes/skills/corki_05.webp",
+          "summary": "發射可儲存的導彈造成範圍傷害；每隔數發會變成威力與範圍更大的超級導彈。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "4 技"
+      },
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "baseId": "corki",
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-roster-placeholder-v59",
+      "reviewedAt": "2026-07-28",
+      "midMasterTemplate": "ahri-v58"
+    },
+    {
+      "id": "karma-mid",
+      "baseId": "karma",
+      "name": "卡瑪",
+      "enName": "Karma",
+      "roleId": "mid",
+      "role": "中路",
+      "tier": "A",
+      "position": "功能法師／強化技能／團隊加速",
+      "tags": [
+        "消耗",
+        "護盾",
+        "團隊加速"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 3,
+        "對線強度": 3,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "aery",
+        "font-of-life",
+        "revitalize",
+        "bone-plating",
+        "transcendence"
+      ],
+      "items": [
+        "support-high-05",
+        "support-high-06",
+        "support-high-04",
+        "support-high-03",
+        "support-high-01"
+      ],
+      "boots": [
+        "ionian-boots",
+        "immortal-boots"
+      ],
+      "spells": [
+        "flash",
+        "exhaust"
+      ],
+      "skillOrder": "Q > E > W",
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "4 技"
+      },
+      "matchups": {
+        "good": [
+          "布郎姆",
+          "索娜",
+          "悠咪"
+        ],
+        "bad": [
+          "布里茨",
+          "派克",
+          "雷歐娜"
+        ],
+        "ban": "布里茨"
+      },
+      "playstyle": {
+        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
+        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
+        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+      },
+      "summary": "利用真言強化技能掌握兵線與團戰節奏；正式中路攻略將於後續批次完成。",
+      "sourceNote": "v59 中路名單校正：依使用者提供的遊戲內中路位置篩選截圖新增中路獨立條目；正式攻略將於所屬批次完成。",
+      "avatar": "../assets/images/heroes/portraits/karma.webp",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "真言符印",
+          "icon": "../assets/images/heroes/skills/karma_01.webp",
+          "summary": "施放三次技能後，下個基礎技能會被真言強化，提供更強的傷害、控制或護盾。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "輪迴怒火",
+          "icon": "../assets/images/heroes/skills/karma_02.webp",
+          "summary": "射出靈能彈，命中後造成範圍魔法傷害與緩速；真言強化後會產生二段爆炸。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "特化鏈結",
+          "icon": "../assets/images/heroes/skills/karma_03.webp",
+          "summary": "連結目標造成傷害並揭露位置；連線未被拉斷會再次傷害並定身，真言可強化連結。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "靈能啟示",
+          "icon": "../assets/images/heroes/skills/karma_04.webp",
+          "summary": "為友軍提供護盾與跑速；真言強化可把效果擴散到附近友軍。"
+        },
+        {
+          "key": "R",
+          "label": "4 技",
+          "title": "飛昇擁抱",
+          "icon": "../assets/images/heroes/skills/karma_05.webp",
+          "summary": "在指定區域造成魔法傷害並形成靈能環，短暫延遲後把敵人拉向中心。"
+        }
+      ],
+      "mechanics": [],
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-roster-placeholder-v59",
+      "reviewedAt": "2026-07-28",
+      "midMasterTemplate": "ahri-v58"
+    },
+    {
+      "id": "talon-mid",
+      "baseId": "talon",
+      "name": "塔隆",
+      "enName": "Talon",
+      "role": "中路",
+      "roleId": "mid",
+      "tier": "A",
+      "position": "物理刺客／翻牆遊走／單點爆發",
+      "tags": [
+        "刺客",
+        "遊走",
+        "翻牆"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 3,
+        "前期節奏": 5,
+        "團戰影響力": 3
+      },
+      "runes": [
+        "electrocute",
+        "sudden-impact",
+        "eyeball-collector",
+        "relentless-hunter",
+        "coup-de-grace"
+      ],
+      "items": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-32",
+        "physical-high-27",
+        "physical-high-10"
+      ],
+      "boots": [
+        "armorbreaker-boots",
+        "physical-high-03"
+      ],
+      "spells": [
+        "flash",
+        "smite"
+      ],
+      "skillOrder": "W > Q > E",
+      "matchups": {
+        "good": [
+          "魔甘娜",
+          "費德提克",
+          "奈德麗"
+        ],
+        "bad": [
+          "拉姆斯",
+          "菲艾",
+          "趙信"
+        ],
+        "ban": "拉姆斯"
+      },
+      "playstyle": {
+        "前期": "二技去回程可快速清群體野怪並疊兩層裂傷，一技補第三層後普攻觸發流血。升到三技後利用牆體避開河道視野，頻繁支援壓線過深的路線。",
+        "中期": "塔隆的優勢是比對手更快到達邊線與物件區。先從野區翻牆抓單，逼出閃現或造成減員，再轉向飛龍與預示者，不要只在正面等待開戰。",
+        "後期": "坦克與成形防裝會降低正面爆發價值；耐心找沒有保護的後排，或用大絕潛隱逼出保命技能。完成擊殺後立刻翻牆離場。"
+      },
+      "summary": "清線後利用翻牆快速支援邊線；正式中路攻略將於後續批次完成。",
+      "sourceNote": "v59 中路名單校正：依使用者提供的遊戲內中路位置篩選截圖新增中路獨立條目；正式攻略將於所屬批次完成。",
+      "avatar": "../assets/images/heroes/portraits/talon.webp",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "終焉殘刃",
+          "icon": "../assets/images/heroes/skills/talon_01.png",
+          "summary": "技能命中敵方英雄或大型野怪會附加裂傷，最多三層；對滿層目標普攻會觸發流血，是清野與爆發收尾的核心。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "諾城王道",
+          "icon": "../assets/images/heroes/skills/talon_02.png",
+          "summary": "跳向目標並造成物理傷害；貼身施放時改為近距離刺擊。擊殺目標可回復部分生命並返還冷卻，清野時可用來維持續航。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "迴力匕首",
+          "icon": "../assets/images/heroes/skills/talon_03.png",
+          "summary": "向前扔出匕首，短暫延遲後返回。去程與回程都會造成傷害，回程命中會緩速並疊加裂傷。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "刺客身法",
+          "icon": "../assets/images/heroes/skills/talon_04.png",
+          "summary": "翻越附近地形，讓塔隆能快速穿梭野區與建立意想不到的 Gank 角度；同一段地形在一段時間內不能重複翻越。"
+        },
+        {
+          "key": "R",
+          "label": "4 技",
+          "title": "暗影突襲",
+          "icon": "../assets/images/heroes/skills/talon_05.png",
+          "summary": "向四周射出刀刃並進入潛隱、獲得跑速；離開潛隱或攻擊目標時，刀刃會匯聚至塔隆或被鎖定的敵人。"
+        }
+      ],
+      "skillSequence": [
+        "W",
+        "Q",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "4 技"
+      },
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "combos": [
+        {
+          "name": "三層裂傷爆發",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技去回程"
+            },
+            {
+              "key": "Q",
+              "label": "1技突進"
+            },
+            {
+              "key": "AA",
+              "label": "普攻引爆"
+            }
+          ],
+          "note": "二技去程與回程提供兩層裂傷，再用一技補滿第三層，最後普攻觸發流血。"
+        },
+        {
+          "name": "翻牆 Gank",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技翻牆"
+            },
+            {
+              "key": "W",
+              "label": "2技緩速"
+            },
+            {
+              "key": "Q",
+              "label": "1技貼近"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技追擊"
+            }
+          ],
+          "note": "利用地形繞過河道視野，二技先減速再貼近。敵人仍有位移時保留大絕追擊或撤退。"
+        },
+        {
+          "name": "潛隱切後排",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技潛隱"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻引爆"
+            },
+            {
+              "key": "E",
+              "label": "3技翻牆離場"
+            }
+          ],
+          "note": "大絕加速接近後排並隱藏進場方向，完成裂傷爆發後立刻利用地形撤離。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-32"
+      ],
+      "reviewStatus": "mid-roster-placeholder-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-fourth10-v55",
+      "abilityNamesVerified": "Riot TW",
+      "midMasterTemplate": "ahri-v58"
+    },
+    {
+      "id": "rumble-mid",
+      "baseId": "rumble",
+      "name": "藍寶",
+      "enName": "Rumble",
+      "role": "中路",
+      "roleId": "mid",
+      "tier": "A",
+      "position": "法系鬥士／熱能管理／區域控制",
+      "tags": [
+        "持續傷害",
+        "區域控制",
+        "無魔力"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 3,
+        "對線強度": 4,
+        "團戰影響力": 4
+      },
+      "runes": [
+        "conqueror",
+        "scorch",
+        "transcendence",
+        "gathering-storm",
+        "bone-plating"
+      ],
+      "items": [
+        "magic-high-16",
+        "magic-high-10",
+        "magic-high-15",
+        "magic-high-14",
+        "magic-high-08",
+        "magic-high-05"
+      ],
+      "boots": [
+        "mana-boots",
+        "magic-high-02"
+      ],
+      "spells": [
+        "flash",
+        "ignite"
+      ],
+      "skillOrder": "Q > E > W",
+      "matchups": {
+        "good": [
+          "賽恩",
+          "蒙多醫生",
+          "鄂爾"
+        ],
+        "bad": [
+          "伊瑞莉雅",
+          "卡蜜兒",
+          "潘森"
+        ]
+      },
+      "playstyle": {
+        "前期": "前期控制熱能在高效區間，用 Q 推線消耗，不要在過熱前亂交關鍵技能。",
+        "中期": "中期小龍坑與河道是最佳戰場，大絕斜切撤退路線比直線丟人群更有效。",
+        "後期": "後期先用大絕切割陣型，再決定是否貼近輸出；避免過熱時毫無技能可用。"
+      },
+      "summary": "控制熱能並以大絕切割狹窄地形；正式中路攻略將於後續批次完成。",
+      "sourceNote": "v59 中路名單校正：依使用者提供的遊戲內中路位置篩選截圖新增中路獨立條目；正式攻略將於所屬批次完成。",
+      "avatar": "../assets/images/heroes/portraits/rumble.webp",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "泰坦熱能",
+          "icon": "../assets/images/heroes/skills/rumble_01.webp",
+          "summary": "施放技能累積熱能；進入危險禁區會強化基礎技能，過熱則提升普攻但暫時無法施法。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "火焰噴射器",
+          "icon": "../assets/images/heroes/skills/rumble_02.webp",
+          "summary": "持續灼燒前方扇形區域，對近戰換血與清線都很強，危險禁區時傷害更高。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "鐵屑電磁盾",
+          "icon": "../assets/images/heroes/skills/rumble_03.webp",
+          "summary": "獲得護盾與跑速，危險禁區時兩者都會提升，適合進退與吸收主要傷害。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "高壓電魚叉",
+          "icon": "../assets/images/heroes/skills/rumble_04.webp",
+          "summary": "發射可充能的魚叉造成傷害與緩速，多次命中可持續限制敵人。"
+        },
+        {
+          "key": "R",
+          "label": "4 技",
+          "title": "等離子飛彈",
+          "icon": "../assets/images/heroes/skills/rumble_05.webp",
+          "summary": "在地面鋪設燃燒帶，造成持續傷害與緩速，狹窄物件區能大幅分割戰場。"
+        }
+      ],
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "4 技"
+      },
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "reviewStatus": "mid-roster-placeholder-v59",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-16",
+        "magic-high-10",
+        "magic-high-15"
+      ],
+      "combos": [
+        {
+          "name": "魚叉消耗",
+          "steps": [
+            {
+              "key": "E",
+              "label": "一段3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            }
+          ],
+          "note": "先用魚叉減速再讓火焰完整灼燒，第二發魚叉用來延長緩速。"
+        },
+        {
+          "name": "大絕封路",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "大絕橫切敵人退路後開盾加速貼近，以魚叉與火焰持續輸出。"
+        },
+        {
+          "name": "過熱近戰",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "過熱普攻"
+            }
+          ],
+          "note": "控制熱能在危險區間，技能打完進入過熱後利用強化普攻完成收尾。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58"
+    },
+    {
+      "id": "seraphine-mid",
+      "baseId": "seraphine",
+      "name": "瑟菈紛",
+      "enName": "Seraphine",
+      "roleId": "mid",
+      "role": "中路",
+      "tier": "A",
+      "position": "功能法師／長距離控制／團隊保排",
+      "tags": [
+        "清線",
+        "群體控制",
+        "護盾治療",
+        "團隊增益"
+      ],
+      "ratings": {
+        "單排推薦": 4,
+        "新手推薦": 5,
+        "操作難度": 2,
+        "Blind Pick": 4,
+        "對線強度": 4,
+        "團戰影響力": 5
+      },
+      "runes": [
+        "arcane-comet",
+        "manaflow-band",
+        "transcendence",
+        "gathering-storm",
+        "bone-plating"
+      ],
+      "items": [
+        "magic-high-12",
+        "magic-high-19",
+        "magic-high-25",
+        "magic-high-14",
+        "magic-high-08"
+      ],
+      "boots": [
+        "mana-boots",
+        "sorcerers-shoes"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "skillOrder": "Q > E > W",
+      "skillSequence": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "4 技"
+      },
+      "matchups": {
+        "good": [
+          "斯溫",
+          "維迦",
+          "雷茲"
+        ],
+        "bad": [
+          "飛斯",
+          "劫",
+          "犽宿"
+        ],
+        "ban": "飛斯"
+      },
+      "playstyle": {
+        "前期": "利用被動回音讓一技雙重施放快速清線，三技可先緩速再配合回音形成禁錮。魔力不足時不要每波都強行雙重施法，保留技能應對打野靠近。",
+        "中期": "推線後與隊友抱團最能發揮音符與群體護盾。大絕能穿過友軍延長距離，可從己方前排身後施放，命中後接三技與一技形成長時間控制鏈。",
+        "後期": "保持在隊伍中央偏後位置，依戰況決定回音用在傷害、控制或護盾。敵方進場時先二技保排，隊友開戰後再用大絕沿人群延伸。"
+      },
+      "summary": "依靠回音機制快速清線並強化控制或護盾，大絕可穿過雙方英雄延長距離；與隊友抱團時的團戰影響力遠高於單獨行動。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
+      "avatar": "../assets/images/heroes/portraits/seraphine.webp",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "耀眼星光",
+          "icon": "../assets/images/heroes/skills/seraphine_01.png",
+          "summary": "每第三次基礎技能會重複施放；施放技能也會替附近友軍附上音符，強化下一次普攻的距離與傷害。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "樂音高亢",
+          "icon": "../assets/images/heroes/skills/seraphine_02.png",
+          "summary": "對指定區域造成魔法傷害，目標生命越低傷害越高；回音可連續命中兩次，是主要清線與收尾技能。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "繞樑歌聲",
+          "icon": "../assets/images/heroes/skills/seraphine_03.png",
+          "summary": "為附近友軍提供護盾與跑速；若瑟菈紛已有護盾，還會治療附近友軍，回音可提高團隊續航。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "迷人節奏",
+          "icon": "../assets/images/heroes/skills/seraphine_04.png",
+          "summary": "發射音波造成傷害與緩速；已被緩速的目標會被禁錮，已被定身的目標則會暈眩。"
+        },
+        {
+          "key": "R",
+          "label": "4 技",
+          "title": "要不要來首安可曲",
+          "icon": "../assets/images/heroes/skills/seraphine_05.png",
+          "summary": "發射魅惑音波，命中英雄時會延長距離；可穿過友軍或敵軍，形成跨越整個戰場的開團控制。"
+        }
+      ],
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "mid-first-batch-formal-v59",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-mid-ahri-v58",
+      "hideBan": true,
+      "starterItems": [
+        "basic-sapphire"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-19",
+        "magic-high-25"
+      ],
+      "combos": [
+        {
+          "name": "回音清線消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "回音1技第一段"
+            },
+            {
+              "key": "Q",
+              "label": "回音1技第二段"
+            },
+            {
+              "key": "AA",
+              "label": "音符普攻"
+            }
+          ],
+          "note": "被動準備完成後用雙重一技同時清線與消耗，安全時補音符強化普攻。"
+        },
+        {
+          "name": "回音控制鏈",
+          "steps": [
+            {
+              "key": "E",
+              "label": "回音3技緩速"
+            },
+            {
+              "key": "E",
+              "label": "第二段禁錮"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "音符普攻"
+            }
+          ],
+          "note": "雙重三技第一段先緩速、第二段便可禁錮；目標無法移動時接一技提高命中率。"
+        },
+        {
+          "name": "團戰長距離開團",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技穿過隊友"
+            },
+            {
+              "key": "E",
+              "label": "3技續控"
+            },
+            {
+              "key": "Q",
+              "label": "1技傷害"
+            },
+            {
+              "key": "W",
+              "label": "2技群盾"
+            }
+          ],
+          "note": "從前排或隊友身後施放大絕延長距離，接三技形成控制鏈，最後用二技保護全隊。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     }
   ],
   "laneMeta": {
@@ -35640,9 +36731,10 @@
       "nativeCount": 46,
       "crossCount": 0,
       "avatarComplete": true,
-      "detailComplete": true,
+      "detailComplete": false,
       "portraitMode": "shared",
-      "verification": "依使用者提供的遊戲內位置篩選截圖完成原生英雄名單與頭像核對"
+      "verification": "依使用者提供的遊戲內中路位置篩選截圖校正為 46 位；v59 已完成第一批 12/46（含阿璃母版）。",
+      "detailVersion": "v59-first-batch-12-of-46-7.2a"
     },
     "duo": {
       "name": "飛龍路",
@@ -36558,31 +37650,40 @@
     ],
     "mid": [
       {
-        "id": "ahri",
-        "name": "阿璃",
-        "enName": "Ahri",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "ahri-mid",
-        "avatar": "../assets/images/heroes/portraits/ahri.webp"
-      },
-      {
-        "id": "akali",
-        "name": "阿卡莉",
-        "enName": "Akali",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "akali-mid",
-        "avatar": "../assets/images/heroes/portraits/akali.webp"
-      },
-      {
-        "id": "akshan",
-        "name": "阿克尚",
-        "enName": "Akshan",
+        "id": "lux",
+        "name": "拉克絲",
+        "enName": "Lux",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": "akshan-mid",
-        "avatar": "../assets/images/heroes/portraits/akshan.webp"
+        "detailHeroId": "lux-mid",
+        "avatar": "../assets/images/heroes/portraits/lux.webp"
+      },
+      {
+        "id": "orianna",
+        "name": "奧莉安娜",
+        "enName": "Orianna",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": "orianna-mid",
+        "avatar": "../assets/images/heroes/portraits/orianna.webp"
+      },
+      {
+        "id": "syndra",
+        "name": "星朵拉",
+        "enName": "Syndra",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "syndra-mid",
+        "avatar": "../assets/images/heroes/portraits/syndra.webp"
+      },
+      {
+        "id": "seraphine",
+        "name": "瑟菈紛",
+        "enName": "Seraphine",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "seraphine-mid",
+        "avatar": "../assets/images/heroes/portraits/seraphine.webp"
       },
       {
         "id": "annie",
@@ -36594,13 +37695,40 @@
         "avatar": "../assets/images/heroes/portraits/annie.webp"
       },
       {
-        "id": "aurelion-sol",
-        "name": "翱銳龍獸",
-        "enName": "Aurelion Sol",
+        "id": "ahri",
+        "name": "阿璃",
+        "enName": "Ahri",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": "aurelion-sol-mid",
-        "avatar": "../assets/images/heroes/portraits/aurelion-sol.webp"
+        "detailHeroId": "ahri-mid",
+        "avatar": "../assets/images/heroes/portraits/ahri.webp"
+      },
+      {
+        "id": "corki",
+        "name": "庫奇",
+        "enName": "Corki",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "corki-mid",
+        "avatar": "../assets/images/heroes/portraits/corki.webp"
+      },
+      {
+        "id": "zyra",
+        "name": "枷蘿",
+        "enName": "Zyra",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "zyra-mid",
+        "avatar": "../assets/images/heroes/portraits/zyra.webp"
+      },
+      {
+        "id": "yone",
+        "name": "犽凝",
+        "enName": "Yone",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "yone-mid",
+        "avatar": "../assets/images/heroes/portraits/yone.webp"
       },
       {
         "id": "aurora",
@@ -36612,22 +37740,76 @@
         "avatar": "../assets/images/heroes/portraits/aurora.png"
       },
       {
-        "id": "brand",
-        "name": "布蘭德",
-        "enName": "Brand",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "brand-mid",
-        "avatar": "../assets/images/heroes/portraits/brand.png"
-      },
-      {
-        "id": "diana",
-        "name": "黛安娜",
-        "enName": "Diana",
+        "id": "swain",
+        "name": "斯溫",
+        "enName": "Swain",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": "diana-mid",
-        "avatar": "../assets/images/heroes/portraits/diana.webp"
+        "detailHeroId": "swain-mid",
+        "avatar": "../assets/images/heroes/portraits/swain.webp"
+      },
+      {
+        "id": "ryze",
+        "name": "雷茲",
+        "enName": "Ryze",
+        "tier": "S+",
+        "origin": "native",
+        "detailHeroId": "ryze-mid",
+        "avatar": "../assets/images/heroes/portraits/ryze.webp"
+      },
+      {
+        "id": "mel",
+        "name": "梅爾",
+        "enName": "Mel",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "mel-mid",
+        "avatar": "../assets/images/heroes/portraits/mel.webp"
+      },
+      {
+        "id": "vex",
+        "name": "薇可絲",
+        "enName": "Vex",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "vex-mid",
+        "avatar": "../assets/images/heroes/portraits/vex.webp"
+      },
+      {
+        "id": "viktor",
+        "name": "維克特",
+        "enName": "Viktor",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "viktor-mid",
+        "avatar": "../assets/images/heroes/portraits/viktor.webp"
+      },
+      {
+        "id": "taliyah",
+        "name": "塔莉雅",
+        "enName": "Taliyah",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "taliyah-mid",
+        "avatar": "../assets/images/heroes/portraits/taliyah.webp"
+      },
+      {
+        "id": "norra",
+        "name": "諾拉",
+        "enName": "Norra",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "norra-mid",
+        "avatar": "../assets/images/heroes/portraits/norra.webp"
+      },
+      {
+        "id": "karma",
+        "name": "卡瑪",
+        "enName": "Karma",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "karma-mid",
+        "avatar": "../assets/images/heroes/portraits/karma.webp"
       },
       {
         "id": "ekko",
@@ -36639,6 +37821,105 @@
         "avatar": "../assets/images/heroes/portraits/ekko.webp"
       },
       {
+        "id": "diana",
+        "name": "黛安娜",
+        "enName": "Diana",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "diana-mid",
+        "avatar": "../assets/images/heroes/portraits/diana.webp"
+      },
+      {
+        "id": "zoe",
+        "name": "柔依",
+        "enName": "Zoe",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "zoe-mid",
+        "avatar": "../assets/images/heroes/portraits/zoe.webp"
+      },
+      {
+        "id": "aurelion-sol",
+        "name": "翱鋭龍獸",
+        "enName": "Aurelion Sol",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "aurelion-sol-mid",
+        "avatar": "../assets/images/heroes/portraits/aurelion-sol.webp"
+      },
+      {
+        "id": "twisted-fate",
+        "name": "逆命",
+        "enName": "Twisted Fate",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "twisted-fate-mid",
+        "avatar": "../assets/images/heroes/portraits/twisted-fate.webp"
+      },
+      {
+        "id": "morgana",
+        "name": "魔甘娜",
+        "enName": "Morgana",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "morgana-mid",
+        "avatar": "../assets/images/heroes/portraits/morgana.png"
+      },
+      {
+        "id": "akali",
+        "name": "阿卡莉",
+        "enName": "Akali",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "akali-mid",
+        "avatar": "../assets/images/heroes/portraits/akali.webp"
+      },
+      {
+        "id": "yasuo",
+        "name": "犽宿",
+        "enName": "Yasuo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "yasuo-mid",
+        "avatar": "../assets/images/heroes/portraits/yasuo.webp"
+      },
+      {
+        "id": "zed",
+        "name": "劫",
+        "enName": "Zed",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "zed-mid",
+        "avatar": "../assets/images/heroes/portraits/zed.webp"
+      },
+      {
+        "id": "kayle",
+        "name": "凱爾",
+        "enName": "Kayle",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "kayle-mid",
+        "avatar": "../assets/images/heroes/portraits/kayle.webp"
+      },
+      {
+        "id": "teemo",
+        "name": "提摩",
+        "enName": "Teemo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "teemo-mid",
+        "avatar": "../assets/images/heroes/portraits/teemo.webp"
+      },
+      {
+        "id": "kennen",
+        "name": "凱能",
+        "enName": "Kennen",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "kennen-mid",
+        "avatar": "../assets/images/heroes/portraits/kennen.webp"
+      },
+      {
         "id": "fizz",
         "name": "飛斯",
         "enName": "Fizz",
@@ -36646,6 +37927,42 @@
         "origin": "native",
         "detailHeroId": "fizz-mid",
         "avatar": "../assets/images/heroes/portraits/fizz.webp"
+      },
+      {
+        "id": "ziggs",
+        "name": "希格斯",
+        "enName": "Ziggs",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "ziggs-mid",
+        "avatar": "../assets/images/heroes/portraits/ziggs.webp"
+      },
+      {
+        "id": "vladimir",
+        "name": "弗拉迪米爾",
+        "enName": "Vladimir",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "vladimir-mid",
+        "avatar": "../assets/images/heroes/portraits/vladimir.webp"
+      },
+      {
+        "id": "irelia",
+        "name": "伊瑞莉雅",
+        "enName": "Irelia",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "irelia-mid",
+        "avatar": "../assets/images/heroes/portraits/irelia.webp"
+      },
+      {
+        "id": "katarina",
+        "name": "卡特蓮娜",
+        "enName": "Katarina",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "katarina-mid",
+        "avatar": "../assets/images/heroes/portraits/katarina.webp"
       },
       {
         "id": "galio",
@@ -36657,31 +37974,13 @@
         "avatar": "../assets/images/heroes/portraits/galio.webp"
       },
       {
-        "id": "garen",
-        "name": "蓋倫",
-        "enName": "Garen",
+        "id": "akshan",
+        "name": "阿克尚",
+        "enName": "Akshan",
         "tier": "B",
         "origin": "native",
-        "detailHeroId": "garen-mid",
-        "avatar": "../assets/images/heroes/portraits/garen.webp"
-      },
-      {
-        "id": "heimerdinger",
-        "name": "漢默丁格",
-        "enName": "Heimerdinger",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "heimerdinger-mid",
-        "avatar": "../assets/images/heroes/portraits/heimerdinger.webp"
-      },
-      {
-        "id": "irelia",
-        "name": "伊瑞莉雅",
-        "enName": "Irelia",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "irelia-mid",
-        "avatar": "../assets/images/heroes/portraits/irelia.webp"
+        "detailHeroId": "akshan-mid",
+        "avatar": "../assets/images/heroes/portraits/akshan.webp"
       },
       {
         "id": "jayce",
@@ -36702,42 +38001,6 @@
         "avatar": "../assets/images/heroes/portraits/kassadin.webp"
       },
       {
-        "id": "katarina",
-        "name": "卡特蓮娜",
-        "enName": "Katarina",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "katarina-mid",
-        "avatar": "../assets/images/heroes/portraits/katarina.webp"
-      },
-      {
-        "id": "kayle",
-        "name": "凱爾",
-        "enName": "Kayle",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "kayle-mid",
-        "avatar": "../assets/images/heroes/portraits/kayle.webp"
-      },
-      {
-        "id": "kennen",
-        "name": "凱能",
-        "enName": "Kennen",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kennen-mid",
-        "avatar": "../assets/images/heroes/portraits/kennen.webp"
-      },
-      {
-        "id": "kogmaw",
-        "name": "寇格魔",
-        "enName": "Kog'Maw",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kogmaw-mid",
-        "avatar": "../assets/images/heroes/portraits/kogmaw.webp"
-      },
-      {
         "id": "lissandra",
         "name": "麗珊卓",
         "enName": "Lissandra",
@@ -36747,130 +38010,13 @@
         "avatar": "../assets/images/heroes/portraits/lissandra.webp"
       },
       {
-        "id": "lucian",
-        "name": "路西恩",
-        "enName": "Lucian",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "lucian-mid",
-        "avatar": "../assets/images/heroes/portraits/lucian.webp"
-      },
-      {
-        "id": "lux",
-        "name": "拉克絲",
-        "enName": "Lux",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "lux-mid",
-        "avatar": "../assets/images/heroes/portraits/lux.webp"
-      },
-      {
-        "id": "mel",
-        "name": "梅爾",
-        "enName": "Mel",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "mel-mid",
-        "avatar": "../assets/images/heroes/portraits/mel.webp"
-      },
-      {
-        "id": "morgana",
-        "name": "魔甘娜",
-        "enName": "Morgana",
+        "id": "brand",
+        "name": "布蘭德",
+        "enName": "Brand",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": "morgana-mid",
-        "avatar": "../assets/images/heroes/portraits/morgana.png"
-      },
-      {
-        "id": "nasus",
-        "name": "納瑟斯",
-        "enName": "Nasus",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "nasus-mid",
-        "avatar": "../assets/images/heroes/portraits/nasus.png"
-      },
-      {
-        "id": "norra",
-        "name": "諾拉",
-        "enName": "Norra",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "norra-mid",
-        "avatar": "../assets/images/heroes/portraits/norra.png"
-      },
-      {
-        "id": "orianna",
-        "name": "奧莉安娜",
-        "enName": "Orianna",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "orianna-mid",
-        "avatar": "../assets/images/heroes/portraits/orianna.png"
-      },
-      {
-        "id": "ryze",
-        "name": "雷茲",
-        "enName": "Ryze",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "ryze-mid",
-        "avatar": "../assets/images/heroes/portraits/ryze.webp"
-      },
-      {
-        "id": "singed",
-        "name": "辛吉德",
-        "enName": "Singed",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "singed-mid",
-        "avatar": "../assets/images/heroes/portraits/singed.webp"
-      },
-      {
-        "id": "swain",
-        "name": "斯溫",
-        "enName": "Swain",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "swain-mid",
-        "avatar": "../assets/images/heroes/portraits/swain.webp"
-      },
-      {
-        "id": "syndra",
-        "name": "星朵拉",
-        "enName": "Syndra",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "syndra-mid",
-        "avatar": "../assets/images/heroes/portraits/syndra.png"
-      },
-      {
-        "id": "taliyah",
-        "name": "塔莉雅",
-        "enName": "Taliyah",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "taliyah-mid",
-        "avatar": "../assets/images/heroes/portraits/taliyah.png"
-      },
-      {
-        "id": "teemo",
-        "name": "提摩",
-        "enName": "Teemo",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "teemo-mid",
-        "avatar": "../assets/images/heroes/portraits/teemo.png"
-      },
-      {
-        "id": "twisted-fate",
-        "name": "逆命",
-        "enName": "Twisted Fate",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "twisted-fate-mid",
-        "avatar": "../assets/images/heroes/portraits/twisted-fate.webp"
+        "detailHeroId": "brand-mid",
+        "avatar": "../assets/images/heroes/portraits/brand.png"
       },
       {
         "id": "veigar",
@@ -36882,6 +38028,24 @@
         "avatar": "../assets/images/heroes/portraits/veigar.webp"
       },
       {
+        "id": "heimerdinger",
+        "name": "漢默丁格",
+        "enName": "Heimerdinger",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "heimerdinger-mid",
+        "avatar": "../assets/images/heroes/portraits/heimerdinger.webp"
+      },
+      {
+        "id": "talon",
+        "name": "塔隆",
+        "enName": "Talon",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "talon-mid",
+        "avatar": "../assets/images/heroes/portraits/talon.webp"
+      },
+      {
         "id": "velkoz",
         "name": "威寇茲",
         "enName": "Vel'Koz",
@@ -36891,85 +38055,13 @@
         "avatar": "../assets/images/heroes/portraits/velkoz.webp"
       },
       {
-        "id": "vex",
-        "name": "薇可絲",
-        "enName": "Vex",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "vex-mid",
-        "avatar": "../assets/images/heroes/portraits/vex.png"
-      },
-      {
-        "id": "viktor",
-        "name": "維克特",
-        "enName": "Viktor",
+        "id": "rumble",
+        "name": "藍寶",
+        "enName": "Rumble",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": "viktor-mid",
-        "avatar": "../assets/images/heroes/portraits/viktor.png"
-      },
-      {
-        "id": "vladimir",
-        "name": "弗拉迪米爾",
-        "enName": "Vladimir",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "vladimir-mid",
-        "avatar": "../assets/images/heroes/portraits/vladimir.png"
-      },
-      {
-        "id": "yasuo",
-        "name": "犽宿",
-        "enName": "Yasuo",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "yasuo-mid",
-        "avatar": "../assets/images/heroes/portraits/yasuo.webp"
-      },
-      {
-        "id": "yone",
-        "name": "犽凝",
-        "enName": "Yone",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "yone-mid",
-        "avatar": "../assets/images/heroes/portraits/yone.webp"
-      },
-      {
-        "id": "zed",
-        "name": "劫",
-        "enName": "Zed",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "zed-mid",
-        "avatar": "../assets/images/heroes/portraits/zed.png"
-      },
-      {
-        "id": "ziggs",
-        "name": "希格斯",
-        "enName": "Ziggs",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "ziggs-mid",
-        "avatar": "../assets/images/heroes/portraits/ziggs.webp"
-      },
-      {
-        "id": "zoe",
-        "name": "柔依",
-        "enName": "Zoe",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "zoe-mid",
-        "avatar": "../assets/images/heroes/portraits/zoe.webp"
-      },
-      {
-        "id": "zyra",
-        "name": "枷蘿",
-        "enName": "Zyra",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "zyra-mid",
-        "avatar": "../assets/images/heroes/portraits/zyra.png"
+        "detailHeroId": "rumble-mid",
+        "avatar": "../assets/images/heroes/portraits/rumble.webp"
       }
     ],
     "duo": [
