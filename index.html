@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Wild Rift Guide</title>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=57">
 </head>
 <body class="home-map-bg">
 <header class="topbar"><div class="shell topbar-inner">
@@ -20,6 +20,13 @@
 <div class="eyebrow">WILD RIFT DATABASE</div>
 <h1>Wild Rift Guide</h1>
 <p>激鬥峽谷英雄、裝備、符文與召喚師技能資料庫。</p>
+<div class="home-hero-search" id="homeHeroSearch" data-json="assets/data/heroes.json">
+  <label class="home-hero-search-field" for="homeHeroSearchInput">
+    <span aria-hidden="true">⌕</span>
+    <input id="homeHeroSearchInput" type="search" inputmode="search" autocomplete="off" placeholder="搜尋英雄名稱" aria-label="搜尋英雄名稱" aria-controls="homeHeroSearchResults" aria-expanded="false">
+  </label>
+  <div class="home-hero-search-results" id="homeHeroSearchResults" role="listbox" aria-label="英雄搜尋結果" hidden></div>
+</div>
 <div class="role-strip">
 <a class="role-link" href="pages/heroes.html?role=baron" aria-label="查看巴龍路英雄"><img src="assets/images/roles/baron.png" alt="巴龍路"><span>巴龍路</span></a>
 <a class="role-link" href="pages/heroes.html?role=jungle" aria-label="查看打野英雄"><img src="assets/images/roles/jungle.png" alt="打野"><span>打野</span></a>
