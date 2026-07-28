@@ -315,6 +315,20 @@
     </section>`;
   }
 
+
+  function resetHeroDetailScroll(){
+    const goTop=()=>{
+      window.scrollTo(0,0);
+      document.documentElement.scrollTop=0;
+      document.body.scrollTop=0;
+      const content=$('#heroContent');
+      if(content) content.scrollTop=0;
+    };
+    goTop();
+    requestAnimationFrame(()=>requestAnimationFrame(goTop));
+    setTimeout(goTop,40);
+  }
+
   function renderDetail(){
     const hero=state.heroes.find(h=>h.id===state.heroId);
     if(!hero){ state.heroId=''; syncUrl(); renderOverview(); return; }
@@ -379,6 +393,7 @@
 
     $('#backToTier').addEventListener('click',()=>{ state.heroId=''; syncUrl(); renderOverview(); });
     $$('.hero-lane-switch button').forEach(btn=>btn.addEventListener('click',()=>{ const p=state.heroes.find(x=>x.id===btn.dataset.profile); if(!p) return; state.heroId=p.id; if(state.role!=='all') state.role=p.roleId; syncUrl(); render(); }));
+    resetHeroDetailScroll();
   }
 
   function render(){ renderRoleTabs(); state.heroId ? renderDetail() : renderOverview(); }
