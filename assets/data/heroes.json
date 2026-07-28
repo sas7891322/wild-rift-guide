@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v64-duo-jinx-master-1-of-23",
+  "version": "7.2a-v65-duo-first-batch-7-of-23",
   "updated": "2026-07-29",
   "schemaVersion": 2,
   "roleSource": "heroCatalog",
@@ -829,10 +829,10 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "S",
-      "position": "前中期爆發／機動射手",
+      "position": "前中期爆發／高機動連射型射手",
       "tags": [
         "強勢對線",
-        "高爆發",
+        "技能穿插普攻",
         "高機動"
       ],
       "ratings": {
@@ -855,8 +855,7 @@
         "physical-high-23",
         "physical-high-05",
         "physical-high-03",
-        "physical-high-17",
-        "physical-high-10"
+        "physical-high-17"
       ],
       "boots": [
         "berserkers-greaves",
@@ -881,12 +880,12 @@
         "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "主動找短換血，技能後一定接被動雙槍，把強勢期變成血量優勢。",
-        "中期": "利用高機動快速轉火，優先打可安全觸及的目標，不要盲目追後排。",
-        "後期": "後期射程劣勢更明顯，必須靠位移和大絕保持安全輸出。"
+        "前期": "路西恩的優勢來自每次施放技能後接上光之獵手雙槍，任何只丟技能不接普攻的換血都會浪費傷害。利用鋒芒貫穿穿過士兵消耗，冷酷進擊不要固定往前交；敵方控制仍在時，短位移更適合橫向躲招或撤退。",
+        "中期": "奪魄之鐮與磁性雷射槍完成後進入強勢節奏，積極跟隊爭奪物件並用技能—雙槍循環快速轉火。冷酷進擊的冷卻可被雙槍普攻縮短，連招中每次被動都要打完整，才能在一次戰鬥中多次位移。",
+        "後期": "後期面對長射程陣容時不要強行正面貼近，先用赤色屠戮壓低血量或逼走位，再尋找安全窗口輸出。位移要優先保命，攻擊最近的安全目標；只有確認敵方關鍵控制已交，才向前追擊。"
       },
-      "summary": "善用每次施法後的雙槍被動打短爆發，靠位移重置與節奏壓制在前中期建立優勢。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "靠技能後的雙槍被動與可反覆縮短冷卻的位移，打出密集短爆發與高機動拉扯；前中期壓制力強，但每個技能後都必須正確穿插普攻。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
       "avatar": "../assets/images/heroes/portraits/lucian.webp",
       "abilities": [
         {
@@ -953,8 +952,108 @@
       "baseId": "lucian",
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "duo-first-batch-formal-v65",
+      "reviewedAt": "2026-07-29",
+      "coreItems": [
+        "physical-high-26",
+        "physical-high-23",
+        "physical-high-05"
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "combos": [
+        {
+          "name": "基礎短換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技調位"
+            },
+            {
+              "key": "AA",
+              "label": "被動雙槍"
+            },
+            {
+              "key": "Q",
+              "label": "1技貫穿"
+            },
+            {
+              "key": "AA",
+              "label": "被動雙槍"
+            },
+            {
+              "key": "W",
+              "label": "2技標記"
+            },
+            {
+              "key": "AA",
+              "label": "被動雙槍"
+            }
+          ],
+          "note": "位移後把每次被動雙槍打完整，再銜接下一個技能；若敵方控制未交，三技改成橫向或向後使用。"
+        },
+        {
+          "name": "穿兵安全消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技穿過士兵"
+            },
+            {
+              "key": "W",
+              "label": "2技遠距標記"
+            },
+            {
+              "key": "AA",
+              "label": "普攻觸發加速"
+            },
+            {
+              "key": "E",
+              "label": "3技撤離"
+            }
+          ],
+          "note": "用士兵作為一技施放目標命中後方英雄，二技標記後普攻取得跑速，最後用三技退出反打距離。"
+        },
+        {
+          "name": "團戰連射轉火",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技進入射程"
+            },
+            {
+              "key": "AA",
+              "label": "被動雙槍"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "被動雙槍"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "被動雙槍"
+            },
+            {
+              "key": "R",
+              "label": "4技追擊收尾"
+            }
+          ],
+          "note": "每組雙槍都會縮短三技冷卻，讓路西恩能再次調整位置；大絕適合敵人撤退或自己無法安全普攻時使用。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "first-batch-v65"
     },
     {
       "id": "xayah",
@@ -963,11 +1062,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "S",
-      "position": "反開／自保型持續輸出射手",
+      "position": "羽刃佈局／反開自保型射手",
       "tags": [
-        "自保能力",
+        "羽刃控制",
         "反開團戰",
-        "羽毛控制"
+        "大絕自保"
       ],
       "ratings": {
         "單排推薦": 5,
@@ -989,8 +1088,7 @@
         "physical-high-23",
         "physical-high-18",
         "physical-high-17",
-        "physical-high-28",
-        "physical-high-10"
+        "physical-high-28"
       ],
       "boots": [
         "berserkers-greaves",
@@ -1015,20 +1113,20 @@
         "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "透過羽毛位置逼走位，不一定要每次都急著拉回。",
-        "中期": "物件團先鋪羽毛，敵人進場後用倒鉤與大絕反開。",
-        "後期": "大絕盡量拿來躲關鍵技能，活著拉回羽毛往往比先手輸出更重要。"
+        "前期": "每次施放技能後的穿透普攻都會留下羽刃，對線時要同時考慮補刀與羽刃落點。赤落連匕加一次普攻即可快速形成三枚羽刃，為漫天血刃禁錮創造條件；不要看到羽刃就立刻拉回，保留在地面能持續限制敵方走位。",
+        "中期": "嗜血者與磁性雷射槍成形後，剎雅能在物件團穩定站位輸出。先在河道與狹口鋪羽刃，敵方突進後再拉回禁錮；驟羽暴風應優先躲避關鍵控制或爆發，而不是單純補傷害。",
+        "後期": "保持在前排後方以奪命疾翼提高攻速，持續把羽刃留在敵方進場路線。團戰的核心是活到第二輪漫天血刃；大絕落地後會新增大量羽刃，立刻觀察拉回角度，通常能完成反開與收割。"
       },
-      "summary": "利用羽毛佈局與倒鉤反打，兼具高輸出、禁錮與大絕自保，團戰容錯很高。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
+      "summary": "透過技能後穿透普攻鋪設羽刃，再以漫天血刃拉回造成高傷害與禁錮；驟羽暴風提供關鍵不可選取，是面對強開陣容時容錯極高的射手。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
       "avatar": "../assets/images/heroes/portraits/xayah.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "攻擊留下羽毛",
+          "title": "一翦兩斷",
           "icon": "../assets/images/heroes/skills/xayah_01.webp",
-          "summary": "技能後普攻會穿透並留下羽毛，是所有控制與爆發的基礎。",
+          "summary": "施放技能後，接下來數次普攻會穿透路徑上的敵人並在終點留下羽刃；剎雅也能加入銳空的回城。",
           "variantIcons": [
             "../assets/images/heroes/skills/xayah/01.png",
             "../assets/images/heroes/skills/xayah/02.png"
@@ -1037,30 +1135,30 @@
         {
           "key": "Q",
           "label": "1 技",
-          "title": "雙刃投擲",
+          "title": "赤落連匕",
           "icon": "../assets/images/heroes/skills/xayah_02.webp",
-          "summary": "快速放置羽毛並補傷害，常用來建立倒鉤角度。"
+          "summary": "向前擲出兩把匕首造成傷害，並在路徑終點留下兩枚羽刃。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "強化普攻",
+          "title": "奪命疾翼",
           "icon": "../assets/images/heroes/skills/xayah_03.webp",
-          "summary": "增加攻速與傷害，提升正面持續輸出。"
+          "summary": "短時間提高攻速並使普攻額外攻擊一次；命中敵方英雄時可提高跑速。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "羽毛回收",
+          "title": "漫天血刃",
           "icon": "../assets/images/heroes/skills/xayah_04.webp",
-          "summary": "召回羽毛造成傷害，多枚命中可禁錮，是核心反打技能。"
+          "summary": "召回地面上的所有羽刃，對路徑上的敵人造成傷害；同一目標被至少三枚羽刃命中時會被禁錮。"
         },
         {
           "key": "R",
           "label": "大絕",
-          "title": "羽刃風暴",
+          "title": "驟羽暴風",
           "icon": "../assets/images/heroes/skills/xayah_05.png",
-          "summary": "短暫不可被選取並留下大量羽毛，是最重要的自保工具。"
+          "summary": "躍至空中短暫進入不可被選取狀態，向前方射出大量羽刃並在地面留下羽刃。"
         }
       ],
       "skillSequence": [
@@ -1084,11 +1182,106 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 6,
-      "baseId": "xayah"
+      "baseId": "xayah",
+      "coreItems": [
+        "physical-high-11",
+        "physical-high-23",
+        "physical-high-18"
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "combos": [
+        {
+          "name": "快速三羽禁錮",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技放置兩羽"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻放羽"
+            },
+            {
+              "key": "E",
+              "label": "3技拉回禁錮"
+            },
+            {
+              "key": "AA",
+              "label": "接續輸出"
+            }
+          ],
+          "note": "一技留下兩枚羽刃，再用一次穿透普攻補第三枚，立即拉回即可禁錮；注意自己、羽刃與目標需形成直線。"
+        },
+        {
+          "name": "正面持續爆發",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技提高攻速"
+            },
+            {
+              "key": "AA",
+              "label": "普攻鋪羽"
+            },
+            {
+              "key": "Q",
+              "label": "1技補羽"
+            },
+            {
+              "key": "AA",
+              "label": "持續普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技拉回"
+            },
+            {
+              "key": "AA",
+              "label": "追擊輸出"
+            }
+          ],
+          "note": "二技開啟後先持續普攻把羽刃鋪在目標後方，等敵人準備撤退或進場時再拉回，傷害與控制都會更完整。"
+        },
+        {
+          "name": "大絕反開",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技躲關鍵技能"
+            },
+            {
+              "key": "E",
+              "label": "3技拉回大量羽刃"
+            },
+            {
+              "key": "W",
+              "label": "2技提高攻速"
+            },
+            {
+              "key": "AA",
+              "label": "安全位置輸出"
+            },
+            {
+              "key": "Q",
+              "label": "1技補傷害"
+            }
+          ],
+          "note": "大絕優先用來規避致命控制，落地後依敵方位置拉回羽刃反控；不要為了主動打傷害而過早失去唯一不可選取手段。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "duo-first-batch-formal-v65",
+      "reviewedAt": "2026-07-29",
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "first-batch-v65"
     },
     {
       "id": "jhin",
@@ -1097,11 +1290,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "S",
-      "position": "爆發／遠距功能型射手",
+      "position": "爆發／遠距控制型功能射手",
       "tags": [
+        "第四發爆發",
         "遠距控制",
-        "爆發收割",
-        "團隊功能"
+        "團戰收尾"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -1123,8 +1316,7 @@
         "physical-high-03",
         "physical-high-05",
         "physical-high-23",
-        "physical-high-17",
-        "physical-high-10"
+        "physical-high-17"
       ],
       "boots": [
         "gluttonous-greaves",
@@ -1149,12 +1341,12 @@
         "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "用 1 技彈跳與第四發建立血量差，保持換彈節奏。",
-        "中期": "先用 2 技遠距定身配合隊友開戰，再決定是否開大收尾。",
-        "後期": "站位比持續普攻更重要，利用超遠距技能先控制與收殘血。"
+        "前期": "隨時掌握彈匣與換彈節奏，利用第四發和狂舞手雷彈跳建立血量差。第四發打完後會進入換彈空窗，不能在沒有退路時繼續站前；致命伏筆較適合接隊友控制或敵人已被標記時使用。",
+        "中期": "蒐集者與狂風之力完成後，燼的爆發與收尾能力進入強勢期。物件團先在河道與狹口放置魔幻時刻取得視野與緩速，再用致命伏筆遠距接控；華麗謝幕應在安全位置開啟，用來開戰減速或處理殘血。",
+        "後期": "燼不靠高攻速持續站樁，而是依靠每發普攻、技能與跑速加成反覆拉扯。保持在前排後方，第四發優先打能安全命中的低血量目標；若敵方刺客仍未露面，大絕不要過早架槍。"
       },
-      "summary": "利用第四發與技能控制掌握節奏，不必追求最高攻速；遠距離支援與收尾能力非常完整。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以固定四發彈匣、第四發斬殺與超遠距控制掌握戰鬥節奏；爆發與收尾能力極強，但必須避開換彈空窗並保持安全站位。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
       "avatar": "../assets/images/heroes/portraits/jhin.webp",
       "abilities": [
         {
@@ -1221,8 +1413,96 @@
       "baseId": "jhin",
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "duo-first-batch-formal-v65",
+      "reviewedAt": "2026-07-29",
+      "coreItems": [
+        "physical-high-32",
+        "physical-high-03",
+        "physical-high-05"
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "combos": [
+        {
+          "name": "彈跳標記消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技彈跳"
+            },
+            {
+              "key": "AA",
+              "label": "普攻標記"
+            },
+            {
+              "key": "W",
+              "label": "2技定身"
+            },
+            {
+              "key": "AA",
+              "label": "接續普攻"
+            }
+          ],
+          "note": "先用狂舞手雷經殘血士兵彈到英雄，再普攻留下標記並接致命伏筆；二技命中後打一發就撤，避免換彈時被反打。"
+        },
+        {
+          "name": "陷阱控制爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技陷阱緩速"
+            },
+            {
+              "key": "W",
+              "label": "2技定身"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技補傷害"
+            },
+            {
+              "key": "AA",
+              "label": "第四發收尾"
+            }
+          ],
+          "note": "把魔幻時刻放在狹口或敵方退路，緩速後致命伏筆更容易命中；第四發留到目標低血量時打出最大斬殺收益。"
+        },
+        {
+          "name": "遠距開戰收割",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技接控"
+            },
+            {
+              "key": "R",
+              "label": "4技架槍"
+            },
+            {
+              "key": "R",
+              "label": "第一至三發減速"
+            },
+            {
+              "key": "R",
+              "label": "第四發暴擊"
+            },
+            {
+              "key": "P",
+              "label": "被動跑速調位"
+            }
+          ],
+          "note": "先用二技配合隊友控制，再在敵方無法立即突進的位置開大；前幾發用來減速與逼位，第四發瞄準最低血量目標。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "first-batch-v65"
     },
     {
       "id": "kogmaw",
@@ -1365,11 +1645,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "S",
-      "position": "反坦／單挑型後期射手",
+      "position": "反坦／高機動單挑型後期射手",
       "tags": [
         "真實傷害",
         "高機動",
-        "單挑強勢"
+        "後期單挑"
       ],
       "ratings": {
         "單排推薦": 5,
@@ -1391,8 +1671,7 @@
         "physical-high-07",
         "physical-high-12",
         "physical-high-35",
-        "physical-high-10",
-        "physical-high-25"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -1411,54 +1690,54 @@
         ],
         "bad": [
           "凱特琳",
-          "達瑞文",
-          "好運姐"
+          "艾希",
+          "達瑞文"
         ],
         "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "以生存與補刀優先，不能因為想打三環就吃大量遠程消耗。",
-        "中期": "兩件攻速裝後開始主動找邊線與小規模戰。",
-        "後期": "大絕後靠翻滾隱身與走位持續輸出，優先打最近且安全的目標。"
+        "前期": "汎射程短、推線慢，前期以補刀與血量管理優先。不要為了硬打神聖銀箭三環走進敵方雙人組的完整技能範圍；等對手交掉關鍵消耗或控制後，再用翻滾瞄準調整角度打一輪短換血。重型弩箭通常留給反突進，只有能穩定釘牆時才主動出手。",
+        "中期": "磁性雷射槍與鬼索的狂暴之刃成形後，三環觸發速度與追擊能力明顯提升。優先跟隊打小規模戰，利用側邊牆體尋找重型弩箭角度；沒有視野時不要獨自深入邊線，汎雖然單挑強，但仍怕先手控制。",
+        "後期": "開啟死亡通緝後，以翻滾隱形躲避關鍵技能並持續風箏，優先攻擊最近且安全的目標。神聖銀箭真實傷害能處理高生命前排，不需要冒險繞過坦克強切後排；每次翻滾都要同時考慮下一個安全位置。"
       },
-      "summary": "前期承受射程劣勢，後期靠三環真實傷害、翻滾與大絕單挑任何高生命前排。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
+      "summary": "前期需要承受射程與清線劣勢，裝備成形後靠神聖銀箭真實傷害、翻滾隱形與釘牆控制，能在單挑和後期團戰持續處理任何前排。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
       "avatar": "../assets/images/heroes/portraits/vayne.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "追獵加速",
+          "title": "夜之狩獵",
           "icon": "../assets/images/heroes/skills/vayne_01.png",
-          "summary": "朝敵方英雄移動時提升追擊能力，適合收割與黏人。"
+          "summary": "朝鄰近敵方英雄移動時提高跑速，讓汎更容易追擊與收割。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "翻滾強化攻擊",
+          "title": "翻滾瞄準",
           "icon": "../assets/images/heroes/skills/vayne_02.png",
-          "summary": "短位移並強化下一擊，是重置站位與躲技能的核心。"
+          "summary": "向指定方向翻滾並強化下一次普攻；大絕期間施放可短暫進入隱形。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "三環真實傷害",
+          "title": "神聖銀箭",
           "icon": "../assets/images/heroes/skills/vayne_03.png",
-          "summary": "連續攻擊同一目標觸發高額真實傷害，是打坦核心。"
+          "summary": "連續三次攻擊或技能命中同一目標時，造成依目標最大生命計算的真實傷害；主動使用可提高攻速並回復部分造成的傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "擊退釘牆",
+          "title": "重型弩箭",
           "icon": "../assets/images/heroes/skills/vayne_04.png",
-          "summary": "將敵人擊退，撞牆時造成控制，是重要自保與反殺技能。"
+          "summary": "以重弩擊退目標並造成物理傷害；若目標撞上牆體，會受到額外傷害並被暈眩。"
         },
         {
           "key": "R",
           "label": "大絕",
-          "title": "終極獵殺",
+          "title": "死亡通緝",
           "icon": "../assets/images/heroes/skills/vayne_05.png",
-          "summary": "強化攻擊與翻滾，提升機動與隱蔽性，後期團戰上限極高。"
+          "summary": "暫時提高物攻並強化夜之狩獵與翻滾瞄準，使汎獲得更強的追擊、隱身與拉扯能力。"
         }
       ],
       "skillSequence": [
@@ -1482,11 +1761,110 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "baseId": "vayne"
+      "baseId": "vayne",
+      "coreItems": [
+        "physical-high-23",
+        "physical-high-07",
+        "physical-high-12"
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "combos": [
+        {
+          "name": "三環短換血",
+          "steps": [
+            {
+              "key": "AA",
+              "label": "普攻第一層"
+            },
+            {
+              "key": "Q",
+              "label": "1技翻滾強化"
+            },
+            {
+              "key": "AA",
+              "label": "普攻第二層"
+            },
+            {
+              "key": "AA",
+              "label": "普攻觸發三環"
+            }
+          ],
+          "note": "先普攻後用翻滾瞄準重置站位與強化下一擊，再補第三下觸發神聖銀箭。敵方準備反打時不要勉強追第三層。"
+        },
+        {
+          "name": "釘牆爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技釘牆"
+            },
+            {
+              "key": "R",
+              "label": "4技強化"
+            },
+            {
+              "key": "Q",
+              "label": "1技翻滾"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "AA",
+              "label": "持續追擊"
+            },
+            {
+              "key": "AA",
+              "label": "三環真傷"
+            }
+          ],
+          "note": "確認重型弩箭能撞牆再出手，控制時間內開大並快速疊滿三環；若角度不穩，三技應保留用來擊退突進者。"
+        },
+        {
+          "name": "大絕隱身拉扯",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技死亡通緝"
+            },
+            {
+              "key": "Q",
+              "label": "1技隱身調位"
+            },
+            {
+              "key": "AA",
+              "label": "普攻輸出"
+            },
+            {
+              "key": "Q",
+              "label": "再次翻滾"
+            },
+            {
+              "key": "AA",
+              "label": "持續風箏"
+            },
+            {
+              "key": "E",
+              "label": "3技擊退自保"
+            }
+          ],
+          "note": "大絕期間翻滾可短暫隱身，利用失去視野的瞬間改變走位方向；三技留到敵方突進貼近或能穩定釘牆時再使用。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "duo-first-batch-formal-v65",
+      "reviewedAt": "2026-07-29",
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "first-batch-v65"
     },
     {
       "id": "corki",
@@ -1495,11 +1873,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "A",
-      "position": "混合傷害／技能消耗射手",
+      "position": "混合傷害／技能穿插普攻型射手",
       "tags": [
-        "真實傷害",
+        "混合傷害",
         "技能消耗",
-        "安全發育"
+        "炸彈包裹"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -1521,8 +1899,7 @@
         "physical-high-23",
         "physical-high-18",
         "physical-high-17",
-        "physical-high-11",
-        "physical-high-10"
+        "physical-high-11"
       ],
       "boots": [
         "gluttonous-greaves",
@@ -1547,12 +1924,12 @@
         "ban": "史矛德"
       },
       "playstyle": {
-        "前期": "利用技能清線與消耗，2 技不要隨意往前交。",
-        "中期": "累積大招資源後先遠距離消耗，再配合隊伍進場。",
-        "後期": "保持技能命中率與安全位移，持續輸出比一次爆發更重要。"
+        "前期": "用磷光炸彈與普攻穩定清線、消耗，格林機槍啟動後盡量維持目標在前方範圍內，才能疊加雙防削減。女武神特攻是主要保命位移，沒有敵方打野資訊或關鍵控制未交時，不要拿來向前追擊。",
+        "中期": "奪魄之鐮與磁性雷射槍成形後，技能與普攻穿插的輸出會明顯提升。開戰前先累積火箭轟擊彈藥，用普通飛彈消耗並保留超級導彈；取得炸彈包裹後，優先配合物件或團隊節奏，不要為了單人追擊浪費強化位移。",
+        "後期": "站在前排後方持續用火箭與磷光炸彈壓低血量，敵人進入射程後再開格林機槍並穿插普攻。炸彈包裹可用於切割戰場、反開或封鎖退路，但進場前要確認隊友能跟上，普通二技仍應保留撤退路線。"
       },
-      "summary": "以技能消耗與真實傷害輸出，能穩定打前排並在中期物件戰形成高壓力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以技能消耗、普攻與格林機槍破防組成持續混合輸出，透過炸彈包裹改變團戰地形；核心是保持安全距離並在每次技能之間穿插普攻。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
       "avatar": "../assets/images/heroes/portraits/corki.webp",
       "abilities": [
         {
@@ -1619,8 +1996,104 @@
       "baseId": "corki",
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "duo-first-batch-formal-v65",
+      "reviewedAt": "2026-07-29",
+      "coreItems": [
+        "physical-high-26",
+        "physical-high-23",
+        "physical-high-18"
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "combos": [
+        {
+          "name": "對線消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技範圍消耗"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技破防"
+            },
+            {
+              "key": "AA",
+              "label": "持續普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技補傷害"
+            }
+          ],
+          "note": "先用一技命中並揭露區域，普攻後開三技持續削減雙防，最後用火箭補傷害；二技保留撤退。"
+        },
+        {
+          "name": "格林機槍爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技啟動破防"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技飛彈"
+            },
+            {
+              "key": "AA",
+              "label": "持續輸出"
+            }
+          ],
+          "note": "三技先削減物防與魔防，再穿插一技、飛彈與普攻；盡量讓目標保持在正前方，避免格林機槍失去命中。"
+        },
+        {
+          "name": "炸彈包裹切割",
+          "steps": [
+            {
+              "key": "W",
+              "label": "強化2技切割戰場"
+            },
+            {
+              "key": "E",
+              "label": "3技掃射"
+            },
+            {
+              "key": "Q",
+              "label": "1技範圍傷害"
+            },
+            {
+              "key": "R",
+              "label": "4技超級導彈"
+            },
+            {
+              "key": "AA",
+              "label": "普攻收尾"
+            }
+          ],
+          "note": "強化二技適合把敵方前後排分開或封鎖退路，落地後立刻開三技並用一技、超級導彈補傷害；進場前確認隊友能同步跟進。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "first-batch-v65"
     },
     {
       "id": "kalista",
@@ -1893,11 +2366,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "A",
-      "position": "進化型／機動爆發射手",
+      "position": "混合傷害／進化型機動射手",
       "tags": [
         "技能進化",
-        "混合傷害",
-        "後排切入"
+        "電漿爆發",
+        "機動收割"
       ],
       "ratings": {
         "單排推薦": 5,
@@ -1919,8 +2392,7 @@
         "physical-high-07",
         "physical-high-35",
         "physical-high-13",
-        "physical-high-12",
-        "physical-high-10"
+        "physical-high-12"
       ],
       "boots": [
         "berserkers-greaves",
@@ -1933,9 +2405,9 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "圖奇",
           "汎",
-          "婕莉"
+          "婕莉",
+          "煞蜜拉"
         ],
         "bad": [
           "凱特琳",
@@ -1945,12 +2417,12 @@
         "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "射程不長，先穩定補刀並等第一個完整裝備觸發技能進化。",
-        "中期": "技能進化後開始找孤立目標與小規模戰，別急著大絕衝進五人中。",
-        "後期": "利用大絕盾與 3 技機動反覆調整位置，優先處理能安全擊殺的目標。"
+        "前期": "凱莎普攻射程偏短，前期以補刀與等待輔助控制為主。敵方英雄與士兵分開時，再用伊卡西亞魔雨打出較高單體傷害；友軍硬控能協助疊加電漿，看到控制命中後要立即跟上普攻與虛空探索者。",
+        "中期": "完成第一件完整裝備後先確認一技進化，清線與孤立爆發會大幅提升。三件核心裝逐步完成技能進化後，利用極速充能的跑速與隱形調整位置；殺手本能不是固定進場技，也能用護盾和位移躲避關鍵技能。",
+        "後期": "團戰先跟在前排後方疊加電漿，只有敵方關鍵控制已交、後排被標記且落單時，才考慮大絕切入。進場後用進化三技隱形重新拉開距離，優先確保自己能完成第二輪技能與普攻，而不是一次全押。"
       },
-      "summary": "完整裝備會逐步進化技能，既能正面持續輸出，也能抓標記用大絕切入後排。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 9 張）。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "透過完整裝備進化基礎技能，以電漿層數、孤立魔雨和大絕位移打出混合爆發；機動上限高，但切入時機決定生存與輸出。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
       "avatar": "../assets/images/heroes/portraits/kaisa.webp",
       "abilities": [
         {
@@ -2032,8 +2504,108 @@
       "baseId": "kaisa",
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "duo-first-batch-formal-v65",
+      "reviewedAt": "2026-07-29",
+      "coreItems": [
+        "physical-high-08",
+        "physical-high-07",
+        "physical-high-35"
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "combos": [
+        {
+          "name": "電漿對線爆發",
+          "steps": [
+            {
+              "key": "AA",
+              "label": "普攻疊電漿"
+            },
+            {
+              "key": "Q",
+              "label": "1技魔雨"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技疊層"
+            },
+            {
+              "key": "AA",
+              "label": "普攻引爆電漿"
+            }
+          ],
+          "note": "目標遠離士兵時一技能會集中命中，配合普攻與二技快速疊滿電漿；不要在兵線密集時期待完整單體爆發。"
+        },
+        {
+          "name": "遠距標記追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技遠距標記"
+            },
+            {
+              "key": "R",
+              "label": "4技突進護盾"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技孤立爆發"
+            },
+            {
+              "key": "E",
+              "label": "3技加速調位"
+            },
+            {
+              "key": "AA",
+              "label": "持續輸出"
+            }
+          ],
+          "note": "二技命中後先確認敵方控制位置，再用大絕選擇安全落點；大絕可落在目標周圍不同方向，不必直接貼臉。"
+        },
+        {
+          "name": "進化隱身拉扯",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技隱身調位"
+            },
+            {
+              "key": "AA",
+              "label": "普攻疊層"
+            },
+            {
+              "key": "Q",
+              "label": "1技爆發"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技躲技能"
+            },
+            {
+              "key": "AA",
+              "label": "引爆電漿"
+            }
+          ],
+          "note": "進化三技用來中斷敵方鎖定並換角度，大絕留作第二次調位或吸收爆發，避免一開始就把兩個保命手段同時交掉。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "first-batch-v65"
     },
     {
       "id": "draven",
@@ -41841,14 +42413,14 @@
       "crossCount": 0,
       "crossRule": "以遊戲內飛龍路 23 位原生定位名單為準，不另外加入跨路英雄。",
       "detailComplete": false,
-      "detailCompletedCount": 1,
+      "detailCompletedCount": 7,
       "detailTotalCount": 23,
-      "detailProgress": "1/23",
+      "detailProgress": "7/23",
       "portraitMode": "shared",
-      "verification": "依使用者提供的遊戲內飛龍路定位截圖確認 23 位；v64 已完成吉茵珂絲正式母版，正式攻略進度 1/23。",
-      "detailVersion": "v64-jinx-master-1-of-23-7.2a",
+      "verification": "依使用者提供的遊戲內飛龍路定位截圖確認 23 位；v64 完成吉茵珂絲母版，v65 完成第一批汎、燼、凱莎、路西恩、剎雅、庫奇，正式攻略進度 7/23。",
+      "detailVersion": "v65-first-batch-7-of-23-7.2a",
       "roleSource": "heroCatalog",
-      "roleAuditVersion": "v64",
+      "roleAuditVersion": "v65",
       "roleAuditStatus": "passed"
     },
     "support": {
@@ -41878,7 +42450,7 @@
       "baron": 49,
       "jungle": 50,
       "mid": 46,
-      "duo": 1
+      "duo": 7
     },
     "removedLegacyProfiles": [
       "fiora-jungle",
