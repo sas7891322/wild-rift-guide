@@ -152,117 +152,164 @@
     return `<div class="skill-level-grid"><div class="skill-grid-row skill-grid-header"><div class="skill-grid-skill label">技能</div>${levels.map(x=>`<div class="skill-grid-cell">${x}</div>`).join('')}</div>${rows}</div>`;
   }
 
-  function renderLucianPriorityIcons(hero){
+  function renderStructuredPriority(hero){
     const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
-    const priority=getSkillPriority(hero);
-    return `<div class="lucian-priority-icons">${priority.map((key,i)=>{
-      const a=abilities[key]||{key};
-      return `<span class="lucian-priority-step">${abilityMedia(a,'lucian-priority-media')}<i>${i+1}</i></span>${i<priority.length-1?'<b>＞</b>':''}`;
+    const priority=getSkillPriority(hero).filter(key=>['Q','W','E'].includes(key));
+    return `<div class="yone-priority-icons">${priority.map((key,index)=>{
+      const ability=abilities[key]||{key};
+      return `<span class="yone-priority-item">
+        ${abilityMedia(ability,'yone-priority-placeholder')}
+        <i>${index+1}</i>
+      </span>${index<priority.length-1?'<b>＞</b>':''}`;
     }).join('')}</div>`;
   }
 
-  function renderLucianSkillGrid(hero){
-    const abilities = Object.fromEntries((hero.abilities||[]).filter(a=>['Q','W','E','R'].includes(a.key)).map(a=>[a.key,a]));
-    const sequence = hero.skillSequence || [];
-    const levels = Array.from({length:15},(_,i)=>i+1);
-    const labelMap = {Q:'1', W:'2', E:'3', R:'4'};
-    const rows = ['Q','W','E','R'].map(key=>{
-      const a=abilities[key]||{};
-      return `<div class="lucian-skill-grid-row">
-        <div class="lucian-skill-grid-label">${abilityMedia(a,'lucian-grid-placeholder')}<span>${labelMap[key]}</span></div>
-        ${levels.map((lvl,i)=>`<div class="lucian-skill-grid-cell ${sequence[i]===key?'active':''}">${sequence[i]===key?'<i></i>':''}</div>`).join('')}
-      </div>`;
-    }).join('');
-    return `<div class="lucian-skill-grid-wrap">
-      <div class="lucian-skill-grid-head"><strong>技能加點順序</strong>${renderLucianPriorityIcons(hero)}</div>
-      <div class="lucian-skill-grid-table">
-        <div class="lucian-skill-grid-row header">
-          <div class="lucian-skill-grid-label head">1～15等</div>
-          ${levels.map(x=>`<div class="lucian-skill-grid-cell">${x}</div>`).join('')}
+  function renderStructuredSkillGrid(hero){
+    const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
+    const sequence=Array.isArray(hero.skillSequence)?hero.skillSequence:[];
+    const levels=Array.from({length:15},(_,i)=>i+1);
+    const labelMap={Q:'1',W:'2',E:'3',R:'4'};
+
+    const rows=['Q','W','E','R'].map(key=>`
+      <div class="yone-level-row">
+        <div class="yone-level-skill">
+          ${abilityMedia(abilities[key]||{},'yone-level-placeholder')}
+          <span>${labelMap[key]}</span>
+        </div>
+        ${levels.map((level,index)=>`
+          <div class="yone-level-cell ${sequence[index]===key?'active':''}" aria-label="等級 ${level}">
+            ${sequence[index]===key?'<i></i>':''}
+          </div>
+        `).join('')}
+      </div>
+    `).join('');
+
+    return `<div class="yone-level-block">
+      <div class="yone-level-title">
+        <strong>技能加點順序</strong>
+        ${renderStructuredPriority(hero)}
+      </div>
+      <div class="yone-level-table">
+        <div class="yone-level-row header">
+          <div class="yone-level-skill title">1～15等</div>
+          ${levels.map(level=>`<div class="yone-level-cell">${level}</div>`).join('')}
         </div>
         ${rows}
       </div>
     </div>`;
   }
 
-  function renderLucianSkillInfo(hero){
-    const order=['P','Q','W','E','R'];
-    const labels={P:'被動',Q:'1技',W:'2技',E:'3技',R:'4技'};
+  function renderStructuredSkillInfo(hero){
     const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
-    return `<div class="lucian-skill-info-list">${order.map(key=>{
-      const a=abilities[key]||{};
-      return `<div class="lucian-skill-info-row">
-        <div class="lucian-skill-icon">${abilityMedia(a,'lucian-skill-placeholder')}</div>
-        <div class="lucian-skill-copy"><strong>${labels[key]}｜${safeText(a.title)}</strong><p>${safeText(a.summary)}</p></div>
-      </div>`;
+    const labels={P:'被動',Q:'1技',W:'2技',E:'3技',R:'4技'};
+
+    return `<div class="yone-skill-list">${['P','Q','W','E','R'].map(key=>{
+      const ability=abilities[key]||{};
+      return `<article class="yone-skill-row">
+        <div class="yone-skill-image">${abilityMedia(ability,'yone-skill-placeholder')}</div>
+        <div class="yone-skill-text">
+          <strong>${labels[key]}｜${safeText(ability.title)}</strong>
+          <p>${safeText(ability.summary)}</p>
+        </div>
+      </article>`;
     }).join('')}</div>`;
   }
 
-  function renderLucianCombos(hero){
+  function renderStructuredCombos(hero){
     const combos=Array.isArray(hero.combos)?hero.combos:[];
-    if(!combos.length) return '';
-    const abilityByKey=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
-    const labels={Q:'1技',Q3:'1技擊飛',W:'2技',E:'3技',E2:'返回',R:'4技',AA:'普攻'};
-    function stepMedia(step){
-      const base=step==='Q3'?'Q':step==='E2'?'E':step;
-      if(base==='AA') return '<span class="lucian-combo-text">A</span>';
-      const ability=abilityByKey[base];
-      if(!ability) return `<span class="lucian-combo-text">${safeText(step)}</span>`;
-      return abilityMedia(ability,'lucian-combo-media');
+    const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
+    const names={Q:'1技',Q3:'1技擊飛',W:'2技',E:'3技',E2:'返回',R:'4技',AA:'普攻'};
+
+    function renderStep(step){
+      if(step==='AA'){
+        return `<span class="yone-combo-step"><i class="yone-combo-aa">A</i><small>普攻</small></span>`;
+      }
+      const baseKey=step==='Q3'?'Q':step==='E2'?'E':step;
+      return `<span class="yone-combo-step">
+        ${abilityMedia(abilities[baseKey]||{},'yone-combo-placeholder')}
+        <small>${names[step]||step}</small>
+      </span>`;
     }
-    return `<div class="lucian-combo-block"><div class="lucian-subtitle">技能連招</div>${combos.map((combo,idx)=>`<details class="lucian-combo-item"${idx===0?' open':''}><summary>${safeText(combo.name)}</summary><div class="lucian-combo-body"><div class="lucian-combo-steps">${combo.steps.map((step,i)=>`${`<span class="lucian-combo-step">${stepMedia(step)}<small>${labels[step]||step}</small></span>`}${i<combo.steps.length-1?'<em>→</em>':''}`).join('')}</div><p>${safeText(combo.note)}</p></div></details>`).join('')}</div>`;
+
+    return `<div class="yone-combo-list">
+      <div class="yone-subheading">技能連招</div>
+      ${combos.map(combo=>`<details class="yone-combo-item">
+        <summary>${safeText(combo.name)}<i>⌄</i></summary>
+        <div class="yone-combo-content">
+          <div class="yone-combo-steps">
+            ${combo.steps.map((step,index)=>`${renderStep(step)}${index<combo.steps.length-1?'<b>→</b>':''}`).join('')}
+          </div>
+          <p>${safeText(combo.note)}</p>
+        </div>
+      </details>`).join('')}
+    </div>`;
   }
 
-  function renderLucianSkillSection(hero){
-    return `<section class="hero-section lucian-skill-section">
+  function renderStructuredSkillSection(hero){
+    return `<section class="hero-section yone-structured-skills">
       <div class="hero-section-title"><h3>技能</h3><span>Skills</span></div>
-      <div class="lucian-subtitle">技能說明</div>
-      ${renderLucianSkillInfo(hero)}
-      ${renderLucianSkillGrid(hero)}
-      ${renderLucianCombos(hero)}
+      <div class="yone-subheading">技能說明</div>
+      ${renderStructuredSkillInfo(hero)}
+      ${renderStructuredSkillGrid(hero)}
+      ${renderStructuredCombos(hero)}
     </section>`;
   }
 
-  function renderLucianBuildSection(hero, items, boots){
-    const starterIds=Array.isArray(hero.starterItems)&&hero.starterItems.length?hero.starterItems:[];
-    const starterItems=starterIds.map(id=>byId(state.items,id)).filter(Boolean);
-    const starter=starterItems[0]||firstBasicComponent(items[0]);
-    const coreItems=(Array.isArray(hero.coreItems)&&hero.coreItems.length?hero.coreItems.map(id=>byId(state.items,id)).filter(Boolean):items.slice(0,3));
-    const build6=[...items.slice(0,5), boots[0]].filter(Boolean).slice(0,6);
-    const circleCard=(item, cls='')=> item?`<div class="lucian-circle-card ${cls}"><div class="lucian-circle-media">${buildMiniCard(item)}</div><small>${safeText(item.name)}</small></div>`:'';
-    return `<section class="hero-section lucian-build-section">
+  function renderStructuredBuildSection(hero,items,boots){
+    const starterIds=Array.isArray(hero.starterItems)?hero.starterItems:[];
+    const starter=starterIds.map(id=>byId(state.items,id)).find(Boolean)||firstBasicComponent(items[0]);
+    const coreIds=Array.isArray(hero.coreItems)?hero.coreItems:[];
+    const coreItems=coreIds.map(id=>byId(state.items,id)).filter(Boolean);
+    const secondTierBoot=boots[0]||null;
+    const sixItems=[...items.slice(0,5),secondTierBoot].filter(Boolean).slice(0,6);
+
+    function circleItem(item){
+      if(!item) return '';
+      return `<div class="yone-item">
+        <div class="yone-item-circle">${buildMiniCard(item)}</div>
+        <small>${safeText(item.name)}</small>
+      </div>`;
+    }
+
+    return `<section class="hero-section yone-structured-build">
       <div class="hero-section-title"><h3>裝備配置</h3><span>Build</span></div>
-      <div class="lucian-build-top">
-        <div class="lucian-build-col"><span>起手裝備</span>${circleCard(starter,'starter')}</div>
-        <div class="lucian-build-col"><span>鞋子</span>${circleCard(boots[0],'boot')}</div>
-        <div class="lucian-build-col core"><span>核心三件裝</span><div class="lucian-core-row">${coreItems.map(item=>circleCard(item,'core')).join('')}</div></div>
+
+      <div class="yone-build-top">
+        <div class="yone-build-group">
+          <strong>起手裝備</strong>
+          ${circleItem(starter)}
+        </div>
+        <div class="yone-build-group">
+          <strong>鞋子</strong>
+          ${circleItem(secondTierBoot)}
+        </div>
+        <div class="yone-build-group core">
+          <strong>核心三件裝</strong>
+          <div class="yone-core-items">${coreItems.map(circleItem).join('')}</div>
+        </div>
       </div>
-      <div class="lucian-build-six"><div class="lucian-subtitle">六件裝備</div><div class="lucian-build-six-grid">${build6.map(item=>circleCard(item,'final')).join('')}</div></div>
+
+      <div class="yone-six-build">
+        <div class="yone-subheading">六件裝備</div>
+        <div class="yone-six-grid">${sixItems.map(circleItem).join('')}</div>
+      </div>
     </section>`;
   }
 
-  function renderLucianMatchups(hero){
-    return `<section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid no-ban"><div class="matchup-box good"><span>較好打</span><div>${(hero.matchups?.good||[]).map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${(hero.matchups?.bad||[]).map(matchupChip).join('')}</div></div></div></section>`;
-  }
-
-  function renderSkillPriorityBlock(hero){
-    return `<section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>`;
-  }
-
-  function renderSkillGridBlock(hero){
-    return `<section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>`;
-  }
-
-  function renderPassiveBlock(hero){
-    const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
-    const passive = abilities.find(x=>x.key==='P');
-    return passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="hero-passive">${abilityMedia(passive)}<div><b>${safeText(passive.title)}</b>${renderAbilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:'';
-  }
-
-  function renderActiveAbilitiesBlock(hero){
-    const abilities = (Array.isArray(hero.abilities) ? hero.abilities : []).filter(x=>x.key!=='P');
-    const abilityHTML = abilities.map(x=>`<div class="ability-card">${abilityMedia(x)}<div><b>${safeText(x.label)}｜${safeText(x.title)}</b>${renderAbilityVariants(x)}<p>${safeText(x.summary)}</p></div></div>`).join('');
-    return `<section class="hero-section"><div class="hero-section-title"><h3>技能說明</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>`;
+  function renderStructuredMatchups(hero){
+    return `<section class="hero-section">
+      <div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div>
+      <div class="matchup-grid yone-no-ban">
+        <div class="matchup-box good">
+          <span>較好打</span>
+          <div>${(hero.matchups?.good||[]).map(matchupChip).join('')}</div>
+        </div>
+        <div class="matchup-box bad">
+          <span>較難打</span>
+          <div>${(hero.matchups?.bad||[]).map(matchupChip).join('')}</div>
+        </div>
+      </div>
+    </section>`;
   }
 
   function renderDetail(){
@@ -282,17 +329,32 @@
     const coreHTML=items.slice(0,3).map((x,i)=>`<div class="hero-build-slot"><b>${i+1}</b>${buildMiniCard(x)}</div>`).join('');
     const bootHTML=boots.map((x,i)=>`<div class="hero-build-slot boot"><b>${i===0?'II':'III'}</b>${buildMiniCard(x,'boot')}</div>`).join('<div class="build-arrow">→</div>');
     const finalHTML=[...items.slice(0,5),boots[1]].map((x,i)=>`<div class="hero-build-slot final"><b>${i<5?i+1:'III'}</b>${buildMiniCard(x,i===5?'boot':'item')}</div>`).join('');
-    const isLucianStructured=hero.detailTemplate==='lucian-structured-v1';
-    const buildSection=isLucianStructured
-      ? renderLucianBuildSection(hero, items, boots)
-      : `${buildSection}
-        ${skillSection}
-        ${matchupSection}
-        `;
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
     const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head">${abilityMedia(x)}<div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div>${abilityVariants(x)}<p>${safeText(x.summary)}</p></div>`).join('');
+
+    const useStructuredYone=hero.detailTemplate==='structured-yone-v38';
+
+    const defaultBuildSection=`<section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>`;
+
+    const defaultSkillSection=`
+      <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
+      <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
+      ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
+      <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>`;
+
+    const defaultMatchupSection=`<section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(matchupChip).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div></div></section>`;
+
+    const buildSection=useStructuredYone
+      ? renderStructuredBuildSection(hero,items,boots)
+      : defaultBuildSection;
+    const skillSection=useStructuredYone
+      ? renderStructuredSkillSection(hero)
+      : defaultSkillSection;
+    const matchupSection=useStructuredYone
+      ? renderStructuredMatchups(hero)
+      : defaultMatchupSection;
 
     $('#heroContent').innerHTML=`
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button>${laneSwitch}</div>
@@ -304,12 +366,9 @@
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2a · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
-        <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
-        ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
-        <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>
-        <section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(matchupChip).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div></div></section>
+        ${buildSection}
+        ${skillSection}
+        ${matchupSection}
         ${Array.isArray(hero.mechanics)&&hero.mechanics.length?`<section class="hero-section"><div class="hero-section-title"><h3>${hero.mechanicsTitle||'特殊機制'}</h3><span>Champion Mechanic</span></div><div class="stack-grid">${hero.mechanics.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}${x.stacks!=null?`<strong>${x.stacks}</strong>`:''}<span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>實戰節奏</h3></div><div class="playstyle-timeline">${Object.entries(hero.playstyle).map(([k,v])=>`<div class="playstyle-step"><b>${k}</b><p>${v}</p></div>`).join('')}</div></section>
         <div class="hero-source-note">${hero.sourceNote}</div>
