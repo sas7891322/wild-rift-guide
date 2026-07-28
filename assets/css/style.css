@@ -874,53 +874,108 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 .hero-lane-switch button.active{border-color:#d6b45c;box-shadow:0 0 0 1px rgba(214,180,92,.18) inset}
 @media(max-width:720px){.all-hero-card{min-height:132px}.all-role-badges i{font-size:10px;padding:2px 5px}.hero-detail-toolbar{gap:8px;flex-wrap:wrap}.hero-lane-switch{width:100%;margin-left:0}.hero-lane-switch button{flex:1;min-width:86px}}
 
-/* Lucian mobile pilot — compact build + no-scroll Lv.1–15 skill order */
-@media (max-width: 520px){
-  .lucian-mobile-pilot .build-groups{
-    display:grid;
-    grid-template-columns:74px 74px minmax(0,1fr);
-    gap:6px;
-    align-items:stretch;
-  }
-  .lucian-mobile-pilot .starter-group,
-  .lucian-mobile-pilot .boots-group,
-  .lucian-mobile-pilot .core-group{
-    grid-column:auto!important;
-    min-width:0;
-  }
-  .lucian-mobile-pilot .final-group{grid-column:1/-1!important}
-  .lucian-mobile-pilot .build-group{padding:7px 5px;border-radius:11px}
-  .lucian-mobile-pilot .build-group-head{margin-bottom:5px;padding-bottom:5px}
-  .lucian-mobile-pilot .build-group-head strong{font-size:9px;white-space:nowrap}
-  .lucian-mobile-pilot .build-group-head small{display:none}
-  .lucian-mobile-pilot .starter-group .build-group-items,
-  .lucian-mobile-pilot .boots-group .build-group-items{display:block}
-  .lucian-mobile-pilot .boots-group .hero-boot-path{display:block}
-  .lucian-mobile-pilot .core-group .build-group-items{
-    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;overflow:visible
-  }
-  .lucian-mobile-pilot .build-group .build-mini{padding:4px 2px;border:0;background:transparent;box-shadow:none}
-  .lucian-mobile-pilot .build-group .build-mini img{width:38px;height:38px;border-radius:50%;margin:0 auto 4px}
-  .lucian-mobile-pilot .core-group .build-mini img{width:36px;height:36px}
-  .lucian-mobile-pilot .build-group .build-mini span{font-size:7px;min-height:0;line-height:1.15}
-  .lucian-mobile-pilot .hero-build-slot>b{display:none}
-  .lucian-mobile-pilot .final-group .build-group-items{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
-  .lucian-mobile-pilot .final-group .build-mini img{width:44px;height:44px;border-radius:9px}
 
-  .lucian-mobile-pilot .skill-level-grid{overflow:visible;padding:5px;border-radius:11px}
-  .lucian-mobile-pilot .skill-grid-row{
-    grid-template-columns:52px repeat(15,minmax(0,1fr));
-    min-width:0;width:100%;
+/* v36 · 犽凝路西恩母版試作（僅 detailTemplate=lucian-mobile-formal-v2） */
+.lucian-formal-build{
+  grid-template-columns:.8fr 1fr 1.7fr;
+  align-items:stretch;
+}
+.lucian-formal-build .starter-group{grid-column:auto}
+.lucian-formal-build .boots-group{grid-column:auto!important}
+.lucian-formal-build .core-group{grid-column:auto}
+.matchup-grid.no-ban{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero-combo-list{display:grid;gap:10px}
+.hero-combo-card{
+  border:1px solid rgba(216,184,108,.14);
+  border-radius:15px;
+  padding:12px;
+  background:linear-gradient(155deg,rgba(14,31,50,.78),rgba(7,18,31,.86));
+}
+.hero-combo-card>strong{display:block;color:#ead08b;font-size:13px;margin-bottom:9px}
+.hero-combo-card>p{margin:9px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
+.combo-steps{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.combo-steps>i{font-style:normal;color:var(--gold);font-weight:900;font-size:12px}
+.combo-step{
+  display:inline-grid;
+  grid-template-columns:30px auto;
+  align-items:center;
+  gap:5px;
+  padding:5px 7px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:10px;
+  background:rgba(4,14,25,.52);
+}
+.combo-step img,.combo-icon-placeholder,.combo-text-icon{
+  width:30px;height:30px;border-radius:7px;object-fit:cover;
+}
+.combo-text-icon{
+  display:grid;place-items:center;
+  background:rgba(216,184,108,.14);
+  color:#f0d58e;font-weight:900;font-size:11px;
+}
+.combo-step b{font-size:9px;white-space:nowrap}
+
+/* Lv.1～15 同一畫面，不允許左右滑動 */
+.skill-level-grid.no-swipe{overflow:visible!important;padding:5px}
+.skill-level-grid.no-swipe .skill-grid-row{
+  grid-template-columns:72px repeat(15,minmax(0,1fr));
+  min-width:0!important;
+}
+.skill-level-grid.no-swipe .skill-grid-skill{
+  position:static;
+  grid-template-columns:30px 1fr;
+  gap:4px;
+  padding:4px 5px;
+}
+.skill-level-grid.no-swipe .skill-grid-skill img,
+.skill-level-grid.no-swipe .skill-grid-skill .skill-icon-placeholder{
+  width:30px;height:30px;border-radius:7px;
+}
+.skill-level-grid.no-swipe .skill-grid-skill b{font-size:8px}
+.skill-level-grid.no-swipe .skill-grid-skill small{display:none}
+.skill-level-grid.no-swipe .skill-grid-cell{
+  min-width:0;
+  min-height:38px;
+  font-size:7px;
+}
+.skill-level-grid.no-swipe .skill-grid-cell.active span{
+  width:15px;height:15px;font-size:7px;
+}
+
+@media(max-width:800px){
+  .lucian-formal-build{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lucian-formal-build .core-group{grid-column:1/-1}
+}
+@media(max-width:520px){
+  .lucian-formal-build{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .lucian-formal-build .starter-group{grid-column:1}
+  .lucian-formal-build .boots-group{grid-column:2!important}
+  .lucian-formal-build .core-group{grid-column:1/-1}
+  .matchup-grid.no-ban{grid-template-columns:1fr}
+  .hero-combo-card{padding:9px}
+  .combo-steps{gap:4px}
+  .combo-steps>i{font-size:9px}
+  .combo-step{grid-template-columns:24px auto;gap:4px;padding:4px 5px}
+  .combo-step img,.combo-icon-placeholder,.combo-text-icon{width:24px;height:24px;border-radius:6px}
+  .combo-step b{font-size:7px}
+  .skill-level-grid.no-swipe .skill-grid-row{
+    grid-template-columns:54px repeat(15,minmax(0,1fr));
   }
-  .lucian-mobile-pilot .skill-grid-skill{
-    position:static;grid-template-columns:28px 1fr;gap:3px;padding:4px 2px;background:#0c1c2d
+  .skill-level-grid.no-swipe .skill-grid-skill{
+    grid-template-columns:24px 1fr;
+    padding:3px;
   }
-  .lucian-mobile-pilot .skill-grid-skill img,
-  .lucian-mobile-pilot .skill-grid-skill .skill-icon-placeholder{width:28px;height:28px;border-radius:7px}
-  .lucian-mobile-pilot .skill-grid-skill b{font-size:7px;white-space:nowrap}
-  .lucian-mobile-pilot .skill-grid-skill small{display:none}
-  .lucian-mobile-pilot .skill-grid-header .skill-grid-skill{font-size:7px}
-  .lucian-mobile-pilot .skill-grid-cell{min-width:0;min-height:34px;font-size:6px;padding:0}
-  .lucian-mobile-pilot .skill-grid-cell.active span{width:14px;height:14px;font-size:0}
-  .lucian-mobile-pilot .skill-grid-cell.active span::after{content:'•';font-size:10px;line-height:1}
+  .skill-level-grid.no-swipe .skill-grid-skill img,
+  .skill-level-grid.no-swipe .skill-grid-skill .skill-icon-placeholder{
+    width:24px;height:24px;border-radius:6px;
+  }
+  .skill-level-grid.no-swipe .skill-grid-skill b{font-size:7px}
+  .skill-level-grid.no-swipe .skill-grid-cell{
+    min-height:32px;
+    font-size:6px;
+    border-left-color:rgba(255,255,255,.035);
+  }
+  .skill-level-grid.no-swipe .skill-grid-cell.active span{
+    width:12px;height:12px;font-size:0;
+  }
 }
