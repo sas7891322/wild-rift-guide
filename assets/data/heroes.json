@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v56-jungle-complete",
+  "version": "7.2a-v58-mid-ahri-master-template",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -117,7 +117,8 @@
     "v53：完成打野第二批 20/50 正式版。新增完成卡力斯、雷葛爾、伊芙琳、艾克、悟空、黛安娜、阿姆姆、努努和威朗普、茂凱、慎；全數套用李星固定打野母版。慎新增獨立打野攻略檔，不影響巴龍路慎。",
     "v54：完成打野第三批 30/50 正式版。新增完成納帝魯斯、希瓦娜、赫克林、塔莉雅、費德提克、奈德麗、安比薩、慨影、拉姆斯、莉莉亞；全數套用李星固定打野母版。納帝魯斯新增獨立打野攻略，不影響輔助版本。",
     "v55：完成打野第四批 40/50 正式版。新增完成關、劫、卡蜜兒、厄薩斯、史加納、塔隆、易大師、歐拉夫、波比、泰達米爾；全數套用李星固定打野母版。",
-    "v56：完成打野第五批與全路線 50/50 正式版。新增完成淣菈、犽凝、賈克斯、達瑞斯、鏡爪、雷玟、魔甘娜、古拉格斯、蒙多醫生、飛斯；全數沿用李星固定打野母版。"
+    "v56：完成打野第五批與全路線 50/50 正式版。新增完成淣菈、犽凝、賈克斯、達瑞斯、鏡爪、雷玟、魔甘娜、古拉格斯、蒙多醫生、飛斯；全數沿用李星固定打野母版。",
+    "v58：完成中路阿璃正式版並固定為中路英雄母版。套用既有結構化英雄頁版型，更新 7.2a 出裝、符文、召喚師技能、完整技能加點、三組實戰連招、對局與前中後期策略；其餘英雄資料、CSS、JS 與版型均未修改。"
   ],
   "heroes": [
     {
@@ -24590,46 +24591,105 @@
       "baseId": "ahri",
       "name": "阿璃",
       "enName": "Ahri",
-      "roleId": "mid",
       "role": "中路",
+      "roleId": "mid",
       "tier": "S",
-      "position": "爆發刺客／遊走收割",
+      "position": "法師／刺客／遊走收割",
       "tags": [
         "爆發",
-        "遊走",
-        "單抓"
+        "魅惑",
+        "機動",
+        "收割"
       ],
       "ratings": {
-        "單排推薦": 4,
-        "新手推薦": 2,
-        "操作難度": 4,
-        "Blind Pick": 3,
+        "單排推薦": 5,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 4,
         "對線強度": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
         "electrocute",
-        "sudden-impact",
+        "cheap-shot",
         "eyeball-collector",
         "relentless-hunter",
-        "bone-plating"
+        "scorch"
       ],
       "items": [
-        "magic-high-18",
+        "magic-high-12",
+        "magic-high-25",
         "magic-high-21",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-23"
+        "magic-high-08"
       ],
       "boots": [
-        "burst-boots",
-        "immortal-boots"
+        "mana-boots",
+        "sorcerers-shoes"
       ],
       "spells": [
         "flash",
         "ignite"
       ],
       "skillOrder": "Q > W > E",
+      "matchups": {
+        "good": [
+          "希格斯",
+          "奧莉安娜",
+          "維克特"
+        ],
+        "bad": [
+          "加里歐",
+          "麗珊卓",
+          "安妮"
+        ],
+        "ban": "加里歐"
+      },
+      "playstyle": {
+        "前期": "以一技同時清兵與消耗，三技未命中時不要硬追。先維持血量與兵線主動權，等對手走位失誤再用魅惑接完整爆發。",
+        "中期": "推完中路兵線後跟隨打野進入河道與物件區，利用大絕調整角度命中三技。先抓落單目標，再靠參與擊殺取得額外突進繼續追擊。",
+        "後期": "不要第一時間直線衝入敵陣。先在側面尋找魅惑角度，等關鍵控制交掉後再用大絕切入；完成擊殺後利用新增突進拉開或轉火。"
+      },
+      "summary": "先用一技掌握兵線，再靠大絕調整魅惑角度；命中三技後打出完整爆發，參與擊殺取得額外突進並持續收割。",
+      "sourceNote": "7.2a 中路阿璃正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》阿璃英雄頁校正，版本基準採官方 7.2 與 7.2a 更新公告；7.2 已重製法師裝備、鞋子與符文系統，因此本版以盧登回音、視界專注、無限寶珠、死亡之帽與虛空之杖組成爆發配置。Tier、對局與實戰節奏為本站綜合評級。｜v58：阿璃固定為中路英雄正式母版。",
+      "avatar": "../assets/images/heroes/portraits/ahri.webp",
+      "abilities": [
+        {
+          "key": "P",
+          "label": "被動",
+          "title": "銷魂",
+          "icon": "../assets/images/heroes/skills/ahri_01.webp",
+          "summary": "技能命中敵人會累積銷魂層數；達到條件後，下一次命中會回復生命。參與擊殺敵方英雄時也能吸收精魄回復生命，並可在大絕期間延長追擊能力。"
+        },
+        {
+          "key": "Q",
+          "label": "1 技",
+          "title": "幻玉",
+          "icon": "../assets/images/heroes/skills/ahri_02.webp",
+          "summary": "向前投出幻玉並在極限距離折返。去程造成魔法傷害，回程造成真實傷害；對線時可利用走位讓往返兩段都命中。"
+        },
+        {
+          "key": "W",
+          "label": "2 技",
+          "title": "魅火",
+          "icon": "../assets/images/heroes/skills/ahri_03.webp",
+          "summary": "召出三團狐火自動攻擊附近敵人，並短暫提高跑速。適合補上爆發、追擊殘血或在換血後快速拉開距離。"
+        },
+        {
+          "key": "E",
+          "label": "3 技",
+          "title": "傾城",
+          "icon": "../assets/images/heroes/skills/ahri_04.webp",
+          "summary": "射出愛心魅惑第一個命中的敵人，使其失去控制並朝阿璃走來，同時中斷部分位移。這是阿璃最重要的先手與自保技能。"
+        },
+        {
+          "key": "R",
+          "label": "4 技",
+          "title": "飛仙",
+          "icon": "../assets/images/heroes/skills/ahri_05.png",
+          "summary": "向指定方向突進並對附近敵人發射靈魄造成傷害，可在技能期間再次施放。大絕期間參與擊殺可延長追擊並取得額外突進，用於切入、轉火與撤退。"
+        }
+      ],
       "skillSequence": [
         "Q",
         "W",
@@ -24653,71 +24713,100 @@
         "E": "3 技",
         "R": "4 技"
       },
-      "matchups": {
-        "good": [
-          "奧莉安娜",
-          "希格斯",
-          "維克特"
-        ],
-        "bad": [
-          "加里歐",
-          "麗珊卓",
-          "安妮"
-        ],
-        "ban": "加里歐"
-      },
-      "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
-      },
-      "summary": "利用中路短線快速推線後找側翼與遊走機會，先打出關鍵技能與位移差，再進場完成收割。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
-      "avatar": "../assets/images/heroes/portraits/ahri.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "銷魂",
-          "icon": "../assets/images/heroes/skills/ahri_01.webp",
-          "summary": "技能命中可累積能量，達條件後獲得治療，強化持續換血能力。"
-        },
-        {
-          "key": "Q",
-          "label": "1 技",
-          "title": "幻玉",
-          "icon": "../assets/images/heroes/skills/ahri_02.webp",
-          "summary": "投出再收回幻玉，去程造成魔法傷害、回程造成真實傷害。"
-        },
-        {
-          "key": "W",
-          "label": "2 技",
-          "title": "魅火",
-          "icon": "../assets/images/heroes/skills/ahri_03.webp",
-          "summary": "召出狐火自動攻擊附近敵人，並短暫提高跑速，適合追擊與拉扯。"
-        },
-        {
-          "key": "E",
-          "label": "3 技",
-          "title": "傾城",
-          "icon": "../assets/images/heroes/skills/ahri_04.webp",
-          "summary": "射出愛心魅惑第一個命中的敵人，使其朝阿璃走來並暫時失去行動能力。"
-        },
-        {
-          "key": "R",
-          "label": "4 技",
-          "title": "飛仙",
-          "icon": "../assets/images/heroes/skills/ahri_05.png",
-          "summary": "向指定方向突進並對附近敵人造成傷害；技能期間可再次施放，用於進退與收割。"
-        }
-      ],
-      "mechanics": [],
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-ahri-master-template-v58",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-12",
+        "magic-high-25",
+        "magic-high-21"
+      ],
+      "combos": [
+        {
+          "name": "基礎魅惑爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技魅惑"
+            },
+            {
+              "key": "Q",
+              "label": "1技往返"
+            },
+            {
+              "key": "W",
+              "label": "2技狐火"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先用三技限制走位，再立刻接一技與二技。靠近時補一次普攻觸發死亡電刑；三技沒中就停止追擊，避免白白交掉關鍵技能。"
+        },
+        {
+          "name": "大絕調角度抓人",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技側移"
+            },
+            {
+              "key": "E",
+              "label": "3技魅惑"
+            },
+            {
+              "key": "Q",
+              "label": "1技往返"
+            },
+            {
+              "key": "W",
+              "label": "2技狐火"
+            },
+            {
+              "key": "R",
+              "label": "4技追擊"
+            }
+          ],
+          "note": "先用大絕橫向調整角度，避開前排或小兵後再施放魅惑。確認目標交出位移後，第二段大絕用來追擊或拉開。"
+        },
+        {
+          "name": "團戰連續收割",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技先手"
+            },
+            {
+              "key": "Q",
+              "label": "1技輸出"
+            },
+            {
+              "key": "W",
+              "label": "2技補傷害"
+            },
+            {
+              "key": "R",
+              "label": "4技轉火"
+            },
+            {
+              "key": "R",
+              "label": "額外突進"
+            }
+          ],
+          "note": "先在安全距離命中魅惑，等敵方血量下降再用大絕進場。參與擊殺後取得額外突進，可繼續追擊下一名目標，也可直接撤回安全位置。"
+        }
+      ],
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": true
     },
     {
       "id": "akali-mid",
