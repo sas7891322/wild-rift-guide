@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v36-yone-trial",
+  "version": "7.2a-v37",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -99,7 +99,7 @@
     "。",
     "v33：前70英雄圖片改為最新版單一頭像＋技能平面檔名；移除該70英雄舊圖重複與舊技能子資料夾。",
     "v34：完成第71～139隻英雄及尤娜拉的最新版圖片覆蓋；每隻僅保留1張頭像與5張技能圖，技能採手機友善平面檔名。",
-    "v36試作：僅更新巴龍路犽凝，套用路西恩手機母版；其他英雄未修改。"
+    "v37：完成巴龍路犽凝正式英雄資訊頁，套用路西恩母版結構測試。"
   ],
   "heroes": [
     {
@@ -9685,7 +9685,7 @@
         "後期": "後期等控制交掉後用 E+R 切後排，避免本體回魂點被敵人包圍。"
       },
       "summary": "雙爆擊成長、靈體位移與大絕遠距切入讓他兼具側線與團戰爆發。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜犽凝試作版：以路西恩手機詳細頁為母版，改為起手裝備／鞋子／三件核心、技能連招、Lv.1～15單畫面與雙欄對局。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜犽凝正式版：採路西恩母版的新技能區與裝備區，包含技能正式名稱、單框加點、下拉式連招與雙欄對局。",
       "avatar": "../assets/images/heroes/portraits/yone.webp",
       "abilities": [
         {
@@ -9693,35 +9693,35 @@
           "label": "被動",
           "title": "獵人之道",
           "icon": "../assets/images/heroes/skills/yone_01.webp",
-          "summary": "每第二次普攻會造成額外魔法傷害，並擁有較高的暴擊率成長，讓犽凝能打出物理與魔法混合傷害。"
+          "summary": "每第二次普攻會造成額外魔法傷害，且暴擊率成長更高，讓犽凝更容易打出混合傷害。"
         },
         {
           "key": "Q",
-          "label": "1 技",
+          "label": "1技",
           "title": "鋼鐵凡志",
           "icon": "../assets/images/heroes/skills/yone_02.webp",
-          "summary": "向前突刺並視同普攻；命中後累積層數，疊滿時會向前衝刺並捲起旋風使敵人滯空。"
+          "summary": "向前突刺造成傷害並視為普攻；累積兩層後，下一次施放會附帶突進與擊飛效果。"
         },
         {
           "key": "W",
-          "label": "2 技",
+          "label": "2技",
           "title": "滅魂斬",
           "icon": "../assets/images/heroes/skills/yone_03.webp",
-          "summary": "斬擊前方錐形範圍，依目標最大生命造成傷害；命中敵方英雄時可獲得護盾。"
+          "summary": "向前方錐形範圍斬擊，依目標最大生命造成傷害；命中英雄時可獲得護盾。"
         },
         {
           "key": "E",
-          "label": "3 技",
+          "label": "3技",
           "title": "釋魂之刃",
           "icon": "../assets/images/heroes/skills/yone_04.webp",
-          "summary": "靈魂離體後提高移動速度並標記期間造成的傷害，結束時返回本體並再次結算部分傷害。"
+          "summary": "靈魂出竅並提升移動速度，期間標記自己造成的部分傷害；結束時回到本體並再次結算。"
         },
         {
           "key": "R",
-          "label": "4 技",
+          "label": "4技",
           "title": "二刀流奧義 ─ 封‧命‧斬",
           "icon": "../assets/images/heroes/skills/yone_05.webp",
-          "summary": "向前斬過長距離區域，把命中的敵人拉到終點並造成混合傷害，可用於遠距離開戰與接續擊飛。"
+          "summary": "向前斬過長距離區域，把命中的敵人拉到終點並造成混合傷害，可作為先手與收頭手段。"
         }
       ],
       "skillSequence": [
@@ -9742,16 +9742,16 @@
         "W"
       ],
       "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "4 技"
+        "Q": "1技",
+        "W": "2技",
+        "E": "3技",
+        "R": "4技"
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "yone-lucian-template-trial-v36",
+      "reviewStatus": "yone-formal-7.2a-v37",
       "reviewedAt": "2026-07-28",
-      "detailTemplate": "lucian-mobile-formal-v2",
+      "detailTemplate": "lucian-structured-v1",
       "hideBan": true,
       "skillIconCount": 5,
       "starterItems": [
@@ -9773,10 +9773,10 @@
             "Q",
             "E2"
           ],
-          "note": "先確認回魂點安全，再利用擊飛與護盾完成短換血；不要在三技能期間停留過久。"
+          "note": "三技進場後先用擊飛與護盾完成短換血，打完立即回魂，避免被反打。"
         },
         {
-          "name": "穩定開戰",
+          "name": "擊飛接大絕",
           "steps": [
             "E",
             "Q3",
@@ -9786,7 +9786,7 @@
             "Q",
             "E2"
           ],
-          "note": "先用一技能擊飛提高大絕命中率，打完主要爆發後返回本體。"
+          "note": "先用一技擊飛提高大絕命中率，落地後補二技與普攻，把爆發打滿。"
         },
         {
           "name": "大絕先手",
@@ -9799,7 +9799,7 @@
             "Q3",
             "E2"
           ],
-          "note": "適合隊友已提供控制時使用；大絕落地後立即補護盾與普攻。"
+          "note": "隊友已先手控制時可直接大絕進場，打一輪後利用三技安全回到原位。"
         }
       ]
     },
