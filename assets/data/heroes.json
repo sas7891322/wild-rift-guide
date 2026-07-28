@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v63-hero-role-schema-v2-200-active-guides",
+  "version": "7.2a-v64-duo-jinx-master-1-of-23",
   "updated": "2026-07-29",
   "schemaVersion": 2,
   "roleSource": "heroCatalog",
@@ -132,7 +132,8 @@
     "v60：完成中路第二批 12 位：塔莉雅、柔依、卡瑪、艾克、黛安娜、諾拉、庫奇、希格斯、翱鋭龍獸、逆命、維迦、漢默丁格。中路正式攻略進度更新為 24/46。",
     "v61：完成中路第三批 11 位：阿卡莉、犽宿、犽凝、劫、飛斯、卡薩丁、麗珊卓、伊瑞莉雅、卡特蓮娜、杰西、阿克尚。中路正式攻略進度更新為 35/46。",
     "v62：完成中路第四批 11 位：枷蘿、魔甘娜、凱爾、提摩、凱能、弗拉迪米爾、加里歐、布蘭德、塔隆、威寇茲、藍寶。中路正式攻略進度更新為 46/46，中路全數完成。",
-    "v63：英雄定位系統重構。全站定位、搜尋、路線列表與英雄頁切換改由 heroCatalog 單一來源控制；移除已取消的菲歐拉、伊瑞莉雅、辛吉德打野舊攻略入口。"
+    "v63：英雄定位系統重構。全站定位、搜尋、路線列表與英雄頁切換改由 heroCatalog 單一來源控制；移除已取消的菲歐拉、伊瑞莉雅、辛吉德打野舊攻略入口。",
+    "v64：完成飛龍路吉茵珂絲正式版並固定為飛龍路母版；補齊起手裝、核心三件、五件成裝、三級鞋路線、召喚師技能、完整技能加點、三組連招、對局與前中後期策略。飛龍路正式攻略進度更新為 1/23。"
   ],
   "heroes": [
     {
@@ -2320,11 +2321,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "B",
-      "position": "後期團戰／重置型射手",
+      "position": "後期團戰／重置收割型射手",
       "tags": [
         "超遠射程",
-        "團戰重置",
-        "後期核心"
+        "持續輸出",
+        "團戰重置"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -2346,8 +2347,7 @@
         "physical-high-23",
         "physical-high-18",
         "physical-high-13",
-        "physical-high-17",
-        "physical-high-10"
+        "physical-high-17"
       ],
       "boots": [
         "berserkers-greaves",
@@ -2355,7 +2355,7 @@
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ghost"
       ],
       "skillOrder": "Q > W > E",
       "matchups": {
@@ -2365,19 +2365,19 @@
           "圖奇"
         ],
         "bad": [
-          "達瑞文",
-          "路西恩",
-          "好運姐"
+          "燼",
+          "好運姐",
+          "寇格魔"
         ],
-        "ban": "達瑞文"
+        "ban": "燼"
       },
       "playstyle": {
-        "前期": "利用火箭安全補刀與消耗，避免沒位移時被強開。",
-        "中期": "有核心裝後跟隊打物件，先等隊友創造第一個擊殺或助攻。",
-        "後期": "觸發被動後立即利用高移速與攻速追擊，團戰容易形成連鎖收割。"
+        "前期": "以迷你砲穩定補刀，只有需要安全補兵或消耗時切換火箭；火箭每次攻擊都會消耗魔力。沒有河道視野或敵方仍保有突進時，咬咬手榴彈要留作自保，不要隨意拿來清兵。",
+        "中期": "狂風之力與磁性雷射槍成形後跟隊爭奪物件，站在前排後方用火箭打安全目標與範圍傷害。先確保自己能持續輸出，再等待第一個擊殺、助攻或防禦塔觸發狂躁。",
+        "後期": "團戰以最大射程攻擊最近且安全的目標，不必強行越過前排點後排。狂躁觸發後利用跑速重新站位，視距離切回迷你砲提高單體輸出；大絕主要用於處理殘血、補遠距傷害或爭奪史詩野怪。"
       },
-      "summary": "需要發育時間，但任何擊殺或拆塔都能觸發加速重置，一旦團戰起飛就有連續收割能力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "前期需要穩定發育的後期射手，透過雙武器切換維持安全輸出；只要參與第一個擊殺、史詩野怪或拆塔觸發狂躁，就能靠高攻速與跑速連續收割。",
+      "sourceNote": "7.2a 飛龍路吉茵珂絲正式母版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文、召喚師技能、對局與實戰節奏交叉參考 WildRiftFire 7.2a 與 WR-META 7.2A 後整合。Tier 維持本站既有飛龍路評級。｜v64：吉茵珂絲固定為飛龍路英雄正式母版。",
       "avatar": "../assets/images/heroes/portraits/jinx.webp",
       "abilities": [
         {
@@ -2385,35 +2385,35 @@
           "label": "被動",
           "title": "狂躁！",
           "icon": "../assets/images/heroes/skills/jinx_01.png",
-          "summary": "參與擊殺英雄、史詩野怪或摧毀建築後進入暴走，大幅提高跑速與攻速。"
+          "summary": "參與擊殺敵方英雄、史詩野怪或摧毀敵方建築後進入狂躁，大幅提升跑速與總攻速，並回復部分已損魔力。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "鬼靈精怪！",
           "icon": "../assets/images/heroes/skills/jinx_02.png",
-          "summary": "切換迷你砲與火箭發射器；前者高攻速，後者增加射程並造成範圍傷害。"
+          "summary": "切換迷你砲與火箭發射器；迷你砲連續普攻可疊加攻速，火箭則消耗魔力、提高射程並造成範圍傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "咻咻！",
           "icon": "../assets/images/heroes/skills/jinx_03.png",
-          "summary": "發射遠距電擊造成物理傷害、緩速並揭露第一個命中的敵人。"
+          "summary": "發射遠距電擊，對第一個命中的敵人造成物理傷害、緩速並揭露其視野。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "咬咬手榴彈！",
           "icon": "../assets/images/heroes/skills/jinx_04.png",
-          "summary": "投出三枚咬咬手榴彈，敵方英雄踩到時被定身，之後陷阱爆炸造成傷害。"
+          "summary": "投出三枚延遲啟動的咬咬手榴彈；敵方英雄碰到時會被定身並中斷位移，之後爆炸造成魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "超威能死亡火箭！",
           "icon": "../assets/images/heroes/skills/jinx_05.png",
-          "summary": "發射全圖火箭，飛行越遠傷害越高，命中英雄時爆炸並依已損生命造成額外傷害。"
+          "summary": "發射全圖火箭，飛行越遠速度與傷害越高；命中第一位敵方英雄後爆炸，並依目標已損生命造成額外傷害。"
         }
       ],
       "skillSequence": [
@@ -2444,8 +2444,104 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "duo-jinx-master-template-v64",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-03",
+        "physical-high-23",
+        "physical-high-18"
+      ],
+      "combos": [
+        {
+          "name": "火箭遠距消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技切火箭"
+            },
+            {
+              "key": "AA",
+              "label": "遠距普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技緩速"
+            },
+            {
+              "key": "AA",
+              "label": "追擊普攻"
+            }
+          ],
+          "note": "先用火箭射程安全摸血，目標退離兵線或走位受限時再接二技。火箭會持續耗魔，完成一輪消耗後切回迷你砲補兵。"
+        },
+        {
+          "name": "緩速封路反打",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技緩速"
+            },
+            {
+              "key": "E",
+              "label": "3技封退路"
+            },
+            {
+              "key": "Q",
+              "label": "1技切迷你砲"
+            },
+            {
+              "key": "AA",
+              "label": "普攻疊攻速"
+            },
+            {
+              "key": "AA",
+              "label": "持續輸出"
+            },
+            {
+              "key": "AA",
+              "label": "滿層追擊"
+            }
+          ],
+          "note": "二技命中後把咬咬手榴彈放在目標撤退方向或突進路線，再切迷你砲疊攻速。敵方有強開時，三技應優先保留作自保。"
+        },
+        {
+          "name": "團戰重置收割",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技火箭輸出"
+            },
+            {
+              "key": "AA",
+              "label": "攻擊安全目標"
+            },
+            {
+              "key": "W",
+              "label": "2技留人"
+            },
+            {
+              "key": "R",
+              "label": "4技處理殘血"
+            },
+            {
+              "key": "P",
+              "label": "被動狂躁"
+            },
+            {
+              "key": "AA",
+              "label": "加速追擊"
+            }
+          ],
+          "note": "先從最大射程輸出前排，等殘血目標出現再用大絕補傷害。狂躁觸發後先重新站位，再依距離切換武器追擊，不要因加速直接衝進控制範圍。"
+        }
+      ],
+      "duoMasterTemplate": "jinx-v64",
+      "isDuoMasterTemplate": true
     },
     {
       "id": "caitlyn",
@@ -41743,7 +41839,17 @@
       "name": "飛龍路",
       "nativeCount": 23,
       "crossCount": 0,
-      "crossRule": "遊戲內原生中路英雄只有在飛龍路評價達 S 或 S+ 時才加入。"
+      "crossRule": "以遊戲內飛龍路 23 位原生定位名單為準，不另外加入跨路英雄。",
+      "detailComplete": false,
+      "detailCompletedCount": 1,
+      "detailTotalCount": 23,
+      "detailProgress": "1/23",
+      "portraitMode": "shared",
+      "verification": "依使用者提供的遊戲內飛龍路定位截圖確認 23 位；v64 已完成吉茵珂絲正式母版，正式攻略進度 1/23。",
+      "detailVersion": "v64-jinx-master-1-of-23-7.2a",
+      "roleSource": "heroCatalog",
+      "roleAuditVersion": "v64",
+      "roleAuditStatus": "passed"
     },
     "support": {
       "name": "輔助",
@@ -41771,7 +41877,8 @@
     "completedLaneCounts": {
       "baron": 49,
       "jungle": 50,
-      "mid": 46
+      "mid": 46,
+      "duo": 1
     },
     "removedLegacyProfiles": [
       "fiora-jungle",
