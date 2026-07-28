@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v50-jungle-roster-50",
+  "version": "7.2a-v51-jungle-lee-sin-formal",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -111,7 +111,8 @@
     "v48：巴龍路第 9 批完成潘森、雷茲、史加納、斯溫。",
     "v49：巴龍路第 10 批完成維爾戈、弗力貝爾、沃維克、犽宿。",
     "v49：巴龍路正式版已 100% 完成。",
-    "v50：依遊戲內打野定位截圖校正為 50 位；移除辛吉德、菲歐拉、伊瑞莉雅，新增慎、納帝魯斯。本版只更新英雄名單，不更動任何英雄詳細攻略資料。"
+    "v50：依遊戲內打野定位截圖校正為 50 位；移除辛吉德、菲歐拉、伊瑞莉雅，新增慎、納帝魯斯。本版只更新英雄名單，不更動任何英雄詳細攻略資料。",
+    "v51：完成李星打野正式版；套用犽凝固定母版，更新 7.2a 出裝、符文、技能加點、三組連招、對局與實戰節奏。其餘英雄資料未修改。"
   ],
   "heroes": [
     {
@@ -16737,64 +16738,63 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "鬥士／刺客／前期節奏",
       "tags": [
-        "換血",
-        "續航",
-        "側翼"
+        "機動",
+        "爆發",
+        "開戰"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 1,
         "操作難度": 5,
         "Blind Pick": 3,
-        "前期節奏": 4,
+        "前期節奏": 5,
         "團戰影響力": 4
       },
       "runes": [
         "conqueror",
         "battle-fervor",
-        "last-stand",
+        "cut-down",
         "legend-alacrity",
         "sudden-impact"
       ],
       "items": [
+        "physical-high-14",
         "physical-high-21",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-27",
+        "physical-high-31",
+        "physical-high-10"
       ],
       "boots": [
-        "plated-steelcaps",
-        "physical-high-01"
+        "gluttonous-greaves",
+        "immortal-boots"
       ],
       "spells": [
         "flash",
         "smite"
       ],
-      "skillOrder": "Q > E > W",
+      "skillOrder": "Q > W > E",
       "matchups": {
         "good": [
-          "魔甘娜",
           "費德提克",
-          "奈德麗"
+          "奈德麗",
+          "伊芙琳"
         ],
         "bad": [
-          "鏡爪",
+          "拉姆斯",
           "莉莉亞",
-          "拉姆斯"
+          "夜曲"
         ],
-        "ban": "鏡爪"
+        "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "善用每次施放技能後的兩次強化普攻維持能量與清野效率。第一輪清野後優先觀察有控制或敵方壓線的路線，並利用前期單挑能力爭奪河蟹與入侵機會。",
+        "中期": "物件刷新前先搶河道視野與側翼角度；一技命中後不要急著二段進場，先確認隊友距離、敵方控制與二技退路，再決定追擊或用大絕製造人數差。",
+        "後期": "後期傷害優勢會下降，重點改為尋找神龍擺尾的關鍵角度。可踢回敵方核心、踢開切入者保護後排，並保留重擊處理飛龍與巴龍。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "前期靠高機動與強勢小規模戰鬥帶動節奏，中後期則以位移角度和神龍擺尾改變團戰站位。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與機制依 Riot Games 台灣《激鬥峽谷》李星英雄頁校正，並納入 7.2 對李星技能傷害結構的調整與 7.2a 版本基準；出裝、符文、技能順序及對局方向交叉參考 WildRiftFire 7.2a 與 2026-07-18 公開排名資料。Tier 與實戰節奏為本站綜合評級。｜v51：李星完成打野正式版，套用犽凝固定母版，補齊起手裝、核心三件、六件配置、完整技能加點與三組實戰連招。",
       "avatar": "../assets/images/heroes/portraits/lee-sin.webp",
       "abilities": [
         {
@@ -16802,53 +16802,53 @@
           "label": "被動",
           "title": "無雙亂舞",
           "icon": "../assets/images/heroes/skills/lee-sin_01.png",
-          "summary": "施放技能後接下來兩次普攻獲得攻速並回復能量，鼓勵技能與普攻交錯。"
+          "summary": "施放技能後，接下來兩次普攻會獲得額外攻速並回復能量。清野與持續作戰時應讓技能和普攻交錯，避免一次把技能全部按完。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "虎嘯龍吟／震驚百里",
           "icon": "../assets/images/heroes/skills/lee-sin_02.webp",
-          "summary": "第一段發出音波標記敵人；第二段突進到被標記目標並依其已損生命提高傷害。"
+          "summary": "第一段發出音波，對第一個命中的敵人造成物理傷害並揭露目標；命中後可再次施放，突進至目標並依其已損失生命提高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "鐵璧金身／易筋洗髓",
           "icon": "../assets/images/heroes/skills/lee-sin_03.png",
-          "summary": "第一段衝向指定位置並獲得護盾；第二段提高全能吸血與魔法吸血。"
+          "summary": "第一段向指定位置衝刺，落點附近有敵方英雄或野怪時獲得護盾；第二段強化接下來的攻擊，造成額外魔法傷害並提供全能吸血。普攻可縮短第一段冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "狂風暴雨／分筋錯骨",
           "icon": "../assets/images/heroes/skills/lee-sin_04.webp",
-          "summary": "第一段震地傷害並揭露敵人；第二段緩速被第一段命中的敵人。"
+          "summary": "第一段重擊地面，對附近敵人造成魔法傷害並揭露位置；命中後可再次施放，使受到第一段影響的敵人緩速，效果會隨時間逐漸恢復。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "神龍擺尾",
           "icon": "../assets/images/heroes/skills/lee-sin_05.png",
-          "summary": "踢飛指定英雄造成物理傷害；被踢飛目標撞到其他敵人時會造成額外傷害與擊飛。"
+          "summary": "猛踢一名敵方英雄，造成物理傷害並將其擊退。被踢飛的目標撞上其他敵人時，會對沿途敵人造成傷害並擊飛，是開戰、保排與搶角度的核心技能。"
         }
       ],
       "skillSequence": [
         "Q",
-        "E",
         "W",
+        "E",
         "Q",
         "R",
         "Q",
         "Q",
-        "E",
-        "R",
-        "E",
-        "E",
         "W",
         "R",
         "W",
-        "W"
+        "W",
+        "E",
+        "R",
+        "E",
+        "E"
       ],
       "skillLabels": {
         "Q": "1 技",
@@ -16861,8 +16861,106 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "jungle-lee-sin-formal-v51",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-14",
+        "physical-high-21",
+        "physical-high-27"
+      ],
+      "combos": [
+        {
+          "name": "基礎追擊連招",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技第一段"
+            },
+            {
+              "key": "Q",
+              "label": "1技第二段"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技第一段"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技第二段"
+            }
+          ],
+          "note": "一技命中後突進，穿插被動普攻再用三技緩速。適合一般 Gank 與追擊，但二段一技前要先確認敵方沒有把你帶進危險位置。"
+        },
+        {
+          "name": "踢回隊伍",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技第一段"
+            },
+            {
+              "key": "Q",
+              "label": "1技第二段"
+            },
+            {
+              "key": "W",
+              "label": "2技繞到身後"
+            },
+            {
+              "key": "R",
+              "label": "4技踢回"
+            },
+            {
+              "key": "E",
+              "label": "3技緩速"
+            }
+          ],
+          "note": "先用一技接近，再用二技穿到目標身後，把敵人踢向隊友。二技落點必須先看清楚，避免角度不足反而把目標踢走。"
+        },
+        {
+          "name": "大絕接二段一技",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技第一段"
+            },
+            {
+              "key": "R",
+              "label": "4技擊退"
+            },
+            {
+              "key": "Q",
+              "label": "1技第二段"
+            },
+            {
+              "key": "E",
+              "label": "3技第一段"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技第二段"
+            }
+          ],
+          "note": "先用一技標記目標，再以大絕擊退並立刻用二段一技跟進，能同時完成位移控制與斬殺追擊。施放前要確認落點不會讓自己脫離隊友。"
+        }
+      ]
     },
     {
       "id": "lillia-jungle",
