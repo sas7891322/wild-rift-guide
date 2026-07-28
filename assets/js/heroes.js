@@ -218,16 +218,19 @@
   function renderStructuredCombos(hero){
     const combos=Array.isArray(hero.combos)?hero.combos:[];
     const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
-    const names={Q:'1技',Q3:'1技擊飛',W:'2技',E:'3技',E2:'返回',R:'4技',AA:'普攻'};
+    const names={P:'被動',Q:'1技',Q3:'1技擊飛',W:'2技',E:'3技',E2:'返回',R:'4技',AA:'普攻'};
 
-    function renderStep(step){
+    function renderStep(rawStep){
+      const isObject=rawStep&&typeof rawStep==='object';
+      const step=isObject?String(rawStep.key||''):String(rawStep||'');
+      const label=isObject&&rawStep.label?safeText(rawStep.label):(names[step]||step);
       if(step==='AA'){
-        return `<span class="yone-combo-step"><i class="yone-combo-aa">A</i><small>普攻</small></span>`;
+        return `<span class="yone-combo-step"><i class="yone-combo-aa">A</i><small>${label||'普攻'}</small></span>`;
       }
       const baseKey=step==='Q3'?'Q':step==='E2'?'E':step;
       return `<span class="yone-combo-step">
         ${abilityMedia(abilities[baseKey]||{},'yone-combo-placeholder')}
-        <small>${names[step]||step}</small>
+        <small>${label}</small>
       </span>`;
     }
 
@@ -334,7 +337,7 @@
     const activeAbilities = abilities.filter(x=>x.key!=='P');
     const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head">${abilityMedia(x)}<div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div>${abilityVariants(x)}<p>${safeText(x.summary)}</p></div>`).join('');
 
-    const useStructuredYone=hero.detailTemplate==='structured-yone-v38';
+    const useStructuredYone=['structured-yone-v38','structured-baron-v40'].includes(hero.detailTemplate);
 
     const defaultBuildSection=`<section class="hero-section"><div class="hero-section-title"><h3>裝備配置</h3><span>Build Path</span></div><div class="build-groups">${buildSet('起手裝備','開局優先',starterHTML,'starter-group')}${buildSet('三件核心裝備','核心成形',coreHTML,'core-group')}${buildSet('鞋子','二級 → 三級',`<div class="hero-boot-path">${bootHTML}</div>`,'boots-group')}${buildSet('完整成裝','5 件裝備＋三級鞋',finalHTML,'final-group')}</div></section>`;
 
