@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v66-duo-second-batch-13-of-23",
+  "version": "7.2a-v67-duo-third-batch-18-of-23",
   "updated": "2026-07-29",
   "schemaVersion": 2,
   "roleSource": "heroCatalog",
@@ -133,7 +133,8 @@
     "v61：完成中路第三批 11 位：阿卡莉、犽宿、犽凝、劫、飛斯、卡薩丁、麗珊卓、伊瑞莉雅、卡特蓮娜、杰西、阿克尚。中路正式攻略進度更新為 35/46。",
     "v62：完成中路第四批 11 位：枷蘿、魔甘娜、凱爾、提摩、凱能、弗拉迪米爾、加里歐、布蘭德、塔隆、威寇茲、藍寶。中路正式攻略進度更新為 46/46，中路全數完成。",
     "v63：英雄定位系統重構。全站定位、搜尋、路線列表與英雄頁切換改由 heroCatalog 單一來源控制；移除已取消的菲歐拉、伊瑞莉雅、辛吉德打野舊攻略入口。",
-    "v64：完成飛龍路吉茵珂絲正式版並固定為飛龍路母版；補齊起手裝、核心三件、五件成裝、三級鞋路線、召喚師技能、完整技能加點、三組連招、對局與前中後期策略。飛龍路正式攻略進度更新為 1/23。"
+    "v64：完成飛龍路吉茵珂絲正式版並固定為飛龍路母版；補齊起手裝、核心三件、五件成裝、三級鞋路線、召喚師技能、完整技能加點、三組連招、對局與前中後期策略。飛龍路正式攻略進度更新為 1/23。",
+    "v67：完成飛龍路第三批 5 位：寇格魔、凱特琳、史矛德、尤娜拉、崔絲塔娜；補齊正式母版欄位並校正官方技能名稱與史矛德 25／100／175 層進化門檻。飛龍路正式攻略進度更新為 18/23。"
   ],
   "heroes": [
     {
@@ -143,12 +144,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "S+",
-      "position": "後期堆層／技能型射手",
+      "position": "堆層成長／技能型後期射手",
       "tags": [
+        "龍性精通",
         "遠距消耗",
-        "後期核心",
-        "真實傷害",
-        "斬殺"
+        "真傷斬殺"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -166,12 +166,11 @@
         "transcendence"
       ],
       "items": [
-        "physical-high-26",
-        "physical-high-34",
+        "physical-high-19",
+        "physical-high-21",
+        "physical-high-27",
         "physical-high-23",
-        "physical-high-17",
-        "physical-high-18",
-        "physical-high-10"
+        "physical-high-34"
       ],
       "boots": [
         "gluttonous-greaves",
@@ -181,7 +180,7 @@
         "flash",
         "barrier"
       ],
-      "skillOrder": "1 > 2 > 3",
+      "skillOrder": "Q > W > E",
       "matchups": {
         "good": [
           "汎",
@@ -196,48 +195,48 @@
         "ban": "達瑞文"
       },
       "playstyle": {
-        "前期": "以安全補兵與 1 技尾兵疊層為第一優先，不為了多一層被迫換成殘血。",
-        "中期": "25／100 層後清線與消耗逐步成形，盡量在物件團前先用遠距技能壓低敵方血量。",
-        "後期": "175 層後保持距離持續用 1 技消耗與收割；3 技優先保留作為穿牆與自保位移。"
+        "前期": "史矛德前期以累積龍性精通為第一目標：用一技尾刀、技能命中英雄都能取得層數。二技可穿過兵線消耗對手並觸發爆炸，但不要為了多疊一層走進強開範圍；三技是主要穿牆與撤退手段，敵方打野位置不明時務必保留。",
+        "中期": "達到 25 層後一技開始造成範圍傷害，100 層後會在目標後方引發額外爆炸。魔劍正宗、三相之力與席利妲咒怨成形後，先在物件團外圍以一技和二技壓低血量；大絕可在開戰初期提供大範圍傷害、中心緩速與自我治療。",
+        "後期": "175 層後一技會附加真實傷害燃燒並處決低生命敵方英雄。團戰保持在前排後方，以磁性雷射槍延伸一技消耗範圍，優先攻擊能安全命中的目標；三技保留穿牆避開刺客，活著反覆施放一技比冒險追擊更重要。"
       },
-      "summary": "前期安全補兵疊層，避免無謂換血；175 層後保持距離持續消耗，利用真實傷害燃燒與斬殺能力接管團戰。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理。",
+      "summary": "透過一技尾刀與技能命中英雄累積龍性精通，25／100／175 層依序強化範圍、後方爆炸與真傷斬殺。前期偏弱，裝備和層數成形後能用遠距技能接管團戰。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》史矛德英雄頁校正；目前 25／100／175 層進化門檻、出裝、符文與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
       "avatar": "../assets/images/heroes/portraits/smolder.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "被動堆層",
+          "title": "龍性精通",
           "icon": "../assets/images/heroes/skills/smolder_01.png",
-          "summary": "透過尾兵與技能命中逐步堆疊層數，讓一技能隨層數進化，是史矛德整場最核心的成長機制。"
+          "summary": "技能命中敵方英雄，或使用激灼龍息擊殺敵人時獲得層數；層數會強化史矛德的基礎技能。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主力尾兵／消耗",
+          "label": "1 技",
+          "title": "激灼龍息",
           "icon": "../assets/images/heroes/skills/smolder_02.png",
-          "summary": "前中後期最重要的主力技能，用來尾兵、消耗與收割；層數越高，清線與斬殺能力越完整。"
+          "summary": "對目標吐出龍焰並套用命中特效；擊殺目標會返還魔力。龍性精通達到 25／100／175 層時依序獲得範圍傷害、後方爆炸、真傷燃燒與處決。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "範圍消耗",
+          "label": "2 技",
+          "title": "悶燃黏嚏",
           "icon": "../assets/images/heroes/skills/smolder_03.png",
-          "summary": "中距離範圍技能，適合配合對線換血與團戰前壓低血量，幫助後續一技能收頭。"
+          "summary": "朝指定方向打出火焰噴嚏，傷害並緩速命中的敵人；命中英雄後會產生爆炸，可用於穿兵消耗與堆層。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "位移自保",
+          "label": "3 技",
+          "title": "振翼高飛",
           "icon": "../assets/images/heroes/skills/smolder_04.png",
-          "summary": "主要的位移與拉打技能，可用來調整站位、追擊或撤退；通常保留給自保會更穩。"
+          "summary": "短時間提高跑速、無視地形並自動轟擊範圍內低生命敵人；同時擴大視野，是主要自保與穿牆技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "遠距開戰／收頭",
+          "label": "4 技",
+          "title": "媽媽幫我！",
           "icon": "../assets/images/heroes/skills/smolder_05.png",
-          "summary": "遠距離的大招可用來先手壓血、支援遠方會戰，或在混戰中完成收割。"
+          "summary": "召喚母親從空中噴火，對大範圍敵人造成傷害；中心傷害更高並附帶緩速，史矛德被命中時還會回復生命。"
         }
       ],
       "skillSequence": [
@@ -261,30 +260,113 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "mechanicsTitle": "龍之修行層數",
+      "mechanicsTitle": "龍性精通層數",
       "mechanics": [
         {
           "stacks": 25,
           "title": "範圍強化",
           "icon": "../assets/images/heroes/smolder/q-25.png",
-          "text": "1 技開始對主要目標周圍的敵人造成範圍傷害。"
+          "text": "激灼龍息開始對主要目標周圍的敵人造成範圍傷害。"
         },
         {
           "stacks": 100,
           "title": "後方爆炸",
           "icon": "../assets/images/heroes/smolder/q-100.png",
-          "text": "1 技會在目標後方觸發額外爆炸，清線與消耗能力進一步提升。"
+          "text": "激灼龍息會在主要目標後方引發額外爆炸，提升清線與遠距消耗能力。"
         },
         {
           "stacks": 175,
-          "title": "燃燒與斬殺",
+          "title": "燃燒與處決",
           "icon": "../assets/images/heroes/smolder/q-175.png",
-          "text": "1 技附加真實傷害燃燒，並可斬殺生命值低於門檻的燃燒中敵方英雄。"
+          "text": "激灼龍息附加真實傷害燃燒，並處決生命值低於門檻的燃燒中敵方英雄。"
         }
       ],
-      "baseId": "smolder"
+      "baseId": "smolder",
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-19",
+        "physical-high-21",
+        "physical-high-27"
+      ],
+      "combos": [
+        {
+          "name": "對線堆層換血",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技穿兵消耗"
+            },
+            {
+              "key": "AA",
+              "label": "普攻補傷害"
+            },
+            {
+              "key": "Q",
+              "label": "1技尾刀／命中"
+            }
+          ],
+          "note": "二技穿過兵線命中英雄可安全拿層數，再用普攻與一技收尾。不要為了追第二輪技能交掉三技。"
+        },
+        {
+          "name": "短距離拉打",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技消耗"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技穿牆拉開"
+            },
+            {
+              "key": "W",
+              "label": "2技回頭緩速"
+            }
+          ],
+          "note": "先打一技與普攻，敵方準備反撲時用三技穿牆或拉開，再以二技阻止追擊。三技不應單純拿來補傷害。"
+        },
+        {
+          "name": "大絕團戰收割",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技中心壓血"
+            },
+            {
+              "key": "W",
+              "label": "2技緩速"
+            },
+            {
+              "key": "Q",
+              "label": "1技輸出"
+            },
+            {
+              "key": "AA",
+              "label": "穿插普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技斬殺"
+            }
+          ],
+          "note": "大絕在團戰開始時施放，利用中心緩速與回血建立輸出空間；175 層後持續用一技觸發燃燒和處決，不必冒險越過前排。"
+        }
+      ],
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "duo-third-batch-formal-v67",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "third-batch-v67"
     },
     {
       "id": "miss-fortune",
@@ -1901,11 +1983,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "S",
-      "position": "超遠距／打坦型後期射手",
+      "position": "超遠距／百分比打坦型後期射手",
       "tags": [
-        "超高 DPS",
-        "打坦核心",
-        "需要保護"
+        "超遠射程",
+        "百分比傷害",
+        "持續輸出"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -1927,8 +2009,7 @@
         "physical-high-28",
         "physical-high-13",
         "physical-high-12",
-        "physical-high-35",
-        "physical-high-10"
+        "physical-high-35"
       ],
       "boots": [
         "berserkers-greaves",
@@ -1941,24 +2022,24 @@
       "skillOrder": "W > Q > E",
       "matchups": {
         "good": [
-          "汎",
-          "凱莎",
-          "崔絲塔娜"
+          "希維爾",
+          "煞蜜拉",
+          "剎雅"
         ],
         "bad": [
-          "路西恩",
-          "達瑞文",
-          "煞蜜拉"
+          "艾希",
+          "凱特琳",
+          "汎"
         ],
-        "ban": "達瑞文"
+        "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "前期以補刀為主，避免沒有保護時長時間站樁。",
-        "中期": "兩三件裝後跟緊前排，開射程技能再進入輸出位置。",
-        "後期": "不要單獨走線，保持最大射程持續打最近目標即可造成巨大團戰壓力。"
+        "前期": "寇格魔前期沒有位移，主要任務是保持血量、穩定補刀並避免在二技冷卻時硬打長換血。對手走位靠前時，可先用一技削減雙防，再開二技利用額外射程與最大生命魔法傷害輸出；三技應優先放在敵方追擊路線，替自己創造拉開距離的空間。",
+        "中期": "鬼索、那歐疾刃與芮蘭颶風箭成形後，寇格魔的攻速、命中特效與二技覆蓋率明顯提升。物件團要跟緊前排與保排輔助，先攻擊最近且安全的目標；大絕可用來探草、壓低殘血或補視野，但連續施放會提高耗魔，不要在正式開戰前把魔力耗光。",
+        "後期": "團戰開啟二技後站在最大射程持續走砍，先用一技降低前排雙防，再依靠百分比傷害與芮蘭颶風箭處理多人。沒有閃現或隊友保護時不要獨自走進側翼；遭到貼身時以三技緩速、光盾與閃現拉開，活著持續輸出比追後排更重要。"
       },
-      "summary": "需要隊友保護，但開啟射程強化後能從安全位置快速融化前排，是版本頂級後期火力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以一技削減雙防、二技提升射程並附加最大生命魔法傷害，在隊友保護下能快速融化前排。缺乏位移且容易被強開，必須保留三技、召喚師技能與安全站位。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》寇格魔英雄頁及 7.1f 生化彈幕調整校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
       "avatar": "../assets/images/heroes/portraits/kogmaw.webp",
       "abilities": [
         {
@@ -1966,35 +2047,35 @@
           "label": "被動",
           "title": "來自伊卡西亞的驚喜",
           "icon": "../assets/images/heroes/skills/kogmaw_01.webp",
-          "summary": "死亡後仍可短暫移動並提高跑速，隨後爆炸對附近敵人造成真實傷害。"
+          "summary": "死亡後仍可短暫移動並逐步提高跑速，效果結束時爆炸，對附近敵人造成真實傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "腐蝕唾液",
           "icon": "../assets/images/heroes/skills/kogmaw_02.webp",
-          "summary": "射出腐蝕唾液造成魔法傷害並降低目標雙防；被動提高攻速。"
+          "summary": "射出腐蝕唾液造成魔法傷害，並在一段時間內降低目標物防與魔防；技能被動提供攻速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "生化彈幕",
           "icon": "../assets/images/heroes/skills/kogmaw_03.webp",
-          "summary": "短時間提高普攻距離，並讓普攻附加依目標最大生命計算的魔法傷害。"
+          "summary": "短時間提高普攻距離，並讓普攻附加依目標最大生命計算的魔法傷害，是主要持續輸出技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "虛空淤泥",
           "icon": "../assets/images/heroes/skills/kogmaw_04.webp",
-          "summary": "吐出一條虛空淤泥造成魔法傷害並留下緩速地帶。"
+          "summary": "向前吐出虛空淤泥造成魔法傷害，並留下緩速路徑，用於留人、封路或阻止敵方貼近。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "生化巨炮",
           "icon": "../assets/images/heroes/skills/kogmaw_05.webp",
-          "summary": "遠距離砲擊指定位置，造成魔法傷害並揭露敵人；對低生命目標傷害更高，連續施放提高耗魔。"
+          "summary": "遠距轟擊指定區域，造成魔法傷害並揭露命中敵人；對低生命目標傷害更高，短時間連續施放會增加耗魔。"
         }
       ],
       "skillSequence": [
@@ -2025,8 +2106,96 @@
       "baseId": "kogmaw",
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "duo-third-batch-formal-v67",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "basic-dagger"
+      ],
+      "coreItems": [
+        "physical-high-07",
+        "physical-high-28",
+        "physical-high-13"
+      ],
+      "combos": [
+        {
+          "name": "削防射程換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技削雙防"
+            },
+            {
+              "key": "W",
+              "label": "2技增射程"
+            },
+            {
+              "key": "AA",
+              "label": "遠距普攻"
+            },
+            {
+              "key": "AA",
+              "label": "持續走砍"
+            }
+          ],
+          "note": "一技命中後再開二技，利用雙防降低與額外射程打一輪安全普攻。二技結束就後撤，不要在沒有位移的情況下繼續站樁。"
+        },
+        {
+          "name": "淤泥留人爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技緩速"
+            },
+            {
+              "key": "Q",
+              "label": "1技削雙防"
+            },
+            {
+              "key": "W",
+              "label": "2技增射程"
+            },
+            {
+              "key": "AA",
+              "label": "普攻輸出"
+            },
+            {
+              "key": "R",
+              "label": "4技補傷害"
+            }
+          ],
+          "note": "先用三技限制走位，再接一技與二技持續輸出；大絕放在目標撤退位置，避免過早連發造成魔力不足。"
+        },
+        {
+          "name": "後排打坦團戰",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技命中前排"
+            },
+            {
+              "key": "W",
+              "label": "2技開火"
+            },
+            {
+              "key": "AA",
+              "label": "攻擊最近目標"
+            },
+            {
+              "key": "E",
+              "label": "3技封突進"
+            },
+            {
+              "key": "R",
+              "label": "4技收殘血"
+            }
+          ],
+          "note": "團戰只打安全目標即可。三技保留阻擋刺客與鬥士，等殘血出現再用大絕收尾，不要為了攻擊後排離開保護範圍。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "third-batch-v67"
     },
     {
       "id": "vayne",
@@ -3705,11 +3874,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "B",
-      "position": "長射程／對線壓制射手",
+      "position": "長射程／陷阱壓制型射手",
       "tags": [
         "超長射程",
-        "陷阱控制",
-        "前期壓線"
+        "陷阱封鎖",
+        "爆頭壓制"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -3731,8 +3900,7 @@
         "physical-high-23",
         "physical-high-18",
         "physical-high-17",
-        "physical-high-11",
-        "physical-high-10"
+        "physical-high-11"
       ],
       "boots": [
         "berserkers-greaves",
@@ -3740,7 +3908,7 @@
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ghost"
       ],
       "skillOrder": "Q > W > E",
       "matchups": {
@@ -3754,15 +3922,15 @@
           "伊澤瑞爾",
           "史矛德"
         ],
-        "ban": "好運姐"
+        "ban": "史矛德"
       },
       "playstyle": {
-        "前期": "用射程不停白嫖普攻，配合陷阱卡住塔前與草叢位置。",
-        "中期": "推線後圍繞物件提前擺陷阱，限制敵方前排進場。",
-        "後期": "維持最大射程，不要為了大絕或爆頭走進刺客可接近的距離。"
+        "前期": "利用基礎射程優勢在敵方補刀時穿插普攻，並用鎮暴射擊同時清線與消耗。陷阱放在草叢入口、牆邊與輔助控制落點，而不是隨意丟在兵線中央；九零式獵網要保留躲關鍵技能或拉開突進，命中後立刻接遠距爆頭。",
+        "中期": "蒐集者、磁性雷射槍與致死宣告完成後，凱特琳能在物件團前持續遠距壓血。提前用陷阱封住河道窄口、龍坑入口與敵方前排必經位置，對踩中陷阱者先打爆頭再接一技；王牌射手適合處理已離開隊伍的殘血目標，避免對著能被隊友擋下的目標硬開。",
+        "後期": "維持最大普攻距離攻擊最近目標，利用磁性雷射槍與爆頭進行高傷害點射。團戰中陷阱優先保護自己與後排，而非全部放在遠處；被刺客靠近時以獵網反向位移並接爆頭，鬼步用來延長走砍距離，不要為了施放大絕停在危險位置。"
       },
-      "summary": "利用射程與陷阱取得對線主導權，若沒在前中期建立優勢，後期主要靠爆頭與安全輸出維持價值。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "依靠全射手頂尖的基礎射程、爆頭與陷阱建立對線和物件區壓制。陷阱與獵網命中後能觸發超遠距爆頭，但中後期輸出仍取決於安全站位與陷阱佈置。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》凱特琳英雄頁校正；出裝、符文、召喚師技能與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
       "avatar": "../assets/images/heroes/portraits/caitlyn.webp",
       "abilities": [
         {
@@ -3770,35 +3938,35 @@
           "label": "被動",
           "title": "爆頭",
           "icon": "../assets/images/heroes/skills/caitlyn_01.webp",
-          "summary": "每幾次普攻或對被陷阱／獵網命中的目標攻擊時觸發強化爆頭，造成高額物理傷害。"
+          "summary": "每數次普攻會觸發爆頭並造成額外物理傷害；攻擊踩到陷阱或被獵網命中的敵人時，也能從更遠距離觸發強化爆頭。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "鎮暴射擊",
           "icon": "../assets/images/heroes/skills/caitlyn_02.webp",
-          "summary": "發射穿透步槍彈，對直線敵人造成物理傷害。"
+          "summary": "短暫蓄力後發射穿透步槍彈，對直線敵人造成物理傷害，可用於清線與遠距消耗。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "捕獲陷阱",
           "icon": "../assets/images/heroes/skills/caitlyn_03.webp",
-          "summary": "放置陷阱，踩到的英雄會被短暫定身並暴露，凱特琳可對其施放強化爆頭。"
+          "summary": "放置陷阱；踩中的敵方英雄會被短暫定身並暴露，凱特琳可從更遠距離對其施放爆頭。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "九零式獵網",
           "icon": "../assets/images/heroes/skills/caitlyn_04.webp",
-          "summary": "發射獵網傷害並緩速敵人，同時讓自己向反方向位移。"
+          "summary": "發射獵網造成魔法傷害與緩速，同時讓凱特琳向反方向位移；命中的英雄可被遠距爆頭。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "王牌射手",
           "icon": "../assets/images/heroes/skills/caitlyn_05.webp",
-          "summary": "長時間瞄準後射出超遠距子彈造成高額物理傷害，可被其他英雄擋下。"
+          "summary": "鎖定遠距敵方英雄並在瞄準後射出子彈，造成高額物理傷害；其他敵方英雄可以站到路徑上擋下。"
         }
       ],
       "skillSequence": [
@@ -3829,8 +3997,88 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "duo-third-batch-formal-v67",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-32",
+        "physical-high-23",
+        "physical-high-18"
+      ],
+      "combos": [
+        {
+          "name": "獵網爆頭換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技命中"
+            },
+            {
+              "key": "Q",
+              "label": "1技穿透"
+            },
+            {
+              "key": "AA",
+              "label": "遠距爆頭"
+            }
+          ],
+          "note": "獵網命中後利用反向位移拉開距離，接一技與遠距爆頭。這套適合反打突進，不要為了消耗主動交掉唯一位移。"
+        },
+        {
+          "name": "陷阱控制爆發",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技接控制"
+            },
+            {
+              "key": "AA",
+              "label": "陷阱爆頭"
+            },
+            {
+              "key": "Q",
+              "label": "1技補傷害"
+            },
+            {
+              "key": "E",
+              "label": "3技拉開"
+            },
+            {
+              "key": "AA",
+              "label": "獵網爆頭"
+            }
+          ],
+          "note": "把陷阱接在隊友控制落點或敵方必經窄口，先打陷阱爆頭，再用一技與獵網延伸傷害；若敵方仍能反撲，獵網優先自保。"
+        },
+        {
+          "name": "物件區封鎖收尾",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技封入口"
+            },
+            {
+              "key": "AA",
+              "label": "遠距消耗"
+            },
+            {
+              "key": "Q",
+              "label": "1技壓血"
+            },
+            {
+              "key": "R",
+              "label": "4技收殘血"
+            }
+          ],
+          "note": "開戰前先用陷阱切割路線並持續點射，等目標脫離隊友保護或沒有英雄能擋子彈時，再用大絕完成收尾。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "third-batch-v67"
     },
     {
       "id": "twitch",
@@ -3967,11 +4215,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "B",
-      "position": "後期射程／爆破收割射手",
+      "position": "射程成長／炸彈收割型射手",
       "tags": [
         "射程成長",
-        "跳躍重置",
-        "拆塔快速"
+        "炸彈爆發",
+        "跳躍重置"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -3993,8 +4241,7 @@
         "physical-high-23",
         "physical-high-18",
         "physical-high-28",
-        "physical-high-17",
-        "physical-high-10"
+        "physical-high-17"
       ],
       "boots": [
         "berserkers-greaves",
@@ -4019,48 +4266,48 @@
         "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "穩定補刀並利用 3 技炸彈抓對方失誤，不要隨便跳進去。",
-        "中期": "炸彈滿層後可刷新跳躍，適合小規模戰快速連殺。",
-        "後期": "射程成長後保持後排，大絕主要拿來推走刺客或完成斬殺。"
+        "前期": "崔絲塔娜前期射程較短，先以穩定補刀和爆炸射擊被動清線為主。對手走位失誤時，先把三技放在英雄或防禦塔，再開一技用普攻與技能疊滿四層；二技是唯一位移，沒有確定擊殺、炸彈重置或敵方關鍵技能已交時，不要主動跳進去。",
+        "中期": "嗜血者、磁性雷射槍與致死宣告成形後，射程、續戰與點塔能力提升。小規模戰可利用滿層炸彈在英雄身上爆炸刷新火箭跳躍，完成進場、收割與撤退；推塔時三技爆炸半徑更大，但仍要先確認側翼視野。",
+        "後期": "被動讓普攻、爆炸射擊與毀滅射擊射程隨等級增加，後期應站在前排後方安全輸出。三技搭配一技快速疊滿是主要單體爆發；大絕優先擊退刺客或把威脅推離自己，只有能確定擊殺時才拿來收尾。"
       },
-      "summary": "前期射程有限，後期射程成長後非常安全；炸彈與跳躍重置讓她有高拆塔與收割能力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "summary": "前期射程有限，隨等級成長後能在安全距離輸出。爆炸射擊疊滿或參與擊殺可刷新火箭跳躍，兼具拆塔、爆發與連續收割能力，但跳躍進場前必須確認重置條件。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》崔絲塔娜英雄頁校正；出裝、符文、召喚師技能、技能順序與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
       "avatar": "../assets/images/heroes/portraits/tristana.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "射程成長",
+          "title": "校準射擊",
           "icon": "../assets/images/heroes/skills/tristana_01.png",
-          "summary": "隨等級提升普攻與技能射程，越後期越安全。"
+          "summary": "隨等級提高崔絲塔娜的普攻、爆炸射擊與毀滅射擊射程，讓她越到後期越能安全輸出。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "快速射擊",
+          "title": "急速射擊",
           "icon": "../assets/images/heroes/skills/tristana_02.png",
-          "summary": "短時間大幅提升攻速，配合炸彈快速疊層。"
+          "summary": "短時間大幅提高攻速，適合快速疊滿爆炸射擊、推塔或進行長時間普攻輸出。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "火箭跳躍",
           "icon": "../assets/images/heroes/skills/tristana_03.png",
-          "summary": "位移並造成傷害，擊殺或炸彈爆炸可刷新。"
+          "summary": "跳向指定位置，落地造成魔法傷害與緩速；參與擊殺，或滿層爆炸射擊在敵方英雄身上爆炸時，會重置冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "爆炸炸彈",
+          "title": "爆炸射擊",
           "icon": "../assets/images/heroes/skills/tristana_04.png",
-          "summary": "附著目標並透過攻擊疊層爆炸，是爆發與拆塔核心。"
+          "summary": "被動使被崔絲塔娜擊殺的敵人爆炸；主動在敵人或防禦塔上放置炸彈，普攻與技能可疊加四次提高傷害，滿層立即爆炸。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "強力轟擊",
+          "label": "4 技",
+          "title": "毀滅射擊",
           "icon": "../assets/images/heroes/skills/tristana_05.png",
-          "summary": "單體高傷害並擊退，可保命或收割。"
+          "summary": "向單一敵人發射巨大砲彈，造成高額魔法傷害並將目標擊退，可用於自保、切割或收尾。"
         }
       ],
       "skillSequence": [
@@ -4084,9 +4331,112 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "baseId": "tristana"
+      "baseId": "tristana",
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-11",
+        "physical-high-23",
+        "physical-high-18"
+      ],
+      "combos": [
+        {
+          "name": "炸彈快速疊滿",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技放炸彈"
+            },
+            {
+              "key": "Q",
+              "label": "1技加攻速"
+            },
+            {
+              "key": "AA",
+              "label": "普攻疊層"
+            },
+            {
+              "key": "AA",
+              "label": "普攻疊層"
+            },
+            {
+              "key": "AA",
+              "label": "普攻疊層"
+            },
+            {
+              "key": "AA",
+              "label": "滿層爆炸"
+            }
+          ],
+          "note": "先放三技再開一技，用四次普攻快速引爆。敵方準備反打時應邊走邊疊，不要為了最後一層站在控制範圍內。"
+        },
+        {
+          "name": "安全跳入收割",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技標記"
+            },
+            {
+              "key": "Q",
+              "label": "1技加攻速"
+            },
+            {
+              "key": "AA",
+              "label": "普攻疊層"
+            },
+            {
+              "key": "W",
+              "label": "2技落地疊層"
+            },
+            {
+              "key": "AA",
+              "label": "滿層爆炸"
+            },
+            {
+              "key": "W",
+              "label": "重置跳出"
+            }
+          ],
+          "note": "只有確認炸彈能疊滿、能取得擊殺或敵方控制已交時才跳入；炸彈爆炸刷新二技後，優先跳回安全位置。"
+        },
+        {
+          "name": "反刺客擊退",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技擊退"
+            },
+            {
+              "key": "E",
+              "label": "3技標記"
+            },
+            {
+              "key": "Q",
+              "label": "1技加攻速"
+            },
+            {
+              "key": "AA",
+              "label": "拉開普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技撤退"
+            }
+          ],
+          "note": "敵方貼身時先用大絕拉開，再放炸彈與一技反打；火箭跳躍保留穿牆或遠離下一次突進，不必為了追擊交掉自保技能。"
+        }
+      ],
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "duo-third-batch-formal-v67",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "third-batch-v67"
     },
     {
       "id": "samira",
@@ -4234,11 +4584,11 @@
       "role": "飛龍路",
       "roleId": "duo",
       "tier": "B",
-      "position": "成長型／強化狀態射手",
+      "position": "普攻蓄力／超凡狀態型射手",
       "tags": [
-        "新英雄",
-        "攻速強化",
-        "狀態轉換"
+        "暴擊混傷",
+        "強化普攻",
+        "型態轉換"
       ],
       "ratings": {
         "單排推薦": 3,
@@ -4260,8 +4610,7 @@
         "physical-high-23",
         "physical-high-18",
         "physical-high-17",
-        "physical-high-11",
-        "physical-high-10"
+        "physical-high-11"
       ],
       "boots": [
         "berserkers-greaves",
@@ -4286,48 +4635,48 @@
         "ban": "凱特琳"
       },
       "playstyle": {
-        "前期": "先利用普攻安全堆疊資源，不必急著每次都強開強化狀態。",
-        "中期": "資源與大絕都齊全時再主動打物件團，最大化強化技能收益。",
-        "後期": "保持強化狀態期間的輸出時間，別在沒資源時硬追深。"
+        "前期": "普攻累積靈心修真的解放層數，滿足換血條件後再主動開啟一技，提高攻速並讓普攻向附近敵人擴散。二技可用來遠距緩速、探視野與消耗；尤娜拉沒有穩定硬控，三技應保留躲技能或拉開強開，不要在資源不足時硬追。",
+        "中期": "殞落王者之劍、磁性雷射槍與致死宣告完成後，普攻射程、混合傷害與打前排能力成形。物件團先用二技限制入口，再累積解放層數；大絕開啟超凡狀態後，一技會自動啟動，二技與三技獲得強化並在進出狀態時大幅調整冷卻。",
+        "後期": "保持在前排後方持續普攻，利用暴擊附加魔法傷害迫使對手同時處理物防與魔防。大絕是最重要的團戰窗口，先確認敵方主要控制與突進位置，再用強化二技壓制路線、強化三技調整距離；超凡狀態結束後不要繼續深追。"
       },
-      "summary": "以普攻堆疊資源後進入強化輸出狀態，熟悉技能變化後能在中後期團戰持續製造壓力。",
-      "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
+      "summary": "普攻累積解放層數後開啟靈心修真，獲得攻速與擴散普攻；大絕進入超凡狀態會自動強化一技，並升級二、三技。輸出窗口強，但需要掌握資源、冷卻與型態結束時間。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱依 Riot Games 台灣《英雄聯盟》尤娜拉官方英雄頁校正，技能機制、出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
       "avatar": "../assets/images/heroes/portraits/yunara.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "暴擊附魔",
+          "title": "淨土之誓",
           "icon": "../assets/images/heroes/skills/yunara_01.webp",
-          "summary": "暴擊會附加額外魔法傷害，讓輸出類型更難被單一防禦針對。"
+          "summary": "尤娜拉的暴擊會造成額外魔法傷害，使她的普攻同時具備物理與魔法輸出。"
         },
         {
           "key": "Q",
           "label": "1 技",
-          "title": "靈性修煉",
+          "title": "靈心修真",
           "icon": "../assets/images/heroes/skills/yunara_02.webp",
-          "summary": "普攻累積資源，主動後提高攻速並強化普攻擴散。"
+          "summary": "普攻累積解放層數；主動消耗層數後提高攻速並強化普攻，使攻擊向主要目標附近的敵人擴散。超凡狀態期間會自動啟動。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "遠距靈能技",
+          "title": "審判靈珠｜毀滅弧光",
           "icon": "../assets/images/heroes/skills/yunara_03.webp",
-          "summary": "主要遠距消耗技能，強化狀態下會獲得更高威脅。"
+          "summary": "一般狀態發射迴旋靈珠，造成魔法傷害與強力衰減緩速；超凡狀態時升級為直線靈力光束，提供更直接的遠距壓制。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "步法位移",
+          "title": "感銘迅步｜追風躡影",
           "icon": "../assets/images/heroes/skills/yunara_04.webp",
-          "summary": "用於調整距離與躲技能，強化狀態能刷新或升級效果。"
+          "summary": "一般狀態提供短暫移動能力以調整距離；超凡狀態時升級為更強的位移與追擊手段，進出型態會刷新或大幅調整冷卻。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "超然狀態",
+          "label": "4 技",
+          "title": "超逸絕塵",
           "icon": "../assets/images/heroes/skills/yunara_05.webp",
-          "summary": "進入強化型態並同步升級多個基本技能，是主要爆發窗口。"
+          "summary": "進入超凡狀態並強化基本技能：靈心修真自動啟動，審判靈珠與感銘迅步分別升級為毀滅弧光與追風躡影。"
         }
       ],
       "skillSequence": [
@@ -4351,20 +4700,115 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "mechanicsTitle": "超然狀態",
+      "mechanicsTitle": "超凡狀態",
       "mechanics": [
         {
-          "title": "進入超然",
-          "text": "大絕開啟後會強化多個基本技能，形成主要團戰爆發期。"
+          "title": "靈心修真自動啟動",
+          "text": "進入超凡狀態後，一技會自動維持強化，普攻獲得攻速、額外傷害與擴散效果。"
         },
         {
-          "title": "技能刷新",
-          "text": "進出強化狀態會影響部分技能冷卻，需把握轉換時間最大化輸出。"
+          "title": "基本技能升級",
+          "text": "二技審判靈珠升級為毀滅弧光，三技感銘迅步升級為追風躡影，提供更強的遠距壓制與機動。"
+        },
+        {
+          "title": "進出型態重整冷卻",
+          "text": "進入或離開超凡狀態時，二技剩餘冷卻大幅縮短，三技冷卻刷新；應把握兩次轉換創造額外技能窗口。"
         }
       ],
-      "baseId": "yunara"
+      "baseId": "yunara",
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-12",
+        "physical-high-23",
+        "physical-high-18"
+      ],
+      "combos": [
+        {
+          "name": "解放普攻換血",
+          "steps": [
+            {
+              "key": "AA",
+              "label": "普攻疊解放"
+            },
+            {
+              "key": "AA",
+              "label": "持續疊層"
+            },
+            {
+              "key": "Q",
+              "label": "1技啟動"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "AA",
+              "label": "擴散追擊"
+            }
+          ],
+          "note": "先以安全普攻累積解放，再開一技取得攻速與擴散傷害。層數不足時不要勉強進入長換血。"
+        },
+        {
+          "name": "靈珠緩速追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技緩速"
+            },
+            {
+              "key": "E",
+              "label": "3技調距離"
+            },
+            {
+              "key": "Q",
+              "label": "1技增攻速"
+            },
+            {
+              "key": "AA",
+              "label": "普攻輸出"
+            }
+          ],
+          "note": "二技先限制走位，三技用來保持合適距離，再開一技持續普攻。敵方有強開時，三技應改為保留撤退。"
+        },
+        {
+          "name": "超凡狀態爆發",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技進入超凡"
+            },
+            {
+              "key": "W",
+              "label": "強化2技"
+            },
+            {
+              "key": "E",
+              "label": "強化3技調位"
+            },
+            {
+              "key": "Q",
+              "label": "1技自動強化"
+            },
+            {
+              "key": "AA",
+              "label": "持續普攻"
+            }
+          ],
+          "note": "大絕開啟後利用強化二技先壓制路線，再用強化三技調整位置並持續普攻；記住超凡狀態結束後技能型態與冷卻會再次變化。"
+        }
+      ],
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "duo-third-batch-formal-v67",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "duoTemplateSource": "jinx-v64",
+      "duoBatch": "third-batch-v67"
     },
     {
       "id": "senna",
@@ -42996,14 +43440,14 @@
       "crossCount": 0,
       "crossRule": "以遊戲內飛龍路 23 位原生定位名單為準，不另外加入跨路英雄。",
       "detailComplete": false,
-      "detailCompletedCount": 13,
+      "detailCompletedCount": 18,
       "detailTotalCount": 23,
-      "detailProgress": "13/23",
+      "detailProgress": "18/23",
       "portraitMode": "shared",
-      "verification": "依使用者提供的遊戲內飛龍路定位截圖確認 23 位；v64 完成吉茵珂絲母版，v65 完成第一批 6 位，v66 完成第二批好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾，正式攻略進度 13/23。",
-      "detailVersion": "v66-second-batch-13-of-23-7.2a",
+      "verification": "依使用者提供的遊戲內飛龍路定位截圖確認 23 位；v64 完成吉茵珂絲母版，v65 完成第一批 6 位，v66 完成第二批 6 位，v67 完成第三批寇格魔、凱特琳、史矛德、尤娜拉、崔絲塔娜，正式攻略進度 18/23。",
+      "detailVersion": "v67-third-batch-18-of-23-7.2a",
       "roleSource": "heroCatalog",
-      "roleAuditVersion": "v66",
+      "roleAuditVersion": "v67",
       "roleAuditStatus": "passed"
     },
     "support": {
@@ -43033,7 +43477,7 @@
       "baron": 49,
       "jungle": 50,
       "mid": 46,
-      "duo": 13
+      "duo": 18
     },
     "removedLegacyProfiles": [
       "fiora-jungle",
