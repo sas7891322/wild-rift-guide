@@ -401,7 +401,7 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=44'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=45'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.laneTiers=heroData.laneTiers||{}; state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
       const params=new URLSearchParams(location.search);
