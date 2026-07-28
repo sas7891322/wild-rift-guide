@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v51-jungle-lee-sin-formal",
+  "version": "7.2a-v52-jungle-first10-formal",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -112,7 +112,8 @@
     "v49：巴龍路第 10 批完成維爾戈、弗力貝爾、沃維克、犽宿。",
     "v49：巴龍路正式版已 100% 完成。",
     "v50：依遊戲內打野定位截圖校正為 50 位；移除辛吉德、菲歐拉、伊瑞莉雅，新增慎、納帝魯斯。本版只更新英雄名單，不更動任何英雄詳細攻略資料。",
-    "v51：完成李星打野正式版；套用犽凝固定母版，更新 7.2a 出裝、符文、技能加點、三組連招、對局與實戰節奏。其餘英雄資料未修改。"
+    "v51：完成李星打野正式版；套用犽凝固定母版，更新 7.2a 出裝、符文、技能加點、三組連招、對局與實戰節奏。其餘英雄資料未修改。",
+    "v52：完成打野第一批 10/50 正式版。李星維持固定打野母版；新增完成菲艾、趙信、嘉文四世、潘森、葛雷夫、維爾戈、弗力貝爾、沃維克、夜曲。只更新英雄資料與打野 Tier，未修改版型、CSS、JS 或其他英雄攻略。"
   ],
   "heroes": [
     {
@@ -15522,38 +15523,37 @@
       "enName": "Graves",
       "role": "打野",
       "roleId": "jungle",
-      "tier": "B",
-      "position": "遠程輸出／持續傷害／野區節奏",
+      "tier": "C",
+      "position": "射手／鬥士／野區發育核心",
       "tags": [
-        "射程",
-        "持續輸出",
-        "物件"
+        "清野",
+        "爆發",
+        "拉扯"
       ],
       "ratings": {
         "單排推薦": 3,
-        "新手推薦": 1,
-        "操作難度": 5,
+        "新手推薦": 2,
+        "操作難度": 4,
         "Blind Pick": 2,
         "前期節奏": 3,
         "團戰影響力": 3
       },
       "runes": [
-        "lethal-tempo",
+        "fleet-footwork",
         "brutal",
         "cut-down",
         "legend-alacrity",
-        "sudden-impact"
+        "bone-plating"
       ],
       "items": [
-        "physical-high-12",
-        "physical-high-08",
-        "physical-high-24",
-        "physical-high-17",
-        "physical-high-18",
-        "physical-high-10"
+        "physical-high-32",
+        "physical-high-03",
+        "physical-high-05",
+        "physical-high-11",
+        "physical-high-17"
       ],
       "boots": [
-        "berserkers-greaves",
+        "gluttonous-greaves",
         "physical-high-03"
       ],
       "spells": [
@@ -15575,12 +15575,12 @@
         "ban": "李星"
       },
       "playstyle": {
-        "前期": "保持清野節奏與血量，利用射程或機動性爭河蟹，避免無資訊入侵。",
-        "中期": "跟著物件節奏輸出前排並拉扯，能安全疊層／標記時優先完成成長。",
-        "後期": "把自己當主力輸出位，站在前排之後持續輸出，不為追殘血跨過安全線。"
+        "前期": "利用散彈擊退野怪與猛龍過江疊加物防，保持高血量完成快速清野。葛雷夫沒有穩定硬控，Gank 應優先配合有控制的線路，或入侵較弱的發育型打野。",
+        "中期": "在狹窄地形靠牆施放人在江湖，可讓回彈爆炸更快命中。物件團不要第一個進場，先用煙霧彈限制敵方主力視野，再靠短位移與普攻拉扯。",
+        "後期": "把自己當短射程輸出核心，站在前排之後持續找角度。大絕可用來斬殺或後座力調整位置，避免為了貼臉多顆子彈而跨越安全線。"
       },
-      "summary": "打野以射程與持續輸出為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "清野速度快、野區拉扯與近距爆發優秀，但缺乏穩定控制，需要靠經濟領先與地形運用主導比賽。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》葛雷夫英雄頁校正；出裝、符文、技能順序與打野路線交叉參考 WildRiftFire 7.2a，並納入近期版本對清野與技能的調整。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/graves.webp",
       "abilities": [
         {
@@ -15645,10 +15645,100 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
+      "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-32",
+        "physical-high-03",
+        "physical-high-05"
+      ],
+      "combos": [
+        {
+          "name": "貼牆爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技貼近"
+            },
+            {
+              "key": "AA",
+              "label": "近距普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技撞牆"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技收尾"
+            }
+          ],
+          "note": "利用牆面讓一技快速回爆，近距普攻吃到更多子彈；大絕同時斬殺並拉開距離。"
+        },
+        {
+          "name": "煙霧追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技煙霧"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            }
+          ],
+          "note": "先用煙霧彈限制視野與走位，再以三技調整槍口角度，適合河道與狹窄野區追擊。"
+        },
+        {
+          "name": "安全拉扯",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技消耗"
+            },
+            {
+              "key": "E",
+              "label": "3技換位"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技封路"
+            },
+            {
+              "key": "R",
+              "label": "4技後退"
+            }
+          ],
+          "note": "保持在前排後方輸出，一技與煙霧封住路線，最後用大絕後座力離開敵方突進範圍。"
+        }
+      ]
     },
     {
       "id": "gwen-jungle",
@@ -16063,38 +16153,37 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "S",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "坦克／鬥士／旗矛開戰",
       "tags": [
-        "換血",
-        "續航",
-        "側翼"
+        "擊飛",
+        "開戰",
+        "地形"
       ],
       "ratings": {
         "單排推薦": 5,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 4,
+        "新手推薦": 4,
+        "操作難度": 2,
+        "Blind Pick": 5,
         "前期節奏": 5,
         "團戰影響力": 5
       },
       "runes": [
         "conqueror",
-        "battle-fervor",
-        "last-stand",
-        "legend-alacrity",
-        "sudden-impact"
+        "steadfast-bulwark",
+        "bone-plating",
+        "perseverance",
+        "triumph"
       ],
       "items": [
         "physical-high-21",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "defense-high-23",
+        "defense-high-20",
+        "defense-high-16",
+        "defense-high-14"
       ],
       "boots": [
         "plated-steelcaps",
-        "physical-high-01"
+        "physical-high-02"
       ],
       "spells": [
         "flash",
@@ -16103,24 +16192,24 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "魔甘娜",
+          "伊芙琳",
           "費德提克",
-          "奈德麗"
+          "葛雷夫"
         ],
         "bad": [
-          "鏡爪",
-          "莉莉亞",
-          "拉姆斯"
+          "拉姆斯",
+          "易大師",
+          "阿姆姆"
         ],
-        "ban": "鏡爪"
+        "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "二級就能用帝國戰旗接滅龍一擊擊飛，優先觀察有控制或敵方壓線的路線。旗矛也是主要穿牆位移，入侵前要確認施放後仍有撤退路線。",
+        "中期": "物件刷新前提早進河道，用旗幟提供視野與攻速。抓到後排或無位移目標時以旗矛接大絕鎖住，但要注意環形地形是否會妨礙隊友追擊。",
+        "後期": "依出裝擔任第一開戰或保排前排。大絕可以分割敵陣，也能用來阻擋刺客靠近後排；旗矛盡量命中多人並保留第二段位移角度。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "二級即可透過旗矛連招發動強勢 Gank，兼具擊飛、降防、團隊攻速與大絕地形封鎖。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》嘉文四世英雄頁校正；出裝、符文與技能順序交叉參考 WildRiftFire 7.2a。技能圖片沿用使用者提供素材。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp",
       "abilities": [
         {
@@ -16185,10 +16274,88 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
+      "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-21",
+        "defense-high-23",
+        "defense-high-20"
+      ],
+      "combos": [
+        {
+          "name": "二級旗矛 Gank",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技戰旗"
+            },
+            {
+              "key": "Q",
+              "label": "1技穿旗"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技減速"
+            }
+          ],
+          "note": "從視野死角插旗接一技擊飛，落地打出被動百分比傷害，再開盾減速延長追擊。"
+        },
+        {
+          "name": "旗矛接大絕",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技擊飛"
+            },
+            {
+              "key": "R",
+              "label": "4技封鎖"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "先用旗矛逼出位移，再用大絕封住無位移核心；確認隊友能進入輸出範圍再開。"
+        },
+        {
+          "name": "大絕切割後撤",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技進場"
+            },
+            {
+              "key": "W",
+              "label": "2技護盾"
+            },
+            {
+              "key": "E",
+              "label": "3技戰旗"
+            },
+            {
+              "key": "Q",
+              "label": "1技撤退／再擊飛"
+            }
+          ],
+          "note": "先以大絕分割敵陣，吸收第一波後用旗矛再次控制或穿牆離場。"
+        }
+      ]
     },
     {
       "id": "jax-jungle",
@@ -17634,39 +17801,38 @@
       "enName": "Nocturne",
       "role": "打野",
       "roleId": "jungle",
-      "tier": "A",
-      "position": "單挑／邊線核心／野區節奏",
+      "tier": "S",
+      "position": "鬥士／刺客／全圖抓單",
       "tags": [
-        "單挑",
-        "邊線",
-        "拉扯"
+        "關燈",
+        "突進",
+        "恐懼"
       ],
       "ratings": {
-        "單排推薦": 4,
+        "單排推薦": 5,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 3,
+        "Blind Pick": 4,
         "前期節奏": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
-        "lethal-tempo",
-        "brutal",
-        "cut-down",
-        "legend-alacrity",
-        "bone-plating"
+        "first-strike",
+        "sudden-impact",
+        "tyrant",
+        "eyeball-collector",
+        "transcendence"
       ],
       "items": [
-        "physical-high-12",
-        "physical-high-25",
-        "physical-high-07",
-        "physical-high-08",
-        "physical-high-10",
-        "physical-high-18"
+        "physical-high-15",
+        "physical-high-31",
+        "physical-high-27",
+        "physical-high-37",
+        "physical-high-10"
       ],
       "boots": [
-        "berserkers-greaves",
-        "physical-high-03"
+        "gluttonous-greaves",
+        "physical-high-01"
       ],
       "spells": [
         "flash",
@@ -17675,60 +17841,60 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "魔甘娜",
           "費德提克",
-          "奈德麗"
+          "伊芙琳",
+          "葛雷夫"
         ],
         "bad": [
           "拉姆斯",
-          "趙信",
-          "菲艾"
+          "易大師",
+          "維爾戈"
         ],
         "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "前四級以快速完整清野為主，被動範圍攻擊配合一技軌跡能維持效率與血量。到五級後立即觀察壓線、殘血或缺乏位移的目標，讓每次大絕都轉化為擊殺或召喚技能。",
+        "中期": "無盡夢魘不只用來突進，先關閉敵方視野也能切斷支援與製造物件壓力。選擇孤立核心進場，落地後用二技擋掉第一個關鍵控制，再以三技完成恐懼。",
+        "後期": "不要正面擔任坦克。團戰前找側翼或先手抓掉落單目標；若無法秒殺後排，也可用大絕關燈干擾敵方接戰，轉而保護己方主力。"
       },
-      "summary": "打野以單挑與邊線為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "五級後能用大絕關閉敵方視野並遠距突進，擅長抓落單與在團戰前製造人數差。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》夜曲英雄頁校正；出裝、符文、技能順序、清野路線與抓單方向交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/nocturne.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "闇影幽刃",
           "icon": "../assets/images/heroes/skills/nocturne_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "每隔一段時間，下一次普攻會對周圍敵人造成額外物理傷害並治療自身；普攻可縮短冷卻，是清野與續戰核心。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "黃昏渠道",
           "icon": "../assets/images/heroes/skills/nocturne_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前投出闇影之刃造成物理傷害並留下黑暗軌跡。夜曲站在軌跡上時獲得跑速與物攻，並可穿越單位。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "夜幕庇護",
           "icon": "../assets/images/heroes/skills/nocturne_03.webp",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "被動提高攻速；主動獲得可抵擋一次敵方技能的護盾，成功阻擋後會暫時加倍被動攻速。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "深宵斷魂",
           "icon": "../assets/images/heroes/skills/nocturne_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "對目標造成持續魔法傷害並建立連線；若連線維持到結束，目標會陷入恐懼並逃離夜曲。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "無盡夢魘",
           "icon": "../assets/images/heroes/skills/nocturne_05.webp",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "先降低所有敵方英雄的視野並切斷友軍視野共享，再次施放可遠距突進至指定敵方英雄並造成物理傷害。"
         }
       ],
       "skillSequence": [
@@ -17752,10 +17918,105 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-first10-v52",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-15",
+        "physical-high-31",
+        "physical-high-27"
+      ],
+      "combos": [
+        {
+          "name": "五級抓單",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技關燈／突進"
+            },
+            {
+              "key": "Q",
+              "label": "1技軌跡"
+            },
+            {
+              "key": "E",
+              "label": "3技連線"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技擋控制"
+            }
+          ],
+          "note": "大絕落地立刻鋪一技取得追擊能力並掛上恐懼，二技留給目標的主要控制或保命技能。"
+        },
+        {
+          "name": "近距 Gank",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技命中"
+            },
+            {
+              "key": "E",
+              "label": "3技連線"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技護盾"
+            },
+            {
+              "key": "AA",
+              "label": "持續普攻"
+            }
+          ],
+          "note": "沒有大絕時先用一技加速接近，保持三技連線到恐懼觸發；二技不要過早開。"
+        },
+        {
+          "name": "關燈分割",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技關燈"
+            },
+            {
+              "key": "R",
+              "label": "4技突進孤立目標"
+            },
+            {
+              "key": "W",
+              "label": "2技護盾"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技恐懼"
+            }
+          ],
+          "note": "利用關燈切斷敵方支援判斷，挑選離隊的後排突進；若隊友跟不上，僅關燈施壓也比強行進場更好。"
+        }
+      ]
     },
     {
       "id": "nunu-and-willump-jungle",
@@ -18025,38 +18286,37 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "S",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "鬥士／刺客／前期爆發",
       "tags": [
-        "換血",
-        "續航",
-        "側翼"
+        "點控",
+        "爆發",
+        "跨圖"
       ],
       "ratings": {
         "單排推薦": 5,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 4,
+        "操作難度": 2,
         "Blind Pick": 4,
         "前期節奏": 5,
-        "團戰影響力": 5
+        "團戰影響力": 4
       },
       "runes": [
-        "conqueror",
-        "battle-fervor",
-        "last-stand",
-        "legend-alacrity",
-        "sudden-impact"
+        "empowerment",
+        "sudden-impact",
+        "chain-assault",
+        "eyeball-collector",
+        "hextech-flashtraption"
       ],
       "items": [
-        "physical-high-21",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-31",
+        "physical-high-12",
+        "physical-high-27",
+        "physical-high-29",
+        "physical-high-10"
       ],
       "boots": [
-        "plated-steelcaps",
-        "physical-high-01"
+        "armorbreaker-boots",
+        "physical-high-03"
       ],
       "spells": [
         "flash",
@@ -18065,60 +18325,60 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "魔甘娜",
-          "費德提克",
-          "奈德麗"
+          "伊芙琳",
+          "奈德麗",
+          "葛雷夫"
         ],
         "bad": [
-          "鏡爪",
-          "莉莉亞",
-          "拉姆斯"
+          "拉姆斯",
+          "弗力貝爾",
+          "沃維克"
         ],
-        "ban": "鏡爪"
+        "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "潘森的點控與爆發適合快速製造擊殺。清野時管理凡人堅志層數，接近線路前盡量準備強化二技或強化一技，暈眩後讓隊友穩定接上輸出。",
+        "中期": "五級後利用星殞衝擊跨圖支援，落點以封住撤退路線為主，不一定要直接落在人群中央。物件刷新前可先在另一側露頭，再用大絕快速形成多打少。",
+        "後期": "後期正面持續輸出不如純鬥士，重點轉為抓落單與點控核心。三技保留用來擋下關鍵爆發，完成一輪後立即退回隊友身邊。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "前期點控和爆發極強，能用大絕跨圖形成多打少；中後期需靠視野與精準進場延續影響力。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》潘森英雄頁校正；打野出裝、符文、技能順序與玩法交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/pantheon.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "凡人堅志",
           "icon": "../assets/images/heroes/skills/pantheon_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "普攻或施放技能累積層數，疊滿後下一個基礎技能會獲得強化效果。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "彗星戰矛",
           "icon": "../assets/images/heroes/skills/pantheon_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "可快速刺擊或蓄力投擲，對低血量目標傷害更高，是主要消耗與收尾技能。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "盾之躍擊",
           "icon": "../assets/images/heroes/skills/pantheon_03.webp",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "跳向目標並暈眩；強化後會追加多段普攻，能快速觸發裝備與被動效果。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "聖盾猛襲",
           "icon": "../assets/images/heroes/skills/pantheon_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "舉盾阻擋正面傷害並向前攻擊，結束時再揮擊一次，兼具保命與反打。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "星殞衝擊",
           "icon": "../assets/images/heroes/skills/pantheon_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "躍向遠距指定區域並沿路造成傷害與緩速，用來支援邊線或搶先形成多打少。"
         }
       ],
       "skillSequence": [
@@ -18142,10 +18402,97 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-first10-v52",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-31",
+        "physical-high-12",
+        "physical-high-27"
+      ],
+      "combos": [
+        {
+          "name": "強化暈眩 Gank",
+          "steps": [
+            {
+              "key": "W",
+              "label": "強化2技"
+            },
+            {
+              "key": "AA",
+              "label": "連續普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技擋傷"
+            }
+          ],
+          "note": "滿層被動使用強化二技快速打出多段攻擊，接一技爆發，最後用三技承受反打或安全撤退。"
+        },
+        {
+          "name": "短距爆發",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技暈眩"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "強化1技收尾"
+            }
+          ],
+          "note": "先點控後快速疊回被動，依目標血量選擇強化一技收尾；不要過早把三技取消。"
+        },
+        {
+          "name": "大絕包夾",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技落地"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "大絕落點放在敵方退路，落地鎖定主要輸出，打完一輪以三技擋住集火。"
+        }
+      ]
     },
     {
       "id": "poppy-jungle",
@@ -19455,38 +19802,37 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "S",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "鬥士／鎖定開戰／單點控制",
       "tags": [
-        "換血",
-        "續航",
-        "側翼"
+        "突進",
+        "鎖定",
+        "破甲"
       ],
       "ratings": {
         "單排推薦": 5,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 4,
+        "操作難度": 2,
         "Blind Pick": 4,
         "前期節奏": 5,
         "團戰影響力": 5
       },
       "runes": [
         "conqueror",
-        "battle-fervor",
-        "last-stand",
-        "legend-alacrity",
+        "steadfast-bulwark",
+        "bone-plating",
+        "perseverance",
         "sudden-impact"
       ],
       "items": [
         "physical-high-21",
-        "physical-high-38",
+        "physical-high-12",
         "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-18",
+        "physical-high-10"
       ],
       "boots": [
-        "plated-steelcaps",
-        "physical-high-01"
+        "gluttonous-greaves",
+        "physical-high-02"
       ],
       "spells": [
         "flash",
@@ -19495,60 +19841,60 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "魔甘娜",
+          "伊芙琳",
           "費德提克",
-          "奈德麗"
+          "葛雷夫"
         ],
         "bad": [
-          "鏡爪",
-          "莉莉亞",
-          "拉姆斯"
+          "拉姆斯",
+          "歐拉夫",
+          "弗力貝爾"
         ],
-        "ban": "鏡爪"
+        "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "第一輪清野以快速升到 5 級為主；有蓄能衝擊時可提早觀察壓線目標。進場前先蓄力並從視野死角接近，命中後穿插普攻與三技，快速觸發被動破甲。",
+        "中期": "火瀑連擊提供穩定的單點鎖定，物件團優先找敵方主力或沒有淨化手段的目標。大絕進場後立刻判斷要繼續輸出，還是開二技護盾吸收第一波傷害。",
+        "後期": "後期不要在隊友跟不上時單獨大進五人。可先用一技逼位移，再用大絕鎖定核心；若敵方刺客威脅後排，也能把大絕留作反開與保排。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "清野穩定、控制直接，靠蓄能衝擊與火瀑連擊鎖定關鍵目標，是容易上手且團戰功能完整的鬥士打野。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》菲艾英雄頁校正；出裝、符文、技能順序與實戰方向交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/vi.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "三重極限",
           "icon": "../assets/images/heroes/skills/vi_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "對同一目標的每第三次普攻造成依最大生命計算的額外物理傷害、降低物防並提高攻速；打野時持續鎖定同一隻大型野怪可加快清野。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "蓄能衝擊",
           "icon": "../assets/images/heroes/skills/vi_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "蓄力後朝指定方向突進，對命中的敵人造成物理傷害並擊退。蓄力越久距離與傷害越高，是主要 Gank、穿牆與撤退工具。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "爆破武裝",
           "icon": "../assets/images/heroes/skills/vi_03.webp",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "普攻或技能命中敵人可累積層數；主動施放獲得護盾，滿層時還會提高跑速。進場後等承受傷害前再開，能提高黏人與生存能力。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "粉碎震波",
           "icon": "../assets/images/heroes/skills/vi_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "強化下一次普攻，對目標及其後方錐形範圍造成物理傷害。可儲存次數，適合穿插在普攻之間重置輸出節奏。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "火瀑連擊",
           "icon": "../assets/images/heroes/skills/vi_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "鎖定敵方英雄後變得無法阻擋並衝向目標，沿途擊開敵人，抵達後造成傷害與擊飛。適合抓後排或保證 Gank 控制。"
         }
       ],
       "skillSequence": [
@@ -19572,10 +19918,105 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-first10-v52",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-21",
+        "physical-high-12",
+        "physical-high-42"
+      ],
+      "combos": [
+        {
+          "name": "基礎 Gank",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "蓄力1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技護盾"
+            }
+          ],
+          "note": "從視野死角蓄力一技命中，接普攻與三技快速觸發三重極限，最後依承傷時機開護盾追擊。"
+        },
+        {
+          "name": "鎖定核心",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技鎖定"
+            },
+            {
+              "key": "Q",
+              "label": "1技追控"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "用大絕保證接近目標，落地後再用一技封鎖退路。隊友距離不足時不要單獨啟動。"
+        },
+        {
+          "name": "閃現蓄能衝擊",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "蓄力1技"
+            },
+            {
+              "key": "Q",
+              "label": "蓄力中閃現調整角度"
+            },
+            {
+              "key": "Q",
+              "label": "1技命中"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "R",
+              "label": "4技收尾"
+            }
+          ],
+          "note": "蓄力期間用閃現調整命中角度，適合越過兵線或突然抓到後排；大絕可留作跟進位移。"
+        }
+      ]
     },
     {
       "id": "viego-jungle",
@@ -19585,34 +20026,33 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "單挑／邊線核心／野區節奏",
+      "position": "鬥士／刺客／收割重置",
       "tags": [
-        "單挑",
-        "邊線",
-        "拉扯"
+        "收割",
+        "附身",
+        "偽裝"
       ],
       "ratings": {
         "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 2,
+        "操作難度": 5,
         "Blind Pick": 3,
         "前期節奏": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
-        "lethal-tempo",
-        "brutal",
-        "cut-down",
-        "legend-alacrity",
-        "bone-plating"
+        "conqueror",
+        "sudden-impact",
+        "arrogance",
+        "eyeball-collector",
+        "legend-alacrity"
       ],
       "items": [
-        "physical-high-12",
-        "physical-high-25",
-        "physical-high-07",
-        "physical-high-08",
-        "physical-high-10",
-        "physical-high-18"
+        "physical-high-26",
+        "physical-high-32",
+        "physical-high-05",
+        "physical-high-17",
+        "physical-high-11"
       ],
       "boots": [
         "berserkers-greaves",
@@ -19625,60 +20065,60 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "魔甘娜",
+          "伊芙琳",
           "費德提克",
-          "奈德麗"
+          "葛雷夫"
         ],
         "bad": [
           "拉姆斯",
-          "趙信",
-          "菲艾"
+          "阿姆姆",
+          "沃維克"
         ],
         "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "利用一技被動的雙重普攻快速清野，三技沿牆鋪霧可提高移速與攻速。Gank 時二技蓄力不宜過久暴露意圖，命中後立刻普攻、一技、再普攻觸發標記。",
+        "中期": "不要當第一個進場者，先等待敵方出現殘血或隊友完成控制。參與擊殺後奪取身體可獲得短暫不可選取與新技能，快速判斷最有價值的控制或位移。",
+        "後期": "團戰核心是取得第一次附身重置。大絕主要用於斬殺、離開附身或調整位置；不要為了奪取低價值靈魂而進入敵方全隊中央。"
       },
-      "summary": "打野以單挑與邊線為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "透過百分比傷害、黑霧偽裝與擊殺後附身連鎖重置，在混戰中擁有極高上限，但需要熟悉大量英雄技能。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》維爾戈英雄頁校正；出裝、符文、技能順序與打野節奏交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/viego.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "王權統御",
           "icon": "../assets/images/heroes/skills/viego_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "參與擊殺後可奪取敵方英雄身體，獲得其基礎技能與裝備並免費重施自己的大絕。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "殞落王者之劍",
           "icon": "../assets/images/heroes/skills/viego_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "被動讓普攻造成當前生命百分比傷害並攻擊標記；主動向前刺擊。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "冥魂之噬",
           "icon": "../assets/images/heroes/skills/viego_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "蓄力後向前突進並釋放霧魂，蓄力越久暈眩時間越長。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "幽影之徑",
           "icon": "../assets/images/heroes/skills/viego_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "沿牆散播黑霧，在霧中獲得偽裝、跑速與攻速，強化追擊與繞後。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "破心者",
           "icon": "../assets/images/heroes/skills/viego_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "傳送到目標區域斬擊低生命敵人並擊退其他目標，適合收割與重置。"
         }
       ],
       "skillSequence": [
@@ -19702,10 +20142,97 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-first10-v52",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-26",
+        "physical-high-32",
+        "physical-high-05"
+      ],
+      "combos": [
+        {
+          "name": "快速疊層",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技暈眩"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "雙重普攻"
+            }
+          ],
+          "note": "二技命中後普攻，接一技標記並再次普攻，能快速疊征服者並觸發治療。"
+        },
+        {
+          "name": "黑霧 Gank",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技鋪霧"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "4技收割"
+            }
+          ],
+          "note": "沿牆鋪霧隱藏接近路線，二技控制後完成雙重普攻，目標進入斬殺線再開大。"
+        },
+        {
+          "name": "附身連鎖",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技斬殺"
+            },
+            {
+              "key": "P",
+              "label": "被動附身"
+            },
+            {
+              "key": "Q",
+              "label": "奪取英雄技能"
+            },
+            {
+              "key": "R",
+              "label": "免費4技離開"
+            }
+          ],
+          "note": "擊殺後先判斷附身能否提供控制、位移或保命；用完關鍵技能就以免費大絕跳出尋找下一個靈魂。"
+        }
+      ]
     },
     {
       "id": "volibear-jungle",
@@ -19714,39 +20241,38 @@
       "enName": "Volibear",
       "role": "打野",
       "roleId": "jungle",
-      "tier": "S",
-      "position": "鬥士／持續作戰／野區節奏",
+      "tier": "B",
+      "position": "鬥士／坦克／快速清野越塔",
       "tags": [
-        "換血",
         "續航",
-        "側翼"
+        "暈眩",
+        "禁塔"
       ],
       "ratings": {
-        "單排推薦": 5,
+        "單排推薦": 3,
         "新手推薦": 4,
         "操作難度": 2,
-        "Blind Pick": 4,
-        "前期節奏": 5,
-        "團戰影響力": 5
+        "Blind Pick": 3,
+        "前期節奏": 4,
+        "團戰影響力": 4
       },
       "runes": [
         "conqueror",
         "battle-fervor",
-        "last-stand",
+        "cut-down",
         "legend-alacrity",
-        "sudden-impact"
+        "overgrowth"
       ],
       "items": [
-        "physical-high-21",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "magic-high-04",
+        "magic-high-20",
+        "magic-high-23",
+        "magic-high-14",
+        "defense-high-16"
       ],
       "boots": [
         "plated-steelcaps",
-        "physical-high-01"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
@@ -19755,60 +20281,60 @@
       "skillOrder": "W > Q > E",
       "matchups": {
         "good": [
-          "魔甘娜",
           "費德提克",
-          "奈德麗"
+          "阿姆姆",
+          "易大師"
         ],
         "bad": [
-          "鏡爪",
           "莉莉亞",
-          "拉姆斯"
+          "伊芙琳",
+          "鏡爪"
         ],
-        "ban": "鏡爪"
+        "ban": "莉莉亞"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "被動連鎖傷害與二技對大型野怪的狂暴效果讓清野很快，第一輪可優先完整清野升五。Gank 前先預判三技落點，再用一技暈眩把敵人留在雷擊範圍內。",
+        "中期": "大絕能停用防禦塔，是越塔與逼迫邊線的核心。物件團先以二技標記前排，黏住等待第二次撕咬回血；不要頻繁切換目標導致無法觸發狂暴撕咬。",
+        "後期": "擔任前排或第二進場，利用大絕增加生命並跳向後排。三技護盾要提前放在預計落點，一技鎖定核心後持續普攻，靠二次二技維持血量。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "被動與二技帶來極快清野及持續作戰，大絕可停用防禦塔，特別擅長五級後越塔建立優勢。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》弗力貝爾英雄頁校正；出裝、符文、技能順序、清野與越塔方向交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/volibear.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "無情風暴",
           "icon": "../assets/images/heroes/skills/volibear_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "普攻與技能會累積攻速，疊滿後普攻可向附近敵人連鎖造成魔法傷害。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "第二優先技能",
+          "label": "1 技",
+          "title": "雷霆貫擊",
           "icon": "../assets/images/heroes/skills/volibear_02.webp",
-          "summary": "一技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "朝敵人加速並強化下一次普攻造成暈眩；被控制中斷時可重置技能。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "主要升級技能",
+          "label": "2 技",
+          "title": "狂熊撕咬",
           "icon": "../assets/images/heroes/skills/volibear_03.webp",
-          "summary": "二技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "撕咬敵人並留下標記，再次咬中同一目標會造成更多傷害並治療自己。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "最後升滿技能",
+          "label": "3 技",
+          "title": "蒼穹裂隙",
           "icon": "../assets/images/heroes/skills/volibear_04.webp",
-          "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "召喚延遲雷擊造成傷害與緩速，自己站在範圍內可獲得護盾。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "風暴使者",
           "icon": "../assets/images/heroes/skills/volibear_05.webp",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "躍向指定區域造成傷害、增加生命並暫時停用防禦塔，適合越塔與正面開戰。"
         }
       ],
       "skillSequence": [
@@ -19832,10 +20358,97 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-first10-v52",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "magic-high-04",
+        "magic-high-20",
+        "magic-high-23"
+      ],
+      "combos": [
+        {
+          "name": "雷擊暈眩 Gank",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技預判落點"
+            },
+            {
+              "key": "Q",
+              "label": "1技加速暈眩"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技撕咬"
+            }
+          ],
+          "note": "先把落雷放在敵方退路，再用一技暈在範圍內，獲得護盾後開始二技標記。"
+        },
+        {
+          "name": "狂暴撕咬長打",
+          "steps": [
+            {
+              "key": "W",
+              "label": "一段2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "二段2技"
+            }
+          ],
+          "note": "先標記目標並持續黏住，等冷卻完成後再次撕咬，取得更高傷害與治療。"
+        },
+        {
+          "name": "大絕越塔",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技禁塔"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技暈眩"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "大絕跳入並停用防禦塔，落地前預放三技，接暈眩與撕咬快速完成越塔。"
+        }
+      ]
     },
     {
       "id": "warwick-jungle",
@@ -19845,38 +20458,37 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "S+",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "鬥士／追獵／低血續戰",
       "tags": [
-        "換血",
         "續航",
-        "側翼"
+        "追擊",
+        "壓制"
       ],
       "ratings": {
         "單排推薦": 5,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 5,
+        "操作難度": 2,
         "Blind Pick": 4,
         "前期節奏": 5,
         "團戰影響力": 5
       },
       "runes": [
-        "conqueror",
-        "battle-fervor",
-        "last-stand",
+        "empowerment",
+        "brutal",
+        "cut-down",
         "legend-alacrity",
         "sudden-impact"
       ],
       "items": [
-        "physical-high-21",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-08",
+        "physical-high-12",
+        "magic-high-04",
+        "physical-high-35",
+        "physical-high-10"
       ],
       "boots": [
-        "plated-steelcaps",
-        "physical-high-01"
+        "berserkers-greaves",
+        "physical-high-02"
       ],
       "spells": [
         "flash",
@@ -19885,60 +20497,60 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "魔甘娜",
+          "伊芙琳",
           "費德提克",
-          "奈德麗"
+          "易大師"
         ],
         "bad": [
-          "鏡爪",
+          "拉姆斯",
           "莉莉亞",
-          "拉姆斯"
+          "鏡爪"
         ],
-        "ban": "鏡爪"
+        "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "利用被動和一技的治療保持高血量清野，二技血跡出現時立刻判斷是否值得中斷營地去支援。三技先開減傷，再長按一技跟到目標身後釋放恐懼。",
+        "中期": "物件團可主動標記低血敵人取得跑速，從側翼用大絕壓制核心。7.2a 傷害被下修後更要依賴持續普攻與正確控制鏈，不要把大絕當成無腦遠距開戰。",
+        "後期": "優先抓落單或反開切入者。大絕直線命中容易被前排阻擋，先處理視野與角度；進場後靠恐懼改變敵方走位，再以一技跟隨位移。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "清野健康、追擊能力極強，低生命時仍能靠治療反打；壓制與恐懼讓他兼具抓單和反開能力。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》沃維克英雄頁校正；出裝、符文與玩法交叉參考 WildRiftFire 7.2a，並納入 Riot 7.2a 對被動與一技傷害係數的下修。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/warwick.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "永恆飢渴",
           "icon": "../assets/images/heroes/skills/warwick_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "普攻造成額外魔法傷害；生命低於門檻時會按額外傷害治療自己。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "猛獸狂顎",
           "icon": "../assets/images/heroes/skills/warwick_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "撕咬目標並回復生命；按住施放可跟隨目標位移到其身後。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "血跡獵蹤",
           "icon": "../assets/images/heroes/skills/warwick_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "感知低生命敵人並在朝其移動時獲得跑速，攻擊低血量目標時提升攻速。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "本能怒嚎",
           "icon": "../assets/images/heroes/skills/warwick_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "先獲得傷害減免，再次施放或結束時恐懼周圍敵人。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "無盡束縛",
           "icon": "../assets/images/heroes/skills/warwick_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "依跑速決定跳躍距離，命中第一名英雄後壓制並多次攻擊，同時大量治療自己。"
         }
       ],
       "skillSequence": [
@@ -19962,10 +20574,105 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-first10-v52",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-08",
+        "physical-high-12",
+        "magic-high-04"
+      ],
+      "combos": [
+        {
+          "name": "跟隨恐懼 Gank",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技獵蹤"
+            },
+            {
+              "key": "E",
+              "label": "開啟3技"
+            },
+            {
+              "key": "Q",
+              "label": "長按1技繞後"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先取得追獵加速，開減傷後長按一技跟到目標背後，再釋放恐懼把敵人趕向隊友。"
+        },
+        {
+          "name": "大絕控制鏈",
+          "steps": [
+            {
+              "key": "E",
+              "label": "開啟3技"
+            },
+            {
+              "key": "R",
+              "label": "4技壓制"
+            },
+            {
+              "key": "E",
+              "label": "3技恐懼"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "大絕前先開三技，壓制結束立刻恐懼，接一技延長黏人時間並持續治療。"
+        },
+        {
+          "name": "低血反打",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技減傷"
+            },
+            {
+              "key": "Q",
+              "label": "1技治療"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技追擊"
+            },
+            {
+              "key": "R",
+              "label": "4技回血"
+            }
+          ],
+          "note": "低血量時利用減傷、一技與被動治療延長戰鬥，大絕命中可回復大量生命，但仍要避開重傷與爆發控制。"
+        }
+      ]
     },
     {
       "id": "wukong-jungle",
@@ -20105,19 +20812,19 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "S",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "鬥士／強勢單挑／持續追擊",
       "tags": [
-        "換血",
-        "續航",
-        "側翼"
+        "單挑",
+        "突進",
+        "擊飛"
       ],
       "ratings": {
         "單排推薦": 5,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 4,
+        "操作難度": 2,
         "Blind Pick": 4,
         "前期節奏": 5,
-        "團戰影響力": 5
+        "團戰影響力": 4
       },
       "runes": [
         "conqueror",
@@ -20128,15 +20835,14 @@
       ],
       "items": [
         "physical-high-21",
-        "physical-high-38",
+        "physical-high-31",
+        "physical-high-18",
         "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-10"
       ],
       "boots": [
-        "plated-steelcaps",
-        "physical-high-01"
+        "gluttonous-greaves",
+        "physical-high-02"
       ],
       "spells": [
         "flash",
@@ -20145,60 +20851,60 @@
       "skillOrder": "W > E > Q",
       "matchups": {
         "good": [
-          "魔甘娜",
+          "伊芙琳",
           "費德提克",
           "奈德麗"
         ],
         "bad": [
-          "鏡爪",
-          "莉莉亞",
-          "拉姆斯"
+          "拉姆斯",
+          "希瓦娜",
+          "易大師"
         ],
-        "ban": "鏡爪"
+        "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "趙信前期單挑與追擊能力很強，清完關鍵營地後可主動爭河蟹或入侵。二技命中能標記遠處目標，再用三技延長距離貼近，進場後靠一技第三下擊飛。",
+        "中期": "物件團先找可以被二技命中的落單目標，利用三技突進形成多打少。大絕可把其他敵人推開並阻擋圈外傷害，保護自己完成對單一核心的輸出。",
+        "後期": "後期容易被遠程陣容拉扯，不要正面追著坦克跑。優先從側翼進場，或用大絕切割戰場保護己方主力，再持續普攻縮短技能冷卻。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "前期單挑、Gank 和物件戰都很強，二技標記接三技突進能快速黏住目標，大絕則能隔離戰場。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》趙信英雄頁校正；出裝、符文、技能順序與對局交叉參考 WildRiftFire 7.2a。Tier 與實戰節奏為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
       "avatar": "../assets/images/heroes/portraits/xin-zhao.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "鬥戰決心",
           "icon": "../assets/images/heroes/skills/xin-zhao_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "每第三次普攻造成額外物理傷害並治療自身。清野與長時間戰鬥時持續普攻能維持血量。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "最後升滿技能",
+          "label": "1 技",
+          "title": "三重爪擊",
           "icon": "../assets/images/heroes/skills/xin-zhao_02.png",
-          "summary": "一技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "強化接下來三次普攻並縮短其他技能冷卻，第三次攻擊會擊飛目標。進場後盡快開始計算三下普攻。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "主要升級技能",
+          "label": "2 技",
+          "title": "風雷迅馳",
           "icon": "../assets/images/heroes/skills/xin-zhao_03.png",
-          "summary": "二技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "先橫掃長槍，再向前突刺造成傷害與緩速；突刺命中英雄會標記目標，讓一騎當先可以從更遠距離突進。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "一騎當先",
           "icon": "../assets/images/heroes/skills/xin-zhao_04.webp",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "突進至指定敵人，對周圍造成魔法傷害與緩速，並提高自身攻速。對被二技標記的目標擁有更長施放距離。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "新月無雙",
           "icon": "../assets/images/heroes/skills/xin-zhao_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "對周圍敵人造成依當前生命計算的傷害，擊退挑戰目標以外的敵人，並在短時間內抵擋來自圈外英雄的傷害。"
         }
       ],
       "skillSequence": [
@@ -20222,10 +20928,109 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-first10-v52",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "jungle-first10-formal-v52",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-21",
+        "physical-high-31",
+        "physical-high-18"
+      ],
+      "combos": [
+        {
+          "name": "標記突進",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技突刺命中"
+            },
+            {
+              "key": "E",
+              "label": "3技突進"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "三次普攻擊飛"
+            }
+          ],
+          "note": "先用二技遠距標記，再以加長距離的三技貼近，開一技打出第三下擊飛，是最穩定的 Gank 方式。"
+        },
+        {
+          "name": "近身連控",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "AA",
+              "label": "擊飛"
+            },
+            {
+              "key": "W",
+              "label": "2技收尾"
+            }
+          ],
+          "note": "已經貼近時直接三技減速，利用攻速快速完成一技三下，再以二技追擊或收尾。"
+        },
+        {
+          "name": "大絕隔離",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技標記"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "R",
+              "label": "4技擊退"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先確立挑戰目標，再開大把其他敵人推開，創造短暫單挑空間並擋住圈外傷害。"
+        }
+      ]
     },
     {
       "id": "yone-jungle",
@@ -30914,8 +31719,8 @@
       "avatarComplete": true,
       "detailComplete": false,
       "portraitMode": "shared",
-      "verification": "打野官方定位 50 位；本版僅校正英雄名單，慎與納帝魯斯的打野詳細攻略待後續正式更新。",
-      "detailVersion": "v32-first70"
+      "verification": "遊戲內打野定位 50 位已核對；v52 完成第一批 10 位正式攻略，李星固定為打野母版。",
+      "detailVersion": "v52-first10-formal-7.2a"
     },
     "mid": {
       "name": "中路",
@@ -31388,76 +32193,22 @@
     ],
     "jungle": [
       {
-        "id": "aatrox",
-        "name": "厄薩斯",
-        "enName": "Aatrox",
-        "tier": "A",
+        "id": "nidalee",
+        "name": "奈德麗",
+        "enName": "Nidalee",
+        "tier": "S+",
         "origin": "native",
-        "detailHeroId": "aatrox-jungle",
-        "avatar": "../assets/images/heroes/portraits/aatrox.webp"
+        "detailHeroId": "nidalee-jungle",
+        "avatar": "../assets/images/heroes/portraits/nidalee.png"
       },
       {
-        "id": "ambessa",
-        "name": "安比薩",
-        "enName": "Ambessa",
-        "tier": "S",
+        "id": "warwick",
+        "name": "沃維克",
+        "enName": "Warwick",
+        "tier": "S+",
         "origin": "native",
-        "detailHeroId": "ambessa-jungle",
-        "avatar": "../assets/images/heroes/portraits/ambessa.png"
-      },
-      {
-        "id": "amumu",
-        "name": "阿姆姆",
-        "enName": "Amumu",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "amumu-jungle",
-        "avatar": "../assets/images/heroes/portraits/amumu.webp"
-      },
-      {
-        "id": "camille",
-        "name": "卡蜜兒",
-        "enName": "Camille",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "camille-jungle",
-        "avatar": "../assets/images/heroes/portraits/camille.webp"
-      },
-      {
-        "id": "darius",
-        "name": "達瑞斯",
-        "enName": "Darius",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "darius-jungle",
-        "avatar": "../assets/images/heroes/portraits/darius.webp"
-      },
-      {
-        "id": "diana",
-        "name": "黛安娜",
-        "enName": "Diana",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "diana-jungle",
-        "avatar": "../assets/images/heroes/portraits/diana.webp"
-      },
-      {
-        "id": "dr-mundo",
-        "name": "蒙多醫生",
-        "enName": "Dr. Mundo",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "dr-mundo-jungle",
-        "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
-      },
-      {
-        "id": "ekko",
-        "name": "艾克",
-        "enName": "Ekko",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "ekko-jungle",
-        "avatar": "../assets/images/heroes/portraits/ekko.webp"
+        "detailHeroId": "warwick-jungle",
+        "avatar": "../assets/images/heroes/portraits/warwick.png"
       },
       {
         "id": "evelynn",
@@ -31469,58 +32220,13 @@
         "avatar": "../assets/images/heroes/portraits/evelynn.webp"
       },
       {
-        "id": "fiddlesticks",
-        "name": "費德提克",
-        "enName": "Fiddlesticks",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "fiddlesticks-jungle",
-        "avatar": "../assets/images/heroes/portraits/fiddlesticks.webp"
-      },
-      {
-        "id": "fizz",
-        "name": "飛斯",
-        "enName": "Fizz",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "fizz-jungle",
-        "avatar": "../assets/images/heroes/portraits/fizz.webp"
-      },
-      {
-        "id": "gragas",
-        "name": "古拉格斯",
-        "enName": "Gragas",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "gragas-jungle",
-        "avatar": "../assets/images/heroes/portraits/gragas.webp"
-      },
-      {
-        "id": "graves",
-        "name": "葛雷夫",
-        "enName": "Graves",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "graves-jungle",
-        "avatar": "../assets/images/heroes/portraits/graves.webp"
-      },
-      {
-        "id": "gwen",
-        "name": "關",
-        "enName": "Gwen",
+        "id": "nunu-and-willump",
+        "name": "努努和威朗普",
+        "enName": "Nunu & Willump",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": "gwen-jungle",
-        "avatar": "../assets/images/heroes/portraits/gwen.webp"
-      },
-      {
-        "id": "hecarim",
-        "name": "赫克林",
-        "enName": "Hecarim",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "hecarim-jungle",
-        "avatar": "../assets/images/heroes/portraits/hecarim.webp"
+        "detailHeroId": "nunu-and-willump-jungle",
+        "avatar": "../assets/images/heroes/portraits/nunu-and-willump.png"
       },
       {
         "id": "jarvan-iv",
@@ -31532,13 +32238,30 @@
         "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp"
       },
       {
-        "id": "jax",
-        "name": "賈克斯",
-        "enName": "Jax",
-        "tier": "A",
+        "id": "nocturne",
+        "name": "夜曲",
+        "enName": "Nocturne",
+        "tier": "S",
         "origin": "native",
-        "detailHeroId": "jax-jungle",
-        "avatar": "../assets/images/heroes/portraits/jax.webp"
+        "detailHeroId": "nocturne-jungle",
+        "avatar": "../assets/images/heroes/portraits/nocturne.png"
+      },
+      {
+        "id": "ambessa",
+        "name": "安比薩",
+        "enName": "Ambessa",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "ambessa-jungle",
+        "avatar": "../assets/images/heroes/portraits/ambessa.png"
+      },
+      {
+        "id": "shen",
+        "name": "慎",
+        "enName": "Shen",
+        "tier": "S",
+        "origin": "native",
+        "avatar": "../assets/images/heroes/portraits/shen.webp"
       },
       {
         "id": "kayn",
@@ -31550,111 +32273,13 @@
         "avatar": "../assets/images/heroes/portraits/kayn.webp"
       },
       {
-        "id": "khazix",
-        "name": "卡力斯",
-        "enName": "Kha'Zix",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "khazix-jungle",
-        "avatar": "../assets/images/heroes/portraits/khazix.webp"
-      },
-      {
-        "id": "kindred",
-        "name": "鏡爪",
-        "enName": "Kindred",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kindred-jungle",
-        "avatar": "../assets/images/heroes/portraits/kindred.webp"
-      },
-      {
-        "id": "lee-sin",
-        "name": "李星",
-        "enName": "Lee Sin",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "lee-sin-jungle",
-        "avatar": "../assets/images/heroes/portraits/lee-sin.webp"
-      },
-      {
-        "id": "lillia",
-        "name": "莉莉亞",
-        "enName": "Lillia",
+        "id": "rammus",
+        "name": "拉姆斯",
+        "enName": "Rammus",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": "lillia-jungle",
-        "avatar": "../assets/images/heroes/portraits/lillia.webp"
-      },
-      {
-        "id": "maokai",
-        "name": "茂凱",
-        "enName": "Maokai",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "maokai-jungle",
-        "avatar": "../assets/images/heroes/portraits/maokai.webp"
-      },
-      {
-        "id": "morgana",
-        "name": "魔甘娜",
-        "enName": "Morgana",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "morgana-jungle",
-        "avatar": "../assets/images/heroes/portraits/morgana.png"
-      },
-      {
-        "id": "nautilus",
-        "name": "納帝魯斯",
-        "enName": "Nautilus",
-        "tier": "B",
-        "origin": "native",
-        "avatar": "../assets/images/heroes/portraits/nautilus.png"
-      },
-      {
-        "id": "nidalee",
-        "name": "奈德麗",
-        "enName": "Nidalee",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "nidalee-jungle",
-        "avatar": "../assets/images/heroes/portraits/nidalee.png"
-      },
-      {
-        "id": "nilah",
-        "name": "淣菈",
-        "enName": "Nilah",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "nilah-jungle",
-        "avatar": "../assets/images/heroes/portraits/nilah.png"
-      },
-      {
-        "id": "nocturne",
-        "name": "夜曲",
-        "enName": "Nocturne",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "nocturne-jungle",
-        "avatar": "../assets/images/heroes/portraits/nocturne.png"
-      },
-      {
-        "id": "nunu-and-willump",
-        "name": "努努和威朗普",
-        "enName": "Nunu & Willump",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "nunu-and-willump-jungle",
-        "avatar": "../assets/images/heroes/portraits/nunu-and-willump.png"
-      },
-      {
-        "id": "olaf",
-        "name": "歐拉夫",
-        "enName": "Olaf",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "olaf-jungle",
-        "avatar": "../assets/images/heroes/portraits/olaf.webp"
+        "detailHeroId": "rammus-jungle",
+        "avatar": "../assets/images/heroes/portraits/rammus.png"
       },
       {
         "id": "pantheon",
@@ -31666,57 +32291,94 @@
         "avatar": "../assets/images/heroes/portraits/pantheon.png"
       },
       {
-        "id": "poppy",
-        "name": "波比",
-        "enName": "Poppy",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "poppy-jungle",
-        "avatar": "../assets/images/heroes/portraits/poppy.webp"
-      },
-      {
-        "id": "rammus",
-        "name": "拉姆斯",
-        "enName": "Rammus",
+        "id": "lillia",
+        "name": "莉莉亞",
+        "enName": "Lillia",
         "tier": "S",
         "origin": "native",
-        "detailHeroId": "rammus-jungle",
-        "avatar": "../assets/images/heroes/portraits/rammus.png"
+        "detailHeroId": "lillia-jungle",
+        "avatar": "../assets/images/heroes/portraits/lillia.webp"
       },
       {
-        "id": "rengar",
-        "name": "雷葛爾",
-        "enName": "Rengar",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "rengar-jungle",
-        "avatar": "../assets/images/heroes/portraits/rengar.png"
-      },
-      {
-        "id": "riven",
-        "name": "雷玟",
-        "enName": "Riven",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "riven-jungle",
-        "avatar": "../assets/images/heroes/portraits/riven.png"
-      },
-      {
-        "id": "shen",
-        "name": "慎",
-        "enName": "Shen",
+        "id": "vi",
+        "name": "菲艾",
+        "enName": "Vi",
         "tier": "S",
         "origin": "native",
-        "avatar": "../assets/images/heroes/portraits/shen.webp"
+        "detailHeroId": "vi-jungle",
+        "avatar": "../assets/images/heroes/portraits/vi.png"
       },
       {
-        "id": "shyvana",
-        "name": "希瓦娜",
-        "enName": "Shyvana",
+        "id": "hecarim",
+        "name": "赫克林",
+        "enName": "Hecarim",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "hecarim-jungle",
+        "avatar": "../assets/images/heroes/portraits/hecarim.webp"
+      },
+      {
+        "id": "xin-zhao",
+        "name": "趙信",
+        "enName": "Xin Zhao",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "xin-zhao-jungle",
+        "avatar": "../assets/images/heroes/portraits/xin-zhao.png"
+      },
+      {
+        "id": "gwen",
+        "name": "關",
+        "enName": "Gwen",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "gwen-jungle",
+        "avatar": "../assets/images/heroes/portraits/gwen.webp"
+      },
+      {
+        "id": "amumu",
+        "name": "阿姆姆",
+        "enName": "Amumu",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "amumu-jungle",
+        "avatar": "../assets/images/heroes/portraits/amumu.webp"
+      },
+      {
+        "id": "zed",
+        "name": "劫",
+        "enName": "Zed",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": "shyvana-jungle",
-        "avatar": "../assets/images/heroes/portraits/shyvana.png"
+        "detailHeroId": "zed-jungle",
+        "avatar": "../assets/images/heroes/portraits/zed.png"
+      },
+      {
+        "id": "khazix",
+        "name": "卡力斯",
+        "enName": "Kha'Zix",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "khazix-jungle",
+        "avatar": "../assets/images/heroes/portraits/khazix.webp"
+      },
+      {
+        "id": "camille",
+        "name": "卡蜜兒",
+        "enName": "Camille",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "camille-jungle",
+        "avatar": "../assets/images/heroes/portraits/camille.webp"
+      },
+      {
+        "id": "aatrox",
+        "name": "厄薩斯",
+        "enName": "Aatrox",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "aatrox-jungle",
+        "avatar": "../assets/images/heroes/portraits/aatrox.webp"
       },
       {
         "id": "skarner",
@@ -31746,49 +32408,13 @@
         "avatar": "../assets/images/heroes/portraits/talon.png"
       },
       {
-        "id": "tryndamere",
-        "name": "泰達米爾",
-        "enName": "Tryndamere",
+        "id": "shyvana",
+        "name": "希瓦娜",
+        "enName": "Shyvana",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": "tryndamere-jungle",
-        "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
-      },
-      {
-        "id": "vi",
-        "name": "菲艾",
-        "enName": "Vi",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "vi-jungle",
-        "avatar": "../assets/images/heroes/portraits/vi.png"
-      },
-      {
-        "id": "viego",
-        "name": "維爾戈",
-        "enName": "Viego",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "viego-jungle",
-        "avatar": "../assets/images/heroes/portraits/viego.png"
-      },
-      {
-        "id": "volibear",
-        "name": "弗力貝爾",
-        "enName": "Volibear",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "volibear-jungle",
-        "avatar": "../assets/images/heroes/portraits/volibear.png"
-      },
-      {
-        "id": "warwick",
-        "name": "沃維克",
-        "enName": "Warwick",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "warwick-jungle",
-        "avatar": "../assets/images/heroes/portraits/warwick.png"
+        "detailHeroId": "shyvana-jungle",
+        "avatar": "../assets/images/heroes/portraits/shyvana.png"
       },
       {
         "id": "wukong",
@@ -31800,13 +32426,58 @@
         "avatar": "../assets/images/heroes/portraits/wukong.webp"
       },
       {
-        "id": "xin-zhao",
-        "name": "趙信",
-        "enName": "Xin Zhao",
-        "tier": "S",
+        "id": "master-yi",
+        "name": "易大師",
+        "enName": "Master Yi",
+        "tier": "A",
         "origin": "native",
-        "detailHeroId": "xin-zhao-jungle",
-        "avatar": "../assets/images/heroes/portraits/xin-zhao.png"
+        "detailHeroId": "master-yi-jungle",
+        "avatar": "../assets/images/heroes/portraits/master-yi.webp"
+      },
+      {
+        "id": "lee-sin",
+        "name": "李星",
+        "enName": "Lee Sin",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "lee-sin-jungle",
+        "avatar": "../assets/images/heroes/portraits/lee-sin.webp"
+      },
+      {
+        "id": "olaf",
+        "name": "歐拉夫",
+        "enName": "Olaf",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "olaf-jungle",
+        "avatar": "../assets/images/heroes/portraits/olaf.webp"
+      },
+      {
+        "id": "poppy",
+        "name": "波比",
+        "enName": "Poppy",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "poppy-jungle",
+        "avatar": "../assets/images/heroes/portraits/poppy.webp"
+      },
+      {
+        "id": "tryndamere",
+        "name": "泰達米爾",
+        "enName": "Tryndamere",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "tryndamere-jungle",
+        "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
+      },
+      {
+        "id": "nilah",
+        "name": "淣菈",
+        "enName": "Nilah",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "nilah-jungle",
+        "avatar": "../assets/images/heroes/portraits/nilah.png"
       },
       {
         "id": "yone",
@@ -31818,22 +32489,156 @@
         "avatar": "../assets/images/heroes/portraits/yone.webp"
       },
       {
-        "id": "zed",
-        "name": "劫",
-        "enName": "Zed",
+        "id": "viego",
+        "name": "維爾戈",
+        "enName": "Viego",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": "zed-jungle",
-        "avatar": "../assets/images/heroes/portraits/zed.png"
+        "detailHeroId": "viego-jungle",
+        "avatar": "../assets/images/heroes/portraits/viego.png"
       },
       {
-        "id": "master-yi",
-        "name": "易大師",
-        "enName": "Master Yi",
+        "id": "fiddlesticks",
+        "name": "費德提克",
+        "enName": "Fiddlesticks",
         "tier": "A",
         "origin": "native",
-        "detailHeroId": "master-yi-jungle",
-        "avatar": "../assets/images/heroes/portraits/master-yi.webp"
+        "detailHeroId": "fiddlesticks-jungle",
+        "avatar": "../assets/images/heroes/portraits/fiddlesticks.webp"
+      },
+      {
+        "id": "jax",
+        "name": "賈克斯",
+        "enName": "Jax",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "jax-jungle",
+        "avatar": "../assets/images/heroes/portraits/jax.webp"
+      },
+      {
+        "id": "darius",
+        "name": "達瑞斯",
+        "enName": "Darius",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "darius-jungle",
+        "avatar": "../assets/images/heroes/portraits/darius.webp"
+      },
+      {
+        "id": "kindred",
+        "name": "鏡爪",
+        "enName": "Kindred",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "kindred-jungle",
+        "avatar": "../assets/images/heroes/portraits/kindred.webp"
+      },
+      {
+        "id": "riven",
+        "name": "雷玟",
+        "enName": "Riven",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "riven-jungle",
+        "avatar": "../assets/images/heroes/portraits/riven.png"
+      },
+      {
+        "id": "morgana",
+        "name": "魔甘娜",
+        "enName": "Morgana",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "morgana-jungle",
+        "avatar": "../assets/images/heroes/portraits/morgana.png"
+      },
+      {
+        "id": "diana",
+        "name": "黛安娜",
+        "enName": "Diana",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "diana-jungle",
+        "avatar": "../assets/images/heroes/portraits/diana.webp"
+      },
+      {
+        "id": "gragas",
+        "name": "古拉格斯",
+        "enName": "Gragas",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "gragas-jungle",
+        "avatar": "../assets/images/heroes/portraits/gragas.webp"
+      },
+      {
+        "id": "volibear",
+        "name": "弗力貝爾",
+        "enName": "Volibear",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "volibear-jungle",
+        "avatar": "../assets/images/heroes/portraits/volibear.png"
+      },
+      {
+        "id": "nautilus",
+        "name": "納帝魯斯",
+        "enName": "Nautilus",
+        "tier": "B",
+        "origin": "native",
+        "avatar": "../assets/images/heroes/portraits/nautilus.png"
+      },
+      {
+        "id": "ekko",
+        "name": "艾克",
+        "enName": "Ekko",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "ekko-jungle",
+        "avatar": "../assets/images/heroes/portraits/ekko.webp"
+      },
+      {
+        "id": "maokai",
+        "name": "茂凱",
+        "enName": "Maokai",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "maokai-jungle",
+        "avatar": "../assets/images/heroes/portraits/maokai.webp"
+      },
+      {
+        "id": "dr-mundo",
+        "name": "蒙多醫生",
+        "enName": "Dr. Mundo",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "dr-mundo-jungle",
+        "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
+      },
+      {
+        "id": "rengar",
+        "name": "雷葛爾",
+        "enName": "Rengar",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "rengar-jungle",
+        "avatar": "../assets/images/heroes/portraits/rengar.png"
+      },
+      {
+        "id": "fizz",
+        "name": "飛斯",
+        "enName": "Fizz",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "fizz-jungle",
+        "avatar": "../assets/images/heroes/portraits/fizz.webp"
+      },
+      {
+        "id": "graves",
+        "name": "葛雷夫",
+        "enName": "Graves",
+        "tier": "C",
+        "origin": "native",
+        "detailHeroId": "graves-jungle",
+        "avatar": "../assets/images/heroes/portraits/graves.webp"
       }
     ],
     "mid": [
