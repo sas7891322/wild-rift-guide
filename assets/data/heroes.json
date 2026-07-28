@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v46-baron-seventh5",
+  "version": "7.2a-v47-baron-eighth5",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -106,7 +106,8 @@
     "v43：巴龍路第 4 批完成凱能、凱爾、雷尼克頓、墨菲特、蒙多醫生。",
     "v44：巴龍路第 5 批完成魔鬥凱薩、納瑟斯、鄂爾、波比、雷玟。",
     "v45：巴龍路第 6 批完成藍寶、賽恩、辛吉德、慎、提摩。",
-    "v46：巴龍路第 7 批完成烏爾加特、弗拉迪米爾、悟空、賽特、泰達米爾。原規劃的特朗德與約瑞科不在目前專案英雄資料中。"
+    "v46：巴龍路第 7 批完成烏爾加特、弗拉迪米爾、悟空、賽特、泰達米爾。原規劃的特朗德與約瑞科不在目前專案英雄資料中。",
+    "v47：巴龍路第 8 批完成嘉文四世、茂凱、納帝魯斯、奈德麗、歐拉夫。"
   ],
   "heroes": [
     {
@@ -6172,8 +6173,7 @@
           "菲歐拉",
           "凱能",
           "波比"
-        ],
-        "ban": "菲歐拉"
+        ]
       },
       "playstyle": {
         "前期": "前期用 Q 消耗降甲，E-Q 留來配合打野或撤退，不要空交位移。",
@@ -6181,7 +6181,7 @@
         "後期": "後期大絕要鎖住無位移核心，也要留意別把自家後排一起困在危險區域。"
       },
       "summary": "旗槍連招與大絕地形封鎖提供強開；巴龍路更重視短換血與團隊功能。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v47：巴龍路第 8 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp",
       "abilities": [
         {
@@ -6245,11 +6245,89 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-eighth5-formal-v47",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-21",
+        "physical-high-38",
+        "physical-high-42"
+      ],
+      "combos": [
+        {
+          "name": "旗矛換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技戰旗"
+            },
+            {
+              "key": "Q",
+              "label": "1技穿旗"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "戰旗接長矛擊飛後打一發被動普攻，開盾減速並結束短換血。"
+        },
+        {
+          "name": "大絕留人",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "先用旗矛逼出位移，再用大絕封鎖；注意不要困住需要撤退的隊友。"
+        },
+        {
+          "name": "團戰雙控制",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "可以先大絕限制後排，再在圈內使用旗矛擊飛，或保留旗矛作為撤退手段。"
+        }
+      ]
     },
     {
       "id": "jax-baron",
@@ -7591,8 +7669,7 @@
           "關",
           "菲歐拉",
           "弗力貝爾"
-        ],
-        "ban": "關"
+        ]
       },
       "playstyle": {
         "前期": "前期用被動回血維持線權，W-Q 打短換血後立即拉開。",
@@ -7600,7 +7677,7 @@
         "後期": "後期以保排與反開為主，優先綁住切自家後排的刺客或鬥士。"
       },
       "summary": "點控、擊退與範圍大絕讓他反開能力突出；樹苗可提前控制視野與草叢。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v47：巴龍路第 8 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/maokai.webp",
       "abilities": [
         {
@@ -7664,11 +7741,89 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "7.2a-first70-detail-v32",
+      "reviewStatus": "baron-eighth5-formal-v47",
       "reviewedAt": "2026-07-28",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-ruby"
+      ],
+      "coreItems": [
+        "defense-high-06",
+        "defense-high-11",
+        "defense-high-08"
+      ],
+      "combos": [
+        {
+          "name": "近身控制",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技推回"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "二技鎖定後站到敵人身後，用一技推向己方，穿插被動普攻回復生命。"
+        },
+        {
+          "name": "大絕開戰",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "大絕封鎖正面走位，命中後接二技定身與一技推回，延長控制鏈。"
+        },
+        {
+          "name": "草叢伏擊",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技樹苗"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "提前在草叢放置樹苗取得視野與傷害，敵人靠近後再連續控制。"
+        }
+      ]
     },
     {
       "id": "mordekaiser-baron",
@@ -8154,8 +8309,7 @@
           "關",
           "菲歐拉",
           "弗力貝爾"
-        ],
-        "ban": "關"
+        ]
       },
       "playstyle": {
         "前期": "前期靠被動定身與 E 清線，Q 沒把握時寧可留作威懾。",
@@ -8163,43 +8317,43 @@
         "後期": "後期站在隊伍前方做反開，Q 可勾牆位移，不一定只能拿來開敵人。"
       },
       "summary": "大量單體與範圍控制讓他線上配合打野、團戰強開都很可靠。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v47：巴龍路第 8 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/nautilus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "沉重打擊",
           "icon": "../assets/images/heroes/skills/nautilus_01.webp",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "對同一目標的第一次普攻會造成額外傷害並定身，是換血與接續控制的起點。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "最後升滿技能",
+          "label": "1 技",
+          "title": "深淵鐵錨",
           "icon": "../assets/images/heroes/skills/nautilus_02.webp",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "向前射出鐵錨，命中敵人時拉近雙方；命中地形則把自己拉向牆面。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "第二優先技能",
+          "label": "2 技",
+          "title": "巨人之怒",
           "icon": "../assets/images/heroes/skills/nautilus_03.webp",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "獲得依最大生命成長的護盾，護盾存在時普攻會對周圍敵人造成額外傷害。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "主要升級技能",
+          "label": "3 技",
+          "title": "鋼鐵怒濤",
           "icon": "../assets/images/heroes/skills/nautilus_04.webp",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "連續震出多道衝擊波，造成範圍傷害與緩速，適合貼身留人與清線。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "潛航衝擊",
           "icon": "../assets/images/heroes/skills/nautilus_05.webp",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "鎖定敵方英雄發出追蹤衝擊波，沿途擊飛敵人，抵達目標時再擊飛並暈眩。"
         }
       ],
       "skillSequence": [
@@ -8223,12 +8377,93 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-eighth5-formal-v47",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-ruby"
+      ],
+      "coreItems": [
+        "defense-high-06",
+        "defense-high-11",
+        "defense-high-08"
+      ],
+      "combos": [
+        {
+          "name": "鉤中連控",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "被動定身"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "鉤中後先普攻觸發定身，再用三技緩速；二技護盾用來承受反打。"
+        },
+        {
+          "name": "大絕鎖定",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "大絕逼迫目標走位或擊飛後接鐵錨，形成長時間單點控制。"
+        },
+        {
+          "name": "貼身換血",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技撤退或追擊"
+            }
+          ],
+          "note": "先開盾再普攻定身，三技打滿多道衝擊波，鐵錨保留作追擊或拉牆撤退。"
+        }
+      ]
     },
     {
       "id": "nidalee-baron",
@@ -8286,8 +8521,7 @@
           "伊瑞莉雅",
           "卡蜜兒",
           "潘森"
-        ],
-        "ban": "伊瑞莉雅"
+        ]
       },
       "playstyle": {
         "前期": "前期保持人形態距離用 Q 消耗，命中標記後才考慮豹形態追擊。",
@@ -8295,43 +8529,43 @@
         "後期": "後期避免正面豹跳入五人，先用遠程消耗，殘血目標出現再進場收割。"
       },
       "summary": "長矛消耗與豹形態斬殺形成高機動拉扯；巴龍路更依賴對線命中率。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v47：巴龍路第 8 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/nidalee.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "穿梭",
           "icon": "../assets/images/heroes/skills/nidalee_01.webp",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "在草叢移動時獲得跑速；長矛或陷阱命中後會標記獵物並強化豹形態追擊。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "標槍投擲／擊倒",
           "icon": "../assets/images/heroes/skills/nidalee_02.webp",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "人形投擲距離越遠傷害越高的長矛；豹形對低血量或被獵捕目標造成更高傷害。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "叢林伏擊／猛撲",
           "icon": "../assets/images/heroes/skills/nidalee_03.webp",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "人形放置陷阱並標記踩中的敵人；豹形向前跳躍，對獵捕目標有更強追擊能力。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "野性奔騰／揮擊",
           "icon": "../assets/images/heroes/skills/nidalee_04.webp",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "人形治療友軍並提升攻速；豹形對前方範圍造成魔法傷害。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "美洲獅",
           "icon": "../assets/images/heroes/skills/nidalee_05.webp",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "在人形與美洲獅形態間切換，改變三個基礎技能並重組消耗、治療與爆發節奏。"
         }
       ],
       "skillSequence": [
@@ -8355,12 +8589,101 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-eighth5-formal-v47",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-21",
+        "magic-high-14",
+        "magic-high-08"
+      ],
+      "combos": [
+        {
+          "name": "長矛豹形爆發",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "人形1技長矛"
+            },
+            {
+              "key": "R",
+              "label": "切換豹形"
+            },
+            {
+              "key": "W",
+              "label": "豹形2技猛撲"
+            },
+            {
+              "key": "E",
+              "label": "豹形3技揮擊"
+            },
+            {
+              "key": "Q",
+              "label": "豹形1技擊倒"
+            }
+          ],
+          "note": "長距離長矛標記獵物後切豹形跳入，最後以擊倒依低生命造成高額傷害。"
+        },
+        {
+          "name": "陷阱伏擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "人形2技陷阱"
+            },
+            {
+              "key": "Q",
+              "label": "人形1技"
+            },
+            {
+              "key": "R",
+              "label": "切換豹形"
+            },
+            {
+              "key": "W",
+              "label": "豹形2技"
+            },
+            {
+              "key": "Q",
+              "label": "豹形1技"
+            }
+          ],
+          "note": "陷阱先提供標記與視野，再用長矛壓低生命並切豹形收尾。"
+        },
+        {
+          "name": "續航消耗",
+          "steps": [
+            {
+              "key": "E",
+              "label": "人形3技治療"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "人形1技"
+            },
+            {
+              "key": "W",
+              "label": "人形2技"
+            }
+          ],
+          "note": "利用治療和攻速維持線權，以長矛與陷阱消耗，不必每次命中都強行跳入。"
+        }
+      ]
     },
     {
       "id": "olaf-baron",
@@ -8418,8 +8741,7 @@
           "菲歐拉",
           "凱能",
           "波比"
-        ],
-        "ban": "菲歐拉"
+        ]
       },
       "playstyle": {
         "前期": "前期 Q 命中後撿斧縮短冷卻，血量越低越強但不要低估爆發斬殺線。",
@@ -8427,43 +8749,43 @@
         "後期": "後期進場前先看隊友能否跟上；大絕結束後很怕被風箏，別孤軍深追。"
       },
       "summary": "低血量攻速、斧頭追擊與大絕免控讓他擅長正面長戰與追殺後排。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v47：巴龍路第 8 批正式版，套用犽凝固定母版。",
       "avatar": "../assets/images/heroes/portraits/olaf.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "英雄核心被動",
+          "title": "狂戰之怒",
           "icon": "../assets/images/heroes/skills/olaf_01.png",
-          "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
+          "summary": "生命越低攻速越高，使歐拉夫在殘血正面作戰時仍能維持極強輸出。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "逆流投擲",
           "icon": "../assets/images/heroes/skills/olaf_02.png",
-          "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "投擲戰斧造成傷害與緩速；撿回戰斧可大幅縮短冷卻，形成持續追擊循環。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "殘暴打擊",
           "icon": "../assets/images/heroes/skills/olaf_03.png",
-          "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "短時間提升攻速與續航能力，配合低血量被動能在長戰中快速回復。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "魯莽揮擊",
           "icon": "../assets/images/heroes/skills/olaf_04.png",
-          "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
+          "summary": "對單一目標造成高額真實傷害，普攻會協助縮短冷卻，是近身換血的重要技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "大絕／關鍵技能",
+          "label": "4 技",
+          "title": "諸神黃昏",
           "icon": "../assets/images/heroes/skills/olaf_05.png",
-          "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
+          "summary": "主動期間免疫控制並獲得追擊能力，適合正面穿過前排直衝後排。"
         }
       ],
       "skillSequence": [
@@ -8487,12 +8809,101 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-formal-7.2a-v31",
-      "reviewedAt": "2026-07-27"
+      "reviewStatus": "baron-eighth5-formal-v47",
+      "reviewedAt": "2026-07-28",
+      "skillIconCount": 5,
+      "detailAssetBatch": "second70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-01",
+        "physical-high-06",
+        "physical-high-38"
+      ],
+      "combos": [
+        {
+          "name": "撿斧追擊",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "撿回再投"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "戰斧命中後沿著斧頭方向追擊，撿回可縮短冷卻，持續穿插真實傷害。"
+        },
+        {
+          "name": "殘血長打",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "生命降低時開二技放大攻速與續航，保持普攻來縮短三技冷卻。"
+        },
+        {
+          "name": "免控切後排",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "確認敵方控制即將命中時開大，直線追擊後排並持續撿斧。"
+        }
+      ]
     },
     {
       "id": "ornn-baron",
