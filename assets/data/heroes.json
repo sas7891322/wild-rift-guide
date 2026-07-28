@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v32-first70-detail",
+  "version": "7.2a-v33",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -96,7 +96,8 @@
     "持",
     "不",
     "變",
-    "。"
+    "。",
+    "v33：前70英雄圖片改為最新版單一頭像＋技能平面檔名；移除該70英雄舊圖重複與舊技能子資料夾。"
   ],
   "heroes": [
     {
@@ -320,35 +321,35 @@
           "key": "P",
           "label": "被動",
           "title": "愛的拍拍",
-          "icon": "../assets/images/heroes/skills/miss-fortune/01.webp",
+          "icon": "../assets/images/heroes/skills/miss-fortune_01.webp",
           "summary": "普攻切換到新目標時造成額外物理傷害，鼓勵在不同目標間交替輸出。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "彈射",
-          "icon": "../assets/images/heroes/skills/miss-fortune/02.webp",
+          "icon": "../assets/images/heroes/skills/miss-fortune_02.webp",
           "summary": "射擊目標後子彈彈向後方敵人；第一個目標被擊殺時第二段可造成更高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "趾高氣揚",
-          "icon": "../assets/images/heroes/skills/miss-fortune/03.webp",
+          "icon": "../assets/images/heroes/skills/miss-fortune_03.webp",
           "summary": "未受傷時被動提高跑速；主動短時間提高攻速，觸發被動可縮短冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "槍林彈雨",
-          "icon": "../assets/images/heroes/skills/miss-fortune/04.webp",
+          "icon": "../assets/images/heroes/skills/miss-fortune_04.webp",
           "summary": "在指定區域降下子彈雨，持續造成魔法傷害並緩速敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "彈幕",
-          "icon": "../assets/images/heroes/skills/miss-fortune/05.webp",
+          "icon": "../assets/images/heroes/skills/miss-fortune_05.webp",
           "summary": "向前方扇形區域持續掃射多波子彈，造成大量物理傷害並可暴擊。"
         }
       ],
@@ -454,35 +455,35 @@
           "key": "P",
           "label": "被動",
           "title": "咒能高漲",
-          "icon": "../assets/images/heroes/skills/ezreal/01.webp",
+          "icon": "../assets/images/heroes/skills/ezreal_01.webp",
           "summary": "技能命中敵人時提高攻速，可疊加多層。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "秘術射擊",
-          "icon": "../assets/images/heroes/skills/ezreal/02.webp",
+          "icon": "../assets/images/heroes/skills/ezreal_02.webp",
           "summary": "發射能附帶命中特效的能量彈，命中敵人可縮短其他技能冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "精華躍動",
-          "icon": "../assets/images/heroes/skills/ezreal/03.webp",
+          "icon": "../assets/images/heroes/skills/ezreal_03.webp",
           "summary": "發射能量球附著英雄或建築；之後用普攻或技能命中會引爆造成魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "奧術躍遷",
-          "icon": "../assets/images/heroes/skills/ezreal/04.webp",
+          "icon": "../assets/images/heroes/skills/ezreal_04.webp",
           "summary": "瞬間位移到指定位置並射出魔法箭攻擊附近目標，適合躲技能與追擊。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "精準彈幕",
-          "icon": "../assets/images/heroes/skills/ezreal/05.webp",
+          "icon": "../assets/images/heroes/skills/ezreal_05.webp",
           "summary": "短暫施法後發射全圖能量波，穿越所有敵人造成魔法傷害。"
         }
       ],
@@ -856,35 +857,35 @@
           "key": "P",
           "label": "被動",
           "title": "光之獵手",
-          "icon": "../assets/images/heroes/skills/lucian/01.png",
+          "icon": "../assets/images/heroes/skills/lucian_01.png",
           "summary": "每次施放技能後，下一次普攻會連射兩發，是技能穿插普攻的核心。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "鋒芒貫穿",
-          "icon": "../assets/images/heroes/skills/lucian/02.webp",
+          "icon": "../assets/images/heroes/skills/lucian_02.webp",
           "summary": "對指定目標射出穿透光束，並傷害其後方直線上的敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "烈炎鐵血",
-          "icon": "../assets/images/heroes/skills/lucian/03.png",
+          "icon": "../assets/images/heroes/skills/lucian_03.png",
           "summary": "發射星形爆炸彈並標記敵人；攻擊被標記目標可提高跑速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "冷酷進擊",
-          "icon": "../assets/images/heroes/skills/lucian/04.webp",
+          "icon": "../assets/images/heroes/skills/lucian_04.webp",
           "summary": "向指定方向短距位移，雙槍普攻可縮短冷卻，利於連招與拉扯。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "赤色屠戮",
-          "icon": "../assets/images/heroes/skills/lucian/05.webp",
+          "icon": "../assets/images/heroes/skills/lucian_05.webp",
           "summary": "朝指定方向持續高速射擊，可邊移動邊輸出，用於壓血、追擊與收尾。"
         }
       ],
@@ -1124,35 +1125,35 @@
           "key": "P",
           "label": "被動",
           "title": "低語",
-          "icon": "../assets/images/heroes/skills/jhin/01.webp",
+          "icon": "../assets/images/heroes/skills/jhin_01.webp",
           "summary": "固定四發彈匣，第四發必定暴擊並附帶斬殺傷害；暴擊會提高跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "狂舞手雷",
-          "icon": "../assets/images/heroes/skills/jhin/02.webp",
+          "icon": "../assets/images/heroes/skills/jhin_02.webp",
           "summary": "投擲手雷在敵人之間彈跳，前一個目標被擊殺時會提高後續彈跳傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "致命伏筆",
-          "icon": "../assets/images/heroes/skills/jhin/03.webp",
+          "icon": "../assets/images/heroes/skills/jhin_03.webp",
           "summary": "超遠距直線射擊；命中近期被燼或友軍傷害的英雄時可定身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "魔幻時刻",
-          "icon": "../assets/images/heroes/skills/jhin/04.webp",
+          "icon": "../assets/images/heroes/skills/jhin_04.webp",
           "summary": "放置隱形陷阱，敵人踩到後緩速並延遲爆炸造成魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "華麗謝幕",
-          "icon": "../assets/images/heroes/skills/jhin/05.webp",
+          "icon": "../assets/images/heroes/skills/jhin_05.webp",
           "summary": "架起超遠距狙擊槍最多射擊四發，子彈造成緩速與斬殺傷害，第四發必定暴擊。"
         }
       ],
@@ -1258,35 +1259,35 @@
           "key": "P",
           "label": "被動",
           "title": "來自伊卡西亞的驚喜",
-          "icon": "../assets/images/heroes/skills/kogmaw/01.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_01.webp",
           "summary": "死亡後仍可短暫移動並提高跑速，隨後爆炸對附近敵人造成真實傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "腐蝕唾液",
-          "icon": "../assets/images/heroes/skills/kogmaw/02.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_02.webp",
           "summary": "射出腐蝕唾液造成魔法傷害並降低目標雙防；被動提高攻速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "生化彈幕",
-          "icon": "../assets/images/heroes/skills/kogmaw/03.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_03.webp",
           "summary": "短時間提高普攻距離，並讓普攻附加依目標最大生命計算的魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "虛空淤泥",
-          "icon": "../assets/images/heroes/skills/kogmaw/04.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_04.webp",
           "summary": "吐出一條虛空淤泥造成魔法傷害並留下緩速地帶。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "生化巨炮",
-          "icon": "../assets/images/heroes/skills/kogmaw/05.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_05.webp",
           "summary": "遠距離砲擊指定位置，造成魔法傷害並揭露敵人；對低生命目標傷害更高，連續施放提高耗魔。"
         }
       ],
@@ -1522,35 +1523,35 @@
           "key": "P",
           "label": "被動",
           "title": "海克斯軍火",
-          "icon": "../assets/images/heroes/skills/corki/01.webp",
+          "icon": "../assets/images/heroes/skills/corki_01.webp",
           "summary": "普攻傷害轉為混合傷害；週期性可取得特殊補給，大幅強化下一次女武神特攻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "磷光炸彈",
-          "icon": "../assets/images/heroes/skills/corki/02.webp",
+          "icon": "../assets/images/heroes/skills/corki_02.webp",
           "summary": "投擲磷光炸彈造成範圍魔法傷害並短暫揭露區域。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "女武神特攻",
-          "icon": "../assets/images/heroes/skills/corki/03.webp",
+          "icon": "../assets/images/heroes/skills/corki_03.webp",
           "summary": "向前飛行並留下燃燒地帶造成持續傷害；特殊補給版本距離與控制效果更強。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "格林機槍",
-          "icon": "../assets/images/heroes/skills/corki/04.webp",
+          "icon": "../assets/images/heroes/skills/corki_04.webp",
           "summary": "向前方持續掃射，造成混合傷害並降低敵人的物防與魔防。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "火箭轟擊",
-          "icon": "../assets/images/heroes/skills/corki/05.webp",
+          "icon": "../assets/images/heroes/skills/corki_05.webp",
           "summary": "發射可儲存的導彈造成範圍傷害；每隔數發會變成威力與範圍更大的超級導彈。"
         }
       ],
@@ -1656,35 +1657,35 @@
           "key": "P",
           "label": "被動",
           "title": "好戰突進",
-          "icon": "../assets/images/heroes/skills/kalista/01.png",
+          "icon": "../assets/images/heroes/skills/kalista_01.png",
           "summary": "在普攻或一技能出手時輸入移動指令，可朝指定方向跳躍。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "赦罪穿刺",
-          "icon": "../assets/images/heroes/skills/kalista/02.png",
+          "icon": "../assets/images/heroes/skills/kalista_02.png",
           "summary": "投出長矛造成物理傷害；擊殺目標時可把其身上的長矛層數傳給後方單位。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "憎靈守衛",
-          "icon": "../assets/images/heroes/skills/kalista/03.png",
+          "icon": "../assets/images/heroes/skills/kalista_03.png",
           "summary": "與血誓同盟攻擊同一目標時造成額外傷害；主動派出守衛靈魂巡邏並提供視野。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "痛苦撕扯",
-          "icon": "../assets/images/heroes/skills/kalista/04.png",
+          "icon": "../assets/images/heroes/skills/kalista_04.png",
           "summary": "被動讓長矛留在目標身上；主動拔出所有長矛造成傷害並緩速，層數越多傷害越高。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "命運呼喚",
-          "icon": "../assets/images/heroes/skills/kalista/05.png",
+          "icon": "../assets/images/heroes/skills/kalista_05.png",
           "summary": "把血誓同盟拉回自己身邊並使其不可被選取；同盟可選擇方向衝出並擊飛敵人。"
         }
       ],
@@ -1920,35 +1921,35 @@
           "key": "P",
           "label": "被動",
           "title": "二階蟲甲",
-          "icon": "../assets/images/heroes/skills/kaisa/01.webp",
+          "icon": "../assets/images/heroes/skills/kaisa_01.webp",
           "summary": "普攻疊加電漿造成逐步提高的魔法傷害；友軍硬控也能疊層，購買特定屬性可進化基礎技能。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "伊卡西亞魔雨",
-          "icon": "../assets/images/heroes/skills/kaisa/02.webp",
+          "icon": "../assets/images/heroes/skills/kaisa_02.webp",
           "summary": "向附近敵人發射多枚飛彈，單一目標可吃到多發；進化後飛彈數增加。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "虛空探索者",
-          "icon": "../assets/images/heroes/skills/kaisa/03.webp",
+          "icon": "../assets/images/heroes/skills/kaisa_03.webp",
           "summary": "發射長距離虛空能量，造成魔法傷害並疊加電漿、揭露目標；進化後命中可大幅返還冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "極速充能",
-          "icon": "../assets/images/heroes/skills/kaisa/04.webp",
+          "icon": "../assets/images/heroes/skills/kaisa_04.webp",
           "summary": "蓄力後提高跑速，再獲得高攻速；進化後可在短時間內進入隱形。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "殺手本能",
-          "icon": "../assets/images/heroes/skills/kaisa/05.webp",
+          "icon": "../assets/images/heroes/skills/kaisa_05.webp",
           "summary": "高速突進到帶有電漿標記的敵方英雄附近並獲得護盾，用於追擊、躲技能與調整輸出位置。"
         }
       ],
@@ -2069,35 +2070,35 @@
           "key": "P",
           "label": "被動",
           "title": "瑞文聯盟",
-          "icon": "../assets/images/heroes/skills/draven/01.webp",
+          "icon": "../assets/images/heroes/skills/draven_01.webp",
           "summary": "接住飛斧、擊殺單位與拆塔可累積崇拜；擊殺英雄時把崇拜轉為額外金幣。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "迴旋飛斧",
-          "icon": "../assets/images/heroes/skills/draven/02.webp",
+          "icon": "../assets/images/heroes/skills/draven_02.webp",
           "summary": "強化下一次普攻，使斧頭彈回空中；接住後可繼續保持迴旋飛斧。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "好戲上場",
-          "icon": "../assets/images/heroes/skills/draven/03.webp",
+          "icon": "../assets/images/heroes/skills/draven_03.webp",
           "summary": "提高跑速與攻速；接住迴旋飛斧可刷新冷卻，維持高頻輸出。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "給我閃！",
-          "icon": "../assets/images/heroes/skills/draven/04.png",
+          "icon": "../assets/images/heroes/skills/draven_04.png",
           "summary": "橫向丟斧造成傷害、擊退並緩速敵人，可打斷突進。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "迴轉死神",
-          "icon": "../assets/images/heroes/skills/draven/05.png",
+          "icon": "../assets/images/heroes/skills/draven_05.png",
           "summary": "投出兩把巨大斧頭穿越全圖，命中英雄後可回轉，也可主動提早收回。"
         }
       ],
@@ -2214,35 +2215,35 @@
           "key": "P",
           "label": "被動",
           "title": "冰霜射擊",
-          "icon": "../assets/images/heroes/skills/ashe/01.webp",
+          "icon": "../assets/images/heroes/skills/ashe_01.webp",
           "summary": "普攻與技能使敵人受到冰霜緩速；暴擊會提高緩速而非一般爆擊傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "專注射擊",
-          "icon": "../assets/images/heroes/skills/ashe/02.webp",
+          "icon": "../assets/images/heroes/skills/ashe_02.webp",
           "summary": "累積專注後強化連續普攻，提升攻速並造成多段箭矢傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "萬箭齊發",
-          "icon": "../assets/images/heroes/skills/ashe/03.webp",
+          "icon": "../assets/images/heroes/skills/ashe_03.webp",
           "summary": "向前方扇形射出多支箭，造成傷害並套用冰霜緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鷹擊長空",
-          "icon": "../assets/images/heroes/skills/ashe/04.webp",
+          "icon": "../assets/images/heroes/skills/ashe_04.webp",
           "summary": "派出獵鷹沿路偵查，揭露大片區域與敵方單位。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "魔法水晶箭",
-          "icon": "../assets/images/heroes/skills/ashe/05.webp",
+          "icon": "../assets/images/heroes/skills/ashe_05.webp",
           "summary": "射出全地圖魔法箭，命中英雄造成傷害與暈眩，距離越遠暈眩越久。"
         }
       ],
@@ -2348,35 +2349,35 @@
           "key": "P",
           "label": "被動",
           "title": "狂躁！",
-          "icon": "../assets/images/heroes/skills/jinx/01.png",
+          "icon": "../assets/images/heroes/skills/jinx_01.png",
           "summary": "參與擊殺英雄、史詩野怪或摧毀建築後進入暴走，大幅提高跑速與攻速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "鬼靈精怪！",
-          "icon": "../assets/images/heroes/skills/jinx/02.png",
+          "icon": "../assets/images/heroes/skills/jinx_02.png",
           "summary": "切換迷你砲與火箭發射器；前者高攻速，後者增加射程並造成範圍傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "咻咻！",
-          "icon": "../assets/images/heroes/skills/jinx/03.png",
+          "icon": "../assets/images/heroes/skills/jinx_03.png",
           "summary": "發射遠距電擊造成物理傷害、緩速並揭露第一個命中的敵人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "咬咬手榴彈！",
-          "icon": "../assets/images/heroes/skills/jinx/04.png",
+          "icon": "../assets/images/heroes/skills/jinx_04.png",
           "summary": "投出三枚咬咬手榴彈，敵方英雄踩到時被定身，之後陷阱爆炸造成傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "超威能死亡火箭！",
-          "icon": "../assets/images/heroes/skills/jinx/05.png",
+          "icon": "../assets/images/heroes/skills/jinx_05.png",
           "summary": "發射全圖火箭，飛行越遠傷害越高，命中英雄時爆炸並依已損生命造成額外傷害。"
         }
       ],
@@ -2482,35 +2483,35 @@
           "key": "P",
           "label": "被動",
           "title": "爆頭",
-          "icon": "../assets/images/heroes/skills/caitlyn/01.webp",
+          "icon": "../assets/images/heroes/skills/caitlyn_01.webp",
           "summary": "每幾次普攻或對被陷阱／獵網命中的目標攻擊時觸發強化爆頭，造成高額物理傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "鎮暴射擊",
-          "icon": "../assets/images/heroes/skills/caitlyn/02.webp",
+          "icon": "../assets/images/heroes/skills/caitlyn_02.webp",
           "summary": "發射穿透步槍彈，對直線敵人造成物理傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "捕獲陷阱",
-          "icon": "../assets/images/heroes/skills/caitlyn/03.webp",
+          "icon": "../assets/images/heroes/skills/caitlyn_03.webp",
           "summary": "放置陷阱，踩到的英雄會被短暫定身並暴露，凱特琳可對其施放強化爆頭。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "九零式獵網",
-          "icon": "../assets/images/heroes/skills/caitlyn/04.webp",
+          "icon": "../assets/images/heroes/skills/caitlyn_04.webp",
           "summary": "發射獵網傷害並緩速敵人，同時讓自己向反方向位移。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "王牌射手",
-          "icon": "../assets/images/heroes/skills/caitlyn/05.webp",
+          "icon": "../assets/images/heroes/skills/caitlyn_05.webp",
           "summary": "長時間瞄準後射出超遠距子彈造成高額物理傷害，可被其他英雄擋下。"
         }
       ],
@@ -3290,35 +3291,35 @@
           "key": "P",
           "label": "被動",
           "title": "冥使劍姿",
-          "icon": "../assets/images/heroes/skills/aatrox/01.png",
+          "icon": "../assets/images/heroes/skills/aatrox_01.png",
           "summary": "週期性強化普攻，造成額外物理傷害並依目標最大生命回復自身。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "冥血邪劍",
-          "icon": "../assets/images/heroes/skills/aatrox/02.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_02.webp",
           "summary": "三段斬擊各有甜蜜點；命中外圈可造成更高傷害並擊飛，是主要輸出與控場。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "冥府血鏈",
-          "icon": "../assets/images/heroes/skills/aatrox/03.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_03.webp",
           "summary": "揮出鎖鏈傷害並減速目標；敵人未及時離開區域會被拉回中心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "冥影衝鋒",
-          "icon": "../assets/images/heroes/skills/aatrox/04.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_04.webp",
           "summary": "短距位移並提供續航，可在揮劍途中調整一技能甜蜜點位置。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "劍魔滅世",
-          "icon": "../assets/images/heroes/skills/aatrox/05.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_05.webp",
           "summary": "進入惡魔形態，提升跑速、傷害與治療效果；參與擊殺可延長持續時間。"
         }
       ],
@@ -3425,35 +3426,35 @@
           "key": "P",
           "label": "被動",
           "title": "刺客印記",
-          "icon": "../assets/images/heroes/skills/akali/01.webp",
+          "icon": "../assets/images/heroes/skills/akali_01.webp",
           "summary": "技能傷害命中英雄後生成圓環；穿出圓環可強化下一次普攻並增加攻擊距離。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "落擲苦無",
-          "icon": "../assets/images/heroes/skills/akali/02.webp",
+          "icon": "../assets/images/heroes/skills/akali_02.webp",
           "summary": "扇形投擲苦無造成魔法傷害，是主要消耗與清線手段。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "暮光朦影",
-          "icon": "../assets/images/heroes/skills/akali/03.webp",
+          "icon": "../assets/images/heroes/skills/akali_03.webp",
           "summary": "製造煙霧並提升跑速，在煙霧中進入隱形，同時回復能量。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "離群手裡劍",
-          "icon": "../assets/images/heroes/skills/akali/04.png",
+          "icon": "../assets/images/heroes/skills/akali_04.png",
           "summary": "後跳並投出手裡劍標記目標；再次施放可高速衝向標記。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "無瑕追擊",
-          "icon": "../assets/images/heroes/skills/akali/05.webp",
+          "icon": "../assets/images/heroes/skills/akali_05.webp",
           "summary": "第一段穿越指定英雄造成傷害，第二段依目標已損生命造成高額收尾傷害。"
         }
       ],
@@ -3560,35 +3561,35 @@
           "key": "P",
           "label": "被動",
           "title": "龍犬詭步",
-          "icon": "../assets/images/heroes/skills/ambessa/01.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_01.webp",
           "summary": "施放技能時若輸入移動指令，可在技能結束後朝指定方向突進並強化下一次普攻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗襲／裂斬",
-          "icon": "../assets/images/heroes/skills/ambessa/02.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_02.webp",
           "summary": "第一次橫掃造成傷害，命中特定區域後可重施裂斬；第二段對前方敵人造成更高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "鐵令",
-          "icon": "../assets/images/heroes/skills/ambessa/03.png",
+          "icon": "../assets/images/heroes/skills/ambessa_03.png",
           "summary": "獲得護盾並向前猛擊；若護盾承受傷害，攻擊會得到強化。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "血戮",
-          "icon": "../assets/images/heroes/skills/ambessa/04.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_04.webp",
           "summary": "揮鏈造成傷害與緩速，外緣命中時效果更強，適合拉扯與追擊。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "殛刑",
-          "icon": "../assets/images/heroes/skills/ambessa/05.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_05.webp",
           "summary": "瞬間突進至遠處敵方英雄並壓制、位移目標，是切後排與開戰手段。"
         }
       ],
@@ -3695,35 +3696,35 @@
           "key": "P",
           "label": "被動",
           "title": "精靈附體",
-          "icon": "../assets/images/heroes/skills/aurora/01.webp",
+          "icon": "../assets/images/heroes/skills/aurora_01.webp",
           "summary": "技能或普攻命中英雄可累積精靈能量，觸發後造成額外傷害並提供跑速與治療。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "二重靈咒",
-          "icon": "../assets/images/heroes/skills/aurora/02.webp",
+          "icon": "../assets/images/heroes/skills/aurora_02.webp",
           "summary": "向前射出靈能飛彈並標記敵人，再次施放可召回飛彈造成第二段傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "跨越兩界",
-          "icon": "../assets/images/heroes/skills/aurora/03.webp",
+          "icon": "../assets/images/heroes/skills/aurora_03.webp",
           "summary": "短距跳躍並進入靈界隱形，適合躲技能、調整位置或追擊。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "靈異逆躍",
-          "icon": "../assets/images/heroes/skills/aurora/04.webp",
+          "icon": "../assets/images/heroes/skills/aurora_04.webp",
           "summary": "向後躍並釋放靈能衝擊，對前方敵人造成傷害與緩速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "雙界合一",
-          "icon": "../assets/images/heroes/skills/aurora/05.png",
+          "icon": "../assets/images/heroes/skills/aurora_05.png",
           "summary": "跳向指定區域造成傷害並形成靈界邊界，敵人接觸邊界時會被拉回區域內。"
         }
       ],
@@ -3830,35 +3831,35 @@
           "key": "P",
           "label": "被動",
           "title": "適性防禦",
-          "icon": "../assets/images/heroes/skills/camille/01.webp",
+          "icon": "../assets/images/heroes/skills/camille_01.webp",
           "summary": "普攻英雄時依目標主要傷害類型獲得物理或魔法護盾。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "精密解剖",
-          "icon": "../assets/images/heroes/skills/camille/02.webp",
+          "icon": "../assets/images/heroes/skills/camille_02.webp",
           "summary": "強化下一次普攻並提高跑速；延遲後再次施放可造成更高傷害，其中一部分轉為真實傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "刀光掠影",
-          "icon": "../assets/images/heroes/skills/camille/03.webp",
+          "icon": "../assets/images/heroes/skills/camille_03.webp",
           "summary": "向前方扇形橫掃，外圈造成更高傷害、緩速敵人並治療自身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鋼鐵鉤射",
-          "icon": "../assets/images/heroes/skills/camille/04.webp",
+          "icon": "../assets/images/heroes/skills/camille_04.webp",
           "summary": "射出鉤索拉向牆體，再次施放可跳向指定方向；命中英雄時增加攻速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "海克斯晶體結界",
-          "icon": "../assets/images/heroes/skills/camille/05.png",
+          "icon": "../assets/images/heroes/skills/camille_05.png",
           "summary": "跳向指定英雄使其無法逃出結界，並擊退附近其他敵人。"
         }
       ],
@@ -3965,35 +3966,35 @@
           "key": "P",
           "label": "被動",
           "title": "絞喉",
-          "icon": "../assets/images/heroes/skills/darius/01.webp",
+          "icon": "../assets/images/heroes/skills/darius_01.webp",
           "summary": "普攻與傷害技能使敵人流血；疊滿後達瑞斯獲得高額物攻並能快速把其他英雄疊滿。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "毀滅風暴",
-          "icon": "../assets/images/heroes/skills/darius/02.webp",
+          "icon": "../assets/images/heroes/skills/darius_02.webp",
           "summary": "揮斧一圈，外圈斧刃造成更高傷害、治療自身並附加流血。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "殘廢打擊",
-          "icon": "../assets/images/heroes/skills/darius/03.webp",
+          "icon": "../assets/images/heroes/skills/darius_03.webp",
           "summary": "強化下一次普攻造成額外物理傷害並大幅緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "索魂奪命",
-          "icon": "../assets/images/heroes/skills/darius/04.webp",
+          "icon": "../assets/images/heroes/skills/darius_04.webp",
           "summary": "被動獲得物理穿透；主動用斧柄把前方敵人拉到身前並減速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "諾克薩斯斷頭台",
-          "icon": "../assets/images/heroes/skills/darius/05.webp",
+          "icon": "../assets/images/heroes/skills/darius_05.webp",
           "summary": "跳向英雄造成真實傷害，流血層數會提高傷害；擊殺可重置並短暫免消耗再次施放。"
         }
       ],
@@ -4100,35 +4101,35 @@
           "key": "P",
           "label": "被動",
           "title": "想去哪就去哪",
-          "icon": "../assets/images/heroes/skills/dr-mundo/01.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_01.webp",
           "summary": "可抵銷下一個硬控並掉落化學藥劑；撿回藥劑可治療並縮短被動冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "病毒骨鋸",
-          "icon": "../assets/images/heroes/skills/dr-mundo/02.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_02.webp",
           "summary": "丟出骨鋸造成依目標當前生命計算的魔法傷害與緩速，命中可返還部分生命消耗。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "心臟電擊器",
-          "icon": "../assets/images/heroes/skills/dr-mundo/03.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_03.webp",
           "summary": "讓自己通電持續傷害附近敵人，期間累積灰色生命；結束時命中敵人可回復其中一部分。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鈍擊創傷",
-          "icon": "../assets/images/heroes/skills/dr-mundo/04.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_04.webp",
           "summary": "強化下一次普攻造成額外傷害並把死亡的士兵或野怪擊飛；被動提高物攻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "最大劑量",
-          "icon": "../assets/images/heroes/skills/dr-mundo/05.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_05.webp",
           "summary": "大量回復生命並提高跑速，後期還能獲得額外物攻與更強治療。"
         }
       ],
@@ -4235,35 +4236,35 @@
           "key": "P",
           "label": "被動",
           "title": "不屈鬥魂",
-          "icon": "../assets/images/heroes/skills/fiora/01.png",
+          "icon": "../assets/images/heroes/skills/fiora_01.png",
           "summary": "會標記附近英雄的破綻；從指定方向擊破可造成額外真實傷害、治療並提高跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "移形之體",
-          "icon": "../assets/images/heroes/skills/fiora/02.png",
+          "icon": "../assets/images/heroes/skills/fiora_02.png",
           "summary": "向指定方向突刺並攻擊附近敵人，優先命中破綻；命中可縮短冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "斗轉之力",
-          "icon": "../assets/images/heroes/skills/fiora/03.png",
+          "icon": "../assets/images/heroes/skills/fiora_03.png",
           "summary": "短暫招架所有傷害與控制後反擊；若擋到硬控可暈眩敵人，否則造成緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "迅雷之技",
-          "icon": "../assets/images/heroes/skills/fiora/04.png",
+          "icon": "../assets/images/heroes/skills/fiora_04.png",
           "summary": "強化接下來兩次普攻；第一下緩速，第二下必定暴擊。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "頂尖對決",
-          "icon": "../assets/images/heroes/skills/fiora/05.webp",
+          "icon": "../assets/images/heroes/skills/fiora_05.webp",
           "summary": "揭露目標四個破綻並提高追擊跑速；擊破全部或目標陣亡後生成大範圍治療區。"
         }
       ],
@@ -4370,35 +4371,35 @@
           "key": "P",
           "label": "被動",
           "title": "堅毅",
-          "icon": "../assets/images/heroes/skills/garen/01.webp",
+          "icon": "../assets/images/heroes/skills/garen_01.webp",
           "summary": "一段時間未受敵方傷害後快速回復生命，提升對線續航。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "致命打擊",
-          "icon": "../assets/images/heroes/skills/garen/02.webp",
+          "icon": "../assets/images/heroes/skills/garen_02.webp",
           "summary": "解除緩速並提高跑速，下一次普攻造成額外傷害與沉默。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "勇氣",
-          "icon": "../assets/images/heroes/skills/garen/03.webp",
+          "icon": "../assets/images/heroes/skills/garen_03.webp",
           "summary": "被動增加防禦；主動短暫獲得高額韌性與減傷，之後維持較低減傷。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "審判",
-          "icon": "../assets/images/heroes/skills/garen/04.png",
+          "icon": "../assets/images/heroes/skills/garen_04.png",
           "summary": "快速旋轉大劍持續造成物理傷害，對單一目標時傷害更高。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "蒂瑪西亞制裁",
-          "icon": "../assets/images/heroes/skills/garen/05.webp",
+          "icon": "../assets/images/heroes/skills/garen_05.webp",
           "summary": "召喚蒂瑪西亞之力處決指定英雄，依其已損生命造成大量真實傷害。"
         }
       ],
@@ -4505,35 +4506,35 @@
           "key": "P",
           "label": "被動",
           "title": "狂怒基因",
-          "icon": "../assets/images/heroes/skills/gnar/01.png",
+          "icon": "../assets/images/heroes/skills/gnar_01.png",
           "summary": "戰鬥會累積怒氣；滿怒後變成狂暴吶兒，獲得更高生命與防禦，不同型態擁有不同技能。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "骨頭迴力鏢／巨岩拋擲",
-          "icon": "../assets/images/heroes/skills/gnar/02.png",
+          "icon": "../assets/images/heroes/skills/gnar_02.png",
           "summary": "小型態投迴力鏢傷害並緩速；大型態丟岩石造成範圍傷害與緩速，撿回可縮短冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "野獸本能／原始衝撞",
-          "icon": "../assets/images/heroes/skills/gnar/03.png",
+          "icon": "../assets/images/heroes/skills/gnar_03.png",
           "summary": "小型態第三次攻擊造成額外傷害並加速；大型態重擊前方造成傷害與暈眩。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "吶兒跳跳／重磅輾壓",
-          "icon": "../assets/images/heroes/skills/gnar/04.png",
+          "icon": "../assets/images/heroes/skills/gnar_04.png",
           "summary": "小型態跳躍並提高攻速；大型態向前重踏造成範圍傷害與緩速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "狂嘯猛擊！",
-          "icon": "../assets/images/heroes/skills/gnar/05.png",
+          "icon": "../assets/images/heroes/skills/gnar_05.png",
           "summary": "大型態把周圍敵人擊向指定方向；撞牆時造成更高傷害並暈眩。"
         }
       ],
@@ -4640,35 +4641,35 @@
           "key": "P",
           "label": "被動",
           "title": "歡樂時光",
-          "icon": "../assets/images/heroes/skills/gragas/01.webp",
+          "icon": "../assets/images/heroes/skills/gragas_01.webp",
           "summary": "施放技能後週期性回復自身生命。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "滾動酒桶",
-          "icon": "../assets/images/heroes/skills/gragas/02.webp",
+          "icon": "../assets/images/heroes/skills/gragas_02.webp",
           "summary": "滾出酒桶，可主動或延遲引爆；放置越久傷害與緩速越強。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "醉酒狂暴",
-          "icon": "../assets/images/heroes/skills/gragas/03.webp",
+          "icon": "../assets/images/heroes/skills/gragas_03.webp",
           "summary": "喝酒獲得短暫減傷，之後下一次普攻造成額外範圍魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "肉彈衝擊",
-          "icon": "../assets/images/heroes/skills/gragas/04.webp",
+          "icon": "../assets/images/heroes/skills/gragas_04.webp",
           "summary": "向前衝撞，命中敵人時造成範圍傷害與暈眩，是連招與開戰核心。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "爆破酒桶",
-          "icon": "../assets/images/heroes/skills/gragas/05.webp",
+          "icon": "../assets/images/heroes/skills/gragas_05.webp",
           "summary": "投擲爆破酒桶造成大範圍魔法傷害，並把敵人從爆炸中心向外擊退。"
         }
       ],
@@ -4775,35 +4776,35 @@
           "key": "P",
           "label": "被動",
           "title": "千刀萬剮",
-          "icon": "../assets/images/heroes/skills/gwen/01.webp",
+          "icon": "../assets/images/heroes/skills/gwen_01.webp",
           "summary": "普攻造成依目標最大生命計算的額外魔法傷害，並回復部分對英雄造成的傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "剪剪！",
-          "icon": "../assets/images/heroes/skills/gwen/02.webp",
+          "icon": "../assets/images/heroes/skills/gwen_02.webp",
           "summary": "快速剪擊多次，中心區域造成真實傷害；普攻可累積層數增加剪擊次數。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "聖霧絲縷",
-          "icon": "../assets/images/heroes/skills/gwen/03.webp",
+          "icon": "../assets/images/heroes/skills/gwen_03.webp",
           "summary": "召喚聖霧，對霧外敵人不可被選取並提高雙防；可隨關的位置移動一次。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "剪步如飛",
-          "icon": "../assets/images/heroes/skills/gwen/04.webp",
+          "icon": "../assets/images/heroes/skills/gwen_04.webp",
           "summary": "短距衝刺並強化普攻距離、攻速與附加傷害；普攻命中可返還部分冷卻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "飛針走線",
-          "icon": "../assets/images/heroes/skills/gwen/05.webp",
+          "icon": "../assets/images/heroes/skills/gwen_05.webp",
           "summary": "最多施放三次針線，造成魔法傷害與緩速，後續波次針數更多並套用被動。"
         }
       ],
@@ -4910,35 +4911,35 @@
           "key": "P",
           "label": "被動",
           "title": "愛歐尼亞狂熱",
-          "icon": "../assets/images/heroes/skills/irelia/01.webp",
+          "icon": "../assets/images/heroes/skills/irelia_01.webp",
           "summary": "技能命中敵人會疊加攻速；滿層後普攻造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "利刃衝擊",
-          "icon": "../assets/images/heroes/skills/irelia/02.webp",
+          "icon": "../assets/images/heroes/skills/irelia_02.webp",
           "summary": "突進到敵人身上造成物理傷害；擊殺目標或命中被標記敵人時刷新冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "不屈秘舞",
-          "icon": "../assets/images/heroes/skills/irelia/03.webp",
+          "icon": "../assets/images/heroes/skills/irelia_03.webp",
           "summary": "蓄力減少受到的物理傷害，放開後向前斬擊造成物理傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "無瑕重刃",
-          "icon": "../assets/images/heroes/skills/irelia/04.webp",
+          "icon": "../assets/images/heroes/skills/irelia_04.webp",
           "summary": "先後放置兩片劍刃，劍刃交會時傷害、暈眩並標記命中的敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "護劍化形",
-          "icon": "../assets/images/heroes/skills/irelia/05.webp",
+          "icon": "../assets/images/heroes/skills/irelia_05.webp",
           "summary": "射出大量劍刃傷害並標記英雄，落地後形成劍陣，穿越的敵人會被緩速。"
         }
       ],
@@ -5045,35 +5046,35 @@
           "key": "P",
           "label": "被動",
           "title": "戰爭律動",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/01.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_01.webp",
           "summary": "對同一敵人的首次普攻造成依其當前生命計算的額外物理傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "滅龍一擊",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/02.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_02.webp",
           "summary": "向前刺擊造成物理傷害並降低物防；命中帝國戰旗時會把嘉文拉向旗幟並擊飛沿途敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "光盾庇護",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/03.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_03.webp",
           "summary": "獲得護盾並緩速周圍敵人，附近敵方英雄越多護盾越厚。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "帝國戰旗",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/04.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_04.webp",
           "summary": "被動提高攻速；主動投下戰旗造成魔法傷害並為附近友軍提供攻速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "浩劫降臨",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/05.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_05.webp",
           "summary": "跳向指定英雄造成範圍物理傷害並生成環形地形，把自己與目標困在其中。"
         }
       ],
@@ -5180,35 +5181,35 @@
           "key": "P",
           "label": "被動",
           "title": "無情突擊",
-          "icon": "../assets/images/heroes/skills/jax/01.png",
+          "icon": "../assets/images/heroes/skills/jax_01.png",
           "summary": "連續普攻會逐步提高攻速，持續作戰越久越強。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "跳斬",
-          "icon": "../assets/images/heroes/skills/jax/02.webp",
+          "icon": "../assets/images/heroes/skills/jax_02.webp",
           "summary": "跳向指定單位造成物理傷害，可用於追擊、撤退或跳友軍。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "蓄力一擊",
-          "icon": "../assets/images/heroes/skills/jax/03.png",
+          "icon": "../assets/images/heroes/skills/jax_03.png",
           "summary": "強化下一次普攻造成額外魔法傷害並重置普攻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "反擊風暴",
-          "icon": "../assets/images/heroes/skills/jax/04.png",
+          "icon": "../assets/images/heroes/skills/jax_04.png",
           "summary": "短暫閃避所有普攻並減少範圍技能傷害，結束時暈眩附近敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "武器專精",
-          "icon": "../assets/images/heroes/skills/jax/05.webp",
+          "icon": "../assets/images/heroes/skills/jax_05.webp",
           "summary": "被動每第三次普攻造成額外魔法傷害；主動提高物防與魔防。"
         }
       ],
@@ -5314,35 +5315,35 @@
           "key": "P",
           "label": "被動",
           "title": "海克斯電容器",
-          "icon": "../assets/images/heroes/skills/jayce/01.png",
+          "icon": "../assets/images/heroes/skills/jayce_01.png",
           "summary": "切換武器型態後短暫提高跑速，讓近遠型態連招更流暢。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "浩瀚無垠／電磁脈衝",
-          "icon": "../assets/images/heroes/skills/jayce/02.png",
+          "icon": "../assets/images/heroes/skills/jayce_02.png",
           "summary": "戰鎚型態跳向敵人造成範圍傷害與緩速；加農型態發射電磁彈，穿過加速門可提高速度、距離與傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "離子領域／超頻導體",
-          "icon": "../assets/images/heroes/skills/jayce/03.webp",
+          "icon": "../assets/images/heroes/skills/jayce_03.webp",
           "summary": "戰鎚型態產生電場並回復魔力；加農型態大幅提高接下來數次普攻的攻速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "風馳電掣／中子加速裝置",
-          "icon": "../assets/images/heroes/skills/jayce/04.webp",
+          "icon": "../assets/images/heroes/skills/jayce_04.webp",
           "summary": "戰鎚型態擊退敵人並依最大生命造成傷害；加農型態放置加速門，提高友軍跑速並強化電磁脈衝。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "水星加農／水星戰鎚",
-          "icon": "../assets/images/heroes/skills/jayce/05.png",
+          "icon": "../assets/images/heroes/skills/jayce_05.png",
           "summary": "在水星加農與水星戰鎚間切換，改變技能組、攻擊距離與首次普攻效果。"
         }
       ],
@@ -5449,35 +5450,35 @@
           "key": "P",
           "label": "被動",
           "title": "無畏本能",
-          "icon": "../assets/images/heroes/skills/ksante/01.png",
+          "icon": "../assets/images/heroes/skills/ksante_01.png",
           "summary": "傷害技能會標記敵人；下一次普攻消耗標記造成額外傷害，拼死一搏期間效果更強。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "恩屠浮強擊",
-          "icon": "../assets/images/heroes/skills/ksante/02.png",
+          "icon": "../assets/images/heroes/skills/ksante_02.png",
           "summary": "短距揮擊造成傷害與緩速；連續命中可累積層數，第三次會拉動並擊飛敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "開山闢路",
-          "icon": "../assets/images/heroes/skills/ksante/03.webp",
+          "icon": "../assets/images/heroes/skills/ksante_03.webp",
           "summary": "蓄力進入防禦姿態並減傷、免疫控制，放開後向前衝撞並推動敵人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "精熟腳步",
-          "icon": "../assets/images/heroes/skills/ksante/04.webp",
+          "icon": "../assets/images/heroes/skills/ksante_04.webp",
           "summary": "向指定方向突進並獲得護盾；朝友軍突進時距離更遠且可為其提供護盾。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "拼死一搏",
-          "icon": "../assets/images/heroes/skills/ksante/05.webp",
+          "icon": "../assets/images/heroes/skills/ksante_05.webp",
           "summary": "把敵方英雄擊退；若撞到地形會穿牆並受到額外傷害，卡桑帝進入拼死一搏強化技能但犧牲部分防禦。"
         }
       ],
@@ -5584,35 +5585,35 @@
           "key": "P",
           "label": "被動",
           "title": "聖域之梯",
-          "icon": "../assets/images/heroes/skills/kayle/01.webp",
+          "icon": "../assets/images/heroes/skills/kayle_01.webp",
           "summary": "隨等級與技能點成長逐步升華，獲得攻速、跑速、遠程攻擊與範圍火焰波等強化。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "聖光衝擊波",
-          "icon": "../assets/images/heroes/skills/kayle/02.webp",
+          "icon": "../assets/images/heroes/skills/kayle_02.webp",
           "summary": "射出光刃造成魔法傷害、緩速並降低目標雙防。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "天賜聖典",
-          "icon": "../assets/images/heroes/skills/kayle/03.webp",
+          "icon": "../assets/images/heroes/skills/kayle_03.webp",
           "summary": "治療自己與一名友軍並提高兩人的跑速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "星火熾刃",
-          "icon": "../assets/images/heroes/skills/kayle/04.webp",
+          "icon": "../assets/images/heroes/skills/kayle_04.webp",
           "summary": "被動讓普攻附加魔法傷害；主動強化下一次普攻，造成依目標已損生命計算的額外範圍傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "聖劍審判",
-          "icon": "../assets/images/heroes/skills/kayle/05.webp",
+          "icon": "../assets/images/heroes/skills/kayle_05.webp",
           "summary": "使自己或友軍短暫無敵，延遲後召喚聖劍對周圍敵人造成魔法傷害。"
         }
       ],
@@ -5719,35 +5720,35 @@
           "key": "P",
           "label": "被動",
           "title": "風暴印記",
-          "icon": "../assets/images/heroes/skills/kennen/01.webp",
+          "icon": "../assets/images/heroes/skills/kennen_01.webp",
           "summary": "技能命中會附加風暴印記；同一目標累積三層時暈眩並回復能量。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "雷電手裡劍",
-          "icon": "../assets/images/heroes/skills/kennen/02.png",
+          "icon": "../assets/images/heroes/skills/kennen_02.png",
           "summary": "投擲手裡劍，對第一個命中的敵人造成魔法傷害並附加印記。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "電能釋放",
-          "icon": "../assets/images/heroes/skills/kennen/03.png",
+          "icon": "../assets/images/heroes/skills/kennen_03.png",
           "summary": "被動每數次普攻強化並附加印記；主動電擊附近帶印記的敵人造成傷害並再加一層。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "閃電衝擊",
-          "icon": "../assets/images/heroes/skills/kennen/04.png",
+          "icon": "../assets/images/heroes/skills/kennen_04.png",
           "summary": "化為閃電提高跑速並可穿越單位，穿過敵人造成傷害與印記，結束後提高攻速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "雷霆風暴",
-          "icon": "../assets/images/heroes/skills/kennen/05.png",
+          "icon": "../assets/images/heroes/skills/kennen_05.png",
           "summary": "召喚雷暴持續攻擊附近英雄，重複附加印記並造成魔法傷害，是主要團戰控場技能。"
         }
       ],
@@ -5854,35 +5855,35 @@
           "key": "P",
           "label": "被動",
           "title": "花崗岩護盾",
-          "icon": "../assets/images/heroes/skills/malphite/01.png",
+          "icon": "../assets/images/heroes/skills/malphite_01.png",
           "summary": "一段時間未受傷後獲得依最大生命計算的護盾。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "地震碎片",
-          "icon": "../assets/images/heroes/skills/malphite/02.png",
+          "icon": "../assets/images/heroes/skills/malphite_02.png",
           "summary": "投出岩石造成魔法傷害與緩速，並偷取目標部分跑速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "震雷之擊",
-          "icon": "../assets/images/heroes/skills/malphite/03.png",
+          "icon": "../assets/images/heroes/skills/malphite_03.png",
           "summary": "被動提高物防；主動強化普攻並讓接下來數次普攻造成錐形範圍傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "大地震顫",
-          "icon": "../assets/images/heroes/skills/malphite/04.png",
+          "icon": "../assets/images/heroes/skills/malphite_04.png",
           "summary": "重擊地面造成魔法傷害並降低敵人攻速，物防越高傷害越高。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "勢不可擋",
-          "icon": "../assets/images/heroes/skills/malphite/05.png",
+          "icon": "../assets/images/heroes/skills/malphite_05.png",
           "summary": "以不可阻擋狀態衝向指定區域，造成大量魔法傷害並擊飛所有命中的敵人。"
         }
       ],
@@ -5989,35 +5990,35 @@
           "key": "P",
           "label": "被動",
           "title": "魔法樹液",
-          "icon": "../assets/images/heroes/skills/maokai/01.png",
+          "icon": "../assets/images/heroes/skills/maokai_01.png",
           "summary": "普攻週期性造成額外魔法傷害並治療自身；施法或被敵方技能命中會縮短冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "荊棘摧殘",
-          "icon": "../assets/images/heroes/skills/maokai/02.png",
+          "icon": "../assets/images/heroes/skills/maokai_02.png",
           "summary": "釋放震波造成魔法傷害、緩速並把近身敵人擊退。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "飛葉遁影",
-          "icon": "../assets/images/heroes/skills/maokai/03.png",
+          "icon": "../assets/images/heroes/skills/maokai_03.png",
           "summary": "化為扭曲根鬚衝向指定敵人，期間不可被選取，抵達後將其定身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "扭曲樹精",
-          "icon": "../assets/images/heroes/skills/maokai/04.png",
+          "icon": "../assets/images/heroes/skills/maokai_04.png",
           "summary": "丟出樹苗在地面守候，發現敵人後追擊並爆炸；草叢中的樹苗傷害與持續時間更強。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "詭林之握",
-          "icon": "../assets/images/heroes/skills/maokai/05.png",
+          "icon": "../assets/images/heroes/skills/maokai_05.png",
           "summary": "召喚多排巨大根鬚向前推進，命中敵方英雄會造成傷害與長時間定身。"
         }
       ],
@@ -6124,35 +6125,35 @@
           "key": "P",
           "label": "被動",
           "title": "暗崛",
-          "icon": "../assets/images/heroes/skills/mordekaiser/01.webp",
+          "icon": "../assets/images/heroes/skills/mordekaiser_01.webp",
           "summary": "普攻或技能命中英雄／大型野怪三次後啟動傷害靈氣並提高跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "泯滅",
-          "icon": "../assets/images/heroes/skills/mordekaiser/02.webp",
+          "icon": "../assets/images/heroes/skills/mordekaiser_02.webp",
           "summary": "揮動巨錘砸擊前方，只有單一目標被命中時造成更高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "不滅之軀",
-          "icon": "../assets/images/heroes/skills/mordekaiser/03.webp",
+          "icon": "../assets/images/heroes/skills/mordekaiser_03.webp",
           "summary": "承受與造成傷害會累積護盾值；主動把儲存值轉成護盾，再次施放可消耗護盾治療。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "死之爪",
-          "icon": "../assets/images/heroes/skills/mordekaiser/04.webp",
+          "icon": "../assets/images/heroes/skills/mordekaiser_04.webp",
           "summary": "被動提供魔法穿透；主動召喚巨爪把區域內敵人拉向自己並造成魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "死亡領域",
-          "icon": "../assets/images/heroes/skills/mordekaiser/05.webp",
+          "icon": "../assets/images/heroes/skills/mordekaiser_05.webp",
           "summary": "把指定英雄拉入死亡領域單挑並偷取部分屬性；在領域內擊殺可暫時保留偷取屬性。"
         }
       ],
@@ -9822,35 +9823,35 @@
           "key": "P",
           "label": "被動",
           "title": "冥使劍姿",
-          "icon": "../assets/images/heroes/skills/aatrox/01.png",
+          "icon": "../assets/images/heroes/skills/aatrox_01.png",
           "summary": "週期性強化普攻，造成額外物理傷害並依目標最大生命回復自身。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "冥血邪劍",
-          "icon": "../assets/images/heroes/skills/aatrox/02.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_02.webp",
           "summary": "三段斬擊各有甜蜜點；命中外圈可造成更高傷害並擊飛，是主要輸出與控場。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "冥府血鏈",
-          "icon": "../assets/images/heroes/skills/aatrox/03.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_03.webp",
           "summary": "揮出鎖鏈傷害並減速目標；敵人未及時離開區域會被拉回中心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "冥影衝鋒",
-          "icon": "../assets/images/heroes/skills/aatrox/04.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_04.webp",
           "summary": "短距位移並提供續航，可在揮劍途中調整一技能甜蜜點位置。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "劍魔滅世",
-          "icon": "../assets/images/heroes/skills/aatrox/05.webp",
+          "icon": "../assets/images/heroes/skills/aatrox_05.webp",
           "summary": "進入惡魔形態，提升跑速、傷害與治療效果；參與擊殺可延長持續時間。"
         }
       ],
@@ -9957,35 +9958,35 @@
           "key": "P",
           "label": "被動",
           "title": "龍犬詭步",
-          "icon": "../assets/images/heroes/skills/ambessa/01.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_01.webp",
           "summary": "施放技能時若輸入移動指令，可在技能結束後朝指定方向突進並強化下一次普攻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗襲／裂斬",
-          "icon": "../assets/images/heroes/skills/ambessa/02.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_02.webp",
           "summary": "第一次橫掃造成傷害，命中特定區域後可重施裂斬；第二段對前方敵人造成更高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "鐵令",
-          "icon": "../assets/images/heroes/skills/ambessa/03.png",
+          "icon": "../assets/images/heroes/skills/ambessa_03.png",
           "summary": "獲得護盾並向前猛擊；若護盾承受傷害，攻擊會得到強化。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "血戮",
-          "icon": "../assets/images/heroes/skills/ambessa/04.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_04.webp",
           "summary": "揮鏈造成傷害與緩速，外緣命中時效果更強，適合拉扯與追擊。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "殛刑",
-          "icon": "../assets/images/heroes/skills/ambessa/05.webp",
+          "icon": "../assets/images/heroes/skills/ambessa_05.webp",
           "summary": "瞬間突進至遠處敵方英雄並壓制、位移目標，是切後排與開戰手段。"
         }
       ],
@@ -10092,35 +10093,35 @@
           "key": "P",
           "label": "被動",
           "title": "詛咒之觸",
-          "icon": "../assets/images/heroes/skills/amumu/01.png",
+          "icon": "../assets/images/heroes/skills/amumu_01.png",
           "summary": "普攻使目標受到詛咒，之後承受魔法傷害時會額外受到真實傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "繃帶牽引",
-          "icon": "../assets/images/heroes/skills/amumu/02.png",
+          "icon": "../assets/images/heroes/skills/amumu_02.png",
           "summary": "投出繃帶，命中敵人後將自己拉向目標並暈眩；可儲存充能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "絕望",
-          "icon": "../assets/images/heroes/skills/amumu/03.png",
+          "icon": "../assets/images/heroes/skills/amumu_03.png",
           "summary": "持續哭泣，對附近敵人造成依最大生命計算的魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "憤怒",
-          "icon": "../assets/images/heroes/skills/amumu/04.png",
+          "icon": "../assets/images/heroes/skills/amumu_04.png",
           "summary": "被動減少受到的普攻物理傷害；主動對周圍敵人造成魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "木乃伊之咒",
-          "icon": "../assets/images/heroes/skills/amumu/05.png",
+          "icon": "../assets/images/heroes/skills/amumu_05.png",
           "summary": "對大範圍敵人造成傷害與暈眩，並套用詛咒，是關鍵團戰開戰技能。"
         }
       ],
@@ -10227,35 +10228,35 @@
           "key": "P",
           "label": "被動",
           "title": "適性防禦",
-          "icon": "../assets/images/heroes/skills/camille/01.webp",
+          "icon": "../assets/images/heroes/skills/camille_01.webp",
           "summary": "普攻英雄時依目標主要傷害類型獲得物理或魔法護盾。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "精密解剖",
-          "icon": "../assets/images/heroes/skills/camille/02.webp",
+          "icon": "../assets/images/heroes/skills/camille_02.webp",
           "summary": "強化下一次普攻並提高跑速；延遲後再次施放可造成更高傷害，其中一部分轉為真實傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "刀光掠影",
-          "icon": "../assets/images/heroes/skills/camille/03.webp",
+          "icon": "../assets/images/heroes/skills/camille_03.webp",
           "summary": "向前方扇形橫掃，外圈造成更高傷害、緩速敵人並治療自身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鋼鐵鉤射",
-          "icon": "../assets/images/heroes/skills/camille/04.webp",
+          "icon": "../assets/images/heroes/skills/camille_04.webp",
           "summary": "射出鉤索拉向牆體，再次施放可跳向指定方向；命中英雄時增加攻速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "海克斯晶體結界",
-          "icon": "../assets/images/heroes/skills/camille/05.png",
+          "icon": "../assets/images/heroes/skills/camille_05.png",
           "summary": "跳向指定英雄使其無法逃出結界，並擊退附近其他敵人。"
         }
       ],
@@ -10362,35 +10363,35 @@
           "key": "P",
           "label": "被動",
           "title": "絞喉",
-          "icon": "../assets/images/heroes/skills/darius/01.webp",
+          "icon": "../assets/images/heroes/skills/darius_01.webp",
           "summary": "普攻與傷害技能使敵人流血；疊滿後達瑞斯獲得高額物攻並能快速把其他英雄疊滿。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "毀滅風暴",
-          "icon": "../assets/images/heroes/skills/darius/02.webp",
+          "icon": "../assets/images/heroes/skills/darius_02.webp",
           "summary": "揮斧一圈，外圈斧刃造成更高傷害、治療自身並附加流血。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "殘廢打擊",
-          "icon": "../assets/images/heroes/skills/darius/03.webp",
+          "icon": "../assets/images/heroes/skills/darius_03.webp",
           "summary": "強化下一次普攻造成額外物理傷害並大幅緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "索魂奪命",
-          "icon": "../assets/images/heroes/skills/darius/04.webp",
+          "icon": "../assets/images/heroes/skills/darius_04.webp",
           "summary": "被動獲得物理穿透；主動用斧柄把前方敵人拉到身前並減速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "諾克薩斯斷頭台",
-          "icon": "../assets/images/heroes/skills/darius/05.webp",
+          "icon": "../assets/images/heroes/skills/darius_05.webp",
           "summary": "跳向英雄造成真實傷害，流血層數會提高傷害；擊殺可重置並短暫免消耗再次施放。"
         }
       ],
@@ -10497,35 +10498,35 @@
           "key": "P",
           "label": "被動",
           "title": "銀月之刃",
-          "icon": "../assets/images/heroes/skills/diana/01.png",
+          "icon": "../assets/images/heroes/skills/diana_01.png",
           "summary": "施放技能後提高攻速；每第三次普攻會對周圍敵人造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "月牙衝擊",
-          "icon": "../assets/images/heroes/skills/diana/02.webp",
+          "icon": "../assets/images/heroes/skills/diana_02.webp",
           "summary": "揮出弧形月能造成魔法傷害並對命中敵人施加月光。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "蒼白月瀑",
-          "icon": "../assets/images/heroes/skills/diana/03.webp",
+          "icon": "../assets/images/heroes/skills/diana_03.webp",
           "summary": "生成三顆護體法球與護盾；法球碰到敵人時爆炸，全部爆炸後刷新護盾。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "朔月幻步",
-          "icon": "../assets/images/heroes/skills/diana/04.webp",
+          "icon": "../assets/images/heroes/skills/diana_04.webp",
           "summary": "突進至指定敵人造成魔法傷害；若目標帶月光則重置冷卻並消耗月光。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "月隕",
-          "icon": "../assets/images/heroes/skills/diana/05.webp",
+          "icon": "../assets/images/heroes/skills/diana_05.webp",
           "summary": "蓄力後牽引周圍敵人並造成範圍魔法傷害，是主要團戰進場與爆發技能。"
         }
       ],
@@ -10632,35 +10633,35 @@
           "key": "P",
           "label": "被動",
           "title": "想去哪就去哪",
-          "icon": "../assets/images/heroes/skills/dr-mundo/01.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_01.webp",
           "summary": "可抵銷下一個硬控並掉落化學藥劑；撿回藥劑可治療並縮短被動冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "病毒骨鋸",
-          "icon": "../assets/images/heroes/skills/dr-mundo/02.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_02.webp",
           "summary": "丟出骨鋸造成依目標當前生命計算的魔法傷害與緩速，命中可返還部分生命消耗。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "心臟電擊器",
-          "icon": "../assets/images/heroes/skills/dr-mundo/03.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_03.webp",
           "summary": "讓自己通電持續傷害附近敵人，期間累積灰色生命；結束時命中敵人可回復其中一部分。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鈍擊創傷",
-          "icon": "../assets/images/heroes/skills/dr-mundo/04.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_04.webp",
           "summary": "強化下一次普攻造成額外傷害並把死亡的士兵或野怪擊飛；被動提高物攻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "最大劑量",
-          "icon": "../assets/images/heroes/skills/dr-mundo/05.webp",
+          "icon": "../assets/images/heroes/skills/dr-mundo_05.webp",
           "summary": "大量回復生命並提高跑速，後期還能獲得額外物攻與更強治療。"
         }
       ],
@@ -10767,35 +10768,35 @@
           "key": "P",
           "label": "被動",
           "title": "共振驅動-Z",
-          "icon": "../assets/images/heroes/skills/ekko/01.webp",
+          "icon": "../assets/images/heroes/skills/ekko_01.webp",
           "summary": "對同一目標第三次普攻或技能命中會造成額外魔法傷害；對英雄觸發時提高跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "時光樞紐",
-          "icon": "../assets/images/heroes/skills/ekko/02.png",
+          "icon": "../assets/images/heroes/skills/ekko_02.png",
           "summary": "投出時間裝置，去程造成傷害，展開後緩速，返回時再次造成傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "時空攔截",
-          "icon": "../assets/images/heroes/skills/ekko/03.webp",
+          "icon": "../assets/images/heroes/skills/ekko_03.webp",
           "summary": "被動對低生命敵人普攻造成額外傷害；主動預設力場，進入後獲得護盾並暈眩敵人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "相位轉移",
-          "icon": "../assets/images/heroes/skills/ekko/04.webp",
+          "icon": "../assets/images/heroes/skills/ekko_04.webp",
           "summary": "向指定方向翻滾，下一次普攻會瞬移到目標旁並造成額外魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "計時開始",
-          "icon": "../assets/images/heroes/skills/ekko/05.webp",
+          "icon": "../assets/images/heroes/skills/ekko_05.webp",
           "summary": "回到數秒前的位置並回復生命，對返回點附近敵人造成大量魔法傷害。"
         }
       ],
@@ -10902,35 +10903,35 @@
           "key": "P",
           "label": "被動",
           "title": "魔魅之影",
-          "icon": "../assets/images/heroes/skills/evelynn/01.webp",
+          "icon": "../assets/images/heroes/skills/evelynn_01.webp",
           "summary": "脫離戰鬥後回復生命；達到等級條件後進入偽裝，便於繞後與抓單。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "憎恨尖刺",
-          "icon": "../assets/images/heroes/skills/evelynn/02.webp",
+          "icon": "../assets/images/heroes/skills/evelynn_02.webp",
           "summary": "向前射出尖刺造成魔法傷害並標記，後續攻擊標記目標會觸發額外傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "咒慾迷塵",
-          "icon": "../assets/images/heroes/skills/evelynn/03.webp",
+          "icon": "../assets/images/heroes/skills/evelynn_03.webp",
           "summary": "詛咒目標並延遲完成；攻擊完成的詛咒會魅惑並降低目標魔防。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "奪魂鞭索",
-          "icon": "../assets/images/heroes/skills/evelynn/04.webp",
+          "icon": "../assets/images/heroes/skills/evelynn_04.webp",
           "summary": "鞭打目標造成魔法傷害；在魔魅之影強化後會衝向目標並提高傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "殘戮收割",
-          "icon": "../assets/images/heroes/skills/evelynn/05.webp",
+          "icon": "../assets/images/heroes/skills/evelynn_05.webp",
           "summary": "對前方敵人造成高額斬殺傷害，同時向後大幅位移並暫時不可被選取。"
         }
       ],
@@ -11037,35 +11038,35 @@
           "key": "P",
           "label": "被動",
           "title": "無害稻草人",
-          "icon": "../assets/images/heroes/skills/fiddlesticks/01.png",
+          "icon": "../assets/images/heroes/skills/fiddlesticks_01.png",
           "summary": "參與擊殺會留下移動稻草人並在稍後爆炸恐懼敵人；脫離視野施放技能也能觸發恐懼。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "恐懼",
-          "icon": "../assets/images/heroes/skills/fiddlesticks/02.png",
+          "icon": "../assets/images/heroes/skills/fiddlesticks_02.png",
           "summary": "對目標造成魔法傷害與恐懼；近期已被恐懼的目標會受到額外傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "豐收之魘",
-          "icon": "../assets/images/heroes/skills/fiddlesticks/03.png",
+          "icon": "../assets/images/heroes/skills/fiddlesticks_03.png",
           "summary": "持續吸取周圍多個敵人的生命並治療自己，結束時造成額外斬殺傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "駭懼收割",
-          "icon": "../assets/images/heroes/skills/fiddlesticks/04.png",
+          "icon": "../assets/images/heroes/skills/fiddlesticks_04.png",
           "summary": "揮出鐮刀造成魔法傷害與緩速；命中中心區域時可沉默敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "群鴉風暴",
-          "icon": "../assets/images/heroes/skills/fiddlesticks/05.png",
+          "icon": "../assets/images/heroes/skills/fiddlesticks_05.png",
           "summary": "引導後瞬移到指定位置並召喚群鴉，對大範圍敵人持續造成高額魔法傷害。"
         }
       ],
@@ -11172,35 +11173,35 @@
           "key": "P",
           "label": "被動",
           "title": "不屈鬥魂",
-          "icon": "../assets/images/heroes/skills/fiora/01.png",
+          "icon": "../assets/images/heroes/skills/fiora_01.png",
           "summary": "會標記附近英雄的破綻；從指定方向擊破可造成額外真實傷害、治療並提高跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "移形之體",
-          "icon": "../assets/images/heroes/skills/fiora/02.png",
+          "icon": "../assets/images/heroes/skills/fiora_02.png",
           "summary": "向指定方向突刺並攻擊附近敵人，優先命中破綻；命中可縮短冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "斗轉之力",
-          "icon": "../assets/images/heroes/skills/fiora/03.png",
+          "icon": "../assets/images/heroes/skills/fiora_03.png",
           "summary": "短暫招架所有傷害與控制後反擊；若擋到硬控可暈眩敵人，否則造成緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "迅雷之技",
-          "icon": "../assets/images/heroes/skills/fiora/04.png",
+          "icon": "../assets/images/heroes/skills/fiora_04.png",
           "summary": "強化接下來兩次普攻；第一下緩速，第二下必定暴擊。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "頂尖對決",
-          "icon": "../assets/images/heroes/skills/fiora/05.webp",
+          "icon": "../assets/images/heroes/skills/fiora_05.webp",
           "summary": "揭露目標四個破綻並提高追擊跑速；擊破全部或目標陣亡後生成大範圍治療區。"
         }
       ],
@@ -11307,35 +11308,35 @@
           "key": "P",
           "label": "被動",
           "title": "海神三叉戟",
-          "icon": "../assets/images/heroes/skills/fizz/01.webp",
+          "icon": "../assets/images/heroes/skills/fizz_01.webp",
           "summary": "普攻會附帶持續魔法傷害，並讓飛斯穿越單位時更靈活。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "現撈海膽",
-          "icon": "../assets/images/heroes/skills/fizz/02.png",
+          "icon": "../assets/images/heroes/skills/fizz_02.png",
           "summary": "穿過指定敵人造成魔法傷害並附帶普攻命中特效。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "裂岸大浪",
-          "icon": "../assets/images/heroes/skills/fizz/03.png",
+          "icon": "../assets/images/heroes/skills/fizz_03.png",
           "summary": "被動讓普攻附加持續傷害；主動強化下一次普攻並在擊殺時返還部分冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "愛玩小飛／調皮小飛",
-          "icon": "../assets/images/heroes/skills/fizz/04.webp",
+          "icon": "../assets/images/heroes/skills/fizz_04.webp",
           "summary": "跳上三叉戟進入不可被選取狀態，再落地造成範圍傷害與緩速；可再次施放調整落點。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "海之霸主",
-          "icon": "../assets/images/heroes/skills/fizz/05.png",
+          "icon": "../assets/images/heroes/skills/fizz_05.png",
           "summary": "丟出魚餌黏住首名英雄並緩速，延遲後召喚鯊魚造成高額傷害、擊飛與範圍緩速。"
         }
       ],
@@ -11442,35 +11443,35 @@
           "key": "P",
           "label": "被動",
           "title": "歡樂時光",
-          "icon": "../assets/images/heroes/skills/gragas/01.webp",
+          "icon": "../assets/images/heroes/skills/gragas_01.webp",
           "summary": "施放技能後週期性回復自身生命。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "滾動酒桶",
-          "icon": "../assets/images/heroes/skills/gragas/02.webp",
+          "icon": "../assets/images/heroes/skills/gragas_02.webp",
           "summary": "滾出酒桶，可主動或延遲引爆；放置越久傷害與緩速越強。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "醉酒狂暴",
-          "icon": "../assets/images/heroes/skills/gragas/03.webp",
+          "icon": "../assets/images/heroes/skills/gragas_03.webp",
           "summary": "喝酒獲得短暫減傷，之後下一次普攻造成額外範圍魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "肉彈衝擊",
-          "icon": "../assets/images/heroes/skills/gragas/04.webp",
+          "icon": "../assets/images/heroes/skills/gragas_04.webp",
           "summary": "向前衝撞，命中敵人時造成範圍傷害與暈眩，是連招與開戰核心。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "爆破酒桶",
-          "icon": "../assets/images/heroes/skills/gragas/05.webp",
+          "icon": "../assets/images/heroes/skills/gragas_05.webp",
           "summary": "投擲爆破酒桶造成大範圍魔法傷害，並把敵人從爆炸中心向外擊退。"
         }
       ],
@@ -11577,35 +11578,35 @@
           "key": "P",
           "label": "被動",
           "title": "命運",
-          "icon": "../assets/images/heroes/skills/graves/01.png",
+          "icon": "../assets/images/heroes/skills/graves_01.png",
           "summary": "散彈槍普攻一次射出多顆子彈並需裝填；多顆命中同一目標時傷害更高。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "人在江湖",
-          "icon": "../assets/images/heroes/skills/graves/02.webp",
+          "icon": "../assets/images/heroes/skills/graves_02.webp",
           "summary": "發射火藥彈造成傷害，撞牆或延遲後返回爆炸，再次造成範圍物理傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "隻手遮天",
-          "icon": "../assets/images/heroes/skills/graves/03.webp",
+          "icon": "../assets/images/heroes/skills/graves_03.webp",
           "summary": "投出煙霧彈造成傷害與緩速，區域內敵人視野大幅受限。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "猛龍過江",
-          "icon": "../assets/images/heroes/skills/graves/04.png",
+          "icon": "../assets/images/heroes/skills/graves_04.png",
           "summary": "向指定方向衝刺並裝填一發子彈，同時獲得防禦；普攻可縮短冷卻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "龍爭虎鬥",
-          "icon": "../assets/images/heroes/skills/graves/05.webp",
+          "icon": "../assets/images/heroes/skills/graves_05.webp",
           "summary": "發射爆裂彈造成高額物理傷害並讓自己後退，彈體爆炸後對錐形範圍再造成傷害。"
         }
       ],
@@ -11712,35 +11713,35 @@
           "key": "P",
           "label": "被動",
           "title": "千刀萬剮",
-          "icon": "../assets/images/heroes/skills/gwen/01.webp",
+          "icon": "../assets/images/heroes/skills/gwen_01.webp",
           "summary": "普攻造成依目標最大生命計算的額外魔法傷害，並回復部分對英雄造成的傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "剪剪！",
-          "icon": "../assets/images/heroes/skills/gwen/02.webp",
+          "icon": "../assets/images/heroes/skills/gwen_02.webp",
           "summary": "快速剪擊多次，中心區域造成真實傷害；普攻可累積層數增加剪擊次數。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "聖霧絲縷",
-          "icon": "../assets/images/heroes/skills/gwen/03.webp",
+          "icon": "../assets/images/heroes/skills/gwen_03.webp",
           "summary": "召喚聖霧，對霧外敵人不可被選取並提高雙防；可隨關的位置移動一次。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "剪步如飛",
-          "icon": "../assets/images/heroes/skills/gwen/04.webp",
+          "icon": "../assets/images/heroes/skills/gwen_04.webp",
           "summary": "短距衝刺並強化普攻距離、攻速與附加傷害；普攻命中可返還部分冷卻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "飛針走線",
-          "icon": "../assets/images/heroes/skills/gwen/05.webp",
+          "icon": "../assets/images/heroes/skills/gwen_05.webp",
           "summary": "最多施放三次針線，造成魔法傷害與緩速，後續波次針數更多並套用被動。"
         }
       ],
@@ -11847,35 +11848,35 @@
           "key": "P",
           "label": "被動",
           "title": "刃馬合一",
-          "icon": "../assets/images/heroes/skills/hecarim/01.webp",
+          "icon": "../assets/images/heroes/skills/hecarim_01.webp",
           "summary": "額外跑速會轉換為額外物攻，讓加速效果直接提升爆發。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "逸騎刃擊",
-          "icon": "../assets/images/heroes/skills/hecarim/02.webp",
+          "icon": "../assets/images/heroes/skills/hecarim_02.webp",
           "summary": "揮砍周圍敵人造成物理傷害；連續命中可疊層降低冷卻並提高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "靈魂恐懼",
-          "icon": "../assets/images/heroes/skills/hecarim/03.webp",
+          "icon": "../assets/images/heroes/skills/hecarim_03.webp",
           "summary": "製造靈魂領域持續傷害附近敵人，並依敵人受到的部分傷害治療自己。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "毀滅衝刺",
-          "icon": "../assets/images/heroes/skills/hecarim/04.webp",
+          "icon": "../assets/images/heroes/skills/hecarim_04.webp",
           "summary": "逐漸提高跑速並可穿越單位，下一次普攻造成額外傷害並擊退，移動越遠傷害越高。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "暗影的逆襲",
-          "icon": "../assets/images/heroes/skills/hecarim/05.png",
+          "icon": "../assets/images/heroes/skills/hecarim_05.png",
           "summary": "召喚幽魂騎兵向前衝鋒，造成傷害並恐懼敵人，是遠距離開戰與切後排工具。"
         }
       ],
@@ -11982,35 +11983,35 @@
           "key": "P",
           "label": "被動",
           "title": "愛歐尼亞狂熱",
-          "icon": "../assets/images/heroes/skills/irelia/01.webp",
+          "icon": "../assets/images/heroes/skills/irelia_01.webp",
           "summary": "技能命中敵人會疊加攻速；滿層後普攻造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "利刃衝擊",
-          "icon": "../assets/images/heroes/skills/irelia/02.webp",
+          "icon": "../assets/images/heroes/skills/irelia_02.webp",
           "summary": "突進到敵人身上造成物理傷害；擊殺目標或命中被標記敵人時刷新冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "不屈秘舞",
-          "icon": "../assets/images/heroes/skills/irelia/03.webp",
+          "icon": "../assets/images/heroes/skills/irelia_03.webp",
           "summary": "蓄力減少受到的物理傷害，放開後向前斬擊造成物理傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "無瑕重刃",
-          "icon": "../assets/images/heroes/skills/irelia/04.webp",
+          "icon": "../assets/images/heroes/skills/irelia_04.webp",
           "summary": "先後放置兩片劍刃，劍刃交會時傷害、暈眩並標記命中的敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "護劍化形",
-          "icon": "../assets/images/heroes/skills/irelia/05.webp",
+          "icon": "../assets/images/heroes/skills/irelia_05.webp",
           "summary": "射出大量劍刃傷害並標記英雄，落地後形成劍陣，穿越的敵人會被緩速。"
         }
       ],
@@ -12117,35 +12118,35 @@
           "key": "P",
           "label": "被動",
           "title": "戰爭律動",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/01.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_01.webp",
           "summary": "對同一敵人的首次普攻造成依其當前生命計算的額外物理傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "滅龍一擊",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/02.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_02.webp",
           "summary": "向前刺擊造成物理傷害並降低物防；命中帝國戰旗時會把嘉文拉向旗幟並擊飛沿途敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "光盾庇護",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/03.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_03.webp",
           "summary": "獲得護盾並緩速周圍敵人，附近敵方英雄越多護盾越厚。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "帝國戰旗",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/04.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_04.webp",
           "summary": "被動提高攻速；主動投下戰旗造成魔法傷害並為附近友軍提供攻速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "浩劫降臨",
-          "icon": "../assets/images/heroes/skills/jarvan-iv/05.webp",
+          "icon": "../assets/images/heroes/skills/jarvan-iv_05.webp",
           "summary": "跳向指定英雄造成範圍物理傷害並生成環形地形，把自己與目標困在其中。"
         }
       ],
@@ -12252,35 +12253,35 @@
           "key": "P",
           "label": "被動",
           "title": "無情突擊",
-          "icon": "../assets/images/heroes/skills/jax/01.png",
+          "icon": "../assets/images/heroes/skills/jax_01.png",
           "summary": "連續普攻會逐步提高攻速，持續作戰越久越強。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "跳斬",
-          "icon": "../assets/images/heroes/skills/jax/02.webp",
+          "icon": "../assets/images/heroes/skills/jax_02.webp",
           "summary": "跳向指定單位造成物理傷害，可用於追擊、撤退或跳友軍。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "蓄力一擊",
-          "icon": "../assets/images/heroes/skills/jax/03.png",
+          "icon": "../assets/images/heroes/skills/jax_03.png",
           "summary": "強化下一次普攻造成額外魔法傷害並重置普攻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "反擊風暴",
-          "icon": "../assets/images/heroes/skills/jax/04.png",
+          "icon": "../assets/images/heroes/skills/jax_04.png",
           "summary": "短暫閃避所有普攻並減少範圍技能傷害，結束時暈眩附近敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "武器專精",
-          "icon": "../assets/images/heroes/skills/jax/05.webp",
+          "icon": "../assets/images/heroes/skills/jax_05.webp",
           "summary": "被動每第三次普攻造成額外魔法傷害；主動提高物防與魔防。"
         }
       ],
@@ -12387,35 +12388,35 @@
           "key": "P",
           "label": "被動",
           "title": "冥血罪鐮",
-          "icon": "../assets/images/heroes/skills/kayn/01.webp",
+          "icon": "../assets/images/heroes/skills/kayn_01.webp",
           "summary": "依攻擊近戰或遠程英雄累積不同能量，最終可選擇冥血族或詭影刺客形態並強化技能。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "獵魂斬",
-          "icon": "../assets/images/heroes/skills/kayn/02.webp",
+          "icon": "../assets/images/heroes/skills/kayn_02.webp",
           "summary": "向前衝刺後旋轉鐮刀，兩段都造成物理傷害；對野怪有額外效果。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "散華刃",
-          "icon": "../assets/images/heroes/skills/kayn/03.webp",
+          "icon": "../assets/images/heroes/skills/kayn_03.webp",
           "summary": "向前方斬出長條攻擊造成物理傷害與緩速；不同形態會改變施法方式與控制效果。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "夜叉行",
-          "icon": "../assets/images/heroes/skills/kayn/04.webp",
+          "icon": "../assets/images/heroes/skills/kayn_04.webp",
           "summary": "可穿越地形並提高跑速，進入牆體時回復生命；詭影刺客形態效果更強。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "伏影滅",
-          "icon": "../assets/images/heroes/skills/kayn/05.webp",
+          "icon": "../assets/images/heroes/skills/kayn_05.webp",
           "summary": "進入近期被自己傷害的英雄體內而不可被選取，短暫延遲後從指定方向衝出造成傷害。"
         }
       ],
@@ -12522,35 +12523,35 @@
           "key": "P",
           "label": "被動",
           "title": "暗影殺機",
-          "icon": "../assets/images/heroes/skills/khazix/01.png",
+          "icon": "../assets/images/heroes/skills/khazix_01.png",
           "summary": "脫離敵方視野後，下一次對英雄普攻造成額外魔法傷害與緩速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "孤獨的恐懼",
-          "icon": "../assets/images/heroes/skills/khazix/02.png",
+          "icon": "../assets/images/heroes/skills/khazix_02.png",
           "summary": "揮爪造成物理傷害；孤立目標承受更高傷害，進化後提高攻擊距離並返還冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "虛空尖刺",
-          "icon": "../assets/images/heroes/skills/khazix/03.png",
+          "icon": "../assets/images/heroes/skills/khazix_03.png",
           "summary": "發射尖刺造成物理傷害，近距離爆炸時治療自己；進化後增加尖刺數並強化緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "掠翅飛躍",
-          "icon": "../assets/images/heroes/skills/khazix/04.png",
+          "icon": "../assets/images/heroes/skills/khazix_04.png",
           "summary": "跳向指定區域造成物理傷害；進化後提高距離，參與擊殺可重置冷卻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "虛空突襲",
-          "icon": "../assets/images/heroes/skills/khazix/05.png",
+          "icon": "../assets/images/heroes/skills/khazix_05.png",
           "summary": "短暫進入隱形並提高跑速，可多次施放；進化後增加隱形次數與持續時間。"
         }
       ],
@@ -12657,35 +12658,35 @@
           "key": "P",
           "label": "被動",
           "title": "鏡爪印記",
-          "icon": "../assets/images/heroes/skills/kindred/01.webp",
+          "icon": "../assets/images/heroes/skills/kindred_01.webp",
           "summary": "標記敵方英雄與野怪作為獵物；完成獵殺可永久強化技能，達特定層數提升普攻距離。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "舞動箭矢",
-          "icon": "../assets/images/heroes/skills/kindred/02.webp",
+          "icon": "../assets/images/heroes/skills/kindred_02.webp",
           "summary": "神羊向指定方向跳躍並射擊附近敵人；在魔狼狂熱區域內冷卻大幅縮短。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "魔狼狂熱",
-          "icon": "../assets/images/heroes/skills/kindred/03.webp",
+          "icon": "../assets/images/heroes/skills/kindred_03.webp",
           "summary": "魔狼在區域內自動攻擊；神羊移動與攻擊可累積治療，滿層後下一次普攻回復生命。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "恐懼蔓延",
-          "icon": "../assets/images/heroes/skills/kindred/04.webp",
+          "icon": "../assets/images/heroes/skills/kindred_04.webp",
           "summary": "對敵人造成緩速並標記；第三次普攻讓魔狼猛撲，依目標已損生命造成額外傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "神羊喘息",
-          "icon": "../assets/images/heroes/skills/kindred/05.webp",
+          "icon": "../assets/images/heroes/skills/kindred_05.webp",
           "summary": "創造領域，範圍內所有單位生命降到門檻後不會繼續下降；結束時所有單位獲得治療。"
         }
       ],
@@ -12792,35 +12793,35 @@
           "key": "P",
           "label": "被動",
           "title": "無雙亂舞",
-          "icon": "../assets/images/heroes/skills/lee-sin/01.png",
+          "icon": "../assets/images/heroes/skills/lee-sin_01.png",
           "summary": "施放技能後接下來兩次普攻獲得攻速並回復能量，鼓勵技能與普攻交錯。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "虎嘯龍吟／震驚百里",
-          "icon": "../assets/images/heroes/skills/lee-sin/02.webp",
+          "icon": "../assets/images/heroes/skills/lee-sin_02.webp",
           "summary": "第一段發出音波標記敵人；第二段突進到被標記目標並依其已損生命提高傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "鐵璧金身／易筋洗髓",
-          "icon": "../assets/images/heroes/skills/lee-sin/03.png",
+          "icon": "../assets/images/heroes/skills/lee-sin_03.png",
           "summary": "第一段衝向指定位置並獲得護盾；第二段提高全能吸血與魔法吸血。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "狂風暴雨／分筋錯骨",
-          "icon": "../assets/images/heroes/skills/lee-sin/04.webp",
+          "icon": "../assets/images/heroes/skills/lee-sin_04.webp",
           "summary": "第一段震地傷害並揭露敵人；第二段緩速被第一段命中的敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "神龍擺尾",
-          "icon": "../assets/images/heroes/skills/lee-sin/05.png",
+          "icon": "../assets/images/heroes/skills/lee-sin_05.png",
           "summary": "踢飛指定英雄造成物理傷害；被踢飛目標撞到其他敵人時會造成額外傷害與擊飛。"
         }
       ],
@@ -12927,35 +12928,35 @@
           "key": "P",
           "label": "被動",
           "title": "夢沉枝枒",
-          "icon": "../assets/images/heroes/skills/lillia/01.webp",
+          "icon": "../assets/images/heroes/skills/lillia_01.webp",
           "summary": "技能命中英雄或野怪會附加夢塵，在一段時間內造成依最大生命計算的持續傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "盛綻之舞",
-          "icon": "../assets/images/heroes/skills/lillia/02.png",
+          "icon": "../assets/images/heroes/skills/lillia_02.png",
           "summary": "旋轉法杖造成魔法傷害，外圈額外造成真實傷害；命中可疊加跑速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "拽柯之擊",
-          "icon": "../assets/images/heroes/skills/lillia/03.webp",
+          "icon": "../assets/images/heroes/skills/lillia_03.webp",
           "summary": "猛砸指定區域，中心命中造成大幅提高的魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "飛旋種籽",
-          "icon": "../assets/images/heroes/skills/lillia/04.png",
+          "icon": "../assets/images/heroes/skills/lillia_04.png",
           "summary": "丟出會沿地形滾動的種籽，命中敵人或牆體後爆炸造成傷害與緩速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "柔沉夢謠",
-          "icon": "../assets/images/heroes/skills/lillia/05.png",
+          "icon": "../assets/images/heroes/skills/lillia_05.png",
           "summary": "讓所有帶夢塵的敵方英雄逐漸昏睡，之後陷入睡眠；被傷害喚醒時承受額外魔法傷害。"
         }
       ],
@@ -13062,35 +13063,35 @@
           "key": "P",
           "label": "被動",
           "title": "魔法樹液",
-          "icon": "../assets/images/heroes/skills/maokai/01.png",
+          "icon": "../assets/images/heroes/skills/maokai_01.png",
           "summary": "普攻週期性造成額外魔法傷害並治療自身；施法或被敵方技能命中會縮短冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "荊棘摧殘",
-          "icon": "../assets/images/heroes/skills/maokai/02.png",
+          "icon": "../assets/images/heroes/skills/maokai_02.png",
           "summary": "釋放震波造成魔法傷害、緩速並把近身敵人擊退。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "飛葉遁影",
-          "icon": "../assets/images/heroes/skills/maokai/03.png",
+          "icon": "../assets/images/heroes/skills/maokai_03.png",
           "summary": "化為扭曲根鬚衝向指定敵人，期間不可被選取，抵達後將其定身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "扭曲樹精",
-          "icon": "../assets/images/heroes/skills/maokai/04.png",
+          "icon": "../assets/images/heroes/skills/maokai_04.png",
           "summary": "丟出樹苗在地面守候，發現敵人後追擊並爆炸；草叢中的樹苗傷害與持續時間更強。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "詭林之握",
-          "icon": "../assets/images/heroes/skills/maokai/05.png",
+          "icon": "../assets/images/heroes/skills/maokai_05.png",
           "summary": "召喚多排巨大根鬚向前推進，命中敵方英雄會造成傷害與長時間定身。"
         }
       ],
@@ -13197,35 +13198,35 @@
           "key": "P",
           "label": "被動",
           "title": "靈魂虹吸",
-          "icon": "../assets/images/heroes/skills/morgana/01.webp",
+          "icon": "../assets/images/heroes/skills/morgana_01.webp",
           "summary": "對英雄、大型士兵與中大型野怪造成技能傷害時會回復自身生命。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗影禁錮",
-          "icon": "../assets/images/heroes/skills/morgana/02.webp",
+          "icon": "../assets/images/heroes/skills/morgana_02.webp",
           "summary": "射出黑暗能量，命中第一個敵人造成魔法傷害並長時間禁錮。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "痛苦腐蝕",
-          "icon": "../assets/images/heroes/skills/morgana/03.png",
+          "icon": "../assets/images/heroes/skills/morgana_03.png",
           "summary": "詛咒指定區域持續造成魔法傷害，目標生命越低傷害越高；被動治療可縮短其冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑暗之盾",
-          "icon": "../assets/images/heroes/skills/morgana/04.webp",
+          "icon": "../assets/images/heroes/skills/morgana_04.webp",
           "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害並在護盾存在時免疫多數控制。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靈魂枷鎖",
-          "icon": "../assets/images/heroes/skills/morgana/05.webp",
+          "icon": "../assets/images/heroes/skills/morgana_05.webp",
           "summary": "以鎖鏈連結附近敵方英雄造成傷害與緩速；未掙脫者在延遲後再次受傷並被暈眩。"
         }
       ],
@@ -16474,35 +16475,35 @@
           "key": "P",
           "label": "被動",
           "title": "銷魂",
-          "icon": "../assets/images/heroes/skills/ahri/01.webp",
+          "icon": "../assets/images/heroes/skills/ahri_01.webp",
           "summary": "技能命中可累積能量，達條件後獲得治療，強化持續換血能力。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "幻玉",
-          "icon": "../assets/images/heroes/skills/ahri/02.webp",
+          "icon": "../assets/images/heroes/skills/ahri_02.webp",
           "summary": "投出再收回幻玉，去程造成魔法傷害、回程造成真實傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "魅火",
-          "icon": "../assets/images/heroes/skills/ahri/03.webp",
+          "icon": "../assets/images/heroes/skills/ahri_03.webp",
           "summary": "召出狐火自動攻擊附近敵人，並短暫提高跑速，適合追擊與拉扯。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "傾城",
-          "icon": "../assets/images/heroes/skills/ahri/04.webp",
+          "icon": "../assets/images/heroes/skills/ahri_04.webp",
           "summary": "射出愛心魅惑第一個命中的敵人，使其朝阿璃走來並暫時失去行動能力。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "飛仙",
-          "icon": "../assets/images/heroes/skills/ahri/05.png",
+          "icon": "../assets/images/heroes/skills/ahri_05.png",
           "summary": "向指定方向突進並對附近敵人造成傷害；技能期間可再次施放，用於進退與收割。"
         }
       ],
@@ -16585,35 +16586,35 @@
           "key": "P",
           "label": "被動",
           "title": "刺客印記",
-          "icon": "../assets/images/heroes/skills/akali/01.webp",
+          "icon": "../assets/images/heroes/skills/akali_01.webp",
           "summary": "技能傷害命中英雄後生成圓環；穿出圓環可強化下一次普攻並增加攻擊距離。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "落擲苦無",
-          "icon": "../assets/images/heroes/skills/akali/02.webp",
+          "icon": "../assets/images/heroes/skills/akali_02.webp",
           "summary": "扇形投擲苦無造成魔法傷害，是主要消耗與清線手段。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "暮光朦影",
-          "icon": "../assets/images/heroes/skills/akali/03.webp",
+          "icon": "../assets/images/heroes/skills/akali_03.webp",
           "summary": "製造煙霧並提升跑速，在煙霧中進入隱形，同時回復能量。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "離群手裡劍",
-          "icon": "../assets/images/heroes/skills/akali/04.png",
+          "icon": "../assets/images/heroes/skills/akali_04.png",
           "summary": "後跳並投出手裡劍標記目標；再次施放可高速衝向標記。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "無瑕追擊",
-          "icon": "../assets/images/heroes/skills/akali/05.webp",
+          "icon": "../assets/images/heroes/skills/akali_05.webp",
           "summary": "第一段穿越指定英雄造成傷害，第二段依目標已損生命造成高額收尾傷害。"
         }
       ],
@@ -16743,35 +16744,35 @@
           "key": "P",
           "label": "被動",
           "title": "無賴之道",
-          "icon": "../assets/images/heroes/skills/akshan/01.webp",
+          "icon": "../assets/images/heroes/skills/akshan_01.webp",
           "summary": "普攻與技能會疊加印記；連續攻擊可觸發額外傷害，亦能取消第二發普攻換取跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "復仇迴力鏢",
-          "icon": "../assets/images/heroes/skills/akshan/02.webp",
+          "icon": "../assets/images/heroes/skills/akshan_02.webp",
           "summary": "丟出可延長飛行距離的迴力鏢，往返都能造成傷害並提供視野。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "離經叛道",
-          "icon": "../assets/images/heroes/skills/akshan/03.webp",
+          "icon": "../assets/images/heroes/skills/akshan_03.webp",
           "summary": "被動標記擊殺友軍的惡徒；主動偽裝並追蹤惡徒，擊殺可復活被其擊殺的友軍。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "英勇勾索",
-          "icon": "../assets/images/heroes/skills/akshan/04.webp",
+          "icon": "../assets/images/heroes/skills/akshan_04.webp",
           "summary": "射出鉤索繞地形擺盪並連續射擊，可再次施放跳離，是核心位移與輸出技能。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "因果蓄能彈",
-          "icon": "../assets/images/heroes/skills/akshan/05.webp",
+          "icon": "../assets/images/heroes/skills/akshan_05.webp",
           "summary": "鎖定目標蓄力多發子彈後射擊；子彈可被英雄、士兵與建築阻擋。"
         }
       ],
@@ -16877,35 +16878,35 @@
           "key": "P",
           "label": "被動",
           "title": "嗜火",
-          "icon": "../assets/images/heroes/skills/annie/01.webp",
+          "icon": "../assets/images/heroes/skills/annie_01.webp",
           "summary": "施放數次技能後，下個傷害技能會暈眩命中的敵人。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "瓦解怒焰",
-          "icon": "../assets/images/heroes/skills/annie/02.png",
+          "icon": "../assets/images/heroes/skills/annie_02.png",
           "summary": "對目標造成魔法傷害；若擊殺目標可返還部分資源並縮短冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "烈焰衝擊",
-          "icon": "../assets/images/heroes/skills/annie/03.png",
+          "icon": "../assets/images/heroes/skills/annie_03.png",
           "summary": "向前方扇形區域噴火，對範圍敵人造成魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "熔炎護盾",
-          "icon": "../assets/images/heroes/skills/annie/04.png",
+          "icon": "../assets/images/heroes/skills/annie_04.png",
           "summary": "為自己或友軍提供護盾與跑速，並反擊攻擊護盾目標的敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "召喚：泰貝爾",
-          "icon": "../assets/images/heroes/skills/annie/05.webp",
+          "icon": "../assets/images/heroes/skills/annie_05.webp",
           "summary": "召喚泰貝爾造成範圍傷害；泰貝爾會持續追擊並灼燒附近敵人。"
         }
       ],
@@ -17011,35 +17012,35 @@
           "key": "P",
           "label": "被動",
           "title": "宇宙創世",
-          "icon": "../assets/images/heroes/skills/aurelion-sol/01.webp",
+          "icon": "../assets/images/heroes/skills/aurelion-sol_01.webp",
           "summary": "傷害性技能可累積星塵；星塵永久強化部分技能的範圍、傷害與處決能力。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "星光吐息",
-          "icon": "../assets/images/heroes/skills/aurelion-sol/02.webp",
+          "icon": "../assets/images/heroes/skills/aurelion-sol_02.webp",
           "summary": "持續向指定方向吐息，對首名敵人造成連續傷害並週期性爆發。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "星界翱翔",
-          "icon": "../assets/images/heroes/skills/aurelion-sol/03.webp",
+          "icon": "../assets/images/heroes/skills/aurelion-sol_03.webp",
           "summary": "朝指定方向飛行，期間可持續施放星光吐息，適合追擊與轉線。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "宇宙奇點",
-          "icon": "../assets/images/heroes/skills/aurelion-sol/04.webp",
+          "icon": "../assets/images/heroes/skills/aurelion-sol_04.webp",
           "summary": "創造黑洞持續拉扯並傷害敵人，低生命敵人會被處決；星塵可擴大範圍。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "降世星辰／天界殞落",
-          "icon": "../assets/images/heroes/skills/aurelion-sol/05.png",
+          "icon": "../assets/images/heroes/skills/aurelion-sol_05.png",
           "summary": "召下星辰造成範圍傷害與擊飛；累積足夠星塵後升級為更大範圍的天界殞落。"
         }
       ],
@@ -17122,35 +17123,35 @@
           "key": "P",
           "label": "被動",
           "title": "精靈附體",
-          "icon": "../assets/images/heroes/skills/aurora/01.webp",
+          "icon": "../assets/images/heroes/skills/aurora_01.webp",
           "summary": "技能或普攻命中英雄可累積精靈能量，觸發後造成額外傷害並提供跑速與治療。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "二重靈咒",
-          "icon": "../assets/images/heroes/skills/aurora/02.webp",
+          "icon": "../assets/images/heroes/skills/aurora_02.webp",
           "summary": "向前射出靈能飛彈並標記敵人，再次施放可召回飛彈造成第二段傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "跨越兩界",
-          "icon": "../assets/images/heroes/skills/aurora/03.webp",
+          "icon": "../assets/images/heroes/skills/aurora_03.webp",
           "summary": "短距跳躍並進入靈界隱形，適合躲技能、調整位置或追擊。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "靈異逆躍",
-          "icon": "../assets/images/heroes/skills/aurora/04.webp",
+          "icon": "../assets/images/heroes/skills/aurora_04.webp",
           "summary": "向後躍並釋放靈能衝擊，對前方敵人造成傷害與緩速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "雙界合一",
-          "icon": "../assets/images/heroes/skills/aurora/05.png",
+          "icon": "../assets/images/heroes/skills/aurora_05.png",
           "summary": "跳向指定區域造成傷害並形成靈界邊界，敵人接觸邊界時會被拉回區域內。"
         }
       ],
@@ -17280,35 +17281,35 @@
           "key": "P",
           "label": "被動",
           "title": "烈炎鐵血",
-          "icon": "../assets/images/heroes/skills/brand/01.png",
+          "icon": "../assets/images/heroes/skills/brand_01.png",
           "summary": "技能會使敵人燃燒；疊滿後會在延遲後爆炸，對周圍敵人造成大量魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "火焰烙印",
-          "icon": "../assets/images/heroes/skills/brand/02.png",
+          "icon": "../assets/images/heroes/skills/brand_02.png",
           "summary": "射出火球造成魔法傷害；若目標已燃燒則暈眩。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "煉獄風暴",
-          "icon": "../assets/images/heroes/skills/brand/03.webp",
+          "icon": "../assets/images/heroes/skills/brand_03.webp",
           "summary": "在指定區域引發火柱，短暫延遲後造成範圍魔法傷害；燃燒目標承受更多傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "天火燎原",
-          "icon": "../assets/images/heroes/skills/brand/04.png",
+          "icon": "../assets/images/heroes/skills/brand_04.png",
           "summary": "點燃目標造成魔法傷害並向附近敵人擴散；燃燒時擴散範圍更大。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "末日熔岩",
-          "icon": "../assets/images/heroes/skills/brand/05.png",
+          "icon": "../assets/images/heroes/skills/brand_05.png",
           "summary": "釋放火焰在敵人之間多次彈跳，優先利用已燃燒目標製造團戰連鎖傷害。"
         }
       ],
@@ -17391,35 +17392,35 @@
           "key": "P",
           "label": "被動",
           "title": "銀月之刃",
-          "icon": "../assets/images/heroes/skills/diana/01.png",
+          "icon": "../assets/images/heroes/skills/diana_01.png",
           "summary": "施放技能後提高攻速；每第三次普攻會對周圍敵人造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "月牙衝擊",
-          "icon": "../assets/images/heroes/skills/diana/02.webp",
+          "icon": "../assets/images/heroes/skills/diana_02.webp",
           "summary": "揮出弧形月能造成魔法傷害並對命中敵人施加月光。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "蒼白月瀑",
-          "icon": "../assets/images/heroes/skills/diana/03.webp",
+          "icon": "../assets/images/heroes/skills/diana_03.webp",
           "summary": "生成三顆護體法球與護盾；法球碰到敵人時爆炸，全部爆炸後刷新護盾。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "朔月幻步",
-          "icon": "../assets/images/heroes/skills/diana/04.webp",
+          "icon": "../assets/images/heroes/skills/diana_04.webp",
           "summary": "突進至指定敵人造成魔法傷害；若目標帶月光則重置冷卻並消耗月光。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "月隕",
-          "icon": "../assets/images/heroes/skills/diana/05.webp",
+          "icon": "../assets/images/heroes/skills/diana_05.webp",
           "summary": "蓄力後牽引周圍敵人並造成範圍魔法傷害，是主要團戰進場與爆發技能。"
         }
       ],
@@ -17526,35 +17527,35 @@
           "key": "P",
           "label": "被動",
           "title": "共振驅動-Z",
-          "icon": "../assets/images/heroes/skills/ekko/01.webp",
+          "icon": "../assets/images/heroes/skills/ekko_01.webp",
           "summary": "對同一目標第三次普攻或技能命中會造成額外魔法傷害；對英雄觸發時提高跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "時光樞紐",
-          "icon": "../assets/images/heroes/skills/ekko/02.png",
+          "icon": "../assets/images/heroes/skills/ekko_02.png",
           "summary": "投出時間裝置，去程造成傷害，展開後緩速，返回時再次造成傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "時空攔截",
-          "icon": "../assets/images/heroes/skills/ekko/03.webp",
+          "icon": "../assets/images/heroes/skills/ekko_03.webp",
           "summary": "被動對低生命敵人普攻造成額外傷害；主動預設力場，進入後獲得護盾並暈眩敵人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "相位轉移",
-          "icon": "../assets/images/heroes/skills/ekko/04.webp",
+          "icon": "../assets/images/heroes/skills/ekko_04.webp",
           "summary": "向指定方向翻滾，下一次普攻會瞬移到目標旁並造成額外魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "計時開始",
-          "icon": "../assets/images/heroes/skills/ekko/05.webp",
+          "icon": "../assets/images/heroes/skills/ekko_05.webp",
           "summary": "回到數秒前的位置並回復生命，對返回點附近敵人造成大量魔法傷害。"
         }
       ],
@@ -17661,35 +17662,35 @@
           "key": "P",
           "label": "被動",
           "title": "海神三叉戟",
-          "icon": "../assets/images/heroes/skills/fizz/01.webp",
+          "icon": "../assets/images/heroes/skills/fizz_01.webp",
           "summary": "普攻會附帶持續魔法傷害，並讓飛斯穿越單位時更靈活。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "現撈海膽",
-          "icon": "../assets/images/heroes/skills/fizz/02.png",
+          "icon": "../assets/images/heroes/skills/fizz_02.png",
           "summary": "穿過指定敵人造成魔法傷害並附帶普攻命中特效。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "裂岸大浪",
-          "icon": "../assets/images/heroes/skills/fizz/03.png",
+          "icon": "../assets/images/heroes/skills/fizz_03.png",
           "summary": "被動讓普攻附加持續傷害；主動強化下一次普攻並在擊殺時返還部分冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "愛玩小飛／調皮小飛",
-          "icon": "../assets/images/heroes/skills/fizz/04.webp",
+          "icon": "../assets/images/heroes/skills/fizz_04.webp",
           "summary": "跳上三叉戟進入不可被選取狀態，再落地造成範圍傷害與緩速；可再次施放調整落點。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "海之霸主",
-          "icon": "../assets/images/heroes/skills/fizz/05.png",
+          "icon": "../assets/images/heroes/skills/fizz_05.png",
           "summary": "丟出魚餌黏住首名英雄並緩速，延遲後召喚鯊魚造成高額傷害、擊飛與範圍緩速。"
         }
       ],
@@ -17819,35 +17820,35 @@
           "key": "P",
           "label": "被動",
           "title": "護國意志",
-          "icon": "../assets/images/heroes/skills/galio/01.webp",
+          "icon": "../assets/images/heroes/skills/galio_01.webp",
           "summary": "每隔一段時間強化下一次普攻，造成範圍魔法傷害；技能命中可縮短冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "征戰風暴",
-          "icon": "../assets/images/heroes/skills/galio/02.webp",
+          "icon": "../assets/images/heroes/skills/galio_02.webp",
           "summary": "發射兩道風刃匯聚成旋風，持續對區域內敵人造成魔法傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "杜蘭德之盾",
-          "icon": "../assets/images/heroes/skills/galio/03.webp",
+          "icon": "../assets/images/heroes/skills/galio_03.webp",
           "summary": "被動提供魔法護盾；蓄力時減傷並減速自己，放開後嘲諷附近敵人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "光榮制裁",
-          "icon": "../assets/images/heroes/skills/galio/04.png",
+          "icon": "../assets/images/heroes/skills/galio_04.png",
           "summary": "向後蓄力再向前衝撞，對命中的敵人造成傷害與擊飛。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "英靈之門",
-          "icon": "../assets/images/heroes/skills/galio/05.png",
+          "icon": "../assets/images/heroes/skills/galio_05.png",
           "summary": "選擇友方英雄作為落點，為其提供保護後從天而降，造成範圍傷害與擊飛。"
         }
       ],
@@ -17930,35 +17931,35 @@
           "key": "P",
           "label": "被動",
           "title": "堅毅",
-          "icon": "../assets/images/heroes/skills/garen/01.webp",
+          "icon": "../assets/images/heroes/skills/garen_01.webp",
           "summary": "一段時間未受敵方傷害後快速回復生命，提升對線續航。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "致命打擊",
-          "icon": "../assets/images/heroes/skills/garen/02.webp",
+          "icon": "../assets/images/heroes/skills/garen_02.webp",
           "summary": "解除緩速並提高跑速，下一次普攻造成額外傷害與沉默。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "勇氣",
-          "icon": "../assets/images/heroes/skills/garen/03.webp",
+          "icon": "../assets/images/heroes/skills/garen_03.webp",
           "summary": "被動增加防禦；主動短暫獲得高額韌性與減傷，之後維持較低減傷。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "審判",
-          "icon": "../assets/images/heroes/skills/garen/04.png",
+          "icon": "../assets/images/heroes/skills/garen_04.png",
           "summary": "快速旋轉大劍持續造成物理傷害，對單一目標時傷害更高。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "蒂瑪西亞制裁",
-          "icon": "../assets/images/heroes/skills/garen/05.webp",
+          "icon": "../assets/images/heroes/skills/garen_05.webp",
           "summary": "召喚蒂瑪西亞之力處決指定英雄，依其已損生命造成大量真實傷害。"
         }
       ],
@@ -18088,35 +18089,35 @@
           "key": "P",
           "label": "被動",
           "title": "海克斯親合性",
-          "icon": "../assets/images/heroes/skills/heimerdinger/01.png",
+          "icon": "../assets/images/heroes/skills/heimerdinger_01.png",
           "summary": "靠近友方防禦塔或自己的砲臺時獲得額外跑速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "H-28 G進化砲臺",
-          "icon": "../assets/images/heroes/skills/heimerdinger/02.png",
+          "icon": "../assets/images/heroes/skills/heimerdinger_02.png",
           "summary": "部署自動攻擊的砲臺；海默丁格技能命中英雄可加速砲臺蓄能射擊。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "高科技微型火箭",
-          "icon": "../assets/images/heroes/skills/heimerdinger/03.png",
+          "icon": "../assets/images/heroes/skills/heimerdinger_03.png",
           "summary": "發射多枚微型火箭，集中命中同一目標時可造成更高爆發。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "CH-2暴風手雷",
-          "icon": "../assets/images/heroes/skills/heimerdinger/04.png",
+          "icon": "../assets/images/heroes/skills/heimerdinger_04.png",
           "summary": "投擲手雷造成範圍傷害與緩速，中心命中會暈眩並充能砲臺。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "升級！！！",
-          "icon": "../assets/images/heroes/skills/heimerdinger/05.png",
+          "icon": "../assets/images/heroes/skills/heimerdinger_05.png",
           "summary": "強化下一個基礎技能，變成更強的砲臺、火箭齊射或多次彈跳手雷。"
         }
       ],
@@ -18199,35 +18200,35 @@
           "key": "P",
           "label": "被動",
           "title": "愛歐尼亞狂熱",
-          "icon": "../assets/images/heroes/skills/irelia/01.webp",
+          "icon": "../assets/images/heroes/skills/irelia_01.webp",
           "summary": "技能命中敵人會疊加攻速；滿層後普攻造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "利刃衝擊",
-          "icon": "../assets/images/heroes/skills/irelia/02.webp",
+          "icon": "../assets/images/heroes/skills/irelia_02.webp",
           "summary": "突進到敵人身上造成物理傷害；擊殺目標或命中被標記敵人時刷新冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "不屈秘舞",
-          "icon": "../assets/images/heroes/skills/irelia/03.webp",
+          "icon": "../assets/images/heroes/skills/irelia_03.webp",
           "summary": "蓄力減少受到的物理傷害，放開後向前斬擊造成物理傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "無瑕重刃",
-          "icon": "../assets/images/heroes/skills/irelia/04.webp",
+          "icon": "../assets/images/heroes/skills/irelia_04.webp",
           "summary": "先後放置兩片劍刃，劍刃交會時傷害、暈眩並標記命中的敵人。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "護劍化形",
-          "icon": "../assets/images/heroes/skills/irelia/05.webp",
+          "icon": "../assets/images/heroes/skills/irelia_05.webp",
           "summary": "射出大量劍刃傷害並標記英雄，落地後形成劍陣，穿越的敵人會被緩速。"
         }
       ],
@@ -18334,35 +18335,35 @@
           "key": "P",
           "label": "被動",
           "title": "海克斯電容器",
-          "icon": "../assets/images/heroes/skills/jayce/01.png",
+          "icon": "../assets/images/heroes/skills/jayce_01.png",
           "summary": "切換武器型態後短暫提高跑速，讓近遠型態連招更流暢。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "浩瀚無垠／電磁脈衝",
-          "icon": "../assets/images/heroes/skills/jayce/02.png",
+          "icon": "../assets/images/heroes/skills/jayce_02.png",
           "summary": "戰鎚型態跳向敵人造成範圍傷害與緩速；加農型態發射電磁彈，穿過加速門可提高速度、距離與傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "離子領域／超頻導體",
-          "icon": "../assets/images/heroes/skills/jayce/03.webp",
+          "icon": "../assets/images/heroes/skills/jayce_03.webp",
           "summary": "戰鎚型態產生電場並回復魔力；加農型態大幅提高接下來數次普攻的攻速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "風馳電掣／中子加速裝置",
-          "icon": "../assets/images/heroes/skills/jayce/04.webp",
+          "icon": "../assets/images/heroes/skills/jayce_04.webp",
           "summary": "戰鎚型態擊退敵人並依最大生命造成傷害；加農型態放置加速門，提高友軍跑速並強化電磁脈衝。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "水星加農／水星戰鎚",
-          "icon": "../assets/images/heroes/skills/jayce/05.png",
+          "icon": "../assets/images/heroes/skills/jayce_05.png",
           "summary": "在水星加農與水星戰鎚間切換，改變技能組、攻擊距離與首次普攻效果。"
         }
       ],
@@ -18492,35 +18493,35 @@
           "key": "P",
           "label": "被動",
           "title": "虛空之石",
-          "icon": "../assets/images/heroes/skills/kassadin/01.webp",
+          "icon": "../assets/images/heroes/skills/kassadin_01.webp",
           "summary": "在可見敵方英雄附近施放技能後獲得魔法護盾，提高對法師的換血能力。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "虛無法球",
-          "icon": "../assets/images/heroes/skills/kassadin/02.webp",
+          "icon": "../assets/images/heroes/skills/kassadin_02.webp",
           "summary": "射出虛無法球造成魔法傷害並沉默目標。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "虛空之刃",
-          "icon": "../assets/images/heroes/skills/kassadin/03.webp",
+          "icon": "../assets/images/heroes/skills/kassadin_03.webp",
           "summary": "強化下一次普攻的距離與魔法傷害，並回復部分已損魔力；擊殺可縮短冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "能量脈衝",
-          "icon": "../assets/images/heroes/skills/kassadin/04.webp",
+          "icon": "../assets/images/heroes/skills/kassadin_04.webp",
           "summary": "附近英雄施放技能會為此技能充能；主動釋放錐形能量造成魔法傷害與緩速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "虛空行走",
-          "icon": "../assets/images/heroes/skills/kassadin/05.webp",
+          "icon": "../assets/images/heroes/skills/kassadin_05.webp",
           "summary": "短距瞬移並對落點造成魔法傷害；連續施放會提高傷害與魔力消耗。"
         }
       ],
@@ -18626,35 +18627,35 @@
           "key": "P",
           "label": "被動",
           "title": "貪婪",
-          "icon": "../assets/images/heroes/skills/katarina/01.webp",
+          "icon": "../assets/images/heroes/skills/katarina_01.webp",
           "summary": "參與擊殺會大幅降低技能冷卻；撿起匕首時旋轉斬擊附近敵人。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "彈射利刃",
-          "icon": "../assets/images/heroes/skills/katarina/02.png",
+          "icon": "../assets/images/heroes/skills/katarina_02.png",
           "summary": "向目標投擲匕首並彈跳數名敵人，最後在地面留下可拾取匕首。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "備戰",
-          "icon": "../assets/images/heroes/skills/katarina/03.webp",
+          "icon": "../assets/images/heroes/skills/katarina_03.webp",
           "summary": "提高跑速並向空中拋出匕首，短暫延遲後落在原地。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "瞬步",
-          "icon": "../assets/images/heroes/skills/katarina/04.png",
+          "icon": "../assets/images/heroes/skills/katarina_04.png",
           "summary": "瞬移到目標單位或匕首旁並造成魔法傷害；撿匕首可大幅縮短冷卻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "死亡蓮花",
-          "icon": "../assets/images/heroes/skills/katarina/05.png",
+          "icon": "../assets/images/heroes/skills/katarina_05.png",
           "summary": "快速旋轉並向附近英雄投擲刀刃，持續造成大量魔法傷害並施加重創。"
         }
       ],
@@ -18737,35 +18738,35 @@
           "key": "P",
           "label": "被動",
           "title": "聖域之梯",
-          "icon": "../assets/images/heroes/skills/kayle/01.webp",
+          "icon": "../assets/images/heroes/skills/kayle_01.webp",
           "summary": "隨等級與技能點成長逐步升華，獲得攻速、跑速、遠程攻擊與範圍火焰波等強化。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "聖光衝擊波",
-          "icon": "../assets/images/heroes/skills/kayle/02.webp",
+          "icon": "../assets/images/heroes/skills/kayle_02.webp",
           "summary": "射出光刃造成魔法傷害、緩速並降低目標雙防。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "天賜聖典",
-          "icon": "../assets/images/heroes/skills/kayle/03.webp",
+          "icon": "../assets/images/heroes/skills/kayle_03.webp",
           "summary": "治療自己與一名友軍並提高兩人的跑速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "星火熾刃",
-          "icon": "../assets/images/heroes/skills/kayle/04.webp",
+          "icon": "../assets/images/heroes/skills/kayle_04.webp",
           "summary": "被動讓普攻附加魔法傷害；主動強化下一次普攻，造成依目標已損生命計算的額外範圍傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "聖劍審判",
-          "icon": "../assets/images/heroes/skills/kayle/05.webp",
+          "icon": "../assets/images/heroes/skills/kayle_05.webp",
           "summary": "使自己或友軍短暫無敵，延遲後召喚聖劍對周圍敵人造成魔法傷害。"
         }
       ],
@@ -18872,35 +18873,35 @@
           "key": "P",
           "label": "被動",
           "title": "風暴印記",
-          "icon": "../assets/images/heroes/skills/kennen/01.webp",
+          "icon": "../assets/images/heroes/skills/kennen_01.webp",
           "summary": "技能命中會附加風暴印記；同一目標累積三層時暈眩並回復能量。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "雷電手裡劍",
-          "icon": "../assets/images/heroes/skills/kennen/02.png",
+          "icon": "../assets/images/heroes/skills/kennen_02.png",
           "summary": "投擲手裡劍，對第一個命中的敵人造成魔法傷害並附加印記。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "電能釋放",
-          "icon": "../assets/images/heroes/skills/kennen/03.png",
+          "icon": "../assets/images/heroes/skills/kennen_03.png",
           "summary": "被動每數次普攻強化並附加印記；主動電擊附近帶印記的敵人造成傷害並再加一層。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "閃電衝擊",
-          "icon": "../assets/images/heroes/skills/kennen/04.png",
+          "icon": "../assets/images/heroes/skills/kennen_04.png",
           "summary": "化為閃電提高跑速並可穿越單位，穿過敵人造成傷害與印記，結束後提高攻速。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "雷霆風暴",
-          "icon": "../assets/images/heroes/skills/kennen/05.png",
+          "icon": "../assets/images/heroes/skills/kennen_05.png",
           "summary": "召喚雷暴持續攻擊附近英雄，重複附加印記並造成魔法傷害，是主要團戰控場技能。"
         }
       ],
@@ -19006,35 +19007,35 @@
           "key": "P",
           "label": "被動",
           "title": "來自伊卡西亞的驚喜",
-          "icon": "../assets/images/heroes/skills/kogmaw/01.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_01.webp",
           "summary": "死亡後仍可短暫移動並提高跑速，隨後爆炸對附近敵人造成真實傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "腐蝕唾液",
-          "icon": "../assets/images/heroes/skills/kogmaw/02.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_02.webp",
           "summary": "射出腐蝕唾液造成魔法傷害並降低目標雙防；被動提高攻速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "生化彈幕",
-          "icon": "../assets/images/heroes/skills/kogmaw/03.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_03.webp",
           "summary": "短時間提高普攻距離，並讓普攻附加依目標最大生命計算的魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "虛空淤泥",
-          "icon": "../assets/images/heroes/skills/kogmaw/04.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_04.webp",
           "summary": "吐出一條虛空淤泥造成魔法傷害並留下緩速地帶。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "生化巨炮",
-          "icon": "../assets/images/heroes/skills/kogmaw/05.webp",
+          "icon": "../assets/images/heroes/skills/kogmaw_05.webp",
           "summary": "遠距離砲擊指定位置，造成魔法傷害並揭露敵人；對低生命目標傷害更高，連續施放提高耗魔。"
         }
       ],
@@ -19164,35 +19165,35 @@
           "key": "P",
           "label": "被動",
           "title": "寒霜霸權",
-          "icon": "../assets/images/heroes/skills/lissandra/01.png",
+          "icon": "../assets/images/heroes/skills/lissandra_01.png",
           "summary": "附近敵方英雄死亡時生成冰霜奴魔，追擊敵人並在爆炸時造成傷害與緩速。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "幽影碎冰",
-          "icon": "../assets/images/heroes/skills/lissandra/02.png",
+          "icon": "../assets/images/heroes/skills/lissandra_02.png",
           "summary": "射出冰槍，命中首個敵人後碎裂並延伸，傷害與緩速後方敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "暴雪結界",
-          "icon": "../assets/images/heroes/skills/lissandra/03.png",
+          "icon": "../assets/images/heroes/skills/lissandra_03.png",
           "summary": "凍結附近敵人造成魔法傷害與定身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "急速冰刺",
-          "icon": "../assets/images/heroes/skills/lissandra/04.png",
+          "icon": "../assets/images/heroes/skills/lissandra_04.png",
           "summary": "向前放出冰爪；再次施放可瞬移到冰爪位置，是進場與逃生工具。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "永凍墳地",
-          "icon": "../assets/images/heroes/skills/lissandra/05.png",
+          "icon": "../assets/images/heroes/skills/lissandra_05.png",
           "summary": "對敵人施放會凍結並傷害；對自己施放則進入無敵不可選取狀態並治療，周圍生成緩速傷害區。"
         }
       ],
@@ -19274,35 +19275,35 @@
           "key": "P",
           "label": "被動",
           "title": "光之獵手",
-          "icon": "../assets/images/heroes/skills/lucian/01.png",
+          "icon": "../assets/images/heroes/skills/lucian_01.png",
           "summary": "每次施放技能後，下一次普攻會連射兩發，是技能穿插普攻的核心。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "鋒芒貫穿",
-          "icon": "../assets/images/heroes/skills/lucian/02.webp",
+          "icon": "../assets/images/heroes/skills/lucian_02.webp",
           "summary": "對指定目標射出穿透光束，並傷害其後方直線上的敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "烈炎鐵血",
-          "icon": "../assets/images/heroes/skills/lucian/03.png",
+          "icon": "../assets/images/heroes/skills/lucian_03.png",
           "summary": "發射星形爆炸彈並標記敵人；攻擊被標記目標可提高跑速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "冷酷進擊",
-          "icon": "../assets/images/heroes/skills/lucian/04.webp",
+          "icon": "../assets/images/heroes/skills/lucian_04.webp",
           "summary": "向指定方向短距位移，雙槍普攻可縮短冷卻，利於連招與拉扯。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "赤色屠戮",
-          "icon": "../assets/images/heroes/skills/lucian/05.webp",
+          "icon": "../assets/images/heroes/skills/lucian_05.webp",
           "summary": "朝指定方向持續高速射擊，可邊移動邊輸出，用於壓血、追擊與收尾。"
         }
       ],
@@ -19432,35 +19433,35 @@
           "key": "P",
           "label": "被動",
           "title": "光芒四射",
-          "icon": "../assets/images/heroes/skills/lux/01.webp",
+          "icon": "../assets/images/heroes/skills/lux_01.webp",
           "summary": "傷害技能會標記敵人；下一次普攻引爆標記造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "光明束縛",
-          "icon": "../assets/images/heroes/skills/lux/02.webp",
+          "icon": "../assets/images/heroes/skills/lux_02.webp",
           "summary": "發射光球束縛並傷害最多兩個敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "稜光障壁",
-          "icon": "../assets/images/heroes/skills/lux/03.png",
+          "icon": "../assets/images/heroes/skills/lux_03.png",
           "summary": "丟出光杖，去程與回程都能為碰到的友軍提供護盾。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "光明異點",
-          "icon": "../assets/images/heroes/skills/lux/04.webp",
+          "icon": "../assets/images/heroes/skills/lux_04.webp",
           "summary": "創造光區造成緩速並提供視野，可再次施放引爆造成魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "終極閃光",
-          "icon": "../assets/images/heroes/skills/lux/05.webp",
+          "icon": "../assets/images/heroes/skills/lux_05.webp",
           "summary": "短暫蓄力後發射超遠距光束，對直線所有敵人造成大量魔法傷害並觸發被動標記。"
         }
       ],
@@ -19566,35 +19567,35 @@
           "key": "P",
           "label": "被動",
           "title": "炙灼耀輝",
-          "icon": "../assets/images/heroes/skills/mel/01.png",
+          "icon": "../assets/images/heroes/skills/mel_01.png",
           "summary": "施放技能會累積額外射彈強化下次普攻；造成傷害會疊加奪目，達處決門檻時消耗層數擊殺目標。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "絢輝彈幕",
-          "icon": "../assets/images/heroes/skills/mel/02.png",
+          "icon": "../assets/images/heroes/skills/mel_02.png",
           "summary": "向指定區域發射多枚光彈，連續命中可快速疊加奪目並造成範圍魔法傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "叱返金身",
-          "icon": "../assets/images/heroes/skills/mel/03.webp",
+          "icon": "../assets/images/heroes/skills/mel_03.webp",
           "summary": "製造防護屏障並反射可反射的敵方投射物，是對抗關鍵遠程技能的核心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "烈陽羅網",
-          "icon": "../assets/images/heroes/skills/mel/04.png",
+          "icon": "../assets/images/heroes/skills/mel_04.png",
           "summary": "投出光能束縛區域，對敵人造成傷害與控制，限制其走位。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "無垠天照",
-          "icon": "../assets/images/heroes/skills/mel/05.webp",
+          "icon": "../assets/images/heroes/skills/mel_05.webp",
           "summary": "引爆所有帶有奪目層數的敵人，依疊層造成大範圍魔法傷害，適合團戰收尾。"
         }
       ],
@@ -19677,35 +19678,35 @@
           "key": "P",
           "label": "被動",
           "title": "靈魂虹吸",
-          "icon": "../assets/images/heroes/skills/morgana/01.webp",
+          "icon": "../assets/images/heroes/skills/morgana_01.webp",
           "summary": "對英雄、大型士兵與中大型野怪造成技能傷害時會回復自身生命。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗影禁錮",
-          "icon": "../assets/images/heroes/skills/morgana/02.webp",
+          "icon": "../assets/images/heroes/skills/morgana_02.webp",
           "summary": "射出黑暗能量，命中第一個敵人造成魔法傷害並長時間禁錮。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "痛苦腐蝕",
-          "icon": "../assets/images/heroes/skills/morgana/03.png",
+          "icon": "../assets/images/heroes/skills/morgana_03.png",
           "summary": "詛咒指定區域持續造成魔法傷害，目標生命越低傷害越高；被動治療可縮短其冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑暗之盾",
-          "icon": "../assets/images/heroes/skills/morgana/04.webp",
+          "icon": "../assets/images/heroes/skills/morgana_04.webp",
           "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害並在護盾存在時免疫多數控制。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靈魂枷鎖",
-          "icon": "../assets/images/heroes/skills/morgana/05.webp",
+          "icon": "../assets/images/heroes/skills/morgana_05.webp",
           "summary": "以鎖鏈連結附近敵方英雄造成傷害與緩速；未掙脫者在延遲後再次受傷並被暈眩。"
         }
       ],
@@ -22466,35 +22467,35 @@
           "key": "P",
           "label": "被動",
           "title": "勝利怒吼",
-          "icon": "../assets/images/heroes/skills/alistar/01.png",
+          "icon": "../assets/images/heroes/skills/alistar_01.png",
           "summary": "附近敵人死亡時累積怒吼層數，達條件後治療自己與附近友軍。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "大地粉碎",
-          "icon": "../assets/images/heroes/skills/alistar/02.png",
+          "icon": "../assets/images/heroes/skills/alistar_02.png",
           "summary": "猛擊地面造成魔法傷害並擊飛附近敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "野蠻衝撞",
-          "icon": "../assets/images/heroes/skills/alistar/03.png",
+          "icon": "../assets/images/heroes/skills/alistar_03.png",
           "summary": "衝向目標造成傷害並擊退；常與一技能銜接形成穩定開戰。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "蠻牛之力",
-          "icon": "../assets/images/heroes/skills/alistar/04.png",
+          "icon": "../assets/images/heroes/skills/alistar_04.png",
           "summary": "在敵人附近持續踐踏並疊層，疊滿後下一次普攻可暈眩目標。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "堅定意志",
-          "icon": "../assets/images/heroes/skills/alistar/05.png",
+          "icon": "../assets/images/heroes/skills/alistar_05.png",
           "summary": "解除自身控制並大幅降低一段時間內受到的傷害。"
         }
       ],
@@ -22600,35 +22601,35 @@
           "key": "P",
           "label": "被動",
           "title": "旅者引領",
-          "icon": "../assets/images/heroes/skills/bard/01.webp",
+          "icon": "../assets/images/heroes/skills/bard_01.webp",
           "summary": "地圖會生成木靈；收集可獲得經驗、魔力、跑速並逐步強化米普普攻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "宇宙制約",
-          "icon": "../assets/images/heroes/skills/bard/02.webp",
+          "icon": "../assets/images/heroes/skills/bard_02.webp",
           "summary": "射出能量彈造成傷害與緩速；若穿過首個目標再命中單位或牆體，兩者會被暈眩。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "守望神龕",
-          "icon": "../assets/images/heroes/skills/bard/03.png",
+          "icon": "../assets/images/heroes/skills/bard_03.png",
           "summary": "放置可成長的治療神龕，友軍踩取後回復生命並獲得短暫跑速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "奇幻旅程",
-          "icon": "../assets/images/heroes/skills/bard/04.png",
+          "icon": "../assets/images/heroes/skills/bard_04.png",
           "summary": "在牆體上開啟單向傳送通道，雙方英雄都能通過。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "凝滯命域",
-          "icon": "../assets/images/heroes/skills/bard/05.webp",
+          "icon": "../assets/images/heroes/skills/bard_05.webp",
           "summary": "對指定區域施放凝滯，使範圍內英雄、士兵、野怪與建築暫時無法行動且免疫傷害。"
         }
       ],
@@ -22734,35 +22735,35 @@
           "key": "P",
           "label": "被動",
           "title": "法力屏障",
-          "icon": "../assets/images/heroes/skills/blitzcrank/01.png",
+          "icon": "../assets/images/heroes/skills/blitzcrank_01.png",
           "summary": "生命偏低時消耗部分魔力生成護盾，提升被集火時的生存能力。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "火箭抓取",
-          "icon": "../assets/images/heroes/skills/blitzcrank/02.webp",
+          "icon": "../assets/images/heroes/skills/blitzcrank_02.webp",
           "summary": "發射機械手抓住第一個敵人，造成魔法傷害並將其拉到身前。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "過載運轉",
-          "icon": "../assets/images/heroes/skills/blitzcrank/03.webp",
+          "icon": "../assets/images/heroes/skills/blitzcrank_03.webp",
           "summary": "短時間大幅提高跑速與攻速，效果結束後會短暫減速自己。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "充能一擊",
-          "icon": "../assets/images/heroes/skills/blitzcrank/04.png",
+          "icon": "../assets/images/heroes/skills/blitzcrank_04.png",
           "summary": "強化下一次普攻造成額外傷害並擊飛目標。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靜電力場",
-          "icon": "../assets/images/heroes/skills/blitzcrank/05.png",
+          "icon": "../assets/images/heroes/skills/blitzcrank_05.png",
           "summary": "被動週期性雷擊附近敵人；主動造成範圍魔法傷害並沉默、移除護盾。"
         }
       ],
@@ -22868,35 +22869,35 @@
           "key": "P",
           "label": "被動",
           "title": "烈炎鐵血",
-          "icon": "../assets/images/heroes/skills/brand/01.png",
+          "icon": "../assets/images/heroes/skills/brand_01.png",
           "summary": "技能會使敵人燃燒；疊滿後會在延遲後爆炸，對周圍敵人造成大量魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "火焰烙印",
-          "icon": "../assets/images/heroes/skills/brand/02.png",
+          "icon": "../assets/images/heroes/skills/brand_02.png",
           "summary": "射出火球造成魔法傷害；若目標已燃燒則暈眩。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "煉獄風暴",
-          "icon": "../assets/images/heroes/skills/brand/03.webp",
+          "icon": "../assets/images/heroes/skills/brand_03.webp",
           "summary": "在指定區域引發火柱，短暫延遲後造成範圍魔法傷害；燃燒目標承受更多傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "天火燎原",
-          "icon": "../assets/images/heroes/skills/brand/04.png",
+          "icon": "../assets/images/heroes/skills/brand_04.png",
           "summary": "點燃目標造成魔法傷害並向附近敵人擴散；燃燒時擴散範圍更大。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "末日熔岩",
-          "icon": "../assets/images/heroes/skills/brand/05.png",
+          "icon": "../assets/images/heroes/skills/brand_05.png",
           "summary": "釋放火焰在敵人之間多次彈跳，優先利用已燃燒目標製造團戰連鎖傷害。"
         }
       ],
@@ -23002,35 +23003,35 @@
           "key": "P",
           "label": "被動",
           "title": "震盪冰封",
-          "icon": "../assets/images/heroes/skills/braum/01.png",
+          "icon": "../assets/images/heroes/skills/braum_01.png",
           "summary": "普攻與一技能會疊加震盪印記；達四層時目標被暈眩並受到額外傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "凜冬衝擊",
-          "icon": "../assets/images/heroes/skills/braum/02.png",
+          "icon": "../assets/images/heroes/skills/braum_02.png",
           "summary": "發射冰塊造成魔法傷害與緩速，同時附加一層震盪印記。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "壁壘守護",
-          "icon": "../assets/images/heroes/skills/braum/03.png",
+          "icon": "../assets/images/heroes/skills/braum_03.png",
           "summary": "跳向友軍英雄或士兵，並提高自己與目標的雙防。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "雄心重盾",
-          "icon": "../assets/images/heroes/skills/braum/04.png",
+          "icon": "../assets/images/heroes/skills/braum_04.png",
           "summary": "舉盾阻擋指定方向的投射物，第一個傷害完全擋下，之後減少來自該方向的傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "冰河裂隙",
-          "icon": "../assets/images/heroes/skills/braum/05.png",
+          "icon": "../assets/images/heroes/skills/braum_05.png",
           "summary": "震裂地面造成傷害並擊飛敵人，留下冰面持續緩速通過的敵人。"
         }
       ],
@@ -23136,35 +23137,35 @@
           "key": "P",
           "label": "被動",
           "title": "護國意志",
-          "icon": "../assets/images/heroes/skills/galio/01.webp",
+          "icon": "../assets/images/heroes/skills/galio_01.webp",
           "summary": "每隔一段時間強化下一次普攻，造成範圍魔法傷害；技能命中可縮短冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "征戰風暴",
-          "icon": "../assets/images/heroes/skills/galio/02.webp",
+          "icon": "../assets/images/heroes/skills/galio_02.webp",
           "summary": "發射兩道風刃匯聚成旋風，持續對區域內敵人造成魔法傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "杜蘭德之盾",
-          "icon": "../assets/images/heroes/skills/galio/03.webp",
+          "icon": "../assets/images/heroes/skills/galio_03.webp",
           "summary": "被動提供魔法護盾；蓄力時減傷並減速自己，放開後嘲諷附近敵人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "光榮制裁",
-          "icon": "../assets/images/heroes/skills/galio/04.png",
+          "icon": "../assets/images/heroes/skills/galio_04.png",
           "summary": "向後蓄力再向前衝撞，對命中的敵人造成傷害與擊飛。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "英靈之門",
-          "icon": "../assets/images/heroes/skills/galio/05.png",
+          "icon": "../assets/images/heroes/skills/galio_05.png",
           "summary": "選擇友方英雄作為落點，為其提供保護後從天而降，造成範圍傷害與擊飛。"
         }
       ],
@@ -23270,35 +23271,35 @@
           "key": "P",
           "label": "被動",
           "title": "順風而行",
-          "icon": "../assets/images/heroes/skills/janna/01.webp",
+          "icon": "../assets/images/heroes/skills/janna_01.webp",
           "summary": "被動提高自己的跑速，附近朝珍娜移動的友軍也能更快支援。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "颶風呼嘯",
-          "icon": "../assets/images/heroes/skills/janna/02.png",
+          "icon": "../assets/images/heroes/skills/janna_02.png",
           "summary": "召喚逐漸蓄力的龍捲風，再次施放可提早釋放，造成傷害與擊飛。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "和風守護",
-          "icon": "../assets/images/heroes/skills/janna/03.png",
+          "icon": "../assets/images/heroes/skills/janna_03.png",
           "summary": "被動提高跑速；主動對敵人造成魔法傷害與緩速。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "風暴之眼",
-          "icon": "../assets/images/heroes/skills/janna/04.png",
+          "icon": "../assets/images/heroes/skills/janna_04.png",
           "summary": "為友軍英雄或防禦塔提供護盾，並在護盾存在時提高攻擊力。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "復甦季風",
-          "icon": "../assets/images/heroes/skills/janna/05.webp",
+          "icon": "../assets/images/heroes/skills/janna_05.webp",
           "summary": "擊退附近敵人並持續引導季風，治療範圍內友軍。"
         }
       ],
@@ -23404,35 +23405,35 @@
           "key": "P",
           "label": "被動",
           "title": "真言符印",
-          "icon": "../assets/images/heroes/skills/karma/01.webp",
+          "icon": "../assets/images/heroes/skills/karma_01.webp",
           "summary": "施放三次技能後，下個基礎技能會被真言強化，提供更強的傷害、控制或護盾。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "輪迴怒火",
-          "icon": "../assets/images/heroes/skills/karma/02.webp",
+          "icon": "../assets/images/heroes/skills/karma_02.webp",
           "summary": "射出靈能彈，命中後造成範圍魔法傷害與緩速；真言強化後會產生二段爆炸。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "特化鏈結",
-          "icon": "../assets/images/heroes/skills/karma/03.webp",
+          "icon": "../assets/images/heroes/skills/karma_03.webp",
           "summary": "連結目標造成傷害並揭露位置；連線未被拉斷會再次傷害並定身，真言可強化連結。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "靈能啟示",
-          "icon": "../assets/images/heroes/skills/karma/04.webp",
+          "icon": "../assets/images/heroes/skills/karma_04.webp",
           "summary": "為友軍提供護盾與跑速；真言強化可把效果擴散到附近友軍。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "飛昇擁抱",
-          "icon": "../assets/images/heroes/skills/karma/05.webp",
+          "icon": "../assets/images/heroes/skills/karma_05.webp",
           "summary": "在指定區域造成魔法傷害並形成靈能環，短暫延遲後把敵人拉向中心。"
         }
       ],
@@ -23538,35 +23539,35 @@
           "key": "P",
           "label": "被動",
           "title": "烈陽之力",
-          "icon": "../assets/images/heroes/skills/leona/01.webp",
+          "icon": "../assets/images/heroes/skills/leona_01.webp",
           "summary": "傷害性技能會在敵人身上留下太陽之力；友軍攻擊可引爆造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "拂曉盾擊",
-          "icon": "../assets/images/heroes/skills/leona/02.png",
+          "icon": "../assets/images/heroes/skills/leona_02.png",
           "summary": "強化下一次普攻造成額外魔法傷害並暈眩目標。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "日蝕",
-          "icon": "../assets/images/heroes/skills/leona/03.webp",
+          "icon": "../assets/images/heroes/skills/leona_03.webp",
           "summary": "提高雙防，延遲後爆炸造成範圍魔法傷害；命中敵人可延長防禦效果。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "太陽聖劍",
-          "icon": "../assets/images/heroes/skills/leona/04.webp",
+          "icon": "../assets/images/heroes/skills/leona_04.webp",
           "summary": "投出日光劍刃定身最後命中的英雄，並把雷歐娜拉到其身旁。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "日輪聖芒",
-          "icon": "../assets/images/heroes/skills/leona/05.png",
+          "icon": "../assets/images/heroes/skills/leona_05.png",
           "summary": "在指定區域降下太陽能量，中心敵人被暈眩、外圍敵人被緩速。"
         }
       ],
@@ -23672,35 +23673,35 @@
           "key": "P",
           "label": "被動",
           "title": "皮克斯，守護妖精",
-          "icon": "../assets/images/heroes/skills/lulu/01.png",
+          "icon": "../assets/images/heroes/skills/lulu_01.png",
           "summary": "皮克斯會跟隨露璐或被指定的友軍，並協助普攻發射額外魔法彈。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "閃耀雙重奏",
-          "icon": "../assets/images/heroes/skills/lulu/02.png",
+          "icon": "../assets/images/heroes/skills/lulu_02.png",
           "summary": "露璐與皮克斯同時射出魔法彈，造成魔法傷害與緩速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "幻想曲",
-          "icon": "../assets/images/heroes/skills/lulu/03.png",
+          "icon": "../assets/images/heroes/skills/lulu_03.png",
           "summary": "對友軍施放提高攻速與跑速；對敵人施放則將其變形，使其暫時無法攻擊或施法。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "帥啊小皮！",
-          "icon": "../assets/images/heroes/skills/lulu/04.webp",
+          "icon": "../assets/images/heroes/skills/lulu_04.webp",
           "summary": "對友軍提供護盾並讓皮克斯跟隨；對敵人造成魔法傷害並讓皮克斯黏附、提供視野。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "究極鍊化",
-          "icon": "../assets/images/heroes/skills/lulu/05.png",
+          "icon": "../assets/images/heroes/skills/lulu_05.png",
           "summary": "使友軍英雄巨大化，獲得大量額外生命並擊飛周圍敵人，之後持續緩速附近敵人。"
         }
       ],
@@ -23806,35 +23807,35 @@
           "key": "P",
           "label": "被動",
           "title": "光芒四射",
-          "icon": "../assets/images/heroes/skills/lux/01.webp",
+          "icon": "../assets/images/heroes/skills/lux_01.webp",
           "summary": "傷害技能會標記敵人；下一次普攻引爆標記造成額外魔法傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "光明束縛",
-          "icon": "../assets/images/heroes/skills/lux/02.webp",
+          "icon": "../assets/images/heroes/skills/lux_02.webp",
           "summary": "發射光球束縛並傷害最多兩個敵人。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "稜光障壁",
-          "icon": "../assets/images/heroes/skills/lux/03.png",
+          "icon": "../assets/images/heroes/skills/lux_03.png",
           "summary": "丟出光杖，去程與回程都能為碰到的友軍提供護盾。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "光明異點",
-          "icon": "../assets/images/heroes/skills/lux/04.webp",
+          "icon": "../assets/images/heroes/skills/lux_04.webp",
           "summary": "創造光區造成緩速並提供視野，可再次施放引爆造成魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "終極閃光",
-          "icon": "../assets/images/heroes/skills/lux/05.webp",
+          "icon": "../assets/images/heroes/skills/lux_05.webp",
           "summary": "短暫蓄力後發射超遠距光束，對直線所有敵人造成大量魔法傷害並觸發被動標記。"
         }
       ],
@@ -23917,35 +23918,35 @@
           "key": "P",
           "label": "被動",
           "title": "花崗岩護盾",
-          "icon": "../assets/images/heroes/skills/malphite/01.png",
+          "icon": "../assets/images/heroes/skills/malphite_01.png",
           "summary": "一段時間未受傷後獲得依最大生命計算的護盾。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "地震碎片",
-          "icon": "../assets/images/heroes/skills/malphite/02.png",
+          "icon": "../assets/images/heroes/skills/malphite_02.png",
           "summary": "投出岩石造成魔法傷害與緩速，並偷取目標部分跑速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "震雷之擊",
-          "icon": "../assets/images/heroes/skills/malphite/03.png",
+          "icon": "../assets/images/heroes/skills/malphite_03.png",
           "summary": "被動提高物防；主動強化普攻並讓接下來數次普攻造成錐形範圍傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "大地震顫",
-          "icon": "../assets/images/heroes/skills/malphite/04.png",
+          "icon": "../assets/images/heroes/skills/malphite_04.png",
           "summary": "重擊地面造成魔法傷害並降低敵人攻速，物防越高傷害越高。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "勢不可擋",
-          "icon": "../assets/images/heroes/skills/malphite/05.png",
+          "icon": "../assets/images/heroes/skills/malphite_05.png",
           "summary": "以不可阻擋狀態衝向指定區域，造成大量魔法傷害並擊飛所有命中的敵人。"
         }
       ],
@@ -24052,35 +24053,35 @@
           "key": "P",
           "label": "被動",
           "title": "魔法樹液",
-          "icon": "../assets/images/heroes/skills/maokai/01.png",
+          "icon": "../assets/images/heroes/skills/maokai_01.png",
           "summary": "普攻週期性造成額外魔法傷害並治療自身；施法或被敵方技能命中會縮短冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "荊棘摧殘",
-          "icon": "../assets/images/heroes/skills/maokai/02.png",
+          "icon": "../assets/images/heroes/skills/maokai_02.png",
           "summary": "釋放震波造成魔法傷害、緩速並把近身敵人擊退。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "飛葉遁影",
-          "icon": "../assets/images/heroes/skills/maokai/03.png",
+          "icon": "../assets/images/heroes/skills/maokai_03.png",
           "summary": "化為扭曲根鬚衝向指定敵人，期間不可被選取，抵達後將其定身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "扭曲樹精",
-          "icon": "../assets/images/heroes/skills/maokai/04.png",
+          "icon": "../assets/images/heroes/skills/maokai_04.png",
           "summary": "丟出樹苗在地面守候，發現敵人後追擊並爆炸；草叢中的樹苗傷害與持續時間更強。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "詭林之握",
-          "icon": "../assets/images/heroes/skills/maokai/05.png",
+          "icon": "../assets/images/heroes/skills/maokai_05.png",
           "summary": "召喚多排巨大根鬚向前推進，命中敵方英雄會造成傷害與長時間定身。"
         }
       ],
@@ -24210,35 +24211,35 @@
           "key": "P",
           "label": "被動",
           "title": "爐火餘溫",
-          "icon": "../assets/images/heroes/skills/milio/01.webp",
+          "icon": "../assets/images/heroes/skills/milio_01.webp",
           "summary": "技能碰到友軍後會強化其下一次普攻或技能，造成額外爆發並點燃敵人。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "究極火焰球",
-          "icon": "../assets/images/heroes/skills/milio/02.webp",
+          "icon": "../assets/images/heroes/skills/milio_02.webp",
           "summary": "踢出火焰球擊退第一個敵人，之後彈向目標區域造成範圍傷害與緩速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "舒適營火",
-          "icon": "../assets/images/heroes/skills/milio/03.png",
+          "icon": "../assets/images/heroes/skills/milio_03.png",
           "summary": "召喚會跟隨友軍的營火，持續治療範圍內隊友並提高其普攻距離。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "溫暖擁抱",
-          "icon": "../assets/images/heroes/skills/milio/04.webp",
+          "icon": "../assets/images/heroes/skills/milio_04.webp",
           "summary": "為友軍提供護盾與跑速，可儲存充能，適合保排與追擊。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "賦生燄息",
-          "icon": "../assets/images/heroes/skills/milio/05.webp",
+          "icon": "../assets/images/heroes/skills/milio_05.webp",
           "summary": "釋放淨化火焰，治療附近友軍並移除多數控制效果，同時提高韌性。"
         }
       ],
@@ -24321,35 +24322,35 @@
           "key": "P",
           "label": "被動",
           "title": "靈魂虹吸",
-          "icon": "../assets/images/heroes/skills/morgana/01.webp",
+          "icon": "../assets/images/heroes/skills/morgana_01.webp",
           "summary": "對英雄、大型士兵與中大型野怪造成技能傷害時會回復自身生命。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗影禁錮",
-          "icon": "../assets/images/heroes/skills/morgana/02.webp",
+          "icon": "../assets/images/heroes/skills/morgana_02.webp",
           "summary": "射出黑暗能量，命中第一個敵人造成魔法傷害並長時間禁錮。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "痛苦腐蝕",
-          "icon": "../assets/images/heroes/skills/morgana/03.png",
+          "icon": "../assets/images/heroes/skills/morgana_03.png",
           "summary": "詛咒指定區域持續造成魔法傷害，目標生命越低傷害越高；被動治療可縮短其冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑暗之盾",
-          "icon": "../assets/images/heroes/skills/morgana/04.webp",
+          "icon": "../assets/images/heroes/skills/morgana_04.webp",
           "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害並在護盾存在時免疫多數控制。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靈魂枷鎖",
-          "icon": "../assets/images/heroes/skills/morgana/05.webp",
+          "icon": "../assets/images/heroes/skills/morgana_05.webp",
           "summary": "以鎖鏈連結附近敵方英雄造成傷害與緩速；未掙脫者在延遲後再次受傷並被暈眩。"
         }
       ],
@@ -26558,35 +26559,35 @@
           "key": "P",
           "label": "被動",
           "title": "雙重打擊",
-          "icon": "../assets/images/heroes/skills/master-yi/01.png",
+          "icon": "../assets/images/heroes/skills/master-yi_01.png",
           "summary": "連續普攻數次後，下一次攻擊會額外打擊一次，能快速觸發普攻特效。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "先聲奪人",
-          "icon": "../assets/images/heroes/skills/master-yi/02.png",
+          "icon": "../assets/images/heroes/skills/master-yi_02.png",
           "summary": "進入不可被選取狀態並在多個敵人間快速斬擊；普攻可縮短冷卻，且能暴擊。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "冥想",
-          "icon": "../assets/images/heroes/skills/master-yi/03.png",
+          "icon": "../assets/images/heroes/skills/master-yi_03.png",
           "summary": "持續冥想回復生命並大幅減少受到的傷害，最初瞬間減傷最高。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "無極劍道",
-          "icon": "../assets/images/heroes/skills/master-yi/04.webp",
+          "icon": "../assets/images/heroes/skills/master-yi_04.webp",
           "summary": "被動提高物攻；主動讓普攻在短時間附加真實傷害並重置普攻。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "高原血統",
-          "icon": "../assets/images/heroes/skills/master-yi/05.png",
+          "icon": "../assets/images/heroes/skills/master-yi_05.png",
           "summary": "免疫緩速並大幅提高跑速與攻速；參與擊殺會延長持續時間並縮短其他技能冷卻。"
         }
       ],
