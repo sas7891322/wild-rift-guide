@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v68-duo-fourth-batch-23-of-23",
+  "version": "7.2a-v69-support-thresh-master-template-1-of-32",
   "updated": "2026-07-29",
   "schemaVersion": 2,
   "roleSource": "heroCatalog",
@@ -135,7 +135,8 @@
     "v63：英雄定位系統重構。全站定位、搜尋、路線列表與英雄頁切換改由 heroCatalog 單一來源控制；移除已取消的菲歐拉、伊瑞莉雅、辛吉德打野舊攻略入口。",
     "v64：完成飛龍路吉茵珂絲正式版並固定為飛龍路母版；補齊起手裝、核心三件、五件成裝、三級鞋路線、召喚師技能、完整技能加點、三組連招、對局與前中後期策略。飛龍路正式攻略進度更新為 1/23。",
     "v67：完成飛龍路第三批 5 位：寇格魔、凱特琳、史矛德、尤娜拉、崔絲塔娜；補齊正式母版欄位並校正官方技能名稱與史矛德 25／100／175 層進化門檻。飛龍路正式攻略進度更新為 18/23。",
-    "v68：完成飛龍路第四批 5 位：圖奇、達瑞文、煞蜜拉、姍娜、克黎思妲；補齊正式母版欄位並校正 Riot 台灣官方技能名稱與姍娜 7.2a 調整。飛龍路正式攻略進度更新為 23/23，全數完成。"
+    "v68：完成飛龍路第四批 5 位：圖奇、達瑞文、煞蜜拉、姍娜、克黎思妲；補齊正式母版欄位並校正 Riot 台灣官方技能名稱與姍娜 7.2a 調整。飛龍路正式攻略進度更新為 23/23，全數完成。",
+    "v69：完成輔助路瑟雷西正式版並固定為輔助路母版；補齊聖物之盾起手、核心三件、五件成裝、鞋子升級、符文、召喚師技能、Lv.1～15 加點、三組連招、靈魂／燈籠機制、對局與前中後期策略。輔助路正式攻略進度更新為 1/32。"
   ],
   "heroes": [
     {
@@ -38858,11 +38859,12 @@
       "roleId": "support",
       "role": "輔助",
       "tier": "S+",
-      "position": "抓人遊走／先手控制",
+      "position": "抓人開戰／燈籠救援型坦輔",
       "tags": [
-        "抓人",
-        "遊走",
-        "控制"
+        "鉤鎖抓人",
+        "燈籠救援",
+        "開戰保排",
+        "靈魂成長"
       ],
       "ratings": {
         "單排推薦": 5,
@@ -38874,39 +38876,39 @@
       },
       "runes": [
         "glacial-augment",
-        "hextech-flashtraption",
+        "courage-of-colossus",
         "bone-plating",
-        "relentless-hunter",
-        "courage-of-colossus"
+        "perseverance",
+        "hextech-flashtraption"
       ],
       "items": [
+        "defense-high-09",
         "defense-high-05",
-        "defense-high-20",
-        "support-high-03",
-        "defense-high-15",
-        "defense-high-09"
+        "defense-high-14",
+        "defense-high-16",
+        "defense-high-15"
       ],
       "boots": [
-        "ionian-boots",
+        "plated-steelcaps",
         "armored-warboots"
       ],
       "spells": [
         "flash",
         "ignite"
       ],
-      "skillOrder": "Q > E > W",
+      "skillOrder": "E > Q > W",
       "skillSequence": [
-        "Q",
         "E",
+        "Q",
         "W",
-        "Q",
-        "R",
-        "Q",
-        "Q",
         "E",
         "R",
         "E",
         "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
         "W",
         "R",
         "W",
@@ -38916,7 +38918,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
@@ -38925,58 +38927,170 @@
           "米里歐"
         ],
         "bad": [
-          "魔甘娜",
-          "布郎姆",
-          "珍娜"
+          "枷蘿",
+          "娜米",
+          "拉克絲"
         ],
-        "ban": "魔甘娜"
+        "ban": "枷蘿"
       },
       "playstyle": {
-        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
-        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
-        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+        "前期": "一級先點懾魂掃蕩，利用強化普攻與拉近／擊退效果爭奪草叢和兵線主動權。二級取得死亡宣告後，不要在士兵正面硬鉤；先用走位、草叢或懾魂掃蕩逼出位移，再出鉤命中率更高。鬼影燈籠既能救射手，也能先丟向後方接打野進場；沒有視野時不要為撿一顆靈魂走進危險區。",
+        "中期": "聖物之盾完成任務後，跟著打野與主力搶河道和物件區視野。海克斯閃現可從牆後或草叢改變進場角度；死亡宣告命中後先判斷隊友能否跟上，再決定是否二段飛入。燈籠應提前放在隊友撤退路線，或放在自己身後讓打野快速接戰，不要等隊友已被控制才丟。",
+        "後期": "團戰可依陣容選擇先手或保排。敵方後排站位失誤時用鉤鎖抓單；敵方刺客較強時則留懾魂掃蕩與惡靈領域保護主力。不要因鉤中前排就固定飛入，先看敵方控制與隊友距離；靈魂提供的永久物防與魔攻會持續提高坦度、護盾和技能傷害，但站位與燈籠時機仍比盲目進場更重要。"
       },
-      "summary": "利用草叢、視野差與遊走創造先手機會，不必每波都硬開；命中關鍵控制後快速集火，沒角度就優先做視野。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "瑟雷西同時具備抓人、開戰、保排與救援能力。先用懾魂掃蕩控制距離，再以死亡宣告抓住關鍵目標；鬼影燈籠的提前落點與是否二段進場，是判斷瑟雷西熟練度的核心。",
+      "sourceNote": "7.2a 輔助路瑟雷西正式母版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》瑟雷西英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有輔助路評級。｜v69：瑟雷西固定為輔助路英雄正式母版。",
       "avatar": "../assets/images/heroes/portraits/thresh.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "靈魂饗宴",
+          "icon": "../assets/images/heroes/skills/thresh_01.png",
+          "summary": "附近敵軍陣亡時可能掉落靈魂；收集後永久提高物理防禦與魔法攻擊。瑟雷西不會隨等級自然獲得物理防禦，因此安全收魂是成長坦度的重要來源。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/thresh_01.png",
-          "summary": "主要抓人技能，命中率直接影響開戰品質。"
+          "title": "死亡宣告",
+          "icon": "../assets/images/heroes/skills/thresh_02.webp",
+          "summary": "投出鎖鏈暈眩並持續拉扯第一個命中的敵人，同時揭露其視野；再次施放可讓瑟雷西飛向目標。命中敵人會縮短技能冷卻，但二段進場前仍要確認隊友距離與敵方控制。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/thresh_02.webp",
-          "summary": "機動或第二控制技能。"
+          "title": "鬼影燈籠",
+          "icon": "../assets/images/heroes/skills/thresh_03.png",
+          "summary": "將燈籠丟到指定位置，替自己與第一位靠近的友軍提供護盾；友軍可點擊士兵鍵衝向瑟雷西。可用於救援、接應打野、跨牆撤退或替遠處隊友提供護盾。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/thresh_03.png",
-          "summary": "補充限制／保護效果。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "懾魂掃蕩",
           "icon": "../assets/images/heroes/skills/thresh_04.webp",
-          "summary": "團戰先手或收割大招。"
+          "summary": "被動使下一次普攻依等待時間造成額外魔法傷害；主動揮動鎖鏈，依施放方向將敵人拉近或擊退並造成緩速。可打斷位移、把目標掃回隊伍，或推開突進者保護後排。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/thresh_05.png"
+          "label": "4 技",
+          "title": "惡靈領域",
+          "icon": "../assets/images/heroes/skills/thresh_05.png",
+          "summary": "在身旁建立幽魂牆壁；敵方英雄撞上牆壁時會受到魔法傷害與極高緩速。第一面牆破裂後，其餘牆壁效果降低，適合配合鉤鎖與掃蕩形成長時間控制鏈。"
         }
       ],
-      "mechanics": []
+      "mechanics": [
+        {
+          "title": "安全收集靈魂",
+          "text": "靈魂永久提高物理防禦與魔法攻擊，但撿魂前要先看敵方控制、草叢與打野位置；無法安全取得時可以放棄。"
+        },
+        {
+          "title": "燈籠提前落點",
+          "text": "燈籠不是只在隊友殘血時使用。提前放在撤退路線或打野腳下，能同時提供護盾、位移與突然進場角度。"
+        },
+        {
+          "title": "適合搭配射手",
+          "text": "凱莎、達瑞文、煞蜜拉等能快速接續控制或爆發的射手很適合搭配；吉茵珂絲也能利用瑟雷西控制安全輸出並觸發收割。"
+        }
+      ],
+      "starterItems": [
+        "support-relic-shield"
+      ],
+      "coreItems": [
+        "defense-high-09",
+        "defense-high-05",
+        "defense-high-14"
+      ],
+      "combos": [
+        {
+          "name": "掃回接鉤基礎抓人",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技拉回緩速"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技近距離命中"
+            },
+            {
+              "key": "Q",
+              "label": "視情況二段進場"
+            },
+            {
+              "key": "R",
+              "label": "4技封鎖退路"
+            }
+          ],
+          "note": "先用懾魂掃蕩拉近並緩速，能大幅提高死亡宣告命中率。鉤中後不要自動二段飛入，確認隊友能跟上且敵方關鍵控制不在，再接大絕封路。"
+        },
+        {
+          "name": "閃現掃回強開",
+          "steps": [
+            {
+              "key": "FLASH",
+              "label": "閃現貼近"
+            },
+            {
+              "key": "E",
+              "label": "3技掃回目標"
+            },
+            {
+              "key": "R",
+              "label": "4技建立牆壁"
+            },
+            {
+              "key": "Q",
+              "label": "1技控制接續"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃壓低回復"
+            }
+          ],
+          "note": "閃現後立即反向施放懾魂掃蕩，把目標掃向隊友；大絕先封住退路，再以近距離死亡宣告延長控制。這套適合抓沒有位移或已交閃現的後排。"
+        },
+        {
+          "name": "燈籠接隊友進場",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技向後丟燈籠"
+            },
+            {
+              "key": "Q",
+              "label": "1技命中目標"
+            },
+            {
+              "key": "Q",
+              "label": "二段飛入"
+            },
+            {
+              "key": "E",
+              "label": "3技掃回或擊退"
+            },
+            {
+              "key": "R",
+              "label": "4技封鎖戰場"
+            }
+          ],
+          "note": "先把燈籠丟給牆後或視野外的打野，再用鉤鎖命中並二段進場；隊友點燈籠跟上後，可形成突然的多打少。燈籠要先放，避免自己飛入後才發現隊友無法接戰。"
+        }
+      ],
+      "mechanicsTitle": "靈魂、燈籠與進場判斷",
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "support-thresh-master-template-v69",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "supportMasterTemplate": "thresh-v69",
+      "isSupportMasterTemplate": true
     },
     {
       "id": "veigar-support",
@@ -43950,9 +44064,15 @@
       "nativeCount": 32,
       "crossCount": 0,
       "avatarComplete": true,
-      "detailComplete": true,
+      "detailComplete": false,
       "portraitMode": "shared",
-      "verification": "依使用者提供的遊戲內位置篩選截圖完成原生英雄名單與頭像核對"
+      "verification": "依使用者提供的遊戲內輔助定位三張截圖確認 32 位；v69 完成瑟雷西固定母版，正式攻略進度 1/32。",
+      "detailCompletedCount": 1,
+      "detailTotalCount": 32,
+      "detailProgress": "1/32",
+      "detailVersion": "v69-thresh-master-template-1-of-32-7.2a",
+      "roleAuditVersion": "v69",
+      "roleAuditStatus": "passed"
     }
   },
   "roleAudit": {
@@ -43972,7 +44092,8 @@
       "baron": 49,
       "jungle": 50,
       "mid": 46,
-      "duo": 23
+      "duo": 23,
+      "support": 1
     },
     "removedLegacyProfiles": [
       "fiora-jungle",
