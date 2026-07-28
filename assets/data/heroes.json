@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v54-jungle-third10-formal",
+  "version": "7.2a-v55-jungle-fourth10-formal",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -115,7 +115,8 @@
     "v51：完成李星打野正式版；套用犽凝固定母版，更新 7.2a 出裝、符文、技能加點、三組連招、對局與實戰節奏。其餘英雄資料未修改。",
     "v52：完成打野第一批 10/50 正式版。李星維持固定打野母版；新增完成菲艾、趙信、嘉文四世、潘森、葛雷夫、維爾戈、弗力貝爾、沃維克、夜曲。只更新英雄資料與打野 Tier，未修改版型、CSS、JS 或其他英雄攻略。",
     "v53：完成打野第二批 20/50 正式版。新增完成卡力斯、雷葛爾、伊芙琳、艾克、悟空、黛安娜、阿姆姆、努努和威朗普、茂凱、慎；全數套用李星固定打野母版。慎新增獨立打野攻略檔，不影響巴龍路慎。",
-    "v54：完成打野第三批 30/50 正式版。新增完成納帝魯斯、希瓦娜、赫克林、塔莉雅、費德提克、奈德麗、安比薩、慨影、拉姆斯、莉莉亞；全數套用李星固定打野母版。納帝魯斯新增獨立打野攻略，不影響輔助版本。"
+    "v54：完成打野第三批 30/50 正式版。新增完成納帝魯斯、希瓦娜、赫克林、塔莉雅、費德提克、奈德麗、安比薩、慨影、拉姆斯、莉莉亞；全數套用李星固定打野母版。納帝魯斯新增獨立打野攻略，不影響輔助版本。",
+    "v55：完成打野第四批 40/50 正式版。新增完成關、劫、卡蜜兒、厄薩斯、史加納、塔隆、易大師、歐拉夫、波比、泰達米爾；全數套用李星固定打野母版。"
   ],
   "heroes": [
     {
@@ -13771,19 +13772,19 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "吸血鬥士／甜蜜點控制／持續會戰",
       "tags": [
-        "換血",
         "續航",
+        "擊飛",
         "側翼"
       ],
       "ratings": {
         "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 2,
+        "操作難度": 4,
         "Blind Pick": 3,
         "前期節奏": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
         "conqueror",
@@ -13793,12 +13794,11 @@
         "sudden-impact"
       ],
       "items": [
-        "physical-high-21",
+        "physical-high-36",
         "physical-high-38",
         "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-27",
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -13823,12 +13823,12 @@
         "ban": "鏡爪"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "用三段一技的甜蜜點同時提高清野速度與續航，三技可在施放一技時修正位置。第一輪後優先支援狹窄河道與有控制的路線，二技命中後更容易接完整三段擊飛。",
+        "中期": "兩件裝後圍繞預示者與飛龍主動打小規模戰。大絕提供跑速與治療增幅，應在正式接戰前開啟，從側翼連續命中甜蜜點切割陣型。",
+        "後期": "避免正面吃滿第一輪硬控；等待隊友開戰後第二時間進場。只要一技外圈持續命中，就能靠回血與擊飛拖長團戰。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "三段一技兼具清野、擊飛與吸血，狹窄地形的小規模戰非常強；操作重點是用三技修正甜蜜點，而不是只靠技能貼臉硬打。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/aatrox.webp",
       "abilities": [
         {
@@ -13893,10 +13893,108 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
+      "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "combos": [
+        {
+          "name": "對線短換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技外圈"
+            },
+            {
+              "key": "E",
+              "label": "3技調位"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "二段外圈"
+            },
+            {
+              "key": "Q",
+              "label": "三段中心"
+            }
+          ],
+          "note": "先用一技甜蜜點消耗，再以三技修正第二、三段落點；二技命中後更容易讓後續擊飛完整命中。"
+        },
+        {
+          "name": "開大持續追擊",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "一段外圈"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "二段外圈"
+            },
+            {
+              "key": "Q",
+              "label": "三段中心"
+            }
+          ],
+          "note": "大絕開啟後利用跑速與三技貼近，連續命中甜蜜點維持回血與控制。"
+        },
+        {
+          "name": "側翼團戰進場",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "一段外圈"
+            },
+            {
+              "key": "E",
+              "label": "3技調位"
+            },
+            {
+              "key": "Q",
+              "label": "二段外圈"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "三段中心"
+            }
+          ],
+          "note": "從側面先以二技限制走位，再用三段一技切割後排，不要正面吃完第一輪控制。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-36",
+        "physical-high-38",
+        "physical-high-42"
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true
     },
     {
       "id": "ambessa-jungle",
@@ -14354,11 +14452,11 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "機動鬥士／牆鉤 Gank／單點封鎖",
       "tags": [
-        "換血",
-        "續航",
-        "側翼"
+        "突進",
+        "真實傷害",
+        "單抓"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -14380,8 +14478,7 @@
         "physical-high-38",
         "physical-high-42",
         "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -14406,12 +14503,12 @@
         "ban": "鏡爪"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "清野時利用一技重置普攻並等待二段真實傷害，三技盡量留給跨牆 Gank 或逃離入侵。選擇靠牆且隊友有控制的路線，成功率遠高於從河道直線進場。",
+        "中期": "三相之力成形後單抓與小規模戰鬥最強。物件前可用牆鉤從側翼進場，再用大絕封鎖敵方核心位移，讓隊友集中火力。",
+        "後期": "不要把自己當成主坦；先在側翼等待核心目標露出，再用三技和大絕隔離。若無法切後排，就用大絕躲關鍵技能並限制敵方刺客。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "牆體附近擁有極長的突進與強力單點封鎖，二段一技可打出高額真實傷害；需要精準選擇 Gank 角度與進場時間。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/camille.webp",
       "abilities": [
         {
@@ -14476,10 +14573,108 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
+      "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "combos": [
+        {
+          "name": "牆鉤換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "一段3技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "W",
+              "label": "2技外圈"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "鉤牆暈眩後穿插一段一技，退開時用二技外圈回血，再回身打出真實傷害。"
+        },
+        {
+          "name": "大絕單抓",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "先用三技逼位移，再以大絕封鎖逃生路線，等待二段一技完成主要爆發。"
+        },
+        {
+          "name": "蓄二段進場",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "一段1技"
+            },
+            {
+              "key": "E",
+              "label": "一段3技"
+            },
+            {
+              "key": "E",
+              "label": "二段3技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "二段1技"
+            }
+          ],
+          "note": "先對小兵打出一段一技，再利用牆鉤進場，確保二段一技能快速打到核心目標。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-21",
+        "physical-high-38",
+        "physical-high-42"
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true
     },
     {
       "id": "darius-jungle",
@@ -16272,18 +16467,18 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "S",
-      "position": "法系輸出／範圍控制／野區節奏",
+      "position": "法系鬥士／百分比傷害／物件戰",
       "tags": [
-        "消耗",
-        "法術爆發",
-        "團戰"
+        "持續輸出",
+        "免疫區",
+        "切坦"
       ],
       "ratings": {
         "單排推薦": 5,
         "新手推薦": 3,
         "操作難度": 3,
         "Blind Pick": 4,
-        "前期節奏": 5,
+        "前期節奏": 3,
         "團戰影響力": 5
       },
       "runes": [
@@ -16298,8 +16493,7 @@
         "magic-high-20",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05",
-        "magic-high-16"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -16324,12 +16518,12 @@
         "ban": "菲艾"
       },
       "playstyle": {
-        "前期": "優先安全升到核心技能等級，清野途中利用視野判斷反蹲與河蟹爭奪。",
-        "中期": "靠技能爆發／範圍傷害掌控物件區，進場前先逼掉敵方位移與保命技。",
-        "後期": "站位比追擊更重要，先輸出前排與物件區，再找機會處理後排。"
+        "前期": "清野時先用普攻疊滿一技層數，再用中心線命中大型野怪；三技提供位移與攻速，但在河道資訊不足時不要隨意交掉。前期以完整清野和反蹲為主，避開強勢物理打野的正面入侵。",
+        "中期": "峽谷製造者與納什之牙成形後，單打物件與持續戰能力明顯提升。物件團先用大絕減速，聖霧放在敵方遠程核心的攻擊範圍邊緣，讓自己能安全輸出前排。",
+        "後期": "不要第一時間越過前排追後排；先靠百分比傷害疊征服者，再用三技與後續大絕追擊。聖霧的位置與移動時機決定能否持續輸出。"
       },
-      "summary": "打野以消耗與法術爆發為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "以普攻疊層、中心剪擊與百分比魔傷快速清野和切坦；裝備成形後物件戰與長時間團戰非常強，但前期需避免被強勢打野打亂節奏。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/gwen.webp",
       "abilities": [
         {
@@ -16394,10 +16588,100 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
+      "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "combos": [
+        {
+          "name": "剪刀短換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技中心"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先用三技獲得攻速並疊剪刀層數，再讓一技中心線命中目標。"
+        },
+        {
+          "name": "大絕追擊",
+          "steps": [
+            {
+              "key": "R",
+              "label": "一段4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "二段4技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "三段4技"
+            }
+          ],
+          "note": "第一段大絕減速後貼近，技能與普攻間穿插後續飛針，維持被動傷害。"
+        },
+        {
+          "name": "聖霧團戰",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "在聖霧邊緣作戰，逼迫遠程敵人進入範圍，再集中攻擊前排或落單目標。"
+        }
+      ],
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-23",
+        "magic-high-20",
+        "magic-high-14"
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true
     },
     {
       "id": "hecarim-jungle",
@@ -19285,18 +19569,18 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "鬥士／持續作戰／野區節奏",
+      "position": "免控鬥士／殘血續戰／正面衝陣",
       "tags": [
-        "換血",
+        "免控",
         "續航",
-        "側翼"
+        "追擊"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 3,
-        "前期節奏": 4,
+        "Blind Pick": 4,
+        "前期節奏": 5,
         "團戰影響力": 4
       },
       "runes": [
@@ -19311,8 +19595,7 @@
         "physical-high-38",
         "physical-high-42",
         "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -19337,48 +19620,48 @@
         "ban": "鏡爪"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "利用低生命時提升攻速與撿斧縮短冷卻快速清野，河道正面單挑很強。Gank 時先用一技減速並沿斧頭落點追擊，不要為撿斧走入敵方多人包夾。",
+        "中期": "物件團是主要強勢期。大絕免疫控制後直衝敵方輸出位，但開啟後會失去部分防禦，因此要先確認隊友能跟上，並用二技維持續航。",
+        "後期": "後期仍以正面逼迫後排為主，但不必每次都追到底；若敵方核心拉開過遠，轉身配合隊友處理前排與物件更穩定。"
       },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "前期野區單挑與物件戰極強，大絕能免疫控制直衝後排；持續撿斧和普攻可延長追擊，但錯估進場距離時容易被集火。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/olaf.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "狂戰之怒",
           "icon": "../assets/images/heroes/skills/olaf_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "生命越低攻速越高，使歐拉夫在殘血正面作戰時仍能維持極強輸出。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "逆流投擲",
           "icon": "../assets/images/heroes/skills/olaf_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "投擲戰斧造成傷害與緩速；撿回戰斧可大幅縮短冷卻，形成持續追擊循環。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "殘暴打擊",
           "icon": "../assets/images/heroes/skills/olaf_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "短時間提升攻速與續航能力，配合低血量被動能在長戰中快速回復。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "魯莽揮擊",
           "icon": "../assets/images/heroes/skills/olaf_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "對單一目標造成高額真實傷害，普攻會協助縮短冷卻，是近身換血的重要技能。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "諸神黃昏",
           "icon": "../assets/images/heroes/skills/olaf_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "主動期間免疫控制並獲得追擊能力，適合正面穿過前排直衝後排。"
         }
       ],
       "skillSequence": [
@@ -19402,10 +19685,101 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "combos": [
+        {
+          "name": "撿斧追擊",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "撿回再投"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "戰斧命中後沿著斧頭方向追擊，撿回可縮短冷卻，持續穿插真實傷害。"
+        },
+        {
+          "name": "殘血長打",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            }
+          ],
+          "note": "生命降低時開二技放大攻速與續航，保持普攻來縮短三技冷卻。"
+        },
+        {
+          "name": "免控切後排",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "確認敵方控制即將命中時開大，直線追擊後排並持續撿斧。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-21",
+        "physical-high-38",
+        "physical-high-42"
+      ],
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-fourth10-v55",
+      "abilityNamesVerified": "Riot TW"
     },
     {
       "id": "pantheon-jungle",
@@ -19631,19 +20005,19 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "坦克／前排／野區節奏",
+      "position": "反位移坦克／壁咚控制／拆分團戰",
       "tags": [
-        "承傷",
-        "開戰",
-        "控制"
+        "反突進",
+        "控制",
+        "保排"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 3,
+        "Blind Pick": 4,
         "前期節奏": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
         "glacial-augment",
@@ -19657,8 +20031,7 @@
         "defense-high-11",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-15"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -19683,48 +20056,48 @@
         "ban": "莉莉亞"
       },
       "playstyle": {
-        "前期": "先確保第一輪清野穩定，觀察有控制鏈的線路再出手，不必為低成功率 Gank 犧牲等級。",
-        "中期": "以飛龍、預示者與敵方閃現時間為核心規劃路線，先到物件區卡視野。",
-        "後期": "負責第一波開戰或保排，重擊留給關鍵物件，避免追擊過深讓後排失去前排。"
+        "前期": "一技兩段傷害能穩定清野，Gank 前先確認敵人與牆面的角度；三技只有撞牆才有完整控制。面對李星、卡蜜兒等位移英雄時，二技可用來反入侵和保護隊友。",
+        "中期": "物件區牆體密集，是波比最強的戰場。先用二技封鎖位移，再以三技壁咚；若敵方打野站位失誤，可蓄力大絕把他擊離物件區。",
+        "後期": "依敵方威脅選擇保排或開戰。對面刺客強時留在後排附近開二技；需要創造多打少時，蓄力大絕先移走前排再集中處理剩餘目標。"
       },
-      "summary": "打野以承傷與開戰為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "二技能直接封鎖突進，三技在牆邊提供長時間控制，大絕還能把敵人擊離物件區；對位移陣容特別強，進場角度則高度依賴地形。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/poppy.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "鋼鐵使者",
           "icon": "../assets/images/heroes/skills/poppy_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "定期把圓盾當作遠程普攻投出；撿回圓盾可獲得護盾，適合安全換血。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "戰鎚衝擊",
           "icon": "../assets/images/heroes/skills/poppy_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "重擊地面造成傷害與緩速，短暫延遲後再次爆炸，貼牆或控制後更容易吃滿。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "堅定不移",
           "icon": "../assets/images/heroes/skills/poppy_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "被動提升雙防；主動加速並阻止附近敵人衝刺，成功攔截後會緩速與束縛。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "英勇衝鋒",
           "icon": "../assets/images/heroes/skills/poppy_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "推動敵人前進，若撞上牆體會造成額外傷害與暈眩。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "守護者裁決",
           "icon": "../assets/images/heroes/skills/poppy_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "短按可快速擊飛，蓄力則把敵人遠距擊退，能拆散陣型或移走敵方打野。"
         }
       ],
       "skillSequence": [
@@ -19748,10 +20121,85 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "combos": [
+        {
+          "name": "壁咚爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技撞牆"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "短按4技"
+            }
+          ],
+          "note": "確認牆面角度後用三技暈眩，讓一技兩段都命中，必要時短按大絕補控制。"
+        },
+        {
+          "name": "反位移保排",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "敵方突進時開二技攔截，接三技把目標推離後排，再用一技緩速。"
+        },
+        {
+          "name": "蓄力拆團",
+          "steps": [
+            {
+              "key": "R",
+              "label": "蓄力4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "蓄力大絕先移走前排或打野，再壁咚剩餘目標，創造多打少。"
+        }
+      ],
+      "starterItems": [
+        "basic-glowing-spark"
+      ],
+      "coreItems": [
+        "defense-high-06",
+        "defense-high-11",
+        "defense-high-08"
+      ],
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-fourth10-v55",
+      "abilityNamesVerified": "Riot TW"
     },
     {
       "id": "rammus-jungle",
@@ -20677,19 +21125,19 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "坦克／前排／野區節奏",
+      "position": "坦克開戰／穿牆抓取／多人壓制",
       "tags": [
+        "控制",
         "承傷",
-        "開戰",
-        "控制"
+        "強開"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 3,
+        "Blind Pick": 4,
         "前期節奏": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
         "glacial-augment",
@@ -20703,8 +21151,7 @@
         "defense-high-11",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-15"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -20729,48 +21176,48 @@
         "ban": "莉莉亞"
       },
       "playstyle": {
-        "前期": "先確保第一輪清野穩定，觀察有控制鏈的線路再出手，不必為低成功率 Gank 犧牲等級。",
-        "中期": "以飛龍、預示者與敵方閃現時間為核心規劃路線，先到物件區卡視野。",
-        "後期": "負責第一波開戰或保排，重擊留給關鍵物件，避免追擊過深讓後排失去前排。"
+        "前期": "一技強化普攻與投石是主要清野工具，二技護盾可降低損血。Gank 優先從牆體使用三技穿越地形，抓住敵人後撞牆，正面從河道走入通常較難成功。",
+        "中期": "7.2a 強化後，護盾、三技冷卻與一技最大生命傷害都更適合持續小規模戰。物件前先卡住側翼牆體，找三技或大絕拖回關鍵目標的角度。",
+        "後期": "依陣容選擇強開或保排。大絕能壓制多個目標，但蓄力與角度容易被看穿；有時先用三技撞牆再接大絕更穩定。"
       },
-      "summary": "打野以承傷與開戰為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "利用地形穿越與撞牆控制建立獨特 Gank 角度，大絕可拖走多名敵人重塑團戰；裝備以生命與雙防為主，越到中後期越能承擔前排。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》史加納英雄頁校正，並納入 7.2a 對一技最大生命傷害、二技護盾與冷卻、三技冷卻的強化。出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/skarner.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "震動餘波",
           "icon": "../assets/images/heroes/skills/skarner_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "普攻與多個技能會累積顫抖，疊滿後對目標持續造成最大生命百分比魔法傷害。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "翻天覆地／尖岩飛彈",
           "icon": "../assets/images/heroes/skills/skarner_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "拔起岩石強化普攻，第三次攻擊造成額外最大生命傷害；重施可把岩石投向遠處。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "第二優先技能",
+          "label": "2 技",
+          "title": "壁壘波動",
           "icon": "../assets/images/heroes/skills/skarner_03.webp",
-          "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "獲得依生命成長的護盾並震擊周圍敵人，造成傷害與緩速。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "最後升滿技能",
+          "label": "3 技",
+          "title": "伊克斯塔爾衝擊",
           "icon": "../assets/images/heroes/skills/skarner_04.png",
-          "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "加速並穿越地形，抓住第一名英雄後拖行；撞上牆體可造成控制與傷害。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "蠍尾穿刺",
           "icon": "../assets/images/heroes/skills/skarner_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "向前刺出蠍尾壓制命中的敵方英雄並拖行，適合把關鍵目標拉回己方。"
         }
       ],
       "skillSequence": [
@@ -20794,10 +21241,93 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "combos": [
+        {
+          "name": "撞牆控制",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技抓取"
+            },
+            {
+              "key": "E",
+              "label": "撞牆"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技強化普攻"
+            }
+          ],
+          "note": "三技穿牆抓住敵人並撞向地形，接護盾緩速與強化普攻持續輸出。"
+        },
+        {
+          "name": "岩石追擊",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技拔岩"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "Q",
+              "label": "投擲岩石"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "先拔起岩石強化普攻，敵人拉開時重施投擲，再用二技緩速追上。"
+        },
+        {
+          "name": "大絕拖回",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            }
+          ],
+          "note": "從側面用大絕壓制關鍵目標並往隊友方向拖行，結束後接三技再次控制。"
+        }
+      ],
+      "starterItems": [
+        "basic-glowing-spark"
+      ],
+      "coreItems": [
+        "defense-high-06",
+        "defense-high-11",
+        "defense-high-08"
+      ],
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-fourth10-v55",
+      "abilityNamesVerified": "Riot TW"
     },
     {
       "id": "taliyah-jungle",
@@ -21019,19 +21549,19 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "刺客／爆發切後／野區節奏",
+      "position": "物理刺客／翻牆遊走／裂傷爆發",
       "tags": [
+        "遊走",
         "爆發",
-        "機動",
-        "收割"
+        "潛隱"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
         "Blind Pick": 3,
-        "前期節奏": 4,
-        "團戰影響力": 4
+        "前期節奏": 5,
+        "團戰影響力": 3
       },
       "runes": [
         "electrocute",
@@ -21045,8 +21575,7 @@
         "physical-high-15",
         "physical-high-32",
         "physical-high-27",
-        "physical-high-10",
-        "physical-high-31"
+        "physical-high-10"
       ],
       "boots": [
         "armorbreaker-boots",
@@ -21071,48 +21600,48 @@
         "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "快速完成第一輪清野並觀察壓線過深的目標，優先拿到第一個擊殺或召喚師技能。",
-        "中期": "利用視野差入侵與抓單，物件前先讓敵方減員比硬開 5v5 更重要。",
-        "後期": "耐心等第一波控制交掉，再從側翼切入後排；沒有角度時先保留進場技能。"
+        "前期": "二技去回程可快速清群體野怪並疊兩層裂傷，一技補第三層後普攻觸發流血。升到三技後利用牆體避開河道視野，頻繁支援壓線過深的路線。",
+        "中期": "塔隆的優勢是比對手更快到達邊線與物件區。先從野區翻牆抓單，逼出閃現或造成減員，再轉向飛龍與預示者，不要只在正面等待開戰。",
+        "後期": "坦克與成形防裝會降低正面爆發價值；耐心找沒有保護的後排，或用大絕潛隱逼出保命技能。完成擊殺後立刻翻牆離場。"
       },
-      "summary": "打野以爆發與機動為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "用二技疊裂傷、三技翻牆和大絕潛隱快速穿梭地圖；節奏強項在於提前到場與側翼抓單，而非正面長時間團戰。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/talon.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "終焉殘刃",
           "icon": "../assets/images/heroes/skills/talon_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "技能命中敵方英雄或大型野怪會附加裂傷，最多三層；對滿層目標普攻會觸發流血，是清野與爆發收尾的核心。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "第二優先技能",
+          "label": "1 技",
+          "title": "諾城王道",
           "icon": "../assets/images/heroes/skills/talon_02.png",
-          "summary": "一技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "跳向目標並造成物理傷害；貼身施放時改為近距離刺擊。擊殺目標可回復部分生命並返還冷卻，清野時可用來維持續航。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "主要升級技能",
+          "label": "2 技",
+          "title": "迴力匕首",
           "icon": "../assets/images/heroes/skills/talon_03.png",
-          "summary": "二技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前扔出匕首，短暫延遲後返回。去程與回程都會造成傷害，回程命中會緩速並疊加裂傷。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "最後升滿技能",
+          "label": "3 技",
+          "title": "刺客身法",
           "icon": "../assets/images/heroes/skills/talon_04.png",
-          "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "翻越附近地形，讓塔隆能快速穿梭野區與建立意想不到的 Gank 角度；同一段地形在一段時間內不能重複翻越。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "暗影突襲",
           "icon": "../assets/images/heroes/skills/talon_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "向四周射出刀刃並進入潛隱、獲得跑速；離開潛隱或攻擊目標時，刀刃會匯聚至塔隆或被鎖定的敵人。"
         }
       ],
       "skillSequence": [
@@ -21136,10 +21665,97 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "combos": [
+        {
+          "name": "三層裂傷爆發",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技去回程"
+            },
+            {
+              "key": "Q",
+              "label": "1技突進"
+            },
+            {
+              "key": "AA",
+              "label": "普攻引爆"
+            }
+          ],
+          "note": "二技去程與回程提供兩層裂傷，再用一技補滿第三層，最後普攻觸發流血。"
+        },
+        {
+          "name": "翻牆 Gank",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技翻牆"
+            },
+            {
+              "key": "W",
+              "label": "2技緩速"
+            },
+            {
+              "key": "Q",
+              "label": "1技貼近"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技追擊"
+            }
+          ],
+          "note": "利用地形繞過河道視野，二技先減速再貼近。敵人仍有位移時保留大絕追擊或撤退。"
+        },
+        {
+          "name": "潛隱切後排",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技潛隱"
+            },
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻引爆"
+            },
+            {
+              "key": "E",
+              "label": "3技翻牆離場"
+            }
+          ],
+          "note": "大絕加速接近後排並隱藏進場方向，完成裂傷爆發後立刻利用地形撤離。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-32"
+      ],
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-fourth10-v55",
+      "abilityNamesVerified": "Riot TW"
     },
     {
       "id": "tryndamere-jungle",
@@ -21149,19 +21765,19 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "單挑／邊線核心／野區節奏",
+      "position": "攻速鬥士／怒氣暴擊／不死收割",
       "tags": [
+        "暴擊",
         "單挑",
-        "邊線",
-        "拉扯"
+        "追擊"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
         "Blind Pick": 3,
-        "前期節奏": 4,
-        "團戰影響力": 4
+        "前期節奏": 3,
+        "團戰影響力": 3
       },
       "runes": [
         "lethal-tempo",
@@ -21175,8 +21791,7 @@
         "physical-high-24",
         "physical-high-17",
         "physical-high-18",
-        "physical-high-10",
-        "physical-high-07"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -21201,48 +21816,48 @@
         "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
+        "前期": "先累積怒氣再進行河道或野區交戰，低怒氣時不要高估暴擊能力。三技穿過多個野怪可加快清野，Gank 時從敵人背後施放二技才會觸發緩速。",
+        "中期": "攻速與暴擊裝成形後，利用單挑優勢入侵、抓落單和快速處理物件。大絕能支撐越塔，但進場前必須先規劃三技撤退路線。",
+        "後期": "正面團戰容易被風箏，應從側翼切入或先在邊線製造壓力。無盡怒火結束前用三技脫離，再消耗怒氣用一技回復，避免大絕結束後立即倒下。"
       },
-      "summary": "打野以單挑與邊線為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "怒氣提供暴擊與續航，三技讓他快速穿越野區，大絕則可在瀕死狀態持續追擊；強在單挑與側翼，但怕緩速、硬控與風箏。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/tryndamere.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "戰鬥狂怒",
           "icon": "../assets/images/heroes/skills/tryndamere_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "攻擊、暴擊與擊殺累積怒氣，怒氣提高暴擊率，也可用來強化一技能治療。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "第二優先技能",
+          "label": "1 技",
+          "title": "嗜血殺戮",
           "icon": "../assets/images/heroes/skills/tryndamere_02.png",
-          "summary": "一技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "生命越低被動物攻越高；主動消耗怒氣回復生命。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "嘲諷",
           "icon": "../assets/images/heroes/skills/tryndamere_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "降低附近敵人的物攻，若敵人背對泰達米爾還會受到明顯緩速。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "主要升級技能",
+          "label": "3 技",
+          "title": "旋風斬",
           "icon": "../assets/images/heroes/skills/tryndamere_04.png",
-          "summary": "三技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "旋轉位移並傷害沿途敵人，暴擊可協助縮短冷卻，是追擊與穿牆工具。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "無盡怒火",
           "icon": "../assets/images/heroes/skills/tryndamere_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "短時間內生命不會降到致死門檻，可在殘血繼續輸出後再撤退或治療。"
         }
       ],
       "skillSequence": [
@@ -21266,10 +21881,89 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "combos": [
+        {
+          "name": "旋風換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技治療"
+            }
+          ],
+          "note": "旋風斬接近後打一至兩次普攻，血量不佳時用一技消耗怒氣回復。"
+        },
+        {
+          "name": "減速追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "從敵人背後施放二技造成減速，再用三技貼近持續普攻。"
+        },
+        {
+          "name": "不死越塔",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技撤退"
+            },
+            {
+              "key": "Q",
+              "label": "1技治療"
+            }
+          ],
+          "note": "瀕死前開大維持生命，完成擊殺後用三技離塔並在大絕結束前回復。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-12",
+        "physical-high-24",
+        "physical-high-17"
+      ],
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-fourth10-v55",
+      "abilityNamesVerified": "Riot TW"
     },
     {
       "id": "vi-jungle",
@@ -22741,11 +23435,11 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "刺客／爆發切後／野區節奏",
+      "position": "物理刺客／雙影爆發／側翼收割",
       "tags": [
         "爆發",
-        "機動",
-        "收割"
+        "位移",
+        "單抓"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -22767,8 +23461,7 @@
         "physical-high-15",
         "physical-high-32",
         "physical-high-27",
-        "physical-high-10",
-        "physical-high-31"
+        "physical-high-10"
       ],
       "boots": [
         "armorbreaker-boots",
@@ -22793,48 +23486,48 @@
         "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "快速完成第一輪清野並觀察壓線過深的目標，優先拿到第一個擊殺或召喚師技能。",
-        "中期": "利用視野差入侵與抓單，物件前先讓敵方減員比硬開 5v5 更重要。",
-        "後期": "耐心等第一波控制交掉，再從側翼切入後排；沒有角度時先保留進場技能。"
+        "前期": "以一技和三技範圍傷害快速清野，二技優先保留給跨牆、追擊或撤退。第一輪後尋找沒有硬控或已交位移的路線，先用影分身減速再嘗試雙手裡劍。",
+        "中期": "物件刷新前利用影子和牆體從側面建立視野差，優先抓落單或逼出保命技能。大絕不是固定起手，能先用二技消耗後再進場通常更安全。",
+        "後期": "正面 5v5 不要先手衝入控制鏈；等敵方前排技能交掉，從側翼鎖定後排。完成印記爆發後立即用大絕影子或二技影子撤離。"
       },
-      "summary": "打野以爆發與機動為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
+      "summary": "依靠影分身創造多角度手裡劍與高爆發單抓；強項是物件前讓敵方減員，弱點是正面承受硬控與坦克反制。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/zed.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "強者特權",
           "icon": "../assets/images/heroes/skills/zed_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "對低生命目標普攻時造成額外魔法傷害；同一目標在短時間內只會觸發一次，可用來加快收野與完成斬殺。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "風魔手裡劍",
           "icon": "../assets/images/heroes/skills/zed_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "劫與影分身朝指定方向投擲手裡劍並造成物理傷害。多枚手裡劍同時命中同一目標，是主要爆發來源。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "疾風殘影",
           "icon": "../assets/images/heroes/skills/zed_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前放出影分身，影分身會同步施放一技與三技；重施可與影分身交換位置。劫與影子用相同技能命中同一目標時可回復能量。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "影斬",
           "icon": "../assets/images/heroes/skills/zed_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "劫與影分身斬擊周圍敵人。劫本體命中英雄可縮短二技冷卻，影分身命中則會造成緩速，方便後續手裡劍命中。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "死亡印記",
           "icon": "../assets/images/heroes/skills/zed_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "短暫不可被選取並突進到目標身後，留下可交換位置的影分身並附加印記；印記會依期間內造成的傷害延遲爆炸。"
         }
       ],
       "skillSequence": [
@@ -22858,10 +23551,109 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "combos": [
+        {
+          "name": "基礎 Gank 爆發",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技影子"
+            },
+            {
+              "key": "E",
+              "label": "3技緩速"
+            },
+            {
+              "key": "Q",
+              "label": "1技雙鏢"
+            },
+            {
+              "key": "W",
+              "label": "換位貼近"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先用影分身的三技緩速，提高雙手裡劍命中率；確認安全後再換位近身補被動傷害。"
+        },
+        {
+          "name": "大絕完整斬殺",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技標記"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技影子"
+            },
+            {
+              "key": "W",
+              "label": "換位撤離"
+            }
+          ],
+          "note": "大絕落地後快速打滿技能與普攻，再利用影子換位離開。不要在敵方控制技能尚未交出時盲目回到影子位置。"
+        },
+        {
+          "name": "側翼雙影手裡劍",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技側放"
+            },
+            {
+              "key": "R",
+              "label": "4技進場"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技多重命中"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先在側面放出影子，再用大絕創造第二個角度，讓多枚手裡劍同時命中核心目標。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-32"
+      ],
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "skillIconCount": 5,
+      "detailAssetBatch": "jungle-fourth10-v55",
+      "abilityNamesVerified": "Riot TW"
     },
     {
       "id": "ahri-mid",
@@ -33145,18 +33937,18 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "A",
-      "position": "鬥士／普攻收割",
+      "position": "普攻核心／不可選取／連續收割",
       "tags": [
         "攻速",
-        "收割",
-        "持續輸出"
+        "真實傷害",
+        "收割"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 5,
         "操作難度": 2,
         "Blind Pick": 3,
-        "對線強度": 3,
+        "前期節奏": 2,
         "團戰影響力": 4
       },
       "runes": [
@@ -33171,8 +33963,7 @@
         "magic-high-11",
         "physical-high-38",
         "physical-high-42",
-        "physical-high-10",
-        "physical-high-25"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -33197,12 +33988,12 @@
         "ban": "拉姆斯"
       },
       "playstyle": {
-        "前期": "前期以完整清野與穩定升到 5 級為主，沒有硬控時不要勉強繞遠路抓人；用一技能躲關鍵技能可提高野區單挑勝率。",
-        "中期": "殞落與鬼索成形後持續刷野、抓落單與控物件。進場前先等對手交掉第一輪控制，再用高原血統追擊後排。",
-        "後期": "後期不要第一個正面進場；從側翼或第二時間切入，用一技能規避控制與爆發，靠擊殺／助攻刷新節奏連續收割。"
+        "前期": "以完整清野和穩定升到 5 級為優先，沒有隊友控制時不要為低機率 Gank 放棄野區。先聲奪人要保留躲控制或爆發的功能，而不是一看到敵人就立即使用。",
+        "中期": "殞落與鬼索成形後持續刷野、抓落單和快速處理物件。進場前確認敵方硬控位置，等第一輪技能交出後再開高原血統追擊。",
+        "後期": "避免第一個正面進場；從側翼或第二時間切入，用一技規避關鍵控制，靠擊殺與助攻延長大絕並刷新技能完成連續收割。"
       },
-      "summary": "以高攻速普攻、無極劍道真實傷害與一技能不可選取打持續輸出；取得擊殺或助攻後能快速刷新技能並延長大絕，適合第二時間進場收割。",
-      "sourceNote": "7.2a 打野資料：Riot Games 台灣英雄頁校正技能名稱；Build／符文／技能優先級參考 WildRiftFire Patch 7.2a。英雄與技能圖片採使用者提供原始素材。",
+      "summary": "靠高攻速、普攻特效與無極劍道真實傷害持續輸出；一技的不可選取與大絕刷新機制讓他擅長第二時間進場，但非常怕連續硬控。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏以目前 7.2a 打野版本基準整理。｜v55：完成打野第四批正式版，完整套用李星固定打野母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與實戰節奏。",
       "avatar": "../assets/images/heroes/portraits/master-yi.webp",
       "abilities": [
         {
@@ -33266,10 +34057,97 @@
       },
       "skillIconStatus": "complete",
       "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
+      "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "jungle-fourth10-formal-v55",
+      "reviewedAt": "2026-07-28",
+      "combos": [
+        {
+          "name": "清野輸出循環",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技真傷"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "AA",
+              "label": "雙重打擊"
+            }
+          ],
+          "note": "先開三技提升普攻傷害，讓普攻與一技交錯；一技不要只拿來打傷害，也可用來躲野怪或敵人的關鍵技能。"
+        },
+        {
+          "name": "第二時間收割",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技加速"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技進場"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "AA",
+              "label": "持續追擊"
+            }
+          ],
+          "note": "等敵方第一輪控制交出後再開大進場，利用擊殺與助攻延長大絕並縮短技能冷卻。"
+        },
+        {
+          "name": "冥想減傷反打",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技減傷"
+            },
+            {
+              "key": "AA",
+              "label": "普攻重置"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技躲招"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "用冥想承受爆發並取消後搖，隨即接普攻與一技反打；面對硬控時仍要保留一技的不可選取時機。"
+        }
+      ],
+      "starterItems": [
+        "basic-long-sword"
+      ],
+      "coreItems": [
+        "physical-high-12",
+        "magic-high-11",
+        "physical-high-38"
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "generatedV29": true
     },
     {
       "id": "shen-jungle",
@@ -33735,8 +34613,8 @@
       "avatarComplete": true,
       "detailComplete": false,
       "portraitMode": "shared",
-      "verification": "遊戲內打野定位 50 位已核對；v54 已完成前三批 30 位正式攻略，李星固定為打野母版。",
-      "detailVersion": "v54-third10-formal-7.2a"
+      "verification": "遊戲內打野定位 50 位已核對；v55 已完成前四批 40 位正式攻略，李星固定為打野母版。",
+      "detailVersion": "v55-fourth10-formal-7.2a"
     },
     "mid": {
       "name": "中路",
