@@ -1,6 +1,15 @@
 {
-  "version": "7.2a-v62-mid-fourth-batch-complete-46of46",
+  "version": "7.2a-v63-hero-role-schema-v2-200-active-guides",
   "updated": "2026-07-29",
+  "schemaVersion": 2,
+  "roleSource": "heroCatalog",
+  "roleOrder": [
+    "baron",
+    "jungle",
+    "mid",
+    "duo",
+    "support"
+  ],
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
     "英雄與技能圖片使用使用者提供的 420 張原始素材，不做裁切或風格修改。",
@@ -122,7 +131,8 @@
     "v59：校正遊戲內中路 46 位正式名單；完成第一批 12/46：阿璃、拉克絲、奧莉安娜、星朵拉、瑟菈紛、安妮、維克特、雷茲、薇可絲、歐羅拉、梅爾、斯溫。全數沿用阿璃固定中路母版。",
     "v60：完成中路第二批 12 位：塔莉雅、柔依、卡瑪、艾克、黛安娜、諾拉、庫奇、希格斯、翱鋭龍獸、逆命、維迦、漢默丁格。中路正式攻略進度更新為 24/46。",
     "v61：完成中路第三批 11 位：阿卡莉、犽宿、犽凝、劫、飛斯、卡薩丁、麗珊卓、伊瑞莉雅、卡特蓮娜、杰西、阿克尚。中路正式攻略進度更新為 35/46。",
-    "v62：完成中路第四批 11 位：枷蘿、魔甘娜、凱爾、提摩、凱能、弗拉迪米爾、加里歐、布蘭德、塔隆、威寇茲、藍寶。中路正式攻略進度更新為 46/46，中路全數完成。"
+    "v62：完成中路第四批 11 位：枷蘿、魔甘娜、凱爾、提摩、凱能、弗拉迪米爾、加里歐、布蘭德、塔隆、威寇茲、藍寶。中路正式攻略進度更新為 46/46，中路全數完成。",
+    "v63：英雄定位系統重構。全站定位、搜尋、路線列表與英雄頁切換改由 heroCatalog 單一來源控制；移除已取消的菲歐拉、伊瑞莉雅、辛吉德打野舊攻略入口。"
   ],
   "heroes": [
     {
@@ -16019,141 +16029,6 @@
       ]
     },
     {
-      "id": "fiora-jungle",
-      "baseId": "fiora",
-      "name": "菲歐拉",
-      "enName": "Fiora",
-      "role": "打野",
-      "roleId": "jungle",
-      "tier": "B",
-      "position": "鬥士／持續作戰／野區節奏",
-      "tags": [
-        "換血",
-        "續航",
-        "側翼"
-      ],
-      "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 1,
-        "操作難度": 5,
-        "Blind Pick": 2,
-        "前期節奏": 3,
-        "團戰影響力": 3
-      },
-      "runes": [
-        "conqueror",
-        "battle-fervor",
-        "last-stand",
-        "legend-alacrity",
-        "sudden-impact"
-      ],
-      "items": [
-        "physical-high-21",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
-      ],
-      "boots": [
-        "plated-steelcaps",
-        "physical-high-01"
-      ],
-      "spells": [
-        "flash",
-        "smite"
-      ],
-      "skillOrder": "Q > E > W",
-      "matchups": {
-        "good": [
-          "魔甘娜",
-          "費德提克",
-          "奈德麗"
-        ],
-        "bad": [
-          "鏡爪",
-          "莉莉亞",
-          "拉姆斯"
-        ],
-        "ban": "鏡爪"
-      },
-      "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
-      },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
-      "avatar": "../assets/images/heroes/portraits/fiora.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "不屈鬥魂",
-          "icon": "../assets/images/heroes/skills/fiora_01.png",
-          "summary": "會標記附近英雄的破綻；從指定方向擊破可造成額外真實傷害、治療並提高跑速。"
-        },
-        {
-          "key": "Q",
-          "label": "1 技",
-          "title": "移形之體",
-          "icon": "../assets/images/heroes/skills/fiora_02.png",
-          "summary": "向指定方向突刺並攻擊附近敵人，優先命中破綻；命中可縮短冷卻。"
-        },
-        {
-          "key": "W",
-          "label": "2 技",
-          "title": "斗轉之力",
-          "icon": "../assets/images/heroes/skills/fiora_03.png",
-          "summary": "短暫招架所有傷害與控制後反擊；若擋到硬控可暈眩敵人，否則造成緩速。"
-        },
-        {
-          "key": "E",
-          "label": "3 技",
-          "title": "迅雷之技",
-          "icon": "../assets/images/heroes/skills/fiora_04.png",
-          "summary": "強化接下來兩次普攻；第一下緩速，第二下必定暴擊。"
-        },
-        {
-          "key": "R",
-          "label": "4 技",
-          "title": "頂尖對決",
-          "icon": "../assets/images/heroes/skills/fiora_05.webp",
-          "summary": "揭露目標四個破綻並提高追擊跑速；擊破全部或目標陣亡後生成大範圍治療區。"
-        }
-      ],
-      "skillSequence": [
-        "Q",
-        "E",
-        "W",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "E",
-        "R",
-        "E",
-        "E",
-        "W",
-        "R",
-        "W",
-        "W"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "4 技"
-      },
-      "skillIconStatus": "complete",
-      "generatedV29": true,
-      "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
-    },
-    {
       "id": "fizz-jungle",
       "baseId": "fizz",
       "name": "飛斯",
@@ -17272,141 +17147,6 @@
           "note": "完整蓄力一技命中後保持強化循環，二技範圍內持續輸出能顯著提高生存。"
         }
       ]
-    },
-    {
-      "id": "irelia-jungle",
-      "baseId": "irelia",
-      "name": "伊瑞莉雅",
-      "enName": "Irelia",
-      "role": "打野",
-      "roleId": "jungle",
-      "tier": "A",
-      "position": "鬥士／持續作戰／野區節奏",
-      "tags": [
-        "換血",
-        "續航",
-        "側翼"
-      ],
-      "ratings": {
-        "單排推薦": 4,
-        "新手推薦": 1,
-        "操作難度": 5,
-        "Blind Pick": 3,
-        "前期節奏": 4,
-        "團戰影響力": 4
-      },
-      "runes": [
-        "conqueror",
-        "battle-fervor",
-        "last-stand",
-        "legend-alacrity",
-        "sudden-impact"
-      ],
-      "items": [
-        "physical-high-21",
-        "physical-high-38",
-        "physical-high-42",
-        "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
-      ],
-      "boots": [
-        "plated-steelcaps",
-        "physical-high-01"
-      ],
-      "spells": [
-        "flash",
-        "smite"
-      ],
-      "skillOrder": "Q > W > E",
-      "matchups": {
-        "good": [
-          "魔甘娜",
-          "費德提克",
-          "奈德麗"
-        ],
-        "bad": [
-          "鏡爪",
-          "莉莉亞",
-          "拉姆斯"
-        ],
-        "ban": "鏡爪"
-      },
-      "playstyle": {
-        "前期": "第一輪清野兼顧等級與 Gank 成功率，優先幫有控制或能滾雪球的線路。",
-        "中期": "物件刷新前 30～45 秒提早處理視野與路線，利用戰鬥力主動爭河區。",
-        "後期": "依角色定位做前排或第二進場，保留重擊與關鍵控制處理遠古飛龍／巴龍。"
-      },
-      "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
-      "avatar": "../assets/images/heroes/portraits/irelia.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "愛歐尼亞狂熱",
-          "icon": "../assets/images/heroes/skills/irelia_01.webp",
-          "summary": "技能命中敵人會疊加攻速；滿層後普攻造成額外魔法傷害。"
-        },
-        {
-          "key": "Q",
-          "label": "1 技",
-          "title": "利刃衝擊",
-          "icon": "../assets/images/heroes/skills/irelia_02.webp",
-          "summary": "突進到敵人身上造成物理傷害；擊殺目標或命中被標記敵人時刷新冷卻。"
-        },
-        {
-          "key": "W",
-          "label": "2 技",
-          "title": "不屈秘舞",
-          "icon": "../assets/images/heroes/skills/irelia_03.webp",
-          "summary": "蓄力減少受到的物理傷害，放開後向前斬擊造成物理傷害。"
-        },
-        {
-          "key": "E",
-          "label": "3 技",
-          "title": "無瑕重刃",
-          "icon": "../assets/images/heroes/skills/irelia_04.webp",
-          "summary": "先後放置兩片劍刃，劍刃交會時傷害、暈眩並標記命中的敵人。"
-        },
-        {
-          "key": "R",
-          "label": "4 技",
-          "title": "護劍化形",
-          "icon": "../assets/images/heroes/skills/irelia_05.webp",
-          "summary": "射出大量劍刃傷害並標記英雄，落地後形成劍陣，穿越的敵人會被緩速。"
-        }
-      ],
-      "skillSequence": [
-        "Q",
-        "W",
-        "E",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "W",
-        "R",
-        "W",
-        "W",
-        "E",
-        "R",
-        "E",
-        "E"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "4 技"
-      },
-      "skillIconStatus": "complete",
-      "generatedV29": true,
-      "skillIconCount": 5,
-      "detailAssetBatch": "first70-user-supplied",
-      "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
     },
     {
       "id": "jarvan-iv-jungle",
@@ -21819,136 +21559,6 @@
           "note": "一技雙擊能快速觸發標記傷害，接近斬殺線時與重擊同步施放。"
         }
       ]
-    },
-    {
-      "id": "singed-jungle",
-      "baseId": "singed",
-      "name": "辛吉德",
-      "enName": "Singed",
-      "role": "打野",
-      "roleId": "jungle",
-      "tier": "B",
-      "position": "法系輸出／範圍控制／野區節奏",
-      "tags": [
-        "消耗",
-        "法術爆發",
-        "團戰"
-      ],
-      "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
-        "前期節奏": 3,
-        "團戰影響力": 3
-      },
-      "runes": [
-        "conqueror",
-        "scorch",
-        "transcendence",
-        "gathering-storm",
-        "bone-plating"
-      ],
-      "items": [
-        "magic-high-16",
-        "magic-high-10",
-        "magic-high-15",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
-      ],
-      "boots": [
-        "mana-boots",
-        "magic-high-02"
-      ],
-      "spells": [
-        "flash",
-        "smite"
-      ],
-      "skillOrder": "Q > E > W",
-      "matchups": {
-        "good": [
-          "拉姆斯",
-          "史加納",
-          "阿姆姆"
-        ],
-        "bad": [
-          "趙信",
-          "菲艾",
-          "嘉文四世"
-        ],
-        "ban": "菲艾"
-      },
-      "playstyle": {
-        "前期": "優先安全升到核心技能等級，清野途中利用視野判斷反蹲與河蟹爭奪。",
-        "中期": "靠技能爆發／範圍傷害掌控物件區，進場前先逼掉敵方位移與保命技。",
-        "後期": "站位比追擊更重要，先輸出前排與物件區，再找機會處理後排。"
-      },
-      "summary": "打野以消耗與法術爆發為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
-      "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/singed.webp",
-      "abilities": [
-        {
-          "key": "P",
-          "label": "被動",
-          "title": "核心被動機制",
-          "icon": "../assets/images/heroes/skills/singed_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
-        },
-        {
-          "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
-          "icon": "../assets/images/heroes/skills/singed_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
-          "icon": "../assets/images/heroes/skills/singed_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
-          "icon": "../assets/images/heroes/skills/singed_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
-          "icon": "../assets/images/heroes/skills/singed_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
-        }
-      ],
-      "skillSequence": [
-        "Q",
-        "E",
-        "W",
-        "Q",
-        "R",
-        "Q",
-        "Q",
-        "E",
-        "R",
-        "E",
-        "E",
-        "W",
-        "R",
-        "W",
-        "W"
-      ],
-      "skillLabels": {
-        "Q": "1 技",
-        "W": "2 技",
-        "E": "3 技",
-        "R": "大絕"
-      },
-      "skillIconStatus": "placeholder",
-      "generatedV29": true
     },
     {
       "id": "skarner-jungle",
@@ -39567,6 +39177,2528 @@
       "isMidMasterTemplate": false
     }
   ],
+  "heroCatalog": [
+    {
+      "id": "malphite",
+      "name": "墨菲特",
+      "enName": "Malphite",
+      "avatar": "../assets/images/heroes/portraits/malphite.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "malphite-baron",
+          "avatar": "../assets/images/heroes/portraits/malphite.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "malphite-support",
+          "avatar": "../assets/images/heroes/portraits/malphite.webp"
+        }
+      ]
+    },
+    {
+      "id": "ambessa",
+      "name": "安比薩",
+      "enName": "Ambessa",
+      "avatar": "../assets/images/heroes/portraits/ambessa.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "ambessa-baron",
+          "avatar": "../assets/images/heroes/portraits/ambessa.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "ambessa-jungle",
+          "avatar": "../assets/images/heroes/portraits/ambessa.png"
+        }
+      ]
+    },
+    {
+      "id": "yone",
+      "name": "犽凝",
+      "enName": "Yone",
+      "avatar": "../assets/images/heroes/portraits/yone.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "yone-baron",
+          "avatar": "../assets/images/heroes/portraits/yone.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "yone-jungle",
+          "avatar": "../assets/images/heroes/portraits/yone.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "yone-mid",
+          "avatar": "../assets/images/heroes/portraits/yone.webp"
+        }
+      ]
+    },
+    {
+      "id": "ornn",
+      "name": "鄂爾",
+      "enName": "Ornn",
+      "avatar": "../assets/images/heroes/portraits/ornn.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "ornn-baron",
+          "avatar": "../assets/images/heroes/portraits/ornn.png"
+        }
+      ]
+    },
+    {
+      "id": "camille",
+      "name": "卡蜜兒",
+      "enName": "Camille",
+      "avatar": "../assets/images/heroes/portraits/camille.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "camille-baron",
+          "avatar": "../assets/images/heroes/portraits/camille.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "camille-jungle",
+          "avatar": "../assets/images/heroes/portraits/camille.webp"
+        }
+      ]
+    },
+    {
+      "id": "aatrox",
+      "name": "厄薩斯",
+      "enName": "Aatrox",
+      "avatar": "../assets/images/heroes/portraits/aatrox.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "aatrox-baron",
+          "avatar": "../assets/images/heroes/portraits/aatrox.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "aatrox-jungle",
+          "avatar": "../assets/images/heroes/portraits/aatrox.webp"
+        }
+      ]
+    },
+    {
+      "id": "volibear",
+      "name": "弗力貝爾",
+      "enName": "Volibear",
+      "avatar": "../assets/images/heroes/portraits/volibear.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "volibear-baron",
+          "avatar": "../assets/images/heroes/portraits/volibear.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "volibear-jungle",
+          "avatar": "../assets/images/heroes/portraits/volibear.png"
+        }
+      ]
+    },
+    {
+      "id": "wukong",
+      "name": "悟空",
+      "enName": "Wukong",
+      "avatar": "../assets/images/heroes/portraits/wukong.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "wukong-baron",
+          "avatar": "../assets/images/heroes/portraits/wukong.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "wukong-jungle",
+          "avatar": "../assets/images/heroes/portraits/wukong.webp"
+        }
+      ]
+    },
+    {
+      "id": "shen",
+      "name": "慎",
+      "enName": "Shen",
+      "avatar": "../assets/images/heroes/portraits/shen.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "shen-baron",
+          "avatar": "../assets/images/heroes/portraits/shen.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "shen-jungle",
+          "avatar": "../assets/images/heroes/portraits/shen.webp"
+        }
+      ]
+    },
+    {
+      "id": "poppy",
+      "name": "波比",
+      "enName": "Poppy",
+      "avatar": "../assets/images/heroes/portraits/poppy.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "poppy-baron",
+          "avatar": "../assets/images/heroes/portraits/poppy.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "poppy-jungle",
+          "avatar": "../assets/images/heroes/portraits/poppy.webp"
+        }
+      ]
+    },
+    {
+      "id": "jax",
+      "name": "賈克斯",
+      "enName": "Jax",
+      "avatar": "../assets/images/heroes/portraits/jax.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "jax-baron",
+          "avatar": "../assets/images/heroes/portraits/jax.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "jax-jungle",
+          "avatar": "../assets/images/heroes/portraits/jax.webp"
+        }
+      ]
+    },
+    {
+      "id": "gwen",
+      "name": "關",
+      "enName": "Gwen",
+      "avatar": "../assets/images/heroes/portraits/gwen.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "gwen-baron",
+          "avatar": "../assets/images/heroes/portraits/gwen.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "gwen-jungle",
+          "avatar": "../assets/images/heroes/portraits/gwen.webp"
+        }
+      ]
+    },
+    {
+      "id": "irelia",
+      "name": "伊瑞莉雅",
+      "enName": "Irelia",
+      "avatar": "../assets/images/heroes/portraits/irelia.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "irelia-baron",
+          "avatar": "../assets/images/heroes/portraits/irelia.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "irelia-mid",
+          "avatar": "../assets/images/heroes/portraits/irelia.webp"
+        }
+      ]
+    },
+    {
+      "id": "kayle",
+      "name": "凱爾",
+      "enName": "Kayle",
+      "avatar": "../assets/images/heroes/portraits/kayle.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "kayle-baron",
+          "avatar": "../assets/images/heroes/portraits/kayle.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "kayle-mid",
+          "avatar": "../assets/images/heroes/portraits/kayle.webp"
+        }
+      ]
+    },
+    {
+      "id": "kennen",
+      "name": "凱能",
+      "enName": "Kennen",
+      "avatar": "../assets/images/heroes/portraits/kennen.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "kennen-baron",
+          "avatar": "../assets/images/heroes/portraits/kennen.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "kennen-mid",
+          "avatar": "../assets/images/heroes/portraits/kennen.webp"
+        }
+      ]
+    },
+    {
+      "id": "ksante",
+      "name": "卡桑帝",
+      "enName": "K'Sante",
+      "avatar": "../assets/images/heroes/portraits/ksante.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "ksante-baron",
+          "avatar": "../assets/images/heroes/portraits/ksante.webp"
+        }
+      ]
+    },
+    {
+      "id": "gnar",
+      "name": "吶兒",
+      "enName": "Gnar",
+      "avatar": "../assets/images/heroes/portraits/gnar.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "gnar-baron",
+          "avatar": "../assets/images/heroes/portraits/gnar.webp"
+        }
+      ]
+    },
+    {
+      "id": "teemo",
+      "name": "提摩",
+      "enName": "Teemo",
+      "avatar": "../assets/images/heroes/portraits/teemo.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "teemo-baron",
+          "avatar": "../assets/images/heroes/portraits/teemo.png"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "teemo-mid",
+          "avatar": "../assets/images/heroes/portraits/teemo.webp"
+        }
+      ]
+    },
+    {
+      "id": "jayce",
+      "name": "杰西",
+      "enName": "Jayce",
+      "avatar": "../assets/images/heroes/portraits/jayce.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "jayce-baron",
+          "avatar": "../assets/images/heroes/portraits/jayce.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "jayce-mid",
+          "avatar": "../assets/images/heroes/portraits/jayce.webp"
+        }
+      ]
+    },
+    {
+      "id": "olaf",
+      "name": "歐拉夫",
+      "enName": "Olaf",
+      "avatar": "../assets/images/heroes/portraits/olaf.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "olaf-baron",
+          "avatar": "../assets/images/heroes/portraits/olaf.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "olaf-jungle",
+          "avatar": "../assets/images/heroes/portraits/olaf.webp"
+        }
+      ]
+    },
+    {
+      "id": "nasus",
+      "name": "納瑟斯",
+      "enName": "Nasus",
+      "avatar": "../assets/images/heroes/portraits/nasus.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "nasus-baron",
+          "avatar": "../assets/images/heroes/portraits/nasus.png"
+        }
+      ]
+    },
+    {
+      "id": "fiora",
+      "name": "菲歐拉",
+      "enName": "Fiora",
+      "avatar": "../assets/images/heroes/portraits/fiora.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "fiora-baron",
+          "avatar": "../assets/images/heroes/portraits/fiora.webp"
+        }
+      ]
+    },
+    {
+      "id": "dr-mundo",
+      "name": "蒙多醫生",
+      "enName": "Dr. Mundo",
+      "avatar": "../assets/images/heroes/portraits/dr-mundo.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "dr-mundo-baron",
+          "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "dr-mundo-jungle",
+          "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
+        }
+      ]
+    },
+    {
+      "id": "garen",
+      "name": "蓋倫",
+      "enName": "Garen",
+      "avatar": "../assets/images/heroes/portraits/garen.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "garen-baron",
+          "avatar": "../assets/images/heroes/portraits/garen.webp"
+        }
+      ]
+    },
+    {
+      "id": "rumble",
+      "name": "藍寶",
+      "enName": "Rumble",
+      "avatar": "../assets/images/heroes/portraits/rumble.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "rumble-baron",
+          "avatar": "../assets/images/heroes/portraits/rumble.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "rumble-mid",
+          "avatar": "../assets/images/heroes/portraits/rumble.webp"
+        }
+      ]
+    },
+    {
+      "id": "sion",
+      "name": "賽恩",
+      "enName": "Sion",
+      "avatar": "../assets/images/heroes/portraits/sion.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "sion-baron",
+          "avatar": "../assets/images/heroes/portraits/sion.webp"
+        }
+      ]
+    },
+    {
+      "id": "sett",
+      "name": "賽特",
+      "enName": "Sett",
+      "avatar": "../assets/images/heroes/portraits/sett.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "sett-baron",
+          "avatar": "../assets/images/heroes/portraits/sett.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "sett-support",
+          "avatar": "../assets/images/heroes/portraits/sett.webp"
+        }
+      ]
+    },
+    {
+      "id": "singed",
+      "name": "辛吉德",
+      "enName": "Singed",
+      "avatar": "../assets/images/heroes/portraits/singed.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "singed-baron",
+          "avatar": "../assets/images/heroes/portraits/singed.webp"
+        }
+      ]
+    },
+    {
+      "id": "darius",
+      "name": "達瑞斯",
+      "enName": "Darius",
+      "avatar": "../assets/images/heroes/portraits/darius.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "darius-baron",
+          "avatar": "../assets/images/heroes/portraits/darius.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "darius-jungle",
+          "avatar": "../assets/images/heroes/portraits/darius.webp"
+        }
+      ]
+    },
+    {
+      "id": "renekton",
+      "name": "雷尼克頓",
+      "enName": "Renekton",
+      "avatar": "../assets/images/heroes/portraits/renekton.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "renekton-baron",
+          "avatar": "../assets/images/heroes/portraits/renekton.png"
+        }
+      ]
+    },
+    {
+      "id": "riven",
+      "name": "雷玟",
+      "enName": "Riven",
+      "avatar": "../assets/images/heroes/portraits/riven.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "riven-baron",
+          "avatar": "../assets/images/heroes/portraits/riven.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "riven-jungle",
+          "avatar": "../assets/images/heroes/portraits/riven.png"
+        }
+      ]
+    },
+    {
+      "id": "ryze",
+      "name": "雷茲",
+      "enName": "Ryze",
+      "avatar": "../assets/images/heroes/portraits/ryze.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "ryze-baron",
+          "avatar": "../assets/images/heroes/portraits/ryze.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "ryze-mid",
+          "avatar": "../assets/images/heroes/portraits/ryze.webp"
+        }
+      ]
+    },
+    {
+      "id": "mordekaiser",
+      "name": "魔鬥凱薩",
+      "enName": "Mordekaiser",
+      "avatar": "../assets/images/heroes/portraits/mordekaiser.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "mordekaiser-baron",
+          "avatar": "../assets/images/heroes/portraits/mordekaiser.webp"
+        }
+      ]
+    },
+    {
+      "id": "gragas",
+      "name": "古拉格斯",
+      "enName": "Gragas",
+      "avatar": "../assets/images/heroes/portraits/gragas.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "gragas-baron",
+          "avatar": "../assets/images/heroes/portraits/gragas.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "gragas-jungle",
+          "avatar": "../assets/images/heroes/portraits/gragas.webp"
+        }
+      ]
+    },
+    {
+      "id": "skarner",
+      "name": "史加納",
+      "enName": "Skarner",
+      "avatar": "../assets/images/heroes/portraits/skarner.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "skarner-baron",
+          "avatar": "../assets/images/heroes/portraits/skarner.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "skarner-jungle",
+          "avatar": "../assets/images/heroes/portraits/skarner.png"
+        }
+      ]
+    },
+    {
+      "id": "jarvan-iv",
+      "name": "嘉文四世",
+      "enName": "Jarvan IV",
+      "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "jarvan-iv-baron",
+          "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "jarvan-iv-jungle",
+          "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp"
+        }
+      ]
+    },
+    {
+      "id": "nidalee",
+      "name": "奈德麗",
+      "enName": "Nidalee",
+      "avatar": "../assets/images/heroes/portraits/nidalee.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "nidalee-baron",
+          "avatar": "../assets/images/heroes/portraits/nidalee.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "nidalee-jungle",
+          "avatar": "../assets/images/heroes/portraits/nidalee.png"
+        }
+      ]
+    },
+    {
+      "id": "vladimir",
+      "name": "弗拉迪米爾",
+      "enName": "Vladimir",
+      "avatar": "../assets/images/heroes/portraits/vladimir.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "vladimir-baron",
+          "avatar": "../assets/images/heroes/portraits/vladimir.png"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "vladimir-mid",
+          "avatar": "../assets/images/heroes/portraits/vladimir.webp"
+        }
+      ]
+    },
+    {
+      "id": "swain",
+      "name": "斯溫",
+      "enName": "Swain",
+      "avatar": "../assets/images/heroes/portraits/swain.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "swain-baron",
+          "avatar": "../assets/images/heroes/portraits/swain.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "swain-mid",
+          "avatar": "../assets/images/heroes/portraits/swain.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "swain-support",
+          "avatar": "../assets/images/heroes/portraits/swain.webp"
+        }
+      ]
+    },
+    {
+      "id": "aurora",
+      "name": "歐羅拉",
+      "enName": "Aurora",
+      "avatar": "../assets/images/heroes/portraits/aurora.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "aurora-baron",
+          "avatar": "../assets/images/heroes/portraits/aurora.png"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "aurora-mid",
+          "avatar": "../assets/images/heroes/portraits/aurora.png"
+        }
+      ]
+    },
+    {
+      "id": "warwick",
+      "name": "沃維克",
+      "enName": "Warwick",
+      "avatar": "../assets/images/heroes/portraits/warwick.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "warwick-baron",
+          "avatar": "../assets/images/heroes/portraits/warwick.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "warwick-jungle",
+          "avatar": "../assets/images/heroes/portraits/warwick.png"
+        }
+      ]
+    },
+    {
+      "id": "tryndamere",
+      "name": "泰達米爾",
+      "enName": "Tryndamere",
+      "avatar": "../assets/images/heroes/portraits/tryndamere.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "tryndamere-baron",
+          "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "tryndamere-jungle",
+          "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
+        }
+      ]
+    },
+    {
+      "id": "pantheon",
+      "name": "潘森",
+      "enName": "Pantheon",
+      "avatar": "../assets/images/heroes/portraits/pantheon.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "pantheon-baron",
+          "avatar": "../assets/images/heroes/portraits/pantheon.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "pantheon-jungle",
+          "avatar": "../assets/images/heroes/portraits/pantheon.png"
+        }
+      ]
+    },
+    {
+      "id": "urgot",
+      "name": "烏爾加特",
+      "enName": "Urgot",
+      "avatar": "../assets/images/heroes/portraits/urgot.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "urgot-baron",
+          "avatar": "../assets/images/heroes/portraits/urgot.webp"
+        }
+      ]
+    },
+    {
+      "id": "yasuo",
+      "name": "犽宿",
+      "enName": "Yasuo",
+      "avatar": "../assets/images/heroes/portraits/yasuo.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "yasuo-baron",
+          "avatar": "../assets/images/heroes/portraits/yasuo.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "yasuo-mid",
+          "avatar": "../assets/images/heroes/portraits/yasuo.webp"
+        }
+      ]
+    },
+    {
+      "id": "nautilus",
+      "name": "納帝魯斯",
+      "enName": "Nautilus",
+      "avatar": "../assets/images/heroes/portraits/nautilus.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "nautilus-baron",
+          "avatar": "../assets/images/heroes/portraits/nautilus.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "nautilus-jungle",
+          "avatar": "../assets/images/heroes/portraits/nautilus.png"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "nautilus-support",
+          "avatar": "../assets/images/heroes/portraits/nautilus.png"
+        }
+      ]
+    },
+    {
+      "id": "viego",
+      "name": "維爾戈",
+      "enName": "Viego",
+      "avatar": "../assets/images/heroes/portraits/viego.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "viego-baron",
+          "avatar": "../assets/images/heroes/portraits/viego.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "viego-jungle",
+          "avatar": "../assets/images/heroes/portraits/viego.png"
+        }
+      ]
+    },
+    {
+      "id": "maokai",
+      "name": "茂凱",
+      "enName": "Maokai",
+      "avatar": "../assets/images/heroes/portraits/maokai.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "maokai-baron",
+          "avatar": "../assets/images/heroes/portraits/maokai.webp"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "maokai-jungle",
+          "avatar": "../assets/images/heroes/portraits/maokai.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "maokai-support",
+          "avatar": "../assets/images/heroes/portraits/maokai.webp"
+        }
+      ]
+    },
+    {
+      "id": "akali",
+      "name": "阿卡莉",
+      "enName": "Akali",
+      "avatar": "../assets/images/heroes/portraits/akali.webp",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "akali-baron",
+          "avatar": "../assets/images/heroes/portraits/akali.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "akali-mid",
+          "avatar": "../assets/images/heroes/portraits/akali.webp"
+        }
+      ]
+    },
+    {
+      "id": "evelynn",
+      "name": "伊芙琳",
+      "enName": "Evelynn",
+      "avatar": "../assets/images/heroes/portraits/evelynn.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "evelynn-jungle",
+          "avatar": "../assets/images/heroes/portraits/evelynn.webp"
+        }
+      ]
+    },
+    {
+      "id": "nunu-and-willump",
+      "name": "努努和威朗普",
+      "enName": "Nunu & Willump",
+      "avatar": "../assets/images/heroes/portraits/nunu-and-willump.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "nunu-and-willump-jungle",
+          "avatar": "../assets/images/heroes/portraits/nunu-and-willump.png"
+        }
+      ]
+    },
+    {
+      "id": "nocturne",
+      "name": "夜曲",
+      "enName": "Nocturne",
+      "avatar": "../assets/images/heroes/portraits/nocturne.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "nocturne-jungle",
+          "avatar": "../assets/images/heroes/portraits/nocturne.png"
+        }
+      ]
+    },
+    {
+      "id": "kayn",
+      "name": "慨影",
+      "enName": "Kayn",
+      "avatar": "../assets/images/heroes/portraits/kayn.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "kayn-jungle",
+          "avatar": "../assets/images/heroes/portraits/kayn.webp"
+        }
+      ]
+    },
+    {
+      "id": "rammus",
+      "name": "拉姆斯",
+      "enName": "Rammus",
+      "avatar": "../assets/images/heroes/portraits/rammus.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "rammus-jungle",
+          "avatar": "../assets/images/heroes/portraits/rammus.png"
+        }
+      ]
+    },
+    {
+      "id": "lillia",
+      "name": "莉莉亞",
+      "enName": "Lillia",
+      "avatar": "../assets/images/heroes/portraits/lillia.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "lillia-jungle",
+          "avatar": "../assets/images/heroes/portraits/lillia.webp"
+        }
+      ]
+    },
+    {
+      "id": "vi",
+      "name": "菲艾",
+      "enName": "Vi",
+      "avatar": "../assets/images/heroes/portraits/vi.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "vi-jungle",
+          "avatar": "../assets/images/heroes/portraits/vi.png"
+        }
+      ]
+    },
+    {
+      "id": "hecarim",
+      "name": "赫克林",
+      "enName": "Hecarim",
+      "avatar": "../assets/images/heroes/portraits/hecarim.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "hecarim-jungle",
+          "avatar": "../assets/images/heroes/portraits/hecarim.webp"
+        }
+      ]
+    },
+    {
+      "id": "xin-zhao",
+      "name": "趙信",
+      "enName": "Xin Zhao",
+      "avatar": "../assets/images/heroes/portraits/xin-zhao.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "xin-zhao-jungle",
+          "avatar": "../assets/images/heroes/portraits/xin-zhao.png"
+        }
+      ]
+    },
+    {
+      "id": "amumu",
+      "name": "阿姆姆",
+      "enName": "Amumu",
+      "avatar": "../assets/images/heroes/portraits/amumu.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "amumu-jungle",
+          "avatar": "../assets/images/heroes/portraits/amumu.webp"
+        }
+      ]
+    },
+    {
+      "id": "zed",
+      "name": "劫",
+      "enName": "Zed",
+      "avatar": "../assets/images/heroes/portraits/zed.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "zed-jungle",
+          "avatar": "../assets/images/heroes/portraits/zed.png"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "zed-mid",
+          "avatar": "../assets/images/heroes/portraits/zed.webp"
+        }
+      ]
+    },
+    {
+      "id": "khazix",
+      "name": "卡力斯",
+      "enName": "Kha'Zix",
+      "avatar": "../assets/images/heroes/portraits/khazix.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "khazix-jungle",
+          "avatar": "../assets/images/heroes/portraits/khazix.webp"
+        }
+      ]
+    },
+    {
+      "id": "taliyah",
+      "name": "塔莉雅",
+      "enName": "Taliyah",
+      "avatar": "../assets/images/heroes/portraits/taliyah.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "taliyah-jungle",
+          "avatar": "../assets/images/heroes/portraits/taliyah.png"
+        },
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "taliyah-mid",
+          "avatar": "../assets/images/heroes/portraits/taliyah.webp"
+        }
+      ]
+    },
+    {
+      "id": "talon",
+      "name": "塔隆",
+      "enName": "Talon",
+      "avatar": "../assets/images/heroes/portraits/talon.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "talon-jungle",
+          "avatar": "../assets/images/heroes/portraits/talon.png"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "talon-mid",
+          "avatar": "../assets/images/heroes/portraits/talon.webp"
+        }
+      ]
+    },
+    {
+      "id": "shyvana",
+      "name": "希瓦娜",
+      "enName": "Shyvana",
+      "avatar": "../assets/images/heroes/portraits/shyvana.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "shyvana-jungle",
+          "avatar": "../assets/images/heroes/portraits/shyvana.png"
+        }
+      ]
+    },
+    {
+      "id": "master-yi",
+      "name": "易大師",
+      "enName": "Master Yi",
+      "avatar": "../assets/images/heroes/portraits/master-yi.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "master-yi-jungle",
+          "avatar": "../assets/images/heroes/portraits/master-yi.webp"
+        }
+      ]
+    },
+    {
+      "id": "lee-sin",
+      "name": "李星",
+      "enName": "Lee Sin",
+      "avatar": "../assets/images/heroes/portraits/lee-sin.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "lee-sin-jungle",
+          "avatar": "../assets/images/heroes/portraits/lee-sin.webp"
+        }
+      ]
+    },
+    {
+      "id": "nilah",
+      "name": "淣菈",
+      "enName": "Nilah",
+      "avatar": "../assets/images/heroes/portraits/nilah.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "nilah-jungle",
+          "avatar": "../assets/images/heroes/portraits/nilah.png"
+        }
+      ]
+    },
+    {
+      "id": "fiddlesticks",
+      "name": "費德提克",
+      "enName": "Fiddlesticks",
+      "avatar": "../assets/images/heroes/portraits/fiddlesticks.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "fiddlesticks-jungle",
+          "avatar": "../assets/images/heroes/portraits/fiddlesticks.webp"
+        }
+      ]
+    },
+    {
+      "id": "kindred",
+      "name": "鏡爪",
+      "enName": "Kindred",
+      "avatar": "../assets/images/heroes/portraits/kindred.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "kindred-jungle",
+          "avatar": "../assets/images/heroes/portraits/kindred.webp"
+        }
+      ]
+    },
+    {
+      "id": "rengar",
+      "name": "雷葛爾",
+      "enName": "Rengar",
+      "avatar": "../assets/images/heroes/portraits/rengar.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "rengar-jungle",
+          "avatar": "../assets/images/heroes/portraits/rengar.png"
+        }
+      ]
+    },
+    {
+      "id": "morgana",
+      "name": "魔甘娜",
+      "enName": "Morgana",
+      "avatar": "../assets/images/heroes/portraits/morgana.png",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "morgana-jungle",
+          "avatar": "../assets/images/heroes/portraits/morgana.png"
+        },
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "morgana-mid",
+          "avatar": "../assets/images/heroes/portraits/morgana.png"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "morgana-support",
+          "avatar": "../assets/images/heroes/portraits/morgana.png"
+        }
+      ]
+    },
+    {
+      "id": "diana",
+      "name": "黛安娜",
+      "enName": "Diana",
+      "avatar": "../assets/images/heroes/portraits/diana.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "diana-jungle",
+          "avatar": "../assets/images/heroes/portraits/diana.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "diana-mid",
+          "avatar": "../assets/images/heroes/portraits/diana.webp"
+        }
+      ]
+    },
+    {
+      "id": "ekko",
+      "name": "艾克",
+      "enName": "Ekko",
+      "avatar": "../assets/images/heroes/portraits/ekko.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "ekko-jungle",
+          "avatar": "../assets/images/heroes/portraits/ekko.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "ekko-mid",
+          "avatar": "../assets/images/heroes/portraits/ekko.webp"
+        }
+      ]
+    },
+    {
+      "id": "fizz",
+      "name": "飛斯",
+      "enName": "Fizz",
+      "avatar": "../assets/images/heroes/portraits/fizz.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "fizz-jungle",
+          "avatar": "../assets/images/heroes/portraits/fizz.webp"
+        },
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "fizz-mid",
+          "avatar": "../assets/images/heroes/portraits/fizz.webp"
+        }
+      ]
+    },
+    {
+      "id": "graves",
+      "name": "葛雷夫",
+      "enName": "Graves",
+      "avatar": "../assets/images/heroes/portraits/graves.webp",
+      "roles": [
+        {
+          "roleId": "jungle",
+          "tier": "C",
+          "origin": "native",
+          "detailHeroId": "graves-jungle",
+          "avatar": "../assets/images/heroes/portraits/graves.webp"
+        }
+      ]
+    },
+    {
+      "id": "lux",
+      "name": "拉克絲",
+      "enName": "Lux",
+      "avatar": "../assets/images/heroes/portraits/lux.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "lux-mid",
+          "avatar": "../assets/images/heroes/portraits/lux.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "lux-support",
+          "avatar": "../assets/images/heroes/portraits/lux.webp"
+        }
+      ]
+    },
+    {
+      "id": "orianna",
+      "name": "奧莉安娜",
+      "enName": "Orianna",
+      "avatar": "../assets/images/heroes/portraits/orianna.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "orianna-mid",
+          "avatar": "../assets/images/heroes/portraits/orianna.webp"
+        }
+      ]
+    },
+    {
+      "id": "syndra",
+      "name": "星朵拉",
+      "enName": "Syndra",
+      "avatar": "../assets/images/heroes/portraits/syndra.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "syndra-mid",
+          "avatar": "../assets/images/heroes/portraits/syndra.webp"
+        }
+      ]
+    },
+    {
+      "id": "seraphine",
+      "name": "瑟菈紛",
+      "enName": "Seraphine",
+      "avatar": "../assets/images/heroes/portraits/seraphine.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "seraphine-mid",
+          "avatar": "../assets/images/heroes/portraits/seraphine.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "seraphine-support",
+          "avatar": "../assets/images/heroes/portraits/seraphine.png"
+        }
+      ]
+    },
+    {
+      "id": "annie",
+      "name": "安妮",
+      "enName": "Annie",
+      "avatar": "../assets/images/heroes/portraits/annie.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "annie-mid",
+          "avatar": "../assets/images/heroes/portraits/annie.webp"
+        }
+      ]
+    },
+    {
+      "id": "ahri",
+      "name": "阿璃",
+      "enName": "Ahri",
+      "avatar": "../assets/images/heroes/portraits/ahri.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "ahri-mid",
+          "avatar": "../assets/images/heroes/portraits/ahri.webp"
+        }
+      ]
+    },
+    {
+      "id": "corki",
+      "name": "庫奇",
+      "enName": "Corki",
+      "avatar": "../assets/images/heroes/portraits/corki.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "corki-mid",
+          "avatar": "../assets/images/heroes/portraits/corki.webp"
+        },
+        {
+          "roleId": "duo",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "corki",
+          "avatar": "../assets/images/heroes/portraits/corki.webp"
+        }
+      ]
+    },
+    {
+      "id": "zyra",
+      "name": "枷蘿",
+      "enName": "Zyra",
+      "avatar": "../assets/images/heroes/portraits/zyra.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "zyra-mid",
+          "avatar": "../assets/images/heroes/portraits/zyra.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "zyra-support",
+          "avatar": "../assets/images/heroes/portraits/zyra.png"
+        }
+      ]
+    },
+    {
+      "id": "mel",
+      "name": "梅爾",
+      "enName": "Mel",
+      "avatar": "../assets/images/heroes/portraits/mel.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "mel-mid",
+          "avatar": "../assets/images/heroes/portraits/mel.webp"
+        }
+      ]
+    },
+    {
+      "id": "vex",
+      "name": "薇可絲",
+      "enName": "Vex",
+      "avatar": "../assets/images/heroes/portraits/vex.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "vex-mid",
+          "avatar": "../assets/images/heroes/portraits/vex.webp"
+        }
+      ]
+    },
+    {
+      "id": "viktor",
+      "name": "維克特",
+      "enName": "Viktor",
+      "avatar": "../assets/images/heroes/portraits/viktor.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "viktor-mid",
+          "avatar": "../assets/images/heroes/portraits/viktor.webp"
+        }
+      ]
+    },
+    {
+      "id": "norra",
+      "name": "諾拉",
+      "enName": "Norra",
+      "avatar": "../assets/images/heroes/portraits/norra.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "norra-mid",
+          "avatar": "../assets/images/heroes/portraits/norra.webp"
+        }
+      ]
+    },
+    {
+      "id": "karma",
+      "name": "卡瑪",
+      "enName": "Karma",
+      "avatar": "../assets/images/heroes/portraits/karma.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "karma-mid",
+          "avatar": "../assets/images/heroes/portraits/karma.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "karma-support",
+          "avatar": "../assets/images/heroes/portraits/karma.webp"
+        }
+      ]
+    },
+    {
+      "id": "zoe",
+      "name": "柔依",
+      "enName": "Zoe",
+      "avatar": "../assets/images/heroes/portraits/zoe.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "zoe-mid",
+          "avatar": "../assets/images/heroes/portraits/zoe.webp"
+        }
+      ]
+    },
+    {
+      "id": "aurelion-sol",
+      "name": "翱鋭龍獸",
+      "enName": "Aurelion Sol",
+      "avatar": "../assets/images/heroes/portraits/aurelion-sol.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "aurelion-sol-mid",
+          "avatar": "../assets/images/heroes/portraits/aurelion-sol.webp"
+        }
+      ]
+    },
+    {
+      "id": "twisted-fate",
+      "name": "逆命",
+      "enName": "Twisted Fate",
+      "avatar": "../assets/images/heroes/portraits/twisted-fate.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "twisted-fate-mid",
+          "avatar": "../assets/images/heroes/portraits/twisted-fate.webp"
+        }
+      ]
+    },
+    {
+      "id": "ziggs",
+      "name": "希格斯",
+      "enName": "Ziggs",
+      "avatar": "../assets/images/heroes/portraits/ziggs.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "ziggs-mid",
+          "avatar": "../assets/images/heroes/portraits/ziggs.webp"
+        }
+      ]
+    },
+    {
+      "id": "katarina",
+      "name": "卡特蓮娜",
+      "enName": "Katarina",
+      "avatar": "../assets/images/heroes/portraits/katarina.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "katarina-mid",
+          "avatar": "../assets/images/heroes/portraits/katarina.webp"
+        }
+      ]
+    },
+    {
+      "id": "galio",
+      "name": "加里歐",
+      "enName": "Galio",
+      "avatar": "../assets/images/heroes/portraits/galio.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "galio-mid",
+          "avatar": "../assets/images/heroes/portraits/galio.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "galio-support",
+          "avatar": "../assets/images/heroes/portraits/galio.webp"
+        }
+      ]
+    },
+    {
+      "id": "akshan",
+      "name": "阿克尚",
+      "enName": "Akshan",
+      "avatar": "../assets/images/heroes/portraits/akshan.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "akshan-mid",
+          "avatar": "../assets/images/heroes/portraits/akshan.webp"
+        }
+      ]
+    },
+    {
+      "id": "kassadin",
+      "name": "卡薩丁",
+      "enName": "Kassadin",
+      "avatar": "../assets/images/heroes/portraits/kassadin.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "kassadin-mid",
+          "avatar": "../assets/images/heroes/portraits/kassadin.webp"
+        }
+      ]
+    },
+    {
+      "id": "lissandra",
+      "name": "麗珊卓",
+      "enName": "Lissandra",
+      "avatar": "../assets/images/heroes/portraits/lissandra.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "lissandra-mid",
+          "avatar": "../assets/images/heroes/portraits/lissandra.webp"
+        }
+      ]
+    },
+    {
+      "id": "brand",
+      "name": "布蘭德",
+      "enName": "Brand",
+      "avatar": "../assets/images/heroes/portraits/brand.png",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "brand-mid",
+          "avatar": "../assets/images/heroes/portraits/brand.png"
+        },
+        {
+          "roleId": "support",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "brand-support",
+          "avatar": "../assets/images/heroes/portraits/brand.png"
+        }
+      ]
+    },
+    {
+      "id": "veigar",
+      "name": "維迦",
+      "enName": "Veigar",
+      "avatar": "../assets/images/heroes/portraits/veigar.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "veigar-mid",
+          "avatar": "../assets/images/heroes/portraits/veigar.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "veigar-support",
+          "avatar": "../assets/images/heroes/portraits/veigar.webp"
+        }
+      ]
+    },
+    {
+      "id": "heimerdinger",
+      "name": "漢默丁格",
+      "enName": "Heimerdinger",
+      "avatar": "../assets/images/heroes/portraits/heimerdinger.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "heimerdinger-mid",
+          "avatar": "../assets/images/heroes/portraits/heimerdinger.webp"
+        }
+      ]
+    },
+    {
+      "id": "velkoz",
+      "name": "威寇茲",
+      "enName": "Vel'Koz",
+      "avatar": "../assets/images/heroes/portraits/velkoz.webp",
+      "roles": [
+        {
+          "roleId": "mid",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "velkoz-mid",
+          "avatar": "../assets/images/heroes/portraits/velkoz.webp"
+        },
+        {
+          "roleId": "support",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "velkoz-support",
+          "avatar": "../assets/images/heroes/portraits/velkoz.webp"
+        }
+      ]
+    },
+    {
+      "id": "smolder",
+      "name": "史矛德",
+      "enName": "Smolder",
+      "avatar": "../assets/images/heroes/smolder/avatar.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "smolder",
+          "avatar": "../assets/images/heroes/smolder/avatar.png"
+        }
+      ]
+    },
+    {
+      "id": "miss-fortune",
+      "name": "好運姐",
+      "enName": "Miss Fortune",
+      "avatar": "../assets/images/heroes/portraits/miss-fortune.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "miss-fortune",
+          "avatar": "../assets/images/heroes/portraits/miss-fortune.webp"
+        }
+      ]
+    },
+    {
+      "id": "ezreal",
+      "name": "伊澤瑞爾",
+      "enName": "Ezreal",
+      "avatar": "../assets/images/heroes/portraits/ezreal.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "ezreal",
+          "avatar": "../assets/images/heroes/portraits/ezreal.webp"
+        }
+      ]
+    },
+    {
+      "id": "varus",
+      "name": "法洛士",
+      "enName": "Varus",
+      "avatar": "../assets/images/heroes/duo/varus.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "varus",
+          "avatar": "../assets/images/heroes/duo/varus.png"
+        }
+      ]
+    },
+    {
+      "id": "zeri",
+      "name": "婕莉",
+      "enName": "Zeri",
+      "avatar": "../assets/images/heroes/duo/zeri.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "zeri",
+          "avatar": "../assets/images/heroes/duo/zeri.png"
+        }
+      ]
+    },
+    {
+      "id": "lucian",
+      "name": "路西恩",
+      "enName": "Lucian",
+      "avatar": "../assets/images/heroes/portraits/lucian.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "lucian",
+          "avatar": "../assets/images/heroes/portraits/lucian.webp"
+        }
+      ]
+    },
+    {
+      "id": "xayah",
+      "name": "剎雅",
+      "enName": "Xayah",
+      "avatar": "../assets/images/heroes/duo/xayah.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "xayah",
+          "avatar": "../assets/images/heroes/duo/xayah.png"
+        }
+      ]
+    },
+    {
+      "id": "jhin",
+      "name": "燼",
+      "enName": "Jhin",
+      "avatar": "../assets/images/heroes/portraits/jhin.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "jhin",
+          "avatar": "../assets/images/heroes/portraits/jhin.webp"
+        }
+      ]
+    },
+    {
+      "id": "kogmaw",
+      "name": "寇格魔",
+      "enName": "Kog'Maw",
+      "avatar": "../assets/images/heroes/portraits/kogmaw.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "kogmaw",
+          "avatar": "../assets/images/heroes/portraits/kogmaw.webp"
+        }
+      ]
+    },
+    {
+      "id": "vayne",
+      "name": "汎",
+      "enName": "Vayne",
+      "avatar": "../assets/images/heroes/duo/vayne.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "vayne",
+          "avatar": "../assets/images/heroes/duo/vayne.png"
+        }
+      ]
+    },
+    {
+      "id": "kalista",
+      "name": "克黎思妲",
+      "enName": "Kalista",
+      "avatar": "../assets/images/heroes/portraits/kalista.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "kalista",
+          "avatar": "../assets/images/heroes/portraits/kalista.webp"
+        }
+      ]
+    },
+    {
+      "id": "sivir",
+      "name": "希維爾",
+      "enName": "Sivir",
+      "avatar": "../assets/images/heroes/duo/sivir.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "sivir",
+          "avatar": "../assets/images/heroes/duo/sivir.png"
+        }
+      ]
+    },
+    {
+      "id": "kaisa",
+      "name": "凱莎",
+      "enName": "Kai'Sa",
+      "avatar": "../assets/images/heroes/portraits/kaisa.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "kaisa",
+          "avatar": "../assets/images/heroes/portraits/kaisa.webp"
+        }
+      ]
+    },
+    {
+      "id": "draven",
+      "name": "達瑞文",
+      "enName": "Draven",
+      "avatar": "../assets/images/heroes/portraits/draven.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "draven",
+          "avatar": "../assets/images/heroes/portraits/draven.webp"
+        }
+      ]
+    },
+    {
+      "id": "ashe",
+      "name": "艾希",
+      "enName": "Ashe",
+      "avatar": "../assets/images/heroes/portraits/ashe.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "ashe",
+          "avatar": "../assets/images/heroes/portraits/ashe.png"
+        }
+      ]
+    },
+    {
+      "id": "jinx",
+      "name": "吉茵珂絲",
+      "enName": "Jinx",
+      "avatar": "../assets/images/heroes/portraits/jinx.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "jinx",
+          "avatar": "../assets/images/heroes/portraits/jinx.webp"
+        }
+      ]
+    },
+    {
+      "id": "caitlyn",
+      "name": "凱特琳",
+      "enName": "Caitlyn",
+      "avatar": "../assets/images/heroes/portraits/caitlyn.webp",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "caitlyn",
+          "avatar": "../assets/images/heroes/portraits/caitlyn.webp"
+        }
+      ]
+    },
+    {
+      "id": "twitch",
+      "name": "圖奇",
+      "enName": "Twitch",
+      "avatar": "../assets/images/heroes/duo/twitch.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "twitch",
+          "avatar": "../assets/images/heroes/duo/twitch.png"
+        }
+      ]
+    },
+    {
+      "id": "tristana",
+      "name": "崔絲塔娜",
+      "enName": "Tristana",
+      "avatar": "../assets/images/heroes/duo/tristana.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "tristana",
+          "avatar": "../assets/images/heroes/duo/tristana.png"
+        }
+      ]
+    },
+    {
+      "id": "samira",
+      "name": "煞蜜拉",
+      "enName": "Samira",
+      "avatar": "../assets/images/heroes/duo/samira.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "samira",
+          "avatar": "../assets/images/heroes/duo/samira.png"
+        }
+      ]
+    },
+    {
+      "id": "yunara",
+      "name": "尤娜拉",
+      "enName": "Yunara",
+      "avatar": "../assets/images/heroes/duo/yunara.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "yunara",
+          "avatar": "../assets/images/heroes/duo/yunara.png"
+        }
+      ]
+    },
+    {
+      "id": "senna",
+      "name": "姍娜",
+      "enName": "Senna",
+      "avatar": "../assets/images/heroes/duo/senna.png",
+      "roles": [
+        {
+          "roleId": "duo",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "senna",
+          "avatar": "../assets/images/heroes/duo/senna.png"
+        },
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "senna-support",
+          "avatar": "../assets/images/heroes/duo/senna.png"
+        }
+      ]
+    },
+    {
+      "id": "alistar",
+      "name": "亞歷斯塔",
+      "enName": "Alistar",
+      "avatar": "../assets/images/heroes/portraits/alistar.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "alistar-support",
+          "avatar": "../assets/images/heroes/portraits/alistar.webp"
+        }
+      ]
+    },
+    {
+      "id": "bard",
+      "name": "巴德",
+      "enName": "Bard",
+      "avatar": "../assets/images/heroes/portraits/bard.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "bard-support",
+          "avatar": "../assets/images/heroes/portraits/bard.webp"
+        }
+      ]
+    },
+    {
+      "id": "blitzcrank",
+      "name": "布里茨",
+      "enName": "Blitzcrank",
+      "avatar": "../assets/images/heroes/portraits/blitzcrank.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "blitzcrank-support",
+          "avatar": "../assets/images/heroes/portraits/blitzcrank.webp"
+        }
+      ]
+    },
+    {
+      "id": "braum",
+      "name": "布郎姆",
+      "enName": "Braum",
+      "avatar": "../assets/images/heroes/portraits/braum.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "braum-support",
+          "avatar": "../assets/images/heroes/portraits/braum.webp"
+        }
+      ]
+    },
+    {
+      "id": "janna",
+      "name": "珍娜",
+      "enName": "Janna",
+      "avatar": "../assets/images/heroes/portraits/janna.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "janna-support",
+          "avatar": "../assets/images/heroes/portraits/janna.webp"
+        }
+      ]
+    },
+    {
+      "id": "leona",
+      "name": "雷歐娜",
+      "enName": "Leona",
+      "avatar": "../assets/images/heroes/portraits/leona.png",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "leona-support",
+          "avatar": "../assets/images/heroes/portraits/leona.png"
+        }
+      ]
+    },
+    {
+      "id": "lulu",
+      "name": "露璐",
+      "enName": "Lulu",
+      "avatar": "../assets/images/heroes/portraits/lulu.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "lulu-support",
+          "avatar": "../assets/images/heroes/portraits/lulu.webp"
+        }
+      ]
+    },
+    {
+      "id": "milio",
+      "name": "米里歐",
+      "enName": "Milio",
+      "avatar": "../assets/images/heroes/portraits/milio.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "milio-support",
+          "avatar": "../assets/images/heroes/portraits/milio.webp"
+        }
+      ]
+    },
+    {
+      "id": "nami",
+      "name": "娜米",
+      "enName": "Nami",
+      "avatar": "../assets/images/heroes/portraits/nami.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "nami-support",
+          "avatar": "../assets/images/heroes/portraits/nami.webp"
+        }
+      ]
+    },
+    {
+      "id": "pyke",
+      "name": "派克",
+      "enName": "Pyke",
+      "avatar": "../assets/images/heroes/portraits/pyke.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "pyke-support",
+          "avatar": "../assets/images/heroes/portraits/pyke.webp"
+        }
+      ]
+    },
+    {
+      "id": "rakan",
+      "name": "銳空",
+      "enName": "Rakan",
+      "avatar": "../assets/images/heroes/portraits/rakan.png",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "rakan-support",
+          "avatar": "../assets/images/heroes/portraits/rakan.png"
+        }
+      ]
+    },
+    {
+      "id": "rell",
+      "name": "銳兒",
+      "enName": "Rell",
+      "avatar": "../assets/images/heroes/portraits/rell.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "rell-support",
+          "avatar": "../assets/images/heroes/portraits/rell.webp"
+        }
+      ]
+    },
+    {
+      "id": "sona",
+      "name": "索娜",
+      "enName": "Sona",
+      "avatar": "../assets/images/heroes/portraits/sona.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "sona-support",
+          "avatar": "../assets/images/heroes/portraits/sona.webp"
+        }
+      ]
+    },
+    {
+      "id": "soraka",
+      "name": "索拉卡",
+      "enName": "Soraka",
+      "avatar": "../assets/images/heroes/portraits/soraka.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "A",
+          "origin": "native",
+          "detailHeroId": "soraka-support",
+          "avatar": "../assets/images/heroes/portraits/soraka.webp"
+        }
+      ]
+    },
+    {
+      "id": "thresh",
+      "name": "瑟雷西",
+      "enName": "Thresh",
+      "avatar": "../assets/images/heroes/portraits/thresh.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "thresh-support",
+          "avatar": "../assets/images/heroes/portraits/thresh.webp"
+        }
+      ]
+    },
+    {
+      "id": "yuumi",
+      "name": "悠咪",
+      "enName": "Yuumi",
+      "avatar": "../assets/images/heroes/portraits/yuumi.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "B",
+          "origin": "native",
+          "detailHeroId": "yuumi-support",
+          "avatar": "../assets/images/heroes/portraits/yuumi.webp"
+        }
+      ]
+    },
+    {
+      "id": "zilean",
+      "name": "極靈",
+      "enName": "Zilean",
+      "avatar": "../assets/images/heroes/portraits/zilean.webp",
+      "roles": [
+        {
+          "roleId": "support",
+          "tier": "S+",
+          "origin": "native",
+          "detailHeroId": "zilean-support",
+          "avatar": "../assets/images/heroes/portraits/zilean.webp"
+        }
+      ]
+    }
+  ],
   "laneMeta": {
     "baron": {
       "name": "巴龍路",
@@ -39576,7 +41708,10 @@
       "detailComplete": true,
       "portraitMode": "shared",
       "verification": "遊戲內巴龍路 49 位名單已核對；v31 完成 7.2a 正式校正與英雄專屬策略。",
-      "detailVersion": "v31-formal-7.2a"
+      "detailVersion": "v31-formal-7.2a",
+      "roleSource": "heroCatalog",
+      "roleAuditVersion": "v63",
+      "roleAuditStatus": "passed"
     },
     "jungle": {
       "name": "打野",
@@ -39586,7 +41721,10 @@
       "detailComplete": true,
       "portraitMode": "shared",
       "verification": "遊戲內打野定位 50 位已核對；v56 已完成全部 50 位正式攻略，李星固定為打野母版。",
-      "detailVersion": "v56-complete-formal-7.2a"
+      "detailVersion": "v56-complete-formal-7.2a",
+      "roleSource": "heroCatalog",
+      "roleAuditVersion": "v63",
+      "roleAuditStatus": "passed"
     },
     "mid": {
       "name": "中路",
@@ -39596,7 +41734,10 @@
       "detailComplete": true,
       "portraitMode": "shared",
       "verification": "依使用者提供的遊戲內中路位置篩選截圖校正為 46 位；v62 已完成 46/46，中路正式攻略全數完成。",
-      "detailVersion": "v62-fourth-batch-complete-46-of-46-7.2a"
+      "detailVersion": "v62-fourth-batch-complete-46-of-46-7.2a",
+      "roleSource": "heroCatalog",
+      "roleAuditVersion": "v63",
+      "roleAuditStatus": "passed"
     },
     "duo": {
       "name": "飛龍路",
@@ -39614,1816 +41755,28 @@
       "verification": "依使用者提供的遊戲內位置篩選截圖完成原生英雄名單與頭像核對"
     }
   },
-  "laneTiers": {
-    "baron": [
-      {
-        "id": "malphite",
-        "name": "墨菲特",
-        "enName": "Malphite",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "malphite-baron",
-        "avatar": "../assets/images/heroes/portraits/malphite.webp"
-      },
-      {
-        "id": "ambessa",
-        "name": "安比薩",
-        "enName": "Ambessa",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "ambessa-baron",
-        "avatar": "../assets/images/heroes/portraits/ambessa.png"
-      },
-      {
-        "id": "yone",
-        "name": "犽凝",
-        "enName": "Yone",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "yone-baron",
-        "avatar": "../assets/images/heroes/portraits/yone.webp"
-      },
-      {
-        "id": "ornn",
-        "name": "鄂爾",
-        "enName": "Ornn",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "ornn-baron",
-        "avatar": "../assets/images/heroes/portraits/ornn.png"
-      },
-      {
-        "id": "camille",
-        "name": "卡蜜兒",
-        "enName": "Camille",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "camille-baron",
-        "avatar": "../assets/images/heroes/portraits/camille.webp"
-      },
-      {
-        "id": "aatrox",
-        "name": "厄薩斯",
-        "enName": "Aatrox",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "aatrox-baron",
-        "avatar": "../assets/images/heroes/portraits/aatrox.webp"
-      },
-      {
-        "id": "volibear",
-        "name": "弗力貝爾",
-        "enName": "Volibear",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "volibear-baron",
-        "avatar": "../assets/images/heroes/portraits/volibear.png"
-      },
-      {
-        "id": "wukong",
-        "name": "悟空",
-        "enName": "Wukong",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "wukong-baron",
-        "avatar": "../assets/images/heroes/portraits/wukong.webp"
-      },
-      {
-        "id": "shen",
-        "name": "慎",
-        "enName": "Shen",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "shen-baron",
-        "avatar": "../assets/images/heroes/portraits/shen.webp"
-      },
-      {
-        "id": "poppy",
-        "name": "波比",
-        "enName": "Poppy",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "poppy-baron",
-        "avatar": "../assets/images/heroes/portraits/poppy.webp"
-      },
-      {
-        "id": "jax",
-        "name": "賈克斯",
-        "enName": "Jax",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "jax-baron",
-        "avatar": "../assets/images/heroes/portraits/jax.webp"
-      },
-      {
-        "id": "gwen",
-        "name": "關",
-        "enName": "Gwen",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "gwen-baron",
-        "avatar": "../assets/images/heroes/portraits/gwen.webp"
-      },
-      {
-        "id": "irelia",
-        "name": "伊瑞莉雅",
-        "enName": "Irelia",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "irelia-baron",
-        "avatar": "../assets/images/heroes/portraits/irelia.webp"
-      },
-      {
-        "id": "kayle",
-        "name": "凱爾",
-        "enName": "Kayle",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kayle-baron",
-        "avatar": "../assets/images/heroes/portraits/kayle.webp"
-      },
-      {
-        "id": "kennen",
-        "name": "凱能",
-        "enName": "Kennen",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kennen-baron",
-        "avatar": "../assets/images/heroes/portraits/kennen.webp"
-      },
-      {
-        "id": "ksante",
-        "name": "卡桑帝",
-        "enName": "K'Sante",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "ksante-baron",
-        "avatar": "../assets/images/heroes/portraits/ksante.webp"
-      },
-      {
-        "id": "gnar",
-        "name": "吶兒",
-        "enName": "Gnar",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "gnar-baron",
-        "avatar": "../assets/images/heroes/portraits/gnar.webp"
-      },
-      {
-        "id": "teemo",
-        "name": "提摩",
-        "enName": "Teemo",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "teemo-baron",
-        "avatar": "../assets/images/heroes/portraits/teemo.png"
-      },
-      {
-        "id": "jayce",
-        "name": "杰西",
-        "enName": "Jayce",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "jayce-baron",
-        "avatar": "../assets/images/heroes/portraits/jayce.webp"
-      },
-      {
-        "id": "olaf",
-        "name": "歐拉夫",
-        "enName": "Olaf",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "olaf-baron",
-        "avatar": "../assets/images/heroes/portraits/olaf.webp"
-      },
-      {
-        "id": "nasus",
-        "name": "納瑟斯",
-        "enName": "Nasus",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "nasus-baron",
-        "avatar": "../assets/images/heroes/portraits/nasus.png"
-      },
-      {
-        "id": "fiora",
-        "name": "菲歐拉",
-        "enName": "Fiora",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "fiora-baron",
-        "avatar": "../assets/images/heroes/portraits/fiora.webp"
-      },
-      {
-        "id": "dr-mundo",
-        "name": "蒙多醫生",
-        "enName": "Dr. Mundo",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "dr-mundo-baron",
-        "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
-      },
-      {
-        "id": "garen",
-        "name": "蓋倫",
-        "enName": "Garen",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "garen-baron",
-        "avatar": "../assets/images/heroes/portraits/garen.webp"
-      },
-      {
-        "id": "rumble",
-        "name": "藍寶",
-        "enName": "Rumble",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "rumble-baron",
-        "avatar": "../assets/images/heroes/portraits/rumble.webp"
-      },
-      {
-        "id": "sion",
-        "name": "賽恩",
-        "enName": "Sion",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "sion-baron",
-        "avatar": "../assets/images/heroes/portraits/sion.webp"
-      },
-      {
-        "id": "sett",
-        "name": "賽特",
-        "enName": "Sett",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "sett-baron",
-        "avatar": "../assets/images/heroes/portraits/sett.webp"
-      },
-      {
-        "id": "singed",
-        "name": "辛吉德",
-        "enName": "Singed",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "singed-baron",
-        "avatar": "../assets/images/heroes/portraits/singed.webp"
-      },
-      {
-        "id": "darius",
-        "name": "達瑞斯",
-        "enName": "Darius",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "darius-baron",
-        "avatar": "../assets/images/heroes/portraits/darius.webp"
-      },
-      {
-        "id": "renekton",
-        "name": "雷尼克頓",
-        "enName": "Renekton",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "renekton-baron",
-        "avatar": "../assets/images/heroes/portraits/renekton.png"
-      },
-      {
-        "id": "riven",
-        "name": "雷玟",
-        "enName": "Riven",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "riven-baron",
-        "avatar": "../assets/images/heroes/portraits/riven.png"
-      },
-      {
-        "id": "ryze",
-        "name": "雷茲",
-        "enName": "Ryze",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "ryze-baron",
-        "avatar": "../assets/images/heroes/portraits/ryze.webp"
-      },
-      {
-        "id": "mordekaiser",
-        "name": "魔鬥凱薩",
-        "enName": "Mordekaiser",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "mordekaiser-baron",
-        "avatar": "../assets/images/heroes/portraits/mordekaiser.webp"
-      },
-      {
-        "id": "gragas",
-        "name": "古拉格斯",
-        "enName": "Gragas",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "gragas-baron",
-        "avatar": "../assets/images/heroes/portraits/gragas.webp"
-      },
-      {
-        "id": "skarner",
-        "name": "史加納",
-        "enName": "Skarner",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "skarner-baron",
-        "avatar": "../assets/images/heroes/portraits/skarner.png"
-      },
-      {
-        "id": "jarvan-iv",
-        "name": "嘉文四世",
-        "enName": "Jarvan IV",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "jarvan-iv-baron",
-        "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp"
-      },
-      {
-        "id": "nidalee",
-        "name": "奈德麗",
-        "enName": "Nidalee",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "nidalee-baron",
-        "avatar": "../assets/images/heroes/portraits/nidalee.png"
-      },
-      {
-        "id": "vladimir",
-        "name": "弗拉迪米爾",
-        "enName": "Vladimir",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "vladimir-baron",
-        "avatar": "../assets/images/heroes/portraits/vladimir.png"
-      },
-      {
-        "id": "swain",
-        "name": "斯溫",
-        "enName": "Swain",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "swain-baron",
-        "avatar": "../assets/images/heroes/portraits/swain.webp"
-      },
-      {
-        "id": "aurora",
-        "name": "歐羅拉",
-        "enName": "Aurora",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "aurora-baron",
-        "avatar": "../assets/images/heroes/portraits/aurora.png"
-      },
-      {
-        "id": "warwick",
-        "name": "沃維克",
-        "enName": "Warwick",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "warwick-baron",
-        "avatar": "../assets/images/heroes/portraits/warwick.png"
-      },
-      {
-        "id": "tryndamere",
-        "name": "泰達米爾",
-        "enName": "Tryndamere",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "tryndamere-baron",
-        "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
-      },
-      {
-        "id": "pantheon",
-        "name": "潘森",
-        "enName": "Pantheon",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "pantheon-baron",
-        "avatar": "../assets/images/heroes/portraits/pantheon.png"
-      },
-      {
-        "id": "urgot",
-        "name": "烏爾加特",
-        "enName": "Urgot",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "urgot-baron",
-        "avatar": "../assets/images/heroes/portraits/urgot.webp"
-      },
-      {
-        "id": "yasuo",
-        "name": "犽宿",
-        "enName": "Yasuo",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "yasuo-baron",
-        "avatar": "../assets/images/heroes/portraits/yasuo.webp"
-      },
-      {
-        "id": "nautilus",
-        "name": "納帝魯斯",
-        "enName": "Nautilus",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "nautilus-baron",
-        "avatar": "../assets/images/heroes/portraits/nautilus.png"
-      },
-      {
-        "id": "viego",
-        "name": "維爾戈",
-        "enName": "Viego",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "viego-baron",
-        "avatar": "../assets/images/heroes/portraits/viego.png"
-      },
-      {
-        "id": "maokai",
-        "name": "茂凱",
-        "enName": "Maokai",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "maokai-baron",
-        "avatar": "../assets/images/heroes/portraits/maokai.webp"
-      },
-      {
-        "id": "akali",
-        "name": "阿卡莉",
-        "enName": "Akali",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "akali-baron",
-        "avatar": "../assets/images/heroes/portraits/akali.webp"
-      }
-    ],
-    "jungle": [
-      {
-        "id": "nidalee",
-        "name": "奈德麗",
-        "enName": "Nidalee",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "nidalee-jungle",
-        "avatar": "../assets/images/heroes/portraits/nidalee.png"
-      },
-      {
-        "id": "warwick",
-        "name": "沃維克",
-        "enName": "Warwick",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "warwick-jungle",
-        "avatar": "../assets/images/heroes/portraits/warwick.png"
-      },
-      {
-        "id": "evelynn",
-        "name": "伊芙琳",
-        "enName": "Evelynn",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "evelynn-jungle",
-        "avatar": "../assets/images/heroes/portraits/evelynn.webp"
-      },
-      {
-        "id": "nunu-and-willump",
-        "name": "努努和威朗普",
-        "enName": "Nunu & Willump",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "nunu-and-willump-jungle",
-        "avatar": "../assets/images/heroes/portraits/nunu-and-willump.png"
-      },
-      {
-        "id": "jarvan-iv",
-        "name": "嘉文四世",
-        "enName": "Jarvan IV",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "jarvan-iv-jungle",
-        "avatar": "../assets/images/heroes/portraits/jarvan-iv.webp"
-      },
-      {
-        "id": "nocturne",
-        "name": "夜曲",
-        "enName": "Nocturne",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "nocturne-jungle",
-        "avatar": "../assets/images/heroes/portraits/nocturne.png"
-      },
-      {
-        "id": "ambessa",
-        "name": "安比薩",
-        "enName": "Ambessa",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "ambessa-jungle",
-        "avatar": "../assets/images/heroes/portraits/ambessa.png"
-      },
-      {
-        "id": "shen",
-        "name": "慎",
-        "enName": "Shen",
-        "tier": "S",
-        "origin": "native",
-        "avatar": "../assets/images/heroes/portraits/shen.webp",
-        "detailHeroId": "shen-jungle"
-      },
-      {
-        "id": "kayn",
-        "name": "慨影",
-        "enName": "Kayn",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "kayn-jungle",
-        "avatar": "../assets/images/heroes/portraits/kayn.webp"
-      },
-      {
-        "id": "rammus",
-        "name": "拉姆斯",
-        "enName": "Rammus",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "rammus-jungle",
-        "avatar": "../assets/images/heroes/portraits/rammus.png"
-      },
-      {
-        "id": "pantheon",
-        "name": "潘森",
-        "enName": "Pantheon",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "pantheon-jungle",
-        "avatar": "../assets/images/heroes/portraits/pantheon.png"
-      },
-      {
-        "id": "lillia",
-        "name": "莉莉亞",
-        "enName": "Lillia",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "lillia-jungle",
-        "avatar": "../assets/images/heroes/portraits/lillia.webp"
-      },
-      {
-        "id": "vi",
-        "name": "菲艾",
-        "enName": "Vi",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "vi-jungle",
-        "avatar": "../assets/images/heroes/portraits/vi.png"
-      },
-      {
-        "id": "hecarim",
-        "name": "赫克林",
-        "enName": "Hecarim",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "hecarim-jungle",
-        "avatar": "../assets/images/heroes/portraits/hecarim.webp"
-      },
-      {
-        "id": "xin-zhao",
-        "name": "趙信",
-        "enName": "Xin Zhao",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "xin-zhao-jungle",
-        "avatar": "../assets/images/heroes/portraits/xin-zhao.png"
-      },
-      {
-        "id": "gwen",
-        "name": "關",
-        "enName": "Gwen",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "gwen-jungle",
-        "avatar": "../assets/images/heroes/portraits/gwen.webp"
-      },
-      {
-        "id": "amumu",
-        "name": "阿姆姆",
-        "enName": "Amumu",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "amumu-jungle",
-        "avatar": "../assets/images/heroes/portraits/amumu.webp"
-      },
-      {
-        "id": "zed",
-        "name": "劫",
-        "enName": "Zed",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "zed-jungle",
-        "avatar": "../assets/images/heroes/portraits/zed.png"
-      },
-      {
-        "id": "khazix",
-        "name": "卡力斯",
-        "enName": "Kha'Zix",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "khazix-jungle",
-        "avatar": "../assets/images/heroes/portraits/khazix.webp"
-      },
-      {
-        "id": "camille",
-        "name": "卡蜜兒",
-        "enName": "Camille",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "camille-jungle",
-        "avatar": "../assets/images/heroes/portraits/camille.webp"
-      },
-      {
-        "id": "aatrox",
-        "name": "厄薩斯",
-        "enName": "Aatrox",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "aatrox-jungle",
-        "avatar": "../assets/images/heroes/portraits/aatrox.webp"
-      },
-      {
-        "id": "skarner",
-        "name": "史加納",
-        "enName": "Skarner",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "skarner-jungle",
-        "avatar": "../assets/images/heroes/portraits/skarner.png"
-      },
-      {
-        "id": "taliyah",
-        "name": "塔莉雅",
-        "enName": "Taliyah",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "taliyah-jungle",
-        "avatar": "../assets/images/heroes/portraits/taliyah.png"
-      },
-      {
-        "id": "talon",
-        "name": "塔隆",
-        "enName": "Talon",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "talon-jungle",
-        "avatar": "../assets/images/heroes/portraits/talon.png"
-      },
-      {
-        "id": "shyvana",
-        "name": "希瓦娜",
-        "enName": "Shyvana",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "shyvana-jungle",
-        "avatar": "../assets/images/heroes/portraits/shyvana.png"
-      },
-      {
-        "id": "wukong",
-        "name": "悟空",
-        "enName": "Wukong",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "wukong-jungle",
-        "avatar": "../assets/images/heroes/portraits/wukong.webp"
-      },
-      {
-        "id": "master-yi",
-        "name": "易大師",
-        "enName": "Master Yi",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "master-yi-jungle",
-        "avatar": "../assets/images/heroes/portraits/master-yi.webp"
-      },
-      {
-        "id": "lee-sin",
-        "name": "李星",
-        "enName": "Lee Sin",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "lee-sin-jungle",
-        "avatar": "../assets/images/heroes/portraits/lee-sin.webp"
-      },
-      {
-        "id": "olaf",
-        "name": "歐拉夫",
-        "enName": "Olaf",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "olaf-jungle",
-        "avatar": "../assets/images/heroes/portraits/olaf.webp"
-      },
-      {
-        "id": "poppy",
-        "name": "波比",
-        "enName": "Poppy",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "poppy-jungle",
-        "avatar": "../assets/images/heroes/portraits/poppy.webp"
-      },
-      {
-        "id": "tryndamere",
-        "name": "泰達米爾",
-        "enName": "Tryndamere",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "tryndamere-jungle",
-        "avatar": "../assets/images/heroes/portraits/tryndamere.webp"
-      },
-      {
-        "id": "nilah",
-        "name": "淣菈",
-        "enName": "Nilah",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "nilah-jungle",
-        "avatar": "../assets/images/heroes/portraits/nilah.png"
-      },
-      {
-        "id": "yone",
-        "name": "犽凝",
-        "enName": "Yone",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "yone-jungle",
-        "avatar": "../assets/images/heroes/portraits/yone.webp"
-      },
-      {
-        "id": "viego",
-        "name": "維爾戈",
-        "enName": "Viego",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "viego-jungle",
-        "avatar": "../assets/images/heroes/portraits/viego.png"
-      },
-      {
-        "id": "fiddlesticks",
-        "name": "費德提克",
-        "enName": "Fiddlesticks",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "fiddlesticks-jungle",
-        "avatar": "../assets/images/heroes/portraits/fiddlesticks.webp"
-      },
-      {
-        "id": "jax",
-        "name": "賈克斯",
-        "enName": "Jax",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "jax-jungle",
-        "avatar": "../assets/images/heroes/portraits/jax.webp"
-      },
-      {
-        "id": "darius",
-        "name": "達瑞斯",
-        "enName": "Darius",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "darius-jungle",
-        "avatar": "../assets/images/heroes/portraits/darius.webp"
-      },
-      {
-        "id": "kindred",
-        "name": "鏡爪",
-        "enName": "Kindred",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kindred-jungle",
-        "avatar": "../assets/images/heroes/portraits/kindred.webp"
-      },
-      {
-        "id": "riven",
-        "name": "雷玟",
-        "enName": "Riven",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "riven-jungle",
-        "avatar": "../assets/images/heroes/portraits/riven.png"
-      },
-      {
-        "id": "rengar",
-        "name": "雷葛爾",
-        "enName": "Rengar",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "rengar-jungle",
-        "avatar": "../assets/images/heroes/portraits/rengar.png"
-      },
-      {
-        "id": "morgana",
-        "name": "魔甘娜",
-        "enName": "Morgana",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "morgana-jungle",
-        "avatar": "../assets/images/heroes/portraits/morgana.png"
-      },
-      {
-        "id": "diana",
-        "name": "黛安娜",
-        "enName": "Diana",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "diana-jungle",
-        "avatar": "../assets/images/heroes/portraits/diana.webp"
-      },
-      {
-        "id": "gragas",
-        "name": "古拉格斯",
-        "enName": "Gragas",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "gragas-jungle",
-        "avatar": "../assets/images/heroes/portraits/gragas.webp"
-      },
-      {
-        "id": "volibear",
-        "name": "弗力貝爾",
-        "enName": "Volibear",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "volibear-jungle",
-        "avatar": "../assets/images/heroes/portraits/volibear.png"
-      },
-      {
-        "id": "nautilus",
-        "name": "納帝魯斯",
-        "enName": "Nautilus",
-        "tier": "B",
-        "origin": "native",
-        "avatar": "../assets/images/heroes/portraits/nautilus.png",
-        "detailHeroId": "nautilus-jungle"
-      },
-      {
-        "id": "ekko",
-        "name": "艾克",
-        "enName": "Ekko",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "ekko-jungle",
-        "avatar": "../assets/images/heroes/portraits/ekko.webp"
-      },
-      {
-        "id": "maokai",
-        "name": "茂凱",
-        "enName": "Maokai",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "maokai-jungle",
-        "avatar": "../assets/images/heroes/portraits/maokai.webp"
-      },
-      {
-        "id": "dr-mundo",
-        "name": "蒙多醫生",
-        "enName": "Dr. Mundo",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "dr-mundo-jungle",
-        "avatar": "../assets/images/heroes/portraits/dr-mundo.webp"
-      },
-      {
-        "id": "fizz",
-        "name": "飛斯",
-        "enName": "Fizz",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "fizz-jungle",
-        "avatar": "../assets/images/heroes/portraits/fizz.webp"
-      },
-      {
-        "id": "graves",
-        "name": "葛雷夫",
-        "enName": "Graves",
-        "tier": "C",
-        "origin": "native",
-        "detailHeroId": "graves-jungle",
-        "avatar": "../assets/images/heroes/portraits/graves.webp"
-      }
-    ],
-    "mid": [
-      {
-        "id": "lux",
-        "name": "拉克絲",
-        "enName": "Lux",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "lux-mid",
-        "avatar": "../assets/images/heroes/portraits/lux.webp"
-      },
-      {
-        "id": "orianna",
-        "name": "奧莉安娜",
-        "enName": "Orianna",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "orianna-mid",
-        "avatar": "../assets/images/heroes/portraits/orianna.webp"
-      },
-      {
-        "id": "syndra",
-        "name": "星朵拉",
-        "enName": "Syndra",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "syndra-mid",
-        "avatar": "../assets/images/heroes/portraits/syndra.webp"
-      },
-      {
-        "id": "seraphine",
-        "name": "瑟菈紛",
-        "enName": "Seraphine",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "seraphine-mid",
-        "avatar": "../assets/images/heroes/portraits/seraphine.webp"
-      },
-      {
-        "id": "annie",
-        "name": "安妮",
-        "enName": "Annie",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "annie-mid",
-        "avatar": "../assets/images/heroes/portraits/annie.webp"
-      },
-      {
-        "id": "ahri",
-        "name": "阿璃",
-        "enName": "Ahri",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "ahri-mid",
-        "avatar": "../assets/images/heroes/portraits/ahri.webp"
-      },
-      {
-        "id": "corki",
-        "name": "庫奇",
-        "enName": "Corki",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "corki-mid",
-        "avatar": "../assets/images/heroes/portraits/corki.webp"
-      },
-      {
-        "id": "zyra",
-        "name": "枷蘿",
-        "enName": "Zyra",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "zyra-mid",
-        "avatar": "../assets/images/heroes/portraits/zyra.webp"
-      },
-      {
-        "id": "yone",
-        "name": "犽凝",
-        "enName": "Yone",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "yone-mid",
-        "avatar": "../assets/images/heroes/portraits/yone.webp"
-      },
-      {
-        "id": "aurora",
-        "name": "歐羅拉",
-        "enName": "Aurora",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "aurora-mid",
-        "avatar": "../assets/images/heroes/portraits/aurora.png"
-      },
-      {
-        "id": "swain",
-        "name": "斯溫",
-        "enName": "Swain",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "swain-mid",
-        "avatar": "../assets/images/heroes/portraits/swain.webp"
-      },
-      {
-        "id": "ryze",
-        "name": "雷茲",
-        "enName": "Ryze",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "ryze-mid",
-        "avatar": "../assets/images/heroes/portraits/ryze.webp"
-      },
-      {
-        "id": "mel",
-        "name": "梅爾",
-        "enName": "Mel",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "mel-mid",
-        "avatar": "../assets/images/heroes/portraits/mel.webp"
-      },
-      {
-        "id": "vex",
-        "name": "薇可絲",
-        "enName": "Vex",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "vex-mid",
-        "avatar": "../assets/images/heroes/portraits/vex.webp"
-      },
-      {
-        "id": "viktor",
-        "name": "維克特",
-        "enName": "Viktor",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "viktor-mid",
-        "avatar": "../assets/images/heroes/portraits/viktor.webp"
-      },
-      {
-        "id": "taliyah",
-        "name": "塔莉雅",
-        "enName": "Taliyah",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "taliyah-mid",
-        "avatar": "../assets/images/heroes/portraits/taliyah.webp"
-      },
-      {
-        "id": "norra",
-        "name": "諾拉",
-        "enName": "Norra",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "norra-mid",
-        "avatar": "../assets/images/heroes/portraits/norra.webp"
-      },
-      {
-        "id": "karma",
-        "name": "卡瑪",
-        "enName": "Karma",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "karma-mid",
-        "avatar": "../assets/images/heroes/portraits/karma.webp"
-      },
-      {
-        "id": "ekko",
-        "name": "艾克",
-        "enName": "Ekko",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "ekko-mid",
-        "avatar": "../assets/images/heroes/portraits/ekko.webp"
-      },
-      {
-        "id": "diana",
-        "name": "黛安娜",
-        "enName": "Diana",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "diana-mid",
-        "avatar": "../assets/images/heroes/portraits/diana.webp"
-      },
-      {
-        "id": "zoe",
-        "name": "柔依",
-        "enName": "Zoe",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "zoe-mid",
-        "avatar": "../assets/images/heroes/portraits/zoe.webp"
-      },
-      {
-        "id": "aurelion-sol",
-        "name": "翱鋭龍獸",
-        "enName": "Aurelion Sol",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "aurelion-sol-mid",
-        "avatar": "../assets/images/heroes/portraits/aurelion-sol.webp"
-      },
-      {
-        "id": "twisted-fate",
-        "name": "逆命",
-        "enName": "Twisted Fate",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "twisted-fate-mid",
-        "avatar": "../assets/images/heroes/portraits/twisted-fate.webp"
-      },
-      {
-        "id": "morgana",
-        "name": "魔甘娜",
-        "enName": "Morgana",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "morgana-mid",
-        "avatar": "../assets/images/heroes/portraits/morgana.png"
-      },
-      {
-        "id": "akali",
-        "name": "阿卡莉",
-        "enName": "Akali",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "akali-mid",
-        "avatar": "../assets/images/heroes/portraits/akali.webp"
-      },
-      {
-        "id": "yasuo",
-        "name": "犽宿",
-        "enName": "Yasuo",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "yasuo-mid",
-        "avatar": "../assets/images/heroes/portraits/yasuo.webp"
-      },
-      {
-        "id": "zed",
-        "name": "劫",
-        "enName": "Zed",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "zed-mid",
-        "avatar": "../assets/images/heroes/portraits/zed.webp"
-      },
-      {
-        "id": "kayle",
-        "name": "凱爾",
-        "enName": "Kayle",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "kayle-mid",
-        "avatar": "../assets/images/heroes/portraits/kayle.webp"
-      },
-      {
-        "id": "teemo",
-        "name": "提摩",
-        "enName": "Teemo",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "teemo-mid",
-        "avatar": "../assets/images/heroes/portraits/teemo.webp"
-      },
-      {
-        "id": "kennen",
-        "name": "凱能",
-        "enName": "Kennen",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kennen-mid",
-        "avatar": "../assets/images/heroes/portraits/kennen.webp"
-      },
-      {
-        "id": "fizz",
-        "name": "飛斯",
-        "enName": "Fizz",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "fizz-mid",
-        "avatar": "../assets/images/heroes/portraits/fizz.webp"
-      },
-      {
-        "id": "ziggs",
-        "name": "希格斯",
-        "enName": "Ziggs",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "ziggs-mid",
-        "avatar": "../assets/images/heroes/portraits/ziggs.webp"
-      },
-      {
-        "id": "vladimir",
-        "name": "弗拉迪米爾",
-        "enName": "Vladimir",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "vladimir-mid",
-        "avatar": "../assets/images/heroes/portraits/vladimir.webp"
-      },
-      {
-        "id": "irelia",
-        "name": "伊瑞莉雅",
-        "enName": "Irelia",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "irelia-mid",
-        "avatar": "../assets/images/heroes/portraits/irelia.webp"
-      },
-      {
-        "id": "katarina",
-        "name": "卡特蓮娜",
-        "enName": "Katarina",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "katarina-mid",
-        "avatar": "../assets/images/heroes/portraits/katarina.webp"
-      },
-      {
-        "id": "galio",
-        "name": "加里歐",
-        "enName": "Galio",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "galio-mid",
-        "avatar": "../assets/images/heroes/portraits/galio.webp"
-      },
-      {
-        "id": "akshan",
-        "name": "阿克尚",
-        "enName": "Akshan",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "akshan-mid",
-        "avatar": "../assets/images/heroes/portraits/akshan.webp"
-      },
-      {
-        "id": "jayce",
-        "name": "杰西",
-        "enName": "Jayce",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "jayce-mid",
-        "avatar": "../assets/images/heroes/portraits/jayce.webp"
-      },
-      {
-        "id": "kassadin",
-        "name": "卡薩丁",
-        "enName": "Kassadin",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "kassadin-mid",
-        "avatar": "../assets/images/heroes/portraits/kassadin.webp"
-      },
-      {
-        "id": "lissandra",
-        "name": "麗珊卓",
-        "enName": "Lissandra",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "lissandra-mid",
-        "avatar": "../assets/images/heroes/portraits/lissandra.webp"
-      },
-      {
-        "id": "brand",
-        "name": "布蘭德",
-        "enName": "Brand",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "brand-mid",
-        "avatar": "../assets/images/heroes/portraits/brand.png"
-      },
-      {
-        "id": "veigar",
-        "name": "維迦",
-        "enName": "Veigar",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "veigar-mid",
-        "avatar": "../assets/images/heroes/portraits/veigar.webp"
-      },
-      {
-        "id": "heimerdinger",
-        "name": "漢默丁格",
-        "enName": "Heimerdinger",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "heimerdinger-mid",
-        "avatar": "../assets/images/heroes/portraits/heimerdinger.webp"
-      },
-      {
-        "id": "talon",
-        "name": "塔隆",
-        "enName": "Talon",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "talon-mid",
-        "avatar": "../assets/images/heroes/portraits/talon.webp"
-      },
-      {
-        "id": "velkoz",
-        "name": "威寇茲",
-        "enName": "Vel'Koz",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "velkoz-mid",
-        "avatar": "../assets/images/heroes/portraits/velkoz.webp"
-      },
-      {
-        "id": "rumble",
-        "name": "藍寶",
-        "enName": "Rumble",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "rumble-mid",
-        "avatar": "../assets/images/heroes/portraits/rumble.webp"
-      }
-    ],
-    "duo": [
-      {
-        "id": "smolder",
-        "name": "史矛德",
-        "enName": "Smolder",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "smolder",
-        "avatar": "../assets/images/heroes/smolder/avatar.png"
-      },
-      {
-        "id": "miss-fortune",
-        "name": "好運姐",
-        "enName": "Miss Fortune",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "miss-fortune",
-        "avatar": "../assets/images/heroes/portraits/miss-fortune.webp"
-      },
-      {
-        "id": "ezreal",
-        "name": "伊澤瑞爾",
-        "enName": "Ezreal",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "ezreal",
-        "avatar": "../assets/images/heroes/portraits/ezreal.webp"
-      },
-      {
-        "id": "varus",
-        "name": "法洛士",
-        "enName": "Varus",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "varus",
-        "avatar": "../assets/images/heroes/duo/varus.png"
-      },
-      {
-        "id": "zeri",
-        "name": "婕莉",
-        "enName": "Zeri",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "zeri",
-        "avatar": "../assets/images/heroes/duo/zeri.png"
-      },
-      {
-        "id": "lucian",
-        "name": "路西恩",
-        "enName": "Lucian",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "lucian",
-        "avatar": "../assets/images/heroes/portraits/lucian.webp"
-      },
-      {
-        "id": "xayah",
-        "name": "剎雅",
-        "enName": "Xayah",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "xayah",
-        "avatar": "../assets/images/heroes/duo/xayah.png"
-      },
-      {
-        "id": "jhin",
-        "name": "燼",
-        "enName": "Jhin",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "jhin",
-        "avatar": "../assets/images/heroes/portraits/jhin.webp"
-      },
-      {
-        "id": "kogmaw",
-        "name": "寇格魔",
-        "enName": "Kog'Maw",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "kogmaw",
-        "avatar": "../assets/images/heroes/portraits/kogmaw.webp"
-      },
-      {
-        "id": "vayne",
-        "name": "汎",
-        "enName": "Vayne",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "vayne",
-        "avatar": "../assets/images/heroes/duo/vayne.png"
-      },
-      {
-        "id": "corki",
-        "name": "庫奇",
-        "enName": "Corki",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "corki",
-        "avatar": "../assets/images/heroes/portraits/corki.webp"
-      },
-      {
-        "id": "kalista",
-        "name": "克黎思妲",
-        "enName": "Kalista",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kalista",
-        "avatar": "../assets/images/heroes/portraits/kalista.webp"
-      },
-      {
-        "id": "sivir",
-        "name": "希維爾",
-        "enName": "Sivir",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "sivir",
-        "avatar": "../assets/images/heroes/duo/sivir.png"
-      },
-      {
-        "id": "kaisa",
-        "name": "凱莎",
-        "enName": "Kai'Sa",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "kaisa",
-        "avatar": "../assets/images/heroes/portraits/kaisa.webp"
-      },
-      {
-        "id": "draven",
-        "name": "達瑞文",
-        "enName": "Draven",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "draven",
-        "avatar": "../assets/images/heroes/portraits/draven.webp"
-      },
-      {
-        "id": "ashe",
-        "name": "艾希",
-        "enName": "Ashe",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "ashe",
-        "avatar": "../assets/images/heroes/portraits/ashe.png"
-      },
-      {
-        "id": "jinx",
-        "name": "吉茵珂絲",
-        "enName": "Jinx",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "jinx",
-        "avatar": "../assets/images/heroes/portraits/jinx.webp"
-      },
-      {
-        "id": "caitlyn",
-        "name": "凱特琳",
-        "enName": "Caitlyn",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "caitlyn",
-        "avatar": "../assets/images/heroes/portraits/caitlyn.webp"
-      },
-      {
-        "id": "twitch",
-        "name": "圖奇",
-        "enName": "Twitch",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "twitch",
-        "avatar": "../assets/images/heroes/duo/twitch.png"
-      },
-      {
-        "id": "tristana",
-        "name": "崔絲塔娜",
-        "enName": "Tristana",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "tristana",
-        "avatar": "../assets/images/heroes/duo/tristana.png"
-      },
-      {
-        "id": "samira",
-        "name": "煞蜜拉",
-        "enName": "Samira",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "samira",
-        "avatar": "../assets/images/heroes/duo/samira.png"
-      },
-      {
-        "id": "yunara",
-        "name": "尤娜拉",
-        "enName": "Yunara",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "yunara",
-        "avatar": "../assets/images/heroes/duo/yunara.png"
-      },
-      {
-        "id": "senna",
-        "name": "姍娜",
-        "enName": "Senna",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "senna",
-        "avatar": "../assets/images/heroes/duo/senna.png"
-      }
-    ],
-    "support": [
-      {
-        "id": "alistar",
-        "name": "亞歷斯塔",
-        "enName": "Alistar",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "alistar-support",
-        "avatar": "../assets/images/heroes/portraits/alistar.webp"
-      },
-      {
-        "id": "bard",
-        "name": "巴德",
-        "enName": "Bard",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "bard-support",
-        "avatar": "../assets/images/heroes/portraits/bard.webp"
-      },
-      {
-        "id": "blitzcrank",
-        "name": "布里茨",
-        "enName": "Blitzcrank",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "blitzcrank-support",
-        "avatar": "../assets/images/heroes/portraits/blitzcrank.webp"
-      },
-      {
-        "id": "brand",
-        "name": "布蘭德",
-        "enName": "Brand",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "brand-support",
-        "avatar": "../assets/images/heroes/portraits/brand.png"
-      },
-      {
-        "id": "braum",
-        "name": "布郎姆",
-        "enName": "Braum",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "braum-support",
-        "avatar": "../assets/images/heroes/portraits/braum.webp"
-      },
-      {
-        "id": "galio",
-        "name": "加里歐",
-        "enName": "Galio",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "galio-support",
-        "avatar": "../assets/images/heroes/portraits/galio.webp"
-      },
-      {
-        "id": "janna",
-        "name": "珍娜",
-        "enName": "Janna",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "janna-support",
-        "avatar": "../assets/images/heroes/portraits/janna.webp"
-      },
-      {
-        "id": "karma",
-        "name": "卡瑪",
-        "enName": "Karma",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "karma-support",
-        "avatar": "../assets/images/heroes/portraits/karma.webp"
-      },
-      {
-        "id": "leona",
-        "name": "雷歐娜",
-        "enName": "Leona",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "leona-support",
-        "avatar": "../assets/images/heroes/portraits/leona.png"
-      },
-      {
-        "id": "lulu",
-        "name": "露璐",
-        "enName": "Lulu",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "lulu-support",
-        "avatar": "../assets/images/heroes/portraits/lulu.webp"
-      },
-      {
-        "id": "lux",
-        "name": "拉克絲",
-        "enName": "Lux",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "lux-support",
-        "avatar": "../assets/images/heroes/portraits/lux.webp"
-      },
-      {
-        "id": "malphite",
-        "name": "墨菲特",
-        "enName": "Malphite",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "malphite-support",
-        "avatar": "../assets/images/heroes/portraits/malphite.webp"
-      },
-      {
-        "id": "maokai",
-        "name": "茂凱",
-        "enName": "Maokai",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "maokai-support",
-        "avatar": "../assets/images/heroes/portraits/maokai.webp"
-      },
-      {
-        "id": "milio",
-        "name": "米里歐",
-        "enName": "Milio",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "milio-support",
-        "avatar": "../assets/images/heroes/portraits/milio.webp"
-      },
-      {
-        "id": "morgana",
-        "name": "魔甘娜",
-        "enName": "Morgana",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "morgana-support",
-        "avatar": "../assets/images/heroes/portraits/morgana.png"
-      },
-      {
-        "id": "nami",
-        "name": "娜米",
-        "enName": "Nami",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "nami-support",
-        "avatar": "../assets/images/heroes/portraits/nami.webp"
-      },
-      {
-        "id": "nautilus",
-        "name": "納帝魯斯",
-        "enName": "Nautilus",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "nautilus-support",
-        "avatar": "../assets/images/heroes/portraits/nautilus.png"
-      },
-      {
-        "id": "pyke",
-        "name": "派克",
-        "enName": "Pyke",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "pyke-support",
-        "avatar": "../assets/images/heroes/portraits/pyke.webp"
-      },
-      {
-        "id": "rakan",
-        "name": "銳空",
-        "enName": "Rakan",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "rakan-support",
-        "avatar": "../assets/images/heroes/portraits/rakan.png"
-      },
-      {
-        "id": "rell",
-        "name": "銳兒",
-        "enName": "Rell",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "rell-support",
-        "avatar": "../assets/images/heroes/portraits/rell.webp"
-      },
-      {
-        "id": "senna",
-        "name": "姍娜",
-        "enName": "Senna",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "senna-support",
-        "avatar": "../assets/images/heroes/duo/senna.png"
-      },
-      {
-        "id": "seraphine",
-        "name": "瑟菈紛",
-        "enName": "Seraphine",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "seraphine-support",
-        "avatar": "../assets/images/heroes/portraits/seraphine.png"
-      },
-      {
-        "id": "sett",
-        "name": "賽特",
-        "enName": "Sett",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "sett-support",
-        "avatar": "../assets/images/heroes/portraits/sett.webp"
-      },
-      {
-        "id": "sona",
-        "name": "索娜",
-        "enName": "Sona",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "sona-support",
-        "avatar": "../assets/images/heroes/portraits/sona.webp"
-      },
-      {
-        "id": "soraka",
-        "name": "索拉卡",
-        "enName": "Soraka",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "soraka-support",
-        "avatar": "../assets/images/heroes/portraits/soraka.webp"
-      },
-      {
-        "id": "swain",
-        "name": "斯溫",
-        "enName": "Swain",
-        "tier": "S",
-        "origin": "native",
-        "detailHeroId": "swain-support",
-        "avatar": "../assets/images/heroes/portraits/swain.webp"
-      },
-      {
-        "id": "thresh",
-        "name": "瑟雷西",
-        "enName": "Thresh",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "thresh-support",
-        "avatar": "../assets/images/heroes/portraits/thresh.webp"
-      },
-      {
-        "id": "veigar",
-        "name": "維迦",
-        "enName": "Veigar",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "veigar-support",
-        "avatar": "../assets/images/heroes/portraits/veigar.webp"
-      },
-      {
-        "id": "velkoz",
-        "name": "威寇茲",
-        "enName": "Vel'Koz",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "velkoz-support",
-        "avatar": "../assets/images/heroes/portraits/velkoz.webp"
-      },
-      {
-        "id": "yuumi",
-        "name": "悠咪",
-        "enName": "Yuumi",
-        "tier": "B",
-        "origin": "native",
-        "detailHeroId": "yuumi-support",
-        "avatar": "../assets/images/heroes/portraits/yuumi.webp"
-      },
-      {
-        "id": "zilean",
-        "name": "極靈",
-        "enName": "Zilean",
-        "tier": "S+",
-        "origin": "native",
-        "detailHeroId": "zilean-support",
-        "avatar": "../assets/images/heroes/portraits/zilean.webp"
-      },
-      {
-        "id": "zyra",
-        "name": "枷蘿",
-        "enName": "Zyra",
-        "tier": "A",
-        "origin": "native",
-        "detailHeroId": "zyra-support",
-        "avatar": "../assets/images/heroes/portraits/zyra.png"
-      }
+  "roleAudit": {
+    "status": "passed",
+    "schemaVersion": 2,
+    "uniqueHeroes": 140,
+    "activeRoleAssignments": 200,
+    "activeGuideProfiles": 200,
+    "laneCounts": {
+      "baron": 49,
+      "jungle": 50,
+      "mid": 46,
+      "duo": 23,
+      "support": 32
+    },
+    "completedLaneCounts": {
+      "baron": 49,
+      "jungle": 50,
+      "mid": 46
+    },
+    "removedLegacyProfiles": [
+      "fiora-jungle",
+      "irelia-jungle",
+      "singed-jungle"
     ]
   }
 }
