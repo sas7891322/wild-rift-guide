@@ -1316,13 +1316,13 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 
 
 /* v57：首頁／英雄列表搜尋與返回狀態 */
-.home-hero-search{position:relative;width:min(620px,100%);margin:24px auto 0;text-align:left;z-index:12}
+.home-hero-search{position:relative;width:min(620px,100%);margin:24px auto 0;text-align:left;z-index:1000;isolation:isolate}
 .home-hero-search-field,.hero-list-search-field{display:flex;align-items:center;gap:10px;border:1px solid rgba(216,184,108,.34);border-radius:16px;background:rgba(7,18,31,.9);box-shadow:0 14px 34px rgba(0,0,0,.24);padding:0 14px}
 .home-hero-search-field:focus-within,.hero-list-search-field:focus-within{border-color:rgba(216,184,108,.72);box-shadow:0 0 0 3px rgba(216,184,108,.09),0 14px 34px rgba(0,0,0,.24)}
 .home-hero-search-field>span,.hero-list-search-field>span{color:var(--gold);font-size:24px;line-height:1;transform:rotate(-20deg)}
-.home-hero-search-field input,.hero-list-search-field input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font:inherit;padding:14px 0}
+.home-hero-search-field input,.hero-list-search-field input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font:inherit;font-size:16px;line-height:1.5;padding:14px 0;-webkit-text-size-adjust:100%}
 .home-hero-search-field input::placeholder,.hero-list-search-field input::placeholder{color:#718399}
-.home-hero-search-results{position:absolute;left:0;right:0;top:calc(100% + 8px);border:1px solid rgba(216,184,108,.3);border-radius:16px;background:rgba(6,17,29,.98);box-shadow:0 22px 55px rgba(0,0,0,.46);padding:7px;max-height:420px;overflow:auto}
+.home-hero-search-results{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:1001;border:1px solid rgba(216,184,108,.3);border-radius:16px;background:rgba(6,17,29,.98);box-shadow:0 22px 55px rgba(0,0,0,.46);padding:7px;max-height:420px;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .home-hero-search-result{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:11px;align-items:center;padding:9px 10px;border-radius:12px;border:1px solid transparent}
 .home-hero-search-result:hover,.home-hero-search-result:focus-visible{outline:0;border-color:rgba(216,184,108,.35);background:rgba(21,43,68,.9)}
 .home-hero-search-result img,.home-hero-search-monogram{width:46px;height:46px;border-radius:12px;object-fit:cover;border:1px solid rgba(216,184,108,.3);background:#102137}
@@ -1332,6 +1332,7 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 .home-hero-search-result small{margin-top:3px;color:var(--muted);font-size:11px}
 .home-hero-search-result i{font-style:normal;color:var(--gold);font-size:11px;font-weight:900}
 .home-hero-search-empty{padding:22px;text-align:center;color:var(--muted);font-size:13px}
+.home-map-bg .role-strip{position:relative;z-index:1}
 .hero-list-search{display:flex;align-items:center;gap:12px;margin:-4px 0 16px}
 .hero-list-search-field{flex:1;box-shadow:none;border-radius:14px}
 .hero-list-search-field input{padding:12px 0}
