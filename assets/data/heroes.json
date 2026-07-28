@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v33",
+  "version": "7.2a-v34",
   "updated": "2026-07-28",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -97,7 +97,8 @@
     "不",
     "變",
     "。",
-    "v33：前70英雄圖片改為最新版單一頭像＋技能平面檔名；移除該70英雄舊圖重複與舊技能子資料夾。"
+    "v33：前70英雄圖片改為最新版單一頭像＋技能平面檔名；移除該70英雄舊圖重複與舊技能子資料夾。",
+    "v34：完成第71～139隻英雄及尤娜拉的最新版圖片覆蓋；每隻僅保留1張頭像與5張技能圖，技能採手機友善平面檔名。"
   ],
   "heroes": [
     {
@@ -166,41 +167,41 @@
       },
       "summary": "前期安全補兵疊層，避免無謂換血；175 層後保持距離持續消耗，利用真實傷害燃燒與斬殺能力接管團戰。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理。",
-      "avatar": "../assets/images/heroes/smolder/avatar.png",
+      "avatar": "../assets/images/heroes/portraits/smolder.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "被動堆層",
-          "icon": "../assets/images/heroes/smolder/passive.png",
+          "icon": "../assets/images/heroes/skills/smolder_01.png",
           "summary": "透過尾兵與技能命中逐步堆疊層數，讓一技能隨層數進化，是史矛德整場最核心的成長機制。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主力尾兵／消耗",
-          "icon": "../assets/images/heroes/smolder/q-base.png",
+          "icon": "../assets/images/heroes/skills/smolder_02.png",
           "summary": "前中後期最重要的主力技能，用來尾兵、消耗與收割；層數越高，清線與斬殺能力越完整。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "範圍消耗",
-          "icon": "../assets/images/heroes/smolder/w.png",
+          "icon": "../assets/images/heroes/skills/smolder_03.png",
           "summary": "中距離範圍技能，適合配合對線換血與團戰前壓低血量，幫助後續一技能收頭。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "位移自保",
-          "icon": "../assets/images/heroes/smolder/e.png",
+          "icon": "../assets/images/heroes/skills/smolder_04.png",
           "summary": "主要的位移與拉打技能，可用來調整站位、追擊或撤退；通常保留給自保會更穩。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "遠距開戰／收頭",
-          "icon": "../assets/images/heroes/smolder/r.png",
+          "icon": "../assets/images/heroes/skills/smolder_05.png",
           "summary": "遠距離的大招可用來先手壓血、支援遠方會戰，或在混戰中完成收割。"
         }
       ],
@@ -583,27 +584,27 @@
       },
       "summary": "兼具持續輸出、遠距消耗與大絕開戰，能依敵方前排厚度穩定調整輸出節奏。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
-      "avatar": "../assets/images/heroes/duo/varus.png",
+      "avatar": "../assets/images/heroes/portraits/varus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "擊殺後攻速提升",
-          "icon": "../assets/images/heroes/skills/varus/01.png",
+          "icon": "../assets/images/heroes/skills/varus_01.png",
           "summary": "參與擊殺後提高攻速，連續收割時輸出會快速上升。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "蓄力穿刺箭",
-          "icon": "../assets/images/heroes/skills/varus/02.png",
+          "icon": "../assets/images/heroes/skills/varus_02.png",
           "summary": "主要遠距消耗技能，蓄力越完整距離與傷害越高。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "枯萎印記",
-          "icon": "../assets/images/heroes/skills/varus/03.png",
+          "icon": "../assets/images/heroes/skills/varus_03.png",
           "summary": "普攻疊加印記後由技能引爆，提供重要的百分比傷害。",
           "variantIcons": [
             "../assets/images/heroes/skills/varus/03.png",
@@ -614,14 +615,14 @@
           "key": "E",
           "label": "3 技",
           "title": "範圍減療緩速",
-          "icon": "../assets/images/heroes/skills/varus/05.png",
+          "icon": "../assets/images/heroes/skills/varus_04.png",
           "summary": "限制回血並封鎖走位，適合接控制與物件團。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "鎖鏈禁錮",
-          "icon": "../assets/images/heroes/skills/varus/04.png",
+          "icon": "../assets/images/heroes/skills/varus_05.png",
           "summary": "遠距離強控並可向附近敵人擴散，是團戰開戰核心。"
         }
       ],
@@ -717,20 +718,20 @@
       },
       "summary": "前期偏弱，但裝備成形後能靠位移與大絕長時間拉打；操作上限非常高。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
-      "avatar": "../assets/images/heroes/duo/zeri.png",
+      "avatar": "../assets/images/heroes/portraits/zeri.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "特殊普攻機制",
-          "icon": "../assets/images/heroes/skills/zeri/01.png",
+          "icon": "../assets/images/heroes/skills/zeri_01.png",
           "summary": "普攻以方向性射擊呈現，需要自行瞄準並管理攻速上限。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "電擊緩速",
-          "icon": "../assets/images/heroes/skills/zeri/02.png",
+          "icon": "../assets/images/heroes/skills/zeri_02.png",
           "summary": "提供傷害與緩速，補刀或拉打都很實用。",
           "variantIcons": [
             "../assets/images/heroes/skills/zeri/02.png",
@@ -741,21 +742,21 @@
           "key": "W",
           "label": "2 技",
           "title": "遠距雷射",
-          "icon": "../assets/images/heroes/skills/zeri/03.png",
+          "icon": "../assets/images/heroes/skills/zeri_03.png",
           "summary": "穿牆後效果更強，適合團戰前消耗。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "跨牆位移",
-          "icon": "../assets/images/heroes/skills/zeri/04.png",
+          "icon": "../assets/images/heroes/skills/zeri_04.png",
           "summary": "核心機動技能，可穿越地形切入或撤退。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "超載團戰",
-          "icon": "../assets/images/heroes/skills/zeri/06.png",
+          "icon": "../assets/images/heroes/skills/zeri_05.png",
           "summary": "命中多名敵人後進入強勢拉打狀態，適合長時間團戰。"
         }
       ],
@@ -985,13 +986,13 @@
       },
       "summary": "利用羽毛佈局與倒鉤反打，兼具高輸出、禁錮與大絕自保，團戰容錯很高。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 6 張）。",
-      "avatar": "../assets/images/heroes/duo/xayah.png",
+      "avatar": "../assets/images/heroes/portraits/xayah.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "攻擊留下羽毛",
-          "icon": "../assets/images/heroes/skills/xayah/01.png",
+          "icon": "../assets/images/heroes/skills/xayah_01.webp",
           "summary": "技能後普攻會穿透並留下羽毛，是所有控制與爆發的基礎。",
           "variantIcons": [
             "../assets/images/heroes/skills/xayah/01.png",
@@ -1002,28 +1003,28 @@
           "key": "Q",
           "label": "1 技",
           "title": "雙刃投擲",
-          "icon": "../assets/images/heroes/skills/xayah/03.png",
+          "icon": "../assets/images/heroes/skills/xayah_02.webp",
           "summary": "快速放置羽毛並補傷害，常用來建立倒鉤角度。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "強化普攻",
-          "icon": "../assets/images/heroes/skills/xayah/04.png",
+          "icon": "../assets/images/heroes/skills/xayah_03.webp",
           "summary": "增加攻速與傷害，提升正面持續輸出。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "羽毛回收",
-          "icon": "../assets/images/heroes/skills/xayah/05.png",
+          "icon": "../assets/images/heroes/skills/xayah_04.webp",
           "summary": "召回羽毛造成傷害，多枚命中可禁錮，是核心反打技能。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "羽刃風暴",
-          "icon": "../assets/images/heroes/skills/xayah/06.png",
+          "icon": "../assets/images/heroes/skills/xayah_05.png",
           "summary": "短暫不可被選取並留下大量羽毛，是最重要的自保工具。"
         }
       ],
@@ -1387,41 +1388,41 @@
       },
       "summary": "前期承受射程劣勢，後期靠三環真實傷害、翻滾與大絕單挑任何高生命前排。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
-      "avatar": "../assets/images/heroes/duo/vayne.png",
+      "avatar": "../assets/images/heroes/portraits/vayne.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "追獵加速",
-          "icon": "../assets/images/heroes/skills/vayne/01.png",
+          "icon": "../assets/images/heroes/skills/vayne_01.png",
           "summary": "朝敵方英雄移動時提升追擊能力，適合收割與黏人。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "翻滾強化攻擊",
-          "icon": "../assets/images/heroes/skills/vayne/02.png",
+          "icon": "../assets/images/heroes/skills/vayne_02.png",
           "summary": "短位移並強化下一擊，是重置站位與躲技能的核心。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "三環真實傷害",
-          "icon": "../assets/images/heroes/skills/vayne/03.png",
+          "icon": "../assets/images/heroes/skills/vayne_03.png",
           "summary": "連續攻擊同一目標觸發高額真實傷害，是打坦核心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "擊退釘牆",
-          "icon": "../assets/images/heroes/skills/vayne/04.png",
+          "icon": "../assets/images/heroes/skills/vayne_04.png",
           "summary": "將敵人擊退，撞牆時造成控制，是重要自保與反殺技能。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極獵殺",
-          "icon": "../assets/images/heroes/skills/vayne/05.png",
+          "icon": "../assets/images/heroes/skills/vayne_05.png",
           "summary": "強化攻擊與翻滾，提升機動與隱蔽性，後期團戰上限極高。"
         }
       ],
@@ -1785,41 +1786,41 @@
       },
       "summary": "清線速度快又有法術護盾，能穩定發育並用大絕加速全隊開戰或撤退。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。｜技能圖示已補齊（本次收錄 5 張）。",
-      "avatar": "../assets/images/heroes/duo/sivir.png",
+      "avatar": "../assets/images/heroes/portraits/sivir.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "命中加速",
-          "icon": "../assets/images/heroes/skills/sivir/01.png",
+          "icon": "../assets/images/heroes/skills/sivir_01.png",
           "summary": "攻擊英雄後提升移速，讓走砍與追擊更順暢。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "迴旋飛刃",
-          "icon": "../assets/images/heroes/skills/sivir/02.png",
+          "icon": "../assets/images/heroes/skills/sivir_02.png",
           "summary": "往返兩段傷害的主要消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "彈射普攻",
-          "icon": "../assets/images/heroes/skills/sivir/03.png",
+          "icon": "../assets/images/heroes/skills/sivir_03.webp",
           "summary": "讓普攻在多個目標間彈跳，是團戰範圍輸出核心。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "法術護盾",
-          "icon": "../assets/images/heroes/skills/sivir/04.png",
+          "icon": "../assets/images/heroes/skills/sivir_04.png",
           "summary": "正確時機可免疫關鍵技能並回補資源，容錯很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "團隊加速",
-          "icon": "../assets/images/heroes/skills/sivir/05.png",
+          "icon": "../assets/images/heroes/skills/sivir_05.png",
           "summary": "為自己與隊友提供移速，能主動開戰、追擊或撤退。"
         }
       ],
@@ -2611,41 +2612,41 @@
       },
       "summary": "對線弱但後期偽裝繞側配合大絕能打出極高範圍傷害，適合抓敵方視野空檔。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
-      "avatar": "../assets/images/heroes/duo/twitch.png",
+      "avatar": "../assets/images/heroes/portraits/twitch.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "致命毒液",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twitch_01.webp",
           "summary": "普攻疊毒並造成持續傷害，滿層後能強化自身輸出節奏。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "偽裝伏擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twitch_02.webp",
           "summary": "進入偽裝並提升移速，適合繞後、抓人與重新站位。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "毒性區域",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twitch_03.webp",
           "summary": "投擲毒液減速並加快疊毒，幫助留人。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "毒層引爆",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twitch_04.webp",
           "summary": "依敵人身上的毒層造成額外爆發，是收割核心。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "超遠穿透射擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twitch_05.webp",
           "summary": "短時間提升射程與攻擊力，普攻可穿透多名敵人。"
         }
       ],
@@ -2739,41 +2740,41 @@
       },
       "summary": "前期射程有限，後期射程成長後非常安全；炸彈與跳躍重置讓她有高拆塔與收割能力。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
-      "avatar": "../assets/images/heroes/duo/tristana.png",
+      "avatar": "../assets/images/heroes/portraits/tristana.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "射程成長",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tristana_01.png",
           "summary": "隨等級提升普攻與技能射程，越後期越安全。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "快速射擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tristana_02.png",
           "summary": "短時間大幅提升攻速，配合炸彈快速疊層。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "火箭跳躍",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tristana_03.png",
           "summary": "位移並造成傷害，擊殺或炸彈爆炸可刷新。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "爆炸炸彈",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tristana_04.png",
           "summary": "附著目標並透過攻擊疊層爆炸，是爆發與拆塔核心。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "強力轟擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tristana_05.png",
           "summary": "單體高傷害並擊退，可保命或收割。"
         }
       ],
@@ -2867,41 +2868,41 @@
       },
       "summary": "要先用不同攻擊與技能疊滿風格再進場開大；非常吃開戰時機與隊伍控制。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
-      "avatar": "../assets/images/heroes/duo/samira.png",
+      "avatar": "../assets/images/heroes/portraits/samira.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "風格評級",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/samira_01.png",
           "summary": "交替使用不同攻擊與技能提升評級，達到最高等級才能開大。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "槍刃射擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/samira_02.png",
           "summary": "遠距離是射擊，近距離變為範圍斬擊，是低冷卻主要輸出。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "刀鋒旋舞",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/samira_03.png",
           "summary": "旋轉斬擊並阻擋飛行道具，是進場保命關鍵。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "突進斬擊",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/samira_04.png",
           "summary": "穿越目標並造成傷害，擊殺後能重置，是連續收割工具。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "煉獄扳機",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/samira_05.png",
           "summary": "達到最高風格後才能施放的範圍持續爆發。"
         }
       ],
@@ -3006,41 +3007,41 @@
       },
       "summary": "以普攻堆疊資源後進入強化輸出狀態，熟悉技能變化後能在中後期團戰持續製造壓力。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
-      "avatar": "../assets/images/heroes/duo/yunara.png",
+      "avatar": "../assets/images/heroes/portraits/yunara.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "暴擊附魔",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yunara_01.webp",
           "summary": "暴擊會附加額外魔法傷害，讓輸出類型更難被單一防禦針對。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "靈性修煉",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yunara_02.webp",
           "summary": "普攻累積資源，主動後提高攻速並強化普攻擴散。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "遠距靈能技",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yunara_03.webp",
           "summary": "主要遠距消耗技能，強化狀態下會獲得更高威脅。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "步法位移",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yunara_04.webp",
           "summary": "用於調整距離與躲技能，強化狀態能刷新或升級效果。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "超然狀態",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yunara_05.webp",
           "summary": "進入強化型態並同步升級多個基本技能，是主要爆發窗口。"
         }
       ],
@@ -3145,41 +3146,41 @@
       },
       "summary": "透過黑霧靈魂永久成長射程與傷害，兼具治療、控制與全圖護盾，偏功能與發育型飛龍路選擇。",
       "sourceNote": "7.2a 飛龍路資料：綜合官方版本更新、WildRiftFire 7.2a 與 WR-META 當前版本資訊整理；技能圖示待補官方素材。",
-      "avatar": "../assets/images/heroes/duo/senna.png",
+      "avatar": "../assets/images/heroes/portraits/senna.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "黑霧靈魂",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_01.png",
           "summary": "收集靈魂永久提升物攻、射程與暴擊，成長性極高。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "穿透聖光",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_02.png",
           "summary": "同一直線同時傷害敵人並治療隊友，是主要消耗與續戰技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "延遲禁錮",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_03.png",
           "summary": "命中後延遲爆發禁錮附近目標，適合配合隊友控制。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑霧偽裝",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_04.png",
           "summary": "讓自己與附近隊友進入黑霧，提升轉線與保命能力。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "全圖曙光",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_05.png",
           "summary": "全圖直線傷害敵人並為隊友提供護盾，是跨圖支援核心。"
         }
       ],
@@ -6253,41 +6254,41 @@
       },
       "summary": "一技能疊層與二技能強力緩速讓他後期單挑突出，但前期容易被壓線。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/nasus.png",
+      "avatar": "../assets/images/heroes/portraits/nasus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -6385,41 +6386,41 @@
       },
       "summary": "大量單體與範圍控制讓他線上配合打野、團戰強開都很可靠。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/nautilus.png",
+      "avatar": "../assets/images/heroes/portraits/nautilus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -6517,41 +6518,41 @@
       },
       "summary": "長矛消耗與豹形態斬殺形成高機動拉扯；巴龍路更依賴對線命中率。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/nidalee.png",
+      "avatar": "../assets/images/heroes/portraits/nidalee.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -6655,35 +6656,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -6781,41 +6782,41 @@
       },
       "summary": "高坦度、易碎控制與大絕遠距開戰讓他團戰價值極高，並能透過被動持續成長。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/ornn.png",
+      "avatar": "../assets/images/heroes/portraits/ornn.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ornn_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ornn_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ornn_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ornn_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ornn_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -6913,41 +6914,41 @@
       },
       "summary": "強勢前期、點控與跨圖大絕適合建立節奏；拖到大後期純輸出價值會下降。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/pantheon.png",
+      "avatar": "../assets/images/heroes/portraits/pantheon.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7051,35 +7052,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7183,35 +7184,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/renekton_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/renekton_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/renekton_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/renekton_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/renekton_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7309,41 +7310,41 @@
       },
       "summary": "技能取消後搖、被動強化普攻與多段位移構成高上限連招。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/riven.png",
+      "avatar": "../assets/images/heroes/portraits/riven.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7447,35 +7448,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rumble_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rumble_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rumble_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rumble_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rumble_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7579,35 +7580,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7711,35 +7712,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7843,35 +7844,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shen_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shen_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shen_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shen_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shen_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -7975,35 +7976,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -8107,35 +8108,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sion_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sion_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sion_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sion_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sion_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -8239,35 +8240,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -8371,35 +8372,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -8497,41 +8498,41 @@
       },
       "summary": "射程、致盲與蘑菇地圖控制讓他克制依賴普攻的近戰，但正面團戰容錯較低。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/teemo.png",
+      "avatar": "../assets/images/heroes/portraits/teemo.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -8635,35 +8636,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -8767,35 +8768,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/urgot_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/urgot_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/urgot_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/urgot_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/urgot_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -8893,41 +8894,41 @@
       },
       "summary": "百分比傷害、偽裝與奪取敵方身體讓他最擅長收割連鎖重置。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/viego.png",
+      "avatar": "../assets/images/heroes/portraits/viego.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -9025,41 +9026,41 @@
       },
       "summary": "無魔力消耗、回血與血池讓他能拖到後期爆發，裝備成形後團戰極強。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/vladimir.png",
+      "avatar": "../assets/images/heroes/portraits/vladimir.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -9157,41 +9158,41 @@
       },
       "summary": "護盾、標記二技能與大絕禁塔讓他換血、越塔與正面長戰都很強。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/volibear.png",
+      "avatar": "../assets/images/heroes/portraits/volibear.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -9289,41 +9290,41 @@
       },
       "summary": "低血量追獵、Q 跟隨位移與恐懼反打讓他單挑能力突出；7.2a 傷害被下修。",
       "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。",
-      "avatar": "../assets/images/heroes/portraits/warwick.png",
+      "avatar": "../assets/images/heroes/portraits/warwick.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -9427,35 +9428,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_01.png",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_02.png",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -9559,35 +9560,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_03.png",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_04.png",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_05.png",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -9691,35 +9692,35 @@
           "key": "P",
           "label": "被動",
           "title": "英雄核心被動",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_01.webp",
           "summary": "被動是這名英雄主要換血／成長／戰鬥循環的一部分；頁面已依巴龍路玩法整合到對線與團戰說明中。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_02.webp",
           "summary": "一技能在 7.2a 巴龍配置中屬於「主要升級技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_03.webp",
           "summary": "二技能在 7.2a 巴龍配置中屬於「最後升滿技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_04.webp",
           "summary": "三技能在 7.2a 巴龍配置中屬於「第二優先技能」；實戰使用時依本頁前中後期節奏與英雄核心連招安排。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "大絕／關鍵技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_05.webp",
           "summary": "大絕在可升級等級優先投入技能點，主要用於開戰、收割、保命或改變團戰陣型。"
         }
       ],
@@ -13327,41 +13328,41 @@
       },
       "summary": "打野以消耗與法術爆發為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/nidalee.png",
+      "avatar": "../assets/images/heroes/portraits/nidalee.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nidalee_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -13457,41 +13458,41 @@
       },
       "summary": "打野以射程與持續輸出為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/nilah.png",
+      "avatar": "../assets/images/heroes/portraits/nilah.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nilah_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nilah_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nilah_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nilah_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nilah_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -13587,41 +13588,41 @@
       },
       "summary": "打野以單挑與邊線為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/nocturne.png",
+      "avatar": "../assets/images/heroes/portraits/nocturne.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nocturne_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nocturne_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nocturne_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nocturne_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nocturne_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -13723,35 +13724,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nunu-and-willump_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nunu-and-willump_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nunu-and-willump_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nunu-and-willump_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nunu-and-willump_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -13853,35 +13854,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/olaf_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -13977,41 +13978,41 @@
       },
       "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/pantheon.png",
+      "avatar": "../assets/images/heroes/portraits/pantheon.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pantheon_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -14113,35 +14114,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/poppy_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -14237,41 +14238,41 @@
       },
       "summary": "打野以承傷與開戰為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/rammus.png",
+      "avatar": "../assets/images/heroes/portraits/rammus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rammus_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rammus_02.png",
           "summary": "一技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rammus_03.png",
           "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rammus_04.png",
           "summary": "三技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rammus_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -14367,41 +14368,41 @@
       },
       "summary": "打野以爆發與機動為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/rengar.png",
+      "avatar": "../assets/images/heroes/portraits/rengar.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rengar_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rengar_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rengar_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rengar_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rengar_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -14497,41 +14498,41 @@
       },
       "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/riven.png",
+      "avatar": "../assets/images/heroes/portraits/riven.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/riven_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -14633,35 +14634,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shyvana_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shyvana_02.png",
           "summary": "一技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shyvana_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shyvana_04.png",
           "summary": "三技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/shyvana_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -14763,35 +14764,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -14893,35 +14894,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_03.webp",
           "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_04.png",
           "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/skarner_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15017,41 +15018,41 @@
       },
       "summary": "打野以消耗與法術爆發為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/taliyah.png",
+      "avatar": "../assets/images/heroes/portraits/taliyah.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15147,41 +15148,41 @@
       },
       "summary": "打野以爆發與機動為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/talon.png",
+      "avatar": "../assets/images/heroes/portraits/talon.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/talon_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/talon_02.png",
           "summary": "一技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/talon_03.png",
           "summary": "二技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/talon_04.png",
           "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/talon_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15283,35 +15284,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_02.png",
           "summary": "一技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_04.png",
           "summary": "三技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/tryndamere_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15407,41 +15408,41 @@
       },
       "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/vi.png",
+      "avatar": "../assets/images/heroes/portraits/vi.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vi_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vi_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vi_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vi_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vi_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15537,41 +15538,41 @@
       },
       "summary": "打野以單挑與邊線為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/viego.png",
+      "avatar": "../assets/images/heroes/portraits/viego.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viego_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15667,41 +15668,41 @@
       },
       "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/volibear.png",
+      "avatar": "../assets/images/heroes/portraits/volibear.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_02.webp",
           "summary": "一技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_03.webp",
           "summary": "二技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_04.webp",
           "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/volibear_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15797,41 +15798,41 @@
       },
       "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/warwick.png",
+      "avatar": "../assets/images/heroes/portraits/warwick.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/warwick_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -15933,35 +15934,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/wukong_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -16057,41 +16058,41 @@
       },
       "summary": "打野以換血與續航為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/xin-zhao.png",
+      "avatar": "../assets/images/heroes/portraits/xin-zhao.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xin-zhao_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xin-zhao_02.png",
           "summary": "一技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xin-zhao_03.png",
           "summary": "二技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xin-zhao_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/xin-zhao_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -16193,35 +16194,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -16317,41 +16318,41 @@
       },
       "summary": "打野以爆發與機動為核心；前期先建立穩定節奏，中期圍繞物件與邊線創造人數差，後期依角色定位處理前排或側翼。",
       "sourceNote": "7.2a 打野初版詳細攻略：WildRiftFire／WR-META 7.2a 公開攻略基準＋英雄定位整理。技能圖示尚未上傳的英雄以 Q／W／E／R 文字佔位；對局建議屬入門參考，後續可依實戰與版本再校正。",
-      "avatar": "../assets/images/heroes/portraits/zed.png",
+      "avatar": "../assets/images/heroes/portraits/zed.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -19807,41 +19808,41 @@
       },
       "summary": "先穩住中線與血量，利用控制或高坦度主動支援河道；中後期以開戰與保護後排為第一優先。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/nasus.png",
+      "avatar": "../assets/images/heroes/portraits/nasus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_03.png",
           "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_04.png",
           "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nasus_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -19960,35 +19961,42 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/norra.png",
+      "avatar": "../assets/images/heroes/portraits/norra.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/norra_01.webp",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/norra_02.webp",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/norra_03.webp",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/norra_04.webp",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/norra_05.webp"
         }
       ],
       "mechanics": []
@@ -20081,35 +20089,42 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/orianna.png",
+      "avatar": "../assets/images/heroes/portraits/orianna.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/orianna_01.webp",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/orianna_02.webp",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/orianna_03.png",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/orianna_04.webp",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/orianna_05.webp"
         }
       ],
       "mechanics": []
@@ -20185,35 +20200,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ryze_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -20315,35 +20330,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/singed_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -20445,35 +20460,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -20592,35 +20607,42 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/syndra.png",
+      "avatar": "../assets/images/heroes/portraits/syndra.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/syndra_01.png",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/syndra_02.webp",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/syndra_03.png",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/syndra_04.png",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/syndra_05.png"
         }
       ],
       "mechanics": []
@@ -20690,41 +20712,41 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/taliyah.png",
+      "avatar": "../assets/images/heroes/portraits/taliyah.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/taliyah_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -20820,41 +20842,41 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/teemo.png",
+      "avatar": "../assets/images/heroes/portraits/teemo.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/teemo_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -20979,29 +21001,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twisted-fate_01.png",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twisted-fate_02.webp",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twisted-fate_03.png",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/twisted-fate_04.webp",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/twisted-fate_05.webp"
         }
       ],
       "mechanics": []
@@ -21100,29 +21129,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_01.webp",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_02.webp",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_03.webp",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_04.png",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/veigar_05.png"
         }
       ],
       "mechanics": []
@@ -21221,29 +21257,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_01.png",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_02.webp",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_03.webp",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_04.png",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/velkoz_05.webp"
         }
       ],
       "mechanics": []
@@ -21336,35 +21379,42 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/vex.png",
+      "avatar": "../assets/images/heroes/portraits/vex.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vex_01.webp",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vex_02.webp",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vex_03.webp",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vex_04.png",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/vex_05.png"
         }
       ],
       "mechanics": []
@@ -21457,35 +21507,42 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/viktor.png",
+      "avatar": "../assets/images/heroes/portraits/viktor.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viktor_01.png",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viktor_02.png",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viktor_03.png",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/viktor_04.png",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/viktor_05.png"
         }
       ],
       "mechanics": []
@@ -21555,41 +21612,41 @@
       },
       "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/vladimir.png",
+      "avatar": "../assets/images/heroes/portraits/vladimir.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/vladimir_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -21691,35 +21748,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yasuo_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -21821,35 +21878,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yone_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -21945,41 +22002,41 @@
       },
       "summary": "利用中路短線快速推線後找側翼與遊走機會，先打出關鍵技能與位移差，再進場完成收割。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/zed.png",
+      "avatar": "../assets/images/heroes/portraits/zed.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_03.png",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_04.png",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zed_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -22104,29 +22161,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ziggs_01.png",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ziggs_02.png",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ziggs_03.png",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/ziggs_04.png",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/ziggs_05.png"
         }
       ],
       "mechanics": []
@@ -22225,29 +22289,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zoe_01.png",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zoe_02.png",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zoe_03.png",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zoe_04.png",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/zoe_05.png"
         }
       ],
       "mechanics": []
@@ -22340,35 +22411,42 @@
       },
       "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/zyra.png",
+      "avatar": "../assets/images/heroes/portraits/zyra.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_01.png",
           "summary": "主要遠距消耗與清線技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_02.png",
           "summary": "第二輸出或功能技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_03.png",
           "summary": "控制／限制走位技能，物件團前價值很高。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_04.webp",
           "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/zyra_05.png"
         }
       ],
       "mechanics": []
@@ -24480,29 +24558,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nami_01.webp",
           "summary": "主要換血／功能技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nami_02.webp",
           "summary": "保護或增益技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nami_03.png",
           "summary": "護盾、治療或控制工具，優先留給主力輸出。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nami_04.png",
           "summary": "團戰關鍵保排／控制技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/nami_05.png"
         }
       ],
       "mechanics": []
@@ -24572,41 +24657,41 @@
       },
       "summary": "對線先保持可開戰的血量與角度，抓對手走位失誤再進場；中後期以視野、先手與保護主力輸出為核心。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/nautilus.png",
+      "avatar": "../assets/images/heroes/portraits/nautilus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_02.webp",
           "summary": "一技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_03.webp",
           "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_04.webp",
           "summary": "三技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/nautilus_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -24731,29 +24816,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pyke_01.png",
           "summary": "主要抓人技能，命中率直接影響開戰品質。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pyke_02.webp",
           "summary": "機動或第二控制技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pyke_03.png",
           "summary": "補充限制／保護效果。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/pyke_04.png",
           "summary": "團戰先手或收割大招。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/pyke_05.png"
         }
       ],
       "mechanics": []
@@ -24852,29 +24944,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rakan_01.png",
           "summary": "主要抓人技能，命中率直接影響開戰品質。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rakan_02.png",
           "summary": "機動或第二控制技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rakan_03.png",
           "summary": "補充限制／保護效果。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rakan_04.png",
           "summary": "團戰先手或收割大招。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/rakan_05.png"
         }
       ],
       "mechanics": []
@@ -24973,29 +25072,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rell_01.webp",
           "summary": "主要控制或起手技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rell_02.webp",
           "summary": "核心坦度／進場技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rell_03.webp",
           "summary": "補充控制與黏人能力。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/rell_04.webp",
           "summary": "大型團控或保排大招。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/rell_05.webp"
         }
       ],
       "mechanics": []
@@ -25064,41 +25170,41 @@
       },
       "summary": "以射程與功能技能持續騷擾，避免把自己當成前排；中後期和主力輸出保持互相保護的距離。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/duo/senna.png",
+      "avatar": "../assets/images/heroes/portraits/senna.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "黑霧靈魂",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_01.png",
           "summary": "收集靈魂永久提升物攻、射程與暴擊，成長性極高。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "穿透聖光",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_02.png",
           "summary": "同一直線同時傷害敵人並治療隊友，是主要消耗與續戰技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "延遲禁錮",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_03.png",
           "summary": "命中後延遲爆發禁錮附近目標，適合配合隊友控制。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑霧偽裝",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_04.png",
           "summary": "讓自己與附近隊友進入黑霧，提升轉線與保命能力。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "全圖曙光",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/senna_05.png",
           "summary": "全圖直線傷害敵人並為隊友提供護盾，是跨圖支援核心。"
         }
       ],
@@ -25226,35 +25332,42 @@
       },
       "summary": "對線以保護射手與換血效率為主，視野與站位優先於補傷害；團戰把護盾、治療或控制留給對方真正的進場點。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/seraphine.png",
+      "avatar": "../assets/images/heroes/portraits/seraphine.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/seraphine_01.png",
           "summary": "主要換血／功能技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/seraphine_02.png",
           "summary": "保護或增益技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/seraphine_03.png",
           "summary": "護盾、治療或控制工具，優先留給主力輸出。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/seraphine_04.png",
           "summary": "團戰關鍵保排／控制技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/seraphine_05.png"
         }
       ],
       "mechanics": []
@@ -25330,35 +25443,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_01.png",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_02.png",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_03.webp",
           "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_04.png",
           "summary": "三技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sett_05.png",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -25483,29 +25596,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sona_01.webp",
           "summary": "主要換血／功能技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sona_02.png",
           "summary": "保護或增益技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sona_03.png",
           "summary": "護盾、治療或控制工具，優先留給主力輸出。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/sona_04.webp",
           "summary": "團戰關鍵保排／控制技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/sona_05.png"
         }
       ],
       "mechanics": []
@@ -25604,29 +25724,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/soraka_01.png",
           "summary": "主要換血／功能技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/soraka_02.png",
           "summary": "保護或增益技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/soraka_03.png",
           "summary": "護盾、治療或控制工具，優先留給主力輸出。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/soraka_04.png",
           "summary": "團戰關鍵保排／控制技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/soraka_05.png"
         }
       ],
       "mechanics": []
@@ -25702,35 +25829,35 @@
           "key": "P",
           "label": "被動",
           "title": "核心被動機制",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_01.webp",
           "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
         },
         {
           "key": "Q",
           "label": "一技能",
           "title": "主要升級技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_02.webp",
           "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "W",
           "label": "二技能",
           "title": "最後升滿技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_03.webp",
           "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "E",
           "label": "三技能",
           "title": "第二優先技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_04.webp",
           "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "關鍵團戰技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/swain_05.webp",
           "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
         }
       ],
@@ -25855,29 +25982,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/thresh_01.png",
           "summary": "主要抓人技能，命中率直接影響開戰品質。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/thresh_02.webp",
           "summary": "機動或第二控制技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/thresh_03.png",
           "summary": "補充限制／保護效果。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/thresh_04.webp",
           "summary": "團戰先手或收割大招。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/thresh_05.png"
         }
       ],
       "mechanics": []
@@ -25976,29 +26110,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_01.webp",
           "summary": "主要消耗與傷害技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_02.webp",
           "summary": "第二輸出或範圍技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_03.webp",
           "summary": "控制／限制走位技能。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/veigar_04.png",
           "summary": "大範圍傷害或團控大招。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/veigar_05.png"
         }
       ],
       "mechanics": []
@@ -26097,29 +26238,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_01.png",
           "summary": "主要消耗與傷害技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_02.webp",
           "summary": "第二輸出或範圍技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_03.webp",
           "summary": "控制／限制走位技能。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/velkoz_04.png",
           "summary": "大範圍傷害或團控大招。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/velkoz_05.webp"
         }
       ],
       "mechanics": []
@@ -26218,29 +26366,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yuumi_01.webp",
           "summary": "主要換血／功能技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yuumi_02.png",
           "summary": "保護或增益技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yuumi_03.png",
           "summary": "護盾、治療或控制工具，優先留給主力輸出。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/yuumi_04.png",
           "summary": "團戰關鍵保排／控制技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/yuumi_05.png"
         }
       ],
       "mechanics": []
@@ -26339,29 +26494,36 @@
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zilean_01.webp",
           "summary": "主要換血／功能技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zilean_02.png",
           "summary": "保護或增益技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zilean_03.webp",
           "summary": "護盾、治療或控制工具，優先留給主力輸出。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zilean_04.webp",
           "summary": "團戰關鍵保排／控制技能。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/zilean_05.webp"
         }
       ],
       "mechanics": []
@@ -26454,35 +26616,42 @@
       },
       "summary": "利用技能射程在不吃傷害的前提下壓低血量，配合控制逼出召喚師技能；中後期避免為補傷害站得比前排更前。",
       "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
-      "avatar": "../assets/images/heroes/portraits/zyra.png",
+      "avatar": "../assets/images/heroes/portraits/zyra.webp",
       "abilities": [
         {
           "key": "Q",
           "label": "1 技",
           "title": "主要技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_01.png",
           "summary": "主要消耗與傷害技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "核心技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_02.png",
           "summary": "第二輸出或範圍技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "功能技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_03.png",
           "summary": "控制／限制走位技能。"
         },
         {
           "key": "R",
           "label": "大絕",
           "title": "終極技能",
-          "icon": "",
+          "icon": "../assets/images/heroes/skills/zyra_04.webp",
           "summary": "大範圍傷害或團控大招。"
+        },
+        {
+          "key": "R",
+          "label": "大絕",
+          "title": "待官方資料更新",
+          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
+          "icon": "../assets/images/heroes/skills/zyra_05.png"
         }
       ],
       "mechanics": []
