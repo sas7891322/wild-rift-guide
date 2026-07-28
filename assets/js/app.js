@@ -13,26 +13,30 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
   const normalizeAvatar=src=>String(src||'').replace(/^\.\.\//,'');
   const baseIdOf=x=>x?.baseId||String(x?.id||'').replace(/-(baron|jungle|mid|duo|support)$/,'');
 
-  function uniqueSearchHeroes(data){
+  function catalogFromLegacyLaneTiers(laneTiers={}){
     const roleOrder=['baron','jungle','mid','duo','support'];
     const map=new Map();
-    for(const role of roleOrder){
-      for(const hero of (data?.laneTiers?.[role]||[])){
-        if(!hero?.detailHeroId) continue;
+    for(const roleId of roleOrder){
+      for(const hero of (laneTiers?.[roleId]||[])){
         const key=baseIdOf(hero);
-        if(!map.has(key)){
-          map.set(key,{
-            name:hero.name||'',
-            avatar:normalizeAvatar(hero.avatar),
-            detailHeroId:hero.detailHeroId,
-            roles:[]
-          });
-        }
-        const item=map.get(key);
-        if(!item.roles.includes(role)) item.roles.push(role);
+        if(!map.has(key)) map.set(key,{id:key,name:hero.name||'',avatar:hero.avatar||'',roles:[]});
+        map.get(key).roles.push({roleId,detailHeroId:hero.detailHeroId||'',avatar:hero.avatar||''});
       }
     }
-    return [...map.values()].sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant'));
+    return [...map.values()];
+  }
+
+  function uniqueSearchHeroes(data){
+    const catalog=Array.isArray(data?.heroCatalog)?data.heroCatalog:catalogFromLegacyLaneTiers(data?.laneTiers||{});
+    return catalog.map(hero=>{
+      const roles=(hero.roles||[]).filter(role=>role.detailHeroId);
+      return {
+        name:hero.name||'',
+        avatar:normalizeAvatar(hero.avatar||roles.find(role=>role.avatar)?.avatar||''),
+        detailHeroId:roles[0]?.detailHeroId||'',
+        roles:roles.map(role=>role.roleId)
+      };
+    }).filter(hero=>hero.detailHeroId).sort((a,b)=>a.name.localeCompare(b.name,'zh-Hant'));
   }
 
   const roleNames={baron:'巴龍路',jungle:'打野',mid:'中路',duo:'飛龍路',support:'輔助'};

@@ -5,7 +5,7 @@
   const roleNames = {all:'ALL', baron:'巴龍路', jungle:'打野', mid:'中路', duo:'飛龍路', support:'輔助'};
   const tierOrder = ['S+','S','A','B','C'];
 
-  const state = { role:'all', heroId:'', query:'', heroes:[], laneTiers:{}, laneMeta:{}, runes:[], items:[], spells:[] };
+  const state = { role:'all', heroId:'', query:'', heroes:[], heroCatalog:[], laneMeta:{}, runes:[], items:[], spells:[] };
 
   function flattenRunes(data){ return Object.values(data || {}).flatMap(v => Array.isArray(v) ? v : []); }
   function normalizeItems(data){ return Array.isArray(data) ? data : (data?.items || []); }
@@ -56,25 +56,52 @@
 
   const rolePriority=['baron','jungle','mid','duo','support'];
   function baseIdOf(x){ return x?.baseId || String(x?.id||'').replace(/-(baron|jungle|mid|duo|support)$/,''); }
-  function allHeroes(){
+  function catalogFromLegacyLaneTiers(laneTiers={}){
     const map=new Map();
-    for(const role of rolePriority){
-      for(const h of (state.laneTiers?.[role]||[])){
+    for(const roleId of rolePriority){
+      for(const h of (laneTiers?.[roleId]||[])){
         const key=baseIdOf(h);
-        if(!map.has(key)) map.set(key,{id:key,name:h.name,enName:h.enName,avatar:h.avatar||'',roles:[],detailIds:[]});
-        const x=map.get(key);
-        if(!x.avatar && h.avatar) x.avatar=h.avatar;
-        if(!x.roles.includes(role)) x.roles.push(role);
-        if(h.detailHeroId && !x.detailIds.includes(h.detailHeroId)) x.detailIds.push(h.detailHeroId);
+        if(!map.has(key)) map.set(key,{id:key,name:h.name||'',enName:h.enName||'',avatar:h.avatar||'',roles:[]});
+        const item=map.get(key);
+        item.roles.push({roleId,tier:h.tier||'',origin:h.origin||'native',detailHeroId:h.detailHeroId||'',avatar:h.avatar||item.avatar||''});
       }
     }
-    return [...map.values()].sort((a,b)=>(a.enName||a.name).localeCompare(b.enName||b.name,'en'));
+    return [...map.values()];
+  }
+  function roleEntry(catalogHero,roleId){ return (catalogHero?.roles||[]).find(x=>x.roleId===roleId); }
+  function catalogHeroByBaseId(id){ return state.heroCatalog.find(x=>x.id===id); }
+  function activeGuideIds(){ return new Set(state.heroCatalog.flatMap(h=>(h.roles||[]).map(r=>r.detailHeroId).filter(Boolean))); }
+  function resolveHeroId(heroId){
+    if(!heroId) return '';
+    const active=activeGuideIds();
+    if(active.has(heroId)) return heroId;
+    const catalog=catalogHeroByBaseId(baseIdOf({id:heroId}));
+    return catalog?.roles?.find(r=>r.detailHeroId)?.detailHeroId||'';
+  }
+  function allHeroes(){
+    return state.heroCatalog.map(h=>({
+      id:h.id,
+      name:h.name,
+      enName:h.enName,
+      avatar:h.avatar||h.roles?.find(r=>r.avatar)?.avatar||'',
+      roles:(h.roles||[]).map(r=>r.roleId),
+      detailIds:(h.roles||[]).map(r=>r.detailHeroId).filter(Boolean)
+    })).sort((a,b)=>(a.enName||a.name).localeCompare(b.enName||b.name,'en'));
   }
   function roleHeroesRaw(){
     if(state.role==='all') return allHeroes();
-    const lane=state.laneTiers?.[state.role];
-    if(Array.isArray(lane)) return lane;
-    return state.heroes.filter(h=>h.roleId===state.role).map(h=>({...h,detailHeroId:h.id,origin:'native'}));
+    return state.heroCatalog.flatMap(h=>{
+      const lane=roleEntry(h,state.role);
+      return lane?[{
+        id:h.id,
+        name:h.name,
+        enName:h.enName,
+        avatar:lane.avatar||h.avatar||'',
+        tier:lane.tier,
+        origin:lane.origin||'native',
+        detailHeroId:lane.detailHeroId
+      }]:[];
+    });
   }
   function roleHeroes(){
     const heroes=roleHeroesRaw();
@@ -97,6 +124,7 @@
     history.replaceState(makeHistoryState(view,scrollY),'',buildUrl());
   }
   function openHero(heroId){
+    heroId=resolveHeroId(heroId);
     if(!heroId) return;
     history.replaceState(makeHistoryState('list',window.scrollY),'',buildUrl({heroId:''}));
     state.heroId=heroId;
@@ -367,6 +395,8 @@
   }
 
   function renderDetail(){
+    const resolvedHeroId=resolveHeroId(state.heroId);
+    if(resolvedHeroId && resolvedHeroId!==state.heroId){ state.heroId=resolvedHeroId; syncUrl('detail',0); }
     const hero=state.heroes.find(h=>h.id===state.heroId);
     if(!hero){ state.heroId=''; syncUrl('list',0); renderOverview(); return; }
     const runes=(hero.runes||[]).map(id=>byId(state.runes,id));
@@ -374,7 +404,8 @@
     const boots=(hero.boots||[]).map(id=>byId(state.items,id));
     const spells=(hero.spells||[]).map(id=>byId(state.spells,id));
     const tags=(hero.tags||[]).map(t=>`<span>${t}</span>`).join('');
-    const profiles=state.heroes.filter(x=>baseIdOf(x)===baseIdOf(hero));
+    const catalogHero=catalogHeroByBaseId(baseIdOf(hero));
+    const profiles=(catalogHero?.roles||[]).map(role=>state.heroes.find(x=>x.id===role.detailHeroId)).filter(Boolean);
     const laneSwitch=profiles.length>1?`<div class="hero-lane-switch">${profiles.map(x=>`<button data-profile="${x.id}" class="${x.id===hero.id?'active':''}">${roleNames[x.roleId]||x.role}</button>`).join('')}</div>`:'';
     const runeHTML=runes.map((x,i)=>`<div class="hero-rune-card ${i===0?'keystone':''}">${x?`<img src="${safeIcon(x)}" alt="${x.name}"><div><small>${i===0?'關鍵符文':'副符文'}</small><strong>${x.name}</strong><p>${x.tag||''}</p></div>`:'<span>資料待補</span>'}</div>`).join('');
     const spellHTML=spells.map(x=>buildMiniCard(x,'spell')).join('');
@@ -441,9 +472,9 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=57'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=63'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
-      state.heroes=heroData.heroes||heroData||[]; state.laneTiers=heroData.laneTiers||{}; state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
+      state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
       const params=new URLSearchParams(location.search);
       const saved=history.state?.wrgHeroes?history.state:null;
@@ -451,11 +482,11 @@
       if(saved){
         if(validRoles.includes(saved.role)) state.role=saved.role;
         state.query=String(saved.query||'');
-        state.heroId=saved.view==='detail'?String(saved.heroId||''):'';
+        state.heroId=saved.view==='detail'?resolveHeroId(String(saved.heroId||'')):'';
       }else{
         if(params.get('role') && validRoles.includes(params.get('role'))) state.role=params.get('role');
         state.query=String(params.get('q')||'');
-        const initialHero=String(params.get('hero')||'');
+        const initialHero=resolveHeroId(String(params.get('hero')||''));
         if(initialHero){
           const detailUrl=buildUrl({heroId:initialHero});
           state.heroId='';
@@ -515,14 +546,14 @@
         if(entry){
           state.role=validRoles.includes(entry.role)?entry.role:'all';
           state.query=String(entry.query||'');
-          state.heroId=entry.view==='detail'?String(entry.heroId||''):'';
+          state.heroId=entry.view==='detail'?resolveHeroId(String(entry.heroId||'')):'';
           render();
           if(!state.heroId) restoreListScroll(entry.scrollY||0);
           return;
         }
         state.role=validRoles.includes(urlParams.get('role'))?urlParams.get('role'):'all';
         state.query=String(urlParams.get('q')||'');
-        state.heroId=String(urlParams.get('hero')||'');
+        state.heroId=resolveHeroId(String(urlParams.get('hero')||''));
         render();
         if(!state.heroId) restoreListScroll(0);
       });
