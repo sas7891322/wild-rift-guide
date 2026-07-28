@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v61-mid-third-batch-35of46",
+  "version": "7.2a-v62-mid-fourth-batch-complete-46of46",
   "updated": "2026-07-29",
   "notes": [
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
@@ -121,7 +121,8 @@
     "v58：完成中路阿璃正式版並固定為中路英雄母版。套用既有結構化英雄頁版型，更新 7.2a 出裝、符文、召喚師技能、完整技能加點、三組實戰連招、對局與前中後期策略；其餘英雄資料、CSS、JS 與版型均未修改。",
     "v59：校正遊戲內中路 46 位正式名單；完成第一批 12/46：阿璃、拉克絲、奧莉安娜、星朵拉、瑟菈紛、安妮、維克特、雷茲、薇可絲、歐羅拉、梅爾、斯溫。全數沿用阿璃固定中路母版。",
     "v60：完成中路第二批 12 位：塔莉雅、柔依、卡瑪、艾克、黛安娜、諾拉、庫奇、希格斯、翱鋭龍獸、逆命、維迦、漢默丁格。中路正式攻略進度更新為 24/46。",
-    "v61：完成中路第三批 11 位：阿卡莉、犽宿、犽凝、劫、飛斯、卡薩丁、麗珊卓、伊瑞莉雅、卡特蓮娜、杰西、阿克尚。中路正式攻略進度更新為 35/46。"
+    "v61：完成中路第三批 11 位：阿卡莉、犽宿、犽凝、劫、飛斯、卡薩丁、麗珊卓、伊瑞莉雅、卡特蓮娜、杰西、阿克尚。中路正式攻略進度更新為 35/46。",
+    "v62：完成中路第四批 11 位：枷蘿、魔甘娜、凱爾、提摩、凱能、弗拉迪米爾、加里歐、布蘭德、塔隆、威寇茲、藍寶。中路正式攻略進度更新為 46/46，中路全數完成。"
   ],
   "heroes": [
     {
@@ -25921,11 +25922,12 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "A",
-      "position": "控制法師／遠距消耗",
+      "position": "爆發法師／範圍燃燒連鎖",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "範圍爆發",
+        "持續燃燒",
+        "單體暈眩",
+        "坦克殺傷"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -25936,44 +25938,44 @@
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
+        "electrocute",
+        "axiom-arcanist",
         "transcendence",
-        "manaflow-band",
+        "scorch",
         "bone-plating"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-25",
+        "magic-high-10",
+        "magic-high-16",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-13"
+        "magic-high-21"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
-      "skillOrder": "W > E > Q",
+      "skillOrder": "W > Q > E",
       "skillSequence": [
         "W",
-        "E",
         "Q",
+        "E",
         "W",
         "R",
         "W",
         "W",
-        "E",
-        "R",
-        "E",
-        "E",
         "Q",
         "R",
         "Q",
-        "Q"
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E"
       ],
       "skillLabels": {
         "Q": "1 技",
@@ -25983,24 +25985,24 @@
       },
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "斯溫"
+          "加里歐",
+          "斯溫",
+          "弗拉迪米爾"
         ],
         "bad": [
+          "星朵拉",
           "劫",
-          "飛斯",
-          "卡薩丁"
+          "拉克絲"
         ],
         "ban": "劫"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "二技抓對手補兵時消耗，三級後可用三技先掛燃燒，再接一技保證暈眩與二技增傷。技能進入冷卻後非常脆弱，連段打完要立刻退回兵線後方。",
+        "中期": "推線後跟著隊友進入狹窄地形，大絕在多人靠近或單一目標能與自己彈跳時價值最高。不要強求切後排，對前排疊滿被動也能造成大量連鎖範圍傷害。",
+        "後期": "站位比傷害更重要，等隊友先控制再接技能。大絕與被動爆炸能迅速瓦解密集陣型，但一技仍要留給突進者或已燃燒的關鍵目標。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "三技先掛烈炎，再以一技暈眩接二技增傷；團戰利用大絕彈跳與被動爆炸製造連鎖範圍傷害，技能冷卻時保持安全站位。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/brand.png",
       "abilities": [
         {
@@ -26044,8 +26046,92 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-10",
+        "magic-high-16",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "三級標準連段",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技先掛燃燒"
+            },
+            {
+              "key": "Q",
+              "label": "1技暈眩"
+            },
+            {
+              "key": "W",
+              "label": "2技增傷"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "三技是最穩定的起手，先讓目標燃燒後一技才能暈眩；控制命中後二技幾乎必定打中。"
+        },
+        {
+          "name": "大絕單殺",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技燃燒"
+            },
+            {
+              "key": "R",
+              "label": "4技彈跳"
+            },
+            {
+              "key": "Q",
+              "label": "1技暈眩"
+            },
+            {
+              "key": "W",
+              "label": "2技爆發"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃"
+            }
+          ],
+          "note": "三技起手後大絕會對燃燒目標附帶緩速並優先疊層；趁彈跳期間接一技與二技完成被動爆炸。"
+        },
+        {
+          "name": "兵線擴散消耗",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技燒士兵"
+            },
+            {
+              "key": "E",
+              "label": "3技擴散"
+            },
+            {
+              "key": "Q",
+              "label": "1技封反打"
+            },
+            {
+              "key": "MOVE",
+              "label": "後撤"
+            }
+          ],
+          "note": "可先用二技讓前排士兵燃燒，再用三技擴大擴散範圍消耗英雄；一技保留防止對手趁空窗突進。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "diana-mid",
@@ -26733,36 +26819,37 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "S",
-      "position": "前排法坦／開戰支援",
+      "position": "法坦中路／全圖支援反開",
       "tags": [
-        "坦度",
-        "開戰",
-        "支援"
+        "坦度成長",
+        "範圍嘲諷",
+        "擊飛開戰",
+        "大絕支援"
       ],
       "ratings": {
-        "單排推薦": 4,
-        "新手推薦": 3,
+        "單排推薦": 5,
+        "新手推薦": 4,
         "操作難度": 3,
-        "Blind Pick": 3,
+        "Blind Pick": 5,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
-        "grasp",
+        "glacial-augment",
         "courage-of-colossus",
-        "bone-plating",
+        "second-wind",
         "overgrowth",
-        "triumph"
+        "sudden-impact"
       ],
       "items": [
-        "defense-high-19",
-        "defense-high-06",
+        "defense-high-04",
         "defense-high-08",
-        "defense-high-14",
+        "magic-high-23",
+        "defense-high-03",
         "defense-high-15"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -26802,17 +26889,17 @@
         "bad": [
           "弗拉迪米爾",
           "維克特",
-          "翱鋭龍獸"
+          "翱銳龍獸"
         ],
         "ban": "弗拉迪米爾"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技與被動強化普攻快速清線，二技被動魔法盾可降低法師消耗。三技不要隨意往前撞進敵方塔下，保留作反打或配合打野。",
+        "中期": "清完中線後觀察邊線與河道，大絕優先支援已經進場或即將被集火的隊友。正面小規模戰可三技擊飛接二技嘲諷，讓隊友安全跟上。",
+        "後期": "依陣容選擇先手或保排：敵方後排站位密集時閃現蓄力嘲諷；刺客切入時則留在主力旁邊反手控制。大絕不要只看距離，也要確認落點不會被敵人提前散開。"
       },
-      "summary": "先穩住中線與血量，利用控制或高坦度主動支援河道；中後期以開戰與保護後排為第一優先。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "清線後利用大絕快速支援邊線，三技擊飛與二技嘲諷提供穩定開戰；坦裝成形後可站在前排吸收傷害，也能留技能保護後排。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/galio.webp",
       "abilities": [
         {
@@ -26856,8 +26943,96 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "basic-ruby"
+      ],
+      "coreItems": [
+        "defense-high-04",
+        "defense-high-08",
+        "magic-high-23"
+      ],
+      "combos": [
+        {
+          "name": "基礎控制連段",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技擊飛"
+            },
+            {
+              "key": "AA",
+              "label": "被動強化普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技旋風"
+            },
+            {
+              "key": "W",
+              "label": "2技蓄力嘲諷"
+            }
+          ],
+          "note": "三技命中後補被動普攻與一技，接著蓄力二技延長控制；不要在隊友距離過遠時獨自打完整套。"
+        },
+        {
+          "name": "閃現嘲諷開團",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技蓄力"
+            },
+            {
+              "key": "FLASH",
+              "label": "閃現調位"
+            },
+            {
+              "key": "W",
+              "label": "放開群體嘲諷"
+            },
+            {
+              "key": "Q",
+              "label": "1技輸出"
+            },
+            {
+              "key": "E",
+              "label": "3技追擊"
+            }
+          ],
+          "note": "先蓄力二技再閃現調整範圍，可突然控制多人；嘲諷結束後用一技與三技補傷害或封住退路。"
+        },
+        {
+          "name": "大絕支援反打",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技鎖定友軍"
+            },
+            {
+              "key": "E",
+              "label": "落地後3技擊飛"
+            },
+            {
+              "key": "W",
+              "label": "2技嘲諷"
+            },
+            {
+              "key": "Q",
+              "label": "1技旋風"
+            },
+            {
+              "key": "AA",
+              "label": "被動普攻"
+            }
+          ],
+          "note": "大絕優先落在已被開戰的核心或先手隊友身上，落地擊飛後連接二技嘲諷，快速扭轉人數與陣型。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "heimerdinger-mid",
@@ -27999,63 +28174,64 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "B",
-      "position": "持續法傷／中距離團戰",
+      "position": "後期遠程核心／無敵反打",
       "tags": [
+        "等級成長",
         "持續輸出",
-        "團戰",
-        "成長"
+        "範圍普攻",
+        "無敵保護"
       ],
       "ratings": {
-        "單排推薦": 3,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
-        "對線強度": 4,
-        "團戰影響力": 4
+        "單排推薦": 5,
+        "新手推薦": 2,
+        "操作難度": 4,
+        "Blind Pick": 3,
+        "對線強度": 2,
+        "團戰影響力": 5
       },
       "runes": [
         "conqueror",
-        "brutal",
-        "coup-de-grace",
-        "legend-tenacity",
-        "transcendence"
+        "botanist",
+        "absolute-focus",
+        "gathering-storm",
+        "bone-plating"
       ],
       "items": [
-        "magic-high-17",
-        "magic-high-23",
-        "magic-high-16",
+        "magic-high-20",
+        "magic-high-04",
         "magic-high-14",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-21"
       ],
       "boots": [
         "mana-boots",
-        "blood-mage-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
         "barrier"
       ],
-      "skillOrder": "Q > W > E",
+      "skillOrder": "E > Q > W",
       "matchups": {
         "good": [
-          "安妮",
+          "卡薩丁",
           "維迦",
-          "卡特蓮娜"
+          "翱銳龍獸"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "麗珊卓"
+          "伊瑞莉雅",
+          "阿克尚",
+          "杰西"
         ],
-        "ban": "劫"
+        "ban": "阿克尚"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "把經驗與安全補兵放在第一順位，三技遠程強化普攻用來收危險兵線。面對強勢遠程或刺客時不要爭無意義線權，二技加速與治療保留作撤退。",
+        "中期": "完成納什與暮夜黎明後開始接管邊線，持續普攻疊出被動與征服者。大絕可保自己，也能保護先手進場的主力，但不要在敵方爆發尚未落下前過早使用。",
+        "後期": "維持後排射手站位，利用範圍火焰波打前排即可。敵方切入時開大擋掉核心爆發，無敵結束後再以高攻速與範圍普攻完成反打。"
       },
-      "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "前期安全取得等級與裝備，靠三技補兵並避免被壓出經驗區；成形後以高攻速範圍普攻接管團戰，大絕精準擋下敵方爆發。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/kayle.webp",
       "abilities": [
         {
@@ -28095,8 +28271,12 @@
         }
       ],
       "skillSequence": [
+        "E",
         "Q",
         "W",
+        "E",
+        "R",
+        "E",
         "E",
         "Q",
         "R",
@@ -28105,11 +28285,7 @@
         "W",
         "R",
         "W",
-        "W",
-        "E",
-        "R",
-        "E",
-        "E"
+        "W"
       ],
       "skillLabels": {
         "Q": "1 技",
@@ -28123,8 +28299,92 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-20",
+        "magic-high-04",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "安全遠程換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技減速降防"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技強化普攻"
+            },
+            {
+              "key": "MOVE",
+              "label": "拉回距離"
+            }
+          ],
+          "note": "一技命中後再接普攻與三技，利用減速完成傷害；前期打完立刻退回安全位置，不要延長換血。"
+        },
+        {
+          "name": "加速追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技治療加速"
+            },
+            {
+              "key": "Q",
+              "label": "1技減速"
+            },
+            {
+              "key": "AA",
+              "label": "持續普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技斬殺"
+            }
+          ],
+          "note": "二技同時提升自己與友軍跑速，可用來保持輸出距離；三技依已損生命造成額外傷害，留在最後收尾。"
+        },
+        {
+          "name": "無敵反打",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技無敵"
+            },
+            {
+              "key": "MOVE",
+              "label": "調整輸出位置"
+            },
+            {
+              "key": "Q",
+              "label": "1技降防"
+            },
+            {
+              "key": "AA",
+              "label": "持續普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技收尾"
+            }
+          ],
+          "note": "敵方主要爆發落下前開大，不要過早浪費無敵；聖劍落下後立即重新拉距離並持續輸出。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "kennen-mid",
@@ -28134,63 +28394,64 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "A",
-      "position": "持續法傷／中距離團戰",
+      "position": "範圍法刺／風暴印記開團",
       "tags": [
-        "持續輸出",
-        "團戰",
-        "成長"
+        "遠程消耗",
+        "標記暈眩",
+        "側翼進場",
+        "範圍爆發"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
-        "操作難度": 3,
+        "操作難度": 4,
         "Blind Pick": 3,
         "對線強度": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
-        "conqueror",
-        "brutal",
-        "coup-de-grace",
-        "legend-tenacity",
-        "transcendence"
+        "electrocute",
+        "battle-fervor",
+        "cut-down",
+        "legend-bloodline",
+        "bone-plating"
       ],
       "items": [
-        "magic-high-17",
-        "magic-high-23",
-        "magic-high-16",
+        "magic-high-01",
+        "magic-high-21",
         "magic-high-14",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-09"
       ],
       "boots": [
         "mana-boots",
-        "blood-mage-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
       "skillOrder": "Q > W > E",
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "卡特蓮娜"
+          "卡特蓮娜",
+          "阿卡莉",
+          "卡薩丁"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "麗珊卓"
+          "奧莉安娜",
+          "星朵拉",
+          "加里歐"
         ],
-        "ban": "劫"
+        "ban": "奧莉安娜"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技與強化普攻疊印記，二技留到能觸發第三層暈眩時再使用。三技是最重要的進退手段，敵方打野位置不明時不要為了清線穿過整波士兵。",
+        "中期": "推線後提前繞到河道或側翼草叢，火箭腰帶、閃現與大絕能快速覆蓋後排。進場前先確認隊友距離，避免大絕只換到敵方保命技能。",
+        "後期": "耐心等待後排站位重疊或主要控制交出，再從側面切入。大絕疊印記後接二技完成群體暈眩，中婭留給進場後承受集火的時刻。"
       },
-      "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "用遠程技能與強化普攻累積風暴印記，三層觸發暈眩；團戰提前找側翼，以火箭腰帶或閃現接大絕覆蓋後排並完成群控。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/kennen.webp",
       "abilities": [
         {
@@ -28258,8 +28519,96 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-01",
+        "magic-high-21",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "三印記暈眩",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技標記"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻標記"
+            },
+            {
+              "key": "W",
+              "label": "2技第三層"
+            },
+            {
+              "key": "AA",
+              "label": "普攻輸出"
+            }
+          ],
+          "note": "先用一技與強化普攻疊兩層，再用二技觸發第三層暈眩；暈眩期間補普攻後立刻拉開。"
+        },
+        {
+          "name": "閃現大絕",
+          "steps": [
+            {
+              "key": "FLASH",
+              "label": "閃現進場"
+            },
+            {
+              "key": "R",
+              "label": "4技雷暴"
+            },
+            {
+              "key": "W",
+              "label": "2技引爆印記"
+            },
+            {
+              "key": "Q",
+              "label": "1技補傷害"
+            },
+            {
+              "key": "ITEM",
+              "label": "中婭保命"
+            }
+          ],
+          "note": "閃現進場後立刻開大並等待印記累積，二技觸發群體暈眩；完成爆發後用中婭吸收集火。"
+        },
+        {
+          "name": "三技側翼開團",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技加速切入"
+            },
+            {
+              "key": "R",
+              "label": "4技覆蓋後排"
+            },
+            {
+              "key": "W",
+              "label": "2技暈眩"
+            },
+            {
+              "key": "Q",
+              "label": "1技收尾"
+            },
+            {
+              "key": "E",
+              "label": "3技後續調位"
+            }
+          ],
+          "note": "三技從視野外快速接近，命中敵人可回復能量；大絕與二技完成控制後，依局勢追擊或撤離。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "lissandra-mid",
@@ -28912,63 +29261,64 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "A",
-      "position": "持續法傷／中距離團戰",
+      "position": "控場法師／黑盾反制開戰",
       "tags": [
-        "持續輸出",
-        "團戰",
-        "成長"
+        "長時間禁錮",
+        "持續傷害",
+        "免控護盾",
+        "範圍開戰"
       ],
       "ratings": {
         "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 3,
+        "新手推薦": 4,
+        "操作難度": 2,
+        "Blind Pick": 4,
         "對線強度": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
-        "conqueror",
-        "brutal",
-        "coup-de-grace",
-        "legend-tenacity",
-        "transcendence"
+        "arcane-comet",
+        "manaflow-band",
+        "transcendence",
+        "scorch",
+        "bone-plating"
       ],
       "items": [
-        "magic-high-17",
-        "magic-high-23",
+        "magic-high-10",
         "magic-high-16",
+        "magic-high-15",
         "magic-high-14",
         "magic-high-08"
       ],
       "boots": [
         "mana-boots",
-        "blood-mage-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
-      "skillOrder": "Q > W > E",
+      "skillOrder": "W > Q > E",
       "matchups": {
         "good": [
           "安妮",
-          "維迦",
+          "麗珊卓",
           "卡特蓮娜"
         ],
         "bad": [
           "劫",
-          "飛斯",
-          "麗珊卓"
+          "阿璃",
+          "卡薩丁"
         ],
         "ban": "劫"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "二技快速清線並透過被動維持血量，一技未命中時不要往前走進對手爆發範圍。黑暗之盾留給真正的控制技能，避免只為吸收普通魔法傷害就提前交掉。",
+        "中期": "推完線後跟著打野進入河道，一技命中即可鋪二技逼出閃現。物件團先用禁錮找抓單，敵方強開時則把黑盾交給最容易被控制的核心。",
+        "後期": "以中後排站位反覆用一技封鎖通道。需要主動開戰時先套黑盾再閃現大絕，配合中婭拖到第二段暈眩，不要在隊友無法跟進時孤身進場。"
       },
-      "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "二技清線與持續消耗，一技長時間禁錮建立抓人機會；黑盾反制關鍵控制，團戰可套盾閃現大絕後以中婭拖到第二段暈眩。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/morgana.png",
       "abilities": [
         {
@@ -28976,49 +29326,49 @@
           "label": "被動",
           "title": "靈魂虹吸",
           "icon": "../assets/images/heroes/skills/morgana_01.webp",
-          "summary": "對英雄、大型士兵與中大型野怪造成技能傷害時會回復自身生命。"
+          "summary": "對敵方英雄、大型士兵以及中大型野怪造成技能傷害時回復自身生命，使她能以較健康的血量持續清野。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗影禁錮",
           "icon": "../assets/images/heroes/skills/morgana_02.webp",
-          "summary": "射出黑暗能量，命中第一個敵人造成魔法傷害並長時間禁錮。"
+          "summary": "射出黑暗能量，命中第一個敵人時造成魔法傷害並長時間禁錮，是 Gank 與反蹲的核心控制。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "痛苦腐蝕",
           "icon": "../assets/images/heroes/skills/morgana_03.png",
-          "summary": "詛咒指定區域持續造成魔法傷害，目標生命越低傷害越高；被動治療可縮短其冷卻。"
+          "summary": "詛咒指定區域並持續造成魔法傷害，目標生命越低傷害越高；是主要清野與物件輸出技能。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑暗之盾",
           "icon": "../assets/images/heroes/skills/morgana_04.webp",
-          "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害並在護盾存在時免疫多數控制。"
+          "summary": "替友軍英雄套上魔法護盾，吸收魔法傷害，並在護盾存在期間免疫多數控制效果。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靈魂枷鎖",
           "icon": "../assets/images/heroes/skills/morgana_05.webp",
-          "summary": "以鎖鏈連結附近敵方英雄造成傷害與緩速；未掙脫者在延遲後再次受傷並被暈眩。"
+          "summary": "以鎖鏈連結附近敵方英雄並造成傷害與緩速；未能掙脫的目標會在延遲後再次受傷並暈眩。"
         }
       ],
       "skillSequence": [
-        "Q",
         "W",
+        "Q",
         "E",
-        "Q",
-        "R",
-        "Q",
-        "Q",
         "W",
         "R",
         "W",
         "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
         "E",
         "R",
         "E",
@@ -29036,8 +29386,96 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-10",
+        "magic-high-16",
+        "magic-high-15"
+      ],
+      "combos": [
+        {
+          "name": "禁錮腐蝕",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技禁錮"
+            },
+            {
+              "key": "W",
+              "label": "2技腐蝕"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃"
+            }
+          ],
+          "note": "一技命中後立刻把二技鋪在目標腳下，讓持續傷害完整生效；點燃留給確定能壓進斬殺線的換血。"
+        },
+        {
+          "name": "黑盾反打",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技黑盾"
+            },
+            {
+              "key": "Q",
+              "label": "1技反控"
+            },
+            {
+              "key": "W",
+              "label": "2技輸出"
+            },
+            {
+              "key": "R",
+              "label": "4技追控"
+            }
+          ],
+          "note": "先用黑盾擋掉敵方關鍵控制，再反手禁錮；大絕留給對手位移交出後，確保鎖鏈不會立即被拉斷。"
+        },
+        {
+          "name": "閃現大絕開團",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技自我黑盾"
+            },
+            {
+              "key": "FLASH",
+              "label": "閃現進場"
+            },
+            {
+              "key": "R",
+              "label": "4技連結多人"
+            },
+            {
+              "key": "W",
+              "label": "2技鋪地"
+            },
+            {
+              "key": "Q",
+              "label": "1技封走位"
+            },
+            {
+              "key": "ITEM",
+              "label": "中婭保命"
+            }
+          ],
+          "note": "先套黑盾避免進場被中斷，閃現連結多人後鋪二技；敵方集火時開中婭等待第二段暈眩。"
+        }
+      ],
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "norra-mid",
@@ -30340,127 +30778,220 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "B",
-      "position": "控制法師／遠距消耗",
+      "position": "法系射手／蘑菇地圖控制",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "普攻消耗",
+        "致盲反制",
+        "偽裝伏擊",
+        "陷阱視野"
       ],
       "ratings": {
-        "單排推薦": 3,
+        "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 2,
+        "Blind Pick": 3,
         "對線強度": 4,
-        "團戰影響力": 5
+        "團戰影響力": 4
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
-        "transcendence",
-        "manaflow-band",
+        "fleet-footwork",
+        "sudden-impact",
+        "chain-assault",
+        "eyeball-collector",
         "bone-plating"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-25",
+        "magic-high-16",
+        "magic-high-20",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-13"
+        "magic-high-21"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
-      "skillOrder": "Q > W > E",
+      "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
-          "斯溫"
+          "卡薩丁",
+          "阿克尚",
+          "凱爾"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "卡薩丁"
+          "奧莉安娜",
+          "星朵拉",
+          "希格斯"
         ],
-        "ban": "劫"
+        "ban": "星朵拉"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "利用普攻劇毒與一技致盲打短換血，對手準備用強化普攻時再交致盲。三技偽裝不是單純進攻技能，也可用來避開視野與重新取得攻速。",
+        "中期": "提早在飛龍、河道草叢、側翼與撤退路線布置蘑菇，不要把所有陷阱都放在線上。推完兵線後利用偽裝尋找落單目標，打完用二技加速離場。",
+        "後期": "以陷阱提供視野、緩速與消耗，不要第一時間走進無視野區。正面團戰站在前排後方持續普攻，致盲優先交給依賴普攻的射手或鬥士。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "用普攻劇毒與致盲取得對線優勢，偽裝創造伏擊角度；中後期把蘑菇放在物件入口、側翼與退路，靠視野與緩速控制地圖。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/teemo.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "劇毒射擊",
           "icon": "../assets/images/heroes/skills/teemo_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "普攻附加持續魔法傷害，適合利用射程反覆消耗近戰英雄。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "致盲吹箭",
           "icon": "../assets/images/heroes/skills/teemo_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "造成魔法傷害並使目標致盲，能直接降低依賴普攻英雄的換血能力。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "衝刺",
           "icon": "../assets/images/heroes/skills/teemo_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "被動提高跑速，主動後短時間大幅加速，用來躲技能、拉距離或追擊。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "約德爾游擊隊",
           "icon": "../assets/images/heroes/skills/teemo_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "進入偽裝並調整站位，脫離偽裝後獲得攻速，適合伏擊與重新拉開距離。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "毒性陷阱",
           "icon": "../assets/images/heroes/skills/teemo_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "放置會爆炸的蘑菇，造成持續傷害與緩速；可連續彈跳擴大佈雷範圍。"
         }
       ],
       "skillSequence": [
         "Q",
-        "W",
         "E",
+        "W",
         "Q",
         "R",
         "Q",
         "Q",
-        "W",
-        "R",
-        "W",
-        "W",
         "E",
         "R",
         "E",
-        "E"
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
       ],
       "skillLabels": {
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": []
+      "mechanics": [],
+      "abilityNamesVerified": "Riot TW",
+      "skillIconCount": 5,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-16",
+        "magic-high-20",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "致盲短換血",
+          "steps": [
+            {
+              "key": "AA",
+              "label": "普攻掛毒"
+            },
+            {
+              "key": "Q",
+              "label": "1技致盲"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "W",
+              "label": "2技加速後撤"
+            }
+          ],
+          "note": "先普攻再致盲可減少對手反擊，補一發普攻後立刻用二技拉開；不要在致盲結束後仍站著長換血。"
+        },
+        {
+          "name": "偽裝伏擊",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技偽裝"
+            },
+            {
+              "key": "AA",
+              "label": "強化普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技致盲"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃"
+            }
+          ],
+          "note": "從側面或草叢偽裝接近，現身取得攻速後快速完成短爆發；對手有硬控時保留閃現，不要硬追。"
+        },
+        {
+          "name": "蘑菇追擊",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技陷阱"
+            },
+            {
+              "key": "W",
+              "label": "2技加速"
+            },
+            {
+              "key": "AA",
+              "label": "普攻掛毒"
+            },
+            {
+              "key": "Q",
+              "label": "1技致盲"
+            },
+            {
+              "key": "AA",
+              "label": "普攻收尾"
+            }
+          ],
+          "note": "敵人踩到蘑菇後利用緩速追上，致盲封住反擊；若敵方支援消失，利用蘑菇區域優勢立即撤回。"
+        }
+      ],
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "twisted-fate-mid",
@@ -30892,37 +31423,38 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "A",
-      "position": "控制法師／遠距消耗",
+      "position": "砲台法師／真實傷害解構",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "超遠消耗",
+        "技能角度",
+        "擊飛反制",
+        "真實傷害"
       ],
       "ratings": {
         "單排推薦": 4,
-        "新手推薦": 3,
-        "操作難度": 3,
+        "新手推薦": 2,
+        "操作難度": 5,
         "Blind Pick": 3,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
-        "transcendence",
-        "manaflow-band",
-        "bone-plating"
+        "first-strike",
+        "cheap-shot",
+        "chain-assault",
+        "eyeball-collector",
+        "transcendence"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-25",
+        "magic-high-10",
+        "magic-high-21",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-13"
+        "magic-high-25"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
@@ -30930,8 +31462,8 @@
       ],
       "skillOrder": "Q > W > E",
       "skillSequence": [
-        "Q",
         "W",
+        "Q",
         "E",
         "Q",
         "R",
@@ -30950,7 +31482,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
@@ -30959,58 +31491,147 @@
           "斯溫"
         ],
         "bad": [
-          "劫",
+          "犽凝",
           "飛斯",
           "卡薩丁"
         ],
-        "ban": "劫"
+        "ban": "飛斯"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "一級可用二技兩段傷害快速推線，之後以斜角一技分裂彈消耗。三技是唯一硬控與自保技能，敵方刺客有進場能力時不要用它單純補傷害。",
+        "中期": "物件團站在牆後或前排後方，先用一技緩速再接二技兩段與三技擊飛，快速疊滿三層解構。大絕最好對已研究的目標施放，將傷害轉為真實傷害。",
+        "後期": "維持與射手相近的後排站位，利用超遠技能消耗前排也能產生價值。敵方控制與突進尚未交出時不要急著引導大絕，否則很容易被中斷。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "斜角一技分裂彈配合二技兩段傷害遠距消耗，三技擊飛保命並建立完整連段；疊滿解構後再引導大絕，對研究目標造成真實傷害。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/velkoz.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "結構毀滅",
+          "icon": "../assets/images/heroes/skills/velkoz_01.png",
+          "summary": "技能命中會附加結構毀滅，疊滿三層時造成大量真實傷害；普攻可以刷新標記持續時間。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/velkoz_01.png",
-          "summary": "主要遠距消耗與清線技能。"
+          "title": "分裂電漿",
+          "icon": "../assets/images/heroes/skills/velkoz_02.webp",
+          "summary": "發射電漿彈造成魔法傷害與緩速，命中、到達終點或再次施放時會向左右分裂。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/velkoz_02.webp",
-          "summary": "第二輸出或功能技能。"
+          "title": "虛空裂痕",
+          "icon": "../assets/images/heroes/skills/velkoz_03.webp",
+          "summary": "在地面撕開裂痕造成一次傷害，短暫延遲後再次爆發，是清線與疊被動的主要技能。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/velkoz_03.webp",
-          "summary": "控制／限制走位技能，物件團前價值很高。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "反物質瓦解",
           "icon": "../assets/images/heroes/skills/velkoz_04.png",
-          "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+          "summary": "引爆指定區域造成魔法傷害與擊飛；在自身附近施放時也能把貼近的敵人擊退。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/velkoz_05.webp"
+          "label": "4 技",
+          "title": "生化射線",
+          "icon": "../assets/images/heroes/skills/velkoz_05.webp",
+          "summary": "引導可控制方向的射線，持續造成傷害與緩速；已疊滿解構的研究目標會改為承受真實傷害。"
         }
       ],
-      "mechanics": []
+      "mechanics": [],
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-10",
+        "magic-high-21",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "斜角消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技斜射"
+            },
+            {
+              "key": "Q",
+              "label": "提早分裂"
+            },
+            {
+              "key": "W",
+              "label": "2技兩段傷害"
+            },
+            {
+              "key": "MOVE",
+              "label": "保持後排距離"
+            }
+          ],
+          "note": "一技不要總是直線施放，利用側向分裂延長有效距離；緩速命中後二技更容易吃滿兩段。"
+        },
+        {
+          "name": "完整爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技擊飛"
+            },
+            {
+              "key": "W",
+              "label": "2技裂痕"
+            },
+            {
+              "key": "Q",
+              "label": "1技緩速"
+            },
+            {
+              "key": "R",
+              "label": "4技射線"
+            }
+          ],
+          "note": "三技命中後立刻放二技，擊飛與緩速可確保兩段傷害；疊滿解構後再開大，最大化真實傷害。"
+        },
+        {
+          "name": "反刺客連段",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技近身擊退"
+            },
+            {
+              "key": "Q",
+              "label": "1技緩速"
+            },
+            {
+              "key": "W",
+              "label": "2技封路"
+            },
+            {
+              "key": "BARRIER",
+              "label": "光盾"
+            },
+            {
+              "key": "R",
+              "label": "4技反打"
+            }
+          ],
+          "note": "敵人貼近時三技會將其擊退，是最重要的自保手段；拉開距離後再用光盾與技能反打，不要先手浪費三技。"
+        }
+      ],
+      "abilityNamesVerified": "Riot TW",
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "vex-mid",
@@ -31446,127 +32067,224 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "B",
-      "position": "持續法傷／中距離團戰",
+      "position": "後期吸血法師／範圍進場",
       "tags": [
-        "持續輸出",
-        "團戰",
-        "成長"
+        "無消耗技能",
+        "高額回復",
+        "不可選取",
+        "後期團戰"
       ],
       "ratings": {
-        "單排推薦": 3,
+        "單排推薦": 4,
         "新手推薦": 3,
-        "操作難度": 3,
-        "Blind Pick": 2,
-        "對線強度": 4,
-        "團戰影響力": 4
+        "操作難度": 4,
+        "Blind Pick": 3,
+        "對線強度": 3,
+        "團戰影響力": 5
       },
       "runes": [
-        "conqueror",
-        "brutal",
-        "coup-de-grace",
-        "legend-tenacity",
-        "transcendence"
+        "phase-rush",
+        "botanist",
+        "transcendence",
+        "gathering-storm",
+        "last-stand"
       ],
       "items": [
-        "magic-high-17",
-        "magic-high-23",
-        "magic-high-16",
+        "magic-high-21",
+        "magic-high-09",
         "magic-high-14",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-23"
       ],
       "boots": [
         "mana-boots",
-        "blood-mage-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ghost"
       ],
-      "skillOrder": "Q > W > E",
+      "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "安妮",
-          "維迦",
+          "加里歐",
+          "麗珊卓",
           "卡特蓮娜"
         ],
         "bad": [
-          "劫",
-          "飛斯",
-          "麗珊卓"
+          "奧莉安娜",
+          "卡薩丁",
+          "維克特"
         ],
-        "ban": "劫"
+        "ban": "奧莉安娜"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技補兵與回血，強化一技盡量命中英雄，但不要為了追擊走進敵方完整連段。血池與三技都會消耗生命，低血量時要降低使用頻率。",
+        "中期": "兩至三件裝後開始主動找側翼，大絕先命中多人再接三技範圍爆發。相位衝擊與鬼步用來黏住後排或安全拉出，血池不要提前用來清線。",
+        "後期": "等待敵方站位集中後進場，先以大絕提高後續傷害，再蓄力三技與血池躲開控制。完成第一輪後利用治療結算拉開，等待下一套技能二次進場。"
       },
-      "summary": "前期以穩定發育與換血為主，中期開始跟物件團；保持中距離持續輸出，避免過早交掉唯一的自保技能。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "前期靠一技回血穩定發育，保留血池躲避致命控制；裝備成形後以大絕、蓄力三技與鬼步切入後排，回血後再二次進場。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/vladimir.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "血色契約",
           "icon": "../assets/images/heroes/skills/vladimir_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "額外生命會轉換成魔攻，魔攻也會增加額外生命，形成輸出與生存互相成長。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "鮮血轉換",
           "icon": "../assets/images/heroes/skills/vladimir_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "吸取目標生命造成傷害並治療自己；累積後的強化版本傷害與回復更高。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "血紅之池",
           "icon": "../assets/images/heroes/skills/vladimir_03.webp",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "化為血池進入無法被選取狀態，緩速並傷害上方敵人，是最重要的保命技能。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "血之潮汐",
           "icon": "../assets/images/heroes/skills/vladimir_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "消耗生命蓄力後對周圍敵人造成範圍傷害，蓄力越完整威脅越高。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "血之瘟疫",
           "icon": "../assets/images/heroes/skills/vladimir_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "感染範圍內敵人並提高其承受傷害，延遲爆發後造成傷害並治療弗拉迪米爾。"
         }
       ],
       "skillSequence": [
         "Q",
-        "W",
         "E",
+        "W",
         "Q",
         "R",
         "Q",
         "Q",
-        "W",
-        "R",
-        "W",
-        "W",
         "E",
         "R",
         "E",
-        "E"
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
       ],
       "skillLabels": {
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": []
+      "mechanics": [],
+      "abilityNamesVerified": "Riot TW",
+      "skillIconCount": 5,
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-21",
+        "magic-high-09",
+        "magic-high-14"
+      ],
+      "combos": [
+        {
+          "name": "強化吸血換血",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "強化1技"
+            },
+            {
+              "key": "E",
+              "label": "蓄力3技"
+            },
+            {
+              "key": "E",
+              "label": "釋放3技"
+            },
+            {
+              "key": "MOVE",
+              "label": "相位衝擊拉開"
+            }
+          ],
+          "note": "先用強化一技取得高額傷害與回復，再蓄力三技完成範圍換血；觸發相位衝擊後立刻撤回。"
+        },
+        {
+          "name": "血池進場爆發",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技感染"
+            },
+            {
+              "key": "E",
+              "label": "蓄力3技"
+            },
+            {
+              "key": "W",
+              "label": "2技血池"
+            },
+            {
+              "key": "E",
+              "label": "釋放3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            }
+          ],
+          "note": "大絕先掛上增傷，蓄力三技時進入血池躲控制並接近後排，現身後補一技等待大絕治療結算。"
+        },
+        {
+          "name": "閃現團戰",
+          "steps": [
+            {
+              "key": "E",
+              "label": "蓄力3技"
+            },
+            {
+              "key": "FLASH",
+              "label": "閃現進場"
+            },
+            {
+              "key": "R",
+              "label": "4技多人感染"
+            },
+            {
+              "key": "E",
+              "label": "釋放3技"
+            },
+            {
+              "key": "Q",
+              "label": "1技"
+            },
+            {
+              "key": "W",
+              "label": "2技撤離"
+            }
+          ],
+          "note": "先蓄力再閃現可突然覆蓋後排，大絕盡量命中多人；一輪傷害完成後用血池退出集火區。"
+        }
+      ],
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "yasuo-mid",
@@ -32685,55 +33403,56 @@
       "roleId": "mid",
       "role": "中路",
       "tier": "B",
-      "position": "控制法師／遠距消耗",
+      "position": "控場消耗法師／植物區域壓制",
       "tags": [
-        "清線",
-        "消耗",
-        "團戰"
+        "遠距消耗",
+        "範圍控制",
+        "植物輸出",
+        "物件區封鎖"
       ],
       "ratings": {
-        "單排推薦": 3,
+        "單排推薦": 4,
         "新手推薦": 3,
         "操作難度": 3,
-        "Blind Pick": 2,
+        "Blind Pick": 3,
         "對線強度": 4,
         "團戰影響力": 5
       },
       "runes": [
         "arcane-comet",
-        "scorch",
+        "botanist",
         "transcendence",
-        "manaflow-band",
-        "bone-plating"
+        "scorch",
+        "cut-down"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-25",
+        "magic-high-10",
+        "magic-high-16",
+        "magic-high-15",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-13"
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
-        "burst-boots"
+        "magic-high-02"
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
-      "skillOrder": "E > Q > W",
+      "skillOrder": "Q > E > W",
       "skillSequence": [
-        "E",
         "Q",
+        "E",
         "W",
-        "E",
-        "R",
-        "E",
-        "E",
         "Q",
         "R",
         "Q",
         "Q",
+        "E",
+        "R",
+        "E",
+        "E",
         "W",
         "R",
         "W",
@@ -32743,7 +33462,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
@@ -32759,51 +33478,140 @@
         "ban": "劫"
       },
       "playstyle": {
-        "前期": "先確保中路兵線與血量，利用技能換血並注意兩側河道。",
-        "中期": "推完線後優先跟隨打野進河道與物件區，利用自己的定位創造人數差。",
-        "後期": "團戰依英雄定位選擇消耗、側翼或前排；不要為了補一波傷害先交掉關鍵自保技能。"
+        "前期": "用一技與植物隔著兵線消耗，三技保留作為主要禁錮與防 Gank 手段。植物會自動攻擊附近目標，換血後立刻後撤，不要為了多打一段普攻走出安全距離。",
+        "中期": "提前在河道與物件入口放技能生成植物，利用瑞萊與持續燃燒限制敵方進場。三技命中後再接大絕，可讓擊飛更穩定並強化範圍內植物。",
+        "後期": "站在前排後方反覆消耗，優先用禁錮阻止刺客或鬥士切入。大絕盡量覆蓋多人與既有植物，將狹窄地形變成敵方難以穿越的傷害區。"
       },
-      "summary": "利用射程與清線能力維持中路主動權，物件團前先消耗敵方血量；團戰優先站在前排後方安全輸出。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "用技能生成植物並建立遠距消耗區，三技禁錮後接大絕完成範圍控制；物件團提前佈局，站在後排持續限制敵方進場。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/zyra.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "荊棘花園",
+          "icon": "../assets/images/heroes/skills/zyra_01.png",
+          "summary": "索命棘蔓命中敵人或抵達終點時會生成棘刺噴吐草；致死棘刺與致命綻放命中英雄或大型目標時可生成額外植物。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/zyra_01.png",
-          "summary": "主要遠距消耗與清線技能。"
+          "title": "致死棘刺",
+          "icon": "../assets/images/heroes/skills/zyra_02.png",
+          "summary": "藤蔓在指定區域爆裂造成魔法傷害並生成棘刺噴吐草，是主要清線與消耗技能。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/zyra_02.png",
-          "summary": "第二輸出或功能技能。"
+          "title": "狂暴蔓延",
+          "icon": "../assets/images/heroes/skills/zyra_03.png",
+          "summary": "使附近植物進入狂暴狀態，刷新持續時間並提高生命與攻速，用來延長區域壓制。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/zyra_03.png",
-          "summary": "控制／限制走位技能，物件團前價值很高。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "索命棘蔓",
           "icon": "../assets/images/heroes/skills/zyra_04.webp",
-          "summary": "大範圍爆發或團控技能，團戰前先確認安全施放角度。"
+          "summary": "向前延伸棘蔓，對路徑上的敵人造成魔法傷害與禁錮，並生成一株棘刺噴吐草。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/zyra_05.png"
+          "label": "4 技",
+          "title": "致命綻放",
+          "icon": "../assets/images/heroes/skills/zyra_05.png",
+          "summary": "召喚大片扭曲荊棘造成傷害，延遲後擊飛敵人；範圍內植物會被強化並刷新持續時間。"
         }
       ],
-      "mechanics": []
+      "mechanics": [],
+      "starterItems": [
+        "basic-amp-tome"
+      ],
+      "coreItems": [
+        "magic-high-10",
+        "magic-high-16",
+        "magic-high-15"
+      ],
+      "combos": [
+        {
+          "name": "禁錮植物換血",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技禁錮"
+            },
+            {
+              "key": "Q",
+              "label": "1技爆發"
+            },
+            {
+              "key": "W",
+              "label": "2技強化植物"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "三技命中後接一技生成額外植物，再用二技刷新並強化植物；打完立刻拉開，不必追進敵方技能範圍。"
+        },
+        {
+          "name": "遠距消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技生成植物"
+            },
+            {
+              "key": "W",
+              "label": "2技強化植物"
+            },
+            {
+              "key": "MOVE",
+              "label": "保持後排距離"
+            },
+            {
+              "key": "E",
+              "label": "3技封追擊"
+            }
+          ],
+          "note": "先用一技與植物磨血，對手準備反打時再用三技封住路線；不要把唯一硬控提前用在無把握的角度。"
+        },
+        {
+          "name": "團戰控場",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技禁錮"
+            },
+            {
+              "key": "R",
+              "label": "4技範圍擊飛"
+            },
+            {
+              "key": "Q",
+              "label": "1技補傷害"
+            },
+            {
+              "key": "W",
+              "label": "2技強化植物"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃收尾"
+            }
+          ],
+          "note": "三技固定目標後立刻鋪大絕，確保延遲擊飛命中；一技與二技補足植物數量和持續輸出。"
+        }
+      ],
+      "abilityNamesVerified": "Riot TW",
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "alistar-support",
@@ -38107,63 +38915,64 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "A",
-      "position": "物理刺客／翻牆遊走／單點爆發",
+      "position": "物理刺客／翻牆遊走爆發",
       "tags": [
-        "刺客",
-        "遊走",
-        "翻牆"
+        "快速清線",
+        "翻牆支援",
+        "裂傷爆發",
+        "潛隱切入"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
-        "操作難度": 3,
+        "操作難度": 4,
         "Blind Pick": 3,
-        "前期節奏": 5,
-        "團戰影響力": 3
+        "對線強度": 3,
+        "團戰影響力": 4
       },
       "runes": [
-        "electrocute",
+        "first-strike",
         "sudden-impact",
+        "chain-assault",
         "eyeball-collector",
-        "relentless-hunter",
         "coup-de-grace"
       ],
       "items": [
         "physical-high-14",
-        "physical-high-15",
-        "physical-high-32",
+        "physical-high-31",
         "physical-high-27",
+        "physical-high-21",
         "physical-high-10"
       ],
       "boots": [
-        "armorbreaker-boots",
-        "physical-high-03"
+        "gluttonous-greaves",
+        "armorbreaker-boots"
       ],
       "spells": [
         "flash",
-        "smite"
+        "ignite"
       ],
       "skillOrder": "W > Q > E",
       "matchups": {
         "good": [
-          "魔甘娜",
-          "費德提克",
-          "奈德麗"
+          "希格斯",
+          "維迦",
+          "翱銳龍獸"
         ],
         "bad": [
-          "拉姆斯",
-          "菲艾",
-          "趙信"
+          "伊瑞莉雅",
+          "犽宿",
+          "麗珊卓"
         ],
-        "ban": "拉姆斯"
+        "ban": "麗珊卓"
       },
       "playstyle": {
-        "前期": "二技去回程可快速清群體野怪並疊兩層裂傷，一技補第三層後普攻觸發流血。升到三技後利用牆體避開河道視野，頻繁支援壓線過深的路線。",
-        "中期": "塔隆的優勢是比對手更快到達邊線與物件區。先從野區翻牆抓單，逼出閃現或造成減員，再轉向飛龍與預示者，不要只在正面等待開戰。",
-        "後期": "坦克與成形防裝會降低正面爆發價值；耐心找沒有保護的後排，或用大絕潛隱逼出保命技能。完成擊殺後立刻翻牆離場。"
+        "前期": "二技去程與回程同時命中可疊兩層裂傷，接一技與普攻觸發流血。三級後快速清線，利用三技翻越側牆消失在視野中，迫使邊線保持警戒。",
+        "中期": "塔隆的優勢是比對手更快抵達邊線與物件區。先推線再從野區翻牆抓單，逼出閃現或造成減員後立即轉物件，不要一直留在中路正面對耗。",
+        "後期": "正面切坦克收益很低，耐心等待後排與保護者分開。大絕潛隱接近、完成三層裂傷爆發後立刻翻牆離場，沒有退路時不要先手進場。"
       },
-      "summary": "清線後利用翻牆快速支援邊線；正式中路攻略將於後續批次完成。",
-      "sourceNote": "v59 中路名單校正：依使用者提供的遊戲內中路位置篩選截圖新增中路獨立條目；正式攻略將於所屬批次完成。",
+      "summary": "二技雙段命中接一技與普攻觸發裂傷，清線後翻牆快速支援；團戰從側翼用大絕潛隱切入後排，完成擊殺立即利用地形撤退。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/talon.webp",
       "abilities": [
         {
@@ -38229,7 +39038,7 @@
       "generatedV29": true,
       "combos": [
         {
-          "name": "三層裂傷爆發",
+          "name": "三層裂傷換血",
           "steps": [
             {
               "key": "W",
@@ -38241,51 +39050,59 @@
             },
             {
               "key": "AA",
-              "label": "普攻引爆"
-            }
-          ],
-          "note": "二技去程與回程提供兩層裂傷，再用一技補滿第三層，最後普攻觸發流血。"
-        },
-        {
-          "name": "翻牆 Gank",
-          "steps": [
-            {
-              "key": "E",
-              "label": "3技翻牆"
+              "label": "普攻引爆裂傷"
             },
             {
+              "key": "MOVE",
+              "label": "立即後撤"
+            }
+          ],
+          "note": "二技兩段都命中後再用一技補第三層，普攻觸發流血；對手支援靠近時不要貪後續普攻。"
+        },
+        {
+          "name": "閃現單殺",
+          "steps": [
+            {
               "key": "W",
-              "label": "2技緩速"
+              "label": "2技去程"
+            },
+            {
+              "key": "FLASH",
+              "label": "閃現調位"
             },
             {
               "key": "Q",
-              "label": "1技貼近"
+              "label": "1技近身"
+            },
+            {
+              "key": "W",
+              "label": "2技回程"
             },
             {
               "key": "AA",
-              "label": "普攻"
+              "label": "普攻引爆"
             },
             {
-              "key": "R",
-              "label": "4技追擊"
+              "key": "IGNITE",
+              "label": "點燃"
             }
           ],
-          "note": "利用地形繞過河道視野，二技先減速再貼近。敵人仍有位移時保留大絕追擊或撤退。"
+          "note": "二技去程後閃現改變角度，讓回程更容易命中；三層裂傷完成後普攻引爆並用點燃收尾。"
         },
         {
           "name": "潛隱切後排",
           "steps": [
             {
               "key": "R",
-              "label": "4技潛隱"
+              "label": "4技潛隱加速"
             },
             {
               "key": "W",
-              "label": "2技"
+              "label": "2技雙段"
             },
             {
               "key": "Q",
-              "label": "1技"
+              "label": "1技貼近"
             },
             {
               "key": "AA",
@@ -38296,7 +39113,7 @@
               "label": "3技翻牆離場"
             }
           ],
-          "note": "大絕加速接近後排並隱藏進場方向，完成裂傷爆發後立刻利用地形撤離。"
+          "note": "大絕隱藏進場方向並提高跑速，完成裂傷爆發後立刻尋找最近牆體撤退，不要留在後排區等待第二套。"
         }
       ],
       "starterItems": [
@@ -38304,17 +39121,18 @@
       ],
       "coreItems": [
         "physical-high-14",
-        "physical-high-15",
-        "physical-high-32"
+        "physical-high-31",
+        "physical-high-27"
       ],
-      "reviewStatus": "mid-roster-placeholder-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
-      "midMasterTemplate": "ahri-v58"
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "rumble-mid",
@@ -38324,34 +39142,34 @@
       "role": "中路",
       "roleId": "mid",
       "tier": "A",
-      "position": "法系鬥士／熱能管理／區域控制",
+      "position": "法系鬥士／熱能區域封鎖",
       "tags": [
-        "持續傷害",
-        "區域控制",
-        "無魔力"
+        "無魔力技能",
+        "熱能管理",
+        "持續灼燒",
+        "大絕分割戰場"
       ],
       "ratings": {
         "單排推薦": 4,
         "新手推薦": 3,
-        "操作難度": 3,
+        "操作難度": 4,
         "Blind Pick": 3,
         "對線強度": 4,
-        "團戰影響力": 4
+        "團戰影響力": 5
       },
       "runes": [
-        "conqueror",
-        "scorch",
-        "transcendence",
-        "gathering-storm",
-        "bone-plating"
+        "arcane-comet",
+        "demolish",
+        "second-wind",
+        "perseverance",
+        "last-stand"
       ],
       "items": [
         "magic-high-16",
-        "magic-high-10",
-        "magic-high-15",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
+        "magic-high-01",
+        "magic-high-07",
+        "magic-high-21",
+        "magic-high-23"
       ],
       "boots": [
         "mana-boots",
@@ -38364,23 +39182,24 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "賽恩",
-          "蒙多醫生",
-          "鄂爾"
+          "加里歐",
+          "卡特蓮娜",
+          "犽宿"
         ],
         "bad": [
-          "伊瑞莉雅",
-          "卡蜜兒",
-          "潘森"
-        ]
+          "奧莉安娜",
+          "星朵拉",
+          "維克特"
+        ],
+        "ban": "奧莉安娜"
       },
       "playstyle": {
-        "前期": "前期控制熱能在高效區間，用 Q 推線消耗，不要在過熱前亂交關鍵技能。",
-        "中期": "中期小龍坑與河道是最佳戰場，大絕斜切撤退路線比直線丟人群更有效。",
-        "後期": "後期先用大絕切割陣型，再決定是否貼近輸出；避免過熱時毫無技能可用。"
+        "前期": "把熱能維持在危險禁區附近，讓一技與魚叉獲得強化。魚叉先減速再用一技灼燒，二技護盾用來吸收對手主要換血；不要在打野可能出現時讓自己過熱。",
+        "中期": "河道與物件坑是藍寶最強的戰場，大絕斜切敵方退路通常比直線丟在人群中央更有效。先用大絕分割陣型，再決定是否火箭腰帶貼近。",
+        "後期": "保持在能用魚叉與大絕影響戰場的位置，不必每次都貼臉。過熱前規劃最後一個技能，完成爆發後利用強化普攻收尾，避免在敵方反打時陷入無法施法。"
       },
-      "summary": "控制熱能並以大絕切割狹窄地形；正式中路攻略將於後續批次完成。",
-      "sourceNote": "v59 中路名單校正：依使用者提供的遊戲內中路位置篩選截圖新增中路獨立條目；正式攻略將於所屬批次完成。",
+      "summary": "管理熱能並以魚叉減速接火焰持續換血；物件團用大絕斜切退路、分割陣型，再依情況火箭腰帶貼近或留在中距離輸出。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
       "avatar": "../assets/images/heroes/portraits/rumble.webp",
       "abilities": [
         {
@@ -38444,8 +39263,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "mid-roster-placeholder-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewStatus": "mid-fourth-batch-formal-v62",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -38456,8 +39275,8 @@
       ],
       "coreItems": [
         "magic-high-16",
-        "magic-high-10",
-        "magic-high-15"
+        "magic-high-01",
+        "magic-high-07"
       ],
       "combos": [
         {
@@ -38465,65 +39284,78 @@
           "steps": [
             {
               "key": "E",
-              "label": "一段3技"
+              "label": "3技第一發減速"
             },
             {
               "key": "Q",
-              "label": "1技"
+              "label": "1技灼燒"
             },
             {
               "key": "E",
-              "label": "二段3技"
+              "label": "3技第二發"
+            },
+            {
+              "key": "W",
+              "label": "2技護盾後撤"
             }
           ],
-          "note": "先用魚叉減速再讓火焰完整灼燒，第二發魚叉用來延長緩速。"
+          "note": "魚叉先減速提高一技完整命中率，第二發延長限制；二技用來吸收反打並調整位置。"
         },
         {
           "name": "大絕封路",
           "steps": [
             {
               "key": "R",
-              "label": "4技"
+              "label": "4技斜切退路"
             },
             {
               "key": "W",
-              "label": "2技"
+              "label": "2技加速護盾"
             },
             {
               "key": "E",
-              "label": "3技"
+              "label": "3技減速"
             },
             {
               "key": "Q",
-              "label": "1技"
+              "label": "1技持續輸出"
+            },
+            {
+              "key": "ITEM",
+              "label": "火箭腰帶追擊"
             }
           ],
-          "note": "大絕橫切敵人退路後開盾加速貼近，以魚叉與火焰持續輸出。"
+          "note": "大絕優先切斷撤退或支援路線，再開盾靠近；敵人被迫穿過燃燒帶時用魚叉與火焰持續壓制。"
         },
         {
-          "name": "過熱近戰",
+          "name": "過熱收尾",
           "steps": [
             {
               "key": "Q",
-              "label": "1技"
+              "label": "1技累積熱能"
             },
             {
               "key": "E",
-              "label": "3技"
+              "label": "3技累積熱能"
             },
             {
               "key": "W",
-              "label": "2技"
+              "label": "2技進入過熱"
             },
             {
               "key": "AA",
-              "label": "過熱普攻"
+              "label": "過熱強化普攻"
+            },
+            {
+              "key": "AA",
+              "label": "持續普攻"
             }
           ],
-          "note": "控制熱能在危險區間，技能打完進入過熱後利用強化普攻完成收尾。"
+          "note": "在確認不需要立刻撤退時才主動過熱，技能打完後利用強化普攻收尾；面對硬控時不要把自己鎖進過熱狀態。"
         }
       ],
-      "midMasterTemplate": "ahri-v58"
+      "midMasterTemplate": "ahri-v58",
+      "isMidMasterTemplate": false
     },
     {
       "id": "seraphine-mid",
@@ -38761,10 +39593,10 @@
       "nativeCount": 46,
       "crossCount": 0,
       "avatarComplete": true,
-      "detailComplete": false,
+      "detailComplete": true,
       "portraitMode": "shared",
-      "verification": "依使用者提供的遊戲內中路位置篩選截圖校正為 46 位；v60 已完成前兩批 24/46（含阿璃母版）。",
-      "detailVersion": "v60-second-batch-24-of-46-7.2a"
+      "verification": "依使用者提供的遊戲內中路位置篩選截圖校正為 46 位；v62 已完成 46/46，中路正式攻略全數完成。",
+      "detailVersion": "v62-fourth-batch-complete-46-of-46-7.2a"
     },
     "duo": {
       "name": "飛龍路",
