@@ -875,107 +875,87 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 @media(max-width:720px){.all-hero-card{min-height:132px}.all-role-badges i{font-size:10px;padding:2px 5px}.hero-detail-toolbar{gap:8px;flex-wrap:wrap}.hero-lane-switch{width:100%;margin-left:0}.hero-lane-switch button{flex:1;min-width:86px}}
 
 
-/* v36 · 犽凝路西恩母版試作（僅 detailTemplate=lucian-mobile-formal-v2） */
-.lucian-formal-build{
-  grid-template-columns:.8fr 1fr 1.7fr;
-  align-items:stretch;
-}
-.lucian-formal-build .starter-group{grid-column:auto}
-.lucian-formal-build .boots-group{grid-column:auto!important}
-.lucian-formal-build .core-group{grid-column:auto}
+/* v37 · 犽凝英雄資訊正式版（只套用 detailTemplate=lucian-structured-v1） */
+.lucian-subtitle{color:var(--gold);font-size:12px;font-weight:800;margin:6px 0 10px}
+.lucian-build-top{display:grid;grid-template-columns:.8fr .8fr 2fr;gap:12px;align-items:start}
+.lucian-build-col{border:1px solid rgba(216,184,108,.14);border-radius:16px;padding:12px 10px;background:rgba(7,18,31,.46)}
+.lucian-build-col>span{display:block;color:#ead08b;font-size:12px;font-weight:800;margin-bottom:10px}
+.lucian-core-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.lucian-build-six{margin-top:14px}
+.lucian-build-six-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.lucian-circle-card{text-align:center}
+.lucian-circle-media{width:66px;height:66px;margin:0 auto 6px;border-radius:999px;overflow:hidden;border:2px solid rgba(216,184,108,.22);background:rgba(255,255,255,.04)}
+.lucian-circle-media .mini-card{width:100%;height:100%;border:none;border-radius:999px;padding:0;background:transparent;grid-template-columns:1fr}
+.lucian-circle-media .mini-card img{width:100%;height:100%;border-radius:999px;display:block}
+.lucian-circle-media .mini-card div{display:none}
+.lucian-circle-card small{display:block;font-size:9px;line-height:1.35;color:var(--muted)}
+
+.lucian-skill-info-list{display:grid;gap:10px}
+.lucian-skill-info-row{display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:flex-start;padding:10px;border:1px solid rgba(216,184,108,.12);border-radius:14px;background:rgba(6,17,30,.45)}
+.lucian-skill-icon img,.lucian-skill-placeholder{width:54px;height:54px;border-radius:999px;object-fit:cover;display:block}
+.lucian-skill-placeholder{display:grid;place-items:center;background:rgba(216,184,108,.15);color:#f0d58e;font-weight:900}
+.lucian-skill-copy strong{display:block;color:#f4d98f;font-size:12px;margin-bottom:4px}
+.lucian-skill-copy p{margin:0;color:var(--text);font-size:11px;line-height:1.65}
+
+.lucian-skill-grid-wrap{margin-top:16px;border:1px solid rgba(216,184,108,.14);border-radius:16px;padding:12px 10px;background:rgba(7,18,31,.5)}
+.lucian-skill-grid-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.lucian-skill-grid-head strong{font-size:13px;color:#ead08b}
+.lucian-priority-icons{display:flex;align-items:center;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.lucian-priority-step{position:relative;display:inline-flex;align-items:center;justify-content:center}
+.lucian-priority-step img,.lucian-priority-media,.lucian-grid-placeholder{width:28px;height:28px;border-radius:999px;display:block;object-fit:cover}
+.lucian-priority-media,.lucian-grid-placeholder{display:grid;place-items:center;background:rgba(216,184,108,.15);color:#f0d58e;font-weight:900}
+.lucian-priority-step i{position:absolute;top:-4px;right:-4px;width:13px;height:13px;border-radius:999px;background:#f0d58e;color:#18273b;font-size:8px;font-style:normal;font-weight:900;display:grid;place-items:center;border:1px solid rgba(0,0,0,.18)}
+.lucian-priority-icons>b{font-size:10px;color:#ead08b}
+.lucian-skill-grid-row{display:grid;grid-template-columns:44px repeat(15,minmax(0,1fr));gap:3px;align-items:center}
+.lucian-skill-grid-row+.lucian-skill-grid-row{margin-top:3px}
+.lucian-skill-grid-label{display:grid;place-items:center;gap:4px;padding:3px;border-radius:10px;background:rgba(255,255,255,.03);font-size:10px;font-weight:800;color:#e8d08c}
+.lucian-skill-grid-label img{width:24px;height:24px;border-radius:999px}
+.lucian-skill-grid-label.head{display:flex;justify-content:center;align-items:center;font-size:9px;background:transparent;padding:0}
+.lucian-skill-grid-cell{min-width:0;min-height:28px;border-radius:8px;border:1px solid rgba(255,255,255,.06);display:grid;place-items:center;font-size:8px;color:var(--muted)}
+.lucian-skill-grid-row.header .lucian-skill-grid-cell{min-height:20px;border:none;background:transparent}
+.lucian-skill-grid-cell.active{background:rgba(216,184,108,.10);border-color:rgba(216,184,108,.35)}
+.lucian-skill-grid-cell.active i{width:12px;height:12px;border-radius:999px;background:#f0d58e;display:block}
+
+.lucian-combo-block{margin-top:16px}
+.lucian-combo-item{border:1px solid rgba(216,184,108,.12);border-radius:14px;background:rgba(7,18,31,.44)}
+.lucian-combo-item+.lucian-combo-item{margin-top:8px}
+.lucian-combo-item summary{list-style:none;cursor:pointer;padding:11px 13px;color:#eed28e;font-size:12px;font-weight:800}
+.lucian-combo-item summary::-webkit-details-marker{display:none}
+.lucian-combo-body{padding:0 13px 13px}
+.lucian-combo-steps{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.lucian-combo-steps em{font-style:normal;color:#ead08b;font-size:10px}
+.lucian-combo-step{display:inline-grid;grid-template-columns:28px auto;gap:5px;align-items:center;border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:5px 7px;background:rgba(5,14,24,.5)}
+.lucian-combo-step img,.lucian-combo-media,.lucian-combo-text{width:28px;height:28px;border-radius:999px;display:block;object-fit:cover}
+.lucian-combo-media,.lucian-combo-text{display:grid;place-items:center;background:rgba(216,184,108,.15);color:#f0d58e;font-size:10px;font-weight:900}
+.lucian-combo-step small{font-size:9px;color:#fff}
+.lucian-combo-body p{margin:10px 0 0;color:var(--muted);font-size:10px;line-height:1.6}
+
 .matchup-grid.no-ban{grid-template-columns:repeat(2,minmax(0,1fr))}
-.hero-combo-list{display:grid;gap:10px}
-.hero-combo-card{
-  border:1px solid rgba(216,184,108,.14);
-  border-radius:15px;
-  padding:12px;
-  background:linear-gradient(155deg,rgba(14,31,50,.78),rgba(7,18,31,.86));
-}
-.hero-combo-card>strong{display:block;color:#ead08b;font-size:13px;margin-bottom:9px}
-.hero-combo-card>p{margin:9px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
-.combo-steps{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.combo-steps>i{font-style:normal;color:var(--gold);font-weight:900;font-size:12px}
-.combo-step{
-  display:inline-grid;
-  grid-template-columns:30px auto;
-  align-items:center;
-  gap:5px;
-  padding:5px 7px;
-  border:1px solid rgba(255,255,255,.07);
-  border-radius:10px;
-  background:rgba(4,14,25,.52);
-}
-.combo-step img,.combo-icon-placeholder,.combo-text-icon{
-  width:30px;height:30px;border-radius:7px;object-fit:cover;
-}
-.combo-text-icon{
-  display:grid;place-items:center;
-  background:rgba(216,184,108,.14);
-  color:#f0d58e;font-weight:900;font-size:11px;
-}
-.combo-step b{font-size:9px;white-space:nowrap}
 
-/* Lv.1～15 同一畫面，不允許左右滑動 */
-.skill-level-grid.no-swipe{overflow:visible!important;padding:5px}
-.skill-level-grid.no-swipe .skill-grid-row{
-  grid-template-columns:72px repeat(15,minmax(0,1fr));
-  min-width:0!important;
-}
-.skill-level-grid.no-swipe .skill-grid-skill{
-  position:static;
-  grid-template-columns:30px 1fr;
-  gap:4px;
-  padding:4px 5px;
-}
-.skill-level-grid.no-swipe .skill-grid-skill img,
-.skill-level-grid.no-swipe .skill-grid-skill .skill-icon-placeholder{
-  width:30px;height:30px;border-radius:7px;
-}
-.skill-level-grid.no-swipe .skill-grid-skill b{font-size:8px}
-.skill-level-grid.no-swipe .skill-grid-skill small{display:none}
-.skill-level-grid.no-swipe .skill-grid-cell{
-  min-width:0;
-  min-height:38px;
-  font-size:7px;
-}
-.skill-level-grid.no-swipe .skill-grid-cell.active span{
-  width:15px;height:15px;font-size:7px;
-}
-
-@media(max-width:800px){
-  .lucian-formal-build{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .lucian-formal-build .core-group{grid-column:1/-1}
+@media(max-width:720px){
+  .lucian-build-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lucian-build-col.core{grid-column:1/-1}
 }
 @media(max-width:520px){
-  .lucian-formal-build{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
-  .lucian-formal-build .starter-group{grid-column:1}
-  .lucian-formal-build .boots-group{grid-column:2!important}
-  .lucian-formal-build .core-group{grid-column:1/-1}
+  .lucian-build-top{gap:8px}
+  .lucian-build-col{padding:9px 7px}
+  .lucian-build-col>span{font-size:10px}
+  .lucian-circle-media{width:54px;height:54px}
+  .lucian-core-row,.lucian-build-six-grid{gap:7px}
+  .lucian-circle-card small{font-size:8px}
+  .lucian-skill-info-row{grid-template-columns:46px 1fr;gap:8px;padding:8px}
+  .lucian-skill-icon img,.lucian-skill-placeholder{width:46px;height:46px}
+  .lucian-skill-copy strong{font-size:11px}
+  .lucian-skill-copy p{font-size:10px}
+  .lucian-skill-grid-wrap{padding:9px 7px}
+  .lucian-skill-grid-head{align-items:flex-start;flex-direction:column}
+  .lucian-skill-grid-row{grid-template-columns:36px repeat(15,minmax(0,1fr));gap:2px}
+  .lucian-skill-grid-label{font-size:8px;padding:2px}
+  .lucian-skill-grid-label img,.lucian-grid-placeholder{width:20px;height:20px}
+  .lucian-skill-grid-cell{min-height:24px}
+  .lucian-skill-grid-cell.active i{width:10px;height:10px}
+  .lucian-combo-step{grid-template-columns:24px auto;padding:4px 6px}
+  .lucian-combo-step img,.lucian-combo-media,.lucian-combo-text{width:24px;height:24px}
+  .lucian-combo-step small{font-size:8px}
   .matchup-grid.no-ban{grid-template-columns:1fr}
-  .hero-combo-card{padding:9px}
-  .combo-steps{gap:4px}
-  .combo-steps>i{font-size:9px}
-  .combo-step{grid-template-columns:24px auto;gap:4px;padding:4px 5px}
-  .combo-step img,.combo-icon-placeholder,.combo-text-icon{width:24px;height:24px;border-radius:6px}
-  .combo-step b{font-size:7px}
-  .skill-level-grid.no-swipe .skill-grid-row{
-    grid-template-columns:54px repeat(15,minmax(0,1fr));
-  }
-  .skill-level-grid.no-swipe .skill-grid-skill{
-    grid-template-columns:24px 1fr;
-    padding:3px;
-  }
-  .skill-level-grid.no-swipe .skill-grid-skill img,
-  .skill-level-grid.no-swipe .skill-grid-skill .skill-icon-placeholder{
-    width:24px;height:24px;border-radius:6px;
-  }
-  .skill-level-grid.no-swipe .skill-grid-skill b{font-size:7px}
-  .skill-level-grid.no-swipe .skill-grid-cell{
-    min-height:32px;
-    font-size:6px;
-    border-left-color:rgba(255,255,255,.035);
-  }
-  .skill-level-grid.no-swipe .skill-grid-cell.active span{
-    width:12px;height:12px;font-size:0;
-  }
 }
