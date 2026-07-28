@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>英雄｜Wild Rift Guide</title>
-<link rel="stylesheet" href="../assets/css/style.css?v=49">
+<link rel="stylesheet" href="../assets/css/style.css?v=57">
 </head>
 <body>
 <header class="topbar"><div class="shell topbar-inner">
@@ -35,6 +35,15 @@
   <button class="hero-role-tab" data-role="support"><img src="../assets/images/roles/support.png" alt=""><span>輔助</span></button>
 </section>
 
+<section class="hero-list-search" aria-label="搜尋英雄">
+  <label class="hero-list-search-field" for="heroSearchInput">
+    <span aria-hidden="true">⌕</span>
+    <input id="heroSearchInput" type="search" inputmode="search" autocomplete="off" placeholder="搜尋英雄名稱" aria-label="搜尋英雄名稱">
+    <button id="heroSearchClear" type="button" aria-label="清除搜尋" hidden>×</button>
+  </label>
+  <span id="heroSearchStatus" class="hero-list-search-status" aria-live="polite"></span>
+</section>
+
 <section id="heroContent" class="hero-content-shell">
   <div class="hero-loading">正在載入英雄資料…</div>
 </section>
@@ -43,6 +52,6 @@
 
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
 <script src="../assets/js/app.js"></script>
-<script src="../assets/js/heroes.js?v=49"></script>
+<script src="../assets/js/heroes.js?v=57"></script>
 </body>
 </html>
