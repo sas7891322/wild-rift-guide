@@ -1259,3 +1259,57 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
     grid-template-columns:1fr;
   }
 }
+
+
+/* v39｜英雄路線分類固定六格同一行
+   僅修改 ALL／巴龍路／打野／中路／飛龍路／輔助分類列，
+   不影響犽凝英雄資訊頁。 */
+.hero-role-tabs{
+  grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+  overflow:visible !important;
+  padding-bottom:0 !important;
+}
+.hero-role-tab{
+  min-width:0;
+  white-space:nowrap;
+}
+
+@media(max-width:800px){
+  .hero-role-tabs{
+    grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+    gap:5px;
+  }
+}
+
+@media(max-width:520px){
+  .hero-role-tabs{
+    grid-template-columns:repeat(6,minmax(0,1fr)) !important;
+    gap:3px;
+    margin:4px 0 13px;
+  }
+  .hero-role-tab{
+    min-width:0;
+    padding:6px 1px;
+    gap:2px;
+    border-radius:10px;
+    font-size:8px;
+    line-height:1.15;
+  }
+  .hero-role-tab img{
+    width:24px;
+    height:24px;
+    border-radius:7px;
+  }
+}
+
+@media(max-width:380px){
+  .hero-role-tabs{gap:2px}
+  .hero-role-tab{
+    padding:5px 0;
+    font-size:7.5px;
+  }
+  .hero-role-tab img{
+    width:22px;
+    height:22px;
+  }
+}
