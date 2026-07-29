@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v71-support-second-batch-13-of-32",
+  "version": "7.2a-v72-support-third-batch-19-of-32",
   "updated": "2026-07-29",
   "schemaVersion": 2,
   "roleSource": "heroCatalog",
@@ -138,7 +138,8 @@
     "v68：完成飛龍路第四批 5 位：圖奇、達瑞文、煞蜜拉、姍娜、克黎思妲；補齊正式母版欄位並校正 Riot 台灣官方技能名稱與姍娜 7.2a 調整。飛龍路正式攻略進度更新為 23/23，全數完成。",
     "v69：完成輔助路瑟雷西正式版並固定為輔助路母版；補齊聖物之盾起手、核心三件、五件成裝、鞋子升級、符文、召喚師技能、Lv.1～15 加點、三組連招、靈魂／燈籠機制、對局與前中後期策略。輔助路正式攻略進度更新為 1/32。",
     "v70：完成輔助路第一批 6 位：拉克絲、布郎姆、布里茨、瑟菈紛、雷歐娜、露璐；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 7/32。",
-    "v71：完成輔助路第二批 6 位：銳空、枷蘿、亞歷斯塔、娜米、巴德、銳兒；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 13/32。"
+    "v71：完成輔助路第二批 6 位：銳空、枷蘿、亞歷斯塔、娜米、巴德、銳兒；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 13/32。",
+    "v72：完成輔助路第三批 6 位：派克、斯溫、納帝魯斯、卡瑪、悠咪、魔甘娜；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 19/32。"
   ],
   "heroes": [
     {
@@ -36786,11 +36787,12 @@
       "roleId": "support",
       "role": "輔助",
       "tier": "A",
-      "position": "增益保排／團隊輔助",
+      "position": "真言強化／群盾加速型萬用軟輔",
       "tags": [
-        "保排",
-        "增益",
-        "團戰"
+        "真言強化",
+        "遠距消耗",
+        "鎖鏈定身",
+        "群體護盾"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -36860,12 +36862,12 @@
         "ban": "布里茨"
       },
       "playstyle": {
-        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
-        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
-        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+        "前期": "利用輪迴怒火的範圍傷害與緩速同步消耗敵人，但不要過度推線讓自己失去安全距離。持續追蹤真言符印計數：需要壓血時把強化留給一技，遭遇強開或準備追擊時則保留給靈能啟示，提供附近隊友護盾與跑速。特化鏈結連上後用三技加速跟住目標，避免鎖鏈被拉斷。",
+        "中期": "卡瑪擅長帶隊快速搶河道位置。群體護盾與加速可讓隊伍先進入物件區或迅速撤退；大絕飛昇擁抱在窄口能把敵人拉向中心，接強化一技打出範圍爆發。做視野時不要單獨走進黑暗，先用一技探草並保持三技能隨時自保。",
+        "後期": "團戰站在隊伍中央，根據威脅分配真言：敵人尚未進場時可用強化一技消耗，刺客或坦克衝入時優先強化三技保護多人。大絕適合反開、打斷敵方陣型或把分散目標拉回火力中心；二技則留給需要長時間限制的突進者。"
       },
-      "summary": "對線以保護射手與換血效率為主，視野與站位優先於補傷害；團戰把護盾、治療或控制留給對方真正的進場點。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "卡瑪透過真言符印強化基礎技能，能在遠距消耗、單點定身與群體護盾之間切換。每次施放前先判斷真言應交給一技輸出、二技控制或三技群盾，決定她在團戰中的上限。",
+      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與真言機制依 Riot Games 台灣《激鬥峽谷》卡瑪英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。",
       "avatar": "../assets/images/heroes/portraits/karma.webp",
       "abilities": [
         {
@@ -36873,44 +36875,146 @@
           "label": "被動",
           "title": "真言符印",
           "icon": "../assets/images/heroes/skills/karma_01.webp",
-          "summary": "施放三次技能後，下個基礎技能會被真言強化，提供更強的傷害、控制或護盾。"
+          "summary": "施放三次技能後，下一個基礎技能會獲得真言強化，提升傷害、控制或護盾效果。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "輪迴怒火",
           "icon": "../assets/images/heroes/skills/karma_02.webp",
-          "summary": "射出靈能彈，命中後造成範圍魔法傷害與緩速；真言強化後會產生二段爆炸。"
+          "summary": "射出靈能彈，命中後造成範圍魔法傷害與緩速；真言強化後會形成延遲二段爆炸。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "特化鏈結",
           "icon": "../assets/images/heroes/skills/karma_03.webp",
-          "summary": "連結目標造成傷害並揭露位置；連線未被拉斷會再次傷害並定身，真言可強化連結。"
+          "summary": "連結敵方英雄造成傷害並揭露位置，連線未被拉斷會再次傷害與定身；真言強化可連結額外目標並延長控制。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "靈能啟示",
           "icon": "../assets/images/heroes/skills/karma_04.webp",
-          "summary": "為友軍提供護盾與跑速；真言強化可把效果擴散到附近友軍。"
+          "summary": "為友軍提供護盾與跑速；真言強化後把護盾與加速擴散至附近友軍。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "飛昇擁抱",
           "icon": "../assets/images/heroes/skills/karma_05.webp",
-          "summary": "在指定區域造成魔法傷害並形成靈能環，短暫延遲後把敵人拉向中心。"
+          "summary": "在指定區域造成魔法傷害並形成靈能環，短暫延遲後把仍在環內的敵人拉向中心。"
         }
       ],
-      "mechanics": [],
+      "mechanics": [
+        {
+          "title": "真言要依戰況分配",
+          "text": "強化一技適合消耗與爆發，強化二技延長控制，強化三技則提供群體護盾與跑速。不要只固定把真言交給同一技能。"
+        },
+        {
+          "title": "三技能維持二技連線",
+          "text": "特化鏈結需要卡瑪持續接近目標。先連線後用靈能啟示加速自己，可降低敵人拉斷鎖鏈的機會。"
+        },
+        {
+          "title": "大絕是拉回不是瞬間擊飛",
+          "text": "飛昇擁抱形成區域後有短暫延遲，敵人仍可嘗試離開。配合一技緩速、隊友控制或窄口施放最穩定。"
+        }
+      ],
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "support-third-batch-v72",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "support-spectral-sickle"
+      ],
+      "coreItems": [
+        "support-high-05",
+        "support-high-06",
+        "support-high-04"
+      ],
+      "combos": [
+        {
+          "name": "真言一技消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "強化1技命中"
+            },
+            {
+              "key": "MOVE",
+              "label": "利用緩速調整位置"
+            },
+            {
+              "key": "AA",
+              "label": "普攻補傷害"
+            },
+            {
+              "key": "E",
+              "label": "3技護盾撤退"
+            }
+          ],
+          "note": "確定被動強化已準備完成後再施放一技，二段爆炸需要敵人仍停留在範圍內。"
+        },
+        {
+          "name": "鎖鏈定身追擊",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技建立鎖鏈"
+            },
+            {
+              "key": "E",
+              "label": "3技加速跟住目標"
+            },
+            {
+              "key": "Q",
+              "label": "1技緩速限制逃跑"
+            },
+            {
+              "key": "W",
+              "label": "鎖鏈完成定身"
+            },
+            {
+              "key": "EXHAUST",
+              "label": "虛弱敵方主力"
+            }
+          ],
+          "note": "三技跑速用來保持連線，一技放在敵人退路。真言強化二技可同時限制更多目標。"
+        },
+        {
+          "name": "大絕拉回群盾反開",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技放在進場敵人腳下"
+            },
+            {
+              "key": "Q",
+              "label": "1技範圍緩速"
+            },
+            {
+              "key": "E",
+              "label": "強化3技群體護盾加速"
+            },
+            {
+              "key": "W",
+              "label": "2技鎖住主要威脅"
+            },
+            {
+              "key": "MOVE",
+              "label": "帶隊拉開或反追"
+            }
+          ],
+          "note": "大絕把敵人拉回中心後，強化三技同時保護多人並調整隊伍站位。"
+        }
+      ],
+      "mechanicsTitle": "真言分配與鎖鏈維持",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "supportMasterTemplate": "thresh-v69",
+      "isSupportMasterTemplate": false
     },
     {
       "id": "leona-support",
@@ -38039,11 +38143,12 @@
       "role": "輔助",
       "roleId": "support",
       "tier": "A",
-      "position": "法術消耗／控制輔助",
+      "position": "長控禁錮／黑盾反制型法術輔助",
       "tags": [
-        "消耗",
-        "控制",
-        "傷害"
+        "長時間禁錮",
+        "區域消耗",
+        "控制免疫盾",
+        "範圍暈眩"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -38061,11 +38166,11 @@
         "bone-plating"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-13",
+        "magic-high-10",
+        "magic-high-15",
+        "magic-high-16",
         "magic-high-25",
-        "magic-high-08",
-        "magic-high-14"
+        "magic-high-13"
       ],
       "boots": [
         "mana-boots",
@@ -38078,24 +38183,24 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "布郎姆",
-          "銳兒",
-          "亞歷斯塔"
+          "雷歐娜",
+          "納帝魯斯",
+          "銳兒"
         ],
         "bad": [
           "派克",
-          "布里茨",
-          "銳空"
+          "卡瑪",
+          "米里歐"
         ],
         "ban": "派克"
       },
       "playstyle": {
-        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
-        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
-        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+        "前期": "暗影禁錮飛行速度不快，先利用草叢、兵線側面或敵人補刀動作預判，不要正面反覆空丟。命中後立刻把痛苦腐蝕鋪在目標腳下，讓持續傷害完整生效。黑暗之盾應留給真正的魔法控制技能，面對鉤子、暈眩與擊飛時提前套在可能被開的射手身上。",
+        "中期": "在河道與物件入口用一技封鎖窄口，二技可持續消耗並逼迫敵人離開站位。敵方準備強開時，把黑盾交給最需要維持輸出的核心；需要主動進場則先自我套盾，再閃現開靈魂枷鎖。鎖鏈期間靠近敵人會提高追擊能力，必要時使用保命附魔等待第二段暈眩。",
+        "後期": "站在主力後方偏側面，持續用禁錮威脅通道與草叢。敵方刺客進場時先給主力黑盾，再以一技反控；若對手站位密集，可自我套盾閃現大絕分割戰場。大絕鏈條可被拉斷，因此最好等敵方位移交出或隊友已先控制後再施放。"
       },
-      "summary": "利用技能射程在不吃傷害的前提下壓低血量，配合控制逼出召喚師技能；中後期避免為補傷害站得比前排更前。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。",
+      "summary": "魔甘娜以暗影禁錮建立長時間抓人窗口，痛苦腐蝕提供區域消耗，黑暗之盾則反制魔法傷害與多數控制。團戰可套盾閃現開靈魂枷鎖，但必須確保隊友能跟進並讓鎖鏈維持到第二段暈眩。",
+      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》魔甘娜英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。",
       "avatar": "../assets/images/heroes/portraits/morgana.png",
       "abilities": [
         {
@@ -38103,35 +38208,35 @@
           "label": "被動",
           "title": "靈魂虹吸",
           "icon": "../assets/images/heroes/skills/morgana_01.webp",
-          "summary": "對英雄、大型士兵與中大型野怪造成技能傷害時會回復自身生命。"
+          "summary": "對敵方英雄、大型士兵以及中大型野怪造成技能傷害時回復自身生命，提高持續消耗與推線續航。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗影禁錮",
           "icon": "../assets/images/heroes/skills/morgana_02.webp",
-          "summary": "射出黑暗能量，命中第一個敵人造成魔法傷害並長時間禁錮。"
+          "summary": "射出黑暗能量，命中第一個敵人時造成魔法傷害並長時間禁錮，是抓人與反開的核心技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "痛苦腐蝕",
           "icon": "../assets/images/heroes/skills/morgana_03.png",
-          "summary": "詛咒指定區域持續造成魔法傷害，目標生命越低傷害越高；被動治療可縮短其冷卻。"
+          "summary": "詛咒指定區域並持續造成魔法傷害，目標生命越低傷害越高；被動治療可協助縮短冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑暗之盾",
           "icon": "../assets/images/heroes/skills/morgana_04.webp",
-          "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害並在護盾存在時免疫多數控制。"
+          "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害，並在護盾存在期間免疫多數控制效果。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靈魂枷鎖",
           "icon": "../assets/images/heroes/skills/morgana_05.webp",
-          "summary": "以鎖鏈連結附近敵方英雄造成傷害與緩速；未掙脫者在延遲後再次受傷並被暈眩。"
+          "summary": "以鎖鏈連結附近敵方英雄，造成傷害與緩速；未能掙脫鎖鏈者在延遲後再次受傷並被暈眩。"
         }
       ],
       "skillSequence": [
@@ -38159,12 +38264,114 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": [],
+      "mechanics": [
+        {
+          "title": "一技要利用固定動作預判",
+          "text": "暗影禁錮會被士兵阻擋且飛行速度有限。抓敵人補刀、轉身、進草或被隊友緩速的瞬間施放最穩。"
+        },
+        {
+          "title": "黑盾只擋魔法與控制",
+          "text": "黑暗之盾不會吸收物理傷害，但護盾存在期間能免疫多數控制。把它留給鉤子、暈眩、擊飛或關鍵魔法爆發。"
+        },
+        {
+          "title": "大絕需要維持鎖鏈距離",
+          "text": "靈魂枷鎖的第二段暈眩需要敵人未能拉斷鎖鏈。等位移交出、配合緩速或保命附魔，可提高成功率。"
+        }
+      ],
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2a-first70-detail-v32",
-      "reviewedAt": "2026-07-28"
+      "reviewStatus": "support-third-batch-v72",
+      "reviewedAt": "2026-07-29",
+      "starterItems": [
+        "support-spectral-sickle"
+      ],
+      "coreItems": [
+        "magic-high-10",
+        "magic-high-15",
+        "magic-high-16"
+      ],
+      "combos": [
+        {
+          "name": "禁錮腐蝕消耗",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技禁錮命中"
+            },
+            {
+              "key": "W",
+              "label": "2技鋪在目標腳下"
+            },
+            {
+              "key": "AA",
+              "label": "普攻補傷害"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃壓制回復"
+            }
+          ],
+          "note": "一技命中後再放二技，避免先鋪地讓敵人直接走開。點燃留給確定能壓入擊殺線的換血。"
+        },
+        {
+          "name": "黑盾反控",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技替主力擋控制"
+            },
+            {
+              "key": "Q",
+              "label": "1技反手禁錮"
+            },
+            {
+              "key": "W",
+              "label": "2技持續輸出"
+            },
+            {
+              "key": "R",
+              "label": "4技連結追擊者"
+            },
+            {
+              "key": "MOVE",
+              "label": "保持鎖鏈距離"
+            }
+          ],
+          "note": "黑盾優先擋最關鍵的控制，不要只為一般魔法傷害過早消耗。禁錮命中後再決定是否開大追控。"
+        },
+        {
+          "name": "套盾閃現大絕",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技自我黑盾"
+            },
+            {
+              "key": "FLASH",
+              "label": "閃現進入多人範圍"
+            },
+            {
+              "key": "R",
+              "label": "4技連結敵群"
+            },
+            {
+              "key": "W",
+              "label": "2技鋪地"
+            },
+            {
+              "key": "Q",
+              "label": "1技封鎖逃跑路線"
+            }
+          ],
+          "note": "先套黑盾避免進場立刻被控。大絕後持續貼近目標，必要時使用保命附魔拖到第二段暈眩。"
+        }
+      ],
+      "mechanicsTitle": "禁錮預判與黑盾分配",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "supportMasterTemplate": "thresh-v69",
+      "isSupportMasterTemplate": false
     },
     {
       "id": "nami-support",
@@ -38411,11 +38618,12 @@
       "role": "輔助",
       "roleId": "support",
       "tier": "A",
-      "position": "坦克開戰／前排保護",
+      "position": "鐵錨強開／鎖定擊飛型重裝輔助",
       "tags": [
-        "開戰",
-        "控制",
-        "前排"
+        "鐵錨鉤鎖",
+        "普攻定身",
+        "護盾換血",
+        "鎖定擊飛"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -38456,54 +38664,54 @@
         ],
         "bad": [
           "魔甘娜",
-          "珍娜",
-          "布郎姆"
+          "布郎姆",
+          "珍娜"
         ],
         "ban": "魔甘娜"
       },
       "playstyle": {
-        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
-        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
-        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+        "前期": "沉重打擊讓納帝魯斯對每個目標的第一次普攻都能定身。對線先利用草叢與兵線側面威脅深淵鐵錨，鉤中後先普攻觸發被動，再開巨人之怒承受反打並用鋼鐵怒濤緩速。鐵錨也能命中牆面把自己拉走，沒有擊殺角度時保留作撤退。",
+        "中期": "跟著打野進入河道做視野，潛航衝擊可鎖定無位移核心，沿途也會擊飛站在路徑上的敵人。先用大絕迫使對手走位，再接鐵錨與普攻定身，能形成很長的單點控制。沒有可靠視野時不要盲鉤進黑暗區域，納帝魯斯進場後很難自行脫離。",
+        "後期": "正面團戰不一定要直接鉤敵方後排。站在主力前方，以普攻定身與鋼鐵怒濤保排；敵方核心露出位置時再用大絕鎖定。若鉤子命中前排會把自己拉入敵陣，先確認隊友能跟上或巨人之怒可承受第一輪傷害。"
       },
-      "summary": "對線先保持可開戰的血量與角度，抓對手走位失誤再進場；中後期以視野、先手與保護主力輸出為核心。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "納帝魯斯擁有普攻定身、鐵錨鉤鎖、範圍緩速與鎖定擊飛，能把單一目標控制很久。鐵錨同時是進場與拉牆撤退工具，開戰前需確認隊友距離與進場後的生存能力。",
+      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》納帝魯斯英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。7.1h 對巨人之怒的改動主要調整野區傷害與護盾數值，本站輔助攻略以現行一般峽谷技能機制呈現。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。",
       "avatar": "../assets/images/heroes/portraits/nautilus.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "沉重打擊",
           "icon": "../assets/images/heroes/skills/nautilus_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "對同一目標的第一次普攻會造成額外物理傷害並短暫定身；切換不同英雄可分別觸發。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "最後升滿技能",
+          "label": "1 技",
+          "title": "深淵鐵錨",
           "icon": "../assets/images/heroes/skills/nautilus_02.webp",
-          "summary": "一技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前射出鐵錨，命中敵人時拉近雙方；命中地形時則把納帝魯斯拉向牆面並縮短部分冷卻。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "第二優先技能",
+          "label": "2 技",
+          "title": "巨人之怒",
           "icon": "../assets/images/heroes/skills/nautilus_03.webp",
-          "summary": "二技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "獲得依最大生命成長的護盾，護盾存在期間普攻會對目標與附近敵人造成額外魔法傷害。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "主要升級技能",
+          "label": "3 技",
+          "title": "鋼鐵怒濤",
           "icon": "../assets/images/heroes/skills/nautilus_04.webp",
-          "summary": "三技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "從自身向外連續震出多道衝擊波，造成魔法傷害與緩速；貼身目標可能被多道波浪命中。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "潛航衝擊",
           "icon": "../assets/images/heroes/skills/nautilus_05.webp",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "鎖定敵方英雄發出追蹤衝擊波，沿途擊飛敵人，抵達目標時造成傷害、擊飛與暈眩。"
         }
       ],
       "skillSequence": [
@@ -38527,11 +38735,122 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": []
+      "mechanics": [
+        {
+          "title": "每名目標各自有被動冷卻",
+          "text": "沉重打擊對同一目標有觸發間隔，但可輪流普攻不同英雄，團戰中用來連續限制多人。"
+        },
+        {
+          "title": "鐵錨可以鉤牆撤退",
+          "text": "深淵鐵錨命中地形時會把納帝魯斯拉向牆面。沒有開戰角度時保留一技，可作為跨越距離與逃生手段。"
+        },
+        {
+          "title": "大絕路徑也會擊飛",
+          "text": "潛航衝擊除了鎖定的最終目標，沿途經過的敵人也會被擊飛。選擇後排目標可讓衝擊波穿過前排。"
+        }
+      ],
+      "starterItems": [
+        "support-relic-shield"
+      ],
+      "coreItems": [
+        "defense-high-05",
+        "defense-high-20",
+        "defense-high-15"
+      ],
+      "combos": [
+        {
+          "name": "鐵錨完整連控",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技鉤中拉近"
+            },
+            {
+              "key": "AA",
+              "label": "普攻觸發被動定身"
+            },
+            {
+              "key": "W",
+              "label": "2技開盾強化普攻"
+            },
+            {
+              "key": "E",
+              "label": "3技緩速留人"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃壓制回復"
+            }
+          ],
+          "note": "鉤中後先普攻觸發被動，再開盾承受反打。三技延後施放，能接續控制並防止目標逃離。"
+        },
+        {
+          "name": "鎖定大絕追擊",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技鎖定核心"
+            },
+            {
+              "key": "Q",
+              "label": "1技接擊飛落點"
+            },
+            {
+              "key": "AA",
+              "label": "普攻定身"
+            },
+            {
+              "key": "E",
+              "label": "3技緩速"
+            },
+            {
+              "key": "W",
+              "label": "2技吸收集火"
+            }
+          ],
+          "note": "大絕無法靠一般走位躲避，可先逼出位移，再用鐵錨接續落點，形成長時間控制。"
+        },
+        {
+          "name": "反開保排",
+          "steps": [
+            {
+              "key": "AA",
+              "label": "普攻定身突進者"
+            },
+            {
+              "key": "E",
+              "label": "3技範圍緩速"
+            },
+            {
+              "key": "Q",
+              "label": "1技鉤住或拉牆調位"
+            },
+            {
+              "key": "R",
+              "label": "4技鎖定後續核心"
+            },
+            {
+              "key": "W",
+              "label": "2技扛住火力"
+            }
+          ],
+          "note": "敵人進場時先以普攻定身，不必急著鉤遠處目標。鐵錨可用來拉牆調整位置或阻止第二名敵人接近。"
+        }
+      ],
+      "mechanicsTitle": "首次普攻定身與鐵錨雙用途",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "support-third-batch-v72",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "supportMasterTemplate": "thresh-v69",
+      "isSupportMasterTemplate": false
     },
     {
       "id": "pyke-support",
@@ -38541,11 +38860,12 @@
       "roleId": "support",
       "role": "輔助",
       "tier": "S",
-      "position": "抓人遊走／先手控制",
+      "position": "潛行鉤鎖／斬殺分錢型刺客輔助",
       "tags": [
-        "抓人",
-        "遊走",
-        "控制"
+        "蓄力鉤鎖",
+        "潛行遊走",
+        "穿身暈眩",
+        "斬殺重置"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -38563,15 +38883,15 @@
         "courage-of-colossus"
       ],
       "items": [
-        "defense-high-05",
-        "defense-high-20",
-        "support-high-03",
-        "defense-high-15",
-        "defense-high-09"
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-29",
+        "physical-high-31",
+        "physical-high-10"
       ],
       "boots": [
-        "ionian-boots",
-        "armored-warboots"
+        "armorbreaker-boots",
+        "ionian-boots"
       ],
       "spells": [
         "flash",
@@ -38599,7 +38919,7 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
@@ -38610,56 +38930,164 @@
         "bad": [
           "魔甘娜",
           "布郎姆",
-          "珍娜"
+          "雷歐娜"
         ],
         "ban": "魔甘娜"
       },
       "playstyle": {
-        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
-        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
-        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+        "前期": "利用草叢與視野差蓄力刺骨串叉。短按可快速刺擊，長按則把第一個命中的敵人拉向自己；命中後接溺流鬼影穿過目標，讓留下的鬼影回到派克身上時造成暈眩。換血受傷後先離開敵方視野，血港淹禮會把近期承受的部分傷害轉回生命，不必在低血量時立刻回城。",
+        "中期": "推完兵線後開幽海深潛沿河道遊走，進入偽裝並提高跑速，從敵方側後方找鉤子角度。派克不適合正面承受火力，應先做視野、抓落單，再等隊友把目標壓入汪洋死域的斬殺線。大絕成功斬殺後可在短時間內再次施放，且能讓協助擊殺的隊友取得額外金錢。",
+        "後期": "後期不要站在前排與坦克正面互換，應藏在側翼等待殘血目標。先用鉤子或三技打斷關鍵走位，再觀察斬殺標記；沒有標記時不要只為傷害跳入人群。若己方主力被切，可用三技穿過刺客形成暈眩，或用蓄力鉤把敵人拉離後排。"
       },
-      "summary": "利用草叢、視野差與遊走創造先手機會，不必每波都硬開；命中關鍵控制後快速集火，沒角度就優先做視野。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "派克以視野差、蓄力鉤鎖與穿身暈眩創造抓人機會，並靠汪洋死域斬殺殘血敵人、刷新大絕及分享額外金錢。脫離敵方視野可回復近期傷害，因此進出戰場比正面硬扛更重要。",
+      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》派克英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。",
       "avatar": "../assets/images/heroes/portraits/pyke.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "血港淹禮",
+          "icon": "../assets/images/heroes/skills/pyke_01.png",
+          "summary": "脫離敵方視野時會回復近期受到的部分英雄傷害。派克無法從其他來源增加額外最大生命，額外生命會轉換為物理攻擊。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/pyke_01.png",
-          "summary": "主要抓人技能，命中率直接影響開戰品質。"
+          "title": "刺骨串叉",
+          "icon": "../assets/images/heroes/skills/pyke_02.webp",
+          "summary": "短按向前刺擊並傷害敵人；長按蓄力後擲出魚叉，把第一個命中的敵人拉向派克。是對線抓人與遊走先手的核心。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/pyke_02.webp",
-          "summary": "機動或第二控制技能。"
+          "title": "幽海深潛",
+          "icon": "../assets/images/heroes/skills/pyke_03.png",
+          "summary": "進入偽裝並提高跑速。靠近敵方英雄時會被察覺，適合繞過視野、快速遊走或脫戰回復灰色生命。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/pyke_03.png",
-          "summary": "補充限制／保護效果。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "溺流鬼影",
           "icon": "../assets/images/heroes/skills/pyke_04.png",
-          "summary": "團戰先手或收割大招。"
+          "summary": "向前衝刺並留下鬼影；短暫延遲後鬼影回到派克身上，對路徑上的敵方英雄造成物理傷害與暈眩。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/pyke_05.png"
+          "label": "4 技",
+          "title": "汪洋死域",
+          "icon": "../assets/images/heroes/skills/pyke_05.png",
+          "summary": "躍向十字區域，斬殺低於門檻的敵方英雄；成功斬殺後可短時間再次施放，並讓協助擊殺的隊友取得額外金錢。"
         }
       ],
-      "mechanics": []
+      "mechanics": [
+        {
+          "title": "離開視野才能回復",
+          "text": "血港淹禮會記錄近期英雄傷害，但派克必須離開敵方視野才會逐步回復。草叢、牆後與二技偽裝都是重要的重置工具。"
+        },
+        {
+          "title": "一技短按與長按不同",
+          "text": "短按是近距離刺擊，長按才會投出魚叉並拉回目標。近身時不必過度蓄力，遠距抓人則要利用草叢遮蔽起手。"
+        },
+        {
+          "title": "大絕只在斬殺線最穩",
+          "text": "汪洋死域命中低於門檻的英雄才會直接斬殺並刷新。沒有斬殺標記時，優先保留給後續收割。"
+        }
+      ],
+      "starterItems": [
+        "support-spectral-sickle"
+      ],
+      "coreItems": [
+        "physical-high-14",
+        "physical-high-15",
+        "physical-high-29"
+      ],
+      "combos": [
+        {
+          "name": "蓄力鉤回接鬼影",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技蓄力拉回"
+            },
+            {
+              "key": "E",
+              "label": "3技穿過目標"
+            },
+            {
+              "key": "AA",
+              "label": "普攻補傷害"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃壓制回復"
+            }
+          ],
+          "note": "鉤回後立刻用三技穿過目標，讓鬼影回程路徑覆蓋敵人。隊友距離不足時不要單獨深入。"
+        },
+        {
+          "name": "三技閃現多人暈眩",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技向前衝刺"
+            },
+            {
+              "key": "FLASH",
+              "label": "閃現調整鬼影終點"
+            },
+            {
+              "key": "Q",
+              "label": "1技留住關鍵目標"
+            },
+            {
+              "key": "AA",
+              "label": "普攻追擊"
+            },
+            {
+              "key": "R",
+              "label": "4技進入斬殺線後收尾"
+            }
+          ],
+          "note": "三技施放後可用閃現改變派克位置，延長或轉動鬼影回程線，命中原本躲開的敵人。"
+        },
+        {
+          "name": "斬殺刷新收割",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技把殘血拉入範圍"
+            },
+            {
+              "key": "E",
+              "label": "3技暈眩限制位移"
+            },
+            {
+              "key": "R",
+              "label": "4技斬殺第一目標"
+            },
+            {
+              "key": "W",
+              "label": "2技加速追下一人"
+            },
+            {
+              "key": "R",
+              "label": "再次4技斬殺"
+            }
+          ],
+          "note": "先確認敵人出現斬殺標記再施放大絕。第一次成功斬殺後，利用潛行與跑速尋找下一個殘血目標。"
+        }
+      ],
+      "mechanicsTitle": "灰色生命、鉤鎖與斬殺判斷",
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "support-third-batch-v72",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "supportMasterTemplate": "thresh-v69",
+      "isSupportMasterTemplate": false
     },
     {
       "id": "rakan-support",
@@ -39908,11 +40336,12 @@
       "role": "輔助",
       "roleId": "support",
       "tier": "S",
-      "position": "法術消耗／控制輔助",
+      "position": "魂屑成長／範圍吸血型控制法坦輔助",
       "tags": [
-        "消耗",
-        "控制",
-        "傷害"
+        "靈魂碎片",
+        "拉回控制",
+        "遠距探查",
+        "範圍吸血"
       ],
       "ratings": {
         "單排推薦": 4,
@@ -39923,22 +40352,22 @@
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "scorch",
-        "manaflow-band",
-        "transcendence",
-        "bone-plating"
+        "glacial-augment",
+        "font-of-life",
+        "bone-plating",
+        "overgrowth",
+        "transcendence"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-13",
-        "magic-high-25",
-        "magic-high-08",
-        "magic-high-14"
+        "magic-high-15",
+        "magic-high-16",
+        "magic-high-23",
+        "defense-high-09",
+        "magic-high-13"
       ],
       "boots": [
-        "mana-boots",
-        "burst-boots"
+        "blood-mage-boots",
+        "armored-warboots"
       ],
       "spells": [
         "flash",
@@ -39947,60 +40376,60 @@
       "skillOrder": "Q > E > W",
       "matchups": {
         "good": [
-          "布郎姆",
-          "銳兒",
-          "亞歷斯塔"
+          "雷歐娜",
+          "亞歷斯塔",
+          "銳兒"
         ],
         "bad": [
-          "派克",
-          "布里茨",
-          "銳空"
+          "拉克絲",
+          "婕莉",
+          "卡瑪"
         ],
-        "ban": "派克"
+        "ban": "拉克絲"
       },
       "playstyle": {
-        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
-        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
-        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+        "前期": "影之爪往返命中後可把敵人拉近並取得靈魂碎片，接近距離施放靈魂拷問可讓多道魔法彈同時命中。真知魔眼延遲較長，應放在三技拉回落點、隊友控制位置或敵人退路，而不是單獨遠距亂放。每次取得魂屑都會治療並永久提高最大生命。",
+        "中期": "斯溫在河道與物件窄口最強，開啟魔君降生後盡量同時貼近多名敵人，持續汲取生命並用三技拉回想離開範圍的目標。魔燄現在可在惡魔型態期間重複施放，等敵人集中或需要緩速追擊時使用，不必一次開大後立刻全部交完。",
+        "後期": "站在前排與後排之間，既能承受部分傷害，也能用拉回控制保護主力。面對長射程陣容不要直線追擊，先靠二技封路、隊友控制或側翼接近。大絕能維持的前提是持續汲取敵方英雄，目標離開範圍時要果斷退出，避免孤身追深。"
       },
-      "summary": "利用技能射程在不吃傷害的前提下壓低血量，配合控制逼出召喚師技能；中後期避免為補傷害站得比前排更前。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "斯溫靠影之爪拉回、真知魔眼封走位與靈魂碎片永久成長，在多人近戰中開啟魔君降生持續吸血。大絕期間可重複施放魔燄，團戰重點是維持多人吸取範圍，而不是追逐單一遠程目標。",
+      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與斯溫重製後的大絕機制依 Riot Games 台灣《激鬥峽谷》斯溫英雄頁及 6.2h 官方重製公告校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。",
       "avatar": "../assets/images/heroes/portraits/swain.webp",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "群鴉盛宴",
           "icon": "../assets/images/heroes/skills/swain_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "取得靈魂碎片時治療自己並永久提高最大生命，治療與成長效果會讓斯溫在持久戰中逐漸變得更難處理。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "靈魂拷問",
           "icon": "../assets/images/heroes/skills/swain_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前釋放多道魔法彈，距離越近能讓同一目標承受越多道傷害，是拉回後的主要爆發技能。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "真知魔眼",
           "icon": "../assets/images/heroes/skills/swain_03.webp",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "在遠距區域召喚魔眼，延遲後造成魔法傷害、緩速與揭露；命中英雄可取得靈魂碎片。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "影之爪",
           "icon": "../assets/images/heroes/skills/swain_04.webp",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "魔爪向前飛出後折返，命中敵人時造成控制；可再次施放把目標拉向斯溫並取得靈魂碎片。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "魔君降生",
           "icon": "../assets/images/heroes/skills/swain_05.webp",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "化身惡魔並持續汲取周圍敵人的生命；只要持續吸取敵方英雄即可維持型態，期間可重複施放魔燄造成範圍傷害與緩速。"
         }
       ],
       "skillSequence": [
@@ -40024,11 +40453,122 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
-      "skillIconStatus": "placeholder",
+      "skillIconStatus": "complete",
       "generatedV29": true,
-      "mechanics": []
+      "mechanics": [
+        {
+          "title": "魂屑同時治療與增生",
+          "text": "三技拉回、二技命中等方式取得靈魂碎片時會治療斯溫並永久提高最大生命，對線不要忽略每次穩定取得魂屑的機會。"
+        },
+        {
+          "title": "二技需要前置限制",
+          "text": "真知魔眼爆炸延遲較長。放在拉回落點、隊友控制範圍或狹窄退路，才能提高命中率。"
+        },
+        {
+          "title": "大絕可重複施放魔燄",
+          "text": "魔君降生期間只要持續吸取敵方英雄即可維持，魔燄具有獨立冷卻，可在一次團戰中多次造成範圍傷害與緩速。"
+        }
+      ],
+      "starterItems": [
+        "support-spectral-sickle"
+      ],
+      "coreItems": [
+        "magic-high-15",
+        "magic-high-16",
+        "magic-high-23"
+      ],
+      "combos": [
+        {
+          "name": "影爪拉回爆發",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技往返命中"
+            },
+            {
+              "key": "E",
+              "label": "再次3技拉回"
+            },
+            {
+              "key": "W",
+              "label": "2技封住落點"
+            },
+            {
+              "key": "Q",
+              "label": "1技近距離打滿"
+            },
+            {
+              "key": "AA",
+              "label": "普攻補傷害"
+            }
+          ],
+          "note": "三技拉回後把二技放在落點，敵人被限制走位時再貼近用一技，能同時取得魂屑與完整傷害。"
+        },
+        {
+          "name": "大絕多人長戰",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技開啟惡魔型態"
+            },
+            {
+              "key": "E",
+              "label": "3技拉回離場目標"
+            },
+            {
+              "key": "Q",
+              "label": "1技貼身輸出"
+            },
+            {
+              "key": "R",
+              "label": "魔燄範圍傷害緩速"
+            },
+            {
+              "key": "W",
+              "label": "2技封鎖退路"
+            }
+          ],
+          "note": "保持至少一名敵方英雄在汲取範圍內，並在敵人集中或準備逃離時施放魔燄。"
+        },
+        {
+          "name": "反開保排",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技控制突進者"
+            },
+            {
+              "key": "W",
+              "label": "2技放在主力腳下"
+            },
+            {
+              "key": "R",
+              "label": "4技進入長戰"
+            },
+            {
+              "key": "Q",
+              "label": "1技近身壓血"
+            },
+            {
+              "key": "IGNITE",
+              "label": "點燃限制回復"
+            }
+          ],
+          "note": "敵人主動進場時更容易維持大絕範圍。把二技放在後排附近，配合三技拉回延長控制。"
+        }
+      ],
+      "mechanicsTitle": "魂屑成長與惡魔型態維持",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "support-third-batch-v72",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "supportMasterTemplate": "thresh-v69",
+      "isSupportMasterTemplate": false
     },
     {
       "id": "thresh-support",
@@ -40535,11 +41075,12 @@
       "roleId": "support",
       "role": "輔助",
       "tier": "B",
-      "position": "增益保排／團隊輔助",
+      "position": "摯友附著／持續護盾治療型增益輔助",
       "tags": [
-        "保排",
-        "增益",
-        "團戰"
+        "摯友系統",
+        "附著支援",
+        "護盾攻速",
+        "波浪治療"
       ],
       "ratings": {
         "單排推薦": 3,
@@ -40553,22 +41094,22 @@
         "aery",
         "font-of-life",
         "revitalize",
-        "bone-plating",
+        "manaflow-band",
         "transcendence"
       ],
       "items": [
         "support-high-05",
         "support-high-06",
         "support-high-04",
-        "support-high-03",
-        "support-high-01"
+        "support-high-01",
+        "support-high-03"
       ],
       "boots": [
         "ionian-boots",
         "immortal-boots"
       ],
       "spells": [
-        "flash",
+        "heal",
         "exhaust"
       ],
       "skillOrder": "Q > E > W",
@@ -40593,13 +41134,13 @@
         "Q": "1 技",
         "W": "2 技",
         "E": "3 技",
-        "R": "大絕"
+        "R": "4 技"
       },
       "matchups": {
         "good": [
           "布郎姆",
           "索娜",
-          "悠咪"
+          "米里歐"
         ],
         "bad": [
           "布里茨",
@@ -40609,51 +41150,155 @@
         "ban": "布里茨"
       },
       "playstyle": {
-        "前期": "先穩定下路換血與保護射手，搶到線權後開始佈置河道視野。",
-        "中期": "跟著打野與主力做視野，物件刷新前先搶草叢與進場路線。",
-        "後期": "站位以主力輸出與視野安全為核心，控制與保護技能留給敵方真正進場的瞬間。"
+        "前期": "悠咪附著後很安全，但完全不下車會失去普攻與技能觸發被動治療、幫忙擋技能及佈置視野的機會。敵方關鍵控制進入冷卻時可短暫離開隊友，普攻或技能命中英雄後再於數秒內附著，把治療分享給友軍。奇幻圖騰附著時可操控飛行方向，飛行超過一段時間後會造成更高傷害與緩速。",
+        "中期": "親密度最高的友軍會成為摯友，附著在摯友身上時各技能獲得額外效果。通常跟著目前最能持續輸出的隊友，但物件前仍要在安全時機離開附著放置視野。蹦蹦衝刺提供護盾、攻速與護盾存在期間的跑速，應在宿主準備輸出或遭到集火時使用，而不是滿血走路時隨意消耗。",
+        "後期": "最終篇章會向前發出多道能量波，傷害並逐步緩速敵人，同時治療命中的友軍，過量治療會轉成護盾。調整宿主位置讓波浪同時覆蓋前排與後排；敵方刺客進場時先虛弱，再用三技護盾與大絕波浪穩住主力。宿主即將死亡時提前跳向另一名安全隊友，避免一起被擊殺。"
       },
-      "summary": "對線以保護射手與換血效率為主，視野與站位優先於補傷害；團戰把護盾、治療或控制留給對方真正的進場點。",
-      "sourceNote": "7.2a 中／輔初版：角色定位與 Tier 依目前網站分路基準，並參考 Riot 7.2a 版本更新、WildRiftFire 與 WR-META 7.2a 公開資料整理；未上傳的技能圖示以 Q／W／E／R 文字佔位。",
+      "summary": "悠咪透過飛撲抱抱附著隊友並建立摯友，強化對核心英雄的護盾、治療與攻速增益。新版最終篇章不再定身，而是逐波緩速敵人並治療友軍；適時下車觸發被動與做視野仍是關鍵。",
+      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與摯友重製機制依 Riot Games 台灣《激鬥峽谷》悠咪英雄頁、6.3d 官方重製公告及 7.2a 悠咪治療調整校正；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。",
       "avatar": "../assets/images/heroes/portraits/yuumi.webp",
       "abilities": [
         {
+          "key": "P",
+          "label": "被動",
+          "title": "貓貓摯友",
+          "icon": "../assets/images/heroes/skills/yuumi_01.webp",
+          "summary": "普攻與技能命中敵方英雄時會治療悠咪，若在數秒內附著至友軍也會分享治療。附著期間共同擊殺會累積親密度，最高者成為摯友並強化技能。"
+        },
+        {
           "key": "Q",
           "label": "1 技",
-          "title": "主要技能",
-          "icon": "../assets/images/heroes/skills/yuumi_01.webp",
-          "summary": "主要換血／功能技能。"
+          "title": "奇幻圖騰",
+          "icon": "../assets/images/heroes/skills/yuumi_02.png",
+          "summary": "發射飛彈傷害第一個命中的敵人；飛行一段時間後造成更高傷害與緩速。附著時可控制飛行方向，對摯友還能提供額外增益。"
         },
         {
           "key": "W",
           "label": "2 技",
-          "title": "核心技能",
-          "icon": "../assets/images/heroes/skills/yuumi_02.png",
-          "summary": "保護或增益技能。"
+          "title": "飛撲抱抱！",
+          "icon": "../assets/images/heroes/skills/yuumi_03.png",
+          "summary": "飛向友方英雄並附著，期間跟隨其移動且通常無法被指定。附著在摯友身上時，悠咪的治療、護盾及摯友獲得的回復效果會提高。"
         },
         {
           "key": "E",
           "label": "3 技",
-          "title": "功能技能",
-          "icon": "../assets/images/heroes/skills/yuumi_03.png",
-          "summary": "護盾、治療或控制工具，優先留給主力輸出。"
-        },
-        {
-          "key": "R",
-          "label": "大絕",
-          "title": "終極技能",
+          "title": "蹦蹦衝刺",
           "icon": "../assets/images/heroes/skills/yuumi_04.png",
-          "summary": "團戰關鍵保排／控制技能。"
+          "summary": "賦予自身或附著友軍護盾與攻速，護盾存在期間也提高跑速。7.2a 已降低魔力消耗，使持續支援更穩定。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "待官方資料更新",
-          "summary": "目前先補入官方圖片，技能詳細文字待官方資料更新後補齊。",
-          "icon": "../assets/images/heroes/skills/yuumi_05.png"
+          "label": "4 技",
+          "title": "最終篇章",
+          "icon": "../assets/images/heroes/skills/yuumi_05.png",
+          "summary": "向前發出多道能量波，對敵人造成傷害並逐波提高緩速；每道波浪也會治療友軍，過量治療轉成護盾，摯友獲得更高治療。"
         }
       ],
-      "mechanics": []
+      "mechanics": [
+        {
+          "title": "摯友由親密度決定",
+          "text": "附著時共同擊殺英雄或士兵會累積親密度。親密度最高的友軍成為摯友，悠咪附著其身上時技能效果更強。"
+        },
+        {
+          "title": "安全下車才能提高上限",
+          "text": "適時離開附著普攻或技能命中英雄，可觸發被動治療並協助視野；但敵方硬控仍在時下車容易被直接擊殺。"
+        },
+        {
+          "title": "新版大絕不再定身",
+          "text": "最終篇章現在以逐波緩速、友軍治療與過量護盾為主。不要再等待三波定身，而要利用波浪持續保護與拉扯。"
+        }
+      ],
+      "starterItems": [
+        "support-spectral-sickle"
+      ],
+      "coreItems": [
+        "support-high-05",
+        "support-high-06",
+        "support-high-04"
+      ],
+      "combos": [
+        {
+          "name": "下車觸發被動回補",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技離開附著"
+            },
+            {
+              "key": "AA",
+              "label": "安全普攻命中英雄"
+            },
+            {
+              "key": "W",
+              "label": "再次2技附著射手"
+            },
+            {
+              "key": "E",
+              "label": "3技提供護盾攻速"
+            }
+          ],
+          "note": "只在敵方關鍵控制已交或距離安全時下車。命中後盡快重新附著，把被動治療分享給隊友。"
+        },
+        {
+          "name": "附著消耗追擊",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "附著狀態操控1技"
+            },
+            {
+              "key": "E",
+              "label": "3技護盾攻速加速宿主"
+            },
+            {
+              "key": "EXHAUST",
+              "label": "虛弱敵方反打主力"
+            },
+            {
+              "key": "Q",
+              "label": "下一輪1技持續緩速"
+            }
+          ],
+          "note": "讓一技飛行足夠時間再命中，取得強化傷害與緩速；三技配合宿主開始連續輸出時使用。"
+        },
+        {
+          "name": "大絕多人治療反開",
+          "steps": [
+            {
+              "key": "R",
+              "label": "4技沿戰線施放"
+            },
+            {
+              "key": "E",
+              "label": "3技護盾宿主"
+            },
+            {
+              "key": "HEAL",
+              "label": "治療補全隊血量"
+            },
+            {
+              "key": "EXHAUST",
+              "label": "虛弱突進者"
+            },
+            {
+              "key": "W",
+              "label": "宿主危險時跳向安全隊友"
+            }
+          ],
+          "note": "大絕同時命中敵人與多名友軍收益最高。新版大絕不再定身，應配合逐波緩速、護盾與虛弱拖過爆發。"
+        }
+      ],
+      "mechanicsTitle": "摯友選擇、附著與新版治療波浪",
+      "skillIconStatus": "complete",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "reviewStatus": "support-third-batch-v72",
+      "reviewedAt": "2026-07-29",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "supportMasterTemplate": "thresh-v69",
+      "isSupportMasterTemplate": false
     },
     {
       "id": "zilean-support",
@@ -45354,12 +45999,12 @@
       "avatarComplete": true,
       "detailComplete": false,
       "portraitMode": "shared",
-      "verification": "依使用者提供的遊戲內輔助定位三張截圖確認 32 位；v69 完成瑟雷西母版，v70 完成第一批 6 位，v71 完成第二批 6 位，正式攻略進度 13/32。",
-      "detailCompletedCount": 13,
+      "verification": "依使用者提供的遊戲內輔助定位三張截圖確認 32 位；v69 完成瑟雷西母版，v70～v72 完成前三批各 6 位，正式攻略進度 19/32。",
+      "detailCompletedCount": 19,
       "detailTotalCount": 32,
-      "detailProgress": "13/32",
-      "detailVersion": "v71-support-second-batch-13-of-32-7.2a",
-      "roleAuditVersion": "v71",
+      "detailProgress": "19/32",
+      "detailVersion": "v72-support-third-batch-19-of-32-7.2a",
+      "roleAuditVersion": "v72",
       "roleAuditStatus": "passed"
     }
   },
@@ -45381,7 +46026,7 @@
       "jungle": 50,
       "mid": 46,
       "duo": 23,
-      "support": 13
+      "support": 19
     },
     "removedLegacyProfiles": [
       "fiora-jungle",
