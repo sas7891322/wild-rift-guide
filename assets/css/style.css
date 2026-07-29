@@ -1413,3 +1413,122 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
   .hero-filter-options::-webkit-scrollbar{display:none}
   .hero-filter-chip{flex:0 0 auto;padding:7px 9px;font-size:11px}
 }
+
+/* ===== v77.3｜第三階段：手機版與響應式正式調整 ===== */
+html{-webkit-text-size-adjust:100%}
+body{overflow-wrap:anywhere}
+img{max-width:100%}
+button,input,select,textarea{font:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+
+/* 六個英雄路線分頁（ALL + 五路） */
+.hero-role-tabs{grid-template-columns:repeat(6,minmax(0,1fr))}
+
+@media (max-width: 1024px){
+  .shell{width:min(100% - 24px,1160px)}
+  .hero-page-head{align-items:flex-start}
+  .hero-version-badge{max-width:420px}
+  .home-card{min-height:200px}
+  .hero-overview-shell,.hero-profile{min-width:0}
+}
+
+@media (max-width: 800px){
+  body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+  .topbar{padding-top:env(safe-area-inset-top)}
+  .shell{width:calc(100% - 20px)}
+
+  /* 導覽列可滑動，並保留清楚的觸控範圍 */
+  .topbar-inner{padding-bottom:9px}
+  .nav{width:100%;justify-content:flex-start;scroll-padding-inline:4px}
+  .nav a{min-height:36px;display:inline-flex;align-items:center;justify-content:center;padding:7px 11px}
+
+  /* 首頁 */
+  body.home-map-bg .hero{margin-top:8px;padding-left:10px;padding-right:10px}
+  .home-hero-search{width:100%;margin-top:16px}
+  .home-hero-search-field,.hero-list-search-field{min-height:48px;border-radius:14px}
+  .home-hero-search-field input,.hero-list-search-field input{font-size:16px}
+  .home-hero-search-results{left:0;right:0;max-height:min(56vh,360px)}
+  .role-strip{gap:5px}
+  .role-link{min-width:0}
+  .role-link span{white-space:nowrap}
+  .home-card{align-items:start}
+
+  /* 英雄資料庫：六個分頁完整塞入單列 */
+  .hero-role-tabs{grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}
+  .hero-role-tab{min-height:58px;padding:6px 1px;font-size:9px}
+  .hero-role-tab img{width:27px;height:27px}
+  .hero-list-search{margin-top:0}
+  .hero-list-search-field button{min-width:38px;min-height:38px}
+  .hero-filter-chip{min-height:38px}
+
+  /* 頁面標題與資料卡 */
+  .page-head.compact{padding-top:22px}
+  .hero-version-badge strong{line-height:1.45}
+  .hero-profile-hero{align-items:start}
+  .hero-title-row{align-items:flex-start}
+  .hero-section-title{align-items:flex-start}
+
+  /* 橫向內容只在必要區塊滑動 */
+  .tabs,.item-tabs,.shoe-level-tabs,.rune-tabs,.hero-filter-options,.skill-level-grid{
+    overscroll-behavior-inline:contain;
+  }
+  .tabs,.item-tabs,.shoe-level-tabs,.rune-tabs,.hero-filter-options{padding-bottom:6px}
+
+  /* 裝備、符文、技能卡片觸控尺寸 */
+  .item-icon,.spell-icon,.rune-card,.tier-hero-card{min-width:0}
+  .item-icon,.spell-icon,.tier-hero-card{touch-action:manipulation}
+  .item-tab,.shoe-level,.tab,.rune-tab{min-height:40px}
+
+  /* 防止長文字撐破版面 */
+  .home-card p,.desc,.detail-description,.hero-summary-box p,.ability-card p,.stack-card p,.playstyle-step p{
+    word-break:break-word;
+  }
+  .build-mini span,.item-icon strong,.spell-icon strong,.tier-hero-card strong{
+    overflow-wrap:anywhere;
+  }
+}
+
+@media (max-width: 560px){
+  .shell{width:calc(100% - 16px)}
+  .brand{font-size:14px}
+  .nav{gap:5px;font-size:11px}
+  .nav a{padding:6px 9px}
+
+  body.home-map-bg .hero h1{font-size:31px}
+  .home-hero-search-field>span,.hero-list-search-field>span{font-size:21px}
+  .home-grid{gap:9px}
+  .home-card,.home-card.wide{grid-template-columns:54px minmax(0,1fr);gap:11px;padding:12px}
+  .home-icon{width:54px;height:54px;font-size:13px}
+  .home-card h2{font-size:19px}
+
+  .hero-page-head h1,.page-head h1{font-size:27px}
+  .hero-page-head p{font-size:12px}
+  .hero-role-tabs{gap:3px}
+  .hero-role-tab{min-height:54px;font-size:8px;border-radius:10px}
+  .hero-role-tab img{width:25px;height:25px}
+  .hero-role-tab[data-role="all"] span{font-size:9px}
+
+  .tier-hero-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hero-profile-hero{grid-template-columns:64px minmax(0,1fr);padding:12px 10px}
+  .hero-avatar{width:64px;height:64px;border-radius:15px}
+  .hero-title-row h2{font-size:21px}
+  .tier-badge-large{font-size:12px}
+
+  .item-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .spell-icon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .rune-row.cols-5,.rune-row.cols-4,.rune-row.cols-3,.rune-row.cols-2{grid-template-columns:1fr}
+  .keystone-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media (max-width: 380px){
+  .shell{width:calc(100% - 12px)}
+  .nav a{padding-inline:8px}
+  .role-link span{font-size:7px}
+  .hero-role-tab{min-height:51px;padding-inline:0;font-size:7.5px}
+  .hero-role-tab img{width:23px;height:23px}
+  .tier-hero-avatar-wrap{width:56px;height:56px}
+  .tier-hero-avatar,.tier-hero-placeholder{width:50px;height:50px}
+  .item-icon img{width:52px;height:52px}
+  .spell-icon img{width:52px;height:52px}
+  .keystone-grid{grid-template-columns:1fr}
+}
