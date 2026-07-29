@@ -1,5 +1,5 @@
 {
-  "version": "7.2a-v74-support-final-seven-32-of-32",
+  "version": "7.2a-v75-stage1-hero-data-locked",
   "updated": "2026-07-29",
   "schemaVersion": 2,
   "roleSource": "heroCatalog",
@@ -117,7 +117,7 @@
     "v45：巴龍路第 6 批完成藍寶、賽恩、辛吉德、慎、提摩。",
     "v46：巴龍路第 7 批完成烏爾加特、弗拉迪米爾、悟空、賽特、泰達米爾。原規劃的特朗德與約瑞科不在目前專案英雄資料中。",
     "v47：巴龍路第 8 批完成嘉文四世、茂凱、納帝魯斯、奈德麗、歐拉夫。",
-    "v48：巴龍路第 9 批完成潘森、雷茲、史加納、斯溫。",
+    "v48：巴龍路第 9 批完成潘森、符文法師、史加納、斯溫。",
     "v49：巴龍路第 10 批完成維爾戈、弗力貝爾、沃維克、犽宿。",
     "v49：巴龍路正式版已 100% 完成。",
     "v50：依遊戲內打野定位截圖校正為 50 位；移除辛吉德、菲歐拉、伊瑞莉雅，新增慎、納帝魯斯。本版只更新英雄名單，不更動任何英雄詳細攻略資料。",
@@ -128,9 +128,9 @@
     "v55：完成打野第四批 40/50 正式版。新增完成關、劫、卡蜜兒、厄薩斯、史加納、塔隆、易大師、歐拉夫、波比、泰達米爾；全數套用李星固定打野母版。",
     "v56：完成打野第五批與全路線 50/50 正式版。新增完成淣菈、犽凝、賈克斯、達瑞斯、鏡爪、雷玟、魔甘娜、古拉格斯、蒙多醫生、飛斯；全數沿用李星固定打野母版。",
     "v58：完成中路阿璃正式版並固定為中路英雄母版。套用既有結構化英雄頁版型，更新 7.2a 出裝、符文、召喚師技能、完整技能加點、三組實戰連招、對局與前中後期策略；其餘英雄資料、CSS、JS 與版型均未修改。",
-    "v59：校正遊戲內中路 46 位正式名單；完成第一批 12/46：阿璃、拉克絲、奧莉安娜、星朵拉、瑟菈紛、安妮、維克特、雷茲、薇可絲、歐羅拉、梅爾、斯溫。全數沿用阿璃固定中路母版。",
-    "v60：完成中路第二批 12 位：塔莉雅、柔依、卡瑪、艾克、黛安娜、諾拉、庫奇、希格斯、翱鋭龍獸、逆命、維迦、漢默丁格。中路正式攻略進度更新為 24/46。",
-    "v61：完成中路第三批 11 位：阿卡莉、犽宿、犽凝、劫、飛斯、卡薩丁、麗珊卓、伊瑞莉雅、卡特蓮娜、杰西、阿克尚。中路正式攻略進度更新為 35/46。",
+    "v59：校正遊戲內中路 46 位正式名單；完成第一批 12/46：阿璃、拉克絲、奧莉安娜、星朵拉、瑟菈紛、安妮、維克特、符文法師、薇可絲、歐羅拉、梅爾、斯溫。全數沿用阿璃固定中路母版。",
+    "v60：完成中路第二批 12 位：塔莉雅、柔依、卡瑪、艾克、黛安娜、諾拉、庫奇、希格斯、翱銳龍獸、逆命、維迦、漢默丁格。中路正式攻略進度更新為 24/46。",
+    "v61：完成中路第三批 11 位：阿卡莉、犽宿、犽凝、劫、飛斯、卡薩丁、麗珊卓、伊瑞莉雅、卡特蓮娜、杰西、埃可尚。中路正式攻略進度更新為 35/46。",
     "v62：完成中路第四批 11 位：枷蘿、魔甘娜、凱爾、提摩、凱能、弗拉迪米爾、加里歐、布蘭德、塔隆、威寇茲、藍寶。中路正式攻略進度更新為 46/46，中路全數完成。",
     "v63：英雄定位系統重構。全站定位、搜尋、路線列表與英雄頁切換改由 heroCatalog 單一來源控制；移除已取消的菲歐拉、伊瑞莉雅、辛吉德打野舊攻略入口。",
     "v64：完成飛龍路吉茵珂絲正式版並固定為飛龍路母版；補齊起手裝、核心三件、五件成裝、三級鞋路線、召喚師技能、完整技能加點、三組連招、對局與前中後期策略。飛龍路正式攻略進度更新為 1/23。",
@@ -141,7 +141,8 @@
     "v71：完成輔助路第二批 6 位：銳空、枷蘿、亞歷斯塔、娜米、巴德、銳兒；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 13/32。",
     "v72：完成輔助路第三批 6 位：派克、斯溫、納帝魯斯、卡瑪、悠咪、魔甘娜；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 19/32。",
     "v73：完成輔助路第四批 6 位：索娜、茂凱、珍娜、極靈、墨菲特、索拉卡；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 25/32。",
-    "v74：完成輔助路最後 7 位：加里歐、米里歐、布蘭德、維迦、姍娜、威寇茲、鄂爾；輔助路正式攻略 32/32 全數完成。同時依遊戲內截圖修正輔助定位：移除賽特輔助，新增鄂爾輔助。"
+    "v74：完成輔助路最後 7 位：加里歐、米里歐、布蘭德、維迦、姍娜、威寇茲、鄂爾；輔助路正式攻略 32/32 全數完成。同時依遊戲內截圖修正輔助定位：移除賽特輔助，新增鄂爾輔助。",
+    "v75 第一階段英雄資料鎖定：140 位英雄名稱對照 Riot 台灣官方英雄列表；修正埃可尚、符文法師、翱銳龍獸名稱，移除犽宿／犽凝／劫中路技能佔位內容，並同步多定位英雄技能資料。五路定位維持 49／50／46／23／32。"
   ],
   "heroes": [
     {
@@ -373,7 +374,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "third-batch-v67"
+      "duoBatch": "third-batch-v67",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "miss-fortune",
@@ -598,7 +601,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "second-batch-v66"
+      "duoBatch": "second-batch-v66",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ezreal",
@@ -831,7 +836,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "second-batch-v66"
+      "duoBatch": "second-batch-v66",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "varus",
@@ -1067,7 +1074,9 @@
       "reviewStatus": "duo-second-batch-formal-v66",
       "reviewedAt": "2026-07-29",
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "second-batch-v66"
+      "duoBatch": "second-batch-v66",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "zeri",
@@ -1299,7 +1308,9 @@
       "reviewStatus": "duo-second-batch-formal-v66",
       "reviewedAt": "2026-07-29",
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "second-batch-v66"
+      "duoBatch": "second-batch-v66",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "lucian",
@@ -1532,7 +1543,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "first-batch-v65"
+      "duoBatch": "first-batch-v65",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "xayah",
@@ -1760,7 +1773,9 @@
       "reviewStatus": "duo-first-batch-formal-v65",
       "reviewedAt": "2026-07-29",
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "first-batch-v65"
+      "duoBatch": "first-batch-v65",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jhin",
@@ -1981,7 +1996,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "first-batch-v65"
+      "duoBatch": "first-batch-v65",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kogmaw",
@@ -2202,7 +2219,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "third-batch-v67"
+      "duoBatch": "third-batch-v67",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "vayne",
@@ -2430,7 +2449,9 @@
       "reviewStatus": "duo-first-batch-formal-v65",
       "reviewedAt": "2026-07-29",
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "first-batch-v65"
+      "duoBatch": "first-batch-v65",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "corki",
@@ -2659,7 +2680,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "first-batch-v65"
+      "duoBatch": "first-batch-v65",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kalista",
@@ -2888,7 +2911,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "fourth-batch-v68"
+      "duoBatch": "fourth-batch-v68",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "sivir",
@@ -3116,7 +3141,9 @@
       "reviewStatus": "duo-second-batch-formal-v66",
       "reviewedAt": "2026-07-29",
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "second-batch-v66"
+      "duoBatch": "second-batch-v66",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kaisa",
@@ -3364,7 +3391,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "first-batch-v65"
+      "duoBatch": "first-batch-v65",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "draven",
@@ -3608,7 +3637,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "fourth-batch-v68"
+      "duoBatch": "fourth-batch-v68",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ashe",
@@ -3837,7 +3868,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "second-batch-v66"
+      "duoBatch": "second-batch-v66",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jinx",
@@ -4066,7 +4099,9 @@
         }
       ],
       "duoMasterTemplate": "jinx-v64",
-      "isDuoMasterTemplate": true
+      "isDuoMasterTemplate": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "caitlyn",
@@ -4279,7 +4314,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "third-batch-v67"
+      "duoBatch": "third-batch-v67",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "twitch",
@@ -4511,7 +4548,9 @@
       "duoBatch": "fourth-batch-v68",
       "abilityNamesVerified": "Riot TW",
       "skillIconStatus": "complete",
-      "skillIconCount": 5
+      "skillIconCount": 5,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "tristana",
@@ -4741,7 +4780,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "third-batch-v67"
+      "duoBatch": "third-batch-v67",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "samira",
@@ -4984,7 +5025,9 @@
       "duoBatch": "fourth-batch-v68",
       "abilityNamesVerified": "Riot TW",
       "skillIconStatus": "complete",
-      "skillIconCount": 5
+      "skillIconCount": 5,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "yunara",
@@ -5217,7 +5260,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
-      "duoBatch": "third-batch-v67"
+      "duoBatch": "third-batch-v67",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "senna",
@@ -5448,7 +5493,9 @@
       "duoBatch": "fourth-batch-v68",
       "abilityNamesVerified": "Riot TW",
       "skillIconStatus": "complete",
-      "skillIconCount": 5
+      "skillIconCount": 5,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "aatrox-baron",
@@ -5680,7 +5727,9 @@
           ],
           "note": "從側面先以二技限制走位，再用三段一技切割後排，不要正面吃完第一輪控制。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "akali-baron",
@@ -5912,7 +5961,9 @@
           ],
           "note": "煙霧中反覆進出視野，等敵人關鍵控制落空後再用三技與大絕完成擊殺。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ambessa-baron",
@@ -5986,35 +6037,35 @@
           "label": "被動",
           "title": "龍犬詭步",
           "icon": "../assets/images/heroes/skills/ambessa_01.webp",
-          "summary": "施放技能時若輸入移動指令，可在技能結束後朝指定方向突進並強化下一次普攻。"
+          "summary": "施放技能後輸入移動指令會向該方向衝刺，並強化下一次普攻的距離、傷害與攻速，同時返還能量。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗襲／裂斬",
           "icon": "../assets/images/heroes/skills/ambessa_02.webp",
-          "summary": "第一次橫掃造成傷害，命中特定區域後可重施裂斬；第二段對前方敵人造成更高傷害。"
+          "summary": "第一次向前方半圓揮擊，外圈造成更高傷害；命中後短時間內可再次直線斬擊，第一個命中的敵人承受額外傷害。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "鐵令",
           "icon": "../assets/images/heroes/skills/ambessa_03.png",
-          "summary": "獲得護盾並向前猛擊；若護盾承受傷害，攻擊會得到強化。"
+          "summary": "獲得護盾並向前猛擊造成物理傷害；若護盾吸收傷害，猛擊傷害會提高。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "血戮",
           "icon": "../assets/images/heroes/skills/ambessa_04.webp",
-          "summary": "揮鏈造成傷害與緩速，外緣命中時效果更強，適合拉扯與追擊。"
+          "summary": "揮舞雙刃傷害並緩速周圍敵人；若在施放後觸發被動衝刺，短暫延遲後會再次攻擊。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "殛刑",
           "icon": "../assets/images/heroes/skills/ambessa_05.webp",
-          "summary": "瞬間突進至遠處敵方英雄並壓制、位移目標，是切後排與開戰手段。"
+          "summary": "被動獲得物理穿透與技能吸血；主動閃現至指定方向最後方英雄身後並壓制，接著將其摔向前方。"
         }
       ],
       "skillSequence": [
@@ -6144,7 +6195,9 @@
           ],
           "note": "利用三技起手減速，技能間持續觸發被動位移，避免一次把所有技能同時交完。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "aurora-baron",
@@ -6364,7 +6417,9 @@
           ],
           "note": "大絕封鎖區域後利用邊界反覆位移，集中攻擊被困住的脆皮目標。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "camille-baron",
@@ -6596,7 +6651,9 @@
           ],
           "note": "先對小兵打出一段一技，再利用牆鉤進場，確保二段一技能快速打到核心目標。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "darius-baron",
@@ -6820,7 +6877,9 @@
           ],
           "note": "先鎖定低血量目標完成第一個斬殺，取得被動滿層後再轉火其他敵人。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "dr-mundo-baron",
@@ -7036,7 +7095,9 @@
           ],
           "note": "血量偏低時開大提升續航，避免過早使用；利用一技持續黏住目標。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "fiora-baron",
@@ -7252,7 +7313,9 @@
           ],
           "note": "開大後依序利用一技、普攻與走位擊破四個方向，優先確保生存而非硬追最後一面。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "garen-baron",
@@ -7460,7 +7523,9 @@
           ],
           "note": "團戰先開二技承受控制，再鎖定低血量核心輸出完成沉默與斬殺。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "gnar-baron",
@@ -7668,7 +7733,9 @@
           ],
           "note": "巨型型態從側面切入，優先用大絕命中多人，再補二技與巨岩控制。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "gragas-baron",
@@ -7888,7 +7955,9 @@
           ],
           "note": "大絕拆散陣型或把核心炸向己方，接著用三技控制並補足近身傷害。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "gwen-baron",
@@ -8112,7 +8181,9 @@
           ],
           "note": "在聖霧邊緣作戰，逼迫遠程敵人進入範圍，再集中攻擊前排或落單目標。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "irelia-baron",
@@ -8336,7 +8407,9 @@
           ],
           "note": "先借小兵縮短距離並隱藏三技角度，再以大絕與暈眩製造多次重置。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jarvan-iv-baron",
@@ -8548,7 +8621,9 @@
           ],
           "note": "可以先大絕限制後排，再在圈內使用旗矛擊飛，或保留旗矛作為撤退手段。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jax-baron",
@@ -8768,7 +8843,9 @@
           ],
           "note": "大絕提升耐久後黏住目標，保留反擊風暴處理敵方普攻核心。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jayce-baron",
@@ -8984,7 +9061,9 @@
           ],
           "note": "先以遠程加速砲壓低生命，再切近戰完成貼身爆發與擊退。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ksante-baron",
@@ -9200,7 +9279,9 @@
           ],
           "note": "先用三技靠近隊友取得護盾，再用二技擋下進場，必要時以大絕帶走威脅。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kayle-baron",
@@ -9408,7 +9489,9 @@
           ],
           "note": "敵方爆發落下前開大，無敵結束後利用範圍傷害與遠程普攻反打。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kennen-baron",
@@ -9616,7 +9699,9 @@
           ],
           "note": "從視野死角進場，優先覆蓋敵方後排；保留三技作為追擊或退出手段。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "malphite-baron",
@@ -9832,7 +9917,9 @@
           ],
           "note": "先用三技降低攻速，再以一技和強化普攻黏住射手或近戰普攻英雄。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "maokai-baron",
@@ -10044,7 +10131,9 @@
           ],
           "note": "提前在草叢放置樹苗取得視野與傷害，敵人靠近後再連續控制。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "mordekaiser-baron",
@@ -10264,7 +10353,9 @@
           ],
           "note": "快速以技能與普攻觸發被動，利用範圍傷害和跑速持續貼近。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nasus-baron",
@@ -10472,7 +10563,9 @@
           ],
           "note": "對線不易接近時用三技補刀，敵人交位移後再用枯萎接一技。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nautilus-baron",
@@ -10546,35 +10639,35 @@
           "label": "被動",
           "title": "沉重打擊",
           "icon": "../assets/images/heroes/skills/nautilus_01.webp",
-          "summary": "對同一目標的第一次普攻會造成額外傷害並定身，是換血與接續控制的起點。"
+          "summary": "對同一目標的第一次普攻會造成額外物理傷害並短暫定身；切換不同英雄可分別觸發。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "深淵鐵錨",
           "icon": "../assets/images/heroes/skills/nautilus_02.webp",
-          "summary": "向前射出鐵錨，命中敵人時拉近雙方；命中地形則把自己拉向牆面。"
+          "summary": "向前射出鐵錨，命中敵人時拉近雙方；命中地形時則把納帝魯斯拉向牆面並縮短部分冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "巨人之怒",
           "icon": "../assets/images/heroes/skills/nautilus_03.webp",
-          "summary": "獲得依最大生命成長的護盾，護盾存在時普攻會對周圍敵人造成額外傷害。"
+          "summary": "獲得依最大生命成長的護盾，護盾存在期間普攻會對目標與附近敵人造成額外魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鋼鐵怒濤",
           "icon": "../assets/images/heroes/skills/nautilus_04.webp",
-          "summary": "連續震出多道衝擊波，造成範圍傷害與緩速，適合貼身留人與清線。"
+          "summary": "從自身向外連續震出多道衝擊波，造成魔法傷害與緩速；貼身目標可能被多道波浪命中。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "潛航衝擊",
           "icon": "../assets/images/heroes/skills/nautilus_05.webp",
-          "summary": "鎖定敵方英雄發出追蹤衝擊波，沿途擊飛敵人，抵達目標時再擊飛並暈眩。"
+          "summary": "鎖定敵方英雄發出追蹤衝擊波，沿途擊飛敵人，抵達目標時造成傷害、擊飛與暈眩。"
         }
       ],
       "skillSequence": [
@@ -10684,7 +10777,9 @@
           ],
           "note": "先開盾再普攻定身，三技打滿多道衝擊波，鐵錨保留作追擊或拉牆撤退。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nidalee-baron",
@@ -10758,35 +10853,35 @@
           "label": "被動",
           "title": "穿梭",
           "icon": "../assets/images/heroes/skills/nidalee_01.webp",
-          "summary": "在草叢移動時獲得跑速；長矛或陷阱命中後會標記獵物並強化豹形態追擊。"
+          "summary": "在草叢中提高跑速；人形標槍或陷阱命中會施加獵捕，揭露目標並提高追擊跑速，同時強化美洲獅形態的擊倒與猛撲。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "標槍投擲／擊倒",
           "icon": "../assets/images/heroes/skills/nidalee_02.webp",
-          "summary": "人形投擲距離越遠傷害越高的長矛；豹形對低血量或被獵捕目標造成更高傷害。"
+          "summary": "人形投擲標槍，飛行距離越遠傷害越高；美洲獅形態強化下一次普攻，目標生命越低傷害越高。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "叢林伏擊／猛撲",
           "icon": "../assets/images/heroes/skills/nidalee_03.webp",
-          "summary": "人形放置陷阱並標記踩中的敵人；豹形向前跳躍，對獵捕目標有更強追擊能力。"
+          "summary": "人形放置會揭露並標記目標的陷阱；美洲獅形態向前跳躍造成範圍傷害，對獵捕目標距離更遠。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "野性奔騰／揮擊",
           "icon": "../assets/images/heroes/skills/nidalee_04.webp",
-          "summary": "人形治療友軍並提升攻速；豹形對前方範圍造成魔法傷害。"
+          "summary": "人形治療友軍並提高其攻速；美洲獅形態向前方揮擊造成範圍魔法傷害。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "美洲獅",
           "icon": "../assets/images/heroes/skills/nidalee_05.webp",
-          "summary": "在人形與美洲獅形態間切換，改變三個基礎技能並重組消耗、治療與爆發節奏。"
+          "summary": "在獵人與美洲獅形態間切換；美洲獅形態會獲得額外雙防並使用另一組近戰技能。"
         }
       ],
       "skillSequence": [
@@ -10904,7 +10999,9 @@
           ],
           "note": "利用治療和攻速維持線權，以長矛與陷阱消耗，不必每次命中都強行跳入。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "olaf-baron",
@@ -11124,7 +11221,9 @@
           ],
           "note": "確認敵方控制即將命中時開大，直線追擊後排並持續撿斧。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ornn-baron",
@@ -11340,7 +11439,9 @@
           ],
           "note": "近身先用二技免疫位移干擾並掛焦化，再普攻擊退；視地形決定是否接三技。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "pantheon-baron",
@@ -11552,7 +11653,9 @@
           ],
           "note": "大絕落點盡量封住撤退路線，落地後立即暈眩主力並用三技承受集火。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "poppy-baron",
@@ -11756,7 +11859,9 @@
           ],
           "note": "蓄力大絕先移走前排或打野，再壁咚剩餘目標，創造多打少。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "renekton-baron",
@@ -11976,7 +12081,9 @@
           ],
           "note": "大絕進場取得怒氣與生命，鎖定後排打出控制，再用一技回復。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "riven-baron",
@@ -12200,7 +12307,9 @@
           ],
           "note": "先開大強化攻擊範圍，完成主要連段後依敵方已損生命施放疾風斬。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "rumble-baron",
@@ -12408,12 +12517,14 @@
           ],
           "note": "控制熱能在危險區間，技能打完進入過熱後利用強化普攻完成收尾。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ryze-baron",
       "baseId": "ryze",
-      "name": "雷茲",
+      "name": "符文法師",
       "enName": "Ryze",
       "role": "巴龍路",
       "roleId": "baron",
@@ -12624,7 +12735,9 @@
           ],
           "note": "用大絕帶隊友繞後或轉移物件，落地後立刻定身優先目標。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "sett-baron",
@@ -12840,7 +12953,9 @@
           ],
           "note": "承受大量傷害後調整角度讓二技中心命中，再接三技控制與強化普攻。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "shen-baron",
@@ -13052,7 +13167,9 @@
           ],
           "note": "大絕落地後立刻嘲諷威脅隊友的敵人，再用魂刃與格擋區保護核心。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "singed-baron",
@@ -13256,7 +13373,9 @@
           ],
           "note": "被追擊時保持毒霧，將最近敵人背到身後並在路線上放黏膠阻止追擊。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "sion-baron",
@@ -13464,7 +13583,9 @@
           ],
           "note": "在無視野處提前蓄力提高命中率，擊飛後再開盾與緩速追擊。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "skarner-baron",
@@ -13676,7 +13797,9 @@
           ],
           "note": "從側面用大絕壓制關鍵目標並往隊友方向拖行，結束後接三技再次控制。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "swain-baron",
@@ -13750,35 +13873,35 @@
           "label": "被動",
           "title": "群鴉盛宴",
           "icon": "../assets/images/heroes/skills/swain_01.webp",
-          "summary": "收集靈魂碎片時治療自己並永久增加最大生命，讓斯溫越打越能承受長戰。"
+          "summary": "取得靈魂碎片時治療自己並永久提高最大生命，治療與成長效果會讓斯溫在持久戰中逐漸變得更難處理。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "靈魂拷問",
           "icon": "../assets/images/heroes/skills/swain_02.webp",
-          "summary": "向前釋放多道魔法彈，距離越近命中越多，貼身時爆發最高。"
+          "summary": "向前釋放多道魔法彈，距離越近能讓同一目標承受越多道傷害，是拉回後的主要爆發技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "真知魔眼",
           "icon": "../assets/images/heroes/skills/swain_03.webp",
-          "summary": "在遠距區域引爆魔眼，造成傷害、緩速與揭露，命中英雄可取得靈魂碎片。"
+          "summary": "在遠距區域召喚魔眼，延遲後造成魔法傷害、緩速與揭露；命中英雄可取得靈魂碎片。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "影之爪",
           "icon": "../assets/images/heroes/skills/swain_04.webp",
-          "summary": "魔爪往返造成控制；命中後可把目標拉近並取得靈魂碎片。"
+          "summary": "魔爪向前飛出後折返，命中敵人時造成控制；可再次施放把目標拉向斯溫並取得靈魂碎片。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "魔君降生",
           "icon": "../assets/images/heroes/skills/swain_05.webp",
-          "summary": "持續汲取周圍敵人生命並維持惡魔型態，之後可施放魔燄造成範圍傷害與緩速。"
+          "summary": "化身惡魔並持續汲取周圍敵人的生命；只要持續吸取敵方英雄即可維持型態，期間可重複施放魔燄造成範圍傷害與緩速。"
         }
       ],
       "skillSequence": [
@@ -13892,7 +14015,9 @@
           ],
           "note": "先用二技逼迫走位，再用三技抓住退路，拉回後貼近施放一技。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "teemo-baron",
@@ -14100,7 +14225,9 @@
           ],
           "note": "敵人踩到蘑菇後利用緩速開二技追上，再以普攻與致盲完成收尾。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "tryndamere-baron",
@@ -14308,7 +14435,9 @@
           ],
           "note": "瀕死前開大維持生命，完成擊殺後用三技離塔並在大絕結束前回復。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "urgot-baron",
@@ -14516,7 +14645,9 @@
           ],
           "note": "先用近身輸出壓低生命，再命中大絕；達到處決線後立即重施拖回。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "viego-baron",
@@ -14728,7 +14859,9 @@
           ],
           "note": "擊殺後評估是否附身取得無敵與新技能；完成關鍵技能後以免費大絕跳出。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "vladimir-baron",
@@ -14940,7 +15073,9 @@
           ],
           "note": "大絕盡量命中多人，完成一輪範圍傷害後用血池避開集火並等待治療結算。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "volibear-baron",
@@ -15152,7 +15287,9 @@
           ],
           "note": "大絕跳入並停用防禦塔，落地後以落雷護盾與暈眩鎖住核心。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "warwick-baron",
@@ -15364,7 +15501,9 @@
           ],
           "note": "鎖定低生命目標獲得跑速與攻速，貼近後靠一技與被動持續回血。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "wukong-baron",
@@ -15580,7 +15719,9 @@
           ],
           "note": "從側面突進後先降低物防再開大，分身保留用來躲技能或延伸旋轉傷害。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "yasuo-baron",
@@ -15792,7 +15933,9 @@
           ],
           "note": "一技施放途中使用三技可形成環形斬擊，擊飛多人後接大完成團戰控制。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "yone-baron",
@@ -15974,7 +16117,10 @@
           ],
           "note": "隊友已提供控制或敵方站位集中時，可用三技接大絕進場，完成輸出後返回安全位置。"
         }
-      ]
+      ],
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "aatrox-jungle",
@@ -16206,7 +16352,9 @@
         "physical-high-42"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ambessa-jungle",
@@ -16430,7 +16578,9 @@
           ],
           "note": "第一段盡量用外圈命中，第二段直斬瞄準單一核心，再靠三技第二次掃擊收尾。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "amumu-jungle",
@@ -16654,7 +16804,9 @@
           ],
           "note": "敵方站位密集但一技角度不佳時，可直接閃現大絕保證多人控制，再用繃帶追擊逃離者。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "camille-jungle",
@@ -16886,7 +17038,9 @@
         "physical-high-42"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "darius-jungle",
@@ -17110,7 +17264,9 @@
         "physical-high-42"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "diana-jungle",
@@ -17184,7 +17340,7 @@
           "label": "被動",
           "title": "銀月之刃",
           "icon": "../assets/images/heroes/skills/diana_01.png",
-          "summary": "施放技能後提高接下來數次普攻的攻速；每第三次普攻會斬擊周圍敵人造成額外魔法傷害，對野怪清理特別有效。"
+          "summary": "施放技能後提高接下來數次普攻的攻速；每第三次普攻會斬擊周圍敵人，提供清線與近戰換血能力。"
         },
         {
           "key": "Q",
@@ -17334,7 +17490,9 @@
           ],
           "note": "近距離已能確保命中時可先突進，再用一技補月光，依需要重置第二次三技或直接大絕完成爆發。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "dr-mundo-jungle",
@@ -17562,7 +17720,9 @@
         "defense-high-08"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ekko-jungle",
@@ -17636,7 +17796,7 @@
           "label": "被動",
           "title": "共振驅動-Z",
           "icon": "../assets/images/heroes/skills/ekko_01.webp",
-          "summary": "對同一目標的第三次普攻或傷害技能會造成額外魔法傷害；若目標為英雄，艾克同時獲得跑速。對野怪造成額外傷害。"
+          "summary": "對同一目標的第三次普攻或傷害技能會造成額外魔法傷害；命中英雄時同時獲得跑速，方便換血後拉開。"
         },
         {
           "key": "Q",
@@ -17786,7 +17946,9 @@
           ],
           "note": "先讓敵人追進大絕殘影附近，再回溯造成爆發並回復生命，適合誘敵深入與物件坑反打。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "evelynn-jungle",
@@ -18010,7 +18172,9 @@
           ],
           "note": "二技對大型野怪有額外傷害，重擊與大絕可接近同時施放，並利用大絕後退避免被敵方集火。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "fiddlesticks-jungle",
@@ -18222,7 +18386,9 @@
           ],
           "note": "大絕落地後可立刻閃現調整群鴉位置，追上後排或避開正面控制。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "fizz-jungle",
@@ -18296,21 +18462,21 @@
           "label": "被動",
           "title": "海神三叉戟",
           "icon": "../assets/images/heroes/skills/fizz_01.webp",
-          "summary": "普攻會附帶持續魔法傷害，並讓飛斯能更靈活地穿越單位。"
+          "summary": "普攻會附帶持續魔法傷害，並讓飛斯穿越單位時更靈活。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "現撈海膽",
           "icon": "../assets/images/heroes/skills/fizz_02.png",
-          "summary": "穿過指定敵人並造成魔法傷害，同時附帶普攻命中特效；可用野怪或士兵作為位移踏板。"
+          "summary": "穿過指定敵人造成魔法傷害並附帶普攻命中特效。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "裂岸大浪",
           "icon": "../assets/images/heroes/skills/fizz_03.png",
-          "summary": "被動讓普攻附加持續傷害；主動強化下一次普攻，擊殺目標時會返還部分冷卻，適合清野重置。"
+          "summary": "被動讓普攻附加持續傷害；主動強化下一次普攻並在擊殺時返還部分冷卻。"
         },
         {
           "key": "E",
@@ -18324,7 +18490,7 @@
           "label": "4 技",
           "title": "海之霸主",
           "icon": "../assets/images/heroes/skills/fizz_05.png",
-          "summary": "丟出魚餌黏住首名命中的英雄並緩速，延遲後召喚鯊魚造成高額魔法傷害、擊飛與範圍緩速。"
+          "summary": "丟出魚餌黏住首名英雄並緩速，延遲後召喚鯊魚造成高額傷害、擊飛與範圍緩速。"
         }
       ],
       "skillSequence": [
@@ -18446,7 +18612,9 @@
         "magic-high-08"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "gragas-jungle",
@@ -18670,7 +18838,9 @@
         "magic-high-08"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "graves-jungle",
@@ -18894,7 +19064,9 @@
           ],
           "note": "保持在前排後方輸出，一技與煙霧封住路線，最後用大絕後座力離開敵方突進範圍。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "gwen-jungle",
@@ -19118,7 +19290,9 @@
         "magic-high-14"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "hecarim-jungle",
@@ -19342,7 +19516,9 @@
           ],
           "note": "完整蓄力一技命中後保持強化循環，二技範圍內持續輸出能顯著提高生存。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jarvan-iv-jungle",
@@ -19554,7 +19730,9 @@
           ],
           "note": "先以大絕分割敵陣，吸收第一波後用旗矛再次控制或穿牆離場。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jax-jungle",
@@ -19782,7 +19960,9 @@
         "physical-high-42"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kayn-jungle",
@@ -20006,7 +20186,9 @@
           ],
           "note": "紅形態利用二技擊飛與一技持續吸血，大絕進入高生命目標可獲得更多回復。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "khazix-jungle",
@@ -20230,7 +20412,9 @@
           ],
           "note": "大型物件通常符合孤立條件，一技冷卻短且傷害高；保留重擊配合一技同時打出，降低被搶風險。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kindred-jungle",
@@ -20458,7 +20642,9 @@
         "physical-high-24"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "lee-sin-jungle",
@@ -20690,7 +20876,9 @@
           ],
           "note": "先用一技標記目標，再以大絕擊退並立刻用二段一技跟進，能同時完成位移控制與斬殺追擊。施放前要確認落點不會讓自己脫離隊友。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "lillia-jungle",
@@ -20906,7 +21094,9 @@
           ],
           "note": "三技命中核心即可遠距開大，睡眠形成後閃現接二技中心與一技。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "maokai-jungle",
@@ -20980,35 +21170,35 @@
           "label": "被動",
           "title": "魔法樹液",
           "icon": "../assets/images/heroes/skills/maokai_01.png",
-          "summary": "每隔一段時間，下一次普攻會回復生命；施放技能或被敵方英雄技能命中會縮短冷卻。"
+          "summary": "普攻週期性造成額外魔法傷害並治療自身；施法或被敵方技能命中會縮短冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "荊棘摧殘",
           "icon": "../assets/images/heroes/skills/maokai_02.png",
-          "summary": "向前釋放震波造成魔法傷害與緩速，近距離敵人還會被擊退；對野怪造成額外傷害，是主要清野技能。"
+          "summary": "釋放震波造成魔法傷害、緩速並把近身敵人擊退。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "飛葉遁影",
           "icon": "../assets/images/heroes/skills/maokai_03.png",
-          "summary": "化為樹根突進指定敵方英雄，途中無法被指定，抵達後造成魔法傷害並定身。"
+          "summary": "化為扭曲根鬚衝向指定敵人，期間不可被選取，抵達後將其定身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "扭曲樹精",
           "icon": "../assets/images/heroes/skills/maokai_04.png",
-          "summary": "投擲樹精在區域內守候，敵人靠近時追擊並爆炸造成魔法傷害與緩速；放入草叢時效果更強。"
+          "summary": "丟出樹苗在地面守候，發現敵人後追擊並爆炸；草叢中的樹苗傷害與持續時間更強。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "詭林之握",
           "icon": "../assets/images/heroes/skills/maokai_05.png",
-          "summary": "召喚多道向前推進的巨大藤蔓，命中英雄時造成魔法傷害與定身；藤蔓移動距離越長，定身時間越久。"
+          "summary": "召喚多排巨大根鬚向前推進，命中敵方英雄會造成傷害與長時間定身。"
         }
       ],
       "skillSequence": [
@@ -21118,7 +21308,9 @@
           ],
           "note": "提前在物件入口草叢放樹精，敵人踩中緩速後點控進場，再用大絕封住其後援與撤退。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "morgana-jungle",
@@ -21192,35 +21384,35 @@
           "label": "被動",
           "title": "靈魂虹吸",
           "icon": "../assets/images/heroes/skills/morgana_01.webp",
-          "summary": "對敵方英雄、大型士兵以及中大型野怪造成技能傷害時回復自身生命，使她能以較健康的血量持續清野。"
+          "summary": "對敵方英雄、大型士兵以及中大型野怪造成技能傷害時回復自身生命，提高持續消耗與推線續航。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗影禁錮",
           "icon": "../assets/images/heroes/skills/morgana_02.webp",
-          "summary": "射出黑暗能量，命中第一個敵人時造成魔法傷害並長時間禁錮，是 Gank 與反蹲的核心控制。"
+          "summary": "射出黑暗能量，命中第一個敵人時造成魔法傷害並長時間禁錮，是抓人與反開的核心技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "痛苦腐蝕",
           "icon": "../assets/images/heroes/skills/morgana_03.png",
-          "summary": "詛咒指定區域並持續造成魔法傷害，目標生命越低傷害越高；是主要清野與物件輸出技能。"
+          "summary": "詛咒指定區域並持續造成魔法傷害，目標生命越低傷害越高；被動治療可協助縮短冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑暗之盾",
           "icon": "../assets/images/heroes/skills/morgana_04.webp",
-          "summary": "替友軍英雄套上魔法護盾，吸收魔法傷害，並在護盾存在期間免疫多數控制效果。"
+          "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害，並在護盾存在期間免疫多數控制效果。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靈魂枷鎖",
           "icon": "../assets/images/heroes/skills/morgana_05.webp",
-          "summary": "以鎖鏈連結附近敵方英雄並造成傷害與緩速；未能掙脫的目標會在延遲後再次受傷並暈眩。"
+          "summary": "以鎖鏈連結附近敵方英雄，造成傷害與緩速；未能掙脫鎖鏈者在延遲後再次受傷並被暈眩。"
         }
       ],
       "skillSequence": [
@@ -21338,7 +21530,9 @@
         "magic-high-15"
       ],
       "detailTemplate": "structured-baron-v40",
-      "hideBan": true
+      "hideBan": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nidalee-jungle",
@@ -21562,7 +21756,9 @@
           ],
           "note": "團戰先留在人形消耗與治療，確認目標進入斬殺線才變豹進場。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nilah-jungle",
@@ -21786,7 +21982,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fifth10-v56",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nocturne-jungle",
@@ -22010,7 +22208,9 @@
           ],
           "note": "利用關燈切斷敵方支援判斷，挑選離隊的後排突進；若隊友跟不上，僅關燈施壓也比強行進場更好。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nunu-and-willump-jungle",
@@ -22226,7 +22426,9 @@
           ],
           "note": "先用擊飛與定身確保敵人難以離開，再蓄力大絕；若即將被控制，可提前釋放保留部分傷害。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "olaf-jungle",
@@ -22446,7 +22648,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "pantheon-jungle",
@@ -22662,7 +22866,9 @@
           ],
           "note": "大絕落點放在敵方退路，落地鎖定主要輸出，打完一輪以三技擋住集火。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "poppy-jungle",
@@ -22866,7 +23072,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "rammus-jungle",
@@ -23078,7 +23286,9 @@
           ],
           "note": "敵方刺客切入時大絕落在己方後排附近，嘲諷鎖住後開二技反傷。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "rengar-jungle",
@@ -23302,7 +23512,9 @@
           ],
           "note": "需要配合隊友而非單殺時，將強化技能留給三技，定身能讓後續控制與傷害更穩定。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "riven-jungle",
@@ -23534,7 +23746,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fifth10-v56",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "shyvana-jungle",
@@ -23754,7 +23968,9 @@
           ],
           "note": "一技雙擊能快速觸發標記傷害，接近斬殺線時與重擊同步施放。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "skarner-jungle",
@@ -23966,7 +24182,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "taliyah-jungle",
@@ -24040,14 +24258,14 @@
           "label": "被動",
           "title": "馭石之術",
           "icon": "../assets/images/heroes/skills/taliyah_01.png",
-          "summary": "脫離戰鬥並靠近牆壁時獲得跑速，讓塔莉雅能沿野區地形快速轉線。"
+          "summary": "脫離戰鬥並靠近牆壁時獲得跑速，讓塔莉雅能快速返回中線、轉往河道或支援邊線。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "旋舞飛岩",
           "icon": "../assets/images/heroes/skills/taliyah_02.png",
-          "summary": "連續投擲多塊岩石並在腳下形成採石場；於採石場內施放時改投巨石，消耗採石場並造成更高傷害與緩速，對野怪還會暈眩。"
+          "summary": "連續投擲岩石並在腳下形成採石場；在採石場內施放時改為投出強力巨石，造成較高傷害與緩速。"
         },
         {
           "key": "W",
@@ -24178,7 +24396,9 @@
           ],
           "note": "大絕把敵方前後排切開後，於出口鋪三技並用二技把核心推回危險區。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "talon-jungle",
@@ -24394,7 +24614,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "tryndamere-jungle",
@@ -24602,7 +24824,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "vi-jungle",
@@ -24826,7 +25050,9 @@
           ],
           "note": "蓄力期間用閃現調整命中角度，適合越過兵線或突然抓到後排；大絕可留作跟進位移。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "viego-jungle",
@@ -25042,7 +25268,9 @@
           ],
           "note": "擊殺後先判斷附身能否提供控制、位移或保命；用完關鍵技能就以免費大絕跳出尋找下一個靈魂。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "volibear-jungle",
@@ -25258,7 +25486,9 @@
           ],
           "note": "大絕跳入並停用防禦塔，落地前預放三技，接暈眩與撕咬快速完成越塔。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "warwick-jungle",
@@ -25482,7 +25712,9 @@
           ],
           "note": "低血量時利用減傷、一技與被動治療延長戰鬥，大絕命中可回復大量生命，但仍要避開重傷與爆發控制。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "wukong-jungle",
@@ -25706,7 +25938,9 @@
           ],
           "note": "二技讓分身留在原位吸收技能，本體隱形調整方向，再重新突進後排開大，適合狹窄野區反打。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "xin-zhao-jungle",
@@ -25934,7 +26168,9 @@
           ],
           "note": "先確立挑戰目標，再開大把其他敵人推開，創造短暫單挑空間並擋住圈外傷害。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "yone-jungle",
@@ -26166,7 +26402,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fifth10-v56",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "zed-jungle",
@@ -26240,7 +26478,7 @@
           "label": "被動",
           "title": "強者特權",
           "icon": "../assets/images/heroes/skills/zed_01.png",
-          "summary": "對低生命目標普攻時造成額外魔法傷害；同一目標在短時間內只會觸發一次，可用來加快收野與完成斬殺。"
+          "summary": "對低生命目標普攻時造成額外魔法傷害；同一目標在短時間內只會觸發一次，是補刀、換血與完成斬殺的重要傷害來源。"
         },
         {
           "key": "Q",
@@ -26394,7 +26632,9 @@
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
-      "abilityNamesVerified": "Riot TW"
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ahri-mid",
@@ -26616,7 +26856,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": true
+      "isMidMasterTemplate": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "akali-mid",
@@ -26844,12 +27086,14 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "akshan-mid",
       "baseId": "akshan",
-      "name": "阿克尚",
+      "name": "埃可尚",
       "enName": "Akshan",
       "roleId": "mid",
       "role": "中路",
@@ -26918,7 +27162,7 @@
       "matchups": {
         "good": [
           "卡薩丁",
-          "翱鋭龍獸",
+          "翱銳龍獸",
           "維迦"
         ],
         "bad": [
@@ -27071,7 +27315,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "annie-mid",
@@ -27289,12 +27535,14 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "aurelion-sol-mid",
       "baseId": "aurelion-sol",
-      "name": "翱鋭龍獸",
+      "name": "翱銳龍獸",
       "enName": "Aurelion Sol",
       "roleId": "mid",
       "role": "中路",
@@ -27495,7 +27743,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "aurora-mid",
@@ -27718,7 +27968,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "brand-mid",
@@ -27937,7 +28189,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "diana-mid",
@@ -28164,7 +28418,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ekko-mid",
@@ -28391,7 +28647,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "fizz-mid",
@@ -28615,7 +28873,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "galio-mid",
@@ -28838,7 +29098,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "heimerdinger-mid",
@@ -29052,7 +29314,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "irelia-mid",
@@ -29288,7 +29552,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "jayce-mid",
@@ -29339,7 +29605,7 @@
       "matchups": {
         "good": [
           "卡薩丁",
-          "翱鋭龍獸",
+          "翱銳龍獸",
           "維迦"
         ],
         "bad": [
@@ -29516,7 +29782,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kassadin-mid",
@@ -29595,7 +29863,7 @@
         ],
         "bad": [
           "杰西",
-          "阿克尚",
+          "埃可尚",
           "犽宿"
         ],
         "ban": "杰西"
@@ -29739,7 +30007,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "katarina-mid",
@@ -29970,7 +30240,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kayle-mid",
@@ -30026,10 +30298,10 @@
         ],
         "bad": [
           "伊瑞莉雅",
-          "阿克尚",
+          "埃可尚",
           "杰西"
         ],
-        "ban": "阿克尚"
+        "ban": "埃可尚"
       },
       "playstyle": {
         "前期": "把經驗與安全補兵放在第一順位，三技遠程強化普攻用來收危險兵線。面對強勢遠程或刺客時不要爭無意義線權，二技加速與治療保留作撤退。",
@@ -30190,7 +30462,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "kennen-mid",
@@ -30414,7 +30688,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "lissandra-mid",
@@ -30633,7 +30909,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "lux-mid",
@@ -30708,7 +30986,7 @@
         "good": [
           "安妮",
           "維迦",
-          "雷茲"
+          "符文法師"
         ],
         "bad": [
           "飛斯",
@@ -30847,7 +31125,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "mel-mid",
@@ -31057,7 +31337,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "morgana-mid",
@@ -31132,35 +31414,35 @@
           "label": "被動",
           "title": "靈魂虹吸",
           "icon": "../assets/images/heroes/skills/morgana_01.webp",
-          "summary": "對敵方英雄、大型士兵以及中大型野怪造成技能傷害時回復自身生命，使她能以較健康的血量持續清野。"
+          "summary": "對敵方英雄、大型士兵以及中大型野怪造成技能傷害時回復自身生命，提高持續消耗與推線續航。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "暗影禁錮",
           "icon": "../assets/images/heroes/skills/morgana_02.webp",
-          "summary": "射出黑暗能量，命中第一個敵人時造成魔法傷害並長時間禁錮，是 Gank 與反蹲的核心控制。"
+          "summary": "射出黑暗能量，命中第一個敵人時造成魔法傷害並長時間禁錮，是抓人與反開的核心技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "痛苦腐蝕",
           "icon": "../assets/images/heroes/skills/morgana_03.png",
-          "summary": "詛咒指定區域並持續造成魔法傷害，目標生命越低傷害越高；是主要清野與物件輸出技能。"
+          "summary": "詛咒指定區域並持續造成魔法傷害，目標生命越低傷害越高；被動治療可協助縮短冷卻。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "黑暗之盾",
           "icon": "../assets/images/heroes/skills/morgana_04.webp",
-          "summary": "替友軍英雄套上魔法護盾，吸收魔法傷害，並在護盾存在期間免疫多數控制效果。"
+          "summary": "為友軍英雄套上魔法護盾，吸收魔法傷害，並在護盾存在期間免疫多數控制效果。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "靈魂枷鎖",
           "icon": "../assets/images/heroes/skills/morgana_05.webp",
-          "summary": "以鎖鏈連結附近敵方英雄並造成傷害與緩速；未能掙脫的目標會在延遲後再次受傷並暈眩。"
+          "summary": "以鎖鏈連結附近敵方英雄，造成傷害與緩速；未能掙脫鎖鏈者在延遲後再次受傷並被暈眩。"
         }
       ],
       "skillSequence": [
@@ -31281,7 +31563,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "norra-mid",
@@ -31494,7 +31778,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "orianna-mid",
@@ -31567,7 +31853,7 @@
       },
       "matchups": {
         "good": [
-          "雷茲",
+          "符文法師",
           "安妮",
           "斯溫"
         ],
@@ -31707,12 +31993,14 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ryze-mid",
       "baseId": "ryze",
-      "name": "雷茲",
+      "name": "符文法師",
       "enName": "Ryze",
       "role": "中路",
       "roleId": "mid",
@@ -31925,7 +32213,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "swain-mid",
@@ -32000,35 +32290,35 @@
           "label": "被動",
           "title": "群鴉盛宴",
           "icon": "../assets/images/heroes/skills/swain_01.webp",
-          "summary": "收集靈魂碎片時治療自己並永久增加最大生命，讓斯溫越打越能承受長戰。"
+          "summary": "取得靈魂碎片時治療自己並永久提高最大生命，治療與成長效果會讓斯溫在持久戰中逐漸變得更難處理。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "靈魂拷問",
           "icon": "../assets/images/heroes/skills/swain_02.webp",
-          "summary": "向前釋放多道魔法彈，距離越近命中越多，貼身時爆發最高。"
+          "summary": "向前釋放多道魔法彈，距離越近能讓同一目標承受越多道傷害，是拉回後的主要爆發技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "真知魔眼",
           "icon": "../assets/images/heroes/skills/swain_03.webp",
-          "summary": "在遠距區域引爆魔眼，造成傷害、緩速與揭露，命中英雄可取得靈魂碎片。"
+          "summary": "在遠距區域召喚魔眼，延遲後造成魔法傷害、緩速與揭露；命中英雄可取得靈魂碎片。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "影之爪",
           "icon": "../assets/images/heroes/skills/swain_04.webp",
-          "summary": "魔爪往返造成控制；命中後可把目標拉近並取得靈魂碎片。"
+          "summary": "魔爪向前飛出後折返，命中敵人時造成控制；可再次施放把目標拉向斯溫並取得靈魂碎片。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "魔君降生",
           "icon": "../assets/images/heroes/skills/swain_05.webp",
-          "summary": "持續汲取周圍敵人生命並維持惡魔型態，之後可施放魔燄造成範圍傷害與緩速。"
+          "summary": "化身惡魔並持續汲取周圍敵人的生命；只要持續吸取敵方英雄即可維持型態，期間可重複施放魔燄造成範圍傷害與緩速。"
         }
       ],
       "skillSequence": [
@@ -32143,7 +32433,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "syndra-mid",
@@ -32217,7 +32509,7 @@
       "matchups": {
         "good": [
           "安妮",
-          "雷茲",
+          "符文法師",
           "斯溫"
         ],
         "bad": [
@@ -32360,7 +32652,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "taliyah-mid",
@@ -32574,7 +32868,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "teemo-mid",
@@ -32625,7 +32921,7 @@
       "matchups": {
         "good": [
           "卡薩丁",
-          "阿克尚",
+          "埃可尚",
           "凱爾"
         ],
         "bad": [
@@ -32797,7 +33093,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "twisted-fate-mid",
@@ -33010,7 +33308,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "veigar-mid",
@@ -33219,7 +33519,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "velkoz-mid",
@@ -33437,7 +33739,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "vex-mid",
@@ -33650,7 +33954,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "viktor-mid",
@@ -33724,7 +34030,7 @@
       "matchups": {
         "good": [
           "斯溫",
-          "雷茲",
+          "符文法師",
           "安妮"
         ],
         "bad": [
@@ -33863,7 +34169,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "vladimir-mid",
@@ -34090,7 +34398,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "yasuo-mid",
@@ -34163,37 +34473,37 @@
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "浪人之道",
           "icon": "../assets/images/heroes/skills/yasuo_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "暴擊率加倍；移動會累積護盾能量，受到英雄或野怪攻擊時觸發護盾。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "鋼鐵暴雪",
           "icon": "../assets/images/heroes/skills/yasuo_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前突刺並視同普攻，連續命中後可施放龍捲風擊飛敵人。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "風牆鐵壁",
           "icon": "../assets/images/heroes/skills/yasuo_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "建立可阻擋敵方飛行道具的風牆，是對抗遠程技能與射手的核心工具。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "刃敵千軍",
           "icon": "../assets/images/heroes/skills/yasuo_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "穿過敵方單位造成傷害，同一目標短時間內不能重複衝刺，可利用兵線反覆位移。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "奪命氣息",
           "icon": "../assets/images/heroes/skills/yasuo_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "瞬移到滯空敵人身旁並延長滯空，落地後獲得物理穿透。"
         }
       ],
       "skillSequence": [
@@ -34315,7 +34625,10 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "yone-mid",
@@ -34367,7 +34680,7 @@
         "good": [
           "希格斯",
           "逆命",
-          "翱鋭龍獸"
+          "翱銳龍獸"
         ],
         "bad": [
           "阿璃",
@@ -34388,37 +34701,37 @@
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "獵人之道",
           "icon": "../assets/images/heroes/skills/yone_01.webp",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "犽凝每第二次普攻會造成魔法傷害，並且擁有較高的暴擊率成長，能持續打出物理與魔法混合傷害。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1技",
+          "title": "鋼鐵凡志",
           "icon": "../assets/images/heroes/skills/yone_02.webp",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前突刺並對直線上的敵人造成傷害。命中敵人會累積一層效果；累積兩層後，下一次施放會讓犽凝向前衝刺並擊飛路徑上的敵人。此技能視同普攻。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2技",
+          "title": "滅魂斬",
           "icon": "../assets/images/heroes/skills/yone_03.webp",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前方扇形範圍斬擊，依敵人的最大生命造成物理與魔法傷害。命中英雄後會獲得護盾，命中越多英雄，護盾效果越高。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3技",
+          "title": "釋魂之刃",
           "icon": "../assets/images/heroes/skills/yone_04.webp",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "靈魂離開本體向前移動並逐漸提升跑速。效果期間對敵人造成的部分傷害會被記錄；再次施放或時間結束後，犽凝返回本體並結算額外傷害。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4技",
+          "title": "二刀流奧義 ─ 封‧命‧斬",
           "icon": "../assets/images/heroes/skills/yone_05.webp",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "蓄力後向前斬擊並瞬移至最後命中的敵人身後，對路徑上的敵人造成物理與魔法傷害，並將命中的敵人拉向終點。"
         }
       ],
       "skillSequence": [
@@ -34548,7 +34861,10 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "zed-mid",
@@ -34600,7 +34916,7 @@
         "good": [
           "希格斯",
           "維克特",
-          "翱鋭龍獸"
+          "翱銳龍獸"
         ],
         "bad": [
           "麗珊卓",
@@ -34621,37 +34937,37 @@
         {
           "key": "P",
           "label": "被動",
-          "title": "核心被動機制",
+          "title": "強者特權",
           "icon": "../assets/images/heroes/skills/zed_01.png",
-          "summary": "被動會影響這名英雄的核心戰鬥循環；實際數值與觸發條件以 7.2a 遊戲內技能說明為準。"
+          "summary": "對低生命目標普攻時造成額外魔法傷害；同一目標在短時間內只會觸發一次，是補刀、換血與完成斬殺的重要傷害來源。"
         },
         {
           "key": "Q",
-          "label": "一技能",
-          "title": "主要升級技能",
+          "label": "1 技",
+          "title": "風魔手裡劍",
           "icon": "../assets/images/heroes/skills/zed_02.png",
-          "summary": "一技能在目前配置中屬於「主要升級技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "劫與影分身朝指定方向投擲手裡劍並造成物理傷害。多枚手裡劍同時命中同一目標，是主要爆發來源。"
         },
         {
           "key": "W",
-          "label": "二技能",
-          "title": "最後升滿技能",
+          "label": "2 技",
+          "title": "疾風殘影",
           "icon": "../assets/images/heroes/skills/zed_03.png",
-          "summary": "二技能在目前配置中屬於「最後升滿技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "向前放出影分身，影分身會同步施放一技與三技；重施可與影分身交換位置。劫與影子用相同技能命中同一目標時可回復能量。"
         },
         {
           "key": "E",
-          "label": "三技能",
-          "title": "第二優先技能",
+          "label": "3 技",
+          "title": "影斬",
           "icon": "../assets/images/heroes/skills/zed_04.png",
-          "summary": "三技能在目前配置中屬於「第二優先技能」。用於輸出、換血、控制或位移時，請配合英雄的核心連招與冷卻節奏。"
+          "summary": "劫與影分身斬擊周圍敵人。劫本體命中英雄可縮短二技冷卻，影分身命中則會造成緩速，方便後續手裡劍命中。"
         },
         {
           "key": "R",
-          "label": "大絕",
-          "title": "關鍵團戰技能",
+          "label": "4 技",
+          "title": "死亡印記",
           "icon": "../assets/images/heroes/skills/zed_05.png",
-          "summary": "大絕於等級 5／9／13 優先升級；通常是開戰、爆發、保命或團戰轉折的關鍵技能。"
+          "summary": "短暫不可被選取並突進到目標身後，留下可交換位置的影分身並附加印記；印記會依期間內造成的傷害延遲爆炸。"
         }
       ],
       "skillSequence": [
@@ -34773,7 +35089,10 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "abilityNamesVerified": "Riot TW",
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ziggs-mid",
@@ -34986,7 +35305,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "zoe-mid",
@@ -35199,7 +35520,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "zyra-mid",
@@ -35417,7 +35740,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "alistar-support",
@@ -35658,7 +35983,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "bard-support",
@@ -35895,7 +36222,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "blitzcrank-support",
@@ -36136,7 +36465,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "brand-support",
@@ -36377,7 +36708,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "braum-support",
@@ -36618,7 +36951,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "galio-support",
@@ -36859,7 +37194,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "janna-support",
@@ -37100,7 +37437,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "karma-support",
@@ -37337,7 +37676,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "leona-support",
@@ -37578,7 +37919,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "lulu-support",
@@ -37815,7 +38158,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "lux-support",
@@ -37913,35 +38258,35 @@
           "label": "被動",
           "title": "光芒四射",
           "icon": "../assets/images/heroes/skills/lux_01.webp",
-          "summary": "傷害技能會標記敵人；拉克絲的下一次普攻可引爆標記造成額外魔法傷害。終極閃光也能觸發標記並刷新持續時間。"
+          "summary": "傷害技能會標記敵人；下一次普攻可引爆標記造成額外魔法傷害，大絕也能觸發並刷新標記。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "光明束縛",
           "icon": "../assets/images/heroes/skills/lux_02.webp",
-          "summary": "發射光球，對前兩個命中的敵人造成魔法傷害與束縛。可穿過一名士兵抓到後方英雄，也是阻止突進的核心保排技能。"
+          "summary": "發射光球，對前兩個命中的敵人造成魔法傷害與束縛，是抓人和自保的核心技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "稜光障壁",
           "icon": "../assets/images/heroes/skills/lux_03.png",
-          "summary": "投出光杖，去程與回程都會為碰到的友軍提供護盾。沿隊伍站位斜向施放，可讓多名隊友吃到兩段護盾。"
+          "summary": "投出光杖，去程與回程都能為碰到的友軍提供護盾；調整站位可讓同一名隊友吃到兩段。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "光明異點",
           "icon": "../assets/images/heroes/skills/lux_04.webp",
-          "summary": "在指定區域創造光區，提供視野並緩速敵人；再次施放會引爆造成範圍魔法傷害。可延後引爆以封路、探草或等待束縛。"
+          "summary": "放置光區提供視野並緩速敵人，再次施放會引爆造成範圍魔法傷害，是主要清線與消耗技能。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "終極閃光",
           "icon": "../assets/images/heroes/skills/lux_05.webp",
-          "summary": "短暫蓄力後發射超遠距光束，對直線敵人造成大量魔法傷害，並觸發與刷新光芒四射標記。"
+          "summary": "短暫蓄力後發射超遠距光束，對直線敵人造成大量魔法傷害，並觸發與刷新被動標記。"
         }
       ],
       "mechanics": [
@@ -38052,7 +38397,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "malphite-support",
@@ -38127,35 +38474,35 @@
           "label": "被動",
           "title": "花崗岩護盾",
           "icon": "../assets/images/heroes/skills/malphite_01.png",
-          "summary": "一段時間未受到傷害後獲得能吸收相當於最大生命一定比例傷害的護盾，護盾是對線上前換血的重要資源。"
+          "summary": "一段時間未受傷後獲得依最大生命計算的護盾。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "地震碎片",
           "icon": "../assets/images/heroes/skills/malphite_02.png",
-          "summary": "投擲岩石造成魔法傷害與緩速，並偷取目標部分跑速，適合消耗、追擊與拉開。"
+          "summary": "投出岩石造成魔法傷害與緩速，並偷取目標部分跑速。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "震雷之擊",
           "icon": "../assets/images/heroes/skills/malphite_03.png",
-          "summary": "被動提高物防；主動強化下一次普攻，並讓接下來數次普攻對前方敵人造成範圍傷害。"
+          "summary": "被動提高物防；主動強化普攻並讓接下來數次普攻造成錐形範圍傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "大地震顫",
           "icon": "../assets/images/heroes/skills/malphite_04.png",
-          "summary": "重擊地面造成範圍魔法傷害並降低敵人攻速，對依賴連續普攻的射手與近戰英雄特別有效。"
+          "summary": "重擊地面造成魔法傷害並降低敵人攻速，物防越高傷害越高。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "勢不可擋",
           "icon": "../assets/images/heroes/skills/malphite_05.png",
-          "summary": "以不可阻擋狀態高速衝向指定區域，對範圍敵人造成大量魔法傷害與擊飛，是核心開戰與反開技能。"
+          "summary": "以不可阻擋狀態衝向指定區域，造成大量魔法傷害並擊飛所有命中的敵人。"
         }
       ],
       "skillSequence": [
@@ -38294,7 +38641,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "maokai-support",
@@ -38369,35 +38718,35 @@
           "label": "被動",
           "title": "魔法樹液",
           "icon": "../assets/images/heroes/skills/maokai_01.png",
-          "summary": "週期性強化下一次普攻，造成額外傷害並治療自身；每次施放技能或被敵方技能命中都會縮短冷卻。"
+          "summary": "普攻週期性造成額外魔法傷害並治療自身；施法或被敵方技能命中會縮短冷卻。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "荊棘摧殘",
           "icon": "../assets/images/heroes/skills/maokai_02.png",
-          "summary": "向前釋放震波造成魔法傷害與緩速，近身敵人還會被擊退，可用來把目標推向隊友或保護後排。"
+          "summary": "釋放震波造成魔法傷害、緩速並把近身敵人擊退。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "飛葉遁影",
           "icon": "../assets/images/heroes/skills/maokai_03.png",
-          "summary": "化為根鬚衝向指定敵人，突進期間無法被選取，抵達後造成魔法傷害並定身目標。"
+          "summary": "化為扭曲根鬚衝向指定敵人，期間不可被選取，抵達後將其定身。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "扭曲樹精",
           "icon": "../assets/images/heroes/skills/maokai_04.png",
-          "summary": "投擲樹苗守候區域，發現敵人後追擊並爆炸造成傷害與緩速；放在草叢時效果更強且能協助探查視野。"
+          "summary": "丟出樹苗在地面守候，發現敵人後追擊並爆炸；草叢中的樹苗傷害與持續時間更強。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "詭林之握",
           "icon": "../assets/images/heroes/skills/maokai_05.png",
-          "summary": "召喚多排巨大根鬚向前推進，命中敵方英雄時造成魔法傷害與定身，適合遠距開戰與封鎖狹窄入口。"
+          "summary": "召喚多排巨大根鬚向前推進，命中敵方英雄會造成傷害與長時間定身。"
         }
       ],
       "skillSequence": [
@@ -38536,7 +38885,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "milio-support",
@@ -38777,7 +39128,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "morgana-support",
@@ -39015,7 +39368,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nami-support",
@@ -39252,7 +39607,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nautilus-support",
@@ -39494,7 +39851,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "pyke-support",
@@ -39731,7 +40090,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "rakan-support",
@@ -39968,7 +40329,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "rell-support",
@@ -40209,7 +40572,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "senna-support",
@@ -40450,7 +40815,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "seraphine-support",
@@ -40687,7 +41054,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "ornn-support",
@@ -40929,7 +41298,9 @@
         }
       ],
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "sona-support",
@@ -41170,7 +41541,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "soraka-support",
@@ -41411,7 +41784,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "swain-support",
@@ -41653,7 +42028,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "thresh-support",
@@ -41894,7 +42271,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": true
+      "isSupportMasterTemplate": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "veigar-support",
@@ -42131,7 +42510,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "velkoz-support",
@@ -42364,7 +42745,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "yuumi-support",
@@ -42597,7 +42980,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "zilean-support",
@@ -42838,7 +43223,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "zyra-support",
@@ -42936,35 +43323,35 @@
           "label": "被動",
           "title": "荊棘花園",
           "icon": "../assets/images/heroes/skills/zyra_01.png",
-          "summary": "索命棘蔓命中敵軍時會生成棘刺噴吐草；未命中時則在路徑末端生成。致死棘刺與致命綻放命中更多英雄或大型目標時，也能生成更多植物。"
+          "summary": "索命棘蔓命中敵人或抵達終點時會生成棘刺噴吐草；致死棘刺與致命綻放命中英雄或大型目標時可生成額外植物。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "致死棘刺",
           "icon": "../assets/images/heroes/skills/zyra_02.png",
-          "summary": "在指定區域刺出荊棘造成魔法傷害；命中英雄、大型野怪或史詩野怪時可配合被動生成棘刺噴吐草。"
+          "summary": "藤蔓在指定區域爆裂造成魔法傷害並生成棘刺噴吐草，是主要清線與消耗技能。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "狂暴蔓延",
           "icon": "../assets/images/heroes/skills/zyra_03.png",
-          "summary": "使附近現存的棘刺噴吐草進入狂暴狀態，刷新持續時間並提高生命與攻速。植物越多時使用，整體收益越高。"
+          "summary": "使附近植物進入狂暴狀態，刷新持續時間並提高生命與攻速，用來延長區域壓制。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "索命棘蔓",
           "icon": "../assets/images/heroes/skills/zyra_04.webp",
-          "summary": "向前延伸藤蔓，對路徑上的敵人造成魔法傷害與定身，並依命中或終點生成植物。是對線抓人與團戰保排的核心技能。"
+          "summary": "向前延伸棘蔓，對路徑上的敵人造成魔法傷害與禁錮，並生成一株棘刺噴吐草。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "致命綻放",
           "icon": "../assets/images/heroes/skills/zyra_05.png",
-          "summary": "召喚大型荊棘區域造成魔法傷害，短暫延遲後擊飛範圍內敵人；命中大型目標時也能配合被動生成植物。"
+          "summary": "召喚大片扭曲荊棘造成傷害，延遲後擊飛敵人；範圍內植物會被強化並刷新持續時間。"
         }
       ],
       "mechanics": [
@@ -43075,7 +43462,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
-      "isSupportMasterTemplate": false
+      "isSupportMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "master-yi-jungle",
@@ -43295,7 +43684,9 @@
       ],
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
-      "generatedV29": true
+      "generatedV29": true,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "shen-jungle",
@@ -43519,7 +43910,9 @@
           ],
           "note": "優先大絕給正在被集火的主力，落地後嘲諷追擊者並用劍陣擋普攻，形成完整反打。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "nautilus-jungle",
@@ -43593,35 +43986,35 @@
           "label": "被動",
           "title": "沉重打擊",
           "icon": "../assets/images/heroes/skills/nautilus_01.webp",
-          "summary": "對同一目標的第一次普攻會造成額外物理傷害並短暫定身；切換不同目標可在團戰中連續控制。"
+          "summary": "對同一目標的第一次普攻會造成額外物理傷害並短暫定身；切換不同英雄可分別觸發。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "深淵鐵錨",
           "icon": "../assets/images/heroes/skills/nautilus_02.webp",
-          "summary": "向前投擲鐵錨，命中敵人時將雙方拉近；命中地形時會把納帝魯斯拉向牆面並返還部分冷卻。"
+          "summary": "向前射出鐵錨，命中敵人時拉近雙方；命中地形時則把納帝魯斯拉向牆面並縮短部分冷卻。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "巨人之怒",
           "icon": "../assets/images/heroes/skills/nautilus_03.webp",
-          "summary": "獲得依最大生命計算的護盾，護盾存在時普攻會對目標周圍造成額外魔法傷害。"
+          "summary": "獲得依最大生命成長的護盾，護盾存在期間普攻會對目標與附近敵人造成額外魔法傷害。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "鋼鐵怒濤",
           "icon": "../assets/images/heroes/skills/nautilus_04.webp",
-          "summary": "向外釋放三道衝擊波，造成魔法傷害與緩速；同一目標可被後續波次命中，但傷害會降低。"
+          "summary": "從自身向外連續震出多道衝擊波，造成魔法傷害與緩速；貼身目標可能被多道波浪命中。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "潛航衝擊",
           "icon": "../assets/images/heroes/skills/nautilus_05.webp",
-          "summary": "鎖定敵方英雄，地下衝擊波沿路擊飛敵人，抵達目標時造成擊飛與暈眩。"
+          "summary": "鎖定敵方英雄發出追蹤衝擊波，沿途擊飛敵人，抵達目標時造成傷害、擊飛與暈眩。"
         }
       ],
       "skillSequence": [
@@ -43740,7 +44133,9 @@
           ],
           "note": "敵方刺客切入時可直接閃現普攻定身，接大絕防止其撤退，再以一技追擊。"
         }
-      ]
+      ],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "corki-mid",
@@ -43954,7 +44349,9 @@
           "note": "一技與超級導彈快速壓低血量，普攻後立即用二技退出反打範圍。"
         }
       ],
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "karma-mid",
@@ -44052,35 +44449,35 @@
           "label": "被動",
           "title": "真言符印",
           "icon": "../assets/images/heroes/skills/karma_01.webp",
-          "summary": "施放三次技能後，下個基礎技能會被真言強化，提供更強的傷害、控制或護盾。"
+          "summary": "施放三次技能後，下一個基礎技能會獲得真言強化，提升傷害、控制或護盾效果。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "輪迴怒火",
           "icon": "../assets/images/heroes/skills/karma_02.webp",
-          "summary": "射出靈能彈，命中後造成範圍魔法傷害與緩速；真言強化後會產生二段爆炸。"
+          "summary": "射出靈能彈，命中後造成範圍魔法傷害與緩速；真言強化後會形成延遲二段爆炸。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "特化鏈結",
           "icon": "../assets/images/heroes/skills/karma_03.webp",
-          "summary": "連結目標造成傷害並揭露位置；連線未被拉斷會再次傷害並定身，真言可強化連結。"
+          "summary": "連結敵方英雄造成傷害並揭露位置，連線未被拉斷會再次傷害與定身；真言強化可連結額外目標並延長控制。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "靈能啟示",
           "icon": "../assets/images/heroes/skills/karma_04.webp",
-          "summary": "為友軍提供護盾與跑速；真言強化可把效果擴散到附近友軍。"
+          "summary": "為友軍提供護盾與跑速；真言強化後把護盾與加速擴散至附近友軍。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "飛昇擁抱",
           "icon": "../assets/images/heroes/skills/karma_05.webp",
-          "summary": "在指定區域造成魔法傷害並形成靈能環，短暫延遲後把敵人拉向中心。"
+          "summary": "在指定區域造成魔法傷害並形成靈能環，短暫延遲後把仍在環內的敵人拉向中心。"
         }
       ],
       "skillIconStatus": "complete",
@@ -44164,7 +44561,9 @@
           "note": "大絕先拉回進場敵人，接一技造成範圍傷害，再以強化護盾保護全隊並持續追擊。"
         }
       ],
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "talon-mid",
@@ -44391,7 +44790,9 @@
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "rumble-mid",
@@ -44614,7 +45015,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     },
     {
       "id": "seraphine-mid",
@@ -44689,7 +45092,7 @@
         "good": [
           "斯溫",
           "維迦",
-          "雷茲"
+          "符文法師"
         ],
         "bad": [
           "飛斯",
@@ -44712,35 +45115,35 @@
           "label": "被動",
           "title": "耀眼星光",
           "icon": "../assets/images/heroes/skills/seraphine_01.png",
-          "summary": "每第三次基礎技能會重複施放；施放技能也會替附近友軍附上音符，強化下一次普攻的距離與傷害。"
+          "summary": "每第三次基礎技能會重複施放；施放技能時也會替附近友軍附上音符，增加瑟菈紛下一次普攻的距離與額外傷害。"
         },
         {
           "key": "Q",
           "label": "1 技",
           "title": "樂音高亢",
           "icon": "../assets/images/heroes/skills/seraphine_02.png",
-          "summary": "對指定區域造成魔法傷害，目標生命越低傷害越高；回音可連續命中兩次，是主要清線與收尾技能。"
+          "summary": "對指定區域造成魔法傷害，目標生命越低傷害越高。回音能連續命中兩次，適合對線消耗與控制後收尾。"
         },
         {
           "key": "W",
           "label": "2 技",
           "title": "繞樑歌聲",
           "icon": "../assets/images/heroes/skills/seraphine_03.png",
-          "summary": "為附近友軍提供護盾與跑速；若瑟菈紛已有護盾，還會治療附近友軍，回音可提高團隊續航。"
+          "summary": "為附近友軍提供護盾與跑速；若瑟菈紛已有護盾，還會治療附近友軍。回音可連續提供團隊保護與續航。"
         },
         {
           "key": "E",
           "label": "3 技",
           "title": "迷人節奏",
           "icon": "../assets/images/heroes/skills/seraphine_04.png",
-          "summary": "發射音波造成傷害與緩速；已被緩速的目標會被禁錮，已被定身的目標則會暈眩。"
+          "summary": "發射音波造成魔法傷害與緩速；已被緩速的目標會被禁錮，已被定身的目標則會被暈眩。回音第一段可為第二段升級控制。"
         },
         {
           "key": "R",
           "label": "4 技",
           "title": "要不要來首安可曲",
           "icon": "../assets/images/heroes/skills/seraphine_05.png",
-          "summary": "發射魅惑音波，命中英雄時會延長距離；可穿過友軍或敵軍，形成跨越整個戰場的開團控制。"
+          "summary": "發射直線音波，對命中的敵方英雄造成傷害與魅惑；每命中一名友方或敵方英雄都會延長施放距離。"
         }
       ],
       "skillIconStatus": "complete",
@@ -44823,7 +45226,9 @@
         }
       ],
       "midMasterTemplate": "ahri-v58",
-      "isMidMasterTemplate": false
+      "isMidMasterTemplate": false,
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true
     }
   ],
   "heroCatalog": [
@@ -45455,7 +45860,7 @@
     },
     {
       "id": "ryze",
-      "name": "雷茲",
+      "name": "符文法師",
       "enName": "Ryze",
       "avatar": "../assets/images/heroes/portraits/ryze.webp",
       "roles": [
@@ -46549,7 +46954,7 @@
     },
     {
       "id": "aurelion-sol",
-      "name": "翱鋭龍獸",
+      "name": "翱銳龍獸",
       "enName": "Aurelion Sol",
       "avatar": "../assets/images/heroes/portraits/aurelion-sol.webp",
       "roles": [
@@ -46631,7 +47036,7 @@
     },
     {
       "id": "akshan",
-      "name": "阿克尚",
+      "name": "埃可尚",
       "enName": "Akshan",
       "avatar": "../assets/images/heroes/portraits/akshan.webp",
       "roles": [
@@ -47444,6 +47849,31 @@
       "fiora-jungle",
       "irelia-jungle",
       "singed-jungle"
-    ]
+    ],
+    "stage1Status": "locked-v75",
+    "stage1CheckedAt": "2026-07-29",
+    "multiRoleHeroes": 55,
+    "officialNameCount": 140,
+    "abilityProfilesChecked": 200,
+    "abilityPlaceholderCount": 0
+  },
+  "stageLocks": {
+    "stage1HeroData": {
+      "status": "locked",
+      "version": "v75",
+      "lockedAt": "2026-07-29",
+      "scope": [
+        "英雄官方台灣名稱",
+        "技能名稱",
+        "技能描述",
+        "五路定位",
+        "多定位／雙定位"
+      ],
+      "excluded": [
+        "英雄稱號"
+      ],
+      "nameSource": "Riot Games 台灣《激鬥峽谷》英雄列表",
+      "roleSource": "使用者提供的 7.2a 遊戲內五路定位截圖與 heroCatalog"
+    }
   }
 }
