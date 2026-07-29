@@ -45,6 +45,17 @@
     }
     return null;
   }
+  function resolveTier2Boot(item, seen=new Set()){
+    if(!item || seen.has(item.id)) return item||null;
+    seen.add(item.id);
+    if(Number(item.tier)===2 || item.stage==='二級鞋') return item;
+    for(const id of (item.buildFrom||[])){
+      const parent=byId(state.items,id);
+      const found=resolveTier2Boot(parent,seen);
+      if(found && (Number(found.tier)===2 || found.stage==='二級鞋')) return found;
+    }
+    return item;
+  }
   function buildSet(title, subtitle, cards, cls=''){
     return `<div class="build-group ${cls}"><div class="build-group-head"><strong>${title}</strong>${subtitle?`<small>${subtitle}</small>`:''}</div><div class="build-group-items">${cards}</div></div>`;
   }
@@ -283,18 +294,26 @@
   function renderStructuredCombos(hero){
     const combos=Array.isArray(hero.combos)?hero.combos:[];
     const abilities=Object.fromEntries((hero.abilities||[]).map(a=>[a.key,a]));
-    const names={P:'被動',Q:'1技',Q3:'1技擊飛',W:'2技',E:'3技',E2:'返回',R:'4技',AA:'普攻'};
+    const names={P:'被動',Q:'1技',Q3:'1技擊飛',W:'2技',E:'3技',E1:'3技第一段',E2:'返回',R:'4技',AA:'普攻'};
+    const actionMarks={FLASH:'閃',F:'閃',IGNITE:'燃',EXHAUST:'虛',SMITE:'重',GHOST:'鬼',BARRIER:'盾',HEAL:'療',MOVE:'移',ITEM:'裝',WAIT:'等',KILL:'收'};
 
     function renderStep(rawStep){
       const isObject=rawStep&&typeof rawStep==='object';
-      const step=isObject?String(rawStep.key||''):String(rawStep||'');
+      const step=isObject?String(rawStep.key||'').toUpperCase():String(rawStep||'').toUpperCase();
       const label=isObject&&rawStep.label?safeText(rawStep.label):(names[step]||step);
       if(step==='AA'){
         return `<span class="yone-combo-step"><i class="yone-combo-aa">A</i><small>${label||'普攻'}</small></span>`;
       }
-      const baseKey=step==='Q3'?'Q':step==='E2'?'E':step;
+      if(actionMarks[step]){
+        return `<span class="yone-combo-step"><i class="yone-combo-action">${actionMarks[step]}</i><small>${label}</small></span>`;
+      }
+      const baseKey=step==='Q3'?'Q':(step==='E1'||step==='E2')?'E':step;
+      const ability=abilities[baseKey];
+      if(!ability){
+        return `<span class="yone-combo-step"><i class="yone-combo-action">${safeText(step).slice(0,1)||'?'}</i><small>${label}</small></span>`;
+      }
       return `<span class="yone-combo-step">
-        ${abilityMedia(abilities[baseKey]||{},'yone-combo-placeholder')}
+        ${abilityMedia(ability,'yone-combo-placeholder')}
         <small>${label}</small>
       </span>`;
     }
@@ -328,7 +347,7 @@
     const starter=starterIds.map(id=>byId(state.items,id)).find(Boolean)||firstBasicComponent(items[0]);
     const coreIds=Array.isArray(hero.coreItems)?hero.coreItems:[];
     const coreItems=coreIds.map(id=>byId(state.items,id)).filter(Boolean);
-    const secondTierBoot=boots[0]||null;
+    const secondTierBoot=resolveTier2Boot(boots[0])||boots[0]||null;
     const sixItems=[...items.slice(0,5),secondTierBoot].filter(Boolean).slice(0,6);
 
     function circleItem(item){
@@ -377,6 +396,15 @@
           <div>${(hero.matchups?.bad||[]).map(matchupChip).join('')}</div>
         </div>
       </div>
+    </section>`;
+  }
+
+  function renderSuitableSupports(hero){
+    const pairs=Array.isArray(hero.suitableSupports)?hero.suitableSupports:[];
+    if(hero.roleId!=='duo' || !pairs.length) return '';
+    return `<section class="hero-section duo-support-section">
+      <div class="hero-section-title"><h3>合適輔助</h3><span>Support Synergy</span></div>
+      <div class="duo-support-grid">${pairs.map(pair=>`<article class="duo-support-card">${matchupChip(pair.name)}<p>${safeText(pair.reason)}</p></article>`).join('')}</div>
     </section>`;
   }
 
@@ -440,6 +468,7 @@
     const matchupSection=useStructuredYone
       ? renderStructuredMatchups(hero)
       : defaultMatchupSection;
+    const suitableSupportSection=renderSuitableSupports(hero);
 
     $('#heroContent').innerHTML=`
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button>${laneSwitch}</div>
@@ -454,6 +483,7 @@
         ${buildSection}
         ${skillSection}
         ${matchupSection}
+        ${suitableSupportSection}
         ${Array.isArray(hero.mechanics)&&hero.mechanics.length?`<section class="hero-section"><div class="hero-section-title"><h3>${hero.mechanicsTitle||'特殊機制'}</h3><span>Champion Mechanic</span></div><div class="stack-grid">${hero.mechanics.map(x=>`<div class="stack-card">${x.icon?`<img src="${x.icon}" alt="${x.title}" loading="lazy">`:''}${x.stacks!=null?`<strong>${x.stacks}</strong>`:''}<span>${x.title}</span><p>${x.text}</p></div>`).join('')}</div></section>`:''}
         <section class="hero-section"><div class="hero-section-title"><h3>實戰節奏</h3></div><div class="playstyle-timeline">${Object.entries(hero.playstyle).map(([k,v])=>`<div class="playstyle-step"><b>${k}</b><p>${v}</p></div>`).join('')}</div></section>
         <div class="hero-source-note">${hero.sourceNote}</div>
@@ -472,7 +502,7 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=63'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=76'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
