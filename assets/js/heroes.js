@@ -4,6 +4,9 @@
   const star = n => '★'.repeat(n) + '☆'.repeat(5-n);
   const roleNames = {all:'ALL', baron:'巴龍路', jungle:'打野', mid:'中路', duo:'飛龍路', support:'輔助'};
   const tierOrder = ['S+','S','A','B','C'];
+  const aliasMap = {ryze:['符文法師']};
+  const normalizeSearch = value => String(value||'').normalize('NFKC').toLocaleLowerCase('zh-Hant').replace(/[\s·・_.\-/]+/g,'');
+  const stableHeroSort = (a,b) => (a.enName||a.name||'').localeCompare(b.enName||b.name||'','en',{sensitivity:'base'}) || String(a.name||'').localeCompare(String(b.name||''),'zh-Hant');
 
   const state = { role:'all', heroId:'', query:'', heroes:[], heroCatalog:[], laneMeta:{}, runes:[], items:[], spells:[] };
 
@@ -96,8 +99,9 @@
       enName:h.enName,
       avatar:h.avatar||h.roles?.find(r=>r.avatar)?.avatar||'',
       roles:(h.roles||[]).map(r=>r.roleId),
-      detailIds:(h.roles||[]).map(r=>r.detailHeroId).filter(Boolean)
-    })).sort((a,b)=>(a.enName||a.name).localeCompare(b.enName||b.name,'en'));
+      detailIds:(h.roles||[]).map(r=>r.detailHeroId).filter(Boolean),
+      searchTerms:[h.name,h.enName,h.id,...(Array.isArray(h.aliases)?h.aliases:[]),...(aliasMap[h.id]||[])].map(normalizeSearch).filter(Boolean)
+    })).sort(stableHeroSort);
   }
   function roleHeroesRaw(){
     if(state.role==='all') return allHeroes();
@@ -110,14 +114,15 @@
         avatar:lane.avatar||h.avatar||'',
         tier:lane.tier,
         origin:lane.origin||'native',
-        detailHeroId:lane.detailHeroId
+        detailHeroId:lane.detailHeroId,
+        searchTerms:[h.name,h.enName,h.id,...(Array.isArray(h.aliases)?h.aliases:[]),...(aliasMap[h.id]||[])].map(normalizeSearch).filter(Boolean)
       }]:[];
-    });
+    }).sort(stableHeroSort);
   }
   function roleHeroes(){
     const heroes=roleHeroesRaw();
-    const query=state.query.trim();
-    return query ? heroes.filter(h=>String(h.name||'').includes(query)) : heroes;
+    const query=normalizeSearch(state.query);
+    return query ? heroes.filter(h=>(h.searchTerms||[]).some(term=>term.includes(query))) : heroes;
   }
 
   function buildUrl({role=state.role,heroId=state.heroId,query=state.query}={}){
@@ -160,7 +165,11 @@
   }
 
   function renderRoleTabs(){
-    $$('.hero-role-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.role===state.role));
+    $$('.hero-role-tab').forEach(btn => {
+      const active=btn.dataset.role===state.role;
+      btn.classList.toggle('active',active);
+      btn.setAttribute('aria-pressed',String(active));
+    });
   }
 
   function renderOverview(){
@@ -186,7 +195,7 @@
     const nativeCount = Number(meta.nativeCount ?? heroes.filter(h=>h.origin!=='cross').length);
     const crossCount = Number(meta.crossCount ?? heroes.filter(h=>h.origin==='cross').length);
     const groups = tierOrder.map(tier => {
-      const members = heroes.filter(h=>h.tier===tier);
+      const members = heroes.filter(h=>h.tier===tier).sort(stableHeroSort);
       if(!members.length) return '';
       return `<section class="tier-overview-section">
         <div class="tier-overview-heading"><span class="tier-overview-badge tier-${tier.toLowerCase().replace('+','p')}">${tier}</span><strong>${tier} Tier</strong><small>${members.length} 位英雄</small></div>
@@ -502,7 +511,7 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=76'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=77'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
