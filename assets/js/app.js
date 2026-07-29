@@ -39,6 +39,7 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
         id:hero.id||baseIdOf(hero),
         name:hero.name||'',
         enName:hero.enName||'',
+        aliases:Array.isArray(hero.aliases)?hero.aliases:[],
         avatar:normalizeAvatar(hero.avatar||roles.find(role=>role.avatar)?.avatar||''),
         detailHeroId:roles[0]?.detailHeroId||'',
         roles:roles.map(role=>role.roleId)
@@ -50,7 +51,7 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
   const heroMatches=(hero,query)=>{
     const q=normalizeSearch(query);
     if(!q) return true;
-    return [hero.name,hero.enName,hero.id].some(value=>normalizeSearch(value).includes(q));
+    return [hero.name,hero.enName,hero.id,...(hero.aliases||[])].some(value=>normalizeSearch(value).includes(q));
   };
 
   function resultLinks(){ return [...results.querySelectorAll('.home-hero-search-result')]; }
@@ -88,10 +89,11 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
       return;
     }
     results.innerHTML=matched.map((hero,index)=>`<a id="homeHeroSearchOption${index}" class="home-hero-search-result" role="option" aria-selected="false" href="pages/heroes.html?hero=${encodeURIComponent(hero.detailHeroId)}">
-      ${hero.avatar?`<img src="${hero.avatar}" alt="${hero.name}" loading="lazy">`:`<span class="home-hero-search-monogram">${hero.name.slice(0,1)}</span>`}
+      ${hero.avatar?`<img src="${hero.avatar}" alt="${hero.name}" loading="lazy" data-home-hero-fallback data-fallback-letter="${hero.name.slice(0,1)}">`:`<span class="home-hero-search-monogram">${hero.name.slice(0,1)}</span>`}
       <span><strong>${hero.name}</strong><small>${[hero.enName,hero.roles.map(role=>roleNames[role]).join(' · ')].filter(Boolean).join(' · ')}</small></span>
       <i>查看攻略 →</i>
     </a>`).join('');
+    results.querySelectorAll('img[data-home-hero-fallback]').forEach(img=>{ const fallback=()=>{ if(!img.isConnected) return; const span=document.createElement('span'); span.className='home-hero-search-monogram'; span.textContent=img.dataset.fallbackLetter||'?'; span.setAttribute('aria-label',`${img.alt||'英雄'}頭像暫時無法載入`); img.replaceWith(span); }; img.addEventListener('error',fallback,{once:true}); if(img.complete && img.naturalWidth===0) fallback(); });
   }
 
   input.addEventListener('input',renderResults);

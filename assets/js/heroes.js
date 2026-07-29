@@ -94,6 +94,7 @@
       id:h.id,
       name:h.name,
       enName:h.enName,
+      aliases:Array.isArray(h.aliases)?h.aliases:[],
       avatar:h.avatar||h.roles?.find(r=>r.avatar)?.avatar||'',
       roles:(h.roles||[]).map(r=>r.roleId),
       detailIds:(h.roles||[]).map(r=>r.detailHeroId).filter(Boolean)
@@ -107,6 +108,7 @@
         id:h.id,
         name:h.name,
         enName:h.enName,
+        aliases:Array.isArray(h.aliases)?h.aliases:[],
         avatar:lane.avatar||h.avatar||'',
         tier:lane.tier,
         origin:lane.origin||'native',
@@ -123,7 +125,7 @@
   function heroMatches(h,query){
     const q=normalizeSearch(query);
     if(!q) return true;
-    return [h.name,h.enName,h.id].some(value=>normalizeSearch(value).includes(q));
+    return [h.name,h.enName,h.id,...(h.aliases||[])].some(value=>normalizeSearch(value).includes(q));
   }
   function searchedHeroes(){
     const heroes=roleHeroesRaw();
@@ -185,6 +187,41 @@
     }
   }
 
+  function resetHeroConditions({focus=true}={}){
+    state.query='';
+    state.filter='all';
+    state.heroId='';
+    const input=$('#heroSearchInput');
+    if(input) input.value='';
+    syncUrl('list',window.scrollY);
+    renderOverview();
+    if(focus && input) input.focus();
+  }
+  function noResultHTML(){
+    const query=state.query.trim();
+    const detail=query?`目前沒有名稱包含「${query.replace(/[<>&\"']/g,'')}」且符合篩選條件的英雄。`:'目前沒有符合所選條件的英雄。';
+    return `<div class="hero-search-no-result" role="status"><strong>沒有符合條件的英雄</strong><p>${detail}</p><button type="button" class="hero-result-reset">清除搜尋與篩選</button></div>`;
+  }
+  function bindHeroImageFallbacks(root=document){
+    $$('img[data-hero-fallback]',root).forEach(img=>{
+      const fallback=()=>{
+        if(!img.isConnected) return;
+        const span=document.createElement('span');
+        span.className=img.dataset.fallbackClass||'tier-hero-placeholder';
+        span.textContent=img.dataset.fallbackLetter||'?';
+        span.setAttribute('aria-label',`${img.alt||'英雄'}頭像暫時無法載入`);
+        img.replaceWith(span);
+      };
+      img.addEventListener('error',fallback,{once:true});
+      if(img.complete && img.naturalWidth===0) fallback();
+    });
+  }
+  function bindOverviewActions(content){
+    $$('.tier-hero-card[data-hero]',content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
+    $$('.hero-result-reset',content).forEach(btn=>btn.addEventListener('click',()=>resetHeroConditions()));
+    bindHeroImageFallbacks(content);
+  }
+
   function renderRoleTabs(){
     $$('.hero-role-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.role===state.role));
   }
@@ -204,7 +241,8 @@
           {value:'all',label:'全部 Tier',count:source.length},
           ...tierOrder.map(tier=>({value:tier,label:`${tier} Tier`,count:source.filter(h=>h.tier===tier).length}))
         ];
-    shell.innerHTML=`<span class="hero-filter-label">條件篩選</span><div class="hero-filter-options" role="group" aria-label="${state.role==='all'?'依可用路線數篩選':'依 Tier 篩選'}">${options.map(option=>`<button type="button" class="hero-filter-chip ${option.value===state.filter?'active':''}" data-filter="${option.value}" aria-pressed="${option.value===state.filter}"><span>${option.label}</span><small>${option.count}</small></button>`).join('')}</div>`;
+    const limited=Boolean(state.query)||state.filter!=='all';
+    shell.innerHTML=`<span class="hero-filter-label">條件篩選</span><div class="hero-filter-options" role="group" aria-label="${state.role==='all'?'依可用路線數篩選':'依 Tier 篩選'}">${options.map(option=>`<button type="button" class="hero-filter-chip ${option.value===state.filter?'active':''}" data-filter="${option.value}" aria-pressed="${option.value===state.filter}"><span>${option.label}</span><small>${option.count}</small></button>`).join('')}</div>${limited?'<button type="button" class="hero-filter-reset">重設條件</button>':''}`;
     $$('.hero-filter-chip',shell).forEach(btn=>btn.addEventListener('click',()=>{
       const next=normalizeFilter(state.role,btn.dataset.filter);
       if(next===state.filter && !state.heroId) return;
@@ -213,6 +251,7 @@
       syncUrl('list',window.scrollY);
       renderOverview();
     }));
+    $('.hero-filter-reset',shell)?.addEventListener('click',()=>resetHeroConditions());
   }
 
   function renderOverview(){
@@ -224,14 +263,14 @@
       content.innerHTML = `<section class="hero-overview-shell all-heroes-shell">
         <div class="hero-overview-head"><div><span class="eyebrow">ALL CHAMPIONS</span><h2>全英雄列表</h2><p>同一英雄只顯示一次；下方位置標籤代表目前遊戲內可選路線。已完成詳細資料的英雄可直接點入。</p></div><span class="hero-overview-count">${heroes.length}</span></div>
         ${heroes.length?`<div class="tier-hero-grid all-hero-grid">${heroes.map(h=>{
-          const media=`<span class="tier-hero-avatar-wrap">${h.avatar?`<img src="${h.avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
+          const media=`<span class="tier-hero-avatar-wrap">${h.avatar?`<img src="${h.avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy" data-hero-fallback data-fallback-letter="${h.name.slice(0,1)}">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
           const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>`<i>${roleNames[r]}</i>`).join('')}</span>`;
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
           return detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
-        }).join('')}</div>`:'<div class="hero-search-no-result">找不到符合搜尋與篩選條件的英雄。</div>'}
+        }).join('')}</div>`:noResultHTML()}
       </section>`;
-      $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
+      bindOverviewActions(content);
       return;
     }
     const title = roleNames[state.role] || '英雄';
@@ -247,7 +286,7 @@
         <div class="tier-hero-grid">
           ${members.map(h=>{
             const avatar=h.avatar||'';
-            const media=`<span class="tier-hero-avatar-wrap">${avatar?`<img src="${avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
+            const media=`<span class="tier-hero-avatar-wrap">${avatar?`<img src="${avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy" data-hero-fallback data-fallback-letter="${h.name.slice(0,1)}">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
             const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}`;
             return h.detailHeroId
               ? `<button class="tier-hero-card" data-hero="${h.detailHeroId}">${label}</button>`
@@ -259,9 +298,9 @@
     const countCopy = crossCount>0 ? `原生 ${nativeCount}＋跨路 ${crossCount}` : `原生 ${nativeCount}`;
     content.innerHTML = `<section class="hero-overview-shell">
       <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>各路線獨立評級 · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
-      ${groups || ((state.query||state.filter!=='all')?'<div class="hero-search-no-result">找不到符合搜尋與篩選條件的英雄。</div>':`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
+      ${groups || ((state.query||state.filter!=='all')?noResultHTML():`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
     </section>`;
-    $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
+    bindOverviewActions(content);
   }
 
   function renderRatings(hero){
@@ -528,7 +567,7 @@
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button>${laneSwitch}</div>
       <section class="hero-profile">
         <section class="hero-profile-hero">
-          ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
+          ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy" data-hero-fallback data-fallback-letter="${hero.name.slice(0,1)}" data-fallback-class="hero-avatar hero-avatar-placeholder">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
           <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
         </section>
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
@@ -543,6 +582,8 @@
         <div class="hero-source-note">${hero.sourceNote}</div>
       </section>`;
 
+    bindHeroImageFallbacks($('#heroContent'));
+
     $('#backToTier').addEventListener('click',()=>{
       if(history.state?.wrgHeroes && history.state.view==='detail') history.back();
       else { state.heroId=''; syncUrl('list',0); renderOverview(); restoreListScroll(0); }
@@ -556,7 +597,7 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=77.2'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=77.4'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 

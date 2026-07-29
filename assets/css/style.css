@@ -1532,3 +1532,29 @@ button,a{-webkit-tap-highlight-color:transparent}
   .spell-icon img{width:52px;height:52px}
   .keystone-grid{grid-template-columns:1fr}
 }
+
+
+/* ===== v77.4｜第三階段：名稱與介面校正 ===== */
+.hero-filter-reset,
+.hero-result-reset{
+  flex:0 0 auto;
+  border:1px solid rgba(216,184,108,.42);
+  border-radius:999px;
+  background:rgba(216,184,108,.1);
+  color:#f2d997;
+  padding:8px 12px;
+  font-size:11px;
+  font-weight:900;
+  cursor:pointer;
+}
+.hero-filter-reset:hover,
+.hero-result-reset:hover{background:rgba(216,184,108,.18);border-color:rgba(216,184,108,.68)}
+.hero-search-no-result strong{display:block;color:var(--text);font-size:16px}
+.hero-search-no-result p{margin:7px auto 14px;max-width:520px;color:var(--muted);font-size:12px;line-height:1.65}
+.hero-result-reset{display:inline-flex;align-items:center;justify-content:center;min-height:38px}
+.hero-avatar.hero-avatar-placeholder{display:grid;place-items:center;color:var(--gold);font-size:42px;font-weight:900;background:linear-gradient(145deg,#102742,#071522)}
+@media(max-width:720px){
+  .hero-filter-bar{position:relative}
+  .hero-filter-reset{width:calc(100% - 6px);margin:8px 3px 0;min-height:40px}
+  .hero-search-no-result{padding:34px 14px}
+}
