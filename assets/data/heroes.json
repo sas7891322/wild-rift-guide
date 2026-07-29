@@ -1,7 +1,7 @@
 {
-  "version": "7.2a-v75-stage1-hero-data-locked",
+  "version": "7.2a-v76-stage2-guide-content-locked",
   "updated": "2026-07-29",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
     "baron",
@@ -142,7 +142,8 @@
     "v72：完成輔助路第三批 6 位：派克、斯溫、納帝魯斯、卡瑪、悠咪、魔甘娜；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 19/32。",
     "v73：完成輔助路第四批 6 位：索娜、茂凱、珍娜、極靈、墨菲特、索拉卡；完整套用瑟雷西 v69 輔助固定母版，補齊出裝、符文、Lv.1～15 加點、三組連招、專屬機制、對局與前中後期策略。輔助路正式攻略進度更新為 25/32。",
     "v74：完成輔助路最後 7 位：加里歐、米里歐、布蘭德、維迦、姍娜、威寇茲、鄂爾；輔助路正式攻略 32/32 全數完成。同時依遊戲內截圖修正輔助定位：移除賽特輔助，新增鄂爾輔助。",
-    "v75 第一階段英雄資料鎖定：140 位英雄名稱對照 Riot 台灣官方英雄列表；修正埃可尚、符文法師、翱銳龍獸名稱，移除犽宿／犽凝／劫中路技能佔位內容，並同步多定位英雄技能資料。五路定位維持 49／50／46／23／32。"
+    "v75 第一階段英雄資料鎖定：140 位英雄名稱對照 Riot 台灣官方英雄列表；修正埃可尚、符文法師、翱銳龍獸名稱，移除犽宿／犽凝／劫中路技能佔位內容，並同步多定位英雄技能資料。五路定位維持 49／50／46／23／32。",
+    "v76 第二階段攻略內容鎖定：200 份位置攻略完成出裝、符文、召喚師技能、技能加點、三組連招、前中後期／對線內容與優劣對局驗收；23 位飛龍路新增合適輔助欄位；輔助頁鞋子統一顯示二級鞋。"
   ],
   "heroes": [
     {
@@ -208,7 +209,7 @@
         "後期": "175 層後一技會附加真實傷害燃燒並處決低生命敵方英雄。團戰保持在前排後方，以磁性雷射槍延伸一技消耗範圍，優先攻擊能安全命中的目標；三技保留穿牆避開刺客，活著反覆施放一技比冒險追擊更重要。"
       },
       "summary": "透過一技尾刀與技能命中英雄累積龍性精通，25／100／175 層依序強化範圍、後方爆炸與真傷斬殺。前期偏弱，裝備和層數成形後能用遠距技能接管團戰。",
-      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》史矛德英雄頁校正；目前 25／100／175 層進化門檻、出裝、符文與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》史矛德英雄頁校正；目前 25／100／175 層進化門檻、出裝、符文與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/smolder.webp",
       "abilities": [
         {
@@ -376,7 +377,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "third-batch-v67",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "米里歐",
+          "reason": "增程、護盾與解控能讓史矛德安全堆層，後期更容易維持輸出距離。"
+        },
+        {
+          "name": "露璐",
+          "reason": "護盾、加速與變形能保護前期偏弱的史矛德，並強化後期持續輸出。"
+        },
+        {
+          "name": "悠咪",
+          "reason": "附身治療與加速能陪史矛德穩定發育，成形後一起拉扯長時間團戰。"
+        }
+      ]
     },
     {
       "id": "miss-fortune",
@@ -441,7 +458,7 @@
         "後期": "正面戰先以普攻、一技與三技輸出，確認主要突進與硬控已交後再施放彈幕。大絕期間無法移動，站位必須避開側翼與正面衝鋒線；若沒有完整大絕角度，持續用高物攻普攻與彈射輸出同樣有效。"
       },
       "summary": "利用彈射與槍林彈雨快速疊加愛的拍拍，在對線期建立壓制；中後期依靠地形、隊友控制與彈幕打出大範圍爆發，但開大位置與敵方打斷技能必須先確認。",
-      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。",
+      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/miss-fortune.webp",
       "abilities": [
         {
@@ -603,7 +620,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "second-batch-v66",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "雷歐娜",
+          "reason": "多段硬控能把敵人固定在彈幕範圍內，對線與團戰都容易接完整大絕。"
+        },
+        {
+          "name": "銳兒",
+          "reason": "範圍進場與聚怪能替好運姐創造最理想的大絕角度。"
+        },
+        {
+          "name": "瑟菈紛",
+          "reason": "遠距消耗、控制與大絕接力能放大好運姐的範圍團戰優勢。"
+        }
+      ]
     },
     {
       "id": "ezreal",
@@ -668,7 +701,7 @@
         "後期": "保持最大技能射程輸出最近目標，不必為了精華躍動爆發冒險跳進敵陣。奧術躍遷優先用來穿越控制與重新站位，只有敵方關鍵威脅已消失才向前追擊；持續命中一技是傷害、機動與技能循環的核心。"
       },
       "summary": "以秘術射擊遠距消耗、降低技能冷卻並疊加攻速，再靠奧術躍遷維持安全站位；裝備與魔力疊層完成後中後期非常穩定，但輸出高度依賴技能命中。",
-      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。",
+      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/ezreal.webp",
       "abilities": [
         {
@@ -838,7 +871,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "second-batch-v66",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "卡瑪",
+          "reason": "雙遠距消耗與加速護盾能穩定壓線，也方便伊澤瑞爾拉開技能角度。"
+        },
+        {
+          "name": "悠咪",
+          "reason": "能跟上奧術躍遷並補足治療、加速，讓伊澤瑞爾安全持續消耗。"
+        },
+        {
+          "name": "拉克絲",
+          "reason": "雙技能消耗與定身爆發能快速壓低血線，形成遠距離擊殺壓力。"
+        }
+      ]
     },
     {
       "id": "varus",
@@ -903,7 +952,7 @@
         "後期": "法洛士沒有位移，站位應以能安全普攻前排為優先。面對高生命坦克時不必冒險繞後，荒蕪引爆與裝備特效就能有效處理；大絕若無法命中後排，也可以鎖住前排並利用擴散效果切割敵方陣形。"
       },
       "summary": "透過普攻疊加荒蕪，再由技能引爆目標最大生命百分比傷害；兼具持續輸出、遠距消耗與大絕控制，但沒有位移，團戰必須依靠站位與反手技能自保。",
-      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。",
+      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/varus.webp",
       "abilities": [
         {
@@ -1076,7 +1125,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "second-batch-v66",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "卡瑪",
+          "reason": "強化消耗與加速護盾能幫法洛士掌握線權，並提高蓄力射擊命中率。"
+        },
+        {
+          "name": "納帝魯斯",
+          "reason": "穩定硬控能接腐敗鎖鏈與蓄力技能，適合強開後快速集火。"
+        },
+        {
+          "name": "瑟雷西",
+          "reason": "鉤鎖與燈籠兼具開戰、保排，能讓法洛士安全輸出控制鏈。"
+        }
+      ]
     },
     {
       "id": "zeri",
@@ -1141,7 +1206,7 @@
         "後期": "雷霆萬鈞命中英雄後，要持續以普攻或技能刷新超載並累積跑速。沿牆、前排與視野安全區移動，保持不斷輸出而不是一次衝到後排；暴擊能更快縮短三技冷卻，利用多次位移反覆調整射擊角度。"
       },
       "summary": "以方向性普攻、技能穿插與跨牆位移進行高機動拉打；前期較弱，裝備成形後開啟雷霆萬鈞並持續命中英雄，就能在長時間團戰累積速度與連鎖輸出。",
-      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。",
+      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/zeri.webp",
       "abilities": [
         {
@@ -1310,7 +1375,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "second-batch-v66",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "悠咪",
+          "reason": "附身加速與治療能放大婕莉的機動性，特別適合長時間追擊團戰。"
+        },
+        {
+          "name": "露璐",
+          "reason": "護盾、加速與大絕能讓婕莉安全累積輸出並避免被突進秒殺。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程與保護能改善婕莉的輸出空間，解控也能避免大絕節奏中斷。"
+        }
+      ]
     },
     {
       "id": "lucian",
@@ -1375,7 +1456,7 @@
         "後期": "後期面對長射程陣容時不要強行正面貼近，先用赤色屠戮壓低血量或逼走位，再尋找安全窗口輸出。位移要優先保命，攻擊最近的安全目標；只有確認敵方關鍵控制已交，才向前追擊。"
       },
       "summary": "靠技能後的雙槍被動與可反覆縮短冷卻的位移，打出密集短爆發與高機動拉扯；前中期壓制力強，但每個技能後都必須正確穿插普攻。",
-      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/lucian.webp",
       "abilities": [
         {
@@ -1545,7 +1626,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "first-batch-v65",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "娜米",
+          "reason": "增傷、治療與控制能直接配合路西恩短連射，是最穩定的壓線組合。"
+        },
+        {
+          "name": "布郎姆",
+          "reason": "路西恩能快速疊滿震盪猛擊，近距離換血與反打能力都很強。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程與護盾讓路西恩更容易安全打完技能穿插普攻的爆發。"
+        }
+      ]
     },
     {
       "id": "xayah",
@@ -1610,7 +1707,7 @@
         "後期": "保持在前排後方以奪命疾翼提高攻速，持續把羽刃留在敵方進場路線。團戰的核心是活到第二輪漫天血刃；大絕落地後會新增大量羽刃，立刻觀察拉回角度，通常能完成反開與收割。"
       },
       "summary": "透過技能後穿透普攻鋪設羽刃，再以漫天血刃拉回造成高傷害與禁錮；驟羽暴風提供關鍵不可選取，是面對強開陣容時容錯極高的射手。",
-      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/xayah.webp",
       "abilities": [
         {
@@ -1775,7 +1872,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "first-batch-v65",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "銳空",
+          "reason": "雙方技能天然互補，銳空進場後剎雅能接羽刃控制並保有反開空間。"
+        },
+        {
+          "name": "瑟雷西",
+          "reason": "燈籠與多段控制能幫剎雅調整位置，避免被迫太早交大絕。"
+        },
+        {
+          "name": "銳兒",
+          "reason": "範圍聚怪能讓羽刃穿過多人，方便倒鉤一次控制多個目標。"
+        }
+      ]
     },
     {
       "id": "jhin",
@@ -1840,7 +1953,7 @@
         "後期": "燼不靠高攻速持續站樁，而是依靠每發普攻、技能與跑速加成反覆拉扯。保持在前排後方，第四發優先打能安全命中的低血量目標；若敵方刺客仍未露面，大絕不要過早架槍。"
       },
       "summary": "以固定四發彈匣、第四發斬殺與超遠距控制掌握戰鬥節奏；爆發與收尾能力極強，但必須避開換彈空窗並保持安全站位。",
-      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/jhin.webp",
       "abilities": [
         {
@@ -1998,7 +2111,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "first-batch-v65",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "拉克絲",
+          "reason": "長距離定身能接致命華彩，雙方可在安全距離完成控制與爆發。"
+        },
+        {
+          "name": "枷蘿",
+          "reason": "植物消耗與纏繞能限制走位，方便燼接控制、第四發與大絕。"
+        },
+        {
+          "name": "納帝魯斯",
+          "reason": "穩定先手能讓燼遠距跟上致命華彩，再完成後續爆發。"
+        }
+      ]
     },
     {
       "id": "kogmaw",
@@ -2063,7 +2192,7 @@
         "後期": "團戰開啟二技後站在最大射程持續走砍，先用一技降低前排雙防，再依靠百分比傷害與芮蘭颶風箭處理多人。沒有閃現或隊友保護時不要獨自走進側翼；遭到貼身時以三技緩速、光盾與閃現拉開，活著持續輸出比追後排更重要。"
       },
       "summary": "以一技削減雙防、二技提升射程並附加最大生命魔法傷害，在隊友保護下能快速融化前排。缺乏位移且容易被強開，必須保留三技、召喚師技能與安全站位。",
-      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》寇格魔英雄頁及 7.1f 生化彈幕調整校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》寇格魔英雄頁及 7.1f 生化彈幕調整校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/kogmaw.webp",
       "abilities": [
         {
@@ -2221,7 +2350,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "third-batch-v67",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "露璐",
+          "reason": "攻速、護盾、變形與大絕完整保護寇格魔，是最典型的後期保排組合。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程與解控能讓寇格魔維持最安全輸出距離，對抗突進也更穩定。"
+        },
+        {
+          "name": "珍娜",
+          "reason": "擊退、擊飛與護盾能阻止敵方貼身，替寇格魔保留持續輸出空間。"
+        }
+      ]
     },
     {
       "id": "vayne",
@@ -2286,7 +2431,7 @@
         "後期": "開啟死亡通緝後，以翻滾隱形躲避關鍵技能並持續風箏，優先攻擊最近且安全的目標。神聖銀箭真實傷害能處理高生命前排，不需要冒險繞過坦克強切後排；每次翻滾都要同時考慮下一個安全位置。"
       },
       "summary": "前期需要承受射程與清線劣勢，裝備成形後靠神聖銀箭真實傷害、翻滾隱形與釘牆控制，能在單挑和後期團戰持續處理任何前排。",
-      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/vayne.webp",
       "abilities": [
         {
@@ -2451,7 +2596,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "first-batch-v65",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "露璐",
+          "reason": "護盾、加速與變形能幫汎撐過短射程前期，後期單點保護也很完整。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程與解控能降低汎進場輸出的風險，讓她更容易持續打出三環。"
+        },
+        {
+          "name": "索拉卡",
+          "reason": "長時間治療與沉默能幫汎延長拉扯，適合穩定發育與反打。"
+        }
+      ]
     },
     {
       "id": "corki",
@@ -2516,7 +2677,7 @@
         "後期": "站在前排後方持續用火箭與磷光炸彈壓低血量，敵人進入射程後再開格林機槍並穿插普攻。炸彈包裹可用於切割戰場、反開或封鎖退路，但進場前要確認隊友能跟上，普通二技仍應保留撤退路線。"
       },
       "summary": "以技能消耗、普攻與格林機槍破防組成持續混合輸出，透過炸彈包裹改變團戰地形；核心是保持安全距離並在每次技能之間穿插普攻。",
-      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/corki.webp",
       "abilities": [
         {
@@ -2682,7 +2843,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "first-batch-v65",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "卡瑪",
+          "reason": "遠距消耗與加速護盾能幫庫奇掌握線權，也方便技能穿插普攻。"
+        },
+        {
+          "name": "拉克絲",
+          "reason": "定身與雙遠距爆發能一起壓低血線，讓庫奇更容易完成收割。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程、護盾與解控能提高庫奇中距離輸出的安全性。"
+        }
+      ]
     },
     {
       "id": "kalista",
@@ -2747,7 +2924,7 @@
         "後期": "團戰優先沿側向或後方向跳躍，不要每次普攻都往前。三技可先用來緩速協助拉打，不必永遠等到極限層數；大絕開戰前要和血誓同盟確認方向，遭遇突進時也能立即把隊友拉回保命。物件戰中三技對史詩野怪傷害降低，仍需和打野溝通斬殺時間。"
       },
       "summary": "普攻跳躍帶來極高拉打上限，痛苦撕扯同時負責換血、緩速與物件斬殺；真正難點是控制每次跳躍方向，並和血誓同盟協調大絕用途。",
-      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》克黎思妲英雄頁校正；出裝、符文、召喚師技能、技能順序與物件傷害機制交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》克黎思妲英雄頁校正；出裝、符文、召喚師技能、技能順序與物件傷害機制交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/kalista.webp",
       "abilities": [
         {
@@ -2913,7 +3090,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "fourth-batch-v68",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "瑟雷西",
+          "reason": "雙方都有救援與強開能力，克黎思妲大絕也能讓瑟雷西安全二次進場。"
+        },
+        {
+          "name": "銳兒",
+          "reason": "高強度範圍進場能替克黎思妲創造疊矛與收割空間。"
+        },
+        {
+          "name": "雷歐娜",
+          "reason": "穩定硬控與高坦度適合綁定大絕，能快速強開並延長輸出時間。"
+        }
+      ]
     },
     {
       "id": "sivir",
@@ -2978,7 +3171,7 @@
         "後期": "正面團戰站在安全位置攻擊前排，利用十字彈射把傷害擴散到後排。狩獵期間技能冷卻更快，持續造成傷害累積士氣，滿層後把強化效果轉給隊友並刷新大絕；護盾仍要保留處理決定生死的技能。"
       },
       "summary": "以迴旋之刃與十字彈射快速清線、擴散團戰傷害，再靠法術護盾提高容錯、狩獵加速整隊；擅長取得線權與正面團戰，但普攻射程有限，需要精準掌握護盾時機。",
-      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。",
+      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/sivir.webp",
       "abilities": [
         {
@@ -3143,7 +3336,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "second-batch-v66",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "卡瑪",
+          "reason": "雙方都有推線與團隊加速，能快速取得線權並主動轉線。"
+        },
+        {
+          "name": "悠咪",
+          "reason": "附身增益與希維爾大絕疊加後機動性很高，適合團隊追擊與拉扯。"
+        },
+        {
+          "name": "索娜",
+          "reason": "雙範圍增益能強化中後期團戰，希維爾也能替索娜提供穩定前排輸出節奏。"
+        }
+      ]
     },
     {
       "id": "kaisa",
@@ -3208,7 +3417,7 @@
         "後期": "團戰先跟在前排後方疊加電漿，只有敵方關鍵控制已交、後排被標記且落單時，才考慮大絕切入。進場後用進化三技隱形重新拉開距離，優先確保自己能完成第二輪技能與普攻，而不是一次全押。"
       },
       "summary": "透過完整裝備進化基礎技能，以電漿層數、孤立魔雨和大絕位移打出混合爆發；機動上限高，但切入時機決定生存與輸出。",
-      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。",
+      "sourceNote": "7.2a 飛龍路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2a 更新公告，出裝、符文、召喚師技能與實戰節奏交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v65：套用吉茵珂絲 v64 固定母版，補齊起手裝、核心三件、五件成裝、Lv.1～15 加點、三組連招與前中後期策略。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/kaisa.webp",
       "abilities": [
         {
@@ -3393,7 +3602,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "first-batch-v65",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "納帝魯斯",
+          "reason": "每段硬控都能協助疊加電漿，讓凱莎快速接大絕進場。"
+        },
+        {
+          "name": "雷歐娜",
+          "reason": "多段控制能快速疊滿電漿，適合前期強打與中期鎖定後排。"
+        },
+        {
+          "name": "銳兒",
+          "reason": "範圍開戰能同時標記多人，替凱莎創造安全的大絕落點。"
+        }
+      ]
     },
     {
       "id": "draven",
@@ -3458,7 +3683,7 @@
         "後期": "團戰先攻擊最近且安全的目標，接斧路線必須服從站位而不是反過來。無法安全接住時寧可放棄斧頭並重新開一技；三技留給刺客或開戰位移，大絕則用於穿過多人或處理殘血。存活持續投斧比冒險追後排更有價值。"
       },
       "summary": "以迴旋飛斧建立極強對線壓力，並把偶像崇拜兌現成額外經濟快速滾雪球。操作核心不是每把斧頭都接，而是把落點控制在安全位置並保留三技反制突進。",
-      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》達瑞文英雄頁校正；出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》達瑞文英雄頁校正；出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/draven.webp",
       "abilities": [
         {
@@ -3639,7 +3864,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "fourth-batch-v68",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "雷歐娜",
+          "reason": "二級強開與多段控制能放大達瑞文前期傷害，最適合滾雪球。"
+        },
+        {
+          "name": "納帝魯斯",
+          "reason": "穩定鉤鎖與定身能替達瑞文固定接斧位置並快速擊殺。"
+        },
+        {
+          "name": "瑟雷西",
+          "reason": "鉤鎖可主動開戰，燈籠則能在達瑞文壓線過深時提供退路。"
+        }
+      ]
     },
     {
       "id": "ashe",
@@ -3704,7 +3945,7 @@
         "後期": "站在前排後方攻擊最近目標，普攻與二技持續套用緩速，讓敵人難以接近或撤退。大絕優先用來攔截刺客、鎖定走位失誤者或配合隊友開戰；鷹擊長空保留檢查側翼，避免無位移射手被繞後。"
       },
       "summary": "以普攻與萬箭齊發持續緩速，搭配鷹擊長空提供視野，再用可操控的魔法水晶箭遠距開戰；即使經濟一般也能提供高團隊價值，但站位失誤容錯較低。",
-      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。",
+      "sourceNote": "7.2a 飛龍路第二批正式攻略：英雄定位、技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》7.2a 更新公告及官方英雄頁校正；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v66：套用吉茵珂絲 v64 固定母版，完成好運姐、婕莉、艾希、法洛士、伊澤瑞爾、希維爾。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/ashe.png",
       "abilities": [
         {
@@ -3870,7 +4111,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "second-batch-v66",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "瑟菈紛",
+          "reason": "艾希緩速能讓瑟菈紛更容易強化控制，雙大絕也能遠距連鎖開戰。"
+        },
+        {
+          "name": "布郎姆",
+          "reason": "艾希高頻普攻與持續緩速能快速疊滿震盪猛擊，反打能力很強。"
+        },
+        {
+          "name": "枷蘿",
+          "reason": "持續緩速配合植物與纏繞能大幅限制走位，形成穩定消耗線。"
+        }
+      ]
     },
     {
       "id": "jinx",
@@ -3935,7 +4192,7 @@
         "後期": "團戰以最大射程攻擊最近且安全的目標，不必強行越過前排點後排。狂躁觸發後利用跑速重新站位，視距離切回迷你砲提高單體輸出；大絕主要用於處理殘血、補遠距傷害或爭奪史詩野怪。"
       },
       "summary": "前期需要穩定發育的後期射手，透過雙武器切換維持安全輸出；只要參與第一個擊殺、史詩野怪或拆塔觸發狂躁，就能靠高攻速與跑速連續收割。",
-      "sourceNote": "7.2a 飛龍路吉茵珂絲正式母版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文、召喚師技能、對局與實戰節奏交叉參考 WildRiftFire 7.2a 與 WR-META 7.2A 後整合。Tier 維持本站既有飛龍路評級。｜v64：吉茵珂絲固定為飛龍路英雄正式母版。",
+      "sourceNote": "7.2a 飛龍路吉茵珂絲正式母版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文、召喚師技能、對局與實戰節奏交叉參考 WildRiftFire 7.2a 與 WR-META 7.2A 後整合。Tier 維持本站既有飛龍路評級。｜v64：吉茵珂絲固定為飛龍路英雄正式母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/jinx.webp",
       "abilities": [
         {
@@ -4101,7 +4358,23 @@
       "duoMasterTemplate": "jinx-v64",
       "isDuoMasterTemplate": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "瑟雷西",
+          "reason": "鉤鎖與燈籠兼具開戰、保命，能幫吉茵珂絲安全等到被動重置。"
+        },
+        {
+          "name": "露璐",
+          "reason": "護盾、加速與變形能保護吉茵珂絲持續輸出並追擊重置。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程與解控能提升火箭輸出空間，讓吉茵珂絲更安全觸發收割節奏。"
+        }
+      ]
     },
     {
       "id": "caitlyn",
@@ -4166,7 +4439,7 @@
         "後期": "維持最大普攻距離攻擊最近目標，利用磁性雷射槍與爆頭進行高傷害點射。團戰中陷阱優先保護自己與後排，而非全部放在遠處；被刺客靠近時以獵網反向位移並接爆頭，鬼步用來延長走砍距離，不要為了施放大絕停在危險位置。"
       },
       "summary": "依靠全射手頂尖的基礎射程、爆頭與陷阱建立對線和物件區壓制。陷阱與獵網命中後能觸發超遠距爆頭，但中後期輸出仍取決於安全站位與陷阱佈置。",
-      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》凱特琳英雄頁校正；出裝、符文、召喚師技能與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》凱特琳英雄頁校正；出裝、符文、召喚師技能與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/caitlyn.webp",
       "abilities": [
         {
@@ -4316,7 +4589,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "third-batch-v67",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "拉克絲",
+          "reason": "定身後可直接接陷阱與爆頭，是最穩定的遠距壓線組合。"
+        },
+        {
+          "name": "魔甘娜",
+          "reason": "黑暗禁錮能接陷阱，黑暗之盾也能保護凱特琳維持射程壓制。"
+        },
+        {
+          "name": "枷蘿",
+          "reason": "植物與纏繞能封鎖走位，方便凱特琳擺放陷阱並壓制塔下。"
+        }
+      ]
     },
     {
       "id": "twitch",
@@ -4381,7 +4670,7 @@
         "後期": "團戰不要過早現身，等待敵方陣形集中或關鍵控制交出後再開潛伏找角度。大絕期間以直線穿透最多人的方向走砍，虛弱之毒放在撤退路線；毒層接近滿層時施放三技完成爆發，活著打完整個大絕比強行繞到後排更重要。"
       },
       "summary": "前期以安全發育為主，中後期靠潛伏改變進場角度，再用大絕穿透多人並疊滿死亡毒液。需要先確認控制與視野，才能把高範圍傷害完整打出。",
-      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》圖奇英雄頁校正；出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》圖奇英雄頁校正；出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/twitch.webp",
       "abilities": [
         {
@@ -4550,7 +4839,23 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "悠咪",
+          "reason": "能跟隨圖奇偽裝突襲並提供治療、加速，適合側翼進場與收割。"
+        },
+        {
+          "name": "露璐",
+          "reason": "攻速與保命技能能強化圖奇開大後的穿透輸出。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程與解控能讓圖奇在開大期間維持更安全的射擊距離。"
+        }
+      ]
     },
     {
       "id": "tristana",
@@ -4615,7 +4920,7 @@
         "後期": "被動讓普攻、爆炸射擊與毀滅射擊射程隨等級增加，後期應站在前排後方安全輸出。三技搭配一技快速疊滿是主要單體爆發；大絕優先擊退刺客或把威脅推離自己，只有能確定擊殺時才拿來收尾。"
       },
       "summary": "前期射程有限，隨等級成長後能在安全距離輸出。爆炸射擊疊滿或參與擊殺可刷新火箭跳躍，兼具拆塔、爆發與連續收割能力，但跳躍進場前必須確認重置條件。",
-      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》崔絲塔娜英雄頁校正；出裝、符文、召喚師技能、技能順序與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》崔絲塔娜英雄頁校正；出裝、符文、召喚師技能、技能順序與實戰方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/tristana.webp",
       "abilities": [
         {
@@ -4782,7 +5087,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "third-batch-v67",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "銳兒",
+          "reason": "範圍控制能讓崔絲塔娜安全疊滿炸彈，擊殺後也容易重置跳躍。"
+        },
+        {
+          "name": "雷歐娜",
+          "reason": "二級強開與崔絲塔娜爆發非常契合，適合快速建立擊殺優勢。"
+        },
+        {
+          "name": "亞歷斯塔",
+          "reason": "擊飛與回推能固定目標，並替崔絲塔娜承擔進場後的反打壓力。"
+        }
+      ]
     },
     {
       "id": "samira",
@@ -4847,7 +5168,7 @@
         "後期": "煞蜜拉不是第一個進場的人，應等待敵方控制與保命技能被逼出，再利用被動或三技進入收割距離。大絕遭硬控會被中斷，因此開啟前要確認主要控場位置；取得擊殺或助攻後利用三技重置換目標，必要時以光盾、二技和閃現保住連殺節奏。"
       },
       "summary": "先用不同攻擊把風格堆到 S 級，再抓住控制空檔進場開大；二技格擋飛行道具與三技擊殺重置決定她能否完成連續收割。",
-      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》煞蜜拉英雄頁校正；出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》煞蜜拉英雄頁校正；出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/samira.webp",
       "abilities": [
         {
@@ -5027,7 +5348,23 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "銳兒",
+          "reason": "多段範圍擊飛與聚怪能快速幫煞蜜拉疊評級並安全開出大絕。"
+        },
+        {
+          "name": "納帝魯斯",
+          "reason": "穩定硬控能觸發煞蜜拉被動突進，適合單點快速擊殺。"
+        },
+        {
+          "name": "亞歷斯塔",
+          "reason": "二一連段與大絕坦度能提供長時間近身空間，方便煞蜜拉收割。"
+        }
+      ]
     },
     {
       "id": "yunara",
@@ -5092,7 +5429,7 @@
         "後期": "保持在前排後方持續普攻，利用暴擊附加魔法傷害迫使對手同時處理物防與魔防。大絕是最重要的團戰窗口，先確認敵方主要控制與突進位置，再用強化二技壓制路線、強化三技調整距離；超凡狀態結束後不要繼續深追。"
       },
       "summary": "普攻累積解放層數後開啟靈心修真，獲得攻速與擴散普攻；大絕進入超凡狀態會自動強化一技，並升級二、三技。輸出窗口強，但需要掌握資源、冷卻與型態結束時間。",
-      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱依 Riot Games 台灣《英雄聯盟》尤娜拉官方英雄頁校正，技能機制、出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱依 Riot Games 台灣《英雄聯盟》尤娜拉官方英雄頁校正，技能機制、出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/yunara.webp",
       "abilities": [
         {
@@ -5262,7 +5599,23 @@
       "duoTemplateSource": "jinx-v64",
       "duoBatch": "third-batch-v67",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "露璐",
+          "reason": "攻速、護盾與變形能強化尤娜拉的普攻蓄力與超凡狀態輸出。"
+        },
+        {
+          "name": "米里歐",
+          "reason": "增程與解控能讓尤娜拉在強化狀態中維持更安全的輸出距離。"
+        },
+        {
+          "name": "珍娜",
+          "reason": "護盾、擊退與範圍回復能保護尤娜拉完成長時間普攻輸出。"
+        }
+      ]
     },
     {
       "id": "senna",
@@ -5327,7 +5680,7 @@
         "後期": "靈魂累積帶來長射程後，保持在敵方突進範圍外攻擊最近目標，不需要為點後排而往前。三技可掩護隊伍轉線或重新進場，但靠近敵人仍會被揭露；大絕應在隊友即將承受爆發前施放，並讓中央傷害路徑穿過主要目標。"
       },
       "summary": "透過黯霧靈魂永久成長物攻、射程與暴擊，兼具遠距消耗、治療、禁錮與全圖護盾。7.2a 雖下調被動目前生命傷害與大絕每層黯霧護盾，但功能與後期射程仍是核心。",
-      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》姍娜英雄頁校正，並納入官方 7.2a 被動目前生命傷害與黎明之影護盾調整；出裝、符文與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。",
+      "sourceNote": "7.2a 飛龍路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》姍娜英雄頁校正，並納入官方 7.2a 被動目前生命傷害與黎明之影護盾調整；出裝、符文與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v68：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
       "avatar": "../assets/images/heroes/portraits/senna.webp",
       "abilities": [
         {
@@ -5495,7 +5848,23 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true,
+      "suitableSupports": [
+        {
+          "name": "納帝魯斯",
+          "reason": "高坦度與多段控制能替姍娜創造安全疊魂、消耗與接控空間。"
+        },
+        {
+          "name": "茂凱",
+          "reason": "穩定先手與視野控制能彌補姍娜缺乏前排的問題。"
+        },
+        {
+          "name": "加里歐",
+          "reason": "魔法護盾、嘲諷與全圖支援能保護姍娜，並補足正面開戰能力。"
+        }
+      ]
     },
     {
       "id": "aatrox-baron",
@@ -5626,7 +5995,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -5729,7 +6098,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "akali-baron",
@@ -5860,7 +6231,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-second5-formal-v41",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -5963,7 +6334,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ambessa-baron",
@@ -6094,7 +6467,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-second5-formal-v41",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -6197,7 +6570,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "aurora-baron",
@@ -6328,7 +6703,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-second5-formal-v41",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -6419,7 +6794,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "camille-baron",
@@ -6550,7 +6927,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -6653,7 +7030,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "darius-baron",
@@ -6784,7 +7163,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -6879,7 +7258,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "dr-mundo-baron",
@@ -7010,7 +7391,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fourth5-formal-v43",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -7097,7 +7478,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "fiora-baron",
@@ -7228,7 +7611,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -7315,7 +7698,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "garen-baron",
@@ -7446,7 +7831,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -7525,7 +7910,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "gnar-baron",
@@ -7656,7 +8043,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-third5-formal-v42",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -7735,7 +8122,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "gragas-baron",
@@ -7866,7 +8255,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-second5-formal-v41",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -7957,7 +8346,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "gwen-baron",
@@ -8088,7 +8479,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-second5-formal-v41",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -8183,7 +8574,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "irelia-baron",
@@ -8314,7 +8707,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-third5-formal-v42",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -8409,7 +8802,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "jarvan-iv-baron",
@@ -8540,7 +8935,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-eighth5-formal-v47",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -8623,7 +9018,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "jax-baron",
@@ -8754,7 +9151,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-third5-formal-v42",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -8845,7 +9242,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "jayce-baron",
@@ -8976,7 +9375,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-third5-formal-v42",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -9063,7 +9462,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ksante-baron",
@@ -9194,7 +9595,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-third5-formal-v42",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -9281,7 +9682,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "kayle-baron",
@@ -9412,7 +9815,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fourth5-formal-v43",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -9491,7 +9894,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "kennen-baron",
@@ -9622,7 +10027,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fourth5-formal-v43",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -9701,7 +10106,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "malphite-baron",
@@ -9832,7 +10239,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fourth5-formal-v43",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -9919,7 +10326,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "maokai-baron",
@@ -10050,7 +10459,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-eighth5-formal-v47",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -10133,7 +10542,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "mordekaiser-baron",
@@ -10264,7 +10675,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fifth5-formal-v44",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -10355,7 +10766,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nasus-baron",
@@ -10486,7 +10899,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fifth5-formal-v44",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -10565,7 +10978,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nautilus-baron",
@@ -10696,7 +11111,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-eighth5-formal-v47",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -10779,7 +11194,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nidalee-baron",
@@ -10910,7 +11327,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-eighth5-formal-v47",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -11001,7 +11418,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "olaf-baron",
@@ -11132,7 +11551,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-eighth5-formal-v47",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -11223,7 +11642,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ornn-baron",
@@ -11354,7 +11775,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fifth5-formal-v44",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -11441,7 +11862,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "pantheon-baron",
@@ -11572,7 +11995,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-ninth4-formal-v48",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -11655,7 +12078,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "poppy-baron",
@@ -11786,7 +12211,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fifth5-formal-v44",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -11861,7 +12286,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "renekton-baron",
@@ -11992,7 +12419,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fourth5-formal-v43",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -12083,7 +12510,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "riven-baron",
@@ -12214,7 +12643,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-fifth5-formal-v44",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -12309,7 +12738,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "rumble-baron",
@@ -12440,7 +12871,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-sixth5-formal-v45",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -12519,7 +12950,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ryze-baron",
@@ -12650,7 +13083,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-ninth4-formal-v48",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -12737,7 +13170,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "sett-baron",
@@ -12868,7 +13303,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-seventh5-formal-v46",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -12955,7 +13390,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "shen-baron",
@@ -13086,7 +13523,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-sixth5-formal-v45",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -13169,7 +13606,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "singed-baron",
@@ -13300,7 +13739,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-sixth5-formal-v45",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -13375,7 +13814,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "sion-baron",
@@ -13506,7 +13947,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-sixth5-formal-v45",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -13585,7 +14026,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "skarner-baron",
@@ -13716,7 +14159,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-ninth4-formal-v48",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -13799,7 +14242,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "swain-baron",
@@ -13930,7 +14375,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-ninth4-formal-v48",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14017,7 +14462,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "teemo-baron",
@@ -14148,7 +14595,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-sixth5-formal-v45",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14227,7 +14674,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "tryndamere-baron",
@@ -14358,7 +14807,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-seventh5-formal-v46",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14437,7 +14886,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "urgot-baron",
@@ -14568,7 +15019,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-seventh5-formal-v46",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14647,7 +15098,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "viego-baron",
@@ -14778,7 +15231,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-tenth4-formal-v49",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14861,7 +15314,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "vladimir-baron",
@@ -14992,7 +15447,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-seventh5-formal-v46",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -15075,7 +15530,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "volibear-baron",
@@ -15206,7 +15663,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-tenth4-formal-v49",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -15289,7 +15746,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "warwick-baron",
@@ -15420,7 +15879,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-tenth4-formal-v49",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -15503,7 +15962,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "wukong-baron",
@@ -15634,7 +16095,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-seventh5-formal-v46",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -15721,7 +16182,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "yasuo-baron",
@@ -15852,7 +16315,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-tenth4-formal-v49",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -15935,7 +16398,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "yone-baron",
@@ -16066,7 +16531,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "yone-formal-7.2a-v38",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-yone-v38",
       "hideBan": true,
       "skillIconCount": 5,
@@ -16120,7 +16585,9 @@
       ],
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "aatrox-jungle",
@@ -16254,7 +16721,7 @@
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "對線短換血",
@@ -16354,7 +16821,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ambessa-jungle",
@@ -16488,7 +16957,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -16580,7 +17049,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "amumu-jungle",
@@ -16714,7 +17185,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -16806,7 +17277,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "camille-jungle",
@@ -16940,7 +17413,7 @@
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "牆鉤換血",
@@ -17040,7 +17513,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "darius-jungle",
@@ -17174,7 +17649,7 @@
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "河道 Gank 拉回",
@@ -17266,7 +17741,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "diana-jungle",
@@ -17400,7 +17877,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -17492,7 +17969,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "dr-mundo-jungle",
@@ -17626,7 +18105,7 @@
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "骨鋸追擊",
@@ -17722,7 +18201,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ekko-jungle",
@@ -17856,7 +18337,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -17948,7 +18429,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "evelynn-jungle",
@@ -18082,7 +18565,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -18174,7 +18657,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "fiddlesticks-jungle",
@@ -18308,7 +18793,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -18388,7 +18873,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "fizz-jungle",
@@ -18522,7 +19009,7 @@
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "基礎 Gank 爆發",
@@ -18614,7 +19101,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "gragas-jungle",
@@ -18748,7 +19237,7 @@
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "標準 Gank 爆發",
@@ -18840,7 +19329,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "graves-jungle",
@@ -18974,7 +19465,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -19066,7 +19557,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "gwen-jungle",
@@ -19200,7 +19693,7 @@
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "剪刀短換血",
@@ -19292,7 +19785,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "hecarim-jungle",
@@ -19426,7 +19921,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -19518,7 +20013,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "jarvan-iv-jungle",
@@ -19652,7 +20149,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -19732,7 +20229,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "jax-jungle",
@@ -19866,7 +20365,7 @@
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "蓄暈 Gank",
@@ -19962,7 +20461,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "kayn-jungle",
@@ -20096,7 +20597,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -20188,7 +20689,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "khazix-jungle",
@@ -20322,7 +20825,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -20414,7 +20917,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "kindred-jungle",
@@ -20548,7 +21053,7 @@
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "基礎遠程 Gank",
@@ -20644,7 +21149,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "lee-sin-jungle",
@@ -20778,7 +21285,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-lee-sin-formal-v51",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -20878,7 +21385,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "lillia-jungle",
@@ -21012,7 +21521,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -21096,7 +21605,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "maokai-jungle",
@@ -21230,7 +21741,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -21310,7 +21821,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "morgana-jungle",
@@ -21444,7 +21957,7 @@
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "禁錮腐蝕 Gank",
@@ -21532,7 +22045,9 @@
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nidalee-jungle",
@@ -21666,7 +22181,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -21758,7 +22273,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nilah-jungle",
@@ -21977,14 +22494,16 @@
         "physical-high-24"
       ],
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nocturne-jungle",
@@ -22118,7 +22637,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -22210,7 +22729,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nunu-and-willump-jungle",
@@ -22344,7 +22865,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -22428,7 +22949,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "olaf-jungle",
@@ -22643,14 +23166,16 @@
         "physical-high-42"
       ],
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "pantheon-jungle",
@@ -22784,7 +23309,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -22868,7 +23393,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "poppy-jungle",
@@ -23067,14 +23594,16 @@
         "defense-high-08"
       ],
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "rammus-jungle",
@@ -23208,7 +23737,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -23288,7 +23817,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "rengar-jungle",
@@ -23422,7 +23953,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -23514,7 +24045,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "riven-jungle",
@@ -23741,14 +24274,16 @@
         "physical-high-42"
       ],
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "shyvana-jungle",
@@ -23882,7 +24417,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -23970,7 +24505,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "skarner-jungle",
@@ -24177,14 +24714,16 @@
         "defense-high-08"
       ],
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "taliyah-jungle",
@@ -24318,7 +24857,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -24398,7 +24937,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "talon-jungle",
@@ -24609,14 +25150,16 @@
         "physical-high-32"
       ],
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "tryndamere-jungle",
@@ -24819,14 +25362,16 @@
         "physical-high-17"
       ],
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "vi-jungle",
@@ -24960,7 +25505,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -25052,7 +25597,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "viego-jungle",
@@ -25186,7 +25733,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -25270,7 +25817,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "volibear-jungle",
@@ -25404,7 +25953,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -25488,7 +26037,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "warwick-jungle",
@@ -25622,7 +26173,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -25714,7 +26265,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "wukong-jungle",
@@ -25848,7 +26401,7 @@
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -25940,7 +26493,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "xin-zhao-jungle",
@@ -26074,7 +26629,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -26170,7 +26725,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "yone-jungle",
@@ -26397,14 +26954,16 @@
         "physical-high-17"
       ],
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fifth10-v56",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "zed-jungle",
@@ -26627,14 +27186,16 @@
         "physical-high-32"
       ],
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ahri-mid",
@@ -26768,7 +27329,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-ahri-master-template-v58",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -26858,7 +27419,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "akali-mid",
@@ -27088,7 +27651,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "akshan-mid",
@@ -27317,7 +27882,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "annie-mid",
@@ -27451,7 +28018,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -27537,7 +28104,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "aurelion-sol-mid",
@@ -27671,7 +28240,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -27745,7 +28314,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "aurora-mid",
@@ -27880,7 +28451,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -27970,7 +28541,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "brand-mid",
@@ -28191,7 +28764,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "diana-mid",
@@ -28326,7 +28901,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -28420,7 +28995,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ekko-mid",
@@ -28555,7 +29132,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -28649,7 +29226,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "fizz-mid",
@@ -28875,7 +29454,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "galio-mid",
@@ -29100,7 +29681,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "heimerdinger-mid",
@@ -29234,7 +29817,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -29316,7 +29899,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "irelia-mid",
@@ -29554,7 +30139,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "jayce-mid",
@@ -29784,7 +30371,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "kassadin-mid",
@@ -30009,7 +30598,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "katarina-mid",
@@ -30242,7 +30833,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "kayle-mid",
@@ -30464,7 +31057,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "kennen-mid",
@@ -30690,7 +31285,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "lissandra-mid",
@@ -30911,7 +31508,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "lux-mid",
@@ -31045,7 +31644,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -31127,7 +31726,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "mel-mid",
@@ -31261,7 +31862,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -31339,7 +31940,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "morgana-mid",
@@ -31565,7 +32168,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "norra-mid",
@@ -31698,7 +32303,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -31780,7 +32385,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "orianna-mid",
@@ -31913,7 +32520,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -31995,7 +32602,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ryze-mid",
@@ -32129,7 +32738,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -32215,7 +32824,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "swain-mid",
@@ -32349,7 +32960,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -32435,7 +33046,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "syndra-mid",
@@ -32568,7 +33181,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -32654,7 +33267,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "taliyah-mid",
@@ -32788,7 +33403,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -32870,7 +33485,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "teemo-mid",
@@ -33095,7 +33712,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "twisted-fate-mid",
@@ -33228,7 +33847,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -33310,7 +33929,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "veigar-mid",
@@ -33443,7 +34064,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -33521,7 +34142,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "velkoz-mid",
@@ -33741,7 +34364,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "vex-mid",
@@ -33874,7 +34499,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -33956,7 +34581,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "viktor-mid",
@@ -34089,7 +34716,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -34171,7 +34798,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "vladimir-mid",
@@ -34400,7 +35029,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "yasuo-mid",
@@ -34628,7 +35259,9 @@
       "isMidMasterTemplate": false,
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "yone-mid",
@@ -34864,7 +35497,9 @@
       "isMidMasterTemplate": false,
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "zed-mid",
@@ -35092,7 +35727,9 @@
       "isMidMasterTemplate": false,
       "abilityNamesVerified": "Riot TW",
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ziggs-mid",
@@ -35225,7 +35862,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -35307,7 +35944,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "zoe-mid",
@@ -35440,7 +36079,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -35522,7 +36161,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "zyra-mid",
@@ -35742,7 +36383,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "alistar-support",
@@ -35782,7 +36425,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -35985,7 +36628,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "bard-support",
@@ -36224,7 +36869,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "blitzcrank-support",
@@ -36467,7 +37114,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "brand-support",
@@ -36710,7 +37359,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "braum-support",
@@ -36750,7 +37401,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -36953,7 +37604,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "galio-support",
@@ -36993,7 +37646,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -37196,7 +37849,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "janna-support",
@@ -37439,7 +38094,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "karma-support",
@@ -37678,7 +38335,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "leona-support",
@@ -37718,7 +38377,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -37921,7 +38580,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "lulu-support",
@@ -38160,7 +38821,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "lux-support",
@@ -38399,7 +39062,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "malphite-support",
@@ -38439,7 +39104,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -38643,7 +39308,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "maokai-support",
@@ -38683,7 +39350,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -38887,7 +39554,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "milio-support",
@@ -39130,7 +39799,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "morgana-support",
@@ -39370,7 +40041,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nami-support",
@@ -39609,7 +40282,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nautilus-support",
@@ -39649,7 +40324,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -39853,7 +40528,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "pyke-support",
@@ -39893,7 +40570,7 @@
         "physical-high-10"
       ],
       "boots": [
-        "armorbreaker-boots",
+        "burst-boots",
         "ionian-boots"
       ],
       "spells": [
@@ -40092,7 +40769,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "rakan-support",
@@ -40331,7 +41010,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "rell-support",
@@ -40371,7 +41052,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -40574,7 +41255,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "senna-support",
@@ -40817,7 +41500,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "seraphine-support",
@@ -41056,7 +41741,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "ornn-support",
@@ -41096,7 +41783,7 @@
         "defense-high-09"
       ],
       "boots": [
-        "chain-army-boots",
+        "mercurys-treads",
         "armored-warboots"
       ],
       "spells": [
@@ -41300,7 +41987,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "sona-support",
@@ -41543,7 +42232,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "soraka-support",
@@ -41786,7 +42477,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "swain-support",
@@ -41826,7 +42519,7 @@
         "magic-high-13"
       ],
       "boots": [
-        "blood-mage-boots",
+        "ionian-boots",
         "armored-warboots"
       ],
       "spells": [
@@ -42030,7 +42723,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "thresh-support",
@@ -42273,7 +42968,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "veigar-support",
@@ -42512,7 +43209,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "velkoz-support",
@@ -42747,7 +43446,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "yuumi-support",
@@ -42982,7 +43683,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "zilean-support",
@@ -43225,7 +43928,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "zyra-support",
@@ -43464,7 +44169,9 @@
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "master-yi-jungle",
@@ -43597,7 +44304,7 @@
       "detailAssetBatch": "jungle-fourth10-v55",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-fourth10-formal-v55",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "combos": [
         {
           "name": "清野輸出循環",
@@ -43686,7 +44393,9 @@
       "hideBan": true,
       "generatedV29": true,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "shen-jungle",
@@ -43817,7 +44526,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "jungle-second10-formal-v53",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-second10-v53",
       "abilityNamesVerified": "Riot TW",
@@ -43912,7 +44621,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "nautilus-jungle",
@@ -44047,7 +44758,7 @@
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -44135,7 +44846,9 @@
         }
       ],
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "corki-mid",
@@ -44269,7 +44982,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "midMasterTemplate": "ahri-v58",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
@@ -44351,7 +45064,9 @@
       ],
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "karma-mid",
@@ -44485,7 +45200,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "midMasterTemplate": "ahri-v58",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
@@ -44563,7 +45278,9 @@
       ],
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "talon-mid",
@@ -44792,7 +45509,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "rumble-mid",
@@ -45017,7 +45736,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     },
     {
       "id": "seraphine-mid",
@@ -45150,7 +45871,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-28",
+      "reviewedAt": "2026-07-29",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -45228,7 +45949,9 @@
       "midMasterTemplate": "ahri-v58",
       "isMidMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
-      "heroDataLocked": true
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     }
   ],
   "heroCatalog": [
@@ -47765,7 +48488,9 @@
       "detailVersion": "v31-formal-7.2a",
       "roleSource": "heroCatalog",
       "roleAuditVersion": "v63",
-      "roleAuditStatus": "passed"
+      "roleAuditStatus": "passed",
+      "guideAuditVersion": "v76-stage2",
+      "guideAuditStatus": "passed"
     },
     "jungle": {
       "name": "打野",
@@ -47778,7 +48503,9 @@
       "detailVersion": "v56-complete-formal-7.2a",
       "roleSource": "heroCatalog",
       "roleAuditVersion": "v63",
-      "roleAuditStatus": "passed"
+      "roleAuditStatus": "passed",
+      "guideAuditVersion": "v76-stage2",
+      "guideAuditStatus": "passed"
     },
     "mid": {
       "name": "中路",
@@ -47791,7 +48518,9 @@
       "detailVersion": "v62-fourth-batch-complete-46-of-46-7.2a",
       "roleSource": "heroCatalog",
       "roleAuditVersion": "v63",
-      "roleAuditStatus": "passed"
+      "roleAuditStatus": "passed",
+      "guideAuditVersion": "v76-stage2",
+      "guideAuditStatus": "passed"
     },
     "duo": {
       "name": "飛龍路",
@@ -47804,10 +48533,14 @@
       "detailProgress": "23/23",
       "portraitMode": "shared",
       "verification": "依使用者提供的遊戲內飛龍路定位截圖確認 23 位；v64 完成吉茵珂絲母版，v65 完成第一批 6 位，v66 完成第二批 6 位，v67 完成第三批 5 位，v68 完成第四批圖奇、達瑞文、煞蜜拉、姍娜、克黎思妲，正式攻略進度 23/23，全數完成。",
-      "detailVersion": "v68-fourth-batch-23-of-23-7.2a",
+      "detailVersion": "v76-stage2-guide-content-locked-7.2a",
       "roleSource": "heroCatalog",
       "roleAuditVersion": "v68",
-      "roleAuditStatus": "passed"
+      "roleAuditStatus": "passed",
+      "guideAuditVersion": "v76-stage2",
+      "guideAuditStatus": "passed",
+      "suitableSupportComplete": true,
+      "suitableSupportProfileCount": 23
     },
     "support": {
       "name": "輔助",
@@ -47820,14 +48553,17 @@
       "detailCompletedCount": 32,
       "detailTotalCount": 32,
       "detailProgress": "32/32",
-      "detailVersion": "v74-support-final-seven-32-of-32-7.2a",
+      "detailVersion": "v76-stage2-guide-content-locked-7.2a",
       "roleAuditVersion": "v74",
-      "roleAuditStatus": "passed"
+      "roleAuditStatus": "passed",
+      "guideAuditVersion": "v76-stage2",
+      "guideAuditStatus": "passed",
+      "bootDisplayPolicy": "tier2"
     }
   },
   "roleAudit": {
     "status": "passed",
-    "schemaVersion": 2,
+    "schemaVersion": 3,
     "uniqueHeroes": 140,
     "activeRoleAssignments": 200,
     "activeGuideProfiles": 200,
@@ -47855,7 +48591,13 @@
     "multiRoleHeroes": 55,
     "officialNameCount": 140,
     "abilityProfilesChecked": 200,
-    "abilityPlaceholderCount": 0
+    "abilityPlaceholderCount": 0,
+    "stage2Status": "locked-v76",
+    "stage2CheckedAt": "2026-07-29",
+    "guideProfilesChecked": 200,
+    "duoSuitableSupportProfiles": 23,
+    "supportBootProfilesNormalized": 11,
+    "comboActionRendering": "passed-v76"
   },
   "stageLocks": {
     "stage1HeroData": {
@@ -47874,6 +48616,26 @@
       ],
       "nameSource": "Riot Games 台灣《激鬥峽谷》英雄列表",
       "roleSource": "使用者提供的 7.2a 遊戲內五路定位截圖與 heroCatalog"
+    },
+    "stage2GuideContent": {
+      "status": "locked",
+      "version": "v76",
+      "lockedAt": "2026-07-29",
+      "scope": [
+        "出裝",
+        "符文",
+        "召喚師技能",
+        "技能加點",
+        "三組連招",
+        "對線／前中後期技巧",
+        "優勢／劣勢對局",
+        "飛龍路合適輔助"
+      ],
+      "guideProfilesChecked": 200,
+      "duoSuitableSupportProfiles": 23,
+      "supportPairCountPerDuoHero": 3,
+      "bootDisplayRule": "英雄攻略固定顯示二級鞋；三級鞋不再誤顯示於鞋子欄位",
+      "comboDisplayRule": "技能、召喚師技能、移動、等待與道具等連招步驟皆有可辨識標記"
     }
   }
 }
