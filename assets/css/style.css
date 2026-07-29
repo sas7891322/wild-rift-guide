@@ -1558,3 +1558,12 @@ button,a{-webkit-tap-highlight-color:transparent}
   .hero-filter-reset{width:calc(100% - 6px);margin:8px 3px 0;min-height:40px}
   .hero-search-no-result{padding:34px 14px}
 }
+
+
+/* v78.1 SEO / hero sharing */
+.hero-detail-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.hero-detail-actions .hero-lane-switch{margin:0}
+.hero-share-button{border:1px solid rgba(216,184,108,.5);background:linear-gradient(160deg,rgba(30,55,85,.98),rgba(10,24,40,.98));color:#f1d99a;border-radius:12px;padding:10px 14px;font:inherit;font-size:13px;font-weight:900;cursor:pointer;white-space:nowrap;transition:transform .15s ease,border-color .15s ease,background .15s ease}
+.hero-share-button:hover{transform:translateY(-1px);border-color:rgba(216,184,108,.85);background:linear-gradient(160deg,rgba(39,68,103,.98),rgba(12,29,48,.99))}
+.hero-share-button:focus-visible{outline:2px solid #f1d99a;outline-offset:3px}
+@media(max-width:560px){.hero-detail-actions{width:100%;justify-content:space-between}.hero-detail-actions .hero-lane-switch{flex:1}.hero-share-button{min-height:44px}}

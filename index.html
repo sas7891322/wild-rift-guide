@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wild Rift Guide</title>
-<link rel="stylesheet" href="assets/css/style.css?v=77.4">
-</head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>激鬥峽谷英雄攻略與資料庫｜Wild Rift Guide</title>
+<link href="assets/css/style.css?v=78.1" rel="stylesheet"/>
+<meta content="激鬥峽谷 7.2a 繁體中文攻略資料庫，提供 140 位英雄、200 份位置攻略、Tier、出裝、符文、技能與對局建議。" name="description"/><meta content="index,follow,max-image-preview:large" name="robots"/><meta content="#06101c" name="theme-color"/><meta content="Wild Rift Guide" name="application-name"/><meta content="Wild Rift Guide" name="apple-mobile-web-app-title"/><meta content="激鬥峽谷英雄攻略與資料庫｜Wild Rift Guide" property="og:title"/><meta content="激鬥峽谷 7.2a 繁體中文攻略資料庫，提供 140 位英雄、200 份位置攻略、Tier、出裝、符文、技能與對局建議。" property="og:description"/><meta content="website" property="og:type"/><meta content="https://wild-rift-guide.vercel.app/" property="og:url"/><meta content="https://wild-rift-guide.vercel.app/assets/images/brand/wild-rift-guide-og.png" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Wild Rift Guide 激鬥峽谷繁體中文攻略資料庫" property="og:image:alt"/><meta content="Wild Rift Guide" property="og:site_name"/><meta content="zh_TW" property="og:locale"/><meta content="summary_large_image" name="twitter:card"/><meta content="激鬥峽谷英雄攻略與資料庫｜Wild Rift Guide" name="twitter:title"/><meta content="激鬥峽谷 7.2a 繁體中文攻略資料庫，提供 140 位英雄、200 份位置攻略、Tier、出裝、符文、技能與對局建議。" name="twitter:description"/><meta content="https://wild-rift-guide.vercel.app/assets/images/brand/wild-rift-guide-og.png" name="twitter:image"/><link href="https://wild-rift-guide.vercel.app/" rel="canonical"/><link href="assets/images/brand/favicon.svg" rel="icon" type="image/svg+xml"/><link href="assets/images/brand/apple-touch-icon.png" rel="apple-touch-icon"/><link href="site.webmanifest" rel="manifest"/><script data-wrg-structured="true" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://wild-rift-guide.vercel.app/#website","url":"https://wild-rift-guide.vercel.app/","name":"Wild Rift Guide","inLanguage":"zh-Hant","description":"激鬥峽谷 7.2a 繁體中文攻略資料庫，提供 140 位英雄、200 份位置攻略、Tier、出裝、符文、技能與對局建議。","potentialAction":{"@type":"SearchAction","target":"https://wild-rift-guide.vercel.app/pages/heroes.html?q={search_term_string}","query-input":"required name=search_term_string"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://wild-rift-guide.vercel.app/"}]}]}</script></head>
 <body class="home-map-bg">
 <header class="topbar"><div class="shell topbar-inner">
 <a class="brand" href="index.html"><span>Wild Rift</span> Guide</a>
@@ -14,28 +14,26 @@
 <a href="pages/runes.html">符文</a>
 <a href="pages/spells.html">召喚師技能</a>
 </nav></div></header>
-
 <main>
 <section class="hero shell">
 <div class="eyebrow">WILD RIFT DATABASE</div>
 <h1>Wild Rift Guide</h1>
 <p>激鬥峽谷英雄、裝備、符文與召喚師技能資料庫。</p>
-<div class="home-hero-search" id="homeHeroSearch" data-json="assets/data/heroes.json?v=77.4">
-  <label class="home-hero-search-field" for="homeHeroSearchInput">
-    <span aria-hidden="true">⌕</span>
-    <input id="homeHeroSearchInput" type="search" inputmode="search" autocomplete="off" placeholder="搜尋中文或英文英雄名稱" aria-label="搜尋中文或英文英雄名稱" aria-controls="homeHeroSearchResults" aria-expanded="false" aria-autocomplete="list">
-  </label>
-  <div class="home-hero-search-results" id="homeHeroSearchResults" role="listbox" aria-label="英雄搜尋結果" hidden></div>
+<div class="home-hero-search" data-json="assets/data/heroes.json?v=78.1" id="homeHeroSearch">
+<label class="home-hero-search-field" for="homeHeroSearchInput">
+<span aria-hidden="true">⌕</span>
+<input aria-autocomplete="list" aria-controls="homeHeroSearchResults" aria-expanded="false" aria-label="搜尋中文或英文英雄名稱" autocomplete="off" id="homeHeroSearchInput" inputmode="search" placeholder="搜尋中文或英文英雄名稱" type="search"/>
+</label>
+<div aria-label="英雄搜尋結果" class="home-hero-search-results" hidden="" id="homeHeroSearchResults" role="listbox"></div>
 </div>
 <div class="role-strip">
-<a class="role-link" href="pages/heroes.html?role=baron" aria-label="查看巴龍路英雄"><img src="assets/images/roles/baron.png" alt="巴龍路"><span>巴龍路</span></a>
-<a class="role-link" href="pages/heroes.html?role=jungle" aria-label="查看打野英雄"><img src="assets/images/roles/jungle.png" alt="打野"><span>打野</span></a>
-<a class="role-link" href="pages/heroes.html?role=mid" aria-label="查看中路英雄"><img src="assets/images/roles/mid.png" alt="中路"><span>中路</span></a>
-<a class="role-link" href="pages/heroes.html?role=duo" aria-label="查看飛龍路英雄"><img src="assets/images/roles/duo.png" alt="飛龍路"><span>飛龍路</span></a>
-<a class="role-link" href="pages/heroes.html?role=support" aria-label="查看輔助英雄"><img src="assets/images/roles/support.png" alt="輔助"><span>輔助</span></a>
+<a aria-label="查看巴龍路英雄" class="role-link" href="pages/heroes.html?role=baron"><img alt="巴龍路" src="assets/images/roles/baron.png"/><span>巴龍路</span></a>
+<a aria-label="查看打野英雄" class="role-link" href="pages/heroes.html?role=jungle"><img alt="打野" src="assets/images/roles/jungle.png"/><span>打野</span></a>
+<a aria-label="查看中路英雄" class="role-link" href="pages/heroes.html?role=mid"><img alt="中路" src="assets/images/roles/mid.png"/><span>中路</span></a>
+<a aria-label="查看飛龍路英雄" class="role-link" href="pages/heroes.html?role=duo"><img alt="飛龍路" src="assets/images/roles/duo.png"/><span>飛龍路</span></a>
+<a aria-label="查看輔助英雄" class="role-link" href="pages/heroes.html?role=support"><img alt="輔助" src="assets/images/roles/support.png"/><span>輔助</span></a>
 </div>
 </section>
-
 <section class="shell home-grid">
 <a class="home-card" href="pages/heroes.html"><div class="home-icon">英雄</div><div><span class="kicker">ALL 全英雄列表</span><h2>英雄</h2><p>先從 ALL 查看全英雄，再依巴龍路、打野、中路、飛龍路、輔助切換獨立 Tier 與攻略。</p><span class="link-label">查看英雄 Tier →</span></div></a>
 <a class="home-card" href="pages/items.html"><div class="home-icon">裝備</div><div><span class="kicker">已完成</span><h2>裝備</h2><p>物理、魔法、防禦、輔助與鞋子，滑鼠移入即可查看詳細資訊。</p><span class="link-label">查看裝備 →</span></div></a>
@@ -43,6 +41,6 @@
 <a class="home-card" href="pages/spells.html"><div class="home-icon">技能</div><div><span class="kicker">已完成</span><h2>召喚師技能</h2><p>召喚師技能圖示、冷卻時間與效果說明。</p><span class="link-label">查看技能 →</span></div></a>
 </section>
 </main>
-<footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
-<script src="assets/js/app.js?v=77.4"></script>
+<footer><div class="shell">© <span data-year=""></span> Wild Rift Guide</div></footer>
+<script src="assets/js/seo.js?v=78.1"></script><script src="assets/js/app.js?v=78.1"></script>
 </body></html>

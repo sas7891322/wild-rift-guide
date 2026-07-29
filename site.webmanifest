@@ -1,0 +1,25 @@
+{
+  "name": "Wild Rift Guide｜激鬥峽谷攻略資料庫",
+  "short_name": "WR Guide",
+  "description": "激鬥峽谷繁體中文英雄攻略、Tier、出裝、符文與技能資料庫。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#06101c",
+  "theme_color": "#06101c",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "/assets/images/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
