@@ -114,10 +114,21 @@
       }]:[];
     });
   }
+  function normalizeSearch(value){
+    return String(value||'')
+      .normalize('NFKD')
+      .toLocaleLowerCase('en')
+      .replace(/[\s\-_'’.’·]/g,'');
+  }
+  function heroMatches(h,query){
+    const q=normalizeSearch(query);
+    if(!q) return true;
+    return [h.name,h.enName,h.id].some(value=>normalizeSearch(value).includes(q));
+  }
   function roleHeroes(){
     const heroes=roleHeroesRaw();
     const query=state.query.trim();
-    return query ? heroes.filter(h=>String(h.name||'').includes(query)) : heroes;
+    return query ? heroes.filter(h=>heroMatches(h,query)) : heroes;
   }
 
   function buildUrl({role=state.role,heroId=state.heroId,query=state.query}={}){
@@ -502,7 +513,7 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=76'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=77.1'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 

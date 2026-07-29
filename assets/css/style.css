@@ -1324,7 +1324,7 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 .home-hero-search-field input::placeholder,.hero-list-search-field input::placeholder{color:#718399}
 .home-hero-search-results{position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:1001;border:1px solid rgba(216,184,108,.3);border-radius:16px;background:rgba(6,17,29,.98);box-shadow:0 22px 55px rgba(0,0,0,.46);padding:7px;max-height:420px;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .home-hero-search-result{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:11px;align-items:center;padding:9px 10px;border-radius:12px;border:1px solid transparent}
-.home-hero-search-result:hover,.home-hero-search-result:focus-visible{outline:0;border-color:rgba(216,184,108,.35);background:rgba(21,43,68,.9)}
+.home-hero-search-result:hover,.home-hero-search-result:focus-visible,.home-hero-search-result.is-active{outline:0;border-color:rgba(216,184,108,.35);background:rgba(21,43,68,.9)}
 .home-hero-search-result img,.home-hero-search-monogram{width:46px;height:46px;border-radius:12px;object-fit:cover;border:1px solid rgba(216,184,108,.3);background:#102137}
 .home-hero-search-monogram{display:grid;place-items:center;color:var(--gold);font-weight:900}
 .home-hero-search-result strong,.home-hero-search-result small{display:block}
@@ -1391,3 +1391,7 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
   .duo-support-grid{grid-template-columns:1fr;gap:8px}
   .duo-support-card{padding:11px}
 }
+
+
+/* v77.1｜第三階段：英雄搜尋功能正式化 */
+.home-hero-search-result.is-active{box-shadow:inset 3px 0 0 var(--gold)}
