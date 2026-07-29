@@ -1391,3 +1391,35 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
   .duo-support-grid{grid-template-columns:1fr;gap:8px}
   .duo-support-card{padding:11px}
 }
+
+/* v77｜第三階段網站功能鎖定：搜尋、篩選、排序、RWD、手機顯示 */
+.home-hero-search-result.is-active{
+  outline:0;
+  border-color:rgba(216,184,108,.55);
+  background:rgba(21,43,68,.96);
+}
+.hero-role-tab:focus-visible,.tier-hero-card:focus-visible,.hero-back-button:focus-visible,
+.hero-lane-switch button:focus-visible,.interactive-card:focus-visible,.interactive-icon:focus-visible,
+.item-tab:focus-visible,.rune-tab:focus-visible,.build-node:focus-visible{
+  outline:2px solid rgba(241,217,154,.9);
+  outline-offset:2px;
+}
+@media(max-width:900px){
+  /* V26 曾隱藏行動版說明面板；v77 恢復，讓觸控選取後可直接閱讀詳細內容。 */
+  .mobile-detail{
+    display:block!important;
+    margin:0 0 14px;
+    min-height:0;
+  }
+  .mobile-detail:empty{display:none!important}
+  .mobile-detail .empty{min-height:120px}
+}
+@media(max-width:800px){
+  .database-main>.mobile-detail{
+    position:relative;
+    z-index:1;
+    box-shadow:0 12px 30px rgba(0,0,0,.2);
+  }
+  .item-stage-section:first-of-type{margin-top:0}
+  .rune-section{margin-top:0}
+}
