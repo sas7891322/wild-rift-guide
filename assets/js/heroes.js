@@ -5,7 +5,7 @@
   const roleNames = {all:'ALL', baron:'巴龍路', jungle:'打野', mid:'中路', duo:'飛龍路', support:'輔助'};
   const tierOrder = ['S+','S','A','B','C'];
 
-  const state = { role:'all', heroId:'', query:'', heroes:[], heroCatalog:[], laneMeta:{}, runes:[], items:[], spells:[] };
+  const state = { role:'all', heroId:'', query:'', filter:'all', heroes:[], heroCatalog:[], laneMeta:{}, runes:[], items:[], spells:[] };
 
   function flattenRunes(data){ return Object.values(data || {}).flatMap(v => Array.isArray(v) ? v : []); }
   function normalizeItems(data){ return Array.isArray(data) ? data : (data?.items || []); }
@@ -125,22 +125,36 @@
     if(!q) return true;
     return [h.name,h.enName,h.id].some(value=>normalizeSearch(value).includes(q));
   }
-  function roleHeroes(){
+  function searchedHeroes(){
     const heroes=roleHeroesRaw();
     const query=state.query.trim();
     return query ? heroes.filter(h=>heroMatches(h,query)) : heroes;
   }
+  function normalizeFilter(role,filter){
+    const value=String(filter||'all');
+    if(role==='all') return ['all','single','multi'].includes(value)?value:'all';
+    return ['all',...tierOrder].includes(value)?value:'all';
+  }
+  function roleHeroes(){
+    const heroes=searchedHeroes();
+    const filter=normalizeFilter(state.role,state.filter);
+    if(filter==='all') return heroes;
+    if(state.role==='all') return heroes.filter(h=>filter==='multi'?h.roles.length>1:h.roles.length===1);
+    return heroes.filter(h=>h.tier===filter);
+  }
 
-  function buildUrl({role=state.role,heroId=state.heroId,query=state.query}={}){
+  function buildUrl({role=state.role,heroId=state.heroId,query=state.query,filter=state.filter}={}){
     const p=new URLSearchParams();
     if(role && role!=='all') p.set('role',role);
     if(heroId) p.set('hero',heroId);
     if(query) p.set('q',query);
+    const safeFilter=normalizeFilter(role,filter);
+    if(safeFilter!=='all') p.set('filter',safeFilter);
     const qs=p.toString();
     return `${location.pathname}${qs?`?${qs}`:''}`;
   }
   function makeHistoryState(view=state.heroId?'detail':'list',scrollY=0){
-    return {wrgHeroes:true,view,role:state.role,heroId:view==='detail'?state.heroId:'',query:state.query,scrollY:Number(scrollY)||0};
+    return {wrgHeroes:true,view,role:state.role,heroId:view==='detail'?state.heroId:'',query:state.query,filter:state.filter,scrollY:Number(scrollY)||0};
   }
   function syncUrl(view=state.heroId?'detail':'list',scrollY=state.heroId?0:window.scrollY){
     history.replaceState(makeHistoryState(view,scrollY),'',buildUrl());
@@ -166,7 +180,8 @@
     if(status){
       const total=roleHeroesRaw().length;
       const visible=roleHeroes().length;
-      status.textContent=state.query?`找到 ${visible} / ${total} 位英雄`:`共 ${total} 位英雄`;
+      const isLimited=Boolean(state.query)||state.filter!=='all';
+      status.textContent=isLimited?`顯示 ${visible} / ${total} 位英雄`:`共 ${total} 位英雄`;
     }
   }
 
@@ -174,9 +189,36 @@
     $$('.hero-role-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.role===state.role));
   }
 
+  function renderFilterBar(){
+    const shell=$('#heroFilterBar');
+    if(!shell) return;
+    state.filter=normalizeFilter(state.role,state.filter);
+    const source=searchedHeroes();
+    const options=state.role==='all'
+      ? [
+          {value:'all',label:'全部英雄',count:source.length},
+          {value:'single',label:'單一路線',count:source.filter(h=>h.roles.length===1).length},
+          {value:'multi',label:'多路線',count:source.filter(h=>h.roles.length>1).length}
+        ]
+      : [
+          {value:'all',label:'全部 Tier',count:source.length},
+          ...tierOrder.map(tier=>({value:tier,label:`${tier} Tier`,count:source.filter(h=>h.tier===tier).length}))
+        ];
+    shell.innerHTML=`<span class="hero-filter-label">條件篩選</span><div class="hero-filter-options" role="group" aria-label="${state.role==='all'?'依可用路線數篩選':'依 Tier 篩選'}">${options.map(option=>`<button type="button" class="hero-filter-chip ${option.value===state.filter?'active':''}" data-filter="${option.value}" aria-pressed="${option.value===state.filter}"><span>${option.label}</span><small>${option.count}</small></button>`).join('')}</div>`;
+    $$('.hero-filter-chip',shell).forEach(btn=>btn.addEventListener('click',()=>{
+      const next=normalizeFilter(state.role,btn.dataset.filter);
+      if(next===state.filter && !state.heroId) return;
+      state.filter=next;
+      state.heroId='';
+      syncUrl('list',window.scrollY);
+      renderOverview();
+    }));
+  }
+
   function renderOverview(){
     const heroes = roleHeroes();
     const content = $('#heroContent');
+    renderFilterBar();
     syncSearchUI();
     if(state.role==='all'){
       content.innerHTML = `<section class="hero-overview-shell all-heroes-shell">
@@ -187,15 +229,16 @@
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
           return detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
-        }).join('')}</div>`:'<div class="hero-search-no-result">找不到符合的英雄。</div>'}
+        }).join('')}</div>`:'<div class="hero-search-no-result">找不到符合搜尋與篩選條件的英雄。</div>'}
       </section>`;
       $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
       return;
     }
     const title = roleNames[state.role] || '英雄';
     const meta = state.laneMeta?.[state.role] || {};
-    const nativeCount = Number(meta.nativeCount ?? heroes.filter(h=>h.origin!=='cross').length);
-    const crossCount = Number(meta.crossCount ?? heroes.filter(h=>h.origin==='cross').length);
+    const limited=Boolean(state.query)||state.filter!=='all';
+    const nativeCount = limited?heroes.filter(h=>h.origin!=='cross').length:Number(meta.nativeCount ?? heroes.filter(h=>h.origin!=='cross').length);
+    const crossCount = limited?heroes.filter(h=>h.origin==='cross').length:Number(meta.crossCount ?? heroes.filter(h=>h.origin==='cross').length);
     const groups = tierOrder.map(tier => {
       const members = heroes.filter(h=>h.tier===tier);
       if(!members.length) return '';
@@ -216,7 +259,7 @@
     const countCopy = crossCount>0 ? `原生 ${nativeCount}＋跨路 ${crossCount}` : `原生 ${nativeCount}`;
     content.innerHTML = `<section class="hero-overview-shell">
       <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>各路線獨立評級 · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
-      ${groups || (state.query?'<div class="hero-search-no-result">找不到符合的英雄。</div>':`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
+      ${groups || ((state.query||state.filter!=='all')?'<div class="hero-search-no-result">找不到符合搜尋與篩選條件的英雄。</div>':`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
     </section>`;
     $$('.tier-hero-card[data-hero]', content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
   }
@@ -508,12 +551,12 @@
     resetHeroDetailScroll();
   }
 
-  function render(){ renderRoleTabs(); state.heroId ? renderDetail() : renderOverview(); }
+  function render(){ renderRoleTabs(); if(state.heroId){ renderFilterBar(); renderDetail(); } else renderOverview(); }
 
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=77.1'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
+        getJSON('../assets/data/heroes.json?v=77.2'), getJSON('../assets/data/runes.json'), getJSON('../assets/data/items.json'), getJSON('../assets/data/spells.json')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
@@ -523,10 +566,12 @@
       if(saved){
         if(validRoles.includes(saved.role)) state.role=saved.role;
         state.query=String(saved.query||'');
+        state.filter=normalizeFilter(state.role,saved.filter);
         state.heroId=saved.view==='detail'?resolveHeroId(String(saved.heroId||'')):'';
       }else{
         if(params.get('role') && validRoles.includes(params.get('role'))) state.role=params.get('role');
         state.query=String(params.get('q')||'');
+        state.filter=normalizeFilter(state.role,params.get('filter'));
         const initialHero=resolveHeroId(String(params.get('hero')||''));
         if(initialHero){
           const detailUrl=buildUrl({heroId:initialHero});
@@ -542,6 +587,7 @@
 
       $$('.hero-role-tab').forEach(btn=>btn.addEventListener('click',()=>{
         state.role=btn.dataset.role;
+        state.filter='all';
         state.heroId='';
         syncUrl('list',0);
         render();
@@ -587,6 +633,7 @@
         if(entry){
           state.role=validRoles.includes(entry.role)?entry.role:'all';
           state.query=String(entry.query||'');
+          state.filter=normalizeFilter(state.role,entry.filter);
           state.heroId=entry.view==='detail'?resolveHeroId(String(entry.heroId||'')):'';
           render();
           if(!state.heroId) restoreListScroll(entry.scrollY||0);
@@ -594,6 +641,7 @@
         }
         state.role=validRoles.includes(urlParams.get('role'))?urlParams.get('role'):'all';
         state.query=String(urlParams.get('q')||'');
+        state.filter=normalizeFilter(state.role,urlParams.get('filter'));
         state.heroId=resolveHeroId(String(urlParams.get('hero')||''));
         render();
         if(!state.heroId) restoreListScroll(0);

@@ -1395,3 +1395,21 @@ body.home-map-bg footer{background:rgba(4,13,23,.72);backdrop-filter:blur(8px)}
 
 /* v77.1｜第三階段：英雄搜尋功能正式化 */
 .home-hero-search-result.is-active{box-shadow:inset 3px 0 0 var(--gold)}
+
+
+/* V77.2 · hero condition filters */
+.hero-filter-bar{display:flex;align-items:center;gap:12px;margin:-5px 0 18px;padding:10px 12px;border:1px solid rgba(216,184,108,.2);border-radius:14px;background:rgba(7,18,31,.55)}
+.hero-filter-label{flex:0 0 auto;color:var(--gold);font-size:12px;font-weight:900;letter-spacing:.08em}
+.hero-filter-options{display:flex;align-items:center;flex-wrap:wrap;gap:7px;min-width:0}
+.hero-filter-chip{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.11);border-radius:999px;background:rgba(255,255,255,.035);color:var(--muted);padding:7px 10px;font:inherit;font-size:12px;font-weight:800;cursor:pointer;transition:.16s}
+.hero-filter-chip:hover{border-color:rgba(216,184,108,.38);color:var(--text);background:rgba(21,43,68,.78)}
+.hero-filter-chip.active{border-color:rgba(216,184,108,.62);color:#f6dda1;background:rgba(216,184,108,.12);box-shadow:inset 0 0 0 1px rgba(216,184,108,.08)}
+.hero-filter-chip small{display:grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:rgba(255,255,255,.07);color:inherit;font-size:10px;line-height:1}
+.hero-filter-chip.active small{background:rgba(216,184,108,.18)}
+@media(max-width:720px){
+  .hero-filter-bar{display:block;margin:-3px 0 14px;padding:9px 0 8px;border-left:0;border-right:0;border-radius:0;background:transparent}
+  .hero-filter-label{display:block;margin:0 3px 7px}
+  .hero-filter-options{flex-wrap:nowrap;gap:6px;overflow-x:auto;padding:0 3px 3px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .hero-filter-options::-webkit-scrollbar{display:none}
+  .hero-filter-chip{flex:0 0 auto;padding:7px 9px;font-size:11px}
+}
