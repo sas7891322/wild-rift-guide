@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>玩家找隊友 Beta｜Wild Rift Guide</title>
+<link href="../assets/css/style.css?v=78.2" rel="stylesheet"/>
+<meta content="在 Wild Rift Guide 分享激鬥峽谷遊戲 ID，依伺服器、牌位、位置、模式與上線時段尋找合適隊友。" name="description"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#06101c" name="theme-color"/>
+<meta content="Wild Rift Guide" name="application-name"/>
+<meta content="玩家找隊友 Beta｜Wild Rift Guide" property="og:title"/>
+<meta content="分享激鬥峽谷遊戲 ID，依伺服器、牌位、位置與上線時段尋找隊友。" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://wild-rift-guide.vercel.app/pages/players.html" property="og:url"/>
+<meta content="https://wild-rift-guide.vercel.app/assets/images/brand/wild-rift-guide-og.png" property="og:image"/>
+<meta content="Wild Rift Guide" property="og:site_name"/>
+<meta content="zh_TW" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="玩家找隊友 Beta｜Wild Rift Guide" name="twitter:title"/>
+<meta content="分享激鬥峽谷遊戲 ID，尋找雙排、積分、一般或 ARAM 隊友。" name="twitter:description"/>
+<meta content="https://wild-rift-guide.vercel.app/assets/images/brand/wild-rift-guide-og.png" name="twitter:image"/>
+<link href="https://wild-rift-guide.vercel.app/pages/players.html" rel="canonical"/>
+<link href="../assets/images/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/images/brand/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="../site.webmanifest" rel="manifest"/>
+<script data-wrg-structured="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://wild-rift-guide.vercel.app/"},{"@type":"ListItem","position":2,"name":"玩家找隊友","item":"https://wild-rift-guide.vercel.app/pages/players.html"}]}</script>
+</head>
+<body>
+<header class="topbar"><div class="shell topbar-inner">
+<a class="brand" href="../index.html"><span>Wild Rift</span> Guide</a>
+<nav class="nav">
+<a href="heroes.html">英雄</a>
+<a href="items.html">裝備</a>
+<a href="runes.html">符文</a>
+<a href="spells.html">召喚師技能</a>
+<a class="active" href="players.html">找隊友</a>
+</nav></div></header>
+
+<main class="shell player-page">
+<section class="page-head compact player-page-head">
+<div>
+<div class="eyebrow">PLAYER FINDER · BETA</div>
+<h1>玩家找隊友</h1>
+<p>分享遊戲 ID，依伺服器、牌位、位置、遊玩模式與上線時段找到適合一起玩的玩家。</p>
+</div>
+<div class="player-beta-badge"><span>v78.2 第一版</span><strong>先體驗介面與操作流程</strong></div>
+</section>
+
+<section class="player-demo-notice" aria-label="展示版說明">
+<div><strong>目前是前端展示版</strong><p>你發布的資料只會儲存在這台裝置的瀏覽器，不會傳給其他玩家；正式公開前會再接上登入、資料庫、檢舉與管理系統。</p></div>
+<button type="button" id="openPlayerPost">＋ 發布找隊友</button>
+</section>
+
+<section class="player-stats" aria-label="找隊友資料摘要">
+<div><span>目前顯示</span><strong id="playerVisibleCount">0</strong><small>筆貼文</small></div>
+<div><span>你的投稿</span><strong id="playerOwnCount">0</strong><small>儲存在本機</small></div>
+<div><span>貼文效期</span><strong>14</strong><small>天後自動隱藏</small></div>
+</section>
+
+<section class="player-filter-panel" aria-label="找隊友篩選">
+<div class="player-filter-heading">
+<div><span class="kicker">FILTER</span><h2>篩選玩家</h2></div>
+<button type="button" id="resetPlayerFilters">重設條件</button>
+</div>
+<div class="player-filter-grid">
+<label>搜尋
+<input id="playerKeyword" type="search" placeholder="玩家名稱、遊戲 ID 或自我介紹" autocomplete="off"/>
+</label>
+<label>伺服器
+<select id="playerServer">
+<option value="all">全部伺服器</option><option value="tw">台港澳</option><option value="sea">東南亞</option><option value="jp">日本</option><option value="kr">韓國</option><option value="other">其他</option>
+</select>
+</label>
+<label>牌位
+<select id="playerRank">
+<option value="all">全部牌位</option><option value="unranked">未定級／不打積分</option><option value="iron">鐵牌</option><option value="bronze">銅牌</option><option value="silver">銀牌</option><option value="gold">金牌</option><option value="platinum">白金</option><option value="emerald">翡翠</option><option value="diamond">鑽石</option><option value="master">大師</option><option value="grandmaster">宗師</option><option value="challenger">菁英</option>
+</select>
+</label>
+<label>常玩位置
+<select id="playerRole">
+<option value="all">全部位置</option><option value="baron">巴龍路</option><option value="jungle">打野</option><option value="mid">中路</option><option value="duo">飛龍路</option><option value="support">輔助</option><option value="fill">補位</option>
+</select>
+</label>
+<label>遊玩模式
+<select id="playerMode">
+<option value="all">全部模式</option><option value="duoRank">積分雙排</option><option value="rankTeam">積分組隊</option><option value="normal">一般對戰</option><option value="aram">ARAM</option><option value="newbie">新手交流</option>
+</select>
+</label>
+<label>上線時段
+<select id="playerTime">
+<option value="all">全部時段</option><option value="morning">早上</option><option value="afternoon">下午</option><option value="evening">晚上</option><option value="late">深夜</option><option value="weekend">週末為主</option><option value="flexible">時間彈性</option>
+</select>
+</label>
+</div>
+</section>
+
+<section class="player-list-section" aria-live="polite">
+<div class="player-list-head"><div><span class="kicker">PLAYER POSTS</span><h2>找隊友貼文</h2></div><span id="playerResultText">載入中…</span></div>
+<div class="player-card-grid" id="playerCardGrid"></div>
+<div class="player-empty" id="playerEmpty" hidden><strong>目前找不到符合條件的玩家</strong><p>可以重設篩選，或發布自己的找隊友貼文。</p><button type="button" data-open-player-post>發布找隊友</button></div>
+</section>
+
+<section class="player-safety-note">
+<strong>安全提醒</strong>
+<p>請勿公開真實姓名、電話、住址、帳號密碼、驗證碼或付款資訊。遇到要求代儲、代登入或提供外部不明連結時，請直接拒絕。</p>
+</section>
+</main>
+
+<dialog class="player-dialog" id="playerPostDialog" aria-labelledby="playerDialogTitle">
+<form method="dialog" class="player-post-form" id="playerPostForm">
+<div class="player-dialog-head"><div><span class="kicker">CREATE POST</span><h2 id="playerDialogTitle">發布找隊友</h2></div><button type="button" class="player-dialog-close" id="closePlayerPost" aria-label="關閉">×</button></div>
+<p class="player-form-intro">第一版投稿會儲存在目前瀏覽器，用來預覽正式功能的操作方式。</p>
+<div class="player-form-grid">
+<label>顯示名稱 <span>必填</span><input name="displayName" maxlength="20" required placeholder="例如：心豈"/></label>
+<label>遊戲 ID <span>必填</span><input name="riotId" maxlength="36" required placeholder="例如：心豈#TW2"/></label>
+<label>伺服器 <span>必填</span><select name="server" required><option value="">請選擇</option><option value="tw">台港澳</option><option value="sea">東南亞</option><option value="jp">日本</option><option value="kr">韓國</option><option value="other">其他</option></select></label>
+<label>目前牌位 <span>必填</span><select name="rank" required><option value="">請選擇</option><option value="unranked">未定級／不打積分</option><option value="iron">鐵牌</option><option value="bronze">銅牌</option><option value="silver">銀牌</option><option value="gold">金牌</option><option value="platinum">白金</option><option value="emerald">翡翠</option><option value="diamond">鑽石</option><option value="master">大師</option><option value="grandmaster">宗師</option><option value="challenger">菁英</option></select></label>
+<label>主要位置 <span>必填</span><select name="primaryRole" required><option value="">請選擇</option><option value="baron">巴龍路</option><option value="jungle">打野</option><option value="mid">中路</option><option value="duo">飛龍路</option><option value="support">輔助</option><option value="fill">補位</option></select></label>
+<label>次要位置 <span>選填</span><select name="secondaryRole"><option value="">沒有／不指定</option><option value="baron">巴龍路</option><option value="jungle">打野</option><option value="mid">中路</option><option value="duo">飛龍路</option><option value="support">輔助</option><option value="fill">補位</option></select></label>
+<label>想玩的模式 <span>必填</span><select name="mode" required><option value="">請選擇</option><option value="duoRank">積分雙排</option><option value="rankTeam">積分組隊</option><option value="normal">一般對戰</option><option value="aram">ARAM</option><option value="newbie">新手交流</option></select></label>
+<label>常上線時段 <span>必填</span><select name="onlineTime" required><option value="">請選擇</option><option value="morning">早上</option><option value="afternoon">下午</option><option value="evening">晚上</option><option value="late">深夜</option><option value="weekend">週末為主</option><option value="flexible">時間彈性</option></select></label>
+<label>語音偏好 <span>選填</span><select name="voice"><option value="either">都可以</option><option value="yes">可以語音</option><option value="no">不開語音</option></select></label>
+<label>聯絡方式 <span>選填</span><input name="contact" maxlength="40" placeholder="例如 Discord ID；也可留空"/></label>
+<label class="player-form-wide">自我介紹 <span>必填，最多 120 字</span><textarea name="note" required maxlength="120" rows="4" placeholder="例如：晚上固定上線，想找不嘴砲、願意溝通的雙排隊友。"></textarea><small><b id="playerNoteCount">0</b> / 120</small></label>
+</div>
+<label class="player-agree"><input type="checkbox" name="agree" required/><span>我不會公開敏感個資，也不會張貼廣告、交易、辱罵或詐騙內容。</span></label>
+<div class="player-form-actions"><button type="button" class="secondary" id="cancelPlayerPost">取消</button><button type="submit" class="primary">發布貼文</button></div>
+</form>
+</dialog>
+<div class="player-toast" id="playerToast" role="status" aria-live="polite" hidden></div>
+<footer><div class="shell">© <span data-year></span> Wild Rift Guide</div></footer>
+<script src="../assets/js/seo.js?v=78.2"></script><script src="../assets/js/app.js?v=78.2"></script><script src="../assets/js/players.js?v=78.2"></script>
+</body>
+</html>
