@@ -289,7 +289,7 @@
     if (!state.client || !state.user) return;
 
     const [favoriteResult, recentResult] = await Promise.all([
-      state.client.from('favorite_heroes').select('hero_id,created_at').eq('user_id', state.user.id).order('created_at', { ascending: false }),
+      state.client.from('favorite_heroes').select('hero_id').eq('user_id', state.user.id),
       state.client.from('recent_hero_views').select('hero_id,guide_id,role_id,viewed_at').eq('user_id', state.user.id).order('viewed_at', { ascending: false }).limit(12)
     ]);
 
@@ -523,7 +523,7 @@
       state.favorites.delete(id);
     } else {
       const { error } = await client.from('favorite_heroes').insert({ user_id: state.user.id, hero_id: id });
-      if (error) throw error;
+      if (error && String(error.code || '') !== '23505') throw error;
       state.favorites.add(id);
     }
     notifyMemberData();
