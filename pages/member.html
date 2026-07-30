@@ -7,7 +7,7 @@
 <meta content="登入激鬥峽谷攻略網會員，管理個人資料與收藏常玩的英雄。" name="description"/>
 <meta content="noindex,nofollow" name="robots"/>
 <meta content="#06101c" name="theme-color"/>
-<link href="../assets/css/style.css?v=79.0" rel="stylesheet"/>
+<link href="../assets/css/style.css?v=79.1" rel="stylesheet"/>
 <link href="../assets/images/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../assets/images/brand/apple-touch-icon.png" rel="apple-touch-icon"/>
 <link href="../site.webmanifest" rel="manifest"/>
@@ -20,7 +20,7 @@
 </nav></div></header>
 <main class="shell member-page">
 <section class="page-head compact member-page-head">
-<div><div class="eyebrow">WILD RIFT GUIDE MEMBER</div><h1>會員中心</h1><p>登入後可收藏常用英雄，之後會整合到手機首頁的個人化區塊。</p></div>
+<div><div class="eyebrow">WILD RIFT GUIDE MEMBER</div><h1>會員中心</h1><p>登入後可同步收藏英雄、最近瀏覽與會員暱稱，之後可直接整合到手機首頁。</p></div>
 </section>
 <div aria-live="polite" class="member-message" hidden id="memberMessage"></div>
 
@@ -32,7 +32,7 @@
 <section class="member-auth-shell" hidden id="memberAuthPanel">
 <div class="member-auth-intro">
 <span class="kicker">MEMBER LOGIN</span><h2>登入你的攻略帳號</h2><p>收藏英雄會同步到同一個會員帳號，不受手機或電腦限制。</p>
-<ul><li>收藏常玩英雄</li><li>集中管理個人資料</li><li>為後續找隊友功能建立會員基礎</li></ul>
+<ul><li>收藏常玩英雄</li><li>同步最近瀏覽攻略</li><li>為後續找隊友功能建立會員基礎</li></ul>
 </div>
 <div class="member-auth-card">
 <div class="member-auth-tabs" role="tablist" aria-label="會員登入或註冊">
@@ -87,13 +87,19 @@
 <div class="member-favorite-empty" id="memberFavoriteEmpty"><strong>未收藏英雄</strong><p>先選擇自己常玩或習慣的英雄。</p><a class="member-primary-button inline" href="heroes.html">前往英雄列表</a></div>
 <div class="member-favorite-grid" hidden id="memberFavoriteGrid"></div>
 </section>
+
+<section class="member-recents-panel">
+<div class="member-section-head"><div><span class="kicker">RECENTLY VIEWED</span><h2>最近瀏覽</h2><p>登入狀態下查看英雄攻略後，會同步記錄最近 12 筆。</p></div><div class="member-section-actions"><span class="member-count-badge" id="memberRecentCount">0 筆</span><button class="member-clear-button" hidden id="memberClearRecents" type="button">清除紀錄</button></div></div>
+<div class="member-recent-empty" id="memberRecentEmpty"><strong>尚無瀏覽紀錄</strong><p>打開任一英雄完整攻略後，就會顯示在這裡。</p><a class="member-primary-button inline" href="heroes.html">瀏覽英雄攻略</a></div>
+<div class="member-recent-grid" hidden id="memberRecentGrid"></div>
+</section>
 </section>
 </main>
 <footer><div class="shell">© <span data-year=""></span> Wild Rift Guide｜激鬥峽谷攻略網</div></footer>
 
-<script src="../assets/js/supabase-config.js?v=79.0"></script>
-<script src="../assets/js/auth.js?v=79.0"></script>
-<script src="../assets/js/app.js?v=79.0"></script>
-<script src="../assets/js/member.js?v=79.0"></script>
+<script src="../assets/js/supabase-config.js?v=79.1"></script>
+<script src="../assets/js/auth.js?v=79.1"></script>
+<script src="../assets/js/app.js?v=79.1"></script>
+<script src="../assets/js/member.js?v=79.1"></script>
 </body>
 </html>
