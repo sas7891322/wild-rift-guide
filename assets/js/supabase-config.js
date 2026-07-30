@@ -8,6 +8,6 @@
  */
 window.WRG_SUPABASE_CONFIG = Object.freeze({
   url: 'https://occjhtjxzysqnbzaqvao.supabase.co',
-  publishableKey: '',
+  pubpublishableKey: 'sb_publishable_你的完整金鑰'
   libraryUrl: 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js'
 });
