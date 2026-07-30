@@ -12,6 +12,18 @@
     const text=String(value||'').replace(/\s+/g,' ').trim();
     return text.length>max?`${text.slice(0,max-1)}…`:text;
   }
+  function updateHeroPageHeading({eyebrow,title,description,badgeLabel,badgeText}){
+    const eyebrowNode=$('#heroPageEyebrow');
+    const titleNode=$('#heroPageTitle');
+    const descriptionNode=$('#heroPageDescription');
+    const badgeLabelNode=$('#heroPageBadgeLabel');
+    const badgeTextNode=$('#heroPageBadgeText');
+    if(eyebrowNode) eyebrowNode.textContent=eyebrow;
+    if(titleNode) titleNode.textContent=title;
+    if(descriptionNode) descriptionNode.textContent=description;
+    if(badgeLabelNode) badgeLabelNode.textContent=badgeLabel;
+    if(badgeTextNode) badgeTextNode.textContent=badgeText;
+  }
   function heroCanonicalPath(hero){
     return `/pages/heroes.html?hero=${encodeURIComponent(hero.id)}`;
   }
@@ -19,46 +31,74 @@
     if(!window.WRGSeo) return;
     const roleLabel=state.role==='all'?'全英雄':(roleNames[state.role]||'英雄');
     const limited=Boolean(state.query)||state.filter!=='all';
-    const title=state.role==='all'
-      ? '英雄 Tier 與攻略｜Wild Rift Guide'
-      : `${roleLabel}英雄 Tier 與攻略｜Wild Rift Guide`;
-    const description=state.role==='all'
-      ? '激鬥峽谷 7.2a 英雄資料庫：瀏覽全英雄與五路 Tier，搜尋繁體中文或英文名稱，查看出裝、符文、技能加點與對局攻略。'
-      : `激鬥峽谷 7.2a ${roleLabel}英雄 Tier 與攻略，查看出裝、符文、召喚師技能、技能加點與對局建議。`;
+    const roleSeo={
+      baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2a 巴龍路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與實戰節奏。',count:'49 位巴龍路攻略'},
+      jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List',description:'激鬥峽谷 7.2a 打野英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、刷野與帶節奏方式。',count:'50 位打野攻略'},
+      mid:{title:'激鬥峽谷中路英雄推薦與 Tier List｜Wild Rift Guide',heading:'中路英雄推薦與 Tier List',description:'激鬥峽谷 7.2a 中路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與支援節奏。',count:'46 位中路攻略'},
+      duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2a 飛龍路射手英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與合適輔助。',count:'23 位飛龍路攻略'},
+      support:{title:'激鬥峽谷輔助英雄推薦與 Tier List｜Wild Rift Guide',heading:'輔助英雄推薦與 Tier List',description:'激鬥峽谷 7.2a 輔助英雄推薦、Tier 排名與完整攻略，整理輔助裝、符文、技能加點、對線與開戰保排方式。',count:'32 位輔助攻略'}
+    };
+    const current=roleSeo[state.role];
+    const title=current?.title||'激鬥峽谷英雄攻略與 Tier List｜Wild Rift Guide';
+    const description=current?.description||'激鬥峽谷 7.2a 英雄攻略資料庫，收錄 140 位英雄與 200 份位置攻略，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
+    const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
+    updateHeroPageHeading({
+      eyebrow:'激鬥峽谷 · PATCH 7.2A',title:heading,description,
+      badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
+      badgeText:current?.count||'140 位英雄 · 200 份位置攻略'
+    });
     window.WRGSeo.set({
       title,description,path,
       robots:limited?'noindex,follow':'index,follow,max-image-preview:large',
       structuredData:{
-        '@context':'https://schema.org','@type':'CollectionPage',
-        name:title,description,url:window.WRGSeo.absolute(path),inLanguage:'zh-Hant',
-        isPartOf:{'@type':'WebSite',name:'Wild Rift Guide',url:window.WRGSeo.absolute('/')}
+        '@context':'https://schema.org','@graph':[
+          {'@type':'WebSite','@id':`${window.WRGSeo.SITE_ORIGIN}/#website`,url:window.WRGSeo.absolute('/'),name:'激鬥峽谷攻略網',alternateName:'Wild Rift Guide',inLanguage:'zh-Hant-TW'},
+          {'@type':'CollectionPage',name:heading,description,url:window.WRGSeo.absolute(path),inLanguage:'zh-Hant-TW',isPartOf:{'@id':`${window.WRGSeo.SITE_ORIGIN}/#website`}},
+          {'@type':'BreadcrumbList',itemListElement:[
+            {'@type':'ListItem',position:1,name:'首頁',item:window.WRGSeo.absolute('/')},
+            {'@type':'ListItem',position:2,name:heading,item:window.WRGSeo.absolute(path)}
+          ]}
+        ]
       }
     });
   }
   function setHeroDetailSeo(hero){
     if(!window.WRGSeo||!hero) return;
     const roleLabel=roleNames[hero.roleId]||hero.role||'英雄';
-    const title=`${hero.name}${roleLabel}攻略｜出裝、符文與技能｜Wild Rift Guide`;
-    const description=clipDescription(`${hero.name}（${hero.enName||''}）7.2a ${roleLabel}攻略：${hero.summary||'提供出裝、符文、技能加點與對局建議。'}`);
+    const heading=`${hero.name}${roleLabel}攻略`;
+    const title=`${hero.name}攻略｜${roleLabel}出裝、符文、技能加點｜激鬥峽谷`;
+    const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 7.2a ${roleLabel}完整攻略，整理推薦出裝、符文搭配、召喚師技能、技能加點、對線與實戰節奏。${hero.summary||''}`);
     const path=heroCanonicalPath(hero);
+    updateHeroPageHeading({
+      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH 7.2A`,title:heading,description,
+      badgeLabel:'英雄完整攻略',badgeText:'出裝 · 符文 · 技能 · 對局'
+    });
     window.WRGSeo.set({
       title,description,path,image:hero.avatar||undefined,type:'article',
       robots:'index,follow,max-image-preview:large',
       structuredData:{
-        '@context':'https://schema.org','@type':'Article',headline:title,description,
-        url:window.WRGSeo.absolute(path),mainEntityOfPage:window.WRGSeo.absolute(path),
-        image:window.WRGSeo.absolute(String(hero.avatar||'/assets/images/brand/wild-rift-guide-og.png').replace(/^\.\.\//,'/')),
-        inLanguage:'zh-Hant',dateModified:'2026-07-29',
-        author:{'@type':'Organization',name:'Wild Rift Guide'},
-        about:{'@type':'VideoGame',name:'League of Legends: Wild Rift'}
+        '@context':'https://schema.org','@graph':[
+          {'@type':'WebSite','@id':`${window.WRGSeo.SITE_ORIGIN}/#website`,url:window.WRGSeo.absolute('/'),name:'激鬥峽谷攻略網',alternateName:'Wild Rift Guide',inLanguage:'zh-Hant-TW'},
+          {'@type':'Article','@id':`${window.WRGSeo.absolute(path)}#article`,headline:heading,name:title,description,
+            url:window.WRGSeo.absolute(path),mainEntityOfPage:window.WRGSeo.absolute(path),
+            image:window.WRGSeo.absolute(String(hero.avatar||'/assets/images/brand/wild-rift-guide-og.png').replace(/^\.\.\//,'/')),
+            inLanguage:'zh-Hant-TW',dateModified:'2026-07-30',
+            author:{'@type':'Organization',name:'Wild Rift Guide'},
+            about:{'@type':'VideoGame',name:'英雄聯盟：激鬥峽谷',alternateName:'League of Legends: Wild Rift'}},
+          {'@type':'BreadcrumbList',itemListElement:[
+            {'@type':'ListItem',position:1,name:'首頁',item:window.WRGSeo.absolute('/')},
+            {'@type':'ListItem',position:2,name:'英雄攻略',item:window.WRGSeo.absolute('/pages/heroes.html')},
+            {'@type':'ListItem',position:3,name:heading,item:window.WRGSeo.absolute(path)}
+          ]}
+        ]
       }
     });
   }
   async function shareHeroGuide(hero,button){
     const roleLabel=roleNames[hero.roleId]||hero.role||'英雄';
     const url=window.WRGSeo?.heroShareUrl(hero.id)||location.href;
-    const data={title:`${hero.name}${roleLabel}攻略｜Wild Rift Guide`,text:`${hero.name}出裝、符文、技能與對局攻略`,url};
+    const data={title:`${hero.name}攻略｜${roleLabel}出裝與符文｜激鬥峽谷`,text:`${hero.name}激鬥峽谷 7.2a ${roleLabel}出裝、符文、技能加點與對局攻略`,url};
     try{
       if(navigator.share){ await navigator.share(data); return; }
       if(navigator.clipboard?.writeText){
@@ -668,7 +708,7 @@
   async function init(){
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=78.1'), getJSON('../assets/data/runes.json?v=78.1'), getJSON('../assets/data/items.json?v=78.1'), getJSON('../assets/data/spells.json?v=78.1')
+        getJSON('../assets/data/heroes.json?v=78.3'), getJSON('../assets/data/runes.json?v=78.3'), getJSON('../assets/data/items.json?v=78.3'), getJSON('../assets/data/spells.json?v=78.3')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 

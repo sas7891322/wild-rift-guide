@@ -1,7 +1,8 @@
 (() => {
   const SITE_ORIGIN = 'https://wild-rift-guide.vercel.app';
   const DEFAULT_IMAGE = '/assets/images/brand/wild-rift-guide-og.png';
-  const SITE_NAME = 'Wild Rift Guide';
+  const SITE_NAME = '激鬥峽谷攻略網';
+  const SITE_BRAND = 'Wild Rift Guide';
 
   function absolute(path = '/') {
     try { return new URL(path, SITE_ORIGIN + '/').href; } catch (_) { return SITE_ORIGIN + '/'; }
@@ -39,6 +40,7 @@
   function set({ title, description, path = location.pathname, image = DEFAULT_IMAGE, type = 'website', robots = 'index,follow', structuredData = null }) {
     const canonical = absolute(path);
     const imageUrl = absolute(String(image || DEFAULT_IMAGE).replace(/^\.\.\//, '/'));
+    document.documentElement.lang = 'zh-Hant-TW';
     document.title = title;
     upsertMeta('meta[name="description"]', {name:'description'}, description);
     upsertMeta('meta[name="robots"]', {name:'robots'}, robots);
@@ -47,12 +49,14 @@
     upsertMeta('meta[property="og:type"]', {property:'og:type'}, type);
     upsertMeta('meta[property="og:url"]', {property:'og:url'}, canonical);
     upsertMeta('meta[property="og:image"]', {property:'og:image'}, imageUrl);
+    upsertMeta('meta[property="og:image:alt"]', {property:'og:image:alt'}, `${SITE_BRAND} 激鬥峽谷繁體中文攻略`);
     upsertMeta('meta[property="og:site_name"]', {property:'og:site_name'}, SITE_NAME);
     upsertMeta('meta[property="og:locale"]', {property:'og:locale'}, 'zh_TW');
     upsertMeta('meta[name="twitter:card"]', {name:'twitter:card'}, 'summary_large_image');
     upsertMeta('meta[name="twitter:title"]', {name:'twitter:title'}, title);
     upsertMeta('meta[name="twitter:description"]', {name:'twitter:description'}, description);
     upsertMeta('meta[name="twitter:image"]', {name:'twitter:image'}, imageUrl);
+    upsertMeta('meta[name="twitter:image:alt"]', {name:'twitter:image:alt'}, `${SITE_BRAND} 激鬥峽谷繁體中文攻略`);
     upsertLink('canonical', canonical);
     if (structuredData) setStructuredData(structuredData);
     return canonical;
@@ -61,5 +65,5 @@
     return absolute(`/share/heroes/${encodeURIComponent(heroId)}.html`);
   }
 
-  window.WRGSeo = Object.freeze({ SITE_ORIGIN, SITE_NAME, absolute, set, heroShareUrl });
+  window.WRGSeo = Object.freeze({ SITE_ORIGIN, SITE_NAME, SITE_BRAND, absolute, set, heroShareUrl });
 })();
