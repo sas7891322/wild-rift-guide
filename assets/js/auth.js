@@ -15,6 +15,7 @@
     user: null,
     profile: null,
     favorites: new Set(),
+    recentViews: [],
     initialized: false,
     error: null
   };
@@ -22,15 +23,21 @@
   let resolveReady;
   const ready = new Promise(resolve => { resolveReady = resolve; });
 
-
   async function ensureSupabaseLibrary() {
     if (window.supabase?.createClient) return window.supabase;
-    const libraryUrl = String(config.libraryUrl || 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2').trim();
+    const libraryUrl = String(
+      config.libraryUrl || 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.9'
+    ).trim();
+
     await new Promise((resolve, reject) => {
       const existing = [...document.scripts].find(script => script.src === libraryUrl || /@supabase\/supabase-js@2/.test(script.src));
       if (existing) {
+        if (window.supabase?.createClient) return resolve();
         existing.addEventListener('load', resolve, { once: true });
         existing.addEventListener('error', () => reject(new Error('Supabase 程式庫載入失敗')), { once: true });
+        window.setTimeout(() => {
+          if (window.supabase?.createClient) resolve();
+        }, 0);
         return;
       }
       const script = document.createElement('script');
@@ -41,6 +48,7 @@
       script.addEventListener('error', () => reject(new Error('Supabase 程式庫載入失敗')), { once: true });
       document.head.appendChild(script);
     });
+
     if (!window.supabase?.createClient) throw new Error('Supabase 程式庫未正確初始化');
     return window.supabase;
   }
@@ -51,6 +59,7 @@
       user: state.user,
       profile: state.profile,
       favorites: new Set(state.favorites),
+      recentViews: state.recentViews.map(item => ({ ...item })),
       initialized: state.initialized,
       error: state.error
     };
@@ -89,7 +98,7 @@
     return url.href;
   }
 
-  function safeNickname(user, profile) {
+  function safeNickname(user = state.user, profile = state.profile) {
     const nickname = String(profile?.nickname || user?.user_metadata?.nickname || '').trim();
     if (nickname) return nickname;
     const email = String(user?.email || '會員');
@@ -101,7 +110,7 @@
       link.href = memberUrl();
       link.classList.toggle('is-signed-in', Boolean(state.user));
       if (state.user) {
-        const nickname = safeNickname(state.user, state.profile);
+        const nickname = safeNickname();
         link.textContent = nickname || '我的帳號';
         link.setAttribute('aria-label', `開啟 ${nickname || '我的'}會員資料`);
       } else {
@@ -137,17 +146,38 @@
     return state.favorites;
   }
 
+  async function loadRecentViews(userId = state.user?.id) {
+    if (!state.client || !userId) {
+      state.recentViews = [];
+      return state.recentViews;
+    }
+    const { data, error } = await state.client
+      .from('recent_hero_views')
+      .select('guide_id,hero_id,role_id,viewed_at')
+      .eq('user_id', userId)
+      .order('viewed_at', { ascending: false })
+      .limit(12);
+    if (error) throw error;
+    state.recentViews = Array.isArray(data) ? data : [];
+    return state.recentViews;
+  }
+
   async function syncUser(user) {
     state.user = user || null;
     state.profile = null;
     state.favorites = new Set();
+    state.recentViews = [];
     state.error = null;
     if (state.user) {
-      try {
-        await Promise.all([loadProfile(state.user.id), loadFavorites(state.user.id)]);
-      } catch (error) {
-        state.error = error;
-        console.error('會員資料載入失敗', error);
+      const results = await Promise.allSettled([
+        loadProfile(state.user.id),
+        loadFavorites(state.user.id),
+        loadRecentViews(state.user.id)
+      ]);
+      const rejected = results.find(result => result.status === 'rejected');
+      if (rejected) {
+        state.error = rejected.reason;
+        console.error('會員資料載入失敗', rejected.reason);
       }
     }
     renderMemberLinks();
@@ -165,33 +195,23 @@
 
     try {
       await ensureSupabaseLibrary();
-    } catch (error) {
-      state.error = error;
-      state.initialized = true;
-      renderMemberLinks();
-      resolveReady(snapshot());
-      notify();
-      return;
-    }
-
-    state.client = window.supabase.createClient(
-      String(config.url).trim().replace(/\/$/, ''),
-      String(config.publishableKey || config.anonKey).trim(),
-      {
-        auth: {
-          autoRefreshToken: true,
-          persistSession: true,
-          detectSessionInUrl: false
+      state.client = window.supabase.createClient(
+        String(config.url).trim().replace(/\/$/, ''),
+        String(config.publishableKey || config.anonKey).trim(),
+        {
+          auth: {
+            autoRefreshToken: true,
+            persistSession: true,
+            detectSessionInUrl: false
+          }
         }
-      }
-    );
+      );
 
-    state.client.auth.onAuthStateChange((event, session) => {
-      if (event === 'INITIAL_SESSION') return;
-      window.setTimeout(() => syncUser(session?.user || null), 0);
-    });
+      state.client.auth.onAuthStateChange((event, session) => {
+        if (event === 'INITIAL_SESSION') return;
+        window.setTimeout(() => syncUser(session?.user || null), 0);
+      });
 
-    try {
       const { data, error } = await state.client.auth.getUser();
       if (error && !/session/i.test(error.message || '')) console.warn(error);
       await syncUser(data?.user || null);
@@ -239,6 +259,41 @@
     return state.favorites.has(id);
   }
 
+  async function recordHeroView({ guideId, heroId, roleId } = {}) {
+    await ready;
+    if (!state.client || !state.user) return false;
+    const payload = {
+      user_id: state.user.id,
+      guide_id: String(guideId || '').trim(),
+      hero_id: String(heroId || '').trim(),
+      role_id: String(roleId || '').trim(),
+      viewed_at: new Date().toISOString()
+    };
+    if (!payload.guide_id || !payload.hero_id || !['baron', 'jungle', 'mid', 'duo', 'support'].includes(payload.role_id)) {
+      return false;
+    }
+    const { error } = await state.client
+      .from('recent_hero_views')
+      .upsert(payload, { onConflict: 'user_id,guide_id' });
+    if (error) throw error;
+    state.recentViews = [payload, ...state.recentViews.filter(item => item.guide_id !== payload.guide_id)].slice(0, 12);
+    notify();
+    return true;
+  }
+
+  async function clearRecentViews() {
+    const user = await requireUser();
+    if (!user) return false;
+    const { error } = await state.client
+      .from('recent_hero_views')
+      .delete()
+      .eq('user_id', user.id);
+    if (error) throw error;
+    state.recentViews = [];
+    notify();
+    return true;
+  }
+
   window.WRGAuth = Object.freeze({
     ready,
     get client() { return state.client; },
@@ -246,6 +301,7 @@
     get user() { return state.user; },
     get profile() { return state.profile; },
     get favorites() { return new Set(state.favorites); },
+    get recentViews() { return state.recentViews.map(item => ({ ...item })); },
     snapshot,
     subscribe(listener) {
       if (typeof listener !== 'function') return () => {};
@@ -256,14 +312,19 @@
     memberUrl,
     callbackUrl,
     relativeCurrentUrl,
-    safeNickname: () => safeNickname(state.user, state.profile),
+    safeNickname,
     isFavorite: heroId => state.favorites.has(String(heroId || '')),
     toggleFavorite,
+    recordHeroView,
+    clearRecentViews,
     loadProfile,
     loadFavorites,
+    loadRecentViews,
     refresh: async () => {
       if (!state.user) return snapshot();
-      await Promise.all([loadProfile(), loadFavorites()]);
+      const results = await Promise.allSettled([loadProfile(), loadFavorites(), loadRecentViews()]);
+      const rejected = results.find(result => result.status === 'rejected');
+      state.error = rejected?.reason || null;
       renderMemberLinks();
       notify();
       return snapshot();

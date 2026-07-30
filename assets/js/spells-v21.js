@@ -31,7 +31,7 @@ function render(){
   const first=rows.find(x=>x.id===selected)||rows[0];if(first)show(first);
 }
 (async()=>{
-  SPELLS=await getJSON("../assets/data/spells.json?v=79.0");
+  SPELLS=await getJSON("../assets/data/spells.json?v=79.1");
   const cats=["全部",...new Set(SPELLS.map(x=>x.category))];
   document.querySelector("#cat").innerHTML=cats.map(x=>`<option value="${x}">${x}</option>`).join("");
   document.querySelector("#q").addEventListener("input",render);

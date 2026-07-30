@@ -11,6 +11,7 @@
   const dashboard = $('#memberDashboard');
   const recoveryPanel = $('#memberRecoveryPanel');
   const message = $('#memberMessage');
+  const roleNames = { baron: '巴龍路', jungle: '打野', mid: '中路', duo: '飛龍路', support: '輔助' };
   let heroCatalog = [];
 
   function showMessage(text = '', type = 'info') {
@@ -43,7 +44,7 @@
 
   async function loadHeroes() {
     if (heroCatalog.length) return heroCatalog;
-    const response = await fetch('../assets/data/heroes.json?v=79.0');
+    const response = await fetch('../assets/data/heroes.json?v=79.1');
     if (!response.ok) throw new Error('英雄資料載入失敗');
     const data = await response.json();
     heroCatalog = Array.isArray(data.heroCatalog) ? data.heroCatalog : [];
@@ -60,17 +61,21 @@
     showMessage('');
   }
 
+  function catalogHero(heroId) {
+    return heroCatalog.find(hero => hero.id === heroId) || null;
+  }
+
   async function renderFavorites() {
     const grid = $('#memberFavoriteGrid');
     const empty = $('#memberFavoriteEmpty');
     const count = $('#memberFavoriteCount');
-    if (!grid || !empty) return;
+    if (!grid || !empty || !count) return;
 
     await loadHeroes();
     const ids = [...auth.favorites];
     count.textContent = `${ids.length} 位`;
     const heroes = ids
-      .map(id => heroCatalog.find(hero => hero.id === id))
+      .map(catalogHero)
       .filter(Boolean)
       .sort((a, b) => String(a.enName || a.name).localeCompare(String(b.enName || b.name), 'zh-Hant'));
 
@@ -105,6 +110,34 @@
     }));
   }
 
+  async function renderRecentViews() {
+    const grid = $('#memberRecentGrid');
+    const empty = $('#memberRecentEmpty');
+    const count = $('#memberRecentCount');
+    const clearButton = $('#memberClearRecents');
+    if (!grid || !empty || !count || !clearButton) return;
+
+    await loadHeroes();
+    const recent = auth.recentViews;
+    count.textContent = `${recent.length} 筆`;
+    clearButton.hidden = recent.length === 0;
+    empty.hidden = recent.length > 0;
+    grid.hidden = recent.length === 0;
+
+    grid.innerHTML = recent.map(item => {
+      const hero = catalogHero(item.hero_id);
+      const name = hero?.name || item.hero_id;
+      const avatar = heroAvatar(hero?.avatar || hero?.roles?.find(role => role.avatar)?.avatar || '');
+      const role = roleNames[item.role_id] || '英雄';
+      const time = item.viewed_at ? new Intl.DateTimeFormat('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(item.viewed_at)) : '';
+      return `<a class="member-recent-card" href="heroes.html?hero=${encodeURIComponent(item.guide_id)}" aria-label="查看 ${name}${role}攻略">
+        <span class="member-recent-avatar">${avatar ? `<img src="${avatar}" alt="${name}" loading="lazy">` : `<i>${String(name || '?').slice(0, 1)}</i>`}</span>
+        <span class="member-recent-copy"><strong>${name}</strong><small>${role}</small><time>${time}</time></span>
+        <b aria-hidden="true">›</b>
+      </a>`;
+    }).join('');
+  }
+
   async function renderDashboard() {
     if (!auth.user) return;
     const nickname = auth.safeNickname();
@@ -114,7 +147,7 @@
     $('#profileNickname').value = nickname;
     const date = auth.profile?.created_at || auth.user.created_at;
     $('#memberJoinedAt').textContent = date ? new Intl.DateTimeFormat('zh-TW', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(date)) : '—';
-    await renderFavorites();
+    await Promise.all([renderFavorites(), renderRecentViews()]);
   }
 
   function updateView() {
@@ -128,7 +161,7 @@
       if (authState.error) showMessage('會員系統連線失敗，請檢查 Supabase 設定或網路連線。', 'error');
       return;
     }
-    if (authState.error) showMessage('部分會員資料載入失敗，請確認資料表與 RLS 設定。', 'error');
+    if (authState.error) showMessage('部分會員資料載入失敗，請確認正式 SQL 已完整執行。', 'error');
 
     const recovery = sessionStorage.getItem('wrg-password-recovery') === '1';
     recoveryPanel.hidden = !(recovery && auth.user);
@@ -150,8 +183,7 @@
     try {
       const { error } = await auth.client.auth.signInWithPassword({ email, password });
       if (error) throw error;
-      const target = safeReturn();
-      location.replace(target || 'member.html?login=1');
+      location.replace(safeReturn() || 'member.html?login=1');
     } catch (error) {
       showMessage('登入失敗，請確認 Email、密碼及信箱驗證狀態。', 'error');
     } finally {
@@ -186,9 +218,9 @@
         location.replace('member.html?registered=1');
       } else {
         form.reset();
-        showMessage('註冊資料已送出，請前往信箱完成驗證後再登入。', 'success');
         showAuthMode('login');
         $('#loginEmail').value = email;
+        showMessage('註冊資料已送出，請前往信箱完成驗證後再登入。', 'success');
       }
     } catch (error) {
       showMessage(error.message || '註冊失敗，請稍後再試。', 'error');
@@ -248,7 +280,7 @@
     setBusy(form, true);
     try {
       const [profileResult, authResult] = await Promise.all([
-        auth.client.from('profiles').update({ nickname, updated_at: new Date().toISOString() }).eq('id', auth.user.id),
+        auth.client.from('profiles').update({ nickname }).eq('id', auth.user.id),
         auth.client.auth.updateUser({ data: { nickname } })
       ]);
       if (profileResult.error) throw profileResult.error;
@@ -260,6 +292,21 @@
       showMessage(error.message || '個人資料更新失敗。', 'error');
     } finally {
       setBusy(form, false);
+    }
+  });
+
+  $('#memberClearRecents')?.addEventListener('click', async event => {
+    const button = event.currentTarget;
+    if (!confirm('確定要清除全部最近瀏覽紀錄嗎？')) return;
+    button.disabled = true;
+    try {
+      await auth.clearRecentViews();
+      await renderRecentViews();
+      showMessage('最近瀏覽紀錄已清除。', 'success');
+    } catch (error) {
+      showMessage(error.message || '清除紀錄失敗。', 'error');
+    } finally {
+      button.disabled = false;
     }
   });
 
