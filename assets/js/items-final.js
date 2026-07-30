@@ -100,7 +100,7 @@ function render(){
   showDetail(rows.find(x=>x.id===selectedId)||rows[0]);
 }
 (async()=>{
-  DATA=await getJSON("../assets/data/items.json?v=78.1");
+  DATA=await getJSON("../assets/data/items.json?v=79.0");
   document.querySelectorAll(".item-tab").forEach(btn=>btn.onclick=()=>{
     document.querySelectorAll(".item-tab").forEach(x=>x.classList.remove("active"));
     btn.classList.add("active");category=btn.dataset.category;selectedId=null;render();

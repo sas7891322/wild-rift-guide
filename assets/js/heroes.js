@@ -323,10 +323,54 @@
       if(img.complete && img.naturalWidth===0) fallback();
     });
   }
+  function favoriteButtonHTML(heroId, heroName, detail=false){
+    const label=detail?'收藏英雄':'收藏';
+    return `<button type="button" class="hero-favorite-button ${detail?'detail':''}" data-favorite-hero="${heroId}" data-hero-name="${heroName}" aria-label="${label} ${heroName}" aria-pressed="false"><span aria-hidden="true">☆</span>${detail?'<b>收藏英雄</b>':''}</button>`;
+  }
+  async function syncFavoriteButtons(root=document){
+    const buttons=$$('[data-favorite-hero]',root);
+    if(!buttons.length || !window.WRGAuth) return;
+    await window.WRGAuth.ready;
+    buttons.forEach(button=>{
+      const name=button.dataset.heroName||'英雄';
+      const active=window.WRGAuth.isFavorite(button.dataset.favoriteHero);
+      button.classList.toggle('is-favorite',active);
+      button.setAttribute('aria-pressed',String(active));
+      const icon=button.querySelector('span');
+      const text=button.querySelector('b');
+      if(icon) icon.textContent=active?'★':'☆';
+      if(text) text.textContent=active?'已收藏':'收藏英雄';
+      button.setAttribute('aria-label',`${active?'取消收藏':'收藏'} ${name}`);
+    });
+  }
+  function bindFavoriteButtons(root=document){
+    $$('[data-favorite-hero]',root).forEach(button=>button.addEventListener('click',async event=>{
+      event.preventDefault();
+      event.stopPropagation();
+      if(!window.WRGAuth) return;
+      await window.WRGAuth.ready;
+      if(!window.WRGAuth.configured || !window.WRGAuth.user){
+        location.href=window.WRGAuth.memberUrl(window.WRGAuth.relativeCurrentUrl());
+        return;
+      }
+      button.disabled=true;
+      try{
+        await window.WRGAuth.toggleFavorite(button.dataset.favoriteHero);
+        await syncFavoriteButtons(document);
+      }catch(error){
+        console.error(error);
+        window.alert('收藏操作失敗，請稍後再試。');
+      }finally{
+        button.disabled=false;
+      }
+    }));
+    syncFavoriteButtons(root);
+  }
   function bindOverviewActions(content){
     $$('.tier-hero-card[data-hero]',content).forEach(btn=>btn.addEventListener('click',()=>openHero(btn.dataset.hero)));
     $$('.hero-result-reset',content).forEach(btn=>btn.addEventListener('click',()=>resetHeroConditions()));
     bindHeroImageFallbacks(content);
+    bindFavoriteButtons(content);
   }
 
   function renderRoleTabs(){
@@ -375,7 +419,8 @@
           const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>`<i>${roleNames[r]}</i>`).join('')}</span>`;
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
-          return detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
+          const card=detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
+          return `<div class="tier-hero-card-wrap">${card}${favoriteButtonHTML(h.id,h.name)}</div>`;
         }).join('')}</div>`:noResultHTML()}
       </section>`;
       bindOverviewActions(content);
@@ -396,9 +441,10 @@
             const avatar=h.avatar||'';
             const media=`<span class="tier-hero-avatar-wrap">${avatar?`<img src="${avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy" data-hero-fallback data-fallback-letter="${h.name.slice(0,1)}">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
             const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}`;
-            return h.detailHeroId
+            const card=h.detailHeroId
               ? `<button class="tier-hero-card" data-hero="${h.detailHeroId}">${label}</button>`
               : `<div class="tier-hero-card is-pending" title="頭像與詳細資料待補">${label}</div>`;
+            return `<div class="tier-hero-card-wrap">${card}${favoriteButtonHTML(h.id,h.name)}</div>`;
           }).join('')}
         </div>
       </section>`;
@@ -673,7 +719,7 @@
     const suitableSupportSection=renderSuitableSupports(hero);
 
     $('#heroContent').innerHTML=`
-      <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button><div class="hero-detail-actions">${laneSwitch}<button id="shareHeroGuide" class="hero-share-button" type="button">分享攻略</button></div></div>
+      <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button><div class="hero-detail-actions">${laneSwitch}${favoriteButtonHTML(baseIdOf(hero),hero.name,true)}<button id="shareHeroGuide" class="hero-share-button" type="button">分享攻略</button></div></div>
       <section class="hero-profile">
         <section class="hero-profile-hero">
           ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy" data-hero-fallback data-fallback-letter="${hero.name.slice(0,1)}" data-fallback-class="hero-avatar hero-avatar-placeholder">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
@@ -692,6 +738,7 @@
       </section>`;
 
     bindHeroImageFallbacks($('#heroContent'));
+    bindFavoriteButtons($('#heroContent'));
 
     $('#shareHeroGuide')?.addEventListener('click',event=>shareHeroGuide(hero,event.currentTarget));
 
@@ -706,9 +753,10 @@
   function render(){ renderRoleTabs(); if(state.heroId){ renderFilterBar(); renderDetail(); } else renderOverview(); }
 
   async function init(){
+    window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=78.3'), getJSON('../assets/data/runes.json?v=78.3'), getJSON('../assets/data/items.json?v=78.3'), getJSON('../assets/data/spells.json?v=78.3')
+        getJSON('../assets/data/heroes.json?v=79.0'), getJSON('../assets/data/runes.json?v=79.0'), getJSON('../assets/data/items.json?v=79.0'), getJSON('../assets/data/spells.json?v=79.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
