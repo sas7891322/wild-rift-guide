@@ -249,7 +249,7 @@
 - 未修改 140 位英雄、200 份位置攻略、Tier、出裝、符文、技能或對局內容。
 
 
-## v79.0 會員系統
+## v79.1 會員系統
 
 - Email 註冊、信箱驗證、登入、登出與重設密碼。
 - 會員暱稱與個人資料。
@@ -258,3 +258,13 @@
 - 全站導覽依登入狀態顯示「登入」或會員暱稱。
 - 使用 Supabase Auth、Postgres 與 Row Level Security；設定方式請見 `SUPABASE_SETUP.md`。
 - 本版先完成會員基礎，首頁 App 化與官方資訊導覽留待後續版本。
+
+
+## v79.1｜正式會員系統
+
+- 完成 Email 註冊、信箱驗證、登入、登出、忘記密碼與重設密碼流程。
+- 完成會員暱稱、收藏英雄、圓形收藏頭像、最近瀏覽與清除紀錄。
+- 新增 `profiles`、`favorite_heroes`、`recent_hero_views` 正式 SQL。
+- 新增新會員 Profile Trigger、暱稱更新時間 Trigger、RLS、最小權限 Grant 與驗證 SQL。
+- Project URL 已預填；正式啟用只需執行 SQL、設定回傳網址並貼入 Publishable key。
+- 首頁 App 化與官方更新資訊仍不在本版範圍。
