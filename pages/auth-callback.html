@@ -9,17 +9,14 @@
 <link href="../assets/css/style.css?v=79.1" rel="stylesheet"/>
 <link href="../assets/images/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
 </head>
-<body>
-<main class="auth-callback-page">
-<section class="auth-callback-card">
-<div class="auth-callback-spinner" aria-hidden="true"></div>
-<span class="kicker">MEMBER VERIFICATION</span>
-<h1>正在驗證會員資料</h1>
-<p id="authCallbackStatus">請稍候，不要關閉此頁面。</p>
-<a hidden id="authCallbackBack" href="member.html">返回會員中心</a>
-</section>
+<body class="auth-callback-page">
+<main class="auth-callback-card">
+<span class="auth-callback-spinner" aria-hidden="true"></span>
+<div class="eyebrow">WILD RIFT GUIDE MEMBER</div>
+<h1 id="authCallbackStatus">正在確認會員驗證…</h1>
+<p id="authCallbackDetail">請稍候，不要關閉這個頁面。</p>
+<a class="member-primary-button inline" hidden id="authCallbackAction" href="member.html">返回會員頁</a>
 </main>
-
 <script src="../assets/js/supabase-config.js?v=79.1"></script>
 <script src="../assets/js/auth.js?v=79.1"></script>
 <script src="../assets/js/auth-callback.js?v=79.1"></script>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>會員中心｜收藏英雄｜激鬥峽谷攻略網</title>
-<meta content="登入激鬥峽谷攻略網會員，管理個人資料與收藏常玩的英雄。" name="description"/>
+<title>會員登入與帳號設定｜激鬥峽谷攻略網</title>
+<meta content="登入或註冊激鬥峽谷攻略網會員，管理顯示名稱與帳號設定。" name="description"/>
 <meta content="noindex,nofollow" name="robots"/>
 <meta content="#06101c" name="theme-color"/>
 <link href="../assets/css/style.css?v=79.1" rel="stylesheet"/>
@@ -20,50 +20,52 @@
 </nav></div></header>
 <main class="shell member-page">
 <section class="page-head compact member-page-head">
-<div><div class="eyebrow">WILD RIFT GUIDE MEMBER</div><h1>會員中心</h1><p>登入後可同步收藏英雄、最近瀏覽與會員暱稱，之後可直接整合到手機首頁。</p></div>
+<div class="eyebrow">WILD RIFT GUIDE MEMBER</div>
+<h1>會員中心</h1>
+<p>登入後即可保留會員名稱；收藏英雄與最近瀏覽會在下一階段接上首頁。</p>
 </section>
 <div aria-live="polite" class="member-message" hidden id="memberMessage"></div>
 
 <section class="member-setup-panel" hidden id="memberSetupRequired">
 <div class="member-setup-icon">!</div>
-<div><span class="kicker">尚未連接資料庫</span><h2>會員系統程式已完成，還需要設定 Supabase</h2><p>請依照根目錄的 <code>SUPABASE_SETUP.md</code> 建立資料表，並把 Project URL 與 Publishable key 貼到 <code>assets/js/supabase-config.js</code>。</p><p class="member-security-note">請勿將 service_role key 放進網站檔案。</p></div>
+<div><span class="kicker">尚未完成最後設定</span><h2>請填入 Supabase Publishable key</h2><p>打開 <code>assets/js/supabase-config.js</code>，把 API Keys 頁面的 <code>sb_publishable_...</code> 貼到 <code>publishableKey</code>。</p><p class="member-security-note">請勿填入 Secret key、service_role key 或 sb_secret_...。</p></div>
 </section>
 
 <section class="member-auth-shell" hidden id="memberAuthPanel">
-<div class="member-auth-intro">
-<span class="kicker">MEMBER LOGIN</span><h2>登入你的攻略帳號</h2><p>收藏英雄會同步到同一個會員帳號，不受手機或電腦限制。</p>
-<ul><li>收藏常玩英雄</li><li>同步最近瀏覽攻略</li><li>為後續找隊友功能建立會員基礎</li></ul>
+<div class="member-auth-visual">
+<span class="member-auth-mark">WR</span>
+<div><span class="kicker">MEMBER ACCOUNT</span><h2 id="memberAuthTitle">登入攻略帳號</h2><p id="memberAuthDescription">會員名稱與登入狀態會同步到同一個帳號。</p></div>
 </div>
 <div class="member-auth-card">
-<div class="member-auth-tabs" role="tablist" aria-label="會員登入或註冊">
-<button class="member-auth-tab active" data-auth-mode="login" role="tab" aria-selected="true" type="button">登入</button>
-<button class="member-auth-tab" data-auth-mode="register" role="tab" aria-selected="false" type="button">註冊</button>
-</div>
 <form class="member-auth-form" data-auth-form="login" id="memberLoginForm">
 <label>Email<input autocomplete="email" id="loginEmail" inputmode="email" required type="email"/></label>
 <label>密碼<input autocomplete="current-password" id="loginPassword" minlength="8" required type="password"/></label>
 <button class="member-primary-button" type="submit">登入</button>
-<button class="member-text-button" id="showForgotPassword" type="button">忘記密碼？</button>
+<button class="member-text-button member-auth-switch" data-auth-mode="forgot" type="button">忘記密碼？</button>
+<div class="member-auth-divider"><span>還沒有帳號？</span></div>
+<button class="member-secondary-button member-auth-switch" data-auth-mode="register" type="button">建立會員帳號</button>
 </form>
+
 <form class="member-auth-form" data-auth-form="register" hidden id="memberRegisterForm">
-<label>顯示暱稱<input autocomplete="nickname" id="registerNickname" maxlength="20" minlength="2" placeholder="例如：心豈" required type="text"/></label>
+<label>顯示名稱<input autocomplete="nickname" id="registerDisplayName" maxlength="20" minlength="2" placeholder="例如：心豈" required type="text"/></label>
 <label>Email<input autocomplete="email" id="registerEmail" inputmode="email" required type="email"/></label>
 <label>密碼<input autocomplete="new-password" id="registerPassword" minlength="8" placeholder="至少 8 個字元" required type="password"/></label>
 <label>確認密碼<input autocomplete="new-password" id="registerPasswordConfirm" minlength="8" required type="password"/></label>
 <button class="member-primary-button" type="submit">建立帳號</button>
-<p class="member-form-note">註冊後可能需要先到信箱完成驗證。</p>
+<p class="member-form-note">註冊後請前往信箱完成 Email 驗證。</p>
+<button class="member-text-button member-auth-switch" data-auth-mode="login" type="button">返回登入</button>
 </form>
+
 <form class="member-auth-form" data-auth-form="forgot" hidden id="memberForgotForm">
-<div class="member-form-heading"><strong>重設密碼</strong><p>輸入註冊 Email，我們會寄送重設連結。</p></div>
 <label>Email<input autocomplete="email" id="forgotEmail" inputmode="email" required type="email"/></label>
 <button class="member-primary-button" type="submit">寄送重設信件</button>
-<button class="member-text-button" id="backToLogin" type="button">返回登入</button>
+<button class="member-text-button member-auth-switch" data-auth-mode="login" type="button">返回登入</button>
 </form>
 </div>
 </section>
 
 <section class="member-recovery-card" hidden id="memberRecoveryPanel">
-<span class="kicker">RESET PASSWORD</span><h2>設定新的會員密碼</h2>
+<span class="kicker">RESET PASSWORD</span><h2>設定新的會員密碼</h2><p>新密碼至少需要 8 個字元。</p>
 <form id="memberRecoveryForm">
 <label>新密碼<input autocomplete="new-password" id="recoveryPassword" minlength="8" required type="password"/></label>
 <label>確認新密碼<input autocomplete="new-password" id="recoveryPasswordConfirm" minlength="8" required type="password"/></label>
@@ -74,29 +76,18 @@
 <section class="member-dashboard" hidden id="memberDashboard">
 <div class="member-profile-card">
 <div class="member-profile-summary"><span class="member-profile-avatar" id="memberAvatarLetter">會</span><div><span class="kicker">MY PROFILE</span><h2 id="memberGreeting">會員，歡迎回來</h2><p id="memberEmail"></p></div></div>
-<div class="member-profile-meta"><span>加入日期<strong id="memberJoinedAt">—</strong></span></div>
+<div class="member-profile-meta"><span>加入日期<strong id="memberJoinedAt">—</strong></span><span>會員狀態<strong class="status-ok">已登入</strong></span></div>
 <form class="member-profile-form" id="memberProfileForm">
-<label>顯示暱稱<input id="profileNickname" maxlength="20" minlength="2" required type="text"/></label>
-<button class="member-secondary-button" type="submit">儲存暱稱</button>
+<div class="member-form-heading" id="account-settings"><span class="kicker">ACCOUNT SETTINGS</span><h3>帳號設定</h3><p>這個名稱會顯示在網站的會員入口，之後也會用於找隊友資料。</p></div>
+<label>顯示名稱<input id="profileDisplayName" maxlength="20" minlength="2" required type="text"/></label>
+<button class="member-secondary-button" type="submit">儲存顯示名稱</button>
 </form>
-<button class="member-logout-button" id="memberLogout" type="button">登出帳號</button>
+<button class="member-logout-button" id="memberLogout" type="button">登出此裝置</button>
 </div>
-
-<section class="member-favorites-panel">
-<div class="member-section-head"><div><span class="kicker">FAVORITE CHAMPIONS</span><h2>收藏英雄</h2><p>在英雄列表或攻略頁點擊星號，就能加入這裡。</p></div><span class="member-count-badge" id="memberFavoriteCount">0 位</span></div>
-<div class="member-favorite-empty" id="memberFavoriteEmpty"><strong>未收藏英雄</strong><p>先選擇自己常玩或習慣的英雄。</p><a class="member-primary-button inline" href="heroes.html">前往英雄列表</a></div>
-<div class="member-favorite-grid" hidden id="memberFavoriteGrid"></div>
-</section>
-
-<section class="member-recents-panel">
-<div class="member-section-head"><div><span class="kicker">RECENTLY VIEWED</span><h2>最近瀏覽</h2><p>登入狀態下查看英雄攻略後，會同步記錄最近 12 筆。</p></div><div class="member-section-actions"><span class="member-count-badge" id="memberRecentCount">0 筆</span><button class="member-clear-button" hidden id="memberClearRecents" type="button">清除紀錄</button></div></div>
-<div class="member-recent-empty" id="memberRecentEmpty"><strong>尚無瀏覽紀錄</strong><p>打開任一英雄完整攻略後，就會顯示在這裡。</p><a class="member-primary-button inline" href="heroes.html">瀏覽英雄攻略</a></div>
-<div class="member-recent-grid" hidden id="memberRecentGrid"></div>
-</section>
+<div class="member-next-stage-card"><span class="kicker">NEXT · v79.2</span><h2>下一階段：收藏英雄與最近瀏覽</h2><p>會員登入基礎完成後，下一版會把圓形收藏英雄與最近瀏覽正式接到會員帳號與手機首頁。</p></div>
 </section>
 </main>
-<footer><div class="shell">© <span data-year=""></span> Wild Rift Guide｜激鬥峽谷攻略網</div></footer>
-
+<footer><div class="shell">© <span data-year></span> Wild Rift Guide｜激鬥峽谷攻略網</div></footer>
 <script src="../assets/js/supabase-config.js?v=79.1"></script>
 <script src="../assets/js/auth.js?v=79.1"></script>
 <script src="../assets/js/app.js?v=79.1"></script>
