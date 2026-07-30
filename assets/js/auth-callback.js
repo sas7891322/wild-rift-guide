@@ -1,50 +1,57 @@
-(async () => {
+(() => {
   'use strict';
 
   const auth = window.WRGAuth;
-  const status = document.querySelector('#authCallbackStatus');
   const params = new URLSearchParams(location.search);
   const flow = params.get('flow') || 'signup';
+  const status = document.getElementById('authCallbackStatus');
+  const detail = document.getElementById('authCallbackDetail');
+  const action = document.getElementById('authCallbackAction');
 
-  function setStatus(text, error = false) {
-    if (!status) return;
-    status.textContent = text;
-    status.classList.toggle('error', error);
+  function setState(title, description, type = '') {
+    status.textContent = title;
+    detail.textContent = description;
+    document.body.dataset.callbackState = type;
   }
 
-  await auth.ready;
-  if (!auth.configured || !auth.client) {
-    setStatus('會員資料庫尚未設定，無法完成驗證。', true);
-    return;
-  }
-
-  try {
-    const code = params.get('code');
+  function errorFromUrl() {
     const hash = new URLSearchParams(location.hash.replace(/^#/, ''));
-    let error = null;
+    return params.get('error_description') || hash.get('error_description') || params.get('error') || hash.get('error');
+  }
 
-    if (code) {
-      ({ error } = await auth.client.auth.exchangeCodeForSession(code));
-    } else if (hash.get('access_token') && hash.get('refresh_token')) {
-      ({ error } = await auth.client.auth.setSession({
-        access_token: hash.get('access_token'),
-        refresh_token: hash.get('refresh_token')
-      }));
+  auth.ready.then(async () => {
+    const urlError = errorFromUrl();
+    if (urlError) {
+      setState('驗證沒有完成', decodeURIComponent(String(urlError).replace(/\+/g, ' ')), 'error');
+      action.hidden = false;
+      return;
     }
-    if (error) throw error;
+
+    if (!auth.configured || !auth.client) {
+      setState('會員系統尚未連線', '請先在網站設定 Publishable key，再重新開啟驗證連結。', 'error');
+      action.hidden = false;
+      return;
+    }
 
     if (flow === 'recovery') {
-      sessionStorage.setItem('wrg-password-recovery', '1');
-      setStatus('驗證完成，正在前往設定新密碼…');
-      location.replace('member.html?reset=1');
-    } else {
-      setStatus('信箱驗證完成，正在前往會員中心…');
-      location.replace('member.html?verified=1');
+      if (!auth.user) {
+        setState('重設連結已失效', '請回到登入頁重新寄送密碼重設信件。', 'error');
+        action.hidden = false;
+        return;
+      }
+      try { sessionStorage.setItem('wrg-password-recovery', '1'); } catch (_) {}
+      setState('驗證完成', '正在前往設定新密碼…', 'success');
+      window.setTimeout(() => location.replace('member.html?mode=recovery'), 800);
+      return;
     }
-  } catch (error) {
-    console.error(error);
-    setStatus('驗證連結無效或已過期，請返回會員頁重新操作。', true);
-    const link = document.querySelector('#authCallbackBack');
-    if (link) link.hidden = false;
-  }
+
+    if (auth.user) {
+      setState('Email 驗證完成', '會員帳號已啟用，正在前往會員中心…', 'success');
+      window.setTimeout(() => location.replace('member.html?verified=1'), 800);
+      return;
+    }
+
+    setState('驗證連結已處理', '請返回會員頁，使用剛才建立的 Email 與密碼登入。', 'success');
+    action.hidden = false;
+  });
 })();

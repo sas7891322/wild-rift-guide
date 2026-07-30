@@ -1,14 +1,13 @@
 /*
- * Wild Rift Guide v79.1 正式會員系統設定
+ * Wild Rift Guide v79.1 會員系統設定
  *
- * Project URL 已填入。請只將 Supabase 的 Publishable key 貼到下方。
- * Publishable key 通常以 sb_publishable_ 開頭，可安全用於瀏覽器前端；
- * 真正資料權限由 supabase/wild-rift-guide-member.sql 的 RLS 規則保護。
+ * 只需把 Supabase Dashboard 內的 Publishable key 貼到 publishableKey。
+ * Publishable key 可放在瀏覽器前端；資料存取仍由資料表 RLS 規則保護。
  *
- * 絕對不要把 Secret key、service_role key 或 sb_secret_... 放進此檔案。
+ * 絕對不要填入 Secret key、service_role key 或 sb_secret_...。
  */
 window.WRG_SUPABASE_CONFIG = Object.freeze({
   url: 'https://occjhtjxzysqnbzaqvao.supabase.co',
   publishableKey: '',
-  libraryUrl: 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.9'
+  libraryUrl: 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js'
 });
