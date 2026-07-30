@@ -1,3 +1,23 @@
+# Wild Rift Guide v79.1｜正式會員前端
+
+本版新增：
+- Supabase Email 註冊、信箱驗證、登入與登出。
+- 忘記密碼、驗證回傳與設定新密碼。
+- 會員顯示名稱與帳號設定。
+- 全站導覽列登入狀態。
+- 登入後點擊會員名稱，手機由底部滑出會員選單。
+- 保留 v78.3 的 140 位英雄、200 份位置攻略與繁體中文 SEO。
+
+啟用方式：
+1. 已完成 Supabase SQL 與 RLS。
+2. 到 `assets/js/supabase-config.js` 填入 `sb_publishable_...`。
+3. Supabase URL Configuration 設定正式網站網址與驗證回傳網址。
+4. 覆蓋 GitHub Repository 後 Commit / Push，等待 Vercel 部署。
+
+> 不得填入 Secret key、service_role key 或 `sb_secret_...`。
+
+---
+
 # Wild Rift Guide V2.1
 
 更新內容：
@@ -247,24 +267,3 @@
 - 200 份英雄攻略會依英雄與位置產生「英雄名稱＋攻略／出裝／符文／技能加點」標題與 Article、Breadcrumb 結構化資料。
 - 首頁新增繁體中文內容說明與五路描述性內部連結，sitemap 新增攻略專區。
 - 未修改 140 位英雄、200 份位置攻略、Tier、出裝、符文、技能或對局內容。
-
-
-## v79.1 會員系統
-
-- Email 註冊、信箱驗證、登入、登出與重設密碼。
-- 會員暱稱與個人資料。
-- 英雄列表及英雄攻略頁可收藏／取消收藏英雄。
-- 會員中心以圓形英雄頭像顯示收藏；沒有收藏時顯示「未收藏英雄」。
-- 全站導覽依登入狀態顯示「登入」或會員暱稱。
-- 使用 Supabase Auth、Postgres 與 Row Level Security；設定方式請見 `SUPABASE_SETUP.md`。
-- 本版先完成會員基礎，首頁 App 化與官方資訊導覽留待後續版本。
-
-
-## v79.1｜正式會員系統
-
-- 完成 Email 註冊、信箱驗證、登入、登出、忘記密碼與重設密碼流程。
-- 完成會員暱稱、收藏英雄、圓形收藏頭像、最近瀏覽與清除紀錄。
-- 新增 `profiles`、`favorite_heroes`、`recent_hero_views` 正式 SQL。
-- 新增新會員 Profile Trigger、暱稱更新時間 Trigger、RLS、最小權限 Grant 與驗證 SQL。
-- Project URL 已預填；正式啟用只需執行 SQL、設定回傳網址並貼入 Publishable key。
-- 首頁 App 化與官方更新資訊仍不在本版範圍。
