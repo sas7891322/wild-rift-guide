@@ -36,7 +36,7 @@
     "v78.1 第四階段 SEO 與分享設定：新增各頁 metadata、Open Graph、Twitter Card、結構化資料、favicon、PWA manifest、robots、sitemap 與 200 份英雄攻略分享預覽入口。",
     "v78.2 玩家找隊友 Beta：新增找隊友頁、條件篩選、本機發布、複製遊戲 ID、刪除自己的投稿、示範貼文隱藏與 14 天效期；正式公開資料庫尚未啟用。",
     "v78.3 繁體中文搜尋優化：全站標題、描述與可見主標題改為中文搜尋導向；新增攻略專區、五路中文入口、內部連結與動態英雄／路線結構化資料。",
-    "v79.1 正式會員系統：完成 Supabase Email 註冊、信箱驗證、登入、登出、密碼重設、個人暱稱、英雄收藏、最近瀏覽、會員中心與 RLS 權限；首頁 App 化留待下一階段。"
+    "v79.1 正式會員前端：新增 Email 註冊、信箱驗證、登入、登出、忘記密碼、密碼重設、會員顯示名稱、全站會員入口與手機底部會員選單。"
   ],
-  "dataVersion": "7.2a-v79.1-formal-member-system"
+  "dataVersion": "7.2a-v79.1-member-auth-frontend"
 }
