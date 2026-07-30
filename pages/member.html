@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>會員登入與帳號設定｜激鬥峽谷攻略網</title>
-<meta content="登入或註冊激鬥峽谷攻略網會員，管理顯示名稱與帳號設定。" name="description"/>
+<title>會員中心｜收藏英雄與最近瀏覽｜激鬥峽谷攻略網</title>
+<meta content="登入激鬥峽谷攻略網會員，管理顯示名稱、收藏英雄與最近瀏覽。" name="description"/>
 <meta content="noindex,nofollow" name="robots"/>
 <meta content="#06101c" name="theme-color"/>
-<link href="../assets/css/style.css?v=79.1" rel="stylesheet"/>
+<link href="../assets/css/style.css?v=79.3" rel="stylesheet"/>
 <link href="../assets/images/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../assets/images/brand/apple-touch-icon.png" rel="apple-touch-icon"/>
 <link href="../site.webmanifest" rel="manifest"/>
@@ -22,9 +22,13 @@
 <section class="page-head compact member-page-head">
 <div class="eyebrow">WILD RIFT GUIDE MEMBER</div>
 <h1>會員中心</h1>
-<p>登入後即可保留會員名稱；收藏英雄與最近瀏覽會在下一階段接上首頁。</p>
+<p>登入後可同步會員名稱、收藏英雄與最近瀏覽，並在首頁快速查看。</p>
 </section>
 <div aria-live="polite" class="member-message" hidden id="memberMessage"></div>
+<div class="member-connection-row">
+  <div class="member-connection-status" hidden id="memberConnectionStatus"></div>
+  <button class="member-connection-retry" id="memberRetryConnection" type="button">重新檢查連線</button>
+</div>
 
 <section class="member-setup-panel" hidden id="memberSetupRequired">
 <div class="member-setup-icon">!</div>
@@ -34,7 +38,7 @@
 <section class="member-auth-shell" hidden id="memberAuthPanel">
 <div class="member-auth-visual">
 <span class="member-auth-mark">WR</span>
-<div><span class="kicker">MEMBER ACCOUNT</span><h2 id="memberAuthTitle">登入攻略帳號</h2><p id="memberAuthDescription">會員名稱與登入狀態會同步到同一個帳號。</p></div>
+<div><span class="kicker">MEMBER ACCOUNT</span><h2 id="memberAuthTitle">登入攻略帳號</h2><p id="memberAuthDescription">會員名稱、收藏英雄與最近瀏覽會同步到同一個帳號。</p></div>
 </div>
 <div class="member-auth-card">
 <form class="member-auth-form" data-auth-form="login" id="memberLoginForm">
@@ -76,7 +80,7 @@
 <section class="member-dashboard" hidden id="memberDashboard">
 <div class="member-profile-card">
 <div class="member-profile-summary"><span class="member-profile-avatar" id="memberAvatarLetter">會</span><div><span class="kicker">MY PROFILE</span><h2 id="memberGreeting">會員，歡迎回來</h2><p id="memberEmail"></p></div></div>
-<div class="member-profile-meta"><span>加入日期<strong id="memberJoinedAt">—</strong></span><span>會員狀態<strong class="status-ok">已登入</strong></span></div>
+<div class="member-profile-meta"><span>加入日期<strong id="memberJoinedAt">—</strong></span><span>會員狀態<strong class="status-ok">已登入</strong></span><span>收藏英雄<strong id="memberFavoriteStat">0</strong></span><span>最近瀏覽<strong id="memberRecentStat">0</strong></span></div>
 <form class="member-profile-form" id="memberProfileForm">
 <div class="member-form-heading" id="account-settings"><span class="kicker">ACCOUNT SETTINGS</span><h3>帳號設定</h3><p>這個名稱會顯示在網站的會員入口，之後也會用於找隊友資料。</p></div>
 <label>顯示名稱<input id="profileDisplayName" maxlength="20" minlength="2" required type="text"/></label>
@@ -84,13 +88,30 @@
 </form>
 <button class="member-logout-button" id="memberLogout" type="button">登出此裝置</button>
 </div>
-<div class="member-next-stage-card"><span class="kicker">NEXT · v79.2</span><h2>下一階段：收藏英雄與最近瀏覽</h2><p>會員登入基礎完成後，下一版會把圓形收藏英雄與最近瀏覽正式接到會員帳號與手機首頁。</p></div>
+
+<section class="member-library-card" id="favorite-heroes">
+  <div class="member-library-heading">
+    <div><span class="kicker">FAVORITE HEROES</span><h2>收藏英雄</h2><p>收藏會同步到同一個會員帳號。</p></div>
+    <span class="member-library-count" id="memberFavoriteCount">0</span>
+  </div>
+  <p class="member-library-empty" id="memberFavoriteEmpty">未收藏英雄</p>
+  <div class="member-hero-grid" id="memberFavoriteGrid"></div>
+</section>
+
+<section class="member-library-card" id="recently-viewed">
+  <div class="member-library-heading">
+    <div><span class="kicker">RECENTLY VIEWED</span><h2>最近瀏覽</h2><p>保留最近查看過的英雄攻略。</p></div>
+    <div class="member-library-actions"><span class="member-library-count" id="memberRecentCount">0</span><button class="member-library-clear" hidden id="memberRecentClear" type="button">清除</button></div>
+  </div>
+  <p class="member-library-empty" id="memberRecentEmpty">尚無最近瀏覽</p>
+  <div class="member-hero-grid recent" id="memberRecentGrid"></div>
+</section>
 </section>
 </main>
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide｜激鬥峽谷攻略網</div></footer>
-<script src="../assets/js/supabase-config.js?v=79.1"></script>
-<script src="../assets/js/auth.js?v=79.1"></script>
-<script src="../assets/js/app.js?v=79.1"></script>
-<script src="../assets/js/member.js?v=79.1"></script>
+<script src="../assets/js/supabase-config.js?v=79.3"></script>
+<script src="../assets/js/auth.js?v=79.3"></script>
+<script src="../assets/js/app.js?v=79.3"></script>
+<script src="../assets/js/member.js?v=79.3"></script>
 </body>
 </html>

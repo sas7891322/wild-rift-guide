@@ -23,13 +23,49 @@
     recentViews: [],
     initialized: false,
     error: null,
-    diagnostics: null
+    diagnostics: null,
+    memberDataErrors: {}
   };
 
   const listeners = new Set();
   const recentWriteTimes = new Map();
+  const MEMBER_CACHE_PREFIX = 'wrg.member.v79.3';
+  let syncGeneration = 0;
   let resolveReady;
   const ready = new Promise((resolve) => { resolveReady = resolve; });
+
+  function cacheKey(type, userId = state.user?.id) {
+    return `${MEMBER_CACHE_PREFIX}.${type}.${String(userId || '')}`;
+  }
+
+  function readCache(type, userId) {
+    try {
+      const raw = localStorage.getItem(cacheKey(type, userId));
+      return raw ? JSON.parse(raw) : null;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function writeCache(type, value, userId = state.user?.id) {
+    if (!userId) return;
+    try { localStorage.setItem(cacheKey(type, userId), JSON.stringify(value)); } catch (_) {}
+  }
+
+  function loadCachedMemberData(userId) {
+    const favoriteIds = readCache('favorites', userId);
+    const recentRows = readCache('recentViews', userId);
+    if (Array.isArray(favoriteIds)) {
+      state.favorites = new Set(favoriteIds.map((value) => String(value || '').trim()).filter(Boolean));
+    }
+    if (Array.isArray(recentRows)) state.recentViews = recentRows.slice(0, 12);
+  }
+
+  function persistMemberCache() {
+    if (!state.user) return;
+    writeCache('favorites', [...state.favorites]);
+    writeCache('recentViews', state.recentViews.slice(0, 12));
+  }
 
   function currentRelativeUrl() {
     const url = new URL(location.href);
@@ -59,6 +95,7 @@
   function displayName(user = state.user, profile = state.profile) {
     const candidates = [
       profile?.display_name,
+      profile?.nickname,
       profile?.username,
       user?.user_metadata?.display_name,
       user?.user_metadata?.nickname
@@ -151,7 +188,8 @@
       recentViews: [...state.recentViews],
       initialized: state.initialized,
       error: state.error,
-      diagnostics: state.diagnostics
+      diagnostics: state.diagnostics,
+      memberDataErrors: { ...state.memberDataErrors }
     };
   }
 
@@ -217,7 +255,7 @@
         headers: {
           apikey: publishableKey,
           'Content-Type': 'application/json',
-          'X-Client-Info': 'wild-rift-guide/79.2'
+          'X-Client-Info': 'wild-rift-guide/79.3'
         },
         body: body === undefined ? undefined : JSON.stringify(body),
         signal: controller.signal,
@@ -262,7 +300,7 @@
 
     const { data, error } = await state.client
       .from('profiles')
-      .select('id,username,display_name,avatar_url,created_at,updated_at')
+      .select('*')
       .eq('id', userId)
       .maybeSingle();
     if (error) throw error;
@@ -273,56 +311,115 @@
     }
 
     const fallbackName = displayName(state.user, null);
-    const { data: inserted, error: insertError } = await state.client
-      .from('profiles')
-      .upsert({ id: userId, display_name: fallbackName }, { onConflict: 'id' })
-      .select('id,username,display_name,avatar_url,created_at,updated_at')
-      .single();
-    if (insertError) throw insertError;
-    state.profile = inserted;
-    return inserted;
+    const attempts = [
+      { id: userId, display_name: fallbackName },
+      { id: userId, nickname: fallbackName },
+      { id: userId }
+    ];
+    let lastError = null;
+    for (const payload of attempts) {
+      const result = await state.client
+        .from('profiles')
+        .upsert(payload, { onConflict: 'id' })
+        .select('*')
+        .maybeSingle();
+      if (!result.error) {
+        state.profile = result.data || { id: userId, display_name: fallbackName };
+        return state.profile;
+      }
+      lastError = result.error;
+    }
+    throw lastError || new Error('無法建立會員資料。');
   }
 
   async function loadMemberData() {
-    state.favorites = new Set();
-    state.recentViews = [];
-    if (!state.client || !state.user) return;
-
-    const [favoriteResult, recentResult] = await Promise.all([
-      state.client.from('favorite_heroes').select('hero_id').eq('user_id', state.user.id),
-      state.client.from('recent_hero_views').select('hero_id,guide_id,role_id,viewed_at').eq('user_id', state.user.id).order('viewed_at', { ascending: false }).limit(12)
-    ]);
-
-    if (favoriteResult.error) throw favoriteResult.error;
-    state.favorites = new Set((favoriteResult.data || []).map((row) => String(row.hero_id || '').trim()).filter(Boolean));
-
-    if (recentResult.error) {
-      const fallback = await state.client.from('recent_hero_views').select('hero_id,viewed_at').eq('user_id', state.user.id).order('viewed_at', { ascending: false }).limit(12);
-      if (fallback.error) throw fallback.error;
-      state.recentViews = fallback.data || [];
-    } else {
-      state.recentViews = recentResult.data || [];
+    if (!state.client || !state.user) {
+      state.favorites = new Set();
+      state.recentViews = [];
+      state.memberDataErrors = {};
+      return snapshot();
     }
+
+    const errors = {};
+
+    try {
+      const favoriteResult = await state.client
+        .from('favorite_heroes')
+        .select('hero_id')
+        .eq('user_id', state.user.id);
+      if (favoriteResult.error) throw favoriteResult.error;
+      state.favorites = new Set(
+        (favoriteResult.data || [])
+          .map((row) => String(row.hero_id || '').trim())
+          .filter(Boolean)
+      );
+    } catch (error) {
+      errors.favorites = errorDetails(error, '收藏英雄讀取失敗');
+      console.warn('收藏英雄讀取失敗，暫時使用此裝置快取', error);
+    }
+
+    try {
+      let recentResult = await state.client
+        .from('recent_hero_views')
+        .select('hero_id,guide_id,role_id,viewed_at')
+        .eq('user_id', state.user.id)
+        .order('viewed_at', { ascending: false })
+        .limit(12);
+
+      if (recentResult.error) {
+        recentResult = await state.client
+          .from('recent_hero_views')
+          .select('hero_id,viewed_at')
+          .eq('user_id', state.user.id)
+          .order('viewed_at', { ascending: false })
+          .limit(12);
+      }
+      if (recentResult.error) throw recentResult.error;
+      state.recentViews = recentResult.data || [];
+    } catch (error) {
+      errors.recentViews = errorDetails(error, '最近瀏覽讀取失敗');
+      console.warn('最近瀏覽讀取失敗，暫時使用此裝置快取', error);
+    }
+
+    state.memberDataErrors = errors;
+    persistMemberCache();
+    return snapshot();
   }
 
   async function syncUser(user) {
+    const generation = ++syncGeneration;
     state.user = user || null;
     state.profile = null;
     state.favorites = new Set();
     state.recentViews = [];
+    state.memberDataErrors = {};
     state.error = null;
+
     if (state.user) {
-      try {
-        await loadProfile(state.user.id);
-        await loadMemberData();
-      } catch (error) {
-        state.error = error;
-        console.error('會員資料載入失敗', error);
+      loadCachedMemberData(state.user.id);
+      const results = await Promise.allSettled([
+        loadProfile(state.user.id),
+        loadMemberData()
+      ]);
+      if (generation !== syncGeneration) return;
+      const profileFailure = results[0].status === 'rejected' ? results[0].reason : null;
+      const memberFailure = results[1].status === 'rejected' ? results[1].reason : null;
+      if (profileFailure) {
+        state.error = profileFailure;
+        console.error('會員基本資料載入失敗', profileFailure);
+      }
+      if (memberFailure) {
+        state.memberDataErrors.general = errorDetails(memberFailure, '會員收藏資料載入失敗');
+        console.error('會員收藏資料載入失敗', memberFailure);
       }
     }
+
     renderMemberLinks();
     renderAccountSheet();
     notify();
+    document.dispatchEvent(new CustomEvent('wrg:memberdatachange', {
+      detail: { favorites: [...state.favorites], recentViews: [...state.recentViews] }
+    }));
   }
 
   function makeMemberLabel(link) {
@@ -493,10 +590,51 @@
   async function updateDisplayName(nextName) {
     const client = await requireClient();
     if (!state.user) throw new Error('請先登入會員。');
-    const profileResult = await client.from('profiles').upsert({ id: state.user.id, display_name: nextName }, { onConflict: 'id' });
-    if (profileResult.error) throw profileResult.error;
-    const authResult = await client.auth.updateUser({ data: { display_name: nextName } });
+
+    const attempts = [
+      { display_name: nextName },
+      { nickname: nextName }
+    ];
+    let updatedProfile = null;
+    let lastError = null;
+    for (const payload of attempts) {
+      const result = await client
+        .from('profiles')
+        .update(payload)
+        .eq('id', state.user.id)
+        .select('*')
+        .maybeSingle();
+      if (!result.error && result.data) {
+        updatedProfile = result.data;
+        break;
+      }
+      if (result.error) lastError = result.error;
+    }
+
+    if (!updatedProfile) {
+      try {
+        await loadProfile(state.user.id);
+        for (const payload of attempts) {
+          const result = await client
+            .from('profiles')
+            .update(payload)
+            .eq('id', state.user.id)
+            .select('*')
+            .maybeSingle();
+          if (!result.error && result.data) {
+            updatedProfile = result.data;
+            break;
+          }
+          if (result.error) lastError = result.error;
+        }
+      } catch (error) {
+        lastError = error;
+      }
+    }
+
+    const authResult = await client.auth.updateUser({ data: { display_name: nextName, nickname: nextName } });
     if (authResult.error) throw authResult.error;
+    if (!updatedProfile && lastError) console.warn('Profile 名稱欄位更新失敗，已改用 Auth metadata', lastError);
     await refresh();
     return snapshot();
   }
@@ -518,14 +656,21 @@
     if (!id) throw new Error('英雄資料不完整。');
 
     if (state.favorites.has(id)) {
-      const { error } = await client.from('favorite_heroes').delete().eq('user_id', state.user.id).eq('hero_id', id);
+      const { error } = await client
+        .from('favorite_heroes')
+        .delete()
+        .eq('user_id', state.user.id)
+        .eq('hero_id', id);
       if (error) throw error;
       state.favorites.delete(id);
     } else {
-      const { error } = await client.from('favorite_heroes').insert({ user_id: state.user.id, hero_id: id });
+      const { error } = await client
+        .from('favorite_heroes')
+        .insert({ user_id: state.user.id, hero_id: id });
       if (error && String(error.code || '') !== '23505') throw error;
       state.favorites.add(id);
     }
+    persistMemberCache();
     notifyMemberData();
     return state.favorites.has(id);
   }
@@ -539,21 +684,47 @@
     if (now - Number(recentWriteTimes.get(id) || 0) < 15000) return true;
     recentWriteTimes.set(id, now);
 
+    const guideKey = String(guideId || '').trim() || id;
     const row = {
       user_id: state.user.id,
       hero_id: id,
-      guide_id: String(guideId || '').trim() || null,
+      guide_id: guideKey,
       role_id: String(roleId || '').trim() || null,
       viewed_at: new Date().toISOString()
     };
-    let result = await state.client.from('recent_hero_views').upsert(row, { onConflict: 'user_id,hero_id' });
-    if (result.error) {
-      const fallback = { user_id: row.user_id, hero_id: row.hero_id, viewed_at: row.viewed_at };
-      result = await state.client.from('recent_hero_views').upsert(fallback, { onConflict: 'user_id,hero_id' });
+
+    const attempts = [
+      () => state.client.from('recent_hero_views').upsert(row, { onConflict: 'user_id,hero_id' }),
+      () => state.client.from('recent_hero_views').upsert(row, { onConflict: 'user_id,guide_id' }),
+      () => state.client.from('recent_hero_views').upsert(
+        { user_id: row.user_id, hero_id: row.hero_id, guide_id: row.guide_id, viewed_at: row.viewed_at },
+        { onConflict: 'user_id,hero_id' }
+      )
+    ];
+
+    let lastError = null;
+    let saved = false;
+    for (const attempt of attempts) {
+      const result = await attempt();
+      if (!result.error) {
+        saved = true;
+        break;
+      }
+      lastError = result.error;
     }
-    if (result.error) throw result.error;
+
+    if (!saved) {
+      await state.client
+        .from('recent_hero_views')
+        .delete()
+        .eq('user_id', state.user.id)
+        .eq('hero_id', id);
+      const result = await state.client.from('recent_hero_views').insert(row);
+      if (result.error) throw result.error || lastError;
+    }
 
     state.recentViews = [row, ...state.recentViews.filter((item) => item.hero_id !== id)].slice(0, 12);
+    persistMemberCache();
     notifyMemberData();
     return true;
   }
@@ -564,13 +735,15 @@
     const { error } = await client.from('recent_hero_views').delete().eq('user_id', state.user.id);
     if (error) throw error;
     state.recentViews = [];
+    persistMemberCache();
     notifyMemberData();
   }
 
   async function refresh() {
     if (state.user) {
-      await loadProfile();
-      await loadMemberData();
+      const results = await Promise.allSettled([loadProfile(), loadMemberData()]);
+      const profileFailure = results[0].status === 'rejected' ? results[0].reason : null;
+      if (profileFailure) state.error = profileFailure;
     }
     renderMemberLinks();
     renderAccountSheet();
@@ -598,7 +771,7 @@
           detectSessionInUrl: true,
           flowType: 'pkce'
         },
-        global: { headers: { 'X-Client-Info': 'wild-rift-guide/79.2' } }
+        global: { headers: { 'X-Client-Info': 'wild-rift-guide/79.3' } }
       });
 
       state.client.auth.onAuthStateChange((event, session) => {

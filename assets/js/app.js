@@ -129,3 +129,100 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
     results.innerHTML='<div class="home-hero-search-empty">英雄資料載入失敗</div>';
   });
 })();
+
+(() => {
+  'use strict';
+  const panel = document.querySelector('#homeMemberPanel');
+  const auth = window.WRGAuth;
+  if (!panel || !auth) return;
+
+  let catalog = [];
+  const baseIdOf = (value) => String(value || '').replace(/-(baron|jungle|mid|duo|support)$/, '');
+
+  function findHero(heroId) {
+    const id = baseIdOf(heroId);
+    return catalog.find((hero) => String(hero.id) === id) || null;
+  }
+
+  function guideId(hero, row) {
+    if (row?.guide_id) return row.guide_id;
+    const roleId = String(row?.role_id || '').trim();
+    const role = (hero?.roles || []).find((item) => item.roleId === roleId && item.detailHeroId);
+    return role?.detailHeroId || (hero?.roles || []).find((item) => item.detailHeroId)?.detailHeroId || '';
+  }
+
+  function avatarOf(hero) {
+    return String(hero?.avatar || hero?.roles?.find((item) => item.avatar)?.avatar || '').replace(/^\.\.\//, '');
+  }
+
+  function renderRecent(rows) {
+    const root = panel.querySelector('#homeMemberRecentList');
+    if (!root) return;
+    root.replaceChildren();
+    if (!rows.length) {
+      const empty = document.createElement('span');
+      empty.className = 'home-member-recent-empty';
+      empty.textContent = '尚無最近瀏覽';
+      root.appendChild(empty);
+      return;
+    }
+
+    rows.slice(0, 4).forEach((row) => {
+      const hero = findHero(row.hero_id);
+      const id = guideId(hero, row);
+      const item = document.createElement(id ? 'a' : 'span');
+      item.className = 'home-member-recent-hero';
+      if (id) item.href = `pages/heroes.html?hero=${encodeURIComponent(id)}`;
+      const avatar = avatarOf(hero);
+      if (avatar) {
+        const img = document.createElement('img');
+        img.src = avatar;
+        img.alt = hero?.name || row.hero_id || '英雄';
+        img.loading = 'lazy';
+        img.addEventListener('error', () => {
+          img.replaceWith(document.createTextNode(String(hero?.name || row.hero_id || '?').slice(0, 1)));
+        }, { once: true });
+        item.appendChild(img);
+      } else {
+        item.textContent = String(hero?.name || row.hero_id || '?').slice(0, 1);
+      }
+      item.title = hero?.name || row.hero_id || '英雄';
+      root.appendChild(item);
+    });
+  }
+
+  function render() {
+    if (!auth.user) {
+      panel.hidden = true;
+      return;
+    }
+    panel.hidden = false;
+    const name = auth.displayName();
+    const avatar = panel.querySelector('#homeMemberAvatar');
+    const greeting = panel.querySelector('#homeMemberGreeting');
+    const favoriteCount = panel.querySelector('#homeMemberFavoriteCount');
+    const recentCount = panel.querySelector('#homeMemberRecentCount');
+    if (avatar) avatar.textContent = auth.avatarLetter();
+    if (greeting) greeting.textContent = `${name}，歡迎回來`;
+    if (favoriteCount) favoriteCount.textContent = String((auth.favorites || []).length);
+    if (recentCount) recentCount.textContent = String((auth.recentViews || []).length);
+    renderRecent(auth.recentViews || []);
+  }
+
+  async function loadCatalog() {
+    try {
+      const response = await fetch('assets/data/heroes.json?v=79.3', { cache: 'force-cache' });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+      catalog = Array.isArray(data.heroCatalog) ? data.heroCatalog : [];
+    } catch (error) {
+      console.warn('首頁會員英雄資料載入失敗', error);
+    }
+    render();
+  }
+
+  auth.subscribe(render);
+  document.addEventListener('wrg:memberdatachange', render);
+  Promise.all([auth.ready, loadCatalog()]).then(render);
+})();
+
