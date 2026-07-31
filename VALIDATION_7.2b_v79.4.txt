@@ -1,0 +1,21 @@
+Wild Rift Guide 7.2b／v79.4 驗收結果
+日期：2026-07-31
+
+通過項目：
+- JSON 解析：heroes、items、runes、spells、patch 全數通過
+- 英雄：140 位唯一英雄、200 份有效位置攻略
+- 五路數量：巴龍路 49、打野 50、中路 46、飛龍路 23、輔助 32
+- 7.2b 英雄：10 位英雄、16 份位置攻略均已更新
+- 7.2b 道具：5 件數值均已核對
+- 7.2b 符文：植物學家已更新
+- Tier：hero profile 與 heroCatalog 完全同步
+- 資料引用：裝備、符文、召喚師技能 ID 無遺失
+- 技能資料：200 份攻略均保有 5 個技能與 Lv.1～15 加點
+- 分享頁：200／200，版本與受影響摘要已同步
+- HTML：結構化資料 JSON 可解析，所有本機圖片／CSS／JS 路徑存在
+- JavaScript：全部檔案通過 node --check 語法檢查
+- 本機 HTTP：首頁、英雄、裝備、符文、版本頁與 JSON 端點均回傳 200
+- 版面保護：style.css、auth.js、supabase-config.js 與原版位元完全相同
+
+說明：
+本次只修改平衡資料、Tier、版本文字、SEO、分享頁與快取參數；未修改 CSS、HTML 版面結構或會員／Supabase 邏輯。
