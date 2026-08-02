@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "gameVersion": "7.2b",
   "mode": "aram",
-  "status": "splus-batch2-shoes-corrected",
+  "status": "aram-splus-batch3-ready",
   "updated": "2026-08-03",
   "tierOrder": [
     "S+",
@@ -16,7 +16,7 @@
     "A": 55,
     "B": 9
   },
-  "detailGuideCount": 15,
+  "detailGuideCount": 22,
   "tierMethodology": {
     "type": "本站 ARAM 綜合評級（非單一勝率排名）",
     "factors": [
@@ -2503,17 +2503,172 @@
       "enName": "Miss Fortune",
       "tier": "S+",
       "tierLabel": "頂級強勢",
-      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "E 技消耗與大絕掃射在單線地圖非常容易打滿，對前排與後排都能造成高額範圍傷害，幾乎任何陣容都能穩定發揮。",
+      "position": "遠程消耗／團戰收割型射手",
       "tags": [
-        "ARAM Tier 初評"
+        "遠程消耗",
+        "範圍輸出",
+        "團戰收割"
       ],
       "avatar": "assets/images/heroes/portraits/miss-fortune.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "好運姐在 ARAM 最強的是穩定壓血與團戰收尾能力。前中期用 E 技和 Q 技反覆消耗，等隊友控住人後再用大絕把狹窄地形的傷害一次灌滿。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-splus-batch3-v80.1",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前本站先依 7.2b 未見額外追加修正的通用基準呈現；若官方後續補充好運姐專屬 ARAM 數值，會再同步更新。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-09",
+          "name": "暴風之劍",
+          "icon": "assets/images/aram/items/bf-sword.webp",
+          "reason": "開局先補高物攻，讓 E 技消耗、Q 技彈射與大絕每一波傷害都更有感。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-26",
+          "name": "奪魄之鐮",
+          "icon": "assets/images/items/high/essence-reaver-fixed.webp",
+          "reason": "技能型射手很吃物攻、暴擊與技能循環，奪魄之鐮能讓好運姐的技能消耗更穩定。"
+        },
+        {
+          "id": "physical-high-23",
+          "name": "磁性雷射槍",
+          "icon": "assets/images/aram/items/magnetic-blaster.webp",
+          "reason": "充能普攻能強化 Q 技前的點人壓制，也更容易安全起手換血。"
+        },
+        {
+          "id": "physical-high-17",
+          "name": "無盡之刃",
+          "icon": "assets/images/aram/items/infinity-edge.webp",
+          "reason": "提高暴擊與物攻，直接放大 Q 技彈射與大絕的收尾能力。"
+        },
+        {
+          "id": "physical-high-05",
+          "name": "多明尼克的問候",
+          "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+          "reason": "ARAM 常見雙前排或高血量鬥士，這件能穩定補足對坦克輸出。"
+        },
+        {
+          "id": "physical-high-11",
+          "name": "嗜血者",
+          "icon": "assets/images/aram/items/bloodthirster.webp",
+          "reason": "無法回城的模式很重視續航，嗜血者能提高後期容錯與站樁能力。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "burst-boots",
+          "name": "爆發之靴",
+          "icon": "assets/images/items/shoes/burst-boots.png",
+          "reason": "前期先補物攻與穿甲，讓 E 技壓血與大絕每一段傷害更痛。"
+        },
+        {
+          "id": "armorbreaker-boots",
+          "name": "碎甲者之靴",
+          "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+          "reason": "升級三級鞋後進一步提高護甲穿透，對前排與中後期團戰更有威脅。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "first-strike",
+          "name": "遇強則強",
+          "icon": "assets/images/runes/keystone/first-strike.webp",
+          "reason": "在安全距離先手消耗或開大時，很容易把整輪傷害轉成額外收益。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "前期技能與普攻都能直接吃到加成，換血很實用。"
+        },
+        {
+          "id": "cut-down",
+          "name": "斷切",
+          "icon": "assets/images/runes/precision/cut-down.webp",
+          "reason": "大多數時間都在打高血量前排，斷切的增傷效益穩定。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳奇：敏捷",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
+          "reason": "攻速成長讓平時輸出與補刀節奏更順，也能更快疊出充能普攻。"
+        },
+        {
+          "id": "eyeball-collector",
+          "name": "眼球收集器",
+          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+          "reason": "ARAM 助攻密度高，能很快疊滿適性能力。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "沒有位移的射手一定要帶，無論保命或調整大絕角度都很重要。"
+        },
+        {
+          "id": "ghost",
+          "name": "鬼步",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "長團戰很容易持續觸發移速收益，方便拉打與追擊。"
+        }
+      ],
+      "skillOrder": "3 技 > 1 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 3 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/miss-fortune_04.webp",
+        "assets/images/heroes/skills/miss-fortune_02.webp",
+        "assets/images/heroes/skills/miss-fortune_03.webp"
+      ],
+      "playstyle": {
+        "開局": "先用 E 技與 Q 技反覆壓血，不要急著把魔力打空。敵方靠近兵線時，用 Q 技找彈射角度通常很好賺。",
+        "中期": "奪魄之鐮與磁性雷射槍做出後，站在前排後方持續消耗，等隊友控住人再接大絕。好運姐最怕的是大絕交得太急，盡量等敵人位移或反開技能交掉。",
+        "後期": "後期團戰核心就是找最安全的掃射角度。先打最近的前排也沒關係，只要大絕能掃過 2 到 3 個人，就足以改變戰局。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "when": "敵方治療／吸血很多",
+          "reason": "需要重創時可替換嗜血者或多明尼克的問候。"
+        },
+        {
+          "id": "physical-high-12",
+          "name": "殞落王者之劍",
+          "icon": "assets/images/aram/items/blade-of-the-ruined-king.webp",
+          "when": "敵方高生命前排很多",
+          "reason": "想提高對坦持續輸出時可以考慮。"
+        },
+        {
+          "id": "physical-high-03",
+          "name": "狂風之力",
+          "icon": "assets/images/aram/items/galeforce.webp",
+          "when": "需要額外位移保命",
+          "reason": "面對強開陣時，用主動位移換取站位容錯。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S+ 第三批：好運姐以 ARAM 單線壓血、團戰收割與大絕掃射價值為核心；裝備與符文依 7.2b 版本環境與現行站內模板整理，若官方補充模式數值會再同步更新。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Miss Fortune Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/miss-fortune"
+        }
+      ]
     },
     {
       "id": "morgana",
@@ -2521,17 +2676,172 @@
       "enName": "Morgana",
       "tier": "S+",
       "tierLabel": "頂級強勢",
-      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "黑暗禁錮與痛苦腐蝕在單線非常好命中，黑盾又能大幅降低 ARAM 常見強開陣的威脅，功能性和輸出都很完整。",
+      "position": "遠程消耗／控制保排型法師",
       "tags": [
-        "ARAM Tier 初評"
+        "遠程消耗",
+        "控制",
+        "保排"
       ],
       "avatar": "assets/images/heroes/portraits/morgana.png",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "魔甘娜在 ARAM 的價值是持續消耗、限制走位與反制強開。只要黑盾交得夠準，再配合 Q 技綁人與 W 技鋪地，對手很難舒服開戰。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-splus-batch3-v80.1",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前本站先依 7.2b 未見額外追加修正的通用基準呈現；若官方後續補充魔甘娜專屬 ARAM 數值，會再同步更新。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-23",
+          "name": "失落之章",
+          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "reason": "開局先補魔力與技能循環，讓 Q、W 可以高頻施放。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-12",
+          "name": "盧登回音",
+          "icon": "assets/images/items/high/magic-ludens-echo.png",
+          "reason": "Q 技或 W 技邊緣消耗都很容易觸發，前中期壓血效率高。"
+        },
+        {
+          "id": "magic-high-25",
+          "name": "視界專注",
+          "icon": "assets/images/items/high/magic-horizon-focus.png",
+          "reason": "Q 技長距離控制後幾乎穩定觸發，隊友也更容易跟傷害。"
+        },
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "reason": "敵人被反覆消耗進低血線後，無限寶珠能提高收頭能力。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "reason": "補足大量 AP，讓護盾、消耗與大絕反開同時變強。"
+        },
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "reason": "敵人補魔抗後仍能維持技能傷害。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "mana-boots",
+          "name": "魔力之靴",
+          "icon": "assets/images/items/shoes/mana-boots.png",
+          "reason": "前期魔力、魔攻與法穿最直接提升消耗與禁錮後傷害。"
+        },
+        {
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後提高魔攻與雙法穿，讓 Q 技接 W 技更有斬殺力。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "arcane-comet",
+          "name": "奧術彗星",
+          "icon": "assets/images/runes/keystone/arcane-comet.webp",
+          "reason": "Q 技控制與 W 技鋪地都很容易讓彗星命中，整體消耗收益高。"
+        },
+        {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "補魔力上限讓魔甘娜能更長時間維持施法壓力。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "提高 Q 技、黑盾與大絕的使用頻率。"
+        },
+        {
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "每輪消耗多補一段傷害，有助於把敵人壓進斬殺線。"
+        },
+        {
+          "id": "cheap-shot",
+          "name": "凌虐",
+          "icon": "assets/images/runes/conquest/cheap-shot.webp",
+          "reason": "Q 技命中後能穩定補上額外傷害。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補大絕進場距離、保命或調整黑盾位置都很關鍵。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "避免被刺客或突進一套帶走，爭取再丟一次黑盾或 Q 技。"
+        }
+      ],
+      "skillOrder": "3 技 > 1 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 3 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/morgana_04.webp",
+        "assets/images/heroes/skills/morgana_02.webp",
+        "assets/images/heroes/skills/morgana_03.png"
+      ],
+      "playstyle": {
+        "開局": "用 W 技清兵與磨血，Q 技不要隨便亂丟，盡量等對手被兵線卡位或交掉位移。黑盾優先保護己方最怕被強開的核心。",
+        "中期": "做出盧登與視界專注後，Q 技綁到人的收益很高。你不一定要主動開戰，但一定要在對面要開的瞬間把黑盾交準。",
+        "後期": "後期魔甘娜可以在隊友先手後跟進閃現大絕，或者單純站在後面打反手。只要黑盾跟第一發 Q 技沒空掉，團戰很容易往己方傾斜。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-23",
+          "name": "峽谷製造者",
+          "icon": "assets/images/items/high/magic-riftmaker.png",
+          "when": "團戰時間很長",
+          "reason": "想要更多持續輸出與續航時可以考慮。"
+        },
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "when": "敵方魔抗很高",
+          "reason": "需要更早拉高法穿時可提早製作。"
+        },
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "when": "敵方多軟皮",
+          "reason": "想強化收頭與爆發時可以提前。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S+ 第三批：魔甘娜以反開、黑盾保排與遠距消耗作為核心定位；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Morgana Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/morgana"
+        }
+      ]
     },
     {
       "id": "nami",
@@ -2539,17 +2849,172 @@
       "enName": "Nami",
       "tier": "S+",
       "tierLabel": "頂級強勢",
-      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "娜米在單線能穩定提供消耗、補血、控制與全隊加速，對射手、法師和開戰陣都很好配，是功能非常全面的 ARAM 角色。",
+      "position": "遠程消耗／群體增益型輔助",
       "tags": [
-        "ARAM Tier 初評"
+        "遠程消耗",
+        "治療護盾",
+        "控制"
       ],
       "avatar": "assets/images/heroes/portraits/nami.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "娜米在 ARAM 幾乎什麼都能做：反覆用 W 技換血、用 Q 技與大絕開反手、再用 E 技和補血把隊友保住。只要站位穩，整隊節奏都會很好打。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-splus-batch3-v80.1",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前本站先依 7.2b 未見額外追加修正的通用基準呈現；若官方後續補充娜米專屬 ARAM 數值，會再同步更新。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-32",
+          "name": "禁忌之像",
+          "icon": "assets/images/items/#U7981#U5fcc#U4e4b#U50cf.webp",
+          "reason": "前期先補治療、護盾與技能效率，最適合直接走團隊功能。"
+        }
+      ],
+      "items": [
+        {
+          "id": "support-high-05",
+          "name": "和諧回音",
+          "icon": "assets/images/items/high/support-harmonic-echo.png",
+          "reason": "團戰密度很高，W 技與其他增益很容易穩定觸發群體續航。"
+        },
+        {
+          "id": "support-high-07",
+          "name": "帝王命令",
+          "icon": "assets/images/items/high/support-imperial-mandate.png",
+          "reason": "Q 技泡泡、大絕與 E 技減速都能穩定觸發，幫隊友補進場爆發。"
+        },
+        {
+          "id": "support-high-06",
+          "name": "流水之杖",
+          "icon": "assets/images/items/high/support-staff-of-flowing-water.png",
+          "reason": "補血或增益時順便提高法系隊友的爆發與技能循環。"
+        },
+        {
+          "id": "support-high-04",
+          "name": "熾灼魔器",
+          "icon": "assets/images/items/high/support-ardent-censer.png",
+          "reason": "配合 E 技與補血，能讓射手或普攻核心打得更順。"
+        },
+        {
+          "id": "support-high-01",
+          "name": "米凱的祝福",
+          "icon": "assets/images/items/high/support-mikaels-blessing.png",
+          "reason": "敵方控制很多時，主動解控對主力輸出非常重要。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "ionian-boots",
+          "name": "愛歐尼亞之靴",
+          "icon": "assets/images/items/shoes/ionian-boots.png",
+          "reason": "技能加速對娜米非常重要，能提高補血、泡泡與大絕頻率。"
+        },
+        {
+          "id": "blood-mage-boots",
+          "name": "血色法靴",
+          "icon": "assets/images/items/shoes/blood-mage-boots.png",
+          "reason": "升級三級鞋後讓技能與召喚師技能循環更快，整體保排更穩定。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "aery",
+          "name": "艾莉",
+          "icon": "assets/images/runes/keystone/aery.webp",
+          "reason": "補血、增益與消耗都能吃到艾莉，是最泛用的核心符文。"
+        },
+        {
+          "id": "font-of-life",
+          "name": "生命之泉",
+          "icon": "assets/images/runes/resolve/font-of-life.webp",
+          "reason": "控制與緩速命中後能替全隊補上一些續航。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大補血與護盾效率。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "避免自己被第一波突進直接秒掉。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "讓補血、泡泡與大絕的使用頻率更高。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "調整大絕角度、拉開距離或補關鍵泡泡都很好用。"
+        },
+        {
+          "id": "exhaust",
+          "name": "虛弱",
+          "icon": "assets/images/spells/exhaust.webp",
+          "reason": "敵方刺客或戰士進場時直接套虛弱，能幫後排活過最危險的第一波。"
+        }
+      ],
+      "skillOrder": "2 技 > 3 技 > 1 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/nami_03.png",
+        "assets/images/heroes/skills/nami_04.png",
+        "assets/images/heroes/skills/nami_02.webp"
+      ],
+      "playstyle": {
+        "開局": "先用 W 技找彈跳角度換血，盡量讓治療與傷害都吃到。Q 技不要貪，等對方被兵線卡位或被隊友先手後再丟命中率會高很多。",
+        "中期": "有了和諧回音與帝王命令後，娜米每次控制都能直接幫隊友補一段爆發。你不一定要自己先開，但一定要跟著隊友節奏補技能。",
+        "後期": "後期團戰先看己方後排有沒有被威脅。大絕可以開戰，也可以留來反打。只要補血與 E 技給對正確的人，娜米的團隊價值會非常高。"
+      },
+      "situationalItems": [
+        {
+          "id": "support-high-04",
+          "name": "熾灼魔器",
+          "icon": "assets/images/items/high/support-ardent-censer.png",
+          "when": "己方有強勢射手或普攻核心",
+          "reason": "想更明顯強化普攻輸出時可提早製作。"
+        },
+        {
+          "id": "support-high-06",
+          "name": "流水之杖",
+          "icon": "assets/images/items/high/support-staff-of-flowing-water.png",
+          "when": "己方法師很多",
+          "reason": "多 AP 陣容時提早做流水之杖收益很好。"
+        },
+        {
+          "id": "support-high-01",
+          "name": "米凱的祝福",
+          "icon": "assets/images/items/high/support-mikaels-blessing.png",
+          "when": "敵方控制很多",
+          "reason": "需要更早解控保主力時可提前。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S+ 第三批：娜米以高泛用的控制、補血、增益與反開價值列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Nami Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/nami"
+        }
+      ]
     },
     {
       "id": "nautilus",
@@ -2557,17 +3022,172 @@
       "enName": "Nautilus",
       "tier": "S+",
       "tierLabel": "頂級強勢",
-      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "納帝魯斯在單線極容易把鉤子、緩速與大絕連成長時間控制鏈，而且只要勾中一次就能逼出對手大量技能，對陣容要求也低。",
+      "position": "開戰前排／控制鏈坦克",
       "tags": [
-        "ARAM Tier 初評"
+        "強制開戰",
+        "前排承傷",
+        "控制鏈"
       ],
       "avatar": "assets/images/heroes/portraits/nautilus.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "納帝魯斯在 ARAM 的工作很單純：找機會勾到人、把控制連到底，或站在前排保後排不被衝。只要每波都能吃到第一手資訊，他就很容易帶起整隊節奏。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-splus-batch3-v80.1",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前本站先依 7.2b 未見額外追加修正的通用基準呈現；若官方後續補充納帝魯斯專屬 ARAM 數值，會再同步更新。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "reason": "先補生命值提高第一波容錯，後續可以順接坦裝核心。"
+        }
+      ],
+      "items": [
+        {
+          "id": "defense-high-15",
+          "name": "黎明法衣",
+          "icon": "assets/images/items/high/defense-dawnshroud.png",
+          "reason": "鉤中、普攻定身與大絕都能穩定觸發，隊友跟傷害很舒服。"
+        },
+        {
+          "id": "defense-high-13",
+          "name": "冰霜之心",
+          "icon": "assets/images/items/high/defense-frozen-heart.png",
+          "reason": "很適合對付單線多射手或鬥士環境，同時補護甲與技能循環。"
+        },
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "reason": "敵方法傷偏多時提供高魔抗與移速，方便追擊與調整站位。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "多人團戰時雙抗很容易吃滿，是標準後期坦克核心。"
+        },
+        {
+          "id": "defense-high-08",
+          "name": "荊棘之甲",
+          "icon": "assets/images/items/high/defense-thornmail.png",
+          "reason": "敵方治療或物理核心很強時，荊棘之甲的重創與護甲都很實用。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "面對射手與普攻角色時，先補鍍板鋼蓋最穩；法傷多可依局勢改水星之靴。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後進一步強化物理承傷與護盾；若敵方法傷多，三級鞋可改鎖鏈軍靴。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "glacial-augment",
+          "name": "冰霜霸主",
+          "icon": "assets/images/runes/keystone/glacial-augment.webp",
+          "reason": "鉤子、緩速與大絕都能穩定延長限制效果，讓隊友更好跟上。"
+        },
+        {
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "控制命中後的護盾能大幅提高進場容錯。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "降低第一輪被集火的爆發傷害。"
+        },
+        {
+          "id": "overgrowth",
+          "name": "過度生長",
+          "icon": "assets/images/runes/resolve/overgrowth.webp",
+          "reason": "單線持續吃兵很容易穩定成長最大生命。"
+        },
+        {
+          "id": "perseverance",
+          "name": "堅毅",
+          "icon": "assets/images/runes/resolve/perseverance.webp",
+          "reason": "減少控制鏈對前排進場的限制。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "閃現鉤或閃現普攻定身都能創造突然強開。"
+        },
+        {
+          "id": "exhaust",
+          "name": "虛弱",
+          "icon": "assets/images/spells/exhaust.webp",
+          "reason": "進場黏到敵方主力後直接套虛弱，能有效保護隊友。"
+        }
+      ],
+      "skillOrder": "3 技 > 1 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 3 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/nautilus_04.webp",
+        "assets/images/heroes/skills/nautilus_02.webp",
+        "assets/images/heroes/skills/nautilus_03.webp"
+      ],
+      "playstyle": {
+        "開局": "前期不要硬亂鉤，先靠自身體型卡位置與三技緩速逼對手後退。鉤子最好等對手貼近兵線或交位移後再出手。",
+        "中期": "做出黎明法衣與冰霜之心後，納帝魯斯的每次命中幾乎都能逼出對方大量技能。你可以主動開，也可以站在後排前面專門反開。",
+        "後期": "後期以控制鏈為核心。先手不一定要勾後排，能穩穩抓到前排並把隊友節奏帶起來，一樣很有價值。大絕最好留給最難處理的主力。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-09",
+          "name": "好戰者鎧甲",
+          "icon": "assets/images/items/high/defense-warmogs-armor.png",
+          "when": "需要更多脫戰續航",
+          "reason": "想反覆開戰又不想回家時，好戰者很適合。"
+        },
+        {
+          "id": "defense-high-02",
+          "name": "深淵面具",
+          "icon": "assets/images/items/high/defense-abyssal-mask.png",
+          "when": "己方法傷很多",
+          "reason": "貼身開戰時能幫法師隊友放大傷害。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很肥",
+          "reason": "針對暴擊型輸出時特別有用。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S+ 第三批：納帝魯斯以穩定強開、控制鏈與前排功能列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Nautilus Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/nautilus"
+        }
+      ]
     },
     {
       "id": "orianna",
@@ -2575,17 +3195,172 @@
       "enName": "Orianna",
       "tier": "S+",
       "tierLabel": "頂級強勢",
-      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "奧莉安娜在 ARAM 很容易利用球體控制狹窄地形，無論消耗、保排還是大絕反開都很穩定，對團戰的整體影響力非常高。",
+      "position": "遠程控場／團戰爆發型法師",
       "tags": [
-        "ARAM Tier 初評"
+        "遠程消耗",
+        "團戰爆發",
+        "範圍控制"
       ],
       "avatar": "assets/images/heroes/portraits/orianna.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "奧莉安娜在 ARAM 的強點是全能：能遠距磨血、能保排，也能用大絕改變整場團戰。只要球的位置放得夠細，對手很難忽視你的威脅。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-splus-batch3-v80.1",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前本站先依 7.2b 未見額外追加修正的通用基準呈現；若官方後續補充奧莉安娜專屬 ARAM 數值，會再同步更新。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-23",
+          "name": "失落之章",
+          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "reason": "失落之章提供魔力與技能循環，最適合需要長時間控場的奧莉安娜。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-12",
+          "name": "盧登回音",
+          "icon": "assets/images/items/high/magic-ludens-echo.png",
+          "reason": "Q 技與 W 技頻繁命中時很容易觸發，前中期壓血效率高。"
+        },
+        {
+          "id": "magic-high-25",
+          "name": "視界專注",
+          "icon": "assets/images/items/high/magic-horizon-focus.png",
+          "reason": "球體遠距命中或大絕控到人後，視界專注能穩定補上額外傷害。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "reason": "大量 AP 能同時放大消耗、護盾與大絕爆發。"
+        },
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "reason": "把敵人壓到低血後更容易完成收頭。"
+        },
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "reason": "敵人補魔抗後需要靠虛空之杖維持傷害。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "mana-boots",
+          "name": "魔力之靴",
+          "icon": "assets/images/items/shoes/mana-boots.png",
+          "reason": "前期最需要的就是魔力、魔攻與法穿，能讓控球壓力更足。"
+        },
+        {
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後進一步提高法穿與 AP，讓球體消耗與大絕爆發更痛。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "aery",
+          "name": "艾莉",
+          "icon": "assets/images/runes/keystone/aery.webp",
+          "reason": "Q 技消耗與 E 技護盾都能穩定觸發，最全面。"
+        },
+        {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "補足長時間控線與消耗需要的魔力。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速讓球體操作更流暢，也提高大絕使用率。"
+        },
+        {
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "前中期每輪消耗都能多磨一些血量。"
+        },
+        {
+          "id": "eyeball-collector",
+          "name": "眼球收集器",
+          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+          "reason": "團戰與助攻多，適性能力疊得很快。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "調整球體位置、保命或閃現拉大都非常關鍵。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "面對強開或刺客時，提高自己存活率才有機會持續控場。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/orianna_02.webp",
+        "assets/images/heroes/skills/orianna_03.png",
+        "assets/images/heroes/skills/orianna_04.webp"
+      ],
+      "playstyle": {
+        "開局": "先用球體站位壓兵線與草叢，不需要每次都求命中很多人，只要持續把對方逼退就夠。E 技優先保護容易被開的隊友。",
+        "中期": "做出盧登與視界專注後，奧莉安娜每次球體進場的威脅都很高。可以先靠 QW 消耗，也可以等隊友進去後直接用大絕接團控。",
+        "後期": "後期的重點是球的位置。不要急著為了大絕而大絕，只要球放在對的位置，就能同時威脅對手進場與保護自己後排。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-23",
+          "name": "峽谷製造者",
+          "icon": "assets/images/items/high/magic-riftmaker.png",
+          "when": "團戰時間很長",
+          "reason": "想要更多持續輸出與續航時可考慮。"
+        },
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "when": "敵方魔抗很多",
+          "reason": "需要更早提高法穿時可提前出。"
+        },
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "when": "敵方多脆皮",
+          "reason": "想提高收頭能力時可以更早補。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S+ 第三批：奧莉安娜以全能控場、保排與團戰爆發列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Orianna Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/orianna"
+        }
+      ]
     },
     {
       "id": "ornn",
@@ -2593,17 +3368,172 @@
       "enName": "Ornn",
       "tier": "S+",
       "tierLabel": "頂級強勢",
-      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "鄂爾在單線非常容易打出穩定先手，坦度、控場與後期裝備強化都很有價值，而且脫戰後仍能持續站在最前面施壓。",
+      "position": "前排開戰／後期增幅型坦克",
       "tags": [
-        "ARAM Tier 初評"
+        "前排承傷",
+        "強制開戰",
+        "團戰增幅"
       ],
       "avatar": "assets/images/heroes/portraits/ornn.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "鄂爾在 ARAM 的核心價值是穩定前排與先手。無論是 Q 接 E 的開戰，還是大絕二段撞擊反開，都能在狹窄地形打出很強的團戰影響力。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-splus-batch3-v80.1",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前本站先依 7.2b 未見額外追加修正的通用基準呈現；若官方後續補充鄂爾專屬 ARAM 數值，會再同步更新。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "reason": "先撐血量讓第一波前排更穩，後續可直上好戰者或其他坦裝核心。"
+        }
+      ],
+      "items": [
+        {
+          "id": "defense-high-09",
+          "name": "好戰者鎧甲",
+          "icon": "assets/images/items/high/defense-warmogs-armor.png",
+          "reason": "ARAM 無法回城時，好戰者能讓鄂爾脫戰後重新回滿，持續保持前排壓力。"
+        },
+        {
+          "id": "defense-high-13",
+          "name": "冰霜之心",
+          "icon": "assets/images/items/high/defense-frozen-heart.png",
+          "reason": "補護甲、魔力與技能循環，特別適合對抗多射手或鬥士。"
+        },
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "reason": "面對法傷陣時能大幅提高生存與追擊能力。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "後期多人團戰很容易吃滿雙抗，是標準坦克後期裝。"
+        },
+        {
+          "id": "defense-high-08",
+          "name": "荊棘之甲",
+          "icon": "assets/images/items/high/defense-thornmail.png",
+          "reason": "對抗治療陣與物理核心時都很好用。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "mercurys-treads",
+          "name": "水星之靴",
+          "icon": "assets/images/items/shoes/mercurys-treads.png",
+          "reason": "鄂爾需要穩定走進人群，先補韌性與魔抗更容易把開戰做完整。"
+        },
+        {
+          "id": "chain-army-boots",
+          "name": "鎖鏈軍靴",
+          "icon": "assets/images/items/shoes/chain-army-boots.png",
+          "reason": "升級三級鞋後增加韌性與魔防，面對法傷和控制密集的 ARAM 非常實用。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "glacial-augment",
+          "name": "冰霜霸主",
+          "icon": "assets/images/runes/keystone/glacial-augment.webp",
+          "reason": "控制命中後的額外減速區能大幅提高隊友跟進成功率。"
+        },
+        {
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "每次開戰都能取得護盾，提高坦克進場容錯。"
+        },
+        {
+          "id": "second-wind",
+          "name": "回春",
+          "icon": "assets/images/runes/resolve/second-wind.webp",
+          "reason": "被持續消耗時能幫忙撐過前中期。"
+        },
+        {
+          "id": "overgrowth",
+          "name": "過度生長",
+          "icon": "assets/images/runes/resolve/overgrowth.webp",
+          "reason": "最大生命在單線很容易穩定成長。"
+        },
+        {
+          "id": "perseverance",
+          "name": "堅毅",
+          "icon": "assets/images/runes/resolve/perseverance.webp",
+          "reason": "減少被連環控制卡住的風險。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補大絕二段角度或 QE 先手距離都非常關鍵。"
+        },
+        {
+          "id": "exhaust",
+          "name": "虛弱",
+          "icon": "assets/images/spells/exhaust.webp",
+          "reason": "進場後直接壓低敵方主力輸出，團戰更穩。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/ornn_02.webp",
+        "assets/images/heroes/skills/ornn_03.webp",
+        "assets/images/heroes/skills/ornn_04.webp"
+      ],
+      "playstyle": {
+        "開局": "以前排姿態慢慢往前推，Q 技石柱與 W 技火焰可以穩定清線與消耗。不要太急著先手，等對手站位被壓縮後再找 QE 或大絕角度。",
+        "中期": "有了好戰者與一件雙抗裝後，鄂爾就能更頻繁地站在最前面吸收傷害。先手不一定要打後排，只要能把對手陣型撞散就很賺。",
+        "後期": "後期大絕的價值非常高。開戰前先觀察隊友是否能跟上，你的任務不是單殺誰，而是把團戰拆成對己方有利的形狀。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-02",
+          "name": "深淵面具",
+          "icon": "assets/images/items/high/defense-abyssal-mask.png",
+          "when": "己方法傷很多",
+          "reason": "貼身進場時能幫法師隊友放大輸出。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很肥",
+          "reason": "針對暴擊傷害特別好用。"
+        },
+        {
+          "id": "defense-high-03",
+          "name": "無盡絕望",
+          "icon": "assets/images/items/high/defense-unending-despair.png",
+          "when": "雙方前排長時間對撞",
+          "reason": "需要更多持續作戰能力時可以考慮。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S+ 第三批：鄂爾以穩定開戰、坦度與後期團戰價值列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Ornn Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/ornn"
+        }
+      ]
     },
     {
       "id": "rell",
@@ -2611,17 +3541,172 @@
       "enName": "Rell",
       "tier": "S+",
       "tierLabel": "頂級強勢",
-      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "銳兒在 ARAM 的狹窄地形很容易把擊飛、吸附與群控全部串起來，既能主動開戰也能站在後排旁邊做強力反手。",
+      "position": "強制開戰／保排反開型坦克",
       "tags": [
-        "ARAM Tier 初評"
+        "強制開戰",
+        "控制鏈",
+        "保排"
       ],
       "avatar": "assets/images/heroes/portraits/rell.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "銳兒最強的地方是團戰一旦黏上去就很難讓人離開。開戰成功時能把敵人整坨拉在一起；就算不先手，也能用強力反開保住後排。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-splus-batch3-v80.1",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前本站先依 7.2b 未見額外追加修正的通用基準呈現；若官方後續補充銳兒專屬 ARAM 數值，會再同步更新。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "reason": "先補血量讓第一波進場更穩，後續可以直接轉坦裝核心。"
+        }
+      ],
+      "items": [
+        {
+          "id": "defense-high-15",
+          "name": "黎明法衣",
+          "icon": "assets/images/items/high/defense-dawnshroud.png",
+          "reason": "銳兒有大量穩定控制，黎明法衣能把每次開戰都變成隊友更好跟的傷害窗口。"
+        },
+        {
+          "id": "defense-high-13",
+          "name": "冰霜之心",
+          "icon": "assets/images/items/high/defense-frozen-heart.png",
+          "reason": "對多射手與鬥士環境很實用，還能補足技能循環。"
+        },
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "reason": "法傷多時提供高魔抗與移速，能更穩地黏住目標。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "銳兒會長時間待在敵陣中心，守護像能大幅提升後期坦度。"
+        },
+        {
+          "id": "defense-high-08",
+          "name": "荊棘之甲",
+          "icon": "assets/images/items/high/defense-thornmail.png",
+          "reason": "重創加護甲對多數 ARAM 對局都很好用。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "mercurys-treads",
+          "name": "水星之靴",
+          "icon": "assets/images/items/shoes/mercurys-treads.png",
+          "reason": "銳兒需要穩定走進人群，韌性與魔抗能顯著提高開戰容錯。"
+        },
+        {
+          "id": "chain-army-boots",
+          "name": "鎖鏈軍靴",
+          "icon": "assets/images/items/shoes/chain-army-boots.png",
+          "reason": "升級三級鞋後更不怕法傷與控制，進場時還能取得額外護盾。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "glacial-augment",
+          "name": "冰霜霸主",
+          "icon": "assets/images/runes/keystone/glacial-augment.webp",
+          "reason": "群控命中後額外減速區很容易把敵人整坨留住。"
+        },
+        {
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "每次進場都能立刻得到護盾，對銳兒非常關鍵。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "降低進場第一波吃到的爆發傷害。"
+        },
+        {
+          "id": "overgrowth",
+          "name": "過度生長",
+          "icon": "assets/images/runes/resolve/overgrowth.webp",
+          "reason": "單線持續吃兵可穩定增加最大生命。"
+        },
+        {
+          "id": "perseverance",
+          "name": "堅毅",
+          "icon": "assets/images/runes/resolve/perseverance.webp",
+          "reason": "減少被控制打斷連招的風險。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "閃現接進場或大絕都能創造很強的突然開戰。"
+        },
+        {
+          "id": "exhaust",
+          "name": "虛弱",
+          "icon": "assets/images/spells/exhaust.webp",
+          "reason": "黏住敵方主力後馬上套虛弱，能把對面爆發大幅壓低。"
+        }
+      ],
+      "skillOrder": "2 技 > 1 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/rell_03.webp",
+        "assets/images/heroes/skills/rell_02.webp",
+        "assets/images/heroes/skills/rell_04.webp"
+      ],
+      "playstyle": {
+        "開局": "不要一開始就盲目跳進去，先利用存在感壓縮對手站位，等隊友技能就緒或對方交過位移再找真正好開的時機。",
+        "中期": "做出黎明法衣與冰霜之心後，銳兒的每次進場都很難忽視。你可以主動開，也可以守在己方後排旁邊專門反衝臉角色。",
+        "後期": "後期銳兒的價值在於團控連鎖。只要能把最危險的那幾個人吸住，讓隊友自由輸出，你的任務就完成了。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-09",
+          "name": "好戰者鎧甲",
+          "icon": "assets/images/items/high/defense-warmogs-armor.png",
+          "when": "需要更多脫戰續航",
+          "reason": "想反覆開戰時很好用。"
+        },
+        {
+          "id": "defense-high-02",
+          "name": "深淵面具",
+          "icon": "assets/images/items/high/defense-abyssal-mask.png",
+          "when": "己方法傷很多",
+          "reason": "進場貼人後能順便幫法師隊友放大輸出。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很肥",
+          "reason": "針對暴擊核心時很實用。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S+ 第三批：銳兒以群體控制、強開與反開價值列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Rell Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/rell"
+        }
+      ]
     },
     {
       "id": "seraphine",

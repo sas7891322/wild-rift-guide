@@ -2049,5 +2049,5 @@ button,a{-webkit-tap-highlight-color:transparent}
 
 /* v80.0.2 mode entry map thumbnails */
 .mode-entry-card-mark.mode-entry-map{padding:0;overflow:hidden;background:#07131f;border-color:rgba(216,184,108,.32)}
-.mode-entry-card-mark.mode-entry-map img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform .2s ease,filter .2s ease;filter:saturate(.92) contrast(1.04)}
-.mode-entry-card:hover .mode-entry-card-mark.mode-entry-map img{transform:scale(1.08);filter:saturate(1.08) contrast(1.06)}
+.mode-entry-card-mark.mode-entry-map img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(.92);transition:transform .2s ease,filter .2s ease;filter:saturate(.96) contrast(1.02)}
+.mode-entry-card:hover .mode-entry-card-mark.mode-entry-map img{transform:scale(.98);filter:saturate(1.04) contrast(1.04)}
