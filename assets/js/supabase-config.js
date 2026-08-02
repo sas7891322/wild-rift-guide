@@ -1,5 +1,5 @@
 /*
- * Wild Rift Guide v79.1 會員系統設定
+ * Wild Rift Guide v79.5 Supabase 前端設定
  *
  * 只把 Supabase Dashboard 的 Publishable key 貼到 publishableKey。
  * 絕對不要填入 Secret key、service_role key 或 sb_secret_...。

@@ -277,7 +277,7 @@
 
   async function loadHeroCatalog() {
     try {
-      const response = await fetch('../assets/data/heroes.json?v=79.4.1', { cache: 'force-cache' });
+      const response = await fetch('../assets/data/heroes.json?v=79.5', { cache: 'force-cache' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       heroCatalog = Array.isArray(data.heroCatalog) ? data.heroCatalog : [];

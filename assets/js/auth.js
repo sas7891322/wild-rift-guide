@@ -255,7 +255,7 @@
         headers: {
           apikey: publishableKey,
           'Content-Type': 'application/json',
-          'X-Client-Info': 'wild-rift-guide/79.3'
+          'X-Client-Info': 'wild-rift-guide/79.5'
         },
         body: body === undefined ? undefined : JSON.stringify(body),
         signal: controller.signal,
@@ -771,7 +771,7 @@
           detectSessionInUrl: true,
           flowType: 'pkce'
         },
-        global: { headers: { 'X-Client-Info': 'wild-rift-guide/79.3' } }
+        global: { headers: { 'X-Client-Info': 'wild-rift-guide/79.5' } }
       });
 
       state.client.auth.onAuthStateChange((event, session) => {

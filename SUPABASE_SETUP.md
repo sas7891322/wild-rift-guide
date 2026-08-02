@@ -58,3 +58,13 @@ https://wild-rift-guide.vercel.app/**
 ## 4. v79.1 範圍
 
 本版只完成會員登入基礎、帳號設定與全站登入狀態。收藏英雄、最近瀏覽與首頁個人化會在 v79.2 接續完成。
+
+## v79.5：網站即時人氣
+
+如果要啟用首頁的「累積瀏覽／目前在線」，請再執行：
+
+```text
+supabase/wild-rift-guide-v79.5-traffic.sql
+```
+
+詳細步驟見 `SUPABASE_TRAFFIC_SETUP.md`。
