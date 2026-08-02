@@ -6,7 +6,7 @@
   const id=params.get('id')||'jinx';
   document.body.classList.add('aram-mobile-master');
   try{
-    const res=await fetch('assets/data/aram/heroes.json?v=79.9.0',{cache:'no-store'});
+    const res=await fetch('assets/data/aram/heroes.json?v=80.0.0',{cache:'no-store'});
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const hero=(data.heroes||[]).find(item=>item.id===id);
