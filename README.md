@@ -288,4 +288,4 @@
 
 ## v79.5｜網站即時人氣
 
-首頁新增「累積瀏覽」與「目前在線」。第一次部署前，請先依 `SUPABASE_TRAFFIC_SETUP.md` 執行 `supabase/wild-rift-guide-v79.5-traffic.sql`。
+導覽列顯示小型「累積瀏覽」與「目前在線」。第一次部署前，請先依 `SUPABASE_TRAFFIC_SETUP.md` 執行 `supabase/wild-rift-guide-v79.5-traffic.sql`。

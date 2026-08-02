@@ -2,17 +2,54 @@
   'use strict';
 
   const auth = window.WRGAuth;
-  const totalNode = document.querySelector('#wrgTotalViews');
-  const onlineNode = document.querySelector('#wrgOnlineCount');
-  const statusNode = document.querySelector('#wrgTrafficStatus');
-  const panel = document.querySelector('#wrgTrafficPanel');
   const HEARTBEAT_MS = 45_000;
+
+  function ensureTrafficUi() {
+    let panel = document.querySelector('#wrgTrafficPanel');
+    if (panel) return panel;
+
+    const nav = document.querySelector('.topbar .nav');
+    if (!nav) return null;
+
+    panel = document.createElement('span');
+    panel.id = 'wrgTrafficPanel';
+    panel.className = 'nav-traffic';
+    panel.dataset.trafficState = 'loading';
+    panel.setAttribute('aria-label', '網站即時人氣');
+    panel.innerHTML = `
+      <span class="nav-traffic-item views" title="累積瀏覽">
+        <span class="nav-traffic-label">瀏覽</span>
+        <strong id="wrgTotalViews">—</strong>
+      </span>
+      <span class="nav-traffic-sep" aria-hidden="true"></span>
+      <span class="nav-traffic-item online" title="目前在線">
+        <i aria-hidden="true"></i>
+        <span class="nav-traffic-label">在線</span>
+        <strong id="wrgOnlineCount">—</strong>
+      </span>
+      <span class="nav-traffic-status" id="wrgTrafficStatus">連線中</span>`;
+
+    const memberLink = nav.querySelector('.member-nav-link');
+    if (memberLink) nav.insertBefore(panel, memberLink);
+    else nav.appendChild(panel);
+    return panel;
+  }
+
+  const panel = ensureTrafficUi();
+  const totalNode = panel?.querySelector('#wrgTotalViews');
+  const onlineNode = panel?.querySelector('#wrgOnlineCount');
+  const statusNode = panel?.querySelector('#wrgTrafficStatus');
 
   function formatCount(value) {
     const number = Number(value);
-    return Number.isFinite(number) && number >= 0
-      ? new Intl.NumberFormat('zh-TW').format(number)
-      : '—';
+    if (!Number.isFinite(number) || number < 0) return '—';
+    if (number >= 100000) {
+      return new Intl.NumberFormat('zh-TW', {
+        notation: 'compact',
+        maximumFractionDigits: 1
+      }).format(number);
+    }
+    return new Intl.NumberFormat('zh-TW').format(number);
   }
 
   function setStatus(mode, label) {
@@ -24,8 +61,14 @@
   function render(payload) {
     const row = Array.isArray(payload) ? payload[0] : payload;
     if (!row) return;
-    if (totalNode) totalNode.textContent = formatCount(row.total_views);
-    if (onlineNode) onlineNode.textContent = formatCount(row.online_count);
+    if (totalNode) {
+      totalNode.textContent = formatCount(row.total_views);
+      totalNode.title = `累積瀏覽 ${new Intl.NumberFormat('zh-TW').format(Number(row.total_views) || 0)}`;
+    }
+    if (onlineNode) {
+      onlineNode.textContent = formatCount(row.online_count);
+      onlineNode.title = `目前在線 ${new Intl.NumberFormat('zh-TW').format(Number(row.online_count) || 0)}`;
+    }
     setStatus('ready', '即時更新');
   }
 

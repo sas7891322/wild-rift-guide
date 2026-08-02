@@ -61,7 +61,7 @@ https://wild-rift-guide.vercel.app/**
 
 ## v79.5：網站即時人氣
 
-如果要啟用首頁的「累積瀏覽／目前在線」，請再執行：
+如果要啟用導覽列的「累積瀏覽／目前在線」，請再執行：
 
 ```text
 supabase/wild-rift-guide-v79.5-traffic.sql
