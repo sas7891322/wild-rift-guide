@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://wild-rift-guide.vercel.app/aram.html"/>
 <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="assets/images/brand/apple-touch-icon.png"/>
-<link rel="stylesheet" href="assets/css/style.css?v=79.8.0"/>
+<link rel="stylesheet" href="assets/css/style.css?v=79.8.2"/>
 </head>
 <body class="aram-shell-page">
 <header class="mode-entry-topbar">
@@ -42,6 +42,11 @@
       <div><span class="kicker">ARAM TIER LIST</span><h2 id="aramTierTitle">英雄強度分級</h2></div>
       <span class="aram-data-state" data-aram-data-state>載入資料中…</span>
     </div>
+    <div class="aram-mobile-search" data-aram-mobile-search>
+      <label for="aramHeroSearch">快速找英雄</label>
+      <div class="aram-mobile-search-box"><span aria-hidden="true">⌕</span><input id="aramHeroSearch" data-aram-hero-search type="search" inputmode="search" autocomplete="off" placeholder="輸入英雄中文或英文名稱"/></div>
+      <small data-aram-search-state>顯示全部英雄</small>
+    </div>
     <div class="aram-tier-list" data-aram-tier-root aria-live="polite"></div>
   </section>
   <section class="shell aram-framework-grid" aria-label="ARAM 攻略資料架構">
@@ -59,6 +64,6 @@
 <script src="assets/js/supabase-config.js?v=79.5.1"></script>
 <script src="assets/js/auth.js?v=79.5.1"></script>
 <script src="assets/js/app.js?v=79.5.1"></script>
-<script src="assets/js/aram.js?v=79.8.0"></script>
+<script src="assets/js/aram.js?v=79.8.2"></script>
 </body>
 </html>

@@ -1909,3 +1909,106 @@ button,a{-webkit-tap-highlight-color:transparent}
   body.aram-mobile-jinx-master .aram-source-panel p,
   body.aram-mobile-jinx-master .aram-source-panel a{font-size:9px;line-height:1.5}
 }
+
+/* v79.8.2 — mobile ARAM finder + compact Jinx detail; desktop preserved */
+.aram-mobile-search{display:none}
+.aram-playstyle-mobile{display:none}
+
+@media(max-width:560px){
+  /* ARAM Tier mobile: show every hero as a compact circular portrait grid. */
+  .aram-tier-shell{padding:14px 11px}
+  .aram-section-heading{margin-bottom:10px}
+  .aram-mobile-search{display:grid;gap:6px;margin:0 0 12px;padding:10px;border:1px solid rgba(216,184,108,.16);border-radius:14px;background:rgba(5,15,26,.58)}
+  .aram-mobile-search label{color:#d9bd74;font-size:9px;font-weight:950;letter-spacing:.08em}
+  .aram-mobile-search-box{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:center;gap:5px;border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:7px 9px;background:#071522}
+  .aram-mobile-search-box span{color:#8fa3b5;font-size:17px;line-height:1;text-align:center}
+  .aram-mobile-search input{min-width:0;width:100%;border:0;outline:0;background:transparent;color:#eef3f7;font:inherit;font-size:12px}
+  .aram-mobile-search input::placeholder{color:#637a8f}
+  .aram-mobile-search small{color:#71879a;font-size:9px}
+
+  .aram-tier-list{gap:13px}
+  .aram-tier-row{display:block}
+  .aram-tier-badge{min-height:0;height:auto;display:flex;flex-direction:row;justify-content:flex-start;gap:8px;padding:8px 10px;margin-bottom:7px;border-radius:13px}
+  .aram-tier-badge strong{font-size:22px}
+  .aram-tier-badge span{margin:0;font-size:9px}
+  .aram-tier-badge small{margin:0 0 0 auto;font-size:9px}
+  .aram-tier-heroes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px 5px;padding:9px 5px;border-radius:14px;overflow:visible}
+  .aram-hero-card,.aram-hero-card.is-pending{min-width:0;width:auto;height:auto;display:flex;flex-direction:column;align-items:center;gap:4px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;opacity:1;text-align:center}
+  .aram-hero-card:hover{transform:none;border-color:transparent}
+  .aram-hero-card img{width:49px;height:49px;border-radius:50%;border:2px solid rgba(255,255,255,.1);box-shadow:0 5px 13px rgba(0,0,0,.22)}
+  .aram-hero-card:not(.is-pending) img{border-color:rgba(216,184,108,.55);box-shadow:0 0 0 2px rgba(216,184,108,.08),0 5px 13px rgba(0,0,0,.25)}
+  .aram-hero-card div{display:block;width:100%;min-width:0}
+  .aram-hero-card strong{display:block;width:100%;font-size:9px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .aram-hero-card span,.aram-hero-card small,.aram-hero-card em{display:none!important}
+  .aram-hero-card[hidden],.aram-tier-row[hidden]{display:none!important}
+
+  /* Jinx mobile master: shorter first screen and scan-first information density. */
+  body.aram-mobile-jinx-master .aram-detail-hero{gap:9px;padding:10px}
+  body.aram-mobile-jinx-master .aram-detail-portrait{height:118px;border-radius:13px}
+  body.aram-mobile-jinx-master .aram-detail-portrait img{object-position:center 24%}
+  body.aram-mobile-jinx-master .aram-detail-kicker{font-size:7px}
+  body.aram-mobile-jinx-master .aram-detail-titleline{margin-top:4px}
+  body.aram-mobile-jinx-master .aram-detail-titleline h1{font-size:28px}
+  body.aram-mobile-jinx-master .aram-detail-tier{min-width:54px;padding:6px 7px}
+  body.aram-mobile-jinx-master .aram-detail-tier strong{font-size:20px}
+  body.aram-mobile-jinx-master .aram-detail-position{margin-top:6px;font-size:10px}
+  body.aram-mobile-jinx-master .aram-detail-tags{margin-top:6px}
+  body.aram-mobile-jinx-master .aram-detail-summary{margin-top:8px;font-size:10px;line-height:1.55}
+  body.aram-mobile-jinx-master .aram-tier-reason{margin-top:8px;padding:8px 9px}
+
+  body.aram-mobile-jinx-master .aram-detail-section{margin-top:9px;padding:11px}
+  body.aram-mobile-jinx-master .aram-detail-section-head{margin-bottom:8px}
+  body.aram-mobile-jinx-master .aram-detail-section-head h2{font-size:18px}
+
+  /* Core build: five items in one scan line. Detailed reasons stay on desktop. */
+  body.aram-mobile-jinx-master .aram-loadout-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+  body.aram-mobile-jinx-master .aram-loadout-card{display:flex;flex-direction:column;justify-content:flex-start;gap:4px;min-width:0;padding:6px 2px 7px;text-align:center;border-radius:10px}
+  body.aram-mobile-jinx-master .aram-loadout-index{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;font-size:7px}
+  body.aram-mobile-jinx-master .aram-loadout-card img{width:43px;height:43px;margin:0;border-radius:9px}
+  body.aram-mobile-jinx-master .aram-loadout-card strong{margin:0;width:100%;font-size:8px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  body.aram-mobile-jinx-master .aram-loadout-card p{display:none}
+
+  /* Shoes and summoner spells remain side-by-side on mobile. */
+  body.aram-mobile-jinx-master .aram-subgrid{grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+  body.aram-mobile-jinx-master .aram-subgrid>div{padding:8px 6px;border-radius:11px}
+  body.aram-mobile-jinx-master .aram-subgrid h3{font-size:10px;margin-bottom:4px}
+  body.aram-mobile-jinx-master .aram-compact-card{grid-template-columns:31px minmax(0,1fr);gap:5px;padding:4px 2px}
+  body.aram-mobile-jinx-master .aram-compact-card+.aram-compact-card{margin-top:2px;padding-top:5px}
+  body.aram-mobile-jinx-master .aram-compact-card img{width:31px;height:31px;border-radius:7px}
+  body.aram-mobile-jinx-master .aram-compact-card strong{font-size:8px;line-height:1.2}
+  body.aram-mobile-jinx-master .aram-compact-card p,body.aram-mobile-jinx-master .aram-step-label{display:none}
+
+  /* Runes: keystone highlighted, four minor runes directly underneath. */
+  body.aram-mobile-jinx-master .aram-rune-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+  body.aram-mobile-jinx-master .aram-rune-card{display:flex;flex-direction:column;gap:3px;min-width:0;padding:7px 3px;text-align:center;border-radius:10px}
+  body.aram-mobile-jinx-master .aram-rune-card.keystone{grid-column:1/-1;display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;gap:9px;padding:8px;text-align:left}
+  body.aram-mobile-jinx-master .aram-rune-card img{width:42px;height:42px;margin:0 auto}
+  body.aram-mobile-jinx-master .aram-rune-card.keystone img{width:48px;height:48px;margin:0}
+  body.aram-mobile-jinx-master .aram-rune-card strong{margin:0;font-size:8px;line-height:1.25}
+  body.aram-mobile-jinx-master .aram-rune-card:not(.keystone) p{display:none}
+  body.aram-mobile-jinx-master .aram-rune-card.keystone p{margin-top:3px;font-size:9px;line-height:1.4}
+
+  body.aram-mobile-jinx-master .aram-skill-order{padding:8px;gap:7px}
+  body.aram-mobile-jinx-master .aram-skill-icons img{width:42px;height:42px}
+  body.aram-mobile-jinx-master .aram-skill-order p{font-size:9px;line-height:1.45}
+
+  /* Game plan uses a compact accordion on mobile; desktop keeps three full cards. */
+  body.aram-mobile-jinx-master .aram-playstyle-grid{display:none}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile{display:grid;gap:6px}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile-item{border:1px solid rgba(255,255,255,.08);border-radius:11px;background:rgba(7,18,31,.64);overflow:hidden}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile-item summary{display:flex;align-items:center;justify-content:space-between;gap:8px;list-style:none;padding:9px 10px;cursor:pointer}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile-item summary::-webkit-details-marker{display:none}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile-item summary span{display:inline-flex;border-radius:999px;padding:3px 6px;background:rgba(216,184,108,.08);color:#d8bd77;font-size:8px;font-weight:950}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile-item summary b{color:#71869a;font-size:8px;font-weight:800}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile-item[open] summary b{color:#bda96f}
+  body.aram-mobile-jinx-master .aram-playstyle-mobile-item p{margin:0;padding:0 10px 10px;color:#91a3b4;font-size:9px;line-height:1.5}
+
+  body.aram-mobile-jinx-master .aram-situational-card{grid-template-columns:42px minmax(0,1fr);gap:8px;padding:8px}
+  body.aram-mobile-jinx-master .aram-situational-card img{width:42px;height:42px}
+  body.aram-mobile-jinx-master .aram-situational-card p{margin-top:3px;font-size:8px;line-height:1.4}
+}
+
+@media(max-width:355px){
+  .aram-tier-heroes{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .aram-hero-card img{width:47px;height:47px}
+}

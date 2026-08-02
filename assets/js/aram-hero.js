@@ -6,7 +6,7 @@
   const id=params.get('id')||'jinx';
   if(id==='jinx')document.body.classList.add('aram-mobile-jinx-master');
   try{
-    const res=await fetch('assets/data/aram/heroes.json?v=79.8.1',{cache:'no-store'});
+    const res=await fetch('assets/data/aram/heroes.json?v=79.8.2',{cache:'no-store'});
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const hero=(data.heroes||[]).find(item=>item.id===id);
@@ -24,7 +24,9 @@
     const bootCards=(hero.boots||[]).map((boot,index)=>`<article class="aram-compact-card"><span class="aram-step-label">${index===0?'鞋子':'升級'}</span><img src="${esc(boot.icon)}" alt="${esc(boot.name)}"/><div><strong>${esc(boot.name)}</strong><p>${esc(boot.reason)}</p></div></article>`).join('');
     const spellCards=(hero.spells||[]).map(spell=>`<article class="aram-compact-card"><img src="${esc(spell.icon)}" alt="${esc(spell.name)}"/><div><strong>${esc(spell.name)}</strong><p>${esc(spell.reason)}</p></div></article>`).join('');
     const situational=(hero.situationalItems||[]).map(item=>`<article class="aram-situational-card"><img src="${esc(item.icon)}" alt="${esc(item.name)}"/><div><strong>${esc(item.name)}</strong><span>${esc(item.when)}</span><p>${esc(item.reason)}</p></div></article>`).join('');
-    const playstyle=Object.entries(hero.playstyle||{}).map(([phase,text])=>`<article><span>${esc(phase)}</span><p>${esc(text)}</p></article>`).join('');
+    const playstyleEntries=Object.entries(hero.playstyle||{});
+    const playstyle=playstyleEntries.map(([phase,text])=>`<article><span>${esc(phase)}</span><p>${esc(text)}</p></article>`).join('');
+    const playstyleMobile=playstyleEntries.map(([phase,text],index)=>`<details class="aram-playstyle-mobile-item" ${index===0?'open':''}><summary><span>${esc(phase)}</span><b>查看重點</b></summary><p>${esc(text)}</p></details>`).join('');
     const sourceLinks=(hero.sources||[]).map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a>`).join('');
     root.innerHTML=`
       <section class="aram-detail-hero">
@@ -58,7 +60,7 @@
       </section>
       <section class="aram-detail-section">
         <div class="aram-detail-section-head"><div><span>GAME PLAN</span><h2>ARAM 玩法重點</h2></div></div>
-        <div class="aram-playstyle-grid">${playstyle}</div>
+        <div class="aram-playstyle-grid">${playstyle}</div><div class="aram-playstyle-mobile">${playstyleMobile}</div>
       </section>
       <section class="aram-detail-section">
         <div class="aram-detail-section-head"><div><span>SITUATIONAL</span><h2>情境裝備</h2></div><small>依敵方陣容替換</small></div>
