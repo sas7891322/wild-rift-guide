@@ -4,9 +4,9 @@
   const esc=(value)=>String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
   const params=new URLSearchParams(location.search);
   const id=params.get('id')||'jinx';
-  if(id==='jinx')document.body.classList.add('aram-mobile-jinx-master');
+  document.body.classList.add('aram-mobile-master');
   try{
-    const res=await fetch('assets/data/aram/heroes.json?v=79.8.3',{cache:'no-store'});
+    const res=await fetch('assets/data/aram/heroes.json?v=79.9.0',{cache:'no-store'});
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const hero=(data.heroes||[]).find(item=>item.id===id);
@@ -32,7 +32,7 @@
       <section class="aram-detail-hero">
         <div class="aram-detail-portrait"><img src="${esc(hero.avatar)}" alt="${esc(hero.name)}"/></div>
         <div class="aram-detail-copy">
-          <div class="aram-detail-kicker">ARAM MASTER TEMPLATE · PATCH ${esc(data.gameVersion)}</div>
+          <div class="aram-detail-kicker">ARAM HERO GUIDE · PATCH ${esc(data.gameVersion)}</div>
           <div class="aram-detail-titleline"><div><h1>${esc(hero.name)}</h1><span>${esc(hero.enName)}</span></div><div class="aram-detail-tier"><strong>${esc(hero.tier)}</strong><span>${esc(hero.tierLabel)}</span></div></div>
           <p class="aram-detail-position">${esc(hero.position)}</p><div class="aram-detail-tags">${pills}</div>
           <p class="aram-detail-summary">${esc(hero.summary)}</p>
@@ -56,7 +56,7 @@
       </section>
       <section class="aram-detail-section">
         <div class="aram-detail-section-head"><div><span>SKILL ORDER</span><h2>技能升級</h2></div><small>${esc(hero.skillOrder)}</small></div>
-        <div class="aram-skill-order"><div class="aram-skill-icons"><img src="assets/images/heroes/skills/jinx_02.png" alt="1 技"/><b>→</b><img src="assets/images/heroes/skills/jinx_03.png" alt="2 技"/><b>→</b><img src="assets/images/heroes/skills/jinx_04.png" alt="3 技"/></div><p>${esc(hero.skillNote)}</p></div>
+        <div class="aram-skill-order"><div class="aram-skill-icons">${(hero.skillIcons||[]).map((src,index)=>`${index?'<b>→</b>':''}<img src="${esc(src)}" alt="技能順位 ${index+1}"/>`).join('')}</div><p>${esc(hero.skillNote)}</p></div>
       </section>
       <section class="aram-detail-section">
         <div class="aram-detail-section-head"><div><span>GAME PLAN</span><h2>ARAM 玩法重點</h2></div></div>
