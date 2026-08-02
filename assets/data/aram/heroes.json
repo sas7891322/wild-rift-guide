@@ -1,15 +1,762 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "gameVersion": "7.2b",
   "mode": "aram",
-  "status": "master-template-test",
+  "status": "full-tier-list-draft",
   "updated": "2026-08-03",
-  "tierOrder": ["S+", "S", "A", "B"],
+  "tierOrder": [
+    "S+",
+    "S",
+    "A",
+    "B"
+  ],
+  "tierCounts": {
+    "S+": 27,
+    "S": 49,
+    "A": 55,
+    "B": 9
+  },
+  "detailGuideCount": 1,
+  "tierMethodology": {
+    "type": "本站 ARAM 綜合評級（非單一勝率排名）",
+    "factors": [
+      "7.2b 英雄／裝備／符文改動",
+      "官方 ARAM 專屬平衡修正",
+      "單線 5v5 團戰穩定度",
+      "範圍傷害與控制",
+      "開戰與保排",
+      "續航與陣地能力",
+      "射程與進場風險",
+      "對特定陣容的依賴程度"
+    ],
+    "note": "本階段先建立 140 位英雄的 7.2b ARAM Tier 初版；每位英雄的完整出裝、符文與模式平衡數值會在分批製作詳細攻略時逐一驗證。"
+  },
   "notes": [
     "ARAM 英雄評級、出裝與符文獨立於召喚峽谷資料。",
-    "第一位英雄使用吉茵珂絲建立固定母版；確認版面與資料流程後再批次擴充。"
+    "v79.8.0 完成 140 位英雄 S+／S／A／B Tier 初版；目前只有吉茵珂絲已完成詳細攻略母版。",
+    "Tier 為綜合評級，不宣稱等同官方勝率排行；後續會依版本與逐英雄資料驗證調整。"
+  ],
+  "sources": [
+    {
+      "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+      "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+    },
+    {
+      "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+      "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+    },
+    {
+      "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+      "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2/"
+    },
+    {
+      "label": "Riot Games｜Wild Rift Patch Notes 7.1e",
+      "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-1e/"
+    }
   ],
   "heroes": [
+    {
+      "id": "amumu",
+      "name": "阿姆姆",
+      "enName": "Amumu",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/amumu.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "aurelion-sol",
+      "name": "翱銳龍獸",
+      "enName": "Aurelion Sol",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/aurelion-sol.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "brand",
+      "name": "布蘭德",
+      "enName": "Brand",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/brand.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "fiddlesticks",
+      "name": "費德提克",
+      "enName": "Fiddlesticks",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/fiddlesticks.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "galio",
+      "name": "加里歐",
+      "enName": "Galio",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/galio.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "heimerdinger",
+      "name": "漢默丁格",
+      "enName": "Heimerdinger",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/heimerdinger.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "janna",
+      "name": "珍娜",
+      "enName": "Janna",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/janna.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "jayce",
+      "name": "杰西",
+      "enName": "Jayce",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/jayce.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "karma",
+      "name": "卡瑪",
+      "enName": "Karma",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/karma.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kennen",
+      "name": "凱能",
+      "enName": "Kennen",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kennen.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "lux",
+      "name": "拉克絲",
+      "enName": "Lux",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/lux.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "malphite",
+      "name": "墨菲特",
+      "enName": "Malphite",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/malphite.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "maokai",
+      "name": "茂凱",
+      "enName": "Maokai",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/maokai.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "mel",
+      "name": "梅爾",
+      "enName": "Mel",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/mel.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "miss-fortune",
+      "name": "好運姐",
+      "enName": "Miss Fortune",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/miss-fortune.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "morgana",
+      "name": "魔甘娜",
+      "enName": "Morgana",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/morgana.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "nami",
+      "name": "娜米",
+      "enName": "Nami",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/nami.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "nautilus",
+      "name": "納帝魯斯",
+      "enName": "Nautilus",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/nautilus.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "orianna",
+      "name": "奧莉安娜",
+      "enName": "Orianna",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/orianna.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ornn",
+      "name": "鄂爾",
+      "enName": "Ornn",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ornn.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "rell",
+      "name": "銳兒",
+      "enName": "Rell",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/rell.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "seraphine",
+      "name": "瑟菈紛",
+      "enName": "Seraphine",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/seraphine.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "swain",
+      "name": "斯溫",
+      "enName": "Swain",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/swain.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "veigar",
+      "name": "維迦",
+      "enName": "Veigar",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/veigar.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "velkoz",
+      "name": "威寇茲",
+      "enName": "Vel'Koz",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/velkoz.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ziggs",
+      "name": "希格斯",
+      "enName": "Ziggs",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ziggs.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "zyra",
+      "name": "枷蘿",
+      "enName": "Zyra",
+      "tier": "S+",
+      "tierLabel": "頂級強勢",
+      "tierReason": "單線 5v5 中能非常穩定地放大範圍傷害、控制、開戰、續航或陣地能力，通常不太依賴特定陣容就能發揮。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/zyra.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ahri",
+      "name": "阿璃",
+      "enName": "Ahri",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ahri.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "akshan",
+      "name": "埃可尚",
+      "enName": "Akshan",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/akshan.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "annie",
+      "name": "安妮",
+      "enName": "Annie",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/annie.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ashe",
+      "name": "艾希",
+      "enName": "Ashe",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ashe.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "blitzcrank",
+      "name": "布里茨",
+      "enName": "Blitzcrank",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/blitzcrank.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "braum",
+      "name": "布郎姆",
+      "enName": "Braum",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/braum.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "caitlyn",
+      "name": "凱特琳",
+      "enName": "Caitlyn",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/caitlyn.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "diana",
+      "name": "黛安娜",
+      "enName": "Diana",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/diana.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ezreal",
+      "name": "伊澤瑞爾",
+      "enName": "Ezreal",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ezreal.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "gragas",
+      "name": "古拉格斯",
+      "enName": "Gragas",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/gragas.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "irelia",
+      "name": "伊瑞莉雅",
+      "enName": "Irelia",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/irelia.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "jhin",
+      "name": "燼",
+      "enName": "Jhin",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/jhin.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
     {
       "id": "jinx",
       "name": "吉茵珂絲",
@@ -18,7 +765,11 @@
       "tierLabel": "強勢推薦",
       "tierReason": "單線長時間 5v5 讓火箭範圍輸出與被動重置非常容易發揮；但 ARAM 仍有傷害降低與承傷增加的模式修正，因此先放 S，不直接列入 S+。",
       "position": "遠程持續輸出／團戰重置型射手",
-      "tags": ["遠程消耗", "範圍輸出", "團戰重置"],
+      "tags": [
+        "遠程消耗",
+        "範圍輸出",
+        "團戰重置"
+      ],
       "avatar": "assets/images/heroes/portraits/jinx.webp",
       "summary": "在 ARAM 以火箭射程安全磨血，等隊伍打出第一個擊殺後靠「狂躁！」加速接管團戰。核心不是硬追後排，而是活著輸出最近且安全的目標，讓重置自然發生。",
       "balance": {
@@ -174,6 +925,1808 @@
         }
       ],
       "reviewStatus": "aram-jinx-master-template-v79.7",
+      "reviewedAt": "2026-08-03",
+      "detailReady": true,
+      "tierListVersion": "v79.8.0"
+    },
+    {
+      "id": "ksante",
+      "name": "卡桑帝",
+      "enName": "K'Sante",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ksante.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kaisa",
+      "name": "凱莎",
+      "enName": "Kai'Sa",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kaisa.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kayle",
+      "name": "凱爾",
+      "enName": "Kayle",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kayle.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kogmaw",
+      "name": "寇格魔",
+      "enName": "Kog'Maw",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kogmaw.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "leona",
+      "name": "雷歐娜",
+      "enName": "Leona",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/leona.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "lillia",
+      "name": "莉莉亞",
+      "enName": "Lillia",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/lillia.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "lissandra",
+      "name": "麗珊卓",
+      "enName": "Lissandra",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/lissandra.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "lulu",
+      "name": "露璐",
+      "enName": "Lulu",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/lulu.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "milio",
+      "name": "米里歐",
+      "enName": "Milio",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/milio.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "nasus",
+      "name": "納瑟斯",
+      "enName": "Nasus",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/nasus.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "nocturne",
+      "name": "夜曲",
+      "enName": "Nocturne",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/nocturne.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "poppy",
+      "name": "波比",
+      "enName": "Poppy",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/poppy.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "pyke",
+      "name": "派克",
+      "enName": "Pyke",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/pyke.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "rakan",
+      "name": "銳空",
+      "enName": "Rakan",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/rakan.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "rumble",
+      "name": "藍寶",
+      "enName": "Rumble",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/rumble.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "samira",
+      "name": "煞蜜拉",
+      "enName": "Samira",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/samira.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "senna",
+      "name": "姍娜",
+      "enName": "Senna",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/senna.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "sett",
+      "name": "賽特",
+      "enName": "Sett",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/sett.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "sion",
+      "name": "賽恩",
+      "enName": "Sion",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/sion.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "sivir",
+      "name": "希維爾",
+      "enName": "Sivir",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/sivir.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "skarner",
+      "name": "史加納",
+      "enName": "Skarner",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/skarner.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "smolder",
+      "name": "史矛德",
+      "enName": "Smolder",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/smolder.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "sona",
+      "name": "索娜",
+      "enName": "Sona",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/sona.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "soraka",
+      "name": "索拉卡",
+      "enName": "Soraka",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/soraka.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "dr-mundo",
+      "name": "蒙多醫生",
+      "enName": "Dr. Mundo",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/dr-mundo.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "yuumi",
+      "name": "悠咪",
+      "enName": "Yuumi",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/yuumi.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "syndra",
+      "name": "星朵拉",
+      "enName": "Syndra",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/syndra.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "taliyah",
+      "name": "塔莉雅",
+      "enName": "Taliyah",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/taliyah.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "thresh",
+      "name": "瑟雷西",
+      "enName": "Thresh",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/thresh.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "varus",
+      "name": "法洛士",
+      "enName": "Varus",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/varus.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "vex",
+      "name": "薇可絲",
+      "enName": "Vex",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/vex.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "viktor",
+      "name": "維克特",
+      "enName": "Viktor",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/viktor.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "vladimir",
+      "name": "弗拉迪米爾",
+      "enName": "Vladimir",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/vladimir.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "wukong",
+      "name": "悟空",
+      "enName": "Wukong",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/wukong.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "xayah",
+      "name": "剎雅",
+      "enName": "Xayah",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/xayah.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "zoe",
+      "name": "柔依",
+      "enName": "Zoe",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/zoe.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "aatrox",
+      "name": "厄薩斯",
+      "enName": "Aatrox",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/aatrox.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "akali",
+      "name": "阿卡莉",
+      "enName": "Akali",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/akali.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "alistar",
+      "name": "亞歷斯塔",
+      "enName": "Alistar",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/alistar.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ambessa",
+      "name": "安比薩",
+      "enName": "Ambessa",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ambessa.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "aurora",
+      "name": "歐羅拉",
+      "enName": "Aurora",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/aurora.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "corki",
+      "name": "庫奇",
+      "enName": "Corki",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/corki.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "darius",
+      "name": "達瑞斯",
+      "enName": "Darius",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/darius.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "draven",
+      "name": "達瑞文",
+      "enName": "Draven",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/draven.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ekko",
+      "name": "艾克",
+      "enName": "Ekko",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ekko.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "fizz",
+      "name": "飛斯",
+      "enName": "Fizz",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/fizz.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "garen",
+      "name": "蓋倫",
+      "enName": "Garen",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/garen.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "gnar",
+      "name": "吶兒",
+      "enName": "Gnar",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/gnar.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "graves",
+      "name": "葛雷夫",
+      "enName": "Graves",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/graves.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "gwen",
+      "name": "關",
+      "enName": "Gwen",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/gwen.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "hecarim",
+      "name": "赫克林",
+      "enName": "Hecarim",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/hecarim.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "jax",
+      "name": "賈克斯",
+      "enName": "Jax",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/jax.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "jarvan-iv",
+      "name": "嘉文四世",
+      "enName": "Jarvan IV",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/jarvan-iv.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kassadin",
+      "name": "卡薩丁",
+      "enName": "Kassadin",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kassadin.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kalista",
+      "name": "克黎思妲",
+      "enName": "Kalista",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kalista.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "katarina",
+      "name": "卡特蓮娜",
+      "enName": "Katarina",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/katarina.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kayn",
+      "name": "慨影",
+      "enName": "Kayn",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kayn.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "lee-sin",
+      "name": "李星",
+      "enName": "Lee Sin",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/lee-sin.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "lucian",
+      "name": "路西恩",
+      "enName": "Lucian",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/lucian.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "master-yi",
+      "name": "易大師",
+      "enName": "Master Yi",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/master-yi.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "mordekaiser",
+      "name": "魔鬥凱薩",
+      "enName": "Mordekaiser",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/mordekaiser.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "nidalee",
+      "name": "奈德麗",
+      "enName": "Nidalee",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/nidalee.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "nilah",
+      "name": "淣菈",
+      "enName": "Nilah",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/nilah.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "norra",
+      "name": "諾拉",
+      "enName": "Norra",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/norra.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "nunu-and-willump",
+      "name": "努努和威朗普",
+      "enName": "Nunu & Willump",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/nunu-and-willump.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "olaf",
+      "name": "歐拉夫",
+      "enName": "Olaf",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/olaf.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "pantheon",
+      "name": "潘森",
+      "enName": "Pantheon",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/pantheon.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "renekton",
+      "name": "雷尼克頓",
+      "enName": "Renekton",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/renekton.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "rengar",
+      "name": "雷葛爾",
+      "enName": "Rengar",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/rengar.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "rammus",
+      "name": "拉姆斯",
+      "enName": "Rammus",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/rammus.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "riven",
+      "name": "雷玟",
+      "enName": "Riven",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/riven.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "ryze",
+      "name": "雷茲",
+      "enName": "Ryze",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/ryze.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "singed",
+      "name": "辛吉德",
+      "enName": "Singed",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/singed.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "teemo",
+      "name": "提摩",
+      "enName": "Teemo",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/teemo.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "tristana",
+      "name": "崔絲塔娜",
+      "enName": "Tristana",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/tristana.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "twitch",
+      "name": "圖奇",
+      "enName": "Twitch",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/twitch.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "urgot",
+      "name": "烏爾加特",
+      "enName": "Urgot",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/urgot.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "vayne",
+      "name": "汎",
+      "enName": "Vayne",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/vayne.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "vi",
+      "name": "菲艾",
+      "enName": "Vi",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/vi.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "viego",
+      "name": "維爾戈",
+      "enName": "Viego",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/viego.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "volibear",
+      "name": "弗力貝爾",
+      "enName": "Volibear",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/volibear.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "warwick",
+      "name": "沃維克",
+      "enName": "Warwick",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/warwick.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "xin-zhao",
+      "name": "趙信",
+      "enName": "Xin Zhao",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/xin-zhao.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "yasuo",
+      "name": "犽宿",
+      "enName": "Yasuo",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/yasuo.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "yone",
+      "name": "犽凝",
+      "enName": "Yone",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/yone.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "yunara",
+      "name": "尤娜拉",
+      "enName": "Yunara",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/yunara.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "zed",
+      "name": "劫",
+      "enName": "Zed",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/zed.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "zeri",
+      "name": "婕莉",
+      "enName": "Zeri",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/zeri.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "zilean",
+      "name": "極靈",
+      "enName": "Zilean",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/zilean.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "bard",
+      "name": "巴德",
+      "enName": "Bard",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/bard.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "twisted-fate",
+      "name": "逆命",
+      "enName": "Twisted Fate",
+      "tier": "A",
+      "tierLabel": "穩定可選",
+      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/twisted-fate.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "camille",
+      "name": "卡蜜兒",
+      "enName": "Camille",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/camille.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "evelynn",
+      "name": "伊芙琳",
+      "enName": "Evelynn",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/evelynn.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "fiora",
+      "name": "菲歐拉",
+      "enName": "Fiora",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/fiora.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "khazix",
+      "name": "卡力斯",
+      "enName": "Kha'Zix",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/khazix.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "kindred",
+      "name": "鏡爪",
+      "enName": "Kindred",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/kindred.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "shen",
+      "name": "慎",
+      "enName": "Shen",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/shen.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "shyvana",
+      "name": "希瓦娜",
+      "enName": "Shyvana",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/shyvana.png",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "talon",
+      "name": "塔隆",
+      "enName": "Talon",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/talon.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
+      "reviewedAt": "2026-08-03"
+    },
+    {
+      "id": "tryndamere",
+      "name": "泰達米爾",
+      "enName": "Tryndamere",
+      "tier": "B",
+      "tierLabel": "情境選擇",
+      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
+      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tags": [
+        "ARAM Tier 初評"
+      ],
+      "avatar": "assets/images/heroes/portraits/tryndamere.webp",
+      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
+      "detailReady": false,
+      "tierListVersion": "v79.8.0",
+      "reviewStatus": "aram-tier-only-v79.8",
       "reviewedAt": "2026-08-03"
     }
   ]

@@ -1806,3 +1806,106 @@ button,a{-webkit-tap-highlight-color:transparent}
 @media(max-width:900px){.aram-loadout-grid,.aram-rune-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.aram-balance-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aram-detail-hero{grid-template-columns:180px minmax(0,1fr)}.aram-detail-portrait{min-height:230px}}
 @media(max-width:680px){.aram-tier-row{grid-template-columns:78px minmax(0,1fr)}.aram-tier-badge strong{font-size:25px}.aram-tier-badge span{font-size:8px}.aram-hero-card{min-width:250px;grid-template-columns:54px minmax(0,1fr)}.aram-hero-card img{width:54px;height:54px}.aram-hero-card em{display:none}.aram-detail-shell{padding-top:11px}.aram-detail-hero{grid-template-columns:1fr;padding:15px;border-radius:20px}.aram-detail-portrait{height:230px;min-height:0}.aram-detail-portrait img{object-position:center 28%}.aram-detail-copy{padding:2px}.aram-detail-titleline h1{font-size:36px}.aram-detail-tier{min-width:68px}.aram-detail-section{padding:15px;border-radius:18px}.aram-loadout-grid,.aram-rune-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aram-loadout-grid .aram-loadout-card:last-child,.aram-rune-grid .aram-rune-card:last-child{grid-column:1/-1}.aram-subgrid,.aram-playstyle-grid,.aram-situational-grid{grid-template-columns:1fr}.aram-starter-row{grid-template-columns:auto 1fr}.aram-starter-row p{grid-column:1/-1}.aram-skill-order{grid-template-columns:1fr}.aram-skill-icons{justify-content:center}.aram-source-panel div{flex-direction:column;gap:6px}}
 @media(max-width:390px){.aram-tier-row{grid-template-columns:65px minmax(0,1fr)}.aram-tier-heroes{padding:8px}.aram-hero-card{min-width:225px}.aram-loadout-grid,.aram-rune-grid{grid-template-columns:1fr}.aram-loadout-grid .aram-loadout-card:last-child,.aram-rune-grid .aram-rune-card:last-child{grid-column:auto}.aram-loadout-card{display:grid;grid-template-columns:58px minmax(0,1fr);gap:11px;text-align:left;align-items:center}.aram-loadout-card img{width:58px;height:58px}.aram-loadout-card strong{margin-top:0}.aram-rune-card{display:grid;grid-template-columns:55px minmax(0,1fr);gap:10px;text-align:left;align-items:center}.aram-rune-card img{width:52px;height:52px}.aram-rune-card strong{margin-top:0}}
+
+
+/* v79.8.0 — ARAM full Tier list: responsive grid, no horizontal swipe */
+.aram-tier-badge small{margin-top:5px;color:#657b8f;font-size:9px;font-weight:850}
+.aram-tier-heroes{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));align-items:stretch;overflow:visible}
+.aram-hero-card{min-width:0;max-width:none;width:100%;height:100%}
+.aram-hero-card.is-pending{opacity:.78;cursor:default}
+.aram-hero-card.is-pending:hover{transform:none;border-color:rgba(255,255,255,.08)}
+.aram-hero-card.is-pending em{color:#768b9d}
+@media(max-width:680px){
+  .aram-tier-row{grid-template-columns:70px minmax(0,1fr)}
+  .aram-tier-heroes{grid-template-columns:1fr;gap:8px}
+  .aram-hero-card{min-width:0;grid-template-columns:54px minmax(0,1fr);padding:9px}
+}
+@media(max-width:390px){
+  .aram-tier-row{grid-template-columns:58px minmax(0,1fr);gap:8px}
+  .aram-tier-heroes{padding:7px}
+  .aram-hero-card{min-width:0}
+}
+
+/* v79.8.1 — Jinx ARAM mobile master preview only; desktop untouched */
+@media(max-width:560px){
+  body.aram-mobile-jinx-master .aram-detail-shell{padding-top:8px;padding-bottom:22px}
+  body.aram-mobile-jinx-master .aram-detail-breadcrumb{margin:2px 0 10px;gap:6px;font-size:9px;white-space:nowrap;overflow:hidden}
+  body.aram-mobile-jinx-master .aram-detail-breadcrumb a,
+  body.aram-mobile-jinx-master .aram-detail-breadcrumb strong{overflow:hidden;text-overflow:ellipsis}
+
+  body.aram-mobile-jinx-master .aram-detail-hero{padding:12px;border-radius:18px;gap:12px}
+  body.aram-mobile-jinx-master .aram-detail-portrait{height:168px;min-height:0;border-radius:15px}
+  body.aram-mobile-jinx-master .aram-detail-portrait img{object-position:center 24%}
+  body.aram-mobile-jinx-master .aram-detail-copy{padding:0}
+  body.aram-mobile-jinx-master .aram-detail-kicker{font-size:8px;letter-spacing:.1em}
+  body.aram-mobile-jinx-master .aram-detail-titleline{margin-top:6px;gap:10px;align-items:center}
+  body.aram-mobile-jinx-master .aram-detail-titleline h1{font-size:31px;line-height:1.05}
+  body.aram-mobile-jinx-master .aram-detail-titleline>div>span{margin-top:4px;font-size:10px}
+  body.aram-mobile-jinx-master .aram-detail-tier{min-width:58px;border-radius:13px;padding:7px 8px}
+  body.aram-mobile-jinx-master .aram-detail-tier strong{font-size:22px}
+  body.aram-mobile-jinx-master .aram-detail-tier span{font-size:8px!important}
+  body.aram-mobile-jinx-master .aram-detail-position{margin-top:8px;font-size:11px}
+  body.aram-mobile-jinx-master .aram-detail-tags{gap:5px;margin-top:8px}
+  body.aram-mobile-jinx-master .aram-detail-tags span{padding:4px 7px;font-size:8px}
+  body.aram-mobile-jinx-master .aram-detail-summary{margin-top:11px;font-size:11px;line-height:1.65}
+  body.aram-mobile-jinx-master .aram-tier-reason{margin-top:11px;padding:10px;border-radius:12px;display:block}
+  body.aram-mobile-jinx-master .aram-tier-reason strong{display:block;margin-bottom:5px;font-size:9px}
+  body.aram-mobile-jinx-master .aram-tier-reason span{font-size:10px;line-height:1.55}
+
+  body.aram-mobile-jinx-master .aram-detail-section{margin-top:11px;padding:13px;border-radius:16px}
+  body.aram-mobile-jinx-master .aram-detail-section-head{margin-bottom:11px;gap:8px;align-items:center;flex-direction:row}
+  body.aram-mobile-jinx-master .aram-detail-section-head span{font-size:8px}
+  body.aram-mobile-jinx-master .aram-detail-section-head h2{font-size:19px;margin-top:2px}
+  body.aram-mobile-jinx-master .aram-detail-section-head small{font-size:9px;text-align:right}
+
+  body.aram-mobile-jinx-master .aram-balance-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  body.aram-mobile-jinx-master .aram-balance-grid article{min-height:70px;border-radius:11px}
+  body.aram-mobile-jinx-master .aram-balance-grid span{font-size:8px}
+  body.aram-mobile-jinx-master .aram-balance-grid strong{margin-top:4px;font-size:19px}
+  body.aram-mobile-jinx-master .aram-detail-note{margin-top:9px;font-size:9px;line-height:1.55}
+
+  body.aram-mobile-jinx-master .aram-starter-row{grid-template-columns:auto minmax(0,1fr);gap:7px;padding:8px 9px;margin-bottom:9px}
+  body.aram-mobile-jinx-master .aram-starter-row>strong{font-size:8px}
+  body.aram-mobile-jinx-master .aram-starter-row>span{font-size:9px}
+  body.aram-mobile-jinx-master .aram-starter-row img{width:30px;height:30px}
+  body.aram-mobile-jinx-master .aram-starter-row p{grid-column:1/-1;margin-top:0;font-size:9px;line-height:1.5}
+
+  body.aram-mobile-jinx-master .aram-loadout-grid,
+  body.aram-mobile-jinx-master .aram-rune-grid{grid-template-columns:1fr;gap:7px}
+  body.aram-mobile-jinx-master .aram-loadout-grid .aram-loadout-card:last-child,
+  body.aram-mobile-jinx-master .aram-rune-grid .aram-rune-card:last-child{grid-column:auto}
+  body.aram-mobile-jinx-master .aram-loadout-card{display:grid;grid-template-columns:27px 52px minmax(0,1fr);gap:9px;align-items:center;text-align:left;padding:8px;min-height:0}
+  body.aram-mobile-jinx-master .aram-loadout-index{position:static;width:25px;height:25px;display:grid;place-items:center;border-radius:8px;font-size:9px}
+  body.aram-mobile-jinx-master .aram-loadout-card img{width:52px;height:52px;margin:0}
+  body.aram-mobile-jinx-master .aram-loadout-card strong{margin-top:0;font-size:11px}
+  body.aram-mobile-jinx-master .aram-loadout-card p{margin-top:3px;font-size:9px;line-height:1.45}
+
+  body.aram-mobile-jinx-master .aram-rune-card{display:grid;grid-template-columns:52px minmax(0,1fr);gap:9px;align-items:center;text-align:left;padding:8px;min-height:0}
+  body.aram-mobile-jinx-master .aram-rune-card img{width:50px;height:50px;margin:0}
+  body.aram-mobile-jinx-master .aram-rune-card strong{margin-top:0;font-size:11px}
+  body.aram-mobile-jinx-master .aram-rune-card p{margin-top:3px;font-size:9px;line-height:1.45}
+
+  body.aram-mobile-jinx-master .aram-subgrid{gap:8px;margin-top:9px}
+  body.aram-mobile-jinx-master .aram-subgrid h3{font-size:11px;margin-bottom:6px}
+  body.aram-mobile-jinx-master .aram-compact-card{padding:8px;border-radius:11px;gap:8px}
+  body.aram-mobile-jinx-master .aram-compact-card img{width:42px;height:42px}
+  body.aram-mobile-jinx-master .aram-compact-card strong{font-size:10px}
+  body.aram-mobile-jinx-master .aram-compact-card p{font-size:9px;line-height:1.45}
+
+  body.aram-mobile-jinx-master .aram-skill-order{gap:9px;padding:10px}
+  body.aram-mobile-jinx-master .aram-skill-icons img{width:46px;height:46px}
+  body.aram-mobile-jinx-master .aram-skill-icons b{font-size:12px}
+  body.aram-mobile-jinx-master .aram-skill-order p{font-size:10px;line-height:1.55}
+
+  body.aram-mobile-jinx-master .aram-playstyle-grid,
+  body.aram-mobile-jinx-master .aram-situational-grid{gap:7px}
+  body.aram-mobile-jinx-master .aram-playstyle-grid article,
+  body.aram-mobile-jinx-master .aram-situational-card{padding:10px;border-radius:11px}
+  body.aram-mobile-jinx-master .aram-playstyle-grid p,
+  body.aram-mobile-jinx-master .aram-situational-card p{font-size:9px;line-height:1.5}
+  body.aram-mobile-jinx-master .aram-situational-card img{width:46px;height:46px}
+
+  body.aram-mobile-jinx-master .aram-source-panel{margin-top:11px;padding:12px;border-radius:14px}
+  body.aram-mobile-jinx-master .aram-source-panel p,
+  body.aram-mobile-jinx-master .aram-source-panel a{font-size:9px;line-height:1.5}
+}

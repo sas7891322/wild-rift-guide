@@ -1,0 +1,26 @@
+Wild Rift Guide v79.8.0 — ARAM 全英雄 Tier 初版驗收
+Date: 2026-08-03
+
+[PASS] assets/data/aram/heroes.json JSON parse
+[PASS] ARAM hero count = 140
+[PASS] ARAM unique hero ids = 140
+[PASS] Tier counts sum = 140 (S+ 27 / S 49 / A 55 / B 9)
+[PASS] Only Jinx detailReady = true; 139 pending heroes do not link to incomplete detail pages
+[PASS] All 140 ARAM portrait asset paths exist
+[PASS] assets/js/aram.js node --check
+[PASS] assets/js/aram-hero.js node --check
+[PASS] index.html HTML parse
+[PASS] aram.html HTML parse
+[PASS] aram-hero.html HTML parse
+[PASS] summoners-rift.html HTML parse
+[PASS] Summoner's Rift assets/data/heroes.json unchanged vs v79.7.0
+[PASS] Summoner's Rift assets/data/items.json unchanged vs v79.7.0
+[PASS] Summoner's Rift assets/data/runes.json unchanged vs v79.7.0
+[PASS] Summoner's Rift assets/data/spells.json unchanged vs v79.7.0
+[PASS] pages/heroes.html unchanged vs v79.7.0
+[PASS] summoners-rift.html unchanged vs v79.7.0
+
+Notes:
+- ARAM Tier page now uses a responsive card grid instead of a long horizontal hero scroller.
+- 139 heroes are Tier-only placeholders; detailed builds/runes/balance values are intentionally deferred until batch review.
+- Shared CSS changes are scoped to ARAM classes only.

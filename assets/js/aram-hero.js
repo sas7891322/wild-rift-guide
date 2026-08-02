@@ -4,8 +4,9 @@
   const esc=(value)=>String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
   const params=new URLSearchParams(location.search);
   const id=params.get('id')||'jinx';
+  if(id==='jinx')document.body.classList.add('aram-mobile-jinx-master');
   try{
-    const res=await fetch('assets/data/aram/heroes.json?v=79.7.0',{cache:'no-store'});
+    const res=await fetch('assets/data/aram/heroes.json?v=79.8.1',{cache:'no-store'});
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const hero=(data.heroes||[]).find(item=>item.id===id);
