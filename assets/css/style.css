@@ -2012,3 +2012,37 @@ button,a{-webkit-tap-highlight-color:transparent}
   .aram-tier-heroes{grid-template-columns:repeat(4,minmax(0,1fr))}
   .aram-hero-card img{width:47px;height:47px}
 }
+
+/* v79.8.4 — ARAM Tier hero selector uses circular portraits on desktop and mobile */
+.aram-mobile-search{display:grid;grid-template-columns:auto minmax(280px,420px) auto;align-items:center;gap:10px;margin:0 0 14px;padding:11px 13px;border:1px solid rgba(216,184,108,.16);border-radius:15px;background:rgba(5,15,26,.58)}
+.aram-mobile-search label{color:#d9bd74;font-size:10px;font-weight:950;letter-spacing:.08em;white-space:nowrap}
+.aram-mobile-search-box{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:center;gap:6px;border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:8px 10px;background:#071522}
+.aram-mobile-search-box span{color:#8fa3b5;font-size:17px;line-height:1;text-align:center}
+.aram-mobile-search input{min-width:0;width:100%;border:0;outline:0;background:transparent;color:#eef3f7;font:inherit;font-size:12px}
+.aram-mobile-search input::placeholder{color:#637a8f}
+.aram-mobile-search small{color:#71879a;font-size:9px;text-align:right;white-space:nowrap}
+
+.aram-tier-heroes{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:14px 8px;align-items:start;padding:14px 12px;overflow:visible}
+.aram-hero-card,.aram-hero-card.is-pending{min-width:0;max-width:none;width:auto;height:auto;display:flex;flex-direction:column;align-items:center;gap:7px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;opacity:1;text-align:center}
+.aram-hero-card:hover{transform:translateY(-2px);border-color:transparent}
+.aram-hero-card.is-pending:hover{transform:none;border-color:transparent}
+.aram-hero-card img{width:68px;height:68px;object-fit:cover;border-radius:50%;border:2px solid rgba(255,255,255,.12);box-shadow:0 7px 18px rgba(0,0,0,.25);transition:.15s}
+.aram-hero-card:not(.is-pending) img{border-color:rgba(216,184,108,.62);box-shadow:0 0 0 3px rgba(216,184,108,.08),0 7px 18px rgba(0,0,0,.28)}
+.aram-hero-card:hover img{border-color:rgba(216,184,108,.78);transform:scale(1.04)}
+.aram-hero-card.is-pending:hover img{transform:none}
+.aram-hero-card div{display:block;width:100%;min-width:0}
+.aram-hero-card strong{display:block;width:100%;font-size:11px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.aram-hero-card span,.aram-hero-card small,.aram-hero-card em{display:none!important}
+.aram-hero-card[hidden],.aram-tier-row[hidden]{display:none!important}
+
+@media(max-width:680px){
+  .aram-mobile-search{grid-template-columns:1fr;gap:6px}
+  .aram-mobile-search small{text-align:left}
+  .aram-tier-row{display:block}
+  .aram-tier-badge{min-height:0;height:auto;display:flex;flex-direction:row;justify-content:flex-start;gap:8px;padding:8px 10px;margin-bottom:7px;border-radius:13px}
+  .aram-tier-badge strong{font-size:22px}.aram-tier-badge span{margin:0;font-size:9px}.aram-tier-badge small{margin:0 0 0 auto;font-size:9px}
+  .aram-tier-heroes{grid-template-columns:repeat(5,minmax(0,1fr));gap:9px 5px;padding:9px 5px}
+  .aram-hero-card img{width:49px;height:49px}
+  .aram-hero-card strong{font-size:9px}
+}
+@media(max-width:355px){.aram-tier-heroes{grid-template-columns:repeat(4,minmax(0,1fr))}.aram-hero-card img{width:47px;height:47px}}
