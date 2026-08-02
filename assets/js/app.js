@@ -211,7 +211,7 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
 
   async function loadCatalog() {
     try {
-      const response = await fetch('assets/data/heroes.json?v=79.3', { cache: 'force-cache' });
+      const response = await fetch('assets/data/heroes.json?v=79.4.1', { cache: 'force-cache' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       catalog = Array.isArray(data.heroCatalog) ? data.heroCatalog : [];
