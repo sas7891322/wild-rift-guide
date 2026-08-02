@@ -1,0 +1,28 @@
+Wild Rift Guide 7.2b v79.6.0 — dual-mode entry / ARAM framework validation
+Date: 2026-08-02
+
+[PASS] New first-visit index contains two mode links: Summoner's Rift / ARAM.
+[PASS] Existing completed homepage preserved as summoners-rift.html.
+[PASS] Summoner's Rift five role links remain present: baron / jungle / mid / duo / support.
+[PASS] Existing heroes.json unchanged from supplied v79.5.1 baseline.
+[PASS] Existing items.json unchanged from supplied v79.5.1 baseline.
+[PASS] Existing runes.json unchanged from supplied v79.5.1 baseline.
+[PASS] Existing spells.json unchanged from supplied v79.5.1 baseline.
+[PASS] Existing heroes/items/runes/spells/guides pages and core JS unchanged.
+[PASS] ARAM data namespace created at assets/data/aram/heroes.json.
+[PASS] ARAM heroes list is intentionally empty; no Summoner's Rift champion data copied or overwritten.
+[PASS] index.html / summoners-rift.html / aram.html local links and resources resolve.
+[PASS] style.css brace balance validated.
+[PASS] ARAM placeholder is noindex until real guide data is added.
+
+Files intentionally changed from baseline:
+- index.html
+- assets/css/style.css
+- sitemap.xml
+
+Files added:
+- summoners-rift.html
+- aram.html
+- assets/data/aram/heroes.json
+- UPDATE_7.2b_v79.6_mode-framework.md
+- VALIDATION_7.2b_v79.6_mode-framework.txt
