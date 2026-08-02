@@ -1,7 +1,180 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "gameVersion": "7.2b",
   "mode": "aram",
-  "status": "placeholder",
-  "heroes": []
+  "status": "master-template-test",
+  "updated": "2026-08-03",
+  "tierOrder": ["S+", "S", "A", "B"],
+  "notes": [
+    "ARAM 英雄評級、出裝與符文獨立於召喚峽谷資料。",
+    "第一位英雄使用吉茵珂絲建立固定母版；確認版面與資料流程後再批次擴充。"
+  ],
+  "heroes": [
+    {
+      "id": "jinx",
+      "name": "吉茵珂絲",
+      "enName": "Jinx",
+      "tier": "S",
+      "tierLabel": "強勢推薦",
+      "tierReason": "單線長時間 5v5 讓火箭範圍輸出與被動重置非常容易發揮；但 ARAM 仍有傷害降低與承傷增加的模式修正，因此先放 S，不直接列入 S+。",
+      "position": "遠程持續輸出／團戰重置型射手",
+      "tags": ["遠程消耗", "範圍輸出", "團戰重置"],
+      "avatar": "assets/images/heroes/portraits/jinx.webp",
+      "summary": "在 ARAM 以火箭射程安全磨血，等隊伍打出第一個擊殺後靠「狂躁！」加速接管團戰。核心不是硬追後排，而是活著輸出最近且安全的目標，讓重置自然發生。",
+      "balance": {
+        "damageDealt": "90%",
+        "damageTaken": "105%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前資料軌跡顯示吉茵珂絲 ARAM 造成傷害 -10%，承受傷害 +5%；7.2b 沒有再對吉茵珂絲 ARAM 修正。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-09",
+          "name": "暴風之劍",
+          "icon": "assets/images/aram/items/bf-sword.webp",
+          "reason": "ARAM 開局直接取得高物攻，讓火箭消耗與第一波團戰傷害更有感。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-23",
+          "name": "磁性雷射槍",
+          "icon": "assets/images/aram/items/magnetic-blaster.webp",
+          "reason": "充能普攻與彈射很適合單線多人站位；7.2b 物攻由 25 提升到 30。"
+        },
+        {
+          "id": "physical-high-13",
+          "name": "芮蘭颶風箭",
+          "icon": "assets/images/aram/items/runaans-hurricane.webp",
+          "reason": "敵人長時間集中在同一路線，分裂弩箭能穩定放大火箭與普攻的多目標輸出。"
+        },
+        {
+          "id": "physical-high-17",
+          "name": "無盡之刃",
+          "icon": "assets/images/aram/items/infinity-edge.webp",
+          "reason": "前三件暴擊核心成形後補高物攻與暴擊傷害，強化團戰持續輸出。"
+        },
+        {
+          "id": "physical-high-05",
+          "name": "多明尼克的問候",
+          "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+          "reason": "ARAM 常見前排與高生命英雄；7.2b 物攻由 25 提升到 30，後期穿甲價值更高。"
+        },
+        {
+          "id": "physical-high-11",
+          "name": "嗜血者",
+          "icon": "assets/images/aram/items/bloodthirster.webp",
+          "reason": "無法自由回城的環境更重視續航，吸血與護盾可提高後期容錯。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "berserkers-greaves",
+          "name": "狂戰士護脛",
+          "icon": "assets/images/items/shoes/berserkers-greaves.png",
+          "reason": "前中期直接補攻速，讓迷你砲與致命節奏更快進入輸出節奏。"
+        },
+        {
+          "id": "gunsteel-greaves",
+          "name": "槍鋼護脛",
+          "icon": "assets/images/items/shoes/gunsteel-greaves.png",
+          "reason": "後續升級取得更高攻速、吸血與普攻跑速，適合持續走砍。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "lethal-tempo",
+          "name": "致命節奏",
+          "icon": "assets/images/runes/keystone/lethal-tempo.webp",
+          "reason": "ARAM 長時間互毆更容易疊滿攻速，並利用額外射程安全輸出。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "強化高頻普攻的命中傷害，對前期反覆換血很直接。"
+        },
+        {
+          "id": "cut-down",
+          "name": "斷切",
+          "icon": "assets/images/runes/precision/cut-down.webp",
+          "reason": "敵方多數時間維持較高血量時即可增傷，適合先打前排的輸出方式。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳奇：敏捷",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
+          "reason": "ARAM 擊殺與士兵參與頻繁，攻速層數成長速度快。"
+        },
+        {
+          "id": "eyeball-collector",
+          "name": "眼球收集器",
+          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+          "reason": "單線團戰助攻密度高，能比召喚峽谷更快疊滿適性能力。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "無位移射手的核心保命手段。"
+        },
+        {
+          "id": "ghost",
+          "name": "鬼步",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "長團戰與擊殺延長時間非常契合狂躁後的追擊與拉扯。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "playstyle": {
+        "開局": "先用火箭射程摸血與清線，但不要為了消耗把魔力一次打空。三技優先留在自己或後排附近，專門防雪球進場、突進與強開。",
+        "中期": "磁性雷射槍與芮蘭颶風箭成形後，站在前排後方攻擊最近且安全的目標。ARAM 的敵人站位更集中，火箭與分裂弩箭可以持續打出多人傷害。",
+        "後期": "不要因為被動觸發就直接衝進人群；先利用跑速重新站位，再視距離切迷你砲追擊。大絕優先收殘血或補遠距離傷害，讓第一個擊殺更容易轉成連續重置。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "when": "敵方治療／吸血很多",
+          "reason": "需要重創時可取代多明尼克或嗜血者的位置。"
+        },
+        {
+          "id": "physical-high-12",
+          "name": "殞落王者之劍",
+          "icon": "assets/images/aram/items/blade-of-the-ruined-king.webp",
+          "when": "敵方高生命前排很多",
+          "reason": "對高血量目標提供更穩定的持續傷害。"
+        },
+        {
+          "id": "physical-high-03",
+          "name": "狂風之力",
+          "icon": "assets/images/aram/items/galeforce.webp",
+          "when": "需要額外位移保命",
+          "reason": "面對強開或需要調整站位時，用主動位移換取容錯。"
+        }
+      ],
+      "sourceNote": "7.2b ARAM 吉茵珂絲固定母版測試：版本與裝備改動以 Riot Games 7.2、7.2b 更新公告為基準；吉茵珂絲一般出裝與符文趨勢交叉參考 WildRiftFire 7.2a；ARAM 模式修正沿歷次 ARAM 平衡紀錄追溯，7.2b 未見吉茵珂絲追加調整。Tier 為本站依 ARAM 地圖機制、英雄功能與模式修正綜合評級。",
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2/"
+        },
+        {
+          "label": "WildRiftFire｜Jinx Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/jinx"
+        }
+      ],
+      "reviewStatus": "aram-jinx-master-template-v79.7",
+      "reviewedAt": "2026-08-03"
+    }
+  ]
 }

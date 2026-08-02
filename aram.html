@@ -4,13 +4,13 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>隨機單中 ARAM 攻略｜Wild Rift Guide</title>
-<meta name="description" content="激鬥峽谷隨機單中 ARAM 繁體中文攻略專區。ARAM Tier、出裝、符文與模式平衡資料將獨立整理。"/>
+<meta name="description" content="激鬥峽谷 7.2b 隨機單中 ARAM 繁體中文攻略專區。ARAM Tier、出裝、符文與模式平衡資料獨立整理。"/>
 <meta name="robots" content="noindex,follow"/>
 <meta name="theme-color" content="#06101c"/>
 <link rel="canonical" href="https://wild-rift-guide.vercel.app/aram.html"/>
 <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="assets/images/brand/apple-touch-icon.png"/>
-<link rel="stylesheet" href="assets/css/style.css?v=79.6.0"/>
+<link rel="stylesheet" href="assets/css/style.css?v=79.7.0"/>
 </head>
 <body class="aram-shell-page">
 <header class="mode-entry-topbar">
@@ -34,35 +34,31 @@
   <section class="shell aram-hero">
     <span class="kicker">ALL RANDOM ALL MID</span>
     <h1>隨機單中 ARAM 攻略</h1>
-    <p>這裡會使用獨立的 ARAM 資料，不會覆蓋召喚峽谷既有的五路 Tier、出裝與符文。</p>
-    <div class="aram-stage-badge">第一階段｜空框架測試</div>
+    <p>ARAM 使用獨立 Tier、出裝、符文與模式平衡資料，不覆蓋召喚峽谷五路攻略。</p>
+    <div class="aram-stage-badge">第一位固定母版｜吉茵珂絲</div>
   </section>
   <section class="shell aram-tier-shell" aria-labelledby="aramTierTitle">
     <div class="aram-section-heading">
       <div><span class="kicker">ARAM TIER LIST</span><h2 id="aramTierTitle">英雄強度分級</h2></div>
-      <span class="aram-data-state">尚未匯入英雄資料</span>
+      <span class="aram-data-state" data-aram-data-state>載入資料中…</span>
     </div>
-    <div class="aram-tier-grid" aria-label="ARAM Tier 預留區">
-      <div class="aram-tier-card"><strong>S+</strong><span>頂級強勢</span></div>
-      <div class="aram-tier-card"><strong>S</strong><span>強勢推薦</span></div>
-      <div class="aram-tier-card"><strong>A</strong><span>穩定可選</span></div>
-      <div class="aram-tier-card"><strong>B</strong><span>情境選擇</span></div>
-    </div>
+    <div class="aram-tier-list" data-aram-tier-root aria-live="polite"></div>
   </section>
   <section class="shell aram-framework-grid" aria-label="ARAM 攻略資料架構">
-    <article><span>01</span><h2>ARAM Tier</h2><p>依隨機單中環境獨立評級，不沿用五路 Tier。</p></article>
-    <article><span>02</span><h2>推薦出裝</h2><p>只整理 ARAM 模式適用的裝備順序與鞋子／附魔。</p></article>
-    <article><span>03</span><h2>推薦符文</h2><p>依 ARAM 節奏整理一般符文配置，不改召喚峽谷資料。</p></article>
-    <article><span>04</span><h2>模式平衡</h2><p>保留英雄在 ARAM 的傷害、承傷或其他模式修正欄位。</p></article>
+    <article><span>01</span><h2>ARAM Tier</h2><p>依單線團戰、英雄機制與 ARAM 平衡修正獨立評級。</p></article>
+    <article><span>02</span><h2>推薦出裝</h2><p>核心裝備、鞋子與情境替換都以 ARAM 節奏重新整理。</p></article>
+    <article><span>03</span><h2>推薦符文</h2><p>一般符文會依單線高頻團戰重新選擇，不沿用五路配置。</p></article>
+    <article><span>04</span><h2>模式平衡</h2><p>直接標示英雄的造成傷害、承傷與其他 ARAM 專屬修正。</p></article>
   </section>
   <section class="shell aram-placeholder">
-    <strong>下一步</strong>
-    <p>先用一位英雄建立 ARAM 固定母版，確認手機與電腦版都正常後，再批次加入其他英雄。</p>
+    <strong>目前進度</strong>
+    <p>先完成吉茵珂絲固定母版，確認手機與電腦版呈現後，再以同一格式批次加入其他英雄。</p>
   </section>
 </main>
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide｜隨機單中 ARAM</div></footer>
 <script src="assets/js/supabase-config.js?v=79.5.1"></script>
 <script src="assets/js/auth.js?v=79.5.1"></script>
 <script src="assets/js/app.js?v=79.5.1"></script>
+<script src="assets/js/aram.js?v=79.7.0"></script>
 </body>
 </html>
