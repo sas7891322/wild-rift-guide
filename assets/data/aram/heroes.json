@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "gameVersion": "7.2b",
   "mode": "aram",
-  "status": "splus-batch2-complete",
+  "status": "splus-batch2-shoes-corrected",
   "updated": "2026-08-03",
   "tierOrder": [
     "S+",
@@ -37,7 +37,8 @@
     "v79.9.0 完成 ARAM S+ 第一批 7 位完整攻略：阿姆姆、翱銳龍獸、布蘭德、費德提克、加里歐、漢默丁格、珍娜。",
     "ARAM 詳細英雄頁改為共用技能圖示資料與共用手機母版，不再寫死吉茵珂絲技能圖。",
     "v80.0.0 完成 ARAM S+ 第二批 7 位完整攻略：杰西、卡瑪、凱能、拉克絲、墨菲特、茂凱、梅爾。",
-    "7.2b ARAM 凱能承傷 85% 與 7.2a 梅爾 100%/100% 模式修正已納入；7.2b 杰西物防、盧登回音與寒冰霸拳改動同步反映。"
+    "7.2b ARAM 凱能承傷 85% 與 7.2a 梅爾 100%/100% 模式修正已納入；7.2b 杰西物防、盧登回音與寒冰霸拳改動同步反映。",
+    "v80.0.1 修正 S+ 第一、二批共 14 位英雄鞋子：全部改為 7.2 正確的二級鞋 → 三級鞋路線，移除舊版鞋子附魔／主動附魔內容；吉茵珂絲原有三級鞋路線維持不變。"
   ],
   "sources": [
     {
@@ -74,8 +75,8 @@
       "avatar": "assets/images/heroes/portraits/amumu.webp",
       "summary": "ARAM 的阿姆姆重點不是追求單殺，而是用兩段繃帶逼位、抓到多人後開大，替隊友一次建立完整輸出窗口。只要自己活得夠久，絕望與被動就能持續放大隊伍傷害。",
       "detailReady": true,
-      "tierListVersion": "v79.9.0",
-      "reviewStatus": "aram-splus-batch1-v79.9.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -129,13 +130,13 @@
           "id": "plated-steelcaps",
           "name": "鍍板鋼蓋",
           "icon": "assets/images/items/shoes/plated-steelcaps.png",
-          "reason": "敵方普攻與物理傷害偏多時最穩定。"
+          "reason": "敵方普攻與物理傷害偏多時先做鍍板鋼蓋，提升前排坦度。"
         },
         {
-          "id": "defense-high-01",
-          "name": "石像鬼磐核",
-          "icon": "assets/images/items/high/defense-gargoyle-enchant.png",
-          "reason": "需要硬吃第一波集火時，用石像鬼磐核提高開團後的生存時間。"
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後進一步提高物防、普攻減傷並提供物理護盾，適合進場承受第一波集火。"
         }
       ],
       "runes": [
@@ -251,8 +252,8 @@
       "avatar": "assets/images/heroes/portraits/aurelion-sol.webp",
       "summary": "翱銳龍獸在 ARAM 最重要的是安全累積星塵。不要急著飛進敵陣，利用 1 技持續灼燒、3 技封路與大絕打多人，讓每次拉扯都轉成永久成長。",
       "detailReady": true,
-      "tierListVersion": "v79.9.0",
-      "reviewStatus": "aram-splus-batch1-v79.9.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -306,13 +307,13 @@
           "id": "mana-boots",
           "name": "魔力之靴",
           "icon": "assets/images/items/shoes/mana-boots.png",
-          "reason": "補魔力與法術穿透，讓長時間吐息不容易斷資源。"
+          "reason": "前期補魔力、魔攻與法術穿透，讓長時間吐息不容易斷資源。"
         },
         {
-          "id": "magic-high-02",
-          "name": "中婭沙漏",
-          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
-          "reason": "遇到強開或刺客時用中婭拖過關鍵爆發。"
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後取得更高魔攻、法術穿透與魔力回復，強化持續吐息與範圍消耗。"
         }
       ],
       "runes": [
@@ -428,8 +429,8 @@
       "avatar": "assets/images/heroes/portraits/brand.png",
       "summary": "ARAM 的布蘭德不用勉強追單點秒殺，重點是把技能丟進人群讓被動與大絕反覆擴散。敵人越集中，你的黑焰與黎安卓價值越高。",
       "detailReady": true,
-      "tierListVersion": "v79.9.0",
-      "reviewStatus": "aram-splus-batch1-v79.9.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -483,13 +484,13 @@
           "id": "mana-boots",
           "name": "魔力之靴",
           "icon": "assets/images/items/shoes/mana-boots.png",
-          "reason": "補魔力與法術穿透，讓開局反覆丟技能不易缺魔。"
+          "reason": "前期補魔力與法術穿透，方便反覆丟技能消耗。"
         },
         {
-          "id": "magic-high-02",
-          "name": "中婭沙漏",
-          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
-          "reason": "被刺客或強開貼臉時用中婭拖過爆發，也能等被動繼續燒。"
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後提高魔攻與雙重法術穿透，最直接放大範圍技能與被動灼燒傷害。"
         }
       ],
       "runes": [
@@ -601,8 +602,8 @@
       "avatar": "assets/images/heroes/portraits/fiddlesticks.webp",
       "summary": "費德提克在 ARAM 的核心不是正面一直丟技能，而是讓敵人猜不到你在哪。只要大絕從視野外進場成功觸發恐懼，團戰通常就會瞬間傾斜。",
       "detailReady": true,
-      "tierListVersion": "v79.9.0",
-      "reviewStatus": "aram-splus-batch1-v79.9.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -656,13 +657,13 @@
           "id": "mana-boots",
           "name": "魔力之靴",
           "icon": "assets/images/items/shoes/mana-boots.png",
-          "reason": "提供魔力與法穿，讓前期技能更順。"
+          "reason": "前期提供魔攻、法穿與資源回復，讓消耗與進場更順。"
         },
         {
-          "id": "magic-high-02",
-          "name": "中婭沙漏",
-          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
-          "reason": "大絕進場後開中婭，讓風暴持續輸出同時躲過集火。"
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後補足更高魔攻與法術穿透，讓大絕進場的範圍爆發更有威脅。"
         }
       ],
       "runes": [
@@ -774,8 +775,8 @@
       "avatar": "assets/images/heroes/portraits/galio.webp",
       "summary": "ARAM 的加里歐最強不是一直往前衝，而是站在隊友旁邊讓敵方突進不敢進場。只要有人靠近，蓄力 2 技配合 3 技就能把整個狹窄戰場鎖住。",
       "detailReady": true,
-      "tierListVersion": "v79.9.0",
-      "reviewStatus": "aram-splus-batch1-v79.9.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -829,13 +830,13 @@
           "id": "mercurys-treads",
           "name": "水星之靴",
           "icon": "assets/images/items/shoes/mercurys-treads.png",
-          "reason": "面對法傷與控制時最穩定，配合自身魔抗定位。"
+          "reason": "面對法傷與控制時先做水星之靴，配合自身前排定位。"
         },
         {
-          "id": "defense-high-01",
-          "name": "石像鬼磐核",
-          "icon": "assets/images/items/high/defense-gargoyle-enchant.png",
-          "reason": "主動進場時用石像鬼磐核承受第一輪集火。"
+          "id": "chain-army-boots",
+          "name": "鎖鏈軍靴",
+          "icon": "assets/images/items/shoes/chain-army-boots.png",
+          "reason": "升級三級鞋後增加魔防與韌性，受到魔法傷害還能獲得護盾，適合開戰後承受集火。"
         }
       ],
       "runes": [
@@ -947,8 +948,8 @@
       "avatar": "assets/images/heroes/portraits/heimerdinger.webp",
       "summary": "漢默丁格在 ARAM 的核心就是把路變成自己的陣地。砲塔不要全丟在同一點，分散放在安全區域，逼敵人每次想開戰都要先穿過你的火力網。",
       "detailReady": true,
-      "tierListVersion": "v79.9.0",
-      "reviewStatus": "aram-splus-batch1-v79.9.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "90%",
@@ -1002,13 +1003,13 @@
           "id": "mana-boots",
           "name": "魔力之靴",
           "icon": "assets/images/items/shoes/mana-boots.png",
-          "reason": "補魔力與法穿，讓火箭消耗與砲塔控制更持久。"
+          "reason": "前期補魔力、魔攻與法穿，讓火箭消耗與砲塔控制更持久。"
         },
         {
-          "id": "magic-high-02",
-          "name": "中婭沙漏",
-          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
-          "reason": "被強開時中婭能拖時間，讓砲塔繼續輸出。"
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後提高魔攻、法穿與魔力回復，強化砲塔陣地與遠距消耗。"
         }
       ],
       "runes": [
@@ -1124,8 +1125,8 @@
       "avatar": "assets/images/heroes/portraits/janna.webp",
       "summary": "珍娜在 ARAM 不需要冒險往前消耗，站在主力輸出旁邊就是最大威脅。龍捲風留給進場路線，護盾交給正在輸出的人，大絕則用來切斷敵方第一波強開。",
       "detailReady": true,
-      "tierListVersion": "v79.9.0",
-      "reviewStatus": "aram-splus-batch1-v79.9.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -1179,13 +1180,13 @@
           "id": "ionian-boots",
           "name": "愛歐尼亞之靴",
           "icon": "assets/images/items/shoes/ionian-boots.png",
-          "reason": "技能加速直接提高護盾、龍捲風與大絕使用頻率。"
+          "reason": "前期技能加速直接提高護盾、龍捲風與大絕使用頻率。"
         },
         {
-          "id": "magic-high-03",
-          "name": "贖罪神石",
-          "icon": "assets/images/items/high/magic-redemption.png",
-          "reason": "ARAM 無法自由回城，贖罪的遠距群體治療非常實用。"
+          "id": "blood-mage-boots",
+          "name": "血色法靴",
+          "icon": "assets/images/items/shoes/blood-mage-boots.png",
+          "reason": "升級三級鞋後獲得更高技能加速與召喚師技能加速，讓護盾、控制與保排循環更順。"
         }
       ],
       "runes": [
@@ -1297,8 +1298,8 @@
       "avatar": "assets/images/heroes/portraits/jayce.webp",
       "summary": "ARAM 的杰西先把自己當遠程砲台：用加速門＋電磁脈衝反覆壓血，只有敵人被控住、殘血或已交掉關鍵技能時才切戰鎚。7.2b 基礎物防降到 37，更不能無理由站到前線換血。",
       "detailReady": true,
-      "tierListVersion": "v80.0.0",
-      "reviewStatus": "aram-splus-batch2-v80.0.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -1349,16 +1350,16 @@
       ],
       "boots": [
         {
+          "id": "burst-boots",
+          "name": "爆發之靴",
+          "icon": "assets/images/items/shoes/burst-boots.png",
+          "reason": "前期物攻與物理穿透能直接提高遠距電能震盪的消耗傷害。"
+        },
+        {
           "id": "armorbreaker-boots",
           "name": "碎甲者之靴",
           "icon": "assets/images/items/shoes/armorbreaker-boots.png",
-          "reason": "提高物攻與物穿，最直接放大遠距技能傷害。"
-        },
-        {
-          "id": "physical-high-03",
-          "name": "狂風之力",
-          "icon": "assets/images/items/high/#U72c2#U98a8#U4e4b#U529b.webp",
-          "reason": "需要突然拉角度或追殘血時，狂風之力提供額外位移與收尾能力。"
+          "reason": "升級三級鞋後取得更高物攻、固定與百分比物理穿透，進一步放大遠距消耗與收尾能力。"
         }
       ],
       "runes": [
@@ -1470,8 +1471,8 @@
       "avatar": "assets/images/heroes/portraits/karma.webp",
       "summary": "卡瑪在 ARAM 的強點是每一輪真言都能依戰況切換用途：先手想壓血就強化一技，敵人要開戰就強化三技群盾加速，窄口團戰再用大絕把站位拉亂。",
       "detailReady": true,
-      "tierListVersion": "v80.0.0",
-      "reviewStatus": "aram-splus-batch2-v80.0.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -1525,13 +1526,13 @@
           "id": "ionian-boots",
           "name": "愛歐尼亞之靴",
           "icon": "assets/images/items/shoes/ionian-boots.png",
-          "reason": "技能加速讓真言循環更快，也提高群盾與控制頻率。"
+          "reason": "前期技能加速讓真言循環更快，也提高群盾與控制頻率。"
         },
         {
-          "id": "magic-high-03",
-          "name": "贖罪神石",
-          "icon": "assets/images/items/high/magic-redemption.png",
-          "reason": "贖罪神石適合 ARAM 密集團戰，遠距補血與範圍支援都很實用。"
+          "id": "blood-mage-boots",
+          "name": "血色法靴",
+          "icon": "assets/images/items/shoes/blood-mage-boots.png",
+          "reason": "升級三級鞋後提高技能與召喚師技能循環，特別適合高頻群盾、消耗與控制。"
         }
       ],
       "runes": [
@@ -1643,8 +1644,8 @@
       "avatar": "assets/images/heroes/portraits/kennen.webp",
       "summary": "凱能在 ARAM 不需要一直正面露頭找消耗，真正的價值是等敵人站位重疊後從側面或草叢進場。7.2b 的 85% 承傷讓他開大後更有機會撐到第二輪印記與中婭。",
       "detailReady": true,
-      "tierListVersion": "v80.0.0",
-      "reviewStatus": "aram-splus-batch2-v80.0.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -1698,13 +1699,13 @@
           "id": "mana-boots",
           "name": "魔力之靴",
           "icon": "assets/images/items/shoes/mana-boots.png",
-          "reason": "雖然凱能使用能量，但這雙鞋提供的法術輸出屬性仍非常適合爆發流。"
+          "reason": "凱能雖使用能量，但前期魔攻與法術穿透仍能直接提高爆發。"
         },
         {
-          "id": "magic-high-02",
-          "name": "中婭沙漏",
-          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
-          "reason": "進場開大後用中婭躲掉集火，讓雷霆風暴繼續完整作用。"
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後取得更高魔攻與法術穿透，進一步放大大絕進場與範圍爆發。"
         }
       ],
       "runes": [
@@ -1816,8 +1817,8 @@
       "avatar": "assets/images/heroes/portraits/lux.webp",
       "summary": "拉克絲在 ARAM 不需要冒險補被動普攻，安全地用三技探草與消耗、一技抓走位、大絕收尾就有極高價值。7.2b 盧登回音強化後，更適合把每一輪遠距技能都轉成血量優勢。",
       "detailReady": true,
-      "tierListVersion": "v80.0.0",
-      "reviewStatus": "aram-splus-batch2-v80.0.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -1871,13 +1872,13 @@
           "id": "mana-boots",
           "name": "魔力之靴",
           "icon": "assets/images/items/shoes/mana-boots.png",
-          "reason": "魔力與法術輸出屬性讓高頻消耗更順。"
+          "reason": "前期魔力、魔攻與法術穿透讓高頻消耗更順。"
         },
         {
-          "id": "magic-high-02",
-          "name": "中婭沙漏",
-          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
-          "reason": "被刺客貼臉時中婭能拖過關鍵爆發，也能等隊友反控。"
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後提高魔攻與雙重法術穿透，強化遠距消耗、禁錮後爆發與終極技能收尾。"
         }
       ],
       "runes": [
@@ -1989,8 +1990,8 @@
       "avatar": "assets/images/heroes/portraits/malphite.webp",
       "summary": "ARAM 墨菲特建議以坦克為主，不需要每局都走 AP 一波流。你的大絕本身就足以威脅後排，坦裝能讓你撞完後繼續用三技削攻速、卡位置與吃第二輪傷害。",
       "detailReady": true,
-      "tierListVersion": "v80.0.0",
-      "reviewStatus": "aram-splus-batch2-v80.0.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -2044,13 +2045,13 @@
           "id": "plated-steelcaps",
           "name": "鍍板鋼蓋",
           "icon": "assets/images/items/shoes/plated-steelcaps.png",
-          "reason": "敵方物理與普攻傷害多時是最穩定選擇。"
+          "reason": "敵方物理與普攻傷害多時先做鍍板鋼蓋，提升進場坦度。"
         },
         {
-          "id": "defense-high-01",
-          "name": "石像鬼磐核",
-          "icon": "assets/images/items/high/defense-gargoyle-enchant.png",
-          "reason": "大絕進場後開石像鬼，讓自己能在敵陣多站幾秒。"
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後提高物防、普攻減傷並提供物理護盾，讓大絕進場後更能承受集火。"
         }
       ],
       "runes": [
@@ -2162,8 +2163,8 @@
       "avatar": "assets/images/heroes/portraits/maokai.webp",
       "summary": "ARAM 的茂凱不用一直硬衝。先用樹苗掌握草叢、用大絕逼敵人交位移，真正進場時再二技鎖核心、一技把人推回來。坦裝讓你能靠被動普攻一輪輪把血補回去。",
       "detailReady": true,
-      "tierListVersion": "v80.0.0",
-      "reviewStatus": "aram-splus-batch2-v80.0.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -2217,13 +2218,13 @@
           "id": "plated-steelcaps",
           "name": "鍍板鋼蓋",
           "icon": "assets/images/items/shoes/plated-steelcaps.png",
-          "reason": "物理與普攻傷害偏多時最穩定；法傷多可情況改水星。"
+          "reason": "物理與普攻傷害偏多時先做鍍板鋼蓋；法傷與控制偏多可依局勢改走水星之靴。"
         },
         {
-          "id": "defense-high-01",
-          "name": "石像鬼磐核",
-          "icon": "assets/images/items/high/defense-gargoyle-enchant.png",
-          "reason": "二技進場後開石像鬼，增加自己撐到下一次被動與控制的機會。"
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後強化物理坦度與護盾；若敵方法傷與控制明顯偏多，三級鞋可改鎖鏈軍靴。"
         }
       ],
       "runes": [
@@ -2335,8 +2336,8 @@
       "avatar": "assets/images/heroes/portraits/mel.webp",
       "summary": "梅爾的 ARAM 強度不只來自傷害，而是二技能把正面投射技能直接變成心理壓力。站在後排用一技、三技把奪目掛到多人，等層數與血線成熟後再大絕一次收尾。",
       "detailReady": true,
-      "tierListVersion": "v80.0.0",
-      "reviewStatus": "aram-splus-batch2-v80.0.0",
+      "tierListVersion": "v80.0.1",
+      "reviewStatus": "aram-splus-batch1-2-shoes-v80.0.1",
       "reviewedAt": "2026-08-03",
       "balance": {
         "damageDealt": "100%",
@@ -2390,13 +2391,13 @@
           "id": "mana-boots",
           "name": "魔力之靴",
           "icon": "assets/images/items/shoes/mana-boots.png",
-          "reason": "補魔力與法術輸出，讓梅爾可以長時間維持一技／三技消耗。"
+          "reason": "前期補魔力、魔攻與法術穿透，方便維持一技／三技消耗。"
         },
         {
-          "id": "magic-high-02",
-          "name": "中婭沙漏",
-          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
-          "reason": "二技冷卻時仍需要第二層保命，中婭能躲過刺客的關鍵爆發。"
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級三級鞋後提高魔攻、法術穿透與魔力回復，適合高頻遠距消耗與爆發。"
         }
       ],
       "runes": [

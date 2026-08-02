@@ -5,7 +5,7 @@
   const searchState=document.querySelector('[data-aram-search-state]');
   if(!root)return;
   try{
-    const res=await fetch('assets/data/aram/heroes.json?v=80.0.0',{cache:'no-store'});
+    const res=await fetch('assets/data/aram/heroes.json?v=80.0.1',{cache:'no-store'});
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const heroes=Array.isArray(data.heroes)?data.heroes:[];
