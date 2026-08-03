@@ -48,8 +48,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=80.24.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=80.24.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=80.25.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=80.25.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -130,9 +130,15 @@
     const renderAaa=()=>{
       const aaa=hero.aaaAram;
       const sharedCards=(aaa.sharedWithStandard||[]).map(card=>`<article class="aaa-shared-card"><span>${esc(card.title)}</span><strong>${esc(card.value)}</strong><p>${esc(card.note)}</p></article>`).join('');
-      const priorityCards=(aaa.augmentPriorities||[]).map(group=>`<article class="aaa-augment-priority rank-${esc(group.rank).toLowerCase()}">
-        <div class="aaa-augment-rank"><strong>${esc(group.rank)}</strong><span>${esc(group.label)}</span></div>
-        <div><h3>${esc(group.title)}</h3><p>${esc(group.description)}</p><div class="aaa-keywords">${(group.keywords||[]).map(keyword=>`<span>${esc(keyword)}</span>`).join('')}</div></div>
+      const quickPlaystyles=(aaa.quickPlaystyles||[]).map(plan=>`<article class="aaa-quick-playstyle">
+        <span>${esc(plan.badge)}</span><strong>${esc(plan.title)}</strong><p>${esc(plan.description)}</p>
+        <div>${(plan.keywords||[]).map(keyword=>`<b>${esc(keyword)}</b>`).join('')}</div>
+      </article>`).join('');
+      const keywordGuide=aaa.augmentKeywordGuide||{};
+      const keywordSteps=(keywordGuide.steps||[]).map(item=>`<article><span>${esc(item.step)}</span><div><strong>${esc(item.title)}</strong><p>${esc(item.description)}</p></div></article>`).join('');
+      const keywordGroups=(keywordGuide.groups||[]).map(group=>`<article class="aaa-keyword-group tone-${esc(group.tone||'b')}">
+        <div class="aaa-keyword-group-head"><strong>${esc(group.level)}</strong><span>${esc(group.summary)}</span></div>
+        <div class="aaa-keyword-chips">${(group.keywords||[]).map(keyword=>`<button type="button" data-aaa-keyword="${esc(keyword.query||keyword.label)}">${esc(keyword.label)}</button>`).join('')}</div>
       </article>`).join('');
       const compatibility=aaa.augmentCompatibility||{};
       const compatibilityRows=(compatibility.ratings||[]).map((rating,index)=>{
@@ -160,9 +166,14 @@
         <div class="aaa-shared-grid">${sharedCards}</div>
         <p class="aaa-pilot-note">${esc(aaa.pilotNote)}</p>
       </section>
-      <section class="aram-detail-section">
-        <div class="aram-detail-section-head"><div><span>AUGMENTS</span><h2>增幅裝置優先級</h2></div><small>先看類型，再看稀有度</small></div>
-        <div class="aaa-augment-priority-list">${priorityCards}</div>
+      <section class="aram-detail-section aaa-decision-section">
+        <div class="aram-detail-section-head"><div><span>AUGMENT DECISION</span><h2>吉茵珂絲增幅選擇規則</h2></div><small>不必背 151 個名稱</small></div>
+        <div class="aaa-quick-playstyle-grid">${quickPlaystyles}</div>
+        <div class="aaa-keyword-guide">
+          <div class="aaa-keyword-guide-title"><div><strong>${esc(keywordGuide.title||'看到關鍵詞就先這樣判斷')}</strong><span>${esc(keywordGuide.note||'')}</span></div><small>點關鍵詞可搜尋適配表</small></div>
+          <div class="aaa-keyword-steps">${keywordSteps}</div>
+          <div class="aaa-keyword-groups">${keywordGroups}</div>
+        </div>
         <div class="aaa-fit-block" data-aaa-fit-root>
           <div class="aaa-fit-title"><div><strong>${esc(compatibility.title||'增幅裝置適配表')}</strong><span>${esc(compatibility.note||'')}</span></div><small data-aaa-fit-state>顯示推薦增幅</small></div>
           <div class="aaa-fit-tools">
@@ -200,6 +211,7 @@
       const search=fitRoot.querySelector('[data-aaa-fit-search]');
       const state=fitRoot.querySelector('[data-aaa-fit-state]');
       const buttons=[...fitRoot.querySelectorAll('[data-fit-filter]')];
+      const keywordButtons=[...contentRoot.querySelectorAll('[data-aaa-keyword]')];
       const cards=[...fitRoot.querySelectorAll('[data-aaa-fit-card]')];
       let activeFilter='S';
       const apply=()=>{
@@ -216,6 +228,13 @@
         if(state)state.textContent=query?`找到 ${visible} 個符合項目`:`目前顯示 ${visible} 個增幅`;
       };
       buttons.forEach(button=>button.addEventListener('click',()=>{activeFilter=button.dataset.fitFilter||'recommended';apply();}));
+      keywordButtons.forEach(button=>button.addEventListener('click',()=>{
+        if(search)search.value=button.dataset.aaaKeyword||button.textContent||'';
+        activeFilter='all';
+        apply();
+        fitRoot.scrollIntoView({behavior:'smooth',block:'start'});
+        window.setTimeout(()=>search?.focus({preventScroll:true}),350);
+      }));
       if(search){search.addEventListener('input',apply,{passive:true});search.addEventListener('search',apply,{passive:true});}
       apply();
     };
@@ -228,11 +247,11 @@
         button.classList.toggle('is-active',active);
         button.setAttribute('aria-selected',active?'true':'false');
       });
-      if(modeNote)modeNote.textContent=isAaa?'已完成吉茵珂絲 151 個增幅裝置適配，可依名稱、效果與等級搜尋。':'目前已完成的標準 ARAM 7.2b 攻略。';
+      if(modeNote)modeNote.textContent=isAaa?'先用關鍵詞快速判斷，再搜尋 151 個增幅適配表確認細節。':'目前已完成的標準 ARAM 7.2b 攻略。';
       const titleMode=isAaa?'符文大亂鬥試作':'ARAM';
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');
-      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：151 個增幅適配等級、出裝轉向、一般符文與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
+      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：增幅關鍵詞判斷、151 個增幅適配、出裝轉向與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
       if(isAaa)bindAugmentCompatibility();
