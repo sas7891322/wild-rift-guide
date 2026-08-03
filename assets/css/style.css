@@ -2051,3 +2051,94 @@ button,a{-webkit-tap-highlight-color:transparent}
 .mode-entry-card-mark.mode-entry-map{padding:0;overflow:hidden;background:#07131f;border-color:rgba(216,184,108,.32)}
 .mode-entry-card-mark.mode-entry-map img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(.92);transition:transform .2s ease,filter .2s ease;filter:saturate(.96) contrast(1.02)}
 .mode-entry-card:hover .mode-entry-card-mark.mode-entry-map img{transform:scale(.98);filter:saturate(1.04) contrast(1.04)}
+
+/* v80.21.0 — Jinx AAA ARAM pilot mode switch and adaptive build layout */
+.aram-mode-switch-panel{margin-top:14px;border:1px solid rgba(216,184,108,.18);border-radius:18px;padding:10px;background:linear-gradient(145deg,rgba(16,34,52,.94),rgba(6,17,29,.98));box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.aram-mode-switch{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:4px;border:1px solid rgba(255,255,255,.07);border-radius:14px;background:rgba(3,11,20,.72)}
+.aram-mode-switch button{position:relative;min-height:44px;border:0;border-radius:11px;background:transparent;color:#7f94a7;font:inherit;font-size:11px;font-weight:950;cursor:pointer;transition:.18s ease}
+.aram-mode-switch button:hover{color:#dce5ec;background:rgba(255,255,255,.035)}
+.aram-mode-switch button.is-active{color:#f2d991;background:linear-gradient(135deg,rgba(216,184,108,.18),rgba(36,75,105,.28));box-shadow:inset 0 0 0 1px rgba(216,184,108,.22),0 6px 18px rgba(0,0,0,.18)}
+.aram-mode-switch button span{display:inline-flex;margin-right:7px;border-radius:999px;padding:2px 5px;background:#e8ca79;color:#122030;font-size:7px;font-weight:1000;vertical-align:1px}
+.aram-mode-switch-panel>p{margin:7px 4px 0;color:#70869a;font-size:9px;line-height:1.45;text-align:center}
+.aram-detail-hero.is-aaa-mode{background:radial-gradient(circle at 12% 0,rgba(83,191,218,.16),transparent 34%),radial-gradient(circle at 90% 15%,rgba(171,95,220,.12),transparent 35%),linear-gradient(145deg,#17384f,#081725 72%)}
+.aram-detail-tier.is-pilot{min-width:93px;border-color:rgba(84,195,218,.35);background:linear-gradient(145deg,rgba(84,195,218,.11),rgba(159,91,210,.08))}
+.aram-detail-tier.is-pilot strong{font-size:16px;color:#9fe6ef;line-height:1.4}
+.aram-detail-tier.is-pilot span{color:#a8bdd0!important}
+
+.aaa-overview-section{border-color:rgba(84,195,218,.18);background:linear-gradient(150deg,rgba(11,36,52,.96),rgba(9,18,32,.98))}
+.aaa-shared-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.aaa-shared-card{border:1px solid rgba(255,255,255,.08);border-radius:15px;padding:13px;background:rgba(6,18,31,.62)}
+.aaa-shared-card span{display:block;color:#69c8d6;font-size:8px;font-weight:950;letter-spacing:.07em}
+.aaa-shared-card strong{display:block;margin-top:5px;color:#e7eef3;font-size:12px}
+.aaa-shared-card p{margin:6px 0 0;color:#8499ab;font-size:9px;line-height:1.55}
+.aaa-pilot-note,.aaa-section-intro{margin:11px 0 0;border-left:3px solid rgba(84,195,218,.48);border-radius:0 10px 10px 0;padding:9px 11px;background:rgba(84,195,218,.045);color:#8da2b4;font-size:9px;line-height:1.65}
+
+.aaa-augment-priority-list{display:grid;gap:9px}
+.aaa-augment-priority{display:grid;grid-template-columns:78px minmax(0,1fr);gap:13px;align-items:center;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:12px;background:rgba(6,18,31,.66)}
+.aaa-augment-priority.rank-s{border-color:rgba(238,199,98,.28);background:linear-gradient(145deg,rgba(238,199,98,.075),rgba(6,18,31,.7))}
+.aaa-augment-priority.rank-a{border-color:rgba(84,195,218,.23)}
+.aaa-augment-priority.rank-d{border-color:rgba(196,94,104,.18);opacity:.88}
+.aaa-augment-rank{min-height:68px;border-radius:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,.035)}
+.aaa-augment-rank strong{color:#f0d88d;font-size:25px;line-height:1}
+.aaa-augment-priority.rank-a .aaa-augment-rank strong{color:#88d8e2}
+.aaa-augment-priority.rank-b .aaa-augment-rank strong{color:#9cb2c4}
+.aaa-augment-priority.rank-d .aaa-augment-rank strong{color:#c9898f}
+.aaa-augment-rank span{margin-top:5px;color:#8296a8;font-size:8px;font-weight:900;letter-spacing:0}
+.aaa-augment-priority h3{margin:0;color:#e5edf3;font-size:12px}
+.aaa-augment-priority p{margin:6px 0 0;color:#879bad;font-size:9px;line-height:1.6}
+.aaa-keywords{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.aaa-keywords span{border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:3px 6px;color:#9db0c0;background:rgba(255,255,255,.03);font-size:8px;font-weight:850;letter-spacing:0}
+.aaa-example-block{margin-top:14px;border-top:1px solid rgba(255,255,255,.07);padding-top:13px}
+.aaa-example-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}
+.aaa-example-title strong{font-size:11px}
+.aaa-example-title span{color:#70869a;font-size:8px}
+.aaa-example-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.aaa-example-card{border:1px solid rgba(255,255,255,.07);border-radius:13px;padding:10px;background:rgba(5,15,26,.55)}
+.aaa-example-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.aaa-example-head strong{font-size:10px}
+.aaa-example-head span{width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-size:10px;font-weight:1000;background:rgba(255,255,255,.05);color:#99adbd}
+.aaa-example-head .priority-a{color:#85dce5;background:rgba(84,195,218,.1)}
+.aaa-example-head .priority-b{color:#b5c5d2}
+.aaa-example-head .priority-d{color:#d58d94;background:rgba(196,94,104,.09)}
+.aaa-example-card small{display:block;margin-top:5px;color:#b79f62;font-size:8px}
+.aaa-example-card p{margin:6px 0 0;color:#7f94a7;font-size:8px;line-height:1.5}
+
+.aaa-build-list{display:grid;gap:9px}
+.aaa-build-plan{border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(5,15,27,.58);overflow:hidden}
+.aaa-build-plan[open]{border-color:rgba(216,184,108,.2)}
+.aaa-build-plan summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;cursor:pointer}
+.aaa-build-plan summary::-webkit-details-marker{display:none}
+.aaa-build-plan summary>div{min-width:0;display:grid;grid-template-columns:auto 1fr;column-gap:8px;align-items:center}
+.aaa-build-plan summary span{grid-row:1/3;display:inline-flex;border-radius:999px;padding:4px 7px;background:rgba(216,184,108,.1);color:#d7bd79;font-size:8px;font-weight:950;letter-spacing:0}
+.aaa-build-plan summary strong{font-size:12px}
+.aaa-build-plan summary small{margin-top:3px;color:#768b9d;font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.aaa-build-plan summary b{color:#70869a;font-size:8px;white-space:nowrap}
+.aaa-build-plan[open] summary b{color:#c5aa65}
+.aaa-build-plan-body{border-top:1px solid rgba(255,255,255,.06);padding:13px}
+.aaa-build-description{margin:0 0 10px;color:#879bad;font-size:9px;line-height:1.6}
+.aaa-plan-boots{margin-top:10px;border:1px solid rgba(255,255,255,.07);border-radius:13px;padding:10px;background:rgba(4,13,23,.48)}
+.aaa-plan-boots h3{margin:0 0 4px;font-size:10px}
+
+@media(max-width:900px){
+  .aaa-example-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:680px){
+  .aram-mode-switch-panel{margin-top:9px;border-radius:15px;padding:7px}
+  .aram-mode-switch button{min-height:39px;font-size:10px}
+  .aaa-shared-grid{grid-template-columns:1fr}
+  .aaa-augment-priority{grid-template-columns:58px minmax(0,1fr);gap:9px;padding:9px}
+  .aaa-augment-rank{min-height:58px}
+  .aaa-augment-rank strong{font-size:21px}
+  .aaa-example-title{display:block}
+  .aaa-example-title span{display:block;margin-top:3px}
+  .aaa-build-plan summary{padding:10px}
+  .aaa-build-plan summary>div{grid-template-columns:1fr}
+  .aaa-build-plan summary span{grid-row:auto;margin-bottom:5px;width:max-content}
+  .aaa-build-plan summary small{white-space:normal;line-height:1.35}
+}
+@media(max-width:430px){
+  .aaa-example-grid{grid-template-columns:1fr}
+  .aaa-augment-priority{grid-template-columns:50px minmax(0,1fr)}
+  .aaa-augment-rank{min-height:54px}
+  .aaa-keywords span{font-size:7px}
+}
