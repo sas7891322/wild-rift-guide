@@ -2436,3 +2436,56 @@ button,a{-webkit-tap-highlight-color:transparent}
   .aaa-category-card strong{font-size:19px}
   .aaa-category-howto{align-items:flex-start;flex-direction:column;gap:4px}
 }
+
+
+/* v80.32 Jinx category card color fix */
+.aaa-aram-mode .aaa-category-card{
+  color:#f4f7fb;
+}
+.aaa-aram-mode .aaa-category-card span{
+  color:#aebed2;
+}
+.aaa-aram-mode .aaa-category-card strong{
+  color:#ffffff;
+}
+.aaa-aram-mode .aaa-category-card b{
+  color:#e7edf6;
+}
+.aaa-aram-mode .aaa-category-card small{
+  color:#aeb8c7;
+  opacity:1;
+}
+.aaa-aram-mode .aaa-category-card.level-core{
+  border-color:rgba(224,178,72,.52);
+}
+.aaa-aram-mode .aaa-category-card.level-core span,
+.aaa-aram-mode .aaa-category-card.level-core b{
+  color:#e7c66d;
+}
+.aaa-aram-mode .aaa-category-card.level-high{
+  border-color:rgba(89,160,214,.42);
+}
+.aaa-aram-mode .aaa-category-card.level-high span,
+.aaa-aram-mode .aaa-category-card.level-high b{
+  color:#9fc9ea;
+}
+.aaa-aram-mode .aaa-category-card:hover,
+.aaa-aram-mode .aaa-category-card.is-active,
+.aaa-aram-mode .aaa-category-card:focus,
+.aaa-aram-mode .aaa-category-card:focus-visible{
+  color:#f4f7fb;
+  background:rgba(18,28,46,.82);
+  border-color:rgba(112,180,255,.78);
+  box-shadow:0 0 0 1px rgba(112,180,255,.16),0 8px 22px rgba(0,0,0,.18);
+  outline:none;
+}
+.aaa-aram-mode .aaa-category-card.is-active strong{
+  color:#d9edff;
+}
+.aaa-aram-mode .aaa-category-card.is-active span,
+.aaa-aram-mode .aaa-category-card.is-active b{
+  color:#9fd0f3;
+}
+.aaa-aram-mode .aaa-category-card.is-active small{
+  color:#c0cbd9;
+}
