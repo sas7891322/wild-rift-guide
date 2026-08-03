@@ -334,6 +334,18 @@
           "reason": "吐息與持續範圍技能很容易疊層，長團戰能穩定吃滿增益。"
         },
         {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "增加最大魔力，讓長時間單線消耗更穩定。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速能提高黑洞與大絕的控場頻率。"
+        },
+        {
           "id": "gathering-storm",
           "name": "天寒地凍",
           "icon": "assets/images/runes/sorcery/gathering-storm.webp",
@@ -344,18 +356,6 @@
           "name": "致命一擊",
           "icon": "assets/images/runes/precision/coup-de-grace.webp",
           "reason": "大範圍技能很容易摸到殘血目標，提高收尾效率。"
-        },
-        {
-          "id": "legend-tenacity",
-          "name": "傳奇：韌性",
-          "icon": "assets/images/runes/precision/legend-tenacity.webp",
-          "reason": "降低被控制中斷吐息或直接帶走的風險。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速能提高黑洞與大絕的控場頻率。"
         }
       ],
       "spells": [
@@ -1030,10 +1030,10 @@
           "reason": "遠程技能與砲塔消耗頻繁，彗星能持續壓血。"
         },
         {
-          "id": "scorch",
-          "name": "燒灼",
-          "icon": "assets/images/runes/sorcery/scorch.webp",
-          "reason": "前期每次消耗都多一段傷害，強化線上壓力。"
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "長時間消耗很吃魔力，附魔之帶能提高續戰力。"
         },
         {
           "id": "transcendence",
@@ -1042,10 +1042,10 @@
           "reason": "技能加速提高火箭與手雷頻率。"
         },
         {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "長時間消耗很吃魔力，附魔之帶能提高續戰力。"
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "前期每次消耗都多一段傷害，強化線上壓力。"
         },
         {
           "id": "bone-plating",
@@ -1213,16 +1213,16 @@
           "reason": "控制與減速命中後讓隊友獲得額外續航。"
         },
         {
-          "id": "revitalize",
-          "name": "甦醒",
-          "icon": "assets/images/runes/resolve/revitalize.webp",
-          "reason": "直接提高護盾與治療效率，符合純保排定位。"
-        },
-        {
           "id": "bone-plating",
           "name": "骨甲",
           "icon": "assets/images/runes/resolve/bone-plating.webp",
           "reason": "避免被突進角色一套帶走，確保自己能繼續保排。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接提高護盾與治療效率，符合純保排定位。"
         },
         {
           "id": "transcendence",
@@ -1917,10 +1917,10 @@
           "reason": "前中期每輪消耗額外補傷害，能更快把敵人壓進大絕斬殺線。"
         },
         {
-          "id": "axiom-arcanist",
-          "name": "公理奧術大師",
-          "icon": "assets/images/runes/sorcery/axiom-arcanist.webp",
-          "reason": "大絕是 ARAM 最容易反覆製造人數差的技能之一，強化大招循環價值很高。"
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被敵方英雄先手時降低後續連續傷害，提高生存能力。"
         }
       ],
       "spells": [
@@ -2263,10 +2263,10 @@
           "reason": "長時間單線吃兵讓最大生命穩定增加，與被動回血相性很好。"
         },
         {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "降低控制鏈對坦克的限制，讓茂凱能更穩定走到核心目標身邊。"
+          "id": "nimbus-cloak",
+          "name": "光輝披風",
+          "icon": "assets/images/runes/sorcery/nimbus-cloak.webp",
+          "reason": "使用召喚師技能後獲得跑速，方便開戰後追擊或撤退。"
         }
       ],
       "spells": [
@@ -2947,16 +2947,16 @@
           "reason": "控制與緩速命中後能替全隊補上一些續航。"
         },
         {
-          "id": "revitalize",
-          "name": "甦醒",
-          "icon": "assets/images/runes/resolve/revitalize.webp",
-          "reason": "直接放大補血與護盾效率。"
-        },
-        {
           "id": "bone-plating",
           "name": "骨甲",
           "icon": "assets/images/runes/resolve/bone-plating.webp",
           "reason": "避免自己被第一波突進直接秒掉。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大補血與護盾效率。"
         },
         {
           "id": "transcendence",
@@ -3132,10 +3132,10 @@
           "reason": "單線持續吃兵很容易穩定成長最大生命。"
         },
         {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "減少控制鏈對前排進場的限制。"
+          "id": "nimbus-cloak",
+          "name": "光輝披風",
+          "icon": "assets/images/runes/sorcery/nimbus-cloak.webp",
+          "reason": "使用召喚師技能後獲得跑速，方便開戰後追擊或撤退。"
         }
       ],
       "spells": [
@@ -3478,10 +3478,10 @@
           "reason": "最大生命在單線很容易穩定成長。"
         },
         {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "減少被連環控制卡住的風險。"
+          "id": "nimbus-cloak",
+          "name": "光輝披風",
+          "icon": "assets/images/runes/sorcery/nimbus-cloak.webp",
+          "reason": "使用召喚師技能後獲得跑速，方便開戰後追擊或撤退。"
         }
       ],
       "spells": [
@@ -3651,10 +3651,10 @@
           "reason": "單線持續吃兵可穩定增加最大生命。"
         },
         {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "減少被控制打斷連招的風險。"
+          "id": "nimbus-cloak",
+          "name": "光輝披風",
+          "icon": "assets/images/runes/sorcery/nimbus-cloak.webp",
+          "reason": "使用召喚師技能後獲得跑速，方便開戰後追擊或撤退。"
         }
       ],
       "spells": [
@@ -4701,10 +4701,10 @@
           "reason": "前中期每輪植物消耗再補一段傷害。"
         },
         {
-          "id": "botanist",
-          "name": "植物學家",
-          "icon": "assets/images/runes/sorcery/botanist.webp",
-          "reason": "ARAM 地圖資源固定，能提高回復資源利用率與持續作戰能力。"
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被敵方英雄先手時降低後續連續傷害，提高生存能力。"
         }
       ],
       "spells": [
@@ -4866,16 +4866,16 @@
           "reason": "魅惑控制後穩定追加傷害。"
         },
         {
+          "id": "chain-assault",
+          "name": "鎖鏈突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "連續技能或普攻命中後補上額外適性傷害，適合完整打一套的英雄。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
           "reason": "ARAM 擊殺與助攻密度高，適性能力容易疊滿。"
-        },
-        {
-          "id": "relentless-hunter",
-          "name": "殘虐獵人",
-          "icon": "assets/images/runes/conquest/relentless-hunter.webp",
-          "reason": "提高移動節奏，方便左右找魅惑角度與重新站位。"
         },
         {
           "id": "scorch",
@@ -5212,16 +5212,16 @@
           "reason": "控制命中後追加傷害。"
         },
         {
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
           "reason": "ARAM 助攻很多，適性能力容易快速成長。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速讓疊暈與 Tibbers 循環更順。"
         },
         {
           "id": "manaflow-band",
@@ -5725,10 +5725,10 @@
           "reason": "長時間貼著隊友保排，守護者能穩定提供雙人護盾。"
         },
         {
-          "id": "font-of-life",
-          "name": "生命之泉",
-          "icon": "assets/images/runes/resolve/font-of-life.webp",
-          "reason": "Q 技與大絕限制目標後，讓隊友獲得額外續航。"
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "硬控命中後補護盾，反開時更耐打。"
         },
         {
           "id": "second-wind",
@@ -5743,10 +5743,10 @@
           "reason": "降低控制鏈對前排的影響。"
         },
         {
-          "id": "courage-of-colossus",
-          "name": "巨像勇氣",
-          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
-          "reason": "硬控命中後補護盾，反開時更耐打。"
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "提供技能加速並改善基礎技能循環。"
         }
       ],
       "spells": [
@@ -7487,22 +7487,22 @@
           "reason": "凱爾很容易在長團戰疊滿，顯著放大普攻型輸出。"
         },
         {
-          "id": "gathering-storm",
-          "name": "風暴聚集",
-          "icon": "assets/images/runes/sorcery/gathering-storm.webp",
-          "reason": "越打越長的 ARAM 對凱爾非常友善，成長收益明顯。"
-        },
-        {
-          "id": "legend-alacrity",
-          "name": "傳奇：敏捷",
-          "icon": "assets/images/runes/precision/legend-alacrity.webp",
-          "reason": "更多攻速就是更快進入凱爾的輸出節奏。"
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "提高普攻對英雄的額外傷害，強化前期換血。"
         },
         {
           "id": "coup-de-grace",
           "name": "致命一擊",
           "icon": "assets/images/runes/precision/coup-de-grace.webp",
           "reason": "對低血量目標增傷，強化收尾能力。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳奇：敏捷",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
+          "reason": "更多攻速就是更快進入凱爾的輸出節奏。"
         },
         {
           "id": "bone-plating",
@@ -7851,10 +7851,10 @@
           "reason": "單線持續吃兵讓最大生命穩定成長。"
         },
         {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "減少被控制打斷節奏的風險。"
+          "id": "nimbus-cloak",
+          "name": "光輝披風",
+          "icon": "assets/images/runes/sorcery/nimbus-cloak.webp",
+          "reason": "使用召喚師技能後獲得跑速，方便開戰後追擊或撤退。"
         }
       ],
       "spells": [
@@ -8185,6 +8185,12 @@
           "reason": "控制命中後能穩定補上額外傷害。"
         },
         {
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -8195,12 +8201,6 @@
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
           "reason": "更多技能加速等於更多開戰與反手機會。"
-        },
-        {
-          "id": "scorch",
-          "name": "燒灼",
-          "icon": "assets/images/runes/sorcery/scorch.webp",
-          "reason": "前期每輪消耗多補一段傷害。"
         }
       ],
       "spells": [
@@ -8358,16 +8358,16 @@
           "reason": "控制與緩速命中後能幫全隊補一些續航。"
         },
         {
-          "id": "revitalize",
-          "name": "甦醒",
-          "icon": "assets/images/runes/resolve/revitalize.webp",
-          "reason": "直接放大護盾與治療效果。"
-        },
-        {
           "id": "bone-plating",
           "name": "骨甲",
           "icon": "assets/images/runes/resolve/bone-plating.webp",
           "reason": "避免自己被第一波突進直接帶走。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大護盾與治療效果。"
         },
         {
           "id": "transcendence",
@@ -8531,16 +8531,16 @@
           "reason": "1 技緩速或擊退命中後能替隊伍再補續航。"
         },
         {
-          "id": "revitalize",
-          "name": "甦醒",
-          "icon": "assets/images/runes/resolve/revitalize.webp",
-          "reason": "直接放大米里歐的護盾與治療，是 ARAM 長團戰的核心收益。"
-        },
-        {
           "id": "bone-plating",
           "name": "骨甲",
           "icon": "assets/images/runes/resolve/bone-plating.webp",
           "reason": "避免自己被突進角色第一波直接帶走。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大米里歐的護盾與治療，是 ARAM 長團戰的核心收益。"
         },
         {
           "id": "transcendence",
@@ -8698,6 +8698,12 @@
           "reason": "無法回城的 ARAM 很重視續航與接近目標的跑速，能讓前期過渡更舒服。"
         },
         {
+          "id": "steadfast-bulwark",
+          "name": "堅定壁壘",
+          "icon": "assets/images/runes/resolve/steadfast-bulwark.webp",
+          "reason": "提高雙防與多人近身時的坦度，適合正面承傷。"
+        },
+        {
           "id": "second-wind",
           "name": "回春",
           "icon": "assets/images/runes/resolve/second-wind.webp",
@@ -8708,12 +8714,6 @@
           "name": "過度生長",
           "icon": "assets/images/runes/resolve/overgrowth.webp",
           "reason": "單線附近持續有士兵死亡，能穩定累積額外生命。"
-        },
-        {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "被控制後仍能保持更好的前排作戰能力。"
         },
         {
           "id": "transcendence",
@@ -9062,10 +9062,10 @@
           "reason": "單線士兵密集，能穩定累積額外最大生命。"
         },
         {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "被控制後仍能維持較高坦度與前排穩定性。"
+          "id": "triumph",
+          "name": "凱旋",
+          "icon": "assets/images/runes/precision/triumph.webp",
+          "reason": "參與擊殺後回復生命與資源，提高 ARAM 連續團戰續航。"
         }
       ],
       "spells": [
@@ -9563,22 +9563,22 @@
           "reason": "短時間連續命中後提高跑速，讓藍寶更容易邊燒邊拉開或追擊。"
         },
         {
-          "id": "nimbus-cloak",
-          "name": "光輝披風",
-          "icon": "assets/images/runes/sorcery/nimbus-cloak.webp",
-          "reason": "使用召喚師技能後的跑速能幫助進場、撤退與調整火焰位置。"
-        },
-        {
-          "id": "scorch",
-          "name": "燒灼",
-          "icon": "assets/images/runes/sorcery/scorch.webp",
-          "reason": "前中期每輪魚叉與火焰消耗都能多補一段傷害。"
+          "id": "axiom-arcanist",
+          "name": "公理奧術大師",
+          "icon": "assets/images/runes/sorcery/axiom-arcanist.webp",
+          "reason": "強化大絕收益並加快參與擊殺後的大絕循環。"
         },
         {
           "id": "transcendence",
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
           "reason": "更高技能加速能讓魚叉與護盾更頻繁，熱能管理也更有彈性。"
+        },
+        {
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "前中期每輪魚叉與火焰消耗都能多補一段傷害。"
         },
         {
           "id": "last-stand",
@@ -9921,16 +9921,16 @@
           "reason": "單線容易連續命中同一目標，提高持續作戰收益。"
         },
         {
+          "id": "eyeball-collector",
+          "name": "眼球收集器",
+          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+          "reason": "參與擊殺後累積適性能力，適合高頻團戰。"
+        },
+        {
           "id": "bone-plating",
           "name": "骨甲",
           "icon": "assets/images/runes/resolve/bone-plating.webp",
           "reason": "被刺客或雪球式強開貼臉時多一層保命空間。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速能提高 1 技治療／消耗與 2 技控制頻率。"
         }
       ],
       "spells": [
@@ -10975,16 +10975,16 @@
           "reason": "消耗、治療與護盾都能穩定觸發，是索娜最全面的核心符文。"
         },
         {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "提高長時間施法的魔力容錯。"
+          "id": "font-of-life",
+          "name": "生命之泉",
+          "icon": "assets/images/runes/resolve/font-of-life.webp",
+          "reason": "命中敵人後為自己與附近低血隊友提供回復，適合團隊型英雄。"
         },
         {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "更多技能加速等於更多 2、3 技與大絕。"
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被刺客或強開碰到時減少第一輪爆發。"
         },
         {
           "id": "revitalize",
@@ -10993,10 +10993,10 @@
           "reason": "直接放大治療與護盾效果。"
         },
         {
-          "id": "bone-plating",
-          "name": "骨甲",
-          "icon": "assets/images/runes/resolve/bone-plating.webp",
-          "reason": "被刺客或強開碰到時減少第一輪爆發。"
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "更多技能加速等於更多 2、3 技與大絕。"
         }
       ],
       "spells": [
@@ -11158,16 +11158,16 @@
           "reason": "1 技緩速與 3 技控制命中後能幫隊伍補額外續航。"
         },
         {
-          "id": "revitalize",
-          "name": "甦醒",
-          "icon": "assets/images/runes/resolve/revitalize.webp",
-          "reason": "直接放大 2 技與大絕治療。"
-        },
-        {
           "id": "bone-plating",
           "name": "骨甲",
           "icon": "assets/images/runes/resolve/bone-plating.webp",
           "reason": "索拉卡常是優先擊殺目標，骨甲能減少被瞬間帶走的風險。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大 2 技與大絕治療。"
         },
         {
           "id": "transcendence",
@@ -11325,6 +11325,12 @@
           "reason": "長時間貼前排時可反覆觸發，增加生命、治療與傷害。"
         },
         {
+          "id": "steadfast-bulwark",
+          "name": "堅定壁壘",
+          "icon": "assets/images/runes/resolve/steadfast-bulwark.webp",
+          "reason": "提高雙防與多人近身時的坦度，適合正面承傷。"
+        },
+        {
           "id": "second-wind",
           "name": "回春",
           "icon": "assets/images/runes/resolve/second-wind.webp",
@@ -11335,12 +11341,6 @@
           "name": "過度生長",
           "icon": "assets/images/runes/resolve/overgrowth.webp",
           "reason": "ARAM 小兵死亡密集，能穩定堆高最大生命。"
-        },
-        {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "被控制時提高容錯，搭配被動更難被連控帶走。"
         },
         {
           "id": "last-stand",
@@ -11504,16 +11504,16 @@
           "reason": "1 技緩速與大絕限制目標後，讓隊友補額外續航。"
         },
         {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被敵方英雄先手時降低後續連續傷害，提高生存能力。"
+        },
+        {
           "id": "revitalize",
           "name": "甦醒",
           "icon": "assets/images/runes/resolve/revitalize.webp",
           "reason": "直接放大護盾與大絕治療。"
-        },
-        {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "即使 7.2a 降低 3 技魔耗，長時間團戰仍很吃魔力。"
         },
         {
           "id": "transcendence",
@@ -11677,6 +11677,12 @@
           "reason": "暈眩或緩速後補額外真實傷害，與 1+3 控制連段契合。"
         },
         {
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -11687,12 +11693,6 @@
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
           "reason": "技能加速提高佈球、暈眩與大絕前的循環。"
-        },
-        {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "增加長時間不回城時的魔力容錯。"
         }
       ],
       "spells": [
@@ -11848,10 +11848,10 @@
           "reason": "1 技與 3 技遠距消耗能反覆觸發，單線命中率很高。"
         },
         {
-          "id": "scorch",
-          "name": "燒灼",
-          "icon": "assets/images/runes/sorcery/scorch.webp",
-          "reason": "前中期每輪技能命中多一段傷害。"
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "提高長時間消耗的魔力上限。"
         },
         {
           "id": "transcendence",
@@ -11860,10 +11860,10 @@
           "reason": "更多技能加速讓 1 技與控制連段輪轉更快。"
         },
         {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "提高長時間消耗的魔力上限。"
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "前中期每輪技能命中多一段傷害。"
         },
         {
           "id": "bone-plating",
@@ -12393,16 +12393,16 @@
           "reason": "恐懼命中後追加真實傷害。"
         },
         {
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
           "reason": "ARAM 擊殺助攻密集，能穩定堆高法強。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "縮短消耗、護盾反開與大絕循環。"
         },
         {
           "id": "bone-plating",
@@ -12568,10 +12568,10 @@
           "reason": "死亡射線遠距命中率高，能穩定觸發額外消耗。"
         },
         {
-          "id": "scorch",
-          "name": "燒灼",
-          "icon": "assets/images/runes/sorcery/scorch.webp",
-          "reason": "提高前中期每一輪 3 技的壓血能力。"
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "增加長時間不回城的魔力容錯。"
         },
         {
           "id": "transcendence",
@@ -12580,10 +12580,10 @@
           "reason": "縮短死亡射線與控制技能循環。"
         },
         {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "增加長時間不回城的魔力容錯。"
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "提高前中期每一輪 3 技的壓血能力。"
         },
         {
           "id": "bone-plating",
@@ -12749,6 +12749,12 @@
           "reason": "打一套後獲得移速，幫助進出戰場與追上後排。"
         },
         {
+          "id": "axiom-arcanist",
+          "name": "公理奧術大師",
+          "icon": "assets/images/runes/sorcery/axiom-arcanist.webp",
+          "reason": "強化大絕收益並加快參與擊殺後的大絕循環。"
+        },
+        {
           "id": "transcendence",
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
@@ -12765,12 +12771,6 @@
           "name": "背水一戰",
           "icon": "assets/images/runes/precision/last-stand.webp",
           "reason": "低血量仍能靠吸血反打，與弗拉迪米爾玩法高度契合。"
-        },
-        {
-          "id": "bone-plating",
-          "name": "骨甲",
-          "icon": "assets/images/runes/resolve/bone-plating.webp",
-          "reason": "第一輪被集火時減傷，爭取開出血池。"
         }
       ],
       "spells": [
@@ -12926,12 +12926,6 @@
           "reason": "悟空進場後能靠 1、3 技與兩段大絕快速疊滿，長團戰收益高。"
         },
         {
-          "id": "brutal",
-          "name": "兇蠻",
-          "icon": "assets/images/runes/precision/brutal.webp",
-          "reason": "提高前中期短換血與第一輪進場傷害。"
-        },
-        {
           "id": "triumph",
           "name": "凱旋",
           "icon": "assets/images/runes/precision/triumph.webp",
@@ -12942,6 +12936,12 @@
           "name": "背水一戰",
           "icon": "assets/images/runes/precision/last-stand.webp",
           "reason": "低血時仍能把第二段大絕與 1 技傷害拉高。"
+        },
+        {
+          "id": "legend-tenacity",
+          "name": "傳奇：韌性",
+          "icon": "assets/images/runes/precision/legend-tenacity.webp",
+          "reason": "提高韌性與緩速抗性，降低被控制時間。"
         },
         {
           "id": "bone-plating",
@@ -13282,6 +13282,12 @@
           "reason": "大絕位移後接技能能取得額外穿透收益。"
         },
         {
+          "id": "chain-assault",
+          "name": "鎖鏈突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "連續技能或普攻命中後補上額外適性傷害，適合完整打一套的英雄。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -13292,12 +13298,6 @@
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
           "reason": "縮短 1、3 技循環，增加抓人次數。"
-        },
-        {
-          "id": "bone-plating",
-          "name": "骨甲",
-          "icon": "assets/images/runes/resolve/bone-plating.webp",
-          "reason": "大絕回原位或被突進抓到時降低第一輪爆發。"
         }
       ],
       "spells": [
@@ -13640,16 +13640,16 @@
           "reason": "頻繁位移與煙霧進出能穩定觸發。"
         },
         {
+          "id": "chain-assault",
+          "name": "鎖鏈突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "連續技能或普攻命中後補上額外適性傷害，適合完整打一套的英雄。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
           "reason": "ARAM 擊殺助攻密集，快速累積法強。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "縮短煙霧與位移技能循環。"
         },
         {
           "id": "bone-plating",
@@ -14175,6 +14175,12 @@
           "reason": "3 技與大絕位移頻繁觸發。"
         },
         {
+          "id": "chain-assault",
+          "name": "鎖鏈突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "連續技能或普攻命中後補上額外適性傷害，適合完整打一套的英雄。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -14185,12 +14191,6 @@
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
           "reason": "縮短主要輸出與位移技能循環。"
-        },
-        {
-          "id": "bone-plating",
-          "name": "骨甲",
-          "icon": "assets/images/runes/resolve/bone-plating.webp",
-          "reason": "近身打完整連段時降低被反爆發。"
         }
       ],
       "spells": [
@@ -14529,16 +14529,16 @@
           "reason": "大絕重置收割時持續回血，連斬價值高。"
         },
         {
-          "id": "legend-tenacity",
-          "name": "傳說：韌性",
-          "icon": "assets/images/runes/precision/legend-tenacity.webp",
-          "reason": "降低被連控風箏的風險。"
-        },
-        {
           "id": "last-stand",
           "name": "背水一戰",
           "icon": "assets/images/runes/precision/last-stand.webp",
           "reason": "低血量時仍能靠外圈 1 技與大絕反打。"
+        },
+        {
+          "id": "legend-tenacity",
+          "name": "傳說：韌性",
+          "icon": "assets/images/runes/precision/legend-tenacity.webp",
+          "reason": "降低被連控風箏的風險。"
         },
         {
           "id": "nimbus-cloak",
@@ -15060,6 +15060,12 @@
           "reason": "1、3 技位移頻繁，幾乎每次切入都能吃到收益。"
         },
         {
+          "id": "chain-assault",
+          "name": "鎖鏈突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "連續技能或普攻命中後補上額外適性傷害，適合完整打一套的英雄。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -15070,12 +15076,6 @@
           "name": "致命一擊",
           "icon": "assets/images/runes/precision/coup-de-grace.webp",
           "reason": "對低血目標提高收割效率。"
-        },
-        {
-          "id": "bone-plating",
-          "name": "骨甲",
-          "icon": "assets/images/runes/resolve/bone-plating.webp",
-          "reason": "切入近身時降低第一輪反爆發。"
         }
       ],
       "spells": [
@@ -16474,6 +16474,12 @@
           "reason": "大絕先手切入很容易先造成傷害，放大整套爆發。"
         },
         {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "增加最大魔力，讓長時間單線消耗更穩定。"
+        },
+        {
           "id": "transcendence",
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
@@ -16490,12 +16496,6 @@
           "name": "猛然衝擊",
           "icon": "assets/images/runes/conquest/sudden-impact.webp",
           "reason": "每次虛空行走都能穩定觸發。"
-        },
-        {
-          "id": "second-wind",
-          "name": "回春",
-          "icon": "assets/images/runes/resolve/second-wind.webp",
-          "reason": "前期被長手消耗時維持血線。"
         }
       ],
       "spells": [
@@ -17701,6 +17701,12 @@
           "reason": "被動、技能與普攻可穩定疊滿長團。"
         },
         {
+          "id": "triumph",
+          "name": "凱旋",
+          "icon": "assets/images/runes/precision/triumph.webp",
+          "reason": "參與擊殺後回復生命與資源，提高 ARAM 連續團戰續航。"
+        },
+        {
           "id": "last-stand",
           "name": "背水一戰",
           "icon": "assets/images/runes/precision/last-stand.webp",
@@ -17717,12 +17723,6 @@
           "name": "骨甲",
           "icon": "assets/images/runes/resolve/bone-plating.webp",
           "reason": "第一輪被集火時減傷。"
-        },
-        {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
-          "reason": "被控制時提高近戰續戰容錯。"
         }
       ],
       "spells": [
@@ -17884,10 +17884,10 @@
           "reason": "猛撲與變形追擊頻繁觸發穿透。"
         },
         {
-          "id": "coup-de-grace",
-          "name": "致命一擊",
-          "icon": "assets/images/runes/precision/coup-de-grace.webp",
-          "reason": "收割殘血時提高斬殺能力。"
+          "id": "chain-assault",
+          "name": "鎖鏈突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "連續技能或普攻命中後補上額外適性傷害，適合完整打一套的英雄。"
         },
         {
           "id": "eyeball-collector",
@@ -17896,10 +17896,10 @@
           "reason": "ARAM 擊殺助攻密集，法強堆疊快。"
         },
         {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速讓標槍與治療循環更快。"
+          "id": "coup-de-grace",
+          "name": "致命一擊",
+          "icon": "assets/images/runes/precision/coup-de-grace.webp",
+          "reason": "收割殘血時提高斬殺能力。"
         }
       ],
       "spells": [
@@ -18232,10 +18232,10 @@
           "reason": "長距離技能命中後穩定追加消耗。"
         },
         {
-          "id": "scorch",
-          "name": "燒灼",
-          "icon": "assets/images/runes/sorcery/scorch.webp",
-          "reason": "強化前中期每次技能命中的灼燒。"
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "補高頻施法需要的魔力。"
         },
         {
           "id": "transcendence",
@@ -18244,10 +18244,10 @@
           "reason": "縮短一、二技循環，增加控制與消耗頻率。"
         },
         {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "補高頻施法需要的魔力。"
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "強化前中期每次技能命中的灼燒。"
         },
         {
           "id": "bone-plating",
@@ -19127,10 +19127,10 @@
           "reason": "每次草叢跳躍與大絕突進都能觸發。"
         },
         {
-          "id": "coup-de-grace",
-          "name": "致命一擊",
-          "icon": "assets/images/runes/precision/coup-de-grace.webp",
-          "reason": "對被隊友消耗到低血量的目標提高收割。"
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
         },
         {
           "id": "eyeball-collector",
@@ -19139,10 +19139,10 @@
           "reason": "ARAM 擊殺助攻多，快速累積適性能力。"
         },
         {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速提高強化技能與二技自保頻率。"
+          "id": "coup-de-grace",
+          "name": "致命一擊",
+          "icon": "assets/images/runes/precision/coup-de-grace.webp",
+          "reason": "對被隊友消耗到低血量的目標提高收割。"
         }
       ],
       "spells": [
@@ -19652,16 +19652,16 @@
           "reason": "短手法師最需要施法後的移速來追擊或拉開。"
         },
         {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速讓連招循環更快。"
-        },
-        {
           "id": "manaflow-band",
           "name": "附魔之帶",
           "icon": "assets/images/runes/sorcery/manaflow-band.webp",
           "reason": "增加魔力上限，配合魔力裝提升續戰。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速讓連招循環更快。"
         },
         {
           "id": "scorch",
@@ -19992,10 +19992,10 @@
           "reason": "一技與蘑菇都能穩定觸發遠距消耗。"
         },
         {
-          "id": "scorch",
-          "name": "燒灼",
-          "icon": "assets/images/runes/sorcery/scorch.webp",
-          "reason": "提高前期壓血效率。"
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "補魔力，降低長時間佈雷的資源壓力。"
         },
         {
           "id": "transcendence",
@@ -20004,10 +20004,10 @@
           "reason": "技能加速讓致盲與蘑菇循環更快。"
         },
         {
-          "id": "manaflow-band",
-          "name": "附魔之帶",
-          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
-          "reason": "補魔力，降低長時間佈雷的資源壓力。"
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "提高前期壓血效率。"
         },
         {
           "id": "bone-plating",
@@ -21012,16 +21012,16 @@
           "reason": "強化這套 ARAM 打法的核心節奏。"
         },
         {
-          "id": "sudden-impact",
-          "name": "即刻衝擊",
-          "icon": "assets/images/runes/conquest/sudden-impact.webp",
-          "reason": "強化這套 ARAM 打法的核心節奏。"
+          "id": "triumph",
+          "name": "凱旋",
+          "icon": "assets/images/runes/precision/triumph.webp",
+          "reason": "參與擊殺後回復生命與資源，提高 ARAM 連續團戰續航。"
         },
         {
-          "id": "eyeball-collector",
-          "name": "眼球收集器",
-          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
-          "reason": "強化這套 ARAM 打法的核心節奏。"
+          "id": "coup-de-grace",
+          "name": "致命一擊",
+          "icon": "assets/images/runes/precision/coup-de-grace.webp",
+          "reason": "對低血敵人提高傷害，強化收割。"
         },
         {
           "id": "legend-alacrity",
@@ -21030,9 +21030,9 @@
           "reason": "強化這套 ARAM 打法的核心節奏。"
         },
         {
-          "id": "bone-plating",
-          "name": "骨甲",
-          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "id": "sudden-impact",
+          "name": "即刻衝擊",
+          "icon": "assets/images/runes/conquest/sudden-impact.webp",
           "reason": "強化這套 ARAM 打法的核心節奏。"
         }
       ],
@@ -21704,27 +21704,27 @@
           "reason": "強化這套 ARAM 打法的核心節奏。"
         },
         {
-          "id": "perseverance",
-          "name": "堅毅",
-          "icon": "assets/images/runes/resolve/perseverance.webp",
+          "id": "triumph",
+          "name": "凱旋",
+          "icon": "assets/images/runes/precision/triumph.webp",
+          "reason": "參與擊殺後回復生命與資源，提高 ARAM 連續團戰續航。"
+        },
+        {
+          "id": "last-stand",
+          "name": "背水一戰",
+          "icon": "assets/images/runes/precision/last-stand.webp",
+          "reason": "低血量時提高普攻傷害，適合近戰持續作戰。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳說：歡欣",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
           "reason": "強化這套 ARAM 打法的核心節奏。"
         },
         {
           "id": "second-wind",
           "name": "回春",
           "icon": "assets/images/runes/resolve/second-wind.webp",
-          "reason": "強化這套 ARAM 打法的核心節奏。"
-        },
-        {
-          "id": "overgrowth",
-          "name": "過度生長",
-          "icon": "assets/images/runes/resolve/overgrowth.webp",
-          "reason": "強化這套 ARAM 打法的核心節奏。"
-        },
-        {
-          "id": "legend-alacrity",
-          "name": "傳說：歡欣",
-          "icon": "assets/images/runes/precision/legend-alacrity.webp",
           "reason": "強化這套 ARAM 打法的核心節奏。"
         }
       ],
@@ -22914,22 +22914,22 @@
           "reason": "普攻頻繁觸發，提供續航與移速拉扯。"
         },
         {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "增加最大魔力，讓長時間單線消耗更穩定。"
+        },
+        {
           "id": "transcendence",
           "name": "卓越",
           "icon": "assets/images/runes/sorcery/transcendence.webp",
           "reason": "技能加速讓黃牌與一技循環更快。"
         },
         {
-          "id": "nimbus-cloak",
-          "name": "靈光披風",
-          "icon": "assets/images/runes/sorcery/nimbus-cloak.webp",
-          "reason": "使用召喚師技能後加速接近黃牌距離或撤退。"
-        },
-        {
-          "id": "eyeball-collector",
-          "name": "眼球收集器",
-          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
-          "reason": "ARAM 擊殺參與高，容易累積額外輸出。"
+          "id": "gathering-storm",
+          "name": "天寒地凍",
+          "icon": "assets/images/runes/sorcery/gathering-storm.webp",
+          "reason": "隨時間獲得更多適性能力，強化中後期輸出。"
         },
         {
           "id": "bone-plating",
@@ -23264,6 +23264,12 @@
           "reason": "強化三技突進後第一套傷害。"
         },
         {
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -23274,12 +23280,6 @@
           "name": "致命一擊",
           "icon": "assets/images/runes/precision/coup-de-grace.webp",
           "reason": "提高對低血目標的斬殺。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速讓魅惑與大絕循環更快。"
         }
       ],
       "spells": [
@@ -23608,6 +23608,12 @@
           "reason": "跳躍與隱形後提高第一套傷害。"
         },
         {
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -23618,12 +23624,6 @@
           "name": "致命一擊",
           "icon": "assets/images/runes/precision/coup-de-grace.webp",
           "reason": "提高低血收割效率。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速讓一、二技循環更快。"
         }
       ],
       "spells": [
@@ -24296,6 +24296,12 @@
           "reason": "一技突進與大絕隱形切入後提高傷害。"
         },
         {
+          "id": "tyrant",
+          "name": "暴君",
+          "icon": "assets/images/runes/conquest/tyrant.webp",
+          "reason": "對低血量目標補上額外爆發，強化收割能力。"
+        },
+        {
           "id": "eyeball-collector",
           "name": "眼球收集器",
           "icon": "assets/images/runes/conquest/eyeball-collector.webp",
@@ -24306,12 +24312,6 @@
           "name": "致命一擊",
           "icon": "assets/images/runes/precision/coup-de-grace.webp",
           "reason": "提高對低血後排的收割效率。"
-        },
-        {
-          "id": "transcendence",
-          "name": "卓越",
-          "icon": "assets/images/runes/sorcery/transcendence.webp",
-          "reason": "技能加速讓二技消耗與一技追擊循環更快。"
         }
       ],
       "spells": [
