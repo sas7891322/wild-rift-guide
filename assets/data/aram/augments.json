@@ -1,0 +1,916 @@
+{
+  "gameVersion": "7.2b",
+  "dataVersion": "80.22.0",
+  "title": "符文大亂鬥增幅裝置",
+  "total": 151,
+  "display": "name-only",
+  "note": "依遊戲內增幅裝置資料庫截圖順序整理，目前先收錄台服繁體中文名稱，不加入圖示。",
+  "augments": [
+    {
+      "id": "augment-001",
+      "name": "血裔勇士",
+      "order": 1,
+      "sourceRef": "IMG_7889"
+    },
+    {
+      "id": "augment-002",
+      "name": "風暴瞬步",
+      "order": 2,
+      "sourceRef": "IMG_7890"
+    },
+    {
+      "id": "augment-003",
+      "name": "咒術之擊",
+      "order": 3,
+      "sourceRef": "IMG_7891"
+    },
+    {
+      "id": "augment-004",
+      "name": "鬼魅突刺",
+      "order": 4,
+      "sourceRef": "IMG_7892"
+    },
+    {
+      "id": "augment-005",
+      "name": "真實傷害",
+      "order": 5,
+      "sourceRef": "IMG_7893"
+    },
+    {
+      "id": "augment-006",
+      "name": "旋風反擊",
+      "order": 6,
+      "sourceRef": "IMG_7894"
+    },
+    {
+      "id": "augment-007",
+      "name": "同盟協議",
+      "order": 7,
+      "sourceRef": "IMG_7895"
+    },
+    {
+      "id": "augment-008",
+      "name": "治療重拳",
+      "order": 8,
+      "sourceRef": "IMG_7896"
+    },
+    {
+      "id": "augment-009",
+      "name": "爆發",
+      "order": 9,
+      "sourceRef": "IMG_7897"
+    },
+    {
+      "id": "augment-010",
+      "name": "緩速削弱",
+      "order": 10,
+      "sourceRef": "IMG_7898"
+    },
+    {
+      "id": "augment-011",
+      "name": "極度療癒",
+      "order": 11,
+      "sourceRef": "IMG_7899"
+    },
+    {
+      "id": "augment-012",
+      "name": "堅若磐石",
+      "order": 12,
+      "sourceRef": "IMG_7900"
+    },
+    {
+      "id": "augment-013",
+      "name": "狂噬流沙",
+      "order": 13,
+      "sourceRef": "IMG_7901"
+    },
+    {
+      "id": "augment-014",
+      "name": "雷霆轟擊",
+      "order": 14,
+      "sourceRef": "IMG_7902"
+    },
+    {
+      "id": "augment-015",
+      "name": "幸運之神",
+      "order": 15,
+      "sourceRef": "IMG_7903"
+    },
+    {
+      "id": "augment-016",
+      "name": "生命循環",
+      "order": 16,
+      "sourceRef": "IMG_7904"
+    },
+    {
+      "id": "augment-017",
+      "name": "沙塵暴",
+      "order": 17,
+      "sourceRef": "IMG_7905"
+    },
+    {
+      "id": "augment-018",
+      "name": "治癒之風",
+      "order": 18,
+      "sourceRef": "IMG_7906"
+    },
+    {
+      "id": "augment-019",
+      "name": "兇殘輔助",
+      "order": 19,
+      "sourceRef": "IMG_7907"
+    },
+    {
+      "id": "augment-020",
+      "name": "霜星祈願",
+      "order": 20,
+      "sourceRef": "IMG_7908"
+    },
+    {
+      "id": "augment-021",
+      "name": "絕對韌性",
+      "order": 21,
+      "sourceRef": "IMG_7909"
+    },
+    {
+      "id": "augment-022",
+      "name": "一拳入魂",
+      "order": 22,
+      "sourceRef": "IMG_7910"
+    },
+    {
+      "id": "augment-023",
+      "name": "鮮血契約：戰甲",
+      "order": 23,
+      "sourceRef": "IMG_7911"
+    },
+    {
+      "id": "augment-024",
+      "name": "突變衝刺",
+      "order": 24,
+      "sourceRef": "IMG_7912"
+    },
+    {
+      "id": "augment-025",
+      "name": "快速處決",
+      "order": 25,
+      "sourceRef": "IMG_7913"
+    },
+    {
+      "id": "augment-026",
+      "name": "鮮血契約：至尊",
+      "order": 26,
+      "sourceRef": "IMG_7914"
+    },
+    {
+      "id": "augment-027",
+      "name": "鋼鐵之力",
+      "order": 27,
+      "sourceRef": "IMG_7915"
+    },
+    {
+      "id": "augment-028",
+      "name": "快冷",
+      "order": 28,
+      "sourceRef": "IMG_7916"
+    },
+    {
+      "id": "augment-029",
+      "name": "強化控場",
+      "order": 29,
+      "sourceRef": "IMG_7917"
+    },
+    {
+      "id": "augment-030",
+      "name": "烏賊戰",
+      "order": 30,
+      "sourceRef": "IMG_7918"
+    },
+    {
+      "id": "augment-031",
+      "name": "越大越猛",
+      "order": 31,
+      "sourceRef": "IMG_7919"
+    },
+    {
+      "id": "augment-032",
+      "name": "秘術強襲",
+      "order": 32,
+      "sourceRef": "IMG_7920"
+    },
+    {
+      "id": "augment-033",
+      "name": "神聖審判",
+      "order": 33,
+      "sourceRef": "IMG_7921"
+    },
+    {
+      "id": "augment-034",
+      "name": "暴擊治療",
+      "order": 34,
+      "sourceRef": "IMG_7922"
+    },
+    {
+      "id": "augment-035",
+      "name": "草木皆兵",
+      "order": 35,
+      "sourceRef": "IMG_7923"
+    },
+    {
+      "id": "augment-036",
+      "name": "囊中物",
+      "order": 36,
+      "sourceRef": "IMG_7924"
+    },
+    {
+      "id": "augment-037",
+      "name": "尋找",
+      "order": 37,
+      "sourceRef": "IMG_7925"
+    },
+    {
+      "id": "augment-038",
+      "name": "逃亡",
+      "order": 38,
+      "sourceRef": "IMG_7926"
+    },
+    {
+      "id": "augment-039",
+      "name": "戰鬥",
+      "order": 39,
+      "sourceRef": "IMG_7927"
+    },
+    {
+      "id": "augment-040",
+      "name": "貝爾薇斯的力量",
+      "order": 40,
+      "sourceRef": "IMG_7928"
+    },
+    {
+      "id": "augment-041",
+      "name": "關之力",
+      "order": 41,
+      "sourceRef": "IMG_7929"
+    },
+    {
+      "id": "augment-042",
+      "name": "薩亨的力量",
+      "order": 42,
+      "sourceRef": "IMG_7930"
+    },
+    {
+      "id": "augment-043",
+      "name": "姍娜的力量",
+      "order": 43,
+      "sourceRef": "IMG_7931"
+    },
+    {
+      "id": "augment-044",
+      "name": "伊羅旖的力量",
+      "order": 44,
+      "sourceRef": "IMG_7932"
+    },
+    {
+      "id": "augment-045",
+      "name": "妖咒療法",
+      "order": 45,
+      "sourceRef": "IMG_7933"
+    },
+    {
+      "id": "augment-046",
+      "name": "舒緩湍流",
+      "order": 46,
+      "sourceRef": "IMG_7934"
+    },
+    {
+      "id": "augment-047",
+      "name": "治療浪潮",
+      "order": 47,
+      "sourceRef": "IMG_7935"
+    },
+    {
+      "id": "augment-048",
+      "name": "組合治療",
+      "order": 48,
+      "sourceRef": "IMG_7936"
+    },
+    {
+      "id": "augment-049",
+      "name": "隱入迷霧",
+      "order": 49,
+      "sourceRef": "IMG_7937"
+    },
+    {
+      "id": "augment-050",
+      "name": "溜之大吉",
+      "order": 50,
+      "sourceRef": "IMG_7938"
+    },
+    {
+      "id": "augment-051",
+      "name": "隱霧反擊",
+      "order": 51,
+      "sourceRef": "IMG_7939"
+    },
+    {
+      "id": "augment-052",
+      "name": "雲霧之刃",
+      "order": 52,
+      "sourceRef": "IMG_7940"
+    },
+    {
+      "id": "augment-053",
+      "name": "疾風斬",
+      "order": 53,
+      "sourceRef": "IMG_7941"
+    },
+    {
+      "id": "augment-054",
+      "name": "箭雨：迷霧",
+      "order": 54,
+      "sourceRef": "IMG_7942"
+    },
+    {
+      "id": "augment-055",
+      "name": "三摩地之風",
+      "order": 55,
+      "sourceRef": "IMG_7943"
+    },
+    {
+      "id": "augment-056",
+      "name": "災厄連擊",
+      "order": 56,
+      "sourceRef": "IMG_7944"
+    },
+    {
+      "id": "augment-057",
+      "name": "災厄召喚",
+      "order": 57,
+      "sourceRef": "IMG_7945"
+    },
+    {
+      "id": "augment-058",
+      "name": "流轉碎礫",
+      "order": 58,
+      "sourceRef": "IMG_7946"
+    },
+    {
+      "id": "augment-059",
+      "name": "移山者",
+      "order": 59,
+      "sourceRef": "IMG_7947"
+    },
+    {
+      "id": "augment-060",
+      "name": "碎石者",
+      "order": 60,
+      "sourceRef": "IMG_7948"
+    },
+    {
+      "id": "augment-061",
+      "name": "堅牆",
+      "order": 61,
+      "sourceRef": "IMG_7949"
+    },
+    {
+      "id": "augment-062",
+      "name": "無雙亂舞",
+      "order": 62,
+      "sourceRef": "IMG_7950"
+    },
+    {
+      "id": "augment-063",
+      "name": "烈火鎧甲",
+      "order": 63,
+      "sourceRef": "IMG_7951"
+    },
+    {
+      "id": "augment-064",
+      "name": "烈焰突刺",
+      "order": 64,
+      "sourceRef": "IMG_7952"
+    },
+    {
+      "id": "augment-065",
+      "name": "三重螺旋",
+      "order": 65,
+      "sourceRef": "IMG_7953"
+    },
+    {
+      "id": "augment-066",
+      "name": "適性轉換",
+      "order": 66,
+      "sourceRef": "IMG_7954"
+    },
+    {
+      "id": "augment-067",
+      "name": "戰鬥軍庫",
+      "order": 67,
+      "sourceRef": "IMG_7955"
+    },
+    {
+      "id": "augment-068",
+      "name": "來點顏色",
+      "order": 68,
+      "sourceRef": "IMG_7956"
+    },
+    {
+      "id": "augment-069",
+      "name": "充能射擊",
+      "order": 69,
+      "sourceRef": "IMG_7957"
+    },
+    {
+      "id": "augment-070",
+      "name": "精準神射手",
+      "order": 70,
+      "sourceRef": "IMG_7958"
+    },
+    {
+      "id": "augment-071",
+      "name": "利刃暗影",
+      "order": 71,
+      "sourceRef": "IMG_7959"
+    },
+    {
+      "id": "augment-072",
+      "name": "劍刃之喚",
+      "order": 72,
+      "sourceRef": "IMG_7960"
+    },
+    {
+      "id": "augment-073",
+      "name": "音速衝擊",
+      "order": 73,
+      "sourceRef": "IMG_7961"
+    },
+    {
+      "id": "augment-074",
+      "name": "金錢巨獸",
+      "order": 74,
+      "sourceRef": "IMG_7962"
+    },
+    {
+      "id": "augment-075",
+      "name": "大地裂變",
+      "order": 75,
+      "sourceRef": "IMG_7963"
+    },
+    {
+      "id": "augment-076",
+      "name": "咔蹦！喵！",
+      "order": 76,
+      "sourceRef": "IMG_7964"
+    },
+    {
+      "id": "augment-077",
+      "name": "加速吧！喵！",
+      "order": 77,
+      "sourceRef": "IMG_7965"
+    },
+    {
+      "id": "augment-078",
+      "name": "秘術拳擊",
+      "order": 78,
+      "sourceRef": "IMG_7966"
+    },
+    {
+      "id": "augment-079",
+      "name": "巨人敵手",
+      "order": 79,
+      "sourceRef": "IMG_7967"
+    },
+    {
+      "id": "augment-080",
+      "name": "瘋狂科學家",
+      "order": 80,
+      "sourceRef": "IMG_7968"
+    },
+    {
+      "id": "augment-081",
+      "name": "利維坦",
+      "order": 81,
+      "sourceRef": "IMG_7969"
+    },
+    {
+      "id": "augment-082",
+      "name": "備用電池",
+      "order": 82,
+      "sourceRef": "IMG_7970"
+    },
+    {
+      "id": "augment-083",
+      "name": "十字星光",
+      "order": 83,
+      "sourceRef": "IMG_7971"
+    },
+    {
+      "id": "augment-084",
+      "name": "星爆控制",
+      "order": 84,
+      "sourceRef": "IMG_7972"
+    },
+    {
+      "id": "augment-085",
+      "name": "有福同享",
+      "order": 85,
+      "sourceRef": "IMG_7973"
+    },
+    {
+      "id": "augment-086",
+      "name": "羽毛彈幕",
+      "order": 86,
+      "sourceRef": "IMG_7974"
+    },
+    {
+      "id": "augment-087",
+      "name": "疫病烙印",
+      "order": 87,
+      "sourceRef": "IMG_7975"
+    },
+    {
+      "id": "augment-088",
+      "name": "蓄能戰盾",
+      "order": 88,
+      "sourceRef": "IMG_7976"
+    },
+    {
+      "id": "augment-089",
+      "name": "禁錮鎖鏈",
+      "order": 89,
+      "sourceRef": "IMG_7977"
+    },
+    {
+      "id": "augment-090",
+      "name": "充能打擊",
+      "order": 90,
+      "sourceRef": "IMG_7978"
+    },
+    {
+      "id": "augment-091",
+      "name": "寶石手套",
+      "order": 91,
+      "sourceRef": "IMG_7979"
+    },
+    {
+      "id": "augment-092",
+      "name": "雙修大師",
+      "order": 92,
+      "sourceRef": "IMG_7980"
+    },
+    {
+      "id": "augment-093",
+      "name": "靈光一閃",
+      "order": 93,
+      "sourceRef": "IMG_7981"
+    },
+    {
+      "id": "augment-094",
+      "name": "風語者的祝福",
+      "order": 94,
+      "sourceRef": "IMG_7982"
+    },
+    {
+      "id": "augment-095",
+      "name": "風馳電擊",
+      "order": 95,
+      "sourceRef": "IMG_7983"
+    },
+    {
+      "id": "augment-096",
+      "name": "原版泰坦九頭蛇",
+      "order": 96,
+      "sourceRef": "IMG_7984"
+    },
+    {
+      "id": "augment-097",
+      "name": "原版雄心之鋼",
+      "order": 97,
+      "sourceRef": "IMG_7985"
+    },
+    {
+      "id": "augment-098",
+      "name": "不破護盾",
+      "order": 98,
+      "sourceRef": "IMG_7986"
+    },
+    {
+      "id": "augment-099",
+      "name": "巨人",
+      "order": 99,
+      "sourceRef": "IMG_7987"
+    },
+    {
+      "id": "augment-100",
+      "name": "終極革新",
+      "order": 100,
+      "sourceRef": "IMG_7988"
+    },
+    {
+      "id": "augment-101",
+      "name": "煉獄使者",
+      "order": 101,
+      "sourceRef": "IMG_7989"
+    },
+    {
+      "id": "augment-102",
+      "name": "別想碰我",
+      "order": 102,
+      "sourceRef": "IMG_7990"
+    },
+    {
+      "id": "augment-103",
+      "name": "加速巫術",
+      "order": 103,
+      "sourceRef": "IMG_7991"
+    },
+    {
+      "id": "augment-104",
+      "name": "心曲轉換",
+      "order": 104,
+      "sourceRef": "IMG_7992"
+    },
+    {
+      "id": "augment-105",
+      "name": "連鎖反應",
+      "order": 105,
+      "sourceRef": "IMG_7993"
+    },
+    {
+      "id": "augment-106",
+      "name": "符文香爐",
+      "order": 106,
+      "sourceRef": "IMG_7994"
+    },
+    {
+      "id": "augment-107",
+      "name": "起源：致命節奏",
+      "order": 107,
+      "sourceRef": "IMG_7995"
+    },
+    {
+      "id": "augment-108",
+      "name": "星界之身",
+      "order": 108,
+      "sourceRef": "IMG_7996"
+    },
+    {
+      "id": "augment-109",
+      "name": "循環利用",
+      "order": 109,
+      "sourceRef": "IMG_7997"
+    },
+    {
+      "id": "augment-110",
+      "name": "魔法彎刀連擊",
+      "order": 110,
+      "sourceRef": "IMG_7998"
+    },
+    {
+      "id": "augment-111",
+      "name": "完美巔峰",
+      "order": 111,
+      "sourceRef": "IMG_7999"
+    },
+    {
+      "id": "augment-112",
+      "name": "鮮血契約：燒灼",
+      "order": 112,
+      "sourceRef": "IMG_8001"
+    },
+    {
+      "id": "augment-113",
+      "name": "鮮血契約：深淵護甲",
+      "order": 113,
+      "sourceRef": "IMG_8002"
+    },
+    {
+      "id": "augment-114",
+      "name": "自爆炸彈客",
+      "order": 114,
+      "sourceRef": "IMG_8003"
+    },
+    {
+      "id": "augment-115",
+      "name": "緩速引爆",
+      "order": 115,
+      "sourceRef": "IMG_8004"
+    },
+    {
+      "id": "augment-116",
+      "name": "速成控制",
+      "order": 116,
+      "sourceRef": "IMG_8005"
+    },
+    {
+      "id": "augment-117",
+      "name": "意志",
+      "order": 117,
+      "sourceRef": "IMG_8006"
+    },
+    {
+      "id": "augment-118",
+      "name": "二次三次",
+      "order": 118,
+      "sourceRef": "IMG_8007"
+    },
+    {
+      "id": "augment-119",
+      "name": "狙擊武器",
+      "order": 119,
+      "sourceRef": "IMG_8008"
+    },
+    {
+      "id": "augment-120",
+      "name": "頂尖發明家",
+      "order": 120,
+      "sourceRef": "IMG_8009"
+    },
+    {
+      "id": "augment-121",
+      "name": "闇魂獵人之鏈",
+      "order": 121,
+      "sourceRef": "IMG_8010"
+    },
+    {
+      "id": "augment-122",
+      "name": "穿刺魔法彎刀",
+      "order": 122,
+      "sourceRef": "IMG_8011"
+    },
+    {
+      "id": "augment-123",
+      "name": "風行術",
+      "order": 123,
+      "sourceRef": "IMG_8012"
+    },
+    {
+      "id": "augment-124",
+      "name": "重量級拳手",
+      "order": 124,
+      "sourceRef": "IMG_8013"
+    },
+    {
+      "id": "augment-125",
+      "name": "加速聚變",
+      "order": 125,
+      "sourceRef": "IMG_8014"
+    },
+    {
+      "id": "augment-126",
+      "name": "二進位之星",
+      "order": 126,
+      "sourceRef": "IMG_8015"
+    },
+    {
+      "id": "augment-127",
+      "name": "魔法導彈",
+      "order": 127,
+      "sourceRef": "IMG_8016"
+    },
+    {
+      "id": "augment-128",
+      "name": "兇殘之柄",
+      "order": 128,
+      "sourceRef": "IMG_8017"
+    },
+    {
+      "id": "augment-129",
+      "name": "穿針引線",
+      "order": 129,
+      "sourceRef": "IMG_8018"
+    },
+    {
+      "id": "augment-130",
+      "name": "煽風點火",
+      "order": 130,
+      "sourceRef": "IMG_8019"
+    },
+    {
+      "id": "augment-131",
+      "name": "施法專家",
+      "order": 131,
+      "sourceRef": "IMG_8021"
+    },
+    {
+      "id": "augment-132",
+      "name": "策馬揚鞭",
+      "order": 132,
+      "sourceRef": "IMG_8022"
+    },
+    {
+      "id": "augment-133",
+      "name": "生命守護",
+      "order": 133,
+      "sourceRef": "IMG_8023"
+    },
+    {
+      "id": "augment-134",
+      "name": "Levin專精",
+      "order": 134,
+      "sourceRef": "IMG_8024"
+    },
+    {
+      "id": "augment-135",
+      "name": "女巫思維",
+      "order": 135,
+      "sourceRef": "IMG_8025"
+    },
+    {
+      "id": "augment-136",
+      "name": "剛愎巨人",
+      "order": 136,
+      "sourceRef": "IMG_8026"
+    },
+    {
+      "id": "augment-137",
+      "name": "處刑者",
+      "order": 137,
+      "sourceRef": "IMG_8027"
+    },
+    {
+      "id": "augment-138",
+      "name": "星殞護盾",
+      "order": 138,
+      "sourceRef": "IMG_8028"
+    },
+    {
+      "id": "augment-139",
+      "name": "冷卻吧！喵！",
+      "order": 139,
+      "sourceRef": "IMG_8029"
+    },
+    {
+      "id": "augment-140",
+      "name": "雪地踱步",
+      "order": 140,
+      "sourceRef": "IMG_8030"
+    },
+    {
+      "id": "augment-141",
+      "name": "飛昇",
+      "order": 141,
+      "sourceRef": "IMG_8031"
+    },
+    {
+      "id": "augment-142",
+      "name": "雷霆裝備",
+      "order": 142,
+      "sourceRef": "IMG_8032"
+    },
+    {
+      "id": "augment-143",
+      "name": "星雲裂縫",
+      "order": 143,
+      "sourceRef": "IMG_8033"
+    },
+    {
+      "id": "augment-144",
+      "name": "越來越大",
+      "order": 144,
+      "sourceRef": "IMG_8034"
+    },
+    {
+      "id": "augment-145",
+      "name": "越來越小",
+      "order": 145,
+      "sourceRef": "IMG_8035"
+    },
+    {
+      "id": "augment-146",
+      "name": "跑速強化",
+      "order": 146,
+      "sourceRef": "IMG_8036"
+    },
+    {
+      "id": "augment-147",
+      "name": "暴擊強化",
+      "order": 147,
+      "sourceRef": "IMG_8037"
+    },
+    {
+      "id": "augment-148",
+      "name": "暈頭轉向",
+      "order": 148,
+      "sourceRef": "IMG_8038"
+    },
+    {
+      "id": "augment-149",
+      "name": "瀕死低語",
+      "order": 149,
+      "sourceRef": "IMG_8039"
+    },
+    {
+      "id": "augment-150",
+      "name": "見縫插針",
+      "order": 150,
+      "sourceRef": "IMG_8040"
+    },
+    {
+      "id": "augment-151",
+      "name": "飛影跑法",
+      "order": 151,
+      "sourceRef": "IMG_8041"
+    }
+  ]
+}
