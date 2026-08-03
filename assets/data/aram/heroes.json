@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "gameVersion": "7.2b",
   "mode": "aram",
-  "status": "aram-s-batch2-ready-v80.4.0",
+  "status": "aram-image-paths-fixed",
   "updated": "2026-08-03",
   "tierOrder": [
     "S+",
@@ -89,7 +89,7 @@
         {
           "id": "intermediate-20",
           "name": "命定灰燼",
-          "icon": "assets/images/items/#U547d#U5b9a#U7070#U71fc.webp",
+          "icon": "assets/images/aram/items/intermediate-20.webp",
           "reason": "先取得命定灰燼，加快熾灼之冠成形，開局黏住多人時就能穩定提供持續傷害。"
         }
       ],
@@ -266,7 +266,7 @@
         {
           "id": "intermediate-25",
           "name": "爆裂魔杖",
-          "icon": "assets/images/items/#U7206#U88c2#U9b54#U6756.webp",
+          "icon": "assets/images/aram/items/intermediate-25.webp",
           "reason": "先拿爆裂魔杖提高前期技能傷害，方便用吐息與黑洞持續累積星塵。"
         }
       ],
@@ -443,7 +443,7 @@
         {
           "id": "intermediate-20",
           "name": "命定灰燼",
-          "icon": "assets/images/items/#U547d#U5b9a#U7070#U71fc.webp",
+          "icon": "assets/images/aram/items/intermediate-20.webp",
           "reason": "命定灰燼能直接銜接黑焰火炬，開局消耗就有更高持續傷害。"
         }
       ],
@@ -616,7 +616,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "失落之章補魔力與技能循環，方便開局持續找消耗與吸血機會。"
         }
       ],
@@ -789,7 +789,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先補生命值提高前線容錯，也能順接坦克核心裝。"
         }
       ],
@@ -962,7 +962,7 @@
         {
           "id": "intermediate-20",
           "name": "命定灰燼",
-          "icon": "assets/images/items/#U547d#U5b9a#U7070#U71fc.webp",
+          "icon": "assets/images/aram/items/intermediate-20.webp",
           "reason": "命定灰燼可快速銜接黑焰火炬，砲塔與技能命中時能穩定掛上灼燒。"
         }
       ],
@@ -1139,7 +1139,7 @@
         {
           "id": "intermediate-32",
           "name": "禁忌之像",
-          "icon": "assets/images/items/#U7981#U5fcc#U4e4b#U50cf.webp",
+          "icon": "assets/images/aram/items/intermediate-32.webp",
           "reason": "禁忌之像提供輔助所需的續航與技能效率，能快速銜接和諧回音。"
         }
       ],
@@ -1312,7 +1312,7 @@
         {
           "id": "basic-long-sword",
           "name": "長劍",
-          "icon": "assets/images/items/basic/#U9577#U528d.webp",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
           "reason": "直接銜接魔劍正宗與穿甲裝，開局就提高加速砲傷害。"
         }
       ],
@@ -1326,25 +1326,25 @@
         {
           "id": "physical-high-14",
           "name": "妖夢鬼刀",
-          "icon": "assets/images/items/high/#U5996#U5922#U9b3c#U5200.webp",
+          "icon": "assets/images/aram/items/physical-high-14.webp",
           "reason": "穿甲與跑速都很適合 ARAM 拉扯，能提高每一發遠程炮的壓血效率。"
         },
         {
           "id": "physical-high-27",
           "name": "席利妲咒怨",
-          "icon": "assets/images/items/high/#U5e2d#U5229#U59b2#U5492#U6028.webp",
+          "icon": "assets/images/aram/items/physical-high-27.webp",
           "reason": "技能命中後緩速讓加速砲更容易接續，也能處理開始堆物防的前排。"
         },
         {
           "id": "physical-high-29",
           "name": "夜色緣界",
-          "icon": "assets/images/items/high/#U591c#U8272#U7de3#U754c.webp",
+          "icon": "assets/images/aram/items/physical-high-29.webp",
           "reason": "法術護盾提高站在前方找砲線的容錯，避免被一發遠控直接開死。"
         },
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/items/high/#U5b88#U8b77#U5929#U4f7f.webp",
+          "icon": "assets/images/aram/items/physical-high-10.webp",
           "reason": "後期切戰鎚收尾時提供一次復活保險，降低進場換頭的風險。"
         }
       ],
@@ -1431,7 +1431,7 @@
         {
           "id": "physical-high-36",
           "name": "星蝕",
-          "icon": "assets/images/items/high/#U661f#U8755.webp",
+          "icon": "assets/images/aram/items/physical-high-36.webp",
           "when": "星蝕適合需要對高血量目標反覆消耗的局。",
           "reason": "敵方前排很多"
         },
@@ -1485,7 +1485,7 @@
         {
           "id": "intermediate-32",
           "name": "禁忌之像",
-          "icon": "assets/images/items/#U7981#U5fcc#U4e4b#U50cf.webp",
+          "icon": "assets/images/aram/items/intermediate-32.webp",
           "reason": "禁忌之像直接提供護盾／治療向屬性與技能循環，適合一開始就走團隊功能。"
         }
       ],
@@ -1658,7 +1658,7 @@
         {
           "id": "basic-amp-tome",
           "name": "增幅典籍",
-          "icon": "assets/images/items/basic/#U589e#U5e45#U5178#U7c4d.webp",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
           "reason": "直接提高前期一技消耗與大絕爆發，銜接無限寶珠。"
         }
       ],
@@ -1831,7 +1831,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "失落之章補魔力與技能循環，最適合 ARAM 開局高頻丟技能。"
         }
       ],
@@ -2004,7 +2004,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "直接補生命並銜接坦裝，ARAM 開局比追求一技消耗更重視第一波承傷。"
         }
       ],
@@ -2177,7 +2177,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先補生命提高第一波承傷，後續可直接往好戰者或坦裝組件延伸。"
         }
       ],
@@ -2350,7 +2350,7 @@
         {
           "id": "intermediate-20",
           "name": "命定灰燼",
-          "icon": "assets/images/items/#U547d#U5b9a#U7070#U71fc.webp",
+          "icon": "assets/images/aram/items/intermediate-20.webp",
           "reason": "命定灰燼可直接銜接黑焰火炬，開局範圍消耗就能附帶持續灼燒。"
         }
       ],
@@ -2700,7 +2700,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "開局先補魔力與技能循環，讓 Q、W 可以高頻施放。"
         }
       ],
@@ -2873,7 +2873,7 @@
         {
           "id": "intermediate-32",
           "name": "禁忌之像",
-          "icon": "assets/images/items/#U7981#U5fcc#U4e4b#U50cf.webp",
+          "icon": "assets/images/aram/items/intermediate-32.webp",
           "reason": "前期先補治療、護盾與技能效率，最適合直接走團隊功能。"
         }
       ],
@@ -3046,7 +3046,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先補生命值提高第一波容錯，後續可以順接坦裝核心。"
         }
       ],
@@ -3219,7 +3219,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "失落之章提供魔力與技能循環，最適合需要長時間控場的奧莉安娜。"
         }
       ],
@@ -3392,7 +3392,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先撐血量讓第一波前排更穩，後續可直上好戰者或其他坦裝核心。"
         }
       ],
@@ -3565,7 +3565,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先補血量讓第一波進場更穩，後續可以直接轉坦裝核心。"
         }
       ],
@@ -3738,7 +3738,7 @@
         {
           "id": "intermediate-32",
           "name": "禁忌之像",
-          "icon": "assets/images/items/#U7981#U5fcc#U4e4b#U50cf.webp",
+          "icon": "assets/images/aram/items/intermediate-32.webp",
           "reason": "開局直接補治療護盾向屬性與技能效率，最適合 ARAM 高頻團戰。"
         }
       ],
@@ -3915,7 +3915,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先補生命讓第一波近身換血更穩，也方便往時光之杖等半坦核心延伸。"
         }
       ],
@@ -4088,7 +4088,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "補魔力與技能循環，讓一技疊層和三技控場能更頻繁使用。"
         }
       ],
@@ -4265,7 +4265,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "長距離消耗很吃魔力與技能循環，失落之章最穩定。"
         }
       ],
@@ -4438,7 +4438,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "長時間丟技能最需要魔力與技能循環，失落之章開局最舒服。"
         }
       ],
@@ -4615,7 +4615,7 @@
         {
           "id": "intermediate-23",
           "name": "失落之章",
-          "icon": "assets/images/items/#U5931#U843d#U4e4b#U7ae0.webp",
+          "icon": "assets/images/aram/items/intermediate-23.webp",
           "reason": "高頻植物與控制很吃魔力，開局先補技能循環最穩。"
         }
       ],
@@ -4792,7 +4792,7 @@
         {
           "id": "basic-amp-tome",
           "name": "增幅典籍",
-          "icon": "assets/images/items/basic/#U589e#U5e45#U5178#U7c4d.webp",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
           "reason": "直接提高 Q 技與魅惑後爆發，開局換血最直觀。"
         }
       ],
@@ -4965,7 +4965,7 @@
         {
           "id": "basic-long-sword",
           "name": "長劍",
-          "icon": "assets/images/items/basic/#U9577#U528d.webp",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
           "reason": "直接提高普攻、Q 技與鉤索傷害，銜接物理核心裝。"
         }
       ],
@@ -5138,7 +5138,7 @@
         {
           "id": "basic-amp-tome",
           "name": "增幅典籍",
-          "icon": "assets/images/items/basic/#U589e#U5e45#U5178#U7c4d.webp",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
           "reason": "開局直接提高技能爆發，方便累積第一波斬殺壓力。"
         }
       ],
@@ -5311,7 +5311,7 @@
         {
           "id": "basic-long-sword",
           "name": "長劍",
-          "icon": "assets/images/items/basic/#U9577#U528d.webp",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
           "reason": "提高前期 W 技與普攻傷害，直接銜接射手核心裝。"
         }
       ],
@@ -5484,7 +5484,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先提高血量，讓前排施壓與第一波進場更安全。"
         }
       ],
@@ -5657,7 +5657,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先補生命提高第一波承傷，後續銜接坦克核心裝。"
         }
       ],
@@ -5830,7 +5830,7 @@
         {
           "id": "basic-long-sword",
           "name": "長劍",
-          "icon": "assets/images/items/basic/#U9577#U528d.webp",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
           "reason": "提高前期 Q 技與普攻傷害，直接銜接射手核心裝。"
         }
       ],
@@ -6003,7 +6003,7 @@
         {
           "id": "basic-amp-tome",
           "name": "增幅典籍",
-          "icon": "assets/images/items/basic/#U589e#U5e45#U5178#U7c4d.webp",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
           "reason": "開局直接提高 1 技消耗、護盾與進場爆發。"
         }
       ],
@@ -6184,7 +6184,7 @@
         {
           "id": "basic-long-sword",
           "name": "長劍",
-          "icon": "assets/images/items/basic/#U9577#U528d.webp",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
           "reason": "提高 1 技與普攻傷害，開局最直接。"
         }
       ],
@@ -6204,7 +6204,7 @@
         {
           "id": "physical-high-27",
           "name": "席利妲咒怨",
-          "icon": "assets/images/items/high/#U5e2d#U5229#U59b2#U5492#U6028.webp",
+          "icon": "assets/images/aram/items/physical-high-27.webp",
           "reason": "技能緩速與百分比穿甲非常適合遠距離持續消耗前排。"
         },
         {
@@ -6310,7 +6310,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/items/high/#U5b88#U8b77#U5929#U4f7f.webp",
+          "icon": "assets/images/aram/items/physical-high-10.webp",
           "when": "後期容易被強開",
           "reason": "犧牲一點傷害換一次復活容錯。"
         }
@@ -6361,7 +6361,7 @@
         {
           "id": "basic-amp-tome",
           "name": "增幅典籍",
-          "icon": "assets/images/items/basic/#U589e#U5e45#U5178#U7c4d.webp",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
           "reason": "提高桶子消耗與整套爆發，開局最直觀。"
         }
       ],
@@ -6538,7 +6538,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "先補生命提高第一輪貼身換血容錯，後續再轉鬥士核心。"
         }
       ],
@@ -6558,7 +6558,7 @@
         {
           "id": "physical-high-42",
           "name": "死亡之舞",
-          "icon": "assets/images/items/high/#U6b7b#U4ea1#U4e4b#U821e.webp",
+          "icon": "assets/images/aram/items/physical-high-42.webp",
           "reason": "把爆發延後並在參與擊殺後清除傷害，非常適合連續收割。"
         },
         {
@@ -6570,7 +6570,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/items/high/#U5b88#U8b77#U5929#U4f7f.webp",
+          "icon": "assets/images/aram/items/physical-high-10.webp",
           "reason": "後期進場風險高，復活能讓收割型鬥士更敢找機會。"
         }
       ],
@@ -6650,7 +6650,7 @@
         {
           "id": "physical-high-07",
           "name": "史特拉克手套",
-          "icon": "assets/images/items/high/#U53f2#U7279#U62c9#U514b#U624b#U5957.webp",
+          "icon": "assets/images/aram/items/physical-high-07.webp",
           "when": "敵方爆發很高",
           "reason": "需要更厚護盾與血量時替換智慧末刃。"
         },
@@ -6715,7 +6715,7 @@
         {
           "id": "basic-long-sword",
           "name": "長劍",
-          "icon": "assets/images/items/basic/#U9577#U528d.webp",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
           "reason": "直接提高普攻、1 技與 2 技傷害，開局最好用。"
         }
       ],
@@ -6723,7 +6723,7 @@
         {
           "id": "physical-high-32",
           "name": "蒐集者",
-          "icon": "assets/images/items/high/#U8490#U96c6#U8005.webp",
+          "icon": "assets/images/aram/items/physical-high-32.webp",
           "reason": "穿甲、爆擊與處決都很適合燼的低血收割節奏。"
         },
         {
@@ -6834,7 +6834,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/items/high/#U5b88#U8b77#U5929#U4f7f.webp",
+          "icon": "assets/images/aram/items/physical-high-10.webp",
           "when": "後期常被強切",
           "reason": "復活能保留一波後期團戰容錯。"
         },
@@ -7069,7 +7069,7 @@
         {
           "id": "basic-ruby",
           "name": "紅水晶",
-          "icon": "assets/images/items/basic/#U7d05#U6c34#U6676.webp",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
           "reason": "開局先補生命，讓前排換血與 2 技承傷更穩。"
         }
       ],
