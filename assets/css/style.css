@@ -2257,3 +2257,86 @@ button,a{-webkit-tap-highlight-color:transparent}
 .aram-augment-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}.aram-augment-tag{border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:3px 6px;background:rgba(255,255,255,.025);color:#91a6b7;font:inherit;font-size:7px;font-weight:950;cursor:pointer;line-height:1.25}.aram-augment-tag:hover,.aram-augment-tag:focus-visible{filter:brightness(1.14);outline:none}.aram-augment-tag.tag-elements{border-color:rgba(185,136,231,.2);background:rgba(185,136,231,.055);color:#c8a8e5}.aram-augment-tag.tag-mechanics{border-color:rgba(84,195,218,.19);background:rgba(84,195,218,.05);color:#83cad4}.aram-augment-tag.tag-special{border-color:rgba(216,184,108,.2);background:rgba(216,184,108,.055);color:#d7bd79}
 .aram-augment-card p{margin-top:8px}
 @media(max-width:720px){.aram-augment-filter-panel{padding:10px}.aram-augment-filter-intro{display:block}.aram-augment-filter-intro span{display:block;margin-top:4px;text-align:left}.aram-augment-filter-group{grid-template-columns:1fr;gap:5px}.aram-augment-filter-group>strong{padding-top:0}.aram-augment-filters button{min-height:27px;padding:4px 7px;font-size:7px}.aram-augment-tag{font-size:7px}}
+
+/* v80.28.0 — Desktop readability reset: restore legible text sizes without changing mobile layouts */
+@media (min-width:801px){
+  body{font-size:16px}
+  .nav{font-size:14px}
+  .meta,.eyebrow,.kicker{font-size:13px}
+  .chip{font-size:12px}
+  .page-head p,.hero-page-head p{font-size:15px;line-height:1.7}
+  .home-card p{font-size:15px;line-height:1.72}
+  .home-card .kicker{font-size:12px}.home-card .link-label{font-size:14px}
+  footer{font-size:14px}
+
+  /* Summoner's Rift hero list/detail readability */
+  .hero-list-kicker,.hero-version-badge span,.hero-role-tab,.hero-overview-head p,.hero-overview-count{font-size:12px}
+  .hero-tier-legend,.tier-pill{font-size:13px}
+  .hero-list-info span,.hero-list-info small{font-size:12px}
+  .tier-hero-card strong{font-size:14px}.tier-hero-card small{font-size:11px}
+  .hero-back-button{font-size:13px}.hero-en{font-size:13px}.hero-position{font-size:14px}
+  .hero-tags span,.hero-summary-box span,.hero-section-title span,.subsection-label{font-size:11px}
+  .hero-summary-box p,.hero-overview-head p{font-size:14px;line-height:1.65}
+  .rating-label,.rating-stars{font-size:13px}
+  .hero-rune-card small{font-size:10px}.hero-rune-card strong{font-size:13px}.hero-rune-card p{font-size:12px;line-height:1.55}
+  .hero-build-slot>b,.build-mini span,.build-group .build-mini span{font-size:11px}
+  .build-group-head strong{font-size:13px}.build-group-head small{font-size:10px}.build-group .build-arrow{font-size:14px}
+  .skill-order span,.skill-priority-step small,.skill-priority-rank{font-size:11px}
+  .skill-priority-step b{font-size:14px}
+  .skill-grid-header,.skill-grid-skill.label,.skill-grid-cell,.skill-grid-cell.active span{font-size:11px}
+  .skill-grid-skill b{font-size:13px}.skill-grid-skill small{font-size:10px}
+  .ability-head small{font-size:11px}.ability-head strong{font-size:14px}.ability-card p{font-size:13px;line-height:1.6}
+  .matchup-box>span{font-size:11px}.matchup-box b,.matchup-chip b{font-size:13px}
+  .stack-card>span{font-size:12px}.stack-card p,.playstyle-step p{font-size:13px;line-height:1.6}.playstyle-step b{font-size:13px}
+  .hero-source-note{font-size:11px;line-height:1.55}
+  .passive-feature small{font-size:11px}.passive-feature strong{font-size:13px}.passive-feature p{font-size:13px;line-height:1.6}
+  .role-link span{font-size:11px}
+
+  /* Other desktop database pages */
+  .search,.select{font-size:14px}
+  .item-icon strong,.spell-icon strong{font-size:13px}.item-icon small,.item-icon .item-price{font-size:10px}
+  .rune-card h3{font-size:14px}.rune-card .desc{font-size:13px;line-height:1.55}
+
+  /* ARAM overview/detail */
+  .mode-entry-login,.aram-top-actions a{font-size:14px}
+  .mode-entry-hero p{font-size:16px}.mode-entry-version{font-size:12px}
+  .mode-entry-card h2 small{font-size:14px}.mode-entry-card p{font-size:14px;line-height:1.7}.mode-entry-card-status{font-size:11px}.mode-entry-enter{font-size:14px}.mode-entry-note{font-size:12px}
+  .mode-context-label{font-size:11px}.mode-context-link{font-size:12px}
+  .aram-hero p{font-size:15px;line-height:1.7}.aram-stage-badge{font-size:12px}.aram-data-state{font-size:12px}
+  .aram-tier-card span,.aram-framework-grid article>span{font-size:11px}.aram-framework-grid p{font-size:13px;line-height:1.65}
+  .aram-placeholder strong{font-size:13px}.aram-placeholder p{font-size:13px;line-height:1.65}
+  .aram-tier-badge span,.aram-tier-badge small{font-size:10px}.aram-hero-card strong{font-size:12px}.aram-hero-card span,.aram-hero-card small,.aram-hero-card em{font-size:11px}
+  .aram-detail-breadcrumb,.aram-detail-kicker{font-size:11px}.aram-detail-titleline>div>span{font-size:13px}.aram-detail-tier span{font-size:10px}.aram-detail-position{font-size:14px}.aram-detail-tags span{font-size:10px}
+  .aram-detail-summary{font-size:14px;line-height:1.65}.aram-tier-reason strong,.aram-tier-reason span{font-size:11px}.aram-detail-section-head span,.aram-detail-section-head small{font-size:10px}
+  .aram-balance-grid span{font-size:10px}.aram-detail-note{font-size:11px;line-height:1.6}
+  .aram-starter-row>strong,.aram-starter-row>span{font-size:11px}.aram-starter-row p{font-size:12px;line-height:1.55}
+  .aram-loadout-index{font-size:10px}.aram-loadout-card strong{font-size:13px}.aram-loadout-card p{font-size:11px;line-height:1.55}
+  .aram-subgrid h3{font-size:13px}.aram-compact-card strong{font-size:12px}.aram-compact-card p{font-size:11px;line-height:1.55}
+  .aram-step-label{font-size:10px}.aram-rune-card strong{font-size:13px}.aram-rune-card p{font-size:11px;line-height:1.55}
+  .aram-skill-order p{font-size:12px;line-height:1.6}.aram-playstyle-grid span{font-size:10px}.aram-playstyle-grid p{font-size:12px;line-height:1.6}
+  .aram-situational-card strong{font-size:12px}.aram-situational-card span{font-size:10px}.aram-situational-card p{font-size:11px;line-height:1.55}
+  .aram-source-panel>strong{font-size:11px}.aram-source-panel p,.aram-source-panel a{font-size:10px;line-height:1.55}
+
+  /* AAA / Rune ARAM pilot: undo over-compression on desktop */
+  .aram-mode-switch button{font-size:12px}.aram-mode-switch button span{font-size:9px}.aram-mode-switch-panel>p{font-size:11px}
+  .aaa-shared-card span{font-size:10px}.aaa-shared-card strong{font-size:13px}.aaa-shared-card p{font-size:11px;line-height:1.58}
+  .aaa-pilot-note,.aaa-section-intro{font-size:11px;line-height:1.6}.aaa-augment-rank span{font-size:10px}.aaa-augment-priority h3{font-size:14px}.aaa-augment-priority p{font-size:11px;line-height:1.6}
+  .aaa-keywords span{font-size:10px}.aaa-example-title strong{font-size:12px}.aaa-example-title span{font-size:10px}.aaa-example-head strong,.aaa-example-head span{font-size:11px}.aaa-example-card small,.aaa-example-card p{font-size:10px;line-height:1.55}
+  .aaa-build-plan summary span,.aaa-build-plan summary small,.aaa-build-plan summary b{font-size:10px}.aaa-build-plan summary strong{font-size:13px}.aaa-build-description{font-size:11px;line-height:1.6}.aaa-plan-boots h3{font-size:12px}
+  .aram-section-nav a{font-size:12px}.aram-section-nav small{font-size:10px}
+  .aram-augment-hero p{font-size:15px}.aram-augment-search label{font-size:11px}.aram-augment-search small{font-size:10px}
+  .aram-augment-card>span{font-size:10px}.aram-augment-card strong{font-size:14px}.aram-augment-card p{font-size:12px;line-height:1.65}.aram-augment-note strong{font-size:13px}.aram-augment-note p{font-size:12px;line-height:1.6}
+
+  .aaa-fit-title strong{font-size:13px}.aaa-fit-title span,.aaa-fit-title small{font-size:10px}.aaa-fit-tools label span{font-size:10px}.aaa-fit-tools input{font-size:12px}.aaa-fit-filters button{font-size:10px}
+  .aaa-fit-card-head>span{font-size:13px}.aaa-fit-card-head strong{font-size:12px}.aaa-fit-card-head small{font-size:10px}.aaa-fit-effect,.aaa-fit-reason{font-size:11px;line-height:1.58}.aaa-fit-toggle{font-size:9px}
+  .aaa-quick-playstyle>span{font-size:10px}.aaa-quick-playstyle>strong{font-size:13px}.aaa-quick-playstyle>p{font-size:11px;line-height:1.58}.aaa-quick-playstyle b{font-size:9px}
+  .aaa-keyword-guide-title strong{font-size:13px}.aaa-keyword-guide-title span,.aaa-keyword-guide-title small{font-size:10px}
+  .aaa-keyword-steps article>span{font-size:11px}.aaa-keyword-steps strong{font-size:12px}.aaa-keyword-steps p{font-size:11px;line-height:1.6}
+  .aaa-keyword-group-head strong{font-size:12px}.aaa-keyword-group-head span{font-size:10px;line-height:1.55}.aaa-keyword-chips button{font-size:10px}
+  .aaa-disclosure-toggle{font-size:10px}.aaa-shared-disclosure[open] .aaa-disclosure-toggle span::after{font-size:10px}.aaa-section-jump a{font-size:11px}.aaa-section-jump span{font-size:10px}
+
+  /* v80.27 augment classification filters */
+  .aram-augment-filter-intro strong{font-size:13px}.aram-augment-filter-intro span{font-size:11px}
+  .aram-augment-filter-group>strong{font-size:11px}.aram-augment-filters button{font-size:11px;min-height:32px;padding:6px 10px}.aram-augment-filters button small{font-size:9px}
+  .aram-augment-tag{font-size:10px;padding:4px 7px}
+}
