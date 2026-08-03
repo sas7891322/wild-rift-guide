@@ -47,9 +47,14 @@
   const renderSources=(note='',sources=[])=>`<section class="aram-source-panel"><strong>資料說明</strong><p>${esc(note)}</p><div>${sources.map(source=>`<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.label)} ↗</a>`).join('')}</div></section>`;
 
   try{
-    const res=await fetch('assets/data/aram/heroes.json?v=80.21.0',{cache:'no-store'});
+    const [res,augmentRes]=await Promise.all([
+      fetch('assets/data/aram/heroes.json?v=80.24.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=80.24.0',{cache:'no-store'})
+    ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
+    const augmentData=augmentRes.ok?await augmentRes.json():{augments:[]};
+    const augmentMap=new Map((augmentData.augments||[]).map(item=>[item.id,item]));
     const hero=(data.heroes||[]).find(item=>item.id===id);
     if(!hero)throw new Error('Hero not found');
 
@@ -129,7 +134,18 @@
         <div class="aaa-augment-rank"><strong>${esc(group.rank)}</strong><span>${esc(group.label)}</span></div>
         <div><h3>${esc(group.title)}</h3><p>${esc(group.description)}</p><div class="aaa-keywords">${(group.keywords||[]).map(keyword=>`<span>${esc(keyword)}</span>`).join('')}</div></div>
       </article>`).join('');
-      const exampleCards=(aaa.augmentExamples||[]).map(card=>`<article class="aaa-example-card"><div class="aaa-example-head"><strong>${esc(card.name)}</strong><span class="priority-${esc(card.priority).toLowerCase()}">${esc(card.priority)}</span></div><small>${esc(card.type)}</small><p>${esc(card.reason)}</p></article>`).join('');
+      const compatibility=aaa.augmentCompatibility||{};
+      const compatibilityRows=(compatibility.ratings||[]).map((rating,index)=>{
+        const augment=augmentMap.get(rating.id)||{};
+        const tier=String(rating.tier||'C').toUpperCase();
+        const searchText=[augment.name,augment.effect,rating.tag,rating.reason,tier].filter(Boolean).join(' ').toLowerCase();
+        return `<article class="aaa-fit-card rank-${esc(tier).toLowerCase()}" data-aaa-fit-card data-tier="${esc(tier)}" data-search-text="${esc(searchText)}">
+          <div class="aaa-fit-card-head"><span>${esc(tier)}</span><div><strong>${esc(augment.name||rating.id)}</strong><small>${esc(rating.tag||'適配判斷')}</small></div></div>
+          <p class="aaa-fit-effect">${esc(augment.effect||'效果資料載入失敗')}</p>
+          <p class="aaa-fit-reason"><b>吉茵珂絲：</b>${esc(rating.reason||'')}</p>
+        </article>`;
+      }).join('');
+      const tierCounts=(compatibility.ratings||[]).reduce((counts,item)=>{const tier=String(item.tier||'C').toUpperCase();counts[tier]=(counts[tier]||0)+1;return counts;},{});
       const buildPlans=(aaa.buildPlans||[]).map((plan,index)=>`<details class="aaa-build-plan" ${index===0?'open':''}>
         <summary><div><span>${esc(plan.badge)}</span><strong>${esc(plan.title)}</strong><small>${esc(plan.trigger)}</small></div><b>展開出裝</b></summary>
         <div class="aaa-build-plan-body"><p class="aaa-build-description">${esc(plan.description)}</p>
@@ -147,7 +163,22 @@
       <section class="aram-detail-section">
         <div class="aram-detail-section-head"><div><span>AUGMENTS</span><h2>增幅裝置優先級</h2></div><small>先看類型，再看稀有度</small></div>
         <div class="aaa-augment-priority-list">${priorityCards}</div>
-        <div class="aaa-example-block"><div class="aaa-example-title"><strong>官方公告曾出現的增幅範例</strong><span>用來示範判斷，不代表每局固定出現</span></div><div class="aaa-example-grid">${exampleCards}</div></div>
+        <div class="aaa-fit-block" data-aaa-fit-root>
+          <div class="aaa-fit-title"><div><strong>${esc(compatibility.title||'增幅裝置適配表')}</strong><span>${esc(compatibility.note||'')}</span></div><small data-aaa-fit-state>顯示推薦增幅</small></div>
+          <div class="aaa-fit-tools">
+            <label><span>搜尋增幅</span><input type="search" placeholder="輸入名稱或效果關鍵字" data-aaa-fit-search/></label>
+            <div class="aaa-fit-filters" role="group" aria-label="增幅適配等級篩選">
+              <button type="button" data-fit-filter="recommended">推薦 S＋A</button>
+              <button type="button" class="is-active" data-fit-filter="S">S ${tierCounts.S||0}</button>
+              <button type="button" data-fit-filter="A">A ${tierCounts.A||0}</button>
+              <button type="button" data-fit-filter="B">B ${tierCounts.B||0}</button>
+              <button type="button" data-fit-filter="C">C ${tierCounts.C||0}</button>
+              <button type="button" data-fit-filter="D">D ${tierCounts.D||0}</button>
+              <button type="button" data-fit-filter="all">全部 ${compatibility.total||compatibilityRows.length}</button>
+            </div>
+          </div>
+          <div class="aaa-fit-grid">${compatibilityRows}</div>
+        </div>
       </section>
       <section class="aram-detail-section">
         <div class="aram-detail-section-head"><div><span>ADAPTIVE BUILD</span><h2>依增幅切換出裝</h2></div><small>三條試作路線</small></div>
@@ -163,6 +194,32 @@
       ${renderSources(aaa.sourceNote,aaa.sources||[])}`;
     };
 
+    const bindAugmentCompatibility=()=>{
+      const fitRoot=contentRoot.querySelector('[data-aaa-fit-root]');
+      if(!fitRoot)return;
+      const search=fitRoot.querySelector('[data-aaa-fit-search]');
+      const state=fitRoot.querySelector('[data-aaa-fit-state]');
+      const buttons=[...fitRoot.querySelectorAll('[data-fit-filter]')];
+      const cards=[...fitRoot.querySelectorAll('[data-aaa-fit-card]')];
+      let activeFilter='S';
+      const apply=()=>{
+        const query=(search?.value||'').trim().toLowerCase();
+        let visible=0;
+        cards.forEach(card=>{
+          const tier=card.dataset.tier||'C';
+          const filterMatch=activeFilter==='all'||(activeFilter==='recommended'&&(tier==='S'||tier==='A'))||tier===activeFilter;
+          const queryMatch=!query||(card.dataset.searchText||'').includes(query);
+          card.hidden=!(filterMatch&&queryMatch);
+          if(!card.hidden)visible++;
+        });
+        buttons.forEach(button=>button.classList.toggle('is-active',button.dataset.fitFilter===activeFilter));
+        if(state)state.textContent=query?`找到 ${visible} 個符合項目`:`目前顯示 ${visible} 個增幅`;
+      };
+      buttons.forEach(button=>button.addEventListener('click',()=>{activeFilter=button.dataset.fitFilter||'recommended';apply();}));
+      if(search){search.addEventListener('input',apply,{passive:true});search.addEventListener('search',apply,{passive:true});}
+      apply();
+    };
+
     const syncModeUi=()=>{
       const isAaa=currentMode==='aaa';
       document.body.classList.toggle('aaa-aram-mode',isAaa);
@@ -171,13 +228,14 @@
         button.classList.toggle('is-active',active);
         button.setAttribute('aria-selected',active?'true':'false');
       });
-      if(modeNote)modeNote.textContent=isAaa?'試作版：增幅類型、出裝轉向與符文大亂鬥玩法。':'目前已完成的標準 ARAM 7.2b 攻略。';
+      if(modeNote)modeNote.textContent=isAaa?'已完成吉茵珂絲 151 個增幅裝置適配，可依名稱、效果與等級搜尋。':'目前已完成的標準 ARAM 7.2b 攻略。';
       const titleMode=isAaa?'符文大亂鬥試作':'ARAM';
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');
-      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥試作攻略：增幅優先級、出裝轉向、一般符文與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
+      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：151 個增幅適配等級、出裝轉向、一般符文與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
+      if(isAaa)bindAugmentCompatibility();
     };
 
     root.querySelectorAll('[data-guide-mode]').forEach(button=>button.addEventListener('click',()=>{
