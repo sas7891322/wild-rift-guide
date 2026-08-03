@@ -39,7 +39,8 @@
     "v80.0.0 完成 ARAM S+ 第二批 7 位完整攻略：杰西、卡瑪、凱能、拉克絲、墨菲特、茂凱、梅爾。",
     "7.2b ARAM 凱能承傷 85% 與 7.2a 梅爾 100%/100% 模式修正已納入；7.2b 杰西物防、盧登回音與寒冰霸拳改動同步反映。",
     "v80.0.1 修正 S+ 第一、二批共 14 位英雄鞋子：全部改為 7.2 正確的二級鞋 → 三級鞋路線，移除舊版鞋子附魔／主動附魔內容；吉茵珂絲原有三級鞋路線維持不變。",
-    "v80.6.0 完成 ARAM S 第四批 7 位完整攻略：米里歐、納瑟斯、夜曲、波比、派克、銳空、藍寶。"
+    "v80.6.0 完成 ARAM S 第四批 7 位完整攻略：米里歐、納瑟斯、夜曲、波比、派克、銳空、藍寶。",
+    "v80.6.1 校正 ARAM 物理裝備圖示錯位，並統一少數物理裝備 ID／台灣名稱；未變更英雄出裝方向與版面。"
   ],
   "sources": [
     {
@@ -1327,7 +1328,7 @@
         {
           "id": "physical-high-14",
           "name": "妖夢鬼刀",
-          "icon": "assets/images/aram/items/physical-high-14.webp",
+          "icon": "assets/images/aram/items/youmuus-ghostblade.webp",
           "reason": "穿甲與跑速都很適合 ARAM 拉扯，能提高每一發遠程炮的壓血效率。"
         },
         {
@@ -1345,7 +1346,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/aram/items/physical-high-10.webp",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
           "reason": "後期切戰鎚收尾時提供一次復活保險，降低進場換頭的風險。"
         }
       ],
@@ -6215,8 +6216,8 @@
           "reason": "對高生命前排補持續輸出，也增加吸血與攻速。"
         },
         {
-          "id": "physical-high-shojin",
-          "name": "朔極之矛",
+          "id": "physical-high-34",
+          "name": "精進之矛",
           "icon": "assets/images/items/high/spear-of-shojin-fixed.webp",
           "reason": "提高技能循環與中後期持續作戰能力，讓 3 技也更常可用。"
         }
@@ -6295,15 +6296,15 @@
       },
       "situationalItems": [
         {
-          "id": "physical-high-maw",
+          "id": "physical-high-22",
           "name": "魔提斯深淵",
           "icon": "assets/images/items/high/maw-of-malmortius-fixed.webp",
           "when": "敵方法傷爆發很高",
           "reason": "需要魔抗與保命時替換朔極之矛。"
         },
         {
-          "id": "physical-high-serpent",
-          "name": "毒蛇之牙",
+          "id": "physical-high-31",
+          "name": "巨蛇鋒牙",
           "icon": "assets/images/items/high/serpents-fang-fixed.webp",
           "when": "敵方護盾很多",
           "reason": "對高護盾陣容提高團隊有效輸出。"
@@ -6311,7 +6312,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/aram/items/physical-high-10.webp",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
           "when": "後期容易被強開",
           "reason": "犧牲一點傷害換一次復活容錯。"
         }
@@ -6559,7 +6560,7 @@
         {
           "id": "physical-high-42",
           "name": "死亡之舞",
-          "icon": "assets/images/aram/items/physical-high-42.webp",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
           "reason": "把爆發延後並在參與擊殺後清除傷害，非常適合連續收割。"
         },
         {
@@ -6571,7 +6572,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/aram/items/physical-high-10.webp",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
           "reason": "後期進場風險高，復活能讓收割型鬥士更敢找機會。"
         }
       ],
@@ -6649,9 +6650,9 @@
       },
       "situationalItems": [
         {
-          "id": "physical-high-07",
+          "id": "physical-high-16",
           "name": "史特拉克手套",
-          "icon": "assets/images/aram/items/physical-high-07.webp",
+          "icon": "assets/images/aram/items/steraks-gage.webp",
           "when": "敵方爆發很高",
           "reason": "需要更厚護盾與血量時替換智慧末刃。"
         },
@@ -6835,7 +6836,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/aram/items/physical-high-10.webp",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
           "when": "後期常被強切",
           "reason": "復活能保留一波後期團戰容錯。"
         },
@@ -8651,7 +8652,7 @@
         {
           "id": "physical-high-42",
           "name": "死亡之舞",
-          "icon": "assets/images/aram/items/physical-high-42.webp",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
           "reason": "進場後能把部分爆發延後承受，提高開大纏鬥的容錯。"
         },
         {
@@ -8812,7 +8813,7 @@
         {
           "id": "physical-high-14",
           "name": "妖夢鬼刀",
-          "icon": "assets/images/aram/items/physical-high-14.webp",
+          "icon": "assets/images/aram/items/youmuus-ghostblade.webp",
           "reason": "穿甲與移速能提高第一輪切入速度，也方便關燈後調整進場角度。"
         },
         {
@@ -8830,13 +8831,13 @@
         {
           "id": "physical-high-42",
           "name": "死亡之舞",
-          "icon": "assets/images/aram/items/physical-high-42.webp",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
           "reason": "飛進去後延後部分爆發，讓夜曲更有機會打出第二輪技能或撤離。"
         },
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/aram/items/physical-high-10.webp",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
           "reason": "後期進場風險很高，復活能讓對手更難用一波集火處理你。"
         }
       ],
@@ -9158,7 +9159,7 @@
         {
           "id": "physical-high-14",
           "name": "妖夢鬼刀",
-          "icon": "assets/images/aram/items/physical-high-14.webp",
+          "icon": "assets/images/aram/items/youmuus-ghostblade.webp",
           "reason": "穿甲與跑速都很適合派克游移找角度，第一件就能明顯提高抓人爆發。"
         },
         {
@@ -9182,7 +9183,7 @@
         {
           "id": "physical-high-10",
           "name": "守護天使",
-          "icon": "assets/images/aram/items/physical-high-10.webp",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
           "reason": "後期需要冒險進場收割，復活能提高連續處決容錯。"
         }
       ],
