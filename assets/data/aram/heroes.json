@@ -16,7 +16,7 @@
     "A": 55,
     "B": 9
   },
-  "detailGuideCount": 90,
+  "detailGuideCount": 97,
   "tierMethodology": {
     "type": "本站 ARAM 綜合評級（非單一勝率排名）",
     "factors": [
@@ -45,7 +45,8 @@
     "v80.8.0 完成 ARAM S 第六批 7 位完整攻略：索娜、索拉卡、蒙多醫生、悠咪、星朵拉、塔莉雅、瑟雷西。",
     "v80.9.0 完成 ARAM S 第七批 7 位完整攻略：法洛士、薇可絲、維克特、弗拉迪米爾、悟空、剎雅、柔依。",
     "v80.10.0 完成 ARAM A 第一批 7 位完整攻略：厄薩斯、阿卡莉、亞歷斯塔、安比薩、歐羅拉、庫奇、達瑞斯。",
-    "v80.11.0 完成 ARAM A 第二批 7 位完整攻略：達瑞文、艾克、飛斯、蓋倫、吶兒、葛雷夫、關。"
+    "v80.11.0 完成 ARAM A 第二批 7 位完整攻略：達瑞文、艾克、飛斯、蓋倫、吶兒、葛雷夫、關。",
+    "v80.12.0 完成 ARAM A 第三批 7 位完整攻略：赫克林、賈克斯、嘉文四世、卡薩丁、克黎思妲、卡特蓮娜、慨影。"
   ],
   "sources": [
     {
@@ -15862,17 +15863,176 @@
       "enName": "Hecarim",
       "tier": "A",
       "tierLabel": "穩定可選",
-      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "赫克林在 ARAM 的狹窄單線很容易用大絕恐懼切開陣形，鬼步與 3 技又能把額外跑速轉成攻擊力；2 技範圍回復讓他進場後不容易立刻蒸發。7.2b 雖把 1 技命中後額外跑速由 30% 降到 18%，但完整蓄力與大絕開戰仍有很高團戰價值。",
+      "position": "高速衝陣／恐懼分割型物理戰士",
       "tags": [
-        "ARAM Tier 初評"
+        "跑速轉攻擊",
+        "範圍恐懼",
+        "持續回復"
       ],
       "avatar": "assets/images/heroes/portraits/hecarim.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "不要從正面直線開到底。先靠走位或鬼步把 3 技跑速疊起來，從側邊或斜角大絕切後排，再用 3 技把核心撞回隊友；2 技一定要在多人交火時開，才能吃滿回復。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-a-batch3-v80.12.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "近期官方未列赫克林標準 ARAM 專屬百分比修正，本站維持 100%／100%。7.2b 將 1 技完整蓄力命中後額外跑速 30%→18%，會連帶降低被動跑速轉攻擊與短時間追擊爆發。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "直接提高 1 技、3 技與普攻輸出。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-21",
+          "name": "三相之力",
+          "icon": "assets/images/items/high/trinity-force-fixed.webp",
+          "reason": "技能與普攻交錯頻繁，咒刃、生命與技能加速都符合長團需求。"
+        },
+        {
+          "id": "physical-high-19",
+          "name": "魔劍正宗",
+          "icon": "assets/images/items/high/manamune-fixed.webp",
+          "reason": "ARAM 技能使用密度高，補足魔力並把高頻技能轉成額外傷害。"
+        },
+        {
+          "id": "physical-high-27",
+          "name": "席利妲咒怨",
+          "icon": "assets/images/aram/items/physical-high-27.webp",
+          "reason": "提供穿甲與黏人能力，對高護甲前排仍能維持威脅。"
+        },
+        {
+          "id": "physical-high-42",
+          "name": "死亡之舞",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
+          "reason": "延後物理爆發並在擊殺後回復，適合衝進多人後繼續拉扯。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "reason": "後期強開失誤仍有復活容錯。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "ionian-boots",
+          "name": "愛歐尼亞之靴",
+          "icon": "assets/images/items/shoes/ionian-boots.png",
+          "reason": "技能加速讓 1、2、3 技循環更快。"
+        },
+        {
+          "id": "chain-army-boots",
+          "name": "鎖鏈軍靴",
+          "icon": "assets/images/items/shoes/chain-army-boots.png",
+          "reason": "三級鞋補近戰進場需要的持續承傷。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "conqueror",
+          "name": "征服者",
+          "icon": "assets/images/runes/keystone/conqueror.webp",
+          "reason": "1 技與普攻可快速疊層，長團輸出與回復都穩定。"
+        },
+        {
+          "id": "battle-fervor",
+          "name": "戰鬥狂熱",
+          "icon": "assets/images/runes/precision/battle-fervor.webp",
+          "reason": "持續貼身作戰能把收益吃滿。"
+        },
+        {
+          "id": "last-stand",
+          "name": "背水一戰",
+          "icon": "assets/images/runes/precision/last-stand.webp",
+          "reason": "低血量衝陣時提高反打能力。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳說：歡欣",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
+          "reason": "改善普攻銜接與三相節奏。"
+        },
+        {
+          "id": "celerity",
+          "name": "迅捷",
+          "icon": "assets/images/runes/sorcery/celerity.webp",
+          "reason": "額外跑速同時提升機動與被動轉換攻擊。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "ghost",
+          "name": "疾跑",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "赫克林最重要的跑速來源之一，兼具進場與追擊。"
+        },
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補大絕角度或在撞人後立即拉開。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/hecarim_02.webp",
+        "assets/images/heroes/skills/hecarim_04.webp",
+        "assets/images/heroes/skills/hecarim_03.webp"
+      ],
+      "playstyle": {
+        "開局": "先用完整蓄力 1 技打前排或兵線，不要沒跑速就硬開。鬼步與 3 技都在時才有真正威脅。",
+        "中期": "三相與魔劍成形後，從側角用大絕切斷後排，再用 3 技把一名核心撞向我方；2 技要覆蓋最多敵人。",
+        "後期": "你是開戰者但不是純坦。敵方關鍵控制還在時先繞角度，守護天使能讓你更敢做第一波分割，但復活後要立刻找退路。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-36",
+          "name": "星蝕",
+          "icon": "assets/images/aram/items/physical-high-36.webp",
+          "when": "敵方前排多且要更強單次換血",
+          "reason": "可替換魔劍正宗，靠百分比傷害與護盾提高對坦效率。"
+        },
+        {
+          "id": "physical-high-38",
+          "name": "黑色切割者",
+          "icon": "assets/images/aram/items/black-cleaver-v2.webp",
+          "when": "我方物理傷害多",
+          "reason": "可替換席利妲，快速疊減甲幫整隊物理輸出。"
+        },
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "when": "敵方法傷與控制很多",
+          "reason": "替換守護天使或死亡之舞，增加魔抗與追擊移速。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-2/"
+        },
+        {
+          "label": "WildRiftFire｜Hecarim Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/hecarim"
+        }
+      ],
+      "sourceNote": "v80.12.0 ARAM A 第三批：赫克林同步 7.2b 1 技額外跑速 30%→18%；標準 ARAM 未套用未標註的其他模式數值。"
     },
     {
       "id": "jax",
@@ -15880,17 +16040,176 @@
       "enName": "Jax",
       "tier": "A",
       "tierLabel": "穩定可選",
-      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "賈克斯的 3 技能閃避普攻並在結束時範圍暈眩，對 ARAM 常見雙射手或普攻核心非常有效；舊版標準 ARAM 還有 115% 傷害輸出補償。7.1b 提高成長物防、被動攻速與 3 技最大生命傷害後，正面長戰能力更好，但沒有側線可分推，必須把價值放在團戰反打。",
+      "position": "反普攻／跳斬黏人型混傷戰士",
       "tags": [
-        "ARAM Tier 初評"
+        "115% 輸出",
+        "普攻閃避",
+        "範圍暈眩"
       ],
       "avatar": "assets/images/heroes/portraits/jax.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "3 技不是看到人就開；最好等敵方射手真正開始輸出或你準備跳入時再開。先疊被動攻速，再用 1 技進場；2 技要拿來重置普攻，盡快打出大絕第三下被動。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-a-batch3-v80.12.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "115%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 2.2c 標準 ARAM 將賈克斯傷害加成由 5% 提高至 15%，即 115% 傷害輸出；本站未找到後續標準 ARAM 回調，維持 115%／100%。7.1b 另強化成長物防、被動攻速與反擊風暴最大生命傷害。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
+          "reason": "近戰要進場，先補生命提高第一輪容錯。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-04",
+          "name": "暮夜與黎明",
+          "icon": "assets/images/items/high/magic-dusk-and-dawn.png",
+          "reason": "技能接普攻能重複觸發咒刃，生命、攻速與技能加速都很契合。"
+        },
+        {
+          "id": "physical-high-12",
+          "name": "殞落王者之劍",
+          "icon": "assets/images/aram/items/blade-of-the-ruined-king.webp",
+          "reason": "攻速、吸血與當前生命傷害讓賈克斯能處理前排。"
+        },
+        {
+          "id": "physical-high-42",
+          "name": "死亡之舞",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
+          "reason": "延後物理傷害並靠擊殺回復，提升跳入多人後的續戰。"
+        },
+        {
+          "id": "physical-high-16",
+          "name": "史特拉克手套",
+          "icon": "assets/images/aram/items/steraks-gage.webp",
+          "reason": "被五人集火時提供大型護盾，是團戰版賈克斯的重要容錯。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "reason": "後期進場失誤仍能再打一輪。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "對普攻與物理陣容最實用。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "三級鞋提高近戰承傷；法控多時可改水星系。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "conqueror",
+          "name": "征服者",
+          "icon": "assets/images/runes/keystone/conqueror.webp",
+          "reason": "普攻與技能混合輸出很快疊滿。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "補前中期跳斬與普攻傷害。"
+        },
+        {
+          "id": "last-stand",
+          "name": "背水一戰",
+          "icon": "assets/images/runes/precision/last-stand.webp",
+          "reason": "低血量長戰更容易反殺。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳說：歡欣",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
+          "reason": "加速被動與大絕第三下的觸發。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "跳進人群時降低第一輪爆發。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "閃現 3 技暈多人或補跳斬角度。"
+        },
+        {
+          "id": "ghost",
+          "name": "疾跑",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "長團保持貼身，減少被遠程風箏。"
+        }
+      ],
+      "skillOrder": "2 技 > 1 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/jax_03.png",
+        "assets/images/heroes/skills/jax_02.webp",
+        "assets/images/heroes/skills/jax_04.png"
+      ],
+      "playstyle": {
+        "開局": "先用兵線或前排疊被動，不要空著攻速直接跳五人。3 技主要拿來躲射手輸出與反暈。",
+        "中期": "兩件套後開始能正面打前排。找敵方主要普攻核心，1 技跳入後開 3 技逼位移，2 技重置普攻打第三下。",
+        "後期": "沒有分推環境就把自己當反開戰士。敵方先手進來時反而最好打；主動開戰時要確保閃現、3 技或守護天使至少留一層保命。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-21",
+          "name": "三相之力",
+          "icon": "assets/images/items/high/trinity-force-fixed.webp",
+          "when": "需要更純物理咒刃與移速",
+          "reason": "可替換暮夜與黎明，打脆皮時爆發更直接。"
+        },
+        {
+          "id": "physical-high-25",
+          "name": "智慧末刃",
+          "icon": "assets/images/items/high/wits-end-fixed.webp",
+          "when": "敵方法傷很多",
+          "reason": "替換死亡之舞，提高魔抗、攻速與混傷。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手多",
+          "reason": "替換守護天使，專門壓低暴擊壓力。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 2.2c",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-2-2c/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.1b",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-1b/"
+        },
+        {
+          "label": "WildRiftFire｜Jax Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/jax"
+        }
+      ],
+      "sourceNote": "v80.12.0 ARAM A 第三批：賈克斯採標準 ARAM 115% 傷害輸出，並同步 7.1b 耐久、被動攻速與 3 技增強。"
     },
     {
       "id": "jarvan-iv",
@@ -15898,17 +16217,172 @@
       "enName": "Jarvan IV",
       "tier": "A",
       "tierLabel": "穩定可選",
-      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "嘉文四世的旗槍擊飛與大絕地形在 ARAM 狹窄單線非常強，能把後排直接鎖在團戰中心；但 7.2b 已把標準 ARAM 傷害輸出從 100% 下調到 85%，因此現在更適合把定位放在先手、護盾與團隊增益，而不是全輸出秒人。",
+      "position": "旗槍擊飛／地形封鎖型開戰坦戰士",
       "tags": [
-        "ARAM Tier 初評"
+        "85% 輸出",
+        "範圍擊飛",
+        "大絕地形"
       ],
       "avatar": "assets/images/heroes/portraits/jarvan-iv.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "你的任務不是打最高傷害，而是把敵人留在錯的位置。先用 3→1 擊飛關鍵目標，再看隊友是否跟得上才開大；大絕地形會擋自己人，必要時要提早解除。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-a-batch3-v80.12.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "85%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 7.2b：嘉文四世傷害輸出 100%→85%，並明確標示同時套用標準 ARAM。承傷未列新調整，本站維持 100%。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
+          "reason": "開戰型近戰先補生命最穩。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-21",
+          "name": "三相之力",
+          "icon": "assets/images/items/high/trinity-force-fixed.webp",
+          "reason": "保留必要個人傷害、生命與技能加速，避免 85% 輸出後完全沒有威脅。"
+        },
+        {
+          "id": "defense-high-23",
+          "name": "聖光美德",
+          "icon": "assets/images/items/high/defense-radiant-virtue.png",
+          "reason": "大絕開團時提供團隊續航，最符合 ARAM 五人抱團。"
+        },
+        {
+          "id": "defense-high-20",
+          "name": "錫柯的聚合之力",
+          "icon": "assets/images/items/high/defense-zekes-convergence.png",
+          "reason": "貼近敵群開大後能持續提供範圍控制與團隊增益。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "長團疊雙抗，讓旗槍進場後撐更久。"
+        },
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "reason": "補魔抗與移速，對法師消耗陣容特別好。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "物理／普攻多時降低正面壓力。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "三級鞋強化開戰後的存活時間。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "conqueror",
+          "name": "征服者",
+          "icon": "assets/images/runes/keystone/conqueror.webp",
+          "reason": "雖然走坦裝，長團仍可靠技能與普攻逐步疊層。"
+        },
+        {
+          "id": "steadfast-bulwark",
+          "name": "堅定壁壘",
+          "icon": "assets/images/runes/resolve/steadfast-bulwark.webp",
+          "reason": "進場後提升對混合傷害的承受。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "旗槍貼臉時降低第一輪爆發。"
+        },
+        {
+          "id": "perseverance",
+          "name": "毅力",
+          "icon": "assets/images/runes/resolve/perseverance.webp",
+          "reason": "提升被控制時的韌性與生存。"
+        },
+        {
+          "id": "triumph",
+          "name": "凱旋",
+          "icon": "assets/images/runes/precision/triumph.webp",
+          "reason": "參與擊殺後回復，適合連續團戰。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "閃現接旗槍或大絕能改變整場團戰角度。"
+        },
+        {
+          "id": "ghost",
+          "name": "疾跑",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "開戰後維持貼身與撤出地形。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/jarvan-iv_02.webp",
+        "assets/images/heroes/skills/jarvan-iv_04.webp",
+        "assets/images/heroes/skills/jarvan-iv_03.webp"
+      ],
+      "playstyle": {
+        "開局": "先用 3 技給隊伍攻速，1 技可單獨消耗但要保留旗槍組合。沒有隊友跟進時不要硬 EQ 五人。",
+        "中期": "三相＋聖光後開團價值很高。優先困住沒有位移的核心，若隊友是遠程陣容，別用大絕把自己和坦克單獨關在裡面。",
+        "後期": "85% 輸出下更要重視控制鏈。第一波旗槍逼位移，第二波大絕才是決勝點；敵方有閃現時注意不要把大絕浪費在可直接跳走的人。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-38",
+          "name": "黑色切割者",
+          "icon": "assets/images/aram/items/black-cleaver-v2.webp",
+          "when": "我方物理輸出多",
+          "reason": "替換一件防裝，靠範圍技能快速疊減甲幫全隊。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手多",
+          "reason": "替換自然之力，專門提高對暴擊承傷。"
+        },
+        {
+          "id": "physical-high-16",
+          "name": "史特拉克手套",
+          "icon": "assets/images/aram/items/steraks-gage.webp",
+          "when": "需要更偏戰士的開戰容錯",
+          "reason": "替換錫柯，在進場被集火時提供大型護盾。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Jarvan-Iv Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/jarvan-iv"
+        }
+      ],
+      "sourceNote": "v80.12.0 ARAM A 第三批：嘉文四世套用 7.2b 明確同步標準 ARAM 的 85% 傷害輸出，出裝轉向團隊開戰與耐久。"
     },
     {
       "id": "kassadin",
@@ -15916,17 +16390,176 @@
       "enName": "Kassadin",
       "tier": "A",
       "tierLabel": "穩定可選",
-      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "卡薩丁在標準 ARAM 有 85% 承傷，等級與魔力裝成形後能靠低冷卻大絕反覆切入；五人持續施法也讓 3 技更容易強化。弱點是前期手短且非常吃魔力管理，若第一輪死太多次會延後時光與大天使成形。",
+      "position": "85% 承傷／高機動後期 AP 刺客",
       "tags": [
-        "ARAM Tier 初評"
+        "85% 承傷",
+        "虛空行走",
+        "後期收割"
       ],
       "avatar": "assets/images/heroes/portraits/kassadin.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "前期最重要的是別送。用 1 技沉默與魔法盾換血，3 技清線；大絕不要一直疊滿拿來走路，團戰前保留魔力，真正要切後排時再連跳。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-a-batch3-v80.12.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "85%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 5.3b 標準 ARAM：卡薩丁承傷 90%→85%。近期未列後續標準 ARAM 回調，本站維持 100% 輸出／85% 承傷。7.2 重做多件法師裝，時光之杖提高最終魔力、降低最終法強。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-amp-tome",
+          "name": "增幅典籍",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
+          "reason": "加快前期清線與沉默換血。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-17",
+          "name": "時光之杖",
+          "icon": "assets/images/items/high/magic-rod-of-ages.png",
+          "reason": "生命、魔力與成長屬性讓卡薩丁更快進入中後期。"
+        },
+        {
+          "id": "magic-high-19",
+          "name": "大天使之杖",
+          "icon": "assets/images/items/high/magic-archangels-staff.png",
+          "reason": "大量魔力直接支撐連續虛空行走，護盾也提高切入容錯。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "reason": "三件套後大幅拉高所有技能爆發。"
+        },
+        {
+          "id": "magic-high-26",
+          "name": "惡意",
+          "icon": "assets/images/items/high/magic-malignance.png",
+          "reason": "大絕使用頻率高，提供魔力與大絕相關輸出收益。"
+        },
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "reason": "7.2 後更偏純爆發，適合卡薩丁後期收殘血。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "mana-boots",
+          "name": "魔力之靴",
+          "icon": "assets/images/items/shoes/mana-boots.png",
+          "reason": "補魔力與法強，前中期最順。"
+        },
+        {
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "三級鞋補法穿，對脆皮爆發更高。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "first-strike",
+          "name": "先發制人",
+          "icon": "assets/images/runes/keystone/first-strike.webp",
+          "reason": "大絕先手切入很容易先造成傷害，放大整套爆發。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速讓 1、3 技循環更順。"
+        },
+        {
+          "id": "gathering-storm",
+          "name": "暴風凝聚",
+          "icon": "assets/images/runes/sorcery/gathering-storm.webp",
+          "reason": "ARAM 常拖到高等級，後期法強收益高。"
+        },
+        {
+          "id": "sudden-impact",
+          "name": "猛然衝擊",
+          "icon": "assets/images/runes/conquest/sudden-impact.webp",
+          "reason": "每次虛空行走都能穩定觸發。"
+        },
+        {
+          "id": "second-wind",
+          "name": "回春",
+          "icon": "assets/images/runes/resolve/second-wind.webp",
+          "reason": "前期被長手消耗時維持血線。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "和大絕疊加可瞬間跨越極遠距離。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "切入後被反集火時提供額外容錯。"
+        }
+      ],
+      "skillOrder": "3 技 > 1 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 3 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/kassadin_04.webp",
+        "assets/images/heroes/skills/kassadin_02.webp",
+        "assets/images/heroes/skills/kassadin_03.webp"
+      ],
+      "playstyle": {
+        "開局": "5 級前以安全吃經驗為主，1 技沉默對方主要法師，3 技在多人施法環境很容易強化。",
+        "中期": "時光＋大天使後開始能反覆進出。先用一層或兩層大絕接近，別在真正開戰前把魔力燒光。",
+        "後期": "85% 承傷讓你比一般刺客更能容錯，但仍不要第一個吃硬控。等前排交技能後連跳後排，擊殺後立刻改位置，不要在同一區停留。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "when": "敵方魔抗很高",
+          "reason": "替換無限寶珠，提供 40% 法穿。"
+        },
+        {
+          "id": "magic-high-24",
+          "name": "水仙三叉戟",
+          "icon": "assets/images/items/high/magic-oceanids-trident.png",
+          "when": "敵方護盾很多",
+          "reason": "替換惡意或無限寶珠，專門處理護盾。"
+        },
+        {
+          "id": "magic-high-05",
+          "name": "女妖面紗",
+          "icon": "assets/images/items/high/magic-banshees-veil.png",
+          "when": "敵方有關鍵先手控制",
+          "reason": "替換一件輸出裝，用法術盾提高第一次切入成功率。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 5.3b",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-53b/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-2/"
+        },
+        {
+          "label": "WildRiftFire｜Kassadin Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/kassadin"
+        }
+      ],
+      "sourceNote": "v80.12.0 ARAM A 第三批：卡薩丁套用標準 ARAM 85% 承傷，並同步 7.2 法師裝改版後的時光／大天使核心。"
     },
     {
       "id": "kalista",
@@ -15934,17 +16567,172 @@
       "enName": "Kalista",
       "tier": "A",
       "tierLabel": "穩定可選",
-      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "克黎思妲在單線團戰能靠被動連續跳躍躲技能，3 技在多人身上疊矛後一次拔出具有很強收割能力，大絕還能救隊友或讓前排二次開戰。她的弱點是非常怕減速與點控，且 ARAM 地形窄，跳錯一步就可能進到控制區。",
+      "position": "跳躍走砍／多目標疊矛型射手",
       "tags": [
-        "ARAM Tier 初評"
+        "高機動走砍",
+        "疊矛收割",
+        "大絕救援"
       ],
       "avatar": "assets/images/heroes/portraits/kalista.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "每一下普攻都要同時想下一個落點。不要只往後跳，利用左右橫移躲直線技能；3 技最好同時在兵線與英雄身上有矛，先拔死小兵刷新冷卻，再繼續疊英雄。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-a-batch3-v80.12.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "近期官方未列克黎思妲標準 ARAM 專屬百分比修正，本站維持 100%／100%。6.1f 的角色調整提高基礎攻擊、成長攻擊與生命，並調整好戰突進的攻速換位移效率。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "提高前期普攻、1 技與拔矛傷害。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-12",
+          "name": "殞落王者之劍",
+          "icon": "assets/images/aram/items/blade-of-the-ruined-king.webp",
+          "reason": "攻速、吸血與當前生命傷害，是前排多的 ARAM 最穩第一件。"
+        },
+        {
+          "id": "magic-high-rageblade",
+          "name": "鬼索的狂暴之刃",
+          "icon": "assets/images/items/high/magic-guinsoos-rageblade.png",
+          "reason": "放大攻速與命中特效，快速堆高長矛層數。"
+        },
+        {
+          "id": "physical-high-13",
+          "name": "芮蘭颶風箭",
+          "icon": "assets/images/aram/items/runaans-hurricane.webp",
+          "reason": "多人站位密集時同時在多個目標上疊矛，團戰收益極高。"
+        },
+        {
+          "id": "physical-high-25",
+          "name": "智慧末刃",
+          "icon": "assets/images/items/high/wits-end-fixed.webp",
+          "reason": "補魔抗、攻速與額外魔法傷害，提高對法師陣容的生存。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "後期射手被碰到就危險，雙抗讓走砍容錯更高。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "berserkers-greaves",
+          "name": "狂戰士護脛",
+          "icon": "assets/images/items/shoes/berserkers-greaves.png",
+          "reason": "攻速直接影響走砍流暢度與疊矛速度。"
+        },
+        {
+          "id": "gunsteel-greaves",
+          "name": "槍鋼護脛",
+          "icon": "assets/images/items/shoes/gunsteel-greaves.png",
+          "reason": "三級鞋補輸出與機動。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "lethal-tempo",
+          "name": "致命節奏",
+          "icon": "assets/images/runes/keystone/lethal-tempo.webp",
+          "reason": "持續普攻很快疊滿攻速，最契合跳躍走砍。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "提高前中期普攻與 1 技壓力。"
+        },
+        {
+          "id": "cut-down",
+          "name": "致命一擊",
+          "icon": "assets/images/runes/precision/cut-down.webp",
+          "reason": "對高生命前排有穩定收益。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳說：歡欣",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
+          "reason": "進一步提高攻速與拔矛累積效率。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被刺客貼臉時降低第一輪爆發。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "修正跳躍位置或躲必中控制。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "射手被強開時最直接的保命工具。"
+        }
+      ],
+      "skillOrder": "3 技 > 1 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 3 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/kalista_04.png",
+        "assets/images/heroes/skills/kalista_02.png",
+        "assets/images/heroes/skills/kalista_03.png"
+      ],
+      "playstyle": {
+        "開局": "用兵線當 3 技刷新媒介，普攻英雄時同時在殘血兵上留矛，拔矛收兵就能刷新並繼續壓人。",
+        "中期": "殞落＋鬼索後輸出成形。芮蘭出來後不要急著拔矛，等多個目標都累積到足夠層數再一次收割。",
+        "後期": "站位比輸出更重要。大絕可救被抓的血誓同盟，也可讓坦克二次擊飛；自己不要因為被動能跳就往敵方五人中央移動。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "when": "敵方刺客很多",
+          "reason": "替換雅瑪蘭，提供一次復活容錯。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手多",
+          "reason": "替換智慧末刃，專門降低暴擊壓力。"
+        },
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "when": "我方缺重創",
+          "reason": "替換一件防裝或智慧末刃，處理高治療陣容。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 6.1f",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-1f/"
+        },
+        {
+          "label": "WildRiftFire｜Kalista Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/kalista"
+        }
+      ],
+      "sourceNote": "v80.12.0 ARAM A 第三批：克黎思妲採 7.2a 當前殞落／鬼索／芮蘭核心；標準 ARAM 未套用 AAA ARAM 專屬數值。"
     },
     {
       "id": "katarina",
@@ -15952,17 +16740,176 @@
       "enName": "Katarina",
       "tier": "A",
       "tierLabel": "穩定可選",
-      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "卡特蓮娜在標準 ARAM 有 110% 傷害輸出，參與擊殺後大量刷新技能，五人殘血時極容易連續瞬步收割。她的上限非常高，但大絕怕任何硬控，匕首落點也很容易被敵方預判；如果第一個進場，通常會在被動刷新前先倒下。",
+      "position": "110% 輸出／匕首刷新型 AP 收割刺客",
       "tags": [
-        "ARAM Tier 初評"
+        "110% 輸出",
+        "擊殺刷新",
+        "多段瞬步"
       ],
       "avatar": "assets/images/heroes/portraits/katarina.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "不要第一個進。先用 1 技丟匕首，看敵方控制交掉後再 3 技進匕首區；大絕不是一定要轉滿，拿到第一個擊殺刷新後立刻瞬步到下一把匕首，連續收割比站著轉更重要。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-a-batch3-v80.12.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "110%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 2.6 標準 ARAM：卡特蓮娜傷害輸出 100%→110%。本站未將後續 Hextech／AAA ARAM 專屬承傷調整套入標準 ARAM，因此承傷維持 100%。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-amp-tome",
+          "name": "增幅典籍",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
+          "reason": "提高匕首被動與技能前期傷害。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "reason": "7.2 後提供高法強與斬殺效果，最適合卡特的殘血收割。"
+        },
+        {
+          "id": "magic-high-09",
+          "name": "雷霆風暴",
+          "icon": "assets/images/items/high/magic-stormsurge.png",
+          "reason": "平穿與爆發被動強化第一個擊殺窗口。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "reason": "大幅放大匕首、瞬步與大絕 AP 收益。"
+        },
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "reason": "對魔抗前排與戰士仍保有威脅。"
+        },
+        {
+          "id": "magic-high-02",
+          "name": "中婭沙漏",
+          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
+          "reason": "進場後拖過敵方控制，等匕首或瞬步重新可用。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "提供法穿，強化 110% 傷害加成的爆發。"
+        },
+        {
+          "id": "burst-boots",
+          "name": "爆發之靴",
+          "icon": "assets/images/items/shoes/burst-boots.png",
+          "reason": "三級鞋進一步偏向刺客爆發。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "electrocute",
+          "name": "電刑",
+          "icon": "assets/images/runes/keystone/electrocute.webp",
+          "reason": "瞬步＋匕首＋技能很容易快速觸發。"
+        },
+        {
+          "id": "sudden-impact",
+          "name": "猛然衝擊",
+          "icon": "assets/images/runes/conquest/sudden-impact.webp",
+          "reason": "瞬步頻率高，幾乎每次進場都能吃到收益。"
+        },
+        {
+          "id": "chain-assault",
+          "name": "連續突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "多段技能與匕首連續命中符合卡特收割節奏。"
+        },
+        {
+          "id": "eyeball-collector",
+          "name": "眼球收集器",
+          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+          "reason": "ARAM 擊殺助攻密集，法強堆疊快。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "跳入近身時降低第一輪反爆發。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補匕首角度、躲控制或連續收割。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "進場被集火時撐到第一次刷新。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/katarina_02.png",
+        "assets/images/heroes/skills/katarina_04.png",
+        "assets/images/heroes/skills/katarina_03.webp"
+      ],
+      "playstyle": {
+        "開局": "先靠 1 技消耗與製造匕首，不要沒有匕首就 3 技跳前排。敵方硬控還在時以等待為主。",
+        "中期": "無限寶珠＋雷霆風暴後第一輪爆發很高。等隊友把敵人打到七成以下，再找匕首落點連續進出。",
+        "後期": "一個擊殺就可能整套刷新。先鎖定最容易死的目標取得第一次被動，刷新後立刻換目標；中婭用來拖技能，不是進場前預先開。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-24",
+          "name": "水仙三叉戟",
+          "icon": "assets/images/items/high/magic-oceanids-trident.png",
+          "when": "敵方護盾很多",
+          "reason": "替換雷霆風暴或虛空之杖，補破盾。"
+        },
+        {
+          "id": "magic-high-05",
+          "name": "女妖面紗",
+          "icon": "assets/images/items/high/magic-banshees-veil.png",
+          "when": "敵方單一關鍵控制難以躲避",
+          "reason": "替換一件純傷害裝，提高首次進場成功率。"
+        },
+        {
+          "id": "magic-high-23",
+          "name": "峽谷製造者",
+          "icon": "assets/images/items/high/magic-riftmaker.png",
+          "when": "敵方前排很多且團戰拖很久",
+          "reason": "替換雷霆風暴，改成較長時間的持續作戰。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 2.6",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-2-6/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-2/"
+        },
+        {
+          "label": "WildRiftFire｜Katarina Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/katarina"
+        }
+      ],
+      "sourceNote": "v80.12.0 ARAM A 第三批：卡特蓮娜採標準 ARAM 110% 傷害輸出；7.2 法師裝改版後以無限寶珠／雷霆風暴作為收割核心。"
     },
     {
       "id": "kayn",
@@ -15970,17 +16917,172 @@
       "enName": "Kayn",
       "tier": "A",
       "tierLabel": "穩定可選",
-      "tierReason": "有清楚的 ARAM 強項，但更吃隊伍組成、操作、進場時機或敵方陣容，穩定度略低於 S。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "慨影在 ARAM 可以依對面組成選紅藍形態：近戰與高生命多時冥血族裔有百分比傷害、擊飛與吸血，脆皮遠程多時詭影刺客則有超高爆發與穿牆機動。7.2 又提高大絕離開目標的出口距離與操作流暢度；缺點是前期未變身前強度普通，而且單線可穿牆角度比召喚峽谷少。",
+      "position": "雙形態／穿牆切後型物理戰士刺客",
       "tags": [
-        "ARAM Tier 初評"
+        "紅藍雙形態",
+        "穿牆機動",
+        "大絕不可選取"
       ],
       "avatar": "assets/images/heroes/portraits/kayn.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "先看對面陣容決定形態：三個以上近戰／高生命優先紅，三個以上脆皮遠程才考慮藍。ARAM 通常紅形態更穩，因為正面五人長團多；大絕既是傷害，也是躲關鍵技能與等冷卻的保命工具。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-a-batch3-v80.12.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "近期官方未列慨影標準 ARAM 專屬百分比修正，本站維持 100%／100%。7.2 提高大絕離開目標的最大距離：基礎／紅形態 4→4.5、藍形態 6→6.5，並降低離開後操作鎖定。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "提高前期 1、2 技與普攻傷害。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-36",
+          "name": "星蝕",
+          "icon": "assets/images/aram/items/physical-high-36.webp",
+          "reason": "紅形態對前排能靠百分比傷害與護盾穩定換血，藍形態也能吃到爆發收益。"
+        },
+        {
+          "id": "physical-high-38",
+          "name": "黑色切割者",
+          "icon": "assets/images/aram/items/black-cleaver-v2.webp",
+          "reason": "紅形態長戰快速疊減甲，生命與技能加速也很重要。"
+        },
+        {
+          "id": "physical-high-27",
+          "name": "席利妲咒怨",
+          "icon": "assets/images/aram/items/physical-high-27.webp",
+          "reason": "提高技能穿甲與黏人，兩種形態都泛用。"
+        },
+        {
+          "id": "physical-high-42",
+          "name": "死亡之舞",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
+          "reason": "紅形態尤其受益，延後物理爆發並靠擊殺回復。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "reason": "後期切入後提供第二次作戰機會。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "armorbreaker-boots",
+          "name": "碎甲者之靴",
+          "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+          "reason": "兩種形態都能直接受益於物攻與穿甲。"
+        },
+        {
+          "id": "chain-army-boots",
+          "name": "鎖鏈軍靴",
+          "icon": "assets/images/items/shoes/chain-army-boots.png",
+          "reason": "紅形態或需要正面承傷時更穩。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "conqueror",
+          "name": "征服者",
+          "icon": "assets/images/runes/keystone/conqueror.webp",
+          "reason": "紅形態最穩，1、2 技與普攻能快速疊層；藍形態也不浪費。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "提高前中期技能與普攻壓力。"
+        },
+        {
+          "id": "last-stand",
+          "name": "背水一戰",
+          "icon": "assets/images/runes/precision/last-stand.webp",
+          "reason": "紅形態低血量吸血反打特別有效。"
+        },
+        {
+          "id": "legend-tenacity",
+          "name": "傳說：韌性",
+          "icon": "assets/images/runes/precision/legend-tenacity.webp",
+          "reason": "近戰進場怕控制，韌性提高大絕前後容錯。"
+        },
+        {
+          "id": "sudden-impact",
+          "name": "猛然衝擊",
+          "icon": "assets/images/runes/conquest/sudden-impact.webp",
+          "reason": "1 技位移、3 技穿牆與大絕都容易觸發。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補 2 技或大絕離場角度。"
+        },
+        {
+          "id": "ghost",
+          "name": "疾跑",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "正面長團維持貼身，也能幫藍形態追後排。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/kayn_02.webp",
+        "assets/images/heroes/skills/kayn_03.webp",
+        "assets/images/heroes/skills/kayn_04.webp"
+      ],
+      "playstyle": {
+        "開局": "未變身前不要把自己當完整刺客。多用 1、2 技碰英雄累積形態能量，3 技主要拿來找側角或短暫回復。",
+        "中期": "多數 ARAM 對局紅形態更穩：2 技擊飛後 1 技貼身，進入低血再用大絕躲爆發並回血。脆皮多才切藍形態快速一套離場。",
+        "後期": "大絕的 7.2 出口距離更好用。先確定落點再進人體內，避免出來仍在五人中央；守護天使與死亡之舞讓紅形態可以更敢做第二進場。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-14",
+          "name": "妖夢鬼刀",
+          "icon": "assets/images/aram/items/youmuus-ghostblade.webp",
+          "when": "確定走藍形態且敵方脆皮多",
+          "reason": "替換黑色切割者，提升爆發與移速。"
+        },
+        {
+          "id": "physical-high-29",
+          "name": "夜色緣界",
+          "icon": "assets/images/aram/items/physical-high-29.webp",
+          "when": "藍形態怕關鍵控制",
+          "reason": "替換死亡之舞，用法術盾提高切後成功率。"
+        },
+        {
+          "id": "physical-high-31",
+          "name": "巨蛇鋒牙",
+          "icon": "assets/images/items/high/serpents-fang-fixed.webp",
+          "when": "敵方護盾非常多",
+          "reason": "替換守護天使或黑切，快速削弱護盾。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-2/"
+        },
+        {
+          "label": "WildRiftFire｜Kayn Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/kayn"
+        }
+      ],
+      "sourceNote": "v80.12.0 ARAM A 第三批：慨影以紅形態泛用核心為主、藍形態列情境替換；同步 7.2 大絕出口距離與操作流暢度更新。"
     },
     {
       "id": "lee-sin",
