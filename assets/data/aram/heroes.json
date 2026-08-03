@@ -16,7 +16,7 @@
     "A": 55,
     "B": 9
   },
-  "detailGuideCount": 138,
+  "detailGuideCount": 140,
   "tierMethodology": {
     "type": "本站 ARAM 綜合評級（非單一勝率排名）",
     "factors": [
@@ -24208,17 +24208,173 @@
       "enName": "Talon",
       "tier": "B",
       "tierLabel": "情境選擇",
-      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "塔隆在 ARAM 有標準模式 80% 承傷，進場容錯遠高於一般刺客；二技可以先遠距壓血，再靠一技與大絕切入收割。缺點是單線地形缺乏召喚峽谷那種大量翻牆路線，若第一波沒有擊殺就容易被反控。",
+      "position": "遠距飛刀消耗／隱形爆發型物理刺客",
       "tags": [
-        "ARAM Tier 初評"
+        "飛刀消耗",
+        "隱形爆發",
+        "高減傷"
       ],
       "avatar": "assets/images/heroes/portraits/talon.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "先用二技反覆壓血，不要滿血直接一技跳進五人。真正的進場點是敵方後排血線下降、關鍵控制交掉後；大絕可以用來補爆發，也可以先開隱形換角度再收頭。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-b-batch2-v80.19.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "80%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "6.0b 標準 ARAM 將塔隆承傷由 85% 降至 80%。6.2g 的 120% 傷害輸出屬 AAA ARAM，本站不套用到標準 ARAM；同步 7.1b 二技第一段傷害增強。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "提高二技消耗與第一套物理爆發。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-14",
+          "name": "妖夢鬼刀",
+          "icon": "assets/images/aram/items/youmuus-ghostblade.webp",
+          "reason": "穿透與移速方便在單線側邊找進場角度。"
+        },
+        {
+          "id": "physical-high-36",
+          "name": "星蝕",
+          "icon": "assets/images/aram/items/physical-high-36.webp",
+          "reason": "短時間爆發後提供護盾，配合 80% 承傷提高第一波容錯。"
+        },
+        {
+          "id": "physical-high-27",
+          "name": "席利妲咒怨",
+          "icon": "assets/images/aram/items/physical-high-27.webp",
+          "reason": "中後期補穿甲與緩速，二技回程更容易命中。"
+        },
+        {
+          "id": "physical-high-29",
+          "name": "夜色緣界",
+          "icon": "assets/images/aram/items/physical-high-29.webp",
+          "reason": "切入前擋一次關鍵控制，降低被瞬間留下的風險。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "reason": "後期深切後排失誤時提供一次復活保險。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "armorbreaker-boots",
+          "name": "碎甲者之靴",
+          "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+          "reason": "固定穿甲直接放大刺客第一套爆發。"
+        },
+        {
+          "id": "mercurys-treads",
+          "name": "水星之靴",
+          "icon": "assets/images/items/shoes/mercurys-treads.png",
+          "reason": "敵方控制與魔法爆發很多時提高進場成功率。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "empowerment",
+          "name": "先發制人",
+          "icon": "assets/images/runes/keystone/empowerment.webp",
+          "reason": "從二技或大絕隱形先手時能放大第一輪爆發。"
+        },
+        {
+          "id": "sudden-impact",
+          "name": "即刻衝擊",
+          "icon": "assets/images/runes/conquest/sudden-impact.webp",
+          "reason": "一技突進與大絕隱形切入後提高傷害。"
+        },
+        {
+          "id": "eyeball-collector",
+          "name": "眼球收集器",
+          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+          "reason": "ARAM 擊殺參與高，容易累積額外適性能力。"
+        },
+        {
+          "id": "coup-de-grace",
+          "name": "致命一擊",
+          "icon": "assets/images/runes/precision/coup-de-grace.webp",
+          "reason": "提高對低血後排的收割效率。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速讓二技消耗與一技追擊循環更快。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補一技距離、換角度與撤退。"
+        },
+        {
+          "id": "ignite",
+          "name": "點燃",
+          "icon": "assets/images/spells/ignite.webp",
+          "reason": "強化單點斬殺並限制治療。"
+        }
+      ],
+      "skillOrder": "2 技 > 1 技 > 3 技",
+      "skillNote": "主 2 提高遠距消耗與兩段飛刀傷害，次 1 強化貼身爆發；三技在 ARAM 主要提供地形機動，大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/talon_02.png",
+        "assets/images/heroes/skills/talon_03.png",
+        "assets/images/heroes/skills/talon_04.png"
+      ],
+      "playstyle": {
+        "開局": "先用二技打前排或兵線後排英雄，利用回程命中壓血。沒有擊殺線時不要一技跳入敵陣。",
+        "中期": "妖夢＋星蝕後可以找側面角度。等敵方控制交掉，再大絕隱形接近或一技切入，打完被動出血後立刻往外拉。",
+        "後期": "你不是第一個開戰的人。等前排把陣型打亂後再進場收後排；有夜色緣界與守護天使時才適合做最深的切入。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-31",
+          "name": "巨蛇鋒牙",
+          "icon": "assets/images/items/high/serpents-fang-fixed.webp",
+          "reason": "敵方護盾體系厚重時換入破盾。"
+        },
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "reason": "敵方治療與回復非常高時補重創。"
+        },
+        {
+          "id": "physical-high-42",
+          "name": "死亡之舞",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
+          "reason": "物理爆發多、需要更高進場容錯時使用。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 6.0b",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-0b/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.1b",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-1b/"
+        },
+        {
+          "label": "WildRiftFire｜Talon Patch 7.2b",
+          "url": "https://www.wildriftfire.com/guide/talon"
+        }
+      ],
+      "sourceNote": "v80.19.0 ARAM B 最終批：標準 ARAM 套用 80% 承傷；不誤套 6.2g AAA ARAM 的 120% 傷害，並同步 7.1b 二技第一段增強。"
     },
     {
       "id": "tryndamere",
@@ -24226,17 +24382,173 @@
       "enName": "Tryndamere",
       "tier": "B",
       "tierLabel": "情境選擇",
-      "tierReason": "仍有可發揮的對局，但單線地形、短射程、缺乏側翼／孤立條件或英雄機制會明顯限制穩定性。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "泰達米爾在標準 ARAM 有 120% 傷害輸出，大絕無敵讓他能強行撐過第一輪集火；6.2 後暴擊超過 100% 還能轉成物攻，後期成裝收益很高。缺點是手短、容易被硬控與風箏，若大絕交得太早就很難完成收割。",
+      "position": "低血爆擊／無敵追擊型近戰射手",
       "tags": [
-        "ARAM Tier 初評"
+        "120% 傷害",
+        "暴擊",
+        "大絕無敵"
       ],
       "avatar": "assets/images/heroes/portraits/tryndamere.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "不要滿怒前就直接旋轉進場。先用兵線與前排累積怒氣，等敵方控制交掉後再三技切入；大絕要在真正接近死亡時開，五秒內盡可能完成擊殺，最後用一技補血或三技拉回安全位置。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-b-batch2-v80.19.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "120%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "2.2c 標準 ARAM 將泰達米爾傷害輸出由 110% 提升到 120%；未確認後續標準 ARAM 有回調，因此沿用 120%。同步 6.2 被動攻速 35%→30%、暴擊率超過 100% 時每 1% 轉換 1 物攻，以及大絕期間被動攻速成長調整。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "提高前期普攻與三技旋轉傷害。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-28",
+          "name": "那歐疾刃",
+          "icon": "assets/images/aram/items/navori-quickblades.webp",
+          "reason": "暴擊與技能循環非常適合頻繁旋轉追擊。"
+        },
+        {
+          "id": "physical-high-17",
+          "name": "無盡之刃",
+          "icon": "assets/images/aram/items/infinity-edge.webp",
+          "reason": "配合 120% ARAM 傷害與高暴擊，顯著提高普攻收割。"
+        },
+        {
+          "id": "physical-high-11",
+          "name": "嗜血者",
+          "icon": "assets/images/aram/items/bloodthirster.webp",
+          "reason": "提供吸血與護盾，讓大絕結束後更容易續命。"
+        },
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "reason": "高護甲與高回復前排多時同時補穿透與重創。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "reason": "大絕結束後仍被留住時提供第二次生存機會。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "berserkers-greaves",
+          "name": "狂戰士護脛",
+          "icon": "assets/images/items/shoes/berserkers-greaves.png",
+          "reason": "攻速提高怒氣累積與持續暴擊效率。"
+        },
+        {
+          "id": "gunsteel-greaves",
+          "name": "槍鋼護脛",
+          "icon": "assets/images/items/shoes/gunsteel-greaves.png",
+          "reason": "三級鞋補輸出與貼身追擊能力。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "lethal-tempo",
+          "name": "致命節奏",
+          "icon": "assets/images/runes/keystone/lethal-tempo.webp",
+          "reason": "長時間普攻快速拉高攻速，最符合近戰追擊節奏。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "提高前期普攻與三技傷害。"
+        },
+        {
+          "id": "last-stand",
+          "name": "背水一戰",
+          "icon": "assets/images/runes/precision/last-stand.webp",
+          "reason": "泰達米爾經常在低血量開大，能放大無敵期間輸出。"
+        },
+        {
+          "id": "legend-alacrity",
+          "name": "傳說：歡欣",
+          "icon": "assets/images/runes/precision/legend-alacrity.webp",
+          "reason": "進一步提高攻速與怒氣累積速度。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "第一次旋轉進場時降低被瞬間壓到開大的壓力。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補最後一段距離、躲控制與撤退。"
+        },
+        {
+          "id": "ghost",
+          "name": "疾跑",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "大絕五秒內維持貼身，避免被風箏浪費無敵時間。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "主 1 提高低血物攻與治療，次 3 強化旋轉傷害與機動；二技主要用來降物攻與減速，大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/tryndamere_02.png",
+        "assets/images/heroes/skills/tryndamere_03.png",
+        "assets/images/heroes/skills/tryndamere_04.png"
+      ],
+      "playstyle": {
+        "開局": "先靠普攻兵線與前排累積怒氣，不要零怒直接三技進五人。二技能讓背對你的敵人減速，適合追擊或逼走位。",
+        "中期": "那歐＋無盡後爆擊循環成形。等隊友先吃控制，再三技切入；大絕盡量壓到致死傷害前再開，不要一進場就交。",
+        "後期": "五秒無敵期間只做兩件事：黏住高價值目標、持續普攻。大絕快結束時預留三技或閃現撤退，一技補血不要提早把怒氣清空。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-12",
+          "name": "殞落王者之劍",
+          "icon": "assets/images/aram/items/blade-of-the-ruined-king.webp",
+          "reason": "敵方高生命前排很多時提高貼身效率。"
+        },
+        {
+          "id": "physical-high-25",
+          "name": "智慧末刃",
+          "icon": "assets/images/items/high/wits-end-fixed.webp",
+          "reason": "敵方法術輸出高且仍需要攻速時使用。"
+        },
+        {
+          "id": "physical-high-42",
+          "name": "死亡之舞",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
+          "reason": "敵方物理爆發高時提高大絕前後的生存容錯。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wild Rift Patch Notes 2.2c｜ARAM Tryndamere",
+          "url": "https://www.comingsoon.net/games/news/1173052-league-of-legends-wild-rift-2-2c-patch-notes"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 6.2",
+          "url": "https://wildrift.leagueoflegends.com/en-gb/news/game-updates/wild-rift-patch-notes-6-2/"
+        },
+        {
+          "label": "WildRiftFire｜Tryndamere Patch 7.2b",
+          "url": "https://www.wildriftfire.com/guide/tryndamere"
+        }
+      ],
+      "sourceNote": "v80.19.0 ARAM B 最終批：沿用標準 ARAM 120% 傷害輸出；同步 6.2 暴擊溢出轉物攻與大絕期間攻速調整。"
     }
   ]
 }
