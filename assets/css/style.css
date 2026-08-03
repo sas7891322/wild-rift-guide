@@ -2489,3 +2489,12 @@ button,a{-webkit-tap-highlight-color:transparent}
 .aaa-aram-mode .aaa-category-card.is-active small{
   color:#c0cbd9;
 }
+
+
+/* v80.33 S+ tier visual */
+.aaa-aram-mode .aaa-fit-card.rank-splus .aaa-fit-card-head>span{
+  color:#fff0a6;
+  background:rgba(238,199,98,.16);
+  box-shadow:inset 0 0 0 1px rgba(238,199,98,.22);
+  font-weight:1000;
+}

@@ -202,7 +202,7 @@
         </nav>
       </section>
       <section class="aram-detail-section aaa-decision-section">
-        <div class="aram-detail-section-head"><div><span>CATEGORY FIRST</span><h2>吉茵珂絲增幅分類</h2></div><small>先看分類，再看單卡</small></div>
+        <div class="aram-detail-section-head"><div><span>CATEGORY FIRST</span><h2>${esc(hero.name)}增幅分類</h2></div><small>先看分類，再看單卡</small></div>
         <div class="aaa-category-howto"><b>遊戲看到 3 張增幅</b><span>看卡片下方分類 → 點下面相同分類 → 左側分級越高越優先</span></div>
         <div class="aaa-category-grid" data-aaa-category-grid>${categoryCards}</div>
         <div class="aaa-category-results" data-aaa-category-results>
@@ -217,7 +217,7 @@
         </div>
       </section>
       <section class="aram-detail-section" id="aaa-build-section" tabindex="-1">
-        <div class="aram-detail-section-head"><div><span>ADAPTIVE BUILD</span><h2>依增幅切換出裝</h2></div><small>三條試作路線</small></div>
+        <div class="aram-detail-section-head"><div><span>ADAPTIVE BUILD</span><h2>依增幅切換出裝</h2></div><small>${buildPlans.length} 條路線</small></div>
         <div class="aaa-build-list">${buildPlans}</div>
       </section>
       <section class="aram-detail-section" id="aaa-runes-section" tabindex="-1">
@@ -338,7 +338,7 @@
         activeCategory=button.dataset.aaaCategory||'';
         categoryButtons.forEach(item=>item.classList.toggle('is-active',item===button));
         const info=categoryInfo.get(activeCategory)||{};
-        if(title)title.textContent=`${activeCategory}｜吉茵珂絲`;
+        if(title)title.textContent=`${activeCategory}｜${hero.name}`;
         if(note)note.textContent=info.note||'';
         if(search)search.value='';
         if(empty)empty.hidden=true;
