@@ -29,10 +29,18 @@
     <div><strong>${esc(spell.name)}</strong><p>${esc(spell.reason)}</p></div>
   </article>`).join('');
 
-  const renderSkillOrder=(hero)=>`<section class="aram-detail-section">
+  const renderSkillOrder=(hero,sectionId='')=>`<section class="aram-detail-section"${sectionId?` id="${esc(sectionId)}" tabindex="-1"`:''}>
     <div class="aram-detail-section-head"><div><span>SKILL ORDER</span><h2>技能升級</h2></div><small>${esc(hero.skillOrder)}</small></div>
     <div class="aram-skill-order"><div class="aram-skill-icons">${(hero.skillIcons||[]).map((src,index)=>`${index?'<b>→</b>':''}<img src="${esc(src)}" alt="技能順位 ${index+1}"/>`).join('')}</div><p>${esc(hero.skillNote)}</p></div>
   </section>`;
+
+  const renderHighlightedAaaText=(text='')=>{
+    let output=esc(text);
+    ['暴擊','攻速','普攻','攻擊距離'].forEach(keyword=>{
+      output=output.split(keyword).join(`<mark class="aaa-inline-keyword">${keyword}</mark>`);
+    });
+    return output;
+  };
 
   const renderPlaystyle=(playstyle={},heading='ARAM 玩法重點',kicker='GAME PLAN')=>{
     const entries=Object.entries(playstyle||{});
@@ -48,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=80.25.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=80.25.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=80.26.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=80.26.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -91,7 +99,7 @@
           <div class="aram-detail-kicker">${kicker}</div>
           <div class="aram-detail-titleline"><div><h1>${esc(hero.name)}</h1><span>${esc(hero.enName)}</span></div><div class="aram-detail-tier ${isAaa?'is-pilot':''}"><strong>${esc(badgeMain)}</strong><span>${esc(badgeSub)}</span></div></div>
           <p class="aram-detail-position">${esc(position)}</p><div class="aram-detail-tags">${pills}</div>
-          <p class="aram-detail-summary">${esc(summary)}</p>
+          <p class="aram-detail-summary">${isAaa?renderHighlightedAaaText(summary):esc(summary)}</p>
           <div class="aram-tier-reason"><strong>${reasonTitle}</strong><span>${esc(reasonText)}</span></div>
         </div>
       </section>`;
@@ -145,11 +153,16 @@
         const augment=augmentMap.get(rating.id)||{};
         const tier=String(rating.tier||'C').toUpperCase();
         const searchText=[augment.name,augment.effect,rating.tag,rating.reason,tier].filter(Boolean).join(' ').toLowerCase();
-        return `<article class="aaa-fit-card rank-${esc(tier).toLowerCase()}" data-aaa-fit-card data-tier="${esc(tier)}" data-search-text="${esc(searchText)}">
-          <div class="aaa-fit-card-head"><span>${esc(tier)}</span><div><strong>${esc(augment.name||rating.id)}</strong><small>${esc(rating.tag||'適配判斷')}</small></div></div>
-          <p class="aaa-fit-effect">${esc(augment.effect||'效果資料載入失敗')}</p>
-          <p class="aaa-fit-reason"><b>吉茵珂絲：</b>${esc(rating.reason||'')}</p>
-        </article>`;
+        return `<details class="aaa-fit-card rank-${esc(tier).toLowerCase()}" data-aaa-fit-card data-tier="${esc(tier)}" data-search-text="${esc(searchText)}">
+          <summary class="aaa-fit-card-summary">
+            <div class="aaa-fit-card-head"><span>${esc(tier)}</span><div><strong>${esc(augment.name||rating.id)}</strong><small>${esc(rating.tag||'適配判斷')}</small></div></div>
+            <b class="aaa-fit-toggle"><span>查看效果</span><i aria-hidden="true">⌄</i></b>
+          </summary>
+          <div class="aaa-fit-card-body">
+            <p class="aaa-fit-effect"><b>效果：</b>${esc(augment.effect||'效果資料載入失敗')}</p>
+            <p class="aaa-fit-reason"><b>吉茵珂絲：</b>${esc(rating.reason||'')}</p>
+          </div>
+        </details>`;
       }).join('');
       const tierCounts=(compatibility.ratings||[]).reduce((counts,item)=>{const tier=String(item.tier||'C').toUpperCase();counts[tier]=(counts[tier]||0)+1;return counts;},{});
       const buildPlans=(aaa.buildPlans||[]).map((plan,index)=>`<details class="aaa-build-plan" ${index===0?'open':''}>
@@ -162,9 +175,21 @@
       </details>`).join('');
       const aaaRunes=renderRunes(aaa.runeReuse?.runes||hero.runes||[]);
       return `<section class="aram-detail-section aaa-overview-section">
-        <div class="aram-detail-section-head"><div><span>AAA ARAM PILOT</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>
-        <div class="aaa-shared-grid">${sharedCards}</div>
-        <p class="aaa-pilot-note">${esc(aaa.pilotNote)}</p>
+        <details class="aaa-shared-disclosure">
+          <summary>
+            <div class="aram-detail-section-head"><div><span>AAA ARAM PILOT</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>
+            <b class="aaa-disclosure-toggle"><span>展開查看</span><i aria-hidden="true">⌄</i></b>
+          </summary>
+          <div class="aaa-shared-disclosure-body">
+            <div class="aaa-shared-grid">${sharedCards}</div>
+            <p class="aaa-pilot-note">${esc(aaa.pilotNote)}</p>
+          </div>
+        </details>
+        <nav class="aaa-section-jump" aria-label="符文大亂鬥內容快速跳轉">
+          <a href="#aaa-build-section"><span>01</span>依增幅出裝</a>
+          <a href="#aaa-runes-section"><span>02</span>一般符文可直接共用</a>
+          <a href="#aaa-skill-section"><span>03</span>技能升級</a>
+        </nav>
       </section>
       <section class="aram-detail-section aaa-decision-section">
         <div class="aram-detail-section-head"><div><span>AUGMENT DECISION</span><h2>吉茵珂絲增幅選擇規則</h2></div><small>不必背 151 個名稱</small></div>
@@ -191,18 +216,28 @@
           <div class="aaa-fit-grid">${compatibilityRows}</div>
         </div>
       </section>
-      <section class="aram-detail-section">
+      <section class="aram-detail-section" id="aaa-build-section" tabindex="-1">
         <div class="aram-detail-section-head"><div><span>ADAPTIVE BUILD</span><h2>依增幅切換出裝</h2></div><small>三條試作路線</small></div>
         <div class="aaa-build-list">${buildPlans}</div>
       </section>
-      <section class="aram-detail-section">
+      <section class="aram-detail-section" id="aaa-runes-section" tabindex="-1">
         <div class="aram-detail-section-head"><div><span>BASE RUNES</span><h2>${esc(aaa.runeReuse?.title||'一般符文')}</h2></div><small>與標準 ARAM 共用</small></div>
         <p class="aaa-section-intro">${esc(aaa.runeReuse?.note||'')}</p>
         <div class="aram-rune-grid">${aaaRunes}</div>
       </section>
-      ${renderSkillOrder(hero)}
+      ${renderSkillOrder(hero,'aaa-skill-section')}
       ${renderPlaystyle(aaa.playstyle,'符文大亂鬥玩法','AAA GAME PLAN')}
       ${renderSources(aaa.sourceNote,aaa.sources||[])}`;
+    };
+
+    const bindAaaSectionJumps=()=>{
+      contentRoot.querySelectorAll('.aaa-section-jump a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
+        const target=contentRoot.querySelector(link.getAttribute('href'));
+        if(!target)return;
+        event.preventDefault();
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+        window.setTimeout(()=>target.focus({preventScroll:true}),420);
+      }));
     };
 
     const bindAugmentCompatibility=()=>{
@@ -254,7 +289,7 @@
       if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：增幅關鍵詞判斷、151 個增幅適配、出裝轉向與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
-      if(isAaa)bindAugmentCompatibility();
+      if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
     };
 
     root.querySelectorAll('[data-guide-mode]').forEach(button=>button.addEventListener('click',()=>{
