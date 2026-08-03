@@ -16,7 +16,7 @@
     "A": 55,
     "B": 9
   },
-  "detailGuideCount": 62,
+  "detailGuideCount": 69,
   "tierMethodology": {
     "type": "本站 ARAM 綜合評級（非單一勝率排名）",
     "factors": [
@@ -41,7 +41,8 @@
     "v80.0.1 修正 S+ 第一、二批共 14 位英雄鞋子：全部改為 7.2 正確的二級鞋 → 三級鞋路線，移除舊版鞋子附魔／主動附魔內容；吉茵珂絲原有三級鞋路線維持不變。",
     "v80.6.0 完成 ARAM S 第四批 7 位完整攻略：米里歐、納瑟斯、夜曲、波比、派克、銳空、藍寶。",
     "v80.6.1 校正 ARAM 物理裝備圖示錯位，並統一少數物理裝備 ID／台灣名稱；未變更英雄出裝方向與版面。",
-    "v80.7.0 完成 ARAM S 第五批 7 位完整攻略：煞蜜拉、姍娜、賽特、賽恩、希維爾、史加納、史矛德。"
+    "v80.7.0 完成 ARAM S 第五批 7 位完整攻略：煞蜜拉、姍娜、賽特、賽恩、希維爾、史加納、史矛德。",
+    "v80.8.0 完成 ARAM S 第六批 7 位完整攻略：索娜、索拉卡、蒙多醫生、悠咪、星朵拉、塔莉雅、瑟雷西。"
   ],
   "sources": [
     {
@@ -10886,17 +10887,176 @@
       "enName": "Sona",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "五人單線讓索娜幾乎每次施法都能同時覆蓋多名隊友，2 技群體續航、3 技加速與大絕控場都非常契合 ARAM；7.2b 雖回調治療量與大絕冷卻，她仍是穩定的團隊增益核心。",
+      "position": "群體續航／加速控場型輔助",
       "tags": [
-        "ARAM Tier 初評"
+        "群體治療",
+        "團隊加速",
+        "範圍控場"
       ],
       "avatar": "assets/images/heroes/portraits/sona.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "索娜的重點不是站前排消耗，而是貼著隊友維持光環覆蓋。2 技優先保血線，3 技用來拉扯與追退，力量和弦要依局勢選減傷或減速；大絕最好留給反開或能一次命中多人的狹窄角度。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch6-v80.8.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "7.2b 調整的是英雄技能本身：2 技治療 45/60/75/90→35/50/65/80，大絕冷卻 80/70/60→80/75/70；近期官方未列標準 ARAM 專屬百分比修正。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-32",
+          "name": "禁忌之像",
+          "icon": "assets/images/aram/items/intermediate-32.webp",
+          "reason": "開局直接提高治療、護盾與技能循環，最符合索娜第一波團戰需求。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-19",
+          "name": "大天使之杖",
+          "icon": "assets/images/items/high/magic-archangels-staff.png",
+          "reason": "索娜會高頻率施法，額外魔力與後續護盾能解決 ARAM 長時間不回城的續航問題；7.2a 雖放慢堆疊，仍是最穩的魔力核心。"
+        },
+        {
+          "id": "support-high-05",
+          "name": "和諧回音",
+          "icon": "assets/images/items/high/support-harmonic-echo.png",
+          "reason": "2 技頻繁群補時很容易反覆觸發，能把團隊血線維持在安全區間。"
+        },
+        {
+          "id": "support-high-04",
+          "name": "熾灼魔器",
+          "icon": "assets/images/items/high/support-ardent-censer.png",
+          "reason": "索娜的護盾與治療能讓多名普攻核心吃到攻速增益，團隊收益很高。"
+        },
+        {
+          "id": "support-high-06",
+          "name": "流水之杖",
+          "icon": "assets/images/items/high/support-staff-of-flowing-water.png",
+          "reason": "若隊伍有法師或技能型核心，群體護盾能快速把增益覆蓋全隊。"
+        },
+        {
+          "id": "support-high-01",
+          "name": "米凱的祝福",
+          "icon": "assets/images/items/high/support-mikaels-blessing.png",
+          "reason": "後期主力被硬控時可直接解控，讓索娜不必冒險往前救人。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "ionian-boots",
+          "name": "愛歐尼亞之靴",
+          "icon": "assets/images/items/shoes/ionian-boots.png",
+          "reason": "技能加速直接轉成更多治療、加速與大絕。"
+        },
+        {
+          "id": "blood-mage-boots",
+          "name": "血色法靴",
+          "icon": "assets/images/items/shoes/blood-mage-boots.png",
+          "reason": "升級三級鞋後進一步縮短技能與召喚師技能循環，適合團隊型打法。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "aery",
+          "name": "艾莉",
+          "icon": "assets/images/runes/keystone/aery.webp",
+          "reason": "消耗、治療與護盾都能穩定觸發，是索娜最全面的核心符文。"
+        },
+        {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "提高長時間施法的魔力容錯。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "更多技能加速等於更多 2、3 技與大絕。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大治療與護盾效果。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被刺客或強開碰到時減少第一輪爆發。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "索娜本身沒有位移，閃現主要用來保命或調整大絕角度。"
+        },
+        {
+          "id": "exhaust",
+          "name": "虛弱",
+          "icon": "assets/images/spells/exhaust.webp",
+          "reason": "敵方刺客切入時直接降低爆發，保住自己與主力輸出。"
+        }
+      ],
+      "skillOrder": "2 技 > 1 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技、次升 1 技；大絕能點就點。7.2b 回調治療後，更要靠技能頻率維持團隊血線。",
+      "skillIcons": [
+        "assets/images/heroes/skills/sona_03.png",
+        "assets/images/heroes/skills/sona_02.png",
+        "assets/images/heroes/skills/sona_04.webp"
+      ],
+      "playstyle": {
+        "開局": "站在後排與隊友保持光環距離，2 技不要等到隊友殘血才放；利用 1 技安全消耗並準備力量和弦。",
+        "中期": "大天使與和諧回音成形後開始高頻循環技能。團戰前先保魔力，力量和弦若要反打優先用 2 技衍生的減傷，追擊則用 3 技衍生的減速。",
+        "後期": "後期敵方會更想先抓索娜。保持在主力旁邊，不要為了一次 1 技往前走；大絕優先反開多名突進者或接隊友群控。"
+      },
+      "situationalItems": [
+        {
+          "id": "support-high-03",
+          "name": "蘇瑞亞的戰歌",
+          "icon": "assets/images/items/high/support-shurelyas-battlesong.png",
+          "when": "隊伍很需要開戰／撤退加速",
+          "reason": "可替換米凱，進一步放大整隊移速節奏。"
+        },
+        {
+          "id": "magic-high-03",
+          "name": "贖罪神石",
+          "icon": "assets/images/items/high/magic-redemption.png",
+          "when": "需要額外遠距救援",
+          "reason": "可作功能替代，但 Howling Abyss 對同一目標後續贖罪治療有 60% 衰減，不列為固定核心。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "when": "隊伍已很安全且需要更高治療／傷害",
+          "reason": "後期可犧牲一件功能裝換取更高 AP。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+        },
+        {
+          "label": "WildRiftFire｜Sona Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/sona"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第六批：索娜同步 7.2b 治療與大絕冷卻回調，ARAM 出裝以魔力、技能循環與群體增益優先。"
     },
     {
       "id": "soraka",
@@ -10904,17 +11064,172 @@
       "enName": "Soraka",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "索拉卡在五人單線可以持續用 1 技自我回復，再用 2 技快速抬高隊友血線；3 技沉默區對強開與刺客非常致命，大絕也能直接救整隊，因此即使自身很脆仍有穩定 S 級團隊價值。",
+      "position": "高頻治療／沉默反開型輔助",
       "tags": [
-        "ARAM Tier 初評"
+        "持續治療",
+        "沉默定身",
+        "全隊救援"
       ],
       "avatar": "assets/images/heroes/portraits/soraka.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "索拉卡最重要的是活著。先用 1 技命中敵人取得自我回復，再安全站在後排用 2 技補血；3 技不要只拿來消耗，應優先封住刺客、戰士進場或敵方法師的關鍵施法區。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch6-v80.8.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "近期官方未列索拉卡標準 ARAM 專屬百分比修正；6.0b 曾調整 2 技技能冷卻為 7/6/5/4 秒，現行玩法依此技能組整理。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-32",
+          "name": "禁忌之像",
+          "icon": "assets/images/aram/items/intermediate-32.webp",
+          "reason": "直接提高治療護盾效率與技能循環，讓第一波團戰就能有效保隊友。"
+        }
+      ],
+      "items": [
+        {
+          "id": "support-high-05",
+          "name": "和諧回音",
+          "icon": "assets/images/items/high/support-harmonic-echo.png",
+          "reason": "高頻 2 技可以快速累積並觸發群體續航，是 ARAM 最穩定的第一核心。"
+        },
+        {
+          "id": "support-high-04",
+          "name": "熾灼魔器",
+          "icon": "assets/images/items/high/support-ardent-censer.png",
+          "reason": "己方有射手或普攻核心時，頻繁治療能長時間維持攻速增益。"
+        },
+        {
+          "id": "support-high-06",
+          "name": "流水之杖",
+          "icon": "assets/images/items/high/support-staff-of-flowing-water.png",
+          "reason": "法師與技能型隊友能從治療後的增益中取得高收益。"
+        },
+        {
+          "id": "support-high-01",
+          "name": "米凱的祝福",
+          "icon": "assets/images/items/high/support-mikaels-blessing.png",
+          "reason": "敵方關鍵控制命中主力時可直接解控，避免索拉卡只能看著隊友被秒。"
+        },
+        {
+          "id": "support-high-03",
+          "name": "蘇瑞亞的戰歌",
+          "icon": "assets/images/items/high/support-shurelyas-battlesong.png",
+          "reason": "整隊追擊或撤退時提供主動加速，補足索拉卡自身缺乏位移的問題。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "ionian-boots",
+          "name": "愛歐尼亞之靴",
+          "icon": "assets/images/items/shoes/ionian-boots.png",
+          "reason": "技能加速直接提高治療與沉默區的頻率。"
+        },
+        {
+          "id": "blood-mage-boots",
+          "name": "血色法靴",
+          "icon": "assets/images/items/shoes/blood-mage-boots.png",
+          "reason": "升級三級鞋後讓技能與召喚師技能循環更快，保排更穩。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "aery",
+          "name": "艾莉",
+          "icon": "assets/images/runes/keystone/aery.webp",
+          "reason": "治療、護盾與 1 技消耗都能穩定觸發。"
+        },
+        {
+          "id": "font-of-life",
+          "name": "生命之泉",
+          "icon": "assets/images/runes/resolve/font-of-life.webp",
+          "reason": "1 技緩速與 3 技控制命中後能幫隊伍補額外續航。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大 2 技與大絕治療。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "索拉卡常是優先擊殺目標，骨甲能減少被瞬間帶走的風險。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "更多技能加速讓 2 技與 3 技更頻繁。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "沒有位移，閃現是最重要的自保工具。"
+        },
+        {
+          "id": "heal",
+          "name": "治癒",
+          "icon": "assets/images/spells/heal.webp",
+          "reason": "團戰中可額外抬高自己與隊友血線，讓你有更多時間繼續施放 2 技。"
+        }
+      ],
+      "skillOrder": "2 技 > 1 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/soraka_03.png",
+        "assets/images/heroes/skills/soraka_02.png",
+        "assets/images/heroes/skills/soraka_04.png"
+      ],
+      "playstyle": {
+        "開局": "先以 1 技安全摸到敵人取得回復，再補隊友；不要為了補一個走太前的人把自己送進控制範圍。",
+        "中期": "和諧回音成形後團隊續航大幅提升。3 技應優先丟在敵方突進落點、鉤中目標周圍或己方後排腳下做反開。",
+        "後期": "後期你通常是敵方第一優先目標。保持最大安全距離，先活著再補人；大絕不要等全隊都殘血，能阻止第一個隊友被處決就很有價值。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-05",
+          "name": "女妖面紗",
+          "icon": "assets/images/items/high/magic-banshees-veil.png",
+          "when": "敵方遠程先手控制很多",
+          "reason": "可替換蘇瑞亞，讓自己更難被第一個技能抓死。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "when": "隊伍需要更高治療量且自身很安全",
+          "reason": "後期以高 AP 放大治療與 1 技回復。"
+        },
+        {
+          "id": "magic-high-03",
+          "name": "贖罪神石",
+          "icon": "assets/images/items/high/magic-redemption.png",
+          "when": "需要額外範圍救援",
+          "reason": "可作替代，但 Howling Abyss 對同一目標後續贖罪治療有 60% 衰減，因此不列固定核心。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 6.0b",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-6-0b/"
+        },
+        {
+          "label": "WildRiftFire｜Soraka Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/soraka"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第六批：索拉卡以高頻治療與沉默反開為核心，並避開 Howling Abyss 重複贖罪治療衰減造成的低效率。"
     },
     {
       "id": "dr-mundo",
@@ -10922,17 +11237,172 @@
       "enName": "Dr. Mundo",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "ARAM 的正面拉扯讓蒙多能持續用 1 技消耗與減速，生命裝成形後很難被快速處理；被動還能抵銷第一個硬控。但他缺乏真正的硬控與瞬間開戰能力，且重創會明顯限制大絕，因此維持 S。",
+      "position": "高生命前排／持續追擊型坦克",
       "tags": [
-        "ARAM Tier 初評"
+        "高生命坦克",
+        "自我回復",
+        "抗第一硬控"
       ],
       "avatar": "assets/images/heroes/portraits/dr-mundo.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "前期用 1 技消耗與補刀，不要沒裝備就直走五人。中後期開 2 技後再進場吃傷害，大絕通常在血量掉到約一半前後就應開，不要等到快死才按；被動藥劑能安全撿才撿。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch6-v80.8.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "7.2a 的 Dr. Mundo「承傷 100%→110%」列在 AAA ARAM Champion Adjustments，且沒有像塔莉雅／史加納一樣標註同步標準 ARAM，因此本站不把該數值誤套到一般 ARAM。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
+          "reason": "直接提高最大生命與第一輪承傷，後續可順接坦克核心。"
+        }
+      ],
+      "items": [
+        {
+          "id": "defense-high-19",
+          "name": "雄心之鋼",
+          "icon": "assets/images/items/high/defense-heartsteel.png",
+          "reason": "五人單線很容易反覆接近敵方英雄疊最大生命，與蒙多所有生命比例收益高度契合。"
+        },
+        {
+          "id": "defense-high-09",
+          "name": "好戰者鎧甲",
+          "icon": "assets/images/items/high/defense-warmogs-armor.png",
+          "reason": "高生命成形後可在團戰間快速回滿，讓蒙多反覆重新站到前排。"
+        },
+        {
+          "id": "defense-high-08",
+          "name": "荊棘之甲",
+          "icon": "assets/images/items/high/defense-thornmail.png",
+          "reason": "物理普攻與吸血陣容常見，護甲與重創能同時壓低對方續航。"
+        },
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "reason": "面對多法傷時提供高魔抗與移速，讓追擊更穩。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "後期長團戰快速疊滿雙抗，把高生命轉成真正難以擊殺的前排。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "敵方物理與普攻多時最穩；法傷控制多則改水星之靴。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後進一步提高物理承傷與生存。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "grasp",
+          "name": "不死之握",
+          "icon": "assets/images/runes/keystone/grasp.webp",
+          "reason": "長時間貼前排時可反覆觸發，增加生命、治療與傷害。"
+        },
+        {
+          "id": "second-wind",
+          "name": "回春",
+          "icon": "assets/images/runes/resolve/second-wind.webp",
+          "reason": "被遠程消耗時持續恢復，讓進場前保有更高血線。"
+        },
+        {
+          "id": "overgrowth",
+          "name": "過度生長",
+          "icon": "assets/images/runes/resolve/overgrowth.webp",
+          "reason": "ARAM 小兵死亡密集，能穩定堆高最大生命。"
+        },
+        {
+          "id": "perseverance",
+          "name": "堅毅",
+          "icon": "assets/images/runes/resolve/perseverance.webp",
+          "reason": "被控制時提高容錯，搭配被動更難被連控帶走。"
+        },
+        {
+          "id": "last-stand",
+          "name": "背水一戰",
+          "icon": "assets/images/runes/precision/last-stand.webp",
+          "reason": "蒙多常在低血時開大反打，能放大殘血階段的威脅。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補追擊距離、跨越控制區或在大絕結束前撤回。"
+        },
+        {
+          "id": "ghost",
+          "name": "鬼步",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "提高長時間追人與黏住後排的能力，特別符合蒙多缺硬位移的弱點。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/dr-mundo_02.webp",
+        "assets/images/heroes/skills/dr-mundo_04.webp",
+        "assets/images/heroes/skills/dr-mundo_03.webp"
+      ],
+      "playstyle": {
+        "開局": "沒有核心生命裝前先靠 1 技遠距消耗，別為了撿被動藥劑走進五人火力。",
+        "中期": "雄心之鋼與好戰者成形後可以主動站前。進場前先確認敵方重創與高爆發技能，2 技開著吃第一輪後再決定是否繼續追。",
+        "後期": "大絕要提早開，讓治療完整跑完。你的工作是逼後排後撤、吸收技能並拖時間，不需要硬追到敵方塔下才算成功。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-03",
+          "name": "無盡絕望",
+          "icon": "assets/images/items/high/defense-unending-despair.png",
+          "when": "敵方近戰很多、團戰會黏很久",
+          "reason": "可替換好戰者或一件抗性裝，增加貼身續戰。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很肥",
+          "reason": "替換自然之力或一件功能裝以降低暴擊威脅。"
+        },
+        {
+          "id": "defense-high-21",
+          "name": "凱尼克欺瞞者",
+          "icon": "assets/images/items/high/defense-kaenic-rookern.png",
+          "when": "敵方爆發法傷非常高",
+          "reason": "需要更專注抗魔時可替換荊棘之甲。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+        },
+        {
+          "label": "WildRiftFire｜Dr. Mundo Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/dr-mundo"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第六批：蒙多採標準 ARAM 100% 基準；7.2a 的 110% 承傷沒有「同步 ARAM」註記，因此不混入 AAA ARAM 專屬調整。"
     },
     {
       "id": "yuumi",
@@ -10940,17 +11410,172 @@
       "enName": "Yuumi",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "悠咪在 ARAM 可以長時間附著於最適合的前排或輸出位，幾乎不必承受一般輔助的走位風險；7.2a 又降低 3 技魔力消耗並提高大絕後段治療。限制在於宿主倒下時自己極脆，而且非常依賴隊伍是否有值得附著的核心。",
+      "position": "附著增益／護盾續航型輔助",
       "tags": [
-        "ARAM Tier 初評"
+        "附著保排",
+        "護盾攻速",
+        "範圍治療"
       ],
       "avatar": "assets/images/heroes/portraits/yuumi.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "先確認最可靠的摯友與第二宿主，不要整場固定黏同一個會送進五人的隊友。3 技優先保宿主輸出節奏，1 技用來遠距消耗與緩速；大絕可邊附著邊調整角度，同時兼顧敵方緩速與友軍治療。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch6-v80.8.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "7.2a 降低 3 技魔力消耗 80/90/100/110→65/75/85/95，並提高大絕治療 20/30/40→20/35/50；近期官方未列標準 ARAM 專屬百分比修正。"
+      },
+      "starterItems": [
+        {
+          "id": "intermediate-32",
+          "name": "禁忌之像",
+          "icon": "assets/images/aram/items/intermediate-32.webp",
+          "reason": "開局直接提高護盾與治療效率，附著後立刻能放大宿主容錯。"
+        }
+      ],
+      "items": [
+        {
+          "id": "support-high-04",
+          "name": "熾灼魔器",
+          "icon": "assets/images/items/high/support-ardent-censer.png",
+          "reason": "3 技提供護盾與攻速，能讓普攻型宿主把增益吃滿。"
+        },
+        {
+          "id": "support-high-05",
+          "name": "和諧回音",
+          "icon": "assets/images/items/high/support-harmonic-echo.png",
+          "reason": "高頻技能在五人單線容易快速充能，替宿主與附近隊友補額外續航。"
+        },
+        {
+          "id": "support-high-06",
+          "name": "流水之杖",
+          "icon": "assets/images/items/high/support-staff-of-flowing-water.png",
+          "reason": "若宿主或隊伍偏技能型／法系，護盾後的增益價值很高。"
+        },
+        {
+          "id": "support-high-01",
+          "name": "米凱的祝福",
+          "icon": "assets/images/items/high/support-mikaels-blessing.png",
+          "reason": "宿主被關鍵控制抓住時可直接解控，避免悠咪和宿主一起被處理。"
+        },
+        {
+          "id": "support-high-03",
+          "name": "蘇瑞亞的戰歌",
+          "icon": "assets/images/items/high/support-shurelyas-battlesong.png",
+          "reason": "整隊追擊或撤退時補主動加速，特別適合附著在戰士身上帶節奏。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "ionian-boots",
+          "name": "愛歐尼亞之靴",
+          "icon": "assets/images/items/shoes/ionian-boots.png",
+          "reason": "雖然悠咪常附著，但技能加速仍能直接提高支援頻率。"
+        },
+        {
+          "id": "blood-mage-boots",
+          "name": "血色法靴",
+          "icon": "assets/images/items/shoes/blood-mage-boots.png",
+          "reason": "三級鞋進一步加快技能與召喚師技能循環。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "aery",
+          "name": "艾莉",
+          "icon": "assets/images/runes/keystone/aery.webp",
+          "reason": "1 技消耗、3 技護盾與附著支援都能穩定觸發。"
+        },
+        {
+          "id": "font-of-life",
+          "name": "生命之泉",
+          "icon": "assets/images/runes/resolve/font-of-life.webp",
+          "reason": "1 技緩速與大絕限制目標後，讓隊友補額外續航。"
+        },
+        {
+          "id": "revitalize",
+          "name": "甦醒",
+          "icon": "assets/images/runes/resolve/revitalize.webp",
+          "reason": "直接放大護盾與大絕治療。"
+        },
+        {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "即使 7.2a 降低 3 技魔耗，長時間團戰仍很吃魔力。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "縮短 1、3 技與大絕循環，讓附著增益更密集。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "heal",
+          "name": "治癒",
+          "icon": "assets/images/spells/heal.webp",
+          "reason": "悠咪附著時不需要依賴閃現，治癒能直接強化宿主與自身的團戰容錯。"
+        },
+        {
+          "id": "exhaust",
+          "name": "虛弱",
+          "icon": "assets/images/spells/exhaust.webp",
+          "reason": "宿主被刺客或戰士貼上時直接壓低敵方爆發。"
+        }
+      ],
+      "skillOrder": "3 技 > 1 技 > 2 技",
+      "skillNote": "ARAM 以保宿主為優先：開局三個基礎技能各點 1 級，之後主升 3 技、次升 1 技；大絕能點就點。若隊伍非常缺遠程消耗，也可先主 1 技。",
+      "skillIcons": [
+        "assets/images/heroes/skills/yuumi_04.png",
+        "assets/images/heroes/skills/yuumi_02.png",
+        "assets/images/heroes/skills/yuumi_03.png"
+      ],
+      "playstyle": {
+        "開局": "先用 1 技消耗並觀察誰最適合當宿主，不要為了普攻被動在敵方硬控還沒交時隨便下車。",
+        "中期": "熾灼魔器與和諧回音成形後，3 技的團隊價值很高。宿主準備進場前先保留護盾，必要時在兩名隊友間切換來調整大絕角度。",
+        "後期": "先預判宿主會不會被秒。若第一宿主血線與位置失控，提早切到第二宿主，不要等人死才下車；大絕同時能治療隊友，團戰中心線通常比純追後排更有價值。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-19",
+          "name": "大天使之杖",
+          "icon": "assets/images/items/high/magic-archangels-staff.png",
+          "when": "長團戰頻繁缺魔",
+          "reason": "可替換蘇瑞亞，提高魔力上限與自保護盾。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "when": "隊伍已很安全且想提高護盾／治療",
+          "reason": "後期可用 AP 放大所有增益。"
+        },
+        {
+          "id": "magic-high-03",
+          "name": "贖罪神石",
+          "icon": "assets/images/items/high/magic-redemption.png",
+          "when": "需要額外範圍救援",
+          "reason": "可作替代，但 Howling Abyss 對同一目標後續贖罪治療有 60% 衰減。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+        },
+        {
+          "label": "WildRiftFire｜Yuumi Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/yuumi"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第六批：悠咪同步 7.2a 3 技魔耗降低與大絕治療強化，ARAM 以附著保排與團隊增益優先。"
     },
     {
       "id": "syndra",
@@ -10958,17 +11583,176 @@
       "enName": "Syndra",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "星朵拉在狹窄單線能持續用 1 技累積碎片與佈球，1+3 技的遠距暈眩對五人站位威脅很大；7.2 還把 3 技推動黑暗星體的距離由 7.2 提高到 7.5，讓開戰與反開更穩。",
+      "position": "長距控場／單點爆發型法師",
       "tags": [
-        "ARAM Tier 初評"
+        "遠距暈眩",
+        "高爆發",
+        "區域控場"
       ],
       "avatar": "assets/images/heroes/portraits/syndra.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "先用 1 技安全疊碎片與留球，不要每顆球都立刻用掉。3 技是核心保命與開戰技能，沒把握時寧可留著反突進；大絕前盡量讓地面有更多黑暗星體，才能把單點爆發拉滿。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch6-v80.8.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "近期官方未列星朵拉標準 ARAM 專屬百分比修正；7.2 將 3 技推動黑暗星體的最大距離 7.2→7.5。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-amp-tome",
+          "name": "增幅典籍",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
+          "reason": "直接提高前期 1 技消耗與碎片累積效率。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-10",
+          "name": "黑焰火炬",
+          "icon": "assets/images/items/high/magic-blackfire-torch.png",
+          "reason": "ARAM 容易持續命中多人，燃燒與技能加速讓長時間消耗更穩。"
+        },
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "reason": "提高低血斬殺能力，配合大絕的單點爆發非常契合。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "reason": "中後期直接放大所有技能傷害與處決壓力。"
+        },
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "reason": "敵方開始堆魔抗後仍能維持對前排與後排的威脅。"
+        },
+        {
+          "id": "magic-high-02",
+          "name": "中婭沙漏",
+          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
+          "reason": "被刺客貼臉或交完大絕後可用金身拖到第二輪技能。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "mana-boots",
+          "name": "魔力之靴",
+          "icon": "assets/images/items/shoes/mana-boots.png",
+          "reason": "補魔力與法術輸出，讓前中期可以更放心用技能疊碎片。"
+        },
+        {
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級後提高法穿，放大中後期爆發。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "dark-harvest",
+          "name": "靈魂收割",
+          "icon": "assets/images/runes/keystone/dark-harvest.webp",
+          "reason": "五人單線很容易反覆碰到低血目標，長局能持續堆高收割傷害。"
+        },
+        {
+          "id": "cheap-shot",
+          "name": "弱者印記",
+          "icon": "assets/images/runes/conquest/cheap-shot.webp",
+          "reason": "暈眩或緩速後補額外真實傷害，與 1+3 控制連段契合。"
+        },
+        {
+          "id": "eyeball-collector",
+          "name": "眼球收集器",
+          "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+          "reason": "ARAM 擊殺助攻密集，能穩定累積法強。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速提高佈球、暈眩與大絕前的循環。"
+        },
+        {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "增加長時間不回城時的魔力容錯。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "沒有位移，閃現是最重要的保命與調整 3 技角度工具。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "被突進切到時多一層容錯，爭取推開目標或等中婭。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/syndra_02.webp",
+        "assets/images/heroes/skills/syndra_04.png",
+        "assets/images/heroes/skills/syndra_03.png"
+      ],
+      "playstyle": {
+        "開局": "1 技以安全命中英雄為主，既能消耗又能加快碎片成長。3 技冷卻長，不要只為了打一點傷害就空交。",
+        "中期": "核心裝成形後，利用地上的球找 1+3 遠距暈眩。抓到一名脆皮就能快速轉成 5 打 4，但沒視野時要保留 3 技防突進。",
+        "後期": "大絕前先確認場上球數與敵方保命技能。能直接秒主力就果斷交，否則用 1+3 控多人通常比硬丟大絕打前排更有價值。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-12",
+          "name": "盧登回音",
+          "icon": "assets/images/items/high/magic-ludens-echo.png",
+          "when": "敵方偏脆、需要更強第一輪爆發",
+          "reason": "7.2b 提高 Echo 傷害並降冷卻，可替換黑焰火炬走更純爆發。"
+        },
+        {
+          "id": "magic-high-05",
+          "name": "女妖面紗",
+          "icon": "assets/images/items/high/magic-banshees-veil.png",
+          "when": "敵方遠程先手控制很強",
+          "reason": "可替換中婭或一件輸出裝，提高站位安全。"
+        },
+        {
+          "id": "magic-high-24",
+          "name": "水仙三叉戟",
+          "icon": "assets/images/items/high/magic-oceanids-trident.png",
+          "when": "敵方護盾很多",
+          "reason": "可替換一件傷害裝處理大量護盾。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-2/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Syndra Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/syndra"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第六批：星朵拉同步 7.2 三技球體推進距離強化，並把 7.2b 盧登強化列為脆皮陣容替代方案。"
     },
     {
       "id": "taliyah",
@@ -10976,17 +11760,180 @@
       "enName": "Taliyah",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "塔莉雅的 2+3 技在狹窄單線非常容易懲罰位移與走位失誤，1 技也能持續遠程消耗。7.2a 已把她的標準 ARAM 傷害從 90% 回調到 100%，重新拿回完整輸出；限制則是大絕在單線地圖的價值較召喚峽谷低。",
+      "position": "區域封鎖／位移懲罰型法師",
       "tags": [
-        "ARAM Tier 初評"
+        "區域控場",
+        "位移懲罰",
+        "遠距消耗"
       ],
       "avatar": "assets/images/heroes/portraits/taliyah.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "先用 1 技消耗並管理採石場，真正的團戰威脅是 3 技鋪地後用 2 技把敵人推進碎石區。大絕不要只當趕路技能，ARAM 更適合拿來切斷退路、隔開前後排或封住塔前通道。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch6-v80.8.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 7.2a：Taliyah 傷害輸出 90%→100%，官方明確註記「This change also applies to ARAM」。7.1h 另降低基礎移速、被動移速與採石場 1 技冷卻減免。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-amp-tome",
+          "name": "增幅典籍",
+          "icon": "assets/images/aram/items/basic-amp-tome.webp",
+          "reason": "直接提高 1 技消耗與 2+3 連段傷害。"
+        }
+      ],
+      "items": [
+        {
+          "id": "magic-high-12",
+          "name": "盧登回音",
+          "icon": "assets/images/items/high/magic-ludens-echo.png",
+          "reason": "7.2b 將 Echo 傷害 110+10%AP 提高到 140+15%AP，冷卻 10→9 秒，特別適合高頻遠距消耗。"
+        },
+        {
+          "id": "magic-high-21",
+          "name": "無限寶珠",
+          "icon": "assets/images/items/high/magic-infinity-orb.png",
+          "reason": "放大低血目標的斬殺壓力，讓 2+3 連段更容易直接帶走脆皮。"
+        },
+        {
+          "id": "magic-high-14",
+          "name": "死亡之帽",
+          "icon": "assets/images/items/high/magic-rabadons-deathcap.png",
+          "reason": "中後期大幅提高所有技能的傷害上限。"
+        },
+        {
+          "id": "magic-high-08",
+          "name": "虛空之杖",
+          "icon": "assets/images/items/high/magic-void-staff.png",
+          "reason": "處理開始堆魔抗的前排，維持團戰輸出。"
+        },
+        {
+          "id": "magic-high-02",
+          "name": "中婭沙漏",
+          "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
+          "reason": "被刺客貼身或大絕進場失誤時提供關鍵自保。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "mana-boots",
+          "name": "魔力之靴",
+          "icon": "assets/images/items/shoes/mana-boots.png",
+          "reason": "長時間用 1 技消耗需要穩定魔力，前期最泛用。"
+        },
+        {
+          "id": "sorcerers-shoes",
+          "name": "魔法使之鞋",
+          "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+          "reason": "升級後補法穿，讓 100% 傷害修正的完整輸出更有威脅。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "arcane-comet",
+          "name": "奧術彗星",
+          "icon": "assets/images/runes/keystone/arcane-comet.webp",
+          "reason": "1 技與 3 技遠距消耗能反覆觸發，單線命中率很高。"
+        },
+        {
+          "id": "scorch",
+          "name": "燒灼",
+          "icon": "assets/images/runes/sorcery/scorch.webp",
+          "reason": "前中期每輪技能命中多一段傷害。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "更多技能加速讓 1 技與控制連段輪轉更快。"
+        },
+        {
+          "id": "manaflow-band",
+          "name": "附魔之帶",
+          "icon": "assets/images/runes/sorcery/manaflow-band.webp",
+          "reason": "提高長時間消耗的魔力上限。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被刺客或強開貼身時降低第一輪爆發。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補位移、調整 2 技角度或在被強開時拉開。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "塔莉雅被貼身時很脆，光盾能爭取時間鋪 3 技反打。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/taliyah_02.png",
+        "assets/images/heroes/skills/taliyah_04.png",
+        "assets/images/heroes/skills/taliyah_03.png"
+      ],
+      "playstyle": {
+        "開局": "用 1 技持續摸血，但要留意採石場位置；2 技命中率不高時不要單獨亂丟，等 3 技鋪地或隊友先控再接。",
+        "中期": "盧登與無限寶珠後爆發明顯提升。敵方有位移英雄時，3 技可以先鋪在他們必經路線，逼他們不敢直接進場。",
+        "後期": "大絕在 ARAM 最有價值的用法是切割陣型與封路。不要為了騎牆衝進五人；只要把敵方前排與後排隔開，隊友就能先處理孤立目標。"
+      },
+      "situationalItems": [
+        {
+          "id": "magic-high-10",
+          "name": "黑焰火炬",
+          "icon": "assets/images/items/high/magic-blackfire-torch.png",
+          "when": "敵方前排很多、團戰時間長",
+          "reason": "可替換盧登，改走持續灼燒。"
+        },
+        {
+          "id": "magic-high-05",
+          "name": "女妖面紗",
+          "icon": "assets/images/items/high/magic-banshees-veil.png",
+          "when": "敵方遠程先手控制很多",
+          "reason": "可替換中婭或一件輸出裝。"
+        },
+        {
+          "id": "magic-high-24",
+          "name": "水仙三叉戟",
+          "icon": "assets/images/items/high/magic-oceanids-trident.png",
+          "when": "敵方護盾很多",
+          "reason": "需要破盾時可補。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.1h",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-1h/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Taliyah Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/taliyah"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第六批：塔莉雅正式套用 7.2a 標準 ARAM 90%→100% 傷害回調，並同步 7.2b 盧登回音強化。"
     },
     {
       "id": "thresh",
@@ -10994,17 +11941,176 @@
       "enName": "Thresh",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "瑟雷西在 ARAM 能從密集兵線與擊殺中快速收集靈魂，鉤子、燈籠、掃蕩與大絕幾乎涵蓋開戰、救援、反開與區域限制。7.1h 還提高鉤子傷害與低等級冷卻表現，使單線抓人更有威脅。",
+      "position": "抓人開戰／燈籠救援型坦克輔助",
       "tags": [
-        "ARAM Tier 初評"
+        "遠距抓人",
+        "燈籠救援",
+        "多段控場"
       ],
       "avatar": "assets/images/heroes/portraits/thresh.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "鉤中不代表一定要二段飛進去。先看隊友距離與敵方技能，再決定是否跟進；燈籠應留給真正需要救援的隊友。3 技既能把人拉回來，也能推開突進者，後者在 ARAM 往往比主動衝進去更重要。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch6-v80.8.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "近期官方未列瑟雷西標準 ARAM 專屬百分比修正；7.1h 擴大靈魂生成距離、提高 1 技傷害並調整冷卻，也強化 3 技傷害。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
+          "reason": "先補生命提高站前壓力與第一輪進場容錯，不使用召喚峽谷輔助任務裝。"
+        }
+      ],
+      "items": [
+        {
+          "id": "defense-high-09",
+          "name": "好戰者鎧甲",
+          "icon": "assets/images/items/high/defense-warmogs-armor.png",
+          "reason": "ARAM 消耗非常密集，脫戰回滿後能重新站前找鉤子，不必一直殘血縮在後排。"
+        },
+        {
+          "id": "defense-high-05",
+          "name": "騎士誓願",
+          "icon": "assets/images/items/high/defense-knights-vow.png",
+          "reason": "綁定己方主力輸出，提高保排與自己站前承傷的價值。"
+        },
+        {
+          "id": "defense-high-15",
+          "name": "黎明法衣",
+          "icon": "assets/images/items/high/defense-dawnshroud.png",
+          "reason": "鉤子、掃蕩與大絕控制後讓目標更容易被隊友集火。"
+        },
+        {
+          "id": "defense-high-13",
+          "name": "冰霜之心",
+          "icon": "assets/images/items/high/defense-frozen-heart.png",
+          "reason": "對射手與攻速核心提供高護甲、魔力與降攻速，長團戰非常實用。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "後期進入團戰後快速疊雙抗，補足瑟雷西靈魂主要只提供護甲的抗性缺口。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "物理普攻多時最穩；敵方法傷／控制多可改水星之靴。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後提高物理承傷與護盾，適合正面前排。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "glacial-augment",
+          "name": "冰霜霸主",
+          "icon": "assets/images/runes/keystone/glacial-augment.webp",
+          "reason": "鉤子或 3 技控制命中後產生額外限制區，讓敵人更難走掉。"
+        },
+        {
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "硬控命中後獲得護盾，提高二段進場與反開容錯。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "減少進場第一輪被集火的爆發。"
+        },
+        {
+          "id": "perseverance",
+          "name": "堅毅",
+          "icon": "assets/images/runes/resolve/perseverance.webp",
+          "reason": "提高被連續控制時的生存與脫身能力。"
+        },
+        {
+          "id": "hextech-flashtraption",
+          "name": "海克斯閃現",
+          "icon": "assets/images/runes/sorcery/hextech-flashtraption.webp",
+          "reason": "草叢與視野死角能用額外位移創造更難預測的鉤子角度。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "閃現 3 技、突然換角度出鉤或退場都非常關鍵。"
+        },
+        {
+          "id": "exhaust",
+          "name": "虛弱",
+          "icon": "assets/images/spells/exhaust.webp",
+          "reason": "反開刺客或戰士時直接壓低爆發，保住後排。"
+        }
+      ],
+      "skillOrder": "3 技 > 1 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 3 技、次升 1 技；大絕能點就點。若隊伍非常依賴抓人，也可優先主 1 技。",
+      "skillIcons": [
+        "assets/images/heroes/skills/thresh_04.webp",
+        "assets/images/heroes/skills/thresh_02.webp",
+        "assets/images/heroes/skills/thresh_03.png"
+      ],
+      "playstyle": {
+        "開局": "利用草叢與兵線壓力出鉤，但鉤中前排不一定要飛。安全靈魂能收就收，危險位置的魂不要用生命硬換。",
+        "中期": "好戰者成形後可反覆承受消耗再回滿。燈籠預留給被抓的主力或想跟進的隊友，不要只是為了護盾隨便丟掉。",
+        "後期": "後期重點是控制敵方第一個進場者與保護己方主力。只要 3 技把刺客推開、燈籠救出隊友，即使沒有主動鉤到後排也已經贏下關鍵交換。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "when": "敵方法傷很多",
+          "reason": "可替換冰霜之心或黎明法衣。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很肥",
+          "reason": "可替換黎明法衣，降低暴擊威脅。"
+        },
+        {
+          "id": "support-high-01",
+          "name": "米凱的祝福",
+          "icon": "assets/images/items/high/support-mikaels-blessing.png",
+          "when": "己方唯一主力常被控制",
+          "reason": "需要額外解控時可犧牲一件坦裝。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.1h",
+          "url": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-1h/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Thresh Patch 7.2a",
+          "url": "https://www.wildriftfire.com/guide/thresh"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第六批：瑟雷西同步 7.1h 靈魂、鉤子與掃蕩強化，ARAM 以抓人、反開與燈籠救援為核心。"
     },
     {
       "id": "varus",
