@@ -16,7 +16,7 @@
     "A": 55,
     "B": 9
   },
-  "detailGuideCount": 55,
+  "detailGuideCount": 62,
   "tierMethodology": {
     "type": "本站 ARAM 綜合評級（非單一勝率排名）",
     "factors": [
@@ -40,7 +40,8 @@
     "7.2b ARAM 凱能承傷 85% 與 7.2a 梅爾 100%/100% 模式修正已納入；7.2b 杰西物防、盧登回音與寒冰霸拳改動同步反映。",
     "v80.0.1 修正 S+ 第一、二批共 14 位英雄鞋子：全部改為 7.2 正確的二級鞋 → 三級鞋路線，移除舊版鞋子附魔／主動附魔內容；吉茵珂絲原有三級鞋路線維持不變。",
     "v80.6.0 完成 ARAM S 第四批 7 位完整攻略：米里歐、納瑟斯、夜曲、波比、派克、銳空、藍寶。",
-    "v80.6.1 校正 ARAM 物理裝備圖示錯位，並統一少數物理裝備 ID／台灣名稱；未變更英雄出裝方向與版面。"
+    "v80.6.1 校正 ARAM 物理裝備圖示錯位，並統一少數物理裝備 ID／台灣名稱；未變更英雄出裝方向與版面。",
+    "v80.7.0 完成 ARAM S 第五批 7 位完整攻略：煞蜜拉、姍娜、賽特、賽恩、希維爾、史加納、史矛德。"
   ],
   "sources": [
     {
@@ -9646,17 +9647,172 @@
       "enName": "Samira",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "狹窄單線讓煞蜜拉更容易在隊友控制後快速疊滿評級，大絕可直接覆蓋多人並連續收割；但射程短、進場高度怕硬控，所以維持 S 而非 S+。",
+      "position": "近戰射手／連環收割型輸出",
       "tags": [
-        "ARAM Tier 初評"
+        "爆發收割",
+        "範圍大絕",
+        "投射物格擋"
       ],
       "avatar": "assets/images/heroes/portraits/samira.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "前排尚未開戰時先用普攻與 1 技安全疊評級，不要第一時間 3 技衝進五人。等關鍵控制交掉或隊友先控住目標，再利用 3 技切入、2 技擋飛行技能，評級滿後開大收割。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch5-v80.7.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前可驗證的近期官方 ARAM 更新未列出煞蜜拉專屬百分比修正，本版以標準 100% 基準呈現。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "開局直接提高普攻與技能傷害，最適合煞蜜拉第一輪短兵交火。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-32",
+          "name": "蒐集者",
+          "icon": "assets/images/aram/items/physical-high-32.webp",
+          "reason": "穿甲、暴擊與低血處決能加速第一個擊殺，最容易帶動煞蜜拉的連續收割。"
+        },
+        {
+          "id": "physical-high-17",
+          "name": "無盡之刃",
+          "icon": "assets/images/aram/items/infinity-edge.webp",
+          "reason": "放大暴擊與大絕的爆發上限，是第二波成形的重要傷害核心。"
+        },
+        {
+          "id": "physical-high-05",
+          "name": "多明尼克的問候",
+          "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+          "reason": "7.2b 提高物攻後更有效率，面對前排也能維持輸出。"
+        },
+        {
+          "id": "physical-high-11",
+          "name": "嗜血者",
+          "icon": "assets/images/aram/items/bloodthirster.webp",
+          "reason": "高吸血讓煞蜜拉在無法回城的 ARAM 更容易把血線拉回來並準備下一波進場。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "reason": "後期切入風險很高，復活能保留一次關鍵團戰容錯。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "gluttonous-greaves",
+          "name": "貪婪護脛",
+          "icon": "assets/images/items/shoes/gluttonous-greaves.png",
+          "reason": "物攻與吸血能強化前中期續航，符合煞蜜拉貼身輸出的需求。"
+        },
+        {
+          "id": "immortal-boots",
+          "name": "不朽護脛",
+          "icon": "assets/images/items/shoes/immortal-boots.png",
+          "reason": "升級三級鞋後補更多生存與續航，提高切入後開大的容錯。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "conqueror",
+          "name": "征服者",
+          "icon": "assets/images/runes/keystone/conqueror.webp",
+          "reason": "技能與普攻交錯很快就能疊高層數，長團戰傷害最穩。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "直接補前期物攻與穿透，讓第一輪交換更有壓力。"
+        },
+        {
+          "id": "cut-down",
+          "name": "斷切",
+          "icon": "assets/images/runes/precision/cut-down.webp",
+          "reason": "ARAM 常先碰到前排，能提高對高生命目標的效率。"
+        },
+        {
+          "id": "legend-bloodline",
+          "name": "傳奇：血脈",
+          "icon": "assets/images/runes/precision/legend-bloodline.webp",
+          "reason": "額外吸血能強化無法回城環境下的持續作戰。"
+        },
+        {
+          "id": "sudden-impact",
+          "name": "即刻衝擊",
+          "icon": "assets/images/runes/conquest/sudden-impact.webp",
+          "reason": "3 技位移進場後能取得穿透，與爆發收割節奏高度契合。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補進場角度、追擊或躲關鍵控制，是最穩定的保命手段。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "貼身開大時可多撐一段集火時間，避免評級滿了卻直接被秒。"
+        }
+      ],
+      "skillOrder": "1 技 > 3 技 > 2 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/samira_02.png",
+        "assets/images/heroes/skills/samira_04.png",
+        "assets/images/heroes/skills/samira_03.png"
+      ],
+      "playstyle": {
+        "開局": "先用普攻與 1 技在安全距離消耗並疊評級。2 技不要拿來隨便清兵，應保留給關鍵飛行控制或爆發。",
+        "中期": "蒐集者與無盡成形後，等隊友先控住或逼出控制，再用 3 技切入。評級未滿前不要為了硬開大站在敵方五人中央。",
+        "後期": "後期每次進場都可能決定勝負。先辨認敵方能打斷大絕的技能，等它們交掉後再進場；守護天使在手時可以更積極抓殘血連殺。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "when": "敵方治療／吸血很多",
+          "reason": "需要重創時替換多明尼克的問候。"
+        },
+        {
+          "id": "physical-high-31",
+          "name": "巨蛇鋒牙",
+          "icon": "assets/images/items/high/serpents-fang-fixed.webp",
+          "when": "敵方護盾很多",
+          "reason": "護盾陣容明顯時可替換一件後期傷害裝。"
+        },
+        {
+          "id": "physical-high-42",
+          "name": "死亡之舞",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
+          "when": "敵方物理爆發很多",
+          "reason": "需要延後爆發傷害、提高進場存活時替換嗜血者或最後一件。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Samira Patch 7.2b",
+          "url": "https://www.wildriftfire.com/guide/samira"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第五批：煞蜜拉依暴擊核心、7.2b 多明尼克強化與 ARAM 團戰收割需求整理。"
     },
     {
       "id": "senna",
@@ -9664,17 +9820,176 @@
       "enName": "Senna",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "單線能持續疊黑霧、1 技同時消耗與治療，2 技在密集站位也很容易擴散控制；7.2a 雖削弱被動當前生命傷害與大絕每層黑霧護盾，但她仍兼具超遠射程、續航與團隊功能。",
+      "position": "長射程成長／治療控制型射手",
       "tags": [
-        "ARAM Tier 初評"
+        "無限成長",
+        "遠距消耗",
+        "治療控制"
       ],
       "avatar": "assets/images/heroes/portraits/senna.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "以安全收黑霧與 1 技穿過隊友／敵人為主，不要為撿魂走進敵方控制範圍。2 技優先丟在靠近隊友或兵線的目標上製造範圍禁錮，大絕則用來跨整條線補盾與收殘血。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch5-v80.7.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "7.2a 調整的是英雄技能本身而非標準 ARAM 百分比；目前以 100% 基準呈現。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "先補物攻強化 1 技、普攻與前期黑霧消耗，不使用召喚峽谷輔助起手裝。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-23",
+          "name": "磁性雷射槍",
+          "icon": "assets/images/aram/items/magnetic-blaster.webp",
+          "reason": "7.2b 物攻提高到 30，充能攻擊也能讓姍娜用更安全的距離摸血。"
+        },
+        {
+          "id": "physical-high-38",
+          "name": "黑色切割者",
+          "icon": "assets/images/aram/items/black-cleaver.webp",
+          "reason": "生命、技能加速與疊甲削都適合長時間團戰，也能幫物理隊友一起打前排。"
+        },
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "reason": "ARAM 治療與吸血常見，百分比穿甲加重創泛用性很高。"
+        },
+        {
+          "id": "physical-high-31",
+          "name": "巨蛇鋒牙",
+          "icon": "assets/images/items/high/serpents-fang-fixed.webp",
+          "reason": "密集團戰常遇到大量護盾，穿甲與破盾讓姍娜能保持功能性。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "reason": "後期被突進抓到通常很難脫身，復活能保住一次關鍵團戰。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "burst-boots",
+          "name": "爆發之靴",
+          "icon": "assets/images/items/shoes/burst-boots.png",
+          "reason": "補物攻與穿透，提高前中期消耗與遠距普攻壓力。"
+        },
+        {
+          "id": "armorbreaker-boots",
+          "name": "破甲戰靴",
+          "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+          "reason": "升級三級鞋後增加物攻與物穿，繼續放大遠距離輸出。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "fleet-footwork",
+          "name": "迅疾步法",
+          "icon": "assets/images/runes/keystone/fleet-footwork.webp",
+          "reason": "遠程反覆普攻可穩定觸發治療與移速，無法回城時特別有價值。"
+        },
+        {
+          "id": "empowered-attack",
+          "name": "強化普攻",
+          "icon": "assets/images/runes/conquest/empowered-attack.webp",
+          "reason": "配合黑霧後的長射程普攻，讓每輪點人更有壓力。"
+        },
+        {
+          "id": "chain-assault",
+          "name": "鎖鏈突擊",
+          "icon": "assets/images/runes/conquest/chain-assault.webp",
+          "reason": "單線容易連續命中同一目標，提高持續作戰收益。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被刺客或雪球式強開貼臉時多一層保命空間。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速能提高 1 技治療／消耗與 2 技控制頻率。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "姍娜本身位移有限，閃現主要用來避開硬開與調整長射程輸出位置。"
+        },
+        {
+          "id": "heal",
+          "name": "治癒",
+          "icon": "assets/images/spells/heal.webp",
+          "reason": "團戰中同時補自己與隊友血線，強化姍娜本身的團隊續航定位。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/senna_02.png",
+        "assets/images/heroes/skills/senna_03.png",
+        "assets/images/heroes/skills/senna_04.png"
+      ],
+      "playstyle": {
+        "開局": "以收黑霧、1 技穿線消耗和治療為主。魂掉在危險位置就放掉，不值得為一層黑霧送掉血線。",
+        "中期": "射程成長後更容易安全點前排。2 技可以先命中兵或前排，利用延遲禁錮逼散敵方站位；有隊友被開時大絕優先當全圖護盾使用。",
+        "後期": "後期射程是最大優勢，站位要比一般射手更保守。先打碰得到的目標，不要走進敵方控制範圍追後排；守護天使在手再考慮更積極前壓。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-05",
+          "name": "多明尼克的問候",
+          "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+          "when": "敵方高護甲前排很多",
+          "reason": "不需要重創時可替換致死宣告，7.2b 物攻提高後效率更好。"
+        },
+        {
+          "id": "physical-high-11",
+          "name": "嗜血者",
+          "icon": "assets/images/aram/items/bloodthirster.webp",
+          "when": "需要更高續航",
+          "reason": "敵方消耗很重時可換掉巨蛇鋒牙。"
+        },
+        {
+          "id": "physical-high-34",
+          "name": "精進之矛",
+          "icon": "assets/images/items/high/spear-of-shojin-fixed.webp",
+          "when": "需要更高技能循環",
+          "reason": "想提高 1、2 技頻率時可作為後期替代裝。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Senna Patch 7.2b",
+          "url": "https://www.wildriftfire.com/guide/senna"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第五批：姍娜納入 7.2a 被動／大絕調整與 7.2b 磁性雷射槍強化。"
     },
     {
       "id": "sett",
@@ -9682,17 +9997,176 @@
       "enName": "Sett",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "ARAM 正面碰撞讓賽特很容易累積豪意後用 2 技反打，3 技與大絕也能把前排丟回敵陣製造範圍控制；但官方 7.1d 已把所有咆哮深淵地圖的傷害修正降到 90%，限制了純輸出上限。",
+      "position": "前排開戰／反打真傷型鬥士",
       "tags": [
-        "ARAM Tier 初評"
+        "前排承傷",
+        "抱摔開團",
+        "蓄意轟拳"
       ],
       "avatar": "assets/images/heroes/portraits/sett.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "不要把自己當純刺客。先靠血量與前排位置吸收第一輪傷害累積豪意，3 技能夾到兩側目標最好；2 技中央真傷要等豪意高時再交。大絕優先抱高生命前排砸進敵方後排。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch5-v80.7.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "90%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 7.1d：Sett 在所有 Howling Abyss 地圖的傷害輸出由 100% 調整為 90%；後續至 7.2b 未見標準 ARAM 回調。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
+          "reason": "先補生命提高第一輪承傷與豪意反打容錯，後續再接鬥士核心。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-01",
+          "name": "步履破壞者",
+          "icon": "assets/images/aram/items/stridebreaker.webp",
+          "reason": "生命、物攻、攻速與短位移緩速都能幫賽特更容易貼到目標並把人留在 3 技／2 技範圍。"
+        },
+        {
+          "id": "physical-high-06",
+          "name": "狂霸血甲",
+          "icon": "assets/images/aram/items/overlords-bloodmail.webp",
+          "reason": "把大量額外生命轉成物攻，低血時再強化輸出，和豪意反打玩法高度契合。"
+        },
+        {
+          "id": "physical-high-38",
+          "name": "黑色切割者",
+          "icon": "assets/images/aram/items/black-cleaver.webp",
+          "reason": "生命、技能加速與削甲都適合連續正面團戰，還能幫隊友處理前排。"
+        },
+        {
+          "id": "physical-high-34",
+          "name": "精進之矛",
+          "icon": "assets/images/items/high/spear-of-shojin-fixed.webp",
+          "reason": "提高技能循環，讓 2 技與 3 技在長團戰更有機會打第二輪。"
+        },
+        {
+          "id": "physical-high-16",
+          "name": "史特拉克手套",
+          "icon": "assets/images/aram/items/steraks-gage.webp",
+          "reason": "被多人集火時提供關鍵護盾，讓賽特有時間把高豪意 2 技打出去。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "正面承受普攻與物理爆發時最穩定，提升第一輪進場耐久。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後進一步提高物理承傷能力；敵方法傷／控制極重時可改水星線。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "conqueror",
+          "name": "征服者",
+          "icon": "assets/images/runes/keystone/conqueror.webp",
+          "reason": "賽特在近身長團戰很容易疊高層數，補足 90% 模式傷害修正後的持續輸出。"
+        },
+        {
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "3 技與大絕控制都能配合護盾，提高進場後存活。"
+        },
+        {
+          "id": "second-wind",
+          "name": "回春",
+          "icon": "assets/images/runes/resolve/second-wind.webp",
+          "reason": "被遠程消耗時持續回復，減少還沒開戰就被磨殘。"
+        },
+        {
+          "id": "overgrowth",
+          "name": "過度生長",
+          "icon": "assets/images/runes/resolve/overgrowth.webp",
+          "reason": "單線小兵死亡密集，能穩定累積額外生命並轉化為狂霸血甲價值。"
+        },
+        {
+          "id": "battle-fervor",
+          "name": "熱忱戰鬥",
+          "icon": "assets/images/runes/precision/battle-fervor.webp",
+          "reason": "長時間貼身戰能逐步提高輸出，適合賽特正面纏鬥。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "閃現接 3 技或調整 2 技中央真傷角度都很關鍵。"
+        },
+        {
+          "id": "ghost",
+          "name": "鬼步",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "沒有雪球召喚師技能資料時，以鬼步補持續貼人與團戰追擊能力。"
+        }
+      ],
+      "skillOrder": "2 技 > 1 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技提高反打與護盾價值、次升 1 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/sett_03.webp",
+        "assets/images/heroes/skills/sett_02.png",
+        "assets/images/heroes/skills/sett_04.png"
+      ],
+      "playstyle": {
+        "開局": "先利用身板站在隊伍前方，但不要無腦衝塔。被消耗時讓回春維持血線，等敵方靠近再找 3 技左右夾人。",
+        "中期": "有狂霸血甲後，豪意越高 2 技威脅越大。大絕優先抱敵方高生命前排往後排砸，落地後接 3 技與 2 技製造第二波控制。",
+        "後期": "後期要辨認敵方最能打斷你的控制與位移。不要在豪意很低時就交 2 技；史特拉克護盾觸發後通常就是反手蓄意轟拳的最佳窗口。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "when": "敵方法傷很多",
+          "reason": "可替換精進之矛，補魔抗與跑速。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很多",
+          "reason": "需要更高護甲與抗暴擊時替換一件輸出裝。"
+        },
+        {
+          "id": "physical-high-42",
+          "name": "死亡之舞",
+          "icon": "assets/images/aram/items/deaths-dance.webp",
+          "when": "敵方物理爆發很高",
+          "reason": "延後爆發傷害，適合需要更強近戰續戰時使用。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.1d",
+          "url": "https://wildrift.leagueoflegends.com/en-gb/news/game-updates/wild-rift-patch-notes-71d-/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Sett Patch 7.2b",
+          "url": "https://www.wildriftfire.com/guide/sett"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第五批：賽特保留 7.1d 標準 ARAM 90% 傷害修正，出裝改以團戰鬥士而非分推裝為主。"
     },
     {
       "id": "sion",
@@ -9700,17 +10174,172 @@
       "enName": "Sion",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "狹窄單線很適合賽恩用 1 技封走位、2 技堆永久生命與範圍爆破，大絕也能沿直線逼出整隊位移；即使死亡後被動仍能逼退敵方，因此具有穩定前排與開戰價值。",
+      "position": "高生命前排／蓄力控制型坦克",
       "tags": [
-        "ARAM Tier 初評"
+        "超高生命",
+        "範圍控制",
+        "死亡反打"
       ],
       "avatar": "assets/images/heroes/portraits/sion.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "站在隊伍前方壓縮敵人走位，但 1 技不必每次蓄滿；隊友有控制時再完整蓄力。2 技先開盾吸傷，靠小兵穩定堆生命。大絕以封路、逼閃或接隊友控制為主，不必每次追求超遠距離撞擊。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch5-v80.7.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "目前可驗證的近期官方標準 ARAM 更新未列出賽恩專屬百分比調整，本版以 100% 基準呈現。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
+          "reason": "提高第一輪承傷並加強 2 技護盾價值，最適合坦克路線起手。"
+        }
+      ],
+      "items": [
+        {
+          "id": "defense-high-06",
+          "name": "日炎聖盾",
+          "icon": "assets/images/items/high/defense-sunfire-aegis.png",
+          "reason": "高生命近身纏鬥能穩定吃滿灼燒，兼顧前排與清兵。"
+        },
+        {
+          "id": "defense-high-08",
+          "name": "荊棘之甲",
+          "icon": "assets/images/items/high/defense-thornmail.png",
+          "reason": "ARAM 治療與射手常見，護甲加重創能讓賽恩更有效站住前排。"
+        },
+        {
+          "id": "defense-high-03",
+          "name": "無盡絕望",
+          "icon": "assets/images/items/high/defense-unending-despair.png",
+          "reason": "多人近戰環境能反覆觸發回復，提高長團戰續戰力。"
+        },
+        {
+          "id": "defense-high-17",
+          "name": "午時斗篷",
+          "icon": "assets/images/items/high/defense-mantle-of-the-twelfth-hour.png",
+          "reason": "低血時獲得額外生命與抗性類容錯，適合賽恩吸收第一輪火力。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "後期多人混戰快速疊高雙抗，讓超高生命更難被有效融化。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "對物理與普攻陣最穩，能讓前期站位更積極。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後繼續提高物理承傷；敵方法系偏多時可改水星線。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "grasp",
+          "name": "不死之握",
+          "icon": "assets/images/runes/keystone/grasp.webp",
+          "reason": "近身換血能補傷害、治療與永久生命，和賽恩高血量成長很契合。"
+        },
+        {
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "1 技擊飛與大絕控制可觸發護盾，提高進場後耐久。"
+        },
+        {
+          "id": "second-wind",
+          "name": "回春",
+          "icon": "assets/images/runes/resolve/second-wind.webp",
+          "reason": "被遠程消耗時維持血線，降低開戰前被磨殘的問題。"
+        },
+        {
+          "id": "overgrowth",
+          "name": "過度生長",
+          "icon": "assets/images/runes/resolve/overgrowth.webp",
+          "reason": "ARAM 單線兵線死亡密集，能穩定疊額外生命。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "技能加速能提高 1 技控制、2 技護盾與 3 技消耗頻率。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補 1 技角度、逃生或接控制都很實用。"
+        },
+        {
+          "id": "ghost",
+          "name": "鬼步",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "大絕結束後持續貼人與死亡被動追擊都能受益。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/sion_02.png",
+        "assets/images/heroes/skills/sion_03.png",
+        "assets/images/heroes/skills/sion_04.png"
+      ],
+      "playstyle": {
+        "開局": "用 1 技草叢／視野死角蓄力逼位，2 技盡量靠小兵與敵方英雄一起打出爆破並持續堆生命。",
+        "中期": "兩到三件坦裝後就是隊伍主要前排。大絕可以用來逼散敵方陣型，不必每次追求撞到後排；落地後用 1 技切斷退路。",
+        "後期": "後期死亡不等於立刻結束作用。活著時先吃關鍵技能，死亡後被動則優先黏住沒有位移的輸出位，逼他們後撤讓隊友接手。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "when": "敵方法傷很多",
+          "reason": "可提早替換荊棘之甲或最後一件。"
+        },
+        {
+          "id": "defense-high-09",
+          "name": "好戰者鎧甲",
+          "icon": "assets/images/items/high/defense-warmogs-armor.png",
+          "when": "需要脫戰回滿再開下一波",
+          "reason": "血量成形後可強化團戰間的恢復能力。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很多",
+          "reason": "降低暴擊威脅並提高護甲。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Sion Patch 7.2b",
+          "url": "https://www.wildriftfire.com/guide/sion"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第五批：賽恩以標準坦克團戰母版整理，避開召喚峽谷分推需求。"
     },
     {
       "id": "sivir",
@@ -9718,17 +10347,176 @@
       "enName": "Sivir",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "1 技直線消耗與 2 技彈射在五人單線特別容易反覆命中，大絕又能整隊加速追擊／撤退；雖然官方標準 ARAM 仍有 95% 傷害修正，但 7.2b 同時強化磁性雷射槍、多明尼克並降低那歐疾刃價格，讓暴擊成形更順。",
+      "position": "範圍彈射／團隊加速型射手",
       "tags": [
-        "ARAM Tier 初評"
+        "彈射輸出",
+        "清線消耗",
+        "團隊加速"
       ],
       "avatar": "assets/images/heroes/portraits/sivir.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "站在前排後方用 1 技穿線消耗，2 技盡量從安全目標往敵方後排彈。3 技不要隨便交給小技能，要留給硬控或致命爆發。大絕除了追擊，也能在敵方強開時整隊拉開。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch5-v80.7.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "95%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 7.0a：Sivir 標準 ARAM 傷害由 85% 上調至 95%；後續至 7.2b 未見再次回調。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "直接提高 1 技、普攻與彈射傷害，前期最好用。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-11",
+          "name": "嗜血者",
+          "icon": "assets/images/aram/items/bloodthirster.webp",
+          "reason": "先補高物攻與吸血，讓希維爾能扛住 ARAM 長時間消耗。"
+        },
+        {
+          "id": "physical-high-23",
+          "name": "磁性雷射槍",
+          "icon": "assets/images/aram/items/magnetic-blaster.webp",
+          "reason": "7.2b 物攻提高到 30，充能輸出與暴擊能讓安全消耗更有壓力。"
+        },
+        {
+          "id": "physical-high-05",
+          "name": "多明尼克的問候",
+          "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+          "reason": "7.2b 物攻提高到 30，讓中後期處理前排的效率更好。"
+        },
+        {
+          "id": "physical-high-28",
+          "name": "那歐疾刃",
+          "icon": "assets/images/aram/items/navori-quickblades.webp",
+          "reason": "7.2b 降價後更快成形，普攻縮短非大絕技能冷卻，能提高彈射與法術護盾頻率。"
+        },
+        {
+          "id": "physical-high-17",
+          "name": "無盡之刃",
+          "icon": "assets/images/aram/items/infinity-edge.webp",
+          "reason": "後期放大暴擊傷害，把多次彈射與普攻壓力拉到最高。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "gluttonous-greaves",
+          "name": "貪婪護脛",
+          "icon": "assets/images/items/shoes/gluttonous-greaves.png",
+          "reason": "前期物攻與吸血提高續航，適合無法回城的單線消耗。"
+        },
+        {
+          "id": "immortal-boots",
+          "name": "不朽護脛",
+          "icon": "assets/images/items/shoes/immortal-boots.png",
+          "reason": "升級三級鞋後增加生存與續航，降低被強開直接秒掉的風險。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "lethal-tempo",
+          "name": "致命節奏",
+          "icon": "assets/images/runes/keystone/lethal-tempo.webp",
+          "reason": "團戰持續普攻很容易疊高攻速，能最大化 2 技彈射輸出。"
+        },
+        {
+          "id": "brutal",
+          "name": "兇蠻",
+          "icon": "assets/images/runes/precision/brutal.webp",
+          "reason": "前期補物攻與穿透，減少 95% 模式傷害修正造成的壓力。"
+        },
+        {
+          "id": "cut-down",
+          "name": "斷切",
+          "icon": "assets/images/runes/precision/cut-down.webp",
+          "reason": "先打前排時仍能維持有效傷害。"
+        },
+        {
+          "id": "legend-bloodline",
+          "name": "傳奇：血脈",
+          "icon": "assets/images/runes/precision/legend-bloodline.webp",
+          "reason": "額外吸血強化長時間消耗後的回血能力。"
+        },
+        {
+          "id": "bone-plating",
+          "name": "骨甲",
+          "icon": "assets/images/runes/resolve/bone-plating.webp",
+          "reason": "被刺客或強開貼近時能減少第一輪爆發。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "補位移、躲控制與拉開輸出距離，是射手最重要保命技能。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "面對突進時多一層容錯，讓 3 技沒擋到關鍵技能時仍有救。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/sivir_02.png",
+        "assets/images/heroes/skills/sivir_03.webp",
+        "assets/images/heroes/skills/sivir_04.png"
+      ],
+      "playstyle": {
+        "開局": "先用 1 技直線穿兵與英雄消耗，2 技從安全目標開始彈。3 技留給硬控或高傷技能，不要為了回一點魔力隨便交。",
+        "中期": "嗜血者與磁性雷射槍後續航與範圍輸出都成形。大絕可以用來配合己方前排強開，也可以在敵方突進時全隊後拉。",
+        "後期": "後期保持最大安全距離打能碰到的人。那歐疾刃讓技能循環變快，但不要因為有 3 技就站得過前；一旦法術護盾被騙掉就立刻後撤。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "when": "敵方治療／吸血很多",
+          "reason": "需要重創時替換多明尼克的問候。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "when": "後期常被強切",
+          "reason": "可替換最後一件，提高關鍵團戰容錯。"
+        },
+        {
+          "id": "physical-high-31",
+          "name": "巨蛇鋒牙",
+          "icon": "assets/images/items/high/serpents-fang-fixed.webp",
+          "when": "敵方護盾很多",
+          "reason": "護盾陣容明顯時可犧牲部分暴擊換破盾。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.0a",
+          "url": "https://wildrift.leagueoflegends.com/en-gb/news/game-updates/wild-rift-patch-notes-7-0a/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Sivir Patch 7.2b",
+          "url": "https://www.wildriftfire.com/guide/sivir"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第五批：希維爾保留 7.0a 95% 傷害修正，並同步 7.2b 三件暴擊裝調整。"
     },
     {
       "id": "skarner",
@@ -9736,17 +10524,176 @@
       "enName": "Skarner",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "7.2a 不只強化 1 技最大生命傷害、2 技護盾與 3 技冷卻，還把史加納標準 ARAM 直接調到 110% 傷害／90% 承傷；在狹窄單線中，多段控制與大絕壓制很容易把一人拖離隊伍，因此 S 級非常穩。",
+      "position": "前排強開／壓制隔離型坦克",
       "tags": [
-        "ARAM Tier 初評"
+        "高坦度",
+        "強制位移",
+        "多段控場"
       ],
       "avatar": "assets/images/heroes/portraits/skarner.png",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "以 1 技持續撿石／強化普攻打前排，2 技在進場前先開盾。3 技不要只當位移，要找牆角或把目標推向己方。大絕最重要的是抓到高價值輸出後往己方拖，不必貪多人。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch5-v80.7.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "110%",
+        "damageTaken": "90%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "Riot 7.2a：Skarner 在 AAA ARAM 的傷害 100%→110%、承傷 100%→90%，官方明確註記這兩項也套用標準 ARAM。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-ruby",
+          "name": "紅水晶",
+          "icon": "assets/images/aram/items/basic-ruby.webp",
+          "reason": "先補生命強化 2 技護盾與第一輪承傷，最符合坦克強開定位。"
+        }
+      ],
+      "items": [
+        {
+          "id": "defense-high-18",
+          "name": "熾灼之冠",
+          "icon": "assets/images/items/high/defense-searing-crown-2.png",
+          "reason": "生命與護甲兼顧，近身後的持續灼燒適合史加納長時間黏住前排。"
+        },
+        {
+          "id": "defense-high-03",
+          "name": "無盡絕望",
+          "icon": "assets/images/items/high/defense-unending-despair.png",
+          "reason": "多人近戰時反覆回復，配合 90% 承傷修正能顯著提高續戰。"
+        },
+        {
+          "id": "defense-high-16",
+          "name": "雅瑪蘭守護像",
+          "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+          "reason": "進入五人團戰後快速疊雙抗，把模式承傷優勢放大。"
+        },
+        {
+          "id": "defense-high-08",
+          "name": "荊棘之甲",
+          "icon": "assets/images/items/high/defense-thornmail.png",
+          "reason": "對射手、治療與吸血陣同時提供護甲和重創。"
+        },
+        {
+          "id": "defense-high-14",
+          "name": "自然之力",
+          "icon": "assets/images/items/high/defense-force-of-nature.png",
+          "reason": "補高魔抗與移速，讓後期能更穩定穿過法術火力接近目標。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "plated-steelcaps",
+          "name": "鍍板鋼蓋",
+          "icon": "assets/images/items/shoes/plated-steelcaps.png",
+          "reason": "前期正面承受物理與普攻時最穩，和 90% 模式承傷疊加後更難處理。"
+        },
+        {
+          "id": "armored-warboots",
+          "name": "裝甲戰靴",
+          "icon": "assets/images/items/shoes/armored-warboots.png",
+          "reason": "升級三級鞋後進一步提高物理承傷；法傷／控制偏多時可改水星線。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "grasp",
+          "name": "不死之握",
+          "icon": "assets/images/runes/keystone/grasp.webp",
+          "reason": "持續貼前排時能反覆觸發，補傷害、治療與生命。"
+        },
+        {
+          "id": "courage-of-colossus",
+          "name": "巨像勇氣",
+          "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+          "reason": "3 技與大絕控制後取得護盾，提高強開容錯。"
+        },
+        {
+          "id": "second-wind",
+          "name": "回春",
+          "icon": "assets/images/runes/resolve/second-wind.webp",
+          "reason": "被遠程消耗時維持血線，確保有足夠生命發動下一次強開。"
+        },
+        {
+          "id": "overgrowth",
+          "name": "過度生長",
+          "icon": "assets/images/runes/resolve/overgrowth.webp",
+          "reason": "單線小兵死亡密集，能穩定增加最大生命並強化 2 技護盾。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "更多技能加速讓 1、2、3 技在長團戰更快輪轉。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "可用來突然調整大絕／3 技角度，也能在強開失敗時撤回。"
+        },
+        {
+          "id": "ghost",
+          "name": "鬼步",
+          "icon": "assets/images/spells/ghost.webp",
+          "reason": "提高持續貼人與拖拽目標時的移動能力，補足沒有雪球資料的情況。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/skarner_02.png",
+        "assets/images/heroes/skills/skarner_03.webp",
+        "assets/images/heroes/skills/skarner_04.png"
+      ],
+      "playstyle": {
+        "開局": "先用 1 技強化普攻處理靠前目標，2 技在吃第一輪技能前就開。3 技如果沒有好牆角，不必為了硬抓而衝進敵方五人。",
+        "中期": "兩件坦裝後可以主動站前。3 技把目標推回己方後再接大絕通常比直接正面開大更穩；大絕能抓到核心一人就值得。",
+        "後期": "110% 傷害與 90% 承傷讓你可以更積極，但仍要等隊友能跟上。抓到後排後往己方拖，優先創造人數差，而不是把自己和目標一起送到敵方深處。"
+      },
+      "situationalItems": [
+        {
+          "id": "defense-high-06",
+          "name": "日炎聖盾",
+          "icon": "assets/images/items/high/defense-sunfire-aegis.png",
+          "when": "敵方近戰很多",
+          "reason": "可替換自然之力，提高貼身灼燒與清兵。"
+        },
+        {
+          "id": "defense-high-07",
+          "name": "蘭頓之兆",
+          "icon": "assets/images/items/high/defense-randuins-omen.png",
+          "when": "敵方暴擊射手很多",
+          "reason": "需要更高抗暴擊能力時替換自然之力或一件功能裝。"
+        },
+        {
+          "id": "defense-high-09",
+          "name": "好戰者鎧甲",
+          "icon": "assets/images/items/high/defense-warmogs-armor.png",
+          "when": "團戰間需要快速回滿",
+          "reason": "最大生命足夠後可用來強化脫戰續航。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Skarner Build Guide",
+          "url": "https://www.wildriftfire.com/guide/skarner"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第五批：史加納套用 7.2a 官方明確延伸至標準 ARAM 的 110% 傷害／90% 承傷。"
     },
     {
       "id": "smolder",
@@ -9754,17 +10701,184 @@
       "enName": "Smolder",
       "tier": "S",
       "tierLabel": "強勢推薦",
-      "tierReason": "英雄機制與 ARAM 節奏高度契合，具備明確且穩定的團戰價值，但仍有射程、進場、陣容或模式修正等限制。",
-      "position": "ARAM Tier 初評完成｜詳細攻略製作中",
+      "tierReason": "單線能持續用 1 技與 2 技摸人疊層，後期強化 1 技與處決能力在密集團戰非常可怕；但共享兵線會拖慢農兵疊層，而且 7.1e 已把強化門檻改成 25／100／175 層，因此前中期需要更克制。",
+      "position": "後期疊層／範圍處決型射手",
       "tags": [
-        "ARAM Tier 初評"
+        "疊層成長",
+        "遠距消耗",
+        "後期處決"
       ],
       "avatar": "assets/images/heroes/portraits/smolder.webp",
-      "summary": "本版先完成 ARAM 全英雄 Tier 初評；出裝、符文、技能與模式平衡修正會依固定母版分批補齊。",
-      "detailReady": false,
+      "summary": "前期最重要的是穩定疊層而不是搶每隻兵。1 技能安全命中英雄就打，2 技用來遠距離補層與消耗。沒有足夠層數前不要過度前壓；中後期利用強化 1 技範圍與處決效果反覆打前排即可。",
+      "detailReady": true,
       "tierListVersion": "v79.8.0",
-      "reviewStatus": "aram-tier-only-v79.8",
-      "reviewedAt": "2026-08-03"
+      "reviewStatus": "aram-s-batch5-v80.7.0",
+      "reviewedAt": "2026-08-03",
+      "balance": {
+        "damageDealt": "100%",
+        "damageTaken": "100%",
+        "healing": "100%",
+        "shielding": "100%",
+        "note": "7.1e 官方頁面把 Smolder 列入所有 Howling Abyss 的 Champion Balancing，但公開正文未顯示具體百分比數值；為避免臆測，本版不自行套用未知修正，暫以 100% 基準呈現並保留註記。"
+      },
+      "starterItems": [
+        {
+          "id": "basic-long-sword",
+          "name": "長劍",
+          "icon": "assets/images/aram/items/basic-long-sword.webp",
+          "reason": "先提高 1 技與普攻傷害，讓前期疊層與消耗更有效率。"
+        }
+      ],
+      "items": [
+        {
+          "id": "physical-high-19",
+          "name": "魔劍正宗",
+          "icon": "assets/images/items/high/manamune-fixed.webp",
+          "reason": "史矛德會頻繁放技能，魔力與技能傷害仍是最穩定的前期核心；7.2a 雖削弱魔劍衝擊倍率，依然能支撐技能循環。"
+        },
+        {
+          "id": "physical-high-21",
+          "name": "三相之力",
+          "icon": "assets/images/items/high/trinity-force-fixed.webp",
+          "reason": "1 技頻繁觸發咒刃，生命、攻速與跑速也能提升拉扯。"
+        },
+        {
+          "id": "physical-high-27",
+          "name": "席利妲咒怨",
+          "icon": "assets/images/aram/items/physical-high-27.webp",
+          "reason": "百分比穿甲與緩速讓強化 1 技更容易持續碰到前排與後續目標。"
+        },
+        {
+          "id": "physical-high-23",
+          "name": "磁性雷射槍",
+          "icon": "assets/images/aram/items/magnetic-blaster.webp",
+          "reason": "7.2b 物攻提高後更有效率，補暴擊並增加安全消耗能力。"
+        },
+        {
+          "id": "physical-high-34",
+          "name": "精進之矛",
+          "icon": "assets/images/items/high/spear-of-shojin-fixed.webp",
+          "reason": "提高技能循環，讓 1 技疊層與後期範圍輸出更頻繁。"
+        }
+      ],
+      "boots": [
+        {
+          "id": "gluttonous-greaves",
+          "name": "貪婪護脛",
+          "icon": "assets/images/items/shoes/gluttonous-greaves.png",
+          "reason": "物攻與吸血幫助前期長時間疊層時維持血線。"
+        },
+        {
+          "id": "immortal-boots",
+          "name": "不朽護脛",
+          "icon": "assets/images/items/shoes/immortal-boots.png",
+          "reason": "升級三級鞋後提高生存與續航，降低被強開一次帶走的風險。"
+        }
+      ],
+      "runes": [
+        {
+          "id": "fleet-footwork",
+          "name": "迅疾步法",
+          "icon": "assets/images/runes/keystone/fleet-footwork.webp",
+          "reason": "持續疊層與普攻時反覆觸發治療／移速，非常適合 ARAM 消耗環境。"
+        },
+        {
+          "id": "battle-fervor",
+          "name": "熱忱戰鬥",
+          "icon": "assets/images/runes/precision/battle-fervor.webp",
+          "reason": "長時間反覆命中能逐步放大後續輸出。"
+        },
+        {
+          "id": "cut-down",
+          "name": "斷切",
+          "icon": "assets/images/runes/precision/cut-down.webp",
+          "reason": "史矛德常先打前排，高生命目標上收益穩定。"
+        },
+        {
+          "id": "legend-bloodline",
+          "name": "傳奇：血脈",
+          "icon": "assets/images/runes/precision/legend-bloodline.webp",
+          "reason": "補吸血續航，避免疊層過程被消耗到無法前壓。"
+        },
+        {
+          "id": "transcendence",
+          "name": "卓越",
+          "icon": "assets/images/runes/sorcery/transcendence.webp",
+          "reason": "更多技能加速等於更多 1 技施放機會，直接幫助疊層與輸出。"
+        }
+      ],
+      "spells": [
+        {
+          "id": "flash",
+          "name": "閃現",
+          "icon": "assets/images/spells/flash.webp",
+          "reason": "史矛德被貼身後很脆，閃現主要用來躲硬控與維持輸出距離。"
+        },
+        {
+          "id": "barrier",
+          "name": "光盾",
+          "icon": "assets/images/spells/barrier.webp",
+          "reason": "被刺客或強開貼到時多一層保命，爭取 3 技拉開。"
+        }
+      ],
+      "skillOrder": "1 技 > 2 技 > 3 技",
+      "skillNote": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。",
+      "skillIcons": [
+        "assets/images/heroes/skills/smolder_02.png",
+        "assets/images/heroes/skills/smolder_03.png",
+        "assets/images/heroes/skills/smolder_04.png"
+      ],
+      "playstyle": {
+        "開局": "先求穩定疊層，不要為搶兵走到前排前面。1 技能碰英雄就用，2 技用來補安全消耗；7.1e 後第一個強化門檻是 25 層。",
+        "中期": "100 層後範圍能力明顯提升，開始以安全打前排為主。大絕可同時做範圍傷害與自保回復，不必只拿來追殘血。",
+        "後期": "175 層後團戰處決壓力成形。保持最遠安全距離反覆 1 技打前排，讓爆炸與持續效果自然波及後排；最忌諱為了直接摸脆皮飛進敵方控制區。"
+      },
+      "situationalItems": [
+        {
+          "id": "physical-high-17",
+          "name": "無盡之刃",
+          "icon": "assets/images/aram/items/infinity-edge.webp",
+          "when": "暴擊成形且需要更高後期傷害",
+          "reason": "7.1e 調整後暴擊傷害也會進入 1 技暴擊成長計算，可替換精進之矛。"
+        },
+        {
+          "id": "physical-high-10",
+          "name": "守護天使",
+          "icon": "assets/images/aram/items/guardian-angel.webp",
+          "when": "後期常被強切",
+          "reason": "可犧牲一件傷害裝換取關鍵團戰復活。"
+        },
+        {
+          "id": "physical-high-18",
+          "name": "致死宣告",
+          "icon": "assets/images/aram/items/mortal-reminder.webp",
+          "when": "敵方治療／吸血很多",
+          "reason": "需要重創時可替換席利妲咒怨。"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.0a",
+          "url": "https://wildrift.leagueoflegends.com/en-gb/news/game-updates/wild-rift-patch-notes-7-0a/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.1e",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-1e/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+        },
+        {
+          "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+          "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+        },
+        {
+          "label": "WildRiftFire｜Smolder Build Guide",
+          "url": "https://www.wildriftfire.com/guide/smolder"
+        }
+      ],
+      "sourceNote": "7.2b ARAM S 第五批：史矛德納入 7.1e 25／100／175 疊層門檻、7.2a 魔劍削弱與 7.2b 磁性雷射槍強化。"
     },
     {
       "id": "sona",
