@@ -38309,7 +38309,628 @@
           "label": "WildRiftFire｜Poppy Patch 7.2b",
           "url": "https://www.wildriftfire.com/guide/poppy"
         }
-      ]
+      ],
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "反突進前排／壁咚控制坦克",
+        "tags": [
+          "控場",
+          "大地回音",
+          "體型"
+        ],
+        "summary": "波比最強的是限制位移、壁咚與大絕拆陣；控場與大地回音是核心，體型與單人強者能放大前排坦度，而護盾類可利用被動盾牌提高進場容錯。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 3 技 > 2 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋虛弱",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "雄心坦克",
+            "badge": "預設首選",
+            "trigger": "控場／體型／單人強者增幅多",
+            "description": "雄心之鋼與日炎撐高生命與近身壓力，再用雙抗裝讓壁咚後能持續站場。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "直接補生命，讓波比前期承受消耗與第一波開戰更穩。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-19",
+                "name": "雄心之鋼",
+                "icon": "assets/images/items/high/defense-heartsteel.png",
+                "reason": "單線頻繁貼近多名敵人，容易累積額外生命，越打後期越難處理。"
+              },
+              {
+                "id": "defense-high-06",
+                "name": "日炎聖盾",
+                "icon": "assets/images/items/high/defense-sunfire-aegis.png",
+                "reason": "波比長時間站在近戰區域，持續灼燒能穩定補足傷害。"
+              },
+              {
+                "id": "defense-high-08",
+                "name": "荊棘之甲",
+                "icon": "assets/images/items/high/defense-thornmail.png",
+                "reason": "對射手與治療陣同時提供護甲與重創。"
+              },
+              {
+                "id": "defense-high-14",
+                "name": "自然之力",
+                "icon": "assets/images/items/high/defense-force-of-nature.png",
+                "reason": "面對多法師時補足高魔抗與跑速，方便追擊或回到保排位置。"
+              },
+              {
+                "id": "defense-high-16",
+                "name": "雅瑪蘭守護像",
+                "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+                "reason": "後期多人團戰容易疊滿雙抗，讓波比成為很難被越過的前排。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "對 ARAM 常見射手與物理消耗提供最穩定的前期護甲。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後進一步提高承受普攻與物理爆發的能力。"
+              }
+            ]
+          },
+          {
+            "id": "plan-控場增幅多",
+            "title": "團隊開戰",
+            "badge": "控場增幅多",
+            "trigger": "需要隊友更快跟傷",
+            "description": "加入黎明法衣，讓壁咚或大絕命中後更容易完成集火。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "直接補生命，讓波比前期承受消耗與第一波開戰更穩。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-19",
+                "name": "雄心之鋼",
+                "icon": "assets/images/items/high/defense-heartsteel.png",
+                "reason": "單線頻繁貼近多名敵人，容易累積額外生命，越打後期越難處理。"
+              },
+              {
+                "id": "defense-high-15",
+                "name": "黎明法衣",
+                "icon": "assets/images/items/high/defense-dawnshroud.png",
+                "when": "隊伍需要放大集火",
+                "reason": "控制敵人後能幫隊友更快集中火力處理目標。"
+              },
+              {
+                "id": "defense-high-06",
+                "name": "日炎聖盾",
+                "icon": "assets/images/items/high/defense-sunfire-aegis.png",
+                "reason": "波比長時間站在近戰區域，持續灼燒能穩定補足傷害。"
+              },
+              {
+                "id": "defense-high-14",
+                "name": "自然之力",
+                "icon": "assets/images/items/high/defense-force-of-nature.png",
+                "reason": "面對多法師時補足高魔抗與跑速，方便追擊或回到保排位置。"
+              },
+              {
+                "id": "defense-high-16",
+                "name": "雅瑪蘭守護像",
+                "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+                "reason": "後期多人團戰容易疊滿雙抗，讓波比成為很難被越過的前排。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "對 ARAM 常見射手與物理消耗提供最穩定的前期護甲。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後進一步提高承受普攻與物理爆發的能力。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "grasp",
+              "name": "不死之握",
+              "icon": "assets/images/runes/keystone/grasp.webp",
+              "reason": "近戰拉扯頻繁，能穩定換血並累積生命。"
+            },
+            {
+              "id": "courage-of-colossus",
+              "name": "巨像勇氣",
+              "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+              "reason": "3 技暈眩或大絕擊飛後能提供額外護盾，提高進場容錯。"
+            },
+            {
+              "id": "second-wind",
+              "name": "回春",
+              "icon": "assets/images/runes/resolve/second-wind.webp",
+              "reason": "被遠程反覆消耗時補足續航。"
+            },
+            {
+              "id": "overgrowth",
+              "name": "過度生長",
+              "icon": "assets/images/runes/resolve/overgrowth.webp",
+              "reason": "單線士兵密集，能穩定累積額外最大生命。"
+            },
+            {
+              "id": "triumph",
+              "name": "凱旋",
+              "icon": "assets/images/runes/precision/triumph.webp",
+              "reason": "參與擊殺後回復生命與資源，提高 ARAM 連續團戰續航。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先利用被動遠程盾牌補血量優勢，不要為了壁咚硬走進五人火力。敵方有明顯突進角度時，2 技一定要留著。",
+          "中期": "雄心之鋼與日炎成形後可以更主動頂在前面。3 技最好找牆角或狹窄處，而不是只把它當一般位移。",
+          "後期": "後期大絕可以直接改變 5v5 人數。若敵方前排很難處理，就蓄力把他送走；若刺客一直衝後排，則保留未蓄力擊飛反打。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2/"
+          },
+          {
+            "label": "WildRiftFire｜Poppy Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/poppy"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第四批：波比依 7.2b 現行坦克核心與 ARAM 狹窄地形特性整理。",
+        "augmentCompatibility": {
+          "title": "波比分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 59,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-001",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "波比有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-003",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-010",
+              "tier": "A",
+              "tag": "跑速拉扯",
+              "reason": "波比需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-012",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "能提供波比實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-013",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "波比有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-015",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和波比核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-025",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和波比核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-027",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-028",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "波比有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-031",
+              "tier": "A",
+              "tag": "坦度成長",
+              "reason": "能提供波比實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-033",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-035",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-058",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-059",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-060",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "波比有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-061",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "效果與波比的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-066",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和波比核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-067",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和波比核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-070",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "波比的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-072",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-074",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和波比核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-076",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-077",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和波比核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-078",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "波比的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-079",
+              "tier": "A",
+              "tag": "跑速拉扯",
+              "reason": "波比需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-080",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-081",
+              "tier": "A",
+              "tag": "坦度成長",
+              "reason": "能提供波比實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-083",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-088",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "波比有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-091",
+              "tier": "A",
+              "tag": "暴擊連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-096",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-097",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與波比的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-098",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-099",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與波比的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-100",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "波比的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-101",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-102",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "波比的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-108",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與波比的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-122",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-125",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-126",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-127",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-128",
+              "tier": "A",
+              "tag": "坦度成長",
+              "reason": "能提供波比實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-133",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "波比有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-136",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-137",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-138",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "波比有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-139",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-142",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "能提供波比實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-143",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "波比需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-144",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與波比的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-145",
+              "tier": "A",
+              "tag": "跑速拉扯",
+              "reason": "波比需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "波比本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-150",
+              "tier": "B",
+              "tag": "暴擊連動",
+              "reason": "波比以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "控場",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "三技能壁咚與大絕都能穩定製造控制，直接放大波比最重要的團戰價值。"
+            },
+            {
+              "tag": "大地回音",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "反位移、坦度與貼身控制和波比的反突進定位高度一致。"
+            },
+            {
+              "tag": "體型",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "生命、雙防與體型能提高前排承傷，也會強化部分控制類效果。"
+            },
+            {
+              "tag": "單人強者",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "原版雄心之鋼能直接強化她目前的核心裝備，另有高生命與保命型單卡。"
+            },
+            {
+              "tag": "護盾",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "被動可穩定取得護盾，護盾免控與獲盾觸發效果有實戰價值。"
+            },
+            {
+              "tag": "技能",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "技能冷卻越短，越能反覆使用壁咚、反突進與大絕拆陣。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-029",
+            "augment-084",
+            "augment-089",
+            "augment-097",
+            "augment-116",
+            "augment-136"
+          ]
+        }
+      }
     },
     {
       "id": "pyke",
@@ -38482,7 +39103,598 @@
           "label": "WildRiftFire｜Pyke Patch 7.2b",
           "url": "https://www.wildriftfire.com/guide/pyke"
         }
-      ]
+      ],
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "高機動鉤抓／大絕處決刺客",
+        "tags": [
+          "身法",
+          "迷霧回音",
+          "技能"
+        ],
+        "summary": "派克要靠隱形與位移找鉤子、暈眩，再用大絕連續處決；身法與迷霧回音最核心，技能、控場與單人強者則能提高抓人與連殺上限。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 3 技 > 2 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋點燃",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "穿甲處決",
+            "badge": "預設首選",
+            "trigger": "身法／迷霧／單人強者增幅多",
+            "description": "妖夢與巨蛇鋒牙提高側翼爆發，夜色緣界與守護天使確保處決後能安全撤退。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "開局直接提高 1 技與 3 技的物理傷害，讓第一輪抓人更有壓力。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-14",
+                "name": "妖夢鬼刀",
+                "icon": "assets/images/aram/items/youmuus-ghostblade.webp",
+                "reason": "穿甲與跑速都很適合派克游移找角度，第一件就能明顯提高抓人爆發。"
+              },
+              {
+                "id": "physical-high-31",
+                "name": "巨蛇鋒牙",
+                "icon": "assets/images/items/high/serpents-fang-fixed.webp",
+                "reason": "ARAM 常見大量護盾，能讓大絕斬殺線更不容易被臨時護盾抬走。"
+              },
+              {
+                "id": "physical-high-29",
+                "name": "夜色緣界",
+                "icon": "assets/images/aram/items/physical-high-29.webp",
+                "reason": "法術護盾讓派克更敢往前找鉤子與 3 技進場角度。"
+              },
+              {
+                "id": "physical-high-27",
+                "name": "席利妲咒怨",
+                "icon": "assets/images/aram/items/physical-high-27.webp",
+                "reason": "補百分比穿甲並提供緩速，讓中後期仍能對高護甲目標造成威脅。"
+              },
+              {
+                "id": "physical-high-10",
+                "name": "守護天使",
+                "icon": "assets/images/aram/items/guardian-angel.webp",
+                "reason": "後期需要冒險進場收割，復活能提高連續處決容錯。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "burst-boots",
+                "name": "爆發之靴",
+                "icon": "assets/images/items/shoes/burst-boots.png",
+                "reason": "前期穿甲最符合派克抓到人就打一套的節奏。"
+              },
+              {
+                "id": "armorbreaker-boots",
+                "name": "碎甲者之靴",
+                "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+                "reason": "升級三級鞋後進一步強化穿甲與斬殺威脅。"
+              }
+            ]
+          },
+          {
+            "id": "plan-敵方控制多",
+            "title": "高容錯收割",
+            "badge": "敵方控制多",
+            "trigger": "需要更安全進出場",
+            "description": "加入魔提斯深淵提高進場容錯，仍維持穿甲與處決核心。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "開局直接提高 1 技與 3 技的物理傷害，讓第一輪抓人更有壓力。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-14",
+                "name": "妖夢鬼刀",
+                "icon": "assets/images/aram/items/youmuus-ghostblade.webp",
+                "reason": "穿甲與跑速都很適合派克游移找角度，第一件就能明顯提高抓人爆發。"
+              },
+              {
+                "id": "physical-high-29",
+                "name": "夜色緣界",
+                "icon": "assets/images/aram/items/physical-high-29.webp",
+                "reason": "法術護盾讓派克更敢往前找鉤子與 3 技進場角度。"
+              },
+              {
+                "id": "physical-high-22",
+                "name": "魔提斯深淵",
+                "icon": "assets/images/items/high/maw-of-malmortius-fixed.webp",
+                "when": "敵方法傷爆發很高",
+                "reason": "需要魔抗保命時可替換席利妲咒怨。"
+              },
+              {
+                "id": "physical-high-27",
+                "name": "席利妲咒怨",
+                "icon": "assets/images/aram/items/physical-high-27.webp",
+                "reason": "補百分比穿甲並提供緩速，讓中後期仍能對高護甲目標造成威脅。"
+              },
+              {
+                "id": "physical-high-10",
+                "name": "守護天使",
+                "icon": "assets/images/aram/items/guardian-angel.webp",
+                "reason": "後期需要冒險進場收割，復活能提高連續處決容錯。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "burst-boots",
+                "name": "爆發之靴",
+                "icon": "assets/images/items/shoes/burst-boots.png",
+                "reason": "前期穿甲最符合派克抓到人就打一套的節奏。"
+              },
+              {
+                "id": "armorbreaker-boots",
+                "name": "碎甲者之靴",
+                "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+                "reason": "升級三級鞋後進一步強化穿甲與斬殺威脅。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "glacial-augment",
+              "name": "冰霜霸主",
+              "icon": "assets/images/runes/keystone/glacial-augment.webp",
+              "reason": "鉤子或暈眩命中後限制敵方走位，讓隊友更容易接上集火。"
+            },
+            {
+              "id": "steadfast-bulwark",
+              "name": "堅定壁壘",
+              "icon": "assets/images/runes/resolve/steadfast-bulwark.webp",
+              "reason": "進場承受第一輪傷害時提高生存，避免還沒到斬殺階段就先倒下。"
+            },
+            {
+              "id": "second-wind",
+              "name": "回春",
+              "icon": "assets/images/runes/resolve/second-wind.webp",
+              "reason": "對線式拉扯中能讓派克更容易把灰色生命回起來。"
+            },
+            {
+              "id": "perseverance",
+              "name": "堅毅",
+              "icon": "assets/images/runes/resolve/perseverance.webp",
+              "reason": "被控制時提供額外韌性與容錯，對需要進場的派克很重要。"
+            },
+            {
+              "id": "transcendence",
+              "name": "卓越",
+              "icon": "assets/images/runes/sorcery/transcendence.webp",
+              "reason": "鉤子、隱形與暈眩越快回轉，就越容易反覆找機會。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先藏在兵線邊緣找 1 技角度，不要長時間站在正中央吃滿消耗。鉤到前排也可以，重點是先逼出對方保命技能。",
+          "中期": "兩件穿甲裝後開始有明顯斬殺壓力。2 技用來換側邊位置，3 技不要只拿來進場，也可以反向撤退順便暈追你的人。",
+          "後期": "後期最忌諱先手硬衝五人。等敵方被隊友壓到低血後再進場，以大絕重置為核心，能處決就連跳，不能處決就立即拉開。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2/"
+          },
+          {
+            "label": "WildRiftFire｜Pyke Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/pyke"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第四批：派克依 7.2b 現行穿甲核心、抓人與處決機制整理；ARAM 不使用召喚峽谷輔助任務裝作為預設核心。",
+        "augmentCompatibility": {
+          "title": "派克分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 54,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-001",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-003",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-004",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-012",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-015",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-017",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-024",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-025",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與派克的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-028",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "C",
+              "tag": "治療護盾",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-030",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-033",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-035",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-049",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-050",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-051",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-052",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-066",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-067",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-070",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "派克的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-071",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-072",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-073",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "派克需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-074",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-075",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-076",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-077",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-078",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "派克的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-083",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-091",
+              "tier": "B",
+              "tag": "暴擊連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-097",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-100",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "派克的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-101",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-102",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "派克的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-108",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-115",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和派克核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-122",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-125",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-126",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-127",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-132",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-133",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-137",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-139",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-140",
+              "tier": "B",
+              "tag": "跑速拉扯",
+              "reason": "派克需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-142",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "能提供派克實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-146",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "派克需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "派克本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-150",
+              "tier": "C",
+              "tag": "暴擊連動",
+              "reason": "派克以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-151",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "派克有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "身法",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "三技能本身就是位移兼暈眩，能穩定觸發位移型增幅。"
+            },
+            {
+              "tag": "迷霧回音",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "衝刺與潛行都是派克的日常操作，這系列多數卡能直接反覆啟動。"
+            },
+            {
+              "tag": "技能",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "鉤子、三技能與大絕都是主要作用來源，技能循環越快越容易再次找機會。"
+            },
+            {
+              "tag": "控場",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "一技能拉回與三技能暈眩都能觸發控制增幅，提升抓單成功率。"
+            },
+            {
+              "tag": "單人強者",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "大絕雙放、施放大絕無敵與處決相關單卡都非常符合派克。"
+            },
+            {
+              "tag": "跑速",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "跑速能幫助隱形繞側與處決後快速脫離戰場。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-049",
+            "augment-071",
+            "augment-075",
+            "augment-100",
+            "augment-102",
+            "augment-151"
+          ]
+        }
+      }
     },
     {
       "id": "rakan",
@@ -38655,7 +39867,478 @@
           "label": "WildRiftFire｜Rakan Patch 7.2b",
           "url": "https://www.wildriftfire.com/guide/rakan"
         }
-      ]
+      ],
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "高機動開戰／治療護盾輔助",
+        "tags": [
+          "控場",
+          "身法",
+          "復原"
+        ],
+        "summary": "銳空靠大絕加速與二技能進場，再用三技能回到隊友身邊；控場與身法是核心，復原、流水與護盾類則能放大他的治療與保排。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "2 技 > 3 技 > 1 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技、次升 3 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋虛弱",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "機動開戰",
+            "badge": "預設首選",
+            "trigger": "控場／身法增幅多",
+            "description": "錫柯、聖光美德與騎士誓願支撐進場，控制後快速回到己方核心。",
+            "starterItems": [
+              {
+                "id": "intermediate-32",
+                "name": "禁忌之像",
+                "icon": "assets/images/aram/items/intermediate-32.webp",
+                "reason": "開局先補技能加速與護盾治療效率，讓 1、3 技的團隊價值更穩。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-20",
+                "name": "錫柯的聚合之力",
+                "icon": "assets/images/items/high/defense-zekes-convergence.png",
+                "reason": "開大進場後能立刻強化附近的控制區與隊友跟進傷害，非常契合銳空的開戰節奏。"
+              },
+              {
+                "id": "defense-high-23",
+                "name": "聖光美德",
+                "icon": "assets/images/items/high/defense-radiant-virtue.png",
+                "reason": "開啟大絕後提供額外團隊續航與坦度，適合頻繁 5v5。"
+              },
+              {
+                "id": "defense-high-05",
+                "name": "騎士誓願",
+                "icon": "assets/images/items/high/defense-knights-vow.png",
+                "reason": "綁定己方最重要的輸出點，讓銳空回身保排時更有價值。"
+              },
+              {
+                "id": "support-high-02",
+                "name": "日輪的加冕",
+                "icon": "assets/images/items/high/support-locket-of-the-iron-solari.png",
+                "reason": "範圍護盾能補足進場後的團隊承傷，對爆發陣容特別有效。"
+              },
+              {
+                "id": "defense-high-02",
+                "name": "深淵面具",
+                "icon": "assets/images/items/high/defense-abyssal-mask.png",
+                "reason": "敵方法傷偏多時補魔抗，也能放大近身法傷隊友的輸出環境。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "ionian-boots",
+                "name": "愛歐尼亞之靴",
+                "icon": "assets/images/items/shoes/ionian-boots.png",
+                "reason": "技能循環對銳空非常重要，前期先縮短 2、3 技與大絕空窗。"
+              },
+              {
+                "id": "blood-mage-boots",
+                "name": "血色法靴",
+                "icon": "assets/images/items/shoes/blood-mage-boots.png",
+                "reason": "升級三級鞋後延續技能循環優勢，讓開戰與回身保排更頻繁。"
+              }
+            ]
+          },
+          {
+            "id": "plan-復原／流水增幅多",
+            "title": "團隊拉扯",
+            "badge": "復原／流水增幅多",
+            "trigger": "需要更多保排與機動",
+            "description": "加入蘇瑞亞的戰歌，讓治療護盾與進退場速度一起提高。",
+            "starterItems": [
+              {
+                "id": "intermediate-32",
+                "name": "禁忌之像",
+                "icon": "assets/images/aram/items/intermediate-32.webp",
+                "reason": "開局先補技能加速與護盾治療效率，讓 1、3 技的團隊價值更穩。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-20",
+                "name": "錫柯的聚合之力",
+                "icon": "assets/images/items/high/defense-zekes-convergence.png",
+                "reason": "開大進場後能立刻強化附近的控制區與隊友跟進傷害，非常契合銳空的開戰節奏。"
+              },
+              {
+                "id": "defense-high-23",
+                "name": "聖光美德",
+                "icon": "assets/images/items/high/defense-radiant-virtue.png",
+                "reason": "開啟大絕後提供額外團隊續航與坦度，適合頻繁 5v5。"
+              },
+              {
+                "id": "defense-high-05",
+                "name": "騎士誓願",
+                "icon": "assets/images/items/high/defense-knights-vow.png",
+                "reason": "綁定己方最重要的輸出點，讓銳空回身保排時更有價值。"
+              },
+              {
+                "id": "support-high-03",
+                "name": "蘇瑞亞的戰歌",
+                "icon": "assets/images/items/high/support-shurelyas-battlesong.png",
+                "when": "隊伍缺少整體開戰速度",
+                "reason": "需要幫全隊一起加速進場時可替換騎士誓願。"
+              },
+              {
+                "id": "support-high-02",
+                "name": "日輪的加冕",
+                "icon": "assets/images/items/high/support-locket-of-the-iron-solari.png",
+                "reason": "範圍護盾能補足進場後的團隊承傷，對爆發陣容特別有效。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "ionian-boots",
+                "name": "愛歐尼亞之靴",
+                "icon": "assets/images/items/shoes/ionian-boots.png",
+                "reason": "技能循環對銳空非常重要，前期先縮短 2、3 技與大絕空窗。"
+              },
+              {
+                "id": "blood-mage-boots",
+                "name": "血色法靴",
+                "icon": "assets/images/items/shoes/blood-mage-boots.png",
+                "reason": "升級三級鞋後延續技能循環優勢，讓開戰與回身保排更頻繁。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "glacial-augment",
+              "name": "冰霜霸主",
+              "icon": "assets/images/runes/keystone/glacial-augment.webp",
+              "reason": "2 技擊飛或大絕魅惑後能進一步限制區域，讓隊友更容易跟上。"
+            },
+            {
+              "id": "courage-of-colossus",
+              "name": "巨像勇氣",
+              "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+              "reason": "進場控制命中後獲得護盾，直接提高第一波開戰容錯。"
+            },
+            {
+              "id": "bone-plating",
+              "name": "骨甲",
+              "icon": "assets/images/runes/resolve/bone-plating.webp",
+              "reason": "衝入敵陣時減少第一輪爆發傷害。"
+            },
+            {
+              "id": "perseverance",
+              "name": "堅毅",
+              "icon": "assets/images/runes/resolve/perseverance.webp",
+              "reason": "被控時提升韌性與生存，避免控制鏈中直接蒸發。"
+            },
+            {
+              "id": "transcendence",
+              "name": "卓越",
+              "icon": "assets/images/runes/sorcery/transcendence.webp",
+              "reason": "銳空非常吃技能加速，能更頻繁開戰與回到隊友身邊。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先用 1 技碰到英雄後回補隊友，不要一直用 2 技硬開。敵方位移或控制還很多時，保留 3 技做撤退。",
+          "中期": "錫柯與技能加速成形後可以更主動找多人控制。常見節奏是大絕加速進場、碰到第一人後接 2 技，再用 3 技回到己方核心。",
+          "後期": "後期一次錯誤開戰可能直接結束。優先確認己方有人能跟上，再進場穿過敵方核心區；若對面刺客威脅更大，也可以留 2 技反手保排。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2/"
+          },
+          {
+            "label": "WildRiftFire｜Rakan Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/rakan"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第四批：銳空依 7.2b 現行技能與功能坦裝整理；ARAM 預設不採召喚峽谷輔助任務裝。",
+        "augmentCompatibility": {
+          "title": "銳空分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 34,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-004",
+              "tier": "A",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-008",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-011",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-017",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-019",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-020",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-024",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-030",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-034",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-045",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-046",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-047",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-048",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-049",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "銳空本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-050",
+              "tier": "A",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-051",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-052",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "銳空以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-071",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-075",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "銳空本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-085",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-088",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "銳空有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "銳空本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-094",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-098",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "銳空有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-104",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-106",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "銳空本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "銳空本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-123",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "銳空有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-138",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "銳空有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "銳空本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-151",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "銳空有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "控場",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "二技能擊飛與大絕魅惑都能穩定觸發控制增幅。"
+            },
+            {
+              "tag": "身法",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "二、三技能都有高頻位移，是身法類增幅很容易反覆觸發的英雄。"
+            },
+            {
+              "tag": "復原",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "一技能能治療自己與隊友，三技能則提供護盾，能實際利用多張復原卡。"
+            },
+            {
+              "tag": "流水回音",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "治療與護盾都能觸發流水系列，增加跑速、續航與團隊收益。"
+            },
+            {
+              "tag": "護盾",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "三技能可連續提供護盾，護盾免控與獲盾觸發效果有實戰價值。"
+            },
+            {
+              "tag": "迷霧回音",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "多次衝刺可觸發迷霧系列，但不是每張都比控場或輔助類更優先。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-008",
+            "augment-046",
+            "augment-098",
+            "augment-116",
+            "augment-123",
+            "augment-151"
+          ]
+        }
+      }
     },
     {
       "id": "rumble",
@@ -38828,7 +40511,562 @@
           "label": "WildRiftFire｜Rumble Patch 7.2b",
           "url": "https://www.wildriftfire.com/guide/rumble"
         }
-      ]
+      ],
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "持續灼燒／大絕區域封鎖法師",
+        "tags": [
+          "技能",
+          "雷霆回音",
+          "單人強者"
+        ],
+        "summary": "藍寶依靠一技能灼燒與大絕火線持續壓區；技能與雷霆回音是核心，單人強者中的持續傷害與大絕強化卡特別強，控場與跑速則幫助黏人與調位。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 3 技 > 2 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋點燃",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "持續灼燒",
+            "badge": "預設首選",
+            "trigger": "技能／雷霆／持續傷害增幅多",
+            "description": "黎安卓與血書放大持續傷害，無限寶珠與峽谷製造者補足長團輸出。",
+            "starterItems": [
+              {
+                "id": "basic-amp-tome",
+                "name": "增幅典籍",
+                "icon": "assets/images/aram/items/basic-amp-tome.webp",
+                "reason": "開局直接補魔攻，讓 1 技與 3 技消耗更有壓力。"
+              }
+            ],
+            "items": [
+              {
+                "id": "magic-high-16",
+                "name": "黎安卓的折磨",
+                "icon": "assets/images/items/high/magic-liandrys-torment.png",
+                "reason": "ARAM 長團戰與多前排環境能充分放大百分比灼燒，是藍寶最穩定核心。"
+              },
+              {
+                "id": "magic-high-07",
+                "name": "血書詛咒",
+                "icon": "assets/images/items/high/magic-bloodletter-curse.png",
+                "reason": "持續法傷很容易疊出魔防削減，能同時強化自己與法系隊友的後續傷害。"
+              },
+              {
+                "id": "magic-high-21",
+                "name": "無限寶珠",
+                "icon": "assets/images/items/high/magic-infinity-orb.png",
+                "reason": "大絕與火焰把多人壓低後能強化收尾傷害。"
+              },
+              {
+                "id": "magic-high-02",
+                "name": "中婭沙漏",
+                "icon": "assets/images/items/high/magic-zhonyas-hourglass.png",
+                "reason": "需要貼近用 1 技輸出時提供關鍵保命時間，避免被第一波集火秒掉。"
+              },
+              {
+                "id": "magic-high-23",
+                "name": "峽谷製造者",
+                "icon": "assets/images/items/high/magic-riftmaker.png",
+                "reason": "長時間持續作戰很容易吃滿效果，提升後期對前排與近戰陣容的處理能力。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "mana-boots",
+                "name": "魔力之靴",
+                "icon": "assets/images/items/shoes/mana-boots.png",
+                "reason": "雖然藍寶不吃魔力，但這條鞋的魔攻與法穿仍能直接提升前期傷害。"
+              },
+              {
+                "id": "sorcerers-shoes",
+                "name": "魔法使之鞋",
+                "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+                "reason": "升級三級鞋後補更多 AP 與法穿，把大絕與持續灼燒威脅拉高。"
+              }
+            ]
+          },
+          {
+            "id": "plan-敵方強開多",
+            "title": "安全法戰",
+            "badge": "敵方強開多",
+            "trigger": "需要更穩定鋪完大絕",
+            "description": "加入女妖面紗提高容錯，保留黎安卓與峽谷製造者的持續傷害。",
+            "starterItems": [
+              {
+                "id": "basic-amp-tome",
+                "name": "增幅典籍",
+                "icon": "assets/images/aram/items/basic-amp-tome.webp",
+                "reason": "開局直接補魔攻，讓 1 技與 3 技消耗更有壓力。"
+              }
+            ],
+            "items": [
+              {
+                "id": "magic-high-16",
+                "name": "黎安卓的折磨",
+                "icon": "assets/images/items/high/magic-liandrys-torment.png",
+                "reason": "ARAM 長團戰與多前排環境能充分放大百分比灼燒，是藍寶最穩定核心。"
+              },
+              {
+                "id": "magic-high-07",
+                "name": "血書詛咒",
+                "icon": "assets/images/items/high/magic-bloodletter-curse.png",
+                "reason": "持續法傷很容易疊出魔防削減，能同時強化自己與法系隊友的後續傷害。"
+              },
+              {
+                "id": "magic-high-05",
+                "name": "女妖面紗",
+                "icon": "assets/images/items/high/magic-banshees-veil.png",
+                "when": "敵方遠程控制很多",
+                "reason": "需要更安全走到 1 技距離時可替換中婭或最後一件。"
+              },
+              {
+                "id": "magic-high-21",
+                "name": "無限寶珠",
+                "icon": "assets/images/items/high/magic-infinity-orb.png",
+                "reason": "大絕與火焰把多人壓低後能強化收尾傷害。"
+              },
+              {
+                "id": "magic-high-23",
+                "name": "峽谷製造者",
+                "icon": "assets/images/items/high/magic-riftmaker.png",
+                "reason": "長時間持續作戰很容易吃滿效果，提升後期對前排與近戰陣容的處理能力。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "mana-boots",
+                "name": "魔力之靴",
+                "icon": "assets/images/items/shoes/mana-boots.png",
+                "reason": "雖然藍寶不吃魔力，但這條鞋的魔攻與法穿仍能直接提升前期傷害。"
+              },
+              {
+                "id": "sorcerers-shoes",
+                "name": "魔法使之鞋",
+                "icon": "assets/images/items/shoes/sorcerers-shoes.png",
+                "reason": "升級三級鞋後補更多 AP 與法穿，把大絕與持續灼燒威脅拉高。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "phase-rush",
+              "name": "相位衝擊",
+              "icon": "assets/images/runes/keystone/phase-rush.webp",
+              "reason": "短時間連續命中後提高跑速，讓藍寶更容易邊燒邊拉開或追擊。"
+            },
+            {
+              "id": "axiom-arcanist",
+              "name": "公理奧術大師",
+              "icon": "assets/images/runes/sorcery/axiom-arcanist.webp",
+              "reason": "強化大絕收益並加快參與擊殺後的大絕循環。"
+            },
+            {
+              "id": "transcendence",
+              "name": "卓越",
+              "icon": "assets/images/runes/sorcery/transcendence.webp",
+              "reason": "更高技能加速能讓魚叉與護盾更頻繁，熱能管理也更有彈性。"
+            },
+            {
+              "id": "scorch",
+              "name": "燒灼",
+              "icon": "assets/images/runes/sorcery/scorch.webp",
+              "reason": "前中期每輪魚叉與火焰消耗都能多補一段傷害。"
+            },
+            {
+              "id": "last-stand",
+              "name": "背水一戰",
+              "icon": "assets/images/runes/precision/last-stand.webp",
+              "reason": "藍寶常在中低血量貼近持續輸出，能放大危險血線時的反打。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先用魚叉試探並維持熱能，不要太早過熱讓自己在敵方準備開戰時無法放技能。1 技可在前排貼近時持續壓血。",
+          "中期": "黎安卓與血書成形後，大絕的區域壓力非常高。優先封鎖撤退路線或把敵人切成前後兩段，比單純追求命中人數更重要。",
+          "後期": "後期大絕一次就能決定團戰。先觀察敵方位移技能，再把火線鋪在最難離開的位置；過熱前盡量先把護盾與兩發魚叉打完。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2/"
+          },
+          {
+            "label": "WildRiftFire｜Rumble Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/rumble"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第四批：藍寶依 7.2b 現行持續法傷核心與 ARAM 狹窄地形的大絕價值整理。",
+        "augmentCompatibility": {
+          "title": "藍寶分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 49,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-001",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-003",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-007",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "藍寶的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-012",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "能提供藍寶實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-014",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "藍寶的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-015",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-016",
+              "tier": "C",
+              "tag": "普攻連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-025",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-028",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "C",
+              "tag": "治療護盾",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-033",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-035",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-056",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-057",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-062",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-066",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-067",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-070",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "藍寶的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-072",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-073",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "藍寶需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-074",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-076",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-077",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-078",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "藍寶的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-083",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-091",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-097",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-100",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "藍寶的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-101",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-102",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "藍寶的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-108",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和藍寶核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-115",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與藍寶的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-122",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-125",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-126",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-127",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-132",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-133",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-137",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-139",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-140",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "藍寶需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-142",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "能提供藍寶實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-146",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "藍寶需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "藍寶本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-150",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "藍寶以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "技能",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "一技能與大絕都能持續造成大量技能傷害，高頻技能增幅非常容易觸發。"
+            },
+            {
+              "tag": "雷霆回音",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "多段持續傷害能快速觸發雷霆系列，放大範圍壓制。"
+            },
+            {
+              "tag": "單人強者",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "技能暴擊、持續傷害暴擊與大絕雙放都能顯著提高藍寶上限。"
+            },
+            {
+              "tag": "控場",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "魚叉與大絕都有緩速，能利用部分控制連動卡提高黏人能力。"
+            },
+            {
+              "tag": "跑速",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "藍寶需要邊燒邊調整位置，跑速能改善貼人與撤退。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-028",
+            "augment-056",
+            "augment-057",
+            "augment-100",
+            "augment-101",
+            "augment-150"
+          ]
+        }
+      }
     },
     {
       "id": "samira",
@@ -39001,7 +41239,652 @@
           "url": "https://www.wildriftfire.com/guide/samira"
         }
       ],
-      "sourceNote": "7.2b ARAM S 第五批：煞蜜拉依暴擊核心、7.2b 多明尼克強化與 ARAM 團戰收割需求整理。"
+      "sourceNote": "7.2b ARAM S 第五批：煞蜜拉依暴擊核心、7.2b 多明尼克強化與 ARAM 團戰收割需求整理。",
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "暴擊連段／大絕進場收割射手",
+        "tags": [
+          "暴擊",
+          "身法",
+          "普攻"
+        ],
+        "summary": "煞蜜拉需要普攻與技能交錯疊評級，再用位移切入開大收割；暴擊與身法最核心，普攻、技能、迷霧與單人強者能進一步提高連段與大絕上限。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 3 技 > 2 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 3 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋光盾",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "暴擊收割",
+            "badge": "預設首選",
+            "trigger": "暴擊／身法／普攻增幅多",
+            "description": "蒐集者與無盡拉高進場爆發，再用嗜血者與守護天使支撐大絕完整轉完。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "開局直接提高普攻與技能傷害，最適合煞蜜拉第一輪短兵交火。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-32",
+                "name": "蒐集者",
+                "icon": "assets/images/aram/items/physical-high-32.webp",
+                "reason": "穿甲、暴擊與低血處決能加速第一個擊殺，最容易帶動煞蜜拉的連續收割。"
+              },
+              {
+                "id": "physical-high-17",
+                "name": "無盡之刃",
+                "icon": "assets/images/aram/items/infinity-edge.webp",
+                "reason": "放大暴擊與大絕的爆發上限，是第二波成形的重要傷害核心。"
+              },
+              {
+                "id": "physical-high-05",
+                "name": "多明尼克的問候",
+                "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+                "reason": "7.2b 提高物攻後更有效率，面對前排也能維持輸出。"
+              },
+              {
+                "id": "physical-high-11",
+                "name": "嗜血者",
+                "icon": "assets/images/aram/items/bloodthirster.webp",
+                "reason": "高吸血讓煞蜜拉在無法回城的 ARAM 更容易把血線拉回來並準備下一波進場。"
+              },
+              {
+                "id": "physical-high-10",
+                "name": "守護天使",
+                "icon": "assets/images/aram/items/guardian-angel.webp",
+                "reason": "後期切入風險很高，復活能保留一次關鍵團戰容錯。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "gluttonous-greaves",
+                "name": "貪婪護脛",
+                "icon": "assets/images/items/shoes/gluttonous-greaves.png",
+                "reason": "物攻與吸血能強化前中期續航，符合煞蜜拉貼身輸出的需求。"
+              },
+              {
+                "id": "immortal-boots",
+                "name": "不朽護脛",
+                "icon": "assets/images/items/shoes/immortal-boots.png",
+                "reason": "升級三級鞋後補更多生存與續航，提高切入後開大的容錯。"
+              }
+            ]
+          },
+          {
+            "id": "plan-進場生存增幅多",
+            "title": "近戰續戰",
+            "badge": "進場生存增幅多",
+            "trigger": "需要更久站場",
+            "description": "加入死亡之舞提高切入後容錯，保留暴擊與穿透核心。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "開局直接提高普攻與技能傷害，最適合煞蜜拉第一輪短兵交火。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-32",
+                "name": "蒐集者",
+                "icon": "assets/images/aram/items/physical-high-32.webp",
+                "reason": "穿甲、暴擊與低血處決能加速第一個擊殺，最容易帶動煞蜜拉的連續收割。"
+              },
+              {
+                "id": "physical-high-17",
+                "name": "無盡之刃",
+                "icon": "assets/images/aram/items/infinity-edge.webp",
+                "reason": "放大暴擊與大絕的爆發上限，是第二波成形的重要傷害核心。"
+              },
+              {
+                "id": "physical-high-05",
+                "name": "多明尼克的問候",
+                "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+                "reason": "7.2b 提高物攻後更有效率，面對前排也能維持輸出。"
+              },
+              {
+                "id": "physical-high-42",
+                "name": "死亡之舞",
+                "icon": "assets/images/aram/items/deaths-dance.webp",
+                "when": "敵方物理爆發很多",
+                "reason": "需要延後爆發傷害、提高進場存活時替換嗜血者或最後一件。"
+              },
+              {
+                "id": "physical-high-10",
+                "name": "守護天使",
+                "icon": "assets/images/aram/items/guardian-angel.webp",
+                "reason": "後期切入風險很高，復活能保留一次關鍵團戰容錯。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "gluttonous-greaves",
+                "name": "貪婪護脛",
+                "icon": "assets/images/items/shoes/gluttonous-greaves.png",
+                "reason": "物攻與吸血能強化前中期續航，符合煞蜜拉貼身輸出的需求。"
+              },
+              {
+                "id": "immortal-boots",
+                "name": "不朽護脛",
+                "icon": "assets/images/items/shoes/immortal-boots.png",
+                "reason": "升級三級鞋後補更多生存與續航，提高切入後開大的容錯。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "conqueror",
+              "name": "征服者",
+              "icon": "assets/images/runes/keystone/conqueror.webp",
+              "reason": "技能與普攻交錯很快就能疊高層數，長團戰傷害最穩。"
+            },
+            {
+              "id": "brutal",
+              "name": "兇蠻",
+              "icon": "assets/images/runes/precision/brutal.webp",
+              "reason": "直接補前期物攻與穿透，讓第一輪交換更有壓力。"
+            },
+            {
+              "id": "cut-down",
+              "name": "斷切",
+              "icon": "assets/images/runes/precision/cut-down.webp",
+              "reason": "ARAM 常先碰到前排，能提高對高生命目標的效率。"
+            },
+            {
+              "id": "legend-bloodline",
+              "name": "傳奇：血脈",
+              "icon": "assets/images/runes/precision/legend-bloodline.webp",
+              "reason": "額外吸血能強化無法回城環境下的持續作戰。"
+            },
+            {
+              "id": "sudden-impact",
+              "name": "即刻衝擊",
+              "icon": "assets/images/runes/conquest/sudden-impact.webp",
+              "reason": "3 技位移進場後能取得穿透，與爆發收割節奏高度契合。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先用普攻與 1 技在安全距離消耗並疊評級。2 技不要拿來隨便清兵，應保留給關鍵飛行控制或爆發。",
+          "中期": "蒐集者與無盡成形後，等隊友先控住或逼出控制，再用 3 技切入。評級未滿前不要為了硬開大站在敵方五人中央。",
+          "後期": "後期每次進場都可能決定勝負。先辨認敵方能打斷大絕的技能，等它們交掉後再進場；守護天使在手時可以更積極抓殘血連殺。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+          },
+          {
+            "label": "WildRiftFire｜Samira Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/samira"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第五批：煞蜜拉依暴擊核心、7.2b 多明尼克強化與 ARAM 團戰收割需求整理。",
+        "augmentCompatibility": {
+          "title": "煞蜜拉分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 63,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-001",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-003",
+              "tier": "B",
+              "tag": "控制連動",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-004",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-005",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-009",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-012",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-015",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-017",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "煞蜜拉有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-024",
+              "tier": "A",
+              "tag": "位移連動",
+              "reason": "煞蜜拉有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-025",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與煞蜜拉的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-028",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-030",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-033",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-034",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-035",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-049",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "煞蜜拉的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-050",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "煞蜜拉有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-051",
+              "tier": "A",
+              "tag": "位移連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-052",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-066",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-067",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-068",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-069",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-070",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "煞蜜拉的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-071",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "煞蜜拉有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-072",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-074",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-075",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "煞蜜拉有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            },
+            {
+              "id": "augment-076",
+              "tier": "B",
+              "tag": "控制連動",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-077",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-078",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "煞蜜拉的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-083",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-086",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-087",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-090",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "煞蜜拉需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-091",
+              "tier": "A",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-095",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-097",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-100",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "煞蜜拉的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-101",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-102",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "煞蜜拉的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-107",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-108",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-110",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-111",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-118",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-121",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-122",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-124",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-125",
+              "tier": "B",
+              "tag": "控制連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-126",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-127",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-130",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-133",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-134",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "煞蜜拉會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-137",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-139",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "煞蜜拉以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-141",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "煞蜜拉的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-142",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和煞蜜拉核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-147",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-149",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-150",
+              "tier": "A",
+              "tag": "暴擊連動",
+              "reason": "煞蜜拉的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-151",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "煞蜜拉有可靠位移能力，這張卡的位移條件可以穩定觸發。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "暴擊",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "標準出裝高度依賴暴擊，暴擊增幅能直接放大一技能、普攻與大絕傷害。"
+            },
+            {
+              "tag": "身法",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "三技能提供進場位移，能觸發身法類增幅並提高收割機動。"
+            },
+            {
+              "tag": "普攻",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "疊評級需要普攻與技能交錯，普攻型增幅能直接參與連段。"
+            },
+            {
+              "tag": "技能",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "一技能與大絕是主要輸出來源，技能循環與命中增幅具有高收益。"
+            },
+            {
+              "tag": "迷霧回音",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "衝刺後的傷害、穿透與生存能直接放大三技能進場。"
+            },
+            {
+              "tag": "單人強者",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "大絕雙放、施放大絕無敵與處決類單卡能大幅提高收割上限。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-009",
+            "augment-071",
+            "augment-100",
+            "augment-102",
+            "augment-147",
+            "augment-149"
+          ]
+        }
+      }
     },
     {
       "id": "senna",
@@ -39178,7 +42061,548 @@
           "url": "https://www.wildriftfire.com/guide/senna"
         }
       ],
-      "sourceNote": "7.2b ARAM S 第五批：姍娜納入 7.2a 被動／大絕調整與 7.2b 磁性雷射槍強化。"
+      "sourceNote": "7.2b ARAM S 第五批：姍娜納入 7.2a 被動／大絕調整與 7.2b 磁性雷射槍強化。",
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "超遠射程／治療控制輔助射手",
+        "tags": [
+          "英雄",
+          "技能",
+          "復原"
+        ],
+        "summary": "姍娜同時具備普攻射程成長、遠距治療與禁錮；英雄系的射程增幅最具特色，技能、復原與普攻類則分別放大功能與輸出。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 2 技 > 3 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋治癒",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "射程功能",
+            "badge": "預設首選",
+            "trigger": "英雄／技能／復原增幅多",
+            "description": "磁性雷射槍與黑切兼顧普攻和功能，再用重創、破盾與守護天使支撐遠距團戰。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "先補物攻強化 1 技、普攻與前期黑霧消耗，不使用召喚峽谷輔助起手裝。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-23",
+                "name": "磁性雷射槍",
+                "icon": "assets/images/aram/items/magnetic-blaster.webp",
+                "reason": "7.2b 物攻提高到 30，充能攻擊也能讓姍娜用更安全的距離摸血。"
+              },
+              {
+                "id": "physical-high-38",
+                "name": "黑色切割者",
+                "icon": "assets/images/aram/items/black-cleaver-v2.webp",
+                "reason": "生命、技能加速與疊甲削都適合長時間團戰，也能幫物理隊友一起打前排。"
+              },
+              {
+                "id": "physical-high-18",
+                "name": "致死宣告",
+                "icon": "assets/images/aram/items/mortal-reminder.webp",
+                "reason": "ARAM 治療與吸血常見，百分比穿甲加重創泛用性很高。"
+              },
+              {
+                "id": "physical-high-31",
+                "name": "巨蛇鋒牙",
+                "icon": "assets/images/items/high/serpents-fang-fixed.webp",
+                "reason": "密集團戰常遇到大量護盾，穿甲與破盾讓姍娜能保持功能性。"
+              },
+              {
+                "id": "physical-high-10",
+                "name": "守護天使",
+                "icon": "assets/images/aram/items/guardian-angel.webp",
+                "reason": "後期被突進抓到通常很難脫身，復活能保住一次關鍵團戰。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "burst-boots",
+                "name": "爆發之靴",
+                "icon": "assets/images/items/shoes/burst-boots.png",
+                "reason": "補物攻與穿透，提高前中期消耗與遠距普攻壓力。"
+              },
+              {
+                "id": "armorbreaker-boots",
+                "name": "破甲戰靴",
+                "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+                "reason": "升級三級鞋後增加物攻與物穿，繼續放大遠距離輸出。"
+              }
+            ]
+          },
+          {
+            "id": "plan-技能／復原增幅多",
+            "title": "技能循環",
+            "badge": "技能／復原增幅多",
+            "trigger": "需要更多治療與控制",
+            "description": "加入精進之矛提高一、二技能使用頻率，保留黑切與功能裝。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "先補物攻強化 1 技、普攻與前期黑霧消耗，不使用召喚峽谷輔助起手裝。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-23",
+                "name": "磁性雷射槍",
+                "icon": "assets/images/aram/items/magnetic-blaster.webp",
+                "reason": "7.2b 物攻提高到 30，充能攻擊也能讓姍娜用更安全的距離摸血。"
+              },
+              {
+                "id": "physical-high-38",
+                "name": "黑色切割者",
+                "icon": "assets/images/aram/items/black-cleaver-v2.webp",
+                "reason": "生命、技能加速與疊甲削都適合長時間團戰，也能幫物理隊友一起打前排。"
+              },
+              {
+                "id": "physical-high-34",
+                "name": "精進之矛",
+                "icon": "assets/images/items/high/spear-of-shojin-fixed.webp",
+                "when": "需要更高技能循環",
+                "reason": "想提高 1、2 技頻率時可作為後期替代裝。"
+              },
+              {
+                "id": "physical-high-18",
+                "name": "致死宣告",
+                "icon": "assets/images/aram/items/mortal-reminder.webp",
+                "reason": "ARAM 治療與吸血常見，百分比穿甲加重創泛用性很高。"
+              },
+              {
+                "id": "physical-high-10",
+                "name": "守護天使",
+                "icon": "assets/images/aram/items/guardian-angel.webp",
+                "reason": "後期被突進抓到通常很難脫身，復活能保住一次關鍵團戰。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "burst-boots",
+                "name": "爆發之靴",
+                "icon": "assets/images/items/shoes/burst-boots.png",
+                "reason": "補物攻與穿透，提高前中期消耗與遠距普攻壓力。"
+              },
+              {
+                "id": "armorbreaker-boots",
+                "name": "破甲戰靴",
+                "icon": "assets/images/items/shoes/armorbreaker-boots.png",
+                "reason": "升級三級鞋後增加物攻與物穿，繼續放大遠距離輸出。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "fleet-footwork",
+              "name": "迅疾步法",
+              "icon": "assets/images/runes/keystone/fleet-footwork.webp",
+              "reason": "遠程反覆普攻可穩定觸發治療與移速，無法回城時特別有價值。"
+            },
+            {
+              "id": "empowered-attack",
+              "name": "強化普攻",
+              "icon": "assets/images/runes/conquest/empowered-attack.webp",
+              "reason": "配合黑霧後的長射程普攻，讓每輪點人更有壓力。"
+            },
+            {
+              "id": "chain-assault",
+              "name": "鎖鏈突擊",
+              "icon": "assets/images/runes/conquest/chain-assault.webp",
+              "reason": "單線容易連續命中同一目標，提高持續作戰收益。"
+            },
+            {
+              "id": "eyeball-collector",
+              "name": "眼球收集器",
+              "icon": "assets/images/runes/conquest/eyeball-collector.webp",
+              "reason": "參與擊殺後累積適性能力，適合高頻團戰。"
+            },
+            {
+              "id": "bone-plating",
+              "name": "骨甲",
+              "icon": "assets/images/runes/resolve/bone-plating.webp",
+              "reason": "被刺客或雪球式強開貼臉時多一層保命空間。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "以收黑霧、1 技穿線消耗和治療為主。魂掉在危險位置就放掉，不值得為一層黑霧送掉血線。",
+          "中期": "射程成長後更容易安全點前排。2 技可以先命中兵或前排，利用延遲禁錮逼散敵方站位；有隊友被開時大絕優先當全圖護盾使用。",
+          "後期": "後期射程是最大優勢，站位要比一般射手更保守。先打碰得到的目標，不要走進敵方控制範圍追後排；守護天使在手再考慮更積極前壓。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+          },
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+          },
+          {
+            "label": "WildRiftFire｜Senna Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/senna"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第五批：姍娜納入 7.2a 被動／大絕調整與 7.2b 磁性雷射槍強化。",
+        "augmentCompatibility": {
+          "title": "姍娜分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 45,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-001",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-005",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-019",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-020",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-028",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "姍娜以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-034",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-040",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "姍娜的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-041",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "能提供姍娜實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-042",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-043",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與姍娜的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-044",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-068",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-069",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-070",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "姍娜的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-072",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-073",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-076",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "姍娜本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-083",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "姍娜本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-085",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-086",
+              "tier": "A",
+              "tag": "暴擊連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-087",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "姍娜本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-090",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "姍娜需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-094",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-101",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "姍娜以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-104",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-106",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-107",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-110",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-115",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和姍娜核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "姍娜本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "B",
+              "tag": "控制連動",
+              "reason": "姍娜本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-118",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-121",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-123",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-124",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-127",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "姍娜以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-130",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-132",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "姍娜以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-134",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "姍娜會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-140",
+              "tier": "B",
+              "tag": "跑速拉扯",
+              "reason": "姍娜需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-146",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "姍娜有穩定治療能力，這張卡能直接提高續航或團隊保護。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "姍娜本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "英雄",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "姍娜的力量能額外堆疊黯霧與攻擊距離，與她本身的射程成長完全同方向。"
+            },
+            {
+              "tag": "技能",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "一技能兼具傷害與治療，二技能提供禁錮，大絕則有全圖護盾，技能價值很高。"
+            },
+            {
+              "tag": "復原",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "一技能能持續治療隊友，大絕也能提供護盾，能穩定利用多張輔助增幅。"
+            },
+            {
+              "tag": "普攻",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "射程成長後能安全穿插普攻，命中特效與攻擊距離型效果很好用。"
+            },
+            {
+              "tag": "控場",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "二技能禁錮能觸發控制增幅，但頻率低於純控場英雄。"
+            },
+            {
+              "tag": "跑速",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "跑速能幫助姍娜保持超遠射程並調整治療與輸出位置。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-005",
+            "augment-043",
+            "augment-070",
+            "augment-085",
+            "augment-104",
+            "augment-123"
+          ]
+        }
+      }
     },
     {
       "id": "sett",
@@ -39355,7 +42779,555 @@
           "url": "https://www.wildriftfire.com/guide/sett"
         }
       ],
-      "sourceNote": "7.2b ARAM S 第五批：賽特保留 7.1d 標準 ARAM 90% 傷害修正，出裝改以團戰鬥士而非分推裝為主。"
+      "sourceNote": "7.2b ARAM S 第五批：賽特保留 7.1d 標準 ARAM 90% 傷害修正，出裝改以團戰鬥士而非分推裝為主。",
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "高生命近戰／豪意護盾反打鬥士",
+        "tags": [
+          "體型",
+          "護盾",
+          "控場"
+        ],
+        "summary": "賽特越能承受傷害，就越能靠豪意二技能打出巨大護盾與真傷；體型與護盾是核心，控場、普攻與大地類則強化抱摔、拉人與持續纏鬥。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "2 技 > 1 技 > 3 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 2 技提高反打與護盾價值、次升 1 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋鬼步",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "高生命重拳",
+            "badge": "預設首選",
+            "trigger": "體型／護盾增幅多",
+            "description": "步履破壞者與狂霸血甲放大近身黏人和豪意二技能，再用史特拉克提高反打容錯。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "先補生命提高第一輪承傷與豪意反打容錯，後續再接鬥士核心。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-01",
+                "name": "步履破壞者",
+                "icon": "assets/images/aram/items/stridebreaker.webp",
+                "reason": "生命、物攻、攻速與短位移緩速都能幫賽特更容易貼到目標並把人留在 3 技／2 技範圍。"
+              },
+              {
+                "id": "physical-high-06",
+                "name": "狂霸血甲",
+                "icon": "assets/images/aram/items/overlords-bloodmail.webp",
+                "reason": "把大量額外生命轉成物攻，低血時再強化輸出，和豪意反打玩法高度契合。"
+              },
+              {
+                "id": "physical-high-38",
+                "name": "黑色切割者",
+                "icon": "assets/images/aram/items/black-cleaver-v2.webp",
+                "reason": "生命、技能加速與削甲都適合連續正面團戰，還能幫隊友處理前排。"
+              },
+              {
+                "id": "physical-high-34",
+                "name": "精進之矛",
+                "icon": "assets/images/items/high/spear-of-shojin-fixed.webp",
+                "reason": "提高技能循環，讓 2 技與 3 技在長團戰更有機會打第二輪。"
+              },
+              {
+                "id": "physical-high-16",
+                "name": "史特拉克手套",
+                "icon": "assets/images/aram/items/steraks-gage.webp",
+                "reason": "被多人集火時提供關鍵護盾，讓賽特有時間把高豪意 2 技打出去。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "正面承受普攻與物理爆發時最穩定，提升第一輪進場耐久。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後進一步提高物理承傷能力；敵方法傷／控制極重時可改水星線。"
+              }
+            ]
+          },
+          {
+            "id": "plan-敵方爆發高",
+            "title": "耐久前排",
+            "badge": "敵方爆發高",
+            "trigger": "需要更久承傷蓄豪意",
+            "description": "加入自然之力與蘭頓，讓自己能承受更多傷害後再用二技能反打。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "先補生命提高第一輪承傷與豪意反打容錯，後續再接鬥士核心。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-01",
+                "name": "步履破壞者",
+                "icon": "assets/images/aram/items/stridebreaker.webp",
+                "reason": "生命、物攻、攻速與短位移緩速都能幫賽特更容易貼到目標並把人留在 3 技／2 技範圍。"
+              },
+              {
+                "id": "physical-high-06",
+                "name": "狂霸血甲",
+                "icon": "assets/images/aram/items/overlords-bloodmail.webp",
+                "reason": "把大量額外生命轉成物攻，低血時再強化輸出，和豪意反打玩法高度契合。"
+              },
+              {
+                "id": "defense-high-14",
+                "name": "自然之力",
+                "icon": "assets/images/items/high/defense-force-of-nature.png",
+                "when": "敵方法傷很多",
+                "reason": "可替換精進之矛，補魔抗與跑速。"
+              },
+              {
+                "id": "defense-high-07",
+                "name": "蘭頓之兆",
+                "icon": "assets/images/items/high/defense-randuins-omen.png",
+                "when": "敵方暴擊射手很多",
+                "reason": "需要更高護甲與抗暴擊時替換一件輸出裝。"
+              },
+              {
+                "id": "physical-high-16",
+                "name": "史特拉克手套",
+                "icon": "assets/images/aram/items/steraks-gage.webp",
+                "reason": "被多人集火時提供關鍵護盾，讓賽特有時間把高豪意 2 技打出去。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "正面承受普攻與物理爆發時最穩定，提升第一輪進場耐久。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後進一步提高物理承傷能力；敵方法傷／控制極重時可改水星線。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "conqueror",
+              "name": "征服者",
+              "icon": "assets/images/runes/keystone/conqueror.webp",
+              "reason": "賽特在近身長團戰很容易疊高層數，補足 90% 模式傷害修正後的持續輸出。"
+            },
+            {
+              "id": "courage-of-colossus",
+              "name": "巨像勇氣",
+              "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+              "reason": "3 技與大絕控制都能配合護盾，提高進場後存活。"
+            },
+            {
+              "id": "second-wind",
+              "name": "回春",
+              "icon": "assets/images/runes/resolve/second-wind.webp",
+              "reason": "被遠程消耗時持續回復，減少還沒開戰就被磨殘。"
+            },
+            {
+              "id": "overgrowth",
+              "name": "過度生長",
+              "icon": "assets/images/runes/resolve/overgrowth.webp",
+              "reason": "單線小兵死亡密集，能穩定累積額外生命並轉化為狂霸血甲價值。"
+            },
+            {
+              "id": "battle-fervor",
+              "name": "熱忱戰鬥",
+              "icon": "assets/images/runes/precision/battle-fervor.webp",
+              "reason": "長時間貼身戰能逐步提高輸出，適合賽特正面纏鬥。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先利用身板站在隊伍前方，但不要無腦衝塔。被消耗時讓回春維持血線，等敵方靠近再找 3 技左右夾人。",
+          "中期": "有狂霸血甲後，豪意越高 2 技威脅越大。大絕優先抱敵方高生命前排往後排砸，落地後接 3 技與 2 技製造第二波控制。",
+          "後期": "後期要辨認敵方最能打斷你的控制與位移。不要在豪意很低時就交 2 技；史特拉克護盾觸發後通常就是反手蓄意轟拳的最佳窗口。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.1d",
+            "url": "https://wildrift.leagueoflegends.com/en-gb/news/game-updates/wild-rift-patch-notes-71d-/"
+          },
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+          },
+          {
+            "label": "WildRiftFire｜Sett Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/sett"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第五批：賽特保留 7.1d 標準 ARAM 90% 傷害修正，出裝改以團戰鬥士而非分推裝為主。",
+        "augmentCompatibility": {
+          "title": "賽特分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 46,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-005",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-006",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-010",
+              "tier": "B",
+              "tag": "跑速拉扯",
+              "reason": "賽特需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-013",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-021",
+              "tier": "A",
+              "tag": "分類適配",
+              "reason": "能提供賽特實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-022",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-027",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "賽特以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-031",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽特的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-058",
+              "tier": "C",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-059",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-060",
+              "tier": "C",
+              "tag": "位移連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-061",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "效果與賽特的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-063",
+              "tier": "A",
+              "tag": "坦度成長",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-064",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-065",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-068",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-069",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-079",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "賽特需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-080",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "賽特以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-081",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽特的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-086",
+              "tier": "B",
+              "tag": "暴擊連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-087",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-088",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-090",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "賽特需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-096",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-098",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-099",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽特的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-107",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-110",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-118",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-121",
+              "tier": "A",
+              "tag": "暴擊連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-124",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-128",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽特的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-130",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-134",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽特會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-136",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-138",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "賽特有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-143",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "賽特需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-144",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽特的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-145",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "賽特需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽特本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "體型",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "高生命與體型能直接提高前排容錯，也能間接放大豪意二技能的價值。"
+            },
+            {
+              "tag": "護盾",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "二技能會產生巨大護盾，護盾觸發類增幅能在反打瞬間創造額外收益。"
+            },
+            {
+              "tag": "控場",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "三技能與大絕都有強控制，能穩定觸發控制型增幅。"
+            },
+            {
+              "tag": "普攻",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "一技能強化普攻且需要近身連打，普攻型增幅能直接參與輸出。"
+            },
+            {
+              "tag": "大地回音",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "坦度、緩速與貼身控制很適合賽特在敵陣中央纏鬥。"
+            },
+            {
+              "tag": "烈焰回音",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "部分硬控、韌性與護盾連動卡能提高賽特進場後的反打能力。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-089",
+            "augment-099",
+            "augment-124",
+            "augment-136",
+            "augment-138",
+            "augment-144"
+          ]
+        }
+      }
     },
     {
       "id": "sion",
@@ -39528,7 +43500,592 @@
           "url": "https://www.wildriftfire.com/guide/sion"
         }
       ],
-      "sourceNote": "7.2b ARAM S 第五批：賽恩以標準坦克團戰母版整理，避開召喚峽谷分推需求。"
+      "sourceNote": "7.2b ARAM S 第五批：賽恩以標準坦克團戰母版整理，避開召喚峽谷分推需求。",
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "極高生命／死亡後續戰前排坦克",
+        "tags": [
+          "體型",
+          "控場",
+          "重生"
+        ],
+        "summary": "賽恩靠永久生命成長、護盾與群體控制撐住正面，死亡後仍能繼續造成壓力；體型、控場與重生類最具特色，護盾、大地與高生命單卡也非常契合。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 2 技 > 3 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋鬼步",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "高生命坦克",
+            "badge": "預設首選",
+            "trigger": "體型／護盾／重生增幅多",
+            "description": "日炎與無盡絕望維持近身壓力，午時斗篷與雅瑪蘭守護像撐高正面承傷。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "提高第一輪承傷並加強 2 技護盾價值，最適合坦克路線起手。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-06",
+                "name": "日炎聖盾",
+                "icon": "assets/images/items/high/defense-sunfire-aegis.png",
+                "reason": "高生命近身纏鬥能穩定吃滿灼燒，兼顧前排與清兵。"
+              },
+              {
+                "id": "defense-high-08",
+                "name": "荊棘之甲",
+                "icon": "assets/images/items/high/defense-thornmail.png",
+                "reason": "ARAM 治療與射手常見，護甲加重創能讓賽恩更有效站住前排。"
+              },
+              {
+                "id": "defense-high-03",
+                "name": "無盡絕望",
+                "icon": "assets/images/items/high/defense-unending-despair.png",
+                "reason": "多人近戰環境能反覆觸發回復，提高長團戰續戰力。"
+              },
+              {
+                "id": "defense-high-17",
+                "name": "午時斗篷",
+                "icon": "assets/images/items/high/defense-mantle-of-the-twelfth-hour.png",
+                "reason": "低血時獲得額外生命與抗性類容錯，適合賽恩吸收第一輪火力。"
+              },
+              {
+                "id": "defense-high-16",
+                "name": "雅瑪蘭守護像",
+                "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+                "reason": "後期多人混戰快速疊高雙抗，讓超高生命更難被有效融化。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "對物理與普攻陣最穩，能讓前期站位更積極。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後繼續提高物理承傷；敵方法系偏多時可改水星線。"
+              }
+            ]
+          },
+          {
+            "id": "plan-體型增幅多",
+            "title": "極限生命",
+            "badge": "體型增幅多",
+            "trigger": "需要更高血量",
+            "description": "加入好戰者鎧甲，讓二技能護盾、體型與死亡後壓力一起提高。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "提高第一輪承傷並加強 2 技護盾價值，最適合坦克路線起手。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-06",
+                "name": "日炎聖盾",
+                "icon": "assets/images/items/high/defense-sunfire-aegis.png",
+                "reason": "高生命近身纏鬥能穩定吃滿灼燒，兼顧前排與清兵。"
+              },
+              {
+                "id": "defense-high-03",
+                "name": "無盡絕望",
+                "icon": "assets/images/items/high/defense-unending-despair.png",
+                "reason": "多人近戰環境能反覆觸發回復，提高長團戰續戰力。"
+              },
+              {
+                "id": "defense-high-09",
+                "name": "好戰者鎧甲",
+                "icon": "assets/images/items/high/defense-warmogs-armor.png",
+                "when": "需要脫戰回滿再開下一波",
+                "reason": "血量成形後可強化團戰間的恢復能力。"
+              },
+              {
+                "id": "defense-high-17",
+                "name": "午時斗篷",
+                "icon": "assets/images/items/high/defense-mantle-of-the-twelfth-hour.png",
+                "reason": "低血時獲得額外生命與抗性類容錯，適合賽恩吸收第一輪火力。"
+              },
+              {
+                "id": "defense-high-16",
+                "name": "雅瑪蘭守護像",
+                "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+                "reason": "後期多人混戰快速疊高雙抗，讓超高生命更難被有效融化。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "對物理與普攻陣最穩，能讓前期站位更積極。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後繼續提高物理承傷；敵方法系偏多時可改水星線。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "grasp",
+              "name": "不死之握",
+              "icon": "assets/images/runes/keystone/grasp.webp",
+              "reason": "近身換血能補傷害、治療與永久生命，和賽恩高血量成長很契合。"
+            },
+            {
+              "id": "courage-of-colossus",
+              "name": "巨像勇氣",
+              "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+              "reason": "1 技擊飛與大絕控制可觸發護盾，提高進場後耐久。"
+            },
+            {
+              "id": "second-wind",
+              "name": "回春",
+              "icon": "assets/images/runes/resolve/second-wind.webp",
+              "reason": "被遠程消耗時維持血線，降低開戰前被磨殘的問題。"
+            },
+            {
+              "id": "overgrowth",
+              "name": "過度生長",
+              "icon": "assets/images/runes/resolve/overgrowth.webp",
+              "reason": "ARAM 單線兵線死亡密集，能穩定疊額外生命。"
+            },
+            {
+              "id": "transcendence",
+              "name": "卓越",
+              "icon": "assets/images/runes/sorcery/transcendence.webp",
+              "reason": "技能加速能提高 1 技控制、2 技護盾與 3 技消耗頻率。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "用 1 技草叢／視野死角蓄力逼位，2 技盡量靠小兵與敵方英雄一起打出爆破並持續堆生命。",
+          "中期": "兩到三件坦裝後就是隊伍主要前排。大絕可以用來逼散敵方陣型，不必每次追求撞到後排；落地後用 1 技切斷退路。",
+          "後期": "後期死亡不等於立刻結束作用。活著時先吃關鍵技能，死亡後被動則優先黏住沒有位移的輸出位，逼他們後撤讓隊友接手。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+          },
+          {
+            "label": "WildRiftFire｜Sion Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/sion"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第五批：賽恩以標準坦克團戰母版整理，避開召喚峽谷分推需求。",
+        "augmentCompatibility": {
+          "title": "賽恩分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 53,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-003",
+              "tier": "B",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-010",
+              "tier": "B",
+              "tag": "跑速拉扯",
+              "reason": "賽恩需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-012",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-013",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "賽恩有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-015",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-025",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-027",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "賽恩有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-031",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-033",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-035",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-058",
+              "tier": "C",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-059",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-060",
+              "tier": "D",
+              "tag": "位移連動",
+              "reason": "雖然同屬適配分類，但實際觸發或收益與賽恩不夠穩定，只有特定情況才考慮。"
+            },
+            {
+              "id": "augment-061",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-066",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-067",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-074",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-077",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-078",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "賽恩的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-079",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "賽恩需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-080",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-081",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-082",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-088",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "賽恩有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-091",
+              "tier": "B",
+              "tag": "暴擊連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-096",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-097",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-098",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽恩有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-099",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-100",
+              "tier": "B",
+              "tag": "大絕連動",
+              "reason": "賽恩的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-102",
+              "tier": "B",
+              "tag": "大絕連動",
+              "reason": "賽恩的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-108",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-114",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-122",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-125",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-126",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-128",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-133",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "賽恩有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-136",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-137",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-138",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "賽恩有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-139",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-142",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和賽恩核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-143",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "賽恩需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-144",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與賽恩的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-145",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "賽恩需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "賽恩本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-150",
+              "tier": "C",
+              "tag": "暴擊連動",
+              "reason": "賽恩以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "體型",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "賽恩天然堆疊大量最大生命，體型與高生命增幅能把前排優勢繼續放大。"
+            },
+            {
+              "tag": "控場",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "一技能擊飛與大絕衝撞都是高價值控制，控制增幅能直接強化開戰。"
+            },
+            {
+              "tag": "重生",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "死亡後繼續戰鬥本就是賽恩特色，復活與死亡爆炸類增幅能延長陣亡後壓力。"
+            },
+            {
+              "tag": "護盾",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "二技能能穩定提供高生命比例護盾，護盾免控與護盾傷害都有實戰價值。"
+            },
+            {
+              "tag": "大地回音",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "高坦度、近身緩速與反位移效果符合賽恩正面纏鬥。"
+            },
+            {
+              "tag": "單人強者",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "高生命、保命重置與前排生存型單卡對賽恩有很高價值。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-082",
+            "augment-098",
+            "augment-099",
+            "augment-108",
+            "augment-136",
+            "augment-144"
+          ]
+        }
+      }
     },
     {
       "id": "sivir",
@@ -39705,7 +44262,542 @@
           "url": "https://www.wildriftfire.com/guide/sivir"
         }
       ],
-      "sourceNote": "7.2b ARAM S 第五批：希維爾保留 7.0a 95% 傷害修正，並同步 7.2b 三件暴擊裝調整。"
+      "sourceNote": "7.2b ARAM S 第五批：希維爾保留 7.0a 95% 傷害修正，並同步 7.2b 三件暴擊裝調整。",
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "彈射普攻／團隊加速射手",
+        "tags": [
+          "普攻",
+          "技能",
+          "暴擊"
+        ],
+        "summary": "希維爾靠二技能彈射與高頻普攻打出範圍輸出，再用大絕帶動全隊進退；普攻與技能是核心，暴擊、疾風與跑速類能放大輸出與機動。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 2 技 > 3 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋光盾",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "範圍暴擊",
+            "badge": "預設首選",
+            "trigger": "普攻／暴擊／疾風增幅多",
+            "description": "嗜血者與磁性雷射槍維持續航，搭配那歐疾刃與無盡放大彈射與技能循環。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "直接提高 1 技、普攻與彈射傷害，前期最好用。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-11",
+                "name": "嗜血者",
+                "icon": "assets/images/aram/items/bloodthirster.webp",
+                "reason": "先補高物攻與吸血，讓希維爾能扛住 ARAM 長時間消耗。"
+              },
+              {
+                "id": "physical-high-23",
+                "name": "磁性雷射槍",
+                "icon": "assets/images/aram/items/magnetic-blaster.webp",
+                "reason": "7.2b 物攻提高到 30，充能輸出與暴擊能讓安全消耗更有壓力。"
+              },
+              {
+                "id": "physical-high-05",
+                "name": "多明尼克的問候",
+                "icon": "assets/images/aram/items/lord-dominiks-regards.webp",
+                "reason": "7.2b 物攻提高到 30，讓中後期處理前排的效率更好。"
+              },
+              {
+                "id": "physical-high-28",
+                "name": "那歐疾刃",
+                "icon": "assets/images/aram/items/navori-quickblades.webp",
+                "reason": "7.2b 降價後更快成形，普攻縮短非大絕技能冷卻，能提高彈射與法術護盾頻率。"
+              },
+              {
+                "id": "physical-high-17",
+                "name": "無盡之刃",
+                "icon": "assets/images/aram/items/infinity-edge.webp",
+                "reason": "後期放大暴擊傷害，把多次彈射與普攻壓力拉到最高。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "gluttonous-greaves",
+                "name": "貪婪護脛",
+                "icon": "assets/images/items/shoes/gluttonous-greaves.png",
+                "reason": "前期物攻與吸血提高續航，適合無法回城的單線消耗。"
+              },
+              {
+                "id": "immortal-boots",
+                "name": "不朽護脛",
+                "icon": "assets/images/items/shoes/immortal-boots.png",
+                "reason": "升級三級鞋後增加生存與續航，降低被強開直接秒掉的風險。"
+              }
+            ]
+          },
+          {
+            "id": "plan-跑速／技能增幅多",
+            "title": "安全持續輸出",
+            "badge": "跑速／技能增幅多",
+            "trigger": "敵方突進多",
+            "description": "加入守護天使提高法術護盾被破解後的容錯，保留暴擊與技能循環。",
+            "starterItems": [
+              {
+                "id": "basic-long-sword",
+                "name": "長劍",
+                "icon": "assets/images/aram/items/basic-long-sword.webp",
+                "reason": "直接提高 1 技、普攻與彈射傷害，前期最好用。"
+              }
+            ],
+            "items": [
+              {
+                "id": "physical-high-11",
+                "name": "嗜血者",
+                "icon": "assets/images/aram/items/bloodthirster.webp",
+                "reason": "先補高物攻與吸血，讓希維爾能扛住 ARAM 長時間消耗。"
+              },
+              {
+                "id": "physical-high-23",
+                "name": "磁性雷射槍",
+                "icon": "assets/images/aram/items/magnetic-blaster.webp",
+                "reason": "7.2b 物攻提高到 30，充能輸出與暴擊能讓安全消耗更有壓力。"
+              },
+              {
+                "id": "physical-high-28",
+                "name": "那歐疾刃",
+                "icon": "assets/images/aram/items/navori-quickblades.webp",
+                "reason": "7.2b 降價後更快成形，普攻縮短非大絕技能冷卻，能提高彈射與法術護盾頻率。"
+              },
+              {
+                "id": "physical-high-17",
+                "name": "無盡之刃",
+                "icon": "assets/images/aram/items/infinity-edge.webp",
+                "reason": "後期放大暴擊傷害，把多次彈射與普攻壓力拉到最高。"
+              },
+              {
+                "id": "physical-high-10",
+                "name": "守護天使",
+                "icon": "assets/images/aram/items/guardian-angel.webp",
+                "when": "後期常被強切",
+                "reason": "可替換最後一件，提高關鍵團戰容錯。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "gluttonous-greaves",
+                "name": "貪婪護脛",
+                "icon": "assets/images/items/shoes/gluttonous-greaves.png",
+                "reason": "前期物攻與吸血提高續航，適合無法回城的單線消耗。"
+              },
+              {
+                "id": "immortal-boots",
+                "name": "不朽護脛",
+                "icon": "assets/images/items/shoes/immortal-boots.png",
+                "reason": "升級三級鞋後增加生存與續航，降低被強開直接秒掉的風險。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "lethal-tempo",
+              "name": "致命節奏",
+              "icon": "assets/images/runes/keystone/lethal-tempo.webp",
+              "reason": "團戰持續普攻很容易疊高攻速，能最大化 2 技彈射輸出。"
+            },
+            {
+              "id": "brutal",
+              "name": "兇蠻",
+              "icon": "assets/images/runes/precision/brutal.webp",
+              "reason": "前期補物攻與穿透，減少 95% 模式傷害修正造成的壓力。"
+            },
+            {
+              "id": "cut-down",
+              "name": "斷切",
+              "icon": "assets/images/runes/precision/cut-down.webp",
+              "reason": "先打前排時仍能維持有效傷害。"
+            },
+            {
+              "id": "legend-bloodline",
+              "name": "傳奇：血脈",
+              "icon": "assets/images/runes/precision/legend-bloodline.webp",
+              "reason": "額外吸血強化長時間消耗後的回血能力。"
+            },
+            {
+              "id": "bone-plating",
+              "name": "骨甲",
+              "icon": "assets/images/runes/resolve/bone-plating.webp",
+              "reason": "被刺客或強開貼近時能減少第一輪爆發。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先用 1 技直線穿兵與英雄消耗，2 技從安全目標開始彈。3 技留給硬控或高傷技能，不要為了回一點魔力隨便交。",
+          "中期": "嗜血者與磁性雷射槍後續航與範圍輸出都成形。大絕可以用來配合己方前排強開，也可以在敵方突進時全隊後拉。",
+          "後期": "後期保持最大安全距離打能碰到的人。那歐疾刃讓技能循環變快，但不要因為有 3 技就站得過前；一旦法術護盾被騙掉就立刻後撤。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.0a",
+            "url": "https://wildrift.leagueoflegends.com/en-gb/news/game-updates/wild-rift-patch-notes-7-0a/"
+          },
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+          },
+          {
+            "label": "WildRiftFire｜Sivir Patch 7.2b",
+            "url": "https://www.wildriftfire.com/guide/sivir"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第五批：希維爾保留 7.0a 95% 傷害修正，並同步 7.2b 三件暴擊裝調整。",
+        "augmentCompatibility": {
+          "title": "希維爾分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 44,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-001",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "希維爾以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-002",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-005",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-009",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-018",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-028",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "希維爾以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-034",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-040",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "希維爾的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-041",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和希維爾核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-042",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-043",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "效果與希維爾的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-044",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-053",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-054",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-055",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-068",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-069",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-070",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "希維爾的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-072",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-073",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-076",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "能提供希維爾實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-083",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-086",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-087",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-090",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "希維爾需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-095",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-101",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "希維爾以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-105",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "希維爾的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-107",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-110",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-111",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-115",
+              "tier": "B",
+              "tag": "分類適配",
+              "reason": "有可利用的部分效果，但和希維爾核心機制不是完全重疊，通常屬於次選。"
+            },
+            {
+              "id": "augment-118",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-121",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-124",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-127",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "希維爾以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-130",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-132",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "希維爾以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-134",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "希維爾會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-140",
+              "tier": "B",
+              "tag": "跑速拉扯",
+              "reason": "希維爾需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-141",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "希維爾的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-146",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "希維爾需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-147",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            },
+            {
+              "id": "augment-149",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "希維爾的主要輸出能建立暴擊，這張卡能穩定轉成傷害或機動收益。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "普攻",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "二技能讓普攻可以持續彈射多人，高頻命中特效與攻速增幅很容易發揮。"
+            },
+            {
+              "tag": "技能",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "一技能遠距消耗、二技能範圍輸出與大絕加速都很依賴技能循環。"
+            },
+            {
+              "tag": "暴擊",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "標準後期出裝具暴擊率，暴擊增幅能提高持續輸出與移動能力。"
+            },
+            {
+              "tag": "疾風回音",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "攻速、射程與普攻連動能直接提高彈射輸出效率。"
+            },
+            {
+              "tag": "跑速",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "大絕本就提供團隊加速，額外跑速能讓希維爾更容易保持安全距離。"
+            },
+            {
+              "tag": "英雄",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "射程成長與持續普攻強化類英雄增幅能改善她需要靠站位輸出的弱點。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-043",
+            "augment-070",
+            "augment-086",
+            "augment-107",
+            "augment-147",
+            "augment-149"
+          ]
+        }
+      }
     },
     {
       "id": "skarner",
@@ -39882,7 +44974,566 @@
           "url": "https://www.wildriftfire.com/guide/skarner"
         }
       ],
-      "sourceNote": "7.2b ARAM S 第五批：史加納套用 7.2a 官方明確延伸至標準 ARAM 的 110% 傷害／90% 承傷。"
+      "sourceNote": "7.2b ARAM S 第五批：史加納套用 7.2a 官方明確延伸至標準 ARAM 的 110% 傷害／90% 承傷。",
+      "aaaAram": {
+        "status": "batch6-complete",
+        "label": "符文大亂鬥分類導向",
+        "version": "7.2b",
+        "position": "前排拖拽／高坦度連鎖控制坦克",
+        "tags": [
+          "控場",
+          "大地回音",
+          "體型"
+        ],
+        "summary": "史加納靠三技能推人與大絕拖拽製造人數差，二技能護盾則讓他能長時間站前排；控場、大地與體型最重要，護盾與普攻類也有很高利用率。",
+        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "sharedWithStandard": [
+          {
+            "title": "一般符文",
+            "value": "沿用標準 ARAM",
+            "note": "先沿用已校正的標準 ARAM 符文，增幅分類才是本模式主要變數。"
+          },
+          {
+            "title": "技能加點",
+            "value": "1 技 > 2 技 > 3 技",
+            "note": "ARAM 開局三個基礎技能各點 1 級，之後主升 1 技、次升 2 技；大絕能點就點。"
+          },
+          {
+            "title": "召喚師技能",
+            "value": "閃現＋鬼步",
+            "note": "符文大亂鬥先沿用標準 ARAM 的召喚師技能配置。"
+          }
+        ],
+        "buildPlans": [
+          {
+            "id": "plan-預設首選",
+            "title": "全坦拖拽",
+            "badge": "預設首選",
+            "trigger": "控場／大地／體型增幅多",
+            "description": "熾灼之冠與無盡絕望提供近身壓力，再用雙抗裝確保能把目標拖回己方。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "先補生命強化 2 技護盾與第一輪承傷，最符合坦克強開定位。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-18",
+                "name": "熾灼之冠",
+                "icon": "assets/images/items/high/defense-searing-crown-2.png",
+                "reason": "生命與護甲兼顧，近身後的持續灼燒適合史加納長時間黏住前排。"
+              },
+              {
+                "id": "defense-high-03",
+                "name": "無盡絕望",
+                "icon": "assets/images/items/high/defense-unending-despair.png",
+                "reason": "多人近戰時反覆回復，配合 90% 承傷修正能顯著提高續戰。"
+              },
+              {
+                "id": "defense-high-16",
+                "name": "雅瑪蘭守護像",
+                "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+                "reason": "進入五人團戰後快速疊雙抗，把模式承傷優勢放大。"
+              },
+              {
+                "id": "defense-high-08",
+                "name": "荊棘之甲",
+                "icon": "assets/images/items/high/defense-thornmail.png",
+                "reason": "對射手、治療與吸血陣同時提供護甲和重創。"
+              },
+              {
+                "id": "defense-high-14",
+                "name": "自然之力",
+                "icon": "assets/images/items/high/defense-force-of-nature.png",
+                "reason": "補高魔抗與移速，讓後期能更穩定穿過法術火力接近目標。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "前期正面承受物理與普攻時最穩，和 90% 模式承傷疊加後更難處理。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後進一步提高物理承傷；法傷／控制偏多時可改水星線。"
+              }
+            ]
+          },
+          {
+            "id": "plan-護盾／體型增幅多",
+            "title": "高生命前排",
+            "badge": "護盾／體型增幅多",
+            "trigger": "需要更高承傷",
+            "description": "加入好戰者鎧甲提高二技能護盾與正面續戰能力。",
+            "starterItems": [
+              {
+                "id": "basic-ruby",
+                "name": "紅水晶",
+                "icon": "assets/images/aram/items/basic-ruby.webp",
+                "reason": "先補生命強化 2 技護盾與第一輪承傷，最符合坦克強開定位。"
+              }
+            ],
+            "items": [
+              {
+                "id": "defense-high-18",
+                "name": "熾灼之冠",
+                "icon": "assets/images/items/high/defense-searing-crown-2.png",
+                "reason": "生命與護甲兼顧，近身後的持續灼燒適合史加納長時間黏住前排。"
+              },
+              {
+                "id": "defense-high-03",
+                "name": "無盡絕望",
+                "icon": "assets/images/items/high/defense-unending-despair.png",
+                "reason": "多人近戰時反覆回復，配合 90% 承傷修正能顯著提高續戰。"
+              },
+              {
+                "id": "defense-high-09",
+                "name": "好戰者鎧甲",
+                "icon": "assets/images/items/high/defense-warmogs-armor.png",
+                "when": "團戰間需要快速回滿",
+                "reason": "最大生命足夠後可用來強化脫戰續航。"
+              },
+              {
+                "id": "defense-high-16",
+                "name": "雅瑪蘭守護像",
+                "icon": "assets/images/items/high/defense-amaranths-twinguard.png",
+                "reason": "進入五人團戰後快速疊雙抗，把模式承傷優勢放大。"
+              },
+              {
+                "id": "defense-high-14",
+                "name": "自然之力",
+                "icon": "assets/images/items/high/defense-force-of-nature.png",
+                "reason": "補高魔抗與移速，讓後期能更穩定穿過法術火力接近目標。"
+              }
+            ],
+            "boots": [
+              {
+                "id": "plated-steelcaps",
+                "name": "鍍板鋼蓋",
+                "icon": "assets/images/items/shoes/plated-steelcaps.png",
+                "reason": "前期正面承受物理與普攻時最穩，和 90% 模式承傷疊加後更難處理。"
+              },
+              {
+                "id": "armored-warboots",
+                "name": "裝甲戰靴",
+                "icon": "assets/images/items/shoes/armored-warboots.png",
+                "reason": "升級三級鞋後進一步提高物理承傷；法傷／控制偏多時可改水星線。"
+              }
+            ]
+          }
+        ],
+        "runeReuse": {
+          "title": "一般符文可直接共用",
+          "note": "沿用標準 ARAM 已校正的符文組合；符文大亂鬥主要依增幅分類與單卡強度做即時判斷。",
+          "runes": [
+            {
+              "id": "grasp",
+              "name": "不死之握",
+              "icon": "assets/images/runes/keystone/grasp.webp",
+              "reason": "持續貼前排時能反覆觸發，補傷害、治療與生命。"
+            },
+            {
+              "id": "courage-of-colossus",
+              "name": "巨像勇氣",
+              "icon": "assets/images/runes/resolve/courage-of-colossus.webp",
+              "reason": "3 技與大絕控制後取得護盾，提高強開容錯。"
+            },
+            {
+              "id": "second-wind",
+              "name": "回春",
+              "icon": "assets/images/runes/resolve/second-wind.webp",
+              "reason": "被遠程消耗時維持血線，確保有足夠生命發動下一次強開。"
+            },
+            {
+              "id": "overgrowth",
+              "name": "過度生長",
+              "icon": "assets/images/runes/resolve/overgrowth.webp",
+              "reason": "單線小兵死亡密集，能穩定增加最大生命並強化 2 技護盾。"
+            },
+            {
+              "id": "transcendence",
+              "name": "卓越",
+              "icon": "assets/images/runes/sorcery/transcendence.webp",
+              "reason": "更多技能加速讓 1、2、3 技在長團戰更快輪轉。"
+            }
+          ]
+        },
+        "playstyle": {
+          "開局": "先用 1 技強化普攻處理靠前目標，2 技在吃第一輪技能前就開。3 技如果沒有好牆角，不必為了硬抓而衝進敵方五人。",
+          "中期": "兩件坦裝後可以主動站前。3 技把目標推回己方後再接大絕通常比直接正面開大更穩；大絕能抓到核心一人就值得。",
+          "後期": "110% 傷害與 90% 承傷讓你可以更積極，但仍要等隊友能跟上。抓到後排後往己方拖，優先創造人數差，而不是把自己和目標一起送到敵方深處。"
+        },
+        "sources": [
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2a",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2a/"
+          },
+          {
+            "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
+            "url": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-2b/"
+          },
+          {
+            "label": "WildRiftFire｜Skarner Build Guide",
+            "url": "https://www.wildriftfire.com/guide/skarner"
+          }
+        ],
+        "sourceNote": "7.2b ARAM S 第五批：史加納套用 7.2a 官方明確延伸至標準 ARAM 的 110% 傷害／90% 承傷。",
+        "augmentCompatibility": {
+          "title": "史加納分類內增幅評級",
+          "version": "v80.38-batch6",
+          "total": 48,
+          "defaultFilter": "category",
+          "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
+          "ratings": [
+            {
+              "id": "augment-001",
+              "tier": "A",
+              "tag": "治療護盾",
+              "reason": "史加納有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-005",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-010",
+              "tier": "A",
+              "tag": "跑速拉扯",
+              "reason": "史加納需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-013",
+              "tier": "S",
+              "tag": "大絕連動",
+              "reason": "史加納有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-027",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "史加納以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-028",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "史加納以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-029",
+              "tier": "S",
+              "tag": "治療護盾",
+              "reason": "史加納有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-031",
+              "tier": "A",
+              "tag": "坦度成長",
+              "reason": "能提供史加納實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-058",
+              "tier": "B",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-059",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-060",
+              "tier": "S",
+              "tag": "位移連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-061",
+              "tier": "S",
+              "tag": "暴擊連動",
+              "reason": "效果與史加納的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-068",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-069",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-070",
+              "tier": "A",
+              "tag": "大絕連動",
+              "reason": "史加納的大絕是團戰核心，這張卡能直接強化大絕循環或施放後收益。"
+            },
+            {
+              "id": "augment-072",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-076",
+              "tier": "A",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-079",
+              "tier": "A",
+              "tag": "跑速拉扯",
+              "reason": "史加納需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-080",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "史加納以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-081",
+              "tier": "A",
+              "tag": "坦度成長",
+              "reason": "能提供史加納實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-083",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-084",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-086",
+              "tier": "B",
+              "tag": "暴擊連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-087",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-088",
+              "tier": "S",
+              "tag": "技能連動",
+              "reason": "史加納有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-089",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-090",
+              "tier": "B",
+              "tag": "跑速拉扯",
+              "reason": "史加納需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-096",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-098",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-099",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與史加納的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-101",
+              "tier": "B",
+              "tag": "技能連動",
+              "reason": "史加納以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-107",
+              "tier": "B",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-110",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-116",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-117",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-118",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-121",
+              "tier": "A",
+              "tag": "暴擊連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-124",
+              "tier": "S",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-127",
+              "tier": "A",
+              "tag": "技能連動",
+              "reason": "史加納以技能輸出或功能為主，能穩定利用技能命中或冷卻收益。"
+            },
+            {
+              "id": "augment-128",
+              "tier": "A",
+              "tag": "坦度成長",
+              "reason": "能提供史加納實用的傷害、循環或生存收益，但不是每次對局都能完全吃滿。"
+            },
+            {
+              "id": "augment-130",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-134",
+              "tier": "A",
+              "tag": "普攻連動",
+              "reason": "史加納會頻繁穿插普攻，能穩定利用這張卡的命中特效與普攻循環。"
+            },
+            {
+              "id": "augment-136",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            },
+            {
+              "id": "augment-138",
+              "tier": "S",
+              "tag": "分類適配",
+              "reason": "史加納有可靠護盾來源，能穩定啟動這張卡的護盾連動效果。"
+            },
+            {
+              "id": "augment-143",
+              "tier": "S",
+              "tag": "跑速拉扯",
+              "reason": "史加納需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-144",
+              "tier": "S",
+              "tag": "坦度成長",
+              "reason": "效果與史加納的主要玩法高度重疊，觸發穩定，屬於這個分類裡優先考慮的增幅。"
+            },
+            {
+              "id": "augment-145",
+              "tier": "A",
+              "tag": "跑速拉扯",
+              "reason": "史加納需要靠走位維持輸出或進場位置，跑速能直接改善拉扯與生存。"
+            },
+            {
+              "id": "augment-148",
+              "tier": "S",
+              "tag": "控制連動",
+              "reason": "史加納本身就能穩定製造控制，這張卡能直接提高控制、傷害或生存收益。"
+            }
+          ]
+        },
+        "augmentCategoryDecision": {
+          "enabled": true,
+          "title": "先看增幅分類",
+          "note": "看遊戲卡片下方分類 → 點相同分類 → 看左側 S+／S／A。",
+          "categories": [
+            {
+              "tag": "控場",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "三技能與大絕都能改變敵人位置，控制類增幅能直接放大抓人與留人價值。"
+            },
+            {
+              "tag": "大地回音",
+              "level": "核心",
+              "hint": "最優先",
+              "note": "坦度、反位移與貼身控制和史加納正面拖拽的玩法完全一致。"
+            },
+            {
+              "tag": "體型",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "生命、雙防與體型能讓他更穩地把目標拖回己方。"
+            },
+            {
+              "tag": "護盾",
+              "level": "高適配",
+              "hint": "優先看",
+              "note": "二技能可穩定提供護盾，護盾免控與近身護盾傷害都非常實用。"
+            },
+            {
+              "tag": "普攻",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "一技能強化普攻，貼身纏鬥時可以穩定利用部分命中特效。"
+            },
+            {
+              "tag": "技能",
+              "level": "適配",
+              "hint": "可以看",
+              "note": "技能冷卻縮短能提高推人、護盾與大絕前後的控制密度。"
+            }
+          ],
+          "sPlusIds": [
+            "augment-029",
+            "augment-084",
+            "augment-089",
+            "augment-116",
+            "augment-136",
+            "augment-138"
+          ]
+        }
+      }
     },
     {
       "id": "smolder",
