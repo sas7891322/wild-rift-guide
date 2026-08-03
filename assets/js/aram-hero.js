@@ -149,22 +149,6 @@
         <div class="aaa-keyword-chips">${(group.keywords||[]).map(keyword=>`<button type="button" data-aaa-keyword="${esc(keyword.query||keyword.label)}">${esc(keyword.label)}</button>`).join('')}</div>
       </article>`).join('');
       const compatibility=aaa.augmentCompatibility||{};
-      const recommendationLab=aaa.augmentRecommendationLab||{};
-      const augmentOptions=(augmentData.augments||[]).map(item=>`<option value="${esc(item.name)}"></option>`).join('');
-      const recommendationLabHtml=recommendationLab.enabled?`<div class="aaa-recommend-lab" data-aaa-recommend-lab>
-        <div class="aaa-recommend-lab-head"><div><span>LIVE DECISION</span><strong>${esc(recommendationLab.title||'三選一推薦測試')}</strong><p>${esc(recommendationLab.note||'')}</p></div><small>吉茵珂絲試作</small></div>
-        <datalist id="aaa-augment-options">${augmentOptions}</datalist>
-        <div class="aaa-recommend-fields">
-          <fieldset><legend>這局已拿到的增幅 <small>可留空</small></legend><div class="aaa-recommend-input-grid owned">
-            ${[1,2,3].map(n=>`<label><span>已拿 ${n}</span><input list="aaa-augment-options" autocomplete="off" placeholder="輸入增幅名稱" data-aaa-owned="${n}"></label>`).join('')}
-          </div></fieldset>
-          <fieldset><legend>眼前三張候選</legend><div class="aaa-recommend-input-grid candidates">
-            ${['A','B','C'].map(letter=>`<label><span>候選 ${letter}</span><input list="aaa-augment-options" autocomplete="off" placeholder="輸入增幅名稱" data-aaa-candidate="${letter}"></label>`).join('')}
-          </div></fieldset>
-        </div>
-        <div class="aaa-recommend-actions"><button type="button" data-aaa-recommend-run>比較三張</button><button type="button" class="ghost" data-aaa-recommend-clear>清除</button><span>${esc(recommendationLab.rulesNote||'')}</span></div>
-        <div class="aaa-recommend-results" data-aaa-recommend-results><p>先輸入至少兩張候選增幅，網站就會依這局組合重新排序。</p></div>
-      </div>`:'';
       const compatibilityRows=(compatibility.ratings||[]).map((rating,index)=>{
         const augment=augmentMap.get(rating.id)||{};
         const tier=String(rating.tier||'C').toUpperCase();
@@ -173,11 +157,11 @@
         return `<details class="aaa-fit-card rank-${esc(tier).toLowerCase()}" data-aaa-fit-card data-tier="${esc(tier)}" data-search-text="${esc(searchText)}">
           <summary class="aaa-fit-card-summary">
             <div class="aaa-fit-card-head"><span>${esc(tier)}</span><div><strong>${esc(augment.name||rating.id)}</strong><small>${esc(rating.tag||'適配判斷')}</small><div class="aaa-fit-official-tags">${officialTags.map(tag=>`<i>${esc(tag)}</i>`).join('')}</div></div></div>
-            <b class="aaa-fit-toggle"><span>查看效果</span><i aria-hidden="true">⌄</i></b>
+            <b class="aaa-fit-toggle"><span>詳細</span><i aria-hidden="true">⌄</i></b>
           </summary>
           <div class="aaa-fit-card-body">
             <p class="aaa-fit-effect"><b>效果：</b>${esc(augment.effect||'效果資料載入失敗')}</p>
-            <p class="aaa-fit-reason"><b>吉茵珂絲：</b>${esc(rating.reason||'')}</p>
+            <p class="aaa-fit-reason"><b>推薦判斷：</b>${esc(rating.reason||'')}</p>
           </div>
         </details>`;
       }).join('');
@@ -209,20 +193,20 @@
         </nav>
       </section>
       <section class="aram-detail-section aaa-decision-section">
-        <div class="aram-detail-section-head"><div><span>AUGMENT DECISION</span><h2>吉茵珂絲增幅選擇規則</h2></div><small>不必背 151 個名稱</small></div>
+        <div class="aram-detail-section-head"><div><span>QUICK DECISION</span><h2>吉茵珂絲增幅快速決策</h2></div><small>切出遊戲，搜尋就看答案</small></div>
         <div class="aaa-quick-playstyle-grid">${quickPlaystyles}</div>
         <div class="aaa-keyword-guide">
           <div class="aaa-keyword-guide-title"><div><strong>${esc(keywordGuide.title||'看到關鍵詞就先這樣判斷')}</strong><span>${esc(keywordGuide.note||'')}</span></div><small>點關鍵詞可搜尋適配表</small></div>
           <div class="aaa-keyword-steps">${keywordSteps}</div>
           <div class="aaa-keyword-groups">${keywordGroups}</div>
         </div>
-        ${recommendationLabHtml}<div class="aaa-fit-block" data-aaa-fit-root>
+        <div class="aaa-fit-block" data-aaa-fit-root>
           <div class="aaa-fit-title"><div><strong>${esc(compatibility.title||'增幅裝置適配表')}</strong><span>${esc(compatibility.note||'')}</span></div><small data-aaa-fit-state>顯示推薦增幅</small></div>
           <div class="aaa-fit-tools">
-            <label><span>搜尋增幅</span><input type="search" placeholder="輸入名稱或效果關鍵字" data-aaa-fit-search/></label>
+            <label><span>搜尋增幅</span><input type="search" placeholder="輸入增幅名稱，例：致命節奏" data-aaa-fit-search/></label>
             <div class="aaa-fit-filters" role="group" aria-label="增幅適配等級篩選">
-              <button type="button" data-fit-filter="recommended">推薦 S＋A</button>
-              <button type="button" class="is-active" data-fit-filter="S">S ${tierCounts.S||0}</button>
+              <button type="button" class="is-active" data-fit-filter="recommended">優先拿 S＋A</button>
+              <button type="button" data-fit-filter="S">S ${tierCounts.S||0}</button>
               <button type="button" data-fit-filter="A">A ${tierCounts.A||0}</button>
               <button type="button" data-fit-filter="B">B ${tierCounts.B||0}</button>
               <button type="button" data-fit-filter="C">C ${tierCounts.C||0}</button>
@@ -330,7 +314,7 @@
       const buttons=[...fitRoot.querySelectorAll('[data-fit-filter]')];
       const keywordButtons=[...contentRoot.querySelectorAll('[data-aaa-keyword]')];
       const cards=[...fitRoot.querySelectorAll('[data-aaa-fit-card]')];
-      let activeFilter='S';
+      let activeFilter=compatibility.defaultFilter||'recommended';
       const apply=()=>{
         const query=(search?.value||'').trim().toLowerCase();
         let visible=0;
@@ -371,7 +355,7 @@
       if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：增幅關鍵詞判斷、151 個增幅適配、出裝轉向與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
-      if(isAaa){bindAaaSectionJumps();bindAugmentRecommendation();bindAugmentCompatibility();}
+      if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
     };
 
     root.querySelectorAll('[data-guide-mode]').forEach(button=>button.addEventListener('click',()=>{
