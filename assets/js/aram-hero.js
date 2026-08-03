@@ -57,7 +57,7 @@
   try{
     const [res,augmentRes]=await Promise.all([
       fetch('assets/data/aram/heroes.json?v=80.26.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=80.26.0',{cache:'no-store'})
+      fetch('assets/data/aram/augments.json?v=80.27.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();

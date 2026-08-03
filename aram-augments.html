@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://wild-rift-guide.vercel.app/aram-augments.html"/>
 <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="assets/images/brand/apple-touch-icon.png"/>
-<link rel="stylesheet" href="assets/css/style.css?v=80.23.0"/>
+<link rel="stylesheet" href="assets/css/style.css?v=80.27.0"/>
 </head>
 <body class="aram-shell-page aram-augment-page">
 <header class="mode-entry-topbar">
@@ -38,30 +38,34 @@
   <section class="shell aram-augment-hero">
     <span class="kicker">AAA ARAM AUGMENTS</span>
     <h1>增幅裝置資料庫</h1>
-    <p>收錄遊戲內 151 個增幅裝置的台服繁體中文名稱與效果文字，不加入圖示，後續英雄攻略可直接引用同一份資料。</p>
-    <div class="aram-stage-badge">7.2b｜151 個增幅裝置</div>
+    <p>收錄遊戲內 151 個增幅裝置的台服繁體中文名稱、完整效果與官方卡牌分類。不加入圖示，分類可直接用來搜尋與篩選。</p>
+    <div class="aram-stage-badge">7.2b｜151 個增幅裝置｜22 種官方分類</div>
   </section>
   <section class="shell aram-augment-shell" aria-labelledby="aramAugmentTitle">
     <div class="aram-section-heading">
       <div><span class="kicker">AUGMENT DATABASE</span><h2 id="aramAugmentTitle">全部增幅裝置</h2></div>
       <span class="aram-data-state" data-aram-augment-state>載入資料中…</span>
     </div>
+    <div class="aram-augment-filter-panel">
+      <div class="aram-augment-filter-intro"><strong>官方分類篩選</strong><span>卡片下方的分類詞已正式納入資料庫；點分類即可只看同類增幅。</span></div>
+      <div class="aram-augment-filters" data-aram-augment-filters aria-label="增幅裝置官方分類篩選"></div>
+    </div>
     <div class="aram-augment-search">
       <label for="aramAugmentSearch">搜尋增幅裝置</label>
-      <div class="aram-mobile-search-box"><span aria-hidden="true">⌕</span><input id="aramAugmentSearch" data-aram-augment-search type="search" inputmode="search" autocomplete="off" placeholder="輸入增幅裝置名稱"/></div>
+      <div class="aram-mobile-search-box"><span aria-hidden="true">⌕</span><input id="aramAugmentSearch" data-aram-augment-search type="search" inputmode="search" autocomplete="off" placeholder="輸入名稱、效果或分類"/></div>
       <small data-aram-augment-search-state>顯示全部 151 個</small>
     </div>
     <div class="aram-augment-grid" data-aram-augment-root aria-live="polite"></div>
   </section>
   <section class="shell aram-augment-note">
-    <strong>目前製作方式</strong>
-    <p>本頁收錄增幅裝置名稱與遊戲內效果文字，不加入圖示；遊戲內以圖示呈現的能力值已轉為文字，方便搜尋與閱讀。</p>
+    <strong>官方分類怎麼看？</strong>
+    <p>分類詞是遊戲卡片本身顯示的官方標籤，可用來辨識元素系列、玩法方向與特殊系列。同一張增幅可能同時有多個分類，例如「暴擊治療」同時屬於「暴擊」與「復原」。分類只代表官方歸類，不代表同分類之間一定存在額外套裝加成。</p>
   </section>
 </main>
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide｜符文大亂鬥增幅裝置</div></footer>
 <script src="assets/js/supabase-config.js?v=79.5.1"></script>
 <script src="assets/js/auth.js?v=79.5.1"></script>
 <script src="assets/js/app.js?v=79.5.1"></script>
-<script src="assets/js/aram-augments.js?v=80.23.0"></script>
+<script src="assets/js/aram-augments.js?v=80.27.0"></script>
 </body>
 </html>
