@@ -6,15 +6,17 @@
   if(!root)return;
   const escapeHtml=(value)=>String(value??'').replace(/[&<>"]/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[char]));
   try{
-    const response=await fetch('assets/data/aram/augments.json?v=80.22.0',{cache:'no-store'});
+    const response=await fetch('assets/data/aram/augments.json?v=80.23.0',{cache:'no-store'});
     if(!response.ok)throw new Error('Augment data load failed');
     const data=await response.json();
     const augments=Array.isArray(data.augments)?data.augments:[];
     if(state)state.textContent=`${data.gameVersion||'7.2b'}｜共 ${augments.length} 個`;
     root.innerHTML=augments.map((augment,index)=>{
       const name=escapeHtml(augment.name);
+      const effect=escapeHtml(augment.effect||'');
       const number=String(index+1).padStart(3,'0');
-      return `<article class="aram-augment-card" data-aram-augment-entry data-search-text="${name.toLowerCase()}"><span>${number}</span><strong>${name}</strong></article>`;
+      const searchText=`${augment.name||''} ${augment.effect||''}`.toLowerCase();
+      return `<article class="aram-augment-card" data-aram-augment-entry data-search-text="${escapeHtml(searchText)}"><span>${number}</span><div><strong>${name}</strong><p>${effect}</p></div></article>`;
     }).join('');
 
     const applySearch=()=>{
