@@ -7039,7 +7039,7 @@
           "url": "https://www.wildriftfire.com/guide/jinx"
         }
       ],
-      "reviewStatus": "aram-jinx-master-template-v79.7",
+      "reviewStatus": "aram-jinx-aaa-decision-lab-v80.29",
       "reviewedAt": "2026-08-03",
       "detailReady": true,
       "tierListVersion": "v79.8.0",
@@ -7313,7 +7313,7 @@
             "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-2a/"
           }
         ],
-        "sourceNote": "v80.26.0 吉茵珂絲符文大亂鬥介面試作：核心關鍵詞醒目標示、共用資料改為下拉欄位、加入三個快速跳轉按鈕；151 個增幅適配卡片改為收合效果文字，電腦三欄、平板與手機雙欄呈現。適配內容與評級本身未更動。",
+        "sourceNote": "v80.29.0：加入吉茵珂絲「三選一推薦測試」，使用既有 151 張適性評級作英雄底分，正式接入官方分類軟加權與已確認效果連動；同分類不視為隱藏套裝效果。原本適配評級與完整效果文字保留。",
         "augmentCompatibility": {
           "title": "151 個增幅裝置適配表",
           "version": "v80.24.0",
@@ -8446,6 +8446,142 @@
               ]
             }
           ]
+        },
+        "augmentRecommendationLab": {
+          "enabled": true,
+          "version": "v80.29.0",
+          "title": "三選一推薦測試",
+          "note": "先選這局已取得的增幅，再輸入眼前三張候選。分數以吉茵珂絲既有 151 張適性評級為底，官方分類只做小幅加權；明確效果連動才會大幅加分。",
+          "tierScores": {
+            "S": 82,
+            "A": 70,
+            "B": 58,
+            "C": 44,
+            "D": 30
+          },
+          "heroTagWeights": {
+            "普攻": 6,
+            "暴擊": 6,
+            "疾風回音": 4,
+            "跑速": 3,
+            "重生": 2,
+            "技能": 1,
+            "雷霆回音": 1
+          },
+          "sameOfficialTagBonus": 2,
+          "sameOfficialTagCap": 4,
+          "synergyCap": 20,
+          "strongSynergies": [
+            {
+              "a": "augment-088",
+              "b": "augment-138",
+              "score": 12,
+              "reason": "蓄能戰盾能主動建立護盾，直接提供星殞護盾的觸發條件。"
+            },
+            {
+              "a": "augment-088",
+              "b": "augment-098",
+              "score": 11,
+              "reason": "蓄能戰盾能建立護盾，讓不破護盾的免疫控場更容易啟動。"
+            },
+            {
+              "a": "augment-028",
+              "b": "augment-101",
+              "score": 10,
+              "reason": "煉獄使者提供持續燃燒傷害，可支援快冷的持續傷害條件。"
+            },
+            {
+              "a": "augment-028",
+              "b": "augment-130",
+              "score": 10,
+              "reason": "煽風點火能持續疊燃燒，讓快冷更容易維持縮短技能冷卻。"
+            },
+            {
+              "a": "augment-011",
+              "b": "augment-034",
+              "score": 11,
+              "reason": "極度療癒提高治療與護盾強度，能直接放大暴擊治療的暴擊率與收益。"
+            },
+            {
+              "a": "augment-120",
+              "b": "augment-142",
+              "score": 10,
+              "reason": "頂尖發明家縮短道具冷卻，能提高雷霆裝備的道具傷害觸發頻率。"
+            },
+            {
+              "a": "augment-024",
+              "b": "augment-151",
+              "score": 10,
+              "reason": "突變衝刺讓技能取得衝刺效果，可替飛影跑法增加穩定觸發來源。"
+            },
+            {
+              "a": "augment-007",
+              "b": "augment-014",
+              "score": 12,
+              "reason": "同盟協議明確可觸發與大絕相關的增幅效果，能直接支援雷霆轟擊。"
+            },
+            {
+              "a": "augment-032",
+              "b": "augment-062",
+              "score": 10,
+              "reason": "無雙亂舞持續消耗魔力，能持續觸發秘術強襲的生命回復循環。"
+            },
+            {
+              "a": "augment-073",
+              "b": "augment-095",
+              "score": 11,
+              "reason": "風馳電掣的暴擊跑速可直接提高音速衝擊依跑速成長的普攻傷害。"
+            },
+            {
+              "a": "augment-073",
+              "b": "augment-147",
+              "score": 10,
+              "reason": "暴擊強化在暴擊時提供跑速，能直接轉成音速衝擊的額外普攻傷害。"
+            },
+            {
+              "a": "augment-073",
+              "b": "augment-149",
+              "score": 10,
+              "reason": "瀕死低語的暴擊跑速能直接提高音速衝擊的普攻傷害。"
+            },
+            {
+              "a": "augment-107",
+              "b": "augment-002",
+              "score": 9,
+              "reason": "致命節奏提高攻速與射程，能更快完成風爆瞬步的連續普攻條件。"
+            },
+            {
+              "a": "augment-107",
+              "b": "augment-005",
+              "score": 9,
+              "reason": "高攻速能更穩定維持真實傷害的標記與後續普攻觸發。"
+            },
+            {
+              "a": "augment-107",
+              "b": "augment-086",
+              "score": 8,
+              "reason": "高攻速與額外射程能提高羽毛彈幕的普攻濺射覆蓋率。"
+            },
+            {
+              "a": "augment-095",
+              "b": "augment-002",
+              "score": 8,
+              "reason": "兩者都能提高攻速與跑速，讓吉茵珂絲更容易維持高頻走砍。"
+            },
+            {
+              "a": "augment-147",
+              "b": "augment-095",
+              "score": 8,
+              "reason": "兩者都以暴擊啟動跑速／攻速收益，暴擊成形後能形成更強的走砍節奏。"
+            },
+            {
+              "a": "augment-069",
+              "b": "augment-107",
+              "score": 8,
+              "reason": "兩者都直接強化攻速與攻擊距離，高頻普攻時能互相放大安全輸出時間。"
+            }
+          ],
+          "rulesNote": "同一官方分類只算軟連動；只有 strongSynergies 中已確認的效果鏈才給高額連動分。"
         }
       }
     },

@@ -56,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=80.26.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=80.27.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=80.29.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=80.29.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -149,13 +149,30 @@
         <div class="aaa-keyword-chips">${(group.keywords||[]).map(keyword=>`<button type="button" data-aaa-keyword="${esc(keyword.query||keyword.label)}">${esc(keyword.label)}</button>`).join('')}</div>
       </article>`).join('');
       const compatibility=aaa.augmentCompatibility||{};
+      const recommendationLab=aaa.augmentRecommendationLab||{};
+      const augmentOptions=(augmentData.augments||[]).map(item=>`<option value="${esc(item.name)}"></option>`).join('');
+      const recommendationLabHtml=recommendationLab.enabled?`<div class="aaa-recommend-lab" data-aaa-recommend-lab>
+        <div class="aaa-recommend-lab-head"><div><span>LIVE DECISION</span><strong>${esc(recommendationLab.title||'三選一推薦測試')}</strong><p>${esc(recommendationLab.note||'')}</p></div><small>吉茵珂絲試作</small></div>
+        <datalist id="aaa-augment-options">${augmentOptions}</datalist>
+        <div class="aaa-recommend-fields">
+          <fieldset><legend>這局已拿到的增幅 <small>可留空</small></legend><div class="aaa-recommend-input-grid owned">
+            ${[1,2,3].map(n=>`<label><span>已拿 ${n}</span><input list="aaa-augment-options" autocomplete="off" placeholder="輸入增幅名稱" data-aaa-owned="${n}"></label>`).join('')}
+          </div></fieldset>
+          <fieldset><legend>眼前三張候選</legend><div class="aaa-recommend-input-grid candidates">
+            ${['A','B','C'].map(letter=>`<label><span>候選 ${letter}</span><input list="aaa-augment-options" autocomplete="off" placeholder="輸入增幅名稱" data-aaa-candidate="${letter}"></label>`).join('')}
+          </div></fieldset>
+        </div>
+        <div class="aaa-recommend-actions"><button type="button" data-aaa-recommend-run>比較三張</button><button type="button" class="ghost" data-aaa-recommend-clear>清除</button><span>${esc(recommendationLab.rulesNote||'')}</span></div>
+        <div class="aaa-recommend-results" data-aaa-recommend-results><p>先輸入至少兩張候選增幅，網站就會依這局組合重新排序。</p></div>
+      </div>`:'';
       const compatibilityRows=(compatibility.ratings||[]).map((rating,index)=>{
         const augment=augmentMap.get(rating.id)||{};
         const tier=String(rating.tier||'C').toUpperCase();
-        const searchText=[augment.name,augment.effect,rating.tag,rating.reason,tier].filter(Boolean).join(' ').toLowerCase();
+        const officialTags=augment.officialTags||[];
+        const searchText=[augment.name,augment.effect,...officialTags,rating.tag,rating.reason,tier].filter(Boolean).join(' ').toLowerCase();
         return `<details class="aaa-fit-card rank-${esc(tier).toLowerCase()}" data-aaa-fit-card data-tier="${esc(tier)}" data-search-text="${esc(searchText)}">
           <summary class="aaa-fit-card-summary">
-            <div class="aaa-fit-card-head"><span>${esc(tier)}</span><div><strong>${esc(augment.name||rating.id)}</strong><small>${esc(rating.tag||'適配判斷')}</small></div></div>
+            <div class="aaa-fit-card-head"><span>${esc(tier)}</span><div><strong>${esc(augment.name||rating.id)}</strong><small>${esc(rating.tag||'適配判斷')}</small><div class="aaa-fit-official-tags">${officialTags.map(tag=>`<i>${esc(tag)}</i>`).join('')}</div></div></div>
             <b class="aaa-fit-toggle"><span>查看效果</span><i aria-hidden="true">⌄</i></b>
           </summary>
           <div class="aaa-fit-card-body">
@@ -199,7 +216,7 @@
           <div class="aaa-keyword-steps">${keywordSteps}</div>
           <div class="aaa-keyword-groups">${keywordGroups}</div>
         </div>
-        <div class="aaa-fit-block" data-aaa-fit-root>
+        ${recommendationLabHtml}<div class="aaa-fit-block" data-aaa-fit-root>
           <div class="aaa-fit-title"><div><strong>${esc(compatibility.title||'增幅裝置適配表')}</strong><span>${esc(compatibility.note||'')}</span></div><small data-aaa-fit-state>顯示推薦增幅</small></div>
           <div class="aaa-fit-tools">
             <label><span>搜尋增幅</span><input type="search" placeholder="輸入名稱或效果關鍵字" data-aaa-fit-search/></label>
@@ -238,6 +255,71 @@
         target.scrollIntoView({behavior:'smooth',block:'start'});
         window.setTimeout(()=>target.focus({preventScroll:true}),420);
       }));
+    };
+
+    const bindAugmentRecommendation=()=>{
+      const lab=contentRoot.querySelector('[data-aaa-recommend-lab]');
+      if(!lab)return;
+      const aaa=hero.aaaAram||{};
+      const model=aaa.augmentRecommendationLab||{};
+      const ratings=new Map((aaa.augmentCompatibility?.ratings||[]).map(item=>[item.id,item]));
+      const byName=new Map((augmentData.augments||[]).map(item=>[item.name,item]));
+      const byId=new Map((augmentData.augments||[]).map(item=>[item.id,item]));
+      const synergyMap=new Map();
+      (model.strongSynergies||[]).forEach(pair=>{
+        const key=[pair.a,pair.b].sort().join('|');
+        synergyMap.set(key,pair);
+      });
+      const ownedInputs=[...lab.querySelectorAll('[data-aaa-owned]')];
+      const candidateInputs=[...lab.querySelectorAll('[data-aaa-candidate]')];
+      const results=lab.querySelector('[data-aaa-recommend-results]');
+      const getAugment=input=>byName.get((input.value||'').trim());
+      const scoreCandidate=(candidate,owned)=>{
+        const rating=ratings.get(candidate.id)||{tier:'C',tag:'適配判斷',reason:''};
+        const tier=String(rating.tier||'C').toUpperCase();
+        const base=Number(model.tierScores?.[tier]??44);
+        const officialTags=candidate.officialTags||[];
+        const category=officialTags.reduce((sum,tag)=>sum+Number(model.heroTagWeights?.[tag]||0),0);
+        let soft=0,strong=0;
+        const reasons=[];
+        owned.forEach(current=>{
+          const shared=officialTags.filter(tag=>(current.officialTags||[]).includes(tag));
+          if(shared.length){
+            const add=Math.min(shared.length*Number(model.sameOfficialTagBonus||2),Number(model.sameOfficialTagCap||4));
+            soft+=add;
+            reasons.push(`與「${current.name}」同屬 ${shared.join('／')}，軟連動 +${add}`);
+          }
+          const pair=synergyMap.get([candidate.id,current.id].sort().join('|'));
+          if(pair){
+            strong+=Number(pair.score||0);
+            reasons.push(`${current.name} × ${candidate.name}：${pair.reason} +${pair.score}`);
+          }
+        });
+        strong=Math.min(strong,Number(model.synergyCap||20));
+        soft=Math.min(soft,Number(model.sameOfficialTagCap||4));
+        const raw=base+category+soft+strong;
+        return {candidate,rating,tier,base,category,soft,strong,score:Math.min(100,raw),reasons};
+      };
+      const render=()=>{
+        const owned=ownedInputs.map(getAugment).filter(Boolean);
+        const candidates=candidateInputs.map(getAugment).filter(Boolean).filter((item,index,arr)=>arr.findIndex(x=>x.id===item.id)===index).filter(item=>!owned.some(x=>x.id===item.id));
+        if(candidates.length<2){
+          results.innerHTML='<p>請至少輸入兩張不同的候選增幅；已拿到的增幅不會再列入候選。</p>';
+          return;
+        }
+        const ranked=candidates.map(item=>scoreCandidate(item,owned)).sort((a,b)=>b.score-a.score||b.base-a.base);
+        results.innerHTML=ranked.map((result,index)=>`<article class="aaa-recommend-result ${index===0?'is-winner':''}">
+          <div class="aaa-recommend-rank"><span>${index===0?'首選':`第 ${index+1} 名`}</span><strong>${result.score}</strong><small>推薦分</small></div>
+          <div class="aaa-recommend-result-body"><div class="aaa-recommend-result-title"><div><strong>${esc(result.candidate.name)}</strong><span>${esc(result.tier)} · ${esc(result.rating.tag||'適配判斷')}</span></div><div>${(result.candidate.officialTags||[]).map(tag=>`<i>${esc(tag)}</i>`).join('')}</div></div>
+          <p>${esc(result.rating.reason||'')}</p>
+          <div class="aaa-recommend-breakdown"><span>英雄底分 <b>${result.base}</b></span><span>分類適性 <b>+${result.category}</b></span><span>同類軟連動 <b>+${result.soft}</b></span><span>效果連動 <b>+${result.strong}</b></span></div>
+          ${result.reasons.length?`<ul>${result.reasons.map(reason=>`<li>${esc(reason)}</li>`).join('')}</ul>`:'<small class="aaa-recommend-no-synergy">目前沒有額外確認的增幅連動，主要依英雄本身適性排序。</small>'}
+          </div>
+        </article>`).join('');
+      };
+      lab.querySelector('[data-aaa-recommend-run]')?.addEventListener('click',render);
+      lab.querySelector('[data-aaa-recommend-clear]')?.addEventListener('click',()=>{[...ownedInputs,...candidateInputs].forEach(input=>input.value='');render();});
+      [...ownedInputs,...candidateInputs].forEach(input=>input.addEventListener('change',()=>{if(candidateInputs.filter(x=>getAugment(x)).length>=2)render();}));
     };
 
     const bindAugmentCompatibility=()=>{
@@ -289,7 +371,7 @@
       if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：增幅關鍵詞判斷、151 個增幅適配、出裝轉向與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
-      if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
+      if(isAaa){bindAaaSectionJumps();bindAugmentRecommendation();bindAugmentCompatibility();}
     };
 
     root.querySelectorAll('[data-guide-mode]').forEach(button=>button.addEventListener('click',()=>{
