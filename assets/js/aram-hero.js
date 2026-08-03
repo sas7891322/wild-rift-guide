@@ -149,12 +149,21 @@
         <div class="aaa-keyword-chips">${(group.keywords||[]).map(keyword=>`<button type="button" data-aaa-keyword="${esc(keyword.query||keyword.label)}">${esc(keyword.label)}</button>`).join('')}</div>
       </article>`).join('');
       const compatibility=aaa.augmentCompatibility||{};
+      const categoryDecision=aaa.augmentCategoryDecision||{};
+      const sPlusIds=new Set(categoryDecision.sPlusIds||[]);
+      const categoryCards=(categoryDecision.categories||[]).map((item,index)=>`<button type="button" class="aaa-category-card level-${index<2?'core':index<4?'high':'fit'}" data-aaa-category="${esc(item.tag)}">
+        <span>${esc(item.level||'適配')}</span>
+        <strong>${esc(item.tag)}</strong>
+        <b>${esc(item.hint||'查看')}</b>
+        <small>${esc(item.note||'')}</small>
+      </button>`).join('');
       const compatibilityRows=(compatibility.ratings||[]).map((rating,index)=>{
         const augment=augmentMap.get(rating.id)||{};
-        const tier=String(rating.tier||'C').toUpperCase();
+        const baseTier=String(rating.tier||'C').toUpperCase();
+        const tier=sPlusIds.has(rating.id)?'S+':baseTier;
         const officialTags=augment.officialTags||[];
         const searchText=[augment.name,augment.effect,...officialTags,rating.tag,rating.reason,tier].filter(Boolean).join(' ').toLowerCase();
-        return `<details class="aaa-fit-card rank-${esc(tier).toLowerCase()}" data-aaa-fit-card data-tier="${esc(tier)}" data-search-text="${esc(searchText)}">
+        return `<details class="aaa-fit-card rank-${esc(tier).toLowerCase().replace('+','plus')}" data-aaa-fit-card data-tier="${esc(tier)}" data-base-tier="${esc(baseTier)}" data-official-tags="${esc(officialTags.join('|'))}" data-search-text="${esc(searchText)}" hidden>
           <summary class="aaa-fit-card-summary">
             <div class="aaa-fit-card-head"><span>${esc(tier)}</span><div><strong>${esc(augment.name||rating.id)}</strong><small>${esc(rating.tag||'適配判斷')}</small><div class="aaa-fit-official-tags">${officialTags.map(tag=>`<i>${esc(tag)}</i>`).join('')}</div></div></div>
             <b class="aaa-fit-toggle"><span>詳細</span><i aria-hidden="true">⌄</i></b>
@@ -193,28 +202,18 @@
         </nav>
       </section>
       <section class="aram-detail-section aaa-decision-section">
-        <div class="aram-detail-section-head"><div><span>QUICK DECISION</span><h2>吉茵珂絲增幅快速決策</h2></div><small>切出遊戲，搜尋就看答案</small></div>
-        <div class="aaa-quick-playstyle-grid">${quickPlaystyles}</div>
-        <div class="aaa-keyword-guide">
-          <div class="aaa-keyword-guide-title"><div><strong>${esc(keywordGuide.title||'看到關鍵詞就先這樣判斷')}</strong><span>${esc(keywordGuide.note||'')}</span></div><small>點關鍵詞可搜尋適配表</small></div>
-          <div class="aaa-keyword-steps">${keywordSteps}</div>
-          <div class="aaa-keyword-groups">${keywordGroups}</div>
-        </div>
-        <div class="aaa-fit-block" data-aaa-fit-root>
-          <div class="aaa-fit-title"><div><strong>${esc(compatibility.title||'增幅裝置適配表')}</strong><span>${esc(compatibility.note||'')}</span></div><small data-aaa-fit-state>顯示推薦增幅</small></div>
-          <div class="aaa-fit-tools">
-            <label><span>搜尋增幅</span><input type="search" placeholder="輸入增幅名稱，例：致命節奏" data-aaa-fit-search/></label>
-            <div class="aaa-fit-filters" role="group" aria-label="增幅適配等級篩選">
-              <button type="button" class="is-active" data-fit-filter="recommended">優先拿 S＋A</button>
-              <button type="button" data-fit-filter="S">S ${tierCounts.S||0}</button>
-              <button type="button" data-fit-filter="A">A ${tierCounts.A||0}</button>
-              <button type="button" data-fit-filter="B">B ${tierCounts.B||0}</button>
-              <button type="button" data-fit-filter="C">C ${tierCounts.C||0}</button>
-              <button type="button" data-fit-filter="D">D ${tierCounts.D||0}</button>
-              <button type="button" data-fit-filter="all">全部 ${compatibility.total||compatibilityRows.length}</button>
+        <div class="aram-detail-section-head"><div><span>CATEGORY FIRST</span><h2>吉茵珂絲增幅分類</h2></div><small>先看分類，再看單卡</small></div>
+        <div class="aaa-category-howto"><b>遊戲看到 3 張增幅</b><span>看卡片下方分類 → 點下面相同分類 → 左側分級越高越優先</span></div>
+        <div class="aaa-category-grid" data-aaa-category-grid>${categoryCards}</div>
+        <div class="aaa-category-results" data-aaa-category-results>
+          <div class="aaa-category-empty" data-aaa-category-empty><strong>先點一個分類</strong><span>例如卡片寫「暴擊」，就直接點「暴擊」。</span></div>
+          <div class="aaa-fit-block" data-aaa-fit-root hidden>
+            <div class="aaa-fit-title"><div><strong data-aaa-category-title>分類增幅</strong><span data-aaa-category-note></span></div><small data-aaa-fit-state></small></div>
+            <div class="aaa-fit-tools">
+              <label><span>分類內搜尋</span><input type="search" placeholder="輸入增幅名稱" data-aaa-fit-search/></label>
             </div>
+            <div class="aaa-fit-grid">${compatibilityRows}</div>
           </div>
-          <div class="aaa-fit-grid">${compatibilityRows}</div>
         </div>
       </section>
       <section class="aram-detail-section" id="aaa-build-section" tabindex="-1">
@@ -308,36 +307,49 @@
 
     const bindAugmentCompatibility=()=>{
       const fitRoot=contentRoot.querySelector('[data-aaa-fit-root]');
-      if(!fitRoot)return;
+      const categoryButtons=[...contentRoot.querySelectorAll('[data-aaa-category]')];
+      if(!fitRoot||!categoryButtons.length)return;
       const search=fitRoot.querySelector('[data-aaa-fit-search]');
       const state=fitRoot.querySelector('[data-aaa-fit-state]');
-      const buttons=[...fitRoot.querySelectorAll('[data-fit-filter]')];
-      const keywordButtons=[...contentRoot.querySelectorAll('[data-aaa-keyword]')];
+      const title=fitRoot.querySelector('[data-aaa-category-title]');
+      const note=fitRoot.querySelector('[data-aaa-category-note]');
+      const empty=contentRoot.querySelector('[data-aaa-category-empty]');
       const cards=[...fitRoot.querySelectorAll('[data-aaa-fit-card]')];
-      let activeFilter=compatibility.defaultFilter||'recommended';
+      const categoryModel=hero.aaaAram?.augmentCategoryDecision||{};
+      const categoryInfo=new Map((categoryModel.categories||[]).map(item=>[item.tag,item]));
+      const tierWeight={'S+':6,'S':5,'A':4,'B':3,'C':2,'D':1};
+      let activeCategory='';
       const apply=()=>{
         const query=(search?.value||'').trim().toLowerCase();
-        let visible=0;
+        const visibleCards=[];
         cards.forEach(card=>{
-          const tier=card.dataset.tier||'C';
-          const filterMatch=activeFilter==='all'||(activeFilter==='recommended'&&(tier==='S'||tier==='A'))||tier===activeFilter;
+          const tags=(card.dataset.officialTags||'').split('|').filter(Boolean);
+          const categoryMatch=activeCategory&&tags.includes(activeCategory);
           const queryMatch=!query||(card.dataset.searchText||'').includes(query);
-          card.hidden=!(filterMatch&&queryMatch);
-          if(!card.hidden)visible++;
+          card.hidden=!(categoryMatch&&queryMatch);
+          if(!card.hidden)visibleCards.push(card);
         });
-        buttons.forEach(button=>button.classList.toggle('is-active',button.dataset.fitFilter===activeFilter));
-        if(state)state.textContent=query?`找到 ${visible} 個符合項目`:`目前顯示 ${visible} 個增幅`;
+        visibleCards.sort((a,b)=>(tierWeight[b.dataset.tier]||0)-(tierWeight[a.dataset.tier]||0));
+        const grid=fitRoot.querySelector('.aaa-fit-grid');
+        visibleCards.forEach(card=>grid?.appendChild(card));
+        if(state)state.textContent=activeCategory?`${visibleCards.length} 張 · S+ 最優先`:'';
       };
-      buttons.forEach(button=>button.addEventListener('click',()=>{activeFilter=button.dataset.fitFilter||'recommended';apply();}));
-      keywordButtons.forEach(button=>button.addEventListener('click',()=>{
-        if(search)search.value=button.dataset.aaaKeyword||button.textContent||'';
-        activeFilter='all';
+      categoryButtons.forEach(button=>button.addEventListener('click',()=>{
+        activeCategory=button.dataset.aaaCategory||'';
+        categoryButtons.forEach(item=>item.classList.toggle('is-active',item===button));
+        const info=categoryInfo.get(activeCategory)||{};
+        if(title)title.textContent=`${activeCategory}｜吉茵珂絲`;
+        if(note)note.textContent=info.note||'';
+        if(search)search.value='';
+        if(empty)empty.hidden=true;
+        fitRoot.hidden=false;
         apply();
-        fitRoot.scrollIntoView({behavior:'smooth',block:'start'});
-        window.setTimeout(()=>search?.focus({preventScroll:true}),350);
+        fitRoot.scrollIntoView({behavior:'smooth',block:'nearest'});
       }));
-      if(search){search.addEventListener('input',apply,{passive:true});search.addEventListener('search',apply,{passive:true});}
-      apply();
+      if(search){
+        search.addEventListener('input',apply,{passive:true});
+        search.addEventListener('search',apply,{passive:true});
+      }
     };
 
     const syncModeUi=()=>{
