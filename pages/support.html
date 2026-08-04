@@ -11,12 +11,11 @@
 <link rel="icon" href="../assets/images/brand/favicon.svg" type="image/svg+xml"/>
 <link rel="apple-touch-icon" href="../assets/images/brand/apple-touch-icon.png"/>
 <link rel="manifest" href="../site.webmanifest"/>
-<link rel="stylesheet" href="../assets/css/style.css?v=81.2.0"/>
+<link rel="stylesheet" href="../assets/css/style.css?v=82.0.0"/>
 </head>
 <body class="support-page">
 <header class="topbar rift-menu-topbar">
   <div class="shell topbar-inner rift-menu-inner">
-    <a class="brand" href="../index.html"><span>Wild Rift</span> Guide</a>
     <div class="rift-menu" data-rift-menu>
       <button class="rift-menu-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="riftMenuPanel">
         <span></span><span></span><span></span>
@@ -24,18 +23,29 @@
       <nav class="rift-menu-panel" id="riftMenuPanel" aria-label="召喚峽谷導覽" hidden>
         <div class="rift-menu-heading">
           <span>召喚峽谷</span>
-          <small>選擇要前往的頁面</small>
+          <small>網站導覽</small>
         </div>
-        <a href="guides.html">攻略</a>
-        <a href="heroes.html">英雄</a>
-        <a href="items.html">裝備</a>
-        <a href="runes.html">符文</a>
-        <a href="spells.html">召喚師技能</a>
-        <a href="players.html">找隊友</a>
-        <a class="support-nav-link active" href="support.html">支持網站</a>
-        <a class="member-nav-link" data-member-nav href="member.html">登入</a>
+        <div class="rift-menu-group">
+          <span class="rift-menu-group-label">資料庫</span>
+          <a href="heroes.html">英雄資料庫</a>
+          <a href="items.html">裝備</a>
+          <a href="runes.html">符文</a>
+          <a href="spells.html">召喚師技能</a>
+          <a href="players.html">找隊友</a>
+        </div>
+        <div class="rift-menu-group rift-menu-personal">
+          <span class="rift-menu-group-label">我的攻略</span>
+          <a href="member.html#favorite-heroes">收藏英雄</a>
+          <a href="member.html#recently-viewed">最近瀏覽</a>
+        </div>
+        <div class="rift-menu-group rift-menu-bottom-links">
+          <a class="support-nav-link" href="support.html">支持網站</a>
+          <a class="member-nav-link" data-member-nav href="member.html">登入／會員中心</a>
+        </div>
       </nav>
     </div>
+    <a class="brand rift-header-brand" href="../index.html"><span>Wild Rift</span> Guide</a>
+    <div class="site-header-right"><span class="site-traffic-slot" data-traffic-slot></span></div>
   </div>
 </header>
 
@@ -92,9 +102,9 @@
 
 <footer><div class="shell">© <span data-year></span> Wild Rift Guide｜<a class="footer-support-link" href="support.html">支持網站</a></div></footer>
 <script src="../assets/js/supabase-config.js?v=79.5.1"></script>
-<script src="../assets/js/auth.js?v=79.5.1"></script>
+<script src="../assets/js/auth.js?v=79.5.1"></script><script src="../assets/js/traffic.js?v=82.0.0"></script>
 <script src="../assets/js/app.js?v=79.5.1"></script>
 <script src="../assets/js/support.js?v=81.1.0"></script>
-<script src="../assets/js/rift-menu.js?v=81.2.0"></script>
+<script src="../assets/js/rift-menu.js?v=82.0.0"></script>
 </body>
 </html>
