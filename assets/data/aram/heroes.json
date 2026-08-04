@@ -2,8 +2,8 @@
   "schemaVersion": 4,
   "gameVersion": "7.2b",
   "mode": "aram",
-  "status": "7.2b ARAM 140 位攻略完成｜吉茵珂絲符文大亂鬥試作",
-  "updated": "2026-08-03",
+  "status": "7.2b ARAM 140 位完整攻略｜符文大亂鬥正式版",
+  "updated": "2026-08-04",
   "tierOrder": [
     "S+",
     "S",
@@ -29,9 +29,10 @@
       "射程與進場風險",
       "對特定陣容的依賴程度"
     ],
-    "note": "本階段先建立 140 位英雄的 7.2b ARAM Tier 初版；每位英雄的完整出裝、符文與模式平衡數值會在分批製作詳細攻略時逐一驗證。"
+    "note": "140 位英雄的 7.2b ARAM Tier、完整出裝、符文、模式平衡與玩法資料均已完成；後續依遊戲版本與實測結果持續校正。"
   },
   "notes": [
+    "v81.0 符文大亂鬥正式版：140/140 英雄完成分類導向攻略，整合 151 個增幅裝置與 22 種官方分類，提供分類入口、S+／S／A／B／C／D 單卡評級與增幅導向出裝。",
     "ARAM 英雄評級、出裝與符文獨立於召喚峽谷資料。",
     "Tier 為綜合評級，不宣稱等同官方勝率排行；後續會依版本與逐英雄資料驗證調整。",
     "v79.9.0 完成 ARAM S+ 第一批 7 位完整攻略：阿姆姆、翱銳龍獸、布蘭德、費德提克、加里歐、漢默丁格、珍娜。",
@@ -246,9 +247,9 @@
       ],
       "sourceNote": "7.2b ARAM 阿姆姆攻略：出裝與符文以當前 7.2a/7.2b 裝備環境與 WildRiftFire 主流坦克配置為基礎，再依 ARAM 單線 5v5 強開需求調整；模式承傷修正沿官方 ARAM 歷史平衡紀錄追溯。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排開戰／持續控場坦克",
         "tags": [
           "控場",
@@ -256,7 +257,7 @@
           "大地回音"
         ],
         "summary": "阿姆姆在符文大亂鬥的核心是反覆進場、群體控場與貼身持續傷害；先看控場與技能類，再看能放大坦度與大絕進場的分類。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -457,7 +458,7 @@
         "sourceNote": "7.2b ARAM 阿姆姆攻略：出裝與符文以當前 7.2a/7.2b 裝備環境與 WildRiftFire 主流坦克配置為基礎，再依 ARAM 單線 5v5 強開需求調整；模式承傷修正沿官方 ARAM 歷史平衡紀錄追溯。",
         "augmentCompatibility": {
           "title": "阿姆姆分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 38,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -915,9 +916,9 @@
       ],
       "sourceNote": "7.2b ARAM 翱銳龍獸攻略：核心出裝與符文交叉參考 WildRiftFire 7.2a，再依 ARAM 高密度團戰與星塵累積效率調整；模式承傷以 7.1d 官方 ARAM 修正為準。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "持續法術輸出／範圍控場成長法師",
         "tags": [
           "技能",
@@ -925,7 +926,7 @@
           "控場"
         ],
         "summary": "翱銳龍獸最重視持續施法、範圍控制與長時間輸出；技能與雷霆類優先，能增加技能循環、魔力效率與控場頻率的增幅價值最高。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -1126,7 +1127,7 @@
         "sourceNote": "7.2b ARAM 翱銳龍獸攻略：核心出裝與符文交叉參考 WildRiftFire 7.2a，再依 ARAM 高密度團戰與星塵累積效率調整；模式承傷以 7.1d 官方 ARAM 修正為準。",
         "augmentCompatibility": {
           "title": "翱銳龍獸分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 26,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -1507,9 +1508,9 @@
       ],
       "sourceNote": "7.2b ARAM 布蘭德攻略：以 7.2a WildRiftFire 的黑焰／黎安卓法師核心為基礎，依 ARAM 單線多人密集站位調整；7.2b 未見布蘭德額外 ARAM 百分比修正。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "持續燃燒／範圍爆發法師",
         "tags": [
           "技能",
@@ -1517,7 +1518,7 @@
           "控場"
         ],
         "summary": "布蘭德最適合把技能命中與持續燃燒放大；技能與雷霆類是主軸，能讓燃燒、技能循環或範圍傷害疊得更快的增幅最優先。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -1715,7 +1716,7 @@
         "sourceNote": "7.2b ARAM 布蘭德攻略：以 7.2a WildRiftFire 的黑焰／黎安卓法師核心為基礎，依 ARAM 單線多人密集站位調整；7.2b 未見布蘭德額外 ARAM 百分比修正。",
         "augmentCompatibility": {
           "title": "布蘭德分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -2235,9 +2236,9 @@
       ],
       "sourceNote": "7.2b ARAM 費德提克攻略：主流 AP 爆發核心參考 WildRiftFire 7.2a，再依 ARAM 草叢伏擊、視野與高頻團戰調整；7.2b 未見額外 ARAM 百分比修正。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "大絕進場／範圍持續輸出控制法師",
         "tags": [
           "技能",
@@ -2245,7 +2246,7 @@
           "雷霆回音"
         ],
         "summary": "費德提克的勝負點在大絕進場後能否把恐懼、吸血與範圍傷害完整打完；技能、控場與大絕相關分類價值最高。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -2442,7 +2443,7 @@
         "sourceNote": "7.2b ARAM 費德提克攻略：主流 AP 爆發核心參考 WildRiftFire 7.2a，再依 ARAM 草叢伏擊、視野與高頻團戰調整；7.2b 未見額外 ARAM 百分比修正。",
         "augmentCompatibility": {
           "title": "費德提克分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -2963,9 +2964,9 @@
       ],
       "sourceNote": "7.2b ARAM 加里歐攻略：以 WildRiftFire 7.2a 坦克核心為基礎，依 ARAM 反開與高密度控制環境調整；早期官方 ARAM 平衡已將加里歐承傷修正調回基準。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排反開／群體控制護盾坦法",
         "tags": [
           "控場",
@@ -2973,7 +2974,7 @@
           "大地回音"
         ],
         "summary": "加里歐以進場控場、承傷與保護隊友為主；控場與護盾是核心，再看技能、大地與體型類提高前排覆蓋與生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -3170,7 +3171,7 @@
         "sourceNote": "7.2b ARAM 加里歐攻略：以 WildRiftFire 7.2a 坦克核心為基礎，依 ARAM 反開與高密度控制環境調整；早期官方 ARAM 平衡已將加里歐承傷修正調回基準。",
         "augmentCompatibility": {
           "title": "加里歐分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 41,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -3654,9 +3655,9 @@
       ],
       "sourceNote": "7.2b ARAM 漢默丁格攻略：出裝與技能方向參考 WildRiftFire 7.2a，再依 ARAM 陣地戰調整；造成傷害 90% 依官方 5.3b ARAM 修正沿用。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "砲台陣地／技能消耗控制法師",
         "tags": [
           "技能",
@@ -3664,7 +3665,7 @@
           "控場"
         ],
         "summary": "漢默丁格依靠砲台與技能持續壓區；技能類是主軸，能強化召喚單位、技能循環與控場的增幅特別有價值。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -3865,7 +3866,7 @@
         "sourceNote": "7.2b ARAM 漢默丁格攻略：出裝與技能方向參考 WildRiftFire 7.2a，再依 ARAM 陣地戰調整；造成傷害 90% 依官方 5.3b ARAM 修正沿用。",
         "augmentCompatibility": {
           "title": "漢默丁格分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -4386,9 +4387,9 @@
       ],
       "sourceNote": "7.2b ARAM 珍娜攻略：輔助裝與符文參考 WildRiftFire 7.2a，再依 ARAM 高頻團戰、無自由回城與反開需求調整；7.2b 未見珍娜額外 ARAM 百分比修正。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "治療護盾／反開加速輔助",
         "tags": [
           "復原",
@@ -4396,7 +4397,7 @@
           "護盾"
         ],
         "summary": "珍娜的核心就是護盾、治療、跑速與反開；復原與流水回音幾乎都是直系強化，護盾與控場類也有很高的實戰價值。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -4593,7 +4594,7 @@
         "sourceNote": "7.2b ARAM 珍娜攻略：輔助裝與符文參考 WildRiftFire 7.2a，再依 ARAM 高頻團戰、無自由回城與反開需求調整；7.2b 未見珍娜額外 ARAM 百分比修正。",
         "augmentCompatibility": {
           "title": "珍娜分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 36,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -5042,9 +5043,9 @@
       ],
       "sourceNote": "7.2b ARAM 杰西攻略：官方 7.2b 確認基礎物防由 46 降至 37；核心裝、符文與技能方向交叉參考 WildRiftFire 7.2b，再依 ARAM 長距離消耗與無回城節奏調整。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距消耗／近戰收割雙型態戰士",
         "tags": [
           "技能",
@@ -5052,7 +5053,7 @@
           "身法"
         ],
         "summary": "杰西最需要技能爆發與遠距消耗，同時能用近戰型態補普攻與位移收尾；技能、普攻與身法類最容易發揮。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -5249,7 +5250,7 @@
         "sourceNote": "7.2b ARAM 杰西攻略：官方 7.2b 確認基礎物防由 46 降至 37；核心裝、符文與技能方向交叉參考 WildRiftFire 7.2b，再依 ARAM 長距離消耗與無回城節奏調整。",
         "augmentCompatibility": {
           "title": "杰西分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 43,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -5739,9 +5740,9 @@
       ],
       "sourceNote": "7.2b ARAM 卡瑪攻略：團隊型出裝與符文交叉參考 WildRiftFire 7.2b，再依 ARAM 高頻 5v5、無固定輔助經濟限制與群盾價值重新排序。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "護盾加速／技能消耗控制輔助法師",
         "tags": [
           "復原",
@@ -5749,7 +5750,7 @@
           "護盾"
         ],
         "summary": "卡瑪能同時提供消耗、護盾、加速與控制；復原與流水回音是最直接的核心，再用技能、護盾與控場增幅放大團隊功能。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -5947,7 +5948,7 @@
         "sourceNote": "7.2b ARAM 卡瑪攻略：團隊型出裝與符文交叉參考 WildRiftFire 7.2b，再依 ARAM 高頻 5v5、無固定輔助經濟限制與群盾價值重新排序。",
         "augmentCompatibility": {
           "title": "卡瑪分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 36,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -6396,9 +6397,9 @@
       ],
       "sourceNote": "7.2b ARAM 凱能攻略：官方確認一般 ARAM 承傷降至 85%；出裝與符文交叉參考 WildRiftFire 7.2b，再依單線多人大絕與中婭進場節奏調整。",
       "aaaAram": {
-        "status": "batch1-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "大絕進場／範圍暈眩爆發法師",
         "tags": [
           "技能",
@@ -6406,7 +6407,7 @@
           "雷霆回音"
         ],
         "summary": "凱能的核心是找到進場角度後用大絕與被動暈眩打滿範圍爆發；技能、控場與大絕強化類優先，跑速則幫助他完成進退場。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -6603,7 +6604,7 @@
         "sourceNote": "7.2b ARAM 凱能攻略：官方確認一般 ARAM 承傷降至 85%；出裝與符文交叉參考 WildRiftFire 7.2b，再依單線多人大絕與中婭進場節奏調整。",
         "augmentCompatibility": {
           "title": "凱能分類內增幅評級",
-          "version": "v80.33-batch1",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -7124,9 +7125,9 @@
       ],
       "sourceNote": "7.2b ARAM 拉克絲攻略：官方 7.2b 直接強化盧登回音；核心法師配置與技能方向交叉參考 WildRiftFire 7.2b，再依 ARAM 遠距消耗、群盾與大絕高頻收尾調整。",
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距爆發／控制護盾法師",
         "tags": [
           "技能",
@@ -7134,7 +7135,7 @@
           "流水回音"
         ],
         "summary": "拉克絲在符文大亂鬥要用遠距技能先手消耗與控制，再用護盾保住團隊；技能與控場是主軸，護盾／流水類則能把二技價值放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -7331,7 +7332,7 @@
         "sourceNote": "7.2b ARAM 拉克絲攻略：官方 7.2b 直接強化盧登回音；核心法師配置與技能方向交叉參考 WildRiftFire 7.2b，再依 ARAM 遠距消耗、群盾與大絕高頻收尾調整。",
         "augmentCompatibility": {
           "title": "拉克絲分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 52,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -7876,9 +7877,9 @@
       ],
       "sourceNote": "7.2b ARAM 墨菲特攻略：官方 7.2b 強化寒冰霸拳的價格與生命；坦克核心與符文交叉參考 WildRiftFire 7.2b，再依 ARAM 大絕高價值與持續前排需求調整。",
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排強開／大絕爆發坦克",
         "tags": [
           "控場",
@@ -7886,7 +7887,7 @@
           "大地回音"
         ],
         "summary": "墨菲特的價值在於用大絕強開後扛住第一波集火；控場、體型與大地回音最契合，護盾與技能類則提高進場後的生存與第二輪技能。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -8084,7 +8085,7 @@
         "sourceNote": "7.2b ARAM 墨菲特攻略：官方 7.2b 強化寒冰霸拳的價格與生命；坦克核心與符文交叉參考 WildRiftFire 7.2b，再依 ARAM 大絕高價值與持續前排需求調整。",
         "augmentCompatibility": {
           "title": "墨菲特分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 41,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -8563,9 +8564,9 @@
       ],
       "sourceNote": "7.2b ARAM 茂凱攻略：以官方 7.2b 裝備環境為版本基準，並交叉參考現行茂凱坦克／輔助核心方向；再依 ARAM 草叢樹苗、大絕封路與無回城續航需求調整。",
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排控場／持續纏鬥坦克",
         "tags": [
           "控場",
@@ -8573,7 +8574,7 @@
           "體型"
         ],
         "summary": "茂凱靠多段控制與高坦度反覆纏鬥；控場、大地回音與體型類最直接，技能與雷霆類則能加快控制循環並補充範圍傷害。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -8770,7 +8771,7 @@
         "sourceNote": "7.2b ARAM 茂凱攻略：以官方 7.2b 裝備環境為版本基準，並交叉參考現行茂凱坦克／輔助核心方向；再依 ARAM 草叢樹苗、大絕封路與無回城續航需求調整。",
         "augmentCompatibility": {
           "title": "茂凱分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -9379,9 +9380,9 @@
       ],
       "sourceNote": "7.2b ARAM 梅爾攻略：官方 7.2a 已把一般 ARAM 傷害與承傷調回 100%／100%；核心灼燒法師配置參考 WildRiftFire 7.2b，並因 7.2b 植物學家金幣下修，ARAM 符文改採更穩定的魔力與消耗組合。",
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距技能爆發／控制反制法師",
         "tags": [
           "技能",
@@ -9389,7 +9390,7 @@
           "雷霆回音"
         ],
         "summary": "梅爾以遠距技能與被動累積壓低對手，再用控制與大絕收尾；技能、單人強者與雷霆系列優先，控制與跑速則幫助她維持安全施法距離。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -9590,7 +9591,7 @@
         "sourceNote": "7.2b ARAM 梅爾攻略：官方 7.2a 已把一般 ARAM 傷害與承傷調回 100%／100%；核心灼燒法師配置參考 WildRiftFire 7.2b，並因 7.2b 植物學家金幣下修，ARAM 符文改採更穩定的魔力與消耗組合。",
         "augmentCompatibility": {
           "title": "梅爾分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -10111,9 +10112,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "暴擊消耗／大絕範圍輸出射手",
         "tags": [
           "暴擊",
@@ -10121,7 +10122,7 @@
           "普攻"
         ],
         "summary": "好運姐同時吃暴擊、普攻與大絕增幅；暴擊與疾風回音最直接，技能與普攻類則分別強化大絕／一技能消耗與一般輸出。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -10318,7 +10319,7 @@
         "sourceNote": "7.2b ARAM S+ 第三批：好運姐以 ARAM 單線壓血、團戰收割與大絕掃射價值為核心；裝備與符文依 7.2b 版本環境與現行站內模板整理，若官方補充模式數值會再同步更新。",
         "augmentCompatibility": {
           "title": "好運姐分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -10929,9 +10930,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距禁錮／持續傷害護盾法師",
         "tags": [
           "技能",
@@ -10939,7 +10940,7 @@
           "雷霆回音"
         ],
         "summary": "魔甘娜靠禁錮與三技能池持續壓區，再用黑盾保住自己或隊友；技能與控場是核心，雷霆與護盾類可分別放大持續輸出與保護能力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -11136,7 +11137,7 @@
         "sourceNote": "7.2b ARAM S+ 第三批：魔甘娜以反開、黑盾保排與遠距消耗作為核心定位；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
         "augmentCompatibility": {
           "title": "魔甘娜分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 52,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -11681,9 +11682,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "治療加速／群體控制輔助",
         "tags": [
           "復原",
@@ -11691,7 +11692,7 @@
           "控場"
         ],
         "summary": "娜米兼具治療、強化普攻與兩種群體控制；復原與流水回音幾乎都是直系強化，控場與技能類則讓她的泡泡與海嘯更有影響力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -11887,7 +11888,7 @@
         "sourceNote": "7.2b ARAM S+ 第三批：娜米以高泛用的控制、補血、增益與反開價值列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
         "augmentCompatibility": {
           "title": "娜米分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 57,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -12462,9 +12463,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排強開／連鎖控制坦克",
         "tags": [
           "控場",
@@ -12472,7 +12473,7 @@
           "體型"
         ],
         "summary": "納帝魯斯幾乎整套技能都圍繞控制與前排承傷；控場、大地與體型類最優先，護盾與技能類則提高進場後的生存與第二輪控制。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -12669,7 +12670,7 @@
         "sourceNote": "7.2b ARAM S+ 第三批：納帝魯斯以穩定強開、控制鏈與前排功能列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
         "augmentCompatibility": {
           "title": "納帝魯斯分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 41,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -13148,9 +13149,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距持續法傷／護盾控場法師",
         "tags": [
           "技能",
@@ -13158,7 +13159,7 @@
           "流水回音"
         ],
         "summary": "奧莉安娜要靠球的位置持續輸出、加速與保護隊友，再找大絕團控；技能與控場是核心，流水／護盾類則能把三技能的團隊價值放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -13355,7 +13356,7 @@
         "sourceNote": "7.2b ARAM S+ 第三批：奧莉安娜以全能控場、保排與團戰爆發列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
         "augmentCompatibility": {
           "title": "奧莉安娜分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 34,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -13791,9 +13792,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch2-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排鍛造／群體控制坦克",
         "tags": [
           "控場",
@@ -13801,7 +13802,7 @@
           "大地回音"
         ],
         "summary": "鄂爾以高坦度與多段群控撐起正面團戰；控場、體型與大地回音最適合，技能與雷霆類則能加快控制循環或強化大絕開戰。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -13999,7 +14000,7 @@
         "sourceNote": "7.2b ARAM S+ 第三批：鄂爾以穩定開戰、坦度與後期團戰價值列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
         "augmentCompatibility": {
           "title": "鄂爾分類內增幅評級",
-          "version": "v80.34-batch2",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -14604,9 +14605,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排強開／群體連鎖控制坦克",
         "tags": [
           "控場",
@@ -14614,7 +14615,7 @@
           "體型"
         ],
         "summary": "銳兒在符文大亂鬥的核心是一次進場把多人黏住並承受第一波集火；控場與大地回音最優先，體型與護盾能進一步提高進場容錯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -14811,7 +14812,7 @@
         "sourceNote": "7.2b ARAM S+ 第三批：銳兒以群體控制、強開與反開價值列入 S+；裝備與符文依 7.2b 版本環境與現行站內模板整理。",
         "augmentCompatibility": {
           "title": "銳兒分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 41,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -15294,9 +15295,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "群體護盾治療／遠距控制輔助法師",
         "tags": [
           "復原",
@@ -15304,7 +15305,7 @@
           "技能"
         ],
         "summary": "瑟菈紛能同時提供群盾、治療、遠距控制與消耗；復原與流水回音是最直接的核心，技能、控場與護盾類則能把團隊功能放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -15505,7 +15506,7 @@
         "sourceNote": "7.2b ARAM S+ 第四批：瑟菈紛以單線群體護盾、治療、控制與大絕延伸價值列入 S+；7.1h 另強化二技治療比例與大絕魅惑時間。",
         "augmentCompatibility": {
           "title": "瑟菈紛分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 36,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -15954,9 +15955,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "持續吸血／近身法坦",
         "tags": [
           "技能",
@@ -15964,7 +15965,7 @@
           "控場"
         ],
         "summary": "斯溫要靠大絕與持續技能留在戰場中央吸血、疊傷害；技能與雷霆回音是主軸，體型與單人強者則能提高長時間站場與大絕上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -16161,7 +16162,7 @@
         "sourceNote": "7.2b ARAM S+ 第四批：斯溫以單線長團戰、群體吸血與持續輸出能力列入 S+；AAA ARAM 的專屬平衡數值不混入標準 ARAM。",
         "augmentCompatibility": {
           "title": "斯溫分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 57,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -16740,9 +16741,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高法強爆發／事件視界控制法師",
         "tags": [
           "技能",
@@ -16750,7 +16751,7 @@
           "單人強者"
         ],
         "summary": "維迦不缺後期法強，真正需要的是更快的技能循環與更穩定的事件視界控制；技能與控場最優先，單人強者與雷霆回音能進一步放大爆發上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -16951,7 +16952,7 @@
         "sourceNote": "7.2b ARAM S+ 第四批：維迦以事件視界的單線封鎖與被動成長列入 S+；7.1d 標準 ARAM 承傷已調整為 110%。",
         "augmentCompatibility": {
           "title": "維迦分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -17484,9 +17485,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "超遠距技能消耗／真傷收割法師",
         "tags": [
           "技能",
@@ -17494,7 +17495,7 @@
           "雷霆回音"
         ],
         "summary": "威寇茲最重視射程、投射物與技能命中；技能與單人強者是最直接的核心，雷霆與控場類則幫助他把被動與大絕完整打滿。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -17691,7 +17692,7 @@
         "sourceNote": "7.2b ARAM S+ 第四批：威寇茲以超遠距消耗、被動真傷與狹窄地形大絕價值列入 S+；AAA ARAM 的獨立調整不混入標準 ARAM。",
         "augmentCompatibility": {
           "title": "威寇茲分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -18216,9 +18217,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "超遠距消耗／區域封鎖爆破法師",
         "tags": [
           "技能",
@@ -18226,7 +18227,7 @@
           "雷霆回音"
         ],
         "summary": "希格斯要在最安全的距離反覆丟技能壓血與封路；技能與單人強者最優先，雷霆與控場類能提高連續消耗與區域限制能力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -18427,7 +18428,7 @@
         "sourceNote": "7.2b ARAM S+ 第四批：希格斯以單線超遠距消耗與清線能力列入 S+；7.1d 標準 ARAM 傷害為 95%、承傷為 110%。",
         "augmentCompatibility": {
           "title": "希格斯分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -18952,9 +18953,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "植物陣地／持續傷害控制法師",
         "tags": [
           "技能",
@@ -18962,7 +18963,7 @@
           "雷霆回音"
         ],
         "summary": "枷蘿最強的是植物持續壓區與三技、大絕反開；技能與單人強者是核心，尤其召喚物與持續傷害相關增幅能大幅提高陣地戰強度。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -19163,7 +19164,7 @@
         "sourceNote": "7.2b ARAM S+ 第四批：枷蘿以植物陣地、範圍控制與持續消耗列入 S+；7.2 植物已能繼承法術穿透。AAA ARAM 專屬平衡數值不混入標準 ARAM。",
         "augmentCompatibility": {
           "title": "枷蘿分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -19684,9 +19685,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高機動魅惑／側翼收割法師",
         "tags": [
           "技能",
@@ -19694,7 +19695,7 @@
           "迷霧回音"
         ],
         "summary": "阿璃的優勢是大絕多段位移找魅惑角度；技能與身法最優先，迷霧回音能直接放大衝刺收益，控場與跑速則提高抓人與撤退穩定度。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -19891,7 +19892,7 @@
         "sourceNote": "7.2b ARAM S 第一批：阿璃依 7.2 版本裝備／鞋子系統與目前主流玩法整理；標準 ARAM 與 AAA ARAM 資料分開處理。",
         "augmentCompatibility": {
           "title": "阿璃分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -20448,9 +20449,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高機動普攻／暴擊收割射手",
         "tags": [
           "普攻",
@@ -20458,7 +20459,7 @@
           "迷霧回音"
         ],
         "summary": "埃可尚靠普攻連射與鉤索走位完成收割；普攻與身法是核心，迷霧、暴擊與疾風系列都能直接放大他的追擊與輸出。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -20656,7 +20657,7 @@
         "sourceNote": "7.2b ARAM S 第一批：埃可尚以單線 Q 技消耗、鉤索收割與復活被動的團隊價值評估；鞋子遵循 7.2 三級鞋系統。",
         "augmentCompatibility": {
           "title": "埃可尚分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 42,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -21141,9 +21142,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch3-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "被動暈眩／召喚爆發法師",
         "tags": [
           "技能",
@@ -21151,7 +21152,7 @@
           "單人強者"
         ],
         "summary": "安妮要靠被動暈眩抓到第一手，再用提伯斯與技能爆發完成團戰；技能與控場是核心，單人強者中召喚物、大絕與技能暴擊卡特別強。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -21347,7 +21348,7 @@
         "sourceNote": "7.2b ARAM S 第一批：安妮以被動暈眩、Tibbers 範圍控制與閃現強開能力整理；標準 ARAM 不套用 AAA ARAM 專屬增傷。",
         "augmentCompatibility": {
           "title": "安妮分類內增幅評級",
-          "version": "v80.35-batch3",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -21868,9 +21869,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "普攻緩速／遠距開戰射手",
         "tags": [
           "普攻",
@@ -21878,7 +21879,7 @@
           "疾風回音"
         ],
         "summary": "艾希最重要的是持續普攻緩速與大絕開戰；普攻與控場是核心，疾風、暴擊與跑速類能進一步放大持續輸出與拉扯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -22075,7 +22076,7 @@
         "sourceNote": "7.2b ARAM S 第一批：艾希以 W 技消耗、普攻緩速與全圖大絕的團隊價值整理；鞋子遵循 7.2 三級鞋系統。",
         "augmentCompatibility": {
           "title": "艾希分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 45,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -22578,9 +22579,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "鉤抓強開／前排控制坦克",
         "tags": [
           "控場",
@@ -22588,7 +22589,7 @@
           "體型"
         ],
         "summary": "布里茨的勝負點是鉤到關鍵目標後接完整控制鏈；控場與大地回音最重要，體型與技能提高前排容錯，而單人強者中還有布里茨專屬的高價值處決卡。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -22785,7 +22786,7 @@
         "sourceNote": "7.2b ARAM S 第一批：布里茨以單線鉤子威脅、沉默與前排功能整理；不沿用未確認的舊 ARAM 修正數值。",
         "augmentCompatibility": {
           "title": "布里茨分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -23390,9 +23391,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "反開保排／被動暈眩坦克",
         "tags": [
           "控場",
@@ -23400,7 +23401,7 @@
           "大地回音"
         ],
         "summary": "布郎姆要靠普攻與一技能疊被動暈眩，再用盾與大絕保護後排；控場、體型與大地最穩，普攻類則能幫助更快完成被動控制。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -23598,7 +23599,7 @@
         "sourceNote": "7.2b ARAM S 第一批：布郎姆以盾牌攔截、被動控制與反開能力整理；鞋子遵循 7.2 三級鞋系統。",
         "augmentCompatibility": {
           "title": "布郎姆分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 51,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -24137,9 +24138,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "超遠射程／暴擊陷阱射手",
         "tags": [
           "普攻",
@@ -24147,7 +24148,7 @@
           "疾風回音"
         ],
         "summary": "凱特琳靠超遠普攻、爆頭與陷阱壓縮站位；普攻與暴擊是核心，疾風回音與英雄系能進一步放大射程優勢，技能與身法則提供消耗與自保。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -24344,7 +24345,7 @@
         "sourceNote": "7.2b ARAM S 第一批：凱特琳以射程、陷阱控場與遠距收割整理；鞋子遵循 7.2 三級鞋系統。",
         "augmentCompatibility": {
           "title": "凱特琳分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -24849,9 +24850,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第二批：標準 ARAM 與 AAA ARAM 數值分開處理；黛安娜不套用 7.2b AAA 專屬 115%／115%。",
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "多段突進／範圍大絕法戰",
         "tags": [
           "技能",
@@ -24859,7 +24860,7 @@
           "迷霧回音"
         ],
         "summary": "黛安娜需要靠三技能進場後把大絕與被動普攻打滿；技能與身法是核心，迷霧與雷霆系列會直接放大突進後的爆發與生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -25063,7 +25064,7 @@
         "sourceNote": "7.2b ARAM S 第二批：標準 ARAM 與 AAA ARAM 數值分開處理；黛安娜不套用 7.2b AAA 專屬 115%／115%。",
         "augmentCompatibility": {
           "title": "黛安娜分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -25564,9 +25565,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第二批：伊澤瑞爾以標準 ARAM 通用基準整理；7.2a AAA ARAM 承傷調整未直接套用。",
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "技能命中／高機動混合射手",
         "tags": [
           "技能",
@@ -25574,7 +25575,7 @@
           "普攻"
         ],
         "summary": "伊澤瑞爾的主軸是高頻一技能與三技能調位；技能與單人強者最重要，普攻、身法與迷霧類則能放大咒能劍、命中特效與生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -25776,7 +25777,7 @@
         "sourceNote": "7.2b ARAM S 第二批：伊澤瑞爾以標準 ARAM 通用基準整理；7.2a AAA ARAM 承傷調整未直接套用。",
         "augmentCompatibility": {
           "title": "伊澤瑞爾分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -26385,9 +26386,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第二批：古拉格斯依 7.2a 主流 AP 配置與標準 ARAM 地形價值整理。",
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "位移爆發／大絕拆陣法師",
         "tags": [
           "技能",
@@ -26395,7 +26396,7 @@
           "身法"
         ],
         "summary": "古拉格斯靠三技能位移接控制與大絕拆陣；技能與控場是核心，身法、迷霧與雷霆系列能提高進場爆發、調位與大絕上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -26595,7 +26596,7 @@
         "sourceNote": "7.2b ARAM S 第二批：古拉格斯依 7.2a 主流 AP 配置與標準 ARAM 地形價值整理。",
         "augmentCompatibility": {
           "title": "古拉格斯分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 55,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -27162,9 +27163,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第二批：伊瑞莉雅套用官方明確同步一般 ARAM 的 115% 傷害修正。",
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "重置突進／普攻收割鬥士",
         "tags": [
           "普攻",
@@ -27172,7 +27173,7 @@
           "迷霧回音"
         ],
         "summary": "伊瑞莉雅靠一技能重置穿梭戰場並用高頻普攻完成收割；普攻與身法是核心，迷霧與疾風系列能把多段位移和持續輸出進一步放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -27373,7 +27374,7 @@
         "sourceNote": "7.2b ARAM S 第二批：伊瑞莉雅套用官方明確同步一般 ARAM 的 115% 傷害修正。",
         "augmentCompatibility": {
           "title": "伊瑞莉雅分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 43,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -27868,9 +27869,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第二批：燼依 7.2a 主流暴擊／穿甲配置與 ARAM 遠距收割特性整理。",
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高爆發第四發／遠距收割射手",
         "tags": [
           "暴擊",
@@ -27878,7 +27879,7 @@
           "技能"
         ],
         "summary": "燼以第四發、技能定身與大絕遠距收割為主；暴擊與普攻最直接，技能、疾風與跑速類則能放大他的特殊暴擊機制與拉扯能力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -28079,7 +28080,7 @@
         "sourceNote": "7.2b ARAM S 第二批：燼依 7.2a 主流暴擊／穿甲配置與 ARAM 遠距收割特性整理。",
         "augmentCompatibility": {
           "title": "燼分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -28669,7 +28670,7 @@
           "reason": "面對強開或需要調整站位時，用主動位移換取容錯。"
         }
       ],
-      "sourceNote": "7.2b ARAM 吉茵珂絲固定母版測試：版本與裝備改動以 Riot Games 7.2、7.2b 更新公告為基準；吉茵珂絲一般出裝與符文趨勢交叉參考 WildRiftFire 7.2a；ARAM 模式修正沿歷次 ARAM 平衡紀錄追溯，7.2b 未見吉茵珂絲追加調整。Tier 為本站依 ARAM 地圖機制、英雄功能與模式修正綜合評級。",
+      "sourceNote": "7.2b ARAM 吉茵珂絲攻略資料：版本與裝備改動以 Riot Games 7.2、7.2b 更新公告為基準；吉茵珂絲一般出裝與符文趨勢交叉參考 WildRiftFire 7.2a；ARAM 模式修正沿歷次 ARAM 平衡紀錄追溯，7.2b 未見吉茵珂絲追加調整。Tier 為本站依 ARAM 地圖機制、英雄功能與模式修正綜合評級。",
       "sources": [
         {
           "label": "Riot Games｜Wild Rift Patch Notes 7.2b",
@@ -28694,17 +28695,17 @@
         "assets/images/heroes/skills/jinx_04.png"
       ],
       "aaaAram": {
-        "status": "pilot-complete",
-        "label": "符文大亂鬥適配試作",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "後排暴擊輸出／增幅觸發後連續重置型射手",
         "tags": [
-          "暴擊增幅",
-          "普攻投射",
-          "擊殺重置"
+          "普攻",
+          "暴擊",
+          "疾風回音"
         ],
-        "summary": "符文大亂鬥以後排普攻輸出為主。實戰時優先看 S／A 級；抽到陌生增幅只要搜尋名稱，快速確認等級與適配判斷。",
-        "pilotNote": "分類導向試作：先看遊戲增幅卡片下方的官方分類，再點吉茵珂絲適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "summary": "符文大亂鬥以後排普攻輸出為主。先看遊戲卡片下方的官方分類，再進入對應分類比較 S+／S／A，最後依增幅方向調整出裝。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -28961,7 +28962,7 @@
         "sourceNote": "v80.29.0：加入吉茵珂絲「三選一推薦測試」，使用既有 151 張適性評級作英雄底分，正式接入官方分類軟加權與已確認效果連動；同分類不視為隱藏套裝效果。原本適配評級與完整效果文字保留。",
         "augmentCompatibility": {
           "title": "吉茵珂絲增幅快速決策",
-          "version": "v80.24.0",
+          "version": "v81.0-official",
           "total": 151,
           "defaultFilter": "recommended",
           "note": "遊戲中只要搜尋增幅名稱，先看等級與一句判斷；效果與完整原因需要時再展開。",
@@ -30458,9 +30459,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第二批：卡桑帝套用 7.2a 官方明確同步一般 ARAM 的 110% 傷害修正，並遵循 7.2 三級鞋系統。",
       "aaaAram": {
-        "status": "batch4-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高坦度位移／單點帶離前排",
         "tags": [
           "控場",
@@ -30468,7 +30469,7 @@
           "體型"
         ],
         "summary": "卡桑帝靠多段控制與位移撐住正面，再用大絕把關鍵目標帶離陣型；控場、大地與體型是核心，身法與迷霧類能放大他的位移連段。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -30670,7 +30671,7 @@
         "sourceNote": "7.2b ARAM S 第二批：卡桑帝套用 7.2a 官方明確同步一般 ARAM 的 110% 傷害修正，並遵循 7.2 三級鞋系統。",
         "augmentCompatibility": {
           "title": "卡桑帝分類內增幅評級",
-          "version": "v80.36-batch4",
+          "version": "v81.0-official",
           "total": 43,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -31161,9 +31162,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高頻普攻／大絕收割射手",
         "tags": [
           "普攻",
@@ -31171,7 +31172,7 @@
           "身法"
         ],
         "summary": "凱莎以高頻普攻疊被動，再用技能與大絕完成收割；普攻與技能是核心，身法、疾風與迷霧類則能放大她進退場與持續輸出。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -31368,7 +31369,7 @@
         "sourceNote": "7.2b ARAM S 第三批：凱莎依 7.2 版本鞋子／裝備系統與目前主流持續輸出玩法整理；標準 ARAM 與 AAA ARAM 資料分開處理。",
         "augmentCompatibility": {
           "title": "凱莎分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 43,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -31859,9 +31860,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "後期遠程普攻／大絕保核法戰",
         "tags": [
           "普攻",
@@ -31869,7 +31870,7 @@
           "英雄"
         ],
         "summary": "凱爾後期主要靠高攻速遠程普攻持續輸出，大絕則負責保住關鍵目標；普攻與疾風最直接，英雄系與技能類能再放大射程與大絕價值。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -32066,7 +32067,7 @@
         "sourceNote": "7.2b ARAM S 第三批：凱爾依 7.2 版本鞋子／裝備系統與目前主流法傷持續輸出玩法整理。",
         "augmentCompatibility": {
           "title": "凱爾分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 45,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -32569,9 +32570,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "超高攻速／射程融坦射手",
         "tags": [
           "普攻",
@@ -32579,7 +32580,7 @@
           "英雄"
         ],
         "summary": "寇格魔的核心就是開二技能後站在安全位置高速普攻融坦；普攻與疾風回音最優先，英雄與跑速類可以進一步拉大射程與站位優勢。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -32776,7 +32777,7 @@
         "sourceNote": "7.2b ARAM S 第三批：寇格魔依 7.2 版本鞋子／裝備系統與目前主流融坦持續輸出玩法整理。",
         "augmentCompatibility": {
           "title": "寇格魔分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 37,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -33225,9 +33226,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排強開／長時間連鎖控制坦克",
         "tags": [
           "控場",
@@ -33235,7 +33236,7 @@
           "體型"
         ],
         "summary": "雷歐娜幾乎每個進場技能都能提供控制，且二技能讓她能長時間站在敵陣；控場、大地與體型最穩，技能與烈焰類能再放大進場後收益。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -33433,7 +33434,7 @@
         "sourceNote": "7.2b ARAM S 第三批：雷歐娜依 7.2 版本鞋子／裝備系統與目前主流強開坦克玩法整理。",
         "augmentCompatibility": {
           "title": "雷歐娜分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -33930,9 +33931,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高速拉扯／持續灼燒睡眠法師",
         "tags": [
           "技能",
@@ -33940,7 +33941,7 @@
           "雷霆回音"
         ],
         "summary": "莉莉亞靠持續灼燒疊跑速，在外圍反覆拉扯後用大絕睡多人；技能與跑速是核心，雷霆、控場與單人強者能把持續傷害和大絕上限放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -34137,7 +34138,7 @@
         "sourceNote": "7.2b ARAM S 第三批：莉莉亞依 7.2 版本鞋子／裝備系統與目前主流拉扯灼燒玩法整理。",
         "augmentCompatibility": {
           "title": "莉莉亞分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -34670,9 +34671,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "位移強開／群體冰控爆發法師",
         "tags": [
           "技能",
@@ -34680,7 +34681,7 @@
           "身法"
         ],
         "summary": "麗珊卓的價值在於三技能找角度後用二技能與大絕鎖死關鍵目標；技能與控場最重要，身法與迷霧類能提高進場爆發與撤退容錯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -34878,7 +34879,7 @@
         "sourceNote": "7.2b ARAM S 第三批：麗珊卓依 7.2 版本鞋子／裝備系統與目前主流進場控場玩法整理。",
         "augmentCompatibility": {
           "title": "麗珊卓分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 55,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -35441,9 +35442,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "護盾變形／大絕保排輔助",
         "tags": [
           "復原",
@@ -35451,7 +35452,7 @@
           "控場"
         ],
         "summary": "露璐以護盾、變形與大絕保住己方核心；復原與流水回音是最直接的核心，控場與護盾類則能進一步放大反開與保排。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -35647,7 +35648,7 @@
         "sourceNote": "7.2b ARAM S 第三批：露璐依 7.2 版本鞋子／裝備系統與目前主流保排功能玩法整理。",
         "augmentCompatibility": {
           "title": "露璐分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 36,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -36096,9 +36097,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "群體治療護盾／解控保排輔助",
         "tags": [
           "復原",
@@ -36106,7 +36107,7 @@
           "護盾"
         ],
         "summary": "米里歐幾乎所有價值都圍繞治療、護盾、射程強化與大絕解控；復原與流水回音是核心，護盾、技能與跑速類則提高整隊容錯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -36303,7 +36304,7 @@
         "sourceNote": "7.2b ARAM S 第四批：米里歐依 7.2b 現行技能／裝備資料與 ARAM 單線團戰環境整理；標準 ARAM 與 AAA ARAM 分開處理。",
         "augmentCompatibility": {
           "title": "米里歐分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 36,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -36752,9 +36753,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高生命纏鬥／減速重擊鬥士",
         "tags": [
           "普攻",
@@ -36762,7 +36763,7 @@
           "體型"
         ],
         "summary": "納瑟斯靠二技能減速鎖住核心，再開大貼身用一技能持續重擊；普攻、控場與體型最直接，大地與雷霆類則能提高大絕期間的站場能力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -36960,7 +36961,7 @@
         "sourceNote": "7.2b ARAM S 第四批：納瑟斯以 7.2b 現行戰士核心為基礎，並針對 ARAM 無法穩定獨享兵線的情況調整玩法說明。",
         "augmentCompatibility": {
           "title": "納瑟斯分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 51,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -37499,9 +37500,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch5-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "大絕切入／恐懼普攻刺客",
         "tags": [
           "身法",
@@ -37509,7 +37510,7 @@
           "普攻"
         ],
         "summary": "夜曲靠大絕切入後用普攻與恐懼快速處理後排；身法與迷霧回音最核心，普攻、技能與單人強者則能提高切入後的爆發與保命。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -37706,7 +37707,7 @@
         "sourceNote": "7.2b ARAM S 第四批：夜曲依 7.2b 現行穿甲核心與技能資料整理，並針對 ARAM 無側翼地形調整大絕使用邏輯。",
         "augmentCompatibility": {
           "title": "夜曲分類內增幅評級",
-          "version": "v80.37-batch5",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -38311,9 +38312,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "反突進前排／壁咚控制坦克",
         "tags": [
           "控場",
@@ -38321,7 +38322,7 @@
           "體型"
         ],
         "summary": "波比最強的是限制位移、壁咚與大絕拆陣；控場與大地回音是核心，體型與單人強者能放大前排坦度，而護盾類可利用被動盾牌提高進場容錯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -38518,7 +38519,7 @@
         "sourceNote": "7.2b ARAM S 第四批：波比依 7.2b 現行坦克核心與 ARAM 狹窄地形特性整理。",
         "augmentCompatibility": {
           "title": "波比分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 59,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -39105,9 +39106,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高機動鉤抓／大絕處決刺客",
         "tags": [
           "身法",
@@ -39115,7 +39116,7 @@
           "技能"
         ],
         "summary": "派克要靠隱形與位移找鉤子、暈眩，再用大絕連續處決；身法與迷霧回音最核心，技能、控場與單人強者則能提高抓人與連殺上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -39312,7 +39313,7 @@
         "sourceNote": "7.2b ARAM S 第四批：派克依 7.2b 現行穿甲核心、抓人與處決機制整理；ARAM 不使用召喚峽谷輔助任務裝作為預設核心。",
         "augmentCompatibility": {
           "title": "派克分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -39869,9 +39870,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高機動開戰／治療護盾輔助",
         "tags": [
           "控場",
@@ -39879,7 +39880,7 @@
           "復原"
         ],
         "summary": "銳空靠大絕加速與二技能進場，再用三技能回到隊友身邊；控場與身法是核心，復原、流水與護盾類則能放大他的治療與保排。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -40076,7 +40077,7 @@
         "sourceNote": "7.2b ARAM S 第四批：銳空依 7.2b 現行技能與功能坦裝整理；ARAM 預設不採召喚峽谷輔助任務裝。",
         "augmentCompatibility": {
           "title": "銳空分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 34,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -40513,9 +40514,9 @@
         }
       ],
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "持續灼燒／大絕區域封鎖法師",
         "tags": [
           "技能",
@@ -40523,7 +40524,7 @@
           "單人強者"
         ],
         "summary": "藍寶依靠一技能灼燒與大絕火線持續壓區；技能與雷霆回音是核心，單人強者中的持續傷害與大絕強化卡特別強，控場與跑速則幫助黏人與調位。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -40720,7 +40721,7 @@
         "sourceNote": "7.2b ARAM S 第四批：藍寶依 7.2b 現行持續法傷核心與 ARAM 狹窄地形的大絕價值整理。",
         "augmentCompatibility": {
           "title": "藍寶分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 49,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -41241,9 +41242,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第五批：煞蜜拉依暴擊核心、7.2b 多明尼克強化與 ARAM 團戰收割需求整理。",
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "暴擊連段／大絕進場收割射手",
         "tags": [
           "暴擊",
@@ -41251,7 +41252,7 @@
           "普攻"
         ],
         "summary": "煞蜜拉需要普攻與技能交錯疊評級，再用位移切入開大收割；暴擊與身法最核心，普攻、技能、迷霧與單人強者能進一步提高連段與大絕上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -41448,7 +41449,7 @@
         "sourceNote": "7.2b ARAM S 第五批：煞蜜拉依暴擊核心、7.2b 多明尼克強化與 ARAM 團戰收割需求整理。",
         "augmentCompatibility": {
           "title": "煞蜜拉分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -42063,9 +42064,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第五批：姍娜納入 7.2a 被動／大絕調整與 7.2b 磁性雷射槍強化。",
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "超遠射程／治療控制輔助射手",
         "tags": [
           "英雄",
@@ -42073,7 +42074,7 @@
           "復原"
         ],
         "summary": "姍娜同時具備普攻射程成長、遠距治療與禁錮；英雄系的射程增幅最具特色，技能、復原與普攻類則分別放大功能與輸出。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -42274,7 +42275,7 @@
         "sourceNote": "7.2b ARAM S 第五批：姍娜納入 7.2a 被動／大絕調整與 7.2b 磁性雷射槍強化。",
         "augmentCompatibility": {
           "title": "姍娜分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 45,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -42781,9 +42782,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第五批：賽特保留 7.1d 標準 ARAM 90% 傷害修正，出裝改以團戰鬥士而非分推裝為主。",
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高生命近戰／豪意護盾反打鬥士",
         "tags": [
           "體型",
@@ -42791,7 +42792,7 @@
           "控場"
         ],
         "summary": "賽特越能承受傷害，就越能靠豪意二技能打出巨大護盾與真傷；體型與護盾是核心，控場、普攻與大地類則強化抱摔、拉人與持續纏鬥。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -42993,7 +42994,7 @@
         "sourceNote": "7.2b ARAM S 第五批：賽特保留 7.1d 標準 ARAM 90% 傷害修正，出裝改以團戰鬥士而非分推裝為主。",
         "augmentCompatibility": {
           "title": "賽特分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 46,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -43502,9 +43503,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第五批：賽恩以標準坦克團戰母版整理，避開召喚峽谷分推需求。",
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "極高生命／死亡後續戰前排坦克",
         "tags": [
           "體型",
@@ -43512,7 +43513,7 @@
           "重生"
         ],
         "summary": "賽恩靠永久生命成長、護盾與群體控制撐住正面，死亡後仍能繼續造成壓力；體型、控場與重生類最具特色，護盾、大地與高生命單卡也非常契合。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -43709,7 +43710,7 @@
         "sourceNote": "7.2b ARAM S 第五批：賽恩以標準坦克團戰母版整理，避開召喚峽谷分推需求。",
         "augmentCompatibility": {
           "title": "賽恩分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 53,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -44264,9 +44265,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第五批：希維爾保留 7.0a 95% 傷害修正，並同步 7.2b 三件暴擊裝調整。",
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "彈射普攻／團隊加速射手",
         "tags": [
           "普攻",
@@ -44274,7 +44275,7 @@
           "暴擊"
         ],
         "summary": "希維爾靠二技能彈射與高頻普攻打出範圍輸出，再用大絕帶動全隊進退；普攻與技能是核心，暴擊、疾風與跑速類能放大輸出與機動。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -44475,7 +44476,7 @@
         "sourceNote": "7.2b ARAM S 第五批：希維爾保留 7.0a 95% 傷害修正，並同步 7.2b 三件暴擊裝調整。",
         "augmentCompatibility": {
           "title": "希維爾分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -44976,9 +44977,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第五批：史加納套用 7.2a 官方明確延伸至標準 ARAM 的 110% 傷害／90% 承傷。",
       "aaaAram": {
-        "status": "batch6-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "前排拖拽／高坦度連鎖控制坦克",
         "tags": [
           "控場",
@@ -44986,7 +44987,7 @@
           "體型"
         ],
         "summary": "史加納靠三技能推人與大絕拖拽製造人數差，二技能護盾則讓他能長時間站前排；控場、大地與體型最重要，護盾與普攻類也有很高利用率。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -45187,7 +45188,7 @@
         "sourceNote": "7.2b ARAM S 第五批：史加納套用 7.2a 官方明確延伸至標準 ARAM 的 110% 傷害／90% 承傷。",
         "augmentCompatibility": {
           "title": "史加納分類內增幅評級",
-          "version": "v80.38-batch6",
+          "version": "v81.0-official",
           "total": 48,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -45720,9 +45721,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第五批：史矛德納入 7.1e 25／100／175 疊層門檻、7.2a 魔劍削弱與 7.2b 磁性雷射槍強化。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "成長型技能射手／遠距處決核心",
         "tags": [
           "技能",
@@ -45730,7 +45731,7 @@
           "普攻"
         ],
         "summary": "史矛德要先安全疊層，再靠一技能範圍傷害與後期處決接管團戰；技能與單人強者最核心，普攻、雷霆與疾風類則補強技能穿插與安全輸出。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -45939,7 +45940,7 @@
         "sourceNote": "7.2b ARAM S 第五批：史矛德納入 7.1e 25／100／175 疊層門檻、7.2a 魔劍削弱與 7.2b 磁性雷射槍強化。",
         "augmentCompatibility": {
           "title": "史矛德分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -46548,9 +46549,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第六批：索娜同步 7.2b 治療與大絕冷卻回調，ARAM 出裝以魔力、技能循環與群體增益優先。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高頻治療護盾／光環循環輔助",
         "tags": [
           "復原",
@@ -46558,7 +46559,7 @@
           "護盾"
         ],
         "summary": "索娜的強項是短冷卻技能不斷循環治療、護盾與加速；復原與流水回音是絕對核心，護盾、技能、控場與跑速類都能直接放大團隊功能。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -46759,7 +46760,7 @@
         "sourceNote": "7.2b ARAM S 第六批：索娜同步 7.2b 治療與大絕冷卻回調，ARAM 出裝以魔力、技能循環與群體增益優先。",
         "augmentCompatibility": {
           "title": "索娜分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 36,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -47208,9 +47209,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第六批：索拉卡以高頻治療與沉默反開為核心，並避開 Howling Abyss 重複贖罪治療衰減造成的低效率。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "極限治療／沉默反開輔助",
         "tags": [
           "復原",
@@ -47218,7 +47219,7 @@
           "技能"
         ],
         "summary": "索拉卡的核心就是讓隊伍一直維持可作戰血線；復原與流水回音優先度最高，技能與控場類則強化一技能續航、三技能沉默與大絕救援。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -47416,7 +47417,7 @@
         "sourceNote": "7.2b ARAM S 第六批：索拉卡以高頻治療與沉默反開為核心，並避開 Howling Abyss 重複贖罪治療衰減造成的低效率。",
         "augmentCompatibility": {
           "title": "索拉卡分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 34,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -47853,9 +47854,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第六批：蒙多採標準 ARAM 100% 基準；7.2a 的 110% 承傷沒有「同步 ARAM」註記，因此不混入 AAA ARAM 專屬調整。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "極高生命／自我回復前排坦克",
         "tags": [
           "體型",
@@ -47863,7 +47864,7 @@
           "大地回音"
         ],
         "summary": "蒙多醫生要靠大量最大生命與大絕回復硬吃技能、逼退後排；體型與單人強者最核心，大地、普攻與跑速類則強化貼身纏鬥。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -48060,7 +48061,7 @@
         "sourceNote": "7.2b ARAM S 第六批：蒙多採標準 ARAM 100% 基準；7.2a 的 110% 承傷沒有「同步 ARAM」註記，因此不混入 AAA ARAM 專屬調整。",
         "augmentCompatibility": {
           "title": "蒙多醫生分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 68,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -48701,9 +48702,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第六批：悠咪同步 7.2a 3 技魔耗降低與大絕治療強化，ARAM 以附著保排與團隊增益優先。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "附身護盾治療／遠距保排輔助",
         "tags": [
           "復原",
@@ -48711,7 +48712,7 @@
           "護盾"
         ],
         "summary": "悠咪長時間附身核心英雄，靠護盾、治療與遠距技能持續支援；復原與流水回音是核心，護盾、技能與跑速類能讓宿主獲得更完整的保護。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -48908,7 +48909,7 @@
         "sourceNote": "7.2b ARAM S 第六批：悠咪同步 7.2a 3 技魔耗降低與大絕治療強化，ARAM 以附著保排與團隊增益優先。",
         "augmentCompatibility": {
           "title": "悠咪分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 36,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -49361,9 +49362,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第六批：星朵拉同步 7.2 三技球體推進距離強化，並把 7.2b 盧登強化列為脆皮陣容替代方案。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距暈眩／高法強單點爆發法師",
         "tags": [
           "技能",
@@ -49371,7 +49372,7 @@
           "控場"
         ],
         "summary": "星朵拉靠球體疊量、遠距暈眩與大絕單點爆發決定團戰；技能與單人強者最核心，控場與雷霆類則能放大抓人與連招。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -49572,7 +49573,7 @@
         "sourceNote": "7.2b ARAM S 第六批：星朵拉同步 7.2 三技球體推進距離強化，並把 7.2b 盧登強化列為脆皮陣容替代方案。",
         "augmentCompatibility": {
           "title": "星朵拉分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -50113,9 +50114,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第六批：塔莉雅正式套用 7.2a 標準 ARAM 90%→100% 傷害回調，並同步 7.2b 盧登回音強化。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距技能壓制／反位移切割法師",
         "tags": [
           "技能",
@@ -50123,7 +50124,7 @@
           "單人強者"
         ],
         "summary": "塔莉雅靠一技能持續壓血、二三技能限制位移，再用大絕切割戰場；技能與控場是核心，單人強者、雷霆與大地類能進一步放大反位移特色。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -50328,7 +50329,7 @@
         "sourceNote": "7.2b ARAM S 第六批：塔莉雅正式套用 7.2a 標準 ARAM 90%→100% 傷害回調，並同步 7.2b 盧登回音強化。",
         "augmentCompatibility": {
           "title": "塔莉雅分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 55,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -50895,9 +50896,9 @@
       ],
       "sourceNote": "7.2b ARAM S 第六批：瑟雷西同步 7.1h 靈魂、鉤子與掃蕩強化，ARAM 以抓人、反開與燈籠救援為核心。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "鉤抓反開／燈籠護盾控制坦輔",
         "tags": [
           "控場",
@@ -50905,7 +50906,7 @@
           "體型"
         ],
         "summary": "瑟雷西靠鉤子、擺盪與大絕限制敵人，再用燈籠救出隊友；控場與大地回音是核心，體型與護盾類則提高前排與保排價值。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -51106,7 +51107,7 @@
         "sourceNote": "7.2b ARAM S 第六批：瑟雷西同步 7.1h 靈魂、鉤子與掃蕩強化，ARAM 以抓人、反開與燈籠救援為核心。",
         "augmentCompatibility": {
           "title": "瑟雷西分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 41,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -51593,9 +51594,9 @@
       ],
       "sourceNote": "v80.9.0 ARAM S 第七批：法洛士套用 7.1d 標準 ARAM 傷害回調與 7.2 大絕荒蕪疊層加速；出裝使用已校正的 ARAM 物理圖示。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "命中特效普攻／技能引爆射手",
         "tags": [
           "普攻",
@@ -51603,7 +51604,7 @@
           "疾風回音"
         ],
         "summary": "法洛士以普攻疊荒蕪，再用技能引爆並靠大絕開戰；普攻與技能缺一不可，疾風與單人強者能大幅強化攻速、技能循環與混合輸出。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -51808,7 +51809,7 @@
         "sourceNote": "v80.9.0 ARAM S 第七批：法洛士套用 7.1d 標準 ARAM 傷害回調與 7.2 大絕荒蕪疊層加速；出裝使用已校正的 ARAM 物理圖示。",
         "augmentCompatibility": {
           "title": "法洛士分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -52421,9 +52422,9 @@
       ],
       "sourceNote": "v80.9.0 ARAM S 第七批：薇可絲使用標準 ARAM 100% 輸出／90% 承傷；7.2b AAA ARAM 的 110% 輸出不套用到一般 ARAM。",
       "aaaAram": {
-        "status": "batch7-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "恐懼反突進／大絕進場爆發法師",
         "tags": [
           "技能",
@@ -52431,7 +52432,7 @@
           "單人強者"
         ],
         "summary": "薇可絲靠被動恐懼限制突進，壓低血線後再用大絕進場收割；技能與控場是核心，單人強者、雷霆與身法類能提高爆發與切入容錯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -52636,7 +52637,7 @@
         "sourceNote": "v80.9.0 ARAM S 第七批：薇可絲使用標準 ARAM 100% 輸出／90% 承傷；7.2b AAA ARAM 的 110% 輸出不套用到一般 ARAM。",
         "augmentCompatibility": {
           "title": "薇可絲分類內增幅評級",
-          "version": "v80.39-batch7",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -53201,9 +53202,9 @@
       ],
       "sourceNote": "v80.9.0 ARAM S 第七批：維克特維持 6.0b 標準 ARAM 90% 輸出，並同步 7.2 重力場擊落相容性與 7.2b 盧登強化。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距持續法傷／重力場控制法師",
         "tags": [
           "技能",
@@ -53211,7 +53212,7 @@
           "單人強者"
         ],
         "summary": "維克特以死亡射線與大絕持續壓區，再用重力場限制突進；技能與雷霆回音是核心，單人強者、控場與魔力類能進一步放大長距離施法與團戰循環。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -53416,7 +53417,7 @@
         "sourceNote": "v80.9.0 ARAM S 第七批：維克特維持 6.0b 標準 ARAM 90% 輸出，並同步 7.2 重力場擊落相容性與 7.2b 盧登強化。",
         "augmentCompatibility": {
           "title": "維克特分類內增幅評級",
-          "version": "v80.40-batch8",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -53953,9 +53954,9 @@
       ],
       "sourceNote": "v80.9.0 ARAM S 第七批：弗拉迪米爾套用 7.1d 標準 ARAM 100% 承傷，並同步基礎物防與被動生命轉換強化。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高生命法戰／吸血進場法師",
         "tags": [
           "技能",
@@ -53963,7 +53964,7 @@
           "單人強者"
         ],
         "summary": "弗拉迪米爾靠高生命、技能吸血與大絕進場拖長團戰；技能與雷霆回音最核心，單人強者與體型能同時放大法傷、生命與生存，跑速則幫助切入後貼住目標。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -54164,7 +54165,7 @@
         "sourceNote": "v80.9.0 ARAM S 第七批：弗拉迪米爾套用 7.1d 標準 ARAM 100% 承傷，並同步基礎物防與被動生命轉換強化。",
         "augmentCompatibility": {
           "title": "弗拉迪米爾分類內增幅評級",
-          "version": "v80.40-batch8",
+          "version": "v81.0-official",
           "total": 55,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -54721,9 +54722,9 @@
       ],
       "sourceNote": "v80.9.0 ARAM S 第七批：悟空以半坦多段擊飛為核心；黑色切割者固定引用 v80.7.1 已校正的 black-cleaver-v2.webp。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "多段突進／雙段大絕團控鬥士",
         "tags": [
           "身法",
@@ -54731,7 +54732,7 @@
           "迷霧回音"
         ],
         "summary": "悟空以三技能突進、一技能強化普攻與大絕多段擊飛打亂陣型；身法與控場最核心，迷霧、普攻、技能與單人強者則能提高進場後的持續輸出與生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -54928,7 +54929,7 @@
         "sourceNote": "v80.9.0 ARAM S 第七批：悟空以半坦多段擊飛為核心；黑色切割者固定引用 v80.7.1 已校正的 black-cleaver-v2.webp。",
         "augmentCompatibility": {
           "title": "悟空分類內增幅評級",
-          "version": "v80.40-batch8",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -55537,9 +55538,9 @@
       ],
       "sourceNote": "v80.9.0 ARAM S 第七批：剎雅套用 7.1d 標準 ARAM 100% 輸出，並同步 7.2b 磁性雷射槍與那歐疾刃調整。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "暴擊羽刃／反突進禁錮射手",
         "tags": [
           "暴擊",
@@ -55547,7 +55548,7 @@
           "技能"
         ],
         "summary": "剎雅以高頻普攻鋪羽，再用三技能回收羽刃禁錮敵人；暴擊與普攻是核心，技能與疾風回音能提高鋪羽、拉羽與大絕保命後的反打效率。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -55748,7 +55749,7 @@
         "sourceNote": "v80.9.0 ARAM S 第七批：剎雅套用 7.1d 標準 ARAM 100% 輸出，並同步 7.2b 磁性雷射槍與那歐疾刃調整。",
         "augmentCompatibility": {
           "title": "剎雅分類內增幅評級",
-          "version": "v80.40-batch8",
+          "version": "v81.0-official",
           "total": 64,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -56373,9 +56374,9 @@
       ],
       "sourceNote": "v80.9.0 ARAM S 第七批：柔依保留標準 ARAM 110% 輸出／95% 承傷，未誤套 AAA ARAM 85% 承傷；同步 7.1g 技能傷害與 7.2b 盧登強化。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "超遠距睡眠／單發爆發法師",
         "tags": [
           "技能",
@@ -56383,7 +56384,7 @@
           "控場"
         ],
         "summary": "柔依以睡眠命中後的超遠距飛星製造單發爆發；技能與單人強者是絕對核心，控場、雷霆、魔力與跑速則提高抓人與持續消耗能力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -56588,7 +56589,7 @@
         "sourceNote": "v80.9.0 ARAM S 第七批：柔依保留標準 ARAM 110% 輸出／95% 承傷，未誤套 AAA ARAM 85% 承傷；同步 7.1g 技能傷害與 7.2b 盧登強化。",
         "augmentCompatibility": {
           "title": "柔依分類內增幅評級",
-          "version": "v80.40-batch8",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -57125,9 +57126,9 @@
       ],
       "sourceNote": "v80.10.0 ARAM A 第一批：厄薩斯以甜蜜點命中、續航與第二進場為核心；未誤套 Hextech／AAA ARAM 專屬百分比。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "甜蜜點連擊／高回復進場鬥士",
         "tags": [
           "技能",
@@ -57135,7 +57136,7 @@
           "迷霧回音"
         ],
         "summary": "厄薩斯依靠一技能甜蜜點、三技能修正位置與大絕回復打長團；技能與身法最核心，迷霧、控場與單人強者能提高甜蜜點命中率、進場生存與第二輪技能。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -57336,7 +57337,7 @@
         "sourceNote": "v80.10.0 ARAM A 第一批：厄薩斯以甜蜜點命中、續航與第二進場為核心；未誤套 Hextech／AAA ARAM 專屬百分比。",
         "augmentCompatibility": {
           "title": "厄薩斯分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -57897,9 +57898,9 @@
       ],
       "sourceNote": "v80.10.0 ARAM A 第一批：阿卡莉套用 7.0a 標準 ARAM 110% 傷害輸出，玩法以延後進場與收割為主。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高機動煙霧／連段刺殺法師",
         "tags": [
           "技能",
@@ -57907,7 +57908,7 @@
           "迷霧回音"
         ],
         "summary": "阿卡莉靠多段位移、煙霧與技能普攻交錯完成刺殺；技能與身法是核心，迷霧回音幾乎為她量身打造，單人強者與雷霆則提高進場爆發與保命。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -58108,7 +58109,7 @@
         "sourceNote": "v80.10.0 ARAM A 第一批：阿卡莉套用 7.0a 標準 ARAM 110% 傷害輸出，玩法以延後進場與收割為主。",
         "augmentCompatibility": {
           "title": "阿卡莉分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -58665,9 +58666,9 @@
       ],
       "sourceNote": "v80.10.0 ARAM A 第一批：亞歷斯塔套用 7.1d 標準 ARAM 100% 承傷，固定坦裝與強開／保排雙定位。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "強開反開／大絕減傷控制坦克",
         "tags": [
           "控場",
@@ -58675,7 +58676,7 @@
           "體型"
         ],
         "summary": "亞歷斯塔以二一連段、三技能暈眩與大絕減傷撐起前排；控場與大地回音是核心，體型、烈焰與技能類能進一步提高承傷與連鎖控制。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -58873,7 +58874,7 @@
         "sourceNote": "v80.10.0 ARAM A 第一批：亞歷斯塔套用 7.1d 標準 ARAM 100% 承傷，固定坦裝與強開／保排雙定位。",
         "augmentCompatibility": {
           "title": "亞歷斯塔分類內增幅評級",
-          "version": "v80.40-batch8",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -59490,9 +59491,9 @@
       ],
       "sourceNote": "v80.10.0 ARAM A 第一批：安比薩保留最後一次明確同步標準 ARAM 的 110% 輸出／85% 承傷，7.2a AAA ARAM 90% 承傷不誤套；同步 7.2b 大絕削弱。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高頻位移／技能普攻交錯戰士",
         "tags": [
           "技能",
@@ -59500,7 +59501,7 @@
           "迷霧回音"
         ],
         "summary": "安比薩每次施放技能後都能以被動位移接強化普攻，形成高頻進退場；技能與身法是核心，迷霧、普攻與護盾類能放大她的連段與近身生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -59709,7 +59710,7 @@
         "sourceNote": "v80.10.0 ARAM A 第一批：安比薩保留最後一次明確同步標準 ARAM 的 110% 輸出／85% 承傷，7.2a AAA ARAM 90% 承傷不誤套；同步 7.2b 大絕削弱。",
         "augmentCompatibility": {
           "title": "安比薩分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 59,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -60300,9 +60301,9 @@
       ],
       "sourceNote": "v80.10.0 ARAM A 第一批：歐羅拉使用模式承傷 90%，並同步 7.2b 1 技與 3 技傷害回補。",
       "aaaAram": {
-        "status": "batch8-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高機動法術／大絕領域拉扯法師",
         "tags": [
           "技能",
@@ -60310,7 +60311,7 @@
           "迷霧回音"
         ],
         "summary": "歐羅拉靠技能命中與位移持續調整位置，再用大絕領域封鎖並反覆拉扯；技能與身法是核心，迷霧、雷霆與單人強者能提高進場爆發與生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -60511,7 +60512,7 @@
         "sourceNote": "v80.10.0 ARAM A 第一批：歐羅拉使用模式承傷 90%，並同步 7.2b 1 技與 3 技傷害回補。",
         "augmentCompatibility": {
           "title": "歐羅拉分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 55,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -61078,9 +61079,9 @@
       ],
       "sourceNote": "v80.10.0 ARAM A 第一批：庫奇同步 7.1 基礎物攻／1 技 AD 比例強化與 7.2b 磁性雷射槍調整，使用已校正 ARAM 物理圖示。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "技能消耗／暴擊混合射手",
         "tags": [
           "技能",
@@ -61088,7 +61089,7 @@
           "普攻"
         ],
         "summary": "庫奇用飛彈與一技能先壓血，再靠暴擊普攻補上持續輸出；技能與暴擊是核心，普攻、單人強者與疾風類能讓混合傷害循環更完整。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -61289,7 +61290,7 @@
         "sourceNote": "v80.10.0 ARAM A 第一批：庫奇同步 7.1 基礎物攻／1 技 AD 比例強化與 7.2b 磁性雷射槍調整，使用已校正 ARAM 物理圖示。",
         "augmentCompatibility": {
           "title": "庫奇分類內增幅評級",
-          "version": "v80.41-batch9",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -61904,9 +61905,9 @@
       ],
       "sourceNote": "v80.10.0 ARAM A 第一批：達瑞斯採步履黏人＋血怒連斬核心，標準 ARAM 未新增百分比修正。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "五層血怒／大絕重置近戰戰士",
         "tags": [
           "普攻",
@@ -61914,7 +61915,7 @@
           "體型"
         ],
         "summary": "達瑞斯要靠普攻與技能疊滿五層血怒，再用大絕連續斬殺；普攻與控場最核心，體型、跑速與單人強者能提高黏人、承傷與重置上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -62116,7 +62117,7 @@
         "sourceNote": "v80.10.0 ARAM A 第一批：達瑞斯採步履黏人＋血怒連斬核心，標準 ARAM 未新增百分比修正。",
         "augmentCompatibility": {
           "title": "達瑞斯分類內增幅評級",
-          "version": "v80.41-batch9",
+          "version": "v81.0-official",
           "total": 68,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -62765,9 +62766,9 @@
       ],
       "sourceNote": "v80.11.0 ARAM A 第二批：達瑞文採暴擊飛斧核心；套用 6.3d 雙倍偶像崇拜機制，不誤套 7.2a AAA ARAM 的 105%／95%。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "旋轉飛斧／暴擊重砲射手",
         "tags": [
           "普攻",
@@ -62775,7 +62776,7 @@
           "疾風回音"
         ],
         "summary": "達瑞文每一次旋轉飛斧都具有極高單發價值；普攻與暴擊是絕對核心，疾風與跑速能幫助接斧與追擊，技能類則補足大絕與二技能循環。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -62980,7 +62981,7 @@
         "sourceNote": "v80.11.0 ARAM A 第二批：達瑞文採暴擊飛斧核心；套用 6.3d 雙倍偶像崇拜機制，不誤套 7.2a AAA ARAM 的 105%／95%。",
         "augmentCompatibility": {
           "title": "達瑞文分類內增幅評級",
-          "version": "v80.41-batch9",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -63591,9 +63592,9 @@
       ],
       "sourceNote": "v80.11.0 ARAM A 第二批：艾克同步 7.2b 被動與 2 技增強，標準 ARAM 百分比維持 100%／100%。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "三環爆發／大絕回溯刺客法師",
         "tags": [
           "技能",
@@ -63601,7 +63602,7 @@
           "迷霧回音"
         ],
         "summary": "艾克靠二技能預判、三技能突進與三環爆發切後排，再用大絕回溯保命或補傷害；技能與身法最核心，迷霧與單人強者能大幅提高切入和回撤上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -63798,7 +63799,7 @@
         "sourceNote": "v80.11.0 ARAM A 第二批：艾克同步 7.2b 被動與 2 技增強，標準 ARAM 百分比維持 100%／100%。",
         "augmentCompatibility": {
           "title": "艾克分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -64397,9 +64398,9 @@
       ],
       "sourceNote": "v80.11.0 ARAM A 第二批：飛斯依 7.2a 主流 AP 刺客出裝整理，並同步 7.0a 1 技命中判定優化。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "不可選取進場／單點爆發刺客法師",
         "tags": [
           "技能",
@@ -64407,7 +64408,7 @@
           "迷霧回音"
         ],
         "summary": "飛斯靠大絕命中後用一、二技能貼身爆發，再靠三技能不可選取躲關鍵技能；技能與身法是核心，迷霧與單人強者能放大切入後爆發與生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -64604,7 +64605,7 @@
         "sourceNote": "v80.11.0 ARAM A 第二批：飛斯依 7.2a 主流 AP 刺客出裝整理，並同步 7.0a 1 技命中判定優化。",
         "augmentCompatibility": {
           "title": "飛斯分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -65169,9 +65170,9 @@
       ],
       "sourceNote": "v80.11.0 ARAM A 第二批：蓋倫套用 7.1d 標準 ARAM 100% 承傷，並同步 7.1e 被動與 3 技削弱。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高坦度旋轉／沉默斬殺戰士",
         "tags": [
           "體型",
@@ -65179,7 +65180,7 @@
           "普攻"
         ],
         "summary": "蓋倫靠一技能沉默接三技能持續輸出，再用大絕完成斬殺；體型與跑速最核心，普攻、技能與單人強者則提高沉默進場、旋轉壓力與處決能力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -65384,7 +65385,7 @@
         "sourceNote": "v80.11.0 ARAM A 第二批：蓋倫套用 7.1d 標準 ARAM 100% 承傷，並同步 7.1e 被動與 3 技削弱。",
         "augmentCompatibility": {
           "title": "蓋倫分類內增幅評級",
-          "version": "v80.41-batch9",
+          "version": "v81.0-official",
           "total": 68,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -66029,9 +66030,9 @@
       ],
       "sourceNote": "v80.11.0 ARAM A 第二批：吶兒套用標準 ARAM 110% 輸出／90% 承傷，並同步 7.1h 巨型耐久與 2 技增強。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "雙形態普攻／巨型團控戰士",
         "tags": [
           "普攻",
@@ -66039,7 +66040,7 @@
           "身法"
         ],
         "summary": "吶兒在迷你型態靠普攻與回力鏢消耗，巨型型態則用跳躍和大絕打團控；普攻與控場並列核心，身法、體型與技能類用來連接兩種形態。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -66241,7 +66242,7 @@
         "sourceNote": "v80.11.0 ARAM A 第二批：吶兒套用標準 ARAM 110% 輸出／90% 承傷，並同步 7.1h 巨型耐久與 2 技增強。",
         "augmentCompatibility": {
           "title": "吶兒分類內增幅評級",
-          "version": "v80.41-batch9",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -66782,9 +66783,9 @@
       ],
       "sourceNote": "v80.11.0 ARAM A 第二批：葛雷夫同步 7.1e 技能增強與 7.2b 多明尼克物攻調整；不誤套 7.2a AAA ARAM 115%／80%。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "近距散彈／暴擊爆發射手",
         "tags": [
           "普攻",
@@ -66792,7 +66793,7 @@
           "身法"
         ],
         "summary": "葛雷夫需要在中近距離讓更多散彈命中，再用三技能調位與大絕收割；普攻與暴擊是核心，身法與技能能提高換彈、貼身爆發與撤退能力。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -66997,7 +66998,7 @@
         "sourceNote": "v80.11.0 ARAM A 第二批：葛雷夫同步 7.1e 技能增強與 7.2b 多明尼克物攻調整；不誤套 7.2a AAA ARAM 115%／80%。",
         "augmentCompatibility": {
           "title": "葛雷夫分類內增幅評級",
-          "version": "v80.41-batch9",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -67502,9 +67503,9 @@
       ],
       "sourceNote": "v80.11.0 ARAM A 第二批：關保留標準 ARAM 115% 傷害輸出，不誤套 7.0a AAA ARAM 105%；出裝同步 7.2 峽谷製造者改版。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "剪擊普攻／聖霧免疫法戰",
         "tags": [
           "普攻",
@@ -67512,7 +67513,7 @@
           "身法"
         ],
         "summary": "關靠普攻疊剪刀層數、三技能貼身與一技能中心剪擊持續處理前排；普攻與技能是核心，身法、迷霧與英雄系能直接放大她的高頻位移與聖霧特色。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -67717,7 +67718,7 @@
         "sourceNote": "v80.11.0 ARAM A 第二批：關保留標準 ARAM 115% 傷害輸出，不誤套 7.0a AAA ARAM 105%；出裝同步 7.2 峽谷製造者改版。",
         "augmentCompatibility": {
           "title": "關分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -68320,9 +68321,9 @@
       ],
       "sourceNote": "v80.12.0 ARAM A 第三批：赫克林同步 7.2b 1 技額外跑速 30%→18%；標準 ARAM 未套用未標註的其他模式數值。",
       "aaaAram": {
-        "status": "batch9-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高速衝鋒／恐懼切陣戰士",
         "tags": [
           "跑速",
@@ -68330,7 +68331,7 @@
           "技能"
         ],
         "summary": "赫克林的傷害與進場都高度依賴跑速，疾跑、三技能與大絕讓他能高速切開陣型；跑速與身法是核心，技能、迷霧與控場類則提高衝鋒後的爆發與生存。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -68532,7 +68533,7 @@
         "sourceNote": "v80.12.0 ARAM A 第三批：赫克林同步 7.2b 1 技額外跑速 30%→18%；標準 ARAM 未套用未標註的其他模式數值。",
         "augmentCompatibility": {
           "title": "赫克林分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -69135,9 +69136,9 @@
       ],
       "sourceNote": "v80.12.0 ARAM A 第三批：賈克斯採標準 ARAM 115% 傷害輸出，並同步 7.1b 耐久、被動攻速與 3 技增強。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高頻普攻／反打暈眩鬥士",
         "tags": [
           "普攻",
@@ -69145,7 +69146,7 @@
           "技能"
         ],
         "summary": "賈克斯靠被動攻速、二技能重置普攻與反擊風暴長時間纏鬥；普攻與身法最核心，技能、迷霧與控場類能強化跳臉後的輸出與反打。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -69346,7 +69347,7 @@
         "sourceNote": "v80.12.0 ARAM A 第三批：賈克斯採標準 ARAM 115% 傷害輸出，並同步 7.1b 耐久、被動攻速與 3 技增強。",
         "augmentCompatibility": {
           "title": "賈克斯分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -69951,9 +69952,9 @@
       ],
       "sourceNote": "v80.12.0 ARAM A 第三批：嘉文四世套用 7.2b 明確同步標準 ARAM 的 85% 傷害輸出，出裝轉向團隊開戰與耐久。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "旗槍突進／地形團控前排戰士",
         "tags": [
           "控場",
@@ -69961,7 +69962,7 @@
           "大地回音"
         ],
         "summary": "嘉文四世靠旗槍突進開戰，再用大絕地形封鎖核心；控場與身法最核心，大地、體型與技能類能提高第一波強開後的承傷與第二輪旗槍。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -70159,7 +70160,7 @@
         "sourceNote": "v80.12.0 ARAM A 第三批：嘉文四世套用 7.2b 明確同步標準 ARAM 的 85% 傷害輸出，出裝轉向團隊開戰與耐久。",
         "augmentCompatibility": {
           "title": "嘉文四世分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 43,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -70654,9 +70655,9 @@
       ],
       "sourceNote": "v80.12.0 ARAM A 第三批：卡薩丁套用標準 ARAM 85% 承傷，並同步 7.2 法師裝改版後的時光／大天使核心。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高機動魔力／連續大絕刺客法師",
         "tags": [
           "技能",
@@ -70664,7 +70665,7 @@
           "魔力"
         ],
         "summary": "卡薩丁的核心是用大絕連續位移進出戰場，因此技能、身法與魔力都極重要；迷霧與單人強者則能把多次跳躍轉成更多爆發、保命與技能循環。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -70865,7 +70866,7 @@
         "sourceNote": "v80.12.0 ARAM A 第三批：卡薩丁套用標準 ARAM 85% 承傷，並同步 7.2 法師裝改版後的時光／大天使核心。",
         "augmentCompatibility": {
           "title": "卡薩丁分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -71398,9 +71399,9 @@
       ],
       "sourceNote": "v80.12.0 ARAM A 第三批：克黎思妲採 7.2a 當前殞落／鬼索／芮蘭核心；標準 ARAM 未套用 AAA ARAM 專屬數值。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "滑步普攻／拔矛收割射手",
         "tags": [
           "普攻",
@@ -71408,7 +71409,7 @@
           "疾風回音"
         ],
         "summary": "克黎思妲每次普攻都能滑步，並靠高攻速疊矛後一次拔矛收割；普攻與身法是絕對核心，疾風、跑速與技能類則提高滑步、疊矛與大絕保排效率。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -71607,7 +71608,7 @@
         "sourceNote": "v80.12.0 ARAM A 第三批：克黎思妲採 7.2a 當前殞落／鬼索／芮蘭核心；標準 ARAM 未套用 AAA ARAM 專屬數值。",
         "augmentCompatibility": {
           "title": "克黎思妲分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -72210,9 +72211,9 @@
       ],
       "sourceNote": "v80.12.0 ARAM A 第三批：卡特蓮娜採標準 ARAM 110% 傷害輸出；7.2 法師裝改版後以無限寶珠／雷霆風暴作為收割核心。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "匕首重置／多段位移收割刺客",
         "tags": [
           "技能",
@@ -72220,7 +72221,7 @@
           "迷霧回音"
         ],
         "summary": "卡特蓮娜靠匕首落點與三技能反覆位移，拿到擊殺後立即刷新技能接著收割；技能與身法是核心，迷霧與單人強者能把連續位移、保命與大絕爆發再放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -72421,7 +72422,7 @@
         "sourceNote": "v80.12.0 ARAM A 第三批：卡特蓮娜採標準 ARAM 110% 傷害輸出；7.2 法師裝改版後以無限寶珠／雷霆風暴作為收割核心。",
         "augmentCompatibility": {
           "title": "卡特蓮娜分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -72978,9 +72979,9 @@
       ],
       "sourceNote": "v80.12.0 ARAM A 第三批：慨影以紅形態泛用核心為主、藍形態列情境替換；同步 7.2 大絕出口距離與操作流暢度更新。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "紅形態續戰／藍形態側翼爆發戰士",
         "tags": [
           "技能",
@@ -72988,7 +72989,7 @@
           "迷霧回音"
         ],
         "summary": "慨影在大亂鬥以紅形態續戰較穩，但仍保留藍形態切後能力；技能與身法是核心，迷霧、單人強者、控場與跑速類能依形態放大進場、生存與追擊。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -73186,7 +73187,7 @@
         "sourceNote": "v80.12.0 ARAM A 第三批：慨影以紅形態泛用核心為主、藍形態列情境替換；同步 7.2 大絕出口距離與操作流暢度更新。",
         "augmentCompatibility": {
           "title": "慨影分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -73747,9 +73748,9 @@
       ],
       "sourceNote": "v80.13.0 ARAM A 第四批：李星同步 7.2 技能傷害結構重整與 7.2b 二技護盾／全能吸血增強；標準 ARAM 未混入 AAA ARAM 專屬承傷。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "技能普攻連段／高機動踢回戰士",
         "tags": [
           "身法",
@@ -73757,7 +73758,7 @@
           "迷霧回音"
         ],
         "summary": "李星靠技能後普攻回能量，再用多段位移找大絕踢回角度；身法與技能是核心，迷霧、普攻與單人強者能形成完整的技能—普攻—再技能循環。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -73959,7 +73960,7 @@
         "sourceNote": "v80.13.0 ARAM A 第四批：李星同步 7.2 技能傷害結構重整與 7.2b 二技護盾／全能吸血增強；標準 ARAM 未混入 AAA ARAM 專屬承傷。",
         "augmentCompatibility": {
           "title": "李星分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -74568,9 +74569,9 @@
       ],
       "sourceNote": "v80.13.0 ARAM A 第四批：路西恩沿用 7.2a 當前暴擊核心，納入 7.2b 磁性雷射槍／多明尼克攻擊力增強；標準 ARAM 維持 100%／100%。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "技能雙槍／高機動暴擊射手",
         "tags": [
           "普攻",
@@ -74578,7 +74579,7 @@
           "身法"
         ],
         "summary": "路西恩靠技能後雙槍被動與三技能刷新不斷位移輸出；普攻與技能是核心，身法、暴擊與單人強者能強化雙槍循環與大絕收尾。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -74779,7 +74780,7 @@
         "sourceNote": "v80.13.0 ARAM A 第四批：路西恩沿用 7.2a 當前暴擊核心，納入 7.2b 磁性雷射槍／多明尼克攻擊力增強；標準 ARAM 維持 100%／100%。",
         "augmentCompatibility": {
           "title": "路西恩分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -75390,9 +75391,9 @@
       ],
       "sourceNote": "v80.13.0 ARAM A 第四批：易大師同步 7.0 無極劍道真傷下修，採 7.2a 殞落／鬼索／黑切攻速特效核心；標準 ARAM 維持 100%／100%。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高攻速普攻／擊殺刷新收割戰士",
         "tags": [
           "普攻",
@@ -75400,7 +75401,7 @@
           "身法"
         ],
         "summary": "易大師需要等控制交掉後開大進場，用高攻速普攻與一技能躲招並靠擊殺刷新；普攻與疾風是核心，身法、技能與單人強者能強化收割與保命。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -75597,7 +75598,7 @@
         "sourceNote": "v80.13.0 ARAM A 第四批：易大師同步 7.0 無極劍道真傷下修，採 7.2a 殞落／鬼索／黑切攻速特效核心；標準 ARAM 維持 100%／100%。",
         "augmentCompatibility": {
           "title": "易大師分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -76200,9 +76201,9 @@
       ],
       "sourceNote": "v80.13.0 ARAM A 第四批：魔鬥凱薩套用標準 ARAM 90% 承傷，並同步 7.0d 一技新增額外 AD 係數；採 7.2a 峽谷製造者核心。",
       "aaaAram": {
-        "status": "batch10-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高生命法戰／大絕單挑隔離前排",
         "tags": [
           "技能",
@@ -76210,7 +76211,7 @@
           "護盾"
         ],
         "summary": "魔鬥凱薩靠被動、技能與護盾長時間貼身，再用大絕把關鍵角色拉進單挑；技能與體型是核心，護盾、單人強者、雷霆與跑速類能強化領域內續戰與黏人。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -76411,7 +76412,7 @@
         "sourceNote": "v80.13.0 ARAM A 第四批：魔鬥凱薩套用標準 ARAM 90% 承傷，並同步 7.0d 一技新增額外 AD 係數；採 7.2a 峽谷製造者核心。",
         "augmentCompatibility": {
           "title": "魔鬥凱薩分類內增幅評級",
-          "version": "v80.42-batch10",
+          "version": "v81.0-official",
           "total": 58,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -77000,9 +77001,9 @@
       ],
       "sourceNote": "v80.13.0 ARAM A 第四批：奈德麗套用標準 ARAM 110% 輸出／90% 承傷，並完整同步 7.2a 猛撲／雙抗係數與 7.2b 基礎雙抗、追擊跑速削弱。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距標槍／豹形態二段收割法師",
         "tags": [
           "技能",
@@ -77010,7 +77011,7 @@
           "身法"
         ],
         "summary": "奈德麗先用遠距標槍壓血與標記，再切豹形態位移收割；技能與單人強者最核心，身法、雷霆、復原與跑速則分別強化進場、爆發與自我續航。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -77215,7 +77216,7 @@
         "sourceNote": "v80.13.0 ARAM A 第四批：奈德麗套用標準 ARAM 110% 輸出／90% 承傷，並完整同步 7.2a 猛撲／雙抗係數與 7.2b 基礎雙抗、追擊跑速削弱。",
         "augmentCompatibility": {
           "title": "奈德麗分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 56,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -77784,9 +77785,9 @@
       ],
       "sourceNote": "v80.13.0 ARAM A 第四批：淣菈採 7.2a 奪魄／嗜血／多明尼克暴擊核心，標準 ARAM 維持 100%／100%；不混入其他模式數值。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "近戰暴擊／大絕吸附收割射手",
         "tags": [
           "暴擊",
@@ -77794,7 +77795,7 @@
           "身法"
         ],
         "summary": "淣菈需要跟著前排進場，用暴擊普攻與三技能貼身，再靠大絕吸附多人完成回復與收割；暴擊、普攻與身法是主軸。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -77991,7 +77992,7 @@
         "sourceNote": "v80.13.0 ARAM A 第四批：淣菈採 7.2a 奪魄／嗜血／多明尼克暴擊核心，標準 ARAM 維持 100%／100%；不混入其他模式數值。",
         "augmentCompatibility": {
           "title": "淣菈分類內增幅評級",
-          "version": "v80.43-batch11",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -78604,9 +78605,9 @@
       ],
       "sourceNote": "v80.13.0 ARAM A 第四批：諾拉同步 7.0d 二技傷害／冷卻削弱與 7.2 放逐 2.25s→1.5s + 結束後 80% 緩速；7.2b 盧登增強已反映在核心裝。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "遠距消耗／放逐控場法師",
         "tags": [
           "技能",
@@ -78614,7 +78615,7 @@
           "單人強者"
         ],
         "summary": "諾拉靠遠距技能持續壓血，再用放逐控制切斷前排或保護後排；技能與控場是核心，單人強者與雷霆類則提高投射技能爆發。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -78819,7 +78820,7 @@
         "sourceNote": "v80.13.0 ARAM A 第四批：諾拉同步 7.0d 二技傷害／冷卻削弱與 7.2 放逐 2.25s→1.5s + 結束後 80% 緩速；7.2b 盧登增強已反映在核心裝。",
         "augmentCompatibility": {
           "title": "諾拉分類內增幅評級",
-          "version": "v80.43-batch11",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -79356,9 +79357,9 @@
       ],
       "sourceNote": "v80.14.0 ARAM A 第五批：同步努努 7.1h 吞噬與雪球齊射削弱；7.2a 的 115% 傷害屬 AAA ARAM，未誤套標準 ARAM。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "雪球強開／高回復前排坦克",
         "tags": [
           "控場",
@@ -79366,7 +79367,7 @@
           "大地回音"
         ],
         "summary": "努努和威朗普靠雪球先手、三技能定身與大絕切割戰場，吞噬則提供大量自我回復；控場、體型與大地是核心，護盾與技能類提高進場後續戰。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -79567,7 +79568,7 @@
         "sourceNote": "v80.14.0 ARAM A 第五批：同步努努 7.1h 吞噬與雪球齊射削弱；7.2a 的 115% 傷害屬 AAA ARAM，未誤套標準 ARAM。",
         "augmentCompatibility": {
           "title": "努努和威朗普分類內增幅評級",
-          "version": "v80.43-batch11",
+          "version": "v81.0-official",
           "total": 40,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -80044,9 +80045,9 @@
       ],
       "sourceNote": "v80.14.0 ARAM A 第五批：保留 6.3d 模式治療 120%；7.2a 的 110% 傷害為 AAA ARAM 專屬，不套用標準 ARAM。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "免控追擊／低血量續戰鬥士",
         "tags": [
           "普攻",
@@ -80054,7 +80055,7 @@
           "技能"
         ],
         "summary": "歐拉夫最重要的是開大免控後持續黏住目標，靠普攻、斧頭與低血量戰鬥能力打到底；普攻與跑速是核心，技能、疾風與鮮血契約能放大續戰。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -80256,7 +80257,7 @@
         "sourceNote": "v80.14.0 ARAM A 第五批：保留 6.3d 模式治療 120%；7.2a 的 110% 傷害為 AAA ARAM 專屬，不套用標準 ARAM。",
         "augmentCompatibility": {
           "title": "歐拉夫分類內增幅評級",
-          "version": "v80.43-batch11",
+          "version": "v81.0-official",
           "total": 60,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -80853,9 +80854,9 @@
       ],
       "sourceNote": "v80.14.0 ARAM A 第五批：潘森同步現行 6.1d 後長矛數值與 7.2a 主流穿甲／殞落方向；標準 ARAM 維持 100%／100%。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "點控突進／短時間爆發戰士",
         "tags": [
           "技能",
@@ -80863,7 +80864,7 @@
           "身法"
         ],
         "summary": "潘森靠強化二技能點控後接一技能爆發，三技能格擋關鍵火力；技能與控場最核心，身法、普攻與單人強者能提高強化連招與收割。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -81065,7 +81066,7 @@
         "sourceNote": "v80.14.0 ARAM A 第五批：潘森同步現行 6.1d 後長矛數值與 7.2a 主流穿甲／殞落方向；標準 ARAM 維持 100%／100%。",
         "augmentCompatibility": {
           "title": "潘森分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -81674,9 +81675,9 @@
       ],
       "sourceNote": "v80.14.0 ARAM A 第五批：雷尼克頓同步 7.1b 基礎攻擊與二技削弱；採 ARAM 更穩定的殞落／黑切／死亡之舞鬥士核心。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "怒氣突進／強化控制續戰鬥士",
         "tags": [
           "技能",
@@ -81684,7 +81685,7 @@
           "普攻"
         ],
         "summary": "雷尼克頓靠怒氣強化技能、兩段位移與強化二技能鎖住核心；技能與身法是核心，普攻、控場、體型與鮮血契約則強化長時間進場。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -81885,7 +81886,7 @@
         "sourceNote": "v80.14.0 ARAM A 第五批：雷尼克頓同步 7.1b 基礎攻擊與二技削弱；採 ARAM 更穩定的殞落／黑切／死亡之舞鬥士核心。",
         "augmentCompatibility": {
           "title": "雷尼克頓分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 48,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -82406,9 +82407,9 @@
       ],
       "sourceNote": "v80.14.0 ARAM A 第五批：雷葛爾標準 ARAM 維持 100%／100%，明確排除 7.0a Arena 專屬承傷／回復調整；採草叢爆發與二技保命思路。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "草叢跳躍／強化普攻刺殺戰士",
         "tags": [
           "普攻",
@@ -82416,7 +82417,7 @@
           "迷霧回音"
         ],
         "summary": "雷葛爾靠草叢或大絕接近後排，利用跳躍、強化一技能與殘暴技能完成第一個擊殺；普攻與身法是核心，迷霧、技能與單人強者能提高進場爆發和撤退。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -82613,7 +82614,7 @@
         "sourceNote": "v80.14.0 ARAM A 第五批：雷葛爾標準 ARAM 維持 100%／100%，明確排除 7.0a Arena 專屬承傷／回復調整；採草叢爆發與二技保命思路。",
         "augmentCompatibility": {
           "title": "雷葛爾分類內增幅評級",
-          "version": "v80.43-batch11",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -83220,9 +83221,9 @@
       ],
       "sourceNote": "v80.14.0 ARAM A 第五批：拉姆斯套用 7.1d 最新標準 ARAM 100% 承傷，並同步 7.1b 二技護甲係數削弱；核心更新為 7.2b 熾灼／反甲／寒冰霸拳。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高速滾球／嘲諷反普攻坦克",
         "tags": [
           "控場",
@@ -83230,7 +83231,7 @@
           "體型"
         ],
         "summary": "拉姆斯靠一技能高速進場、三技能嘲諷與二技能反傷專門處理普攻核心；控場與大地是核心，體型、烈焰、跑速與技能類都能提高進場後承傷。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -83435,7 +83436,7 @@
         "sourceNote": "v80.14.0 ARAM A 第五批：拉姆斯套用 7.1d 最新標準 ARAM 100% 承傷，並同步 7.1b 二技護甲係數削弱；核心更新為 7.2b 熾灼／反甲／寒冰霸拳。",
         "augmentCompatibility": {
           "title": "拉姆斯分類內增幅評級",
-          "version": "v80.43-batch11",
+          "version": "v81.0-official",
           "total": 43,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -83930,9 +83931,9 @@
       ],
       "sourceNote": "v80.14.0 ARAM A 第五批：雷玟同步 7.1d 被動傷害下修；7.2b 115% 傷害僅 AAA ARAM，不誤套標準 ARAM；出裝採現行鬥士核心並避開未校正圖片素材。",
       "aaaAram": {
-        "status": "batch11-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高頻位移／技能普攻交錯鬥士",
         "tags": [
           "身法",
@@ -83940,7 +83941,7 @@
           "普攻"
         ],
         "summary": "雷玟靠多段一技能、三技能護盾與普攻取消後搖反覆切入；身法與技能是核心，普攻、迷霧、護盾與單人強者能把連段與生存完整串起來。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -84141,7 +84142,7 @@
         "sourceNote": "v80.14.0 ARAM A 第五批：雷玟同步 7.1d 被動傷害下修；7.2b 115% 傷害僅 AAA ARAM，不誤套標準 ARAM；出裝採現行鬥士核心並避開未校正圖片素材。",
         "augmentCompatibility": {
           "title": "雷玟分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 59,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -84725,9 +84726,9 @@
       ],
       "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高魔力連鎖／短冷卻法術核心",
         "tags": [
           "技能",
@@ -84735,7 +84736,7 @@
           "雷霆回音"
         ],
         "summary": "雷茲以大量魔力支撐高頻技能循環，靠印記擴散與短冷卻連續輸出；技能與魔力是核心，雷霆、控場與跑速則放大站樁與拉扯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -84931,7 +84932,7 @@
         "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
         "augmentCompatibility": {
           "title": "雷茲分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -85461,9 +85462,9 @@
       ],
       "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高速毒霧／持續緩速攪局法坦",
         "tags": [
           "技能",
@@ -85471,7 +85472,7 @@
           "單人強者"
         ],
         "summary": "辛吉德靠高速穿梭敵陣留下毒霧，再用背摔與黏著劑打亂站位；技能與跑速是核心，持續傷害、緩速連動與體型類會把他的攪局能力放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -85667,7 +85668,7 @@
         "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
         "augmentCompatibility": {
           "title": "辛吉德分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -86263,9 +86264,9 @@
       ],
       "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "蘑菇控區／持續灼燒消耗法師",
         "tags": [
           "技能",
@@ -86273,7 +86274,7 @@
           "雷霆回音"
         ],
         "summary": "提摩靠蘑菇與持續傷害控制狹窄路線，再用致盲限制普攻核心；技能與單人強者最核心，雷霆、控場與跑速能強化毒傷與風箏。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -86469,7 +86470,7 @@
         "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
         "augmentCompatibility": {
           "title": "提摩分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 50,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -86999,9 +87000,9 @@
       ],
       "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "成長射程／刷新跳躍暴擊射手",
         "tags": [
           "普攻",
@@ -87009,7 +87010,7 @@
           "疾風回音"
         ],
         "summary": "崔絲塔娜以成長射程和暴擊普攻持續輸出，三技爆炸與二技刷新負責收割；普攻與暴擊是核心，疾風、身法與英雄類能再放大射程與追擊。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -87205,7 +87206,7 @@
         "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
         "augmentCompatibility": {
           "title": "崔絲塔娜分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -87699,9 +87700,9 @@
       ],
       "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "隱身側切／大絕穿透暴擊射手",
         "tags": [
           "普攻",
@@ -87709,7 +87710,7 @@
           "疾風回音"
         ],
         "summary": "圖奇靠隱身換角度，等控制交掉後開大用超長射程穿透多人；普攻與暴擊是核心，疾風、英雄、技能與單人強者能提高整段大絕的輸出與收割。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -87905,7 +87906,7 @@
         "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
         "augmentCompatibility": {
           "title": "圖奇分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -88513,9 +88514,9 @@
       ],
       "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "環形霰彈／處決前排戰士",
         "tags": [
           "普攻",
@@ -88523,7 +88524,7 @@
           "控場"
         ],
         "summary": "烏爾加特靠二技能持續掃射、繞身觸發腿部霰彈，再用三技翻人與大絕處決；普攻與技能是核心，控場、體型、護盾與單人強者強化正面纏鬥。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -88719,7 +88720,7 @@
         "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
         "augmentCompatibility": {
           "title": "烏爾加特分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 66,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -89345,9 +89346,9 @@
       ],
       "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "三環真傷／翻滾拉扯射手",
         "tags": [
           "普攻",
@@ -89355,7 +89356,7 @@
           "身法"
         ],
         "summary": "汎靠高頻普攻疊銀箭三環，再用翻滾與擊退持續拉扯；普攻與疾風是核心，身法、跑速與英雄類能放大她的追擊與安全距離。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -89551,7 +89552,7 @@
         "sourceNote": "v80.15.0 ARAM A 第六批：依標準 ARAM 固定母版補齊完整攻略；標準 ARAM 與 AAA ARAM 數值分開處理，並檢查裝備、符文與技能圖片路徑。",
         "augmentCompatibility": {
           "title": "汎分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 42,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -90033,9 +90034,9 @@
       ],
       "sourceNote": "v80.16.0 ARAM A 第七批：套用標準 ARAM 110% 傷害輸出；出裝依 7.2b 現行鬥士方向整理。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "蓄力突進／鎖頭強開戰士",
         "tags": [
           "技能",
@@ -90043,7 +90044,7 @@
           "控場"
         ],
         "summary": "菲艾靠一技蓄力突進與大絕鎖頭切入，再用技能普攻連段完成破甲；技能與身法是核心，控場、普攻、護盾與單人強者強化第一波強開。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -90239,7 +90240,7 @@
         "sourceNote": "v80.16.0 ARAM A 第七批：套用標準 ARAM 110% 傷害輸出；出裝依 7.2b 現行鬥士方向整理。",
         "augmentCompatibility": {
           "title": "菲艾分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 59,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -90827,9 +90828,9 @@
       ],
       "sourceNote": "v80.16.0 ARAM A 第七批：標準 ARAM 承傷 90%；同步 6.3d 技能傷害下修。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "附身重置／暴擊普攻收割戰士",
         "tags": [
           "普攻",
@@ -90837,7 +90838,7 @@
           "暴擊"
         ],
         "summary": "維爾戈最重要的是安全拿到第一個靈魂，再利用附身與大絕連續重置；普攻與技能是核心，暴擊、身法與單人強者能提高第一殺與後續收割。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -91037,7 +91038,7 @@
         "sourceNote": "v80.16.0 ARAM A 第七批：標準 ARAM 承傷 90%；同步 6.3d 技能傷害下修。",
         "augmentCompatibility": {
           "title": "維爾戈分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -91645,9 +91646,9 @@
       ],
       "sourceNote": "v80.16.0 ARAM A 第七批：同步 6.1d 回復與護盾削弱；不混用 AAA ARAM 數值。",
       "aaaAram": {
-        "status": "batch12-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "雷霆普攻／護盾續戰前排法戰",
         "tags": [
           "技能",
@@ -91655,7 +91656,7 @@
           "護盾"
         ],
         "summary": "弗力貝爾靠一技追擊、二技反覆咬同一目標與三技護盾長時間作戰；技能與普攻是核心，護盾、控場、雷霆與體型則強化正面進場。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -91851,7 +91852,7 @@
         "sourceNote": "v80.16.0 ARAM A 第七批：同步 6.1d 回復與護盾削弱；不混用 AAA ARAM 數值。",
         "augmentCompatibility": {
           "title": "弗力貝爾分類內增幅評級",
-          "version": "v80.44-batch12",
+          "version": "v81.0-official",
           "total": 48,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -92373,9 +92374,9 @@
       ],
       "sourceNote": "v80.16.0 ARAM A 第七批：套用 120% 治療／80% 承傷；同步 7.2 大絕 Knockdown。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "低血追獵／壓制吸血鬥士",
         "tags": [
           "普攻",
@@ -92383,7 +92384,7 @@
           "技能"
         ],
         "summary": "沃維克靠低血目標觸發追獵、普攻與一技能持續回血，再用大絕壓制核心；普攻與跑速是核心，技能、控場與鮮血契約會放大背水續戰。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -92583,7 +92584,7 @@
         "sourceNote": "v80.16.0 ARAM A 第七批：套用 120% 治療／80% 承傷；同步 7.2 大絕 Knockdown。",
         "augmentCompatibility": {
           "title": "沃維克分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 60,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -93177,9 +93178,9 @@
       ],
       "sourceNote": "v80.16.0 ARAM A 第七批：套用 120% 治療；同步 6.1b 三技增強。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "標記突進／大絕隔離戰士",
         "tags": [
           "身法",
@@ -93187,7 +93188,7 @@
           "技能"
         ],
         "summary": "趙信先用二技能標記，再三技能突進，以三下普攻擊飛與大絕隔離遠程火力；身法與普攻是核心，技能、控場與護盾類提高切入後續戰。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -93387,7 +93388,7 @@
         "sourceNote": "v80.16.0 ARAM A 第七批：套用 120% 治療；同步 6.1b 三技增強。",
         "augmentCompatibility": {
           "title": "趙信分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -93989,9 +93990,9 @@
       ],
       "sourceNote": "v80.16.0 ARAM A 第七批：同步 7.2 犽宿護盾、風牆、踏前斬與大絕穿透。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高攻速暴擊／滑步擊飛收割戰士",
         "tags": [
           "暴擊",
@@ -93999,7 +94000,7 @@
           "普攻"
         ],
         "summary": "犽宿靠高攻速一技能、三技能滑步與擊飛接大絕完成收割；暴擊與身法是核心，普攻、疾風與護盾類則強化持續輸出與進場容錯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -94195,7 +94196,7 @@
         "sourceNote": "v80.16.0 ARAM A 第七批：同步 7.2 犽宿護盾、風牆、踏前斬與大絕穿透。",
         "augmentCompatibility": {
           "title": "犽宿分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 40,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -94669,9 +94670,9 @@
       ],
       "sourceNote": "v80.16.0 ARAM A 第七批：標準 ARAM 維持 100%／100%，不套用舊 Hextech／AAA ARAM 專屬承傷；同步 7.2 Knockdown。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "暴擊雙刀／靈體突進收割戰士",
         "tags": [
           "暴擊",
@@ -94679,7 +94680,7 @@
           "普攻"
         ],
         "summary": "犽凝靠三技能靈體進場、一二技能連段與大絕拉多人，打完一套後回歸安全位置；暴擊與身法最核心，普攻、技能與迷霧能放大進出場。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -94879,7 +94880,7 @@
         "sourceNote": "v80.16.0 ARAM A 第七批：標準 ARAM 維持 100%／100%，不套用舊 Hextech／AAA ARAM 專屬承傷；同步 7.2 Knockdown。",
         "augmentCompatibility": {
           "title": "犽凝分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 42,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -95361,9 +95362,9 @@
       ],
       "sourceNote": "v80.17.0 ARAM A 最終批：尤娜拉依 7.2 新英雄資料與 7.2b 暴擊裝環境整理；標準 ARAM 暫無專屬百分比修正。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "高攻速暴擊／大絕強化射手",
         "tags": [
           "普攻",
@@ -95371,7 +95372,7 @@
           "疾風回音"
         ],
         "summary": "尤娜拉先靠普攻累積一技能層數，再於大絕強化期間維持長時間輸出；普攻與暴擊是核心，疾風、技能與跑速能提高強化狀態的輸出與存活。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -95567,7 +95568,7 @@
         "sourceNote": "v80.17.0 ARAM A 最終批：尤娜拉依 7.2 新英雄資料與 7.2b 暴擊裝環境整理；標準 ARAM 暫無專屬百分比修正。",
         "augmentCompatibility": {
           "title": "尤娜拉分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -96065,9 +96066,9 @@
       ],
       "sourceNote": "v80.17.0 ARAM A 最終批：套用標準 ARAM 110% 傷害；同步 7.2 大絕回影鎖定與冷卻調整。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "影分身爆發／大絕刺殺戰士",
         "tags": [
           "技能",
@@ -96075,7 +96076,7 @@
           "迷霧回音"
         ],
         "summary": "劫靠影子與手裏劍先消耗，再用大絕進場疊滿印記後撤回影子；技能與身法是核心，迷霧與單人強者能把多段位移、投射技能與保命放大。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -96275,7 +96276,7 @@
         "sourceNote": "v80.17.0 ARAM A 最終批：套用標準 ARAM 110% 傷害；同步 7.2 大絕回影鎖定與冷卻調整。",
         "augmentCompatibility": {
           "title": "劫分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 48,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -96791,9 +96792,9 @@
       ],
       "sourceNote": "v80.17.0 ARAM A 最終批：同步 6.2 重製與 7.1d 後期增強；標準 ARAM 暫無額外百分比修正。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "技能化普攻／大絕連鎖機動射手",
         "tags": [
           "普攻",
@@ -96801,7 +96802,7 @@
           "跑速"
         ],
         "summary": "婕莉以一技能式普攻持續命中，開大後靠連鎖傷害與移速維持戰鬥；技能與暴擊是核心，跑速、疾風與身法能延長大絕層數與安全輸出。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -97001,7 +97002,7 @@
         "sourceNote": "v80.17.0 ARAM A 最終批：同步 6.2 重製與 7.1d 後期增強；標準 ARAM 暫無額外百分比修正。",
         "augmentCompatibility": {
           "title": "婕莉分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 44,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -97495,9 +97496,9 @@
       ],
       "sourceNote": "v80.17.0 ARAM A 最終批：套用 7.2b 標準 ARAM 85% 傷害／110% 承傷，同步一技與大絕削弱。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "雙炸彈暈眩／大絕復活輔助法師",
         "tags": [
           "技能",
@@ -97505,7 +97506,7 @@
           "護盾"
         ],
         "summary": "極靈靠雙炸彈暈眩控制區域，再用加速減速保排，最後以大絕復活保住核心；技能與控場是核心，復原、跑速與單人強者能強化整體團隊功能。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -97701,7 +97702,7 @@
         "sourceNote": "v80.17.0 ARAM A 最終批：套用 7.2b 標準 ARAM 85% 傷害／110% 承傷，同步一技與大絕削弱。",
         "augmentCompatibility": {
           "title": "極靈分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 47,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -98221,9 +98222,9 @@
       ],
       "sourceNote": "v80.17.0 ARAM A 最終批：標準 ARAM 採 6.3d 的 90% 承傷／120% 治療；7.2a、7.2b AAA ARAM 專屬增益不誤套。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "木靈普攻／大絕時間切割法師",
         "tags": [
           "控場",
@@ -98231,7 +98232,7 @@
           "技能"
         ],
         "summary": "巴德靠一技能找牆暈、木靈強化普攻與大絕金身切割戰場；控場與普攻是核心，技能、跑速與單人強者則提高遊走、爆發與大絕容錯。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -98435,7 +98436,7 @@
         "sourceNote": "v80.17.0 ARAM A 最終批：標準 ARAM 採 6.3d 的 90% 承傷／120% 治療；7.2a、7.2b AAA ARAM 專屬增益不誤套。",
         "augmentCompatibility": {
           "title": "巴德分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -99041,9 +99042,9 @@
       ],
       "sourceNote": "v80.17.0 ARAM A 最終批：同步 7.1e 一般平衡；7.2a 105% 傷害／95% 承傷屬 AAA ARAM，標準 ARAM 不套用。",
       "aaaAram": {
-        "status": "batch13-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "黃牌點控／技能普攻混合法師",
         "tags": [
           "技能",
@@ -99051,7 +99052,7 @@
           "普攻"
         ],
         "summary": "逆命靠黃牌高頻點控，再用一技能與強化普攻補傷；技能與控場是核心，普攻、跑速與單人強者能放大黃牌循環與大絕偵查後的收割。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -99251,7 +99252,7 @@
         "sourceNote": "v80.17.0 ARAM A 最終批：同步 7.1e 一般平衡；7.2a 105% 傷害／95% 承傷屬 AAA ARAM，標準 ARAM 不套用。",
         "augmentCompatibility": {
           "title": "逆命分類內增幅評級",
-          "version": "v80.45-batch13",
+          "version": "v81.0-official",
           "total": 62,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -99853,9 +99854,9 @@
       ],
       "sourceNote": "v80.18.0 ARAM B 第一批：同步卡蜜兒 6.1f 基礎物攻與二技回血增強，並依 7.2b 現行鬥士裝備整理。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "二段真傷／鉤鎖單點隔離戰士",
         "tags": [
           "技能",
@@ -99863,7 +99864,7 @@
           "普攻"
         ],
         "summary": "卡蜜兒靠三技能找角度進場、一技能兩段普攻打真傷，再用大絕隔離關鍵目標；技能與身法是核心，普攻、控場、護盾與單人強者能放大單點切入。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -100059,7 +100060,7 @@
         "sourceNote": "v80.18.0 ARAM B 第一批：同步卡蜜兒 6.1f 基礎物攻與二技回血增強，並依 7.2b 現行鬥士裝備整理。",
         "augmentCompatibility": {
           "title": "卡蜜兒分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 59,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -100643,9 +100644,9 @@
       ],
       "sourceNote": "v80.18.0 ARAM B 第一批：套用伊芙琳標準 ARAM 105% 傷害輸出，出裝依現行爆發法師環境整理。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "潛行魅惑／低血斬殺刺客法師",
         "tags": [
           "技能",
@@ -100653,7 +100654,7 @@
           "身法"
         ],
         "summary": "伊芙琳靠潛行繞側、魅惑成熟後快速打一套，再用大絕斬殺並後撤；技能與迷霧回音是核心，身法、單人強者、雷霆與跑速能放大切入與脫離。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -100849,7 +100850,7 @@
         "sourceNote": "v80.18.0 ARAM B 第一批：套用伊芙琳標準 ARAM 105% 傷害輸出，出裝依現行爆發法師環境整理。",
         "augmentCompatibility": {
           "title": "伊芙琳分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 54,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -101407,9 +101408,9 @@
       ],
       "sourceNote": "v80.18.0 ARAM B 第一批：套用菲歐拉標準 ARAM 105% 傷害並同步 6.1d 破綻機制重整。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "破綻真傷／高機動單挑鬥士",
         "tags": [
           "普攻",
@@ -101417,7 +101418,7 @@
           "技能"
         ],
         "summary": "菲歐拉靠一技能找破綻、普攻穿插與二技能格擋關鍵控制，再用大絕快速觸發回血區；普攻與身法是核心，技能、跑速、單人強者與鮮血契約能強化續戰。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -101617,7 +101618,7 @@
         "sourceNote": "v80.18.0 ARAM B 第一批：套用菲歐拉標準 ARAM 105% 傷害並同步 6.1d 破綻機制重整。",
         "augmentCompatibility": {
           "title": "菲歐拉分類內增幅評級",
-          "version": "v80.46-batch14",
+          "version": "v81.0-official",
           "total": 59,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -102205,9 +102206,9 @@
       ],
       "sourceNote": "v80.18.0 ARAM B 第一批：沿用卡力斯標準 ARAM 80% 承傷歷史設定，並同步 5.2a 一技與進化效果增強。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "孤立爆發／跳躍刷新刺客",
         "tags": [
           "技能",
@@ -102215,7 +102216,7 @@
           "迷霧回音"
         ],
         "summary": "卡力斯要等陣型被打散後抓孤立目標，用技能爆發拿到第一殺再刷新跳躍；技能、身法與迷霧回音是核心，單人強者與跑速強化收割。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -102415,7 +102416,7 @@
         "sourceNote": "v80.18.0 ARAM B 第一批：沿用卡力斯標準 ARAM 80% 承傷歷史設定，並同步 5.2a 一技與進化效果增強。",
         "augmentCompatibility": {
           "title": "卡力斯分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -103011,9 +103012,9 @@
       ],
       "sourceNote": "v80.18.0 ARAM B 第一批：同步鏡爪 6.2 印記冷卻優化，標準 ARAM 維持 100%／100%。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "印記射程／大絕保命收割射手",
         "tags": [
           "普攻",
@@ -103021,7 +103022,7 @@
           "疾風回音"
         ],
         "summary": "鏡爪靠印記成長與一技能橫移維持安全輸出，再用三技能處決與大絕保住多人；普攻與暴擊是核心，疾風、身法、技能與單人強者能提高收割上限。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -103217,7 +103218,7 @@
         "sourceNote": "v80.18.0 ARAM B 第一批：同步鏡爪 6.2 印記冷卻優化，標準 ARAM 維持 100%／100%。",
         "augmentCompatibility": {
           "title": "鏡爪分類內增幅評級",
-          "version": "v80.46-batch14",
+          "version": "v81.0-official",
           "total": 63,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -103825,9 +103826,9 @@
       ],
       "sourceNote": "v80.18.0 ARAM B 第一批：套用慎 7.1d 標準 ARAM 100% 傷害輸出，並保留坦克反開母版。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "多段嘲諷／護盾保排坦克",
         "tags": [
           "控場",
@@ -103835,7 +103836,7 @@
           "大地回音"
         ],
         "summary": "慎靠三技能嘲諷多人、二技能格擋普攻與大絕護盾保住核心；控場與護盾是核心，大地、體型、普攻與技能類補強前排與反開。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -104031,7 +104032,7 @@
         "sourceNote": "v80.18.0 ARAM B 第一批：套用慎 7.1d 標準 ARAM 100% 傷害輸出，並保留坦克反開母版。",
         "augmentCompatibility": {
           "title": "慎分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 64,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -104649,9 +104650,9 @@
       ],
       "sourceNote": "v80.18.0 ARAM B 第一批：套用希瓦娜標準 ARAM 95% 承傷並同步 6.3d 技能傷害削弱。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "龍形態範圍／普攻技能混合鬥士",
         "tags": [
           "技能",
@@ -104659,7 +104660,7 @@
           "雷霆回音"
         ],
         "summary": "希瓦娜在人形態累怒，開大進場後用強化火焰吐息與普攻持續壓多人；技能與普攻是核心，雷霆、跑速、體型與單人強者能放大龍形態。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -104859,7 +104860,7 @@
         "sourceNote": "v80.18.0 ARAM B 第一批：套用希瓦娜標準 ARAM 95% 承傷並同步 6.3d 技能傷害削弱。",
         "augmentCompatibility": {
           "title": "希瓦娜分類內增幅評級",
-          "version": "v80.46-batch14",
+          "version": "v81.0-official",
           "total": 68,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -105501,9 +105502,9 @@
       ],
       "sourceNote": "v80.19.0 ARAM B 最終批：標準 ARAM 套用 80% 承傷；不誤套 6.2g AAA ARAM 的 120% 傷害，並同步 7.1b 二技第一段增強。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "翻牆隱形／被動出血刺殺戰士",
         "tags": [
           "技能",
@@ -105511,7 +105512,7 @@
           "迷霧回音"
         ],
         "summary": "塔隆先用二技能壓血，再靠一技與大絕隱形切入打滿三層被動出血；技能與身法是核心，迷霧、單人強者、跑速與普攻類強化第一套爆發。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -105711,7 +105712,7 @@
         "sourceNote": "v80.19.0 ARAM B 最終批：標準 ARAM 套用 80% 承傷；不誤套 6.2g AAA ARAM 的 120% 傷害，並同步 7.1b 二技第一段增強。",
         "augmentCompatibility": {
           "title": "塔隆分類內增幅評級",
-          "version": "v80.47-total-audit",
+          "version": "v81.0-official",
           "total": 61,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
@@ -106311,9 +106312,9 @@
       ],
       "sourceNote": "v80.19.0 ARAM B 最終批：沿用標準 ARAM 120% 傷害輸出；同步 6.2 暴擊溢出轉物攻與大絕期間攻速調整。",
       "aaaAram": {
-        "status": "batch14-complete",
-        "label": "符文大亂鬥分類導向",
-        "version": "7.2b",
+        "status": "official",
+        "label": "符文大亂鬥正式攻略",
+        "version": "7.2b-v81.0",
         "position": "五秒無敵／高暴擊追擊戰士",
         "tags": [
           "暴擊",
@@ -106321,7 +106322,7 @@
           "疾風回音"
         ],
         "summary": "泰達米爾靠怒氣建立高暴擊率，三技能切入後用大絕撐過致死傷害持續普攻；暴擊與普攻是核心，疾風、跑速、身法與鮮血契約會放大殘血收割。",
-        "pilotNote": "分類導向母版：先看遊戲增幅卡片下方的官方分類，再點英雄適配分類；只有進入分類後才顯示該分類的單卡分級。",
+        "pilotNote": "實戰使用方式：看遊戲增幅卡片下方的官方分類 → 點相同分類 → 優先看 S+／S／A；再依本局增幅方向選擇對應出裝路線。",
         "sharedWithStandard": [
           {
             "title": "一般符文",
@@ -106521,7 +106522,7 @@
         "sourceNote": "v80.19.0 ARAM B 最終批：沿用標準 ARAM 120% 傷害輸出；同步 6.2 暴擊溢出轉物攻與大絕期間攻速調整。",
         "augmentCompatibility": {
           "title": "泰達米爾分類內增幅評級",
-          "version": "v80.46-batch14",
+          "version": "v81.0-official",
           "total": 40,
           "defaultFilter": "category",
           "note": "英雄頁不直接顯示 151 張；點適配分類後，才依 S+／S／A／B／C／D 顯示該分類卡片。",
