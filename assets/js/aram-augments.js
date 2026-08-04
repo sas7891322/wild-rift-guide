@@ -10,7 +10,7 @@
   let activeTag='';
 
   try{
-    const response=await fetch('assets/data/aram/augments.json?v=80.27.0',{cache:'no-store'});
+    const response=await fetch('assets/data/aram/augments.json?v=81.0.0',{cache:'no-store'});
     if(!response.ok)throw new Error('Augment data load failed');
     const data=await response.json();
     const augments=Array.isArray(data.augments)?data.augments:[];

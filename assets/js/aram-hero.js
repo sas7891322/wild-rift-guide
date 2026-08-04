@@ -56,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=80.29.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=80.29.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=81.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=81.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -72,7 +72,7 @@
     root.innerHTML=`<div data-aram-hero-header></div>${hasAaa?`<section class="aram-mode-switch-panel" aria-label="攻略模式切換">
       <div class="aram-mode-switch" role="tablist" aria-label="選擇攻略模式">
         <button type="button" role="tab" data-guide-mode="standard">標準 ARAM</button>
-        <button type="button" role="tab" data-guide-mode="aaa"><span>NEW</span>符文大亂鬥</button>
+        <button type="button" role="tab" data-guide-mode="aaa"><span>正式</span>符文大亂鬥</button>
       </div>
       <p data-mode-switch-note></p>
     </section>`:''}<div data-aram-mode-content></div>`;
@@ -87,10 +87,10 @@
       const position=isAaa?aaa.position:hero.position;
       const tags=isAaa?aaa.tags:hero.tags;
       const summary=isAaa?aaa.summary:hero.summary;
-      const kicker=isAaa?`AAA ARAM PILOT · PATCH ${esc(data.gameVersion)}`:`ARAM HERO GUIDE · PATCH ${esc(data.gameVersion)}`;
-      const badgeMain=isAaa?'試作':hero.tier;
+      const kicker=isAaa?`AAA ARAM · PATCH ${esc(data.gameVersion)}`:`ARAM HERO GUIDE · PATCH ${esc(data.gameVersion)}`;
+      const badgeMain=isAaa?'正式':hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
-      const reasonTitle=isAaa?'這次試作要測什麼？':`為什麼是 ${esc(hero.tier)}？`;
+      const reasonTitle=isAaa?'符文大亂鬥怎麼用？':`為什麼是 ${esc(hero.tier)}？`;
       const reasonText=isAaa?aaa.pilotNote:hero.tierReason;
       const pills=(tags||[]).map(tag=>`<span>${esc(tag)}</span>`).join('');
       headerRoot.innerHTML=`<section class="aram-detail-hero ${isAaa?'is-aaa-mode':''}">
@@ -187,7 +187,7 @@
       return `<section class="aram-detail-section aaa-overview-section">
         <details class="aaa-shared-disclosure">
           <summary>
-            <div class="aram-detail-section-head"><div><span>AAA ARAM PILOT</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>
+            <div class="aram-detail-section-head"><div><span>AAA ARAM</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>
             <b class="aaa-disclosure-toggle"><span>展開查看</span><i aria-hidden="true">⌄</i></b>
           </summary>
           <div class="aaa-shared-disclosure-body">
@@ -360,11 +360,11 @@
         button.classList.toggle('is-active',active);
         button.setAttribute('aria-selected',active?'true':'false');
       });
-      if(modeNote)modeNote.textContent=isAaa?'先用關鍵詞快速判斷，再搜尋 151 個增幅適配表確認細節。':'目前已完成的標準 ARAM 7.2b 攻略。';
-      const titleMode=isAaa?'符文大亂鬥試作':'ARAM';
+      if(modeNote)modeNote.textContent=isAaa?'看遊戲卡片下方分類 → 點相同分類 → 優先看 S+／S／A，再依增幅方向選出裝。':'目前已完成的標準 ARAM 7.2b 攻略。';
+      const titleMode=isAaa?'符文大亂鬥':'ARAM';
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');
-      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：增幅關鍵詞判斷、151 個增幅適配、出裝轉向與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
+      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：官方增幅分類、S+ 至 D 單卡評級、增幅導向出裝與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
       if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
