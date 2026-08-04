@@ -2673,3 +2673,29 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
   .new-champion-card{grid-template-columns:94px minmax(0,1fr);gap:14px;padding:15px}.new-champion-portrait{width:88px;height:88px;border-width:2px}.new-champion-portrait span{font-size:34px}.new-champion-portrait i{bottom:10px;font-size:7px}.new-champion-title{display:block}.new-champion-title strong{font-size:20px}.new-champion-title span{display:block;margin-top:1px}.new-champion-info p{font-size:12px}.new-champion-status{grid-template-columns:1fr}.new-champion-status span{padding:8px 9px}
 }
 @media(max-width:390px){.new-champion-card{grid-template-columns:1fr}.new-champion-portrait{width:104px;height:104px}.new-champion-info{text-align:center}.new-champion-title{justify-content:center}.new-champion-status{text-align:left}}
+
+
+/* v82.2 官方公告頭像 + 科加斯素材上線 */
+.official-change-grid-rich .official-change-card{grid-template-columns:31px 48px minmax(0,1fr)}
+.official-change-avatar{width:48px;height:48px;border-radius:50%;padding:2px;background:linear-gradient(145deg,rgba(239,215,148,.95),rgba(114,85,30,.92));box-shadow:0 6px 18px rgba(0,0,0,.22);align-self:start}
+.official-change-avatar img{width:100%;height:100%;display:block;border-radius:50%;object-fit:cover;background:#071626}
+.new-champion-portrait{background:radial-gradient(circle at 36% 22%,rgba(152,96,205,.22),transparent 26%),linear-gradient(145deg,#102645,#081728)!important}
+.new-champion-portrait:before,.new-champion-portrait:after{display:none!important}
+.new-champion-portrait img{width:100%;height:100%;display:block;object-fit:cover}
+.new-champion-skills{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:14px 0}
+.new-champion-skill{display:grid;justify-items:center;gap:7px;padding:10px 8px;border:1px solid rgba(216,184,108,.12);border-radius:13px;background:rgba(5,18,31,.62);text-align:center}
+.new-champion-skill img{width:46px;height:46px;border-radius:12px;display:block;border:1px solid rgba(216,184,108,.28);background:#081626}
+.new-champion-skill span{display:block;color:#b5c3cf;font-size:10px;line-height:1.45}.new-champion-skill b{display:block;color:#f0d894;font-size:10px;margin-bottom:2px}
+.new-champion-confirmed{margin-top:6px;padding:14px 15px;border:1px solid rgba(255,255,255,.06);border-radius:14px;background:rgba(5,18,31,.66)}
+.new-champion-confirmed strong{display:block;color:#edf3f7;font-size:13px}
+.new-champion-confirmed ul{margin:9px 0 0;padding-left:18px;color:#a6b6c5;font-size:11px;line-height:1.65}
+.new-champion-confirmed li+li{margin-top:5px}
+@media(max-width:700px){
+  .official-change-grid-rich .official-change-card{grid-template-columns:31px 42px minmax(0,1fr)}
+  .official-change-avatar{width:42px;height:42px}
+  .new-champion-skills{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+}
+@media(max-width:420px){
+  .new-champion-skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .new-champion-confirmed{padding:12px}
+}
