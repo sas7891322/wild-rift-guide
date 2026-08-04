@@ -8,30 +8,30 @@
     let panel = document.querySelector('#wrgTrafficPanel');
     if (panel) return panel;
 
-    const nav = document.querySelector('.topbar .nav');
-    if (!nav) return null;
+    let slot = document.querySelector('[data-traffic-slot]');
+    if (!slot) {
+      const headerInner = document.querySelector('.rift-menu-inner, .mode-entry-topbar-inner, .topbar-inner');
+      if (!headerInner) return null;
+      slot = document.createElement('span');
+      slot.className = 'site-traffic-slot';
+      slot.dataset.trafficSlot = '';
+      headerInner.appendChild(slot);
+    }
 
     panel = document.createElement('span');
     panel.id = 'wrgTrafficPanel';
-    panel.className = 'nav-traffic';
+    panel.className = 'site-viewers';
     panel.dataset.trafficState = 'loading';
-    panel.setAttribute('aria-label', '網站即時人氣');
+    panel.setAttribute('aria-label', '目前觀看人數');
     panel.innerHTML = `
-      <span class="nav-traffic-item views" title="累積瀏覽">
-        <span class="nav-traffic-label">瀏覽</span>
+      <span class="site-viewers-item total" title="累積瀏覽">
+        <span class="site-viewers-eye" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M2.5 12s3.4-5.5 9.5-5.5S21.5 12 21.5 12s-3.4 5.5-9.5 5.5S2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.7"/></svg></span>
         <strong id="wrgTotalViews">—</strong>
       </span>
-      <span class="nav-traffic-sep" aria-hidden="true"></span>
-      <span class="nav-traffic-item online" title="目前在線">
-        <i aria-hidden="true"></i>
-        <span class="nav-traffic-label">在線</span>
-        <strong id="wrgOnlineCount">—</strong>
-      </span>
-      <span class="nav-traffic-status" id="wrgTrafficStatus">連線中</span>`;
-
-    const memberLink = nav.querySelector('.member-nav-link');
-    if (memberLink) nav.insertBefore(panel, memberLink);
-    else nav.appendChild(panel);
+      <span class="site-viewers-sep" aria-hidden="true"></span>
+      <span class="site-viewers-item online" title="目前在線"><i aria-hidden="true"></i><strong id="wrgOnlineCount">—</strong></span>
+      <span class="sr-only" id="wrgTrafficStatus">連線中</span>`;
+    slot.appendChild(panel);
     return panel;
   }
 
@@ -40,15 +40,10 @@
   const onlineNode = panel?.querySelector('#wrgOnlineCount');
   const statusNode = panel?.querySelector('#wrgTrafficStatus');
 
-  function formatCount(value) {
+  function formatCount(value, compact=false) {
     const number = Number(value);
     if (!Number.isFinite(number) || number < 0) return '—';
-    if (number >= 100000) {
-      return new Intl.NumberFormat('zh-TW', {
-        notation: 'compact',
-        maximumFractionDigits: 1
-      }).format(number);
-    }
+    if (compact && number >= 10000) return new Intl.NumberFormat('zh-TW',{notation:'compact',maximumFractionDigits:1}).format(number);
     return new Intl.NumberFormat('zh-TW').format(number);
   }
 
@@ -61,14 +56,12 @@
   function render(payload) {
     const row = Array.isArray(payload) ? payload[0] : payload;
     if (!row) return;
-    if (totalNode) {
-      totalNode.textContent = formatCount(row.total_views);
-      totalNode.title = `累積瀏覽 ${new Intl.NumberFormat('zh-TW').format(Number(row.total_views) || 0)}`;
-    }
-    if (onlineNode) {
-      onlineNode.textContent = formatCount(row.online_count);
-      onlineNode.title = `目前在線 ${new Intl.NumberFormat('zh-TW').format(Number(row.online_count) || 0)}`;
-    }
+    const online = new Intl.NumberFormat('zh-TW').format(Number(row.online_count) || 0);
+    const views = new Intl.NumberFormat('zh-TW').format(Number(row.total_views) || 0);
+    if (totalNode) totalNode.textContent = formatCount(row.total_views, true);
+    if (onlineNode) onlineNode.textContent = formatCount(row.online_count);
+    panel.title = `累積瀏覽 ${views}｜目前在線 ${online}`;
+    panel.setAttribute('aria-label', `累積瀏覽 ${views}，目前在線 ${online} 人`);
     setStatus('ready', '即時更新');
   }
 
@@ -102,6 +95,7 @@
   }
 
   async function start() {
+    if (!panel) return;
     if (!auth?.ready) {
       setStatus('unavailable', '統計暫時無法使用');
       return;

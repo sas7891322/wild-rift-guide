@@ -2,6 +2,16 @@
   const menus = document.querySelectorAll('[data-rift-menu]');
   if (!menus.length) return;
 
+  let backdrop = document.querySelector('.rift-menu-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('button');
+    backdrop.type = 'button';
+    backdrop.className = 'rift-menu-backdrop';
+    backdrop.setAttribute('aria-label', '關閉導覽選單');
+    backdrop.hidden = true;
+    document.body.appendChild(backdrop);
+  }
+
   const closeMenu = (menu) => {
     const button = menu.querySelector('.rift-menu-toggle');
     const panel = menu.querySelector('.rift-menu-panel');
@@ -10,6 +20,8 @@
     button.setAttribute('aria-expanded', 'false');
     button.setAttribute('aria-label', '開啟導覽選單');
     panel.hidden = true;
+    backdrop.hidden = true;
+    document.body.classList.remove('rift-menu-open');
   };
 
   const openMenu = (menu) => {
@@ -23,6 +35,8 @@
     menu.classList.add('is-open');
     button.setAttribute('aria-expanded', 'true');
     button.setAttribute('aria-label', '關閉導覽選單');
+    backdrop.hidden = false;
+    document.body.classList.add('rift-menu-open');
   };
 
   menus.forEach(menu => {
@@ -41,10 +55,8 @@
     });
   });
 
-  document.addEventListener('click', event => {
-    document.querySelectorAll('[data-rift-menu].is-open').forEach(menu => {
-      if (!menu.contains(event.target)) closeMenu(menu);
-    });
+  backdrop.addEventListener('click', () => {
+    document.querySelectorAll('[data-rift-menu].is-open').forEach(closeMenu);
   });
 
   document.addEventListener('keydown', event => {
@@ -55,8 +67,4 @@
       button?.focus();
     });
   });
-
-  window.addEventListener('resize', () => {
-    document.querySelectorAll('[data-rift-menu].is-open').forEach(closeMenu);
-  }, {passive:true});
 })();
