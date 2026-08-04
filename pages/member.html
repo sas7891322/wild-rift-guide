@@ -7,17 +7,36 @@
 <meta content="登入激鬥峽谷攻略網會員，管理顯示名稱、收藏英雄與最近瀏覽。" name="description"/>
 <meta content="noindex,nofollow" name="robots"/>
 <meta content="#06101c" name="theme-color"/>
-<link href="../assets/css/style.css?v=81.1.0" rel="stylesheet"/>
+<link href="../assets/css/style.css?v=81.2.0" rel="stylesheet"/>
 <link href="../assets/images/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../assets/images/brand/apple-touch-icon.png" rel="apple-touch-icon"/>
 <link href="../site.webmanifest" rel="manifest"/>
 </head>
 <body>
-<header class="topbar"><div class="shell topbar-inner">
-<a class="brand" href="../index.html"><span>Wild Rift</span> Guide</a>
-<nav class="nav">
-<a href="guides.html">攻略</a><a href="heroes.html">英雄</a><a href="items.html">裝備</a><a href="runes.html">符文</a><a href="spells.html">召喚師技能</a><a href="players.html">找隊友</a><a class="support-nav-link" href="support.html">支持網站</a><a class="member-nav-link active" data-member-nav href="member.html">登入</a>
-</nav></div></header>
+<header class="topbar rift-menu-topbar">
+  <div class="shell topbar-inner rift-menu-inner">
+    <a class="brand" href="../index.html"><span>Wild Rift</span> Guide</a>
+    <div class="rift-menu" data-rift-menu>
+      <button class="rift-menu-toggle" type="button" aria-label="開啟導覽選單" aria-expanded="false" aria-controls="riftMenuPanel">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="rift-menu-panel" id="riftMenuPanel" aria-label="召喚峽谷導覽" hidden>
+        <div class="rift-menu-heading">
+          <span>召喚峽谷</span>
+          <small>選擇要前往的頁面</small>
+        </div>
+        <a href="guides.html">攻略</a>
+        <a href="heroes.html">英雄</a>
+        <a href="items.html">裝備</a>
+        <a href="runes.html">符文</a>
+        <a href="spells.html">召喚師技能</a>
+        <a href="players.html">找隊友</a>
+        <a class="support-nav-link" href="support.html">支持網站</a>
+        <a class="member-nav-link active" data-member-nav href="member.html">登入</a>
+      </nav>
+    </div>
+  </div>
+</header>
 <main class="shell member-page">
 <section class="page-head compact member-page-head">
 <div class="eyebrow">WILD RIFT GUIDE MEMBER</div>
@@ -113,5 +132,6 @@
 <script src="../assets/js/auth.js?v=79.5.1"></script><script src="../assets/js/traffic.js?v=79.5.1"></script>
 <script src="../assets/js/app.js?v=79.5.1"></script>
 <script src="../assets/js/member.js?v=79.5.1"></script>
+<script src="../assets/js/rift-menu.js?v=81.2.0"></script>
 </body>
 </html>
