@@ -45954,6 +45954,186 @@
       "heroDataLocked": true,
       "guideContentAudit": "stage2-v76",
       "guideContentLocked": true
+    },
+    {
+      "id": "chogath-baron",
+      "baseId": "chogath",
+      "name": "科加斯",
+      "enName": "Cho’Gath",
+      "role": "巴龍路",
+      "roleId": "baron",
+      "tier": "S",
+      "position": "坦克／法師",
+      "tags": [
+        "坦克",
+        "控制",
+        "成長",
+        "斬殺"
+      ],
+      "ratings": {
+        "生存": 5,
+        "傷害": 4,
+        "控制": 5,
+        "機動": 1,
+        "難度": 2
+      },
+      "runes": [],
+      "items": [],
+      "boots": [],
+      "spells": [],
+      "skillOrder": "完整技能加點待補",
+      "matchups": {
+        "strong": [],
+        "weak": []
+      },
+      "playstyle": {
+        "前期": "以穩定發育與技能控制為主。",
+        "中期": "利用饗宴累積層數，參與物件與團戰。",
+        "後期": "依靠高生命與控制站前排，使用饗宴完成斬殺。"
+      },
+      "summary": "利用 Q、W 控制戰場，透過饗宴累積生命與體型；完整出裝、符文與對局攻略待實戰資料補齊。",
+      "sourceNote": "科加斯新英雄資料已上線；目前先提供英雄定位與技能資料，完整攻略待後續實戰驗證。",
+      "avatar": "../assets/images/heroes/portraits/chogath.png",
+      "abilities": [
+        {
+          "key": "P",
+          "name": "肉食者",
+          "icon": "../assets/images/heroes/skills/chogath_01.webp",
+          "description": "擊殺敵軍回復生命與魔力；特定高價值目標的回復量提高。"
+        },
+        {
+          "key": "Q",
+          "name": "破裂",
+          "icon": "../assets/images/heroes/skills/chogath_02.webp",
+          "description": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。"
+        },
+        {
+          "key": "W",
+          "name": "野性尖嘯",
+          "icon": "../assets/images/heroes/skills/chogath_03.webp",
+          "description": "對範圍內敵軍造成魔法傷害並沉默。"
+        },
+        {
+          "key": "E",
+          "name": "恐懼尖刺",
+          "icon": "../assets/images/heroes/skills/chogath_04.webp",
+          "description": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。"
+        },
+        {
+          "key": "R",
+          "name": "饗宴",
+          "icon": "../assets/images/heroes/skills/chogath_05.webp",
+          "description": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數，提升生命與體型。"
+        }
+      ],
+      "skillSequence": [],
+      "skillLabels": {},
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "reviewStatus": "baron-49-yone-master-formal-v40",
+      "reviewedAt": "2026-07-29",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [],
+      "coreItems": [],
+      "combos": [],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
+    },
+    {
+      "id": "chogath-jungle",
+      "baseId": "chogath",
+      "name": "科加斯",
+      "enName": "Cho’Gath",
+      "role": "打野",
+      "roleId": "jungle",
+      "tier": "S",
+      "position": "坦克／法師",
+      "tags": [
+        "坦克",
+        "控制",
+        "成長",
+        "斬殺"
+      ],
+      "ratings": {
+        "生存": 5,
+        "傷害": 4,
+        "控制": 5,
+        "機動": 1,
+        "難度": 2
+      },
+      "runes": [],
+      "items": [],
+      "boots": [],
+      "spells": [],
+      "skillOrder": "完整技能加點待補",
+      "matchups": {
+        "strong": [],
+        "weak": []
+      },
+      "playstyle": {
+        "前期": "以穩定發育與技能控制為主。",
+        "中期": "利用饗宴累積層數，參與物件與團戰。",
+        "後期": "依靠高生命與控制站前排，使用饗宴完成斬殺。"
+      },
+      "summary": "利用 Q、W 控制戰場，透過饗宴累積生命與體型；完整出裝、符文與對局攻略待實戰資料補齊。",
+      "sourceNote": "科加斯新英雄資料已上線；目前先提供英雄定位與技能資料，完整攻略待後續實戰驗證。",
+      "avatar": "../assets/images/heroes/portraits/chogath.png",
+      "abilities": [
+        {
+          "key": "P",
+          "name": "肉食者",
+          "icon": "../assets/images/heroes/skills/chogath_01.webp",
+          "description": "擊殺敵軍回復生命與魔力；特定高價值目標的回復量提高。"
+        },
+        {
+          "key": "Q",
+          "name": "破裂",
+          "icon": "../assets/images/heroes/skills/chogath_02.webp",
+          "description": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。"
+        },
+        {
+          "key": "W",
+          "name": "野性尖嘯",
+          "icon": "../assets/images/heroes/skills/chogath_03.webp",
+          "description": "對範圍內敵軍造成魔法傷害並沉默。"
+        },
+        {
+          "key": "E",
+          "name": "恐懼尖刺",
+          "icon": "../assets/images/heroes/skills/chogath_04.webp",
+          "description": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。"
+        },
+        {
+          "key": "R",
+          "name": "饗宴",
+          "icon": "../assets/images/heroes/skills/chogath_05.webp",
+          "description": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數，提升生命與體型。"
+        }
+      ],
+      "skillSequence": [],
+      "skillLabels": {},
+      "skillIconStatus": "complete",
+      "generatedV29": true,
+      "reviewStatus": "baron-49-yone-master-formal-v40",
+      "reviewedAt": "2026-07-29",
+      "skillIconCount": 5,
+      "detailAssetBatch": "first70-user-supplied",
+      "abilityNamesVerified": "Riot TW",
+      "detailTemplate": "structured-baron-v40",
+      "hideBan": true,
+      "starterItems": [],
+      "coreItems": [],
+      "combos": [],
+      "heroDataAudit": "stage1-v75",
+      "heroDataLocked": true,
+      "guideContentAudit": "stage2-v76",
+      "guideContentLocked": true
     }
   ],
   "heroCatalog": [
@@ -48495,14 +48675,14 @@
           "roleId": "baron",
           "tier": "S",
           "origin": "native",
-          "detailHeroId": "",
+          "detailHeroId": "chogath-baron",
           "avatar": "../assets/images/heroes/portraits/chogath.png"
         },
         {
           "roleId": "jungle",
           "tier": "S",
           "origin": "native",
-          "detailHeroId": "",
+          "detailHeroId": "chogath-jungle",
           "avatar": "../assets/images/heroes/portraits/chogath.png"
         }
       ]
