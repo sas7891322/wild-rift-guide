@@ -45963,76 +45963,109 @@
       "role": "巴龍路",
       "roleId": "baron",
       "tier": "S",
-      "position": "坦克／法師",
+      "position": "坦克／成長型前排／真實斬殺",
       "tags": [
-        "坦克",
-        "控制",
-        "成長",
-        "斬殺"
+        "永久成長",
+        "雙控場",
+        "百分比傷害",
+        "真實斬殺"
       ],
       "ratings": {
-        "生存": 5,
-        "傷害": 4,
-        "控制": 5,
-        "機動": 1,
-        "難度": 2
+        "單排推薦": 4,
+        "新手推薦": 4,
+        "操作難度": 2,
+        "Blind Pick": 3,
+        "對線強度": 4,
+        "團戰影響力": 5
       },
-      "runes": [],
-      "items": [],
-      "boots": [],
-      "spells": [],
-      "skillOrder": "",
+      "runes": [
+        "grasp",
+        "courage-of-colossus",
+        "second-wind",
+        "overgrowth",
+        "triumph"
+      ],
+      "items": [
+        "defense-high-19",
+        "defense-high-06",
+        "magic-high-23",
+        "defense-high-01",
+        "defense-high-16"
+      ],
+      "boots": [
+        "chain-army-boots"
+      ],
+      "spells": [
+        "flash",
+        "teleport"
+      ],
+      "skillOrder": "E > Q > W",
       "matchups": {
         "good": [],
-        "bad": [],
-        "ban": "待補"
+        "bad": []
       },
       "playstyle": {
-        "前期": "以穩定發育與技能控制為主。",
-        "中期": "利用饗宴累積層數，參與物件與團戰。",
-        "後期": "依靠高生命與控制站前排，使用饗宴完成斬殺。"
+        "前期": "1等先學E，用三次強化普攻處理兵線與短換血。Q不要隨便空放，保留來接敵方位移落點或反打；被動擊殺單位能回血回魔，對線可用補兵維持續航。第一件預設雄心之鋼；如果對線壓力太大、很難安全疊層，可先做日炎聖盾再回頭補雄心之鋼。",
+        "中期": "5等後開始把饗宴層數當成核心資源。能安全吃士兵／野怪時先把6層基礎層數堆起來；物件團保留Q與W做入口控制。峽谷製造者會把額外生命轉成魔攻，與科加斯自身疊血和R的額外生命係數形成雙重成長。",
+        "後期": "不要只把自己當開戰坦克。科加斯沒有位移，最強的是卡位置、反開與壓縮走位。Q擊飛＋W沉默後站住前排，用石像鬼磐核吃第一波爆發，再尋找R真傷斬殺。預設鎖鏈軍靴應對控制與魔傷；敵方主要威脅是普攻物理輸出時可改測裝甲戰靴。"
       },
-      "summary": "利用 Q、W 控制戰場，透過饗宴累積生命與體型；完整出裝、符文與對局攻略待實戰資料補齊。",
-      "sourceNote": "科加斯新英雄資料已上線；目前先提供英雄定位與技能資料，完整攻略待後續實戰驗證。",
+      "summary": "首發測試方向以「雄心之鋼＋日炎聖盾＋峽谷製造者」把永久生命成長轉成坦度、魔攻與饗宴斬殺；E主升負責對線與持續傷害，Q/W負責控制。",
+      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；出裝、符文與技能順序依7.2裝備機制、英雄技能成長邏輯與首日玩家實戰方向推導，待實戰回饋持續修正。",
       "avatar": "../assets/images/heroes/portraits/chogath.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "肉食者",
-          "summary": "擊殺敵軍回復生命與魔力；對特定高價值目標回復量提高。",
-          "icon": "../assets/images/heroes/skills/chogath_01.webp"
+          "icon": "../assets/images/heroes/skills/chogath_01.webp",
+          "summary": "擊殺敵軍時回復生命與魔力。基礎回復為18生命（16＋2×等級）與4.35魔力（4＋0.35×等級）；若目標為英雄、防禦塔或史詩級野怪，回復量加倍。"
         },
         {
           "key": "Q",
-          "label": "Q",
+          "label": "1 技",
           "title": "破裂",
-          "summary": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。",
-          "icon": "../assets/images/heroes/skills/chogath_02.webp"
+          "icon": "../assets/images/heroes/skills/chogath_02.webp",
+          "summary": "冷卻6秒。使指定區域破裂，擊飛敵軍1秒並造成80＋100%魔攻的魔法傷害，之後緩速60%，持續1.5秒。主要遠距控制、追擊與反開技能。"
         },
         {
           "key": "W",
-          "label": "W",
+          "label": "2 技",
           "title": "野性尖嘯",
-          "summary": "對範圍內敵軍造成魔法傷害並沉默。",
-          "icon": "../assets/images/heroes/skills/chogath_03.webp"
+          "icon": "../assets/images/heroes/skills/chogath_03.webp",
+          "summary": "冷卻12秒。對前方範圍敵軍造成80＋70%魔攻的魔法傷害並沉默1.4秒。可先沉默再接破裂，提高控制鏈命中率。"
         },
         {
           "key": "E",
-          "label": "E",
+          "label": "3 技",
           "title": "恐懼尖刺",
-          "summary": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。",
-          "icon": "../assets/images/heroes/skills/chogath_04.webp"
+          "icon": "../assets/images/heroes/skills/chogath_04.webp",
+          "summary": "冷卻7秒。強化接下來3次普攻，造成15＋30%魔攻的魔法傷害，另加（2.15%＋0.5%×饗宴層數）目標最大生命的魔法傷害，並施加30%衰減緩速1.5秒。體型越大尖刺越寬；對士兵與野怪的基礎傷害上限為100＋30%魔攻。"
         },
         {
           "key": "R",
-          "label": "R",
+          "label": "4 技",
           "title": "饗宴",
-          "summary": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數。",
-          "icon": "../assets/images/heroes/skills/chogath_05.webp"
+          "icon": "../assets/images/heroes/skills/chogath_05.webp",
+          "summary": "冷卻80秒。對英雄造成300＋50%魔攻＋8%額外生命的真實傷害；對士兵與野怪造成1200＋50%魔攻＋8%額外生命的真實傷害。擊殺後獲得饗宴層數；士兵與非史詩野怪最多提供6層。每層永久增加80最大生命、6%體型、4.7攻擊距離與2.5饗宴施放距離。"
         }
       ],
-      "skillSequence": [],
+      "skillSequence": [
+        "E",
+        "Q",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
       "skillLabels": {
         "Q": "1 技",
         "W": "2 技",
@@ -46041,16 +46074,109 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "first-day-trial",
+      "reviewedAt": "2026-08-07",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
-      "starterItems": [],
-      "coreItems": [],
-      "combos": [],
+      "starterItems": [
+        "basic-ruby"
+      ],
+      "coreItems": [
+        "defense-high-19",
+        "defense-high-06",
+        "magic-high-23"
+      ],
+      "combos": [
+        {
+          "name": "對線短換",
+          "steps": [
+            {
+              "key": "E",
+              "label": "3技強化"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "Q",
+              "label": "1技擊飛"
+            },
+            {
+              "key": "W",
+              "label": "2技沉默"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "先用E第一下普攻逼走位，再用Q抓移動方向；Q命中後接W沉默，讓剩餘兩次尖刺更容易打滿。"
+        },
+        {
+          "name": "穩定控制斬殺",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技擊飛"
+            },
+            {
+              "key": "W",
+              "label": "2技沉默"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "R",
+              "label": "4技饗宴"
+            }
+          ],
+          "note": "Q命中後立刻接W，先封住閃現與技能反打，再用E補傷害；進入饗宴斬殺線就直接收掉，不必貪第三下普攻。"
+        },
+        {
+          "name": "團戰前排",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技控場"
+            },
+            {
+              "key": "W",
+              "label": "2技沉默"
+            },
+            {
+              "key": "ITEM",
+              "label": "石像鬼磐核"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "R",
+              "label": "4技收頭"
+            }
+          ],
+          "note": "先用Q/W把敵方前後排切開，承受集火時開石像鬼磐核。R優先處理能確定斬殺的核心，將團戰快速變成人數優勢。"
+        }
+      ],
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
       "guideContentAudit": "stage2-v76",
@@ -46064,76 +46190,109 @@
       "role": "打野",
       "roleId": "jungle",
       "tier": "S",
-      "position": "坦克／法師",
+      "position": "坦克打野／物件控制／成長型前排",
       "tags": [
-        "坦克",
-        "控制",
-        "成長",
-        "斬殺"
+        "續航清野",
+        "1200真傷",
+        "雙控場",
+        "物件斬殺"
       ],
       "ratings": {
-        "生存": 5,
-        "傷害": 4,
-        "控制": 5,
-        "機動": 1,
-        "難度": 2
+        "單排推薦": 4,
+        "新手推薦": 3,
+        "操作難度": 3,
+        "Blind Pick": 4,
+        "前期節奏": 3,
+        "團戰影響力": 5
       },
-      "runes": [],
-      "items": [],
-      "boots": [],
-      "spells": [],
-      "skillOrder": "",
+      "runes": [
+        "glacial-augment",
+        "courage-of-colossus",
+        "bone-plating",
+        "overgrowth",
+        "transcendence"
+      ],
+      "items": [
+        "defense-high-18",
+        "magic-high-23",
+        "defense-high-01",
+        "defense-high-16",
+        "defense-high-14"
+      ],
+      "boots": [
+        "chain-army-boots"
+      ],
+      "spells": [
+        "flash",
+        "smite"
+      ],
+      "skillOrder": "E > Q > W",
       "matchups": {
         "good": [],
-        "bad": [],
-        "ban": "待補"
+        "bad": []
       },
       "playstyle": {
-        "前期": "以穩定發育與技能控制為主。",
-        "中期": "利用饗宴累積層數，參與物件與團戰。",
-        "後期": "依靠高生命與控制站前排，使用饗宴完成斬殺。"
+        "前期": "1等E開始刷野，三次強化普攻的最大生命傷害配合被動擊殺回血回魔，理論上能維持很高續航。前期Gank以Q命中率為第一優先，不命中就不要硬追。首件熾灼之冠先提高刷野與近身持續傷害，讓科加斯更快進入物件節奏。",
+        "中期": "飛龍／預示者爭奪是這套打野的核心。R對野怪有1200真實傷害，請在實戰記錄「R＋當前重擊」的總斬殺數字，接近斬殺線時同步施放，盡量不給對手反應空間。冰霜霸主配合Q擊飛能延長Gank留人時間。",
+        "後期": "後期轉為物件門神與反開坦克。先站在龍坑／巴龍坑入口，用Q逼走位、W沉默衝進來的敵人，不要為了追後排離開物件。石像鬼磐核的護盾吃額外生命加成，科加斯疊層越高收益越大。"
       },
-      "summary": "利用 Q、W 控制戰場，透過饗宴累積生命與體型；完整出裝、符文與對局攻略待實戰資料補齊。",
-      "sourceNote": "科加斯新英雄資料已上線；目前先提供英雄定位與技能資料，完整攻略待後續實戰驗證。",
+      "summary": "打野首發測試版優先清野效率與大型物件控制：E主升快速處理野區，Q/W提供Gank控制，R對野怪的1200真傷再疊重擊形成極高瞬間斬殺線。",
+      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；打野出裝與節奏以E清野、R＋重擊物件斬殺為核心假設，待實戰回饋持續修正。",
       "avatar": "../assets/images/heroes/portraits/chogath.png",
       "abilities": [
         {
           "key": "P",
           "label": "被動",
           "title": "肉食者",
-          "summary": "擊殺敵軍回復生命與魔力；對特定高價值目標回復量提高。",
-          "icon": "../assets/images/heroes/skills/chogath_01.webp"
+          "icon": "../assets/images/heroes/skills/chogath_01.webp",
+          "summary": "擊殺敵軍時回復生命與魔力。基礎回復為18生命（16＋2×等級）與4.35魔力（4＋0.35×等級）；若目標為英雄、防禦塔或史詩級野怪，回復量加倍。"
         },
         {
           "key": "Q",
-          "label": "Q",
+          "label": "1 技",
           "title": "破裂",
-          "summary": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。",
-          "icon": "../assets/images/heroes/skills/chogath_02.webp"
+          "icon": "../assets/images/heroes/skills/chogath_02.webp",
+          "summary": "冷卻6秒。使指定區域破裂，擊飛敵軍1秒並造成80＋100%魔攻的魔法傷害，之後緩速60%，持續1.5秒。主要遠距控制、追擊與反開技能。"
         },
         {
           "key": "W",
-          "label": "W",
+          "label": "2 技",
           "title": "野性尖嘯",
-          "summary": "對範圍內敵軍造成魔法傷害並沉默。",
-          "icon": "../assets/images/heroes/skills/chogath_03.webp"
+          "icon": "../assets/images/heroes/skills/chogath_03.webp",
+          "summary": "冷卻12秒。對前方範圍敵軍造成80＋70%魔攻的魔法傷害並沉默1.4秒。可先沉默再接破裂，提高控制鏈命中率。"
         },
         {
           "key": "E",
-          "label": "E",
+          "label": "3 技",
           "title": "恐懼尖刺",
-          "summary": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。",
-          "icon": "../assets/images/heroes/skills/chogath_04.webp"
+          "icon": "../assets/images/heroes/skills/chogath_04.webp",
+          "summary": "冷卻7秒。強化接下來3次普攻，造成15＋30%魔攻的魔法傷害，另加（2.15%＋0.5%×饗宴層數）目標最大生命的魔法傷害，並施加30%衰減緩速1.5秒。體型越大尖刺越寬；對士兵與野怪的基礎傷害上限為100＋30%魔攻。"
         },
         {
           "key": "R",
-          "label": "R",
+          "label": "4 技",
           "title": "饗宴",
-          "summary": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數。",
-          "icon": "../assets/images/heroes/skills/chogath_05.webp"
+          "icon": "../assets/images/heroes/skills/chogath_05.webp",
+          "summary": "冷卻80秒。對英雄造成300＋50%魔攻＋8%額外生命的真實傷害；對士兵與野怪造成1200＋50%魔攻＋8%額外生命的真實傷害。擊殺後獲得饗宴層數；士兵與非史詩野怪最多提供6層。每層永久增加80最大生命、6%體型、4.7攻擊距離與2.5饗宴施放距離。"
         }
       ],
-      "skillSequence": [],
+      "skillSequence": [
+        "E",
+        "Q",
+        "W",
+        "E",
+        "R",
+        "E",
+        "E",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
       "skillLabels": {
         "Q": "1 技",
         "W": "2 技",
@@ -46142,16 +46301,93 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "first-day-trial",
+      "reviewedAt": "2026-08-07",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
-      "starterItems": [],
-      "coreItems": [],
-      "combos": [],
+      "starterItems": [
+        "basic-glowing-spark"
+      ],
+      "coreItems": [
+        "defense-high-18",
+        "magic-high-23",
+        "defense-high-01"
+      ],
+      "combos": [
+        {
+          "name": "標準Gank",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技擊飛"
+            },
+            {
+              "key": "W",
+              "label": "2技沉默"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            }
+          ],
+          "note": "從視野外先Q封退路，命中後接W避免對方立刻交位移，再用E的緩速持續黏住。"
+        },
+        {
+          "name": "物件雙斬殺",
+          "steps": [
+            {
+              "key": "Q",
+              "label": "1技控場"
+            },
+            {
+              "key": "R",
+              "label": "4技1200真傷"
+            },
+            {
+              "key": "SMITE",
+              "label": "重擊"
+            }
+          ],
+          "note": "先用Q干擾對方打野進場，物件進入「饗宴＋重擊」總斬殺線時同步按下R與重擊。這是目前最值得實測與記錄的科加斯打野優勢。"
+        },
+        {
+          "name": "反入侵",
+          "steps": [
+            {
+              "key": "W",
+              "label": "2技沉默"
+            },
+            {
+              "key": "Q",
+              "label": "1技擊飛"
+            },
+            {
+              "key": "E",
+              "label": "3技"
+            },
+            {
+              "key": "AA",
+              "label": "普攻"
+            },
+            {
+              "key": "MOVE",
+              "label": "拉開"
+            }
+          ],
+          "note": "被近戰打野貼身時先W沉默，再Q自己腳下或敵方退路；打完E強化普攻後拉開，不和高爆發打野硬拚到底。"
+        }
+      ],
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
       "guideContentAudit": "stage2-v76",
