@@ -692,11 +692,11 @@
       <div class="hero-section-title"><h3>對局調整</h3><span>Adaptive Build</span></div>
       <p class="matchup-adjust-intro">${safeText(config.intro)}</p>
       <div class="matchup-adjust-tabs" role="tablist" aria-label="吉茵珂絲對局調整情境">
-        ${situations.map((x,i)=>`<button type="button" class="matchup-adjust-tab ${i===0?'active':''}" data-adjustment-target="${safeText(x.id)}" role="tab" aria-selected="${i===0?'true':'false'}"><b>${safeText(x.label)}</b></button>`).join('')}
+        ${situations.map((x,i)=>`<button type="button" class="matchup-adjust-tab ${i===0?'active':''}" data-adjustment-target="${safeText(x.id)}" role="tab" aria-selected="${i===0?'true':'false'}"><span>${safeText(x.icon)}</span><b>${safeText(x.label)}</b></button>`).join('')}
       </div>
       <div class="matchup-adjust-panels">
         ${situations.map((x,i)=>`<article class="matchup-adjust-panel ${i===0?'active':''}" data-adjustment-panel="${safeText(x.id)}" ${i===0?'':'hidden'}>
-          <div class="matchup-adjust-panel-head"><strong>${safeText(x.label)}</strong><span>優先度：${safeText(x.priority)}</span></div>
+          <div class="matchup-adjust-panel-head"><strong>${safeText(x.icon)} ${safeText(x.label)}</strong><span>優先度：${safeText(x.priority)}</span></div>
           <p class="matchup-adjust-trigger"><b>適用情況：</b>${safeText(x.trigger)}</p>
           ${Array.isArray(x.changes)&&x.changes.length?`<div class="matchup-adjust-change-list">${x.changes.map(renderChange).join('')}</div>`:`<div class="matchup-adjust-nochange"><b>✓ ${safeText(x.keepTitle||'維持標準配置')}</b><p>${safeText(x.keepText)}</p></div>`}
           ${Array.isArray(x.changes)&&x.changes.length&&x.keepText?`<div class="matchup-adjust-keep"><b>${safeText(x.keepTitle)}</b><p>${safeText(x.keepText)}</p></div>`:''}
