@@ -1,6 +1,6 @@
 {
-  "version": "7.2b-v79.4-balance-update",
-  "updated": "2026-08-03",
+  "version": "7.2b-v82.3-chogath-role-update",
+  "updated": "2026-08-07",
   "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
@@ -14,7 +14,7 @@
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
     "英雄與技能圖片使用使用者提供的 420 張原始素材，不做裁切或風格修改。",
     "新增 Master Yi（易大師）打野詳細資料；保留既有 Yunara（尤娜拉），全站唯一英雄數更新為 140。",
-    "Cho’Gath（科加斯）屬下版本素材，本版未加入。",
+    "v82.3：科加斯正式實裝後加入召喚峽谷英雄定位；巴龍路 S、打野 S（上市初期暫定評級），英雄總數更新為 141，五路定位更新為 50／51／46／23／32；完整出裝、符文與對局攻略待實戰資料成熟後補齊。",
     "v",
     "3",
     "1",
@@ -48479,38 +48479,71 @@
           "avatar": "../assets/images/heroes/portraits/zilean.webp"
         }
       ]
+    },
+    {
+      "id": "chogath",
+      "name": "科加斯",
+      "enName": "Cho’Gath",
+      "aliases": [
+        "Cho'Gath",
+        "Chogath",
+        "Cho Gath"
+      ],
+      "avatar": "../assets/images/heroes/portraits/chogath.png",
+      "roles": [
+        {
+          "roleId": "baron",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "",
+          "avatar": "../assets/images/heroes/portraits/chogath.png"
+        },
+        {
+          "roleId": "jungle",
+          "tier": "S",
+          "origin": "native",
+          "detailHeroId": "",
+          "avatar": "../assets/images/heroes/portraits/chogath.png"
+        }
+      ]
     }
   ],
   "laneMeta": {
     "baron": {
       "name": "巴龍路",
-      "nativeCount": 49,
-      "crossCount": 0,
-      "avatarComplete": true,
-      "detailComplete": true,
-      "portraitMode": "shared",
-      "verification": "遊戲內巴龍路 49 位名單已核對；v31 完成 7.2a 正式校正與英雄專屬策略。",
-      "detailVersion": "v31-formal-7.2a",
-      "roleSource": "heroCatalog",
-      "roleAuditVersion": "v63",
-      "roleAuditStatus": "passed",
-      "guideAuditVersion": "v76-stage2",
-      "guideAuditStatus": "passed"
-    },
-    "jungle": {
-      "name": "打野",
       "nativeCount": 50,
       "crossCount": 0,
       "avatarComplete": true,
-      "detailComplete": true,
+      "detailComplete": false,
       "portraitMode": "shared",
-      "verification": "遊戲內打野定位 50 位已核對；v56 已完成全部 50 位正式攻略，李星固定為打野母版。",
-      "detailVersion": "v56-complete-formal-7.2a",
+      "verification": "2026/08/07 科加斯實裝後新增巴龍路定位，暫定 S；目前巴龍路 50 位，既有 49 份完整攻略維持，科加斯完整攻略待實測補齊。",
+      "detailVersion": "v82.3-chogath-role-update",
       "roleSource": "heroCatalog",
-      "roleAuditVersion": "v63",
-      "roleAuditStatus": "passed",
+      "roleAuditVersion": "v82.3",
+      "roleAuditStatus": "updated",
       "guideAuditVersion": "v76-stage2",
-      "guideAuditStatus": "passed"
+      "guideAuditStatus": "passed",
+      "detailCompletedCount": 49,
+      "detailTotalCount": 50,
+      "detailProgress": "49/50"
+    },
+    "jungle": {
+      "name": "打野",
+      "nativeCount": 51,
+      "crossCount": 0,
+      "avatarComplete": true,
+      "detailComplete": false,
+      "portraitMode": "shared",
+      "verification": "2026/08/07 科加斯實裝後新增打野定位，暫定 S；目前打野 51 位，既有 50 份完整攻略維持，科加斯完整攻略待實測補齊。",
+      "detailVersion": "v82.3-chogath-role-update",
+      "roleSource": "heroCatalog",
+      "roleAuditVersion": "v82.3",
+      "roleAuditStatus": "updated",
+      "guideAuditVersion": "v76-stage2",
+      "guideAuditStatus": "passed",
+      "detailCompletedCount": 50,
+      "detailTotalCount": 51,
+      "detailProgress": "50/51"
     },
     "mid": {
       "name": "中路",
@@ -48567,14 +48600,14 @@
     }
   },
   "roleAudit": {
-    "status": "passed",
+    "status": "updated-v82.3",
     "schemaVersion": 3,
-    "uniqueHeroes": 140,
-    "activeRoleAssignments": 200,
+    "uniqueHeroes": 141,
+    "activeRoleAssignments": 202,
     "activeGuideProfiles": 200,
     "laneCounts": {
-      "baron": 49,
-      "jungle": 50,
+      "baron": 50,
+      "jungle": 51,
       "mid": 46,
       "duo": 23,
       "support": 32
@@ -48593,8 +48626,8 @@
     ],
     "stage1Status": "locked-v75",
     "stage1CheckedAt": "2026-07-29",
-    "multiRoleHeroes": 55,
-    "officialNameCount": 140,
+    "multiRoleHeroes": 56,
+    "officialNameCount": 141,
     "abilityProfilesChecked": 200,
     "abilityPlaceholderCount": 0,
     "stage2Status": "locked-v76",
@@ -48606,9 +48639,9 @@
   },
   "stageLocks": {
     "stage1HeroData": {
-      "status": "locked",
-      "version": "v75",
-      "lockedAt": "2026-07-29",
+      "status": "updated",
+      "version": "v82.3",
+      "lockedAt": "2026-08-07",
       "scope": [
         "英雄官方台灣名稱",
         "技能名稱",
@@ -48620,7 +48653,7 @@
         "英雄稱號"
       ],
       "nameSource": "Riot Games 台灣《激鬥峽谷》英雄列表",
-      "roleSource": "使用者提供的 7.2a 遊戲內五路定位截圖與 heroCatalog"
+      "roleSource": "2026/08/07 使用者提供的遊戲內科加斯實裝資料＋既有五路 heroCatalog"
     },
     "stage2GuideContent": {
       "status": "locked",
