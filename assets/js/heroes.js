@@ -420,7 +420,7 @@
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
           const card=detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
-          return `<div class="tier-hero-card-wrap">${card}${favoriteButtonHTML(h.id,h.name)}</div>`;
+          return `<div class="tier-hero-card-wrap">${card}</div>`;
         }).join('')}</div>`:noResultHTML()}
       </section>`;
       bindOverviewActions(content);
@@ -444,7 +444,7 @@
             const card=h.detailHeroId
               ? `<button class="tier-hero-card" data-hero="${h.detailHeroId}">${label}</button>`
               : `<div class="tier-hero-card is-pending" title="完整攻略待補">${label}</div>`;
-            return `<div class="tier-hero-card-wrap">${card}${favoriteButtonHTML(h.id,h.name)}</div>`;
+            return `<div class="tier-hero-card-wrap">${card}</div>`;
           }).join('')}
         </div>
       </section>`;
