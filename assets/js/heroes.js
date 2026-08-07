@@ -594,7 +594,10 @@
     const starter=starterIds.map(id=>byId(state.items,id)).find(Boolean)||firstBasicComponent(items[0]);
     const coreIds=Array.isArray(hero.coreItems)?hero.coreItems:[];
     const coreItems=coreIds.map(id=>byId(state.items,id)).filter(Boolean);
-    const secondTierBoot=resolveTier2Boot(boots[0])||boots[0]||null;
+    const isChogath=baseIdOf(hero)==='chogath';
+    const secondTierBoot=isChogath
+      ? (boots.find(x=>Number(x?.tier)===3 || x?.stage==='三級鞋')||boots[0]||null)
+      : (resolveTier2Boot(boots[0])||boots[0]||null);
     const sixItems=[...items.slice(0,5),secondTierBoot].filter(Boolean).slice(0,6);
 
     function circleItem(item){
@@ -614,7 +617,7 @@
           ${circleItem(starter)}
         </div>
         <div class="yone-build-group">
-          <strong>鞋子</strong>
+          <strong>${isChogath?'三級鞋':'鞋子'}</strong>
           ${circleItem(secondTierBoot)}
         </div>
         <div class="yone-build-group core">
