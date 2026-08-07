@@ -633,22 +633,6 @@
     </section>`;
   }
 
-  function renderMatchupAdjustments(hero){
-    const sets=Array.isArray(hero.matchupAdjustments)?hero.matchupAdjustments:[];
-    if(!sets.length) return '';
-    return `<section class="hero-section matchup-adjustment-section">
-      <div class="hero-section-title"><h3>對局調整</h3><span>Situational Build</span></div>
-      <p class="matchup-adjustment-intro">先照標準出裝與符文走；只有遇到對應陣容時，再替換必要的格子。</p>
-      <div class="matchup-adjustment-list">${sets.map((set,index)=>`<details class="matchup-adjustment-card"${index===0?' open':''}>
-        <summary><strong>${safeText(set.label)}</strong><span>優先度：${safeText(set.priority)}</span></summary>
-        <div class="matchup-adjustment-body">
-          <p class="matchup-adjustment-trigger">${safeText(set.trigger)}</p>
-          <ul>${(set.lines||[]).map(line=>`<li>${safeText(line)}</li>`).join('')}</ul>
-        </div>
-      </details>`).join('')}</div>
-    </section>`;
-  }
-
   function renderStructuredMatchups(hero){
     return `<section class="hero-section">
       <div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div>
@@ -672,6 +656,68 @@
       <div class="hero-section-title"><h3>合適輔助</h3><span>Support Synergy</span></div>
       <div class="duo-support-grid">${pairs.map(pair=>`<article class="duo-support-card">${matchupChip(pair.name)}<p>${safeText(pair.reason)}</p></article>`).join('')}</div>
     </section>`;
+  }
+
+
+  function renderMatchupAdjustments(hero){
+    const config=hero?.matchupAdjustments;
+    const situations=Array.isArray(config?.situations)?config.situations:[];
+    if(!situations.length) return '';
+
+    function assetCard(type,id,side){
+      const source=type==='rune'?state.runes:state.items;
+      const asset=byId(source,id);
+      if(!asset) return `<div class="matchup-adjust-asset missing"><span>${side==='from'?'原配置':'調整後'}</span><strong>資料待補</strong></div>`;
+      return `<div class="matchup-adjust-asset ${side}">
+        <span>${side==='from'?'原配置':'調整後'}</span>
+        ${safeIcon(asset)?`<img src="${safeIcon(asset)}" alt="${safeText(asset.name)}" loading="lazy">`:''}
+        <strong>${safeText(asset.name)}</strong>
+      </div>`;
+    }
+
+    function renderChange(change){
+      return `<article class="matchup-adjust-change">
+        <div class="matchup-adjust-change-head"><b>${safeText(change.title)}</b><span>${change.type==='rune'?'符文調整':'裝備調整'}</span></div>
+        <div class="matchup-adjust-swap">
+          ${assetCard(change.type,change.fromId,'from')}
+          <i aria-hidden="true">→</i>
+          ${assetCard(change.type,change.toId,'to')}
+        </div>
+        <p><b>什麼時候換：</b>${safeText(change.condition)}</p>
+        <p><b>為什麼：</b>${safeText(change.reason)}</p>
+      </article>`;
+    }
+
+    return `<section class="hero-section matchup-adjust-section">
+      <div class="hero-section-title"><h3>對局調整</h3><span>Adaptive Build</span></div>
+      <p class="matchup-adjust-intro">${safeText(config.intro)}</p>
+      <div class="matchup-adjust-tabs" role="tablist" aria-label="吉茵珂絲對局調整情境">
+        ${situations.map((x,i)=>`<button type="button" class="matchup-adjust-tab ${i===0?'active':''}" data-adjustment-target="${safeText(x.id)}" role="tab" aria-selected="${i===0?'true':'false'}"><b>${safeText(x.label)}</b></button>`).join('')}
+      </div>
+      <div class="matchup-adjust-panels">
+        ${situations.map((x,i)=>`<article class="matchup-adjust-panel ${i===0?'active':''}" data-adjustment-panel="${safeText(x.id)}" ${i===0?'':'hidden'}>
+          <div class="matchup-adjust-panel-head"><strong>${safeText(x.label)}</strong><span>優先度：${safeText(x.priority)}</span></div>
+          <p class="matchup-adjust-trigger"><b>適用情況：</b>${safeText(x.trigger)}</p>
+          ${Array.isArray(x.changes)&&x.changes.length?`<div class="matchup-adjust-change-list">${x.changes.map(renderChange).join('')}</div>`:`<div class="matchup-adjust-nochange"><b>✓ ${safeText(x.keepTitle||'維持標準配置')}</b><p>${safeText(x.keepText)}</p></div>`}
+          ${Array.isArray(x.changes)&&x.changes.length&&x.keepText?`<div class="matchup-adjust-keep"><b>${safeText(x.keepTitle)}</b><p>${safeText(x.keepText)}</p></div>`:''}
+          ${x.warning?`<div class="matchup-adjust-warning"><b>注意：</b>${safeText(x.warning)}</div>`:''}
+        </article>`).join('')}
+      </div>
+    </section>`;
+  }
+
+  function bindMatchupAdjustments(root=document){
+    const tabs=$$('.matchup-adjust-tab',root);
+    if(!tabs.length) return;
+    tabs.forEach(tab=>tab.addEventListener('click',()=>{
+      const target=tab.dataset.adjustmentTarget;
+      tabs.forEach(x=>{ const active=x===tab; x.classList.toggle('active',active); x.setAttribute('aria-selected',active?'true':'false'); });
+      $$('.matchup-adjust-panel',root).forEach(panel=>{
+        const active=panel.dataset.adjustmentPanel===target;
+        panel.classList.toggle('active',active);
+        panel.hidden=!active;
+      });
+    }));
   }
 
 
@@ -736,6 +782,7 @@
       ? renderStructuredMatchups(hero)
       : defaultMatchupSection;
     const suitableSupportSection=renderSuitableSupports(hero);
+    const matchupAdjustmentSection=renderMatchupAdjustments(hero);
 
     $('#heroContent').innerHTML=`
       <div class="hero-detail-toolbar"><button id="backToTier" class="hero-back-button">← 返回 ${state.role==='all'?'ALL 英雄列表':roleNames[state.role]+' Tier 總覽'}</button><div class="hero-detail-actions">${laneSwitch}${favoriteButtonHTML(baseIdOf(hero),hero.name,true)}<button id="shareHeroGuide" class="hero-share-button" type="button">分享攻略</button></div></div>
@@ -748,7 +795,7 @@
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2b · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         ${buildSection}
-        ${renderMatchupAdjustments(hero)}
+        ${matchupAdjustmentSection}
         ${skillSection}
         ${matchupSection}
         ${suitableSupportSection}
@@ -759,6 +806,7 @@
 
     bindHeroImageFallbacks($('#heroContent'));
     bindFavoriteButtons($('#heroContent'));
+    bindMatchupAdjustments($('#heroContent'));
 
     window.WRGAuth?.recordHeroView({ guideId: hero.id, heroId: baseIdOf(hero), roleId: hero.roleId })
       .catch(error => console.warn('最近瀏覽紀錄寫入失敗', error));
@@ -779,7 +827,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=82.3.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
+        getJSON('../assets/data/heroes.json?v=82.5.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
