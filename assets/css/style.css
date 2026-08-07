@@ -2699,3 +2699,19 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
   .new-champion-skills{grid-template-columns:repeat(2,minmax(0,1fr))}
   .new-champion-confirmed{padding:12px}
 }
+
+
+/* v82.4: compact top announcement for new champion launch */
+.site-announcement{position:relative;z-index:25;border-bottom:1px solid rgba(216,184,108,.16);background:linear-gradient(90deg,rgba(9,28,46,.97),rgba(18,44,65,.97) 52%,rgba(32,45,52,.97));box-shadow:0 8px 24px rgba(0,0,0,.14)}
+.site-announcement-inner{min-height:48px;display:flex;align-items:center;gap:10px;padding-top:6px;padding-bottom:6px;transition:background .15s ease}
+.site-announcement-inner:hover{background:rgba(216,184,108,.035)}
+.site-announcement-avatar{width:34px;height:34px;flex:0 0 34px;border-radius:50%;padding:2px;background:linear-gradient(145deg,#e4c979,#6d5523);box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.site-announcement-avatar img{width:100%;height:100%;display:block;border-radius:50%;object-fit:cover;background:#081727}
+.site-announcement-badge{flex:0 0 auto;padding:4px 7px;border:1px solid rgba(102,216,132,.28);border-radius:999px;background:rgba(102,216,132,.08);color:#aeecc0;font-size:9px;font-weight:1000;letter-spacing:.1em}
+.site-announcement-copy{min-width:0;display:flex;align-items:baseline;gap:9px;flex:1}
+.site-announcement-copy strong{color:#f3e4b7;font-size:13px;font-weight:950;white-space:nowrap}
+.site-announcement-copy small{min-width:0;color:#9eb0c0;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.site-announcement-action{flex:0 0 auto;color:#efd58c;font-size:11px;font-weight:900;white-space:nowrap}
+.site-announcement-action b{margin-left:3px;font-size:13px}
+@media(max-width:700px){.site-announcement-inner{min-height:46px;gap:8px;padding-top:5px;padding-bottom:5px}.site-announcement-avatar{width:32px;height:32px;flex-basis:32px}.site-announcement-badge{display:none}.site-announcement-copy{display:block}.site-announcement-copy strong{display:block;font-size:12px;line-height:1.2}.site-announcement-copy small{display:block;margin-top:3px;font-size:10px}.site-announcement-action{font-size:0}.site-announcement-action b{display:grid;place-items:center;width:26px;height:26px;margin:0;border:1px solid rgba(216,184,108,.22);border-radius:50%;background:rgba(216,184,108,.055);font-size:15px}}
+@media(max-width:390px){.site-announcement-avatar{display:none}.site-announcement-copy strong{font-size:11px}.site-announcement-copy small{max-width:245px}}
