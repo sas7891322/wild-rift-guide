@@ -1,3 +1,20 @@
+// Google Analytics 4
+(() => {
+  const measurementId = 'G-VLJH8KK4NK';
+  if (window.__WRG_GA4_LOADED__) return;
+  window.__WRG_GA4_LOADED__ = true;
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', measurementId);
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+  document.head.appendChild(script);
+})();
+
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(r.status);return r.json();}
 
