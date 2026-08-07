@@ -32,21 +32,21 @@
     const roleLabel=state.role==='all'?'全英雄':(roleNames[state.role]||'英雄');
     const limited=Boolean(state.query)||state.filter!=='all';
     const roleSeo={
-      baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2b 巴龍路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與實戰節奏。',count:'49 位巴龍路攻略'},
-      jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List',description:'激鬥峽谷 7.2b 打野英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、刷野與帶節奏方式。',count:'50 位打野攻略'},
+      baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2b 巴龍路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與實戰節奏。',count:'50 位巴龍路英雄 · 49 份完整攻略'},
+      jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List',description:'激鬥峽谷 7.2b 打野英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、刷野與帶節奏方式。',count:'51 位打野英雄 · 50 份完整攻略'},
       mid:{title:'激鬥峽谷中路英雄推薦與 Tier List｜Wild Rift Guide',heading:'中路英雄推薦與 Tier List',description:'激鬥峽谷 7.2b 中路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與支援節奏。',count:'46 位中路攻略'},
       duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2b 飛龍路射手英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與合適輔助。',count:'23 位飛龍路攻略'},
       support:{title:'激鬥峽谷輔助英雄推薦與 Tier List｜Wild Rift Guide',heading:'輔助英雄推薦與 Tier List',description:'激鬥峽谷 7.2b 輔助英雄推薦、Tier 排名與完整攻略，整理輔助裝、符文、技能加點、對線與開戰保排方式。',count:'32 位輔助攻略'}
     };
     const current=roleSeo[state.role];
     const title=current?.title||'激鬥峽谷英雄攻略與 Tier List｜Wild Rift Guide';
-    const description=current?.description||'激鬥峽谷 7.2b 英雄攻略資料庫，收錄 140 位英雄與 200 份位置攻略，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
+    const description=current?.description||'激鬥峽谷 7.2b 英雄攻略資料庫，收錄 141 位英雄與 200 份完整位置攻略，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
     const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
     updateHeroPageHeading({
       eyebrow:'激鬥峽谷 · PATCH 7.2B',title:heading,description,
       badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
-      badgeText:current?.count||'140 位英雄 · 200 份位置攻略'
+      badgeText:current?.count||'141 位英雄 · 200 份完整位置攻略'
     });
     window.WRGSeo.set({
       title,description,path,
@@ -443,7 +443,7 @@
             const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}`;
             const card=h.detailHeroId
               ? `<button class="tier-hero-card" data-hero="${h.detailHeroId}">${label}</button>`
-              : `<div class="tier-hero-card is-pending" title="頭像與詳細資料待補">${label}</div>`;
+              : `<div class="tier-hero-card is-pending" title="完整攻略待補">${label}</div>`;
             return `<div class="tier-hero-card-wrap">${card}${favoriteButtonHTML(h.id,h.name)}</div>`;
           }).join('')}
         </div>
@@ -759,7 +759,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=79.5.1'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
+        getJSON('../assets/data/heroes.json?v=82.3.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
