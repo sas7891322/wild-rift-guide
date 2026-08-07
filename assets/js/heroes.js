@@ -691,7 +691,7 @@
     return `<section class="hero-section matchup-adjust-section">
       <div class="hero-section-title"><h3>對局調整</h3><span>Adaptive Build</span></div>
       <p class="matchup-adjust-intro">${safeText(config.intro)}</p>
-      <div class="matchup-adjust-tabs" role="tablist" aria-label="吉茵珂絲對局調整情境">
+      <div class="matchup-adjust-tabs" role="tablist" aria-label="${safeText(hero.name)}對局調整情境">
         ${situations.map((x,i)=>`<button type="button" class="matchup-adjust-tab ${i===0?'active':''}" data-adjustment-target="${safeText(x.id)}" role="tab" aria-selected="${i===0?'true':'false'}"><span>${safeText(x.icon)}</span><b>${safeText(x.label)}</b></button>`).join('')}
       </div>
       <div class="matchup-adjust-panels">
@@ -827,7 +827,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=82.5.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
+        getJSON('../assets/data/heroes.json?v=86.0.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
