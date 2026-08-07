@@ -45981,10 +45981,11 @@
       "items": [],
       "boots": [],
       "spells": [],
-      "skillOrder": "完整技能加點待補",
+      "skillOrder": "",
       "matchups": {
-        "strong": [],
-        "weak": []
+        "good": [],
+        "bad": [],
+        "ban": "待補"
       },
       "playstyle": {
         "前期": "以穩定發育與技能控制為主。",
@@ -45997,37 +45998,47 @@
       "abilities": [
         {
           "key": "P",
-          "name": "肉食者",
-          "icon": "../assets/images/heroes/skills/chogath_01.webp",
-          "description": "擊殺敵軍回復生命與魔力；特定高價值目標的回復量提高。"
+          "label": "被動",
+          "title": "肉食者",
+          "summary": "擊殺敵軍回復生命與魔力；對特定高價值目標回復量提高。",
+          "icon": "../assets/images/heroes/skills/chogath_01.webp"
         },
         {
           "key": "Q",
-          "name": "破裂",
-          "icon": "../assets/images/heroes/skills/chogath_02.webp",
-          "description": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。"
+          "label": "Q",
+          "title": "破裂",
+          "summary": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。",
+          "icon": "../assets/images/heroes/skills/chogath_02.webp"
         },
         {
           "key": "W",
-          "name": "野性尖嘯",
-          "icon": "../assets/images/heroes/skills/chogath_03.webp",
-          "description": "對範圍內敵軍造成魔法傷害並沉默。"
+          "label": "W",
+          "title": "野性尖嘯",
+          "summary": "對範圍內敵軍造成魔法傷害並沉默。",
+          "icon": "../assets/images/heroes/skills/chogath_03.webp"
         },
         {
           "key": "E",
-          "name": "恐懼尖刺",
-          "icon": "../assets/images/heroes/skills/chogath_04.webp",
-          "description": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。"
+          "label": "E",
+          "title": "恐懼尖刺",
+          "summary": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。",
+          "icon": "../assets/images/heroes/skills/chogath_04.webp"
         },
         {
           "key": "R",
-          "name": "饗宴",
-          "icon": "../assets/images/heroes/skills/chogath_05.webp",
-          "description": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數，提升生命與體型。"
+          "label": "R",
+          "title": "饗宴",
+          "summary": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數。",
+          "icon": "../assets/images/heroes/skills/chogath_05.webp"
         }
       ],
       "skillSequence": [],
-      "skillLabels": {},
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "4 技"
+      },
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-49-yone-master-formal-v40",
@@ -46071,10 +46082,11 @@
       "items": [],
       "boots": [],
       "spells": [],
-      "skillOrder": "完整技能加點待補",
+      "skillOrder": "",
       "matchups": {
-        "strong": [],
-        "weak": []
+        "good": [],
+        "bad": [],
+        "ban": "待補"
       },
       "playstyle": {
         "前期": "以穩定發育與技能控制為主。",
@@ -46087,37 +46099,47 @@
       "abilities": [
         {
           "key": "P",
-          "name": "肉食者",
-          "icon": "../assets/images/heroes/skills/chogath_01.webp",
-          "description": "擊殺敵軍回復生命與魔力；特定高價值目標的回復量提高。"
+          "label": "被動",
+          "title": "肉食者",
+          "summary": "擊殺敵軍回復生命與魔力；對特定高價值目標回復量提高。",
+          "icon": "../assets/images/heroes/skills/chogath_01.webp"
         },
         {
           "key": "Q",
-          "name": "破裂",
-          "icon": "../assets/images/heroes/skills/chogath_02.webp",
-          "description": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。"
+          "label": "Q",
+          "title": "破裂",
+          "summary": "擊飛範圍內敵軍並造成魔法傷害，之後大幅緩速。",
+          "icon": "../assets/images/heroes/skills/chogath_02.webp"
         },
         {
           "key": "W",
-          "name": "野性尖嘯",
-          "icon": "../assets/images/heroes/skills/chogath_03.webp",
-          "description": "對範圍內敵軍造成魔法傷害並沉默。"
+          "label": "W",
+          "title": "野性尖嘯",
+          "summary": "對範圍內敵軍造成魔法傷害並沉默。",
+          "icon": "../assets/images/heroes/skills/chogath_03.webp"
         },
         {
           "key": "E",
-          "name": "恐懼尖刺",
-          "icon": "../assets/images/heroes/skills/chogath_04.webp",
-          "description": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。"
+          "label": "E",
+          "title": "恐懼尖刺",
+          "summary": "強化接下來數次普攻，附帶魔法與目標最大生命傷害並緩速。",
+          "icon": "../assets/images/heroes/skills/chogath_04.webp"
         },
         {
           "key": "R",
-          "name": "饗宴",
-          "icon": "../assets/images/heroes/skills/chogath_05.webp",
-          "description": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數，提升生命與體型。"
+          "label": "R",
+          "title": "饗宴",
+          "summary": "造成高額真實傷害；擊殺符合條件的目標可永久累積饗宴層數。",
+          "icon": "../assets/images/heroes/skills/chogath_05.webp"
         }
       ],
       "skillSequence": [],
-      "skillLabels": {},
+      "skillLabels": {
+        "Q": "1 技",
+        "W": "2 技",
+        "E": "3 技",
+        "R": "4 技"
+      },
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-49-yone-master-formal-v40",
