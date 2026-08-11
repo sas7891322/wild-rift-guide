@@ -1,6 +1,6 @@
 {
-  "version": "7.2b-v86-all-hero-matchup-adjustments",
-  "updated": "2026-08-07",
+  "version": "7.2b-v87-targeted-build-rune-audit",
+  "updated": "2026-08-11",
   "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
@@ -145,7 +145,8 @@
     "v75 第一階段英雄資料鎖定：140 位英雄名稱對照 Riot 台灣官方英雄列表；修正埃可尚、雷茲、翱銳龍獸名稱，移除犽宿／犽凝／劫中路技能佔位內容，並同步多定位英雄技能資料。五路定位維持 49／50／46／23／32。",
     "v76 第二階段攻略內容鎖定：200 份位置攻略完成出裝、符文、召喚師技能、技能加點、三組連招、前中後期／對線內容與優劣對局驗收；23 位飛龍路新增合適輔助欄位；輔助頁鞋子統一顯示二級鞋。",
     "v77.4 第三階段名稱與介面校正：英雄顯示名稱「符文法師」統一改為「雷茲」，保留舊名稱搜尋別名；新增條件重設、無結果引導與英雄頭像載入失敗備援。",
-    "v79.4：更新至 7.2b；納入 10 位英雄平衡調整、同步 16 份位置攻略與 Tier 初版評估，保留既有母版、定位與攻略結構。"
+    "v79.4：更新至 7.2b；納入 10 位英雄平衡調整、同步 16 份位置攻略與 Tier 初版評估，保留既有母版、定位與攻略結構。",
+    "v87：召喚峽谷針對性出裝／符文／召喚師技能校正；依 7.2b 當前資料更新 14 個已確認英雄／路線配置，證據不足或已正確者維持原狀。"
   ],
   "heroes": [
     {
@@ -13896,18 +13897,17 @@
       },
       "runes": [
         "grasp",
-        "courage-of-colossus",
-        "bone-plating",
-        "overgrowth",
-        "triumph"
+        "steadfast-bulwark",
+        "second-wind",
+        "perseverance",
+        "last-stand"
       ],
       "items": [
-        "defense-high-06",
         "defense-high-11",
+        "defense-high-03",
         "defense-high-08",
-        "defense-high-14",
-        "defense-high-09",
-        "defense-high-15"
+        "defense-high-16",
+        "defense-high-14"
       ],
       "boots": [
         "plated-steelcaps",
@@ -13936,7 +13936,7 @@
         "後期": "後期不要太早開大丟失坦度；確定能隔離並擊殺目標時才轉鬥士型態。"
       },
       "summary": "坦克型態提供高承傷與控制，大絕後轉成高機動鬥士；何時開大決定成敗。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/ksante.webp",
       "abilities": [
         {
@@ -14000,8 +14000,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-third5-formal-v42",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14011,8 +14011,8 @@
         "basic-ruby"
       ],
       "coreItems": [
-        "defense-high-06",
         "defense-high-11",
+        "defense-high-03",
         "defense-high-08"
       ],
       "combos": [
@@ -14854,18 +14854,17 @@
       },
       "runes": [
         "grasp",
-        "courage-of-colossus",
-        "bone-plating",
+        "steadfast-bulwark",
+        "second-wind",
         "overgrowth",
-        "triumph"
+        "empowered-attack"
       ],
       "items": [
-        "defense-high-06",
         "defense-high-11",
         "defense-high-08",
+        "defense-high-13",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-15"
+        "defense-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -14894,7 +14893,7 @@
         "後期": "後期盯敵方核心與位移技能，一次撞到主 C 通常比撞到多人前排更有價值。"
       },
       "summary": "高護甲、攻速削減與不可阻擋大絕讓他對物理陣容價值極高。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v43：巴龍路第 4 批正式版，套用犽凝固定母版。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v43：巴龍路第 4 批正式版，套用犽凝固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/malphite.webp",
       "abilities": [
         {
@@ -14958,8 +14957,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-fourth5-formal-v43",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14969,9 +14968,9 @@
         "basic-ruby"
       ],
       "coreItems": [
-        "defense-high-06",
         "defense-high-11",
-        "defense-high-08"
+        "defense-high-08",
+        "defense-high-13"
       ],
       "combos": [
         {
@@ -17793,18 +17792,17 @@
       },
       "runes": [
         "grasp",
-        "courage-of-colossus",
-        "bone-plating",
-        "overgrowth",
-        "triumph"
+        "demolish",
+        "second-wind",
+        "perseverance",
+        "scorch"
       ],
       "items": [
+        "defense-high-19",
         "defense-high-06",
-        "defense-high-11",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-15"
+        "defense-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -17833,7 +17831,7 @@
         "後期": "後期可用大絕把敵方打野或前排擊退，創造物件或人數優勢。"
       },
       "summary": "W 反位移與 E 撞牆讓她是強力 Counter Pick，大絕還能把關鍵敵人送離團戰。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v44：巴龍路第 5 批正式版，套用犽凝固定母版。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v44：巴龍路第 5 批正式版，套用犽凝固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/poppy.webp",
       "abilities": [
         {
@@ -17897,8 +17895,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-fifth5-formal-v44",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -17908,8 +17906,8 @@
         "basic-ruby"
       ],
       "coreItems": [
+        "defense-high-19",
         "defense-high-06",
-        "defense-high-11",
         "defense-high-08"
       ],
       "combos": [
@@ -34810,16 +34808,16 @@
       },
       "runes": [
         "glacial-augment",
-        "courage-of-colossus",
+        "steadfast-bulwark",
         "bone-plating",
         "overgrowth",
-        "nimbus-cloak"
+        "celerity"
       ],
       "items": [
-        "defense-high-06",
-        "defense-high-11",
+        "defense-high-18",
         "defense-high-08",
-        "defense-high-14",
+        "defense-high-11",
+        "defense-high-15",
         "defense-high-16"
       ],
       "boots": [
@@ -34850,7 +34848,7 @@
         "後期": "保留三技鎖住主要普攻核心，二技期間雙防與反傷最高，但跑速會下降；敵人停止攻擊或嘲諷結束後可提早關閉二技重新追擊。"
       },
       "summary": "脫戰與一技帶來極高地圖機動，嘲諷配合尖刺防禦能強制普攻並反傷，是克制物理普攻核心的坦克打野。",
-      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》拉姆斯英雄頁校正；日炎聖盾、寒冰霸拳與坦克配置交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v54：完成打野第三批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》拉姆斯英雄頁校正；日炎聖盾、寒冰霸拳與坦克配置交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v54：完成打野第三批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/rammus.webp",
       "abilities": [
         {
@@ -34917,17 +34915,17 @@
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-third10-v54",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "jungle-third10-formal-v54",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
-        "basic-cloth-armor"
+        "basic-glowing-spark"
       ],
       "coreItems": [
-        "defense-high-06",
-        "defense-high-11",
-        "defense-high-08"
+        "defense-high-18",
+        "defense-high-08",
+        "defense-high-11"
       ],
       "combos": [
         {
@@ -41199,17 +41197,17 @@
       },
       "runes": [
         "electrocute",
-        "cheap-shot",
-        "tyrant",
-        "eyeball-collector",
-        "manaflow-band"
+        "hextech-flashtraption",
+        "absolute-focus",
+        "nimbus-cloak",
+        "bone-plating"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-21",
+        "magic-high-26",
+        "magic-high-01",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
+        "magic-high-21",
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
@@ -41262,7 +41260,7 @@
         "後期": "優先威脅敵方後排或保護己方主力。暈眩不必一定交給大絕，一技穩定點控刺客往往更可靠；泰貝爾存活時持續指揮其追擊或阻擋走位。"
       },
       "summary": "以嗜火提供穩定暈眩，閃現大絕能完成簡單而高效的範圍開戰；射程較短，必須靠視野差與進場時機彌補。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/annie.webp",
       "abilities": [
         {
@@ -41305,16 +41303,16 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
         "basic-amp-tome"
       ],
       "coreItems": [
-        "magic-high-12",
-        "magic-high-21",
+        "magic-high-26",
+        "magic-high-01",
         "magic-high-14"
       ],
       "combos": [
@@ -42212,7 +42210,7 @@
         "magic-high-16",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-21"
+        "magic-high-02"
       ],
       "boots": [
         "mana-boots",
@@ -42265,7 +42263,7 @@
         "後期": "站位比傷害更重要，等隊友先控制再接技能。大絕與被動爆炸能迅速瓦解密集陣型，但一技仍要留給突進者或已燃燒的關鍵目標。"
       },
       "summary": "三技先掛烈炎，再以一技暈眩接二技增傷；團戰利用大絕彈跳與被動爆炸製造連鎖範圍傷害，技能冷卻時保持安全站位。",
-      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/brand.png",
       "abilities": [
         {
@@ -42309,8 +42307,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-fourth-batch-formal-v62",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "starterItems": [
         "basic-amp-tome"
       ],
@@ -42522,7 +42520,7 @@
         "團戰影響力": 5
       },
       "runes": [
-        "electrocute",
+        "fleet-footwork",
         "sudden-impact",
         "chain-assault",
         "eyeball-collector",
@@ -42533,7 +42531,7 @@
         "magic-high-21",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05"
+        "magic-high-02"
       ],
       "boots": [
         "mana-boots",
@@ -42563,7 +42561,7 @@
         "後期": "大絕可把多名敵人聚到己方範圍傷害中，開戰價值不只在於自己擊殺。爆發完成後利用重置三技追擊殘血或換位離開集火中心。"
       },
       "summary": "月光標記能重置突進，二技提供進場護盾，大絕可聚集多名敵人完成範圍開戰；面對強制控制時進場容錯較低。",
-      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/diana.webp",
       "abilities": [
         {
@@ -42630,8 +42628,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -48237,15 +48235,15 @@
         "phase-rush",
         "manaflow-band",
         "transcendence",
-        "gathering-storm",
+        "nimbus-cloak",
         "bone-plating"
       ],
       "items": [
         "magic-high-17",
         "magic-high-19",
         "magic-high-14",
-        "magic-high-23",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-02"
       ],
       "boots": [
         "ionian-boots",
@@ -48253,7 +48251,7 @@
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ghost"
       ],
       "skillOrder": "Q > E > W",
       "matchups": {
@@ -48275,7 +48273,7 @@
         "後期": "不要站在最前方硬吃控制，沿著前排以三技與一技擴散傷害。大絕可用於拆塔轉線、撤退或封住敵方退路，施放前先以標記確認隊友願意同行。"
       },
       "summary": "最大魔力同時轉化為輸出與續戰，透過技能刷新反覆連鎖，並以大絕改變轉線節奏；短射程與高操作密度是主要門檻。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/ryze.webp",
       "abilities": [
         {
@@ -48341,8 +48339,8 @@
       "generatedV29": true,
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -48907,18 +48905,18 @@
         "團戰影響力": 5
       },
       "runes": [
-        "electrocute",
-        "cheap-shot",
-        "tyrant",
-        "eyeball-collector",
-        "manaflow-band"
+        "empowerment",
+        "hextech-flashtraption",
+        "transcendence",
+        "nimbus-cloak",
+        "bone-plating"
       ],
       "items": [
-        "magic-high-12",
-        "magic-high-25",
-        "magic-high-21",
+        "magic-high-09",
         "magic-high-14",
-        "magic-high-08"
+        "magic-high-21",
+        "magic-high-08",
+        "magic-high-02"
       ],
       "boots": [
         "mana-boots",
@@ -48926,7 +48924,7 @@
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
       "skillOrder": "Q > E > W",
       "skillSequence": [
@@ -48971,7 +48969,7 @@
         "後期": "站在側後方以推球暈眩控制狹窄地形，敵方刺客未現身前保留三技。大絕優先處理已被控制的核心，不要把所有星體浪費在難以擊殺的前排。"
       },
       "summary": "透過星體佈置與三技推球提供超遠暈眩，再以多顆星體大絕處決單一目標；控制技能空掉時自保能力明顯下降。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/syndra.webp",
       "abilities": [
         {
@@ -49013,16 +49011,16 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
         "basic-amp-tome"
       ],
       "coreItems": [
-        "magic-high-12",
-        "magic-high-25",
+        "magic-high-09",
+        "magic-high-14",
         "magic-high-21"
       ],
       "combos": [
@@ -49251,18 +49249,18 @@
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "manaflow-band",
-        "transcendence",
-        "scorch",
-        "bone-plating"
+        "dark-harvest",
+        "cheap-shot",
+        "tyrant",
+        "eyeball-collector",
+        "transcendence"
       ],
       "items": [
         "magic-high-12",
-        "magic-high-25",
         "magic-high-14",
         "magic-high-21",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-02"
       ],
       "boots": [
         "mana-boots",
@@ -49270,7 +49268,7 @@
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
       "skillOrder": "Q > E > W",
       "matchups": {
@@ -49292,7 +49290,7 @@
         "後期": "保持在前排後方持續投岩，三技優先放在刺客進場路徑或狹窄入口。大絕重點是分割戰場與封退路，不要只追求乘牆進場。"
       },
       "summary": "以快速清線、反位移碎石與超遠石牆掌控地圖節奏；二技方向與三技落點要求精準，技能落空後自保能力有限。",
-      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/taliyah.webp",
       "abilities": [
         {
@@ -49358,17 +49356,17 @@
       "generatedV29": true,
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
-        "basic-sapphire"
+        "basic-amp-tome"
       ],
       "coreItems": [
         "magic-high-12",
-        "magic-high-25",
-        "magic-high-14"
+        "magic-high-14",
+        "magic-high-21"
       ],
       "combos": [
         {
@@ -50908,16 +50906,16 @@
       "runes": [
         "electrocute",
         "cheap-shot",
-        "tyrant",
+        "chain-assault",
         "eyeball-collector",
-        "manaflow-band"
+        "bone-plating"
       ],
       "items": [
         "magic-high-12",
+        "magic-high-09",
         "magic-high-21",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
@@ -50970,7 +50968,7 @@
         "後期": "主要任務是限制突進英雄與尋找收割角度。被動準備好時站在己方主力附近反開；若敵方後排殘血，再用大絕跨越前排完成追擊。"
       },
       "summary": "被動恐懼能中斷位移並懲罰頻繁突進的英雄，大絕命中後可遠距切入收割；面對超長射程法師時較難取得主動。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/vex.webp",
       "abilities": [
         {
@@ -51012,8 +51010,8 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -51021,8 +51019,8 @@
       ],
       "coreItems": [
         "magic-high-12",
-        "magic-high-21",
-        "magic-high-14"
+        "magic-high-09",
+        "magic-high-21"
       ],
       "combos": [
         {
@@ -51230,18 +51228,18 @@
         "團戰影響力": 5
       },
       "runes": [
-        "arcane-comet",
-        "manaflow-band",
-        "transcendence",
-        "scorch",
-        "bone-plating"
+        "empowerment",
+        "axiom-arcanist",
+        "absolute-focus",
+        "gathering-storm",
+        "cut-down"
       ],
       "items": [
         "magic-high-12",
-        "magic-high-25",
+        "magic-high-21",
         "magic-high-14",
-        "magic-high-22",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-18"
       ],
       "boots": [
         "mana-boots",
@@ -51249,7 +51247,7 @@
       ],
       "spells": [
         "flash",
-        "barrier"
+        "ignite"
       ],
       "skillOrder": "E > Q > W",
       "skillSequence": [
@@ -51294,7 +51292,7 @@
         "後期": "維持最大雷射距離持續輸出，大絕可跟隨目標打斷施法並逼迫後排移動。團戰不必追求一次爆發，反覆三技與強化技能的持續壓力更重要。"
       },
       "summary": "擊殺單位取得進化後逐步成長，以雷射遠距消耗、引力場封路與大絕持續追擊掌控團戰；需要熟練技能方向與安全站位。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/viktor.webp",
       "abilities": [
         {
@@ -51336,8 +51334,8 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -51345,7 +51343,7 @@
       ],
       "coreItems": [
         "magic-high-12",
-        "magic-high-25",
+        "magic-high-21",
         "magic-high-14"
       ],
       "combos": [
@@ -51563,17 +51561,17 @@
       },
       "runes": [
         "phase-rush",
-        "botanist",
-        "transcendence",
-        "gathering-storm",
-        "last-stand"
+        "battle-fervor",
+        "last-stand",
+        "legend-bloodline",
+        "transcendence"
       ],
       "items": [
         "magic-high-21",
-        "magic-high-09",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-23"
+        "magic-high-01",
+        "magic-high-22",
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
@@ -51603,7 +51601,7 @@
         "後期": "等待敵方站位集中後進場，先以大絕提高後續傷害，再蓄力三技與血池躲開控制。完成第一輪後利用治療結算拉開，等待下一套技能二次進場。"
       },
       "summary": "前期靠一技回血穩定發育，保留血池躲避致命控制；裝備成形後以大絕、蓄力三技與鬼步切入後排，回血後再二次進場。",
-      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/vladimir.webp",
       "abilities": [
         {
@@ -51675,8 +51673,8 @@
       ],
       "coreItems": [
         "magic-high-21",
-        "magic-high-09",
-        "magic-high-14"
+        "magic-high-14",
+        "magic-high-01"
       ],
       "combos": [
         {
@@ -51758,8 +51756,8 @@
           "note": "先蓄力再閃現可突然覆蓋後排，大絕盡量命中多人；一輪傷害完成後用血池退出集火區。"
         }
       ],
-      "reviewStatus": "mid-fourth-batch-formal-v62",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
@@ -53272,18 +53270,18 @@
         "團戰影響力": 4
       },
       "runes": [
-        "electrocute",
-        "cheap-shot",
-        "tyrant",
+        "fleet-footwork",
+        "sudden-impact",
+        "chain-assault",
         "eyeball-collector",
-        "manaflow-band"
+        "nimbus-cloak"
       ],
       "items": [
         "magic-high-12",
-        "magic-high-25",
         "magic-high-21",
         "magic-high-14",
-        "magic-high-08"
+        "magic-high-08",
+        "magic-high-18"
       ],
       "boots": [
         "mana-boots",
@@ -53336,7 +53334,7 @@
         "後期": "不要站在正面與前排互換技能，利用視野死角持續尋找睡眠。大絕一定會回到原位，施放前先確認落點不會被控制或刺客守住。"
       },
       "summary": "睡眠命中後能以超遠一技打出極高單點爆發，並透過技能碎片增加變化；大絕回歸點固定，對站位與視野要求很高。",
-      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
       "avatar": "../assets/images/heroes/portraits/zoe.webp",
       "abilities": [
         {
@@ -53378,8 +53376,8 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
+      "reviewedAt": "2026-08-11",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -53387,8 +53385,8 @@
       ],
       "coreItems": [
         "magic-high-12",
-        "magic-high-25",
-        "magic-high-21"
+        "magic-high-21",
+        "magic-high-14"
       ],
       "combos": [
         {
