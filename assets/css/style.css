@@ -2739,10 +2739,11 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
 @media(max-width:700px){.site-review-hero-panel{grid-template-columns:1fr;padding:12px}.site-review-hero-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:380px){.site-review-hero-links{grid-template-columns:1fr}}
 
-/* v87.2.0 本站更新：每個摘要項目原位展開 */
-.site-review-grid>.site-review-item{min-width:0;padding:0;border:0;border-radius:0;background:transparent}
-.site-review-item>.site-review-toggle{width:100%;height:100%;min-height:74px}
-.site-review-inline-panel{margin-top:7px;padding:12px;border:1px solid rgba(216,184,108,.14);border-radius:13px;background:rgba(4,16,28,.62);box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
+/* v87.2.1 本站更新：修正手機原位展開高度與重疊 */
+.site-review-grid{align-items:start}
+.site-review-grid>.site-review-item{display:flex;flex-direction:column;align-self:start;min-width:0;padding:0;border:0;border-radius:0;background:transparent}
+.site-review-item>.site-review-toggle{flex:0 0 auto;width:100%;height:auto;min-height:74px}
+.site-review-inline-panel{position:static;display:block;width:100%;box-sizing:border-box;margin-top:7px;padding:12px;border:1px solid rgba(216,184,108,.14);border-radius:13px;background:rgba(4,16,28,.62);box-shadow:inset 0 1px 0 rgba(255,255,255,.025)}
 .site-review-inline-panel[hidden]{display:none!important}
 .site-review-inline-panel .site-review-hero-group+.site-review-hero-group{margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,.055)}
 .site-review-inline-panel .site-review-hero-links{grid-template-columns:1fr}
@@ -2750,7 +2751,7 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
 .site-review-database-panel>p{margin:7px 0 0;color:#9eafbd;font-size:11px;line-height:1.65}
 .site-review-toggle[aria-expanded="true"]{border-color:rgba(216,184,108,.38);background:rgba(216,184,108,.075)}
 @media(max-width:700px){
-  .site-review-item>.site-review-toggle{min-height:68px}
+  .site-review-item>.site-review-toggle{height:auto;min-height:68px}
   .site-review-inline-panel{margin-top:6px;padding:11px}
   .site-review-inline-panel .site-review-hero-links{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
