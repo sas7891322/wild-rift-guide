@@ -827,7 +827,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=86.0.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
+        getJSON('../assets/data/heroes.json?v=87.0.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 
