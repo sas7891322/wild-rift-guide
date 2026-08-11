@@ -26,13 +26,25 @@
     });
   }
 
-  const reviewToggle=document.querySelector('[data-site-review-toggle]');
-  const reviewPanel=document.querySelector('[data-site-review-hero-panel]');
-  if(reviewToggle && reviewPanel){
-    reviewToggle.addEventListener('click',()=>{
-      const expanded=reviewToggle.getAttribute('aria-expanded')==='true';
-      reviewToggle.setAttribute('aria-expanded',String(!expanded));
-      reviewPanel.hidden=expanded;
+  const reviewRoot=document.querySelector('[data-site-review-accordions]');
+  if(reviewRoot){
+    const toggles=[...reviewRoot.querySelectorAll('[data-site-review-toggle]')];
+    const closeToggle=toggle=>{
+      const panelId=toggle.getAttribute('aria-controls');
+      const panel=panelId?document.getElementById(panelId):null;
+      toggle.setAttribute('aria-expanded','false');
+      if(panel) panel.hidden=true;
+    };
+    toggles.forEach(toggle=>{
+      toggle.addEventListener('click',()=>{
+        const panelId=toggle.getAttribute('aria-controls');
+        const panel=panelId?document.getElementById(panelId):null;
+        if(!panel) return;
+        const opening=toggle.getAttribute('aria-expanded')!=='true';
+        toggles.forEach(other=>{ if(other!==toggle) closeToggle(other); });
+        toggle.setAttribute('aria-expanded',String(opening));
+        panel.hidden=!opening;
+      });
     });
   }
 })();
