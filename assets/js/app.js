@@ -1,245 +1,227 @@
-// Google Analytics 4
-(() => {
-  const measurementId = 'G-VLJH8KK4NK';
-  if (window.__WRG_GA4_LOADED__) return;
-  window.__WRG_GA4_LOADED__ = true;
+(function () {
+  const STORAGE_KEY = "kel_matches_v1";
 
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
-  window.gtag('js', new Date());
-  window.gtag('config', measurementId);
-
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
-  document.head.appendChild(script);
-})();
-
-document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
-async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(r.status);return r.json();}
-
-(() => {
-  const shell=document.querySelector('#homeHeroSearch');
-  if(!shell) return;
-
-  const input=shell.querySelector('#homeHeroSearchInput');
-  const results=shell.querySelector('#homeHeroSearchResults');
-  const dataPath=shell.dataset.json||'assets/data/heroes.json';
-  let heroes=[];
-  let activeIndex=-1;
-
-  const normalizeAvatar=src=>String(src||'').replace(/^\.\.\//,'');
-  const baseIdOf=x=>x?.baseId||String(x?.id||'').replace(/-(baron|jungle|mid|duo|support)$/,'');
-  const normalizeSearch=value=>String(value||'')
-    .normalize('NFKD')
-    .toLocaleLowerCase('en')
-    .replace(/[\s\-_'’.’·]/g,'');
-
-  function catalogFromLegacyLaneTiers(laneTiers={}){
-    const roleOrder=['baron','jungle','mid','duo','support'];
-    const map=new Map();
-    for(const roleId of roleOrder){
-      for(const hero of (laneTiers?.[roleId]||[])){
-        const key=baseIdOf(hero);
-        if(!map.has(key)) map.set(key,{id:key,name:hero.name||'',enName:hero.enName||'',avatar:hero.avatar||'',roles:[]});
-        map.get(key).roles.push({roleId,detailHeroId:hero.detailHeroId||'',avatar:hero.avatar||''});
-      }
-    }
-    return [...map.values()];
-  }
-
-  function uniqueSearchHeroes(data){
-    const catalog=Array.isArray(data?.heroCatalog)?data.heroCatalog:catalogFromLegacyLaneTiers(data?.laneTiers||{});
-    return catalog.map(hero=>{
-      const roles=(hero.roles||[]).filter(role=>role.detailHeroId);
-      return {
-        id:hero.id||baseIdOf(hero),
-        name:hero.name||'',
-        enName:hero.enName||'',
-        aliases:Array.isArray(hero.aliases)?hero.aliases:[],
-        avatar:normalizeAvatar(hero.avatar||roles.find(role=>role.avatar)?.avatar||''),
-        detailHeroId:roles[0]?.detailHeroId||'',
-        roles:roles.map(role=>role.roleId)
-      };
-    }).filter(hero=>hero.detailHeroId).sort((a,b)=>(a.enName||a.name).localeCompare(b.enName||b.name,'en'));
-  }
-
-  const roleNames={baron:'巴龍路',jungle:'打野',mid:'中路',duo:'飛龍路',support:'輔助'};
-  const heroMatches=(hero,query)=>{
-    const q=normalizeSearch(query);
-    if(!q) return true;
-    return [hero.name,hero.enName,hero.id,...(hero.aliases||[])].some(value=>normalizeSearch(value).includes(q));
-  };
-
-  function resultLinks(){ return [...results.querySelectorAll('.home-hero-search-result')]; }
-
-  function setActiveResult(index){
-    const links=resultLinks();
-    if(!links.length){ activeIndex=-1; return; }
-    activeIndex=Math.max(0,Math.min(index,links.length-1));
-    links.forEach((link,i)=>{
-      const active=i===activeIndex;
-      link.classList.toggle('is-active',active);
-      link.setAttribute('aria-selected',String(active));
-    });
-    input.setAttribute('aria-activedescendant',links[activeIndex].id);
-    links[activeIndex].scrollIntoView({block:'nearest'});
-  }
-
-  function closeResults(){
-    results.hidden=true;
-    results.innerHTML='';
-    activeIndex=-1;
-    input.setAttribute('aria-expanded','false');
-    input.removeAttribute('aria-activedescendant');
-  }
-
-  function renderResults(){
-    const query=input.value.trim();
-    if(!query){ closeResults(); return; }
-    const matched=heroes.filter(hero=>heroMatches(hero,query)).slice(0,10);
-    results.hidden=false;
-    activeIndex=-1;
-    input.setAttribute('aria-expanded','true');
-    if(!matched.length){
-      results.innerHTML='<div class="home-hero-search-empty">找不到符合的英雄</div>';
-      return;
-    }
-    results.innerHTML=matched.map((hero,index)=>`<a id="homeHeroSearchOption${index}" class="home-hero-search-result" role="option" aria-selected="false" href="pages/heroes.html?hero=${encodeURIComponent(hero.detailHeroId)}">
-      ${hero.avatar?`<img src="${hero.avatar}" alt="${hero.name}" loading="lazy" data-home-hero-fallback data-fallback-letter="${hero.name.slice(0,1)}">`:`<span class="home-hero-search-monogram">${hero.name.slice(0,1)}</span>`}
-      <span><strong>${hero.name}</strong><small>${[hero.enName,hero.roles.map(role=>roleNames[role]).join(' · ')].filter(Boolean).join(' · ')}</small></span>
-      <i>查看攻略 →</i>
-    </a>`).join('');
-    results.querySelectorAll('img[data-home-hero-fallback]').forEach(img=>{ const fallback=()=>{ if(!img.isConnected) return; const span=document.createElement('span'); span.className='home-hero-search-monogram'; span.textContent=img.dataset.fallbackLetter||'?'; span.setAttribute('aria-label',`${img.alt||'英雄'}頭像暫時無法載入`); img.replaceWith(span); }; img.addEventListener('error',fallback,{once:true}); if(img.complete && img.naturalWidth===0) fallback(); });
-  }
-
-  input.addEventListener('input',renderResults);
-  input.addEventListener('focus',()=>{ if(input.value.trim()) renderResults(); });
-  input.addEventListener('keydown',event=>{
-    const links=resultLinks();
-    if(event.key==='Escape'){
-      input.value='';
-      closeResults();
-      input.blur();
-      return;
-    }
-    if(!links.length) return;
-    if(event.key==='ArrowDown'){
-      event.preventDefault();
-      setActiveResult(activeIndex<links.length-1?activeIndex+1:0);
-    }else if(event.key==='ArrowUp'){
-      event.preventDefault();
-      setActiveResult(activeIndex>0?activeIndex-1:links.length-1);
-    }else if(event.key==='Enter' && activeIndex>=0){
-      event.preventDefault();
-      links[activeIndex].click();
-    }
-  });
-  document.addEventListener('click',event=>{ if(!shell.contains(event.target)) closeResults(); });
-
-  getJSON(dataPath).then(data=>{
-    heroes=uniqueSearchHeroes(data);
-    if(input.value.trim()) renderResults();
-  }).catch(error=>{
-    console.error(error);
-    results.hidden=false;
-    results.innerHTML='<div class="home-hero-search-empty">英雄資料載入失敗</div>';
-  });
-})();
-
-(() => {
-  'use strict';
-  const panel = document.querySelector('#homeMemberPanel');
-  const auth = window.WRGAuth;
-  if (!panel || !auth) return;
-
-  let catalog = [];
-  const baseIdOf = (value) => String(value || '').replace(/-(baron|jungle|mid|duo|support)$/, '');
-
-  function findHero(heroId) {
-    const id = baseIdOf(heroId);
-    return catalog.find((hero) => String(hero.id) === id) || null;
-  }
-
-  function guideId(hero, row) {
-    if (row?.guide_id) return row.guide_id;
-    const roleId = String(row?.role_id || '').trim();
-    const role = (hero?.roles || []).find((item) => item.roleId === roleId && item.detailHeroId);
-    return role?.detailHeroId || (hero?.roles || []).find((item) => item.detailHeroId)?.detailHeroId || '';
-  }
-
-  function avatarOf(hero) {
-    return String(hero?.avatar || hero?.roles?.find((item) => item.avatar)?.avatar || '').replace(/^\.\.\//, '');
-  }
-
-  function renderRecent(rows) {
-    const root = panel.querySelector('#homeMemberRecentList');
-    if (!root) return;
-    root.replaceChildren();
-    if (!rows.length) {
-      const empty = document.createElement('span');
-      empty.className = 'home-member-recent-empty';
-      empty.textContent = '尚無最近瀏覽';
-      root.appendChild(empty);
-      return;
-    }
-
-    rows.slice(0, 4).forEach((row) => {
-      const hero = findHero(row.hero_id);
-      const id = guideId(hero, row);
-      const item = document.createElement(id ? 'a' : 'span');
-      item.className = 'home-member-recent-hero';
-      if (id) item.href = `pages/heroes.html?hero=${encodeURIComponent(id)}`;
-      const avatar = avatarOf(hero);
-      if (avatar) {
-        const img = document.createElement('img');
-        img.src = avatar;
-        img.alt = hero?.name || row.hero_id || '英雄';
-        img.loading = 'lazy';
-        img.addEventListener('error', () => {
-          img.replaceWith(document.createTextNode(String(hero?.name || row.hero_id || '?').slice(0, 1)));
-        }, { once: true });
-        item.appendChild(img);
-      } else {
-        item.textContent = String(hero?.name || row.hero_id || '?').slice(0, 1);
-      }
-      item.title = hero?.name || row.hero_id || '英雄';
-      root.appendChild(item);
-    });
-  }
-
-  function render() {
-    if (!auth.user) {
-      panel.hidden = true;
-      return;
-    }
-    panel.hidden = false;
-    const name = auth.displayName();
-    const avatar = panel.querySelector('#homeMemberAvatar');
-    const greeting = panel.querySelector('#homeMemberGreeting');
-    const favoriteCount = panel.querySelector('#homeMemberFavoriteCount');
-    const recentCount = panel.querySelector('#homeMemberRecentCount');
-    if (avatar) avatar.textContent = auth.avatarLetter();
-    if (greeting) greeting.textContent = `${name}，歡迎回來`;
-    if (favoriteCount) favoriteCount.textContent = String((auth.favorites || []).length);
-    if (recentCount) recentCount.textContent = String((auth.recentViews || []).length);
-    renderRecent(auth.recentViews || []);
-  }
-
-  async function loadCatalog() {
+  function getMatches() {
     try {
-      const response = await fetch('assets/data/heroes.json?v=79.5.1', { cache: 'force-cache' });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
-      catalog = Array.isArray(data.heroCatalog) ? data.heroCatalog : [];
-    } catch (error) {
-      console.warn('首頁會員英雄資料載入失敗', error);
-    }
-    render();
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      if (Array.isArray(saved) && saved.length) return saved;
+    } catch (e) {}
+    return window.KEL_DEFAULT_MATCHES || [];
   }
 
-  auth.subscribe(render);
-  document.addEventListener('wrg:memberdatachange', render);
-  Promise.all([auth.ready, loadCatalog()]).then(render);
-})();
+  function saveMatches(matches) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(matches));
+  }
 
+  function resetMatches() {
+    localStorage.removeItem(STORAGE_KEY);
+  }
+
+  function qs(name) {
+    return new URLSearchParams(location.search).get(name);
+  }
+
+  function fmtDate(date) {
+    if (!date) return "";
+    const d = new Date(date + "T00:00:00");
+    return `${d.getMonth() + 1}/${d.getDate()}`;
+  }
+
+  function todayISO() {
+    // MVP 使用瀏覽器本地時區，正式上線建議由伺服器以 Asia/Taipei 統一。
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${y}-${m}-${day}`;
+  }
+
+  function teamBadge(short) {
+    return `<div class="team-badge">${escapeHtml(short || "TEAM")}</div>`;
+  }
+
+  function premiumPill(m) {
+    return m.premium ? '<span class="pill gold">★ K PREMIUM</span>' : '<span class="pill green">免費完整分析</span>';
+  }
+
+  function matchCard(m) {
+    return `
+      <article class="card match-card ${m.premium ? "premium" : ""}">
+        <div class="match-meta">
+          <span class="pill">${escapeHtml(m.league)}</span>
+          <span>${fmtDate(m.date)}</span><span>${escapeHtml(m.time)}</span><span>${escapeHtml(m.bo)}</span>
+          ${premiumPill(m)}
+        </div>
+        <div class="teams">
+          <div class="team">${teamBadge(m.teamAShort)}<div class="team-name">${escapeHtml(m.teamA)}</div></div>
+          <div class="vs">VS</div>
+          <div class="team">${teamBadge(m.teamBShort)}<div class="team-name">${escapeHtml(m.teamB)}</div></div>
+        </div>
+        <div class="match-note">${escapeHtml(m.summary || "")}</div>
+        <div class="card-actions">
+          <a class="btn ${m.premium ? "btn-gold" : "btn-primary"}" href="match.html?id=${encodeURIComponent(m.id)}">${m.premium ? `查看 K Premium｜NT$${m.price || 39}` : "查看完整分析"}</a>
+        </div>
+      </article>`;
+  }
+
+  function listRow(m) {
+    return `
+      <a class="list-row" href="match.html?id=${encodeURIComponent(m.id)}">
+        <span class="pill">${escapeHtml(m.league)}</span>
+        <div><strong>${escapeHtml(m.teamAShort)} vs ${escapeHtml(m.teamBShort)}</strong><small>${fmtDate(m.date)}・${escapeHtml(m.time)}・${escapeHtml(m.bo)}</small></div>
+        ${m.premium ? '<span class="pill gold">PREMIUM</span>' : '<span class="pill green">免費</span>'}
+      </a>`;
+  }
+
+  function renderHome() {
+    const todayEl = document.querySelector("#todayMatches");
+    if (!todayEl) return;
+    const matches = getMatches();
+    let today = matches.filter(m => m.date === todayISO() && m.status !== "finished");
+    // 讓靜態示範在非 2026/08/12 開啟時仍有內容。
+    if (!today.length) today = matches.filter(m => m.date === "2026-08-12" && m.status !== "finished");
+    todayEl.innerHTML = today.length ? today.map(matchCard).join("") : '<div class="empty">今日尚無已發布賽事。</div>';
+
+    const featured = matches.filter(m => m.status !== "finished").sort((a,b) => (b.premium - a.premium) || a.date.localeCompare(b.date)).slice(0, 4);
+    const featuredEl = document.querySelector("#featuredList");
+    if (featuredEl) featuredEl.innerHTML = featured.map(listRow).join("");
+
+    const results = matches.filter(m => m.status === "finished").sort((a,b) => b.date.localeCompare(a.date)).slice(0, 4);
+    const resultEl = document.querySelector("#latestResults");
+    if (resultEl) resultEl.innerHTML = results.map(m => `
+      <div class="result-row">
+        <div><strong>${escapeHtml(m.teamAShort)} vs ${escapeHtml(m.teamBShort)}</strong><small>預測：${escapeHtml(m.prediction || "-")}｜結果：${escapeHtml(m.result || "-")}</small></div>
+        <div class="result-state">${m.resultHit ? "✅" : "❌"}</div>
+      </div>`).join("") || '<div class="empty">尚無完賽紀錄。</div>';
+
+    const leaguesEl = document.querySelector("#leagueGrid");
+    if (leaguesEl) leaguesEl.innerHTML = (window.KEL_LEAGUES || []).map(l => {
+      const lm = matches.filter(m => m.league === l && m.status !== "finished");
+      const p = lm.filter(m => m.premium).length;
+      return `<a class="card league-card" href="league.html?league=${encodeURIComponent(l)}"><div class="league-mark">${l.slice(0,3)}</div><strong>${l}</strong><small>${lm.length} 場｜${p} 場 Premium</small></a>`;
+    }).join("");
+  }
+
+  function renderLeague() {
+    const root = document.querySelector("#leagueMatches");
+    if (!root) return;
+    const league = (qs("league") || "LCK").toUpperCase();
+    const title = document.querySelector("#leagueTitle");
+    if (title) title.textContent = league;
+    document.title = `${league}｜K Esports Lab`;
+    const matches = getMatches().filter(m => m.league === league).sort((a,b) => a.date.localeCompare(b.date));
+    const filter = qs("filter") || "all";
+    let filtered = matches;
+    if (filter === "premium") filtered = matches.filter(m => m.premium && m.status !== "finished");
+    if (filter === "free") filtered = matches.filter(m => !m.premium && m.status !== "finished");
+    if (filter === "finished") filtered = matches.filter(m => m.status === "finished");
+    root.innerHTML = filtered.length ? filtered.map(matchCard).join("") : '<div class="empty">這個分類目前沒有賽事。</div>';
+
+    document.querySelectorAll("[data-filter]").forEach(btn => {
+      const href = `league.html?league=${encodeURIComponent(league)}&filter=${btn.dataset.filter}`;
+      btn.href = href;
+      if (btn.dataset.filter === filter) btn.classList.add("active");
+    });
+  }
+
+  function analysisSection(title, content) {
+    return `<section class="card analysis-section"><h3>${title}</h3><p>${escapeHtml(content || "尚未填寫")}</p></section>`;
+  }
+
+  function renderMatch() {
+    const root = document.querySelector("#matchRoot");
+    if (!root) return;
+    const id = qs("id");
+    const m = getMatches().find(x => x.id === id) || getMatches()[0];
+    if (!m) { root.innerHTML = '<div class="empty">找不到賽事。</div>'; return; }
+    document.title = `${m.teamAShort} vs ${m.teamBShort}｜K Esports Lab`;
+
+    const locked = m.premium;
+    root.innerHTML = `
+      <div class="page-head">
+        <div class="match-meta"><span class="pill">${escapeHtml(m.league)}</span><span>${fmtDate(m.date)}</span><span>${escapeHtml(m.time)}</span><span>${escapeHtml(m.bo)}</span>${premiumPill(m)}</div>
+      </div>
+      <div class="card match-card ${m.premium ? "premium" : ""}" style="margin-bottom:18px">
+        <div class="teams">
+          <div class="team">${teamBadge(m.teamAShort)}<div class="team-name">${escapeHtml(m.teamA)}</div></div>
+          <div class="vs">VS</div>
+          <div class="team">${teamBadge(m.teamBShort)}<div class="team-name">${escapeHtml(m.teamB)}</div></div>
+        </div>
+        <div class="match-note">${escapeHtml(m.summary || "")}</div>
+      </div>
+      <div class="analysis-layout">
+        <main class="analysis-main">
+          ${analysisSection("賽前總覽", m.preview)}
+          ${locked ? premiumLock(m) : `
+            ${analysisSection("近期狀態", m.recent)}
+            ${analysisSection("關鍵對位", m.matchup)}
+            ${analysisSection("版本與 BP", m.bp)}
+            ${analysisSection("雙方勝負條件", m.conditions)}
+            ${analysisSection("本場變數", m.variance)}
+            ${analysisSection("盤口二次核實", m.market)}
+            ${analysisSection("主推薦", m.recommendationPrimary)}
+            ${analysisSection("次推薦", m.recommendationSecondary)}
+            ${analysisSection("風險提醒", m.risk)}
+          `}
+        </main>
+        <aside class="sticky-side">
+          <div class="card score-box"><span>預測比分</span><strong>${locked ? "🔒" : escapeHtml(m.prediction || "-")}</strong></div>
+          <div class="card card-pad">
+            <div class="eyebrow">K Esports Lab</div>
+            <h3 style="margin:6px 0 8px">分析原則</h3>
+            <p style="margin:0;color:var(--muted);font-size:13px;line-height:1.7">免費與付費內容皆保留風險提醒。本站不接受投注、不代客下注、不提供派彩。</p>
+          </div>
+        </aside>
+      </div>`;
+
+    bindUnlockButtons();
+  }
+
+  function premiumLock(m) {
+    return `<section class="card premium-lock">
+      <div class="lock-icon">🔒</div>
+      <div class="eyebrow" style="color:var(--gold)">K PREMIUM｜精選深度分析</div>
+      <h3>以下內容需解鎖</h3>
+      <p>完整精裝分析著重研究深度，不代表保證賽果。</p>
+      <div class="premium-features">
+        <span>近期狀態與深度數據</span><span>關鍵選手／路線對位</span><span>版本與 BP 分析</span><span>勝負條件與本場變數</span><span>盤口二次核實</span><span>主推薦、次推薦與最終結論</span>
+      </div>
+      <button class="btn btn-gold unlock-btn" data-price="${m.price || 39}">NT$${m.price || 39} 解鎖本場完整分析</button>
+      <p style="margin-bottom:0">目前 MVP 尚未串接正式金流。</p>
+    </section>`;
+  }
+
+  function bindUnlockButtons() {
+    document.querySelectorAll(".unlock-btn").forEach(btn => btn.addEventListener("click", () => openModal("K Premium 付費功能建置中", `網站流程已預留單場 NT$${btn.dataset.price || 39} 解鎖。待綠界／TapPay 審核方向確認後，再接正式付款與訂單解鎖。`)));
+  }
+
+  function openModal(title, text) {
+    const modal = document.querySelector("#globalModal");
+    if (!modal) return;
+    modal.querySelector("[data-modal-title]").textContent = title;
+    modal.querySelector("[data-modal-text]").textContent = text;
+    modal.classList.add("open");
+  }
+
+  function initModal() {
+    const modal = document.querySelector("#globalModal");
+    if (!modal) return;
+    modal.addEventListener("click", (e) => { if (e.target === modal || e.target.closest("[data-modal-close]")) modal.classList.remove("open"); });
+  }
+
+  function initMenu() {
+    const btn = document.querySelector("#menuBtn");
+    const menu = document.querySelector("#mobileMenu");
+    if (btn && menu) btn.addEventListener("click", () => menu.classList.toggle("open"));
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "").replace(/[&<>'"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[ch]));
+  }
+
+  window.KEL = { getMatches, saveMatches, resetMatches, openModal, matchCard, listRow, fmtDate, escapeHtml };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initMenu(); initModal(); renderHome(); renderLeague(); renderMatch(); bindUnlockButtons();
+  });
+})();
