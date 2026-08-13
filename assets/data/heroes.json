@@ -1,6 +1,6 @@
 {
-  "version": "7.2b-v87-targeted-build-rune-audit",
-  "updated": "2026-08-11",
+  "version": "7.2c-v88-targeted-meta-calibration",
+  "updated": "2026-08-13",
   "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
@@ -146,7 +146,8 @@
     "v76 第二階段攻略內容鎖定：200 份位置攻略完成出裝、符文、召喚師技能、技能加點、三組連招、前中後期／對線內容與優劣對局驗收；23 位飛龍路新增合適輔助欄位；輔助頁鞋子統一顯示二級鞋。",
     "v77.4 第三階段名稱與介面校正：英雄顯示名稱「符文法師」統一改為「雷茲」，保留舊名稱搜尋別名；新增條件重設、無結果引導與英雄頭像載入失敗備援。",
     "v79.4：更新至 7.2b；納入 10 位英雄平衡調整、同步 16 份位置攻略與 Tier 初版評估，保留既有母版、定位與攻略結構。",
-    "v87：召喚峽谷針對性出裝／符文／召喚師技能校正；依 7.2b 當前資料更新 14 個已確認英雄／路線配置，證據不足或已正確者維持原狀。"
+    "v87：召喚峽谷針對性出裝／符文／召喚師技能校正；依 7.2b 當前資料更新 14 個已確認英雄／路線配置，證據不足或已正確者維持原狀。",
+    "v88：7.2c 召喚峽谷第一輪針對性校正；Tier 調整吉茵珂絲 B→A、沃維克打野 S+→S、雷茲中路 S+→S、淣菈打野 A→B；校正藍寶巴龍路配置，並同步科加斯饗宴 7.2c 數值與魔法對線凱尼克替換。"
   ],
   "heroes": [
     {
@@ -5985,7 +5986,7 @@
       "enName": "Jinx",
       "role": "飛龍路",
       "roleId": "duo",
-      "tier": "B",
+      "tier": "A",
       "position": "後期團戰／重置收割型射手",
       "tags": [
         "超遠射程",
@@ -6041,8 +6042,8 @@
         "中期": "狂風之力與磁性雷射槍成形後跟隊爭奪物件，站在前排後方用火箭打安全目標與範圍傷害。先確保自己能持續輸出，再等待第一個擊殺、助攻或防禦塔觸發狂躁。",
         "後期": "團戰以最大射程攻擊最近且安全的目標，不必強行越過前排點後排。狂躁觸發後利用跑速重新站位，視距離切回迷你砲提高單體輸出；大絕主要用於處理殘血、補遠距傷害或爭奪史詩野怪。"
       },
-      "summary": "前期需要穩定發育的後期射手，透過雙武器切換維持安全輸出；只要參與第一個擊殺、史詩野怪或拆塔觸發狂躁，就能靠高攻速與跑速連續收割。",
-      "sourceNote": "7.2a 飛龍路吉茵珂絲正式母版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文、召喚師技能、對局與實戰節奏交叉參考 WildRiftFire 7.2a 與 WR-META 7.2A 後整合。Tier 維持本站既有飛龍路評級。｜v64：吉茵珂絲固定為飛龍路英雄正式母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。｜v82.5：新增吉茵珂絲「對局調整」試作母版，依坦克、爆發、控制、治療與護盾陣容提供必要的裝備／符文替換。",
+      "summary": "7.2c 強化基礎物攻與狂躁攻速後，前中期接戰與收割速度提高；仍以安全發育、等待第一個擊殺／物件／拆塔觸發狂躁後連續收割為核心。",
+      "sourceNote": "7.2a 飛龍路吉茵珂絲正式母版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文、召喚師技能、對局與實戰節奏交叉參考 WildRiftFire 7.2a 與 WR-META 7.2A 後整合。Tier 維持本站既有飛龍路評級。｜v64：吉茵珂絲固定為飛龍路英雄正式母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。｜v82.5：新增吉茵珂絲「對局調整」試作母版，依坦克、爆發、控制、治療與護盾陣容提供必要的裝備／符文替換。｜v88 7.2c：基礎物攻與狂躁攻速增強後，本站飛龍路初版評級由 B 調整為 A；標準出裝、符文與召喚師技能先維持。",
       "avatar": "../assets/images/heroes/portraits/jinx.webp",
       "abilities": [
         {
@@ -6110,7 +6111,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "duo-jinx-master-template-v64",
-      "reviewedAt": "2026-07-29",
+      "reviewedAt": "2026-08-13",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -18781,19 +18782,18 @@
         "團戰影響力": 4
       },
       "runes": [
-        "conqueror",
-        "axiom-arcanist",
-        "transcendence",
-        "scorch",
-        "bone-plating"
+        "arcane-comet",
+        "demolish",
+        "second-wind",
+        "perseverance",
+        "last-stand"
       ],
       "items": [
         "magic-high-16",
-        "magic-high-10",
-        "magic-high-15",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
+        "magic-high-01",
+        "magic-high-07",
+        "magic-high-21",
+        "magic-high-23"
       ],
       "boots": [
         "mana-boots",
@@ -18821,8 +18821,8 @@
         "中期": "中期小龍坑與河道是最佳戰場，大絕斜切撤退路線比直線丟人群更有效。",
         "後期": "後期先用大絕切割陣型，再決定是否貼近輸出；避免過熱時毫無技能可用。"
       },
-      "summary": "熱能管理、持續火焰與大絕地形封鎖讓他在狹窄物件區極強。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v45：巴龍路第 6 批正式版，套用犽凝固定母版。",
+      "summary": "7.2c 技能基礎傷害下修、AP 係數提高後，巴龍路改以黎安卓的折磨起手，接海克斯科技火箭腰帶與血書詛咒強化持續魔傷、貼身輸出與中期成形速度。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v45：巴龍路第 6 批正式版，套用犽凝固定母版。｜v88 7.2c：依技能傷害結構改動重新校正巴龍路；核心改為黎安卓的折磨→海克斯科技火箭腰帶→血書詛咒，符文改為奧術彗星＋意志系三枚＋背水一戰。",
       "avatar": "../assets/images/heroes/portraits/rumble.webp",
       "abilities": [
         {
@@ -18887,7 +18887,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-sixth5-formal-v45",
-      "reviewedAt": "2026-07-29",
+      "reviewedAt": "2026-08-13",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -18898,8 +18898,8 @@
       ],
       "coreItems": [
         "magic-high-16",
-        "magic-high-10",
-        "magic-high-15"
+        "magic-high-01",
+        "magic-high-07"
       ],
       "combos": [
         {
@@ -32817,7 +32817,7 @@
       "enName": "Nilah",
       "role": "打野",
       "roleId": "jungle",
-      "tier": "A",
+      "tier": "B",
       "position": "近戰射手／範圍普攻／吸血團戰",
       "tags": [
         "持續輸出",
@@ -32873,8 +32873,8 @@
         "中期": "暴擊與吸血成形後，飛龍與預示者區的密集團戰最能發揮。二技用來擋射手與普攻型打野的主要輸出，大絕則在多人範圍內提供拉回、治療與護盾。",
         "後期": "把自己當作近戰主力輸出，等待第一輪控制交出後第二時間進場。沿著前排輸出，不要為追後排一次跨過安全線；大絕能否命中多人決定團戰續航。"
       },
-      "summary": "靠一技強化攻距與扇形普攻高速清野，裝備成形後以閃避、吸血與範圍大絕主宰密集團戰；弱點是前期缺少遠距離控制。",
-      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏依目前 7.2a 打野定位整理。｜v56：完成打野第五批正式版，完整沿用李星固定打野母版，補齊起手裝、核心三件、五件成裝、15 級加點、三組連招、對局與實戰節奏。",
+      "summary": "7.2c 下修物穿成長與大絕額外物攻係數後，爆發與後期穿透能力下降；仍以健康刷野、抓近身窗口與物件團切入為核心，但需要更重視進場時機。",
+      "sourceNote": "7.2a 打野正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》英雄頁及本站既有正式英雄資料校正；出裝、符文、技能順序、對局與前中後期節奏依目前 7.2a 打野定位整理。｜v56：完成打野第五批正式版，完整沿用李星固定打野母版，補齊起手裝、核心三件、五件成裝、15 級加點、三組連招、對局與實戰節奏。｜v88 7.2c：物穿成長與大絕額外物攻係數下修後，本站打野初版評級由 A 調整為 B；核心配置先維持，後續依 7.2c 實戰數據複查。",
       "avatar": "../assets/images/heroes/portraits/nilah.webp",
       "abilities": [
         {
@@ -33027,7 +33027,7 @@
         "physical-high-24"
       ],
       "reviewStatus": "jungle-fifth10-formal-v56",
-      "reviewedAt": "2026-07-29",
+      "reviewedAt": "2026-08-13",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
@@ -38416,7 +38416,7 @@
       "enName": "Warwick",
       "role": "打野",
       "roleId": "jungle",
-      "tier": "S+",
+      "tier": "S",
       "position": "鬥士／追獵／低血續戰",
       "tags": [
         "續航",
@@ -38469,11 +38469,11 @@
       },
       "playstyle": {
         "前期": "利用被動和一技的治療保持高血量清野，二技血跡出現時立刻判斷是否值得中斷營地去支援。三技先開減傷，再長按一技跟到目標身後釋放恐懼。",
-        "中期": "物件團可主動標記低血敵人取得跑速，從側翼用大絕壓制核心。7.2a 傷害被下修後更要依賴持續普攻與正確控制鏈，不要把大絕當成無腦遠距開戰。",
+        "中期": "物件團可主動標記低血敵人取得跑速，從側翼尋找壓制角度。7.2c 大絕冷卻更長、傷害降低後，優先把它當關鍵控制與追擊工具，不要為了單純補傷害隨意交掉。",
         "後期": "優先抓落單或反開切入者。大絕直線命中容易被前排阻擋，先處理視野與角度；進場後靠恐懼改變敵方走位，再以一技跟隨位移。"
       },
       "summary": "清野健康、追擊能力極強，低生命時仍能靠治療反打；壓制與恐懼讓他兼具抓單和反開能力。",
-      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》沃維克英雄頁校正；出裝、符文與玩法交叉參考 WildRiftFire 7.2a，並納入 Riot 7.2a 對被動與一技傷害係數的下修。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》沃維克英雄頁校正；出裝、符文與玩法交叉參考 WildRiftFire 7.2a，並納入 Riot 7.2a 對被動與一技傷害係數的下修。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。｜v88 7.2c：大絕冷卻與傷害下修後，本站打野初版評級由 S+ 調整為 S；核心出裝與符文先維持。",
       "avatar": "../assets/images/heroes/portraits/warwick.webp",
       "abilities": [
         {
@@ -38541,7 +38541,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-07-29",
+      "reviewedAt": "2026-08-13",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -48215,7 +48215,7 @@
       "enName": "Ryze",
       "role": "中路",
       "roleId": "mid",
-      "tier": "S+",
+      "tier": "S",
       "position": "戰鬥法師／法力成長／持續連鎖",
       "tags": [
         "持續輸出",
@@ -48268,12 +48268,12 @@
         "ban": "星朵拉"
       },
       "playstyle": {
-        "前期": "前期魔力與射程有限，以三技接一技清線並控制藍量。二技不要固定拿來消耗，面對打野或刺客時保留法術湧動接禁錮能大幅提高生存率。",
+        "前期": "7.2c 前期生命與物防下修後，對線容錯降低；先以符文與技能循環穩定補刀，不要為了小幅換血過度前壓。時光之杖成形前以保血量、控線與支援時機為主。",
         "中期": "時光與大天使成形後開始進入強勢期，推線後用大絕帶隊轉線、包夾或快速進入物件區。連招中觸發相位衝擊，保持中距離反覆輸出。",
         "後期": "不要站在最前方硬吃控制，沿著前排以三技與一技擴散傷害。大絕可用於拆塔轉線、撤退或封住敵方退路，施放前先以標記確認隊友願意同行。"
       },
       "summary": "最大魔力同時轉化為輸出與續戰，透過技能刷新反覆連鎖，並以大絕改變轉線節奏；短射程與高操作密度是主要門檻。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。｜v88 7.2c：前期生命、物防與二技傷害下修後，本站中路初版評級由 S+ 調整為 S；時光之杖、大天使與閃現＋鬼步方向維持。",
       "avatar": "../assets/images/heroes/portraits/ryze.webp",
       "abilities": [
         {
@@ -48340,7 +48340,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
-      "reviewedAt": "2026-08-11",
+      "reviewedAt": "2026-08-13",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -67795,7 +67795,7 @@
         "後期": "不要只把自己當開戰坦克。科加斯沒有位移，最強的是卡位置、反開與壓縮走位。Q擊飛＋W沉默後站住前排，用石像鬼磐核吃第一波爆發，再尋找R真傷斬殺。預設鎖鏈軍靴應對控制與魔傷；敵方主要威脅是普攻物理輸出時可改測裝甲戰靴。"
       },
       "summary": "首發測試方向以「雄心之鋼＋日炎聖盾＋峽谷製造者」把永久生命成長轉成坦度、魔攻與饗宴斬殺；E主升負責對線與持續傷害，Q/W負責控制。",
-      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；出裝、符文與技能順序依7.2裝備機制、英雄技能成長邏輯與首日玩家實戰方向推導，待實戰回饋持續修正。",
+      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；出裝、符文與技能順序依7.2裝備機制、英雄技能成長邏輯與首日玩家實戰方向推導，待實戰回饋持續修正。｜v88 7.2c：同步饗宴首級冷卻 80→70 秒與額外生命係數 8%→10% 的正式平衡調整。｜v88 7.2c：巴龍路新增高魔傷對線情境，第二件日炎聖盾可替換為凱尼克欺瞞者；日炎仍保留於物理對線／清線需求。",
       "avatar": "../assets/images/heroes/portraits/chogath.png",
       "abilities": [
         {
@@ -67831,7 +67831,7 @@
           "label": "4 技",
           "title": "饗宴",
           "icon": "../assets/images/heroes/skills/chogath_05.webp",
-          "summary": "冷卻80秒。對英雄造成300＋50%魔攻＋8%額外生命的真實傷害；對士兵與野怪造成1200＋50%魔攻＋8%額外生命的真實傷害。擊殺後獲得饗宴層數；士兵與非史詩野怪最多提供6層。每層永久增加80最大生命、6%體型、4.7攻擊距離與2.5饗宴施放距離。"
+          "summary": "冷卻70秒。對英雄造成300＋50%魔攻＋10%額外生命的真實傷害；對士兵與野怪造成1200＋50%魔攻＋10%額外生命的真實傷害。擊殺後獲得饗宴層數；士兵與非史詩野怪最多提供6層。每層永久增加80最大生命、6%體型、4.7攻擊距離與2.5饗宴施放距離。"
         }
       ],
       "skillSequence": [
@@ -67860,7 +67860,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "first-day-trial",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -67998,10 +67998,19 @@
             "label": "對線魔法",
             "priority": "高",
             "trigger": "對線英雄主要靠魔法傷害或控制建立換血優勢。",
-            "changes": [],
-            "keepTitle": "維持標準配置",
-            "keepText": "標準鞋線已經偏向魔防／韌性，可維持原配置。",
-            "warning": ""
+            "changes": [
+              {
+                "type": "item",
+                "title": "魔法對線抗性",
+                "fromId": "defense-high-06",
+                "toId": "defense-high-21",
+                "condition": "對線與敵方主要威脅以魔法爆發／持續魔傷為主時。",
+                "reason": "7.2c 日炎聖盾降低生命、提高物防後更偏物理對線；凱尼克欺瞞者同步強化魔防與護盾，對高魔傷陣容更合適。"
+              }
+            ],
+            "keepTitle": "魔傷高時改第二件抗性",
+            "keepText": "標準鞋線仍可維持；主要把第二件日炎聖盾依敵方傷害類型改成凱尼克欺瞞者。",
+            "warning": "日炎聖盾仍適合物理對線與需要清線的場景，不是全面淘汰。"
           },
           {
             "id": "tank",
@@ -68121,7 +68130,7 @@
         "後期": "後期轉為物件門神與反開坦克。先站在龍坑／巴龍坑入口，用Q逼走位、W沉默衝進來的敵人，不要為了追後排離開物件。石像鬼磐核的護盾吃額外生命加成，科加斯疊層越高收益越大。"
       },
       "summary": "打野首發測試版優先清野效率與大型物件控制：E主升快速處理野區，Q/W提供Gank控制，R對野怪的1200真傷再疊重擊形成極高瞬間斬殺線。",
-      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；打野出裝與節奏以E清野、R＋重擊物件斬殺為核心假設，待實戰回饋持續修正。",
+      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；打野出裝與節奏以E清野、R＋重擊物件斬殺為核心假設，待實戰回饋持續修正。｜v88 7.2c：同步饗宴首級冷卻 80→70 秒與額外生命係數 8%→10% 的正式平衡調整。",
       "avatar": "../assets/images/heroes/portraits/chogath.png",
       "abilities": [
         {
@@ -68157,7 +68166,7 @@
           "label": "4 技",
           "title": "饗宴",
           "icon": "../assets/images/heroes/skills/chogath_05.webp",
-          "summary": "冷卻80秒。對英雄造成300＋50%魔攻＋8%額外生命的真實傷害；對士兵與野怪造成1200＋50%魔攻＋8%額外生命的真實傷害。擊殺後獲得饗宴層數；士兵與非史詩野怪最多提供6層。每層永久增加80最大生命、6%體型、4.7攻擊距離與2.5饗宴施放距離。"
+          "summary": "冷卻70秒。對英雄造成300＋50%魔攻＋10%額外生命的真實傷害；對士兵與野怪造成1200＋50%魔攻＋10%額外生命的真實傷害。擊殺後獲得饗宴層數；士兵與非史詩野怪最多提供6層。每層永久增加80最大生命、6%體型、4.7攻擊距離與2.5饗宴施放距離。"
         }
       ],
       "skillSequence": [
@@ -68186,7 +68195,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "first-day-trial",
-      "reviewedAt": "2026-08-07",
+      "reviewedAt": "2026-08-13",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -69010,7 +69019,7 @@
         },
         {
           "roleId": "mid",
-          "tier": "S+",
+          "tier": "S",
           "origin": "native",
           "detailHeroId": "ryze-mid",
           "avatar": "../assets/images/heroes/portraits/ryze.webp"
@@ -69211,7 +69220,7 @@
         },
         {
           "roleId": "jungle",
-          "tier": "S+",
+          "tier": "S",
           "origin": "native",
           "detailHeroId": "warwick-jungle",
           "avatar": "../assets/images/heroes/portraits/warwick.webp"
@@ -69685,7 +69694,7 @@
       "roles": [
         {
           "roleId": "jungle",
-          "tier": "A",
+          "tier": "B",
           "origin": "native",
           "detailHeroId": "nilah-jungle",
           "avatar": "../assets/images/heroes/portraits/nilah.webp"
@@ -70533,7 +70542,7 @@
       "roles": [
         {
           "roleId": "duo",
-          "tier": "B",
+          "tier": "A",
           "origin": "native",
           "detailHeroId": "jinx",
           "avatar": "../assets/images/heroes/portraits/jinx.webp"
