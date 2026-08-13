@@ -2756,3 +2756,21 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
   .site-review-inline-panel .site-review-hero-links{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:380px){.site-review-inline-panel .site-review-hero-links{grid-template-columns:1fr}}
+
+
+/* v87.3 official patch history accordion */
+.official-history-item{margin-top:22px;border:1px solid rgba(216,184,108,.18);border-radius:16px;background:rgba(5,19,31,.58);overflow:hidden}
+.official-history-summary{position:relative;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 48px 15px 16px;cursor:pointer;list-style:none;user-select:none;transition:background .16s ease,border-color .16s ease}
+.official-history-summary::-webkit-details-marker{display:none}
+.official-history-summary:after{content:"⌄";position:absolute;right:17px;top:50%;transform:translateY(-50%);color:#efd794;font-size:21px;font-weight:900;line-height:1;transition:transform .18s ease}
+.official-history-item[open]>.official-history-summary:after{transform:translateY(-50%) rotate(180deg)}
+.official-history-summary:hover,.official-history-summary:focus-visible{background:rgba(216,184,108,.06);outline:none}
+.official-history-summary span{min-width:0;display:block}
+.official-history-summary strong{display:block;color:#e4edf2;font-size:13px}
+.official-history-summary small{display:block;margin-top:4px;color:#788ea0;font-size:10px;line-height:1.45}
+.official-history-badge{flex:0 0 auto;padding:4px 8px;border:1px solid rgba(216,184,108,.22);border-radius:999px;color:#d9c17e;background:rgba(216,184,108,.07);font-size:10px}
+.official-history-content{padding:0 16px 17px;border-top:1px solid rgba(255,255,255,.055)}
+.official-history-content>.home-update-lead{margin-top:15px}
+.official-history-content>.home-update-more{margin-top:16px}
+.official-current-patch{margin-bottom:0}
+@media(max-width:640px){.official-history-summary{padding:14px 44px 14px 14px}.official-history-content{padding:0 13px 15px}.official-history-summary strong{font-size:12px}.official-history-summary small{font-size:9px}}
