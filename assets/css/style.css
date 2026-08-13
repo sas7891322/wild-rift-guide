@@ -2774,3 +2774,7 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
 .official-history-content>.home-update-more{margin-top:16px}
 .official-current-patch{margin-bottom:0}
 @media(max-width:640px){.official-history-summary{padding:14px 44px 14px 14px}.official-history-content{padding:0 13px 15px}.official-history-summary strong{font-size:12px}.official-history-summary small{font-size:9px}}
+
+/* v87.3.1 7.2c 官方公告：混合調整英雄標記 */
+.official-change-card.adjust{color:#e0bf70}
+.official-change-card.adjust .official-change-direction{font-size:15px}
