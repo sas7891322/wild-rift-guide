@@ -2778,3 +2778,7 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
 /* v87.3.1 7.2c 官方公告：混合調整英雄標記 */
 .official-change-card.adjust{color:#e0bf70}
 .official-change-card.adjust .official-change-direction{font-size:15px}
+
+
+/* AdSense review trust pages */
+.policy-page{min-height:70vh;padding:48px 0 64px}.policy-card{max-width:880px}.policy-card h1{margin:8px 0 24px;font-size:clamp(2rem,5vw,3rem)}.policy-card h2{margin:32px 0 10px;font-size:1.2rem}.policy-card p{line-height:1.85;color:var(--muted,#aeb8c4);font-size:1rem}.policy-card .policy-updated{margin-top:40px;font-size:.9rem;opacity:.8}footer .shell{line-height:1.9}footer a{white-space:nowrap}@media(max-width:640px){.policy-page{padding:30px 0 48px}.policy-card h1{font-size:2rem}footer .shell{font-size:.82rem}}
