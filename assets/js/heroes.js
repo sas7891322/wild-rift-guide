@@ -44,7 +44,7 @@
     const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
     updateHeroPageHeading({
-      eyebrow:'激鬥峽谷 · PATCH 7.2B',title:heading,description,
+      eyebrow:'激鬥峽谷 · PATCH 7.2C',title:heading,description,
       badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
       badgeText:current?.count||'141 位英雄 · 200 份完整位置攻略'
     });
@@ -71,7 +71,7 @@
     const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 7.2c ${roleLabel}完整攻略，整理推薦出裝、符文搭配、召喚師技能、技能加點、對線與實戰節奏。${hero.summary||''}`);
     const path=heroCanonicalPath(hero);
     updateHeroPageHeading({
-      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH 7.2B`,title:heading,description,
+      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH 7.2C`,title:heading,description,
       badgeLabel:'英雄完整攻略',badgeText:'出裝 · 符文 · 技能 · 對局'
     });
     window.WRGSeo.set({
@@ -83,7 +83,7 @@
           {'@type':'Article','@id':`${window.WRGSeo.absolute(path)}#article`,headline:heading,name:title,description,
             url:window.WRGSeo.absolute(path),mainEntityOfPage:window.WRGSeo.absolute(path),
             image:window.WRGSeo.absolute(String(hero.avatar||'/assets/images/brand/wild-rift-guide-og.png').replace(/^\.\.\//,'/')),
-            inLanguage:'zh-Hant-TW',dateModified:'2026-07-31',
+            inLanguage:'zh-Hant-TW',dateModified:'2026-08-21',
             author:{'@type':'Organization',name:'Wild Rift Guide'},
             about:{'@type':'VideoGame',name:'英雄聯盟：激鬥峽谷',alternateName:'League of Legends: Wild Rift'}},
           {'@type':'BreadcrumbList',itemListElement:[
@@ -827,7 +827,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=88.0.0'), getJSON('../assets/data/runes.json?v=79.5.1'), getJSON('../assets/data/items.json?v=79.5.1'), getJSON('../assets/data/spells.json?v=79.5.1')
+        getJSON('../assets/data/heroes.json?v=89.0.0'), getJSON('../assets/data/runes.json?v=89.0.0'), getJSON('../assets/data/items.json?v=89.0.0'), getJSON('../assets/data/spells.json?v=89.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 

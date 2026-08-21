@@ -1,6 +1,6 @@
 {
-  "version": "7.2c-v88-targeted-meta-calibration",
-  "updated": "2026-08-13",
+  "version": "7.2c-v89-full-meta-calibration",
+  "updated": "2026-08-21",
   "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
@@ -15,97 +15,7 @@
     "英雄與技能圖片使用使用者提供的 420 張原始素材，不做裁切或風格修改。",
     "新增 Master Yi（易大師）打野詳細資料；保留既有 Yunara（尤娜拉），全站唯一英雄數更新為 140。",
     "v82.3：科加斯正式實裝後加入召喚峽谷英雄定位；巴龍路 S、打野 S（上市初期暫定評級），英雄總數更新為 141，五路定位更新為 50／51／46／23／32；完整出裝、符文與對局攻略待實戰資料成熟後補齊。",
-    "v",
-    "3",
-    "1",
-    "：",
-    "巴",
-    "龍",
-    "路",
-    " ",
-    "4",
-    "9",
-    "/",
-    "4",
-    "9",
-    " ",
-    "正",
-    "式",
-    "校",
-    "正",
-    "版",
-    "。",
-    "完",
-    "成",
-    " ",
-    "7",
-    ".",
-    "2",
-    "a",
-    " ",
-    "T",
-    "i",
-    "e",
-    "r",
-    "、",
-    "出",
-    "裝",
-    "/",
-    "符",
-    "文",
-    "/",
-    "召",
-    "喚",
-    "師",
-    "技",
-    "能",
-    "、",
-    "技",
-    "能",
-    "優",
-    "先",
-    "、",
-    "L",
-    "v",
-    ".",
-    "1",
-    "-",
-    "1",
-    "5",
-    "、",
-    "對",
-    "局",
-    "、",
-    "B",
-    "a",
-    "n",
-    " ",
-    "與",
-    "英",
-    "雄",
-    "專",
-    "屬",
-    "前",
-    "中",
-    "後",
-    "期",
-    "策",
-    "略",
-    "；",
-    "五",
-    "路",
-    "既",
-    "有",
-    "資",
-    "料",
-    "與",
-    "頭",
-    "像",
-    "保",
-    "持",
-    "不",
-    "變",
-    "。",
+    "v31：巴龍路 49/49 正式校正版。完成 7.2a Tier、出裝/符文/召喚師技能、技能優先、Lv.1-15、對局、Ban 與英雄專屬前中後期策略；五路既有資料與頭像保持不變。",
     "v33：前70英雄圖片改為最新版單一頭像＋技能平面檔名；移除該70英雄舊圖重複與舊技能子資料夾。",
     "v34：完成第71～139隻英雄及尤娜拉的最新版圖片覆蓋；每隻僅保留1張頭像與5張技能圖，技能採手機友善平面檔名。",
     "v38：修正 v37 未實際套用新模板的問題；新版結構目前只套用犽凝。",
@@ -147,7 +57,8 @@
     "v77.4 第三階段名稱與介面校正：英雄顯示名稱「符文法師」統一改為「雷茲」，保留舊名稱搜尋別名；新增條件重設、無結果引導與英雄頭像載入失敗備援。",
     "v79.4：更新至 7.2b；納入 10 位英雄平衡調整、同步 16 份位置攻略與 Tier 初版評估，保留既有母版、定位與攻略結構。",
     "v87：召喚峽谷針對性出裝／符文／召喚師技能校正；依 7.2b 當前資料更新 14 個已確認英雄／路線配置，證據不足或已正確者維持原狀。",
-    "v88：7.2c 召喚峽谷第一輪針對性校正；Tier 調整吉茵珂絲 B→A、沃維克打野 S+→S、雷茲中路 S+→S、淣菈打野 A→B；校正藍寶巴龍路配置，並同步科加斯饗宴 7.2c 數值與魔法對線凱尼克替換。"
+    "v88：7.2c 召喚峽谷第一輪針對性校正；Tier 調整吉茵珂絲 B→A、沃維克打野 S+→S、雷茲中路 S+→S、淣菈打野 A→B；校正藍寶巴龍路配置，並同步科加斯饗宴 7.2c 數值與魔法對線凱尼克替換。",
+    "v89：7.2c 全站校正；更新 11 件裝備數值、7 筆召喚峽谷 Tier、斯溫中路／科加斯打野／蒙多巴龍路配置，修復 28 筆情境替換引用，並將標準成裝統一為五件加鞋子。"
   ],
   "heroes": [
     {
@@ -7795,7 +7706,7 @@
       "enName": "Yunara",
       "role": "飛龍路",
       "roleId": "duo",
-      "tier": "B",
+      "tier": "S",
       "position": "普攻蓄力／超凡狀態型射手",
       "tags": [
         "暴擊混傷",
@@ -7852,7 +7763,7 @@
         "後期": "保持在前排後方持續普攻，利用暴擊附加魔法傷害迫使對手同時處理物防與魔防。大絕是最重要的團戰窗口，先確認敵方主要控制與突進位置，再用強化二技壓制路線、強化三技調整距離；超凡狀態結束後不要繼續深追。"
       },
       "summary": "普攻累積解放層數後開啟靈心修真，獲得攻速與擴散普攻；大絕進入超凡狀態會自動強化一技，並升級二、三技。輸出窗口強，但需要掌握資源、冷卻與型態結束時間。",
-      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱依 Riot Games 台灣《英雄聯盟》尤娜拉官方英雄頁校正，技能機制、出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱依 Riot Games 台灣《英雄聯盟》尤娜拉官方英雄頁校正，技能機制、出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。｜v89 7.2c：依多來源環境資料校正 飛龍路 Tier，並保留有實戰差異的標準配置。",
       "avatar": "../assets/images/heroes/portraits/yunara.webp",
       "abilities": [
         {
@@ -8015,8 +7926,8 @@
         }
       ],
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "duo-third-batch-formal-v67",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2c-v89-meta-calibrated",
+      "reviewedAt": "2026-08-21",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
@@ -8544,8 +8455,7 @@
         "physical-high-21",
         "physical-high-27",
         "physical-high-42",
-        "physical-high-10",
-        "physical-high-16"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -8896,8 +8806,7 @@
         "magic-high-14",
         "magic-high-08",
         "magic-high-09",
-        "magic-high-05",
-        "magic-high-18"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -9240,8 +9149,7 @@
         "physical-high-21",
         "physical-high-27",
         "physical-high-42",
-        "physical-high-10",
-        "physical-high-16"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -9592,8 +9500,7 @@
         "magic-high-14",
         "magic-high-08",
         "magic-high-09",
-        "magic-high-05",
-        "magic-high-18"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -9924,8 +9831,7 @@
         "physical-high-12",
         "physical-high-42",
         "physical-high-16",
-        "physical-high-10",
-        "physical-high-27"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -10249,7 +10155,7 @@
       "enName": "Darius",
       "role": "巴龍路",
       "roleId": "baron",
-      "tier": "A",
+      "tier": "S",
       "position": "鬥士／持續作戰",
       "tags": [
         "換血",
@@ -10276,8 +10182,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -10306,7 +10211,7 @@
         "後期": "後期怕被風箏，先用鬼步與側翼縮短距離；拿到五層後再追求連續大絕。"
       },
       "summary": "靠外圈一技能回血與被動疊層建立長換血優勢，五層後大絕連斬是團戰爆點。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v89 7.2c：依多來源環境資料校正 巴龍路 Tier，並保留有實戰差異的標準配置。",
       "avatar": "../assets/images/heroes/portraits/darius.webp",
       "abilities": [
         {
@@ -10370,8 +10275,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-49-yone-master-formal-v40",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2c-v89-meta-calibrated",
+      "reviewedAt": "2026-08-21",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -10612,16 +10517,15 @@
         "defense-high-06",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-13"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
         "defense-high-01"
       ],
       "spells": [
-        "ghost",
-        "ignite"
+        "flash",
+        "teleport"
       ],
       "skillOrder": "Q > E > W",
       "matchups": {
@@ -10642,7 +10546,7 @@
         "後期": "後期負責吸收第一波火力並黏住後排，讓隊友有安全輸出空間。"
       },
       "summary": "以飛刀消耗、被動抗控與大絕高額回復扛住長戰；對重傷與百分比傷害較敏感。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v43：巴龍路第 4 批正式版，套用犽凝固定母版。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v43：巴龍路第 4 批正式版，套用犽凝固定母版。｜v89 7.2c：巴龍路召喚師技能改為閃現＋傳送，強化分推回線與團戰進場穩定性。",
       "avatar": "../assets/images/heroes/portraits/dr-mundo.webp",
       "abilities": [
         {
@@ -10706,8 +10610,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "baron-fourth5-formal-v43",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2c-v89-baron-spells-calibrated",
+      "reviewedAt": "2026-08-21",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -10939,8 +10843,7 @@
         "physical-high-12",
         "physical-high-42",
         "physical-high-16",
-        "physical-high-10",
-        "physical-high-27"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -11275,8 +11178,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -11595,8 +11497,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -11915,8 +11816,7 @@
         "magic-high-14",
         "magic-high-08",
         "magic-high-09",
-        "magic-high-05",
-        "magic-high-18"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -12247,8 +12147,7 @@
         "magic-high-20",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05",
-        "magic-high-16"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -12574,8 +12473,7 @@
         "physical-high-25",
         "physical-high-07",
         "physical-high-08",
-        "physical-high-10",
-        "physical-high-18"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -12900,8 +12798,7 @@
         "physical-high-38",
         "physical-high-42",
         "physical-high-16",
-        "physical-high-10",
-        "physical-high-34"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -13232,8 +13129,7 @@
         "physical-high-12",
         "physical-high-42",
         "physical-high-16",
-        "physical-high-10",
-        "physical-high-27"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -13572,8 +13468,7 @@
         "physical-high-15",
         "physical-high-32",
         "physical-high-27",
-        "physical-high-10",
-        "physical-high-31"
+        "physical-high-10"
       ],
       "boots": [
         "armorbreaker-boots",
@@ -14148,7 +14043,7 @@
               {
                 "type": "item",
                 "title": "前排處理",
-                "fromId": "defense-high-09",
+                "fromId": "defense-high-14",
                 "toId": "defense-high-18",
                 "condition": "敵方至少有 2 名高生命／高抗性前排，而且團戰多數時間必須先打前排時。",
                 "reason": "前排本身不需要硬轉全輸出，改用能隨目標生命造成持續傷害的防裝處理長戰。"
@@ -14183,14 +14078,6 @@
                 "toId": "chain-army-boots",
                 "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
                 "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
-              },
-              {
-                "type": "rune",
-                "title": "控制鏈承傷",
-                "fromId": "overgrowth",
-                "toId": "perseverance",
-                "condition": "你是主要進場點，會連續吃到硬控時。",
-                "reason": "堅毅讓被控期間更耐打，適合前排承接第一波技能。"
               }
             ],
             "keepTitle": "",
@@ -14234,8 +14121,7 @@
         "magic-high-20",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05",
-        "magic-high-16"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -14545,8 +14431,7 @@
         "magic-high-14",
         "magic-high-08",
         "magic-high-09",
-        "magic-high-05",
-        "magic-high-18"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -15105,7 +14990,7 @@
               {
                 "type": "item",
                 "title": "前排處理",
-                "fromId": "defense-high-09",
+                "fromId": "defense-high-14",
                 "toId": "defense-high-18",
                 "condition": "敵方至少有 2 名高生命／高抗性前排，而且團戰多數時間必須先打前排時。",
                 "reason": "前排本身不需要硬轉全輸出，改用能隨目標生命造成持續傷害的防裝處理長戰。"
@@ -15191,8 +15076,7 @@
         "defense-high-11",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-15"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -15514,8 +15398,7 @@
         "magic-high-20",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05",
-        "magic-high-16"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -15837,8 +15720,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -16157,8 +16039,7 @@
         "defense-high-11",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-15"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -16480,8 +16361,7 @@
         "magic-high-14",
         "magic-high-08",
         "magic-high-09",
-        "magic-high-05",
-        "magic-high-18"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -16812,8 +16692,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -17144,8 +17023,7 @@
         "defense-high-06",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-13"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -17471,8 +17349,7 @@
         "physical-high-15",
         "physical-high-32",
         "physical-high-27",
-        "physical-high-10",
-        "physical-high-31"
+        "physical-high-10"
       ],
       "boots": [
         "armorbreaker-boots",
@@ -18031,7 +17908,7 @@
               {
                 "type": "item",
                 "title": "前排處理",
-                "fromId": "defense-high-09",
+                "fromId": "defense-high-14",
                 "toId": "defense-high-18",
                 "condition": "敵方至少有 2 名高生命／高抗性前排，而且團戰多數時間必須先打前排時。",
                 "reason": "前排本身不需要硬轉全輸出，改用能隨目標生命造成持續傷害的防裝處理長戰。"
@@ -18066,14 +17943,6 @@
                 "toId": "chain-army-boots",
                 "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
                 "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
-              },
-              {
-                "type": "rune",
-                "title": "控制鏈承傷",
-                "fromId": "overgrowth",
-                "toId": "perseverance",
-                "condition": "你是主要進場點，會連續吃到硬控時。",
-                "reason": "堅毅讓被控期間更耐打，適合前排承接第一波技能。"
               }
             ],
             "keepTitle": "",
@@ -18117,8 +17986,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -18449,8 +18317,7 @@
         "physical-high-21",
         "physical-high-27",
         "physical-high-42",
-        "physical-high-10",
-        "physical-high-16"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -19036,7 +18903,7 @@
               {
                 "type": "item",
                 "title": "重創需求",
-                "fromId": "magic-high-08",
+                "fromId": "magic-high-23",
                 "toId": "magic-high-13",
                 "condition": "敵方有多名高治療／高吸血英雄，或核心前排能在團戰中大量回血時。",
                 "reason": "黑魔禁書能由魔法傷害穩定施加重創，適合法師與軟輔處理大量治療。"
@@ -19052,18 +18919,9 @@
             "label": "控制多",
             "priority": "高",
             "trigger": "敵方控制鏈會阻止你進場、追擊或完成輸出時。",
-            "changes": [
-              {
-                "type": "rune",
-                "title": "控制鏈生存",
-                "fromId": "bone-plating",
-                "toId": "perseverance",
-                "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
-                "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
-              }
-            ],
-            "keepTitle": "",
-            "keepText": "",
+            "changes": [],
+            "keepTitle": "維持標準配置",
+            "keepText": "標準配置已涵蓋此情境，不需要重複替換同一件裝備或符文。",
             "warning": "擊飛與壓制等控制仍要靠站位與時機判斷，不能把所有問題都交給裝備。"
           }
         ]
@@ -19103,8 +18961,7 @@
         "magic-high-19",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05",
-        "magic-high-21"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -19431,8 +19288,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -19759,8 +19615,7 @@
         "defense-high-06",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-13"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -20082,8 +19937,7 @@
         "magic-high-10",
         "magic-high-15",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
@@ -20389,8 +20243,7 @@
         "defense-high-06",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-13"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -20708,8 +20561,7 @@
         "defense-high-06",
         "defense-high-08",
         "defense-high-14",
-        "defense-high-09",
-        "defense-high-13"
+        "defense-high-09"
       ],
       "boots": [
         "plated-steelcaps",
@@ -21031,8 +20883,7 @@
         "magic-high-20",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05",
-        "magic-high-16"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -21350,8 +21201,7 @@
         "magic-high-10",
         "magic-high-15",
         "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
+        "magic-high-08"
       ],
       "boots": [
         "mana-boots",
@@ -21661,8 +21511,7 @@
         "physical-high-24",
         "physical-high-17",
         "physical-high-18",
-        "physical-high-10",
-        "physical-high-07"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -21980,8 +21829,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -22300,8 +22148,7 @@
         "physical-high-25",
         "physical-high-07",
         "physical-high-08",
-        "physical-high-10",
-        "physical-high-18"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -22614,8 +22461,7 @@
         "magic-high-20",
         "magic-high-14",
         "magic-high-08",
-        "magic-high-05",
-        "magic-high-16"
+        "magic-high-05"
       ],
       "boots": [
         "mana-boots",
@@ -22929,8 +22775,7 @@
         "physical-high-06",
         "physical-high-38",
         "physical-high-34",
-        "physical-high-16",
-        "physical-high-42"
+        "physical-high-16"
       ],
       "boots": [
         "plated-steelcaps",
@@ -23253,8 +23098,7 @@
         "physical-high-12",
         "physical-high-42",
         "physical-high-16",
-        "physical-high-10",
-        "physical-high-27"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -23585,8 +23429,7 @@
         "physical-high-21",
         "physical-high-27",
         "physical-high-42",
-        "physical-high-10",
-        "physical-high-16"
+        "physical-high-10"
       ],
       "boots": [
         "plated-steelcaps",
@@ -23921,8 +23764,7 @@
         "physical-high-24",
         "physical-high-17",
         "physical-high-18",
-        "physical-high-10",
-        "physical-high-07"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -24244,8 +24086,7 @@
         "physical-high-24",
         "physical-high-17",
         "physical-high-18",
-        "physical-high-10",
-        "physical-high-07"
+        "physical-high-10"
       ],
       "boots": [
         "berserkers-greaves",
@@ -41409,18 +41250,10 @@
               {
                 "type": "item",
                 "title": "物理刺客進場",
-                "fromId": "magic-high-05",
+                "fromId": "magic-high-21",
                 "toId": "magic-high-02",
                 "condition": "敵方物理刺客能直接貼臉，或有必須用凝滯躲掉的爆發技能時。",
                 "reason": "中婭沙漏兼顧魔攻與物防，主動凝滯能直接避開致命爆發。"
-              },
-              {
-                "type": "rune",
-                "title": "爆發對局符文",
-                "fromId": "manaflow-band",
-                "toId": "bone-plating",
-                "condition": "對線或團戰經常被同一名刺客短時間連段時。",
-                "reason": "骨甲降低接續傷害，適合換掉較貪輸出的副系符文。"
               }
             ],
             "keepTitle": "",
@@ -41437,7 +41270,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "manaflow-band",
+                "fromId": "bone-plating",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -41457,7 +41290,7 @@
               {
                 "type": "item",
                 "title": "前排處理",
-                "fromId": "magic-high-05",
+                "fromId": "magic-high-08",
                 "toId": "magic-high-16",
                 "condition": "敵方至少有 2 名高生命／高抗性前排，而且團戰多數時間必須先打前排時。",
                 "reason": "用百分比生命灼燒或魔法穿透提高長時間處理高血量／高魔防前排的效率。"
@@ -42413,7 +42246,7 @@
               {
                 "type": "item",
                 "title": "魔法先手爆發",
-                "fromId": "magic-high-21",
+                "fromId": "magic-high-02",
                 "toId": "magic-high-05",
                 "condition": "敵方魔法爆發依賴一個先手技能命中時。",
                 "reason": "女妖面紗補魔防並提供法術護盾，可阻斷對方第一段開戰。"
@@ -42433,7 +42266,7 @@
               {
                 "type": "item",
                 "title": "先手控制防護",
-                "fromId": "magic-high-21",
+                "fromId": "magic-high-02",
                 "toId": "magic-high-05",
                 "condition": "敵方靠單一關鍵技能開戰、而你需要先避免被抓到時。",
                 "reason": "女妖面紗的法術護盾能先擋一次關鍵技能，讓法師保留施法空間。"
@@ -42738,18 +42571,9 @@
             "label": "刺客／爆發多",
             "priority": "最高",
             "trigger": "對線或團戰有能直接貼近你的刺客／爆發核心，常在完成第一輪輸出前死亡。",
-            "changes": [
-              {
-                "type": "item",
-                "title": "物理刺客進場",
-                "fromId": "magic-high-05",
-                "toId": "magic-high-02",
-                "condition": "敵方物理刺客能直接貼臉，或有必須用凝滯躲掉的爆發技能時。",
-                "reason": "中婭沙漏兼顧魔攻與物防，主動凝滯能直接避開致命爆發。"
-              }
-            ],
-            "keepTitle": "",
-            "keepText": "",
+            "changes": [],
+            "keepTitle": "維持標準配置",
+            "keepText": "標準配置已涵蓋此情境，不需要重複替換同一件裝備或符文。",
             "warning": ""
           },
           {
@@ -42782,7 +42606,7 @@
               {
                 "type": "item",
                 "title": "前排處理",
-                "fromId": "magic-high-05",
+                "fromId": "magic-high-21",
                 "toId": "magic-high-16",
                 "condition": "敵方至少有 2 名高生命／高抗性前排，而且團戰多數時間必須先打前排時。",
                 "reason": "用百分比生命灼燒或魔法穿透提高長時間處理高血量／高魔防前排的效率。"
@@ -48552,7 +48376,7 @@
       "enName": "Swain",
       "role": "中路",
       "roleId": "mid",
-      "tier": "B",
+      "tier": "S",
       "position": "戰鬥法師／靈魂成長／吸血前排",
       "tags": [
         "持續傷害",
@@ -48570,15 +48394,15 @@
       },
       "runes": [
         "conqueror",
-        "brutal",
-        "last-stand",
-        "legend-tenacity",
-        "overgrowth"
+        "axiom-arcanist",
+        "transcendence",
+        "nimbus-cloak",
+        "bone-plating"
       ],
       "items": [
-        "magic-high-23",
-        "magic-high-16",
+        "magic-high-10",
         "magic-high-15",
+        "magic-high-23",
         "magic-high-14",
         "magic-high-08"
       ],
@@ -48588,7 +48412,7 @@
       ],
       "spells": [
         "flash",
-        "ignite"
+        "ghost"
       ],
       "skillOrder": "Q > E > W",
       "matchups": {
@@ -48610,7 +48434,7 @@
         "後期": "站在己方前排與後排之間，既能承受傷害也能用拉回保護主力。面對長射程陣容不要直線追擊，等待隊友控制或從側翼進入吸血範圍。"
       },
       "summary": "收集靈魂碎片永久提高生命，靠拉回控制與大絕範圍吸血主宰多人長戰；面對遠距離消耗時較難靠近並維持大絕。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v89 7.2c：依多來源環境資料校正 中路 Tier，並保留有實戰差異的標準配置。｜v89 7.2c：中路改為黑焰火炬＋瑞萊的冰晶節杖＋峽谷製造者持續作戰核心；符文加入公理奧術大師，召喚師技能改為閃現＋鬼步。",
       "avatar": "../assets/images/heroes/portraits/swain.webp",
       "abilities": [
         {
@@ -48676,17 +48500,17 @@
       "generatedV29": true,
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "mid-first-batch-formal-v59",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2c-v89-mid-build-calibrated",
+      "reviewedAt": "2026-08-21",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
         "basic-amp-tome"
       ],
       "coreItems": [
-        "magic-high-23",
-        "magic-high-16",
-        "magic-high-15"
+        "magic-high-10",
+        "magic-high-15",
+        "magic-high-23"
       ],
       "combos": [
         {
@@ -48794,14 +48618,6 @@
                 "toId": "magic-high-05",
                 "condition": "敵方魔法爆發依賴一個先手技能命中時。",
                 "reason": "女妖面紗補魔防並提供法術護盾，可阻斷對方第一段開戰。"
-              },
-              {
-                "type": "rune",
-                "title": "爆發對局符文",
-                "fromId": "overgrowth",
-                "toId": "bone-plating",
-                "condition": "對線或團戰經常被同一名刺客短時間連段時。",
-                "reason": "骨甲降低接續傷害，適合換掉較貪輸出的副系符文。"
               }
             ],
             "keepTitle": "",
@@ -48826,7 +48642,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "overgrowth",
+                "fromId": "bone-plating",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -49129,14 +48945,6 @@
                 "toId": "magic-high-05",
                 "condition": "敵方魔法爆發依賴一個先手技能命中時。",
                 "reason": "女妖面紗補魔防並提供法術護盾，可阻斷對方第一段開戰。"
-              },
-              {
-                "type": "rune",
-                "title": "爆發對局符文",
-                "fromId": "manaflow-band",
-                "toId": "bone-plating",
-                "condition": "對線或團戰經常被同一名刺客短時間連段時。",
-                "reason": "骨甲降低接續傷害，適合換掉較貪輸出的副系符文。"
               }
             ],
             "keepTitle": "",
@@ -49161,7 +48969,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "manaflow-band",
+                "fromId": "bone-plating",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -49494,7 +49302,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "bone-plating",
+                "fromId": "transcendence",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -51112,18 +50920,10 @@
               {
                 "type": "item",
                 "title": "物理刺客進場",
-                "fromId": "magic-high-05",
+                "fromId": "magic-high-21",
                 "toId": "magic-high-02",
                 "condition": "敵方物理刺客能直接貼臉，或有必須用凝滯躲掉的爆發技能時。",
                 "reason": "中婭沙漏兼顧魔攻與物防，主動凝滯能直接避開致命爆發。"
-              },
-              {
-                "type": "rune",
-                "title": "爆發對局符文",
-                "fromId": "manaflow-band",
-                "toId": "bone-plating",
-                "condition": "對線或團戰經常被同一名刺客短時間連段時。",
-                "reason": "骨甲降低接續傷害，適合換掉較貪輸出的副系符文。"
               }
             ],
             "keepTitle": "",
@@ -51140,7 +50940,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "manaflow-band",
+                "fromId": "bone-plating",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -51160,7 +50960,7 @@
               {
                 "type": "item",
                 "title": "前排處理",
-                "fromId": "magic-high-05",
+                "fromId": "magic-high-21",
                 "toId": "magic-high-16",
                 "condition": "敵方至少有 2 名高生命／高抗性前排，而且團戰多數時間必須先打前排時。",
                 "reason": "用百分比生命灼燒或魔法穿透提高長時間處理高血量／高魔防前排的效率。"
@@ -51472,7 +51272,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "bone-plating",
+                "fromId": "cut-down",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -51782,7 +51582,7 @@
               {
                 "type": "item",
                 "title": "魔法先手爆發",
-                "fromId": "magic-high-23",
+                "fromId": "magic-high-21",
                 "toId": "magic-high-05",
                 "condition": "敵方魔法爆發依賴一個先手技能命中時。",
                 "reason": "女妖面紗補魔防並提供法術護盾，可阻斷對方第一段開戰。"
@@ -51810,7 +51610,7 @@
               {
                 "type": "item",
                 "title": "先手控制防護",
-                "fromId": "magic-high-23",
+                "fromId": "magic-high-21",
                 "toId": "magic-high-05",
                 "condition": "敵方靠單一關鍵技能開戰、而你需要先避免被抓到時。",
                 "reason": "女妖面紗的法術護盾能先擋一次關鍵技能，讓法師保留施法空間。"
@@ -51838,7 +51638,7 @@
               {
                 "type": "item",
                 "title": "前排處理",
-                "fromId": "magic-high-23",
+                "fromId": "magic-high-21",
                 "toId": "magic-high-16",
                 "condition": "敵方至少有 2 名高生命／高抗性前排，而且團戰多數時間必須先打前排時。",
                 "reason": "用百分比生命灼燒或魔法穿透提高長時間處理高血量／高魔防前排的效率。"
@@ -53494,7 +53294,7 @@
               {
                 "type": "rune",
                 "title": "爆發對局符文",
-                "fromId": "manaflow-band",
+                "fromId": "nimbus-cloak",
                 "toId": "bone-plating",
                 "condition": "對線或團戰經常被同一名刺客短時間連段時。",
                 "reason": "骨甲降低接續傷害，適合換掉較貪輸出的副系符文。"
@@ -53522,7 +53322,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "manaflow-band",
+                "fromId": "nimbus-cloak",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -55351,7 +55151,7 @@
       "enName": "Braum",
       "roleId": "support",
       "role": "輔助",
-      "tier": "A",
+      "tier": "S",
       "position": "盾牆保排／疊印反開型坦輔",
       "tags": [
         "盾牆格擋",
@@ -55432,7 +55232,7 @@
         "後期": "站在主力輸出與敵方威脅之間，優先替隊伍阻擋正面飛行道具。被動第一層由自己施加後，隊友都能協助疊滿，因此團戰應標記同一名高威脅目標。敵方繞後時可用壁壘守護快速回到主力身邊，再以大絕與一技形成反打控制鏈。"
       },
       "summary": "布郎姆的核心不是盲目衝入，而是替隊友創造安全輸出時間。先以一技或普攻掛上震盪冰封，再讓全隊疊滿；雄心重盾的朝向與第一段完全格擋，是保排成敗關鍵。",
-      "sourceNote": "7.2a 輔助路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》布郎姆英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v70：套用瑟雷西 v69 輔助固定母版。",
+      "sourceNote": "7.2a 輔助路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》布郎姆英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v70：套用瑟雷西 v69 輔助固定母版。｜v89 7.2c：依多來源環境資料校正 輔助 Tier，並保留有實戰差異的標準配置。",
       "avatar": "../assets/images/heroes/portraits/braum.webp",
       "abilities": [
         {
@@ -55489,8 +55289,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-first-batch-v70",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2c-v89-meta-calibrated",
+      "reviewedAt": "2026-08-21",
       "starterItems": [
         "support-relic-shield"
       ],
@@ -62010,7 +61810,7 @@
       "enName": "Sona",
       "roleId": "support",
       "role": "輔助",
-      "tier": "A",
+      "tier": "S",
       "position": "靈氣增益／持續治療型成長輔助",
       "tags": [
         "三層暈眩",
@@ -62091,7 +61891,7 @@
         "後期": "團戰重點是持續施法與維持生存。二技優先照顧被集火的主力，一技在安全距離補充團隊傷害，三技協助追擊或撤退。被動暈眩可留給突進者或關鍵施法英雄；大絕不必只追求命中五人，先控制最危險的進場者，讓隊伍能穩定拉扯更重要。7.2b 大絕冷卻延長，優先控制真正威脅後排的進場者，不要為低價值目標隨意交出。"
       },
       "summary": "索娜每施放三次基礎技能，下一次對英雄的普攻會造成額外魔法傷害並短暫暈眩。三種靈氣分別提供額外傷害、治療護盾與跑速，後期靠高頻施法和狂舞終樂章持續保護整隊。 7.2b 二技治療下降、大絕後期冷卻延長，技能循環與開大時機更重要。",
-      "sourceNote": "7.2b 平衡更新（v79.4）：二技治療 45/60/75/90→35/50/65/80，大絕冷卻 80/70/60秒→80/75/70秒；續航與團戰控制頻率下修。｜7.2a 輔助路第四批正式攻略：技能名稱與重製後力量和弦、靈氣及狂舞終樂章機制依 Riot Games 台灣《激鬥峽谷》索娜英雄頁、4.4c 重製公告、6.1b 與 7.1h 平衡公告校正，版本基準採官方 7.2a 更新公告；出裝、符文、技能順序與對局方向依本站既有輔助資料整合。Tier 維持本站既有輔助路評級。｜v73：套用瑟雷西 v69 輔助固定母版。",
+      "sourceNote": "7.2b 平衡更新（v79.4）：二技治療 45/60/75/90→35/50/65/80，大絕冷卻 80/70/60秒→80/75/70秒；續航與團戰控制頻率下修。｜7.2a 輔助路第四批正式攻略：技能名稱與重製後力量和弦、靈氣及狂舞終樂章機制依 Riot Games 台灣《激鬥峽谷》索娜英雄頁、4.4c 重製公告、6.1b 與 7.1h 平衡公告校正，版本基準採官方 7.2a 更新公告；出裝、符文、技能順序與對局方向依本站既有輔助資料整合。Tier 維持本站既有輔助路評級。｜v73：套用瑟雷西 v69 輔助固定母版。｜v89 7.2c：依多來源環境資料校正 輔助 Tier，並保留有實戰差異的標準配置。",
       "avatar": "../assets/images/heroes/portraits/sona.webp",
       "abilities": [
         {
@@ -62237,8 +62037,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-fourth-batch-v73-v79.4-7.2b",
-      "reviewedAt": "2026-07-31",
+      "reviewStatus": "7.2c-v89-meta-calibrated",
+      "reviewedAt": "2026-08-21",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
@@ -62698,7 +62498,7 @@
       "enName": "Swain",
       "role": "輔助",
       "roleId": "support",
-      "tier": "S",
+      "tier": "B",
       "position": "魂屑成長／範圍吸血型控制法坦輔助",
       "tags": [
         "靈魂碎片",
@@ -62756,7 +62556,7 @@
         "後期": "站在前排與後排之間，既能承受部分傷害，也能用拉回控制保護主力。面對長射程陣容不要直線追擊，先靠二技封路、隊友控制或側翼接近。大絕能維持的前提是持續汲取敵方英雄，目標離開範圍時要果斷退出，避免孤身追深。"
       },
       "summary": "斯溫靠影之爪拉回、真知魔眼封走位與靈魂碎片永久成長，在多人近戰中開啟魔君降生持續吸血。大絕期間可重複施放魔燄，團戰重點是維持多人吸取範圍，而不是追逐單一遠程目標。",
-      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與斯溫重製後的大絕機制依 Riot Games 台灣《激鬥峽谷》斯溫英雄頁及 6.2h 官方重製公告校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。",
+      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與斯溫重製後的大絕機制依 Riot Games 台灣《激鬥峽谷》斯溫英雄頁及 6.2h 官方重製公告校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。｜v89 7.2c：依多來源環境資料校正 輔助 Tier，並保留有實戰差異的標準配置。",
       "avatar": "../assets/images/heroes/portraits/swain.webp",
       "abilities": [
         {
@@ -62926,8 +62726,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-third-batch-v72",
-      "reviewedAt": "2026-07-29",
+      "reviewStatus": "7.2c-v89-meta-calibrated",
+      "reviewedAt": "2026-08-21",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
@@ -67795,7 +67595,7 @@
         "後期": "不要只把自己當開戰坦克。科加斯沒有位移，最強的是卡位置、反開與壓縮走位。Q擊飛＋W沉默後站住前排，用石像鬼磐核吃第一波爆發，再尋找R真傷斬殺。預設鎖鏈軍靴應對控制與魔傷；敵方主要威脅是普攻物理輸出時可改測裝甲戰靴。"
       },
       "summary": "首發測試方向以「雄心之鋼＋日炎聖盾＋峽谷製造者」把永久生命成長轉成坦度、魔攻與饗宴斬殺；E主升負責對線與持續傷害，Q/W負責控制。",
-      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；出裝、符文與技能順序依7.2裝備機制、英雄技能成長邏輯與首日玩家實戰方向推導，待實戰回饋持續修正。｜v88 7.2c：同步饗宴首級冷卻 80→70 秒與額外生命係數 8%→10% 的正式平衡調整。｜v88 7.2c：巴龍路新增高魔傷對線情境，第二件日炎聖盾可替換為凱尼克欺瞞者；日炎仍保留於物理對線／清線需求。",
+      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；出裝、符文與技能順序依7.2裝備機制、英雄技能成長邏輯與首日玩家實戰方向推導，待實戰回饋持續修正。｜v88 7.2c：同步饗宴首級冷卻 80→70 秒與額外生命係數 8%→10% 的正式平衡調整。｜v88 7.2c：巴龍路新增高魔傷對線情境，第二件日炎聖盾可替換為凱尼克欺瞞者；日炎仍保留於物理對線／清線需求。｜v89 7.2c：恐懼尖刺基礎傷害與目標最大生命係數同步正式數值。",
       "avatar": "../assets/images/heroes/portraits/chogath.png",
       "abilities": [
         {
@@ -67824,7 +67624,7 @@
           "label": "3 技",
           "title": "恐懼尖刺",
           "icon": "../assets/images/heroes/skills/chogath_04.webp",
-          "summary": "冷卻7秒。強化接下來3次普攻，造成15＋30%魔攻的魔法傷害，另加（2.15%＋0.5%×饗宴層數）目標最大生命的魔法傷害，並施加30%衰減緩速1.5秒。體型越大尖刺越寬；對士兵與野怪的基礎傷害上限為100＋30%魔攻。"
+          "summary": "冷卻7秒。強化接下來3次普攻，造成20＋30%魔攻的魔法傷害，另加（2.3%＋0.6%×饗宴層數）目標最大生命的魔法傷害，並施加30%衰減緩速1.5秒。體型越大尖刺越寬；對士兵與野怪的基礎傷害上限為100＋30%魔攻。"
         },
         {
           "key": "R",
@@ -67860,7 +67660,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "first-day-trial",
-      "reviewedAt": "2026-08-13",
+      "reviewedAt": "2026-08-21",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -68082,7 +67882,7 @@
       "enName": "Cho’Gath",
       "role": "打野",
       "roleId": "jungle",
-      "tier": "S",
+      "tier": "A",
       "position": "坦克打野／物件控制／成長型前排",
       "tags": [
         "續航清野",
@@ -68107,7 +67907,7 @@
       ],
       "items": [
         "defense-high-18",
-        "magic-high-23",
+        "defense-high-06",
         "defense-high-01",
         "defense-high-16",
         "defense-high-14"
@@ -68126,11 +67926,11 @@
       },
       "playstyle": {
         "前期": "1等E開始刷野，三次強化普攻的最大生命傷害配合被動擊殺回血回魔，理論上能維持很高續航。前期Gank以Q命中率為第一優先，不命中就不要硬追。首件熾灼之冠先提高刷野與近身持續傷害，讓科加斯更快進入物件節奏。",
-        "中期": "飛龍／預示者爭奪是這套打野的核心。R對野怪有1200真實傷害，請在實戰記錄「R＋當前重擊」的總斬殺數字，接近斬殺線時同步施放，盡量不給對手反應空間。冰霜霸主配合Q擊飛能延長Gank留人時間。",
+        "中期": "飛龍／預示者爭奪是這套打野的核心。R對野怪有1200真實傷害，請在實戰記錄「R＋當前重擊」的總斬殺數字，接近斬殺線時同步施放，盡量不給對手反應空間。Q 擊飛接 W 沉默能延長 Gank 留人時間。",
         "後期": "後期轉為物件門神與反開坦克。先站在龍坑／巴龍坑入口，用Q逼走位、W沉默衝進來的敵人，不要為了追後排離開物件。石像鬼磐核的護盾吃額外生命加成，科加斯疊層越高收益越大。"
       },
       "summary": "打野首發測試版優先清野效率與大型物件控制：E主升快速處理野區，Q/W提供Gank控制，R對野怪的1200真傷再疊重擊形成極高瞬間斬殺線。",
-      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；打野出裝與節奏以E清野、R＋重擊物件斬殺為核心假設，待實戰回饋持續修正。｜v88 7.2c：同步饗宴首級冷卻 80→70 秒與額外生命係數 8%→10% 的正式平衡調整。",
+      "sourceNote": "科加斯首發實戰測試版 v1｜2026-08-07。技能資料依遊戲內正式數值整理；打野出裝與節奏以E清野、R＋重擊物件斬殺為核心假設，待實戰回饋持續修正。｜v88 7.2c：同步饗宴首級冷卻 80→70 秒與額外生命係數 8%→10% 的正式平衡調整。｜v89 7.2c：依多來源環境資料校正 打野 Tier，並保留有實戰差異的標準配置。｜v89 7.2c：打野由上市暫定 S 校正為 A；標準核心改為熾灼之冠＋日炎聖盾＋石像鬼磐核，不再把峽谷製造者列為固定核心。｜v89 7.2c：恐懼尖刺基礎傷害與目標最大生命係數同步正式數值。",
       "avatar": "../assets/images/heroes/portraits/chogath.png",
       "abilities": [
         {
@@ -68159,7 +67959,7 @@
           "label": "3 技",
           "title": "恐懼尖刺",
           "icon": "../assets/images/heroes/skills/chogath_04.webp",
-          "summary": "冷卻7秒。強化接下來3次普攻，造成15＋30%魔攻的魔法傷害，另加（2.15%＋0.5%×饗宴層數）目標最大生命的魔法傷害，並施加30%衰減緩速1.5秒。體型越大尖刺越寬；對士兵與野怪的基礎傷害上限為100＋30%魔攻。"
+          "summary": "冷卻7秒。強化接下來3次普攻，造成20＋30%魔攻的魔法傷害，另加（2.3%＋0.6%×饗宴層數）目標最大生命的魔法傷害，並施加30%衰減緩速1.5秒。體型越大尖刺越寬；對士兵與野怪的基礎傷害上限為100＋30%魔攻。"
         },
         {
           "key": "R",
@@ -68194,8 +67994,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "first-day-trial",
-      "reviewedAt": "2026-08-13",
+      "reviewStatus": "7.2c-v89-jungle-tank-calibrated",
+      "reviewedAt": "2026-08-21",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -68206,7 +68006,7 @@
       ],
       "coreItems": [
         "defense-high-18",
-        "magic-high-23",
+        "defense-high-06",
         "defense-high-01"
       ],
       "combos": [
@@ -68953,9 +68753,9 @@
       "roles": [
         {
           "roleId": "baron",
-          "tier": "A",
-          "origin": "native",
-          "detailHeroId": "darius-baron",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "darius-baron",
           "avatar": "../assets/images/heroes/portraits/darius.webp"
         },
         {
@@ -69169,16 +68969,16 @@
         },
         {
           "roleId": "mid",
-          "tier": "B",
-          "origin": "native",
-          "detailHeroId": "swain-mid",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "swain-mid",
           "avatar": "../assets/images/heroes/portraits/swain.webp"
         },
         {
           "roleId": "support",
-          "tier": "S",
-          "origin": "native",
-          "detailHeroId": "swain-support",
+        "tier": "B",
+        "origin": "native",
+        "detailHeroId": "swain-support",
           "avatar": "../assets/images/heroes/portraits/swain.webp"
         }
       ]
@@ -70617,9 +70417,9 @@
       "roles": [
         {
           "roleId": "duo",
-          "tier": "B",
-          "origin": "native",
-          "detailHeroId": "yunara",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "yunara",
           "avatar": "../assets/images/heroes/portraits/yunara.webp"
         }
       ]
@@ -70699,9 +70499,9 @@
       "roles": [
         {
           "roleId": "support",
-          "tier": "A",
-          "origin": "native",
-          "detailHeroId": "braum-support",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "braum-support",
           "avatar": "../assets/images/heroes/portraits/braum.webp"
         }
       ]
@@ -70834,9 +70634,9 @@
       "roles": [
         {
           "roleId": "support",
-          "tier": "A",
-          "origin": "native",
-          "detailHeroId": "sona-support",
+        "tier": "S",
+        "origin": "native",
+        "detailHeroId": "sona-support",
           "avatar": "../assets/images/heroes/portraits/sona.webp"
         }
       ]
@@ -70921,9 +70721,9 @@
         },
         {
           "roleId": "jungle",
-          "tier": "S",
-          "origin": "native",
-          "detailHeroId": "chogath-jungle",
+        "tier": "A",
+        "origin": "native",
+        "detailHeroId": "chogath-jungle",
           "avatar": "../assets/images/heroes/portraits/chogath.png"
         }
       ]
