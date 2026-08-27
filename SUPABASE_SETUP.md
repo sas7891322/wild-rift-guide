@@ -68,3 +68,13 @@ supabase/wild-rift-guide-v79.5-traffic.sql
 ```
 
 詳細步驟見 `SUPABASE_TRAFFIC_SETUP.md`。
+
+## v91：正式找隊友
+
+1. 開啟 Supabase 專案的 SQL Editor。
+2. 新增查詢並貼上 `supabase/wild-rift-guide-v91-player-finder.sql` 全部內容。
+3. 按下 Run；完成後再執行 `supabase/wild-rift-guide-v91-player-finder-check.sql`。
+4. 驗證結果中的 `player_posts`、`player_reports` 都必須顯示 `rowsecurity = true`。
+5. 部署網站後，使用會員帳號測試發布、編輯、延長、刪除和檢舉。
+
+找隊友的公開貼文允許未登入訪客瀏覽；發布、修改、刪除和檢舉都必須登入。每個帳號最多一篇刊登，更新時會重新延長 14 天。
