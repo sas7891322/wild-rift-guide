@@ -1,0 +1,97 @@
+{
+  "patch": "7.2d",
+  "siteVersion": "v90",
+  "reviewedAt": "2026-08-27",
+  "audit": {
+    "uniqueHeroes": 141,
+    "profiles": 202,
+    "updatedProfiles": 31,
+    "retainedProfiles": 171,
+    "requiredShape": "5 items + 2 boot/active slots + 5 runes + 2 spells + 5 matchup situations"
+  },
+  "officialDelta": {
+    "heroes": [
+      "syndra",
+      "yuumi",
+      "vladimir",
+      "veigar",
+      "pantheon",
+      "mordekaiser",
+      "twisted-fate",
+      "fiora",
+      "gwen",
+      "yone",
+      "renekton",
+      "caitlyn",
+      "thresh"
+    ],
+    "items": [
+      {
+        "id": "physical-high-29",
+        "name": "夜色緣界",
+        "change": "物理穿透 8 → 12"
+      },
+      {
+        "id": "magic-high-09",
+        "name": "雷霆風暴",
+        "change": "價格 2900 → 2800"
+      }
+    ],
+    "recommendedLoadouts": [
+      "akali",
+      "vladimir",
+      "lee-sin"
+    ]
+  },
+  "updatedProfiles": [
+    "akali-baron",
+    "akali-mid",
+    "brand-support",
+    "caitlyn",
+    "chogath-baron",
+    "chogath-jungle",
+    "fiora-baron",
+    "gwen-baron",
+    "gwen-jungle",
+    "jayce-baron",
+    "kayn-jungle",
+    "lux-support",
+    "mordekaiser-baron",
+    "morgana-support",
+    "pantheon-baron",
+    "pantheon-jungle",
+    "pyke-support",
+    "renekton-baron",
+    "talon-jungle",
+    "thresh-support",
+    "twisted-fate-mid",
+    "veigar-mid",
+    "veigar-support",
+    "velkoz-support",
+    "vladimir-baron",
+    "yone-baron",
+    "yone-jungle",
+    "yone-mid",
+    "yuumi-support",
+    "zed-jungle",
+    "zyra-support"
+  ],
+  "tierChanges": [
+    {
+      "profileId": "gwen-jungle",
+      "from": "S",
+      "to": "A"
+    },
+    {
+      "profileId": "thresh-support",
+      "from": "S+",
+      "to": "S"
+    }
+  ],
+  "sources": [
+    "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-2d/",
+    "https://www.wildriftfire.com/tier-list",
+    "https://www.wildriftfire.com/item-list",
+    "https://www.wildriftfire.com/rune-list"
+  ]
+}
