@@ -25,26 +25,26 @@
     if(badgeTextNode) badgeTextNode.textContent=badgeText;
   }
   function heroCanonicalPath(hero){
-    return `/pages/heroes.html?hero=${encodeURIComponent(hero.id)}`;
+    return `/share/heroes/${encodeURIComponent(hero.id)}.html`;
   }
   function setHeroListSeo(){
     if(!window.WRGSeo) return;
     const roleLabel=state.role==='all'?'全英雄':(roleNames[state.role]||'英雄');
     const limited=Boolean(state.query)||state.filter!=='all';
     const roleSeo={
-      baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2c 巴龍路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與實戰節奏。',count:'50 位巴龍路英雄 · 49 份完整攻略'},
-      jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List',description:'激鬥峽谷 7.2c 打野英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、刷野與帶節奏方式。',count:'51 位打野英雄 · 50 份完整攻略'},
-      mid:{title:'激鬥峽谷中路英雄推薦與 Tier List｜Wild Rift Guide',heading:'中路英雄推薦與 Tier List',description:'激鬥峽谷 7.2c 中路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與支援節奏。',count:'46 位中路攻略'},
-      duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2c 飛龍路射手英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與合適輔助。',count:'23 位飛龍路攻略'},
-      support:{title:'激鬥峽谷輔助英雄推薦與 Tier List｜Wild Rift Guide',heading:'輔助英雄推薦與 Tier List',description:'激鬥峽谷 7.2c 輔助英雄推薦、Tier 排名與完整攻略，整理輔助裝、符文、技能加點、對線與開戰保排方式。',count:'32 位輔助攻略'}
+      baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2d 巴龍路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與實戰節奏。',count:'50 位巴龍路英雄 · 49 份完整攻略'},
+      jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List',description:'激鬥峽谷 7.2d 打野英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、刷野與帶節奏方式。',count:'51 位打野英雄 · 50 份完整攻略'},
+      mid:{title:'激鬥峽谷中路英雄推薦與 Tier List｜Wild Rift Guide',heading:'中路英雄推薦與 Tier List',description:'激鬥峽谷 7.2d 中路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與支援節奏。',count:'46 位中路攻略'},
+      duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2d 飛龍路射手英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與合適輔助。',count:'23 位飛龍路攻略'},
+      support:{title:'激鬥峽谷輔助英雄推薦與 Tier List｜Wild Rift Guide',heading:'輔助英雄推薦與 Tier List',description:'激鬥峽谷 7.2d 輔助英雄推薦、Tier 排名與完整攻略，整理輔助裝、符文、技能加點、對線與開戰保排方式。',count:'32 位輔助攻略'}
     };
     const current=roleSeo[state.role];
     const title=current?.title||'激鬥峽谷英雄攻略與 Tier List｜Wild Rift Guide';
-    const description=current?.description||'激鬥峽谷 7.2c 英雄攻略資料庫，收錄 141 位英雄與 200 份完整位置攻略，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
+    const description=current?.description||'激鬥峽谷 7.2d 英雄攻略資料庫，收錄 141 位英雄與 202 份完整位置攻略，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
     const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
     updateHeroPageHeading({
-      eyebrow:'激鬥峽谷 · PATCH 7.2C',title:heading,description,
+      eyebrow:'激鬥峽谷 · PATCH 7.2D',title:heading,description,
       badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
       badgeText:current?.count||'141 位英雄 · 200 份完整位置攻略'
     });
@@ -68,10 +68,10 @@
     const roleLabel=roleNames[hero.roleId]||hero.role||'英雄';
     const heading=`${hero.name}${roleLabel}攻略`;
     const title=`${hero.name}攻略｜${roleLabel}出裝、符文、技能加點｜激鬥峽谷`;
-    const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 7.2c ${roleLabel}完整攻略，整理推薦出裝、符文搭配、召喚師技能、技能加點、對線與實戰節奏。${hero.summary||''}`);
+    const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 7.2d ${roleLabel}完整攻略，整理推薦出裝、符文搭配、召喚師技能、技能加點、對線與實戰節奏。${hero.summary||''}`);
     const path=heroCanonicalPath(hero);
     updateHeroPageHeading({
-      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH 7.2C`,title:heading,description,
+      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH 7.2D`,title:heading,description,
       badgeLabel:'英雄完整攻略',badgeText:'出裝 · 符文 · 技能 · 對局'
     });
     window.WRGSeo.set({
@@ -83,7 +83,7 @@
           {'@type':'Article','@id':`${window.WRGSeo.absolute(path)}#article`,headline:heading,name:title,description,
             url:window.WRGSeo.absolute(path),mainEntityOfPage:window.WRGSeo.absolute(path),
             image:window.WRGSeo.absolute(String(hero.avatar||'/assets/images/brand/wild-rift-guide-og.png').replace(/^\.\.\//,'/')),
-            inLanguage:'zh-Hant-TW',dateModified:'2026-08-21',
+            inLanguage:'zh-Hant-TW',dateModified:hero.reviewedAt||'2026-08-27',
             author:{'@type':'Organization',name:'Wild Rift Guide'},
             about:{'@type':'VideoGame',name:'英雄聯盟：激鬥峽谷',alternateName:'League of Legends: Wild Rift'}},
           {'@type':'BreadcrumbList',itemListElement:[
@@ -98,7 +98,7 @@
   async function shareHeroGuide(hero,button){
     const roleLabel=roleNames[hero.roleId]||hero.role||'英雄';
     const url=window.WRGSeo?.heroShareUrl(hero.id)||location.href;
-    const data={title:`${hero.name}攻略｜${roleLabel}出裝與符文｜激鬥峽谷`,text:`${hero.name}激鬥峽谷 7.2c ${roleLabel}出裝、符文、技能加點與對局攻略`,url};
+    const data={title:`${hero.name}攻略｜${roleLabel}出裝與符文｜激鬥峽谷`,text:`${hero.name}激鬥峽谷 7.2d ${roleLabel}出裝、符文、技能加點與對局攻略`,url};
     try{
       if(navigator.share){ await navigator.share(data); return; }
       if(navigator.clipboard?.writeText){
@@ -792,7 +792,7 @@
           <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
         </section>
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
-        <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2c · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
+        <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>7.2d · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         ${buildSection}
         ${matchupAdjustmentSection}

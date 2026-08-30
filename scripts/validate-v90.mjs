@@ -118,7 +118,11 @@ if (!heroesScript.includes('heroes.json?v=90.0.0')) errors.push('heroes data cac
 
 const shareFiles = fs.readdirSync('share/heroes').filter((file) => file.endsWith('.html'));
 for (const file of shareFiles) {
-  if (fs.readFileSync(`share/heroes/${file}`, 'utf8').includes('7.2c')) errors.push(`${file}: stale 7.2c share metadata`);
+  const html = fs.readFileSync(`share/heroes/${file}`, 'utf8');
+  const head = html.split('</head>')[0] || html;
+  if (!/7\.2d/i.test(head)) errors.push(`${file}: current 7.2d metadata missing`);
+  if (!/rel=\"canonical\" href=\"https:\/\/wild-rift-guide\.vercel\.app\/share\/heroes\//.test(head)) errors.push(`${file}: missing self canonical`);
+  if (!/name=\"robots\" content=\"index,follow/.test(head)) errors.push(`${file}: static guide is not indexable`);
 }
 
 if (errors.length) {
