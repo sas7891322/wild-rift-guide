@@ -2793,3 +2793,8 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
 
 /* AdSense review trust pages */
 .policy-page{min-height:70vh;padding:48px 0 64px}.policy-card{max-width:880px}.policy-card h1{margin:8px 0 24px;font-size:clamp(2rem,5vw,3rem)}.policy-card h2{margin:32px 0 10px;font-size:1.2rem}.policy-card p{line-height:1.85;color:var(--muted,#aeb8c4);font-size:1rem}.policy-card .policy-updated{margin-top:40px;font-size:.9rem;opacity:.8}footer .shell{line-height:1.9}footer a{white-space:nowrap}@media(max-width:640px){.policy-page{padding:30px 0 48px}.policy-card h1{font-size:2rem}footer .shell{font-size:.82rem}}
+
+/* v92 tier direction colors */
+.tier-change-card.tier-up .tier-change-arrow{background:#42ad70;box-shadow:0 4px 12px rgba(66,173,112,.3)}
+.tier-change-card.tier-up .tier-change-ranks strong{color:#72d89a}
+.tier-change-card.tier-up .tier-change-ranks del{text-decoration-color:#72d89a}

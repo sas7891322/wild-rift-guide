@@ -25,7 +25,7 @@
     if(badgeTextNode) badgeTextNode.textContent=badgeText;
   }
   function heroCanonicalPath(hero){
-    return `/share/heroes/${encodeURIComponent(hero.id)}.html`;
+    return `/pages/heroes.html?hero=${encodeURIComponent(hero.id)}`;
   }
   function setHeroListSeo(){
     if(!window.WRGSeo) return;
@@ -40,13 +40,13 @@
     };
     const current=roleSeo[state.role];
     const title=current?.title||'激鬥峽谷英雄攻略與 Tier List｜Wild Rift Guide';
-    const description=current?.description||'激鬥峽谷 7.2d 英雄攻略資料庫，收錄 141 位英雄與 202 份完整位置攻略，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
+    const description=current?.description||'激鬥峽谷 7.2d 英雄攻略資料庫，收錄 141 位英雄與 202 份英雄位置配置，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
     const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
     updateHeroPageHeading({
       eyebrow:'激鬥峽谷 · PATCH 7.2D',title:heading,description,
       badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
-      badgeText:current?.count||'141 位英雄 · 200 份完整位置攻略'
+      badgeText:current?.count||'141 位英雄 · 202 份英雄位置配置'
     });
     window.WRGSeo.set({
       title,description,path,
@@ -83,7 +83,7 @@
           {'@type':'Article','@id':`${window.WRGSeo.absolute(path)}#article`,headline:heading,name:title,description,
             url:window.WRGSeo.absolute(path),mainEntityOfPage:window.WRGSeo.absolute(path),
             image:window.WRGSeo.absolute(String(hero.avatar||'/assets/images/brand/wild-rift-guide-og.png').replace(/^\.\.\//,'/')),
-            inLanguage:'zh-Hant-TW',dateModified:hero.reviewedAt||'2026-08-27',
+            inLanguage:'zh-Hant-TW',dateModified:'2026-08-31',
             author:{'@type':'Organization',name:'Wild Rift Guide'},
             about:{'@type':'VideoGame',name:'英雄聯盟：激鬥峽谷',alternateName:'League of Legends: Wild Rift'}},
           {'@type':'BreadcrumbList',itemListElement:[
@@ -827,7 +827,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=90.0.0'), getJSON('../assets/data/runes.json?v=90.0.0'), getJSON('../assets/data/items.json?v=90.0.0'), getJSON('../assets/data/spells.json?v=90.0.0')
+        getJSON('../assets/data/heroes.json?v=92.0.0'), getJSON('../assets/data/runes.json?v=92.0.0'), getJSON('../assets/data/items.json?v=92.0.0'), getJSON('../assets/data/spells.json?v=92.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
 

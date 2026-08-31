@@ -1,6 +1,6 @@
 {
-  "version": "7.2d-v90-full-profile-calibration",
-  "updated": "2026-08-27",
+  "version": "7.2d-v92-settled-meta-calibration",
+  "updated": "2026-08-31",
   "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
@@ -11,6 +11,7 @@
     "support"
   ],
   "notes": [
+    "v92：7.2d 版本沉澱校正；上線五日後複查 141 位英雄／202 份位置配置，調整 9 組 Tier；枷蘿中路預設副系改為骨甲，斷切保留為坦克多情境。",
     "v90：7.2d 全英雄配置校正；複查 141 位英雄／202 份位置配置，更新 31 份出裝、符文、召喚師技能或鞋子結構；同步 13 位英雄與 2 件道具官方異動，Tier 僅調整關打野 S→A、瑟雷西輔助 S+→S。",
     "前 70 位英雄詳細資料更新：技能名稱、技能說明、英雄頭像與 P/Q/W/E/R 圖示完成。",
     "英雄與技能圖片使用使用者提供的 420 張原始素材，不做裁切或風格修改。",
@@ -8024,7 +8025,7 @@
       "enName": "Yunara",
       "role": "飛龍路",
       "roleId": "duo",
-      "tier": "S",
+      "tier": "S+",
       "position": "普攻蓄力／超凡狀態型射手",
       "tags": [
         "暴擊混傷",
@@ -8081,7 +8082,7 @@
         "後期": "保持在前排後方持續普攻，利用暴擊附加魔法傷害迫使對手同時處理物防與魔防。大絕是最重要的團戰窗口，先確認敵方主要控制與突進位置，再用強化二技壓制路線、強化三技調整距離；超凡狀態結束後不要繼續深追。"
       },
       "summary": "普攻累積解放層數後開啟靈心修真，獲得攻速與擴散普攻；大絕進入超凡狀態會自動強化一技，並升級二、三技。輸出窗口強，但需要掌握資源、冷卻與型態結束時間。",
-      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱依 Riot Games 台灣《英雄聯盟》尤娜拉官方英雄頁校正，技能機制、出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。｜v89 7.2c：依多來源環境資料校正 飛龍路 Tier，並保留有實戰差異的標準配置。",
+      "sourceNote": "7.2a 飛龍路第三批正式攻略：技能名稱依 Riot Games 台灣《英雄聯盟》尤娜拉官方英雄頁校正，技能機制、出裝、符文、召喚師技能與技能順序交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有飛龍路評級。｜v67：套用吉茵珂絲 v64 固定母版。｜v76 第二階段：新增 3 位合適輔助與搭配理由，並完成攻略內容欄位驗收。｜v89 7.2c：依多來源環境資料校正 飛龍路 Tier，並保留有實戰差異的標準配置。｜v92：7.2d 上線五日後進行版本沉澱校正，飛龍路數據與分路榜單均位於第一梯隊。 Tier S→S+。",
       "avatar": "../assets/images/heroes/portraits/yunara.webp",
       "abilities": [
         {
@@ -8245,7 +8246,7 @@
       ],
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "7.2c-v89-meta-calibrated",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
@@ -8397,6 +8398,17 @@
         ],
         "impactTypes": [],
         "outcome": "retained-after-review"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "飛龍路數據與分路榜單均位於第一梯隊。"
       }
     },
     {
@@ -13670,7 +13682,7 @@
       "enName": "Jax",
       "role": "巴龍路",
       "roleId": "baron",
-      "tier": "S",
+      "tier": "S+",
       "position": "單挑／邊線核心",
       "tags": [
         "單挑",
@@ -13726,7 +13738,7 @@
         "後期": "後期分推是主要勝法；團戰則等第一波控制後跳後排，開大提升雙防。"
       },
       "summary": "反擊風暴對普攻角特別強，二技能強化普攻與大絕雙防讓他越後期越難處理。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。 技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；英雄與技能圖片採使用者提供原始素材。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v42：巴龍路第 3 批正式版，套用犽凝固定母版。｜v92：7.2d 上線五日後進行版本沉澱校正，巴龍路數據與分路榜單均位於第一梯隊。 Tier S→S+。",
       "avatar": "../assets/images/heroes/portraits/jax.webp",
       "abilities": [
         {
@@ -13791,7 +13803,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-third5-formal-v42",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -14015,6 +14027,17 @@
         ],
         "impactTypes": [],
         "outcome": "retained-after-review"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "巴龍路數據與分路榜單均位於第一梯隊。"
       }
     },
     {
@@ -23781,7 +23804,7 @@
       "enName": "Volibear",
       "role": "巴龍路",
       "roleId": "baron",
-      "tier": "S",
+      "tier": "S+",
       "position": "鬥士／持續作戰",
       "tags": [
         "換血",
@@ -23837,7 +23860,7 @@
         "後期": "後期開大吸收第一波並黏核心，E 護盾落點要提前預判自己的進場位置。"
       },
       "summary": "護盾、標記二技能與大絕禁塔讓他換血、越塔與正面長戰都很強。",
-      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v49：巴龍路第 10 批正式版，套用犽凝固定母版。",
+      "sourceNote": "7.2a 巴龍路正式版：以 Riot 7.2a 平衡公告為版本基準，並交叉參考 WildRiftFire 7.2a Solo 指南與 WR-META 2026-07-18 巴龍排名；Tier 為本站綜合評級。｜技能名稱依 Riot Games 台灣《激鬥峽谷》英雄頁校正；巴龍路評級、符文、出裝、對局與實戰節奏以本站 7.2a 正式資料為基準。｜v40：巴龍路正式版，完整套用犽凝母版；補齊起手裝、核心三件、三組技能連招與雙欄對局。｜v49：巴龍路第 10 批正式版，套用犽凝固定母版。｜v92：7.2d 上線五日後進行版本沉澱校正，巴龍路數據與分路榜單均位於第一梯隊。 Tier S→S+。",
       "avatar": "../assets/images/heroes/portraits/volibear.webp",
       "abilities": [
         {
@@ -23902,7 +23925,7 @@
       "skillIconStatus": "complete",
       "generatedV29": true,
       "reviewStatus": "baron-tenth4-formal-v49",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -24110,6 +24133,17 @@
         ],
         "impactTypes": [],
         "outcome": "retained-after-review"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "巴龍路數據與分路榜單均位於第一梯隊。"
       }
     },
     {
@@ -38946,7 +38980,7 @@
       "enName": "Vi",
       "role": "打野",
       "roleId": "jungle",
-      "tier": "S",
+      "tier": "S+",
       "position": "鬥士／鎖定開戰／單點控制",
       "tags": [
         "突進",
@@ -39003,7 +39037,7 @@
         "後期": "後期不要在隊友跟不上時單獨大進五人。可先用一技逼位移，再用大絕鎖定核心；若敵方刺客威脅後排，也能把大絕留作反開與保排。"
       },
       "summary": "清野穩定、控制直接，靠蓄能衝擊與火瀑連擊鎖定關鍵目標，是容易上手且團戰功能完整的鬥士打野。",
-      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》菲艾英雄頁校正；出裝、符文、技能順序與實戰方向交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。",
+      "sourceNote": "7.2a 打野正式版：技能名稱依 Riot Games 台灣《激鬥峽谷》菲艾英雄頁校正；出裝、符文、技能順序與實戰方向交叉參考 WildRiftFire 7.2a。Tier 與對局為本站綜合評級。｜v52：完成打野第一批正式版，完整套用李星固定母版，補齊起手裝、核心三件、五件成裝、技能加點、三組連招、對局與前中後期節奏。｜v92：7.2d 上線五日後進行版本沉澱校正，中國服打野數據與兩份版本榜單均位於第一梯隊。 Tier S→S+。",
       "avatar": "../assets/images/heroes/portraits/vi.webp",
       "abilities": [
         {
@@ -39071,7 +39105,7 @@
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "jungle-first10-formal-v52",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -39295,6 +39329,17 @@
         ],
         "impactTypes": [],
         "outcome": "retained-after-review"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "中國服打野數據與兩份版本榜單均位於第一梯隊。"
       }
     },
     {
@@ -41813,7 +41858,7 @@
       "enName": "Ahri",
       "role": "中路",
       "roleId": "mid",
-      "tier": "S",
+      "tier": "S+",
       "position": "法師／刺客／遊走收割",
       "tags": [
         "爆發",
@@ -41871,7 +41916,7 @@
         "後期": "不要第一時間直線衝入敵陣。先在側面尋找魅惑角度，等關鍵控制交掉後再用大絕切入；完成擊殺後利用新增突進拉開或轉火。"
       },
       "summary": "先用一技掌握兵線，再靠大絕調整魅惑角度；命中三技後打出完整爆發，參與擊殺取得額外突進並持續收割。",
-      "sourceNote": "7.2a 中路阿璃正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》阿璃英雄頁校正，版本基準採官方 7.2 與 7.2a 更新公告；7.2 已重製法師裝備、鞋子與符文系統，因此本版以盧登回音、視界專注、無限寶珠、死亡之帽與虛空之杖組成爆發配置。Tier、對局與實戰節奏為本站綜合評級。｜v58：阿璃固定為中路英雄正式母版。",
+      "sourceNote": "7.2a 中路阿璃正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》阿璃英雄頁校正，版本基準採官方 7.2 與 7.2a 更新公告；7.2 已重製法師裝備、鞋子與符文系統，因此本版以盧登回音、視界專注、無限寶珠、死亡之帽與虛空之杖組成爆發配置。Tier、對局與實戰節奏為本站綜合評級。｜v58：阿璃固定為中路英雄正式母版。｜v92：7.2d 上線五日後進行版本沉澱校正，中路數據與分路榜單均位於第一梯隊。 Tier S→S+。",
       "avatar": "../assets/images/heroes/portraits/ahri.webp",
       "abilities": [
         {
@@ -41938,7 +41983,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-ahri-master-template-v58",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -42168,6 +42213,17 @@
         ],
         "impactTypes": [],
         "outcome": "retained-after-review"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "中路數據與分路榜單均位於第一梯隊。"
       }
     },
     {
@@ -50937,7 +50993,7 @@
       "enName": "Syndra",
       "roleId": "mid",
       "role": "中路",
-      "tier": "A",
+      "tier": "S+",
       "position": "爆發法師／遠距暈眩／單點處決",
       "tags": [
         "爆發",
@@ -51018,7 +51074,7 @@
         "後期": "站在側後方以推球暈眩控制狹窄地形，敵方刺客未現身前保留三技。大絕優先處理已被控制的核心，不要把所有星體浪費在難以擊殺的前排。"
       },
       "summary": "透過星體佈置與三技推球提供超遠暈眩，再以多顆星體大絕處決單一目標；控制技能空掉時自保能力明顯下降。",
-      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。｜v90：7.2d：黑暗星體基傷提高；意志之力與虛弱潰散魔攻係數提高，虛弱潰散冷卻縮短。",
+      "sourceNote": "7.2a 中路第一批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v59：完整套用阿璃中路固定母版。｜v87：2026-08-11 依 7.2b 當前召喚峽谷配置校正出裝、符文與召喚師技能。｜v90：7.2d：黑暗星體基傷提高；意志之力與虛弱潰散魔攻係數提高，虛弱潰散冷卻縮短。｜v92：7.2d 上線五日後進行版本沉澱校正，官方增強後，中國服鑽石以上勝率與分路評級均進入版本第一梯隊。 Tier A→S+。",
       "avatar": "../assets/images/heroes/portraits/syndra.webp",
       "abilities": [
         {
@@ -51061,7 +51117,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "7.2b-targeted-build-rune-audit-v87",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -51282,6 +51338,17 @@
           "item-delta"
         ],
         "outcome": "retained-after-review"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "官方增強後，中國服鑽石以上勝率與分路評級均進入版本第一梯隊。"
       }
     },
     {
@@ -52336,7 +52403,7 @@
       "enName": "Veigar",
       "roleId": "mid",
       "role": "中路",
-      "tier": "B",
+      "tier": "A",
       "position": "成長爆發法師／事件地平線／單點處決",
       "tags": [
         "永久魔攻",
@@ -52417,7 +52484,7 @@
         "後期": "永久魔攻成長後任何控制命中都可能完成擊殺，站在後排以三技保護輸出空間。不要只盯著後排，大絕收掉突進前排也能讓己方核心安全輸出。"
       },
       "summary": "透過補刀與命中英雄永久累積魔攻，三技事件地平線能封鎖大片區域，再以延遲爆發和大絕處決；前期機動性低。",
-      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。｜v90：7.2d：黑暗祭祀施放距離由 7.75 提高至 9。",
+      "sourceNote": "7.2a 中路第二批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄頁校正；版本基準採官方 7.2 與 7.2a 更新公告。Tier、出裝、符文、對局與實戰節奏為本站依中路環境整理的綜合配置。｜v60：完整套用阿璃中路固定母版。｜v90：7.2d：黑暗祭祀施放距離由 7.75 提高至 9。｜v92：7.2d 上線五日後進行版本沉澱校正，Q 射程增強改善對線與疊層安全，分路評級升至 A，但整體數據尚不足以列入 S。 Tier B→A。",
       "avatar": "../assets/images/heroes/portraits/veigar.webp",
       "abilities": [
         {
@@ -52460,7 +52527,7 @@
       "skillIconCount": 5,
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "mid-second-batch-formal-v60",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -52665,6 +52732,17 @@
           "item-delta"
         ],
         "outcome": "updated"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "Q 射程增強改善對線與疊層安全，分路評級升至 A，但整體數據尚不足以列入 S。"
       }
     },
     {
@@ -55851,7 +55929,7 @@
       "enName": "Zyra",
       "roleId": "mid",
       "role": "中路",
-      "tier": "B",
+      "tier": "A",
       "position": "控場消耗法師／植物區域壓制",
       "tags": [
         "遠距消耗",
@@ -55872,7 +55950,7 @@
         "botanist",
         "transcendence",
         "scorch",
-        "cut-down"
+        "bone-plating"
       ],
       "items": [
         "magic-high-10",
@@ -55932,7 +56010,7 @@
         "後期": "站在前排後方反覆消耗，優先用禁錮阻止刺客或鬥士切入。大絕盡量覆蓋多人與既有植物，將狹窄地形變成敵方難以穿越的傷害區。"
       },
       "summary": "用技能生成植物並建立遠距消耗區，三技禁錮後接大絕完成範圍控制；物件團提前佈局，站在後排持續限制敵方進場。",
-      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。",
+      "sourceNote": "7.2a 中路第四批正式版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》官方英雄資料校正；版本基準採官方 7.2 與 7.2a 更新公告，出裝、符文與對局方向參考 7.2a 當前中路環境後整合。Tier 維持本站既有 46 位中路正式名單評級。｜v62：完整套用阿璃中路固定母版，中路 46/46 全數完成。｜v92：7.2d 上線五日後進行版本沉澱校正，中國服中路勝率與分路榜單交叉結果均高於原 B 級。 Tier B→A。",
       "avatar": "../assets/images/heroes/portraits/zyra.webp",
       "abilities": [
         {
@@ -56056,7 +56134,7 @@
       "skillIconStatus": "complete",
       "skillIconCount": 5,
       "reviewStatus": "mid-fourth-batch-formal-v62",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
@@ -56085,19 +56163,11 @@
                 "toId": "magic-high-05",
                 "condition": "敵方魔法爆發依賴一個先手技能命中時。",
                 "reason": "女妖面紗補魔防並提供法術護盾，可阻斷對方第一段開戰。"
-              },
-              {
-                "type": "rune",
-                "title": "爆發對局符文",
-                "fromId": "cut-down",
-                "toId": "bone-plating",
-                "condition": "對線或團戰經常被同一名刺客短時間連段時。",
-                "reason": "骨甲降低接續傷害，適合換掉較貪輸出的副系符文。"
               }
             ],
             "keepTitle": "",
             "keepText": "",
-            "warning": ""
+            "warning": "標準符文已使用骨甲；面對刺客時不必再額外替換符文。"
           },
           {
             "id": "cc",
@@ -56117,7 +56187,7 @@
               {
                 "type": "rune",
                 "title": "控制鏈生存",
-                "fromId": "cut-down",
+                "fromId": "bone-plating",
                 "toId": "perseverance",
                 "condition": "控制來源密集、被控後容易直接接第二段傷害時。",
                 "reason": "堅毅提供韌性，受到硬控時也能短暫提高雙防。"
@@ -56133,9 +56203,18 @@
             "label": "坦克多",
             "priority": "高",
             "trigger": "敵方前排多，團戰需要你持續處理高生命目標，而不是只秒後排。",
-            "changes": [],
-            "keepTitle": "維持標準配置",
-            "keepText": "標準配置已經有持續傷害／穿透或高生命處理能力。",
+            "changes": [
+              {
+                "type": "rune",
+                "title": "高生命前排處理",
+                "fromId": "bone-plating",
+                "toId": "cut-down",
+                "condition": "敵方有兩名以上高生命前排，且你不容易被刺客直接貼近時。",
+                "reason": "斷切提高對高生命目標的持續傷害；只有生存壓力較低時才換掉骨甲。"
+              }
+            ],
+            "keepTitle": "核心裝備維持",
+            "keepText": "黑焰火炬、黎安卓與瑞萊的持續傷害及控場核心不變。",
             "warning": ""
           },
           {
@@ -56185,6 +56264,19 @@
         ],
         "impactTypes": [],
         "outcome": "retained-after-review"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier",
+          "runes",
+          "matchupAdjustments"
+        ],
+        "outcome": "updated",
+        "evidence": "中國服中路勝率與分路榜單交叉結果均高於原 B 級。"
       }
     },
     {
@@ -66092,7 +66184,7 @@
       "enName": "Veigar",
       "roleId": "support",
       "role": "輔助",
-      "tier": "B",
+      "tier": "C",
       "position": "大型牢籠／永久魔攻成長型控制輔助",
       "tags": [
         "永久魔攻",
@@ -66173,7 +66265,7 @@
         "後期": "永久魔攻累積後，即使輔助經濟也能造成威脅，但核心價值仍是大型牢籠。團戰站在射手附近，用三技切割敵方前後排或保護主力；不要為了大絕處決走到敵方控制範圍內。"
       },
       "summary": "維迦輔助以扭曲空間封路與反開，技能命中英雄仍可永久累積魔攻。牢籠命中後接二技、一技與大絕完成爆發，但沒有位移，必須依靠視野與後排站位。",
-      "sourceNote": "7.2a 輔助路最後 7 位正式攻略：技能名稱與永久魔攻、扭曲空間及能量爆裂機制依 Riot Games 台灣《激鬥峽谷》維迦英雄資料校正，版本基準採官方 7.2a 更新公告；技能優先級改為輔助控制取向。｜v74：套用瑟雷西 v69 輔助固定母版。｜v90：7.2d：黑暗祭祀施放距離由 7.75 提高至 9。",
+      "sourceNote": "7.2a 輔助路最後 7 位正式攻略：技能名稱與永久魔攻、扭曲空間及能量爆裂機制依 Riot Games 台灣《激鬥峽谷》維迦英雄資料校正，版本基準採官方 7.2a 更新公告；技能優先級改為輔助控制取向。｜v74：套用瑟雷西 v69 輔助固定母版。｜v90：7.2d：黑暗祭祀施放距離由 7.75 提高至 9。｜v92：7.2d 上線五日後進行版本沉澱校正，版本增強主要改善中路發育，輔助勝率與分路評級仍落在較低區間。 Tier B→C。",
       "avatar": "../assets/images/heroes/portraits/veigar.webp",
       "abilities": [
         {
@@ -66316,7 +66408,7 @@
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
       "reviewStatus": "support-final-seven-v74",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
@@ -66448,6 +66540,17 @@
           "hero-balance"
         ],
         "outcome": "updated"
+      },
+      "metaCalibrationAudit": "v92-7.2d-settled-meta-calibration",
+      "settledMetaCalibration": {
+        "patch": "7.2d",
+        "siteVersion": "v92",
+        "reviewedAt": "2026-08-31",
+        "scope": [
+          "tier"
+        ],
+        "outcome": "updated",
+        "evidence": "版本增強主要改善中路發育，輔助勝率與分路評級仍落在較低區間。"
       }
     },
     {
@@ -71452,7 +71555,7 @@
       "roles": [
         {
           "roleId": "baron",
-          "tier": "S",
+          "tier": "S+",
           "origin": "native",
           "detailHeroId": "volibear-baron",
           "avatar": "../assets/images/heroes/portraits/volibear.webp"
@@ -71540,7 +71643,7 @@
       "roles": [
         {
           "roleId": "baron",
-          "tier": "S",
+          "tier": "S+",
           "origin": "native",
           "detailHeroId": "jax-baron",
           "avatar": "../assets/images/heroes/portraits/jax.webp"
@@ -72435,7 +72538,7 @@
       "roles": [
         {
           "roleId": "jungle",
-          "tier": "S",
+          "tier": "S+",
           "origin": "native",
           "detailHeroId": "vi-jungle",
           "avatar": "../assets/images/heroes/portraits/vi.webp"
@@ -72828,7 +72931,7 @@
       "roles": [
         {
           "roleId": "mid",
-          "tier": "A",
+          "tier": "S+",
           "origin": "native",
           "detailHeroId": "syndra-mid",
           "avatar": "../assets/images/heroes/portraits/syndra.webp"
@@ -72880,7 +72983,7 @@
       "roles": [
         {
           "roleId": "mid",
-          "tier": "S",
+          "tier": "S+",
           "origin": "native",
           "detailHeroId": "ahri-mid",
           "avatar": "../assets/images/heroes/portraits/ahri.webp"
@@ -72917,7 +73020,7 @@
       "roles": [
         {
           "roleId": "mid",
-          "tier": "B",
+          "tier": "A",
           "origin": "native",
           "detailHeroId": "zyra-mid",
           "avatar": "../assets/images/heroes/portraits/zyra.webp"
@@ -73185,14 +73288,14 @@
       "roles": [
         {
           "roleId": "mid",
-          "tier": "B",
+          "tier": "A",
           "origin": "native",
           "detailHeroId": "veigar-mid",
           "avatar": "../assets/images/heroes/portraits/veigar.webp"
         },
         {
           "roleId": "support",
-          "tier": "B",
+          "tier": "C",
           "origin": "native",
           "detailHeroId": "veigar-support",
           "avatar": "../assets/images/heroes/portraits/veigar.webp"
@@ -73544,7 +73647,7 @@
       "roles": [
         {
           "roleId": "duo",
-          "tier": "S",
+          "tier": "S+",
           "origin": "native",
           "detailHeroId": "yunara",
           "avatar": "../assets/images/heroes/portraits/yunara.webp"
@@ -73948,7 +74051,7 @@
     }
   },
   "roleAudit": {
-    "status": "updated-v90",
+    "status": "updated-v92",
     "schemaVersion": 3,
     "uniqueHeroes": 141,
     "activeRoleAssignments": 202,
@@ -73986,7 +74089,9 @@
     "comboActionRendering": "passed-v76",
     "configurationProfilesReviewed": 202,
     "patchCalibration": "7.2d",
-    "patchCalibrationCheckedAt": "2026-08-27"
+    "patchCalibrationCheckedAt": "2026-08-27",
+    "settledMetaCalibration": "7.2d",
+    "settledMetaCalibrationCheckedAt": "2026-08-31"
   },
   "stageLocks": {
     "stage1HeroData": {
@@ -74041,30 +74146,103 @@
         "Tier",
         "五類對局調整"
       ]
+    },
+    "patch72dSettledMetaCalibration": {
+      "status": "completed",
+      "version": "v92",
+      "checkedAt": "2026-08-31",
+      "profilesReviewed": 202,
+      "profilesUpdated": 9,
+      "tierChanges": 9,
+      "runeChanges": 1,
+      "scope": [
+        "Tier",
+        "版本沉澱數據",
+        "枷蘿中路符文與五類對局調整"
+      ]
     }
   },
   "calibration": {
     "patch": "7.2d",
-    "version": "v90",
-    "reviewedAt": "2026-08-27",
+    "version": "v92",
+    "reviewedAt": "2026-08-31",
+    "baseCalibration": {
+      "version": "v90",
+      "reviewedAt": "2026-08-27",
+      "profilesReviewed": 202
+    },
     "uniqueHeroesReviewed": 141,
     "profilesReviewed": 202,
-    "profilesUpdated": 31,
-    "profilesRetained": 171,
-    "officialHeroAdjustments": 13,
-    "officialItemAdjustments": 2,
+    "profilesUpdated": 9,
+    "profilesRetained": 193,
     "tierChanges": [
       {
-        "profileId": "gwen-jungle",
-        "from": "S",
+        "profileId": "syndra-mid",
+        "from": "A",
+        "to": "S+"
+      },
+      {
+        "profileId": "veigar-mid",
+        "from": "B",
         "to": "A"
       },
       {
-        "profileId": "thresh-support",
-        "from": "S+",
-        "to": "S"
+        "profileId": "zyra-mid",
+        "from": "B",
+        "to": "A"
+      },
+      {
+        "profileId": "veigar-support",
+        "from": "B",
+        "to": "C"
+      },
+      {
+        "profileId": "vi-jungle",
+        "from": "S",
+        "to": "S+"
+      },
+      {
+        "profileId": "jax-baron",
+        "from": "S",
+        "to": "S+"
+      },
+      {
+        "profileId": "volibear-baron",
+        "from": "S",
+        "to": "S+"
+      },
+      {
+        "profileId": "ahri-mid",
+        "from": "S",
+        "to": "S+"
+      },
+      {
+        "profileId": "yunara",
+        "from": "S",
+        "to": "S+"
       }
     ],
-    "methodology": "以 v89 的 7.2c 全量校正為母檔，逐筆套用 Riot 7.2d 差分，再以當日 7.2d 角色指南交叉檢查；新版本樣本不足者保留原 Tier。"
+    "runeChanges": [
+      {
+        "profileId": "zyra-mid",
+        "from": "cut-down",
+        "to": "bone-plating",
+        "situational": "cut-down-vs-high-health-frontline"
+      }
+    ],
+    "watchlist": [
+      "gwen-jungle",
+      "thresh-support",
+      "caitlyn",
+      "vladimir-mid",
+      "vladimir-baron",
+      "fiora-baron",
+      "renekton-baron",
+      "yuumi-support",
+      "yone-baron",
+      "yone-mid",
+      "yone-jungle"
+    ],
+    "methodology": "以 v90 全英雄配置為基準，於 7.2d 上線五日後交叉比對官方更新、中國服每日排位數據、分路攻略榜與第二份中國服 Meta 榜；來源衝突者維持原 Tier。"
   }
 }

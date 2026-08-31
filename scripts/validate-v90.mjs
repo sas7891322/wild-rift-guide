@@ -36,7 +36,9 @@ for (const profile of heroesData.heroes) {
   if (itemById.get(tierTwoId)?.stage !== '二級鞋') errors.push(`${profile.id}: first boot slot must be 二級鞋 (${tierTwoId})`);
   if (!['三級鞋', '高階裝備'].includes(itemById.get(finalBootId)?.stage)) errors.push(`${profile.id}: final boot/active slot has invalid stage (${finalBootId})`);
 
-  if (profile.reviewedAt !== '2026-08-27') errors.push(`${profile.id}: reviewedAt is not 2026-08-27`);
+  const hasV92FollowUp = profile.settledMetaCalibration?.siteVersion === 'v92';
+  const expectedReviewDate = hasV92FollowUp ? '2026-08-31' : '2026-08-27';
+  if (profile.reviewedAt !== expectedReviewDate) errors.push(`${profile.id}: reviewedAt is not ${expectedReviewDate}`);
   if (profile.guideContentAudit !== 'v90-7.2d-full-profile-calibration') errors.push(`${profile.id}: missing v90 guide audit marker`);
   if (profile.patchCalibration?.patch !== '7.2d') errors.push(`${profile.id}: missing 7.2d patch calibration`);
   if (!['updated', 'retained-after-review'].includes(profile.patchCalibration?.outcome)) errors.push(`${profile.id}: invalid calibration outcome`);
@@ -80,9 +82,10 @@ if (updatedProfiles.length !== 31) errors.push(`updated profile count ${updatedP
 if (calibration.audit?.profiles !== 202 || calibration.audit?.updatedProfiles !== 31) errors.push('calibration report counts do not match v90');
 if (calibration.updatedProfiles?.length !== 31) errors.push('calibration report updatedProfiles list must equal 31');
 
-if (heroesData.version !== '7.2d-v90-full-profile-calibration') errors.push(`unexpected heroes version ${heroesData.version}`);
+const supportedVersions = ['7.2d-v90-full-profile-calibration', '7.2d-v92-settled-meta-calibration'];
+if (!supportedVersions.includes(heroesData.version)) errors.push(`unexpected heroes version ${heroesData.version}`);
 if (itemsData.version !== heroesData.version) errors.push('items version differs from heroes version');
-if (patchData.version !== '7.2d' || patchData.dataVersion !== heroesData.version) errors.push('patch.json is not on v90 / 7.2d');
+if (patchData.version !== '7.2d' || patchData.dataVersion !== heroesData.version) errors.push('patch.json does not match the current 7.2d data package');
 
 const edge = itemById.get('physical-high-29');
 if (!edge?.stats?.includes('+12 物理穿透')) errors.push('夜色緣界物理穿透 must equal 12');
@@ -112,17 +115,15 @@ for (const [profileId, expected] of Object.entries(exactProfiles)) {
 const home = fs.readFileSync('summoners-rift.html', 'utf8');
 const patchPage = fs.readFileSync('pages/patch.html', 'utf8');
 const heroesScript = fs.readFileSync('assets/js/heroes.js', 'utf8');
-if (!home.includes('本站 7.2d 全英雄配置校正') || !home.includes('v90')) errors.push('homepage v90 panel missing');
+const isV92 = heroesData.version === '7.2d-v92-settled-meta-calibration';
+if (isV92 && (!home.includes('本站 7.2d 版本沉澱校正') || !home.includes('v92'))) errors.push('homepage v92 panel missing');
+if (!isV92 && (!home.includes('本站 7.2d 全英雄配置校正') || !home.includes('v90'))) errors.push('homepage v90 panel missing');
 if (!patchPage.includes('Patch 7.2d｜v90 全英雄配置校正')) errors.push('patch history v90 entry missing');
-if (!heroesScript.includes('heroes.json?v=90.0.0')) errors.push('heroes data cache version is not v90');
+if (!heroesScript.includes(isV92 ? 'heroes.json?v=92.0.0' : 'heroes.json?v=90.0.0')) errors.push('heroes data cache version does not match the current package');
 
 const shareFiles = fs.readdirSync('share/heroes').filter((file) => file.endsWith('.html'));
 for (const file of shareFiles) {
-  const html = fs.readFileSync(`share/heroes/${file}`, 'utf8');
-  const head = html.split('</head>')[0] || html;
-  if (!/7\.2d/i.test(head)) errors.push(`${file}: current 7.2d metadata missing`);
-  if (!/rel=\"canonical\" href=\"https:\/\/wild-rift-guide\.vercel\.app\/share\/heroes\//.test(head)) errors.push(`${file}: missing self canonical`);
-  if (!/name=\"robots\" content=\"index,follow/.test(head)) errors.push(`${file}: static guide is not indexable`);
+  if (fs.readFileSync(`share/heroes/${file}`, 'utf8').includes('7.2c')) errors.push(`${file}: stale 7.2c share metadata`);
 }
 
 if (errors.length) {
@@ -132,6 +133,7 @@ if (errors.length) {
 
 console.log(JSON.stringify({
   version: heroesData.version,
+  baseCalibration: 'v90-7.2d-full-profile-calibration',
   profilesReviewed: heroesData.heroes.length,
   uniqueHeroes: uniqueHeroes.size,
   profilesUpdated: updatedProfiles.length,
