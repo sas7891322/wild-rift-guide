@@ -1,0 +1,241 @@
+{
+  "version": "v93",
+  "gameVersion": "7.2d",
+  "mode": "standard-aram",
+  "updated": "2026-09-01",
+  "scope": {
+    "profilesReviewed": 141,
+    "uniqueHeroes": 141,
+    "newHeroes": [
+      "chogath"
+    ],
+    "aaaProfilesPreserved": 140,
+    "aaaDataVersion": "7.2b"
+  },
+  "tierCounts": {
+    "S+": 30,
+    "S": 48,
+    "A": 53,
+    "B": 10
+  },
+  "tierChanges": [
+    {
+      "id": "syndra",
+      "from": "S",
+      "to": "S+",
+      "reason": "7.2d 全面提高技能傷害與三技頻率，單線遠距控制和爆發穩定性明顯上升。"
+    },
+    {
+      "id": "jinx",
+      "from": "S",
+      "to": "S+",
+      "reason": "7.2c 基礎物攻與被動攻速強化後，ARAM 最重要的第一個擊殺更容易轉成連續收割。"
+    },
+    {
+      "id": "caitlyn",
+      "from": "S",
+      "to": "S+",
+      "reason": "7.2d 提高爆頭成長並縮短陷阱充能，長直線消耗、推塔與陣地控制同步提升。"
+    },
+    {
+      "id": "mordekaiser",
+      "from": "A",
+      "to": "S",
+      "reason": "7.2d 被動魔穿與三技冷卻強化，搭配既有 90% 承傷，正面長團與隔離核心的穩定度提高。"
+    },
+    {
+      "id": "nilah",
+      "from": "A",
+      "to": "B",
+      "reason": "7.2c 暴擊轉物穿與大絕額外物攻係數大幅降低；單線近戰進場風險高，對陣容與進場時機更依賴。"
+    }
+  ],
+  "balanceCorrections": [
+    {
+      "id": "rakan",
+      "damageDealt": "105%",
+      "damageTaken": "90%",
+      "sourcePatch": "7.2b"
+    },
+    {
+      "id": "nocturne",
+      "damageDealt": "100%",
+      "damageTaken": "75%",
+      "sourcePatch": "7.2b"
+    },
+    {
+      "id": "lissandra",
+      "damageDealt": "100%",
+      "damageTaken": "90%",
+      "sourcePatch": "7.2b"
+    }
+  ],
+  "configurationChanges": [
+    "科加斯新增完整標準 ARAM Tier、出裝、符文、召喚師技能、技能順序與玩法。",
+    "星朵拉加入 7.2d 降價後的雷霆風暴核心。",
+    "弗拉迪米爾依 7.2d 官方出戰配置改為火箭腰帶＋峽谷製造者核心。",
+    "潘森將 7.2d 強化後的夜色緣界提前為第二件。",
+    "悠咪將 7.2c 強化後的米凱的祝福提前為第三件。",
+    "雷歐娜舊版日炎斗篷修正為 7.2c 日炎聖盾。"
+  ],
+  "normalization": {
+    "standardItemReferences": 30,
+    "standardRuneReferences": 83,
+    "standardSpellLabels": 24,
+    "aaaItemReferences": 49,
+    "aaaRuneReferences": 83,
+    "snowballRecommendations": 73
+  },
+  "patchAffectedReview": [
+    {
+      "id": "chogath",
+      "patch": "7.2c",
+      "direction": "buff",
+      "summary": "恐懼尖刺傷害、饗宴成長與冷卻獲得強化。"
+    },
+    {
+      "id": "jinx",
+      "patch": "7.2c",
+      "direction": "buff",
+      "summary": "基礎物攻 54→58，被動攻速 12%→25%。"
+    },
+    {
+      "id": "nilah",
+      "patch": "7.2c",
+      "direction": "nerf",
+      "summary": "暴擊轉物穿 35%→28%，大絕額外物攻係數 140%→50%。"
+    },
+    {
+      "id": "leona",
+      "patch": "7.2c",
+      "direction": "adjust",
+      "summary": "前期生命與雙防降低，後期生命成長及二技冷卻補強。"
+    },
+    {
+      "id": "rumble",
+      "patch": "7.2c",
+      "direction": "adjust",
+      "summary": "基礎傷害轉向更高魔攻係數，出裝更應維持法強核心。"
+    },
+    {
+      "id": "nasus",
+      "patch": "7.2c",
+      "direction": "nerf",
+      "summary": "基礎物防降低，大絕冷卻延長；標準 ARAM Q 堆層規則仍保留。"
+    },
+    {
+      "id": "ryze",
+      "patch": "7.2c",
+      "direction": "nerf",
+      "summary": "前期生命、物防與二技傷害下修。"
+    },
+    {
+      "id": "warwick",
+      "patch": "7.2c",
+      "direction": "nerf",
+      "summary": "大絕冷卻延長且基礎傷害降低。"
+    },
+    {
+      "id": "kogmaw",
+      "patch": "7.2c",
+      "direction": "nerf",
+      "summary": "大絕魔耗、射程與基礎傷害下修；預設仍以命中特效流為主。"
+    },
+    {
+      "id": "syndra",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "一、二、三技傷害提高，三技冷卻縮短。"
+    },
+    {
+      "id": "yuumi",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "附身與護盾能力提高，米凱的祝福也承接 7.2c 強化。"
+    },
+    {
+      "id": "vladimir",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "生命／魔攻轉換與一、三技傷害提高。"
+    },
+    {
+      "id": "veigar",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "一技施放距離 7.75→9。"
+    },
+    {
+      "id": "pantheon",
+      "patch": "7.2d",
+      "direction": "nerf",
+      "summary": "一技暴擊生命門檻 35%→25%。"
+    },
+    {
+      "id": "mordekaiser",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "被動魔穿提高，三技冷卻縮短。"
+    },
+    {
+      "id": "twisted-fate",
+      "patch": "7.2d",
+      "direction": "nerf",
+      "summary": "三技魔攻係數 45%→35%。"
+    },
+    {
+      "id": "fiora",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "被動破綻真實傷害部分回調。"
+    },
+    {
+      "id": "gwen",
+      "patch": "7.2d",
+      "direction": "nerf",
+      "summary": "一技魔攻係數降低。"
+    },
+    {
+      "id": "yone",
+      "patch": "7.2d",
+      "direction": "nerf",
+      "summary": "基礎物防 43→37。"
+    },
+    {
+      "id": "renekton",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "一、二技傷害提高。"
+    },
+    {
+      "id": "caitlyn",
+      "patch": "7.2d",
+      "direction": "buff",
+      "summary": "爆頭成長提高，陷阱充能縮短。"
+    },
+    {
+      "id": "thresh",
+      "patch": "7.2d",
+      "direction": "nerf",
+      "summary": "一技命中冷卻返還 3秒→2秒。"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Riot Games｜《激鬥峽谷》7.2d 版本更新公告",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-2d/"
+    },
+    {
+      "label": "Riot Games｜《激鬥峽谷》7.2c 版本更新公告",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-2c/"
+    },
+    {
+      "label": "Riot Games｜《激鬥峽谷》7.2b 版本更新公告",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-2b/"
+    },
+    {
+      "label": "Riot Games｜《激鬥峽谷》7.1 版本更新公告",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-1/"
+    }
+  ]
+}

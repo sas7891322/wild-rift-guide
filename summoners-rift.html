@@ -42,12 +42,12 @@
     <div class="site-header-right"><span class="site-traffic-slot" data-traffic-slot></span></div>
   </div>
 </header>
-<section class="site-announcement" aria-label="網站最新消息">
-  <a class="site-announcement-inner shell" href="pages/heroes.html?q=%E7%A7%91%E5%8A%A0%E6%96%AF">
-    <span class="site-announcement-avatar" aria-hidden="true"><img src="assets/images/heroes/portraits/chogath.png" alt=""></span>
-    <span class="site-announcement-badge">NEW</span>
-    <span class="site-announcement-copy"><strong>新英雄科加斯正式登場</strong><small>本站已更新巴龍路 S、打野 S，技能資料同步完成。</small></span>
-    <span class="site-announcement-action">查看科加斯 <b aria-hidden="true">→</b></span>
+<section class="site-announcement" aria-label="找隊友功能">
+  <a class="site-announcement-inner shell" href="pages/players.html">
+    <span class="site-announcement-avatar" aria-hidden="true"><img src="assets/images/roles/duo.png" alt=""></span>
+    <span class="site-announcement-badge">找隊友</span>
+    <span class="site-announcement-copy"><strong>找固定隊友，不再只能靠單排</strong><small>可依牌位、位置、模式與上線時段篩選，ARAM 也能找。</small></span>
+    <span class="site-announcement-action">立即媒合 <b aria-hidden="true">→</b></span>
   </a>
 </section>
 
@@ -236,49 +236,41 @@
     </section>
 
     <section class="home-update-panel" role="tabpanel" id="homeUpdateSite" aria-labelledby="homeUpdateSiteTab" data-home-update-panel="site" hidden>
-      <div class="home-update-heading"><div><span class="kicker">WILD RIFT GUIDE · 2026/08/31</span><h3>本站 7.2d 版本沉澱校正</h3></div><span class="home-update-badge ready">v92</span></div>
-      <p class="home-update-lead">7.2d 上線五日後再次複查 141 位英雄、202 份位置配置；依官方更新、中國服每日排位數據與兩份分路榜單，完成 9 組 Tier 及 1 組中路符文校正。</p>
+      <div class="home-update-heading"><div><span class="kicker">WILD RIFT GUIDE · 2026/09/01</span><h3>本站 7.2d 標準 ARAM 全量校正</h3></div><span class="home-update-badge ready">v93</span></div>
+      <p class="home-update-lead">完成 141 位標準 ARAM 英雄逐筆複核，補上科加斯完整攻略，並校正 Tier、一般 ARAM 模式數值、裝備／符文名稱與雪球戰車配置；符文大亂鬥資料維持獨立版本。</p>
 
       <div class="site-review-grid" data-site-review-accordions>
         <div class="site-review-item">
-          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV92Audit"><strong>202 份配置再次複查</strong><span>保留 v90 全量校正基準</span></button>
-          <div class="site-review-inline-panel site-review-database-panel" id="siteReviewV92Audit" data-site-review-panel hidden><strong>版本沉澱後的第二輪判斷</strong><p>本次不重寫已正確的出裝與技能資料，只調整已有足夠數據支持的 Tier 與枷蘿中路符文；找隊友 v91 功能完整保留。</p></div>
+          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV93Audit"><strong>141 位標準 ARAM 全量複核</strong><span>Tier、配置、技能與素材引用</span></button>
+          <div class="site-review-inline-panel site-review-database-panel" id="siteReviewV93Audit" data-site-review-panel hidden><strong>一般 ARAM 與符文大亂鬥分開</strong><p>標準 ARAM 更新到 7.2d；既有符文大亂鬥 140 位分類攻略及 151 個增幅資料保留 7.2b 標示，不混用模式專屬數值。</p></div>
         </div>
         <div class="site-review-item">
-          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV92Tier"><strong>9 組 Tier 校正</strong><span>8 組上調 · 1 組下調</span></button>
-          <div class="site-review-inline-panel" id="siteReviewV92Tier" data-site-review-panel hidden><div class="site-review-hero-links">
-            <a href="pages/heroes.html?hero=syndra-mid"><strong>星朵拉</strong><span>中路 · A→S+</span></a>
-            <a href="pages/heroes.html?hero=veigar-mid"><strong>維迦</strong><span>中路 · B→A</span></a>
-            <a href="pages/heroes.html?hero=zyra-mid"><strong>枷蘿</strong><span>中路 · B→A</span></a>
-            <a href="pages/heroes.html?hero=veigar-support"><strong>維迦</strong><span>輔助 · B→C</span></a>
-          </div></div>
+          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV93Balance"><strong>3 筆模式數值修正</strong><span>銳空 · 夜曲 · 麗珊卓</span></button>
+          <div class="site-review-inline-panel site-review-database-panel" id="siteReviewV93Balance" data-site-review-panel hidden><strong>補回官方明確同步一般 ARAM 的改動</strong><p>銳空改為 105% 傷害／90% 承傷、夜曲改為 75% 承傷、麗珊卓改為 90% 承傷；AAA ARAM 的其他獨立調整沒有混入。</p></div>
         </div>
         <div class="site-review-item">
-          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV92Rune"><strong>枷蘿中路符文校正</strong><span>骨甲預設 · 斷切改為情境</span></button>
-          <div class="site-review-inline-panel site-review-database-panel" id="siteReviewV92Rune" data-site-review-panel hidden><strong>提高單排穩定性</strong><p>第五枚預設符文由斷切改為骨甲；敵方坦克多且生存壓力較低時再換回斷切，控制多時可改成堅毅。</p></div>
+          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV93Data"><strong>資料一致性校正</strong><span>裝備、符文、召喚師技能</span></button>
+          <div class="site-review-inline-panel site-review-database-panel" id="siteReviewV93Data" data-site-review-panel hidden><strong>修正舊名稱與錯位 ID</strong><p>日炎斗篷改為日炎聖盾、三級鞋與符文改用現行台服名稱；73 位近戰／開戰英雄預設加入 7.1 後的雪球戰車。</p></div>
         </div>
         <div class="site-review-item">
-          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV92Retained"><strong>其餘配置保留</strong><span>來源衝突者不硬改</span></button>
-          <div class="site-review-inline-panel site-review-database-panel" id="siteReviewV92Retained" data-site-review-panel hidden><strong>持續觀察名單</strong><p>關打野 A、瑟雷西輔助 S、凱特琳 B、弗拉迪米爾雙位置 B、菲歐拉 A、雷尼克頓 A 與悠咪 B 目前維持。</p></div>
+          <button class="site-review-toggle" type="button" data-site-review-toggle aria-expanded="false" aria-controls="siteReviewV93Cho"><strong>科加斯 ARAM 完整攻略</strong><span>第 141 位英雄</span></button>
+          <div class="site-review-inline-panel site-review-database-panel" id="siteReviewV93Cho" data-site-review-panel hidden><strong>成長坦克／範圍控制型前排</strong><p>新增 Tier、五件出裝、鞋子、符文、雪球戰車、技能順序、情境裝與前中後期玩法；同步 7.2c 恐懼尖刺與饗宴強化。</p></div>
         </div>
       </div>
 
       <div class="site-tier-section">
-        <div class="official-change-title"><strong>7.2d 第二輪 Tier 變動</strong><span>點英雄可看攻略</span></div>
+        <div class="official-change-title"><strong>標準 ARAM Tier 變動</strong><span>點英雄可看攻略</span></div>
         <div class="tier-change-grid">
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=syndra-mid" aria-label="查看星朵拉中路攻略，Tier 由 A 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/syndra.webp" alt="星朵拉" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">星朵拉<small>中路</small></span><span class="tier-change-ranks"><del>A</del><em>→</em><strong>S+</strong></span></a>
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=veigar-mid" aria-label="查看維迦中路攻略，Tier 由 B 調整為 A"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/veigar.webp" alt="維迦" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">維迦<small>中路</small></span><span class="tier-change-ranks"><del>B</del><em>→</em><strong>A</strong></span></a>
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=zyra-mid" aria-label="查看枷蘿中路攻略，Tier 由 B 調整為 A"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/zyra.webp" alt="枷蘿" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">枷蘿<small>中路</small></span><span class="tier-change-ranks"><del>B</del><em>→</em><strong>A</strong></span></a>
-          <a class="tier-change-card tier-down" href="pages/heroes.html?hero=veigar-support" aria-label="查看維迦輔助攻略，Tier 由 B 調整為 C"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/veigar.webp" alt="維迦" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↓</i></span><span class="tier-change-name">維迦<small>輔助</small></span><span class="tier-change-ranks"><del>B</del><em>→</em><strong>C</strong></span></a>
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=vi-jungle" aria-label="查看菲艾打野攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/vi.webp" alt="菲艾" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">菲艾<small>打野</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=jax-baron" aria-label="查看賈克斯巴龍路攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/jax.webp" alt="賈克斯" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">賈克斯<small>巴龍路</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=volibear-baron" aria-label="查看弗力貝爾巴龍路攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/volibear.webp" alt="弗力貝爾" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">弗力貝爾<small>巴龍路</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=ahri-mid" aria-label="查看阿璃中路攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/ahri.webp" alt="阿璃" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">阿璃<small>中路</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
-          <a class="tier-change-card tier-up" href="pages/heroes.html?hero=yunara" aria-label="查看尤娜拉飛龍路攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/yunara.webp" alt="尤娜拉" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">尤娜拉<small>飛龍路</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
+          <a class="tier-change-card tier-up" href="aram-hero.html?id=syndra" aria-label="查看星朵拉 ARAM 攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/syndra.webp" alt="星朵拉" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">星朵拉<small>ARAM</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
+          <a class="tier-change-card tier-up" href="aram-hero.html?id=jinx" aria-label="查看吉茵珂絲 ARAM 攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/jinx.webp" alt="吉茵珂絲" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">吉茵珂絲<small>ARAM</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
+          <a class="tier-change-card tier-up" href="aram-hero.html?id=caitlyn" aria-label="查看凱特琳 ARAM 攻略，Tier 由 S 調整為 S+"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/caitlyn.webp" alt="凱特琳" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">凱特琳<small>ARAM</small></span><span class="tier-change-ranks"><del>S</del><em>→</em><strong>S+</strong></span></a>
+          <a class="tier-change-card tier-up" href="aram-hero.html?id=mordekaiser" aria-label="查看魔鬥凱薩 ARAM 攻略，Tier 由 A 調整為 S"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/mordekaiser.webp" alt="魔鬥凱薩" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↑</i></span><span class="tier-change-name">魔鬥凱薩<small>ARAM</small></span><span class="tier-change-ranks"><del>A</del><em>→</em><strong>S</strong></span></a>
+          <a class="tier-change-card tier-down" href="aram-hero.html?id=nilah" aria-label="查看淣菈 ARAM 攻略，Tier 由 A 調整為 B"><span class="tier-change-avatar-wrap"><img src="assets/images/heroes/portraits/nilah.webp" alt="淣菈" loading="lazy"><i class="tier-change-arrow" aria-hidden="true">↓</i></span><span class="tier-change-name">淣菈<small>ARAM</small></span><span class="tier-change-ranks"><del>A</del><em>→</em><strong>B</strong></span></a>
         </div>
       </div>
 
-      <p class="site-tier-note">關打野目前不同來源落差仍大，因此維持 A；凱特琳、弗拉迪米爾、悠咪等受 7.2d 增強英雄也不因單一數據直接升級。</p>
+      <p class="site-tier-note">召喚峽谷 v92 的 141 位／202 份配置，以及 v91 找隊友功能、SQL 與安全權限皆完整保留。</p>
+      <a class="home-update-more" href="aram.html">前往 7.2d ARAM 專區 →</a>
       <a class="home-update-more" href="pages/patch.html">查看本站版本紀錄 →</a>
     </section>
 

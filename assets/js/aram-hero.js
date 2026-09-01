@@ -56,12 +56,14 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=81.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/heroes.json?v=93.0.0',{cache:'no-store'}),
       fetch('assets/data/aram/augments.json?v=81.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const augmentData=augmentRes.ok?await augmentRes.json():{augments:[]};
+    const standardVersion=data.standardGameVersion||data.gameVersion||'7.2d';
+    const aaaVersion=augmentData.gameVersion||data.aaaGameVersion||'7.2b';
     const augmentMap=new Map((augmentData.augments||[]).map(item=>[item.id,item]));
     const hero=(data.heroes||[]).find(item=>item.id===id);
     if(!hero)throw new Error('Hero not found');
@@ -87,7 +89,7 @@
       const position=isAaa?aaa.position:hero.position;
       const tags=isAaa?aaa.tags:hero.tags;
       const summary=isAaa?aaa.summary:hero.summary;
-      const kicker=isAaa?`AAA ARAM · PATCH ${esc(data.gameVersion)}`:`ARAM HERO GUIDE · PATCH ${esc(data.gameVersion)}`;
+      const kicker=isAaa?`AAA ARAM · PATCH ${esc(aaaVersion)}`:`ARAM HERO GUIDE · PATCH ${esc(standardVersion)}`;
       const badgeMain=isAaa?'正式':hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
       const reasonTitle=isAaa?'符文大亂鬥怎麼用？':`為什麼是 ${esc(hero.tier)}？`;
@@ -112,7 +114,7 @@
       const spellCards=renderSpells(hero.spells||[]);
       const situational=(hero.situationalItems||[]).map(item=>`<article class="aram-situational-card"><img src="${esc(item.icon)}" alt="${esc(item.name)}"/><div><strong>${esc(item.name)}</strong>${item.when?`<span>${esc(item.when)}</span>`:''}<p>${esc(item.reason)}</p></div></article>`).join('');
       return `<section class="aram-detail-section">
-        <div class="aram-detail-section-head"><div><span>ARAM BALANCE</span><h2>模式平衡修正</h2></div><small>7.2b 基準</small></div>
+        <div class="aram-detail-section-head"><div><span>ARAM BALANCE</span><h2>模式平衡修正</h2></div><small>${esc(standardVersion)} 基準</small></div>
         <div class="aram-balance-grid"><article><span>造成傷害</span><strong>${esc(hero.balance.damageDealt)}</strong></article><article><span>承受傷害</span><strong>${esc(hero.balance.damageTaken)}</strong></article><article><span>治療效果</span><strong>${esc(hero.balance.healing)}</strong></article><article><span>護盾效果</span><strong>${esc(hero.balance.shielding)}</strong></article></div>
         <p class="aram-detail-note">${esc(hero.balance.note)}</p>
       </section>
@@ -360,11 +362,11 @@
         button.classList.toggle('is-active',active);
         button.setAttribute('aria-selected',active?'true':'false');
       });
-      if(modeNote)modeNote.textContent=isAaa?'看遊戲卡片下方分類 → 點相同分類 → 優先看 S+／S／A，再依增幅方向選出裝。':'目前已完成的標準 ARAM 7.2b 攻略。';
+      if(modeNote)modeNote.textContent=isAaa?`符文大亂鬥資料版本 ${aaaVersion}：看遊戲卡片下方分類 → 點相同分類 → 優先看 S+／S／A，再依增幅方向選出裝。`:`目前已完成的標準 ARAM ${standardVersion} 攻略。`;
       const titleMode=isAaa?'符文大亂鬥':'ARAM';
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');
-      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift 7.2b 符文大亂鬥攻略：官方增幅分類、S+ 至 D 單卡評級、增幅導向出裝與玩法。`:`${hero.name} Wild Rift 7.2b 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
+      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift ${aaaVersion} 符文大亂鬥攻略：官方增幅分類、S+ 至 D 單卡評級、增幅導向出裝與玩法。`:`${hero.name} Wild Rift ${standardVersion} 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
       if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}

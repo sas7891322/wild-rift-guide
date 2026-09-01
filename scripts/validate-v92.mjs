@@ -97,7 +97,8 @@ expect(heroesData.heroes.length === 202, `profile count is ${heroesData.heroes.l
 expect(uniqueHeroes.size === 141, `unique hero count is ${uniqueHeroes.size}, expected 141`);
 expect(heroesData.version === '7.2d-v92-settled-meta-calibration', `unexpected heroes version ${heroesData.version}`);
 expect(itemsData.version === heroesData.version, 'items package version differs from heroes package version');
-expect(patchData.version === '7.2d' && patchData.updated === '2026-08-31' && patchData.dataVersion === heroesData.version, 'patch.json is not on v92 / 7.2d');
+expect(patchData.version === '7.2d' && patchData.dataVersion === heroesData.version, 'patch.json no longer points to the v92 Summoner’s Rift data package');
+expect(['2026-08-31', '2026-09-01'].includes(patchData.updated), `unexpected patch update date ${patchData.updated}`);
 expect(calibration.audit?.profiles === 202 && calibration.audit?.updatedProfiles === 9, 'v92 calibration counts are incorrect');
 expect(calibration.tierChanges?.length === 9 && calibration.runeChanges?.length === 1, 'v92 calibration change lists are incorrect');
 
@@ -105,15 +106,16 @@ const home = text('summoners-rift.html');
 const patchPage = text('pages/patch.html');
 const heroesPage = text('pages/heroes.html');
 const heroesScript = text('assets/js/heroes.js');
-expect(home.includes('本站 7.2d 版本沉澱校正') && home.includes('v92'), 'homepage v92 update panel is missing');
-expect((home.match(/tier-change-card tier-/g) || []).length === 9, 'homepage must render nine v92 Tier cards');
+const hasV93Overlay = patchData.siteVersion === 'v93';
+expect(hasV93Overlay ? home.includes('本站 7.2d 標準 ARAM 全量校正') && home.includes('v93') : home.includes('本站 7.2d 版本沉澱校正') && home.includes('v92'), 'homepage latest update panel is missing');
+expect((home.match(/tier-change-card tier-/g) || []).length === (hasV93Overlay ? 5 : 9), `homepage latest Tier card count is incorrect`);
 expect(home.includes('heroes.json?v=92.0.0'), 'homepage heroes cache key is not v92');
 expect(patchPage.indexOf('Patch 7.2d｜v92 版本沉澱校正') >= 0, 'patch page v92 entry is missing');
-expect(patchPage.indexOf('Patch 7.2d｜v92 版本沉澱校正') < patchPage.indexOf('網站功能｜v91 找隊友正式版'), 'patch page v92 entry is not newest');
+expect(hasV93Overlay ? patchPage.indexOf('Patch 7.2d｜v93 標準 ARAM 全量校正') < patchPage.indexOf('Patch 7.2d｜v92 版本沉澱校正') : patchPage.indexOf('Patch 7.2d｜v92 版本沉澱校正') < patchPage.indexOf('網站功能｜v91 找隊友正式版'), 'patch page release order is incorrect');
 expect(heroesPage.includes('PATCH 7.2D') && heroesPage.includes('heroes.js?v=92.0.0'), 'heroes page version/cache marker is not v92');
 expect(!heroesScript.includes('7.2c') && heroesScript.includes('7.2d'), 'dynamic hero SEO still contains a stale patch version');
 expect(heroesScript.includes('heroes.json?v=92.0.0'), 'hero database fetch is not cache-busted to v92');
-expect(text('README.md').startsWith('# Wild Rift Guide v92｜7.2d 版本沉澱校正'), 'README v92 instructions are missing');
+expect(text('README.md').startsWith(hasV93Overlay ? '# Wild Rift Guide v93｜7.2d 標準 ARAM 全量校正' : '# Wild Rift Guide v92｜7.2d 版本沉澱校正'), 'README latest instructions are missing');
 
 const playerFinderHashes = {
   'pages/players.html': '8a5f945aac51303d1e27de770a9d2b458695a28ba6d0ad06d29d0bc9baa2c06d',
