@@ -2798,3 +2798,8 @@ body.home-map-bg .hero{padding:24px 0 28px}.home-hero-search{margin-top:0!import
 .tier-change-card.tier-up .tier-change-arrow{background:#42ad70;box-shadow:0 4px 12px rgba(66,173,112,.3)}
 .tier-change-card.tier-up .tier-change-ranks strong{color:#72d89a}
 .tier-change-card.tier-up .tier-change-ranks del{text-decoration-color:#72d89a}
+
+/* v95.1: preserve the three-column announcement card and readable content. */
+.official-change-grid-rich .official-change-card>div{min-width:0;overflow-wrap:anywhere}
+.tier-change-card.buff .tier-change-arrow{background:#369966;box-shadow:0 4px 12px rgba(54,153,102,.25)}
+.tier-change-card.buff .tier-change-ranks strong{color:#67d692}
