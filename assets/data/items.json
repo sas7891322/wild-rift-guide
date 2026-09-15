@@ -1,6 +1,6 @@
 {
-  "version": "7.2d-v92-settled-meta-calibration",
-  "notes": "校正輔助高階裝備共 17 件：新增 7 件輔助專屬裝備，10 件沿用物理／魔法／防禦既有資料並加入輔助分類；補齊官方圖示、屬性、效果、合成與輔助分類排序。｜v79.4：納入 7.2b 寒冰霸拳、盧登回音、磁性雷射槍、多明尼克的問候與那歐疾刃調整。｜v89：同步官方 7.2c 的 11 件裝備數值與合成路徑，包括鞋類、步履破壞者、日炎聖盾、米凱的祝福與凱尼克欺瞞者。｜v90：同步官方 7.2d 夜色緣界物理穿透 8→12、雷霆風暴價格 2900→2800。｜v92：裝備數值沿用 v90 已完成的 7.2d 官方校正，本次未改動裝備內容。",
+  "version": "7.2e-v94-official-delta-calibration",
+  "notes": "校正輔助高階裝備共 17 件：新增 7 件輔助專屬裝備，10 件沿用物理／魔法／防禦既有資料並加入輔助分類；補齊官方圖示、屬性、效果、合成與輔助分類排序。｜v79.4：納入 7.2b 寒冰霸拳、盧登回音、磁性雷射槍、多明尼克的問候與那歐疾刃調整。｜v89：同步官方 7.2c 的 11 件裝備數值與合成路徑，包括鞋類、步履破壞者、日炎聖盾、米凱的祝福與凱尼克欺瞞者。｜v90：同步官方 7.2d 夜色緣界物理穿透 8→12、雷霆風暴價格 2900→2800。｜v92：裝備數值沿用 v90 已完成的 7.2d 官方校正，本次未改動裝備內容。｜v94：依 7.2e 官方校正 4 件道具；雄心之鋼無已公布數值異動。",
   "items": [
     {
       "id": "basic-sapphire",
@@ -139,7 +139,6 @@
         "magic-high-24",
         "defense-high-01",
         "defense-high-02",
-        "defense-high-03",
         "defense-high-04",
         "defense-high-05",
         "defense-high-06",
@@ -215,7 +214,6 @@
       "buildFrom": [],
       "upgrades": [
         "defense-high-01",
-        "defense-high-03",
         "defense-high-05",
         "defense-high-06",
         "defense-high-07",
@@ -251,7 +249,6 @@
         "intermediate-quicksilver-sash",
         "defense-high-01",
         "defense-high-02",
-        "defense-high-03",
         "defense-high-04",
         "defense-high-14",
         "defense-high-15",
@@ -787,7 +784,8 @@
         "physical-high-34",
         "physical-high-38",
         "defense-high-22",
-        "defense-high-23"
+        "defense-high-23",
+        "defense-high-03"
       ],
       "order": 17
     },
@@ -841,7 +839,7 @@
         "+25 魔法防禦"
       ],
       "passives": [
-        "獲得一道法術護盾，可阻擋下一次敵方技能。"
+        "獲得一道法術護盾，可阻擋下一次敵方技能。 被動冷卻時間：65 秒（7.2e）。"
       ],
       "icon": "../assets/images/items/蒼翠屏障.webp",
       "buildFrom": [],
@@ -849,13 +847,18 @@
         "magic-high-05",
         "defense-high-01",
         "defense-high-02",
-        "defense-high-03",
         "defense-high-04",
         "defense-high-16",
         "defense-high-21",
         "defense-high-23"
       ],
-      "order": 19
+      "order": 19,
+      "patchCalibration": {
+        "patch": "7.2e",
+        "reviewedAt": "2026-09-09",
+        "note": "7.2e：法術護盾被動冷卻 50→65 秒；此改動不套用到女妖面紗。",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-72e/"
+      }
     },
     {
       "id": "intermediate-20",
@@ -1280,7 +1283,8 @@
         "physical-high-41",
         "physical-high-42",
         "defense-high-07",
-        "defense-high-22"
+        "defense-high-22",
+        "defense-high-03"
       ],
       "order": 37
     },
@@ -1341,7 +1345,9 @@
       "passives": [],
       "icon": "../assets/images/items/負極斗篷.webp",
       "buildFrom": [],
-      "upgrades": [],
+      "upgrades": [
+        "defense-high-03"
+      ],
       "order": 40
     },
     {
@@ -1386,7 +1392,6 @@
       "buildFrom": [],
       "upgrades": [
         "defense-high-01",
-        "defense-high-03",
         "defense-high-05",
         "defense-high-08",
         "defense-high-10",
@@ -1841,14 +1846,20 @@
         "+35 魔法攻擊"
       ],
       "passives": [
-        "凝滯（主動）：進入無敵且無法被指定的狀態，持續 2.5 秒；期間無法移動、普攻、施放技能或使用道具。"
+        "凝滯（主動）：進入無敵且無法被指定的狀態，持續 2.5 秒；期間無法移動、普攻、施放技能或使用道具。 冷卻時間：150 秒（7.2e）。"
       ],
       "icon": "../assets/images/items/探索者護腕.webp",
       "buildFrom": [],
       "upgrades": [
         "magic-high-02"
       ],
-      "order": 96
+      "order": 96,
+      "patchCalibration": {
+        "patch": "7.2e",
+        "reviewedAt": "2026-09-09",
+        "note": "7.2e：凝滯冷卻 120→150 秒；此改動僅列中階護腕，不套用到中婭沙漏。",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-72e/"
+      }
     },
     {
       "id": "physical-high-01",
@@ -2730,13 +2741,13 @@
       "categories": [
         "物理"
       ],
-      "price": 3000,
+      "price": 2900,
       "stats": [
         "+65 物理攻擊",
         "+20 技能加速"
       ],
       "passives": [
-        "永升之月：短時間內以 2 次獨立普攻或技能命中英雄時，造成其最大生命比例物理傷害並獲得護盾與跑速。"
+        "永升之月：短時間內以 2 次獨立普攻或技能命中英雄時，造成其最大生命比例物理傷害並獲得護盾與跑速。 近戰護盾：150 + 40% 額外物攻（7.2e；非遠程數值）。"
       ],
       "icon": "../assets/images/items/high/星蝕.webp",
       "buildFrom": [
@@ -2744,7 +2755,13 @@
         "intermediate-07"
       ],
       "upgrades": [],
-      "order": 235
+      "order": 235,
+      "patchCalibration": {
+        "patch": "7.2e",
+        "reviewedAt": "2026-09-09",
+        "note": "7.2e：價格 3000→2900；近戰護盾 140 +35%額外物攻→150 +40%額外物攻，遠程不套用此增強。",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-72e/"
+      }
     },
     {
       "id": "physical-high-37",
@@ -3605,23 +3622,29 @@
       ],
       "price": 3000,
       "stats": [
-        "+200 最大生命",
-        "+45 物理防禦",
-        "+45 魔法防禦"
+        "+300 最大生命",
+        "+40 物理防禦",
+        "+40 魔法防禦",
+        "+10 技能加速"
       ],
       "passives": [
         "悲痛：與英雄戰鬥時，週期性對附近敵方英雄造成依自身最大生命計算的魔法傷害，並回復所造成傷害一定比例的生命。"
       ],
       "icon": "../assets/images/items/high/defense-unending-despair.png",
       "buildFrom": [
-        "intermediate-42",
-        "intermediate-19",
-        "basic-ruby",
-        "basic-cloth-armor",
-        "basic-null-cloak"
+        "intermediate-37",
+        "intermediate-40",
+        "intermediate-17"
       ],
       "upgrades": [],
-      "order": 5
+      "order": 5,
+      "combineCost": 200,
+      "patchCalibration": {
+        "patch": "7.2e",
+        "reviewedAt": "2026-09-09",
+        "note": "7.2e：生命 200→300、雙防各 45→40、新增技能加速 10；總價 3000，合成改為鎖子甲＋負極斗篷＋燃燒寶石＋200。",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-72e/"
+      }
     },
     {
       "id": "defense-high-04",

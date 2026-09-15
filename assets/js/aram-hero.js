@@ -56,13 +56,13 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=93.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/heroes.json?v=95.0.0',{cache:'no-store'}),
       fetch('assets/data/aram/augments.json?v=81.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const augmentData=augmentRes.ok?await augmentRes.json():{augments:[]};
-    const standardVersion=data.standardGameVersion||data.gameVersion||'7.2d';
+    const standardVersion=data.standardGameVersion||data.gameVersion||'7.2e';
     const aaaVersion=augmentData.gameVersion||data.aaaGameVersion||'7.2b';
     const augmentMap=new Map((augmentData.augments||[]).map(item=>[item.id,item]));
     const hero=(data.heroes||[]).find(item=>item.id===id);
@@ -128,6 +128,7 @@
         <div class="aram-detail-section-head"><div><span>RUNES</span><h2>推薦符文</h2></div><small>合法排列：關鍵 → 一 → 二 → 三 → 副系</small></div>
         <div class="aram-rune-grid">${runeCards}</div>
       </section>
+      ${(hero.buildVariants||[]).map(v=>`<details class="aram-detail-section"><summary>情境完整配置：${esc(v.title)}</summary><p>${esc(v.when)}</p><div class="aram-loadout-grid">${renderItems(v.items)}</div><div class="aram-rune-grid">${renderRunes(v.runes)}</div><div class="aram-subgrid"><div>${renderBoots(v.boots)}</div><div>${renderSpells(v.spells)}</div></div><p>${esc(v.note)}</p></details>`).join('')}
       ${renderSkillOrder(hero)}
       ${renderPlaystyle(hero.playstyle)}
       <section class="aram-detail-section">

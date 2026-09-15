@@ -1,0 +1,153 @@
+{
+  "patch": "7.2e",
+  "siteVersion": "v94",
+  "reviewedAt": "2026-09-09",
+  "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-72e/",
+  "championChanges": {
+    "vi": {
+      "name": "菲艾",
+      "direction": "nerf",
+      "numbers": {
+        "Q": "額外物攻係數：最低 80%→60%；最高 160%→120%。",
+        "R": "冷卻：60/55/50→80/70/60 秒。"
+      },
+      "advice": "7.2e 一技物攻收益下降、大絕空窗拉長；維持鬥士核心，先確認大絕與隊友距離再抓人，不靠純輸出硬換一套。"
+    },
+    "janna": {
+      "name": "珍娜",
+      "direction": "buff",
+      "numbers": {
+        "E": "護盾：65/90/115/140 +45%魔攻→80/120/160/200 +50%魔攻。"
+      },
+      "advice": "7.2e 三技護盾提高，保護裝與技能加速方向維持；在隊友吃到爆發前套盾，保留龍捲風處理後續突進。"
+    },
+    "swain": {
+      "name": "斯溫",
+      "direction": "nerf",
+      "numbers": {
+        "R": "每秒傷害：10/25/40 +15%魔攻→15/25/35 +6%魔攻；每秒治療：20/30/40 +20%魔攻→15/30/45 +10%魔攻。"
+      },
+      "advice": "7.2e 大絕持續傷害與治療的魔攻收益下降；預設偏生命、控場與抗性，等首輪控制交換後進場，死亡之帽改為安全輸出時的選項。"
+    },
+    "nautilus": {
+      "name": "納帝魯斯",
+      "direction": "buff",
+      "numbers": {
+        "W": "護盾：65/75/85/95 +9/10/11/12%最大生命→70/80/90/100 +11/12/13/14%最大生命。"
+      },
+      "advice": "7.2e 二技護盾基值與最大生命收益提高；維持生命與雙防核心，進場前確認隊友能跟上，護盾無法取代撤退路線。"
+    },
+    "malphite": {
+      "name": "墨菲特",
+      "direction": "buff",
+      "numbers": {
+        "base": "每級物防成長：4.3→5。",
+        "Q": "緩速：15/20/25/30%→20/25/30/35%。",
+        "W": "連續普攻基礎傷害：10/20/30/40→20/30/40/50。"
+      },
+      "advice": "7.2e 物防成長、一技緩速與二技連續普攻提高；坦裝對物理陣容仍合適，這次沒有提升大絕魔攻係數，不因此改成純魔攻預設。"
+    }
+  },
+  "itemChanges": {
+    "intermediate-seekers-armguard": "7.2e：凝滯冷卻 120→150 秒；此改動僅列中階護腕，不套用到中婭沙漏。",
+    "intermediate-19": "7.2e：法術護盾被動冷卻 50→65 秒；此改動不套用到女妖面紗。",
+    "physical-high-36": "7.2e：價格 3000→2900；近戰護盾 140 +35%額外物攻→150 +40%額外物攻，遠程不套用此增強。",
+    "defense-high-03": "7.2e：生命 200→300、雙防各 45→40、新增技能加速 10；總價 3000，合成改為鎖子甲＋負極斗篷＋燃燒寶石＋200。"
+  },
+  "profilesScanned": 202,
+  "directProfiles": [
+    "malphite-baron",
+    "nautilus-baron",
+    "swain-baron",
+    "vi-jungle",
+    "swain-mid",
+    "janna-support",
+    "malphite-support",
+    "nautilus-support",
+    "swain-support",
+    "nautilus-jungle"
+  ],
+  "updatedProfiles": [
+    "aatrox-baron",
+    "ambessa-baron",
+    "ksante-baron",
+    "malphite-baron",
+    "nautilus-baron",
+    "riven-baron",
+    "swain-baron",
+    "wukong-baron",
+    "aatrox-jungle",
+    "ambessa-jungle",
+    "vi-jungle",
+    "galio-mid",
+    "swain-mid",
+    "zed-mid",
+    "janna-support",
+    "malphite-support",
+    "nautilus-support",
+    "swain-support",
+    "nautilus-jungle"
+  ],
+  "aramProfilesScanned": 141,
+  "aramUpdated": [
+    "galio",
+    "janna",
+    "jayce",
+    "malphite",
+    "maokai",
+    "nautilus",
+    "ornn",
+    "swain",
+    "ksante",
+    "nocturne",
+    "pyke",
+    "sion",
+    "skarner",
+    "dr-mundo",
+    "aatrox",
+    "ambessa",
+    "hecarim",
+    "kayn",
+    "riven",
+    "vi",
+    "zed",
+    "khazix",
+    "talon"
+  ],
+  "tierChanges": [
+    {
+      "profileId": "vi-jungle",
+      "from": "S+",
+      "to": "S",
+      "status": "provisional-official-change-inference"
+    },
+    {
+      "profileId": "swain-mid",
+      "from": "S",
+      "to": "A",
+      "status": "provisional-official-change-inference"
+    },
+    {
+      "profileId": "aram:swain",
+      "from": "S+",
+      "to": "S",
+      "status": "provisional-official-change-inference"
+    }
+  ],
+  "methodology": "Official delta audit, not a fresh empirical win-rate ranking. Rune/spell defaults retained. AAA historical rankings remain labelled 7.2b.",
+  "protectedHashes": {
+    "pages/players.html": "8a5f945aac51303d1e27de770a9d2b458695a28ba6d0ad06d29d0bc9baa2c06d",
+    "assets/js/players.js": "c7f8b94bb287d57c657030237f1554155e6716bd7d64dc25322c9e853b10dfc0",
+    "supabase/wild-rift-guide-member.sql": "2d34a55401eeb01dc27cbc83590813b5e38b76041635ad10f2c9e7cbf0954700",
+    "supabase/wild-rift-guide-v91-player-finder-check.sql": "a15daf392fca83163a8d908ba1205f0b8d91d28fb083cf26735546c88ab7b2e8",
+    "supabase/wild-rift-guide-v79-check.sql": "36ec51e611d6d08e300c18f5a9567a5c714b04c3957f7f480d65db49627d4804",
+    "supabase/README.md": "51d6c1375d4bb40388627baca87620b6b49ade8f4d59f73004c7b537f876bbca",
+    "supabase/wild-rift-guide-v79.5-traffic.sql": "490dbd37dcaa830f3332aa7bb04744e8a7cc0d524d16196de10bfff8a257cd01",
+    "supabase/v79.3-member-data-repair.sql": "4c72841746fd219504e34d38a16bd443e9244d09ea054d17e2614e517394e634",
+    "supabase/wild-rift-guide-v91-player-finder.sql": "62845806ed270e17fba0c3446b2334ab772d1e1807b6a292f756b3a64a3aa8a8"
+  },
+  "limitations": [
+    "血償效果與分類未於此次公告完整公布，不憑空加入效果或排名。",
+    "完整公告未列雄心之鋼數值異動，保留原值。"
+  ]
+}
