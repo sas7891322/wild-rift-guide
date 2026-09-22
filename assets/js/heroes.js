@@ -35,16 +35,16 @@
       baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2e 巴龍路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與實戰節奏。',count:'50 位巴龍路英雄 · 49 份完整攻略'},
       jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List',description:'激鬥峽谷 7.2e 打野英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、刷野與帶節奏方式。',count:'51 位打野英雄 · 50 份完整攻略'},
       mid:{title:'激鬥峽谷中路英雄推薦與 Tier List｜Wild Rift Guide',heading:'中路英雄推薦與 Tier List',description:'激鬥峽谷 7.2e 中路英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與支援節奏。',count:'46 位中路攻略'},
-      duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List',description:'激鬥峽谷 7.2e 飛龍路射手英雄推薦、Tier 排名與完整攻略，整理出裝、符文、技能加點、對線與合適輔助。',count:'23 位飛龍路攻略'},
+      duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List',description:'飛龍路 23 位已完成 7.3 首輪出裝、符文與技能差異校正；Tier 為編輯暫定，尚非新版勝率結論。',count:'23 / 23 位 · 7.3 首輪校正'},
       support:{title:'激鬥峽谷輔助英雄推薦與 Tier List｜Wild Rift Guide',heading:'輔助英雄推薦與 Tier List',description:'激鬥峽谷 7.2e 輔助英雄推薦、Tier 排名與完整攻略，整理輔助裝、符文、技能加點、對線與開戰保排方式。',count:'32 位輔助攻略'}
     };
     const current=roleSeo[state.role];
     const title=current?.title||'激鬥峽谷英雄攻略與 Tier List｜Wild Rift Guide';
-    const description=current?.description||'激鬥峽谷英雄資料庫，收錄 142 位英雄與 203 份位置攻略（原有 7.2e 配置＋赫威 7.3 初步配置），可依路線、繁體中文或英文名稱搜尋。';
+    const description=current?.description||'激鬥峽谷英雄資料庫，收錄 142 位英雄與 203 份位置攻略（飛龍路 23 位完成 7.3 首輪，其餘分批更新），可依路線、繁體中文或英文名稱搜尋。';
     const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
     updateHeroPageHeading({
-      eyebrow:'激鬥峽谷 · PATCH 7.2E',title:heading,description,
+      eyebrow:state.role==='duo'?'激鬥峽谷 · PATCH 7.3 · 暫定':'激鬥峽谷 · 7.3 分批校正中',title:heading,description,
       badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
       badgeText:state.role==='mid'?'47 份中路攻略（含赫威初步配置）':(current?.count||'142 位英雄 · 203 份英雄位置配置')
     });
@@ -68,10 +68,10 @@
     const roleLabel=roleNames[hero.roleId]||hero.role||'英雄';
     const heading=`${hero.name}${roleLabel}攻略`;
     const title=`${hero.name}攻略｜${roleLabel}出裝、符文、技能加點｜激鬥峽谷`;
-    const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 7.2e ${roleLabel}完整攻略，整理推薦出裝、符文搭配、召喚師技能、技能加點、對線與實戰節奏。${hero.summary||''}`);
+    const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 ${hero.patch||'7.2e'} ${roleLabel}完整攻略，整理推薦出裝、符文搭配、召喚師技能、技能加點、對線與實戰節奏。${hero.summary||''}`);
     const path=heroCanonicalPath(hero);
     updateHeroPageHeading({
-      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH 7.2E`,title:heading,description,
+      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH ${hero.patch||'7.2e'}${hero.provisional?' · 暫定':''}`,title:heading,description,
       badgeLabel:'英雄完整攻略',badgeText:'出裝 · 符文 · 技能 · 對局'
     });
     window.WRGSeo.set({
@@ -98,7 +98,7 @@
   async function shareHeroGuide(hero,button){
     const roleLabel=roleNames[hero.roleId]||hero.role||'英雄';
     const url=window.WRGSeo?.heroShareUrl(hero.id)||location.href;
-    const data={title:`${hero.name}攻略｜${roleLabel}出裝與符文｜激鬥峽谷`,text:`${hero.name}激鬥峽谷 7.2e ${roleLabel}出裝、符文、技能加點與對局攻略`,url};
+    const data={title:`${hero.name}攻略｜${roleLabel}出裝與符文｜激鬥峽谷`,text:`${hero.name}激鬥峽谷 ${hero.patch||'7.2e'} ${roleLabel}出裝、符文、技能加點與對局攻略`,url};
     try{
       if(navigator.share){ await navigator.share(data); return; }
       if(navigator.clipboard?.writeText){
@@ -144,7 +144,7 @@
   function firstBasicComponent(item, seen=new Set()){
     if(!item || seen.has(item.id)) return null;
     seen.add(item.id);
-    if(String(item.id||'').startsWith('basic-') || String(item.id||'').startsWith('support-')) return item;
+    if(item.stage==='基本裝備' || String(item.id||'').startsWith('basic-') || String(item.id||'').startsWith('support-')) return item;
     for(const id of (item.buildFrom||[])){
       const child=byId(state.items,id);
       const found=firstBasicComponent(child,seen);
@@ -169,7 +169,10 @@
 
   function buildMiniCard(x, type='item'){
     if(!x) return '<div class="build-mini missing">資料待補</div>';
-    return `<div class="build-mini ${type}"><img src="${safeIcon(x)}" alt="${x.name}" loading="lazy"><span>${x.name}</span></div>`;
+    const inner=`<img src="${safeIcon(x)}" alt="${x.name}" loading="lazy"><span>${x.name}</span>`;
+    return String(x.id).startsWith('wr73-')
+      ? `<a class="build-mini ${type}" href="items.html?item=${encodeURIComponent(x.id)}" aria-label="查看${x.name}裝備說明">${inner}</a>`
+      : `<div class="build-mini ${type}">${inner}</div>`;
   }
 
   const rolePriority=['baron','jungle','mid','duo','support'];
@@ -455,7 +458,7 @@
     }).join('');
     const countCopy = crossCount>0 ? `原生 ${nativeCount}＋跨路 ${crossCount}` : `原生 ${nativeCount}`;
     content.innerHTML = `<section class="hero-overview-shell">
-      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>各路線獨立評級 · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
+      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>${state.role==='duo'?'7.3 首輪 · Tier 暫定':'7.3 校正待完成 · 既有評級'} · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
       ${groups || ((state.query||state.filter!=='all')?noResultHTML():`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
     </section>`;
     bindOverviewActions(content);
@@ -741,6 +744,20 @@
     setTimeout(goTop,40);
   }
 
+  function renderPatchReview(hero){
+    const r=hero.patch73Review;
+    if(!r) return '';
+    return `<section class="hero-section hero-patch-review">
+      <div class="hero-section-title"><h3>7.3 校正重點</h3><span>首輪 · 評級暫定</span></div>
+      <p><b>出裝順序：</b>${safeText(r.buildReason)}</p>
+      <p><b>符文取捨：</b>${safeText(r.runeReason)}</p>
+      <p><b>召喚師技能：</b>${safeText(r.spellReason)}</p>
+      <p><b>技能加點：</b>${safeText(r.skillReason)}</p>
+      <p><b>評級判斷：</b>${safeText(r.tierReason)}</p>
+      <p><small>${safeText(r.matchupBasis)}</small></p>
+    </section>`;
+  }
+
   function renderBuildVariants(hero){
     if(!hero.buildVariants?.length)return '';
     return `<section class="hero-section"><div class="hero-section-title"><h3>情境完整配置</h3></div>${hero.buildVariants.map(v=>`<details><summary>${safeText(v.title)}</summary><p>${safeText(v.when)}</p><div class="build-groups">${buildSet('五件成裝','整套擇一使用',v.items.map(id=>buildMiniCard(byId(state.items,id))).join(''),'final-group')}</div><p>鞋子：${(v.boots||hero.boots).map(id=>safeText(byId(state.items,id).name)).join(' → ')}</p><p>符文：${v.runes.map(id=>safeText(byId(state.runes,id).name)).join(' ／ ')}</p><p>召喚師技能：${v.spells.map(id=>safeText(byId(state.spells,id).name)).join(' ／ ')}</p><p>${safeText(v.note)}</p></details>`).join('')}</section>`;
@@ -760,7 +777,7 @@
     const catalogHero=catalogHeroByBaseId(baseIdOf(hero));
     const profiles=(catalogHero?.roles||[]).map(role=>state.heroes.find(x=>x.id===role.detailHeroId)).filter(Boolean);
     const laneSwitch=profiles.length>1?`<div class="hero-lane-switch">${profiles.map(x=>`<button data-profile="${x.id}" class="${x.id===hero.id?'active':''}">${roleNames[x.roleId]||x.role}</button>`).join('')}</div>`:'';
-    const runeHTML=runes.map((x,i)=>`<div class="hero-rune-card ${i===0?'keystone':''}">${x?`<img src="${safeIcon(x)}" alt="${x.name}"><div><small>${i===0?'關鍵符文':'副符文'}</small><strong>${x.name}</strong><p>${x.tag||''}</p></div>`:'<span>資料待補</span>'}</div>`).join('');
+    const runeHTML=runes.map((x,i)=>`<div class="hero-rune-card ${i===0?'keystone':''}">${x?`${safeIcon(x)?`<img src="${safeIcon(x)}" alt="${x.name}">`:'<span class="rune-text-icon" aria-hidden="true">速</span>'}<div><small>${i===0?'關鍵符文':'副符文'}</small><strong>${x.name}</strong><p>${x.removedPatch?'7.3 已移除，這份配置待更新':(x.tag||'')}</p></div>`:'<span>資料待補</span>'}</div>`).join('');
     const spellHTML=spells.map(x=>buildMiniCard(x,'spell')).join('');
     const starter=firstBasicComponent(items[0]);
     const starterHTML=buildMiniCard(starter,'starter');
@@ -801,12 +818,13 @@
       <section class="hero-profile">
         <section class="hero-profile-hero">
           ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy" data-hero-fallback data-fallback-letter="${hero.name.slice(0,1)}" data-fallback-class="hero-avatar hero-avatar-placeholder">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
-          <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
+          <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role} · ${hero.patch73Review?'7.3 首輪校正／評級暫定':hero.provisional?'初步配置／評級暫定':'7.3 校正待完成'}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
         </section>
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>${safeText(hero.patch||'7.2e')}${hero.provisional?' · 暫定':''} · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         ${buildSection}
+        ${renderPatchReview(hero)}
         ${renderBuildVariants(hero)}
         ${matchupAdjustmentSection}
         ${skillSection}
@@ -839,10 +857,10 @@
   async function init(){
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
-      const [heroData,runeData,itemData,spellData,hweiProfile]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=96.0.0'), getJSON('../assets/data/runes.json?v=92.0.0'), getJSON('../assets/data/items.json?v=96.0.0'), getJSON('../assets/data/spells.json?v=103.0.0'), getJSON('../assets/data/hwei-profile.json?v=100.0.0')
+      const [heroData,runeData,itemData,spellData,hweiProfile,currentItems]=await Promise.all([
+        getJSON('../assets/data/heroes.json?v=104.0.0'), getJSON('../assets/data/runes.json?v=104.0.0'), getJSON('../assets/data/items.json?v=96.0.0'), getJSON('../assets/data/spells.json?v=103.0.0'), getJSON('../assets/data/hwei-profile.json?v=100.0.0'), getJSON('../assets/data/items-7.3.json?v=102.0.0')
       ]);
-      state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
+      state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=[...normalizeItems(itemData),...normalizeItems(currentItems)]; state.spells=spellData;
       // Hwei's standalone guide carries an explicitly provisional editorial tier.
       if(!state.heroes.some(h=>h.id===hweiProfile.id)) state.heroes.push(hweiProfile);
       if(!state.heroCatalog.some(h=>h.id==='hwei')) state.heroCatalog.push({id:'hwei',name:'赫威',enName:'Hwei',aliases:['赫威','Hwei'],avatar:hweiProfile.avatar,roles:[{roleId:'mid',tier:hweiProfile.tier,origin:'native',detailHeroId:hweiProfile.id}]});

@@ -4,9 +4,10 @@ let current = "keystone";
 let selectedId = null;
 const labels = {keystone:"關鍵符文",conquest:"征服",precision:"精準",resolve:"意志",sorcery:"巫術"};
 
+function runeIcon(x){return x.icon?`<img src="${x.icon}" alt="${x.name}">`:'<span class="rune-text-icon" aria-label="圖示待補">速</span>';}
 function detailMarkup(x){
   if(!x) return '<div class="empty">將滑鼠移到符文上，或點擊符文查看說明。</div>';
-  return `<img src="${x.icon}" alt="${x.name}">
+  return `${runeIcon(x)}`+`
     <h2>${x.name}</h2>
     <div class="detail-meta rune-accent-${current}">${x.tag || labels[current]}</div>
     <div class="detail-description">${x.description || "待補資料"}</div>
@@ -23,7 +24,7 @@ function showDetail(x){
 }
 function card(x){
   return `<article class="rune-card interactive-card" data-id="${x.id}">
-    <div class="rune-card-head"><img src="${x.icon}" alt="${x.name}">
+    <div class="rune-card-head">${runeIcon(x)}
     <div><h3>${x.name}</h3><div class="meta">${x.tag || labels[current]}</div></div></div>
   </article>`;
 }
@@ -36,7 +37,7 @@ function bind(){
 }
 function render(){
   const k=document.querySelector("#q").value.trim().toLowerCase();
-  const source=(DATA[current]||[]).filter(x=>(x.name+(x.tag||"")+(x.description||"")).toLowerCase().includes(k));
+  const source=(DATA[current]||[]).filter(x=>x.available!==false).filter(x=>(x.name+(x.tag||"")+(x.description||"")).toLowerCase().includes(k));
   const target=document.querySelector("#rune-content");
   if(!source.length){target.innerHTML='<div class="empty">沒有符合條件的符文。</div>';return;}
   if(current==="keystone"){
@@ -54,7 +55,7 @@ function render(){
   showDetail(initial);
 }
 (async()=>{
-  DATA=await getJSON("../assets/data/runes.json?v=79.5.1");
+  DATA=await getJSON("../assets/data/runes.json?v=104.0.0");
   document.querySelectorAll(".rune-tab").forEach(btn=>btn.addEventListener("click",()=>{
     document.querySelectorAll(".rune-tab").forEach(x=>x.classList.remove("active"));
     btn.classList.add("active"); current=btn.dataset.key; selectedId=null; render();

@@ -32,9 +32,9 @@
       "order": 4,
       "name": "致命節奏",
       "icon": "../assets/images/runes/keystone/lethal-tempo.webp",
-      "tag": "攻速",
-      "description": "普攻命中敵方英雄時疊加攻速，滿層後提高攻擊範圍並突破攻速上限。",
-      "status": "已校對"
+      "tag": "疊層攻速・滿層追加傷害",
+      "description": "普攻疊層提高攻速，滿層追加適性傷害；額外攻速可提高追加傷害。7.3 不再提供滿層額外射程。",
+      "status": "7.3 官方機制已校正"
     },
     {
       "id": "fleet-footwork",
@@ -51,7 +51,7 @@
       "name": "征服者",
       "icon": "../assets/images/runes/keystone/conqueror.webp",
       "tag": "傷害累加・吸血",
-      "description": "以獨立普攻或技能命中英雄時累加適性之力，滿層時獲得額外全能吸血。",
+      "description": "獨立普攻或技能命中英雄時疊加適性之力，滿層獲得全能吸血；每層提供 3–5 額外物攻或 5–8.33 魔攻（隨等級成長）。",
       "status": "已校對"
     },
     {
@@ -197,7 +197,9 @@
       "tag": "擊殺時增加道具技能加速",
       "description": "獲得道具技能加速；參與擊殺英雄或史詩級野怪時額外獲得加速，最多累加5層。",
       "row": 3,
-      "rowOrder": 2
+      "rowOrder": 2,
+      "removedPatch": "7.3",
+      "available": false
     },
     {
       "id": "relentless-hunter",
@@ -299,7 +301,9 @@
       "tag": "增加韌性與緩速抗性",
       "description": "獲得韌性與緩速抗性；參與擊殺後可繼續提高，最多額外獲得15%韌性與20%緩速抗性。",
       "row": 3,
-      "rowOrder": 2
+      "rowOrder": 2,
+      "removedPatch": "7.3",
+      "available": false
     },
     {
       "id": "legend-bloodline",
@@ -310,6 +314,17 @@
       "description": "獲得1%全能吸血；參與擊殺後最多額外獲得7%全能吸血。",
       "row": 3,
       "rowOrder": 3
+    },
+    {
+      "id": "legend-haste",
+      "name": "傳奇：疾速",
+      "order": 8,
+      "row": 3,
+      "rowOrder": 2,
+      "icon": "",
+      "tag": "疊層技能加速",
+      "description": "參與擊殺士兵與野怪逐步取得技能加速，最高 15 點。7.3 取代傳奇：韌性。",
+      "status": "文字依官方更新；圖示待遊戲素材補齊"
     }
   ],
   "resolve": [
@@ -321,7 +336,7 @@
       "name": "爆破",
       "icon": "../assets/images/runes/resolve/demolish.webp",
       "tag": "提升拆塔速度",
-      "description": "在敵方防禦塔範圍內累積充能；完成後，下一次對防禦塔的普攻造成額外物理傷害。"
+      "description": "對防禦塔普攻三次後追加物理傷害，近戰為 85＋28% 最大生命，遠程為 50＋20% 最大生命。"
     },
     {
       "id": "font-of-life",

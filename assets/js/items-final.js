@@ -98,7 +98,10 @@
       if (!response.ok) throw new Error('無法讀取裝備資料');
       data = await response.json();
       if (!Array.isArray(data.items) || !data.items.length) throw new Error('裝備資料格式錯誤');
+      const requested=find(new URLSearchParams(location.search).get('item'));
+      if(requested){category=requested.categories[0];selectedId=requested.id;}
       render();
+      if(requested) select(requested,true);
     } catch (error) {
       $('#item-count').textContent = '';
       $('#item-content').innerHTML = '<div class="empty">裝備資料暫時無法載入，請確認網路後重試。<br><button type="button" id="item-retry">重新載入</button></div>';
