@@ -1,117 +1,217 @@
 [
   {
-    "id": "heal",
-    "order": 1,
-    "name": "治療",
-    "icon": "../assets/images/spells/heal.webp",
-    "cooldown": 100,
-    "maps": [
-      "激鬥峽谷",
-      "咆嘯深淵"
-    ],
-    "category": "回復",
-    "description": "自己及附近負傷最重的友方英雄回復110生命（110–400，隨等級提升），並增加30%額外跑速，持續2秒。"
-  },
-  {
     "id": "ghost",
-    "order": 2,
+    "order": 1,
     "name": "鬼步",
-    "icon": "../assets/images/spells/ghost.webp",
+    "icon": "../assets/images/spells/v103/ghost.webp",
     "cooldown": 90,
     "maps": [
       "激鬥峽谷",
       "咆嘯深淵"
     ],
     "category": "機動",
-    "description": "立即大幅增加跑速，接著衰減為額外25%跑速，持續8秒。獲得擊殺或助攻後，持續時間延長6秒並重置起始跑速加成。"
+    "description": "立即大幅增加跑速，接著衰減為額外 25% 跑速，持續 8 秒。獲得擊殺或助攻後，鬼步持續時間延長 6 秒，並重置效果，恢復為起始跑速加成。",
+    "dataVersion": "7.3",
+    "sourceImages": [
+      "IMG_9433.PNG"
+    ]
+  },
+  {
+    "id": "heal",
+    "order": 2,
+    "name": "治療",
+    "icon": "../assets/images/spells/v103/heal.webp",
+    "cooldown": 100,
+    "maps": [
+      "激鬥峽谷",
+      "咆嘯深淵"
+    ],
+    "category": "回復",
+    "description": "自己及附近負傷最重的友方英雄回復 110–400 生命（隨等級提升），並增加 30% 額外跑速，持續 2 秒。",
+    "dataVersion": "7.3",
+    "details": [
+      {
+        "title": "重複治療",
+        "paragraphs": [
+          "若剛受到治療的效果回血，則此次治療效果減半。"
+        ]
+      }
+    ],
+    "sourceImages": [
+      "IMG_9434.PNG",
+      "IMG_9435.PNG"
+    ]
   },
   {
     "id": "barrier",
     "order": 3,
     "name": "光盾",
-    "icon": "../assets/images/spells/barrier.webp",
+    "icon": "../assets/images/spells/v103/barrier.webp",
     "cooldown": 100,
     "maps": [
       "激鬥峽谷",
       "咆嘯深淵"
     ],
     "category": "防禦",
-    "description": "獲得一個可吸收120傷害（120–560，隨等級提升）的護盾，持續2.5秒。"
+    "description": "獲得一個可吸收 120–560 傷害（隨等級提升）的護盾，持續 2.5 秒。",
+    "dataVersion": "7.3",
+    "sourceImages": [
+      "IMG_9436.PNG"
+    ]
   },
   {
     "id": "exhaust",
     "order": 4,
     "name": "虛弱",
-    "icon": "../assets/images/spells/exhaust.webp",
+    "icon": "../assets/images/spells/v103/exhaust.webp",
     "cooldown": 100,
     "maps": [
       "激鬥峽谷",
       "咆嘯深淵"
     ],
     "category": "控制",
-    "description": "使目標敵方英雄緩速35%，並降低其傷害40%，持續2.5秒。緩速會在持續時間內逐漸衰減。"
+    "description": "使目標敵方英雄緩速 35%，並降低其造成的傷害 40%，持續 2.5 秒。緩速效果會在持續時間內逐漸衰減至失效。",
+    "dataVersion": "7.3",
+    "sourceImages": [
+      "IMG_9437.PNG"
+    ]
   },
   {
     "id": "cleanse",
     "order": 5,
     "name": "淨化",
-    "icon": "../assets/images/spells/cleanse.webp",
+    "icon": "../assets/images/spells/v103/cleanse.webp",
     "cooldown": 110,
     "maps": [
       "激鬥峽谷",
       "咆嘯深淵"
     ],
     "category": "解控",
-    "description": "移除影響英雄的限制效果（包括召喚師技能減益），並賦予限制免疫，持續0.25秒。"
+    "description": "移除影響英雄的限制效果（包括召喚師技能減益），並賦予限制免疫，持續 0.25 秒。",
+    "dataVersion": "7.3",
+    "sourceImages": [
+      "IMG_9439.PNG"
+    ]
   },
   {
     "id": "flash",
     "order": 6,
     "name": "閃現",
-    "icon": "../assets/images/spells/flash.webp",
+    "icon": "../assets/images/spells/v103/flash.webp",
     "cooldown": 150,
     "maps": [
       "激鬥峽谷",
       "咆嘯深淵"
     ],
     "category": "位移",
-    "description": "朝前方或目標方向短距離瞬間移動。"
+    "description": "朝前方或目標方向短距離瞬間移動。",
+    "dataVersion": "7.3",
+    "sourceImages": [
+      "IMG_9438.PNG"
+    ]
   },
   {
     "id": "ignite",
     "order": 7,
     "name": "點燃",
-    "icon": "../assets/images/spells/ignite.webp",
+    "icon": "../assets/images/spells/v103/ignite.webp",
     "cooldown": 100,
     "maps": [
       "激鬥峽谷",
       "咆嘯深淵"
     ],
     "category": "進攻",
-    "description": "點燃目標敵方英雄，在5秒內造成72真實傷害（72–380，隨等級提升），附加重創並獲得其視野。"
+    "description": "點燃目標敵方英雄，在 5 秒內造成 72–380 真實傷害（隨等級提升），對目標附加重創效果，並獲得其視野。",
+    "dataVersion": "7.3",
+    "details": [
+      {
+        "title": "重創",
+        "paragraphs": [
+          "重創效果會使治療效果降低 60%。"
+        ]
+      }
+    ],
+    "sourceImages": [
+      "IMG_9440.PNG",
+      "IMG_9441.PNG"
+    ]
   },
   {
     "id": "smite",
     "order": 8,
     "name": "重擊",
-    "icon": "../assets/images/spells/smite.webp",
+    "icon": "../assets/images/spells/v103/smite.webp",
     "cooldown": 10,
     "maps": [
       "激鬥峽谷"
     ],
     "category": "打野",
-    "description": "對野怪、史詩級野怪或敵方士兵造成600真實傷害。對野怪施放時回復生命；使用3次後升級為凜冽重擊。"
+    "description": "對士兵和怪物造成 600 真實傷害。透過獵手智謀層數升級後，傷害分別提升至 1,000、1,400。",
+    "dataVersion": "7.3",
+    "chargeCooldown": 45,
+    "maxCharges": 2,
+    "details": [
+      {
+        "title": "野區專精",
+        "paragraphs": [
+          "施放時，重擊對士兵和怪物造成 600 真實傷害，並讓自身對野怪的普攻每秒在目標周遭造成 30 真實傷害，持續 2 秒。此傷害增加相當於 10% 額外物攻、12% 額外魔攻、25% 額外物防、25% 額外魔防，以及 4% 額外生命的數值。",
+          "對野怪造成 10% 額外傷害。"
+        ]
+      },
+      {
+        "title": "獵手智謀",
+        "paragraphs": [
+          "隨時間累積獵手智謀層數；清空一區野怪後消耗 1 層，獲得 40 額外金錢。",
+          "普攻野怪時，每秒回復 5–35 生命，回復量取決於自身已損失生命。",
+          "裝備重擊時，來自非史詩級野怪的傷害削減至 50%。"
+        ]
+      },
+      {
+        "title": "升級重擊",
+        "paragraphs": [
+          "消耗 8 層和 20 層後，重擊升級，傷害分別提升至 1,000 和 1,400。",
+          "完全升級後，在野區或河道增加跑速：脫離戰鬥時增加 10%，戰鬥中增加 5%。",
+          "強化重擊可對英雄施放，造成 40 真實傷害，並竊取 25% 跑速，持續 2 秒。"
+        ]
+      },
+      {
+        "title": "充能",
+        "paragraphs": [
+          "每 45 秒獲得 1 層充能，最多儲存 2 層；兩次施放之間的冷卻為 10 秒。"
+        ]
+      }
+    ],
+    "sourceImages": [
+      "IMG_9442.PNG",
+      "IMG_9443.PNG",
+      "IMG_9444.PNG",
+      "IMG_9445.PNG",
+      "IMG_9446.PNG"
+    ]
   },
   {
     "id": "teleport",
     "order": 9,
     "name": "傳送",
-    "icon": "../assets/images/spells/teleport.webp",
+    "icon": "../assets/images/spells/v103/teleport.webp",
     "cooldown": 150,
     "maps": [
       "激鬥峽谷"
     ],
     "category": "戰略",
-    "description": "詠唱3.5秒後，將自身傳送至友方建物、英雄或偵察守衛旁（不包括敵方水晶兵營範圍內區域）。"
+    "description": "詠唱 3.5 秒後，將自身傳送至友方建物、英雄或偵察守衛旁，不包括敵方水晶兵營範圍內的區域。",
+    "dataVersion": "7.3",
+    "details": [
+      {
+        "title": "對戰前期限制",
+        "paragraphs": [
+          "對戰前 6 分鐘只能傳送至建築物。"
+        ]
+      }
+    ],
+    "sourceImages": [
+      "IMG_9447.PNG",
+      "IMG_9448.PNG"
+    ]
   }
 ]

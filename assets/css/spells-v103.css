@@ -1,0 +1,11 @@
+.spells-page button.spell-icon{font-family:inherit;color:var(--text);cursor:pointer;width:100%}
+.spells-page button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.spells-page .spell-effect-section{margin-top:20px;padding-top:14px;border-top:1px solid var(--line)}
+.spells-page .spell-effect-section h3{font-size:15px;color:var(--gold);margin:0 0 8px}
+.spells-page .spell-effect-section p{line-height:1.85;color:var(--muted);margin:8px 0;overflow-wrap:anywhere}
+.spells-page .detail-meta{line-height:1.8}
+.spells-page #spell-count{font-size:13px;color:var(--muted);margin:0 0 16px}
+.spells-page #spell-detail{max-height:calc(100dvh - 110px);overflow-y:auto;scrollbar-width:thin}
+.spells-page #mobile-spell-detail{scroll-margin-top:85px}
+.spells-page #spell-retry{display:block;margin:12px auto;padding:10px 16px;cursor:pointer}
+@media(max-width:900px){.spells-page #mobile-spell-detail{display:block!important}.spells-page #spell-detail{display:none}.spells-page .database-layout{display:block}.spells-page #mobile-spell-detail>img{width:76px;height:76px;border-radius:14px}.spells-page #mobile-spell-detail h2{font-size:22px}}

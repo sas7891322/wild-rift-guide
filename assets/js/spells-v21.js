@@ -1,40 +1,56 @@
-
-let SPELLS=[], selected=null;
-function detailMarkup(x){
-  if(!x)return '<div class="empty">將滑鼠移到技能上，或點擊技能查看說明。</div>';
-  return `<img src="${x.icon}" alt="${x.name}">
-  <h2>${x.name}</h2>
-  <div class="detail-meta">${x.category}｜冷卻 ${x.cooldown} 秒</div>
-  <div class="detail-description">${x.description}</div>
-  <div class="detail-chips">${(x.maps||[]).map(m=>`<span class="chip">${m}</span>`).join("")}</div>`;
-}
-function show(x){
-  selected=x.id;
-  document.querySelectorAll(".spell-icon").forEach(el=>el.classList.toggle("active",el.dataset.id===x.id));
-  ["#spell-detail","#mobile-spell-detail"].forEach(sel=>{
-    const p=document.querySelector(sel);p.classList.add("is-changing");
-    setTimeout(()=>{p.innerHTML=detailMarkup(x);p.classList.remove("is-changing")},90);
-  });
-}
-function render(){
-  const q=document.querySelector("#q").value.trim().toLowerCase();
-  const cat=document.querySelector("#cat").value;
-  const rows=SPELLS.filter(x=>(x.name+x.description+x.category).toLowerCase().includes(q)&&(cat==="全部"||x.category===cat));
-  const target=document.querySelector("#spell-icons");
-  target.innerHTML=rows.length?rows.map(x=>`<article class="spell-icon interactive-icon" data-id="${x.id}">
-    <img src="${x.icon}" alt="${x.name}"><strong>${x.name}</strong>
-  </article>`).join(""):'<div class="empty">沒有符合條件的召喚師技能。</div>';
-  document.querySelectorAll(".spell-icon").forEach(el=>{
-    const x=SPELLS.find(s=>s.id===el.dataset.id);
-    el.addEventListener("mouseenter",()=>show(x));el.addEventListener("click",()=>show(x));
-  });
-  const first=rows.find(x=>x.id===selected)||rows[0];if(first)show(first);
-}
-(async()=>{
-  SPELLS=await getJSON("../assets/data/spells.json?v=79.5.1");
-  const cats=["全部",...new Set(SPELLS.map(x=>x.category))];
-  document.querySelector("#cat").innerHTML=cats.map(x=>`<option value="${x}">${x}</option>`).join("");
-  document.querySelector("#q").addEventListener("input",render);
-  document.querySelector("#cat").addEventListener("change",render);
-  render();
+(() => {
+  'use strict';
+  let spells = [], selected = null;
+  const $ = selector => document.querySelector(selector);
+  const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const detailsText = spell => (spell.details || []).map(section => `${section.title} ${section.paragraphs.join(' ')}`).join(' ');
+  function detailMarkup(spell) {
+    if (!spell) return '<div class="empty">沒有符合條件的召喚師技能。</div>';
+    const cooldown = spell.chargeCooldown ? `施放間隔 ${spell.cooldown} 秒｜充能 ${spell.chargeCooldown} 秒／層（最多 ${spell.maxCharges} 層）` : `冷卻 ${spell.cooldown} 秒`;
+    return `<img src="${escape(spell.icon)}" alt="${escape(spell.name)}">
+      <h2 tabindex="-1">${escape(spell.name)}</h2>
+      <div class="detail-meta">${escape(spell.category)}｜${cooldown}</div>
+      <div class="detail-description">${escape(spell.description)}</div>
+      ${(spell.details || []).map(section => `<section class="spell-effect-section"><h3>${escape(section.title)}</h3>${section.paragraphs.map(p => `<p>${escape(p)}</p>`).join('')}</section>`).join('')}
+      <div class="detail-chips">${(spell.maps || []).map(m => `<span class="chip">${escape(m)}</span>`).join('')}</div>`;
+  }
+  function show(spell, navigate = false) {
+    selected = spell?.id || null;
+    document.querySelectorAll('.spell-icon').forEach(el => el.classList.toggle('active', el.dataset.id === selected));
+    ['#spell-detail','#mobile-spell-detail'].forEach(selector => {$(selector).innerHTML = detailMarkup(spell);});
+    if (navigate && matchMedia('(max-width: 900px)').matches) {
+      $('#mobile-spell-detail').scrollIntoView({block:'start',behavior:'smooth'});
+      $('#mobile-spell-detail h2')?.focus({preventScroll:true});
+    }
+  }
+  function render() {
+    const query = $('#q').value.trim().toLocaleLowerCase(), category = $('#cat').value;
+    const rows = spells.filter(s => `${s.name} ${s.description} ${s.category} ${detailsText(s)}`.toLocaleLowerCase().includes(query) && (category === '全部' || s.category === category));
+    $('#spell-icons').innerHTML = rows.length ? rows.map(s => `<button type="button" class="spell-icon interactive-icon" data-id="${escape(s.id)}" aria-label="查看${escape(s.name)}的效果與冷卻時間"><img src="${escape(s.icon)}" alt="" width="76" height="76"><strong>${escape(s.name)}</strong></button>`).join('') : '<div class="empty">沒有符合條件的召喚師技能。</div>';
+    $('#spell-count').textContent = `${rows.length}／${spells.length} 個召喚師技能`;
+    document.querySelectorAll('.spell-icon').forEach(button => {
+      const spell = spells.find(s => s.id === button.dataset.id);
+      button.onclick = () => show(spell, true);
+      button.onmouseenter = () => {if (matchMedia('(hover: hover)').matches && !matchMedia('(max-width: 900px)').matches) show(spell);};
+      button.onfocus = () => {if (!matchMedia('(max-width: 900px)').matches) show(spell);};
+    });
+    show(rows.find(s => s.id === selected) || rows[0]);
+  }
+  async function load() {
+    try {
+      const response = await fetch('../assets/data/spells.json?v=103.0.0');
+      if (!response.ok) throw new Error('Unable to load spells');
+      spells = (await response.json()).sort((a,b) => a.order - b.order);
+      if (!spells.length) throw new Error('No spells');
+      $('#cat').innerHTML = ['全部',...new Set(spells.map(s => s.category))].map(c => `<option value="${escape(c)}">${escape(c)}</option>`).join('');
+      render();
+    } catch (error) {
+      $('#spell-count').textContent = '';
+      $('#spell-icons').innerHTML = '<div class="empty">召喚師技能資料暫時無法載入。<button type="button" id="spell-retry">重新載入</button></div>';
+      $('#spell-retry').onclick = load;
+    }
+  }
+  $('#q').oninput = render;
+  $('#cat').onchange = render;
+  load();
 })();
