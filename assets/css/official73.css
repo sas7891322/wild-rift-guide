@@ -1,0 +1,24 @@
+.patch73-announcement { min-width:0; }
+.patch73-note { color:#a7b9ca; font-size:13px; line-height:1.75; }
+.patch73-section { border:1px solid #294359; border-radius:12px; margin:12px 0; overflow:hidden; }
+.patch73-section > summary { cursor:pointer; padding:16px; font-weight:700; background:#102235; line-height:1.5; }
+.patch73-section > summary::marker,.patch73-hero > summary::marker { color:#71cce7; }
+.patch73-body { padding:12px 16px; line-height:1.8; overflow-wrap:anywhere; }
+.patch73-body p { margin:6px 0; }
+.patch73-champions h4 { margin:22px 0 8px; }
+.patch73-champions label { display:block; margin:12px 0 6px; }
+#patch73-search { box-sizing:border-box; width:100%; min-height:44px; padding:10px 14px; border:1px solid #395169; border-radius:10px; color:#eaf2f8; background:#091827; font-size:16px; }
+.patch73-tools { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; }
+.patch73-tools button { cursor:pointer; border:1px solid #395169; border-radius:8px; background:#152e43; color:#dcecf8; padding:10px 12px; min-height:44px; }
+.patch73-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; padding:12px; align-items:start; }
+.patch73-hero { border:1px solid #294359; border-radius:10px; min-width:0; }
+.patch73-hero > summary { cursor:pointer; padding:12px; line-height:40px; }
+.patch73-hero summary img { width:40px; height:40px; object-fit:cover; border-radius:8px; vertical-align:middle; margin-right:8px; }
+.patch73-hero summary small { display:block; padding-left:20px; color:#9aafc3; line-height:1.5; }
+.patch73-table-wrap { overflow-x:auto; }
+.patch73-body table { width:100%; border-collapse:collapse; font-size:13px; }
+.patch73-body caption { text-align:left; color:#a7b9ca; padding-bottom:8px; }
+.patch73-body th,.patch73-body td { border-bottom:1px solid #294359; text-align:left; padding:8px 5px; }
+.patch73-announcement [hidden] { display:none!important; }
+.patch73-announcement :focus-visible { outline:2px solid #71cce7; outline-offset:3px; }
+@media(max-width:700px) { .patch73-grid { grid-template-columns:1fr; padding:8px; }.patch73-body { padding:10px 12px; }.patch73-hero > summary { padding:10px; } }
