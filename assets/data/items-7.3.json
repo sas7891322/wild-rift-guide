@@ -1,5 +1,5 @@
 {
-  "version": "7.3-v101-screenshot-catalog",
+  "version": "7.3-v102-text-catalog",
   "updatedAt": "2026-09-22",
   "source": "使用者提供的七類遊戲內截圖",
   "screenshotCount": 560,
@@ -12,7 +12,7 @@
     "輔助",
     "鞋子"
   ],
-  "notes": "裝備名稱與價格經截圖核對，能力值、效果與合成資訊以遊戲截圖呈現；英雄推薦配置另行校正。進化後效果包含於原裝備說明中。",
+  "notes": "依使用者提供的遊戲內截圖整理；171 件可購買裝備及 6 件進化裝備。數值與效果為文字整理，合成材料依截圖建立；同名裝備跨分類共用。",
   "items": [
     {
       "id": "wr73-8894",
@@ -108,8 +108,31 @@
           "kind": "description"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大魔力"
+      ],
+      "passives": [
+        {
+          "name": "威嚇",
+          "description": "返還 10% 已消耗的魔力。"
+        },
+        {
+          "name": "魔力補充",
+          "description": "每次消耗魔力時增加 5 最大魔力，上限 700。每 10 秒最多觸發 3 次；只能裝備一件女神之淚道具。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-8926",
+        "wr73-9159",
+        "wr73-9206",
+        "wr73-9284"
+      ],
+      "recipeSource": "IMG_9011.PNG",
+      "descriptionSources": [
+        "IMG_8894.PNG"
+      ]
     },
     {
       "id": "wr73-8895",
@@ -159,8 +182,28 @@
           "kind": "description"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+12% 攻擊速度"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-8906",
+        "wr73-8918",
+        "wr73-8934",
+        "wr73-9022",
+        "wr73-9026",
+        "wr73-9038",
+        "wr73-9054",
+        "wr73-9056",
+        "wr73-9058",
+        "wr73-9472"
+      ],
+      "recipeSource": "IMG_9013.PNG",
+      "descriptionSources": [
+        "IMG_8895.PNG"
+      ]
     },
     {
       "id": "wr73-8896",
@@ -222,8 +265,39 @@
           "kind": "description"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+12 物理攻擊"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-8898",
+        "wr73-8902",
+        "wr73-8904",
+        "wr73-8906",
+        "wr73-8908",
+        "wr73-8910",
+        "wr73-8912",
+        "wr73-8914",
+        "wr73-8922",
+        "wr73-8926",
+        "wr73-8938",
+        "wr73-8978",
+        "wr73-9002",
+        "wr73-9036",
+        "wr73-9040",
+        "wr73-9044",
+        "wr73-9060",
+        "wr73-9062",
+        "wr73-9078",
+        "wr73-9253",
+        "wr73-9488"
+      ],
+      "recipeSource": "IMG_9015.PNG",
+      "descriptionSources": [
+        "IMG_8896.PNG"
+      ]
     },
     {
       "id": "wr73-8897",
@@ -285,8 +359,25 @@
           "kind": "description"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+10% 暴擊率"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-9036",
+        "wr73-9038",
+        "wr73-9072",
+        "wr73-9076",
+        "wr73-9078",
+        "wr73-9085",
+        "wr73-9101"
+      ],
+      "recipeSource": "IMG_9017.PNG",
+      "descriptionSources": [
+        "IMG_8897.PNG"
+      ]
     },
     {
       "id": "wr73-8898",
@@ -363,8 +454,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理攻擊"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8940",
+        "wr73-8942",
+        "wr73-8961",
+        "wr73-9044",
+        "wr73-9060",
+        "wr73-9068",
+        "wr73-9070",
+        "wr73-9101"
+      ],
+      "recipeSource": "IMG_8899.PNG",
+      "descriptionSources": [
+        "IMG_8898.PNG"
+      ]
     },
     {
       "id": "wr73-8900",
@@ -475,8 +586,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "魔法彎刀",
+          "description": "施放技能後，10 秒內的下一次普攻造成相當於 100% 基礎物理攻擊的額外物理傷害。冷卻 1.5 秒；對建築物傷害降低。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9104"
+      ],
+      "upgrades": [
+        "wr73-8963",
+        "wr73-8966",
+        "wr73-9076",
+        "wr73-9187",
+        "wr73-9212",
+        "wr73-9319"
+      ],
+      "recipeSource": "IMG_8901.PNG",
+      "descriptionSources": [
+        "IMG_8900.PNG"
+      ]
     },
     {
       "id": "wr73-8902",
@@ -553,8 +687,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+15 物理攻擊"
+      ],
+      "passives": [
+        {
+          "name": "致殘打擊",
+          "description": "對敵方英雄造成物理傷害時，附加 40% 重創，持續 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8924",
+        "wr73-9072"
+      ],
+      "recipeSource": "IMG_8903.PNG",
+      "descriptionSources": [
+        "IMG_8902.PNG"
+      ]
     },
     {
       "id": "wr73-8904",
@@ -597,8 +750,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+150 最大生命",
+        "+15 物理攻擊"
+      ],
+      "passives": [
+        {
+          "name": "暴虐",
+          "description": "普攻命中時獲得 20 跑速，持續 2 秒。跑速加成不累加；遠程英雄效果減半。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8918",
+        "wr73-8920",
+        "wr73-8934",
+        "wr73-8938",
+        "wr73-8963"
+      ],
+      "recipeSource": "IMG_8905.PNG",
+      "descriptionSources": [
+        "IMG_8904.PNG"
+      ]
     },
     {
       "id": "wr73-8906",
@@ -658,8 +834,25 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理攻擊",
+        "+15% 攻擊速度"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896",
+        "wr73-8895"
+      ],
+      "upgrades": [
+        "wr73-8963",
+        "wr73-9062",
+        "wr73-9082"
+      ],
+      "recipeSource": "IMG_8907.PNG",
+      "descriptionSources": [
+        "IMG_8906.PNG"
+      ]
     },
     {
       "id": "wr73-8908",
@@ -719,8 +912,24 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理攻擊",
+        "+8% 吸血"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8922",
+        "wr73-8942",
+        "wr73-8956"
+      ],
+      "recipeSource": "IMG_8909.PNG",
+      "descriptionSources": [
+        "IMG_8908.PNG"
+      ]
     },
     {
       "id": "wr73-8910",
@@ -797,8 +1006,24 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+15 物理攻擊",
+        "+15% 物理穿透"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8945",
+        "wr73-9072",
+        "wr73-9096"
+      ],
+      "recipeSource": "IMG_8911.PNG",
+      "descriptionSources": [
+        "IMG_8910.PNG"
+      ]
     },
     {
       "id": "wr73-8912",
@@ -841,8 +1066,23 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理攻擊",
+        "+20 魔法防禦"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896",
+        "wr73-9227"
+      ],
+      "upgrades": [
+        "wr73-8936"
+      ],
+      "recipeSource": "IMG_8913.PNG",
+      "descriptionSources": [
+        "IMG_8912.PNG"
+      ]
     },
     {
       "id": "wr73-8914",
@@ -919,8 +1159,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25 物理攻擊",
+        "+10 技能加速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896",
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8924",
+        "wr73-8926",
+        "wr73-8930",
+        "wr73-8932",
+        "wr73-8945",
+        "wr73-8961",
+        "wr73-8988",
+        "wr73-8995",
+        "wr73-8997",
+        "wr73-9076"
+      ],
+      "recipeSource": "IMG_8915.PNG",
+      "descriptionSources": [
+        "IMG_8914.PNG"
+      ]
     },
     {
       "id": "wr73-8916",
@@ -1014,8 +1278,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+30 魔法防禦"
+      ],
+      "passives": [
+        {
+          "name": "水銀飾帶（主動）",
+          "description": "解除自身目前所有控場減益效果，並免疫控場效果 0.25 秒。"
+        },
+        {
+          "name": "堅毅（被動）",
+          "description": "水銀變異效果結束時，獲得 30% 韌性與 30% 緩速抗性，持續 1.5 秒。冷卻 60 秒；遭擊飛或擊退時無法使用。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9227"
+      ],
+      "upgrades": [
+        "wr73-8922"
+      ],
+      "recipeSource": "IMG_8917.PNG",
+      "descriptionSources": [
+        "IMG_8916.PNG"
+      ]
     },
     {
       "id": "wr73-8918",
@@ -1058,8 +1344,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+40 物理攻擊",
+        "+25% 攻擊速度"
+      ],
+      "passives": [
+        {
+          "name": "崩壞震波（主動）",
+          "description": "衝刺一小段距離，對鄰近敵軍造成相當於 100% 物理攻擊的物理傷害，並使其緩速 40%，持續 3 秒。冷卻 25 秒。"
+        },
+        {
+          "name": "闊步（被動）",
+          "description": "造成物理傷害時增加 20 跑速，持續 2 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8904",
+        "wr73-9253",
+        "wr73-8895"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8919.PNG",
+      "descriptionSources": [
+        "IMG_8918.PNG"
+      ]
     },
     {
       "id": "wr73-8920",
@@ -1102,8 +1412,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+40 物理攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "飲血（被動）",
+          "description": "獲得 8% 全能吸血。"
+        },
+        {
+          "name": "迫切斬擊（主動）",
+          "description": "對鄰近敵軍造成相當於 175% 基礎物理攻擊的物理傷害。每命中一位敵方英雄，回復相當於 20% 物理攻擊＋10% 已損失生命的生命。冷卻 12 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8904",
+        "wr73-9253",
+        "wr73-9104"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8921.PNG",
+      "descriptionSources": [
+        "IMG_8920.PNG"
+      ]
     },
     {
       "id": "wr73-8922",
@@ -1180,8 +1514,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+45 物理攻擊",
+        "+40 魔法防禦",
+        "+12% 吸血"
+      ],
+      "passives": [
+        {
+          "name": "水銀飾帶（主動）",
+          "description": "解除自身目前所有控場減益效果，並免疫控場效果 0.25 秒。"
+        },
+        {
+          "name": "堅毅（被動）",
+          "description": "水銀變異效果結束時，獲得 30% 韌性與 30% 緩速抗性，持續 1.5 秒。冷卻 60 秒；遭擊飛或擊退時無法使用。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8916",
+        "wr73-8908",
+        "wr73-8896"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8923.PNG",
+      "descriptionSources": [
+        "IMG_8922.PNG"
+      ]
     },
     {
       "id": "wr73-8924",
@@ -1224,8 +1582,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+45 物理攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "懲罰",
+          "description": "對敵方英雄造成物理傷害時附加 50% 重創，持續 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8902",
+        "wr73-8914"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8925.PNG",
+      "descriptionSources": [
+        "IMG_8924.PNG"
+      ]
     },
     {
       "id": "wr73-8926",
@@ -1332,8 +1709,37 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 物理攻擊",
+        "+500 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "威嚇",
+          "description": "獲得相當於 2% 最大魔力的物理攻擊，並返還 15% 已消耗的魔力。"
+        },
+        {
+          "name": "魔力補充",
+          "description": "每次普攻或消耗魔力時，增加 14 最大魔力，上限 700；滿層進化成終極魔劍。每 10 秒最多觸發 3 次，只能裝備一件女神之淚道具。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8894",
+        "wr73-8914",
+        "wr73-8896"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8929.PNG",
+      "descriptionSources": [
+        "IMG_8926.PNG",
+        "IMG_8927.PNG",
+        "IMG_8928.PNG"
+      ],
+      "evolvesTo": [
+        "wr73-8926-evolved"
+      ]
     },
     {
       "id": "wr73-8930",
@@ -1376,8 +1782,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+65 物理攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "不落之月",
+          "description": "1.8 秒內以 2 次普攻或技能命中敵方英雄，造成相當於目標最大生命 7%（遠程 3.5%）的額外物理傷害，並獲得可吸收 150＋40% 額外物理攻擊（遠程 70＋18% 額外物理攻擊）傷害的護盾，持續 2 秒。冷卻 6 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8914",
+        "wr73-8914"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8931.PNG",
+      "descriptionSources": [
+        "IMG_8930.PNG"
+      ]
     },
     {
       "id": "wr73-8932",
@@ -1420,8 +1844,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+40 物理攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "光盾打擊",
+          "description": "對敵方英雄的第一次普攻暴擊，造成 160% 傷害，並回復相當於 125% 基礎物理攻擊＋6% 已損失生命的生命。每個目標冷卻 6 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8914",
+        "wr73-9253"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8933.PNG",
+      "descriptionSources": [
+        "IMG_8932.PNG"
+      ]
     },
     {
       "id": "wr73-8934",
@@ -1464,8 +1907,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+35 物理攻擊",
+        "+20% 攻擊速度"
+      ],
+      "passives": [
+        {
+          "name": "海克斯充能",
+          "description": "增加 20 大絕技能加速。"
+        },
+        {
+          "name": "能量過載",
+          "description": "施放大絕後，增加 40% 攻速和 20% 跑速，持續 8 秒。冷卻 30 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8904",
+        "wr73-9253",
+        "wr73-8895"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8935.PNG",
+      "descriptionSources": [
+        "IMG_8934.PNG"
+      ]
     },
     {
       "id": "wr73-8936",
@@ -1542,8 +2009,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+55 物理攻擊",
+        "+45 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "命脈",
+          "description": "受到將使生命低於 35% 的魔法傷害時，獲得 10% 全能吸血直到戰鬥結束，並獲得可吸收 220–530 魔法傷害的護盾，持續 3 秒。冷卻 70 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8912",
+        "wr73-8912"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8937.PNG",
+      "descriptionSources": [
+        "IMG_8936.PNG"
+      ]
     },
     {
       "id": "wr73-8938",
@@ -1586,8 +2072,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+40 物理攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "斬斷",
+          "description": "對英雄造成物理傷害時，削弱目標 6% 物理防禦，持續 6 秒，最多 5 層，共削弱 30%。"
+        },
+        {
+          "name": "追逐",
+          "description": "造成物理傷害時增加 20 跑速；朝擁有 5 層斬斷的敵方英雄移動時提升 40 跑速。遠程英雄效果減半。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8904",
+        "wr73-9130",
+        "wr73-8896"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8939.PNG",
+      "descriptionSources": [
+        "IMG_8938.PNG"
+      ]
     },
     {
       "id": "wr73-8940",
@@ -1647,8 +2157,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+450 最大生命",
+        "+40 物理攻擊"
+      ],
+      "passives": [
+        {
+          "name": "劈砍",
+          "description": "每 1.75 秒，下一次普攻造成 25＋3% 額外生命的額外物理傷害（可作用於防禦塔），並產生衝擊波，對目標後方敵軍造成 80＋10% 額外生命的物理傷害。遠程英雄造成 75% 傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-9253",
+        "wr73-9108"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8941.PNG",
+      "descriptionSources": [
+        "IMG_8940.PNG"
+      ]
     },
     {
       "id": "wr73-8942",
@@ -1723,8 +2252,33 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 物理攻擊",
+        "+30% 攻擊速度",
+        "+12% 吸血"
+      ],
+      "passives": [
+        {
+          "name": "殞落打擊",
+          "description": "普攻命中時造成目標當前生命 6%（近戰 8%）的額外物理傷害。至少 15 傷害；對野怪上限 100。"
+        },
+        {
+          "name": "汲取",
+          "description": "普攻或技能命中英雄 3 次時，使其緩速 30%，持續 1.5 秒。冷卻 30 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-8908",
+        "wr73-9026"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8944.PNG",
+      "descriptionSources": [
+        "IMG_8942.PNG",
+        "IMG_8943.PNG"
+      ]
     },
     {
       "id": "wr73-8945",
@@ -1784,8 +2338,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 物理攻擊",
+        "+35% 物理穿透",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "寒冰",
+          "description": "主動傷害性技能和強化普攻可使生命低於 60% 的敵軍緩速 30%，持續 1 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8910",
+        "wr73-8914"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8946.PNG",
+      "descriptionSources": [
+        "IMG_8945.PNG"
+      ]
     },
     {
       "id": "wr73-8947",
@@ -1828,8 +2401,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+450 最大生命",
+        "+40 物理攻擊"
+      ],
+      "passives": [
+        {
+          "name": "神龍之力",
+          "description": "獲得 20 基礎技能加速。"
+        },
+        {
+          "name": "專心致志",
+          "description": "以技能對野怪或敵軍造成傷害時，英雄的技能與被動傷害增加 3%，持續 6 秒，最多累加 4 次。同一次技能施放的堆層有 1 秒冷卻。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9253",
+        "wr73-9253"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8948.PNG",
+      "descriptionSources": [
+        "IMG_8947.PNG"
+      ]
     },
     {
       "id": "wr73-8949",
@@ -1882,8 +2477,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+50 物理攻擊",
+        "+5% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "船長",
+          "description": "對英雄和史詩級野怪的每第 4 次普攻，造成 160% 基礎物理攻擊＋5% 最大生命的額外物理傷害；對建築物提升至 240% 基礎物理攻擊＋9% 最大生命。遠程英雄造成 40% 傷害。"
+        },
+        {
+          "name": "登船小隊",
+          "description": "鄰近友方砲車與超級士兵增加 20–130 物防與 10–120 魔防（隨等級成長）；遠程英雄效果為 25%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9253",
+        "wr73-9253"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8951.PNG",
+      "descriptionSources": [
+        "IMG_8949.PNG",
+        "IMG_8950.PNG"
+      ]
     },
     {
       "id": "wr73-8952",
@@ -1943,8 +2562,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+450 最大生命",
+        "+30 物理攻擊"
+      ],
+      "passives": [
+        {
+          "name": "暴政",
+          "description": "增加相當於 2.5% 額外生命的物理攻擊。"
+        },
+        {
+          "name": "報應",
+          "description": "根據已損失生命百分比，獲得最多 9% 物理攻擊；生命低於 30% 時達最大值。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9253",
+        "wr73-9253"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8953.PNG",
+      "descriptionSources": [
+        "IMG_8952.PNG"
+      ]
     },
     {
       "id": "wr73-8954",
@@ -2038,8 +2679,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+45 物理攻擊",
+        "+40 物理防禦"
+      ],
+      "passives": [
+        {
+          "name": "復活",
+          "description": "受到致命傷害時進入 4 秒凝滯，解除後回復 50% 基礎生命與 100% 最大魔力。冷卻 180 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9040",
+        "wr73-9231"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8955.PNG",
+      "descriptionSources": [
+        "IMG_8954.PNG"
+      ]
     },
     {
       "id": "wr73-8956",
@@ -2099,8 +2758,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+75 物理攻擊",
+        "+15% 吸血"
+      ],
+      "passives": [
+        {
+          "name": "庇蔭靈藥",
+          "description": "將普攻吸血的超量治療轉為護盾，最多吸收 165–345 傷害（隨等級成長）。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8908",
+        "wr73-9040"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8957.PNG",
+      "descriptionSources": [
+        "IMG_8956.PNG"
+      ]
     },
     {
       "id": "wr73-8958",
@@ -2175,8 +2852,35 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+20% 韌性"
+      ],
+      "passives": [
+        {
+          "name": "重手重腳",
+          "description": "獲得相當於 50% 基礎物理攻擊的額外物理攻擊。"
+        },
+        {
+          "name": "命脈",
+          "description": "承受的傷害使生命低於 35% 時，獲得可吸收 75% 額外生命傷害的護盾，在 5 秒內逐漸消散。冷卻 70 秒。"
+        },
+        {
+          "name": "史特拉克之怒",
+          "description": "命脈啟動時，體積增加並獲得 30% 韌性，持續 8 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9040",
+        "wr73-9253"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8960.PNG",
+      "descriptionSources": [
+        "IMG_8958.PNG",
+        "IMG_8959.PNG"
+      ]
     },
     {
       "id": "wr73-8961",
@@ -2236,8 +2940,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 物理攻擊",
+        "+45 物理防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "燒灼",
+          "description": "將受到的物理與魔法傷害的 30%（遠程 12%）改為持續 3 秒的真實傷害。"
+        },
+        {
+          "name": "違抗",
+          "description": "若敵方英雄受到傷害後 3 秒內死亡，清除尚未結算的延後傷害，並在 2 秒內回復相當於 90% 額外物理攻擊的生命。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-8914",
+        "wr73-9231"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8962.PNG",
+      "descriptionSources": [
+        "IMG_8961.PNG"
+      ]
     },
     {
       "id": "wr73-8963",
@@ -2312,8 +3040,34 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+333 最大生命",
+        "+36 物理攻擊",
+        "+30% 攻擊速度",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "勇猛",
+          "description": "普攻命中時獲得 20 跑速，持續 2 秒，跑速不累加；遠程英雄效果減半。"
+        },
+        {
+          "name": "魔法彎刀",
+          "description": "施放技能後，10 秒內的下一次普攻造成相當於 200% 基礎物理攻擊的額外物理傷害。冷卻 1.5 秒；對建築物傷害降低。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8906",
+        "wr73-8900",
+        "wr73-8904"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8965.PNG",
+      "descriptionSources": [
+        "IMG_8963.PNG",
+        "IMG_8964.PNG"
+      ]
     },
     {
       "id": "wr73-8966",
@@ -2366,8 +3120,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+425 最大生命",
+        "+25 物理攻擊",
+        "+25 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "魔法彎刀",
+          "description": "施放技能後，10 秒內的下一次普攻造成目標最大生命 10%（遠程 7%）的額外物理傷害；命中英雄時回復相當於目標最大生命 6%（遠程 2.5%）的生命。冷卻 1.5 秒；對建築物傷害降低。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8900",
+        "wr73-9130",
+        "wr73-9253"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8968.PNG",
+      "descriptionSources": [
+        "IMG_8966.PNG",
+        "IMG_8967.PNG"
+      ]
     },
     {
       "id": "wr73-8978",
@@ -2410,8 +3185,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理攻擊",
+        "+8 物理穿透"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8988",
+        "wr73-8995",
+        "wr73-8997",
+        "wr73-9002",
+        "wr73-9004"
+      ],
+      "recipeSource": "IMG_8979.PNG",
+      "descriptionSources": [
+        "IMG_8978.PNG"
+      ]
     },
     {
       "id": "wr73-8988",
@@ -2464,8 +3257,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 物理攻擊",
+        "+15 物理穿透",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "破盾者",
+          "description": "對敵方英雄造成傷害時，降低其獲得的護盾，持續 3 秒。近戰減免（40＋10% 額外物理攻擊）%，上限 60%；遠程減免（25＋10% 額外物理攻擊）%，上限 45%。對尚未受破盾者影響的敵軍造成傷害時，也以相同比例削減其現有護盾。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8978",
+        "wr73-8914"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8990.PNG",
+      "descriptionSources": [
+        "IMG_8988.PNG",
+        "IMG_8989.PNG"
+      ]
     },
     {
       "id": "wr73-8995",
@@ -2508,8 +3321,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+55 物理攻擊",
+        "+15 物理穿透",
+        "+15 技能加速",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "衝勁",
+          "description": "離開與英雄的戰鬥 3 秒後，獲得 30 跑速；遠程英雄為 20。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8978",
+        "wr73-8914"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8996.PNG",
+      "descriptionSources": [
+        "IMG_8995.PNG"
+      ]
     },
     {
       "id": "wr73-8997",
@@ -2552,8 +3385,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+55 物理攻擊",
+        "+18 物理穿透",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "夜色潛伏",
+          "description": "第一次普攻命中英雄時造成 60–160 額外物理傷害，並使其緩速 99%，持續 0.35 秒。冷卻 10 秒；參與擊殺敵方英雄時重置冷卻。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8978",
+        "wr73-8914"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_8998.PNG",
+      "descriptionSources": [
+        "IMG_8997.PNG"
+      ]
     },
     {
       "id": "wr73-9002",
@@ -2596,8 +3448,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+250 最大生命",
+        "+50 物理攻擊",
+        "+12 物理穿透"
+      ],
+      "passives": [
+        {
+          "name": "無效",
+          "description": "獲得可抵擋下一個敵方技能的法術護盾。冷卻 35 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8978",
+        "wr73-9253",
+        "wr73-8896"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9003.PNG",
+      "descriptionSources": [
+        "IMG_9002.PNG"
+      ]
     },
     {
       "id": "wr73-9004",
@@ -2657,8 +3529,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 物理攻擊",
+        "+10 物理穿透",
+        "+25% 暴擊率"
+      ],
+      "passives": [
+        {
+          "name": "死亡與賦稅",
+          "description": "對敵方英雄造成傷害後，若其生命低於最大生命的 5%，便處決該英雄，永久提升處決門檻 0.1 個百分點，並獲得 25 額外金錢。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9036",
+        "wr73-8978"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9005.PNG",
+      "descriptionSources": [
+        "IMG_9004.PNG"
+      ]
     },
     {
       "id": "wr73-9022",
@@ -2701,8 +3592,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20% 攻擊速度"
+      ],
+      "passives": [
+        {
+          "name": "電擊",
+          "description": "對敵方英雄造成傷害時，額外造成 40 魔法傷害。冷卻 25 秒；普攻使冷卻縮短 1 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8895"
+      ],
+      "upgrades": [
+        "wr73-9048",
+        "wr73-9050",
+        "wr73-9052",
+        "wr73-9068",
+        "wr73-9085",
+        "wr73-9087"
+      ],
+      "recipeSource": "IMG_9023.PNG",
+      "descriptionSources": [
+        "IMG_9022.PNG"
+      ]
     },
     {
       "id": "wr73-9026",
@@ -2745,8 +3659,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20% 攻擊速度"
+      ],
+      "passives": [
+        {
+          "name": "強化",
+          "description": "普攻命中時造成 15 額外物理傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8895"
+      ],
+      "upgrades": [
+        "wr73-8942",
+        "wr73-9058",
+        "wr73-9062",
+        "wr73-9064",
+        "wr73-9070",
+        "wr73-9082"
+      ],
+      "recipeSource": "IMG_9027.PNG",
+      "descriptionSources": [
+        "IMG_9026.PNG"
+      ]
     },
     {
       "id": "wr73-9036",
@@ -2789,8 +3726,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理攻擊",
+        "+15% 暴擊率"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896",
+        "wr73-8897"
+      ],
+      "upgrades": [
+        "wr73-9004",
+        "wr73-9044",
+        "wr73-9060",
+        "wr73-9078",
+        "wr73-9096"
+      ],
+      "recipeSource": "IMG_9037.PNG",
+      "descriptionSources": [
+        "IMG_9036.PNG"
+      ]
     },
     {
       "id": "wr73-9038",
@@ -2833,8 +3789,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+15% 暴擊率",
+        "+15% 攻擊速度",
+        "+4% 跑速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8897",
+        "wr73-8895"
+      ],
+      "upgrades": [
+        "wr73-9048",
+        "wr73-9050",
+        "wr73-9052",
+        "wr73-9054",
+        "wr73-9056"
+      ],
+      "recipeSource": "IMG_9039.PNG",
+      "descriptionSources": [
+        "IMG_9038.PNG"
+      ]
     },
     {
       "id": "wr73-9040",
@@ -2877,8 +3853,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 物理攻擊"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8896",
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8954",
+        "wr73-8956",
+        "wr73-8958",
+        "wr73-9085",
+        "wr73-9087",
+        "wr73-9101"
+      ],
+      "recipeSource": "IMG_9041.PNG",
+      "descriptionSources": [
+        "IMG_9040.PNG"
+      ]
     },
     {
       "id": "wr73-9044",
@@ -2921,8 +3916,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+60 物理攻擊",
+        "+25% 暴擊率",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "狂暴驟雨（主動）",
+          "description": "朝目標方向衝刺，向目的地附近生命最低的敵軍發射 3 枚飛彈，優先英雄。造成 40–125（隨等級成長）＋35% 額外物理攻擊的物理傷害。冷卻 60 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-9036",
+        "wr73-8896"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9045.PNG",
+      "descriptionSources": [
+        "IMG_9044.PNG"
+      ]
     },
     {
       "id": "wr73-9048",
@@ -2965,8 +3980,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25% 暴擊率",
+        "+45% 攻擊速度",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "守夜",
+          "description": "獲得 20 大絕技能加速。"
+        },
+        {
+          "name": "連環轟擊",
+          "description": "施放大絕後，接下來 8 秒內的 3 次普攻增加 50% 攻速，並暴擊造成正常暴擊傷害 80% 的傷害；若該普攻本來就會暴擊，改為造成 15% 額外真實傷害。冷卻 45 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9038",
+        "wr73-9022"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9049.PNG",
+      "descriptionSources": [
+        "IMG_9048.PNG"
+      ]
     },
     {
       "id": "wr73-9050",
@@ -3009,8 +4047,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25% 暴擊率",
+        "+40% 攻擊速度",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "神射手",
+          "description": "移動和普攻產生充能普攻，額外增加 35% 攻擊距離（最多 150），並造成 80 額外魔法傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9038",
+        "wr73-9022"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9051.PNG",
+      "descriptionSources": [
+        "IMG_9050.PNG"
+      ]
     },
     {
       "id": "wr73-9052",
@@ -3053,8 +4110,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25% 暴擊率",
+        "+40% 攻擊速度",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "風之怒",
+          "description": "普攻同時打擊目標附近的 2 名敵軍，各造成相當於 55% 物理攻擊的傷害。打擊可以暴擊並附加命中效果。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9038",
+        "wr73-9022"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9053.PNG",
+      "descriptionSources": [
+        "IMG_9052.PNG"
+      ]
     },
     {
       "id": "wr73-9054",
@@ -3097,8 +4173,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25% 暴擊率",
+        "+40% 攻擊速度",
+        "+7% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "靈魂華爾滋",
+          "description": "普攻命中敵方英雄時獲得 6% 攻速與 1% 跑速，持續 6 秒，最多 5 層。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9038",
+        "wr73-8895",
+        "wr73-8895"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9055.PNG",
+      "descriptionSources": [
+        "IMG_9054.PNG"
+      ]
     },
     {
       "id": "wr73-9056",
@@ -3141,8 +4237,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25% 暴擊率",
+        "+40% 攻擊速度",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "輕巧打擊",
+          "description": "普攻使基礎技能的剩餘冷卻縮短 15%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9038",
+        "wr73-8895",
+        "wr73-8895"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9057.PNG",
+      "descriptionSources": [
+        "IMG_9056.PNG"
+      ]
     },
     {
       "id": "wr73-9058",
@@ -3185,8 +4301,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50% 攻擊速度",
+        "+45 魔法防禦",
+        "+20% 韌性"
+      ],
+      "passives": [
+        {
+          "name": "黔驢技窮",
+          "description": "普攻命中時造成 40 額外魔法傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9026",
+        "wr73-9235",
+        "wr73-8895"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9059.PNG",
+      "descriptionSources": [
+        "IMG_9058.PNG"
+      ]
     },
     {
       "id": "wr73-9060",
@@ -3229,8 +4365,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+55 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [
+        {
+          "name": "放大",
+          "description": "依據敵軍距離，普攻造成 0–10% 額外傷害；相距 550 時達最大值。"
+        },
+        {
+          "name": "奧術瞄準",
+          "description": "對敵方英雄造成傷害後，若對方於 3 秒內陣亡，獲得 100 額外攻擊距離，持續 8 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-9036",
+        "wr73-8896"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9061.PNG",
+      "descriptionSources": [
+        "IMG_9060.PNG"
+      ]
     },
     {
       "id": "wr73-9062",
@@ -3273,8 +4432,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+45 物理攻擊",
+        "+35% 攻擊速度",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "打倒它",
+          "description": "每第三下普攻造成 150–210 額外物理傷害（遠程 120–168）。目標每損失 1% 生命，傷害增加 0.75%，最多增加 75%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8906",
+        "wr73-9026",
+        "wr73-8896"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9063.PNG",
+      "descriptionSources": [
+        "IMG_9062.PNG"
+      ]
     },
     {
       "id": "wr73-9064",
@@ -3334,8 +4513,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50% 攻擊速度",
+        "+80 魔法攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "啃咬",
+          "description": "普攻附加 15＋20% 魔法攻擊的魔法傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9114",
+        "wr73-9026"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9065.PNG",
+      "descriptionSources": [
+        "IMG_9064.PNG"
+      ]
     },
     {
       "id": "wr73-9068",
@@ -3405,8 +4604,34 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 物理攻擊",
+        "+30% 攻擊速度",
+        "+40 魔法攻擊",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "電擊",
+          "description": "普攻額外賦予 5 層充能。"
+        },
+        {
+          "name": "電光",
+          "description": "移動與普攻產生充能普攻，向 4–7 個目標（隨等級成長）發射連鎖閃電，造成 60 魔法傷害，對士兵與野怪提升為 90，並對次要彈射目標觸發命中效果。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-9126",
+        "wr73-9022"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9195.PNG",
+      "descriptionSources": [
+        "IMG_9193.PNG",
+        "IMG_9194.PNG"
+      ]
     },
     {
       "id": "wr73-9070",
@@ -3466,8 +4691,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 物理攻擊",
+        "+30% 攻擊速度",
+        "+30 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "怒火",
+          "description": "普攻命中時造成 30 額外魔法傷害。"
+        },
+        {
+          "name": "沸騰打擊",
+          "description": "普攻賦予 8% 攻速，最多 4 層，共 32%；滿層後每 3 下普攻額外附加一次命中效果。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-9026",
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9071.PNG",
+      "descriptionSources": [
+        "IMG_9070.PNG"
+      ]
     },
     {
       "id": "wr73-9072",
@@ -3510,8 +4759,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 物理攻擊",
+        "+30% 物理穿透",
+        "+25% 暴擊率"
+      ],
+      "passives": [
+        {
+          "name": "膿傷",
+          "description": "對敵方英雄造成物理傷害時附加 50% 重創，持續 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8910",
+        "wr73-8902",
+        "wr73-8897"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9073.PNG",
+      "descriptionSources": [
+        "IMG_9072.PNG"
+      ]
     },
     {
       "id": "wr73-9076",
@@ -3554,8 +4823,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 物理攻擊",
+        "+25% 暴擊率",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "魔法彎刀",
+          "description": "施放技能後，10 秒內的下一次普攻造成 135% 基礎物理攻擊＋0–80（每 1% 暴擊率增加 0.8）的額外物理傷害，並將此傷害的 50% 轉為魔力。冷卻 1.5 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8900",
+        "wr73-8914",
+        "wr73-8897"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9077.PNG",
+      "descriptionSources": [
+        "IMG_9076.PNG"
+      ]
     },
     {
       "id": "wr73-9078",
@@ -3598,8 +4887,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+55 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [
+        {
+          "name": "命脈",
+          "description": "受到將使生命低於 35% 的傷害時獲得護盾，持續 3 秒；近戰可吸收 350–650 傷害，遠程 300–550（隨等級成長）。冷卻 70 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9036",
+        "wr73-8896",
+        "wr73-8897"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9079.PNG",
+      "descriptionSources": [
+        "IMG_9078.PNG"
+      ]
     },
     {
       "id": "wr73-9082",
@@ -3652,8 +4960,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 物理攻擊",
+        "+35% 攻擊速度"
+      ],
+      "passives": [
+        {
+          "name": "暗影",
+          "description": "普攻命中造成 30 額外魔法傷害。"
+        },
+        {
+          "name": "對比",
+          "description": "普攻交替觸發光明與黑暗命中效果。光明賦予 5–8 物防與魔防（隨等級成長）；黑暗賦予 10% 物理穿透與 10% 魔法穿透。各持續 5 秒，每種最多 3 層。持有此道具時，物理穿透與魔法穿透的道具加成上限為 40%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8906",
+        "wr73-9026"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9084.PNG",
+      "descriptionSources": [
+        "IMG_9082.PNG",
+        "IMG_9083.PNG"
+      ]
     },
     {
       "id": "wr73-9085",
@@ -3696,8 +5027,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 物理攻擊",
+        "+25% 暴擊率",
+        "+20% 攻擊速度"
+      ],
+      "passives": [
+        {
+          "name": "閃電",
+          "description": "移動與普攻產生充能普攻，造成 120 額外魔法傷害，命中時獲得 45% 跑速，持續 1.5 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9022",
+        "wr73-9040",
+        "wr73-8897"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9086.PNG",
+      "descriptionSources": [
+        "IMG_9085.PNG"
+      ]
     },
     {
       "id": "wr73-9087",
@@ -3740,8 +5091,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 物理攻擊",
+        "+25% 攻擊速度"
+      ],
+      "passives": [
+        {
+          "name": "熱能致命",
+          "description": "普攻永久增加暴擊率；每次近戰普攻增加 0.4%、遠程增加 0.2%，上限 25%。"
+        },
+        {
+          "name": "無雙亂舞",
+          "description": "普攻敵方英雄時獲得 25% 攻速，持續 6 秒。冷卻 20 秒；普攻使冷卻縮短 1 秒，暴擊時縮短 2 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9022",
+        "wr73-9040"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9088.PNG",
+      "descriptionSources": [
+        "IMG_9087.PNG"
+      ]
     },
     {
       "id": "wr73-9096",
@@ -3784,8 +5157,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 物理攻擊",
+        "+35% 物理穿透",
+        "+25% 暴擊率"
+      ],
+      "passives": [
+        {
+          "name": "巨人殺手",
+          "description": "根據敵方英雄的額外生命造成額外傷害；敵方擁有 1,200 額外生命時達上限 12%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9036",
+        "wr73-8910"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9097.PNG",
+      "descriptionSources": [
+        "IMG_9096.PNG"
+      ]
     },
     {
       "id": "wr73-9101",
@@ -3828,8 +5220,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+75 物理攻擊",
+        "+25% 暴擊率"
+      ],
+      "passives": [
+        {
+          "name": "無盡",
+          "description": "暴擊傷害由 200% 提高至 230%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8898",
+        "wr73-9040",
+        "wr73-8897"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9102.PNG",
+      "descriptionSources": [
+        "IMG_9101.PNG"
+      ]
     },
     {
       "id": "wr73-9104",
@@ -3872,8 +5283,24 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+5 技能加速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-8900",
+        "wr73-8920",
+        "wr73-9118",
+        "wr73-9136",
+        "wr73-9251",
+        "wr73-9467"
+      ],
+      "recipeSource": "IMG_9105.jpg",
+      "descriptionSources": [
+        "IMG_9104.jpg"
+      ]
     },
     {
       "id": "wr73-9108",
@@ -3933,8 +5360,34 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+150 最大生命"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-8940",
+        "wr73-9130",
+        "wr73-9132",
+        "wr73-9138",
+        "wr73-9159",
+        "wr73-9165",
+        "wr73-9233",
+        "wr73-9239",
+        "wr73-9251",
+        "wr73-9253",
+        "wr73-9264",
+        "wr73-9301",
+        "wr73-9304",
+        "wr73-9306",
+        "wr73-9476",
+        "wr73-9480"
+      ],
+      "recipeSource": "IMG_9109.PNG",
+      "descriptionSources": [
+        "IMG_9108.PNG"
+      ]
     },
     {
       "id": "wr73-9110",
@@ -3977,8 +5430,40 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 魔法攻擊"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-9070",
+        "wr73-9114",
+        "wr73-9118",
+        "wr73-9120",
+        "wr73-9122",
+        "wr73-9124",
+        "wr73-9126",
+        "wr73-9128",
+        "wr73-9134",
+        "wr73-9136",
+        "wr73-9138",
+        "wr73-9140",
+        "wr73-9142",
+        "wr73-9144",
+        "wr73-9147",
+        "wr73-9155",
+        "wr73-9168",
+        "wr73-9170",
+        "wr73-9175",
+        "wr73-9187",
+        "wr73-9198",
+        "wr73-9484"
+      ],
+      "recipeSource": "IMG_9111.PNG",
+      "descriptionSources": [
+        "IMG_9110.PNG"
+      ]
     },
     {
       "id": "wr73-9112",
@@ -4038,8 +5523,24 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25% 魔力回復",
+        "+6% 治療和護盾量"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-9149",
+        "wr73-9159",
+        "wr73-9378",
+        "wr73-9393",
+        "wr73-9395"
+      ],
+      "recipeSource": "IMG_9113.PNG",
+      "descriptionSources": [
+        "IMG_9112.PNG"
+      ]
     },
     {
       "id": "wr73-9114",
@@ -4099,8 +5600,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 魔法攻擊"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9064",
+        "wr73-9163",
+        "wr73-9165",
+        "wr73-9170",
+        "wr73-9172",
+        "wr73-9177",
+        "wr73-9196",
+        "wr73-9212"
+      ],
+      "recipeSource": "IMG_9115.PNG",
+      "descriptionSources": [
+        "IMG_9114.PNG"
+      ]
     },
     {
       "id": "wr73-9118",
@@ -4160,8 +5681,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 魔法攻擊",
+        "+50% 魔力回復",
+        "+10 技能加速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110",
+        "wr73-9104"
+      ],
+      "upgrades": [
+        "wr73-9163",
+        "wr73-9380",
+        "wr73-9385",
+        "wr73-9408"
+      ],
+      "recipeSource": "IMG_9119.PNG",
+      "descriptionSources": [
+        "IMG_9118.PNG"
+      ]
     },
     {
       "id": "wr73-9120",
@@ -4204,8 +5744,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "燃起燼慾",
+          "description": "傷害性技能在 3 秒內造成 5 額外魔法傷害；對野怪額外造成 15 魔法傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9182",
+        "wr73-9204"
+      ],
+      "recipeSource": "IMG_9121.PNG",
+      "descriptionSources": [
+        "IMG_9120.PNG"
+      ]
     },
     {
       "id": "wr73-9122",
@@ -4265,8 +5824,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25 魔法攻擊",
+        "+10 技能加速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9064",
+        "wr73-9149",
+        "wr73-9165",
+        "wr73-9175",
+        "wr73-9189",
+        "wr73-9198",
+        "wr73-9206",
+        "wr73-9210",
+        "wr73-9217",
+        "wr73-9395"
+      ],
+      "recipeSource": "IMG_9123.PNG",
+      "descriptionSources": [
+        "IMG_9122.PNG"
+      ]
     },
     {
       "id": "wr73-9124",
@@ -4326,8 +5908,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "重創",
+          "description": "對敵方英雄造成魔法傷害時附加 40% 重創，持續 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9168"
+      ],
+      "recipeSource": "IMG_9125.PNG",
+      "descriptionSources": [
+        "IMG_9124.PNG"
+      ]
     },
     {
       "id": "wr73-9126",
@@ -4387,8 +5987,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 魔法攻擊",
+        "+4% 跑速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9068",
+        "wr73-9179",
+        "wr73-9187",
+        "wr73-9210",
+        "wr73-9380",
+        "wr73-9393"
+      ],
+      "recipeSource": "IMG_9127.PNG",
+      "descriptionSources": [
+        "IMG_9126.PNG"
+      ]
     },
     {
       "id": "wr73-9128",
@@ -4448,8 +6067,23 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 魔法攻擊",
+        "+10% 魔法穿透"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9198",
+        "wr73-9200"
+      ],
+      "recipeSource": "IMG_9129.PNG",
+      "descriptionSources": [
+        "IMG_9128.PNG"
+      ]
     },
     {
       "id": "wr73-9130",
@@ -4526,8 +6160,41 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+175 最大生命",
+        "+10 技能加速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9108"
+      ],
+      "upgrades": [
+        "wr73-8938",
+        "wr73-8966",
+        "wr73-9155",
+        "wr73-9168",
+        "wr73-9210",
+        "wr73-9212",
+        "wr73-9261",
+        "wr73-9268",
+        "wr73-9270",
+        "wr73-9275",
+        "wr73-9278",
+        "wr73-9282",
+        "wr73-9284",
+        "wr73-9306",
+        "wr73-9311",
+        "wr73-9317",
+        "wr73-9319",
+        "wr73-9378",
+        "wr73-9385",
+        "wr73-9408"
+      ],
+      "recipeSource": "IMG_9131.PNG",
+      "descriptionSources": [
+        "IMG_9130.PNG"
+      ]
     },
     {
       "id": "wr73-9132",
@@ -4587,8 +6254,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+300 最大魔力"
+      ],
+      "passives": [
+        {
+          "name": "永續",
+          "description": "受到敵方英雄傷害後，回復相當於傷害量 15% 的魔力。消耗魔力後回復相當於魔力消耗 20% 的生命，每次施放技能最多回復 15 生命。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9108"
+      ],
+      "upgrades": [
+        "wr73-9172"
+      ],
+      "recipeSource": "IMG_9133.PNG",
+      "descriptionSources": [
+        "IMG_9132.PNG"
+      ]
     },
     {
       "id": "wr73-9134",
@@ -4631,8 +6317,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+45 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "引擎發動",
+          "description": "傷害性技能與強化普攻對英雄造成 25–60 額外魔法傷害。冷卻 20 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9155",
+        "wr73-9179",
+        "wr73-9185",
+        "wr73-9215"
+      ],
+      "recipeSource": "IMG_9135.PNG",
+      "descriptionSources": [
+        "IMG_9134.PNG"
+      ]
     },
     {
       "id": "wr73-9136",
@@ -4675,8 +6382,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 魔法攻擊",
+        "+200 最大魔力",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "啟發",
+          "description": "升級時在 3 秒內回復 20% 最大魔力。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110",
+        "wr73-9104"
+      ],
+      "upgrades": [
+        "wr73-9177",
+        "wr73-9182",
+        "wr73-9185",
+        "wr73-9206"
+      ],
+      "recipeSource": "IMG_9137.PNG",
+      "descriptionSources": [
+        "IMG_9136.PNG"
+      ]
     },
     {
       "id": "wr73-9138",
@@ -4719,8 +6450,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+30 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "狂亂",
+          "description": "與敵方英雄戰鬥時，每秒造成 2% 額外傷害，上限 6%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9108",
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9189",
+        "wr73-9204",
+        "wr73-9217"
+      ],
+      "recipeSource": "IMG_9139.PNG",
+      "descriptionSources": [
+        "IMG_9138.PNG"
+      ]
     },
     {
       "id": "wr73-9140",
@@ -4763,8 +6516,24 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+65 魔法攻擊"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9157",
+        "wr73-9200",
+        "wr73-9215",
+        "wr73-9219"
+      ],
+      "recipeSource": "IMG_9141.PNG",
+      "descriptionSources": [
+        "IMG_9140.PNG"
+      ]
     },
     {
       "id": "wr73-9142",
@@ -4824,8 +6593,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 魔法攻擊",
+        "+25 魔法防禦"
+      ],
+      "passives": [
+        {
+          "name": "無效",
+          "description": "獲得可阻擋下一次敵方技能的法術護盾。冷卻 65 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110",
+        "wr73-9227"
+      ],
+      "upgrades": [
+        "wr73-9196"
+      ],
+      "recipeSource": "IMG_9143.PNG",
+      "descriptionSources": [
+        "IMG_9142.PNG"
+      ]
     },
     {
       "id": "wr73-9144",
@@ -4878,8 +6667,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+70 最大生命",
+        "+25 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "榮耀",
+          "description": "擊殺或助攻獲得榮耀，上限 30 層。近戰擊殺增加 3 層、助攻 2 層；遠程擊殺增加 4 層、助攻 2 層。死亡失去 10 層。"
+        },
+        {
+          "name": "恐懼",
+          "description": "每層榮耀賦予 5 魔法攻擊；達 10 層以上時額外增加 10% 跑速。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9146.PNG",
+      "descriptionSources": [
+        "IMG_9144.PNG",
+        "IMG_9145.PNG"
+      ]
     },
     {
       "id": "wr73-9147",
@@ -4939,8 +6750,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理防禦",
+        "+35 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "凝滯（主動）",
+          "description": "進入無敵且無法被指定的狀態，持續 2.5 秒，期間無法移動、普攻、施放技能或使用道具。冷卻 150 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9110",
+        "wr73-9225"
+      ],
+      "upgrades": [
+        "wr73-9157"
+      ],
+      "recipeSource": "IMG_9148.PNG",
+      "descriptionSources": [
+        "IMG_9147.PNG"
+      ]
     },
     {
       "id": "wr73-9149",
@@ -5015,8 +6846,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 魔法攻擊",
+        "+50% 魔力回復",
+        "+10 技能加速",
+        "+8% 治療和護盾量"
+      ],
+      "passives": [
+        {
+          "name": "審判（主動）",
+          "description": "指定一大片區域，2.5 秒後為友軍單位回復 150–350 生命（依友軍等級），並對敵方英雄造成其最大生命 10% 的真實傷害。冷卻 60 秒；死亡時也能施放。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9112"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9154.PNG",
+      "descriptionSources": [
+        "IMG_9149.PNG",
+        "IMG_9153.jpg"
+      ]
     },
     {
       "id": "wr73-9155",
@@ -5059,8 +6911,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+250 最大生命",
+        "+70 魔法攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "腰帶（主動）",
+          "description": "向前衝刺並朝扇形範圍發射飛彈，造成 100＋10% 魔法攻擊的魔法傷害。冷卻 30 秒。英雄或野怪遭多枚飛彈擊中時，第一枚之後只造成 10% 傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9134",
+        "wr73-9130",
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9155.PNG",
+      "descriptionSources": [
+        "IMG_9156.PNG"
+      ]
     },
     {
       "id": "wr73-9157",
@@ -5120,8 +6992,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 物理防禦",
+        "+110 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "凝滯（主動）",
+          "description": "進入無敵且無法被指定的狀態，持續 2.5 秒，期間無法移動、普攻、施放技能或使用道具。冷卻 90 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9140",
+        "wr73-9147"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9158.PNG",
+      "descriptionSources": [
+        "IMG_9157.PNG"
+      ]
     },
     {
       "id": "wr73-9159",
@@ -5211,8 +7101,38 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+500 最大魔力",
+        "+50% 魔力回復",
+        "+8% 治療和護盾量"
+      ],
+      "passives": [
+        {
+          "name": "和諧",
+          "description": "獲得相當於 0.5% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
+        },
+        {
+          "name": "魔力補充",
+          "description": "每次消耗魔力增加 14 最大魔力，每 10 秒最多觸發 3 次；上限 700，滿層轉化為歌謠之冠。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8894",
+        "wr73-9112",
+        "wr73-9108"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9162.PNG",
+      "descriptionSources": [
+        "IMG_9159.PNG",
+        "IMG_9160.PNG",
+        "IMG_9161.PNG"
+      ],
+      "evolvesTo": [
+        "wr73-9159-evolved"
+      ]
     },
     {
       "id": "wr73-9163",
@@ -5272,8 +7192,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+60 魔法攻擊",
+        "+50% 魔力回復",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "控制",
+          "description": "控場技能獲得 20 技能加速。"
+        },
+        {
+          "name": "指令",
+          "description": "對敵方英雄施加控場效果時標記對方 4 秒，使其受到的傷害提高 7%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9118",
+        "wr73-9114"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9164.PNG",
+      "descriptionSources": [
+        "IMG_9163.PNG"
+      ]
     },
     {
       "id": "wr73-9165",
@@ -5348,8 +7291,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+80 魔法攻擊",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "致命武裝",
+          "description": "對敵方英雄造成技能傷害時，降低其獲得的護盾，持續 3 秒。範圍技能削減（25＋5% 魔法攻擊）%，上限 45%；單體技能削減（40＋5% 魔法攻擊）%，上限 60%。對尚未受此效果影響的敵軍造成傷害時，也以相同比例削減現有護盾。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9114",
+        "wr73-9108"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9167.PNG",
+      "descriptionSources": [
+        "IMG_9165.PNG",
+        "IMG_9166.PNG"
+      ]
     },
     {
       "id": "wr73-9168",
@@ -5409,8 +7373,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+75 魔法攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "苦難",
+          "description": "對敵方英雄造成魔法傷害時附加 50% 重創，持續 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9124",
+        "wr73-9130",
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9169.PNG",
+      "descriptionSources": [
+        "IMG_9168.PNG"
+      ]
     },
     {
       "id": "wr73-9170",
@@ -5453,8 +7437,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+65 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "寒冰",
+          "description": "傷害性技能與強化普攻使敵軍緩速 30%，持續 0.75 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9114",
+        "wr73-9239",
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9171.PNG",
+      "descriptionSources": [
+        "IMG_9170.PNG"
+      ]
     },
     {
       "id": "wr73-9172",
@@ -5507,8 +7510,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+50 魔法攻擊",
+        "+400 最大魔力"
+      ],
+      "passives": [
+        {
+          "name": "永續",
+          "description": "受到敵方英雄傷害後，回復相當於傷害量 15% 的魔力。消耗魔力後回復相當於魔力消耗 20% 的生命，每次施放技能最多回復 25 生命。"
+        },
+        {
+          "name": "精熟",
+          "description": "每 35 秒增加一層，每層增加 15 生命、30 魔力與 4 魔法攻擊；最多 10 層，共增加 150 生命、300 魔力與 40 魔法攻擊。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9114",
+        "wr73-9132"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9174.PNG",
+      "descriptionSources": [
+        "IMG_9172.PNG",
+        "IMG_9173.PNG"
+      ]
     },
     {
       "id": "wr73-9175",
@@ -5551,8 +7578,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+80 魔法攻擊",
+        "+25 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "超能之火",
+          "description": "以技能對 600 距離單位外的敵方英雄造成傷害後，揭露其 8 秒，並使其受到的傷害增加 10%。"
+        },
+        {
+          "name": "專注",
+          "description": "觸發超能之火後，揭露目標附近 1,200 距離單位內的所有敵方英雄，持續 3 秒。冷卻 12 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9122",
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9176.PNG",
+      "descriptionSources": [
+        "IMG_9175.PNG"
+      ]
     },
     {
       "id": "wr73-9177",
@@ -5595,8 +7645,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+90 魔法攻擊",
+        "+500 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "輕蔑",
+          "description": "增加 20 大絕技能加速。"
+        },
+        {
+          "name": "仇恨酸霧",
+          "description": "以大絕對英雄造成傷害時點燃地面 3 秒，每秒造成 60＋5% 魔法攻擊的魔法傷害，並降低 10 魔法防禦。燃燒範圍隨傷害提升，800 傷害時達最大。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9136",
+        "wr73-9114"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9178.PNG",
+      "descriptionSources": [
+        "IMG_9177.PNG"
+      ]
     },
     {
       "id": "wr73-9179",
@@ -5649,8 +7722,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+90 魔法攻擊",
+        "+15 魔法穿透",
+        "+6% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "暴風突襲者",
+          "description": "在 2.5 秒內對英雄造成相當於其最大生命 25% 的傷害時附加暴風，並獲得 25% 額外跑速，持續 2.5 秒。冷卻 25 秒。"
+        },
+        {
+          "name": "暴風",
+          "description": "2 秒後雷擊目標，造成 125＋10% 魔法攻擊的魔法傷害。若目標在雷擊前被擊殺，立即引發大範圍爆炸，並獲得 25 金幣。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9126",
+        "wr73-9134"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9181.PNG",
+      "descriptionSources": [
+        "IMG_9179.PNG",
+        "IMG_9180.PNG"
+      ]
     },
     {
       "id": "wr73-9182",
@@ -5703,8 +7800,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+80 魔法攻擊",
+        "+500 最大魔力",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "厄夜灼炎",
+          "description": "以技能造成傷害時燃燒敵軍，每秒造成 20＋2% 魔法攻擊的魔法傷害，持續 3 秒；對野怪每秒造成 40＋2% 魔法攻擊的魔法傷害。"
+        },
+        {
+          "name": "黑焰",
+          "description": "每有一位敵方英雄或野怪受到厄夜灼炎燃燒，增加 4% 魔法攻擊。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9120",
+        "wr73-9136"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9184.PNG",
+      "descriptionSources": [
+        "IMG_9183.PNG",
+        "IMG_9182.PNG"
+      ]
     },
     {
       "id": "wr73-9185",
@@ -5747,8 +7868,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+100 魔法攻擊",
+        "+500 最大魔力",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "回音",
+          "description": "下一次傷害性技能或強化普攻對主要目標與最多 4 名鄰近敵軍造成 75＋8% 魔法攻擊的魔法傷害。冷卻 9 秒。命中的次要目標每少一個，對主要目標多造成 20＋1.2% 魔法攻擊的魔法傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9136",
+        "wr73-9134"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9186.PNG",
+      "descriptionSources": [
+        "IMG_9185.PNG"
+      ]
     },
     {
       "id": "wr73-9187",
@@ -5791,8 +7931,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+100 魔法攻擊",
+        "+10 技能加速",
+        "+5% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "魔法彎刀",
+          "description": "施放技能後，10 秒內的下一次普攻造成 75% 基礎物理攻擊＋45% 魔法攻擊的額外魔法傷害。冷卻 1.5 秒；對建築物傷害降低。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9126",
+        "wr73-8900",
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9188.PNG",
+      "descriptionSources": [
+        "IMG_9187.PNG"
+      ]
     },
     {
       "id": "wr73-9189",
@@ -5835,8 +7995,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+65 魔法攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "惡毒腐蝕",
+          "description": "以技能或被動對英雄造成魔法傷害，使其魔防降低 7.5%，持續 6 秒，最多降低 30%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9138"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9190.PNG",
+      "descriptionSources": [
+        "IMG_9189.PNG"
+      ]
     },
     {
       "id": "wr73-9196",
@@ -5896,8 +8075,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+105 魔法攻擊",
+        "+40 魔法防禦"
+      ],
+      "passives": [
+        {
+          "name": "無效",
+          "description": "獲得可抵擋下一個敵方技能的法術護盾。冷卻 30 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9142",
+        "wr73-9114"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9197.PNG",
+      "descriptionSources": [
+        "IMG_9196.PNG"
+      ]
     },
     {
       "id": "wr73-9198",
@@ -5957,8 +8154,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+75 魔法攻擊",
+        "+30% 魔法穿透",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "一命換一命",
+          "description": "受到你傷害的英雄在 3 秒內死亡時，其屍體釋放治療新星，為友軍回復 100＋20% 魔法攻擊的生命。冷卻 60 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9128",
+        "wr73-9110"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9199.PNG",
+      "descriptionSources": [
+        "IMG_9198.PNG"
+      ]
     },
     {
       "id": "wr73-9200",
@@ -6001,8 +8218,21 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+95 魔法攻擊",
+        "+40% 魔法穿透"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9140",
+        "wr73-9128"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9201.PNG",
+      "descriptionSources": [
+        "IMG_9200.PNG"
+      ]
     },
     {
       "id": "wr73-9204",
@@ -6045,8 +8275,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+70 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "折磨",
+          "description": "傷害性技能與強化普攻燃燒敵軍 3 秒，每秒造成目標最大生命 2% 的魔法傷害。"
+        },
+        {
+          "name": "狂亂",
+          "description": "與敵方英雄交戰後，每秒提升 2% 傷害，3 秒後達上限 6%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9120",
+        "wr73-9138"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9205.PNG",
+      "descriptionSources": [
+        "IMG_9204.PNG"
+      ]
     },
     {
       "id": "wr73-9206",
@@ -6109,8 +8361,37 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+60 魔法攻擊",
+        "+500 最大魔力",
+        "+25 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "威嚇",
+          "description": "獲得相當於 1% 最大魔力的魔法攻擊，並返還 25% 已消耗的魔力。"
+        },
+        {
+          "name": "魔力補充",
+          "description": "每次消耗魔力增加 14 最大魔力；增加至 700 時進化為熾天使的擁抱。每 10 秒最多觸發 3 次，只能裝備一件女神之淚道具。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8894",
+        "wr73-9136",
+        "wr73-9122"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9209.PNG",
+      "descriptionSources": [
+        "IMG_9206.PNG",
+        "IMG_9207.PNG",
+        "IMG_9208.PNG"
+      ],
+      "evolvesTo": [
+        "wr73-9206-evolved"
+      ]
     },
     {
       "id": "wr73-9210",
@@ -6153,8 +8434,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+70 魔法攻擊",
+        "+25 技能加速",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "技能狂舞",
+          "description": "對英雄造成魔法或真實傷害時，增加 30 跑速，持續 4 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9126",
+        "wr73-9122",
+        "wr73-9130"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9211.PNG",
+      "descriptionSources": [
+        "IMG_9210.PNG"
+      ]
     },
     {
       "id": "wr73-9212",
@@ -6207,8 +8509,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+20% 攻擊速度",
+        "+60 魔法攻擊",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "魔法彎刀",
+          "description": "施放技能後，下一次普攻造成 75% 基礎物理攻擊＋10% 魔法攻擊的額外魔法傷害，並回復 3% 額外生命＋10% 魔法攻擊的生命。短暫延遲後，對目標額外附加一次命中效果。冷卻 1.5 秒；對建築物傷害降低。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9114",
+        "wr73-8900",
+        "wr73-9130"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9214.PNG",
+      "descriptionSources": [
+        "IMG_9212.PNG",
+        "IMG_9213.PNG"
+      ]
     },
     {
       "id": "wr73-9215",
@@ -6251,8 +8575,26 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+110 魔法攻擊",
+        "+15 魔法穿透"
+      ],
+      "passives": [
+        {
+          "name": "難逃死劫",
+          "description": "技能與強化普攻對生命低於 40% 的敵軍暴擊，造成 20% 額外傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9140",
+        "wr73-9134"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9216.PNG",
+      "descriptionSources": [
+        "IMG_9215.PNG"
+      ]
     },
     {
       "id": "wr73-9217",
@@ -6295,8 +8637,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+70 魔法攻擊",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "虛空腐化",
+          "description": "與敵方英雄戰鬥時，每秒造成 2% 額外傷害，上限 8%；達上限時獲得全能吸血，近戰 10%、遠程 6%。"
+        },
+        {
+          "name": "虛空注入",
+          "description": "增加相當於 2% 額外生命的魔法攻擊。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9138"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9218.PNG",
+      "descriptionSources": [
+        "IMG_9217.PNG"
+      ]
     },
     {
       "id": "wr73-9219",
@@ -6339,8 +8704,25 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+130 魔法攻擊"
+      ],
+      "passives": [
+        {
+          "name": "狂亂",
+          "description": "增加 30% 魔法攻擊。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9140",
+        "wr73-9140"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9220.PNG",
+      "descriptionSources": [
+        "IMG_9219.PNG"
+      ]
     },
     {
       "id": "wr73-9225",
@@ -6383,8 +8765,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理防禦"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-9147",
+        "wr73-9231",
+        "wr73-9241",
+        "wr73-9243",
+        "wr73-9245",
+        "wr73-9261",
+        "wr73-9270",
+        "wr73-9275",
+        "wr73-9288"
+      ],
+      "recipeSource": "IMG_9226.PNG",
+      "descriptionSources": [
+        "IMG_9225.PNG"
+      ]
     },
     {
       "id": "wr73-9227",
@@ -6427,8 +8828,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 魔法防禦"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-8912",
+        "wr73-8916",
+        "wr73-9142",
+        "wr73-9235",
+        "wr73-9249",
+        "wr73-9261",
+        "wr73-9270",
+        "wr73-9275",
+        "wr73-9288"
+      ],
+      "recipeSource": "IMG_9228.PNG",
+      "descriptionSources": [
+        "IMG_9227.PNG"
+      ]
     },
     {
       "id": "wr73-9231",
@@ -6488,8 +8908,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 物理防禦"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9225"
+      ],
+      "upgrades": [
+        "wr73-8954",
+        "wr73-8961",
+        "wr73-9264",
+        "wr73-9278",
+        "wr73-9291",
+        "wr73-9293",
+        "wr73-9301",
+        "wr73-9313",
+        "wr73-9317",
+        "wr73-9331"
+      ],
+      "recipeSource": "IMG_9232.PNG",
+      "descriptionSources": [
+        "IMG_9231.PNG"
+      ]
     },
     {
       "id": "wr73-9233",
@@ -6532,8 +8974,23 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+150 最大生命",
+        "+4% 跑速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9108"
+      ],
+      "upgrades": [
+        "wr73-9301",
+        "wr73-9304"
+      ],
+      "recipeSource": "IMG_9234.PNG",
+      "descriptionSources": [
+        "IMG_9233.PNG"
+      ]
     },
     {
       "id": "wr73-9235",
@@ -6593,8 +9050,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+40 魔法防禦"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9227"
+      ],
+      "upgrades": [
+        "wr73-9058",
+        "wr73-9264",
+        "wr73-9268",
+        "wr73-9296",
+        "wr73-9304",
+        "wr73-9309",
+        "wr73-9317",
+        "wr73-9331"
+      ],
+      "recipeSource": "IMG_9236.PNG",
+      "descriptionSources": [
+        "IMG_9235.PNG"
+      ]
     },
     {
       "id": "wr73-9239",
@@ -6654,8 +9131,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9108"
+      ],
+      "upgrades": [
+        "wr73-9170",
+        "wr73-9282",
+        "wr73-9284",
+        "wr73-9288",
+        "wr73-9299",
+        "wr73-9306",
+        "wr73-9311",
+        "wr73-9331"
+      ],
+      "recipeSource": "IMG_9240.PNG",
+      "descriptionSources": [
+        "IMG_9239.PNG"
+      ]
     },
     {
       "id": "wr73-9241",
@@ -6715,8 +9212,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+30 物理防禦"
+      ],
+      "passives": [
+        {
+          "name": "刺甲",
+          "description": "遭普攻命中時，對攻擊者反彈 4＋6% 額外物理防禦的魔法傷害。"
+        },
+        {
+          "name": "交纏",
+          "description": "遭敵方英雄普攻命中或對其造成傷害時，附加 40% 重創，持續 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9225"
+      ],
+      "upgrades": [
+        "wr73-9291"
+      ],
+      "recipeSource": "IMG_9242.PNG",
+      "descriptionSources": [
+        "IMG_9241.PNG"
+      ]
     },
     {
       "id": "wr73-9243",
@@ -6776,8 +9295,24 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理防禦",
+        "+150 最大魔力",
+        "+10 技能加速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9225"
+      ],
+      "upgrades": [
+        "wr73-9280",
+        "wr73-9319"
+      ],
+      "recipeSource": "IMG_9244.PNG",
+      "descriptionSources": [
+        "IMG_9243.PNG"
+      ]
     },
     {
       "id": "wr73-9245",
@@ -6837,8 +9372,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 物理防禦"
+      ],
+      "passives": [
+        {
+          "name": "冷鋼",
+          "description": "遭受攻擊時，降低攻擊者 15% 攻速，持續 1.5 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9225"
+      ],
+      "upgrades": [
+        "wr73-9280",
+        "wr73-9299"
+      ],
+      "recipeSource": "IMG_9246.PNG",
+      "descriptionSources": [
+        "IMG_9245.PNG"
+      ]
     },
     {
       "id": "wr73-9249",
@@ -6898,8 +9452,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+175 最大生命",
+        "+20 魔法防禦"
+      ],
+      "passives": [
+        {
+          "name": "幽魂來訪",
+          "description": "受到敵方英雄傷害後，獲得 150% 生命回復，持續 10 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9227"
+      ],
+      "upgrades": [
+        "wr73-9293",
+        "wr73-9309"
+      ],
+      "recipeSource": "IMG_9250.PNG",
+      "descriptionSources": [
+        "IMG_9249.PNG"
+      ]
     },
     {
       "id": "wr73-9251",
@@ -6942,8 +9516,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+250 最大生命",
+        "+5 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "餘燼",
+          "description": "每秒對鄰近敵軍造成 10–20 魔法傷害；對士兵與野怪造成 115% 傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9108",
+        "wr73-9104"
+      ],
+      "upgrades": [
+        "wr73-9296",
+        "wr73-9313"
+      ],
+      "recipeSource": "IMG_9252.PNG",
+      "descriptionSources": [
+        "IMG_9251.PNG"
+      ]
     },
     {
       "id": "wr73-9253",
@@ -6986,8 +9581,33 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+15 物理攻擊"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9108",
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-8918",
+        "wr73-8920",
+        "wr73-8932",
+        "wr73-8934",
+        "wr73-8940",
+        "wr73-8947",
+        "wr73-8949",
+        "wr73-8952",
+        "wr73-8958",
+        "wr73-8966",
+        "wr73-9002"
+      ],
+      "recipeSource": "IMG_9254.PNG",
+      "descriptionSources": [
+        "IMG_9253.PNG"
+      ]
     },
     {
       "id": "wr73-9261",
@@ -7062,8 +9682,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+30 物理防禦",
+        "+30 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "加冕（主動）",
+          "description": "賦予自身及鄰近友方英雄護盾，各可吸收 250–370 傷害，持續 2.5 秒。冷卻 60 秒。目標若在最近 20 秒內已獲得其他壁飾效果，此效果減少 50%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9225",
+        "wr73-9227"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9263.PNG",
+      "descriptionSources": [
+        "IMG_9261.PNG",
+        "IMG_9262.PNG"
+      ]
     },
     {
       "id": "wr73-9264",
@@ -7106,8 +9748,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+45 物理防禦",
+        "+45 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "磐核（主動）",
+          "description": "獲得可吸收 100＋90% 額外生命傷害的護盾並增加體型；護盾於 2.5 秒內逐漸衰減。冷卻 60 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9231",
+        "wr73-9235",
+        "wr73-9108"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9265.PNG",
+      "descriptionSources": [
+        "IMG_9264.PNG"
+      ]
     },
     {
       "id": "wr73-9268",
@@ -7167,8 +9830,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+45 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "毀滅",
+          "description": "對你周圍 650 距離單位內的敵方英雄造成的魔法傷害增加 12%；此傷害加成無法累加。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9235"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9269.PNG",
+      "descriptionSources": [
+        "IMG_9268.PNG"
+      ]
     },
     {
       "id": "wr73-9270",
@@ -7243,8 +9925,34 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+25 物理防禦",
+        "+25 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "聚合",
+          "description": "獲得 10 大絕技能加速。"
+        },
+        {
+          "name": "霜火風暴",
+          "description": "施放大絕後，自身周圍形成持續 5 秒的風暴，對 350 距離單位內的敵方英雄共造成 150 魔法傷害，並緩速 30%。若施放時範圍內沒有敵方英雄，風暴延至敵人進入時發動，最多延後 5 秒。冷卻 30 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9225",
+        "wr73-9227"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9272.PNG",
+      "descriptionSources": [
+        "IMG_9270.PNG",
+        "IMG_9271.PNG"
+      ]
     },
     {
       "id": "wr73-9275",
@@ -7319,8 +10027,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+20 物理防禦",
+        "+20 魔法防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "捕手",
+          "description": "對敵方英雄造成緩速或硬控場後，自身與鄰近友方英雄獲得鼓舞，持續 8 秒（遠程持有者為 4 秒）。自身增加 20 跑速與 30% 攻速（遠程 20%）；友軍也增加攻速，近戰 30%、遠程 20%。自身或友軍在鼓舞期間擊殺敵方英雄時，獲得 20 額外金幣。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9225",
+        "wr73-9227"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9277.PNG",
+      "descriptionSources": [
+        "IMG_9275.PNG",
+        "IMG_9276.PNG"
+      ]
     },
     {
       "id": "wr73-9278",
@@ -7380,8 +10110,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+100% 生命回復",
+        "+40 物理防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "犧牲",
+          "description": "互許友軍在附近時，將對方受到的 12% 傷害轉移至自身，並回復相當於互許友軍對敵方英雄所造成傷害 10% 的生命。"
+        },
+        {
+          "name": "宣誓",
+          "description": "購買或再次購買此道具時，指定一位友軍作為互許對象。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9231"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9279.PNG",
+      "descriptionSources": [
+        "IMG_9278.PNG"
+      ]
     },
     {
       "id": "wr73-9280",
@@ -7441,8 +10195,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+80 物理防禦",
+        "+400 最大魔力",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "冬之輕撫",
+          "description": "使周圍 650 距離單位內的敵方英雄攻速降低 25%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9245",
+        "wr73-9243"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9281.PNG",
+      "descriptionSources": [
+        "IMG_9280.PNG"
+      ]
     },
     {
       "id": "wr73-9282",
@@ -7512,8 +10285,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+600 最大生命",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "命脈",
+          "description": "受到使生命低於 30% 的傷害時，獲得 200–300 額外最大生命、10% 跑速、20% 韌性，並增加 10% 體型，持續 5 秒。期間回復 200–400（隨等級成長）＋120% 額外物防＋120% 額外魔防＋15% 最大生命的生命。冷卻 70 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9239"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9415.PNG",
+      "descriptionSources": [
+        "IMG_9413.PNG",
+        "IMG_9414.PNG"
+      ]
     },
     {
       "id": "wr73-9284",
@@ -7576,8 +10368,37 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+500 最大生命",
+        "+500 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "威嚇",
+          "description": "獲得相當於 15% 最大魔力的額外生命，並返還 15% 已消耗的魔力。"
+        },
+        {
+          "name": "魔力補充",
+          "description": "每次普攻、消耗魔力，或受到英雄、防禦塔、史詩級野怪的傷害時，增加 14 最大魔力；達上限 700 時進化成芬布爾之冬。每 10 秒最多觸發 3 次，只能裝備一件女神之淚道具。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8894",
+        "wr73-9130",
+        "wr73-9239"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9287.PNG",
+      "descriptionSources": [
+        "IMG_9284.PNG",
+        "IMG_9285.PNG",
+        "IMG_9286.PNG"
+      ],
+      "evolvesTo": [
+        "wr73-9284-evolved"
+      ]
     },
     {
       "id": "wr73-9288",
@@ -7652,8 +10473,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+30 物理防禦",
+        "+30 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "指路明光",
+          "description": "施放大絕後進入超凡狀態，增加 10% 最大生命，持續 6 秒；期間自身與 1,200 距離單位內的友方英雄，每秒回復相當於你最大生命 2.5% 的生命。冷卻 60 秒；遠程英雄的回復效果減少 50%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9239",
+        "wr73-9225",
+        "wr73-9227"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9290.PNG",
+      "descriptionSources": [
+        "IMG_9288.PNG",
+        "IMG_9289.PNG"
+      ]
     },
     {
       "id": "wr73-9291",
@@ -7713,8 +10556,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+75 物理防禦"
+      ],
+      "passives": [
+        {
+          "name": "刺甲",
+          "description": "遭普攻命中時，對攻擊者反彈 20＋6% 額外物防＋1% 額外生命的魔法傷害。"
+        },
+        {
+          "name": "交纏",
+          "description": "遭敵方英雄普攻命中或對其造成傷害時，附加 50% 重創，持續 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9231",
+        "wr73-9241"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9292.PNG",
+      "descriptionSources": [
+        "IMG_9291.PNG"
+      ]
     },
     {
       "id": "wr73-9293",
@@ -7789,8 +10654,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+250 最大生命",
+        "+50 物理防禦",
+        "+30 魔法防禦"
+      ],
+      "passives": [
+        {
+          "name": "黎明使者",
+          "description": "距敵方英雄 400 單位內，且對英雄造成硬控場或自身遭到硬控場時，揭露所有鄰近敵方英雄 3 秒，造成 40＋2.5% 額外生命的魔法傷害，並獲得 20% 物防與魔防。冷卻 3 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9249",
+        "wr73-9231"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9295.PNG",
+      "descriptionSources": [
+        "IMG_9293.PNG",
+        "IMG_9294.PNG"
+      ]
     },
     {
       "id": "wr73-9296",
@@ -7843,8 +10728,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+40 魔法防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "燔燒",
+          "description": "交戰時，每秒對鄰近敵軍造成 20–30＋1% 額外生命的魔法傷害，持續 5 秒。對野怪造成 125% 傷害，對士兵造成 200% 傷害。"
+        },
+        {
+          "name": "荒蕪",
+          "description": "擊殺中立野怪或敵軍時，對其周遭造成 30＋2% 額外生命的魔法傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9251",
+        "wr73-9235"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9298.PNG",
+      "descriptionSources": [
+        "IMG_9296.PNG",
+        "IMG_9297.PNG"
+      ]
     },
     {
       "id": "wr73-9299",
@@ -7887,8 +10796,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+75 物理防禦"
+      ],
+      "passives": [
+        {
+          "name": "逆流",
+          "description": "受到物理傷害暴擊時獲得一層逆流，每層賦予 5% 跑速與 5% 緩速抗性，最多 4 層。"
+        },
+        {
+          "name": "抗壓",
+          "description": "暴擊對你造成的物理傷害減少 30%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9239",
+        "wr73-9245"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9300.PNG",
+      "descriptionSources": [
+        "IMG_9299.PNG"
+      ]
     },
     {
       "id": "wr73-9301",
@@ -7941,8 +10872,33 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+70 物理防禦",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "衝勁",
+          "description": "移動時累加衝勁，100 層時最多增加 40 跑速。普攻消耗所有衝勁；移動受限時衝勁衰退。"
+        },
+        {
+          "name": "大刀一砍",
+          "description": "普攻依消耗的衝勁層數造成最多 100 額外魔法傷害；滿層近戰普攻使目標緩速 75%，持續 1 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9231",
+        "wr73-9233",
+        "wr73-9108"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9303.PNG",
+      "descriptionSources": [
+        "IMG_9301.PNG",
+        "IMG_9302.PNG"
+      ]
     },
     {
       "id": "wr73-9304",
@@ -7985,8 +10941,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+400 最大生命",
+        "+60 魔法防禦",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "吸收",
+          "description": "受到敵方英雄技能傷害時獲得一層堅定，最多 4 層，持續 7 秒；對敵方英雄造成傷害會刷新持續時間。滿層時增加 6% 跑速與 70 額外魔防。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9233",
+        "wr73-9235",
+        "wr73-9108"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9305.PNG",
+      "descriptionSources": [
+        "IMG_9304.PNG"
+      ]
     },
     {
       "id": "wr73-9306",
@@ -8039,8 +11015,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+700 最大生命",
+        "+150% 生命回復",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "龐然巨噬",
+          "description": "距敵方英雄 700 單位內時，花費 2.5 秒充能。充能普攻對該英雄造成 140＋3.5% 自身最大生命的額外物理傷害，並永久增加相當於傷害數值 15% 的最大生命。每個目標冷卻 20 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9239",
+        "wr73-9108"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9308.PNG",
+      "descriptionSources": [
+        "IMG_9306.PNG",
+        "IMG_9307.PNG"
+      ]
     },
     {
       "id": "wr73-9309",
@@ -8083,8 +11080,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+100% 生命回復",
+        "+80 魔法防禦"
+      ],
+      "passives": [
+        {
+          "name": "法師殺手",
+          "description": "12 秒內未受到魔法傷害時，獲得可吸收 50–150＋14% 最大生命傷害的魔法護盾。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9249",
+        "wr73-9235"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9310.PNG",
+      "descriptionSources": [
+        "IMG_9309.PNG"
+      ]
     },
     {
       "id": "wr73-9311",
@@ -8127,8 +11143,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+700 最大生命",
+        "+100% 生命回復",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "恩寵",
+          "description": "所有針對自身的治療與護盾效果提升 30%。"
+        },
+        {
+          "name": "好戰之心",
+          "description": "至少擁有 950 額外生命，且 5 秒內未受到任何傷害時，每秒回復 3.5% 最大生命。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9239"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9312.PNG",
+      "descriptionSources": [
+        "IMG_9311.PNG"
+      ]
     },
     {
       "id": "wr73-9313",
@@ -8171,8 +11210,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+350 最大生命",
+        "+40 物理防禦",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "獻祭",
+          "description": "交戰時，每秒對鄰近敵軍造成 20＋1.5% 額外生命的魔法傷害。對野怪造成 130% 傷害；對士兵造成 175–250% 傷害（隨等級成長）。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9251",
+        "wr73-9231"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9314.PNG",
+      "descriptionSources": [
+        "IMG_9313.PNG"
+      ]
     },
     {
       "id": "wr73-9317",
@@ -8215,8 +11273,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+40 物理防禦",
+        "+40 魔法防禦",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "悲痛",
+          "description": "與英雄戰鬥時，每 4 秒對鄰近敵方英雄造成自身最大生命 3% 的魔法傷害，並回復所造成傷害 250% 的生命。不受道具技能加速影響。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9130",
+        "wr73-9231",
+        "wr73-9235"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9318.PNG",
+      "descriptionSources": [
+        "IMG_9317.PNG"
+      ]
     },
     {
       "id": "wr73-9319",
@@ -8269,8 +11348,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+50 物理防禦",
+        "+250 最大魔力",
+        "+30 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "魔法彎刀",
+          "description": "施放技能後，10 秒內的下一次普攻對固定範圍內的敵軍造成 100% 基礎物理攻擊＋25% 額外物防的額外物理傷害，並形成持續 2 秒、緩速 30% 的霜凍領域。物防影響領域大小。冷卻 1.5 秒；對建築物傷害降低。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-8900",
+        "wr73-9130",
+        "wr73-9243"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9321.PNG",
+      "descriptionSources": [
+        "IMG_9319.PNG",
+        "IMG_9320.PNG"
+      ]
     },
     {
       "id": "wr73-9331",
@@ -8313,8 +11414,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+50 物理防禦",
+        "+50 魔法防禦"
+      ],
+      "passives": [
+        {
+          "name": "堅毅",
+          "description": "與敵方英雄戰鬥時，每秒獲得一層堅毅，最多 5 層。滿層時體型增加 20%、韌性增加 20%，並提升 30% 額外物防與 30% 額外魔防，直到脫離與英雄的戰鬥。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9239",
+        "wr73-9231",
+        "wr73-9235"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9332.PNG",
+      "descriptionSources": [
+        "IMG_9331.PNG"
+      ]
     },
     {
       "id": "wr73-9335",
@@ -8387,8 +11508,44 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+10 物理攻擊或 +20 魔法攻擊（適性）"
+      ],
+      "passives": [
+        {
+          "name": "輔助道具",
+          "description": "裝備後會減少擊殺士兵與野怪獲得的金幣；隊中多人裝備時，同時只有一件生效。"
+        },
+        {
+          "name": "獻祭",
+          "description": "每 30 秒累積一顆能量球，最多 3 顆。在友軍附近時，以下任一行動消耗一顆球，獲得 65 金錢並回復 20–80 生命：以技能或普攻傷害敵方英雄或建築；普攻生命低於 65% 的士兵並處決（士兵金錢給予最近友軍）；持有 3 顆球且附近士兵遭擊殺。觸發時最近友軍獲得獻祭堆層。"
+        },
+        {
+          "name": "哨兵",
+          "description": "對清除者透視鏡、控域守衛或真知之花揭露的偵察守衛造成 1 額外傷害。"
+        },
+        {
+          "name": "克制",
+          "description": "擊殺士兵無法獲得金錢，但獲得 50% 的賞金；士兵賞金給予最近友軍。擊殺野怪的金錢減少 50%。"
+        },
+        {
+          "name": "任務",
+          "description": "透過此道具取得 750 金幣後升級成黯霧之鐮，並與獻祭層數最多的友軍結為完美隊友。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "recipeSource": "IMG_9339.PNG",
+      "descriptionSources": [
+        "IMG_9335.PNG",
+        "IMG_9336.PNG",
+        "IMG_9337.PNG",
+        "IMG_9338.PNG"
+      ],
+      "evolvesTo": [
+        "wr73-9335-evolved"
+      ]
     },
     {
       "id": "wr73-9340",
@@ -8461,8 +11618,44 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+125 最大生命"
+      ],
+      "passives": [
+        {
+          "name": "輔助道具",
+          "description": "裝備後會減少擊殺士兵與野怪獲得的金幣；隊中多人裝備時，同時只有一件生效。"
+        },
+        {
+          "name": "獻祭",
+          "description": "每 30 秒累積一顆能量球，最多 3 顆。在友軍附近時，以下任一行動消耗一顆球，獲得 65 金錢並回復 20–80 生命：以技能或普攻傷害敵方英雄或建築；普攻生命低於 65% 的士兵並處決（士兵金錢給予最近友軍）；持有 3 顆球且附近士兵遭擊殺。觸發時最近友軍獲得獻祭堆層。"
+        },
+        {
+          "name": "哨兵",
+          "description": "對清除者透視鏡、控域守衛或真知之花揭露的偵察守衛造成 1 額外傷害。"
+        },
+        {
+          "name": "克制",
+          "description": "擊殺士兵無法獲得金錢，但獲得 50% 的賞金；士兵賞金給予最近友軍。擊殺野怪的金錢減少 50%。"
+        },
+        {
+          "name": "任務",
+          "description": "透過此道具取得 750 金幣後升級成群山堡壘，並與獻祭層數最多的友軍結為完美隊友。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "recipeSource": "IMG_9344.PNG",
+      "descriptionSources": [
+        "IMG_9340.PNG",
+        "IMG_9341.PNG",
+        "IMG_9342.PNG",
+        "IMG_9343.PNG"
+      ],
+      "evolvesTo": [
+        "wr73-9340-evolved"
+      ]
     },
     {
       "id": "wr73-9378",
@@ -8505,8 +11698,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+300 最大生命",
+        "+50% 魔力回復",
+        "+15 技能加速",
+        "+9% 治療和護盾量"
+      ],
+      "passives": [
+        {
+          "name": "淨化（主動）",
+          "description": "移除一名友方英雄所有控場減益（不含擊飛與壓制），使其免疫控場 0.2 秒並回復 150–250 生命。冷卻 75 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9112",
+        "wr73-9130"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9379.PNG",
+      "descriptionSources": [
+        "IMG_9378.PNG"
+      ]
     },
     {
       "id": "wr73-9380",
@@ -8549,8 +11762,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+55 魔法攻擊",
+        "+50% 魔力回復",
+        "+20 技能加速",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "鼓舞談話（主動）",
+          "description": "賦予附近友軍 30% 跑速，持續 4 秒。冷卻 60 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9118",
+        "wr73-9126"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9381.PNG",
+      "descriptionSources": [
+        "IMG_9380.PNG"
+      ]
     },
     {
       "id": "wr73-9385",
@@ -8593,8 +11826,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+40 魔法攻擊",
+        "+50% 魔力回復",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "靈魂虹吸",
+          "description": "將對敵方英雄造成的原始傷害的 30% 儲存為靈魂碎片，上限 80–250（隨等級成長）。為隊友治療或提供護盾時消耗所有碎片，為其回復相應生命。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9118",
+        "wr73-9130"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9386.PNG",
+      "descriptionSources": [
+        "IMG_9385.PNG"
+      ]
     },
     {
       "id": "wr73-9393",
@@ -8637,8 +11890,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 魔法攻擊",
+        "+50% 魔力回復",
+        "+8% 治療和護盾量",
+        "+4% 跑速"
+      ],
+      "passives": [
+        {
+          "name": "魔器",
+          "description": "為自身以外的友方英雄治療或提供護盾時，自身與該友軍增加 30% 攻速，且每次普攻額外造成 25 魔法傷害，持續 6 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9126",
+        "wr73-9112"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9394.PNG",
+      "descriptionSources": [
+        "IMG_9393.PNG"
+      ]
     },
     {
       "id": "wr73-9395",
@@ -8681,8 +11954,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50 魔法攻擊",
+        "+50% 魔力回復",
+        "+10 技能加速",
+        "+8% 治療和護盾量"
+      ],
+      "passives": [
+        {
+          "name": "激流",
+          "description": "治療或賦予友軍護盾時，自身與該友軍增加 15 技能加速與 40 魔法攻擊，持續 6 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9122",
+        "wr73-9112"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9396.PNG",
+      "descriptionSources": [
+        "IMG_9395.PNG"
+      ]
     },
     {
       "id": "wr73-9408",
@@ -8735,8 +12028,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+200 最大生命",
+        "+40 魔法攻擊",
+        "+50% 魔力回復",
+        "+20 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "和諧回音",
+          "description": "為隊友治療或提供護盾時，連接至 800 距離單位內最靠近且生命百分比最低的隊友，賦予本次治療量 30% 或本次護盾量 35% 的效果。範圍內沒有其他友方英雄時，將此額外效果賦予原始目標。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9118",
+        "wr73-9130"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9410.PNG",
+      "descriptionSources": [
+        "IMG_9408.PNG",
+        "IMG_9409.PNG"
+      ]
     },
     {
       "id": "wr73-9461",
@@ -8779,8 +12093,25 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25 跑速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [
+        "wr73-9463",
+        "wr73-9467",
+        "wr73-9472",
+        "wr73-9476",
+        "wr73-9480",
+        "wr73-9484",
+        "wr73-9488"
+      ],
+      "recipeSource": "IMG_9462.PNG",
+      "descriptionSources": [
+        "IMG_9461.PNG"
+      ]
     },
     {
       "id": "wr73-9463",
@@ -8823,8 +12154,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "力量平衡",
+          "description": "獲得 12 物攻或 20 魔攻（適性）。"
+        },
+        {
+          "name": "鮮血轉換",
+          "description": "獲得 5% 全能吸血；每次參與擊殺英雄額外增加 0.5%，額外部分上限 5%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9461"
+      ],
+      "upgrades": [
+        "wr73-9465"
+      ],
+      "recipeSource": "IMG_9464.PNG",
+      "descriptionSources": [
+        "IMG_9463.PNG"
+      ]
     },
     {
       "id": "wr73-9465",
@@ -8867,8 +12220,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "力量平衡",
+          "description": "獲得 12 物攻或 20 魔攻（適性）。"
+        },
+        {
+          "name": "鮮血轉換",
+          "description": "獲得 5% 全能吸血；每次參與擊殺英雄額外增加 0.5%，額外部分上限 5%。"
+        },
+        {
+          "name": "永恆不滅",
+          "description": "生命高於 50% 時，造成 5% 額外傷害；生命低於 50% 時，治療與護盾量增加 12%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9463"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9466.PNG",
+      "descriptionSources": [
+        "IMG_9465.PNG"
+      ]
     },
     {
       "id": "wr73-9467",
@@ -8911,8 +12288,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50% 魔力回復",
+        "+15 技能加速",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "召喚加速",
+          "description": "減少 15% 技能冷卻時間。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9461",
+        "wr73-9104"
+      ],
+      "upgrades": [
+        "wr73-9469"
+      ],
+      "recipeSource": "IMG_9468.PNG",
+      "descriptionSources": [
+        "IMG_9467.PNG"
+      ]
     },
     {
       "id": "wr73-9469",
@@ -8965,8 +12363,31 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+75% 魔力回復",
+        "+25 技能加速",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "召喚加速",
+          "description": "減少 20% 技能冷卻時間。"
+        },
+        {
+          "name": "諾克薩斯加速",
+          "description": "對友方英雄治療、賦予護盾、施放技能，或以技能對敵方造成傷害時，獲得跑速，近戰 10%、遠程 8%，持續 4 秒。每項技能每 4 秒只能觸發一次。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9467"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9471.PNG",
+      "descriptionSources": [
+        "IMG_9469.PNG",
+        "IMG_9470.PNG"
+      ]
     },
     {
       "id": "wr73-9472",
@@ -9009,8 +12430,28 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35% 攻擊速度",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "護佑之鋒",
+          "description": "普攻命中時回復 10 生命。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9461",
+        "wr73-8895"
+      ],
+      "upgrades": [
+        "wr73-9474"
+      ],
+      "recipeSource": "IMG_9473.PNG",
+      "descriptionSources": [
+        "IMG_9472.PNG"
+      ]
     },
     {
       "id": "wr73-9474",
@@ -9053,8 +12494,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+50% 攻擊速度",
+        "+45 跑速",
+        "+5% 吸血"
+      ],
+      "passives": [
+        {
+          "name": "諾克薩斯步法",
+          "description": "普攻敵方英雄時增加跑速，近戰 10%、遠程 7%，於 2 秒內逐漸衰減。"
+        },
+        {
+          "name": "護佑之鋒",
+          "description": "普攻命中時回復 12 生命。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9472"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9475.PNG",
+      "descriptionSources": [
+        "IMG_9474.PNG"
+      ]
     },
     {
       "id": "wr73-9476",
@@ -9097,8 +12560,25 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+150 最大生命",
+        "+25 魔法防禦",
+        "+30% 韌性",
+        "+45 跑速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9461",
+        "wr73-9108"
+      ],
+      "upgrades": [
+        "wr73-9478"
+      ],
+      "recipeSource": "IMG_9477.PNG",
+      "descriptionSources": [
+        "IMG_9476.PNG"
+      ]
     },
     {
       "id": "wr73-9478",
@@ -9141,8 +12621,27 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+150 最大生命",
+        "+30 魔法防禦",
+        "+30% 韌性",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "諾克薩斯意志力",
+          "description": "受到來自英雄的魔法傷害時，獲得可吸收 20–140＋5% 最大生命傷害的魔法護盾，持續 5 秒。冷卻 12 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9476"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9479.PNG",
+      "descriptionSources": [
+        "IMG_9478.PNG"
+      ]
     },
     {
       "id": "wr73-9480",
@@ -9185,8 +12684,29 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+150 最大生命",
+        "+25 物理防禦",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "格擋",
+          "description": "所受的英雄普攻傷害降低 10%。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9461",
+        "wr73-9108"
+      ],
+      "upgrades": [
+        "wr73-9482"
+      ],
+      "recipeSource": "IMG_9481.PNG",
+      "descriptionSources": [
+        "IMG_9480.PNG"
+      ]
     },
     {
       "id": "wr73-9482",
@@ -9229,8 +12749,30 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+150 最大生命",
+        "+30 物理防禦",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "格擋",
+          "description": "所受的英雄普攻傷害降低 10%。"
+        },
+        {
+          "name": "諾克薩斯耐力",
+          "description": "受到來自英雄的物理傷害後，獲得可吸收 20–140＋5% 最大生命傷害的物理護盾，持續 5 秒。冷卻 12 秒。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9480"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9483.PNG",
+      "descriptionSources": [
+        "IMG_9482.PNG"
+      ]
     },
     {
       "id": "wr73-9484",
@@ -9273,8 +12815,34 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+25 魔法攻擊",
+        "+8 魔法穿透",
+        "+75% 魔力回復",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "維持均衡",
+          "description": "沒有魔力的英雄增加 50% 基礎生命回復。"
+        },
+        {
+          "name": "大惡霸",
+          "description": "普攻和主動技能對士兵造成 18 額外真實傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9461",
+        "wr73-9110"
+      ],
+      "upgrades": [
+        "wr73-9486"
+      ],
+      "recipeSource": "IMG_9485.PNG",
+      "descriptionSources": [
+        "IMG_9484.PNG"
+      ]
     },
     {
       "id": "wr73-9486",
@@ -9317,8 +12885,32 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+35 魔法攻擊",
+        "+18 魔法穿透",
+        "+8% 魔法穿透",
+        "+100% 魔力回復",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "維持均衡",
+          "description": "沒有魔力的英雄增加 50% 基礎生命回復。"
+        },
+        {
+          "name": "大惡霸",
+          "description": "普攻和主動技能對士兵造成 18 額外真實傷害。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9484"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9487.PNG",
+      "descriptionSources": [
+        "IMG_9486.PNG"
+      ]
     },
     {
       "id": "wr73-9488",
@@ -9361,8 +12953,24 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+15 物理攻擊",
+        "+10 物理穿透",
+        "+45 跑速"
+      ],
+      "passives": [],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9461",
+        "wr73-8896"
+      ],
+      "upgrades": [
+        "wr73-9490"
+      ],
+      "recipeSource": "IMG_9489.PNG",
+      "descriptionSources": [
+        "IMG_9488.PNG"
+      ]
     },
     {
       "id": "wr73-9490",
@@ -9405,8 +13013,278 @@
           "kind": "recipe"
         }
       ],
-      "stats": [],
-      "passives": []
+      "stats": [
+        "+20 物理攻擊",
+        "+10 物理穿透",
+        "+6% 物理穿透",
+        "+45 跑速"
+      ],
+      "passives": [
+        {
+          "name": "雲行者",
+          "description": "獲得 20 脫離戰鬥跑速。"
+        }
+      ],
+      "dataVersion": "7.3",
+      "buildFrom": [
+        "wr73-9488"
+      ],
+      "upgrades": [],
+      "recipeSource": "IMG_9491.PNG",
+      "descriptionSources": [
+        "IMG_9490.PNG"
+      ]
+    },
+    {
+      "id": "wr73-8926-evolved",
+      "name": "終極魔劍",
+      "categories": [
+        "鬥士",
+        "刺客",
+        "射手"
+      ],
+      "stage": "進化裝備",
+      "price": null,
+      "purchasePrice": 2900,
+      "orderByCategory": {
+        "鬥士": 19.1,
+        "刺客": 13.1,
+        "射手": 29.1
+      },
+      "icon": "../assets/images/items/v102/wr73-8926-evolved-icon.webp",
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "evolvesFrom": "wr73-8926",
+      "evolutionCondition": "魔力補充累積 700 最大魔力",
+      "descriptionSources": [
+        "IMG_8926.PNG",
+        "IMG_8927.PNG",
+        "IMG_8928.PNG"
+      ],
+      "stats": [
+        "+40 物理攻擊",
+        "+1200 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "威嚇",
+          "description": "獲得相當於 2% 最大魔力的物理攻擊，並返還 15% 已消耗的魔力。"
+        },
+        {
+          "name": "衝擊",
+          "description": "普攻英雄造成相當於 1.5% 最大魔力的額外物理傷害。技能傷害對英雄生效時，造成相當於 3.5% 最大魔力（遠程 3%）的額外物理傷害。對同一英雄，每次普攻或技能只能觸發一次。"
+        }
+      ]
+    },
+    {
+      "id": "wr73-9159-evolved",
+      "name": "歌謠之冠",
+      "categories": [
+        "法師",
+        "輔助"
+      ],
+      "stage": "進化裝備",
+      "price": null,
+      "purchasePrice": 2400,
+      "orderByCategory": {
+        "法師": 26.1,
+        "輔助": 23.1
+      },
+      "icon": "../assets/images/items/v102/wr73-9159-evolved-icon.webp",
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "evolvesFrom": "wr73-9159",
+      "evolutionCondition": "魔力補充累積 700 最大魔力",
+      "descriptionSources": [
+        "IMG_9159.PNG",
+        "IMG_9160.PNG",
+        "IMG_9161.PNG"
+      ],
+      "stats": [
+        "+200 最大生命",
+        "+1200 最大魔力",
+        "+50% 魔力回復",
+        "+8% 治療和護盾量"
+      ],
+      "passives": [
+        {
+          "name": "和諧",
+          "description": "獲得相當於 0.5% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
+        },
+        {
+          "name": "冠冕",
+          "description": "自身，或過去 3 秒內受你治療或護盾的友軍，正在與英雄交戰時，每秒治療周遭 800 距離單位內生命最低的友軍，回復量相當於 0.8% 最大魔力。"
+        }
+      ]
+    },
+    {
+      "id": "wr73-9206-evolved",
+      "name": "熾天使的擁抱",
+      "categories": [
+        "法師"
+      ],
+      "stage": "進化裝備",
+      "price": null,
+      "purchasePrice": 3000,
+      "orderByCategory": {
+        "法師": 46.1
+      },
+      "icon": "../assets/images/items/v102/wr73-9206-evolved-icon.webp",
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "evolvesFrom": "wr73-9206",
+      "evolutionCondition": "魔力補充累積 700 最大魔力",
+      "descriptionSources": [
+        "IMG_9206.PNG",
+        "IMG_9207.PNG",
+        "IMG_9208.PNG"
+      ],
+      "stats": [
+        "+60 魔法攻擊",
+        "+1200 最大魔力",
+        "+25 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "威嚇",
+          "description": "獲得相當於 2% 最大魔力的魔法攻擊，並返還 25% 已消耗的魔力。"
+        },
+        {
+          "name": "命脈",
+          "description": "承受的傷害使生命低於 35% 時，獲得可吸收 16% 最大魔力傷害的護盾，持續 2 秒。冷卻 70 秒；只能攜帶一件女神之淚道具。"
+        }
+      ]
+    },
+    {
+      "id": "wr73-9284-evolved",
+      "name": "芬布爾之冬",
+      "categories": [
+        "防禦"
+      ],
+      "stage": "進化裝備",
+      "price": null,
+      "purchasePrice": 2600,
+      "orderByCategory": {
+        "防禦": 30.1
+      },
+      "icon": "../assets/images/items/v102/wr73-9284-evolved-icon.webp",
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "evolvesFrom": "wr73-9284",
+      "evolutionCondition": "魔力補充累積 700 最大魔力",
+      "descriptionSources": [
+        "IMG_9284.PNG",
+        "IMG_9285.PNG",
+        "IMG_9286.PNG"
+      ],
+      "stats": [
+        "+500 最大生命",
+        "+1200 最大魔力",
+        "+15 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "威嚇",
+          "description": "獲得相當於 15% 最大魔力的額外生命，並返還 15% 已消耗的魔力。"
+        },
+        {
+          "name": "冰結巨像",
+          "description": "限制敵方英雄移動時，獲得可吸收 120＋4.5% 最大魔力傷害的護盾，持續 3 秒；附近超過一名敵方英雄時，護盾提升 80%。冷卻 8 秒；遠程英雄護盾效果為 50%。"
+        }
+      ]
+    },
+    {
+      "id": "wr73-9335-evolved",
+      "name": "黯霧之鐮",
+      "categories": [
+        "輔助"
+      ],
+      "stage": "進化裝備",
+      "price": null,
+      "purchasePrice": 500,
+      "orderByCategory": {
+        "輔助": 1.1
+      },
+      "icon": "../assets/images/items/v102/wr73-9335-evolved-icon.webp",
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "evolvesFrom": "wr73-9335",
+      "evolutionCondition": "透過輔助道具取得 750 金幣",
+      "descriptionSources": [
+        "IMG_9335.PNG",
+        "IMG_9336.PNG",
+        "IMG_9337.PNG",
+        "IMG_9338.PNG"
+      ],
+      "stats": [
+        "+10 技能加速",
+        "+14 物理攻擊或 +28 魔法攻擊（適性）"
+      ],
+      "passives": [
+        {
+          "name": "鑄魂",
+          "description": "每 60 秒獲得 75 金幣、增加 25 生命，以及 2 物攻或 4 魔攻（適性）；累積上限為 250 生命、20 物攻或 40 魔攻。"
+        },
+        {
+          "name": "清除守衛",
+          "description": "對清除者透視鏡、控域守衛或真知之花揭露的偵察守衛造成 2 額外傷害。"
+        },
+        {
+          "name": "完美拍檔",
+          "description": "脫離戰鬥後，朝完美拍檔移動時獲得 10% 跑速；相距超過 2,500 單位時提升為 30%。"
+        }
+      ]
+    },
+    {
+      "id": "wr73-9340-evolved",
+      "name": "群山堡壘",
+      "categories": [
+        "輔助"
+      ],
+      "stage": "進化裝備",
+      "price": null,
+      "purchasePrice": 500,
+      "orderByCategory": {
+        "輔助": 2.1
+      },
+      "icon": "../assets/images/items/v102/wr73-9340-evolved-icon.webp",
+      "dataVersion": "7.3",
+      "buildFrom": [],
+      "upgrades": [],
+      "evolvesFrom": "wr73-9340",
+      "evolutionCondition": "透過輔助道具取得 750 金幣",
+      "descriptionSources": [
+        "IMG_9340.PNG",
+        "IMG_9341.PNG",
+        "IMG_9342.PNG",
+        "IMG_9343.PNG"
+      ],
+      "stats": [
+        "+175 最大生命",
+        "+10 技能加速"
+      ],
+      "passives": [
+        {
+          "name": "鑄魂",
+          "description": "每 60 秒獲得 75 金幣、增加 25 生命，以及 2 物攻或 4 魔攻（適性）；累積上限為 250 生命、20 物攻或 40 魔攻。"
+        },
+        {
+          "name": "清除守衛",
+          "description": "對清除者透視鏡、控域守衛或真知之花揭露的偵察守衛造成 2 額外傷害。"
+        },
+        {
+          "name": "完美拍檔",
+          "description": "脫離戰鬥後，朝完美拍檔移動時獲得 10% 跑速；相距超過 2,500 單位時提升為 30%。"
+        }
+      ]
     }
-  ]
+  ],
+  "purchaseItemCount": 171,
+  "evolvedItemCount": 6
 }
