@@ -1,0 +1,241 @@
+{
+  "id": "hwei-mid",
+  "baseId": "hwei",
+  "name": "赫威",
+  "enName": "Hwei",
+  "roleId": "mid",
+  "role": "中路",
+  "tier": "A",
+  "provisional": true,
+  "patch": "7.3",
+  "position": "遠距法師／三主題施法",
+  "tags": [
+    "暫定評級",
+    "遠距消耗",
+    "區域控制",
+    "技能切換"
+  ],
+  "ratings": {},
+  "runes": [
+    "arcane-comet",
+    "manaflow-band",
+    "transcendence",
+    "scorch",
+    "bone-plating"
+  ],
+  "items": [
+    "magic-high-10",
+    "magic-high-21",
+    "magic-high-14",
+    "magic-high-08",
+    "magic-high-02"
+  ],
+  "coreItems": [
+    "magic-high-10",
+    "magic-high-21",
+    "magic-high-14"
+  ],
+  "starterItems": [
+    "basic-amp-tome"
+  ],
+  "boots": [
+    "mana-boots"
+  ],
+  "spells": [
+    "flash",
+    "barrier"
+  ],
+  "skillOrder": "Q > E > W",
+  "skillSequence": [],
+  "skillLabels": {
+    "Q": "1 技",
+    "W": "2 技",
+    "E": "3 技",
+    "R": "大絕"
+  },
+  "matchups": {
+    "good": [],
+    "bad": [],
+    "ban": ""
+  },
+  "playstyle": {
+    "前期": "用一技清線與消耗，三技保留應付突進；二級可依控制或續航需求先學三技或二技。",
+    "中期": "站在前排後方，用控制接遠距傷害；避免為補普攻走進敵方突進範圍。",
+    "後期": "先看敵方控制與進場技能，再選傷害、增益或控制主題；不要急著交掉自保。"
+  },
+  "summary": "先選主題再選施法，以遠距清線與控制建立輸出空間；主一技、副三技，保留控制防突進。",
+  "sourceNote": "7.3 赫威初步配置。A 為本站暫定、低信心的編輯判斷；參考頁 Tier 仍為 TBD，沒有足夠實戰樣本。配裝參考 <a href=\"https://www.wildriftfire.com/guide/hwei\" target=\"_blank\" rel=\"noopener\">WildRiftFire</a>。逐級加點與對局優劣尚未確認，暫不填入。<a href=\"hwei-demonstrations.html\">查看技能實機示範</a>。",
+  "avatar": "../assets/images/heroes/hwei/portrait.webp",
+  "abilities": [
+    {
+      "key": "P",
+      "label": "被動",
+      "title": "筆仙真跡",
+      "icon": "",
+      "summary": "對敵方英雄造成傷害時留下標記；再次命中完成落款，短暫延遲後爆炸，對範圍內敵人造成魔法傷害。 被動展示"
+    },
+    {
+      "key": "Q",
+      "label": "1 技",
+      "title": "主題：厄禍筆法",
+      "icon": "../assets/images/heroes/hwei/q.webp",
+      "summary": "切換到傷害主題，再選擇下列三種施法之一。 1 → 1：飛行火球｜命中後爆炸，傷害附近敵人。 1 → 2：遠距雷擊｜對落單或受控敵人有額外傷害效果。 1 → 3：熔岩裂陣｜形成裂隙與岩漿區域，造成傷害並緩速。"
+    },
+    {
+      "key": "W",
+      "label": "2 技",
+      "title": "主題：靜謐筆法",
+      "icon": "../assets/images/heroes/hwei/w.webp",
+      "summary": "切換到增益主題，依移動、保護或回魔需求選擇。 2 → 1：川流湍急｜創造溪流，提升站在上面的友軍跑速。 2 → 2：明鏡止水｜創造水池，以護盾保護區域內友軍。 2 → 3：迴旋光環｜後續攻擊回復魔力並造成額外傷害。"
+    },
+    {
+      "key": "E",
+      "label": "3 技",
+      "title": "主題：苦惱筆法",
+      "icon": "../assets/images/heroes/hwei/e.webp",
+      "summary": "切換到控制主題，可用來阻止突進、限制走位或集中敵人。 3 → 1：死神面影｜傷害第一位命中的敵人，施加恐懼與緩速。 3 → 2：深淵凝視｜發射凝視之眼，定身、傷害並取得真視視野。 3 → 3：碎骨大顎｜集中敵人並造成傷害與緩速。"
+    },
+    {
+      "key": "R",
+      "label": "大絕",
+      "title": "絕望螺旋",
+      "icon": "../assets/images/heroes/hwei/r.webp",
+      "summary": "未啟用主題時，朝指定方向施放絕望幻象。命中後揭露附近視野，持續傷害並累加絕望與緩速，最後爆炸造成範圍魔法傷害。 大絕施放與爆炸展示"
+    }
+  ],
+  "detailTemplate": "structured-baron-v40",
+  "hideBan": true,
+  "combos": [],
+  "mechanics": [
+    {
+      "title": "清洗毛筆",
+      "text": "選取主題後，大絕按鈕改為清洗毛筆，按下即可取消目前主題，回到原本技能選單。"
+    },
+    {
+      "title": "技能加點",
+      "text": "主一技、副三技、最後二技；大絕可升時優先。加點提升整個主題，不是逐一提升九種子技能。"
+    },
+    {
+      "title": "坦克多",
+      "text": "高生命前排多時，無限寶珠替換黎安卓的折磨；高魔防時虛空之杖提前。"
+    },
+    {
+      "title": "護盾多",
+      "text": "若仍需保命可保留中婭沙漏，改替換無限寶珠。"
+    },
+    {
+      "title": "先手控制多",
+      "text": "女妖面紗擋先手技能，不等同解控。"
+    },
+    {
+      "title": "回復多",
+      "text": "以黑魔禁書提供重創。"
+    }
+  ],
+  "buildVariants": [
+    {
+      "title": "坦克多",
+      "when": "坦克多",
+      "items": [
+        "magic-high-10",
+        "magic-high-16",
+        "magic-high-14",
+        "magic-high-08",
+        "magic-high-02"
+      ],
+      "runes": [
+        "arcane-comet",
+        "manaflow-band",
+        "transcendence",
+        "scorch",
+        "bone-plating"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "boots": [
+        "mana-boots"
+      ],
+      "note": "以黎安卓的折磨替換無限寶珠；魔防高時虛空之杖提前。"
+    },
+    {
+      "title": "護盾多",
+      "when": "護盾多",
+      "items": [
+        "magic-high-10",
+        "magic-high-21",
+        "magic-high-14",
+        "magic-high-08",
+        "magic-high-24"
+      ],
+      "runes": [
+        "arcane-comet",
+        "manaflow-band",
+        "transcendence",
+        "scorch",
+        "bone-plating"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "boots": [
+        "mana-boots"
+      ],
+      "note": "需要保命時保留沙漏，改換無限寶珠。"
+    },
+    {
+      "title": "先手控制多",
+      "when": "先手控制多",
+      "items": [
+        "magic-high-10",
+        "magic-high-21",
+        "magic-high-14",
+        "magic-high-08",
+        "magic-high-05"
+      ],
+      "runes": [
+        "arcane-comet",
+        "manaflow-band",
+        "transcendence",
+        "scorch",
+        "bone-plating"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "boots": [
+        "mana-boots"
+      ],
+      "note": "女妖面紗防先手，不等同解控。"
+    },
+    {
+      "title": "回復多",
+      "when": "回復多",
+      "items": [
+        "magic-high-10",
+        "magic-high-13",
+        "magic-high-14",
+        "magic-high-08",
+        "magic-high-02"
+      ],
+      "runes": [
+        "arcane-comet",
+        "manaflow-band",
+        "transcendence",
+        "scorch",
+        "bone-plating"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "boots": [
+        "mana-boots"
+      ],
+      "note": "無限寶珠替換黑魔禁書。"
+    }
+  ]
+}
