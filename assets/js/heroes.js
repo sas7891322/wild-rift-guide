@@ -538,6 +538,7 @@
         <div class="yone-skill-text">
           <strong>${labels[key]}｜${safeText(ability.title)}</strong>
           <p>${safeText(ability.summary)}</p>
+          ${(Array.isArray(ability.details)?ability.details:[]).map(detail=>`<p>${safeText(detail)}</p>`).join('')}
         </div>
       </article>`;
     }).join('')}</div>`;
@@ -839,7 +840,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData,hweiProfile]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=96.0.0'), getJSON('../assets/data/runes.json?v=92.0.0'), getJSON('../assets/data/items.json?v=96.0.0'), getJSON('../assets/data/spells.json?v=92.0.0'), getJSON('../assets/data/hwei-profile.json?v=99.0.0')
+        getJSON('../assets/data/heroes.json?v=96.0.0'), getJSON('../assets/data/runes.json?v=92.0.0'), getJSON('../assets/data/items.json?v=96.0.0'), getJSON('../assets/data/spells.json?v=92.0.0'), getJSON('../assets/data/hwei-profile.json?v=100.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
       // Hwei's standalone guide carries an explicitly provisional editorial tier.
