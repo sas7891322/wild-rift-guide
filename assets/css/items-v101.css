@@ -1,0 +1,20 @@
+.equipment-page .item-tabs{flex-wrap:wrap;overflow:visible}
+.equipment-page .item-tabs button{min-height:44px}
+.equipment-count{color:var(--muted);font-size:13px;line-height:1.7;margin:0 0 18px}
+.equipment-page button.item-icon{font-family:inherit;color:var(--text);cursor:pointer;width:100%}
+.equipment-page button:focus-visible,.equipment-page a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.equipment-page .item-detail-panel{max-height:calc(100dvh - 110px);overflow-y:auto;scrollbar-width:thin}
+.equipment-source-note{font-size:12px;line-height:1.7;color:var(--muted)}
+.equipment-shot-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.equipment-shot-tabs button,.equipment-shot-nav button,.equipment-close,#item-retry{border:1px solid var(--line);border-radius:8px;background:#112337;color:var(--text);font:inherit;font-size:12px;padding:9px 10px;min-height:40px;cursor:pointer}
+.equipment-shot-tabs button[aria-pressed=true]{border-color:var(--gold);color:var(--gold);background:#24303a}
+.equipment-page .equipment-shot{margin:0}
+.equipment-page .equipment-shot img{width:100%;height:auto;max-height:none;object-fit:contain;border:0;border-radius:6px;display:block}
+.equipment-shot figcaption{font-size:11px;color:var(--muted);margin:8px 0;text-align:center}
+.equipment-shot-nav{display:flex;justify-content:space-between;gap:12px}
+.equipment-shot-nav button:disabled{opacity:.4;cursor:default}
+.equipment-page .equipment-dialog{border:1px solid var(--line);border-radius:18px;background:linear-gradient(155deg,#12253d,#07121f);color:var(--text);width:min(560px,calc(100% - 20px));max-width:calc(100% - 20px);max-height:90dvh;padding:16px;overflow:auto;box-shadow:0 20px 70px #0009}
+.equipment-dialog::backdrop{background:#020813d9}
+.equipment-close{display:block;margin:0 0 12px auto;position:sticky;top:0;z-index:2}
+.equipment-page .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){.equipment-page #item-detail{display:none}.equipment-page .database-layout{display:block}.equipment-page .item-tabs{gap:6px}.equipment-page .item-tab{flex:0 0 calc((100% - 24px)/5);padding:8px;font-size:13px}.equipment-page .equipment-detail-header{flex-wrap:wrap}.equipment-count{font-size:11px}.equipment-page .equipment-dialog .equipment-shot img{width:100%;height:auto}}
