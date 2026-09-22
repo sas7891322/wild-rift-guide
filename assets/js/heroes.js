@@ -418,7 +418,7 @@
         <div class="hero-overview-head"><div><span class="eyebrow">ALL CHAMPIONS</span><h2>全英雄列表</h2><p>同一英雄只顯示一次；下方位置標籤代表目前遊戲內可選路線。已完成詳細資料的英雄可直接點入。</p></div><span class="hero-overview-count">${heroes.length}</span></div>
         ${heroes.length?`<div class="tier-hero-grid all-hero-grid">${heroes.map(h=>{
           const media=`<span class="tier-hero-avatar-wrap">${h.avatar?`<img src="${h.avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy" data-hero-fallback data-fallback-letter="${h.name.slice(0,1)}">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
-          const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>`<i>${roleNames[r]}</i>`).join('')}</span>`;
+          const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>`<i>${roleNames[r]}</i>`).join('')}${h.id==='hwei'?'<i>A・暫定</i>':''}</span>`;
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
           const card=h.introHref?`<a class="tier-hero-card all-hero-card" href="${safeText(h.introHref)}">${label}</a>`:detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
@@ -444,8 +444,8 @@
           ${members.map(h=>{
             const avatar=h.avatar||'';
             const media=`<span class="tier-hero-avatar-wrap">${avatar?`<img src="${avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy" data-hero-fallback data-fallback-letter="${h.name.slice(0,1)}">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
-            const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}`;
-            const card=h.detailHeroId
+            const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.id==='hwei'?'<span class="tier-cross-tag">本站暫定</span>':''}${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}`;
+            const card=h.introHref?`<a class="tier-hero-card" href="${safeText(h.introHref)}">${label}</a>`:h.detailHeroId
               ? `<button class="tier-hero-card" data-hero="${h.detailHeroId}">${label}</button>`
               : `<div class="tier-hero-card is-pending" title="完整攻略待補">${label}</div>`;
             return `<div class="tier-hero-card-wrap">${card}</div>`;
@@ -840,8 +840,8 @@
         getJSON('../assets/data/heroes.json?v=96.0.0'), getJSON('../assets/data/runes.json?v=92.0.0'), getJSON('../assets/data/items.json?v=96.0.0'), getJSON('../assets/data/spells.json?v=92.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
-      // Introduction-only champions have no ranked profile or equipment recommendation.
-      if(!state.heroCatalog.some(h=>h.id==='hwei')) state.heroCatalog.push({id:'hwei',name:'赫威',enName:'Hwei',aliases:['赫威','Hwei'],avatar:'../assets/images/heroes/hwei/portrait.webp',introHref:'hwei.html',roles:[{roleId:'mid',tier:'',origin:'native'}]});
+      // Hwei's standalone guide carries an explicitly provisional editorial tier.
+      if(!state.heroCatalog.some(h=>h.id==='hwei')) state.heroCatalog.push({id:'hwei',name:'赫威',enName:'Hwei',aliases:['赫威','Hwei'],avatar:'../assets/images/heroes/hwei/portrait.webp',introHref:'hwei.html',roles:[{roleId:'mid',tier:'A',origin:'native'}]});
 
       const params=new URLSearchParams(location.search);
       const saved=history.state?.wrgHeroes?history.state:null;
