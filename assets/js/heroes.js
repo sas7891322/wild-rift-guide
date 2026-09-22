@@ -40,13 +40,13 @@
     };
     const current=roleSeo[state.role];
     const title=current?.title||'激鬥峽谷英雄攻略與 Tier List｜Wild Rift Guide';
-    const description=current?.description||'激鬥峽谷 7.2e 英雄攻略資料庫，收錄 141 位英雄與 202 份英雄位置配置，可依五路 Tier、繁體中文或英文名稱搜尋，查看出裝、符文、技能加點與對局。';
+    const description=current?.description||'激鬥峽谷英雄資料庫，收錄 142 位英雄（含赫威技能介紹）與 202 份 7.2e 英雄位置配置，可依路線、繁體中文或英文名稱搜尋。';
     const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
     updateHeroPageHeading({
       eyebrow:'激鬥峽谷 · PATCH 7.2E',title:heading,description,
       badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
-      badgeText:current?.count||'141 位英雄 · 202 份英雄位置配置'
+      badgeText:state.role==='mid'?'46 份中路攻略＋赫威技能介紹':(current?.count||'142 位英雄 · 202 份英雄位置配置')
     });
     window.WRGSeo.set({
       title,description,path,
@@ -201,6 +201,7 @@
       id:h.id,
       name:h.name,
       enName:h.enName,
+      introHref:h.introHref||'',
       aliases:Array.isArray(h.aliases)?h.aliases:[],
       avatar:h.avatar||h.roles?.find(r=>r.avatar)?.avatar||'',
       roles:(h.roles||[]).map(r=>r.roleId),
@@ -218,6 +219,7 @@
         aliases:Array.isArray(h.aliases)?h.aliases:[],
         avatar:lane.avatar||h.avatar||'',
         tier:lane.tier,
+        introHref:h.introHref||'',
         origin:lane.origin||'native',
         detailHeroId:lane.detailHeroId
       }]:[];
@@ -419,7 +421,7 @@
           const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>`<i>${roleNames[r]}</i>`).join('')}</span>`;
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
-          const card=detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
+          const card=h.introHref?`<a class="tier-hero-card all-hero-card" href="${safeText(h.introHref)}">${label}</a>`:detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
           return `<div class="tier-hero-card-wrap">${card}</div>`;
         }).join('')}</div>`:noResultHTML()}
       </section>`;
@@ -431,7 +433,9 @@
     const limited=Boolean(state.query)||state.filter!=='all';
     const nativeCount = limited?heroes.filter(h=>h.origin!=='cross').length:Number(meta.nativeCount ?? heroes.filter(h=>h.origin!=='cross').length);
     const crossCount = limited?heroes.filter(h=>h.origin==='cross').length:Number(meta.crossCount ?? heroes.filter(h=>h.origin==='cross').length);
-    const groups = tierOrder.map(tier => {
+    const introCards = heroes.filter(h=>h.introHref&&!h.tier);
+    const introGroup = introCards.length?`<section class="tier-overview-section"><div class="tier-overview-heading"><strong>新英雄・技能介紹</strong></div><div class="tier-hero-grid">${introCards.map(h=>`<div class="tier-hero-card-wrap"><a class="tier-hero-card" href="${safeText(h.introHref)}"><span class="tier-hero-avatar-wrap"><img class="tier-hero-avatar" src="${safeText(h.avatar)}" alt="${safeText(h.name)}" loading="lazy"></span><strong>${safeText(h.name)}</strong><small>${safeText(h.enName)}</small></a></div>`).join('')}</div></section>`:'';
+    const groups = introGroup + tierOrder.map(tier => {
       const members = heroes.filter(h=>h.tier===tier);
       if(!members.length) return '';
       return `<section class="tier-overview-section">
@@ -836,6 +840,8 @@
         getJSON('../assets/data/heroes.json?v=96.0.0'), getJSON('../assets/data/runes.json?v=92.0.0'), getJSON('../assets/data/items.json?v=96.0.0'), getJSON('../assets/data/spells.json?v=92.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=normalizeItems(itemData); state.spells=spellData;
+      // Introduction-only champions have no ranked profile or equipment recommendation.
+      if(!state.heroCatalog.some(h=>h.id==='hwei')) state.heroCatalog.push({id:'hwei',name:'赫威',enName:'Hwei',aliases:['赫威','Hwei'],avatar:'../assets/images/heroes/hwei/portrait.webp',introHref:'hwei.html',roles:[{roleId:'mid',tier:'',origin:'native'}]});
 
       const params=new URLSearchParams(location.search);
       const saved=history.state?.wrgHeroes?history.state:null;
