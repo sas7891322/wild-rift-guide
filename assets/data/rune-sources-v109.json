@@ -1,0 +1,562 @@
+{
+  "version": "v109",
+  "patch": "7.3",
+  "sourceArchive": "符文.zip",
+  "screenshotCount": 59,
+  "iconCount": 57,
+  "activeRuneCount": 52,
+  "runes": [
+    {
+      "id": "electrocute",
+      "name": "死亡電刑",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9753.WEBP",
+      "icon": "../assets/images/runes/v109/electrocute.webp",
+      "iconSha256": "d29cbb39fe77d50e0106be800708c6c17eff63e5a0ff517a8b4fa3029a74ad84",
+      "sourceScreenshot": "關鍵符文/IMG_9678.jpg",
+      "screenshotSha256": "f481e55dae6c16ce2607bbbf85c5d5bc2057bbedc83703068324dccb52f93856"
+    },
+    {
+      "id": "dark-harvest",
+      "name": "黑暗收割",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9754.WEBP",
+      "icon": "../assets/images/runes/v109/dark-harvest.webp",
+      "iconSha256": "cfdc1aa07ad8712d83d0af0cc734f2a1a8e96e4183102aad85e580fa404d8a52",
+      "sourceScreenshot": "關鍵符文/IMG_9679.PNG",
+      "screenshotSha256": "c6fcca19c72b1b6eb06bb9ed73aafc9ff12243a0830f416f1259f08d7b22d87b"
+    },
+    {
+      "id": "first-strike",
+      "name": "遇強則強",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9755.PNG",
+      "icon": "../assets/images/runes/v109/first-strike.png",
+      "iconSha256": "6fc346dc7234d1dae345cb05dcbe1ba8aac580205af2978c71710a14bce5e0ef",
+      "sourceScreenshot": "關鍵符文/IMG_9680.PNG",
+      "screenshotSha256": "ce43dfd488a55eb9f158ca3fbad7898202253ffaa4518a5f9c6ca59336eda235"
+    },
+    {
+      "id": "lethal-tempo",
+      "name": "致命節奏",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9756.WEBP",
+      "icon": "../assets/images/runes/v109/lethal-tempo.webp",
+      "iconSha256": "05d55d923c9db19cf84b26a59d554c5165ee159f487ee9a97f5ccd16d68730e5",
+      "sourceScreenshot": "關鍵符文/IMG_9681.PNG",
+      "screenshotSha256": "badf5751a4ea044f6de7b1ff144d400fc10b6bc54103b75d5b566ec83029ca44"
+    },
+    {
+      "id": "fleet-footwork",
+      "name": "瞬疾步法",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9757.WEBP",
+      "icon": "../assets/images/runes/v109/fleet-footwork.webp",
+      "iconSha256": "454a034275550c69c05c8a699c47671008978d247759793102590cff3972fbe8",
+      "sourceScreenshot": "關鍵符文/IMG_9682.PNG",
+      "screenshotSha256": "bd1388a6ae92e01f75814c864ad3eb0498ec474702e612ddd6b0270b95ee4201"
+    },
+    {
+      "id": "conqueror",
+      "name": "征服者",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9758.WEBP",
+      "icon": "../assets/images/runes/v109/conqueror.webp",
+      "iconSha256": "530ba6e53c53c4d44f083c239b543520316493c3a2a7378400a498d4944d2cb6",
+      "sourceScreenshot": "關鍵符文/IMG_9683.PNG",
+      "screenshotSha256": "e19b20f8bcdbb1d6af56491e3e3d0a1352457ba2d18f8cd7abdcf6c001dacf33"
+    },
+    {
+      "id": "grasp",
+      "name": "不死之握",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9759.WEBP",
+      "icon": "../assets/images/runes/v109/grasp.webp",
+      "iconSha256": "13483c1100b74788c83a6b4a9cfb2e3614cb8af9c427d435313cda9649179a5d",
+      "sourceScreenshot": "關鍵符文/IMG_9684.PNG",
+      "screenshotSha256": "0de7982a3849bbddb0ffbdcd77ba952760c72a1440a11a474d90c9cd273b50f0"
+    },
+    {
+      "id": "guardian",
+      "name": "守護者",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9760.PNG",
+      "icon": "../assets/images/runes/v109/guardian.png",
+      "iconSha256": "e0bb5b68dd9661307bd203c4c7d469b929de2d258cf4ae091acd89dc408edf82",
+      "sourceScreenshot": "關鍵符文/IMG_9685.PNG",
+      "screenshotSha256": "414acaa9a499b65fb007d716962abbd6068e04c4d12df212b2207d467b01a426"
+    },
+    {
+      "id": "aery",
+      "name": "艾莉",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9761.WEBP",
+      "icon": "../assets/images/runes/v109/aery.webp",
+      "iconSha256": "03a57cf3f79e6b0a1d345cb23c0524607a2d791ba407dfa73b0ffff481bd3fcc",
+      "sourceScreenshot": "關鍵符文/IMG_9686.PNG",
+      "screenshotSha256": "5dc060b85cf03c153b98a8a360788f2f55d3c3601627ac9cdd49eb302ab0599f"
+    },
+    {
+      "id": "arcane-comet",
+      "name": "奧術彗星",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9762.PNG",
+      "icon": "../assets/images/runes/v109/arcane-comet.png",
+      "iconSha256": "6f28a21f5c31b5fcfc5060049f3624c5a5b5cc4d85cb0b9cbaedea973ea24158",
+      "sourceScreenshot": "關鍵符文/IMG_9687.PNG",
+      "screenshotSha256": "30d372b2807cf21112c2d7fb709f44065d37803d8349909621f8acc372987f10"
+    },
+    {
+      "id": "phase-rush",
+      "name": "相位衝擊",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9763.WEBP",
+      "icon": "../assets/images/runes/v109/phase-rush.webp",
+      "iconSha256": "a764c8cec6e1c10a2fa89ec670135c1d0ca88dc43d1fcabf020909ed57f1dd7e",
+      "sourceScreenshot": "關鍵符文/IMG_9688.PNG",
+      "screenshotSha256": "d48c14c079cc4a9520797e36c51273319177bde1c711567fdfd936e203843399"
+    },
+    {
+      "id": "empowerment",
+      "name": "先發制人",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9764.WEBP",
+      "icon": "../assets/images/runes/v109/empowerment.webp",
+      "iconSha256": "fb6cd757ea4449941f3b903bff9e2409dd9f49e9475527fcb76fc4df09dd2e89",
+      "sourceScreenshot": "關鍵符文/IMG_9689.PNG",
+      "screenshotSha256": "598ddfa2d0c8dc85daa84f49d5e1e0f803985b6f54d239d5d6660a8e19c3c028"
+    },
+    {
+      "id": "glacial-augment",
+      "name": "冰霜霸主",
+      "category": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9752.WEBP",
+      "icon": "../assets/images/runes/v109/glacial-augment.webp",
+      "iconSha256": "b879ef556879949babbef9add60a9380d2540be8d23d4a83bdfd22e6f84ee2a0",
+      "sourceScreenshot": "關鍵符文/IMG_9690.PNG",
+      "screenshotSha256": "64b76ca6237d2d6ddc67138fb1841c694a4763749f63b3a9bdcc8518e2305994"
+    },
+    {
+      "id": "cheap-shot",
+      "name": "凌虐",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9772.WEBP",
+      "icon": "../assets/images/runes/v109/cheap-shot.webp",
+      "iconSha256": "7ed781825a7699b8dc7f9e431f8ed9e41397218b29cc5b4e287fcb843d6f8ca2",
+      "sourceScreenshot": "征服/IMG_9692.PNG",
+      "screenshotSha256": "d20865abadc2cf3719428753bcf09b05c6a8fea0afe77fc7171af48ed06119e1"
+    },
+    {
+      "id": "sudden-impact",
+      "name": "即刻衝擊",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9773.WEBP",
+      "icon": "../assets/images/runes/v109/sudden-impact.webp",
+      "iconSha256": "1b6cdfb923c3db016dd232fcb328cd64ae9627be436bf758e0e0dbd95b1958cc",
+      "sourceScreenshot": "征服/IMG_9693.PNG",
+      "screenshotSha256": "5da3c7d6de91cf8c8cf9bb6cac4a39c6e47276e2f33ef0f1da49dae5bf1605e6"
+    },
+    {
+      "id": "empowered-attack",
+      "name": "強化普攻",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9774.WEBP",
+      "icon": "../assets/images/runes/v109/empowered-attack.webp",
+      "iconSha256": "5c4a564ff46a25445b7c1fcc200bae0cc2b6c2259444bb5b2068962252f09908",
+      "sourceScreenshot": "征服/IMG_9694.PNG",
+      "screenshotSha256": "1cf6c657bc8a1493505083789bd697539ebdfeaf1b767696bf096ec08226b155"
+    },
+    {
+      "id": "chain-assault",
+      "name": "鎖鏈突擊",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9775.WEBP",
+      "icon": "../assets/images/runes/v109/chain-assault.webp",
+      "iconSha256": "986b8ba4adec4f8995b059646dfce77cdb8771616dbb9d6a9d859abca1a01133",
+      "sourceScreenshot": "征服/IMG_9695.PNG",
+      "screenshotSha256": "024918eddebf1942c5fe36813f30447f31bb390369232b473d0d9ddf39e55470"
+    },
+    {
+      "id": "tyrant",
+      "name": "暴君",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9776.WEBP",
+      "icon": "../assets/images/runes/v109/tyrant.webp",
+      "iconSha256": "3d6517d280c1dd3e6a13d16b93423a66a41851cd9e24219942bd92c8f6365399",
+      "sourceScreenshot": "征服/IMG_9696.PNG",
+      "screenshotSha256": "8e37b6fbf3fe8dc8137cb9a6fd38c32f19591325f5d2a06947ad6decded52db2"
+    },
+    {
+      "id": "arrogance",
+      "name": "傲慢",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9777.WEBP",
+      "icon": "../assets/images/runes/v109/arrogance.webp",
+      "iconSha256": "6373dba91c7509ee14147f7604af73565c9fe9e8c6381ca0d16529a0535db015",
+      "sourceScreenshot": "征服/IMG_9697.PNG",
+      "screenshotSha256": "eb27c4eccd286c6e4a4eb59a59d6ba99a688cf83efe2418a78f999fad9c36690"
+    },
+    {
+      "id": "eyeball-collector",
+      "name": "眼球收集器",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9778.WEBP",
+      "icon": "../assets/images/runes/v109/eyeball-collector.webp",
+      "iconSha256": "ba556ba8c16854f72d28934cfddee1b434e8e7d1578d671765dbee0bdae0060c",
+      "sourceScreenshot": "征服/IMG_9698.PNG",
+      "screenshotSha256": "6148cf474158b8e07ce6ee5a13490c9f97d28a35aed794f7454f5fb256029285"
+    },
+    {
+      "id": "relentless-hunter",
+      "name": "殘虐獵人",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9779.WEBP",
+      "icon": "../assets/images/runes/v109/relentless-hunter.webp",
+      "iconSha256": "ef02a573f4764ca0ac8e9db6c4a19b676a9b00beca7381feca4e67f0e508b387",
+      "sourceScreenshot": "征服/IMG_9699.PNG",
+      "screenshotSha256": "674608bd4e56e05ed953428964dc013ecd1fc6522a3865681a9588a9b55831de"
+    },
+    {
+      "id": "zombie-ward",
+      "name": "殭屍守衛",
+      "category": "conquest",
+      "sourceIcon": "征服/IMG_9780.WEBP",
+      "icon": "../assets/images/runes/v109/zombie-ward.webp",
+      "iconSha256": "e8fb16d536ce3183dc3c03ccb9bc68428de13664a2699ecf237f13a980a93dd4",
+      "sourceScreenshot": "征服/IMG_9700.PNG",
+      "screenshotSha256": "21e0decf333528511e3d90326c0a83aebf5f5110c709f995ff70512379eafcbc"
+    },
+    {
+      "id": "brutal",
+      "name": "兇蠻",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9782.WEBP",
+      "icon": "../assets/images/runes/v109/brutal.webp",
+      "iconSha256": "8ba13e57e1a92b93f9c57f1c04ff31a162b57600a7f171bdcc91889c8eaac74d",
+      "sourceScreenshot": "精準/IMG_9703.PNG",
+      "screenshotSha256": "edb16da84f26b8a82ae691e8380e16338f65174a0e2f1e4f4bc696eda99a9abf"
+    },
+    {
+      "id": "triumph",
+      "name": "凱旋",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9783.WEBP",
+      "icon": "../assets/images/runes/v109/triumph.webp",
+      "iconSha256": "ab7fa23193dd1e42669372238d8dd5148a27f21e6687c3c067d107c496ddeda3",
+      "sourceScreenshot": "精準/IMG_9704.PNG",
+      "screenshotSha256": "c58d29bb652ce9649aa0514b8ef7af88b70b8e51e95f6cc2180fca0efb1cd198"
+    },
+    {
+      "id": "battle-fervor",
+      "name": "熱忱戰鬥",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9784.WEBP",
+      "icon": "../assets/images/runes/v109/battle-fervor.webp",
+      "iconSha256": "e609c4497393f87e1b259b034079c3cbd674a3a88d33573d0829af93142753ce",
+      "sourceScreenshot": "精準/IMG_9705.PNG",
+      "screenshotSha256": "d03639ab97fda978b18d9ed9d72468858d5550e13837465c367d190d4df20fb2"
+    },
+    {
+      "id": "last-stand",
+      "name": "背水一戰",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9785.WEBP",
+      "icon": "../assets/images/runes/v109/last-stand.webp",
+      "iconSha256": "dc89468f0a4a3f328b9f644bbce1f0adfc2dd6dd49477eb3eeb81e5768b87c02",
+      "sourceScreenshot": "精準/IMG_9706.PNG",
+      "screenshotSha256": "338adc8c5958042b41d43342b813ae4262ad3396152994ea9e61de601e02853a"
+    },
+    {
+      "id": "cut-down",
+      "name": "斷切",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9786.WEBP",
+      "icon": "../assets/images/runes/v109/cut-down.webp",
+      "iconSha256": "91d5b7afa1608a9b01d968ffcc093b1d010211230ef024d664f1c38a72b3ed5a",
+      "sourceScreenshot": "精準/IMG_9708.PNG",
+      "screenshotSha256": "77eab3edcd7ac784285833eff09b07aab2dd74bb2ebd39a70b4d5f6e0cf6d68e"
+    },
+    {
+      "id": "coup-de-grace",
+      "name": "致命一擊",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9787.WEBP",
+      "icon": "../assets/images/runes/v109/coup-de-grace.webp",
+      "iconSha256": "7430809ed27aaf74a5c4d7aa70bcda47b548f34ad7e82899d94ba693ef106f82",
+      "sourceScreenshot": "精準/IMG_9709.PNG",
+      "screenshotSha256": "f341e26170d8a407b2b2d758245a1eabbebd72627c5c866a4ff25f351cf2b48c"
+    },
+    {
+      "id": "legend-alacrity",
+      "name": "傳奇：敏捷",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9788.WEBP",
+      "icon": "../assets/images/runes/v109/legend-alacrity.webp",
+      "iconSha256": "32238f47b282ec7f0af3d0d246155caf3497dd993d7434e1a865079bc0a22e9b",
+      "sourceScreenshot": "精準/IMG_9710.PNG",
+      "screenshotSha256": "914a587f2ccddc8e2e139efd68f24cdf93c2294c37cf3405049169a780e41afc"
+    },
+    {
+      "id": "legend-bloodline",
+      "name": "傳奇：血脈",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9790.WEBP",
+      "icon": "../assets/images/runes/v109/legend-bloodline.webp",
+      "iconSha256": "a232b4026eb1f571d71cc281fb37d71da0d38bf9f459a7f3925201f7363042d5",
+      "sourceScreenshot": "精準/IMG_9712.PNG",
+      "screenshotSha256": "718e912092777d2b41c23a8ad293ab295ee0bd32302c8d0ee9d23a3a38df6751"
+    },
+    {
+      "id": "legend-haste",
+      "name": "傳奇：疾速",
+      "category": "precision",
+      "sourceIcon": "精準/IMG_9789.WEBP",
+      "icon": "../assets/images/runes/v109/legend-haste.webp",
+      "iconSha256": "9b23a7a860baec9a624e3d02de9018522768c34a7089e90e054c8dc07760b773",
+      "sourceScreenshot": "精準/IMG_9711.PNG",
+      "screenshotSha256": "2ab0e37a7c4dd338aa9f3b500e63702e6a972d13dfafeb089eb2cfbb425b3381"
+    },
+    {
+      "id": "demolish",
+      "name": "爆破",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9792.WEBP",
+      "icon": "../assets/images/runes/v109/demolish.webp",
+      "iconSha256": "4b50ea42c64c7b1dde62e342d6d08164351fcae3cf5e99e47d76996b4396d067",
+      "sourceScreenshot": "意志/IMG_9713.PNG",
+      "screenshotSha256": "064e140fff0219d35777984ded9e863a01ee683739bd8a54fb9965da971efc72"
+    },
+    {
+      "id": "font-of-life",
+      "name": "生命之泉",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9793.WEBP",
+      "icon": "../assets/images/runes/v109/font-of-life.webp",
+      "iconSha256": "6a5c886ba9a6e1157decb905ee178956d313f08b12cf1a2e9ddff5e54da1ceb4",
+      "sourceScreenshot": "意志/IMG_9714.PNG",
+      "screenshotSha256": "61ed36a9e24d07f348e8ca4a991c0b166b425476040737951f2e2542b17402b9"
+    },
+    {
+      "id": "courage-of-colossus",
+      "name": "巨像勇氣",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9794.WEBP",
+      "icon": "../assets/images/runes/v109/courage-of-colossus.webp",
+      "iconSha256": "2ed7f6b19e6def8fb2873f39018b1d9db2b06f2028162217432d8f92421bcbea",
+      "sourceScreenshot": "意志/IMG_9715.PNG",
+      "screenshotSha256": "088049611c99358334f893e84b838c3b4103e0abb08025575729cca5be80db36"
+    },
+    {
+      "id": "steadfast-bulwark",
+      "name": "堅定壁壘",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9795.WEBP",
+      "icon": "../assets/images/runes/v109/steadfast-bulwark.webp",
+      "iconSha256": "2d8db18890c93e327deb9ab906b6bc5b0f9669b473a34439c44dba52918b8043",
+      "sourceScreenshot": "意志/IMG_9716.PNG",
+      "screenshotSha256": "e19146c2a77d0df8064a43b33e5498394093ef5386b134a987cb3531503894a5"
+    },
+    {
+      "id": "second-wind",
+      "name": "回春",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9796.WEBP",
+      "icon": "../assets/images/runes/v109/second-wind.webp",
+      "iconSha256": "03933a199c7e49206c1518fb13ce488567101128a75740d3888d7a3bd75b2842",
+      "sourceScreenshot": "意志/IMG_9717.PNG",
+      "screenshotSha256": "d026931e55789ae5b372d01ed3c795325e56b2e21a50b2dd6d962e8f61d6fc73"
+    },
+    {
+      "id": "nullifying-orb",
+      "name": "除魔晶球",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9797.WEBP",
+      "icon": "../assets/images/runes/v109/nullifying-orb.webp",
+      "iconSha256": "9422eb0a3ea4290aa864636192ae83a63665410ec13800d29986a808868be247",
+      "sourceScreenshot": "意志/IMG_9719.PNG",
+      "screenshotSha256": "9ce2d6647d1e90905cc3011818a885c2c433bf463643d8f5bb9380dcd344cd97"
+    },
+    {
+      "id": "bone-plating",
+      "name": "骨甲",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9798.PNG",
+      "icon": "../assets/images/runes/v109/bone-plating.png",
+      "iconSha256": "c51fd50525bae99f968b16a5c81d7afb9440ecef37195d431a58e689698a2d8c",
+      "sourceScreenshot": "意志/IMG_9720.PNG",
+      "screenshotSha256": "90e6ba72b40ebce67475f0feba2a8f4e920e2862a6c7157964b57ba293580b86"
+    },
+    {
+      "id": "overgrowth",
+      "name": "過度生長",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9799.WEBP",
+      "icon": "../assets/images/runes/v109/overgrowth.webp",
+      "iconSha256": "28b1bcaa7996bd192ce634acef423544c2cece027cf79b38311486143135ed63",
+      "sourceScreenshot": "意志/IMG_9721.PNG",
+      "screenshotSha256": "61d3cf4049b8b54c0a15c0ac50acb2b77ff79140c48e46538ae5fec49c5296f3"
+    },
+    {
+      "id": "revitalize",
+      "name": "甦醒",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9800.WEBP",
+      "icon": "../assets/images/runes/v109/revitalize.webp",
+      "iconSha256": "8f8dbe38267c3b6749e7d412e4c27bfa8cc964e212b230d34f2485f667ed49ba",
+      "sourceScreenshot": "意志/IMG_9722.PNG",
+      "screenshotSha256": "ce6612c66e4c7dbbb29eac35033cff67d06181b6fea93dbc526433d4e8772096"
+    },
+    {
+      "id": "perseverance",
+      "name": "堅毅",
+      "category": "resolve",
+      "sourceIcon": "意志/IMG_9801.WEBP",
+      "icon": "../assets/images/runes/v109/perseverance.webp",
+      "iconSha256": "7c064f3f229bbf4b132f7d7b8f9df518606eeeb0aeb42e53e39266c9a162b62b",
+      "sourceScreenshot": "意志/IMG_9723.PNG",
+      "screenshotSha256": "2e840dd57f8f708a6674e7e600f10f689fe59c996aceb7a0b41a343aa5eaa3ea"
+    },
+    {
+      "id": "axiom-arcanist",
+      "name": "公理奧術大師",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9803.WEBP",
+      "icon": "../assets/images/runes/v109/axiom-arcanist.webp",
+      "iconSha256": "f20ed75d9407d1a7616e08310f8b2a7ddbff5b612fd1f60c18930ac45fe4bab9",
+      "sourceScreenshot": "巫術/IMG_9725.PNG",
+      "screenshotSha256": "f2ecd88d35c366e57a83b427f3038241c2dfeb7b4539fe3045927e7d31698465"
+    },
+    {
+      "id": "manaflow-band",
+      "name": "附魔之帶",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9804.WEBP",
+      "icon": "../assets/images/runes/v109/manaflow-band.webp",
+      "iconSha256": "e560f440b759c202bdead8d7b7256fef5e28e374e54d02a2ba70a3c0926103dc",
+      "sourceScreenshot": "巫術/IMG_9726.PNG",
+      "screenshotSha256": "cbadcbdef41a71b354164f2f8d47a19ec958485060622c6305eecb0ebb093e9c"
+    },
+    {
+      "id": "botanist",
+      "name": "植物學家",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9805.WEBP",
+      "icon": "../assets/images/runes/v109/botanist.webp",
+      "iconSha256": "710ab9f711340097105c56fa6d2d3ca16ce216c570f799696d91180187fd4c69",
+      "sourceScreenshot": "巫術/IMG_9727.PNG",
+      "screenshotSha256": "a41a6da20ca39b7dbd9c7912172b2c9f6f3ee68bba7ad8d06b8975fb907043c0"
+    },
+    {
+      "id": "hextech-flashtraption",
+      "name": "海克斯閃現",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9806.WEBP",
+      "icon": "../assets/images/runes/v109/hextech-flashtraption.webp",
+      "iconSha256": "c5ba9523513e333f4ba28081ed5dde6d886d6c1524c8cdf31149df454082e331",
+      "sourceScreenshot": "巫術/IMG_9728.PNG",
+      "screenshotSha256": "8da9d4882dadf1062e9bf1519137bd542ecf57b6fe9b09616a8e5c2ae3f0bf80"
+    },
+    {
+      "id": "transcendence",
+      "name": "卓越",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9807.WEBP",
+      "icon": "../assets/images/runes/v109/transcendence.webp",
+      "iconSha256": "9201028fd0e952323708139d255126e3b6ab964aa02e7795f4aa8e39389d5aa9",
+      "sourceScreenshot": "巫術/IMG_9729.PNG",
+      "screenshotSha256": "3a68d49b30709f175ffb782e145da179e8aa08e531c1af9e2268332a642dfc17"
+    },
+    {
+      "id": "celerity",
+      "name": "迅捷",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9808.WEBP",
+      "icon": "../assets/images/runes/v109/celerity.webp",
+      "iconSha256": "5a8663ce2833e5c7eba8a8ed4f507c24136e3f9a23c82bba1ae436d01bf308cf",
+      "sourceScreenshot": "巫術/IMG_9730.PNG",
+      "screenshotSha256": "39fb7ecedb4120e2f2e746ecfcb9484568c82fe910654811a3dc0c1e9bbe3aea"
+    },
+    {
+      "id": "absolute-focus",
+      "name": "絕對專注",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9809.WEBP",
+      "icon": "../assets/images/runes/v109/absolute-focus.webp",
+      "iconSha256": "14ad237b0894680c45423798778265a06b08883c6cd6dd7be90a7dbb2763f206",
+      "sourceScreenshot": "巫術/IMG_9731.PNG",
+      "screenshotSha256": "2aabe5caeb374c4e2416ef66fa01381b6da20ca4b3b805b84b7a0b807b40e385"
+    },
+    {
+      "id": "scorch",
+      "name": "燒灼",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9810.PNG",
+      "icon": "../assets/images/runes/v109/scorch.png",
+      "iconSha256": "1fadca8a14d1a09d0a41329d8c5c5c7a9de1ee95e96fb6164677bbc871bd665b",
+      "sourceScreenshot": "巫術/IMG_9732.PNG",
+      "screenshotSha256": "237052e1ff2cb647464e189c682ea8f27d9845a1fccde52671ddc6121f8f15ef"
+    },
+    {
+      "id": "nimbus-cloak",
+      "name": "光輝披風",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9811.WEBP",
+      "icon": "../assets/images/runes/v109/nimbus-cloak.webp",
+      "iconSha256": "19c2dd4578c3200245b025600acaddb9f0fbf4081b251ce2258d6036545f62bd",
+      "sourceScreenshot": "巫術/IMG_9733.PNG",
+      "screenshotSha256": "f227b8ca3f025a7d33ddcd88fab1497dc4f723ae983c4e84398be65669d7609b"
+    },
+    {
+      "id": "gathering-storm",
+      "name": "天寒地凍",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9812.WEBP",
+      "icon": "../assets/images/runes/v109/gathering-storm.webp",
+      "iconSha256": "001a82edb0ed7b4f1ccb44f27a3e2521f94c554b26302c4a528ace6318f2f28e",
+      "sourceScreenshot": "巫術/IMG_9734.PNG",
+      "screenshotSha256": "3fa58d2a6c62f1981c56e042726ca955cbee626a0473df4a9e4ca31ec2dc64f5"
+    },
+    {
+      "id": "ixthal-seedjar",
+      "name": "伊克斯塔爾種子罐",
+      "category": "sorcery",
+      "sourceIcon": "巫術/IMG_9813.WEBP",
+      "icon": "../assets/images/runes/v109/ixthal-seedjar.webp",
+      "iconSha256": "58a88babf3da1b414c679a616979fb1d5930b8b790211c56305c765b141ac0af",
+      "sourceScreenshot": "巫術/IMG_9735.PNG",
+      "screenshotSha256": "f147cf3a3c63d526179dd02b306d4b868c4cc44951b8497cee6d9f32ed39193d"
+    }
+  ],
+  "categories": [
+    {
+      "id": "keystone",
+      "sourceIcon": "關鍵符文/IMG_9766.WEBP",
+      "icon": "../assets/images/runes/v109/keystone-category.webp",
+      "iconSha256": "64fc9ddb4f153060b2d2c6751b93386b618b9d2c9bc2249bc14bbdab8681bfb6"
+    },
+    {
+      "id": "conquest",
+      "sourceIcon": "征服/IMG_9771.WEBP",
+      "icon": "../assets/images/runes/v109/conquest-category.webp",
+      "iconSha256": "f7cff5cad6939ade170730ba6b33472432e0079cd6144a272d01e52220e1a426"
+    },
+    {
+      "id": "precision",
+      "sourceIcon": "精準/IMG_9781.WEBP",
+      "icon": "../assets/images/runes/v109/precision-category.webp",
+      "iconSha256": "383c794e1709c1d1fab26daa75a1e79a722b8736a63b4ef1f38ab4d13d794680"
+    },
+    {
+      "id": "resolve",
+      "sourceIcon": "意志/IMG_9791.WEBP",
+      "icon": "../assets/images/runes/v109/resolve-category.webp",
+      "iconSha256": "02fe880755c4717d3000ae3b1f7a523611c6e2b7414c6769b5293371448b7ada"
+    },
+    {
+      "id": "sorcery",
+      "sourceIcon": "巫術/IMG_9802.WEBP",
+      "icon": "../assets/images/runes/v109/sorcery-category.webp",
+      "iconSha256": "c03132caebd18a0b995edac13b82bac88681004ca0a9462518d99772e4aab2f4"
+    }
+  ]
+}

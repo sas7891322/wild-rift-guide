@@ -3,6 +3,7 @@ let DATA = {};
 let current = "keystone";
 let selectedId = null;
 const labels = {keystone:"關鍵符文",conquest:"征服",precision:"精準",resolve:"意志",sorcery:"巫術"};
+const runeEscape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function runeIcon(x){return x.icon?`<img src="${x.icon}" alt="${x.name}">`:'<span class="rune-text-icon" aria-label="圖示待補">速</span>';}
 function detailMarkup(x){
@@ -10,7 +11,7 @@ function detailMarkup(x){
   return `${runeIcon(x)}`+`
     <h2>${x.name}</h2>
     <div class="detail-meta rune-accent-${current}">${x.tag || labels[current]}</div>
-    <div class="detail-description">${x.description || "待補資料"}</div>
+    <div class="detail-description">${Array.isArray(x.details) && x.details.length ? x.details.map(line=>`<p>${runeEscape(line)}</p>`).join('') : runeEscape(x.description || "待補資料")}</div>
     <div class="detail-chips"><span class="chip rune-chip-${current}">${labels[current]}</span></div>`;
 }
 function showDetail(x){
@@ -37,7 +38,7 @@ function bind(){
 }
 function render(){
   const k=document.querySelector("#q").value.trim().toLowerCase();
-  const source=(DATA[current]||[]).filter(x=>x.available!==false).filter(x=>(x.name+(x.tag||"")+(x.description||"")).toLowerCase().includes(k));
+  const source=(DATA[current]||[]).filter(x=>x.available!==false).filter(x=>(x.name+(x.aliases||[]).join(' ')+(x.tag||"")+(x.description||"")).toLowerCase().includes(k));
   const target=document.querySelector("#rune-content");
   if(!source.length){target.innerHTML='<div class="empty">沒有符合條件的符文。</div>';return;}
   if(current==="keystone"){
@@ -55,7 +56,7 @@ function render(){
   showDetail(initial);
 }
 (async()=>{
-  DATA=await getJSON("../assets/data/runes.json?v=104.0.0");
+  DATA=await getJSON("../assets/data/runes.json?v=109.0.0");
   document.querySelectorAll(".rune-tab").forEach(btn=>btn.addEventListener("click",()=>{
     document.querySelectorAll(".rune-tab").forEach(x=>x.classList.remove("active"));
     btn.classList.add("active"); current=btn.dataset.key; selectedId=null; render();

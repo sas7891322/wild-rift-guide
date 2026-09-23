@@ -858,7 +858,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData,hweiProfile,currentItems]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=104.0.0'), getJSON('../assets/data/runes.json?v=104.0.0'), getJSON('../assets/data/items.json?v=108.0.0'), getJSON('../assets/data/spells.json?v=103.0.0'), getJSON('../assets/data/hwei-profile.json?v=100.0.0'), getJSON('../assets/data/items-7.3.json?v=108.0.0')
+        getJSON('../assets/data/heroes.json?v=104.0.0'), getJSON('../assets/data/runes.json?v=109.0.0'), getJSON('../assets/data/items.json?v=108.0.0'), getJSON('../assets/data/spells.json?v=103.0.0'), getJSON('../assets/data/hwei-profile.json?v=100.0.0'), getJSON('../assets/data/items-7.3.json?v=108.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=[...normalizeItems(itemData),...normalizeItems(currentItems)]; state.spells=spellData;
       // Hwei's standalone guide carries an explicitly provisional editorial tier.

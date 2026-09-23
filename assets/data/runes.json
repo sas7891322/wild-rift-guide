@@ -4,118 +4,221 @@
       "id": "electrocute",
       "order": 1,
       "name": "死亡電刑",
-      "icon": "../assets/images/runes/keystone/electrocute.webp",
+      "icon": "../assets/images/runes/v109/electrocute.webp",
       "tag": "爆發傷害",
-      "description": "3秒內以普攻或技能命中同一名敵方英雄3次時，造成額外適性傷害。",
-      "status": "已校對"
+      "description": "3 秒內以普攻或技能命中同一名敵方英雄 3 次，造成額外適性傷害。\n傷害：40–210（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。\n冷卻：20–13 秒（隨等級）。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "3 秒內以普攻或技能命中同一名敵方英雄 3 次，造成額外適性傷害。",
+        "傷害：40–210（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
+        "冷卻：20–13 秒（隨等級）。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9678.jpg"
     },
     {
       "id": "dark-harvest",
       "order": 2,
       "name": "黑暗收割",
-      "icon": "../assets/images/runes/keystone/dark-harvest.webp",
+      "icon": "../assets/images/runes/v109/dark-harvest.webp",
       "tag": "額外傷害・堆疊增幅",
-      "description": "傷害生命低於50%的敵方英雄時造成適性傷害並收割靈魂，使黑暗收割傷害永久提升。",
-      "status": "已校對"
+      "description": "傷害生命低於 50% 的敵方英雄時，造成適性傷害並收割靈魂；每道靈魂永久提高 11 點傷害。\n傷害：35＋11 × 靈魂數＋10% 額外物理攻擊＋5% 魔法攻擊。\n冷卻：20 秒；擊殺或助攻時重置至 1 秒。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "傷害生命低於 50% 的敵方英雄時，造成適性傷害並收割靈魂；每道靈魂永久提高 11 點傷害。",
+        "傷害：35＋11 × 靈魂數＋10% 額外物理攻擊＋5% 魔法攻擊。",
+        "冷卻：20 秒；擊殺或助攻時重置至 1 秒。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9679.PNG"
     },
     {
       "id": "first-strike",
       "order": 3,
       "name": "遇強則強",
-      "icon": "../assets/images/runes/keystone/first-strike.webp",
+      "icon": "../assets/images/runes/v109/first-strike.png",
       "tag": "對英雄造成更多傷害",
-      "description": "以普攻連續命中同一名敵方英雄3次，造成額外適性傷害並提高自身對英雄造成的傷害。",
-      "status": "已校對"
+      "description": "普攻連續命中同一名敵方英雄 3 次，造成額外適性傷害，並使自身對英雄造成的傷害增加 8%，直到脫離與英雄的戰鬥。\n適性傷害：40–165（隨等級）。\n冷卻：4 秒。傷害增幅僅對英雄有效。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "普攻連續命中同一名敵方英雄 3 次，造成額外適性傷害，並使自身對英雄造成的傷害增加 8%，直到脫離與英雄的戰鬥。",
+        "適性傷害：40–165（隨等級）。",
+        "冷卻：4 秒。傷害增幅僅對英雄有效。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9680.PNG"
     },
     {
       "id": "lethal-tempo",
       "order": 4,
       "name": "致命節奏",
-      "icon": "../assets/images/runes/keystone/lethal-tempo.webp",
+      "icon": "../assets/images/runes/v109/lethal-tempo.webp",
       "tag": "疊層攻速・滿層追加傷害",
-      "description": "普攻疊層提高攻速，滿層追加適性傷害；額外攻速可提高追加傷害。7.3 不再提供滿層額外射程。",
-      "status": "7.3 官方機制已校正"
+      "description": "普攻命中敵方英雄時增加攻速，最多疊加 6 層；每層持續 6 秒。\n每層攻速：近戰 6%；遠程 4.8%。\n滿層後，普攻命中非防禦塔目標時發射子彈，造成 9–30 適性傷害；遠程為 6–20。\n每 1% 額外攻速使追加傷害提高 0.5%；遠程提高 0.33%。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "普攻命中敵方英雄時增加攻速，最多疊加 6 層；每層持續 6 秒。",
+        "每層攻速：近戰 6%；遠程 4.8%。",
+        "滿層後，普攻命中非防禦塔目標時發射子彈，造成 9–30 適性傷害；遠程為 6–20。",
+        "每 1% 額外攻速使追加傷害提高 0.5%；遠程提高 0.33%。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9681.PNG"
     },
     {
       "id": "fleet-footwork",
       "order": 5,
-      "name": "迅疾步法",
-      "icon": "../assets/images/runes/keystone/fleet-footwork.webp",
+      "name": "瞬疾步法",
+      "icon": "../assets/images/runes/v109/fleet-footwork.webp",
       "tag": "機動性・治療",
-      "description": "移動、普攻與施放技能會累積能量；滿層後下一次普攻提高攻速與跑速並回復生命。",
-      "status": "已校對"
+      "description": "移動、普攻及施放技能會累積能量；達到 100 層後，下一次普攻增加攻速與跑速並回復生命。\n額外攻速：40%。治療：15–110（隨等級）＋15% 額外物理攻擊＋10% 魔法攻擊。\n額外跑速：20%，持續 1 秒。\n對英雄普攻時，另回復 8% 已損失魔力或 8% 已損失能量。\n對士兵或野怪普攻時，治療量為原回復量的 35%（近戰）或 15%（遠程）。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "移動、普攻及施放技能會累積能量；達到 100 層後，下一次普攻增加攻速與跑速並回復生命。",
+        "額外攻速：40%。治療：15–110（隨等級）＋15% 額外物理攻擊＋10% 魔法攻擊。",
+        "額外跑速：20%，持續 1 秒。",
+        "對英雄普攻時，另回復 8% 已損失魔力或 8% 已損失能量。",
+        "對士兵或野怪普攻時，治療量為原回復量的 35%（近戰）或 15%（遠程）。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9682.PNG",
+      "aliases": [
+        "迅疾步法"
+      ]
     },
     {
       "id": "conqueror",
       "order": 6,
       "name": "征服者",
-      "icon": "../assets/images/runes/keystone/conqueror.webp",
+      "icon": "../assets/images/runes/v109/conqueror.webp",
       "tag": "傷害累加・吸血",
-      "description": "獨立普攻或技能命中英雄時疊加適性之力，滿層獲得全能吸血；每層提供 3–5 額外物攻或 5–8.33 魔攻（隨等級成長）。",
-      "status": "已校對"
+      "description": "獨立普攻或技能命中英雄時疊加適性之力，最多 6 層，持續 6 秒；滿層獲得額外全能吸血。\n每層：3–5 額外物理攻擊或 5–8 魔法攻擊。\n滿層全能吸血：近戰 9%；遠程 5%。\n此處依遊戲截圖顯示值整理；官方公告中的魔攻上限為 8.33，兩份來源呈現不同，公告原文保留。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "獨立普攻或技能命中英雄時疊加適性之力，最多 6 層，持續 6 秒；滿層獲得額外全能吸血。",
+        "每層：3–5 額外物理攻擊或 5–8 魔法攻擊。",
+        "滿層全能吸血：近戰 9%；遠程 5%。",
+        "此處依遊戲截圖顯示值整理；官方公告中的魔攻上限為 8.33，兩份來源呈現不同，公告原文保留。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9683.PNG"
     },
     {
       "id": "grasp",
       "order": 7,
       "name": "不死之握",
-      "icon": "../assets/images/runes/keystone/grasp.webp",
+      "icon": "../assets/images/runes/v109/grasp.webp",
       "tag": "坦克・治療",
-      "description": "戰鬥中蓄力後，下一次對英雄的普攻獲得強化，造成額外魔法傷害、治療並永久提升生命。",
-      "status": "已校對"
+      "description": "戰鬥中每 3 秒，下一次對敵方英雄的攻擊獲得強化。\n額外魔法傷害：3.3% 最大生命。治療：1.3% 最大生命。\n永久增加 10 生命；遠程英雄的效果減少 60%。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "戰鬥中每 3 秒，下一次對敵方英雄的攻擊獲得強化。",
+        "額外魔法傷害：3.3% 最大生命。治療：1.3% 最大生命。",
+        "永久增加 10 生命；遠程英雄的效果減少 60%。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9684.PNG"
     },
     {
       "id": "guardian",
       "order": 8,
       "name": "守護者",
-      "icon": "../assets/images/runes/keystone/guardian.webp",
+      "icon": "../assets/images/runes/v109/guardian.png",
       "tag": "防禦・護盾",
-      "description": "守護附近友軍或被技能選為目標的友軍；承受一定傷害時，雙方獲得護盾。",
-      "status": "已校對"
+      "description": "守護 350 距離內的友軍，以及被選為技能目標的友軍，持續 2.5 秒。守護期間自身或友軍承受傷害超過門檻時，雙方獲得持續 1.5 秒的護盾。\n護盾：40–165（隨等級）＋6% 額外生命＋15% 魔法攻擊。\n傷害門檻：承受 70–240 傷害（隨等級）。\n冷卻：55–25 秒（隨等級）。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "守護 350 距離內的友軍，以及被選為技能目標的友軍，持續 2.5 秒。守護期間自身或友軍承受傷害超過門檻時，雙方獲得持續 1.5 秒的護盾。",
+        "護盾：40–165（隨等級）＋6% 額外生命＋15% 魔法攻擊。",
+        "傷害門檻：承受 70–240 傷害（隨等級）。",
+        "冷卻：55–25 秒（隨等級）。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9685.PNG"
     },
     {
       "id": "aery",
       "order": 9,
       "name": "艾莉",
-      "icon": "../assets/images/runes/keystone/aery.webp",
+      "icon": "../assets/images/runes/v109/aery.webp",
       "tag": "消耗・保護",
-      "description": "普攻與技能將艾莉送至目標；對敵軍造成傷害，對友軍提供護盾。",
-      "status": "已校對"
+      "description": "普攻與技能將艾莉送到目標身上；敵軍受到傷害，友軍獲得護盾。艾莉回到身邊後才能再次送出。\n傷害：15–70（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。\n護盾：25–120（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "普攻與技能將艾莉送到目標身上；敵軍受到傷害，友軍獲得護盾。艾莉回到身邊後才能再次送出。",
+        "傷害：15–70（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
+        "護盾：25–120（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9686.PNG"
     },
     {
       "id": "arcane-comet",
       "order": 10,
       "name": "奧術彗星",
-      "icon": "../assets/images/runes/keystone/arcane-comet.webp",
+      "icon": "../assets/images/runes/v109/arcane-comet.png",
       "tag": "消耗敵人血量・堆疊增幅",
-      "description": "技能傷害敵方英雄時召喚彗星；彗星命中後，下一顆彗星傷害提升。",
-      "status": "已校對"
+      "description": "技能傷害敵方英雄時，在其位置召喚彗星；彗星命中敵方英雄後，後續彗星傷害提高。\n傷害：（15–100）＋2 × 敵方英雄總命中數＋10% 額外物理攻擊＋5% 魔法攻擊。\n冷卻：16–8 秒（隨等級）。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "技能傷害敵方英雄時，在其位置召喚彗星；彗星命中敵方英雄後，後續彗星傷害提高。",
+        "傷害：（15–100）＋2 × 敵方英雄總命中數＋10% 額外物理攻擊＋5% 魔法攻擊。",
+        "冷卻：16–8 秒（隨等級）。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9687.PNG"
     },
     {
       "id": "phase-rush",
       "order": 11,
       "name": "相位衝擊",
-      "icon": "../assets/images/runes/keystone/phase-rush.webp",
+      "icon": "../assets/images/runes/v109/phase-rush.webp",
       "tag": "機動・技能加速",
-      "description": "短時間內以普攻或技能命中敵方英雄3次，提高跑速與基礎技能加速並縮短基礎技能剩餘冷卻。",
-      "status": "已校對"
+      "description": "4 秒內以普攻或技能命中敵方英雄 3 次，增加跑速與基礎技能加速，並使基礎技能剩餘冷卻減少 20%。\n持續：3 秒。基礎技能加速：10。\n跑速：近戰 40%–60%；遠程 20%–35%（隨等級）。\n冷卻：21–7 秒（隨等級）。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "4 秒內以普攻或技能命中敵方英雄 3 次，增加跑速與基礎技能加速，並使基礎技能剩餘冷卻減少 20%。",
+        "持續：3 秒。基礎技能加速：10。",
+        "跑速：近戰 40%–60%；遠程 20%–35%（隨等級）。",
+        "冷卻：21–7 秒（隨等級）。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9688.PNG"
     },
     {
       "id": "empowerment",
       "order": 12,
       "name": "先發制人",
-      "icon": "../assets/images/runes/keystone/empowerment.webp",
+      "icon": "../assets/images/runes/v109/empowerment.webp",
       "tag": "開戰・額外金幣",
-      "description": "率先對敵方英雄發起戰鬥或造成傷害時，短時間提高傷害並依額外傷害獲得金幣。",
-      "status": "已校對"
+      "description": "開戰的 0.25 秒內對敵方英雄發起戰鬥或造成傷害，獲得 10 金幣及持續 3 秒的先發制人效果，對敵方英雄造成額外 7% 真實傷害。\n效果結束後，依期間造成的額外傷害獲得金幣：近戰為額外傷害的 60%；遠程為 45%。\n開戰後 0.25 秒內未對敵方英雄造成傷害，則進入 10 秒冷卻。\n正常冷卻：20–13 秒（隨等級）。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "開戰的 0.25 秒內對敵方英雄發起戰鬥或造成傷害，獲得 10 金幣及持續 3 秒的先發制人效果，對敵方英雄造成額外 7% 真實傷害。",
+        "效果結束後，依期間造成的額外傷害獲得金幣：近戰為額外傷害的 60%；遠程為 45%。",
+        "開戰後 0.25 秒內未對敵方英雄造成傷害，則進入 10 秒冷卻。",
+        "正常冷卻：20–13 秒（隨等級）。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9689.PNG"
     },
     {
       "id": "glacial-augment",
       "order": 13,
       "name": "冰霜霸主",
-      "icon": "../assets/images/runes/keystone/glacial-augment.webp",
+      "icon": "../assets/images/runes/v109/glacial-augment.webp",
       "tag": "控制・緩速",
-      "description": "硬控敵方英雄時形成冰霜光束與緩速區域，並獲得環繞自身的冰霜防護。",
-      "status": "已校對"
+      "description": "硬控場敵方英雄時，在目標周圍形成 3 道光束及持續 3 秒的冰霜，緩速範圍內敵軍；敵軍離開後緩速仍持續 1.5 秒。\n自身獲得冰霜防護層並提高雙防，短暫延遲後爆炸，對周圍造成魔法傷害。\n緩速：（1% 自身額外生命＋15）%。\n防禦：35＋75% 額外雙防，持續 2.5 秒。\n魔法傷害：15–100（隨等級）＋5% 額外生命。冷卻：20 秒。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "硬控場敵方英雄時，在目標周圍形成 3 道光束及持續 3 秒的冰霜，緩速範圍內敵軍；敵軍離開後緩速仍持續 1.5 秒。",
+        "自身獲得冰霜防護層並提高雙防，短暫延遲後爆炸，對周圍造成魔法傷害。",
+        "緩速：（1% 自身額外生命＋15）%。",
+        "防禦：35＋75% 額外雙防，持續 2.5 秒。",
+        "魔法傷害：15–100（隨等級）＋5% 額外生命。冷卻：20 秒。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "關鍵符文/IMG_9690.PNG"
     }
   ],
   "conquest": [
@@ -123,71 +226,123 @@
       "id": "cheap-shot",
       "order": 1,
       "name": "凌虐",
-      "icon": "../assets/images/runes/conquest/cheap-shot.webp",
+      "icon": "../assets/images/runes/v109/cheap-shot.webp",
       "tag": "鎖定行動受限的敵軍",
-      "description": "傷害行動受限的敵軍時造成額外10–45真實傷害。冷卻時間7秒。",
+      "description": "傷害行動受限的敵軍時，造成額外 10–45 真實傷害。\n冷卻：7 秒。",
       "row": 1,
-      "rowOrder": 1
+      "rowOrder": 1,
+      "details": [
+        "傷害行動受限的敵軍時，造成額外 10–45 真實傷害。",
+        "冷卻：7 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9692.PNG"
     },
     {
       "id": "sudden-impact",
       "order": 2,
       "name": "即刻衝擊",
-      "icon": "../assets/images/runes/conquest/sudden-impact.webp",
+      "icon": "../assets/images/runes/v109/sudden-impact.webp",
       "tag": "潛行或衝刺時觸發",
-      "description": "衝刺、跳躍、瞬移、傳送或脫離潛行後，下一次普攻或技能造成額外真實傷害；高等級後額外獲得跑速。",
+      "description": "衝刺、跳躍、瞬移、傳送或脫離潛行後，4 秒內對敵方英雄的下一次普攻或技能造成 10–65 額外真實傷害。\n等級 5：額外造成 5 真實傷害。\n等級 9：額外造成 5 真實傷害，並在造成傷害後獲得 10% 跑速，持續 1.5 秒。\n冷卻：15 秒。",
       "row": 1,
-      "rowOrder": 2
+      "rowOrder": 2,
+      "details": [
+        "衝刺、跳躍、瞬移、傳送或脫離潛行後，4 秒內對敵方英雄的下一次普攻或技能造成 10–65 額外真實傷害。",
+        "等級 5：額外造成 5 真實傷害。",
+        "等級 9：額外造成 5 真實傷害，並在造成傷害後獲得 10% 跑速，持續 1.5 秒。",
+        "冷卻：15 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9693.PNG"
     },
     {
       "id": "empowered-attack",
       "order": 3,
       "name": "強化普攻",
-      "icon": "../assets/images/runes/conquest/empowered-attack.webp",
+      "icon": "../assets/images/runes/v109/empowered-attack.webp",
       "tag": "普攻時觸發",
-      "description": "每隔一段時間強化下一次普攻，對敵方英雄造成額外適性傷害。",
+      "description": "每 8 秒強化下一次普攻，對敵方英雄造成 20–60 額外適性傷害（隨等級）。\n遠程英雄效果為 80%。",
       "row": 1,
-      "rowOrder": 3
+      "rowOrder": 3,
+      "details": [
+        "每 8 秒強化下一次普攻，對敵方英雄造成 20–60 額外適性傷害（隨等級）。",
+        "遠程英雄效果為 80%。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9694.PNG"
     },
     {
       "id": "chain-assault",
       "order": 4,
       "name": "鎖鏈突擊",
-      "icon": "../assets/images/runes/conquest/chain-assault.webp",
+      "icon": "../assets/images/runes/v109/chain-assault.webp",
       "tag": "技能命中後以普攻觸發",
-      "description": "主動技能傷害英雄時施加標記，後續2次普攻或主動技能造成額外適性傷害。",
+      "description": "主動技能對敵方英雄造成傷害時施加標記，接下來對該英雄的 2 次普攻或主動技能造成額外適性傷害。\n每次傷害：12–38（隨等級）＋3% 額外物理攻擊＋1.5% 魔法攻擊。\n冷卻：15 秒。",
       "row": 2,
-      "rowOrder": 1
+      "rowOrder": 1,
+      "details": [
+        "主動技能對敵方英雄造成傷害時施加標記，接下來對該英雄的 2 次普攻或主動技能造成額外適性傷害。",
+        "每次傷害：12–38（隨等級）＋3% 額外物理攻擊＋1.5% 魔法攻擊。",
+        "冷卻：15 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9695.PNG"
     },
     {
       "id": "tyrant",
       "order": 5,
       "name": "暴君",
-      "icon": "../assets/images/runes/conquest/tyrant.webp",
+      "icon": "../assets/images/runes/v109/tyrant.webp",
       "tag": "對低生命敵軍造成傷害",
-      "description": "對生命低於50%的敵方英雄造成傷害時，額外造成20–70適性傷害，並獲得物攻與魔攻係數。冷卻10秒。",
+      "description": "對生命低於 50% 的英雄造成傷害時，造成額外適性傷害。\n傷害：20–70（隨等級）＋6% 額外物理攻擊＋3% 魔法攻擊。\n冷卻：10 秒。",
       "row": 2,
-      "rowOrder": 2
+      "rowOrder": 2,
+      "details": [
+        "對生命低於 50% 的英雄造成傷害時，造成額外適性傷害。",
+        "傷害：20–70（隨等級）＋6% 額外物理攻擊＋3% 魔法攻擊。",
+        "冷卻：10 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9696.PNG"
     },
     {
       "id": "arrogance",
       "order": 6,
       "name": "傲慢",
-      "icon": "../assets/images/runes/conquest/arrogance.webp",
+      "icon": "../assets/images/runes/v109/arrogance.webp",
       "tag": "擊殺時暫時增加物攻／魔攻",
-      "description": "對敵方英雄造成傷害後，在短時間內參與擊殺會獲得適性之力，持續30秒。",
+      "description": "對敵方英雄造成傷害後，若在 3 秒內參與擊殺，獲得適性之力，持續 30 秒。\n適性之力：5＋每擊殺一名英雄額外 1。",
       "row": 2,
-      "rowOrder": 3
+      "rowOrder": 3,
+      "details": [
+        "對敵方英雄造成傷害後，若在 3 秒內參與擊殺，獲得適性之力，持續 30 秒。",
+        "適性之力：5＋每擊殺一名英雄額外 1。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9697.PNG"
     },
     {
       "id": "eyeball-collector",
       "order": 7,
       "name": "眼球收集器",
-      "icon": "../assets/images/runes/conquest/eyeball-collector.webp",
+      "icon": "../assets/images/runes/v109/eyeball-collector.webp",
       "tag": "擊殺時增加物攻／魔攻",
-      "description": "參與擊殺英雄或史詩級野怪後獲得物攻或魔攻，最多累加8層。",
+      "description": "參與擊殺英雄或史詩級野怪後，獲得 1.5 物理攻擊或 3 魔法攻擊，最多疊加 8 層。",
       "row": 3,
-      "rowOrder": 1
+      "rowOrder": 1,
+      "details": [
+        "參與擊殺英雄或史詩級野怪後，獲得 1.5 物理攻擊或 3 魔法攻擊，最多疊加 8 層。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9698.PNG"
     },
     {
       "id": "ingenious-hunter",
@@ -205,21 +360,36 @@
       "id": "relentless-hunter",
       "order": 9,
       "name": "殘虐獵人",
-      "icon": "../assets/images/runes/conquest/relentless-hunter.webp",
+      "icon": "../assets/images/runes/v109/relentless-hunter.webp",
       "tag": "擊殺時賦予脫離戰鬥跑速",
-      "description": "獲得脫離戰鬥跑速；參與擊殺英雄或史詩級野怪後額外提高，最多累加5層。",
+      "description": "獲得 10 脫離戰鬥跑速。\n每次參與擊殺英雄或史詩級野怪，額外獲得 2 脫離戰鬥跑速，最多疊加 5 層。",
       "row": 3,
-      "rowOrder": 3
+      "rowOrder": 3,
+      "details": [
+        "獲得 10 脫離戰鬥跑速。",
+        "每次參與擊殺英雄或史詩級野怪，額外獲得 2 脫離戰鬥跑速，最多疊加 5 層。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9699.PNG"
     },
     {
       "id": "zombie-ward",
       "order": 10,
       "name": "殭屍守衛",
-      "icon": "../assets/images/runes/conquest/zombie-ward.webp",
+      "icon": "../assets/images/runes/v109/zombie-ward.webp",
       "tag": "視野控制會增加物攻／魔攻",
-      "description": "參與摧毀敵軍偵察守衛後召喚我方殭屍守衛取代，並獲得物攻或魔攻，最多累加5層。",
+      "description": "參與摧毀敵軍偵察守衛後，召喚我方殭屍守衛取代，提供周圍視野 120 秒。\n每層額外增加 3 物理攻擊或 6 魔法攻擊，最多 5 層。\n協助攻擊敵軍偵察守衛也能獲得堆層並生成殭屍守衛。",
       "row": 3,
-      "rowOrder": 4
+      "rowOrder": 4,
+      "details": [
+        "參與摧毀敵軍偵察守衛後，召喚我方殭屍守衛取代，提供周圍視野 120 秒。",
+        "每層額外增加 3 物理攻擊或 6 魔法攻擊，最多 5 層。",
+        "協助攻擊敵軍偵察守衛也能獲得堆層並生成殭屍守衛。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "征服/IMG_9700.PNG"
     }
   ],
   "precision": [
@@ -227,71 +397,118 @@
       "id": "brutal",
       "order": 1,
       "name": "兇蠻",
-      "icon": "../assets/images/runes/precision/brutal.webp",
+      "icon": "../assets/images/runes/v109/brutal.webp",
       "tag": "普攻造成命中傷害",
-      "description": "普攻對敵方英雄造成額外適性傷害。",
+      "description": "普攻對敵方英雄造成額外適性傷害。\n傷害：6＋8% 額外物理攻擊。",
       "row": 1,
-      "rowOrder": 1
+      "rowOrder": 1,
+      "details": [
+        "普攻對敵方英雄造成額外適性傷害。",
+        "傷害：6＋8% 額外物理攻擊。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9703.PNG"
     },
     {
       "id": "triumph",
       "order": 2,
       "name": "凱旋",
-      "icon": "../assets/images/runes/precision/triumph.webp",
+      "icon": "../assets/images/runes/v109/triumph.webp",
       "tag": "參與擊殺英雄時回復生命",
-      "description": "參與擊殺敵方英雄後，回復已損失生命與最大魔力／能量，並短暫增加跑速。",
+      "description": "每次參與擊殺敵方英雄，回復 10% 已損失生命，以及 10% 最大魔力與能量。\n另增加 35 跑速，持續 2 秒。",
       "row": 1,
-      "rowOrder": 2
+      "rowOrder": 2,
+      "details": [
+        "每次參與擊殺敵方英雄，回復 10% 已損失生命，以及 10% 最大魔力與能量。",
+        "另增加 35 跑速，持續 2 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9704.PNG"
     },
     {
       "id": "battle-fervor",
       "order": 3,
       "name": "熱忱戰鬥",
-      "icon": "../assets/images/runes/precision/battle-fervor.webp",
+      "icon": "../assets/images/runes/v109/battle-fervor.webp",
       "tag": "戰鬥時提升技能傷害",
-      "description": "與英雄交戰時，每秒獲得可累加的基礎技能傷害增幅，最多3層，僅對英雄生效。",
+      "description": "與英雄交戰時，每 1 秒獲得 1.4% 基礎技能傷害增幅，最多疊加 3 次。\n僅對敵方英雄生效。",
       "row": 1,
-      "rowOrder": 3
+      "rowOrder": 3,
+      "details": [
+        "與英雄交戰時，每 1 秒獲得 1.4% 基礎技能傷害增幅，最多疊加 3 次。",
+        "僅對敵方英雄生效。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9705.PNG"
     },
     {
       "id": "last-stand",
       "order": 4,
       "name": "背水一戰",
-      "icon": "../assets/images/runes/precision/last-stand.webp",
+      "icon": "../assets/images/runes/v109/last-stand.webp",
       "tag": "生命較低時增加傷害",
-      "description": "生命低於60%時，對敵方英雄的普攻造成額外傷害；低於30%時達到最大效果。",
+      "description": "自身生命低於 60% 時，對敵方英雄的普攻造成額外 5%–11% 傷害。\n生命低於 30% 時，獲得最大額外傷害。",
       "row": 2,
-      "rowOrder": 1
+      "rowOrder": 1,
+      "details": [
+        "自身生命低於 60% 時，對敵方英雄的普攻造成額外 5%–11% 傷害。",
+        "生命低於 30% 時，獲得最大額外傷害。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9706.PNG"
     },
     {
       "id": "cut-down",
       "order": 5,
       "name": "斷切",
-      "icon": "../assets/images/runes/precision/cut-down.webp",
+      "icon": "../assets/images/runes/v109/cut-down.webp",
       "tag": "對高生命敵軍造成額外傷害",
-      "description": "普攻對生命高於60%的敵方英雄造成6.5%額外傷害。",
+      "description": "普攻對生命高於 60% 的敵方英雄造成 6.5% 額外傷害。",
       "row": 2,
-      "rowOrder": 2
+      "rowOrder": 2,
+      "details": [
+        "普攻對生命高於 60% 的敵方英雄造成 6.5% 額外傷害。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9708.PNG"
     },
     {
       "id": "coup-de-grace",
       "order": 6,
       "name": "致命一擊",
-      "icon": "../assets/images/runes/precision/coup-de-grace.webp",
+      "icon": "../assets/images/runes/v109/coup-de-grace.webp",
       "tag": "增加對低生命敵軍的傷害",
-      "description": "對生命低於40%的敵方英雄造成8%額外傷害。",
+      "description": "對生命低於 40% 的敵方英雄造成 8% 額外傷害。",
       "row": 2,
-      "rowOrder": 3
+      "rowOrder": 3,
+      "details": [
+        "對生命低於 40% 的敵方英雄造成 8% 額外傷害。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9709.PNG"
     },
     {
       "id": "legend-alacrity",
       "order": 7,
       "name": "傳奇：敏捷",
-      "icon": "../assets/images/runes/precision/legend-alacrity.webp",
+      "icon": "../assets/images/runes/v109/legend-alacrity.webp",
       "tag": "增加額外攻速",
-      "description": "增加3%攻速；參與擊殺野怪、英雄或士兵後，最多額外增加18%攻速。",
+      "description": "增加 3% 攻速。\n參與野怪、敵方英雄或士兵擊殺後，最多額外增加 18% 攻速。",
       "row": 3,
-      "rowOrder": 1
+      "rowOrder": 1,
+      "details": [
+        "增加 3% 攻速。",
+        "參與野怪、敵方英雄或士兵擊殺後，最多額外增加 18% 攻速。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9710.PNG"
     },
     {
       "id": "legend-tenacity",
@@ -309,11 +526,18 @@
       "id": "legend-bloodline",
       "order": 9,
       "name": "傳奇：血脈",
-      "icon": "../assets/images/runes/precision/legend-bloodline.webp",
+      "icon": "../assets/images/runes/v109/legend-bloodline.webp",
       "tag": "增加全能吸血",
-      "description": "獲得1%全能吸血；參與擊殺後最多額外獲得7%全能吸血。",
+      "description": "獲得 1% 全能吸血。\n參與野怪、敵方英雄或士兵擊殺後，最多額外獲得 7% 全能吸血。",
       "row": 3,
-      "rowOrder": 3
+      "rowOrder": 3,
+      "details": [
+        "獲得 1% 全能吸血。",
+        "參與野怪、敵方英雄或士兵擊殺後，最多額外獲得 7% 全能吸血。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9712.PNG"
     },
     {
       "id": "legend-haste",
@@ -321,10 +545,16 @@
       "order": 8,
       "row": 3,
       "rowOrder": 2,
-      "icon": "",
+      "icon": "../assets/images/runes/v109/legend-haste.webp",
       "tag": "疊層技能加速",
-      "description": "參與擊殺士兵與野怪逐步取得技能加速，最高 15 點。7.3 取代傳奇：韌性。",
-      "status": "文字依官方更新；圖示待遊戲素材補齊"
+      "description": "對戰開始時提供 0 技能加速。\n擊倒野怪、敵方英雄或士兵可累積額外技能加速，總加成上限為 15 技能加速。",
+      "status": "7.3 遊戲截圖已校對",
+      "details": [
+        "對戰開始時提供 0 技能加速。",
+        "擊倒野怪、敵方英雄或士兵可累積額外技能加速，總加成上限為 15 技能加速。"
+      ],
+      "dataVersion": "7.3",
+      "sourceScreenshot": "精準/IMG_9711.PNG"
     }
   ],
   "resolve": [
@@ -334,9 +564,17 @@
       "row": 1,
       "rowOrder": 1,
       "name": "爆破",
-      "icon": "../assets/images/runes/resolve/demolish.webp",
+      "icon": "../assets/images/runes/v109/demolish.webp",
       "tag": "提升拆塔速度",
-      "description": "對防禦塔普攻三次後追加物理傷害，近戰為 85＋28% 最大生命，遠程為 50＋20% 最大生命。"
+      "description": "對防禦塔的第三次普攻造成額外物理傷害。\n近戰：85＋28% 最大生命。遠程：50＋20% 最大生命。\n冷卻：30 秒。",
+      "details": [
+        "對防禦塔的第三次普攻造成額外物理傷害。",
+        "近戰：85＋28% 最大生命。遠程：50＋20% 最大生命。",
+        "冷卻：30 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9713.PNG"
     },
     {
       "id": "font-of-life",
@@ -344,9 +582,19 @@
       "row": 1,
       "rowOrder": 2,
       "name": "生命之泉",
-      "icon": "../assets/images/runes/resolve/font-of-life.webp",
+      "icon": "../assets/images/runes/v109/font-of-life.webp",
       "tag": "團隊治療",
-      "description": "普攻或技能命中敵方英雄時，使自身和附近生命最低的友方英雄回復生命。"
+      "description": "普攻或技能命中敵方英雄時，使自身與附近生命最低的友方英雄回復生命。\n友方治療：1.5% 自身最大生命＋5% 自身魔法攻擊。\n自身治療：1% 自身最大生命＋5% 自身魔法攻擊。\n近戰英雄回復量增加 130%。冷卻：20 秒。\n自身或鄰近友方英雄滿血，或附近沒有友方英雄時，效果不觸發。",
+      "details": [
+        "普攻或技能命中敵方英雄時，使自身與附近生命最低的友方英雄回復生命。",
+        "友方治療：1.5% 自身最大生命＋5% 自身魔法攻擊。",
+        "自身治療：1% 自身最大生命＋5% 自身魔法攻擊。",
+        "近戰英雄回復量增加 130%。冷卻：20 秒。",
+        "自身或鄰近友方英雄滿血，或附近沒有友方英雄時，效果不觸發。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9714.PNG"
     },
     {
       "id": "courage-of-colossus",
@@ -354,9 +602,17 @@
       "row": 1,
       "rowOrder": 3,
       "name": "巨像勇氣",
-      "icon": "../assets/images/runes/resolve/courage-of-colossus.webp",
+      "icon": "../assets/images/runes/v109/courage-of-colossus.webp",
       "tag": "硬控場敵軍時獲得護盾",
-      "description": "硬控敵方英雄時獲得護盾，持續3秒。"
+      "description": "硬控場敵方英雄時獲得護盾，持續 3 秒。\n護盾：25–45（隨等級）＋1% 最大生命。\n冷卻：18 秒。",
+      "details": [
+        "硬控場敵方英雄時獲得護盾，持續 3 秒。",
+        "護盾：25–45（隨等級）＋1% 最大生命。",
+        "冷卻：18 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9715.PNG"
     },
     {
       "id": "steadfast-bulwark",
@@ -364,9 +620,16 @@
       "row": 1,
       "rowOrder": 4,
       "name": "堅定壁壘",
-      "icon": "../assets/images/runes/resolve/steadfast-bulwark.webp",
+      "icon": "../assets/images/runes/v109/steadfast-bulwark.webp",
       "tag": "增加雙防及緩速抗性",
-      "description": "增加物防與魔防；附近敵方英雄越多，額外提高雙防，達上限後獲得緩速抗性。"
+      "description": "增加 3% 物理防禦與魔法防禦；附近每有 1 位敵方英雄，額外增加 2% 物防與魔防。\n鄰近敵方英雄數達上限 3 位時，另獲得 20% 緩速抗性。",
+      "details": [
+        "增加 3% 物理防禦與魔法防禦；附近每有 1 位敵方英雄，額外增加 2% 物防與魔防。",
+        "鄰近敵方英雄數達上限 3 位時，另獲得 20% 緩速抗性。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9716.PNG"
     },
     {
       "id": "second-wind",
@@ -374,9 +637,17 @@
       "row": 2,
       "rowOrder": 1,
       "name": "回春",
-      "icon": "../assets/images/runes/resolve/second-wind.webp",
+      "icon": "../assets/images/runes/v109/second-wind.webp",
       "tag": "增加續戰力",
-      "description": "每5秒增加生命。受到敵方英雄傷害後，在5秒內回復部分已損失生命；近戰英雄效果加倍。"
+      "description": "每 5 秒回復 5 生命。\n受到敵方英雄傷害後，在 5 秒內回復 3＋1.5% 自身已損失生命。\n近戰英雄受到傷害後的回復效果加倍。",
+      "details": [
+        "每 5 秒回復 5 生命。",
+        "受到敵方英雄傷害後，在 5 秒內回復 3＋1.5% 自身已損失生命。",
+        "近戰英雄受到傷害後的回復效果加倍。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9717.PNG"
     },
     {
       "id": "nullifying-orb",
@@ -384,9 +655,16 @@
       "row": 2,
       "rowOrder": 2,
       "name": "除魔晶球",
-      "icon": "../assets/images/runes/resolve/unknown-resolve.webp",
+      "icon": "../assets/images/runes/v109/nullifying-orb.webp",
       "tag": "賦予護盾",
-      "description": "受到英雄傷害後，若生命低於最大生命35%，獲得吸收傷害的護盾。"
+      "description": "受到英雄傷害後，若生命低於最大生命的 35%，獲得可吸收 60–180 傷害（隨等級）的護盾，持續 4 秒。\n冷卻：60 秒。",
+      "details": [
+        "受到英雄傷害後，若生命低於最大生命的 35%，獲得可吸收 60–180 傷害（隨等級）的護盾，持續 4 秒。",
+        "冷卻：60 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9719.PNG"
     },
     {
       "id": "bone-plating",
@@ -394,9 +672,16 @@
       "row": 2,
       "rowOrder": 3,
       "name": "骨甲",
-      "icon": "../assets/images/runes/resolve/bone-plating.webp",
+      "icon": "../assets/images/runes/v109/bone-plating.png",
       "tag": "抵抗爆發傷害",
-      "description": "受到敵方英雄傷害時，降低該英雄接下來3次技能或普攻造成的傷害。"
+      "description": "受到敵方英雄傷害時，在接下來 1.5 秒內，使該英雄接下來 3 次技能或普攻傷害減少 30–60（隨等級）。\n冷卻：40 秒。",
+      "details": [
+        "受到敵方英雄傷害時，在接下來 1.5 秒內，使該英雄接下來 3 次技能或普攻傷害減少 30–60（隨等級）。",
+        "冷卻：40 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9720.PNG"
     },
     {
       "id": "overgrowth",
@@ -404,9 +689,16 @@
       "row": 3,
       "rowOrder": 1,
       "name": "過度生長",
-      "icon": "../assets/images/runes/resolve/overgrowth.webp",
+      "icon": "../assets/images/runes/v109/overgrowth.webp",
       "tag": "增加最大生命值",
-      "description": "附近敵方士兵或野怪被擊殺後永久增加最大生命；達到30層時額外提高最大生命。"
+      "description": "附近每有 3 位敵方士兵或 3 隻野怪被擊殺，永久增加 3 最大生命，可無限疊加。\n達到 30 層時，額外增加 3% 最大生命。",
+      "details": [
+        "附近每有 3 位敵方士兵或 3 隻野怪被擊殺，永久增加 3 最大生命，可無限疊加。",
+        "達到 30 層時，額外增加 3% 最大生命。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9721.PNG"
     },
     {
       "id": "revitalize",
@@ -414,9 +706,16 @@
       "row": 3,
       "rowOrder": 2,
       "name": "甦醒",
-      "icon": "../assets/images/runes/resolve/revitalize.webp",
+      "icon": "../assets/images/runes/v109/revitalize.webp",
       "tag": "增加治療和護盾量",
-      "description": "強化治療與護盾效果；若目標生命低於40%，強化效果提高。"
+      "description": "治療與賦予護盾效果增加 5%。\n目標生命低於 40% 時，強化效果再提升 10%。",
+      "details": [
+        "治療與賦予護盾效果增加 5%。",
+        "目標生命低於 40% 時，強化效果再提升 10%。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9722.PNG"
     },
     {
       "id": "perseverance",
@@ -424,9 +723,17 @@
       "row": 3,
       "rowOrder": 3,
       "name": "堅毅",
-      "icon": "../assets/images/runes/resolve/perseverance.webp",
+      "icon": "../assets/images/runes/v109/perseverance.webp",
       "tag": "增加被控制時的生存能力",
-      "description": "獲得韌性；受到硬控場時短暫增加物理防禦與魔法防禦。"
+      "description": "獲得 10% 韌性。\n受到硬控場時，增加 10–15 物理防禦與魔法防禦（隨等級），持續 1.5 秒。\n受到多次硬控場時，持續時間重置。",
+      "details": [
+        "獲得 10% 韌性。",
+        "受到硬控場時，增加 10–15 物理防禦與魔法防禦（隨等級），持續 1.5 秒。",
+        "受到多次硬控場時，持續時間重置。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "意志/IMG_9723.PNG"
     }
   ],
   "sorcery": [
@@ -436,9 +743,16 @@
       "row": 1,
       "rowOrder": 1,
       "name": "公理奧術大師",
-      "icon": "../assets/images/runes/sorcery/axiom-arcanist.webp",
+      "icon": "../assets/images/runes/v109/axiom-arcanist.webp",
       "tag": "強化大絕",
-      "description": "提高大絕的傷害、治療與護盾；參與擊殺後縮短大絕剩餘冷卻時間。"
+      "description": "大絕的傷害、治療與護盾增加 10%；範圍傷害增加量為 5%。\n參與擊殺敵方英雄後，大絕剩餘冷卻縮短 7%。",
+      "details": [
+        "大絕的傷害、治療與護盾增加 10%；範圍傷害增加量為 5%。",
+        "參與擊殺敵方英雄後，大絕剩餘冷卻縮短 7%。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9725.PNG"
     },
     {
       "id": "manaflow-band",
@@ -446,9 +760,15 @@
       "row": 1,
       "rowOrder": 2,
       "name": "附魔之帶",
-      "icon": "../assets/images/runes/sorcery/manaflow-band.webp",
+      "icon": "../assets/images/runes/v109/manaflow-band.webp",
       "tag": "增加魔力",
-      "description": "技能或強化普攻命中敵方英雄時永久增加最大魔力，最多提升300。"
+      "description": "技能或強化普攻命中敵方英雄時，永久增加 30 最大魔力，最多增加 300。",
+      "details": [
+        "技能或強化普攻命中敵方英雄時，永久增加 30 最大魔力，最多增加 300。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9726.PNG"
     },
     {
       "id": "botanist",
@@ -456,9 +776,18 @@
       "row": 1,
       "rowOrder": 3,
       "name": "植物學家",
-      "icon": "../assets/images/runes/sorcery/botanist.webp",
+      "icon": "../assets/images/runes/v109/botanist.webp",
       "tag": "強化植物效果",
-      "description": "摧毀植物時獲得 10 金錢，並強化各類植物效果。"
+      "description": "摧毀植物時獲得 10 金幣，並強化植物效果。\n蜂蜜漿果：使用時治療效果增加 20%。\n真知之花：摧毀時獲得的視野持續時間增加 20%。\n爆破毬果：觸發擊退效果後，獲得 40% 跑速，持續 2.5 秒。",
+      "details": [
+        "摧毀植物時獲得 10 金幣，並強化植物效果。",
+        "蜂蜜漿果：使用時治療效果增加 20%。",
+        "真知之花：摧毀時獲得的視野持續時間增加 20%。",
+        "爆破毬果：觸發擊退效果後，獲得 40% 跑速，持續 2.5 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9727.PNG"
     },
     {
       "id": "hextech-flashtraption",
@@ -466,9 +795,16 @@
       "row": 1,
       "rowOrder": 4,
       "name": "海克斯閃現",
-      "icon": "../assets/images/runes/sorcery/hextech-flashtraption.webp",
+      "icon": "../assets/images/runes/v109/hextech-flashtraption.webp",
       "tag": "閃現冷卻時獲得短距離移動能力",
-      "description": "閃現冷卻時由海克斯閃現取代；短暫詠唱後瞬移至新地點。"
+      "description": "閃現在冷卻時由海克斯閃現取代；詠唱最多 2 秒後瞬移，距離取決於詠唱時間。\n冷卻：18 秒；進入與英雄的戰鬥時，會進入 6 秒冷卻。",
+      "details": [
+        "閃現在冷卻時由海克斯閃現取代；詠唱最多 2 秒後瞬移，距離取決於詠唱時間。",
+        "冷卻：18 秒；進入與英雄的戰鬥時，會進入 6 秒冷卻。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9728.PNG"
     },
     {
       "id": "transcendence",
@@ -476,9 +812,17 @@
       "row": 2,
       "rowOrder": 1,
       "name": "卓越",
-      "icon": "../assets/images/runes/sorcery/transcendence.webp",
+      "icon": "../assets/images/runes/v109/transcendence.webp",
       "tag": "減少技能冷卻時間",
-      "description": "升級時獲得技能加速；達指定等級後，基礎技能命中目標時減少技能冷卻。"
+      "description": "等級 1：獲得 5 技能加速。等級 5：再獲得 5 技能加速。\n等級 9：基礎技能命中目標時，技能冷卻時間減少 8%。\n等級 9 效果冷卻：8 秒。",
+      "details": [
+        "等級 1：獲得 5 技能加速。等級 5：再獲得 5 技能加速。",
+        "等級 9：基礎技能命中目標時，技能冷卻時間減少 8%。",
+        "等級 9 效果冷卻：8 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9729.PNG"
     },
     {
       "id": "celerity",
@@ -486,9 +830,15 @@
       "row": 2,
       "rowOrder": 2,
       "name": "迅捷",
-      "icon": "../assets/images/runes/sorcery/celerity.webp",
+      "icon": "../assets/images/runes/v109/celerity.webp",
       "tag": "增加跑速",
-      "description": "增加跑速，並提高所有跑速加成。"
+      "description": "增加 2% 跑速，且所有跑速加成增加 7%。",
+      "details": [
+        "增加 2% 跑速，且所有跑速加成增加 7%。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9730.PNG"
     },
     {
       "id": "absolute-focus",
@@ -496,9 +846,15 @@
       "row": 2,
       "rowOrder": 3,
       "name": "絕對專注",
-      "icon": "../assets/images/runes/sorcery/absolute-focus.webp",
+      "icon": "../assets/images/runes/v109/absolute-focus.webp",
       "tag": "在高生命時增加物攻／魔攻",
-      "description": "生命高於65%時，增加適性物攻或魔攻。"
+      "description": "生命高於 65% 時，增加額外 2–20 物理攻擊或 4–40 魔法攻擊（隨等級，適性）。",
+      "details": [
+        "生命高於 65% 時，增加額外 2–20 物理攻擊或 4–40 魔法攻擊（隨等級，適性）。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9731.PNG"
     },
     {
       "id": "scorch",
@@ -506,9 +862,16 @@
       "row": 3,
       "rowOrder": 1,
       "name": "燒灼",
-      "icon": "../assets/images/runes/sorcery/scorch.webp",
+      "icon": "../assets/images/runes/v109/scorch.png",
       "tag": "技能造成額外傷害",
-      "description": "技能傷害敵方英雄時使其燃燒，延遲造成額外魔法傷害。"
+      "description": "技能對敵方英雄造成傷害時使其燃燒，1 秒後造成 21–49 額外魔法傷害（隨等級）。\n冷卻：8 秒。",
+      "details": [
+        "技能對敵方英雄造成傷害時使其燃燒，1 秒後造成 21–49 額外魔法傷害（隨等級）。",
+        "冷卻：8 秒。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9732.PNG"
     },
     {
       "id": "nimbus-cloak",
@@ -516,9 +879,16 @@
       "row": 3,
       "rowOrder": 2,
       "name": "光輝披風",
-      "icon": "../assets/images/runes/sorcery/nimbus-cloak.webp",
+      "icon": "../assets/images/runes/v109/nimbus-cloak.webp",
       "tag": "召喚師技能可增加跑速",
-      "description": "使用召喚師技能後增加跑速，持續3秒。"
+      "description": "使用召喚師技能後，增加 10%–40% 跑速，持續 3 秒。\n加成多寡取決於召喚師技能的冷卻時間。",
+      "details": [
+        "使用召喚師技能後，增加 10%–40% 跑速，持續 3 秒。",
+        "加成多寡取決於召喚師技能的冷卻時間。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9733.PNG"
     },
     {
       "id": "gathering-storm",
@@ -526,9 +896,16 @@
       "row": 3,
       "rowOrder": 3,
       "name": "天寒地凍",
-      "icon": "../assets/images/runes/sorcery/gathering-storm.webp",
+      "icon": "../assets/images/runes/v109/gathering-storm.webp",
       "tag": "隨時間增加物攻／魔攻",
-      "description": "對戰開始6分鐘後增加適性物攻或魔攻，之後每3分鐘提高一次。"
+      "description": "對戰開始 6 分鐘起，增加 2 物理攻擊或 4 魔法攻擊（適性）。\n每 3 分鐘提高：5 物攻或 10 魔攻、9 物攻或 18 魔攻、14 物攻或 28 魔攻，依此類推。",
+      "details": [
+        "對戰開始 6 分鐘起，增加 2 物理攻擊或 4 魔法攻擊（適性）。",
+        "每 3 分鐘提高：5 物攻或 10 魔攻、9 物攻或 18 魔攻、14 物攻或 28 魔攻，依此類推。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9734.PNG"
     },
     {
       "id": "ixthal-seedjar",
@@ -536,9 +913,17 @@
       "row": 3,
       "rowOrder": 4,
       "name": "伊克斯塔爾種子罐",
-      "icon": "../assets/images/runes/sorcery/ixthal-seedjar.webp",
+      "icon": "../assets/images/runes/v109/ixthal-seedjar.webp",
       "tag": "摧毀果實後種植另一株",
-      "description": "摧毀植物後獲得種子並取代飾品，可在目標地點種下植物。"
+      "description": "摧毀植物後立即獲得種子，取代自身飾品 60 秒；在目標地點種下後，植物生長成熟並自爆。友軍摧毀植物也會掉落可撿取的種子。\n對戰開始 2 分鐘後可獲得種子；每棵植物各有 30 秒冷卻。\n種下的爆破毬果引爆時，會將自身彈得更遠。",
+      "details": [
+        "摧毀植物後立即獲得種子，取代自身飾品 60 秒；在目標地點種下後，植物生長成熟並自爆。友軍摧毀植物也會掉落可撿取的種子。",
+        "對戰開始 2 分鐘後可獲得種子；每棵植物各有 30 秒冷卻。",
+        "種下的爆破毬果引爆時，會將自身彈得更遠。"
+      ],
+      "status": "7.3 遊戲截圖已校對",
+      "dataVersion": "7.3",
+      "sourceScreenshot": "巫術/IMG_9735.PNG"
     }
   ]
 }
