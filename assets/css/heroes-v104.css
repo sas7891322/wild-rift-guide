@@ -13,3 +13,14 @@ a.build-mini:focus-visible { outline: 2px solid #6dd8f7; outline-offset: 3px; bo
 .hero-patch-review[open] .patch-review-toggle i { transform:rotate(180deg); }
 .patch-review-body { padding-top:12px; border-top:1px solid var(--line); overflow-wrap:anywhere; }
 .rune-text-icon { display: inline-grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border: 1px solid #c8ad70; border-radius: 50%; color: #c8ad70; font-size: 22px; }
+
+/* v112: numeric changes remain inside the collapsed review. */
+.patch-numeric {margin-top:20px;min-width:0}
+.patch-numeric h3 {font-size:16px}
+.patch-numeric-group {margin-top:16px;min-width:0}
+.patch-numeric-group h4 {margin:0 0 8px;font-size:14px}
+.patch-numeric-scroll {max-width:100%;overflow-x:auto}
+.patch-numeric table {width:100%;border-collapse:collapse;table-layout:fixed;font-size:13px}
+.patch-numeric th,.patch-numeric td {padding:10px 8px;border:1px solid rgba(148,163,184,.2);text-align:left;vertical-align:top;overflow-wrap:anywhere;white-space:normal}
+.patch-numeric th {background:rgba(148,163,184,.08)}
+.patch-numeric td:last-child {color:#8de3cb}

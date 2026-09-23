@@ -24,22 +24,23 @@
     "bone-plating"
   ],
   "items": [
-    "magic-high-10",
-    "magic-high-21",
-    "magic-high-14",
-    "magic-high-08",
-    "magic-high-02"
+    "wr73-9182",
+    "wr73-9215",
+    "wr73-9219",
+    "wr73-9200",
+    "wr73-9157"
   ],
   "coreItems": [
-    "magic-high-10",
-    "magic-high-21",
-    "magic-high-14"
+    "wr73-9182",
+    "wr73-9215",
+    "wr73-9219"
   ],
   "starterItems": [
-    "basic-amp-tome"
+    "wr73-9110"
   ],
   "boots": [
-    "mana-boots"
+    "wr73-9484",
+    "wr73-9486"
   ],
   "spells": [
     "flash",
@@ -60,11 +61,11 @@
   },
   "playstyle": {
     "前期": "用一技清線與消耗，三技保留應付突進；二級可依控制或續航需求先學三技或二技。",
-    "中期": "站在前排後方，用控制接遠距傷害；避免為補普攻走進敵方突進範圍。",
+    "中期": "黑焰火炬 → 無限寶珠成形後，依遠距法師／三主題施法定位處理團戰與兵線；第三件接死亡之帽。後兩件按情境調整，保留主要輸出循環或承傷功能。離線支援前先處理兵線，保留撤退手段與河道視野。",
     "後期": "先看敵方控制與進場技能，再選傷害、增益或控制主題；不要急著交掉自保。"
   },
   "summary": "先選主題再選施法，以遠距清線與控制建立輸出空間；主一技、副三技，保留控制防突進。",
-  "sourceNote": "7.3 赫威初步配置。A 為本站暫定、低信心的編輯判斷；參考頁 Tier 仍為 TBD，沒有足夠實戰樣本。配裝參考 <a href=\"https://www.wildriftfire.com/guide/hwei\" target=\"_blank\" rel=\"noopener\">WildRiftFire</a>。逐級加點與對局優劣尚未確認，暫不填入。<a href=\"hwei-demonstrations.html\">查看技能實機示範</a>。",
+  "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/hwei\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
   "avatar": "../assets/images/heroes/hwei/portrait.webp",
   "abilities": [
     {
@@ -160,11 +161,11 @@
       "title": "坦克多",
       "when": "坦克多",
       "items": [
-        "magic-high-10",
-        "magic-high-16",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-02"
+        "wr73-9182",
+        "wr73-9204",
+        "wr73-9219",
+        "wr73-9200",
+        "wr73-9157"
       ],
       "runes": [
         "arcane-comet",
@@ -178,19 +179,21 @@
         "barrier"
       ],
       "boots": [
-        "mana-boots"
+        "wr73-9484"
       ],
-      "note": "以黎安卓的折磨替換無限寶珠；魔防高時虛空之杖提前。"
+      "note": "以黎安卓的折磨替換無限寶珠；魔防高時虛空之杖提前。",
+      "reviewedAt": "2026-09-23",
+      "dataVersion": "7.3"
     },
     {
       "title": "護盾多",
       "when": "護盾多",
       "items": [
-        "magic-high-10",
-        "magic-high-21",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-24"
+        "wr73-9182",
+        "wr73-9215",
+        "wr73-9219",
+        "wr73-9200",
+        "wr73-9165"
       ],
       "runes": [
         "arcane-comet",
@@ -204,19 +207,21 @@
         "barrier"
       ],
       "boots": [
-        "mana-boots"
+        "wr73-9484"
       ],
-      "note": "需要保命時保留沙漏，改換無限寶珠。"
+      "note": "需要保命時保留沙漏，改換無限寶珠。",
+      "reviewedAt": "2026-09-23",
+      "dataVersion": "7.3"
     },
     {
       "title": "先手控制多",
       "when": "先手控制多",
       "items": [
-        "magic-high-10",
-        "magic-high-21",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-05"
+        "wr73-9182",
+        "wr73-9215",
+        "wr73-9219",
+        "wr73-9200",
+        "wr73-9196"
       ],
       "runes": [
         "arcane-comet",
@@ -230,19 +235,21 @@
         "barrier"
       ],
       "boots": [
-        "mana-boots"
+        "wr73-9484"
       ],
-      "note": "女妖面紗防先手，不等同解控。"
+      "note": "女妖面紗防先手，不等同解控。",
+      "reviewedAt": "2026-09-23",
+      "dataVersion": "7.3"
     },
     {
       "title": "回復多",
       "when": "回復多",
       "items": [
-        "magic-high-10",
-        "magic-high-13",
-        "magic-high-14",
-        "magic-high-08",
-        "magic-high-02"
+        "wr73-9182",
+        "wr73-9168",
+        "wr73-9219",
+        "wr73-9200",
+        "wr73-9157"
       ],
       "runes": [
         "arcane-comet",
@@ -256,9 +263,117 @@
         "barrier"
       ],
       "boots": [
-        "mana-boots"
+        "wr73-9484"
       ],
-      "note": "無限寶珠替換黑魔禁書。"
+      "note": "無限寶珠替換黑魔禁書。",
+      "reviewedAt": "2026-09-23",
+      "dataVersion": "7.3"
     }
-  ]
+  ],
+  "matchupAdjustments": {
+    "intro": "以下替換均以本頁目前五件成裝為基準，同一格多項建議擇一；二級鞋與三級鞋是一條升級路線，不是同時穿兩雙。",
+    "logicVersion": "v112-7.3-three-lanes",
+    "roleId": "mid",
+    "archetype": "mage",
+    "situations": [
+      {
+        "id": "tank",
+        "icon": "",
+        "label": "坦克／普攻威脅",
+        "priority": "高",
+        "trigger": "敵方前排物防／魔防成形，或近身普攻威脅明顯。",
+        "changes": [],
+        "keepTitle": "配置原則",
+        "keepText": "已帶對應穿透或冰霜之心時保留，不重複購買；依實際傷害類型決定。",
+        "warning": ""
+      },
+      {
+        "id": "burst",
+        "icon": "",
+        "label": "爆發／暴擊多",
+        "priority": "高",
+        "trigger": "主要死亡原因是一輪集火，無法完成輸出或控制。",
+        "changes": [],
+        "keepTitle": "配置原則",
+        "keepText": "同一格有多個建議時擇一；核心成形後依實際威脅調整。",
+        "warning": ""
+      },
+      {
+        "id": "magic",
+        "icon": "",
+        "label": "魔法傷害多",
+        "priority": "高",
+        "trigger": "敵方法術先手或持續魔法傷害成為主要威脅。",
+        "changes": [
+          {
+            "type": "item",
+            "title": "擋關鍵先手",
+            "fromId": "wr73-9157",
+            "toId": "wr73-9196",
+            "condition": "主要死亡原因是單次技能開戰時改女妖；護盾被消耗後仍要後退。",
+            "reason": "主要死亡原因是單次技能開戰時改女妖；護盾被消耗後仍要後退。"
+          }
+        ],
+        "keepTitle": "配置原則",
+        "keepText": "同一格有多個建議時擇一；核心成形後依實際威脅調整。",
+        "warning": ""
+      },
+      {
+        "id": "cc",
+        "icon": "",
+        "label": "控制多",
+        "priority": "高",
+        "trigger": "魔法傷害與控制鏈影響生存或輸出。",
+        "changes": [
+          {
+            "type": "item",
+            "title": "二級鞋轉魔防韌性",
+            "fromId": "wr73-9484",
+            "toId": "wr73-9476",
+            "condition": "魔法傷害與可受韌性影響的控制占主導時，鞋子整條改水星之靴→鎖鏈軍靴。",
+            "reason": "魔法傷害與可受韌性影響的控制占主導時，鞋子整條改水星之靴→鎖鏈軍靴。"
+          }
+        ],
+        "keepTitle": "配置原則",
+        "keepText": "同一格有多個建議時擇一；核心成形後依實際威脅調整。",
+        "warning": "韌性不能縮短所有控制，例如擊飛；護盾與解控各有適用條件。"
+      },
+      {
+        "id": "heal",
+        "icon": "",
+        "label": "治療／吸血多",
+        "priority": "高",
+        "trigger": "敵人持續回復令集火失敗。",
+        "changes": [
+          {
+            "type": "item",
+            "title": "需要持續重創",
+            "fromId": "wr73-9157",
+            "toId": "wr73-9168",
+            "condition": "敵方回復妨礙集火且隊友無法維持重創時，改黑魔禁書；可先用遺忘寶珠過渡。",
+            "reason": "敵方回復妨礙集火且隊友無法維持重創時，改黑魔禁書；可先用遺忘寶珠過渡。"
+          }
+        ],
+        "keepTitle": "配置原則",
+        "keepText": "已帶重創時保留；先確認隊友能否穩定維持，避免所有人都犧牲核心。",
+        "warning": ""
+      }
+    ]
+  },
+  "patch73Numbers": [],
+  "patch73Review": {
+    "version": "v112",
+    "status": "editorial-first-pass",
+    "previousTier": "A",
+    "buildReason": "遠距法師／三主題施法定位保留；依同分路 7.3 配置調整為 黑焰火炬 → 無限寶珠 → 死亡之帽 → 虛空之杖 → 中婭沙漏。先完成前兩件核心，後段依敵方傷害與防禦配置替換。",
+    "runeReason": "奧術彗星／附魔之帶／卓越／燒灼／骨甲。用遠距技能配合緩速或控制提高消耗命中率。",
+    "spellReason": "閃現＋光盾。光盾保留給敵方主要爆發，避免換血時過早交掉。",
+    "skillReason": "優先級 Q > E > W。逐級表暫不填，避免把主題取消鍵誤當成升級目標。",
+    "tierReason": "本站 A 仍為低信心暫定；參考頁尚未定級。",
+    "matchupBasis": "對局名單保留既有機制判斷，沒有以 7.3 對局勝率重新排序。赫威逐級加點仍未完成實機確認，保留主一技、副三技，不補造逐級表或對局勝率。",
+    "scope": "現行裝備／符文／召喚師技能／優先級與加點規則／情境換裝／官方技能差異；對局勝率未驗證"
+  },
+  "reviewStatus": "v112-7.3-mid",
+  "reviewedAt": "2026-09-23",
+  "guideContentAudit": "v112-7.3-three-lanes"
 }
