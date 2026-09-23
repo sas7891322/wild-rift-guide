@@ -1,0 +1,2380 @@
+{
+  "version": "v107",
+  "date": "2026-09-23",
+  "sourceArchive": "裝備官方圖.zip",
+  "sourceDescription": "使用者提供的官方圖示素材；原始圖檔直接複製，未裁切、重繪或重新壓縮。",
+  "uploadedImageCount": 164,
+  "uniqueImageCount": 160,
+  "duplicateFiles": [
+    [
+      "IMG_9527.WEBP",
+      "IMG_9527 2.WEBP"
+    ],
+    [
+      "IMG_9529.WEBP",
+      "IMG_9529 2.WEBP"
+    ],
+    [
+      "IMG_9587.WEBP",
+      "IMG_9587 2.WEBP"
+    ],
+    [
+      "IMG_9602.WEBP",
+      "IMG_9602 2.WEBP"
+    ]
+  ],
+  "replaced": [
+    {
+      "id": "wr73-8894",
+      "name": "女神之淚",
+      "sourceFile": "IMG_9495.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8894-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8894.webp",
+      "sha256": "df9655154ed59788ae20428275d8029fc1401e54471c93afe514a9e2a50a54ed"
+    },
+    {
+      "id": "wr73-8895",
+      "name": "短劍",
+      "sourceFile": "IMG_9499.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8895-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8895.webp",
+      "sha256": "84a119222287ef468440a8284805edb26f25dd3e216f13998f739115605832a7"
+    },
+    {
+      "id": "wr73-8896",
+      "name": "長劍",
+      "sourceFile": "IMG_9500.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8896-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8896.webp",
+      "sha256": "d8206f6aec081b70fe80e2526c29d46da5c6781b20e7685308873d13f37fde3e"
+    },
+    {
+      "id": "wr73-8897",
+      "name": "格鬥手套",
+      "sourceFile": "IMG_9501.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8897-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8897.webp",
+      "sha256": "a83277ba696d13ea435f5fa17909e0fde5c285786704cd270848bafa9e824fca"
+    },
+    {
+      "id": "wr73-8900",
+      "name": "閃耀劍",
+      "sourceFile": "IMG_9506.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8900-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8900.webp",
+      "sha256": "c4672f989d46672d2e5125adfe95a3299782c331ea3819964492436a9e65776d"
+    },
+    {
+      "id": "wr73-8902",
+      "name": "死刑宣告",
+      "sourceFile": "IMG_9507.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8902-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8902.webp",
+      "sha256": "128cea873ac0a34a6f13620532a3a23053e2f56defb7b409741986a5d0d67c1c"
+    },
+    {
+      "id": "wr73-8904",
+      "name": "淨蝕之槌",
+      "sourceFile": "IMG_9508.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8904-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8904.webp",
+      "sha256": "bcc8382d7e7c4dd463e30c083813d481dec1cb8d0e10e0d5d01ea27b870d5326"
+    },
+    {
+      "id": "wr73-8906",
+      "name": "爐縛之斧",
+      "sourceFile": "IMG_9509.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8906-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8906.webp",
+      "sha256": "7c3d8e3c22ce88d7ea2f8b99e5535a9aedc5ebadfe4d4f85bb0e116642b44ff0"
+    },
+    {
+      "id": "wr73-8908",
+      "name": "吸血鬼權杖",
+      "sourceFile": "IMG_9510.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8908-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8908.webp",
+      "sha256": "19b482db30a433034147d4df03bb824d35d726902320793448b46b0ba8499a60"
+    },
+    {
+      "id": "wr73-8910",
+      "name": "最後耳語",
+      "sourceFile": "IMG_9511.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8910-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8910.webp",
+      "sha256": "8008d32e5094f75926b9c5c3dc0dd9f2aa51ebed2799e71350e8e72b0965ab4f"
+    },
+    {
+      "id": "wr73-8912",
+      "name": "吸魔劍",
+      "sourceFile": "IMG_9512.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8912-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8912.webp",
+      "sha256": "6023b2118d010adea5f503141dc6fe8c8641833e4f61efaac89bf8f93098c422"
+    },
+    {
+      "id": "wr73-8914",
+      "name": "考菲爾德的戰槌",
+      "sourceFile": "IMG_9513.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8914-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8914.webp",
+      "sha256": "c529d6161d0e188a4cdd5a234a55886ceac6f7d900e67f5aad5ca7f306a9cd59"
+    },
+    {
+      "id": "wr73-8916",
+      "name": "水銀飾帶",
+      "sourceFile": "IMG_9515.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8916-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8916.webp",
+      "sha256": "9eada9f6c53cd550a78d795e608d265911a20f4706655e9cc867ae4e90c668e1"
+    },
+    {
+      "id": "wr73-8918",
+      "name": "步履破壞者",
+      "sourceFile": "IMG_9549.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8918-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8918.webp",
+      "sha256": "bfc850ee9b9be382beb4a89ebc41a9c0b2ccb8e63d597901f57562cea41c2cab"
+    },
+    {
+      "id": "wr73-8920",
+      "name": "飲血戰錘",
+      "sourceFile": "IMG_9550.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8920-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8920.webp",
+      "sha256": "b76242859fd26ee6488aa19df56facaac942ad7481ffc94740b30a5a8be59d87"
+    },
+    {
+      "id": "wr73-8922",
+      "name": "水星彎刀",
+      "sourceFile": "IMG_9551.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8922-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8922.webp",
+      "sha256": "1a1ab654db82badd7ab9aabdd628400cb8674900fe59f7c6a610aa3db57fced0"
+    },
+    {
+      "id": "wr73-8924",
+      "name": "生化龐克鏈鋸之劍",
+      "sourceFile": "IMG_9552.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8924-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8924.webp",
+      "sha256": "9359720dae6fceed41a80348c116c7df77848b0cfabb82272dc4da39314bb5e1"
+    },
+    {
+      "id": "wr73-8926",
+      "name": "魔劍正宗",
+      "sourceFile": "IMG_9553.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8926-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8926.webp",
+      "sha256": "71f5130d10588042695698fe3bbcfc717de58a90a9bbd47535822dd65a5169a3"
+    },
+    {
+      "id": "wr73-8930",
+      "name": "星蝕",
+      "sourceFile": "IMG_9555.PNG",
+      "oldIcon": "../assets/images/items/v101/wr73-8930-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8930.png",
+      "sha256": "74c8fd62db79b8a238aafe5ae736dac10cd237e5cf86505596362bcaf59f584e"
+    },
+    {
+      "id": "wr73-8932",
+      "name": "突破天際",
+      "sourceFile": "IMG_9556.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8932-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8932.webp",
+      "sha256": "d085064b6abbf91effc1b9b78deddceabcc8e37f74c22efafcba96da5d7cba41"
+    },
+    {
+      "id": "wr73-8934",
+      "name": "實驗型海克斯板甲",
+      "sourceFile": "IMG_9557.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8934-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8934.webp",
+      "sha256": "007f605c760740131a7fa7ec265b788ff631e31b2adbaf5b5107af9ebb154397"
+    },
+    {
+      "id": "wr73-8936",
+      "name": "魔提斯深淵",
+      "sourceFile": "IMG_9558.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8936-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8936.webp",
+      "sha256": "6720aab512fb1f00f3191593781f3d12daed04226025a089cbfcf1a17a86c710"
+    },
+    {
+      "id": "wr73-8938",
+      "name": "黑色切割者",
+      "sourceFile": "IMG_9559.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8938-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8938.webp",
+      "sha256": "15d4fb0a8129be89ce11c1826e067da72de007b66689b1513f1f00b28ab3c5eb"
+    },
+    {
+      "id": "wr73-8940",
+      "name": "泰坦九頭蛇",
+      "sourceFile": "IMG_9560.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8940-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8940.webp",
+      "sha256": "3f03cb718b548145c171b27cf7fee4ca1fc4053b7148fdcd340bb73194dfe8de"
+    },
+    {
+      "id": "wr73-8942",
+      "name": "殞落王者之劍",
+      "sourceFile": "IMG_9561.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8942-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8942.webp",
+      "sha256": "e6b5a967d0bdebed86c5268122b80e9c8c46b15bd0d98dd3572a58a822e2c026"
+    },
+    {
+      "id": "wr73-8945",
+      "name": "席利妲咒怨",
+      "sourceFile": "IMG_9562.PNG",
+      "oldIcon": "../assets/images/items/v101/wr73-8945-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8945.png",
+      "sha256": "efe2c487570d2e615c727f63389e2a936bc12af7ca47679a17a9539cc00d3bc4"
+    },
+    {
+      "id": "wr73-8947",
+      "name": "精進之矛",
+      "sourceFile": "IMG_9563.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8947-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8947.webp",
+      "sha256": "c59b77cbf5f85d5a9f03c54e59a14a195a9fa46a77028ba766a25d30d941ebc0"
+    },
+    {
+      "id": "wr73-8949",
+      "name": "破船戰斧",
+      "sourceFile": "IMG_9564.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8949-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8949.webp",
+      "sha256": "c6596b114fc1530faf3cad8f7d33d83b622f2f91802289e8fa894061d9aa389c"
+    },
+    {
+      "id": "wr73-8952",
+      "name": "狂霸血甲",
+      "sourceFile": "IMG_9565.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8952-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8952.webp",
+      "sha256": "528bb2304b5494010a9d4d188ab9d0f052bea78693f525146cd896c5748e921e"
+    },
+    {
+      "id": "wr73-8954",
+      "name": "守護天使",
+      "sourceFile": "IMG_9566.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8954-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8954.webp",
+      "sha256": "00fad5f615c328ed0cddb5a3c46df61041d0765630c22d9f9cd3df95f612cb69"
+    },
+    {
+      "id": "wr73-8956",
+      "name": "嗜血者",
+      "sourceFile": "IMG_9567.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8956-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8956.webp",
+      "sha256": "f0be4718fdc0f5852716df3740262d7d8819c95294af3cc7de329d73001405a4"
+    },
+    {
+      "id": "wr73-8958",
+      "name": "史特拉克手套",
+      "sourceFile": "IMG_9568.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8958-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8958.webp",
+      "sha256": "f96cdf5a4de9648c168237beea11b21da4778ad1940af6fd8039d4ea544081f7"
+    },
+    {
+      "id": "wr73-8961",
+      "name": "死亡之舞",
+      "sourceFile": "IMG_9569.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8961-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8961.webp",
+      "sha256": "235b81526f507d106434f1f6261c1f6c138c4f1ddb38df2182c767a4c1a0d8ba"
+    },
+    {
+      "id": "wr73-8963",
+      "name": "三相之力",
+      "sourceFile": "IMG_9570.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8963-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8963.webp",
+      "sha256": "51a824bac235bf00f4931f23b648dbc29aea5fc9f055ad1d24a3f4e7bc2b3122"
+    },
+    {
+      "id": "wr73-8966",
+      "name": "聖裂之杖",
+      "sourceFile": "IMG_9571.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8966-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8966.webp",
+      "sha256": "1119c17bed71fc6591262b23d7c440206640c046c9861b945a11acb8da00b846"
+    },
+    {
+      "id": "wr73-8978",
+      "name": "殘暴之力",
+      "sourceFile": "IMG_9514.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8978-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8978.webp",
+      "sha256": "9d07be5e4ae660037eae64200a02436a6c44253fa2439b904a8e351b70b50310"
+    },
+    {
+      "id": "wr73-8988",
+      "name": "巨蛇鋒牙",
+      "sourceFile": "IMG_9572.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8988-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8988.webp",
+      "sha256": "c6d025d401f3435065905fe835fab838b5c0bacf52707a88ac635876ea1c4fdf"
+    },
+    {
+      "id": "wr73-8995",
+      "name": "妖夢鬼刀",
+      "sourceFile": "IMG_9573.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-8995-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8995.webp",
+      "sha256": "c8dbce838c6cbe844cbf5aa1f2607b88dcb2a787cfff8447aabbc5812b93cf89"
+    },
+    {
+      "id": "wr73-9002",
+      "name": "夜色緣界",
+      "sourceFile": "IMG_9574.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9002-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9002.webp",
+      "sha256": "c68faac47eb21014381aa3cb792a0d89868923ced7df4c3cb67ab2ecb381a97e"
+    },
+    {
+      "id": "wr73-9004",
+      "name": "蒐集者",
+      "sourceFile": "IMG_9575.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9004-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9004.webp",
+      "sha256": "6cd3dbb1bfdfa288865be48c75e099fab02a1a275021fe5067779f11e5945c88"
+    },
+    {
+      "id": "wr73-9022",
+      "name": "科奇碎片",
+      "sourceFile": "IMG_9516.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9022-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9022.webp",
+      "sha256": "d323932fe31576fceee514c3d4c8a4ec2b1e2a99ffd421951f9b270b8bac6719"
+    },
+    {
+      "id": "wr73-9026",
+      "name": "反曲弓",
+      "sourceFile": "IMG_9517.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9026-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9026.webp",
+      "sha256": "d632dcd9bafe3d2a394e22c71f3846f83fad849e776c99781965a3e6a3025d1b"
+    },
+    {
+      "id": "wr73-9036",
+      "name": "正午箭筒",
+      "sourceFile": "IMG_9518.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9036-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9036.webp",
+      "sha256": "9faef6a5f65069fc07083981858bdc21b7b2f66c632f8f0fd60b6caa7db643fa"
+    },
+    {
+      "id": "wr73-9038",
+      "name": "狂熱雙刀",
+      "sourceFile": "IMG_9519.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9038-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9038.webp",
+      "sha256": "8f3b682a88ee477f48bd2ee33fe9a10846a982cbe3179b10018e11eaa99ed4a9"
+    },
+    {
+      "id": "wr73-9040",
+      "name": "暴風大劍",
+      "sourceFile": "IMG_9520.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9040-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9040.webp",
+      "sha256": "bff53fba3e2e0e48c72b505839a2f4fb1f00ce71202dc14a01f325d891bfaa53"
+    },
+    {
+      "id": "wr73-9044",
+      "name": "狂風之力",
+      "sourceFile": "IMG_9576.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9044-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9044.webp",
+      "sha256": "36985f95bbdeffddcbb28d040c63e4def3cd735d5ac205d58d59d3780dc317dc"
+    },
+    {
+      "id": "wr73-9048",
+      "name": "獵魔弩箭",
+      "sourceFile": "IMG_9577.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9048-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9048.webp",
+      "sha256": "c2222800a923865c348edecf1d06841aaca52181ecb449fa47975d2bcc9a1786"
+    },
+    {
+      "id": "wr73-9050",
+      "name": "衝擊火炮",
+      "sourceFile": "IMG_9578.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9050-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9050.webp",
+      "sha256": "5544be26e21f3ca5335803ca37f2fa4b3002919a33267feaf92fd7383c3c9fa4"
+    },
+    {
+      "id": "wr73-9052",
+      "name": "芮蘭颶風箭",
+      "sourceFile": "IMG_9579.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9052-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9052.webp",
+      "sha256": "4028ee978453c03dae31f2b55847a7715c1375ea1277e3cb4df480111a3cbfc9"
+    },
+    {
+      "id": "wr73-9054",
+      "name": "幻影之舞",
+      "sourceFile": "IMG_9580.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9054-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9054.webp",
+      "sha256": "556026061a8efc61ff1bc70e98bbc32b3a35033be2e33c3b3f2867f4e59faf2d"
+    },
+    {
+      "id": "wr73-9056",
+      "name": "那歐疾刃",
+      "sourceFile": "IMG_9581.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9056-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9056.webp",
+      "sha256": "d659d228b6e63f37f2e4fed2216b800a4e494c32b12db8b98a9d51ac42497311"
+    },
+    {
+      "id": "wr73-9058",
+      "name": "智慧末刃",
+      "sourceFile": "IMG_9582.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9058-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9058.webp",
+      "sha256": "c4518aaaa1ce22abbcc52b5bbab3f4e5d00e8fe8e1e24943f151a9ddcb48666c"
+    },
+    {
+      "id": "wr73-9060",
+      "name": "海克斯光學C44",
+      "sourceFile": "IMG_9583.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9060-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9060.webp",
+      "sha256": "02d18e4137a102ac3fec41874fa9c99e612a6e5173f74d5f2ea21e19548b96bd"
+    },
+    {
+      "id": "wr73-9062",
+      "name": "海妖殺手",
+      "sourceFile": "IMG_9584.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9062-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9062.webp",
+      "sha256": "fa289b839c7df0a17f2f63d30eaefe55196611a2a12c116cdc8d0204466356d5"
+    },
+    {
+      "id": "wr73-9064",
+      "name": "納什之牙",
+      "sourceFile": "IMG_9585.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9064-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9064.webp",
+      "sha256": "8b4b3920a25be1906f2b5551ea03f1d947ebf80615840ba6efa8db2dfc51672d"
+    },
+    {
+      "id": "wr73-9068",
+      "name": "史提克彈簧刀",
+      "sourceFile": "IMG_9586.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9068-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9068.webp",
+      "sha256": "54c42651c68c4a43e416ff1d6c9f7a6422cda1f7772fad4eade47f26003ad074"
+    },
+    {
+      "id": "wr73-9070",
+      "name": "鬼索的狂暴之刃",
+      "sourceFile": "IMG_9587.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9070-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9070.webp",
+      "sha256": "6d8be924580e8136447689454037a9e86ead5307adc3aa01325bc92a44de01c7"
+    },
+    {
+      "id": "wr73-9072",
+      "name": "致死宣告",
+      "sourceFile": "IMG_9588.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9072-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9072.webp",
+      "sha256": "84c6bf6695aa7a6c63fbadf3d397344d516118b7d7f3e9757e18edcc013e77ed"
+    },
+    {
+      "id": "wr73-9076",
+      "name": "奪魄之鐮",
+      "sourceFile": "IMG_9592.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9076-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9076.webp",
+      "sha256": "d2a8689656b5a21ae50e2386b5f97ea0d9831ecc02b4e897163351dd1a0a7629"
+    },
+    {
+      "id": "wr73-9078",
+      "name": "不朽盾弓",
+      "sourceFile": "IMG_9590.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9078-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9078.webp",
+      "sha256": "ac03d49327d6d46dc2fce93800fb8a520fd2cf2ff024f47140b2ac666fda6eb9"
+    },
+    {
+      "id": "wr73-9082",
+      "name": "臨界點",
+      "sourceFile": "IMG_9591.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9082-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9082.webp",
+      "sha256": "279ba1a4f39421ef64da56c1a8a3c06962811f74703c47eaa8541287d2ff8848"
+    },
+    {
+      "id": "wr73-9085",
+      "name": "狂暴利刃",
+      "sourceFile": "IMG_9593.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9085-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9085.webp",
+      "sha256": "192e979979316441a7d149b23b5ef717035c5da6876ab6d2f26dfbeb1fd9ec4d"
+    },
+    {
+      "id": "wr73-9087",
+      "name": "雲陶狂箭",
+      "sourceFile": "IMG_9594.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9087-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9087.webp",
+      "sha256": "a5f00dbb22fa83fb9f061da4f25c6f5adfe4bda5a25dddab274990311201e721"
+    },
+    {
+      "id": "wr73-9096",
+      "name": "多明尼克的問候",
+      "sourceFile": "IMG_9595.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9096-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9096.webp",
+      "sha256": "266cfece57808d81268161ca2b3d4a85cebe72c3989d8503f5316bc770a81f98"
+    },
+    {
+      "id": "wr73-9101",
+      "name": "無盡之刃",
+      "sourceFile": "IMG_9596.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9101-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9101.webp",
+      "sha256": "9bc15d01355108b66c285ee8b2ec39abbce398f9780f19e2d98dff87d720a41a"
+    },
+    {
+      "id": "wr73-9104",
+      "name": "天啟戒指",
+      "sourceFile": "IMG_9498.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9104-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9104.webp",
+      "sha256": "ddf6042ee95c918d5788af205a7b1f219678d9efb9aaeb87b936e69cc45ba646"
+    },
+    {
+      "id": "wr73-9108",
+      "name": "紅水晶",
+      "sourceFile": "IMG_9496.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9108-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9108.webp",
+      "sha256": "4884cd5b5ad42dac0f179dca957eb2df55f9dd06e63f81b4b1881045c2cf0130"
+    },
+    {
+      "id": "wr73-9110",
+      "name": "增幅典籍",
+      "sourceFile": "IMG_9497.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9110-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9110.webp",
+      "sha256": "6f2caea71cdfb43e3671636f0bdb9c6aca291f1c25634fb1bc1f6d309c7cfcd9"
+    },
+    {
+      "id": "wr73-9112",
+      "name": "禁忌之像",
+      "sourceFile": "IMG_9521.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9112-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9112.webp",
+      "sha256": "1064c8851a9518e3c41724e402aef5c7a64512c59cf58eb8753ab1af1a3ab907"
+    },
+    {
+      "id": "wr73-9114",
+      "name": "爆裂魔杖",
+      "sourceFile": "IMG_9522.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9114-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9114.webp",
+      "sha256": "dadfacafa376cdef6835fbf8e2c61bdb568922754f8d98f184ebd233420155b0"
+    },
+    {
+      "id": "wr73-9118",
+      "name": "班德爾玻璃之鏡",
+      "sourceFile": "IMG_9523.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9118-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9118.webp",
+      "sha256": "c4d433fb4ad03d2726ef860642211b69607a178e7df56d35229ed5d2c5100833"
+    },
+    {
+      "id": "wr73-9120",
+      "name": "命定灰燼",
+      "sourceFile": "IMG_9524.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9120-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9120.webp",
+      "sha256": "90ebbfd542cdf9c5edfdcf5f798bf0e8af3c69d674ac831af6a2cf15c8b77d62"
+    },
+    {
+      "id": "wr73-9122",
+      "name": "惡魔法典",
+      "sourceFile": "IMG_9525.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9122-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9122.webp",
+      "sha256": "655cb3a08568e5ba383cd9624579c67bac274e85abef56a493468fb9f6588806"
+    },
+    {
+      "id": "wr73-9124",
+      "name": "遺忘寶珠",
+      "sourceFile": "IMG_9526.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9124-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9124.webp",
+      "sha256": "a3694517e08172f811d41cd6d1f2c0e341932583ee1309b4ff808391d88cd1eb"
+    },
+    {
+      "id": "wr73-9126",
+      "name": "蒼穹神火",
+      "sourceFile": "IMG_9527.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9126-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9126.webp",
+      "sha256": "37894799bac4e3b6783a3a431ae80b29d187d038352342c8a04231c931b693d2"
+    },
+    {
+      "id": "wr73-9128",
+      "name": "虛空紫晶",
+      "sourceFile": "IMG_9528.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9128-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9128.webp",
+      "sha256": "4e746641b3ffed8c20fadefba87deedfccd0b905b833f10d83c613b2667d3600"
+    },
+    {
+      "id": "wr73-9130",
+      "name": "燃燒寶石",
+      "sourceFile": "IMG_9529.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9130-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9130.webp",
+      "sha256": "9d29201f2f7ad823c505377a8e4ca32f57414242b42ea4c17b05a171096ffac0"
+    },
+    {
+      "id": "wr73-9132",
+      "name": "催化魔方",
+      "sourceFile": "IMG_9530.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9132-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9132.webp",
+      "sha256": "974b476dfe596790e37a36732c482b031fc52903ef38b975f3cfbc05a625482a"
+    },
+    {
+      "id": "wr73-9134",
+      "name": "海克斯科技發電機",
+      "sourceFile": "IMG_9531.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9134-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9134.webp",
+      "sha256": "faef3ea79dfdecb11ace534c4dd76b79e9a038ab8b357e3629fcba0368724e02"
+    },
+    {
+      "id": "wr73-9136",
+      "name": "失落之章",
+      "sourceFile": "IMG_9532.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9136-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9136.webp",
+      "sha256": "fe08066985eeae0d0690acfec2008f9b9599cc46e272437a4c8921ba97a865df"
+    },
+    {
+      "id": "wr73-9138",
+      "name": "幽魂面具",
+      "sourceFile": "IMG_9533.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9138-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9138.webp",
+      "sha256": "ba473f96d92423325107f8b90020a40dd75bfed7ce3b49d2bc44598abdbe7f52"
+    },
+    {
+      "id": "wr73-9140",
+      "name": "巨型魔棒",
+      "sourceFile": "IMG_9534.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9140-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9140.webp",
+      "sha256": "23253403bca080843870f30e366db795ab4c06b80a618166a1a3103868045683"
+    },
+    {
+      "id": "wr73-9142",
+      "name": "蒼翠屏障",
+      "sourceFile": "IMG_9535.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9142-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9142.webp",
+      "sha256": "fb73abefc253013b128598dfd5e6bcdb8c3aa24fbd7b87ba840ec521d362bc47"
+    },
+    {
+      "id": "wr73-9144",
+      "name": "靈魂竊取者",
+      "sourceFile": "IMG_9536.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9144-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9144.webp",
+      "sha256": "d9e7137fb37303da2c165e08f2dd5f9cab060b0942d1f31c68cf714c9b74c90a"
+    },
+    {
+      "id": "wr73-9147",
+      "name": "探索者護腕",
+      "sourceFile": "IMG_9597.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9147-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9147.webp",
+      "sha256": "ab22e4237f619a0e2fa64276ee517a2cd647fa32d569984fa73daab2cb082e85"
+    },
+    {
+      "id": "wr73-9149",
+      "name": "贖罪神石",
+      "sourceFile": "IMG_9598.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9149-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9149.webp",
+      "sha256": "c17e6c3c49736109b8ace5f36720e158a7fd7a78bd6879ef29e241aaef001a32"
+    },
+    {
+      "id": "wr73-9155",
+      "name": "海克斯科技火箭腰帶",
+      "sourceFile": "IMG_9599.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9155-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9155.webp",
+      "sha256": "9012b3f0179a51701de44fb3521c9bdc45de8f0e50cdfad594cadc707ecdf3e2"
+    },
+    {
+      "id": "wr73-9157",
+      "name": "中婭沙漏",
+      "sourceFile": "IMG_9600.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9157-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9157.webp",
+      "sha256": "c1a3ed2b11b25af17b4f99f38bc1a2950462038e42fb3968420d0e8bf7ffb5d2"
+    },
+    {
+      "id": "wr73-9159",
+      "name": "低語之環",
+      "sourceFile": "IMG_9601.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9159-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9159.webp",
+      "sha256": "3bf7e4ea9a234f0de7b841de1283ddc95e99a27527e6e6a86cdbf0dddd96f0d7"
+    },
+    {
+      "id": "wr73-9163",
+      "name": "帝王命令",
+      "sourceFile": "IMG_9602.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9163-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9163.webp",
+      "sha256": "0cb74869903dd00200250a8ce554e55fbb1f564d3cd21a614261c2419023b041"
+    },
+    {
+      "id": "wr73-9165",
+      "name": "水仙三叉戟",
+      "sourceFile": "IMG_9603.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9165-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9165.webp",
+      "sha256": "fca22652a23ea550e70b68e7815c6648fc115ef2c50db64f0351df01e8685a64"
+    },
+    {
+      "id": "wr73-9168",
+      "name": "黑魔禁書",
+      "sourceFile": "IMG_9604.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9168-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9168.webp",
+      "sha256": "1714bcbc014c84b1efa69213e2ed75d5c54a391acd04fe9e072faef9bbf91b96"
+    },
+    {
+      "id": "wr73-9170",
+      "name": "瑞萊的冰晶節杖",
+      "sourceFile": "IMG_9605.PNG",
+      "oldIcon": "../assets/images/items/v101/wr73-9170-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9170.png",
+      "sha256": "0b7639cb42305a3bc1ee3f2afa54690c61dfea305b7c82d22759e5be54649caa"
+    },
+    {
+      "id": "wr73-9172",
+      "name": "時光之杖",
+      "sourceFile": "IMG_9606.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9172-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9172.webp",
+      "sha256": "ee337fd3d5bc6993b4ab33890d6b0e4b263c555a243cb4c262e5b19b449b3058"
+    },
+    {
+      "id": "wr73-9175",
+      "name": "視界專注",
+      "sourceFile": "IMG_9607.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9175-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9175.webp",
+      "sha256": "a2e0cde48d1cb527b69f5a68df31acbc8fa4231a997962c4a354299677f0d866"
+    },
+    {
+      "id": "wr73-9177",
+      "name": "惡意",
+      "sourceFile": "IMG_9608.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9177-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9177.webp",
+      "sha256": "f2fb52b5699b4d991bf6c13fd167a606825bb496d74b6711d602e8ad564d9f5d"
+    },
+    {
+      "id": "wr73-9179",
+      "name": "雷霆風暴",
+      "sourceFile": "IMG_9609.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9179-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9179.webp",
+      "sha256": "0682dc569998b4104afbbea8a363cf85d5fefe631399eb271e13948a1ce0d2f4"
+    },
+    {
+      "id": "wr73-9182",
+      "name": "黑焰火炬",
+      "sourceFile": "IMG_9610.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9182-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9182.webp",
+      "sha256": "220f15e5696008921a2ad21dcb4e105c4b74d375609f54f32bd30f834bfa80a6"
+    },
+    {
+      "id": "wr73-9185",
+      "name": "盧登回音",
+      "sourceFile": "IMG_9611.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9185-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9185.webp",
+      "sha256": "0761e0cb4ea8d7e9e400fc8d867725fe66bd514b8fb2ada38006a0e44d346958"
+    },
+    {
+      "id": "wr73-9187",
+      "name": "巫妖之禍",
+      "sourceFile": "IMG_9612.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9187-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9187.webp",
+      "sha256": "793258fd2b3db1cc1e8b0be194ae6fa2bceb48f38a1425778915f206961acf2f"
+    },
+    {
+      "id": "wr73-9189",
+      "name": "血書詛咒",
+      "sourceFile": "IMG_9613.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9189-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9189.webp",
+      "sha256": "8004ea4ebd84679acf59ca39ab39213345d1a2ced788afdb1f12d41da2fddb54"
+    },
+    {
+      "id": "wr73-9196",
+      "name": "女妖面紗",
+      "sourceFile": "IMG_9614.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9196-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9196.webp",
+      "sha256": "b374de28f7bd1f582efdfac661ea43c4704d652c74c780e7feaa39ec6910016d"
+    },
+    {
+      "id": "wr73-9198",
+      "name": "死墓之花",
+      "sourceFile": "IMG_9615.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9198-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9198.webp",
+      "sha256": "2fc1a3b22e3f354a5b03224fcf7505b707b8c074fcf38d7dc836187a7200625b"
+    },
+    {
+      "id": "wr73-9200",
+      "name": "虛空之杖",
+      "sourceFile": "IMG_9616.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9200-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9200.webp",
+      "sha256": "c26ac6b98ee2d98463097e3b4878bf3d0ee5b380bbd763d7c35c126ffc174d3e"
+    },
+    {
+      "id": "wr73-9204",
+      "name": "黎安卓的折磨",
+      "sourceFile": "IMG_9618.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9204-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9204.webp",
+      "sha256": "9626e3139aee2686b968147242e0bb4606f601ecad089523dfdfcbc31ec9e55d"
+    },
+    {
+      "id": "wr73-9206",
+      "name": "大天使之杖",
+      "sourceFile": "IMG_9619.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9206-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9206.webp",
+      "sha256": "25b19eda62d3523d4a96f2da8c55e0fa4efd4bbccdbb4a7fba678fa619750c45"
+    },
+    {
+      "id": "wr73-9210",
+      "name": "星河馳騁",
+      "sourceFile": "IMG_9621.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9210-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9210.webp",
+      "sha256": "f88f7d50502e73e0f88e60480821619d2828dd60d5204698453f2bd511a85230"
+    },
+    {
+      "id": "wr73-9212",
+      "name": "暮夜與黎明",
+      "sourceFile": "IMG_9622.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9212-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9212.webp",
+      "sha256": "0f46bcc550b6f1ea6f624a7d077f3823b815a76fdf9657c239bb500867bb13a7"
+    },
+    {
+      "id": "wr73-9215",
+      "name": "無限寶珠",
+      "sourceFile": "IMG_9623.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9215-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9215.webp",
+      "sha256": "96149a0ed77b014f816c424e52f0e314733fb052d50e5cfa3891b84dc073c58b"
+    },
+    {
+      "id": "wr73-9217",
+      "name": "峽谷製造者",
+      "sourceFile": "IMG_9624.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9217-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9217.webp",
+      "sha256": "36d030da098249b4c8f292be76a21e3a362493fbd2616de579a228061e09a4a8"
+    },
+    {
+      "id": "wr73-9219",
+      "name": "死亡之帽",
+      "sourceFile": "IMG_9625.PNG",
+      "oldIcon": "../assets/images/items/v101/wr73-9219-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9219.png",
+      "sha256": "df2d905822f41d2534c3f56362190ae29b2ebecd96e84c9e1afd93e49e702509"
+    },
+    {
+      "id": "wr73-9225",
+      "name": "布甲",
+      "sourceFile": "IMG_9502.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9225-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9225.webp",
+      "sha256": "d04ebef1002fc274ee6aeb3c0ce3a43c670e8c0231b8e9e259551151843c1a01"
+    },
+    {
+      "id": "wr73-9227",
+      "name": "抗魔斗篷",
+      "sourceFile": "IMG_9503.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9227-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9227.webp",
+      "sha256": "5be0a43e5fa35a6ab32def95dfd60f8a861ec6b0c16f1886daea65353b56621c"
+    },
+    {
+      "id": "wr73-9231",
+      "name": "鎖子甲",
+      "sourceFile": "IMG_9537.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9231-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9231.webp",
+      "sha256": "f67efa9c2bfd3d821d1302d326d98ff0b7f6524c3a1810e2e8809b4dce031e30"
+    },
+    {
+      "id": "wr73-9233",
+      "name": "飛翼月甲",
+      "sourceFile": "IMG_9538.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9233-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9233.webp",
+      "sha256": "dcfa73f44f12b4a5939e916401a67778ad89fd4b41652b82c3a03aefee85ef59"
+    },
+    {
+      "id": "wr73-9235",
+      "name": "負極斗篷",
+      "sourceFile": "IMG_9539.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9235-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9235.webp",
+      "sha256": "c13a53141e8c96196304799ebe19d294998830d99c2da4e63fb2cdbc09c1da42"
+    },
+    {
+      "id": "wr73-9239",
+      "name": "巨人腰帶",
+      "sourceFile": "IMG_9541.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9239-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9239.webp",
+      "sha256": "2ece6cad5416870dd8a4a0a60cd7a09e594aa87865792bec185c58d623938ecf"
+    },
+    {
+      "id": "wr73-9241",
+      "name": "刺藤胸甲",
+      "sourceFile": "IMG_9542.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9241-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9241.webp",
+      "sha256": "fbeb010abc84280bf334a09cef41e882121273b441495820ecbd160b11a00c71"
+    },
+    {
+      "id": "wr73-9243",
+      "name": "冰川護甲",
+      "sourceFile": "IMG_9543.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9243-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9243.webp",
+      "sha256": "eaf68139b82a338ad76dd0f057e35d28c2a79d537cfe4f2c0515d2cdbdd85073"
+    },
+    {
+      "id": "wr73-9245",
+      "name": "守望者鎧甲",
+      "sourceFile": "IMG_9544.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9245-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9245.webp",
+      "sha256": "5e021ec293b5e9cc48d859e4bfdd063bb26740c173f324c2653d0c2822d9675a"
+    },
+    {
+      "id": "wr73-9249",
+      "name": "亡靈斗篷",
+      "sourceFile": "IMG_9545.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9249-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9249.webp",
+      "sha256": "ca8aa380d019e16b7fd55e0f27ccdd894e30eeef29f84f9d1f7b868ffdf35c52"
+    },
+    {
+      "id": "wr73-9251",
+      "name": "巴米灰燼",
+      "sourceFile": "IMG_9546.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9251-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9251.webp",
+      "sha256": "e714b57a7d7535a3a2c673d997c86430d845c2385286179884774eea0e3a70e5"
+    },
+    {
+      "id": "wr73-9253",
+      "name": "約瑞姆之拳",
+      "sourceFile": "IMG_9547.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9253-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9253.webp",
+      "sha256": "977ab7c3a575417ce5f45d7deb42b7e237ea4f822ea0110d0e548b2f48fc48f0"
+    },
+    {
+      "id": "wr73-9261",
+      "name": "日輪的加冕",
+      "sourceFile": "IMG_9627.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9261-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9261.webp",
+      "sha256": "cf59e0d66e17eb3832f3f0bb312010757318b18e9d96b5316bc0c9cf4c9dac89"
+    },
+    {
+      "id": "wr73-9264",
+      "name": "石像鬼磐核",
+      "sourceFile": "IMG_9628.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9264-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9264.webp",
+      "sha256": "44c37ef3e8071a7492dfc1ee494ef1ea942a77f44524c6f89fd0406f01477c13"
+    },
+    {
+      "id": "wr73-9268",
+      "name": "深淵面具",
+      "sourceFile": "IMG_9629.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9268-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9268.webp",
+      "sha256": "4f577029dcb9190eead4608425ad020d4d631788f7e5e0f718a0d5e01d8bb7af"
+    },
+    {
+      "id": "wr73-9270",
+      "name": "錫柯的聚合之力",
+      "sourceFile": "IMG_9630.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9270-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9270.webp",
+      "sha256": "39a5f8f6dff48fd29873cd9481d4c9e1b31cc0bdaaac3573bfce83a571a581b3"
+    },
+    {
+      "id": "wr73-9275",
+      "name": "約德爾陷阱",
+      "sourceFile": "IMG_9631.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9275-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9275.webp",
+      "sha256": "bdf0ff33f17451f9da305cbc4918033568204b685f16234687a4ad757107280a"
+    },
+    {
+      "id": "wr73-9278",
+      "name": "騎士誓願",
+      "sourceFile": "IMG_9632.WEBP",
+      "oldIcon": "../assets/images/items/high/defense-knights-vow.png",
+      "icon": "../assets/images/items/official-v107/wr73-9278.webp",
+      "sha256": "26a84a09af4b5855a764e3a16ef79d03e59b05c4543364671e986c52f168f21b"
+    },
+    {
+      "id": "wr73-9280",
+      "name": "冰霜之心",
+      "sourceFile": "IMG_9633.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9280-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9280.webp",
+      "sha256": "b797f51ddf855740f715c696e38a0c204ec869c3c308644452713c1535942b1f"
+    },
+    {
+      "id": "wr73-9282",
+      "name": "午時斗篷",
+      "sourceFile": "IMG_9634.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9282-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9282.webp",
+      "sha256": "5efe1f900b42e63cb221038cdc8c7a2cf509919ac8fdadf3119c811c6a322491"
+    },
+    {
+      "id": "wr73-9284",
+      "name": "冬之降臨",
+      "sourceFile": "IMG_9635.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9284-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9284.webp",
+      "sha256": "c435e9de3c75e69d196f410cca0b0880ae2948990f3d4cc822517c68650f1c83"
+    },
+    {
+      "id": "wr73-9288",
+      "name": "聖光美德",
+      "sourceFile": "IMG_9636.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9288-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9288.webp",
+      "sha256": "28fe7d52a8b3711bea74f5298ab9075b6349183981bd10d8af40e7952d1f1a2d"
+    },
+    {
+      "id": "wr73-9291",
+      "name": "荊棘之甲",
+      "sourceFile": "IMG_9637.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9291-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9291.webp",
+      "sha256": "6456907792f3aeca777b2f6e749a137678e737b4a5d03eaab267c3a9faba7cc8"
+    },
+    {
+      "id": "wr73-9293",
+      "name": "黎明法衣",
+      "sourceFile": "IMG_9638.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9293-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9293.webp",
+      "sha256": "d85c8752ac605f0a11f3f85655f21cb5b570d0828deeed2d0952511ec8c6d4bd"
+    },
+    {
+      "id": "wr73-9296",
+      "name": "虛偽光彩",
+      "sourceFile": "IMG_9639.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9296-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9296.webp",
+      "sha256": "6c9080e540dae6f38d73c8d5d40e92c90adbe764538086754e7c4e312154fd4f"
+    },
+    {
+      "id": "wr73-9299",
+      "name": "蘭頓之兆",
+      "sourceFile": "IMG_9640.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9299-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9299.webp",
+      "sha256": "c6e6d88f06320ee072fdc9a5ef40bd770e96077470cc8b58cbe95a1f966e46f0"
+    },
+    {
+      "id": "wr73-9301",
+      "name": "死者肩甲",
+      "sourceFile": "IMG_9641.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9301-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9301.webp",
+      "sha256": "9de534974b4d1047f4fa68e674f098d5b16515c8b28386b5abbb60e1de1bbf67"
+    },
+    {
+      "id": "wr73-9304",
+      "name": "自然之力",
+      "sourceFile": "IMG_9643.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9304-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9304.webp",
+      "sha256": "5658cb008d037fa16d9b1157168d4161433a6e881bcaf18f84527b8dff7138a1"
+    },
+    {
+      "id": "wr73-9306",
+      "name": "雄心之鋼",
+      "sourceFile": "IMG_9644.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9306-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9306.webp",
+      "sha256": "c0fc4d8d8f4502ca233f45b02564ce2f3802974fed1de953f09356254da8f221"
+    },
+    {
+      "id": "wr73-9309",
+      "name": "凱尼克欺瞞者",
+      "sourceFile": "IMG_9645.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9309-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9309.webp",
+      "sha256": "ec95286a8f77c66f0abe216bf250046062eefe0b9e2e201c56277bca62525057"
+    },
+    {
+      "id": "wr73-9311",
+      "name": "好戰者鎧甲",
+      "sourceFile": "IMG_9646.PNG",
+      "oldIcon": "../assets/images/items/v101/wr73-9311-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9311.png",
+      "sha256": "51d92ce51cb040e2ee9eed19c3cb35f033cf9b2285db2d2d9242de4bae26e08a"
+    },
+    {
+      "id": "wr73-9313",
+      "name": "日炎聖盾",
+      "sourceFile": "IMG_9647.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9313-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9313.webp",
+      "sha256": "905c1ba9532fe084fdd41d584468a7d080e9da7f71a0deb79cafb927ed38314f"
+    },
+    {
+      "id": "wr73-9317",
+      "name": "無盡絕望",
+      "sourceFile": "IMG_9648.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9317-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9317.webp",
+      "sha256": "e7199f50da50a60727843b31d02e2a5fc727d4c9fd111eb20fdc4cf7cc5b4e2c"
+    },
+    {
+      "id": "wr73-9319",
+      "name": "寒冰霸拳",
+      "sourceFile": "IMG_9649.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9319-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9319.webp",
+      "sha256": "9e04cf9c066d623203bf06d4f04a3c1343bc43c0433d52f300a384634e19a2a1"
+    },
+    {
+      "id": "wr73-9331",
+      "name": "雅瑪蘭守護像",
+      "sourceFile": "IMG_9650.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9331-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9331.webp",
+      "sha256": "7c49327df98fc761335f9c2dab43401b29e022f90a8ab5baec1170d4137d8ab5"
+    },
+    {
+      "id": "wr73-9335",
+      "name": "幽魂之鐮",
+      "sourceFile": "IMG_9504.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9335-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9335.webp",
+      "sha256": "afa566194f1a073ed4516d838d99979e90b0877d995c35b922f51ca47aa3ceb2"
+    },
+    {
+      "id": "wr73-9340",
+      "name": "遺跡之盾",
+      "sourceFile": "IMG_9505.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9340-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9340.webp",
+      "sha256": "9021a2b9b364f4320857e4f5bc9868cdc81862bbba20640c6d766bb283c27e9a"
+    },
+    {
+      "id": "wr73-9378",
+      "name": "米凱的祝福",
+      "sourceFile": "IMG_9651.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9378-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9378.webp",
+      "sha256": "5fce6c7ee808b779f016cf831320d7f3df691aa1cacf7cbec6469c1aeea3e8a0"
+    },
+    {
+      "id": "wr73-9380",
+      "name": "蘇瑞亞的戰歌",
+      "sourceFile": "IMG_9652.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9380-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9380.webp",
+      "sha256": "920ebf15555eaa3f465effcb25f6b66b866ec48cb794b2d3213423a50b2eb678"
+    },
+    {
+      "id": "wr73-9385",
+      "name": "希利亞的迴響",
+      "sourceFile": "IMG_9653.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9385-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9385.webp",
+      "sha256": "c468a983726cb580b03b07b2b01ed9b441a0a441b51f693e07e997833e46b986"
+    },
+    {
+      "id": "wr73-9393",
+      "name": "熾灼魔器",
+      "sourceFile": "IMG_9654.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9393-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9393.webp",
+      "sha256": "2c09c28fd3faef29139e89506cc2ef3a211cadfa1ed346ec18949a5a0852e9f1"
+    },
+    {
+      "id": "wr73-9395",
+      "name": "流水之杖",
+      "sourceFile": "IMG_9655.WEBP",
+      "oldIcon": "../assets/images/items/v101/wr73-9395-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9395.webp",
+      "sha256": "8029ab2053e47fb3360955383a940346720230e604b87434fc73cacf1283bfa9"
+    },
+    {
+      "id": "wr73-9408",
+      "name": "和諧回音",
+      "sourceFile": "IMG_9656.WEBP",
+      "oldIcon": "../assets/images/items/high/support-harmonic-echo.png",
+      "icon": "../assets/images/items/official-v107/wr73-9408.webp",
+      "sha256": "0e7f0711c909a7a41931a0bc652eedfa093961f0aa823df0ed776d685de150c2"
+    },
+    {
+      "id": "wr73-8926-evolved",
+      "name": "終極魔劍",
+      "sourceFile": "IMG_9554.WEBP",
+      "oldIcon": "../assets/images/items/v102/wr73-8926-evolved-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8926-evolved.webp",
+      "sha256": "882977c52088e0d3b447640dd805429a48bc1a20b4658937c11c865341d79303"
+    },
+    {
+      "id": "wr73-9159-evolved",
+      "name": "歌謠之冠",
+      "sourceFile": "IMG_9626.WEBP",
+      "oldIcon": "../assets/images/items/v102/wr73-9159-evolved-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9159-evolved.webp",
+      "sha256": "1beabbc1a2f2d64d1e64bb67346a2635ddb861ab3c23c322011b98d3f283d079"
+    },
+    {
+      "id": "wr73-9206-evolved",
+      "name": "熾天使的擁抱",
+      "sourceFile": "IMG_9620.WEBP",
+      "oldIcon": "../assets/images/items/v102/wr73-9206-evolved-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9206-evolved.webp",
+      "sha256": "291ef769a214d37bb30e79f4c8b9c024149f4ff32cfb93535c3c54afbc53e3db"
+    },
+    {
+      "id": "wr73-9284-evolved",
+      "name": "芬布爾之冬",
+      "sourceFile": "IMG_9642.WEBP",
+      "oldIcon": "../assets/images/items/v102/wr73-9284-evolved-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9284-evolved.webp",
+      "sha256": "45f3b0fe4466c6016122b81e396cafee4b794219eff520e5f5c396885be517a7"
+    },
+    {
+      "id": "wr73-9335-evolved",
+      "name": "黯霧之鐮",
+      "sourceFile": "IMG_9657.WEBP",
+      "oldIcon": "../assets/images/items/v102/wr73-9335-evolved-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9335-evolved.webp",
+      "sha256": "2120fdc3d93ed76fd669fd367a875f43d6ea67ecd85b34a692c164c3e6ec2556"
+    },
+    {
+      "id": "wr73-9340-evolved",
+      "name": "群山堡壘",
+      "sourceFile": "IMG_9658.WEBP",
+      "oldIcon": "../assets/images/items/v102/wr73-9340-evolved-icon.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9340-evolved.webp",
+      "sha256": "54b5de3b00213cc09fef96fcd5f690d1daab36381326606acd510de4f40cfb8f"
+    }
+  ],
+  "retained": [
+    {
+      "id": "wr73-8898",
+      "name": "十字鎬",
+      "icon": "../assets/images/items/v101/wr73-8898-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-8997",
+      "name": "暮色黑刃",
+      "icon": "../assets/images/items/v101/wr73-8997-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9461",
+      "name": "速度之靴",
+      "icon": "../assets/images/items/v101/wr73-9461-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9463",
+      "name": "貪婪護脛",
+      "icon": "../assets/images/items/v101/wr73-9463-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9465",
+      "name": "不朽之靴",
+      "icon": "../assets/images/items/v101/wr73-9465-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9467",
+      "name": "愛歐尼亞之靴",
+      "icon": "../assets/images/items/v101/wr73-9467-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9469",
+      "name": "血色法靴",
+      "icon": "../assets/images/items/v101/wr73-9469-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9472",
+      "name": "狂戰士護脛",
+      "icon": "../assets/images/items/v101/wr73-9472-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9474",
+      "name": "槍銅護脛",
+      "icon": "../assets/images/items/v101/wr73-9474-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9476",
+      "name": "水星之靴",
+      "icon": "../assets/images/items/v101/wr73-9476-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9478",
+      "name": "鎖鏈軍靴",
+      "icon": "../assets/images/items/v101/wr73-9478-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9480",
+      "name": "鍍板鋼蓋",
+      "icon": "../assets/images/items/v101/wr73-9480-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9482",
+      "name": "裝甲戰靴",
+      "icon": "../assets/images/items/v101/wr73-9482-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9484",
+      "name": "魔力之靴",
+      "icon": "../assets/images/items/v101/wr73-9484-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9486",
+      "name": "魔法使之鞋",
+      "icon": "../assets/images/items/v101/wr73-9486-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9488",
+      "name": "爆發之靴",
+      "icon": "../assets/images/items/v101/wr73-9488-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    },
+    {
+      "id": "wr73-9490",
+      "name": "碎甲者之靴",
+      "icon": "../assets/images/items/v101/wr73-9490-icon.webp",
+      "reason": "本次素材包未包含對應圖示，保留原圖。"
+    }
+  ],
+  "legacyReplaced": [
+    {
+      "id": "basic-long-sword",
+      "name": "長劍",
+      "oldIcon": "../assets/images/items/basic/長劍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8896.webp",
+      "currentItemId": "wr73-8896"
+    },
+    {
+      "id": "basic-dagger",
+      "name": "短劍",
+      "oldIcon": "../assets/images/items/basic/短劍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8895.webp",
+      "currentItemId": "wr73-8895"
+    },
+    {
+      "id": "basic-ruby",
+      "name": "紅水晶",
+      "oldIcon": "../assets/images/items/basic/紅水晶.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9108.webp",
+      "currentItemId": "wr73-9108"
+    },
+    {
+      "id": "basic-amp-tome",
+      "name": "增幅典籍",
+      "oldIcon": "../assets/images/items/basic/增幅典籍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9110.webp",
+      "currentItemId": "wr73-9110"
+    },
+    {
+      "id": "basic-cloth-armor",
+      "name": "布甲",
+      "oldIcon": "../assets/images/items/basic/布甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9225.webp",
+      "currentItemId": "wr73-9225"
+    },
+    {
+      "id": "basic-null-cloak",
+      "name": "抗魔斗篷",
+      "oldIcon": "../assets/images/items/basic/抗魔斗篷.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9227.webp",
+      "currentItemId": "wr73-9227"
+    },
+    {
+      "id": "intermediate-01",
+      "name": "閃耀劍",
+      "oldIcon": "../assets/images/items/閃耀劍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8900.webp",
+      "currentItemId": "wr73-8900"
+    },
+    {
+      "id": "intermediate-02",
+      "name": "吸血鬼權杖",
+      "oldIcon": "../assets/images/items/吸血鬼權杖.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8908.webp",
+      "currentItemId": "wr73-8908"
+    },
+    {
+      "id": "intermediate-03",
+      "name": "狂熱雙刀",
+      "oldIcon": "../assets/images/items/狂熱雙刀.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9038.webp",
+      "currentItemId": "wr73-9038"
+    },
+    {
+      "id": "intermediate-04",
+      "name": "科奇碎片",
+      "oldIcon": "../assets/images/items/科奇碎片.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9022.webp",
+      "currentItemId": "wr73-9022"
+    },
+    {
+      "id": "intermediate-05",
+      "name": "正午箭筒",
+      "oldIcon": "../assets/images/items/正午箭筒.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9036.webp",
+      "currentItemId": "wr73-9036"
+    },
+    {
+      "id": "intermediate-07",
+      "name": "殘暴之力",
+      "oldIcon": "../assets/images/items/殘暴之力.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8978.webp",
+      "currentItemId": "wr73-8978"
+    },
+    {
+      "id": "intermediate-08",
+      "name": "反曲弓",
+      "oldIcon": "../assets/images/items/反曲弓.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9026.webp",
+      "currentItemId": "wr73-9026"
+    },
+    {
+      "id": "intermediate-11",
+      "name": "最後耳語",
+      "oldIcon": "../assets/images/items/最後耳語.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8910.webp",
+      "currentItemId": "wr73-8910"
+    },
+    {
+      "id": "intermediate-12",
+      "name": "死刑宣告",
+      "oldIcon": "../assets/images/items/死刑宣告.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8902.webp",
+      "currentItemId": "wr73-8902"
+    },
+    {
+      "id": "intermediate-13",
+      "name": "淨蝕之槌",
+      "oldIcon": "../assets/images/items/淨蝕之槌.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8904.webp",
+      "currentItemId": "wr73-8904"
+    },
+    {
+      "id": "intermediate-15",
+      "name": "吸魔劍",
+      "oldIcon": "../assets/images/items/吸魔劍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8912.webp",
+      "currentItemId": "wr73-8912"
+    },
+    {
+      "id": "intermediate-16",
+      "name": "考菲爾德的戰槌",
+      "oldIcon": "../assets/images/items/考菲爾德的戰槌.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8914.webp",
+      "currentItemId": "wr73-8914"
+    },
+    {
+      "id": "intermediate-17",
+      "name": "燃燒寶石",
+      "oldIcon": "../assets/images/items/燃燒寶石.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9130.webp",
+      "currentItemId": "wr73-9130"
+    },
+    {
+      "id": "intermediate-18",
+      "name": "約瑞姆之拳",
+      "oldIcon": "../assets/images/items/約瑞姆之拳.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9253.webp",
+      "currentItemId": "wr73-9253"
+    },
+    {
+      "id": "intermediate-19",
+      "name": "蒼翠屏障",
+      "oldIcon": "../assets/images/items/蒼翠屏障.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9142.webp",
+      "currentItemId": "wr73-9142"
+    },
+    {
+      "id": "intermediate-20",
+      "name": "命定灰燼",
+      "oldIcon": "../assets/images/items/命定灰燼.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9120.webp",
+      "currentItemId": "wr73-9120"
+    },
+    {
+      "id": "intermediate-21",
+      "name": "靈魂竊取者",
+      "oldIcon": "../assets/images/items/靈魂竊取者.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9144.webp",
+      "currentItemId": "wr73-9144"
+    },
+    {
+      "id": "intermediate-22",
+      "name": "蒼穹神火",
+      "oldIcon": "../assets/images/items/蒼穹神火.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9126.webp",
+      "currentItemId": "wr73-9126"
+    },
+    {
+      "id": "intermediate-23",
+      "name": "失落之章",
+      "oldIcon": "../assets/images/items/失落之章.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9136.webp",
+      "currentItemId": "wr73-9136"
+    },
+    {
+      "id": "intermediate-24",
+      "name": "惡魔法典",
+      "oldIcon": "../assets/images/items/惡魔法典.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9122.webp",
+      "currentItemId": "wr73-9122"
+    },
+    {
+      "id": "intermediate-25",
+      "name": "爆裂魔杖",
+      "oldIcon": "../assets/images/items/爆裂魔杖.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9114.webp",
+      "currentItemId": "wr73-9114"
+    },
+    {
+      "id": "intermediate-26",
+      "name": "巨型魔棒",
+      "oldIcon": "../assets/images/items/巨型魔棒.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9140.webp",
+      "currentItemId": "wr73-9140"
+    },
+    {
+      "id": "intermediate-27",
+      "name": "幽魂面具",
+      "oldIcon": "../assets/images/items/幽魂面具.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9138.webp",
+      "currentItemId": "wr73-9138"
+    },
+    {
+      "id": "intermediate-28",
+      "name": "催化魔方",
+      "oldIcon": "../assets/images/items/催化魔方.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9132.webp",
+      "currentItemId": "wr73-9132"
+    },
+    {
+      "id": "intermediate-29",
+      "name": "遺忘寶珠",
+      "oldIcon": "../assets/images/items/遺忘寶珠.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9124.webp",
+      "currentItemId": "wr73-9124"
+    },
+    {
+      "id": "intermediate-30",
+      "name": "虛空紫晶",
+      "oldIcon": "../assets/images/items/虛空紫晶.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9128.webp",
+      "currentItemId": "wr73-9128"
+    },
+    {
+      "id": "intermediate-31",
+      "name": "海克斯科技發電機",
+      "oldIcon": "../assets/images/items/海克斯科技發電機.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9134.webp",
+      "currentItemId": "wr73-9134"
+    },
+    {
+      "id": "intermediate-32",
+      "name": "禁忌之像",
+      "oldIcon": "../assets/images/items/禁忌之像.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9112.webp",
+      "currentItemId": "wr73-9112"
+    },
+    {
+      "id": "intermediate-33",
+      "name": "巴米灰燼",
+      "oldIcon": "../assets/images/items/巴米灰燼.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9251.webp",
+      "currentItemId": "wr73-9251"
+    },
+    {
+      "id": "intermediate-34",
+      "name": "亡靈斗篷",
+      "oldIcon": "../assets/images/items/亡靈斗篷.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9249.webp",
+      "currentItemId": "wr73-9249"
+    },
+    {
+      "id": "intermediate-35",
+      "name": "巨人腰帶",
+      "oldIcon": "../assets/images/items/巨人腰帶.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9239.webp",
+      "currentItemId": "wr73-9239"
+    },
+    {
+      "id": "intermediate-36",
+      "name": "守望者鎧甲",
+      "oldIcon": "../assets/images/items/守望者鎧甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9245.webp",
+      "currentItemId": "wr73-9245"
+    },
+    {
+      "id": "intermediate-37",
+      "name": "鎖子甲",
+      "oldIcon": "../assets/images/items/鎖子甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9231.webp",
+      "currentItemId": "wr73-9231"
+    },
+    {
+      "id": "intermediate-38",
+      "name": "刺藤胸甲",
+      "oldIcon": "../assets/images/items/刺藤胸甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9241.webp",
+      "currentItemId": "wr73-9241"
+    },
+    {
+      "id": "intermediate-39",
+      "name": "飛翼月甲",
+      "oldIcon": "../assets/images/items/飛翼月甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9233.webp",
+      "currentItemId": "wr73-9233"
+    },
+    {
+      "id": "intermediate-40",
+      "name": "負極斗篷",
+      "oldIcon": "../assets/images/items/負極斗篷.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9235.webp",
+      "currentItemId": "wr73-9235"
+    },
+    {
+      "id": "intermediate-41",
+      "name": "冰川護甲",
+      "oldIcon": "../assets/images/items/冰川護甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9243.webp",
+      "currentItemId": "wr73-9243"
+    },
+    {
+      "id": "intermediate-quicksilver-sash",
+      "name": "水銀飾帶",
+      "oldIcon": "../assets/images/items/水銀飾帶.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8916.webp",
+      "currentItemId": "wr73-8916"
+    },
+    {
+      "id": "intermediate-seekers-armguard",
+      "name": "探索者護腕",
+      "oldIcon": "../assets/images/items/探索者護腕.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9147.webp",
+      "currentItemId": "wr73-9147"
+    },
+    {
+      "id": "physical-high-01",
+      "name": "步履破壞者",
+      "oldIcon": "../assets/images/items/high/步履破壞者.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8918.webp",
+      "currentItemId": "wr73-8918"
+    },
+    {
+      "id": "physical-high-02",
+      "name": "飲血戰錘",
+      "oldIcon": "../assets/images/items/high/飲血戰錘.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8920.webp",
+      "currentItemId": "wr73-8920"
+    },
+    {
+      "id": "physical-high-03",
+      "name": "狂風之力",
+      "oldIcon": "../assets/images/items/high/狂風之力.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9044.webp",
+      "currentItemId": "wr73-9044"
+    },
+    {
+      "id": "physical-high-04",
+      "name": "水星彎刀",
+      "oldIcon": "../assets/images/items/high/水星彎刀.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8922.webp",
+      "currentItemId": "wr73-8922"
+    },
+    {
+      "id": "physical-high-05",
+      "name": "多明尼克的問候",
+      "oldIcon": "../assets/images/items/high/多明尼克的問候.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9096.webp",
+      "currentItemId": "wr73-9096"
+    },
+    {
+      "id": "physical-high-43",
+      "name": "實驗型海克斯板甲",
+      "oldIcon": "../assets/images/items/high/狂霸血甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8934.webp",
+      "currentItemId": "wr73-8934"
+    },
+    {
+      "id": "physical-high-06",
+      "name": "狂霸血甲",
+      "oldIcon": "../assets/images/items/high/鬼索的狂暴之刃.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8952.webp",
+      "currentItemId": "wr73-8952"
+    },
+    {
+      "id": "physical-high-07",
+      "name": "鬼索的狂暴之刃",
+      "oldIcon": "../assets/images/items/high/海妖殺手.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9070.webp",
+      "currentItemId": "wr73-9070"
+    },
+    {
+      "id": "physical-high-08",
+      "name": "海妖殺手",
+      "oldIcon": "../assets/images/items/high/納什之牙.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9062.webp",
+      "currentItemId": "wr73-9062"
+    },
+    {
+      "id": "physical-high-09",
+      "name": "納什之牙",
+      "oldIcon": "../assets/images/items/high/守護天使.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9064.webp",
+      "currentItemId": "wr73-9064"
+    },
+    {
+      "id": "physical-high-10",
+      "name": "守護天使",
+      "oldIcon": "../assets/images/items/high/嗜血者.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8954.webp",
+      "currentItemId": "wr73-8954"
+    },
+    {
+      "id": "physical-high-11",
+      "name": "嗜血者",
+      "oldIcon": "../assets/images/items/high/殞落王者之劍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8956.webp",
+      "currentItemId": "wr73-8956"
+    },
+    {
+      "id": "physical-high-12",
+      "name": "殞落王者之劍",
+      "oldIcon": "../assets/images/items/high/芮蘭颶風箭.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8942.webp",
+      "currentItemId": "wr73-8942"
+    },
+    {
+      "id": "physical-high-13",
+      "name": "芮蘭颶風箭",
+      "oldIcon": "../assets/images/items/high/妖夢鬼刀.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9052.webp",
+      "currentItemId": "wr73-9052"
+    },
+    {
+      "id": "physical-high-14",
+      "name": "妖夢鬼刀",
+      "oldIcon": "../assets/images/items/high/暮色黑刃.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8995.webp",
+      "currentItemId": "wr73-8995"
+    },
+    {
+      "id": "physical-high-16",
+      "name": "史特拉克手套",
+      "oldIcon": "../assets/images/items/high/無盡之刃.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8958.webp",
+      "currentItemId": "wr73-8958"
+    },
+    {
+      "id": "physical-high-17",
+      "name": "無盡之刃",
+      "oldIcon": "../assets/images/items/high/致死宣告.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9101.webp",
+      "currentItemId": "wr73-9101"
+    },
+    {
+      "id": "physical-high-18",
+      "name": "致死宣告",
+      "oldIcon": "../assets/images/items/high/魔劍正宗.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9072.webp",
+      "currentItemId": "wr73-9072"
+    },
+    {
+      "id": "physical-high-19",
+      "name": "魔劍正宗",
+      "oldIcon": "../assets/images/items/high/manamune-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8926.webp",
+      "currentItemId": "wr73-8926"
+    },
+    {
+      "id": "physical-high-21",
+      "name": "三相之力",
+      "oldIcon": "../assets/images/items/high/trinity-force-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8963.webp",
+      "currentItemId": "wr73-8963"
+    },
+    {
+      "id": "physical-high-22",
+      "name": "魔提斯深淵",
+      "oldIcon": "../assets/images/items/high/maw-of-malmortius-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8936.webp",
+      "currentItemId": "wr73-8936"
+    },
+    {
+      "id": "physical-high-24",
+      "name": "幻影之舞",
+      "oldIcon": "../assets/images/items/high/phantom-dancer-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9054.webp",
+      "currentItemId": "wr73-9054"
+    },
+    {
+      "id": "physical-high-25",
+      "name": "智慧末刃",
+      "oldIcon": "../assets/images/items/high/wits-end-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9058.webp",
+      "currentItemId": "wr73-9058"
+    },
+    {
+      "id": "physical-high-26",
+      "name": "奪魄之鐮",
+      "oldIcon": "../assets/images/items/high/essence-reaver-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9076.webp",
+      "currentItemId": "wr73-9076"
+    },
+    {
+      "id": "physical-high-27",
+      "name": "席利妲咒怨",
+      "oldIcon": "../assets/images/items/high/席利妲咒怨.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8945.png",
+      "currentItemId": "wr73-8945"
+    },
+    {
+      "id": "physical-high-28",
+      "name": "那歐疾刃",
+      "oldIcon": "../assets/images/items/high/那歐疾刃.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9056.webp",
+      "currentItemId": "wr73-9056"
+    },
+    {
+      "id": "physical-high-29",
+      "name": "夜色緣界",
+      "oldIcon": "../assets/images/items/high/夜色緣界.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9002.webp",
+      "currentItemId": "wr73-9002"
+    },
+    {
+      "id": "physical-high-30",
+      "name": "聖裂之杖",
+      "oldIcon": "../assets/images/items/high/聖裂之杖.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8966.webp",
+      "currentItemId": "wr73-8966"
+    },
+    {
+      "id": "physical-high-31",
+      "name": "巨蛇鋒牙",
+      "oldIcon": "../assets/images/items/high/serpents-fang-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8988.webp",
+      "currentItemId": "wr73-8988"
+    },
+    {
+      "id": "physical-high-32",
+      "name": "蒐集者",
+      "oldIcon": "../assets/images/items/high/蒐集者.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9004.webp",
+      "currentItemId": "wr73-9004"
+    },
+    {
+      "id": "physical-high-33",
+      "name": "生化龐克鏈鋸之劍",
+      "oldIcon": "../assets/images/items/high/生化龐克鏈鋸之劍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8924.webp",
+      "currentItemId": "wr73-8924"
+    },
+    {
+      "id": "physical-high-34",
+      "name": "精進之矛",
+      "oldIcon": "../assets/images/items/high/spear-of-shojin-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8947.webp",
+      "currentItemId": "wr73-8947"
+    },
+    {
+      "id": "physical-high-35",
+      "name": "臨界點",
+      "oldIcon": "../assets/images/items/high/lich-bane-fixed.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9082.webp",
+      "currentItemId": "wr73-9082"
+    },
+    {
+      "id": "physical-high-36",
+      "name": "星蝕",
+      "oldIcon": "../assets/images/items/high/星蝕.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8930.png",
+      "currentItemId": "wr73-8930"
+    },
+    {
+      "id": "physical-high-37",
+      "name": "突破天際",
+      "oldIcon": "../assets/images/items/high/黑色切割者.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8932.webp",
+      "currentItemId": "wr73-8932"
+    },
+    {
+      "id": "physical-high-38",
+      "name": "黑色切割者",
+      "oldIcon": "../assets/images/items/high/移魂奪舍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8938.webp",
+      "currentItemId": "wr73-8938"
+    },
+    {
+      "id": "physical-high-40",
+      "name": "泰坦九頭蛇",
+      "oldIcon": "../assets/images/items/high/破船戰斧.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8940.webp",
+      "currentItemId": "wr73-8940"
+    },
+    {
+      "id": "physical-high-41",
+      "name": "破船戰斧",
+      "oldIcon": "../assets/images/items/high/死亡之舞.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8949.webp",
+      "currentItemId": "wr73-8949"
+    },
+    {
+      "id": "physical-high-42",
+      "name": "死亡之舞",
+      "oldIcon": "../assets/images/items/high/實驗型海克斯板甲.webp",
+      "icon": "../assets/images/items/official-v107/wr73-8961.webp",
+      "currentItemId": "wr73-8961"
+    },
+    {
+      "id": "magic-high-01",
+      "name": "海克斯科技火箭腰帶",
+      "oldIcon": "../assets/images/items/high/magic-hextech-rocketbelt.png",
+      "icon": "../assets/images/items/official-v107/wr73-9155.webp",
+      "currentItemId": "wr73-9155"
+    },
+    {
+      "id": "magic-high-02",
+      "name": "中婭沙漏",
+      "oldIcon": "../assets/images/items/high/magic-zhonyas-hourglass.png",
+      "icon": "../assets/images/items/official-v107/wr73-9157.webp",
+      "currentItemId": "wr73-9157"
+    },
+    {
+      "id": "magic-high-03",
+      "name": "贖罪神石",
+      "oldIcon": "../assets/images/items/high/magic-redemption.png",
+      "icon": "../assets/images/items/official-v107/wr73-9149.webp",
+      "currentItemId": "wr73-9149"
+    },
+    {
+      "id": "magic-high-04",
+      "name": "暮夜與黎明",
+      "oldIcon": "../assets/images/items/high/magic-dusk-and-dawn.png",
+      "icon": "../assets/images/items/official-v107/wr73-9212.webp",
+      "currentItemId": "wr73-9212"
+    },
+    {
+      "id": "magic-high-05",
+      "name": "女妖面紗",
+      "oldIcon": "../assets/images/items/high/magic-banshees-veil.png",
+      "icon": "../assets/images/items/official-v107/wr73-9196.webp",
+      "currentItemId": "wr73-9196"
+    },
+    {
+      "id": "magic-high-07",
+      "name": "血書詛咒",
+      "oldIcon": "../assets/images/items/high/magic-bloodletter-curse.png",
+      "icon": "../assets/images/items/official-v107/wr73-9189.webp",
+      "currentItemId": "wr73-9189"
+    },
+    {
+      "id": "magic-high-08",
+      "name": "虛空之杖",
+      "oldIcon": "../assets/images/items/high/magic-void-staff.png",
+      "icon": "../assets/images/items/official-v107/wr73-9200.webp",
+      "currentItemId": "wr73-9200"
+    },
+    {
+      "id": "magic-high-09",
+      "name": "雷霆風暴",
+      "oldIcon": "../assets/images/items/high/magic-stormsurge.png",
+      "icon": "../assets/images/items/official-v107/wr73-9179.webp",
+      "currentItemId": "wr73-9179"
+    },
+    {
+      "id": "magic-high-10",
+      "name": "黑焰火炬",
+      "oldIcon": "../assets/images/items/high/magic-blackfire-torch.png",
+      "icon": "../assets/images/items/official-v107/wr73-9182.webp",
+      "currentItemId": "wr73-9182"
+    },
+    {
+      "id": "magic-high-11",
+      "name": "鬼索的狂暴之刃",
+      "oldIcon": "../assets/images/items/high/magic-guinsoos-rageblade.png",
+      "icon": "../assets/images/items/official-v107/wr73-9070.webp",
+      "currentItemId": "wr73-9070"
+    },
+    {
+      "id": "magic-high-12",
+      "name": "盧登回音",
+      "oldIcon": "../assets/images/items/high/magic-ludens-echo.png",
+      "icon": "../assets/images/items/official-v107/wr73-9185.webp",
+      "currentItemId": "wr73-9185"
+    },
+    {
+      "id": "magic-high-13",
+      "name": "黑魔禁書",
+      "oldIcon": "../assets/images/items/high/magic-morellonomicon.png",
+      "icon": "../assets/images/items/official-v107/wr73-9168.webp",
+      "currentItemId": "wr73-9168"
+    },
+    {
+      "id": "magic-high-14",
+      "name": "死亡之帽",
+      "oldIcon": "../assets/images/items/high/magic-rabadons-deathcap.png",
+      "icon": "../assets/images/items/official-v107/wr73-9219.png",
+      "currentItemId": "wr73-9219"
+    },
+    {
+      "id": "magic-high-15",
+      "name": "瑞萊的冰晶節杖",
+      "oldIcon": "../assets/images/items/high/magic-rylais-crystal-scepter.png",
+      "icon": "../assets/images/items/official-v107/wr73-9170.png",
+      "currentItemId": "wr73-9170"
+    },
+    {
+      "id": "magic-high-16",
+      "name": "黎安卓的折磨",
+      "oldIcon": "../assets/images/items/high/magic-liandrys-torment.png",
+      "icon": "../assets/images/items/official-v107/wr73-9204.webp",
+      "currentItemId": "wr73-9204"
+    },
+    {
+      "id": "magic-high-17",
+      "name": "時光之杖",
+      "oldIcon": "../assets/images/items/high/magic-rod-of-ages.png",
+      "icon": "../assets/images/items/official-v107/wr73-9172.webp",
+      "currentItemId": "wr73-9172"
+    },
+    {
+      "id": "magic-high-18",
+      "name": "巫妖之禍",
+      "oldIcon": "../assets/images/items/high/magic-lich-bane.png",
+      "icon": "../assets/images/items/official-v107/wr73-9187.webp",
+      "currentItemId": "wr73-9187"
+    },
+    {
+      "id": "magic-high-19",
+      "name": "大天使之杖",
+      "oldIcon": "../assets/images/items/high/magic-archangels-staff.png",
+      "icon": "../assets/images/items/official-v107/wr73-9206.webp",
+      "currentItemId": "wr73-9206"
+    },
+    {
+      "id": "magic-high-20",
+      "name": "納什之牙",
+      "oldIcon": "../assets/images/items/high/magic-nashors-tooth.png",
+      "icon": "../assets/images/items/official-v107/wr73-9064.webp",
+      "currentItemId": "wr73-9064"
+    },
+    {
+      "id": "magic-high-21",
+      "name": "無限寶珠",
+      "oldIcon": "../assets/images/items/high/magic-infinity-orb.png",
+      "icon": "../assets/images/items/official-v107/wr73-9215.webp",
+      "currentItemId": "wr73-9215"
+    },
+    {
+      "id": "magic-high-22",
+      "name": "星河馳騁",
+      "oldIcon": "../assets/images/items/high/magic-cosmic-drive.png",
+      "icon": "../assets/images/items/official-v107/wr73-9210.webp",
+      "currentItemId": "wr73-9210"
+    },
+    {
+      "id": "magic-high-23",
+      "name": "峽谷製造者",
+      "oldIcon": "../assets/images/items/high/magic-riftmaker.png",
+      "icon": "../assets/images/items/official-v107/wr73-9217.webp",
+      "currentItemId": "wr73-9217"
+    },
+    {
+      "id": "magic-high-24",
+      "name": "水仙三叉戟",
+      "oldIcon": "../assets/images/items/high/magic-oceanids-trident.png",
+      "icon": "../assets/images/items/official-v107/wr73-9165.webp",
+      "currentItemId": "wr73-9165"
+    },
+    {
+      "id": "magic-high-25",
+      "name": "視界專注",
+      "oldIcon": "../assets/images/items/high/magic-horizon-focus.png",
+      "icon": "../assets/images/items/official-v107/wr73-9175.webp",
+      "currentItemId": "wr73-9175"
+    },
+    {
+      "id": "magic-high-26",
+      "name": "惡意",
+      "oldIcon": "../assets/images/items/high/magic-malignance.png",
+      "icon": "../assets/images/items/official-v107/wr73-9177.webp",
+      "currentItemId": "wr73-9177"
+    },
+    {
+      "id": "defense-high-01",
+      "name": "石像鬼磐核",
+      "oldIcon": "../assets/images/items/high/defense-gargoyle-enchant.png",
+      "icon": "../assets/images/items/official-v107/wr73-9264.webp",
+      "currentItemId": "wr73-9264"
+    },
+    {
+      "id": "defense-high-02",
+      "name": "深淵面具",
+      "oldIcon": "../assets/images/items/high/defense-abyssal-mask.png",
+      "icon": "../assets/images/items/official-v107/wr73-9268.webp",
+      "currentItemId": "wr73-9268"
+    },
+    {
+      "id": "defense-high-03",
+      "name": "無盡絕望",
+      "oldIcon": "../assets/images/items/high/defense-unending-despair.png",
+      "icon": "../assets/images/items/official-v107/wr73-9317.webp",
+      "currentItemId": "wr73-9317"
+    },
+    {
+      "id": "defense-high-04",
+      "name": "虛偽光彩",
+      "oldIcon": "../assets/images/items/high/defense-searing-crown.png",
+      "icon": "../assets/images/items/official-v107/wr73-9296.webp",
+      "currentItemId": "wr73-9296"
+    },
+    {
+      "id": "defense-high-05",
+      "name": "騎士誓願",
+      "oldIcon": "../assets/images/items/high/defense-knights-vow.png",
+      "icon": "../assets/images/items/official-v107/wr73-9278.webp",
+      "currentItemId": "wr73-9278"
+    },
+    {
+      "id": "defense-high-06",
+      "name": "日炎聖盾",
+      "oldIcon": "../assets/images/items/high/defense-sunfire-aegis.png",
+      "icon": "../assets/images/items/official-v107/wr73-9313.webp",
+      "currentItemId": "wr73-9313"
+    },
+    {
+      "id": "defense-high-07",
+      "name": "蘭頓之兆",
+      "oldIcon": "../assets/images/items/high/defense-randuins-omen.png",
+      "icon": "../assets/images/items/official-v107/wr73-9299.webp",
+      "currentItemId": "wr73-9299"
+    },
+    {
+      "id": "defense-high-08",
+      "name": "荊棘之甲",
+      "oldIcon": "../assets/images/items/high/defense-thornmail.png",
+      "icon": "../assets/images/items/official-v107/wr73-9291.webp",
+      "currentItemId": "wr73-9291"
+    },
+    {
+      "id": "defense-high-09",
+      "name": "好戰者鎧甲",
+      "oldIcon": "../assets/images/items/high/defense-warmogs-armor.png",
+      "icon": "../assets/images/items/official-v107/wr73-9311.png",
+      "currentItemId": "wr73-9311"
+    },
+    {
+      "id": "defense-high-10",
+      "name": "死者肩甲",
+      "oldIcon": "../assets/images/items/high/defense-dead-mans-plate.png",
+      "icon": "../assets/images/items/official-v107/wr73-9301.webp",
+      "currentItemId": "wr73-9301"
+    },
+    {
+      "id": "defense-high-11",
+      "name": "寒冰霸拳",
+      "oldIcon": "../assets/images/items/high/defense-iceborn-gauntlet.png",
+      "icon": "../assets/images/items/official-v107/wr73-9319.webp",
+      "currentItemId": "wr73-9319"
+    },
+    {
+      "id": "defense-high-12",
+      "name": "冬之降臨",
+      "oldIcon": "../assets/images/items/high/defense-winters-approach.png",
+      "icon": "../assets/images/items/official-v107/wr73-9284.webp",
+      "currentItemId": "wr73-9284"
+    },
+    {
+      "id": "defense-high-13",
+      "name": "冰霜之心",
+      "oldIcon": "../assets/images/items/high/defense-frozen-heart.png",
+      "icon": "../assets/images/items/official-v107/wr73-9280.webp",
+      "currentItemId": "wr73-9280"
+    },
+    {
+      "id": "defense-high-14",
+      "name": "自然之力",
+      "oldIcon": "../assets/images/items/high/defense-force-of-nature.png",
+      "icon": "../assets/images/items/official-v107/wr73-9304.webp",
+      "currentItemId": "wr73-9304"
+    },
+    {
+      "id": "defense-high-15",
+      "name": "黎明法衣",
+      "oldIcon": "../assets/images/items/high/defense-dawnshroud.png",
+      "icon": "../assets/images/items/official-v107/wr73-9293.webp",
+      "currentItemId": "wr73-9293"
+    },
+    {
+      "id": "defense-high-16",
+      "name": "雅瑪蘭守護像",
+      "oldIcon": "../assets/images/items/high/defense-amaranths-twinguard.png",
+      "icon": "../assets/images/items/official-v107/wr73-9331.webp",
+      "currentItemId": "wr73-9331"
+    },
+    {
+      "id": "defense-high-17",
+      "name": "午時斗篷",
+      "oldIcon": "../assets/images/items/high/defense-mantle-of-the-twelfth-hour.png",
+      "icon": "../assets/images/items/official-v107/wr73-9282.webp",
+      "currentItemId": "wr73-9282"
+    },
+    {
+      "id": "defense-high-19",
+      "name": "雄心之鋼",
+      "oldIcon": "../assets/images/items/high/defense-heartsteel.png",
+      "icon": "../assets/images/items/official-v107/wr73-9306.webp",
+      "currentItemId": "wr73-9306"
+    },
+    {
+      "id": "defense-high-20",
+      "name": "錫柯的聚合之力",
+      "oldIcon": "../assets/images/items/high/defense-zekes-convergence.png",
+      "icon": "../assets/images/items/official-v107/wr73-9270.webp",
+      "currentItemId": "wr73-9270"
+    },
+    {
+      "id": "defense-high-21",
+      "name": "凱尼克欺瞞者",
+      "oldIcon": "../assets/images/items/high/defense-kaenic-rookern.png",
+      "icon": "../assets/images/items/official-v107/wr73-9309.webp",
+      "currentItemId": "wr73-9309"
+    },
+    {
+      "id": "defense-high-22",
+      "name": "約德爾陷阱",
+      "oldIcon": "../assets/images/items/high/defense-yordle-trap.png",
+      "icon": "../assets/images/items/official-v107/wr73-9275.webp",
+      "currentItemId": "wr73-9275"
+    },
+    {
+      "id": "defense-high-23",
+      "name": "聖光美德",
+      "oldIcon": "../assets/images/items/high/defense-radiant-virtue.png",
+      "icon": "../assets/images/items/official-v107/wr73-9288.webp",
+      "currentItemId": "wr73-9288"
+    },
+    {
+      "id": "support-high-01",
+      "name": "米凱的祝福",
+      "oldIcon": "../assets/images/items/high/support-mikaels-blessing.png",
+      "icon": "../assets/images/items/official-v107/wr73-9378.webp",
+      "currentItemId": "wr73-9378"
+    },
+    {
+      "id": "support-high-02",
+      "name": "日輪的加冕",
+      "oldIcon": "../assets/images/items/high/support-locket-of-the-iron-solari.png",
+      "icon": "../assets/images/items/official-v107/wr73-9261.webp",
+      "currentItemId": "wr73-9261"
+    },
+    {
+      "id": "support-high-03",
+      "name": "蘇瑞亞的戰歌",
+      "oldIcon": "../assets/images/items/high/support-shurelyas-battlesong.png",
+      "icon": "../assets/images/items/official-v107/wr73-9380.webp",
+      "currentItemId": "wr73-9380"
+    },
+    {
+      "id": "support-high-04",
+      "name": "熾灼魔器",
+      "oldIcon": "../assets/images/items/high/support-ardent-censer.png",
+      "icon": "../assets/images/items/official-v107/wr73-9393.webp",
+      "currentItemId": "wr73-9393"
+    },
+    {
+      "id": "support-high-05",
+      "name": "和諧回音",
+      "oldIcon": "../assets/images/items/high/support-harmonic-echo.png",
+      "icon": "../assets/images/items/official-v107/wr73-9408.webp",
+      "currentItemId": "wr73-9408"
+    },
+    {
+      "id": "support-high-06",
+      "name": "流水之杖",
+      "oldIcon": "../assets/images/items/high/support-staff-of-flowing-water.png",
+      "icon": "../assets/images/items/official-v107/wr73-9395.webp",
+      "currentItemId": "wr73-9395"
+    },
+    {
+      "id": "support-high-07",
+      "name": "帝王命令",
+      "oldIcon": "../assets/images/items/high/support-imperial-mandate.png",
+      "icon": "../assets/images/items/official-v107/wr73-9163.webp",
+      "currentItemId": "wr73-9163"
+    }
+  ]
+}

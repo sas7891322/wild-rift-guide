@@ -94,7 +94,7 @@
   $('#item-search').oninput = render;
   async function load() {
     try {
-      const response = await fetch('../assets/data/items-7.3.json?v=102.0.0');
+      const response = await fetch('../assets/data/items-7.3.json?v=108.0.0');
       if (!response.ok) throw new Error('無法讀取裝備資料');
       data = await response.json();
       if (!Array.isArray(data.items) || !data.items.length) throw new Error('裝備資料格式錯誤');
