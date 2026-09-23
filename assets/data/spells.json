@@ -3,7 +3,7 @@
     "id": "ghost",
     "order": 1,
     "name": "鬼步",
-    "icon": "../assets/images/spells/v103/ghost.webp",
+    "icon": "../assets/images/spells/v110/ghost.webp",
     "cooldown": 90,
     "maps": [
       "激鬥峽谷",
@@ -20,7 +20,7 @@
     "id": "heal",
     "order": 2,
     "name": "治療",
-    "icon": "../assets/images/spells/v103/heal.webp",
+    "icon": "../assets/images/spells/v110/heal.webp",
     "cooldown": 100,
     "maps": [
       "激鬥峽谷",
@@ -46,7 +46,7 @@
     "id": "barrier",
     "order": 3,
     "name": "光盾",
-    "icon": "../assets/images/spells/v103/barrier.webp",
+    "icon": "../assets/images/spells/v110/barrier.webp",
     "cooldown": 100,
     "maps": [
       "激鬥峽谷",
@@ -63,7 +63,7 @@
     "id": "exhaust",
     "order": 4,
     "name": "虛弱",
-    "icon": "../assets/images/spells/v103/exhaust.webp",
+    "icon": "../assets/images/spells/v110/exhaust.png",
     "cooldown": 100,
     "maps": [
       "激鬥峽谷",
@@ -80,7 +80,7 @@
     "id": "cleanse",
     "order": 5,
     "name": "淨化",
-    "icon": "../assets/images/spells/v103/cleanse.webp",
+    "icon": "../assets/images/spells/v110/cleanse.png",
     "cooldown": 110,
     "maps": [
       "激鬥峽谷",
@@ -97,7 +97,7 @@
     "id": "flash",
     "order": 6,
     "name": "閃現",
-    "icon": "../assets/images/spells/v103/flash.webp",
+    "icon": "../assets/images/spells/v110/flash.webp",
     "cooldown": 150,
     "maps": [
       "激鬥峽谷",
@@ -114,7 +114,7 @@
     "id": "ignite",
     "order": 7,
     "name": "點燃",
-    "icon": "../assets/images/spells/v103/ignite.webp",
+    "icon": "../assets/images/spells/v110/ignite.webp",
     "cooldown": 100,
     "maps": [
       "激鬥峽谷",
@@ -140,7 +140,7 @@
     "id": "smite",
     "order": 8,
     "name": "重擊",
-    "icon": "../assets/images/spells/v103/smite.webp",
+    "icon": "../assets/images/spells/v110/smite.webp",
     "cooldown": 10,
     "maps": [
       "激鬥峽谷"
@@ -193,7 +193,7 @@
     "id": "teleport",
     "order": 9,
     "name": "傳送",
-    "icon": "../assets/images/spells/v103/teleport.webp",
+    "icon": "../assets/images/spells/v110/teleport.webp",
     "cooldown": 150,
     "maps": [
       "激鬥峽谷"

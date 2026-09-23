@@ -1,0 +1,72 @@
+[
+  {
+    "id": "heal",
+    "source": "IMG_9815.webp",
+    "icon": "assets/images/spells/v110/heal.webp",
+    "sha256": "eaa53283434a1a4e2faf42def7e0466ed2d892e93d9092ac8e7c9cf32ef6f83f",
+    "status": "active"
+  },
+  {
+    "id": "ghost",
+    "source": "IMG_9816.webp",
+    "icon": "assets/images/spells/v110/ghost.webp",
+    "sha256": "d716f4f521c23d3b5c71dd0c73f90dfe8682ea2baee2d6604bd22ed784d04476",
+    "status": "active"
+  },
+  {
+    "id": "barrier",
+    "source": "IMG_9817.webp",
+    "icon": "assets/images/spells/v110/barrier.webp",
+    "sha256": "c969476200a81d2356f0017adcc4fa8be3a35999e80c21f280750f804468b809",
+    "status": "active"
+  },
+  {
+    "id": "exhaust",
+    "source": "IMG_9818.png",
+    "icon": "assets/images/spells/v110/exhaust.png",
+    "sha256": "62c510716a4fc9a8ee007abd6d3efca1c918b71af7225311515191432df23b11",
+    "status": "active"
+  },
+  {
+    "id": "ignite",
+    "source": "IMG_9819.webp",
+    "icon": "assets/images/spells/v110/ignite.webp",
+    "sha256": "2b47901a88839cfc590f1e55ed8f1165b9ace8c133ff94a3573bf50382a1a6c7",
+    "status": "active"
+  },
+  {
+    "id": "cleanse",
+    "source": "IMG_9820.png",
+    "icon": "assets/images/spells/v110/cleanse.png",
+    "sha256": "484157a0c050bb84f69c050c3882f71973a4b7c184445119db657a65a070280a",
+    "status": "active"
+  },
+  {
+    "id": "flash",
+    "source": "IMG_9821.webp",
+    "icon": "assets/images/spells/v110/flash.webp",
+    "sha256": "8d5a60d381ae032ded5e040f153eb8cf7a090f0714d34bc8ef03ce8a88c933db",
+    "status": "active"
+  },
+  {
+    "id": "smite",
+    "source": "IMG_9822.webp",
+    "icon": "assets/images/spells/v110/smite.webp",
+    "sha256": "6b088379a73e93f635234714f8ed769e964be1f9c4a5a9eac1a5815f86b564d5",
+    "status": "active"
+  },
+  {
+    "id": "clarity",
+    "source": "IMG_9823.png",
+    "icon": "assets/images/spells/v110/clarity.png",
+    "sha256": "4871133cafe6d5a229873e16f2e46d81a0310dbd40047e14abdc0201d33baf1f",
+    "status": "reserve-not-in-current-catalog"
+  },
+  {
+    "id": "teleport",
+    "source": "IMG_9824.webp",
+    "icon": "assets/images/spells/v110/teleport.webp",
+    "sha256": "5c6e9db3d538f1417f11cbfcc961cc9ea18d5c267fb39b6aaf5fa48e2a2a41bb",
+    "status": "active"
+  }
+]

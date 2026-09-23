@@ -458,7 +458,7 @@
     }).join('');
     const countCopy = crossCount>0 ? `原生 ${nativeCount}＋跨路 ${crossCount}` : `原生 ${nativeCount}`;
     content.innerHTML = `<section class="hero-overview-shell">
-      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>${state.role==='duo'?'7.3 首輪 · Tier 暫定':'7.3 校正待完成 · 既有評級'} · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
+      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>${state.role==='duo'?'7.3 首輪 · Tier 暫定':state.role==='support'?'7.3 首輪 8／32 位 · 已校正評級暫定，其餘待更新':'7.3 校正待完成 · 既有評級'} · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
       ${groups || ((state.query||state.filter!=='all')?noResultHTML():`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
     </section>`;
     bindOverviewActions(content);
@@ -747,15 +747,17 @@
   function renderPatchReview(hero){
     const r=hero.patch73Review;
     if(!r) return '';
-    return `<section class="hero-section hero-patch-review">
-      <div class="hero-section-title"><h3>7.3 校正重點</h3><span>首輪 · 評級暫定</span></div>
+    return `<details class="hero-section hero-patch-review">
+      <summary><span>7.3 校正重點</span><span class="patch-review-toggle"><span class="patch-review-expand">展開</span><span class="patch-review-collapse">收合</span><i aria-hidden="true">⌄</i></span></summary>
+      <div class="patch-review-body"><small>首輪 · 評級暫定</small>
       <p><b>出裝順序：</b>${safeText(r.buildReason)}</p>
       <p><b>符文取捨：</b>${safeText(r.runeReason)}</p>
       <p><b>召喚師技能：</b>${safeText(r.spellReason)}</p>
       <p><b>技能加點：</b>${safeText(r.skillReason)}</p>
       <p><b>評級判斷：</b>${safeText(r.tierReason)}</p>
       <p><small>${safeText(r.matchupBasis)}</small></p>
-    </section>`;
+      </div>
+    </details>`;
   }
 
   function renderBuildVariants(hero){
@@ -858,7 +860,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData,hweiProfile,currentItems]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=104.0.0'), getJSON('../assets/data/runes.json?v=109.0.0'), getJSON('../assets/data/items.json?v=108.0.0'), getJSON('../assets/data/spells.json?v=103.0.0'), getJSON('../assets/data/hwei-profile.json?v=100.0.0'), getJSON('../assets/data/items-7.3.json?v=108.0.0')
+        getJSON('../assets/data/heroes.json?v=111.0.0'), getJSON('../assets/data/runes.json?v=109.0.0'), getJSON('../assets/data/items.json?v=108.0.0'), getJSON('../assets/data/spells.json?v=110.0.0'), getJSON('../assets/data/hwei-profile.json?v=100.0.0'), getJSON('../assets/data/items-7.3.json?v=108.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=[...normalizeItems(itemData),...normalizeItems(currentItems)]; state.spells=spellData;
       // Hwei's standalone guide carries an explicitly provisional editorial tier.

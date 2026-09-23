@@ -3,4 +3,13 @@ a.build-mini { color: inherit; text-decoration: none; }
 a.build-mini:focus-visible { outline: 2px solid #6dd8f7; outline-offset: 3px; border-radius: 12px; }
 .hero-patch-review p { line-height: 1.8; }
 .hero-patch-review p + p { margin-top: 12px; }
+.hero-patch-review > summary { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:48px; list-style:none; cursor:pointer; font-weight:700; }
+.hero-patch-review > summary::-webkit-details-marker { display:none; }
+.hero-patch-review > summary:focus-visible { outline:2px solid #6dd8f7; outline-offset:4px; border-radius:4px; }
+.patch-review-toggle { display:flex; align-items:center; gap:8px; flex-shrink:0; color:var(--gold); font-size:12px; }
+.patch-review-toggle i { font-style:normal; font-size:20px; }
+.patch-review-collapse, .hero-patch-review[open] .patch-review-expand { display:none; }
+.hero-patch-review[open] .patch-review-collapse { display:inline; }
+.hero-patch-review[open] .patch-review-toggle i { transform:rotate(180deg); }
+.patch-review-body { padding-top:12px; border-top:1px solid var(--line); overflow-wrap:anywhere; }
 .rune-text-icon { display: inline-grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border: 1px solid #c8ad70; border-radius: 50%; color: #c8ad70; font-size: 22px; }

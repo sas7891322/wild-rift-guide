@@ -1,6 +1,6 @@
 {
-  "version": "7.3-v104-duo-first-pass",
-  "updated": "2026-09-22",
+  "version": "7.3-v111-support-batch1",
+  "updated": "2026-09-23",
   "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
@@ -59555,21 +59555,21 @@
       },
       "runes": [
         "glacial-augment",
-        "courage-of-colossus",
+        "steadfast-bulwark",
         "second-wind",
         "perseverance",
         "hextech-flashtraption"
       ],
       "items": [
-        "defense-high-20",
-        "defense-high-23",
-        "defense-high-14",
-        "defense-high-16",
-        "defense-high-09"
+        "wr73-9270",
+        "wr73-9288",
+        "wr73-9275",
+        "wr73-9278",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
@@ -59614,11 +59614,11 @@
       },
       "playstyle": {
         "前期": "二級後可用野蠻衝撞接大地粉碎完成遠距離擊飛連段，但每次進場前要先確認射手與兵線位置。對手靠近己方防禦塔時，也可先大地粉碎再用野蠻衝撞把人推回。蠻牛之力疊滿後的強化普攻會暈眩，換血時要貼近目標持續踩踏。",
-        "中期": "完成輔助任務後跟著打野遊走，海克斯閃現或繞後角度能把敵人推向己方隊伍。堅定意志能解除控制並大幅降低傷害，應在進場承受集火或被關鍵控制命中時使用，不要在還沒受威脅時提早浪費。",
+        "中期": "錫柯的聚合之力與聖光美德成形後，以隊友能跟上的控制或保排為主。第三件接約德爾陷阱；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "團戰可以閃現大地粉碎開多人，也可以留在主力身旁把突進者頂走。野蠻衝撞有時會把敵人救離隊友火力，因此要先確認推動方向；若只需要控制，優先使用連段擊飛或強化普攻暈眩。大絕期間可承擔大量火力，但時間結束前要開始撤退。"
       },
       "summary": "亞歷斯塔以野蠻衝撞接大地粉碎完成穩定擊飛，並靠蠻牛之力的強化普攻補上暈眩。進場時要確認推動方向與隊友距離；堅定意志留給真正承受集火或關鍵控制的時刻。",
-      "sourceNote": "7.2a 輔助路第二批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》亞歷斯塔英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v71：套用瑟雷西 v69 輔助固定母版。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/alistar\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/alistar.webp",
       "abilities": [
         {
@@ -59626,7 +59626,7 @@
           "label": "被動",
           "title": "勝利怒吼",
           "icon": "../assets/images/heroes/skills/alistar_01.png",
-          "summary": "使敵方英雄暈眩或位移、以及附近敵軍死亡時會累積怒吼。充能完畢後治療自己與附近友軍。"
+          "summary": "受到傷害時觸發對自身與附近友軍的治療；以技能擊飛或暈眩敵方英雄會縮短被動冷卻。"
         },
         {
           "key": "Q",
@@ -59675,15 +59675,15 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-second-batch-v71",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-20",
-        "defense-high-23",
-        "defense-high-14"
+        "wr73-9270",
+        "wr73-9288",
+        "wr73-9275"
       ],
       "combos": [
         {
@@ -59772,11 +59772,11 @@
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -59785,91 +59785,116 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
+              },
+              {
+                "type": "item",
+                "title": "高速普攻威脅",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9280",
+                "condition": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。",
+                "reason": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
+              },
+              {
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
-            "changes": [],
-            "keepTitle": "維持核心，依實際威脅判斷",
-            "keepText": "本情境沒有額外必換項目；先完成上方核心，再依敵方主要傷害和控制選擇防禦。",
-            "warning": ""
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
+            "changes": [
+              {
+                "type": "item",
+                "title": "補上重創",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9291",
+                "condition": "敵方回復妨礙集火時，末件改荊棘之甲；預算不足先買刺藤胸甲。",
+                "reason": "敵方回復妨礙集火時，末件改荊棘之甲；預算不足先買刺藤胸甲。"
+              }
+            ],
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-09",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -59913,6 +59938,18 @@
         "dedicatedRoleReference": true,
         "outcome": "updated",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "A",
+        "tierReason": "暫維持 A；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "二一進場後開大承傷，錫柯與聖光能跟著同一輪大絕運作；約德爾陷阱接上控制後的隊友輸出。原本偏昂貴的後段坦裝改為功能裝。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "堅定壁壘適合進入多人範圍承傷；海克斯閃現提供草叢開戰角度。",
+        "spellReason": "保留閃現＋點燃，配合控制連段施壓；己方已有足夠擊殺能力、主要任務是阻止刺客時，可把點燃改虛弱。",
+        "skillReason": "主一技、副二技；三技用來接續控制。大絕留給集火或解控，不為了觸發裝備提前浪費。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -60344,15 +60381,15 @@
         "hextech-flashtraption"
       ],
       "items": [
-        "defense-high-22",
-        "defense-high-09",
-        "defense-high-13",
-        "defense-high-14",
-        "defense-high-15"
+        "wr73-9270",
+        "wr73-9275",
+        "wr73-9280",
+        "wr73-9278",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
@@ -60397,11 +60434,11 @@
       },
       "playstyle": {
         "前期": "一級火箭抓取的存在本身就能逼迫敵方走位，不必每次冷卻完成都出鉤。先佔草叢、繞開士兵或用走位把對手逼向牆邊，再抓關鍵目標；近距離時可先用充能一擊擊飛，再接火箭抓取提高命中率。過載運轉結束後會自我減速，追擊前先確認能否完成控制鏈。",
-        "中期": "推完下路或射手安全收線時，跟著打野遊走中路與物件區。海克斯閃現和草叢視野能改變出鉤角度；抓到前排不一定有價值，應優先等待脆皮、打野或主要輸出露出位置。靜電力場可主動沉默並移除護盾，面對群盾或關鍵保命盾時要保留施放時機。",
+        "中期": "錫柯的聚合之力與約德爾陷阱成形後，以隊友能跟上的控制或保排為主。第三件接冰霜之心；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "不要為了找鉤站進無視野區，先和隊友排除草叢再施壓。團戰可抓走位失誤的後排，也可留鉤與擊飛保護己方主力。火箭抓取命中後立刻判斷拉來的是可秒殺目標、坦克還是反開角色；若拉錯人可能直接替對手完成開戰。"
       },
       "summary": "布里茨用火箭抓取改變戰場人數，但最強的壓力往往來自尚未出鉤。先用草叢、走位或近距離擊飛限制目標，再抓取；大絕的沉默與破盾要用在關鍵保護效果出現時。",
-      "sourceNote": "7.2a 輔助路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》布里茨英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v70：套用瑟雷西 v69 輔助固定母版。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/blitzcrank\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/blitzcrank.webp",
       "abilities": [
         {
@@ -60458,15 +60495,15 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-first-batch-v70",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-22",
-        "defense-high-09",
-        "defense-high-13"
+        "wr73-9270",
+        "wr73-9275",
+        "wr73-9280"
       ],
       "combos": [
         {
@@ -60555,11 +60592,11 @@
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -60568,100 +60605,108 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
+              },
+              {
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
             "changes": [
               {
                 "type": "item",
-                "title": "重創需求",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-08",
-                "condition": "敵方有多名高治療／高吸血英雄，或核心前排能在團戰中大量回血時。",
-                "reason": "荊棘之甲讓前排在承受普攻或主動造成傷害時施加重創，同時補物防。"
+                "title": "補上重創",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9291",
+                "condition": "敵方回復妨礙集火時，末件改荊棘之甲；預算不足先買刺藤胸甲。",
+                "reason": "敵方回復妨礙集火時，末件改荊棘之甲；預算不足先買刺藤胸甲。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-09",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -60705,6 +60750,18 @@
         "dedicatedRoleReference": true,
         "outcome": "updated",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "A",
+        "tierReason": "暫維持 A；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "以抓人後能立刻配合隊友的錫柯、約德爾陷阱為核心，冰霜之心針對貼身普攻威脅；純魔法陣容時改魔防，不硬出物防。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "巨像勇氣補抓人後的護盾；海克斯閃現用來換抓人角度，仍需先確認後排能跟上。",
+        "spellReason": "保留閃現＋點燃，配合控制連段施壓；己方已有足夠擊殺能力、主要任務是阻止刺客時，可把點燃改虛弱。",
+        "skillReason": "主一技、副三技維持抓人與擊飛頻率，二技最後補滿。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -61124,15 +61181,15 @@
         "transcendence"
       ],
       "items": [
-        "defense-high-05",
-        "defense-high-09",
-        "defense-high-23",
-        "defense-high-14",
-        "defense-high-08"
+        "wr73-9278",
+        "wr73-9288",
+        "wr73-9275",
+        "wr73-9291",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
@@ -61177,11 +61234,11 @@
       },
       "playstyle": {
         "前期": "用凜冬衝擊遠距附上第一層震盪冰封，射手普攻便能接續疊層。不要無故站在兵線最前方消耗血量；敵方準備強開時，壁壘守護可跳到射手或士兵身旁提高雙防，再用雄心重盾擋住主要飛行道具。盾牌方向必須朝向傷害來源。",
-        "中期": "跟著主力與打野進入河道，利用壁壘守護跨過隊友調整位置。物件區的窄口很適合冰河裂隙反開；大絕不必只追求遠距開戰，也可以在敵方突進進入己方陣型後擊飛多人。雄心重盾第一個傷害可完全格擋，應保留給高傷害技能或射手關鍵子彈。",
+        "中期": "騎士誓願與聖光美德成形後，以隊友能跟上的控制或保排為主。第三件接約德爾陷阱；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "站在主力輸出與敵方威脅之間，優先替隊伍阻擋正面飛行道具。被動第一層由自己施加後，隊友都能協助疊滿，因此團戰應標記同一名高威脅目標。敵方繞後時可用壁壘守護快速回到主力身邊，再以大絕與一技形成反打控制鏈。"
       },
       "summary": "布郎姆的核心不是盲目衝入，而是替隊友創造安全輸出時間。先以一技或普攻掛上震盪冰封，再讓全隊疊滿；雄心重盾的朝向與第一段完全格擋，是保排成敗關鍵。",
-      "sourceNote": "7.2a 輔助路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》布郎姆英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v70：套用瑟雷西 v69 輔助固定母版。｜v89 7.2c：依多來源環境資料校正 輔助 Tier，並保留有實戰差異的標準配置。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/braum\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/braum.webp",
       "abilities": [
         {
@@ -61238,15 +61295,15 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "7.2c-v89-meta-calibrated",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-05",
-        "defense-high-09",
-        "defense-high-23"
+        "wr73-9278",
+        "wr73-9288",
+        "wr73-9275"
       ],
       "combos": [
         {
@@ -61335,11 +61392,11 @@
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -61348,91 +61405,107 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
+              },
+              {
+                "type": "item",
+                "title": "高速普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9280",
+                "condition": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。",
+                "reason": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
+              },
+              {
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
             "changes": [],
-            "keepTitle": "維持核心，依實際威脅判斷",
-            "keepText": "本情境沒有額外必換項目；先完成上方核心，再依敵方主要傷害和控制選擇防禦。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-09",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -61476,6 +61549,18 @@
         "dedicatedRoleReference": true,
         "outcome": "updated",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "S",
+        "tierReason": "暫維持 S；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "先完成騎士誓願保護主要輸出，再補聖光美德的團隊續航；約德爾陷阱配合一技緩速與被動控制。荊棘之甲是抗普攻／回復預設，依敵陣替換。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "保留守護者與生命之泉，將資源放在近身保排；卓越補技能循環。",
+        "spellReason": "保留閃現＋治療，保排時同時照顧自身與射手；若射手也帶治療，可協調改虛弱，避免同時重複交治療。",
+        "skillReason": "主一技、副三技；二技一點提供接近隊友的手段。盾牆方向比盲目往前追擊重要。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -62656,19 +62741,19 @@
         "glacial-augment",
         "steadfast-bulwark",
         "second-wind",
-        "overgrowth",
-        "transcendence"
+        "perseverance",
+        "hextech-flashtraption"
       ],
       "items": [
-        "defense-high-06",
-        "defense-high-15",
-        "defense-high-23",
-        "defense-high-16",
-        "defense-high-09"
+        "wr73-9282",
+        "wr73-9275",
+        "wr73-9288",
+        "wr73-9278",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
@@ -62676,9 +62761,9 @@
       ],
       "skillOrder": "W > E > Q",
       "skillSequence": [
-        "W",
-        "E",
         "Q",
+        "E",
+        "W",
         "W",
         "R",
         "W",
@@ -62712,12 +62797,12 @@
         "ban": "魔甘娜"
       },
       "playstyle": {
-        "前期": "一級可先點日蝕穩定換血與扛傷，二級取得太陽聖劍後開始威脅強開。進場前先開日蝕，讓雙防覆蓋突進與對手反擊；太陽聖劍命中後接拂曉盾擊形成連續控制。雷歐娜自身無法引爆烈陽之力，必須確認射手能跟上再進場。",
-        "中期": "完成輔助任務後跟著打野進入河道，海克斯閃現可從草叢或牆後改變進場角度。日輪聖芒可遠距先手，但中心暈眩比外圍緩速更有價值；若敵方有反開角色，也可以保留大絕等對手進場後反打。每次進場前確認隊友距離、敵方位移與自身撤退路線。",
+        "前期": "預設一級點拂曉盾擊、二級太陽聖劍，取得進場後的連續控制；三級補日蝕後再強化承傷。三級前不要當作已有日蝕雙防硬吃爆發。太陽聖劍命中後接拂曉盾擊，並確認射手能跟上引爆烈陽之力；沒有跟進空間時保留技能反開。",
+        "中期": "午時斗篷與約德爾陷阱成形後，以隊友能跟上的控制或保排為主。第三件接聖光美德；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "雷歐娜進場後缺乏可靠退出手段，因此不要只因三技命中前排就固定飛入。敵方後排露出時可用大絕中心先控制，再接三技與一技；若己方輸出被刺客威脅，則留一技和大絕保排。日蝕應在承受爆發前提前開啟，而不是掉血後才使用。"
       },
       "summary": "雷歐娜依靠日蝕雙防與三技接一技的硬控鏈完成強開。進場前先開日蝕並確認隊友能引爆烈陽之力；大絕可先手抓後排，也可留作反開保排。",
-      "sourceNote": "7.2a 輔助路第一批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》雷歐娜英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v70：套用瑟雷西 v69 輔助固定母版。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/leona\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/leona.png",
       "abilities": [
         {
@@ -62774,15 +62859,15 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-first-batch-v70",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-06",
-        "defense-high-15",
-        "defense-high-23"
+        "wr73-9282",
+        "wr73-9275",
+        "wr73-9288"
       ],
       "combos": [
         {
@@ -62871,11 +62956,11 @@
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -62884,107 +62969,116 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
+              },
+              {
+                "type": "item",
+                "title": "高速普攻威脅",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9280",
+                "condition": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。",
+                "reason": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
-              },
-              {
-                "type": "item",
-                "title": "多段魔法輸出",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-14",
-                "condition": "敵方法師是持續多段輸出，而不是只有單次爆發時。",
-                "reason": "自然之力在連續承受魔法技能後能進一步降低魔法傷害。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
               },
               {
-                "type": "rune",
-                "title": "控制鏈承傷",
-                "fromId": "overgrowth",
-                "toId": "perseverance",
-                "condition": "你是主要進場點，會連續吃到硬控時。",
-                "reason": "堅毅讓被控期間更耐打，適合前排承接第一波技能。"
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
-            "changes": [],
-            "keepTitle": "維持核心，依實際威脅判斷",
-            "keepText": "本情境沒有額外必換項目；先完成上方核心，再依敵方主要傷害和控制選擇防禦。",
-            "warning": ""
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
+            "changes": [
+              {
+                "type": "item",
+                "title": "補上重創",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9291",
+                "condition": "敵方回復妨礙集火時，末件改荊棘之甲；預算不足先買刺藤胸甲。",
+                "reason": "敵方回復妨礙集火時，末件改荊棘之甲；預算不足先買刺藤胸甲。"
+              }
+            ],
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-09",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9278",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -63028,6 +63122,18 @@
         "dedicatedRoleReference": true,
         "outcome": "updated",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "S",
+        "tierReason": "暫維持 S；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "改以午時斗篷支撐第一輪進場，再接約德爾陷阱與聖光美德。午時斗篷本身沒有雙防，搭配防禦鞋與後續雙防裝；不再把日炎清線當作輔助預設。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "冰霜霸主配合連續硬控，堅定壁壘支援多人承傷；改以堅毅與海克斯閃現強化控制環境下的進場。",
+        "spellReason": "保留閃現＋點燃，配合控制連段施壓；己方已有足夠擊殺能力、主要任務是阻止刺客時，可把點燃改虛弱。",
+        "skillReason": "一級一技、二級三技、三級二技；之後主二技、副三技，大絕可升時優先。先取得控制連段，再強化承傷。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -64235,21 +64341,21 @@
         "transcendence"
       ],
       "items": [
-        "defense-high-09",
-        "defense-high-14",
-        "defense-high-13",
-        "defense-high-16",
-        "defense-high-08"
+        "wr73-9282",
+        "wr73-9275",
+        "wr73-9278",
+        "wr73-9291",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
         "ignite"
       ],
-      "skillOrder": "W > E > Q",
+      "skillOrder": "Q > W > E",
       "matchups": {
         "good": [
           "悠咪",
@@ -64264,12 +64370,12 @@
         "ban": "魔甘娜"
       },
       "playstyle": {
-        "前期": "先把扭曲樹精丟入河道與線上草叢，既能探視野，也能迫使敵人改變走位。敵人靠近時用飛葉遁影指向突進並定身，落地後立刻繞到目標撤退方向，以荊棘摧殘把人擊回射手火力範圍。魔法樹液準備完成時穿插普攻，能治療自己並提高長時間換血能力。",
-        "中期": "物件前提早在入口草叢放置樹苗，建立安全區域而不是等敵人進來才開始做視野。詭林之握從較遠位置施放，根鬚前進距離越長，越容易切斷敵方退路；命中後再用二技鎖定核心。茂凱進場後移動性有限，先確認隊友能跟上。",
+        "前期": "預設一級荊棘摧殘、二級飛葉遁影、三級扭曲樹精。取得樹精後再用它探查河道與草叢；需要一級入侵探草時可情境先點樹精，後續回到主一技、副二技。二技定身落地後，用一技把目標推向隊友火力；被動準備好時穿插普攻回血。",
+        "中期": "午時斗篷與約德爾陷阱成形後，以隊友能跟上的控制或保排為主。第三件接騎士誓願；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "正面團戰可站在主力前方反開，敵方刺客進場時以二技定身、再用一技推離。若需要主動開戰，先用大絕逼迫敵人分散，再鎖定沒有位移或已交位移的核心。被集火時持續施法與普攻縮短被動冷卻，利用治療撐過第二輪技能。"
       },
       "summary": "茂凱用草叢樹苗控制視野與入口，飛葉遁影提供穩定指向定身，荊棘摧殘可把敵人推向隊友或推離後排。大絕適合從遠處封鎖通道，開戰前必須確認隊友能跟上進場。",
-      "sourceNote": "7.2a 輔助路第四批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》茂凱英雄頁及 5.1c 登場公告校正，版本基準採官方 7.2a 更新公告；出裝、符文、技能順序與對局方向依本站既有輔助資料整合。Tier 維持本站既有輔助路評級。｜v73：套用瑟雷西 v69 輔助固定母版。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/maokai\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/maokai.webp",
       "abilities": [
         {
@@ -64309,8 +64415,12 @@
         }
       ],
       "skillSequence": [
+        "Q",
         "W",
         "E",
+        "Q",
+        "R",
+        "Q",
         "Q",
         "W",
         "R",
@@ -64319,11 +64429,7 @@
         "E",
         "R",
         "E",
-        "E",
-        "Q",
-        "R",
-        "Q",
-        "Q"
+        "E"
       ],
       "skillLabels": {
         "Q": "1 技",
@@ -64350,15 +64456,15 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-fourth-batch-v73",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-09",
-        "defense-high-14",
-        "defense-high-13"
+        "wr73-9282",
+        "wr73-9275",
+        "wr73-9278"
       ],
       "combos": [
         {
@@ -64447,11 +64553,11 @@
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -64460,91 +64566,107 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
+              },
+              {
+                "type": "item",
+                "title": "高速普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9280",
+                "condition": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。",
+                "reason": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
+              },
+              {
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
             "changes": [],
-            "keepTitle": "維持核心，依實際威脅判斷",
-            "keepText": "本情境沒有額外必換項目；先完成上方核心，再依敵方主要傷害和控制選擇防禦。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-09",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -64588,6 +64710,18 @@
         "dedicatedRoleReference": true,
         "outcome": "updated",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "A",
+        "tierReason": "暫維持 A；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "午時斗篷補前段生命與技能加速，約德爾陷阱把控制轉成隊友增益，再用騎士誓願保排。移除預設第一件好戰者，避免把有限收入集中在脫戰回復。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "冰霜霸主與巨像勇氣配合二技定身、一技擊退；卓越延續技能循環。",
+        "spellReason": "保留閃現＋點燃，配合控制連段施壓；己方已有足夠擊殺能力、主要任務是阻止刺客時，可把點燃改虛弱。",
+        "skillReason": "改為主一技、副二技；前三級各點一技。樹精先提供草叢探查，避免為了樹精傷害延後主要控制技能。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -65770,21 +65904,21 @@
         "hextech-flashtraption"
       ],
       "items": [
-        "defense-high-09",
-        "defense-high-14",
-        "defense-high-13",
-        "defense-high-16",
-        "defense-high-08"
+        "wr73-9282",
+        "wr73-9275",
+        "wr73-9278",
+        "wr73-9291",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
         "ignite"
       ],
-      "skillOrder": "W > E > Q",
+      "skillOrder": "Q > W > E",
       "matchups": {
         "good": [
           "索娜",
@@ -65800,11 +65934,11 @@
       },
       "playstyle": {
         "前期": "沉重打擊讓納帝魯斯對每個目標的第一次普攻都能定身。對線先利用草叢與兵線側面威脅深淵鐵錨，鉤中後先普攻觸發被動，再開巨人之怒承受反打並用鋼鐵怒濤緩速。鐵錨也能命中牆面把自己拉走，沒有擊殺角度時保留作撤退。",
-        "中期": "跟著打野進入河道做視野，潛航衝擊可鎖定無位移核心，沿途也會擊飛站在路徑上的敵人。先用大絕迫使對手走位，再接鐵錨與普攻定身，能形成很長的單點控制。沒有可靠視野時不要盲鉤進黑暗區域，納帝魯斯進場後很難自行脫離。 7.2e 二技護盾基值與最大生命收益提高；維持生命與雙防核心，進場前確認隊友能跟上，護盾無法取代撤退路線。",
+        "中期": "午時斗篷與約德爾陷阱成形後，以隊友能跟上的控制或保排為主。第三件接騎士誓願；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "正面團戰不一定要直接鉤敵方後排。站在主力前方，以普攻定身與鋼鐵怒濤保排；敵方核心露出位置時再用大絕鎖定。若鉤子命中前排會把自己拉入敵陣，先確認隊友能跟上或巨人之怒可承受第一輪傷害。"
       },
       "summary": "納帝魯斯擁有普攻定身、鐵錨鉤鎖、範圍緩速與鎖定擊飛，能把單一目標控制很久。鐵錨同時是進場與拉牆撤退工具，開戰前需確認隊友距離與進場後的生存能力。",
-      "sourceNote": "7.2a 輔助路第三批正式攻略：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》納帝魯斯英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。7.1h 對巨人之怒的改動主要調整野區傷害與護盾數值，本站輔助攻略以現行一般峽谷技能機制呈現。Tier 維持本站既有輔助路評級。｜v72：套用瑟雷西 v69 輔助固定母版。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/nautilus\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/nautilus.webp",
       "abilities": [
         {
@@ -65844,8 +65978,12 @@
         }
       ],
       "skillSequence": [
+        "Q",
         "W",
         "E",
+        "Q",
+        "R",
+        "Q",
         "Q",
         "W",
         "R",
@@ -65854,11 +65992,7 @@
         "E",
         "R",
         "E",
-        "E",
-        "Q",
-        "R",
-        "Q",
-        "Q"
+        "E"
       ],
       "skillLabels": {
         "Q": "1 技",
@@ -65883,12 +66017,12 @@
         }
       ],
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-09",
-        "defense-high-14",
-        "defense-high-13"
+        "wr73-9282",
+        "wr73-9275",
+        "wr73-9278"
       ],
       "combos": [
         {
@@ -65974,19 +66108,19 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-third-batch-v72",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -65995,91 +66129,107 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
+              },
+              {
+                "type": "item",
+                "title": "高速普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9280",
+                "condition": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。",
+                "reason": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
+              },
+              {
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
             "changes": [],
-            "keepTitle": "維持核心，依實際威脅判斷",
-            "keepText": "本情境沒有額外必換項目；先完成上方核心，再依敵方主要傷害和控制選擇防禦。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-09",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -66123,6 +66273,18 @@
         "dedicatedRoleReference": true,
         "outcome": "updated",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "A",
+        "tierReason": "暫維持 A；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "以午時斗篷承受進場爆發，約德爾陷阱接上普攻定身與鉤子的隊友跟進；騎士誓願補保排功能。荊棘之甲依對面回復與普攻威脅決定是否保留。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "冰霜霸主、巨像勇氣由普攻定身或技能控制觸發；海克斯閃現補繞視野角度。",
+        "spellReason": "保留閃現＋點燃，配合控制連段施壓；己方已有足夠擊殺能力、主要任務是阻止刺客時，可把點燃改虛弱。",
+        "skillReason": "改為主一技、副二技；一技先取得開戰與借牆移動手段，二技護盾次之，三技最後補滿。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -66930,21 +67092,21 @@
       },
       "runes": [
         "glacial-augment",
-        "courage-of-colossus",
+        "steadfast-bulwark",
         "second-wind",
         "perseverance",
         "hextech-flashtraption"
       ],
       "items": [
-        "defense-high-20",
-        "defense-high-23",
-        "defense-high-15",
-        "defense-high-16",
-        "defense-high-09"
+        "wr73-9270",
+        "wr73-9288",
+        "wr73-9278",
+        "wr73-9291",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
@@ -66953,8 +67115,8 @@
       "skillOrder": "W > E > Q",
       "skillSequence": [
         "W",
-        "E",
         "Q",
+        "E",
         "W",
         "R",
         "W",
@@ -66989,11 +67151,11 @@
       },
       "playstyle": {
         "前期": "騎乘型態下跑速較快，可從草叢或側面接近；馭鐵之術：解構跳入後會擊飛並取得護盾，但重甲型態移速較慢，沒有隊友跟上時不要隨意下馬。鐵碎之擊可直線消耗並破壞護盾，面對露璐、珍娜等英雄時保留給關鍵護盾。",
-        "中期": "跟著打野進入河道，利用全速突進累積進場速度，再以解構擊飛多人。落地後開磁能風暴把周圍敵人拖向自己，讓隊友的範圍技能更容易命中。每次技能或普攻命中都能偷取雙防，團戰應盡量接觸多名敵方英雄而不是只黏著坦克。",
+        "中期": "錫柯的聚合之力與聖光美德成形後，以隊友能跟上的控制或保排為主。第三件接騎士誓願；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "銳兒進場後移動能力有限，因此要在敵人位移交掉或站位集中時出手。大絕持續拉扯不能完全阻止敵人施法，仍需接續擊飛、強化普攻與隊友控制。若己方主力被切，可用上馬後的加速與下一次普攻擊飛反開，不一定每次都要主動衝後排。"
       },
       "summary": "銳兒透過普攻與技能偷取敵方雙防，再用馭鐵之術：解構與磁能風暴把多人聚集。下馬後移速較慢，必須在隊友能跟上的時機進場；鐵碎之擊則應優先破除關鍵護盾。",
-      "sourceNote": "7.2a 輔助路第二批正式攻略：技能名稱與型態機制依 Riot Games 台灣《激鬥峽谷》銳兒英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向依本站輔助資料整合。Tier 維持本站既有輔助路評級。｜v71：套用瑟雷西 v69 輔助固定母版。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/rell\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/rell.webp",
       "abilities": [
         {
@@ -67047,12 +67209,12 @@
         }
       ],
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-20",
-        "defense-high-23",
-        "defense-high-15"
+        "wr73-9270",
+        "wr73-9288",
+        "wr73-9278"
       ],
       "combos": [
         {
@@ -67139,19 +67301,19 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-second-batch-v71",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": false,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -67160,99 +67322,107 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
+              },
+              {
+                "type": "item",
+                "title": "高速普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9280",
+                "condition": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。",
+                "reason": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
-              },
-              {
-                "type": "item",
-                "title": "多段魔法輸出",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-14",
-                "condition": "敵方法師是持續多段輸出，而不是只有單次爆發時。",
-                "reason": "自然之力在連續承受魔法技能後能進一步降低魔法傷害。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
+              },
+              {
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
             "changes": [],
-            "keepTitle": "維持核心，依實際威脅判斷",
-            "keepText": "本情境沒有額外必換項目；先完成上方核心，再依敵方主要傷害和控制選擇防禦。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-09",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -67296,6 +67466,18 @@
         "dedicatedRoleReference": true,
         "outcome": "updated",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "S",
+        "tierReason": "暫維持 S；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "錫柯接大絕的近身牽制，聖光美德照顧跟進的隊友；第三件騎士誓願保護主力，不預設追求昂貴的純坦滿裝。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "將巨像勇氣改為堅定壁壘，強化多人進場時的雙防；保留回春、堅毅與海克斯閃現。",
+        "spellReason": "保留閃現＋點燃，配合控制連段施壓；己方已有足夠擊殺能力、主要任務是阻止刺客時，可把點燃改虛弱。",
+        "skillReason": "一級二技、二級一技、三級三技；之後主二技、副三技。保留一技破盾的用途，避免把所有控制同時交完。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -69635,15 +69817,15 @@
         "hextech-flashtraption"
       ],
       "items": [
-        "defense-high-09",
-        "defense-high-14",
-        "defense-high-05",
-        "defense-high-16",
-        "defense-high-15"
+        "wr73-9270",
+        "wr73-9275",
+        "wr73-9278",
+        "wr73-9291",
+        "wr73-9340-evolved"
       ],
       "boots": [
-        "plated-steelcaps",
-        "armored-warboots"
+        "wr73-9480",
+        "wr73-9482"
       ],
       "spells": [
         "flash",
@@ -69688,11 +69870,11 @@
       },
       "playstyle": {
         "前期": "一級先點懾魂掃蕩，利用強化普攻與拉近／擊退效果爭奪草叢和兵線主動權。二級取得死亡宣告後，不要在士兵正面硬鉤；先用走位、草叢或懾魂掃蕩逼出位移，再出鉤命中率更高。鬼影燈籠既能救射手，也能先丟向後方接打野進場；沒有視野時不要為撿一顆靈魂走進危險區。",
-        "中期": "聖物之盾完成任務後，跟著打野與主力搶河道和物件區視野。海克斯閃現可從牆後或草叢改變進場角度；死亡宣告命中後先判斷隊友能否跟上，再決定是否二段飛入。燈籠應提前放在隊友撤退路線，或放在自己身後讓打野快速接戰，不要等隊友已被控制才丟。",
+        "中期": "錫柯的聚合之力與約德爾陷阱成形後，以隊友能跟上的控制或保排為主。第三件接騎士誓願；末件依敵方威脅調整。保留群山堡壘，優先完成二級鞋及前兩件功能裝，三級鞋視經濟補上。",
         "後期": "團戰可依陣容選擇先手或保排。敵方後排站位失誤時用鉤鎖抓單；敵方刺客較強時則留懾魂掃蕩與惡靈領域保護主力。不要因鉤中前排就固定飛入，先看敵方控制與隊友距離；靈魂提供的永久物防與魔攻會持續提高坦度、護盾和技能傷害，但站位與燈籠時機仍比盲目進場更重要。"
       },
       "summary": "瑟雷西同時具備抓人、開戰、保排與救援能力。先用懾魂掃蕩控制距離，再以死亡宣告抓住關鍵目標；鬼影燈籠的提前落點與是否二段進場，是判斷瑟雷西熟練度的核心。",
-      "sourceNote": "7.2a 輔助路瑟雷西正式母版：技能名稱與核心機制依 Riot Games 台灣《激鬥峽谷》瑟雷西英雄頁校正，版本基準採官方 7.2a 更新公告；出裝、符文、召喚師技能、技能順序與對局方向交叉參考 WildRiftFire Patch 7.2a 後整合。Tier 維持本站既有輔助路評級。｜v69：瑟雷西固定為輔助路英雄正式母版。｜v90：7.2d：死亡宣告命中英雄的冷卻返還由 3 秒下調至 2 秒。｜v95：2026/09/12 全配置複核；對照現行同位置攻略，更新預設並保留必要情境選項。 Tier 為本站綜合判斷；中國服統計不等同台服勝率。",
+      "sourceNote": "v111｜2026/09/23 輔助 7.3 首輪第一批。裝備／符文效果以提供的遊戲截圖為基準，並對照 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 公告</a>及 <a href=\"https://www.wildriftfire.com/guide/thresh\" target=\"_blank\" rel=\"noopener noreferrer\">WildRiftFire 同位置 7.3 配置</a>。購買順序、情境換裝與逐級加點為本站編輯建議；Tier 暫定。",
       "avatar": "../assets/images/heroes/portraits/thresh.webp",
       "abilities": [
         {
@@ -69746,12 +69928,12 @@
         }
       ],
       "starterItems": [
-        "support-relic-shield"
+        "wr73-9340"
       ],
       "coreItems": [
-        "defense-high-09",
-        "defense-high-14",
-        "defense-high-05"
+        "wr73-9270",
+        "wr73-9275",
+        "wr73-9278"
       ],
       "combos": [
         {
@@ -69838,19 +70020,19 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "support-thresh-master-template-v69",
-      "reviewedAt": "2026-09-12",
+      "reviewStatus": "v111-7.3-support-batch1",
+      "reviewedAt": "2026-09-23",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
       "isSupportMasterTemplate": true,
       "heroDataAudit": "stage1-v75",
       "heroDataLocked": true,
-      "guideContentAudit": "v90-7.2d-full-profile-calibration",
+      "guideContentAudit": "v111-7.3-support-batch1",
       "guideContentLocked": true,
       "matchupAdjustments": {
-        "intro": "輔助調整以團隊承傷、解控與保護主力為優先，不為了單一敵人破壞整套功能裝。",
-        "logicVersion": "lane-adaptive-v1",
+        "intro": "完整成裝含群山堡壘＋四件購買裝＋一雙鞋。下列末件替換擇一，保留輔助任務裝；二級鞋依對線傷害選擇，三級鞋不搶核心預算。",
+        "logicVersion": "v111-7.3-support-batch1",
         "roleId": "support",
         "archetype": "tank_support",
         "situations": [
@@ -69859,100 +70041,107 @@
             "icon": "",
             "label": "物理傷害多",
             "priority": "高",
-            "trigger": "敵方主要輸出集中在射手、物理刺客或普攻型英雄。",
+            "trigger": "暴擊或高攻速英雄是主要威脅。",
             "changes": [
               {
                 "type": "item",
-                "title": "暴擊射手特別肥",
-                "fromId": "defense-high-15",
-                "toId": "defense-high-07",
-                "condition": "敵方主力射手以暴擊普攻為核心，而且已經是團戰主要威脅時。",
-                "reason": "蘭頓之兆進一步降低暴擊傷害，適合第二層針對。"
+                "title": "暴擊普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9299",
+                "condition": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。",
+                "reason": "敵方暴擊射手已成為主要傷害來源時，末件改為蘭頓之兆。"
+              },
+              {
+                "type": "item",
+                "title": "高速普攻威脅",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9280",
+                "condition": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。",
+                "reason": "敵方仰賴連續普攻且你能站在減攻速範圍內時，改用冰霜之心。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "冰霜之心已在預設配置時，不再重複購買。"
           },
           {
             "id": "magic",
             "icon": "",
             "label": "魔法傷害多",
             "priority": "高",
-            "trigger": "敵方主要威脅來自法師、AP刺客或大量範圍魔法傷害。",
+            "trigger": "持續魔法傷害使你無法站住。",
             "changes": [
               {
                 "type": "item",
-                "title": "魔法承傷鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方主要傷害集中在魔法技能，而且你需要先手承傷時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，補魔防、韌性與魔法護盾。"
+                "title": "末件改魔防",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9304",
+                "condition": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。",
+                "reason": "改用自然之力；多名魔法威脅可提前至第三件，順延其他功能裝。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
             "warning": ""
           },
           {
             "id": "cc",
             "icon": "",
             "label": "控制多",
-            "priority": "最高",
-            "trigger": "敵方硬控能直接抓死己方主力，或你進場後會被連續控制。",
+            "priority": "高",
+            "trigger": "主要受到魔法傷害或可被韌性縮短的控制。",
             "changes": [
               {
                 "type": "item",
-                "title": "韌性鞋線",
-                "fromId": "armored-warboots",
-                "toId": "chain-army-boots",
-                "condition": "敵方控制密集，且魔法傷害／控制鏈是主要威脅時。",
-                "reason": "改走水星之靴→鎖鏈軍靴，直接補韌性與魔防。"
+                "title": "二級鞋替換",
+                "fromId": "wr73-9480",
+                "toId": "wr73-9476",
+                "condition": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。",
+                "reason": "二級鞋改水星之靴；後續升級鎖鏈軍靴，整條鞋線一起替換。"
+              },
+              {
+                "type": "item",
+                "title": "三級鞋對應",
+                "fromId": "wr73-9482",
+                "toId": "wr73-9478",
+                "condition": "此項是水星之靴的升級結果，不是額外買第二雙鞋。",
+                "reason": "此項是水星之靴的升級結果，不是額外買第二雙鞋。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "米凱主要替隊友解控；水星彎刀則是物理英雄自我解控，兩者角色不同。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "韌性不能縮短所有控制，例如擊飛；仍需注意站位。"
           },
           {
             "id": "heal",
             "icon": "",
             "label": "治療／吸血多",
-            "priority": "中",
-            "trigger": "敵方有大量治療、吸血或回復，讓己方集火很難完成擊殺。",
-            "changes": [
-              {
-                "type": "item",
-                "title": "重創需求",
-                "fromId": "defense-high-09",
-                "toId": "defense-high-08",
-                "condition": "敵方有多名高治療／高吸血英雄，或核心前排能在團戰中大量回血時。",
-                "reason": "荊棘之甲讓前排在承受普攻或主動造成傷害時施加重創，同時補物防。"
-              }
-            ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": ""
+            "priority": "高",
+            "trigger": "敵方回復造成集火失敗。",
+            "changes": [],
+            "keepTitle": "配置原則",
+            "keepText": "已配荊棘之甲時保留並視回復威脅提前；只需過渡可先用刺藤胸甲。",
+            "warning": "點燃與重創效果不相加；確認由誰穩定維持。"
           },
           {
             "id": "protect",
             "icon": "",
             "label": "我方主力需要保護",
             "priority": "高",
-            "trigger": "己方只有一個主要輸出點，且敵方每波團戰都會集中切入他。",
+            "trigger": "需要替後排撐過同一波範圍爆發。",
             "changes": [
               {
                 "type": "item",
-                "title": "團戰保排",
-                "fromId": "defense-high-15",
-                "toId": "support-high-02",
-                "condition": "己方後排需要撐過同一波範圍爆發時。",
-                "reason": "日輪的加冕提供即時群體護盾，補上騎士誓願以外的團隊保護。"
+                "title": "主動團隊護盾",
+                "fromId": "wr73-9291",
+                "toId": "wr73-9261",
+                "condition": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。",
+                "reason": "末件改日輪的加冕，於集火到來時使用；騎士誓願綁定主要輸出。"
               }
             ],
-            "keepTitle": "替換以目前預設配置為基準",
-            "keepText": "同一格的多個建議是擇一選擇；不必為單一威脅同時換掉多件核心。",
-            "warning": "保排調整看己方陣容，不是看到敵方刺客就把所有功能裝都換成防裝。"
+            "keepTitle": "配置原則",
+            "keepText": "以下替換以本頁預設配置為基準；同一格多個選項擇一。",
+            "warning": "若因此移除荊棘之甲，先確認隊友能補重創。"
           }
         ]
       },
@@ -69998,6 +70187,18 @@
         "dedicatedRoleReference": true,
         "outcome": "retained",
         "basis": "same-role author guide plus dated CN snapshot; item alternatives adapted to site format"
+      },
+      "patch73Review": {
+        "version": "v111",
+        "status": "editorial-first-pass",
+        "previousTier": "S",
+        "tierReason": "暫維持 S；同位置 7.3 攻略支持此定位，但本次不以版本初期資料推定台服勝率。",
+        "buildReason": "錫柯與約德爾陷阱提供較早的功能成形，再用騎士誓願照顧主要輸出。瑟雷西屬遠程，約德爾陷阱自身增益按遠程版本計算，不能套近戰持續時間。 遺跡之盾完成任務後進化為群山堡壘，占完整成裝的一格；四件購買裝按列示順序，收入裝不需再買。",
+        "runeReason": "保留冰霜霸主、巨像勇氣與骨甲，支援鉤中或反刷後的短換血；海克斯閃現補側向角度。",
+        "spellReason": "保留閃現＋點燃，配合控制連段施壓；己方已有足夠擊殺能力、主要任務是阻止刺客時，可把點燃改虛弱。",
+        "skillReason": "主三技、副一技，二技先一點保留燈籠救援；需要頻繁救人時可視局面提前增加二技。",
+        "scope": "出裝／情境換裝／符文／召喚師技能／加點；既有對局為機制判斷",
+        "matchupBasis": "對局名單沿用既有機制判斷，未宣稱已完成 7.3 對局勝率驗證。"
       }
     },
     {
@@ -78283,7 +78484,8 @@
       "roleAuditStatus": "passed",
       "guideAuditVersion": "v76-stage2",
       "guideAuditStatus": "passed",
-      "bootDisplayPolicy": "tier2"
+      "bootDisplayPolicy": "tier2",
+      "patch73Reviewed": 8
     }
   },
   "roleAudit": {
@@ -78545,8 +78747,8 @@
     "methodology": "Tier 僅在同分路攻略與統計方向一致時調整；上調需勝率至少51%、下調需不高於49.5%，且選取至少1%；其餘維持並觀察。門檻是本站校正準則，不是官方Tier公式。統計未揭露完整樣本量與對局窗口。"
   },
   "patch73Progress": {
-    "version": "v104",
-    "date": "2026-09-22",
+    "version": "v111",
+    "date": "2026-09-23",
     "duo": {
       "reviewed": 23,
       "total": 23
@@ -78564,8 +78766,18 @@
       "total": 46
     },
     "support": {
-      "reviewed": 0,
-      "total": 32
+      "reviewed": 8,
+      "total": 32,
+      "reviewedIds": [
+        "alistar-support",
+        "blitzcrank-support",
+        "braum-support",
+        "leona-support",
+        "maokai-support",
+        "nautilus-support",
+        "rell-support",
+        "thresh-support"
+      ]
     },
     "separateHweiProfile": "v100 初步配置獨立保留，不計入本批 23 份",
     "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/",
