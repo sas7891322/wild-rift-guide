@@ -24,3 +24,9 @@ a.build-mini:focus-visible { outline: 2px solid #6dd8f7; outline-offset: 3px; bo
 .patch-numeric th,.patch-numeric td {padding:10px 8px;border:1px solid rgba(148,163,184,.2);text-align:left;vertical-align:top;overflow-wrap:anywhere;white-space:normal}
 .patch-numeric th {background:rgba(148,163,184,.08)}
 .patch-numeric td:last-child {color:#8de3cb}
+
+/* v113: compact, optional matchup reasoning. */
+.matchup-review-note{font-size:13px;line-height:1.7;color:#a9bad0;overflow-wrap:anywhere}
+.matchup-review-details{margin-top:12px;border-top:1px solid rgba(148,163,184,.18);padding-top:12px}
+.matchup-review-details summary{cursor:pointer;font-size:14px;color:#b9e8ed}
+.matchup-review-details p{font-size:13px;line-height:1.7}
