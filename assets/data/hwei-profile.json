@@ -110,7 +110,7 @@
       "icon": "../assets/images/heroes/hwei/q.webp",
       "summary": "傷害主題：選取主題後，再選擇三種施法之一。截圖顯示冷卻：9.5 秒。",
       "details": [
-        "1 → 1｜飛行火球：朝目標方向發射火球，命中第一位敵人時爆炸，對範圍內敵人造成 50＋75% 魔攻＋4% 目標最大生命的魔法傷害。",
+        "1 → 1｜壞滅熾燄：朝目標方向發射火球，命中第一位敵人時爆炸，對範圍內敵人造成 50＋75% 魔攻＋4% 目標最大生命的魔法傷害。",
         "1 → 2｜震顫轟雷：短暫延遲後攻擊遠距目標，造成 80＋30% 魔攻的魔法傷害。若目標受到硬控場，或只命中一個目標，會依其已損失生命提高傷害，最多達 200＋75% 魔攻。",
         "1 → 3｜熔岩裂隙：畫出往前爆發的火柱並留下岩漿。每次噴發造成 20＋30% 魔攻的魔法傷害；岩漿區域每秒造成 20＋30% 魔攻的魔法傷害並緩速 30%，每塊岩漿區持續 2.5 秒。",
         "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。"
@@ -150,7 +150,8 @@
       "summary": "發射絕望幻象，附著在敵方英雄身上 3 秒並逐漸擴大。截圖顯示冷卻：70 秒。",
       "details": [
         "對敵人施加 10% 緩速，每 0.25 秒累加一次；每秒造成 10＋5% 魔攻的魔法傷害。",
-        "幻象擴張至極限後碎裂，造成 250＋75% 魔攻的魔法傷害。"
+        "幻象擴張至極限後碎裂，造成 250＋75% 魔攻的魔法傷害。",
+        "附著的敵方英雄提前陣亡也會引爆領域，不必一定等待擴張結束。"
       ]
     }
   ],
@@ -389,8 +390,8 @@
   },
   "patch73Numbers": [],
   "patch73Review": {
-    "version": "v113",
-    "status": "launch-editorial-reviewed",
+    "version": "v114",
+    "status": "public-source-reviewed",
     "previousTier": "A",
     "buildReason": "遠距法師／三主題施法定位保留；依同分路 7.3 配置調整為 黑焰火炬 → 無限寶珠 → 死亡之帽 → 虛空之杖 → 中婭沙漏。先完成前兩件核心，後段依敵方傷害與防禦配置替換。",
     "runeReason": "奧術彗星／附魔之帶／卓越／燒灼／骨甲。用遠距技能配合緩速或控制提高消耗命中率。",
@@ -400,8 +401,8 @@
     "matchupBasis": "新英雄對局為射程、位移與控制互動的條件判斷，尚無可靠勝率樣本；較有利不代表能無視敵方控制。",
     "scope": "配裝、符文、召喚師技能、15級建議加點、機制對局；勝率與部分完整技能成長值尚待實機資料"
   },
-  "reviewStatus": "v113-hwei-editorial",
-  "reviewedAt": "2026-09-23",
+  "reviewStatus": "v114-public-source-reviewed",
+  "reviewedAt": "2026-09-29",
   "guideContentAudit": "v112-7.3-three-lanes",
   "skillSequenceNote": "編輯建議：1級一技、2級三技、3級二技；主一技、副三技，大絕於 5／9／13 級提升。R 指「絕望螺旋」，不是選取主題時的取消操作。此表已比對激鬥峽谷攻略，未宣稱完成遊戲內實測。",
   "matchupReview113": {
@@ -432,5 +433,20 @@
     "逐級表是可用的編輯建議，不是唯一加點。",
     "技能面板截圖未記錄完整等級／技能加速；截圖冷卻不當作零技能加速基礎冷卻。",
     "二技護盾係數的 7.1%／71% 差異尚未實機確認，不強行覆寫。"
-  ]
+  ],
+  "patch73AttackSpeed": null,
+  "officialReview114": {
+    "date": "2026-09-29",
+    "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/hwei/",
+    "patchSource": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/",
+    "status": "public-source-reviewed",
+    "scope": "官方版本差異／附錄／技能名稱與已確認機制；配置與加點規則複核",
+    "directChange": false,
+    "durabilityChange": false,
+    "attackSpeedListed": false,
+    "changedSkills": [],
+    "note": "官方主題與子技能名稱已對照；保留你提供的被動原圖。官方7.3附錄未列赫威攻速；護盾係數與完整各級數值仍待實機確認。",
+    "warning": "明鏡止水的7.1%／71%係數疑義未解，不將其標為已核實。"
+  },
+  "version": "v114"
 }
