@@ -12,6 +12,7 @@
       <div class="detail-meta">${escape(spell.category)}｜${cooldown}</div>
       <div class="detail-description">${escape(spell.description)}</div>
       ${(spell.details || []).map(section => `<section class="spell-effect-section"><h3>${escape(section.title)}</h3>${section.paragraphs.map(p => `<p>${escape(p)}</p>`).join('')}</section>`).join('')}
+      ${spell.patch73aSource?`<p><a href="${escape(spell.patch73aSource)}" target="_blank" rel="noopener noreferrer">7.3a 官方重擊燃燒調整 ↗</a></p>`:''}
       <div class="detail-chips">${(spell.maps || []).map(m => `<span class="chip">${escape(m)}</span>`).join('')}</div>`;
   }
   function show(spell, navigate = false) {
@@ -38,7 +39,7 @@
   }
   async function load() {
     try {
-      const response = await fetch('../assets/data/spells.json?v=110.0.0');
+      const response = await fetch('../assets/data/spells.json?v=115.0.0');
       if (!response.ok) throw new Error('Unable to load spells');
       spells = (await response.json()).sort((a,b) => a.order - b.order);
       if (!spells.length) throw new Error('No spells');

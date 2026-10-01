@@ -1,6 +1,6 @@
 {
-  "version": "7.3-v102-text-catalog",
-  "updatedAt": "2026-09-22",
+  "version": "7.3a-v115",
+  "updatedAt": "2026-10-01",
   "source": "使用者提供的七類遊戲內截圖",
   "screenshotCount": 560,
   "categories": [
@@ -12,7 +12,7 @@
     "輔助",
     "鞋子"
   ],
-  "notes": "依使用者提供的遊戲內截圖整理；171 件可購買裝備及 6 件進化裝備。數值與效果為文字整理，合成材料依截圖建立；同名裝備跨分類共用。",
+  "notes": "7.3a：4件公告裝備數值已同步；舊截圖只作歷史來源，以文字中的最新版本為準。 依使用者提供的遊戲內截圖整理；171 件可購買裝備及 6 件進化裝備。數值與效果為文字整理，合成材料依截圖建立；同名裝備跨分類共用。",
   "items": [
     {
       "id": "wr73-8894",
@@ -2890,7 +2890,7 @@
         "防禦"
       ],
       "stage": "高階裝備",
-      "price": 3200,
+      "price": 3300,
       "orderByCategory": {
         "鬥士": 34,
         "防禦": 50
@@ -2955,7 +2955,7 @@
           "description": "若敵方英雄受到傷害後 3 秒內死亡，清除尚未結算的延後傷害，並在 2 秒內回復相當於 90% 額外物理攻擊的生命。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3a",
       "buildFrom": [
         "wr73-8898",
         "wr73-8914",
@@ -2965,7 +2965,26 @@
       "recipeSource": "IMG_8962.PNG",
       "descriptionSources": [
         "IMG_8961.PNG"
-      ]
+      ],
+      "patch73a": {
+        "date": "2026-10-01",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+        "groups": [
+          {
+            "key": "price",
+            "title": "價格",
+            "rows": [
+              {
+                "label": "總價",
+                "before": "3200",
+                "after": "3300",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": "增加100金幣；能力值和被動未被本次公告削弱。"
+      }
     },
     {
       "id": "wr73-8963",
@@ -5093,7 +5112,7 @@
       ],
       "stats": [
         "+50 物理攻擊",
-        "+25% 攻擊速度"
+        "+35% 攻擊速度"
       ],
       "passives": [
         {
@@ -5102,10 +5121,10 @@
         },
         {
           "name": "無雙亂舞",
-          "description": "普攻敵方英雄時獲得 25% 攻速，持續 6 秒。冷卻 20 秒；普攻使冷卻縮短 1 秒，暴擊時縮短 2 秒。"
+          "description": "普攻敵方英雄時獲得35%攻速，持續6秒。冷卻25秒；普攻使冷卻縮短1秒，暴擊時縮短2秒。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3a",
       "buildFrom": [
         "wr73-9022",
         "wr73-9040"
@@ -5114,7 +5133,44 @@
       "recipeSource": "IMG_9088.PNG",
       "descriptionSources": [
         "IMG_9087.PNG"
-      ]
+      ],
+      "patch73a": {
+        "date": "2026-10-01",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+        "groups": [
+          {
+            "key": "stats",
+            "title": "基礎能力值",
+            "rows": [
+              {
+                "label": "攻速",
+                "before": "25%",
+                "after": "35%",
+                "kind": "change"
+              }
+            ]
+          },
+          {
+            "key": "passive",
+            "title": "無雙亂舞",
+            "rows": [
+              {
+                "label": "攻速",
+                "before": "25%",
+                "after": "35%",
+                "kind": "change"
+              },
+              {
+                "label": "冷卻",
+                "before": "20秒",
+                "after": "25秒",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": "攻速提高，但效果冷卻延長，並非全項增強。"
+      }
     },
     {
       "id": "wr73-9096",
@@ -7110,14 +7166,14 @@
       "passives": [
         {
           "name": "和諧",
-          "description": "獲得相當於 0.5% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
+          "description": "獲得相當於 0.25% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
         },
         {
           "name": "魔力補充",
           "description": "每次消耗魔力增加 14 最大魔力，每 10 秒最多觸發 3 次；上限 700，滿層轉化為歌謠之冠。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3a",
       "buildFrom": [
         "wr73-8894",
         "wr73-9112",
@@ -7132,7 +7188,26 @@
       ],
       "evolvesTo": [
         "wr73-9159-evolved"
-      ]
+      ],
+      "patch73a": {
+        "date": "2026-10-01",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+        "groups": [
+          {
+            "key": "passive",
+            "title": "和諧",
+            "rows": [
+              {
+                "label": "最大魔力轉治療／護盾強度",
+                "before": "0.5%",
+                "after": "0.25%",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": "僅調整和諧的轉換係數，不把基本8%治療護盾強度減半。"
+      }
     },
     {
       "id": "wr73-9163",
@@ -13093,7 +13168,7 @@
         "輔助": 23.1
       },
       "icon": "../assets/images/items/official-v107/wr73-9159-evolved.webp",
-      "dataVersion": "7.3",
+      "dataVersion": "7.3a",
       "buildFrom": [],
       "upgrades": [],
       "evolvesFrom": "wr73-9159",
@@ -13112,13 +13187,32 @@
       "passives": [
         {
           "name": "和諧",
-          "description": "獲得相當於 0.5% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
+          "description": "獲得相當於 0.25% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
         },
         {
           "name": "冠冕",
           "description": "自身，或過去 3 秒內受你治療或護盾的友軍，正在與英雄交戰時，每秒治療周遭 800 距離單位內生命最低的友軍，回復量相當於 0.8% 最大魔力。"
         }
-      ]
+      ],
+      "patch73a": {
+        "date": "2026-10-01",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+        "groups": [
+          {
+            "key": "passive",
+            "title": "和諧",
+            "rows": [
+              {
+                "label": "最大魔力轉治療／護盾強度",
+                "before": "0.5%",
+                "after": "0.25%",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": "低語之環進化裝；冠冕每秒治療效果未在本次調整。"
+      }
     },
     {
       "id": "wr73-9206-evolved",
