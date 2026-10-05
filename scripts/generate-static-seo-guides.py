@@ -5,7 +5,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = 'https://wild-rift-guide.vercel.app'
-ADSENSE = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3703014721072968" crossorigin="anonymous"></script>'
+ADSENSE = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6785196021794818" crossorigin="anonymous"></script>'
 
 def e(v):
     return html.escape(str(v or ''), quote=True)

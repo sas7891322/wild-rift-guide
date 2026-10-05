@@ -28,6 +28,6 @@ const count=(sitemap.match(/<url>/g)||[]).length;
 if(count<373) errors.push(`sitemap URL count ${count}, expected >=373`);
 for(const url of ['/articles/','/articles/itemization-by-enemy-comp.html','/pages/editorial.html','/pages/changelog.html']) if(!sitemap.includes(url)) errors.push(`sitemap missing ${url}`);
 if(sitemap.includes('/pages/member.html')||sitemap.includes('/pages/auth-callback.html')) errors.push('private pages must not be in sitemap');
-if(read('ads.txt').trim()!=='google.com, pub-3703014721072968, DIRECT, f08c47fec0942fa0') errors.push('ads.txt invalid');
+if(read('ads.txt').trim()!=='google.com, pub-6785196021794818, DIRECT, f08c47fec0942fa0') errors.push('ads.txt invalid');
 if(errors.length){console.error(errors.join('\n'));process.exit(1);}
 console.log(JSON.stringify({version:'v93-adsense-quality',originalEditorialArticles:10,sitemapUrls:count,homePublisherContent:true,editorialPolicy:true,publicChangelog:true,trustPagesEnhanced:true},null,2));

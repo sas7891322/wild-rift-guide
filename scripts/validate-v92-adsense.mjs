@@ -33,14 +33,14 @@ const heroScript=read('assets/js/heroes.js');
 if(!heroScript.includes('return `/share/heroes/${encodeURIComponent(hero.id)}.html`;')) errors.push('dynamic hero canonical is not pointed at static guide');
 if(!heroScript.includes('7.2d')) errors.push('hero UI 7.2d metadata missing');
 
-for(const file of ['pages/member.html','pages/auth-callback.html','aram-hero.html']){
+for(const file of ['pages/member.html','pages/auth-callback.html','aram-hero.html','share/heroes/jinx.html']){
   if(read(file).includes('pagead2.googlesyndication.com')) errors.push(`${file}: AdSense loader should be excluded`);
 }
-for(const file of ['index.html','pages/heroes.html','pages/about.html','share/heroes/jinx.html']){
+for(const file of ['index.html','pages/heroes.html','pages/about.html']){
   if(!read(file).includes('pagead2.googlesyndication.com')) errors.push(`${file}: AdSense review loader missing`);
 }
 
-if(read('ads.txt').trim()!=='google.com, pub-3703014721072968, DIRECT, f08c47fec0942fa0') errors.push('ads.txt invalid');
+if(read('ads.txt').trim()!=='google.com, pub-6785196021794818, DIRECT, f08c47fec0942fa0') errors.push('ads.txt invalid');
 if(!read('pages/about.html').includes('內容怎麼校正')||!read('pages/about.html').includes('原創內容與外部來源')) errors.push('About editorial transparency missing');
 if(!read('pages/privacy.html').includes('Google 同意聲明管理平台')) errors.push('CMP privacy disclosure missing');
 
