@@ -35,7 +35,7 @@ index.write_text(page)
 sitemap=ROOT/'sitemap.xml'
 page=sitemap.read_text()
 page=re.sub(r'(<url>\s*<loc>https://wild-rift-guide\.vercel\.app/(?:share/heroes/[^<]+|pages/heroes\.html[^<]*|summoners-rift\.html|pages/(?:hero-guides|items|runes|spells|patch)\.html)</loc>\s*<lastmod>)[^<]+',lambda m:m[1]+'2026-10-01',page)
-if '/share/heroes/hwei-mid.html' not in page:
-    page=page.replace('</urlset>','<url><loc>https://wild-rift-guide.vercel.app/share/heroes/hwei-mid.html</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>\n</urlset>')
 sitemap.write_text(page)
+import runpy
+runpy.run_path(str(ROOT/'scripts/sync-aram-seo.py'),run_name='__main__')
 print(f'Updated {len(heroes)} share redirects and the Rift index; no ARAM regeneration.')

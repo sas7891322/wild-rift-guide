@@ -368,6 +368,16 @@
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');
       if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift ${aaaVersion} 符文大亂鬥攻略：官方增幅分類、S+ 至 D 單卡評級、增幅導向出裝與玩法。`:`${hero.name} Wild Rift ${standardVersion} 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
+      // Keep each hero and supported mode distinct; omit tracking parameters.
+      const canonicalParams=new URLSearchParams({id:hero.id});
+      if(isAaa)canonicalParams.set('mode','aaa');
+      window.WRGSeo.set({
+        title:document.title,
+        description:meta?.getAttribute('content')||hero.summary,
+        path:`/aram-hero.html?${canonicalParams}`,
+        image:hero.avatar,
+        robots:'index,follow,max-image-preview:large'
+      });
       renderHeader(currentMode);
       contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
       if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
@@ -386,6 +396,8 @@
     syncModeUi();
   }catch(err){
     console.error(err);
+    // Missing heroes or failed data loads should not index an error shell.
+    document.querySelector('meta[name="robots"]')?.setAttribute('content','noindex,follow');
     root.innerHTML='<section class="aram-detail-error"><h1>找不到這位 ARAM 英雄</h1><p>目前母版資料可能尚未建立。</p><a href="aram.html">← 回 ARAM 專區</a></section>';
   }
 })();
