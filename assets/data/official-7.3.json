@@ -4427,20 +4427,39 @@
           "after": "已移除",
           "kind": "removed",
           "section": "炎之觸"
-        },
+        }
+      ]
+    },
+    {
+      "name": "無限寶珠",
+      "category": "其他道具調整",
+      "rows": [
         {
           "label": "暴擊門檻",
           "before": "35%",
           "after": "40%",
           "kind": "change",
           "section": "難逃死劫"
-        },
+        }
+      ]
+    },
+    {
+      "name": "史特拉克手套",
+      "category": "其他道具調整",
+      "rows": [
         {
           "label": "韌性",
           "before": "—",
           "after": "20%",
           "kind": "new",
           "section": "基礎能力值"
+        },
+        {
+          "label": "觸發後額外韌性",
+          "before": "原效果存在（公告未列舊值）",
+          "after": "已移除",
+          "kind": "removed",
+          "section": "史特拉克之怒"
         }
       ]
     },

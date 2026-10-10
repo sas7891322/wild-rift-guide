@@ -57,7 +57,7 @@
   try{
     const [res,augmentRes]=await Promise.all([
       fetch('assets/data/aram/heroes.json?v=110.0.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=81.0.0',{cache:'no-store'})
+      fetch('assets/data/aram/augments.json?v=115.3.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -173,6 +173,7 @@
           </summary>
           <div class="aaa-fit-card-body">
             <p class="aaa-fit-effect"><b>效果：</b>${esc(augment.effect||'效果資料載入失敗')}</p>
+            ${augment.correction?`<p><small>${esc(augment.correction.patch)} 已校正：${esc(augment.correction.fields)}；其他效果與推薦評級仍待複核。</small></p>`:''}
             <p class="aaa-fit-reason"><b>推薦判斷：</b>${esc(rating.reason||'')}</p>
           </div>
         </details>`;

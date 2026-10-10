@@ -10,7 +10,7 @@
   let activeTag='';
 
   try{
-    const response=await fetch('assets/data/aram/augments.json?v=81.0.0',{cache:'no-store'});
+    const response=await fetch('assets/data/aram/augments.json?v=115.3.0',{cache:'no-store'});
     if(!response.ok)throw new Error('Augment data load failed');
     const data=await response.json();
     const augments=Array.isArray(data.augments)?data.augments:[];
@@ -22,7 +22,7 @@
       return counts;
     },new Map());
 
-    if(state)state.textContent=`${data.gameVersion||'7.2b'}｜共 ${augments.length} 個｜${tagCounts.size} 種官方分類`;
+    if(state)state.textContent=`${data.versionLabel||data.gameVersion||'7.2b'}｜共 ${augments.length} 個｜${tagCounts.size} 種官方分類`;
 
     if(filterRoot){
       const groupHtml=Object.entries(tagGroups).map(([groupKey,group])=>`<section class="aram-augment-filter-group" data-filter-group="${escapeHtml(groupKey)}">
@@ -40,7 +40,8 @@
       const tagText=tags.join(' ');
       const searchText=`${augment.name||''} ${augment.effect||''} ${tagText}`.toLowerCase();
       const tagHtml=tags.length?`<div class="aram-augment-tags" aria-label="官方分類">${tags.map(tag=>`<button type="button" class="aram-augment-tag tag-${escapeHtml(tagToGroup.get(tag)||'other')}" data-card-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join('')}</div>`:'';
-      return `<article class="aram-augment-card" data-aram-augment-entry data-tags="${escapeHtml(tags.join('|'))}" data-search-text="${escapeHtml(searchText)}"><span>${number}</span><div><strong>${name}</strong>${tagHtml}<p>${effect}</p></div></article>`;
+      const correction=augment.correction?`<p><small>${escapeHtml(augment.correction.patch)} 已校正：${escapeHtml(augment.correction.fields)}；其他效果仍待複核。</small></p>`:'';
+      return `<article class="aram-augment-card" data-aram-augment-entry data-tags="${escapeHtml(tags.join('|'))}" data-search-text="${escapeHtml(searchText)}"><span>${number}</span><div><strong>${name}</strong>${tagHtml}<p>${effect}</p>${correction}</div></article>`;
     }).join('');
 
     const syncFilterButtons=()=>{

@@ -137,8 +137,15 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
   });
   document.addEventListener('click',event=>{ if(!shell.contains(event.target)) closeResults(); });
 
-  getJSON(dataPath).then(data=>{
+  Promise.all([
+    getJSON(dataPath),
+    getJSON('assets/data/hwei-profile.json?v=115.0.0').catch(()=>null)
+  ]).then(([data,hwei])=>{
     heroes=uniqueSearchHeroes(data);
+    if(hwei && !heroes.some(hero=>hero.id==='hwei')){
+      heroes.push({id:'hwei',name:hwei.name,enName:hwei.enName||'Hwei',aliases:['赫威','Hwei'],avatar:normalizeAvatar(hwei.avatar),detailHeroId:hwei.id,roles:[hwei.roleId||'mid']});
+      heroes.sort((a,b)=>(a.enName||a.name).localeCompare(b.enName||b.name,'en'));
+    }
     if(input.value.trim()) renderResults();
   }).catch(error=>{
     console.error(error);

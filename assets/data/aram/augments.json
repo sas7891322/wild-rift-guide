@@ -1,6 +1,6 @@
 {
   "gameVersion": "7.2b",
-  "dataVersion": "80.27.0",
+  "dataVersion": "115.3.0",
   "title": "符文大亂鬥增幅裝置",
   "total": 151,
   "display": "name-effect-official-tags",
@@ -206,13 +206,19 @@
       "name": "生命循環",
       "order": 16,
       "sourceRef": "IMG_7904",
-      "effect": "技能造成的傷害降低50%，但你會獲得護盾，可吸收等同所降低傷害150%的傷害。普攻造成額外10%魔攻的魔法傷害。",
+      "effect": "技能造成的傷害降低50%，但你會獲得護盾，可吸收等同所降低傷害200%的傷害。普攻造成額外10%魔攻的魔法傷害。",
       "officialTags": [
         "雷霆回音"
       ],
       "classificationSourceRefs": [
         "IMG_8057"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3a",
+        "reviewedAt": "2026-10-10",
+        "fields": "護盾係數",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+      }
     },
     {
       "id": "augment-017",
@@ -688,13 +694,19 @@
       "name": "疾風斬",
       "order": 53,
       "sourceRef": "IMG_7941",
-      "effect": "拖曳普攻鍵來蓄力，共有4個階段。初始階段：提升攻擊距離至11。蓄力後釋放，對前方敵軍發動1普攻。初始階段後：每0.6秒獲得1層堆層。每次普攻命中時，你會根據層數額外觸發1次普攻，每次普攻造成30%傷害。",
+      "effect": "拖曳普攻鍵來蓄力，共有4個階段。初始階段：提升攻擊距離至9。蓄力後釋放，對前方敵軍發動1普攻。初始階段後：每0.6秒獲得1層堆層。每次普攻命中時，你會根據層數額外觸發1次普攻，每次普攻造成30%傷害。",
       "officialTags": [
         "疾風回音"
       ],
       "classificationSourceRefs": [
         "IMG_8094"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3a",
+        "reviewedAt": "2026-10-10",
+        "fields": "攻擊距離",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+      }
     },
     {
       "id": "augment-054",
@@ -1338,13 +1350,19 @@
       "name": "加速巫術",
       "order": 103,
       "sourceRef": "IMG_7991",
-      "effect": "當你的技能命中英雄時，獲得1層加速巫術（最多100層）。每層賦予1.5技能加速。死亡時，失去50%堆層，損失的層數會轉為儲備層數。重生後，每次用技能命中英雄，會獲得1層加速巫術，並消耗1層儲備層數來獲取額外1層加速巫術。",
+      "effect": "當你的技能命中英雄時，獲得1層加速巫術（最多66層）。每層賦予1.5技能加速。死亡時，失去50%堆層，損失的層數會轉為儲備層數。重生後，每次用技能命中英雄，會獲得1層加速巫術，並消耗1層儲備層數來獲取額外1層加速巫術。",
       "officialTags": [
         "好運系列"
       ],
       "classificationSourceRefs": [
         "IMG_8145"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3a",
+        "reviewedAt": "2026-10-10",
+        "fields": "層數上限",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+      }
     },
     {
       "id": "augment-104",
@@ -1442,13 +1460,19 @@
       "name": "完美巔峰",
       "order": 111,
       "sourceRef": "IMG_7999",
-      "effect": "暴擊率上限為25%。每有1%溢出暴擊率，便會轉化為300%暴擊傷害，轉化上限為400%暴擊傷害。",
+      "effect": "暴擊率上限為44.44%。超出上限的暴擊率以444%的轉換率轉為暴擊傷害，轉換上限為400%。",
       "officialTags": [
         "暴擊"
       ],
       "classificationSourceRefs": [
         "IMG_8153"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3a",
+        "reviewedAt": "2026-10-10",
+        "fields": "暴擊率上限、轉換率與轉換上限",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+      }
     },
     {
       "id": "augment-112",
@@ -2012,5 +2036,7 @@
       ]
     }
   },
-  "classificationNote": "官方分類是卡片本身顯示的標籤；同一張增幅可能同時擁有多個標籤，例如「暴擊治療」同時屬於「暴擊」與「復原」。"
+  "classificationNote": "官方分類是卡片本身顯示的標籤；同一張增幅可能同時擁有多個標籤，例如「暴擊治療」同時屬於「暴擊」與「復原」。",
+  "versionLabel": "7.2b 基底・7.3a 部分校正",
+  "correctionNote": "4張增幅的公告變動欄位已更新至7.3a；其他效果、完整卡庫與分類評級仍待複核，不代表整庫已完成7.3a校正。"
 }

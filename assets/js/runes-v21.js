@@ -56,7 +56,7 @@ function render(){
   showDetail(initial);
 }
 (async()=>{
-  DATA=await getJSON("../assets/data/runes.json?v=109.0.0");
+  DATA=await getJSON("../assets/data/runes.json?v=115.3.0");
   document.querySelectorAll(".rune-tab").forEach(btn=>btn.addEventListener("click",()=>{
     document.querySelectorAll(".rune-tab").forEach(x=>x.classList.remove("active"));
     btn.classList.add("active"); current=btn.dataset.key; selectedId=null; render();
