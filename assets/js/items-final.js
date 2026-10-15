@@ -16,6 +16,10 @@
   function section(title, body, cls = '') {
     return body ? `<section class="equipment-detail-section ${cls}"><h3>${title}</h3>${body}</section>` : '';
   }
+  function patchMarkup(patch) {
+    return patch.groups.map(group => `<h4>${escape(group.title)}</h4>${group.rows.map(row => `<p>${escape(row.label)}：${escape(row.before)} → <strong>${escape(row.after)}</strong></p>`).join('')}`).join('')
+      + `<p>${escape(patch.note)}</p><a href="${escape(patch.source)}" target="_blank" rel="noopener noreferrer">官方來源 ↗</a>`;
+  }
   function detailHTML(item) {
     if (!item) return '<div class="empty">選取裝備查看詳細資訊。</div>';
     const stats = item.stats.map(s => `<li><span class="stat-dot" aria-hidden="true"></span><span>${escape(s)}</span></li>`).join('');
@@ -28,7 +32,7 @@
     if (item.evolvesFrom) evolution = `<p>${escape(item.evolutionCondition)}後，由下列裝備自動進化。</p><div class="tree-level tree-materials">${node(item.evolvesFrom)}</div>`;
     if (item.evolvesTo?.length) evolution += item.evolvesTo.map(id => `<p>${escape(find(id).evolutionCondition)}後進化：</p><div class="tree-level tree-materials">${node(id)}</div>`).join('');
     return `${history.length ? '<button type="button" class="equipment-back" data-detail-back>← 返回上一件裝備</button>' : ''}
-      <div class="equipment-detail-brand"><span class="brand-mark">WR</span><span>Wild Rift Guide · 7.3a</span></div>
+      <div class="equipment-detail-brand"><span class="brand-mark">WR</span><span>Wild Rift Guide · 7.3b</span></div>
       <header class="equipment-detail-header">
         <div class="equipment-detail-icon"><img src="${escape(item.icon)}" alt="${escape(item.name)}"></div>
         <div class="equipment-detail-title"><h2 tabindex="-1">${escape(item.name)}</h2><div class="detail-meta">${escape(item.stage)}</div><div class="detail-categories">${item.categories.map(c => `<span>${escape(c)}</span>`).join('')}</div></div>
@@ -36,7 +40,8 @@
       </header>
       ${section('能力值', `<ul class="item-stats">${stats}</ul>`, 'stats-section')}
       ${section('裝備效果', effects ? `<div class="item-passives">${effects}</div>` : '<p class="detail-empty-note">此裝備僅提供上述能力值。</p>', 'passive-section')}
-      ${item.patch73a?section('7.3a 官方調整',item.patch73a.groups.map(g=>`<h4>${escape(g.title)}</h4>${g.rows.map(r=>`<p>${escape(r.label)}：${escape(r.before)} → <strong>${escape(r.after)}</strong></p>`).join('')}`).join('')+`<p>${escape(item.patch73a.note)}</p><a href="${escape(item.patch73a.source)}" target="_blank" rel="noopener noreferrer">官方來源 ↗</a>`):''}
+      ${item.patch73bChange ? section('7.3b 官方調整', patchMarkup(item.patch73bChange)) : ''}
+      ${item.patch73a ? section('歷史調整', `<details><summary>7.3a 官方調整（展開）</summary><p>以下保留歷史前後值；與7.3b重疊的項目以本頁能力值、效果及7.3b調整為準，未變動項目沿用。</p>${patchMarkup(item.patch73a)}</details>`) : ''}
       ${section('合成材料', recipe, 'build-tree')}
       ${section('可合成裝備', upgrades.length ? `<div class="tree-level tree-materials">${upgrades.map(node).join('')}</div>` : '', 'build-tree')}
       ${section('裝備進化', evolution, 'build-tree')}`;
@@ -95,7 +100,7 @@
   $('#item-search').oninput = render;
   async function load() {
     try {
-      const response = await fetch('../assets/data/items-7.3.json?v=115.3.0');
+      const response = await fetch('../assets/data/items-7.3.json?v=116.0.0');
       if (!response.ok) throw new Error('無法讀取裝備資料');
       data = await response.json();
       if (!Array.isArray(data.items) || !data.items.length) throw new Error('裝備資料格式錯誤');

@@ -6,12 +6,17 @@ const labels = {keystone:"關鍵符文",conquest:"征服",precision:"精準",res
 const runeEscape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function runeIcon(x){return x.icon?`<img src="${x.icon}" alt="${x.name}">`:'<span class="rune-text-icon" aria-label="圖示待補">速</span>';}
+function runePatchMarkup(patch){
+  if(!patch) return '';
+  return `<details class="rune-patch-change"><summary>7.3b 官方調整（展開）</summary>${patch.groups.map(group=>`<h3>${runeEscape(group.title)}</h3>${group.rows.map(row=>`<p>${runeEscape(row.label)}：${runeEscape(row.before)} → <strong>${runeEscape(row.after)}</strong></p>`).join('')}`).join('')}<p>${runeEscape(patch.note)}</p><p><a href="${runeEscape(patch.source)}" target="_blank" rel="noopener noreferrer">官方7.3b來源 ↗</a></p></details>`;
+}
 function detailMarkup(x){
   if(!x) return '<div class="empty">將滑鼠移到符文上，或點擊符文查看說明。</div>';
   return `${runeIcon(x)}`+`
     <h2>${x.name}</h2>
     <div class="detail-meta rune-accent-${current}">${x.tag || labels[current]}</div>
     <div class="detail-description">${Array.isArray(x.details) && x.details.length ? x.details.map(line=>`<p>${runeEscape(line)}</p>`).join('') : runeEscape(x.description || "待補資料")}</div>
+    ${runePatchMarkup(x.patch73bChange)}
     <div class="detail-chips"><span class="chip rune-chip-${current}">${labels[current]}</span></div>`;
 }
 function showDetail(x){
@@ -56,7 +61,7 @@ function render(){
   showDetail(initial);
 }
 (async()=>{
-  DATA=await getJSON("../assets/data/runes.json?v=115.3.0");
+  DATA=await getJSON("../assets/data/runes.json?v=116.0.0");
   document.querySelectorAll(".rune-tab").forEach(btn=>btn.addEventListener("click",()=>{
     document.querySelectorAll(".rune-tab").forEach(x=>x.classList.remove("active"));
     btn.classList.add("active"); current=btn.dataset.key; selectedId=null; render();
