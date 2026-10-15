@@ -1,0 +1,16 @@
+/* v118 adds field-level review notes without changing the guide layout. */
+.tier-evidence-note{display:inline-block;padding:3px 7px;border:1px solid rgba(211,174,92,.28);border-radius:6px;color:#e5ca8f;background:rgba(211,174,92,.06);font-size:11px;line-height:1.45;font-weight:500}
+.hero-title-row .tier-evidence-note{max-width:110px}
+.editorial-review-v118 .editorial-field{margin-block:16px}
+.editorial-review-v118 .editorial-condition{color:#b7c6cf;font-size:.92em}
+.editorial-pending{margin-block:12px;padding:12px 14px;border:1px solid rgba(211,174,92,.35);border-left:3px solid #d3ae5c;border-radius:10px;background:rgba(211,174,92,.065);overflow-wrap:anywhere}
+.editorial-pending strong,.editorial-pending-summary{color:#e5ca8f}
+.editorial-pending p{margin:6px 0 0!important;color:#c8d1d8;font-size:.94em;line-height:1.65}
+.editorial-checks{margin-block:20px;border:1px solid rgba(138,169,187,.18);border-radius:12px;padding:0 14px}
+.editorial-checks>summary{cursor:pointer;padding:14px 0;color:#dce7ec;line-height:1.5}
+.editorial-check{padding:12px 0;border-top:1px solid rgba(138,169,187,.14);overflow-wrap:anywhere}
+.editorial-check>strong>span{display:inline-block;margin-right:6px;color:#94cfb1;font-size:.84em}
+.editorial-check.is-pending>strong>span{color:#e5ca8f}
+.editorial-check p{margin:7px 0;line-height:1.65}
+.editorial-check .hero-review-source-links{font-size:.88em}
+.editorial-review-v118 .patch73b-first-pass-history{margin-top:22px}
