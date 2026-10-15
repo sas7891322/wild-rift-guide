@@ -35,6 +35,11 @@
 .update-v115 .update-disclaimer { border-left:3px solid #d46770; padding:14px; margin:22px 0; border-radius:0 12px 12px 0; background:rgba(165,67,84,.08); color:#a8b8c8; font-size:13px; line-height:1.85; }
 .update-source { margin:20px 0; font-size:14px; }
 .update-history-v115 { margin-top:24px; }
+.update-history-v116 { margin-top:24px; }
+.update-history-v116 > summary { padding:16px; cursor:pointer; color:#e4edf2; line-height:1.7; }
+.update-history-v116 > summary:focus-visible { outline:2px solid #dec483; outline-offset:-3px; }
+.update-v116 .tier-change-card.stable .tier-change-ranks strong { color:#d8e6ef; }
+.update-v116 .tier-change-card.stable .tier-change-ranks small { color:#9eb1c2; font-size:12px; }
 .update-history-v115 > summary,.update-v115 .official-history-item > summary { padding:16px; cursor:pointer; color:#e4edf2; line-height:1.7; }
 .update-history-v115 > summary::marker,.update-v115 .official-history-item > summary::marker { color:#dec483; }
 .update-history-v115 > summary:focus-visible,.update-v115 summary:focus-visible { outline:2px solid #dec483; outline-offset:-3px; }
