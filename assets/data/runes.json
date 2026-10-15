@@ -6,15 +6,29 @@
       "name": "死亡電刑",
       "icon": "../assets/images/runes/v109/electrocute.webp",
       "tag": "爆發傷害",
-      "description": "3 秒內以普攻或技能命中同一名敵方英雄 3 次，造成額外適性傷害。\n傷害：40–210（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。\n冷卻：20–13 秒（隨等級）。",
-      "status": "7.3 遊戲截圖已校對",
+      "description": "3 秒內以普攻或技能命中同一名敵方英雄 3 次，造成額外適性傷害。\n傷害：60–210（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。\n冷卻：20–13 秒（隨等級）。",
+      "status": "7.3b 官方公告差異已校對；其餘沿用遊戲截圖",
       "details": [
         "3 秒內以普攻或技能命中同一名敵方英雄 3 次，造成額外適性傷害。",
-        "傷害：40–210（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
+        "傷害：60–210（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
         "冷卻：20–13 秒（隨等級）。"
       ],
-      "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9678.jpg"
+      "dataVersion": "7.3b",
+      "sourceScreenshot": "關鍵符文/IMG_9678.jpg",
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "damage",
+            "title": "死亡電刑",
+            "rows": [
+              { "label": "傷害", "before": "40–210（隨等級）＋10%額外物攻＋5%魔攻", "after": "60–210（隨等級）＋10%額外物攻＋5%魔攻", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "前期基礎傷害提高；滿級基礎傷害、加成係數與冷卻未改。"
+      }
     },
     {
       "id": "dark-harvest",
@@ -110,15 +124,30 @@
       "name": "不死之握",
       "icon": "../assets/images/runes/v109/grasp.webp",
       "tag": "坦克・治療",
-      "description": "戰鬥中每 3 秒，下一次對敵方英雄的攻擊獲得強化。\n額外魔法傷害：3.3% 最大生命。治療：1.3% 最大生命。\n永久增加 10 生命；遠程英雄的效果減少 60%。",
-      "status": "7.3 遊戲截圖已校對",
+      "description": "戰鬥中每 3 秒，下一次對敵方英雄的攻擊獲得強化。\n額外魔法傷害：3% 最大生命。治療：1.3% 最大生命。\n永久增加 8 生命；遠程英雄的效果減少 60%。",
+      "status": "7.3b 官方公告差異已校對；其餘沿用遊戲截圖",
       "details": [
         "戰鬥中每 3 秒，下一次對敵方英雄的攻擊獲得強化。",
-        "額外魔法傷害：3.3% 最大生命。治療：1.3% 最大生命。",
-        "永久增加 10 生命；遠程英雄的效果減少 60%。"
+        "額外魔法傷害：3% 最大生命。治療：1.3% 最大生命。",
+        "永久增加 8 生命；遠程英雄的效果減少 60%。"
       ],
-      "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9684.PNG"
+      "dataVersion": "7.3b",
+      "sourceScreenshot": "關鍵符文/IMG_9684.PNG",
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "effect",
+            "title": "不死之握",
+            "rows": [
+              { "label": "傷害", "before": "3.3%最大生命", "after": "3%最大生命", "kind": "change" },
+              { "label": "永久生命成長", "before": "10", "after": "8", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "傷害與永久生命成長降低；治療比例及遠程效果折減未改。"
+      }
     },
     {
       "id": "guardian",
@@ -143,15 +172,29 @@
       "name": "艾莉",
       "icon": "../assets/images/runes/v109/aery.webp",
       "tag": "消耗・保護",
-      "description": "普攻與技能將艾莉送到目標身上；敵軍受到傷害，友軍獲得護盾。艾莉回到身邊後才能再次送出。\n傷害：15–70（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。\n護盾：25–120（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
-      "status": "7.3 遊戲截圖已校對",
+      "description": "普攻與技能將艾莉送到目標身上；敵軍受到傷害，友軍獲得護盾。艾莉回到身邊後才能再次送出。\n傷害：15–70（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。\n護盾：20–100（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
+      "status": "7.3b 官方公告差異已校對；其餘沿用遊戲截圖",
       "details": [
         "普攻與技能將艾莉送到目標身上；敵軍受到傷害，友軍獲得護盾。艾莉回到身邊後才能再次送出。",
         "傷害：15–70（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。",
-        "護盾：25–120（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。"
+        "護盾：20–100（隨等級）＋10% 額外物理攻擊＋5% 魔法攻擊。"
       ],
-      "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9686.PNG"
+      "dataVersion": "7.3b",
+      "sourceScreenshot": "關鍵符文/IMG_9686.PNG",
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "shield",
+            "title": "艾莉",
+            "rows": [
+              { "label": "護盾", "before": "25–120（隨等級）＋10%額外物攻＋5%魔攻", "after": "20–100（隨等級）＋10%額外物攻＋5%魔攻", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "僅基礎護盾降低；對敵傷害與護盾加成係數未改。"
+      }
     },
     {
       "id": "arcane-comet",
@@ -229,16 +272,30 @@
       "name": "凌虐",
       "icon": "../assets/images/runes/v109/cheap-shot.webp",
       "tag": "鎖定行動受限的敵軍",
-      "description": "傷害行動受限的敵軍時，造成額外 10–45 真實傷害。\n冷卻：7 秒。",
+      "description": "傷害行動受限的敵軍時，造成額外 10–45 真實傷害。\n冷卻：5 秒。",
       "row": 1,
       "rowOrder": 1,
       "details": [
         "傷害行動受限的敵軍時，造成額外 10–45 真實傷害。",
-        "冷卻：7 秒。"
+        "冷卻：5 秒。"
       ],
-      "status": "7.3 遊戲截圖已校對",
-      "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9692.PNG"
+      "status": "7.3b 官方公告差異已校對；其餘沿用遊戲截圖",
+      "dataVersion": "7.3b",
+      "sourceScreenshot": "征服/IMG_9692.PNG",
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "cooldown",
+            "title": "凌虐",
+            "rows": [
+              { "label": "冷卻", "before": "7秒", "after": "5秒", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "本次調整的是凌虐（Cheap Shot），不是即刻衝擊（Sudden Impact）；額外真實傷害沿用。"
+      }
     },
     {
       "id": "sudden-impact",

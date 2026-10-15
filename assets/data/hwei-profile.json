@@ -7,7 +7,7 @@
   "role": "中路",
   "tier": "A",
   "provisional": true,
-  "patch": "7.3a",
+  "patch": "7.3b",
   "position": "遠距法師／三主題施法",
   "tags": [
     "暫定評級",
@@ -89,7 +89,7 @@
     "後期": "先看敵方控制與進場技能，再選傷害、增益或控制主題；不要急著交掉自保。"
   },
   "summary": "先選主題再選施法，以遠距清線與控制建立輸出空間；主一技、副三技，保留控制防突進。",
-  "sourceNote": "v113｜赫威上市初步配置。<a href=\"https://www.wildriftfire.com/guide/hwei\" target=\"_blank\" rel=\"noopener noreferrer\">配裝及技能優先級參考</a>、<a href=\"https://wildriftcore.com/en/guides/hwei-wild-rift-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">15級加點交叉參考</a>。只採用可交叉核對的加點與機制，不採參考頁的舊鞋子附魔或未驗證勝率；裝備以本站7.3現行目錄為準。技能截圖數值保留來源限制。",
+  "sourceNote": "v113｜赫威上市初步配置。<a href=\"https://www.wildriftfire.com/guide/hwei\" target=\"_blank\" rel=\"noopener noreferrer\">配裝及技能優先級參考</a>、<a href=\"https://wildriftcore.com/en/guides/hwei-wild-rift-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">15級加點交叉參考</a>。只採用可交叉核對的加點與機制，不採參考頁的舊鞋子附魔或未驗證勝率；裝備以本站7.3現行目錄為準。技能截圖數值保留來源限制。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
   "avatar": "../assets/images/heroes/hwei/portrait.webp",
   "abilities": [
     {
@@ -99,13 +99,20 @@
       "icon": "../assets/images/heroes/hwei/p.webp",
       "summary": "傷害技能命中敵方英雄後，以筆跡標記目標 4 秒。",
       "details": [
-        "再次以傷害技能命中標記敵人，消耗筆跡並引爆範圍魔法傷害；7.3a為40–285（隨等級）＋30%魔攻。每項技能只能對同一目標觸發此效果一次。",
-        "本段傷害已用官方7.3a公告取代舊截圖；其他未公布數值仍按原來源標示，未冒充完整成長表。"
+        "再次以傷害技能命中標記敵人，消耗筆跡並引爆範圍魔法傷害；7.3b為30–280（隨等級）＋25%魔攻。每項技能只能對同一目標觸發此效果一次。",
+        "本段傷害採官方7.3b公告；舊7.3a數值保留於歷史紀錄，未公布的完整各級數值不補推測表。"
       ],
       "patch73aValues": [
         {
           "label": "被動｜筆仙真跡 · 傷害",
           "value": "40–285（隨等級）＋30%魔攻",
+          "kind": "change"
+        }
+      ],
+      "patch73bValues": [
+        {
+          "label": "被動｜筆仙真跡 · 傷害",
+          "value": "30–280（隨等級）＋25%魔攻",
           "kind": "change"
         }
       ]
@@ -143,9 +150,26 @@
       "summary": "增益主題：提供移動、護盾或回魔效果。截圖顯示冷卻：17 秒。",
       "details": [
         "2 → 1｜川流湍急：畫出直線前進、持續 4 秒的水流，提高自身與友方英雄跑速；截圖顯示加成為 30%（30＋3% 魔攻）。",
-        "2 → 2｜明鏡止水：在目標位置創造持續 3 秒的防護水池，提供可吸收 60＋35% 魔攻傷害的護盾。護盾在 1.5 秒內逐漸增強；截圖原文顯示最多可額外吸收 108＋7.1% 魔攻傷害，此處存在轉錄疑義：外部攻略記為 71% 魔攻，與原截圖記錄的 7.1% 不同；暫不以此推算護盾，待遊戲內面板確認。除赫威外，其他友方英雄獲得的護盾值減少 15%。",
-        "2 → 3｜迴旋光暈：畫出三道光暈圍繞自身，下三次技能或普攻額外造成 30＋15% 魔攻的魔法傷害，命中時回復 45 魔力。",
+        "2 → 2｜明鏡止水：在目標位置創造持續3秒的防護水池；7.3b初始護盾為50/70/90/110＋30%魔攻，逐漸增強至最大98/118/138/158＋60%魔攻。最大護盾是上限，不與初始護盾相加。原來源記錄的1.5秒增強過程與對其他友軍減少15%護盾未在本次公告改動。",
+        "2 → 3｜迴旋光暈：畫出三道光暈圍繞自身；下三次技能或普攻的額外基礎傷害在7.3b改為20/30/40/50，原來源的15%魔攻係數未被本次公告改動。命中回魔原截圖為45，未取得完整各級回魔表，不將單一截圖值當作全等級數值。",
         "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。"
+      ],
+      "patch73bValues": [
+        {
+          "label": "二技派生2｜明鏡止水 · 初始護盾",
+          "value": "50/70/90/110＋30%魔攻",
+          "kind": "change"
+        },
+        {
+          "label": "二技派生2｜明鏡止水 · 最大護盾",
+          "value": "98/118/138/158＋60%魔攻",
+          "kind": "change"
+        },
+        {
+          "label": "二技派生3｜迴旋光暈 · 額外基礎傷害",
+          "value": "20/30/40/50",
+          "kind": "change"
+        }
       ]
     },
     {
@@ -157,8 +181,25 @@
       "details": [
         "3 → 1｜死神面影：發射鬼面，對第一名命中的敵人造成 70＋70% 魔攻的魔法傷害，並使其恐懼 1 秒。",
         "3 → 2｜深淵凝視：在目標位置畫出提供視野的魔眼，鎖定最近的敵方英雄並發射追蹤導彈。導彈對第一名命中的敵人造成 70＋70% 魔攻的魔法傷害，定身 1.25 秒，並揭露其位置 2.5 秒。",
-        "3 → 3｜碎骨大顎：巨顎對命中的敵人造成 70＋70% 魔攻的魔法傷害，將其拉向中心，施加 40% 緩速，在 1.25 秒內衰減至失效。",
+        "3 → 3｜碎骨大顎：7.3b施放距離為7，傷害60/110/160/210＋60%魔攻，並調整顎部命中框（官方未列精確尺寸）。將命中敵人拉向中心；原來源記錄的40%緩速於1.25秒內衰減，本次公告未調整。",
         "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。"
+      ],
+      "patch73bValues": [
+        {
+          "label": "三技派生3｜碎骨大顎 · 命中框",
+          "value": "顎部命中框最佳化；未公布精確尺寸",
+          "kind": "rule"
+        },
+        {
+          "label": "三技派生3｜碎骨大顎 · 施放距離",
+          "value": "7",
+          "kind": "change"
+        },
+        {
+          "label": "三技派生3｜碎骨大顎 · 傷害",
+          "value": "60/110/160/210＋60%魔攻",
+          "kind": "change"
+        }
       ]
     },
     {
@@ -427,8 +468,8 @@
     "matchupBasis": "新英雄對局為射程、位移與控制互動的條件判斷，尚無可靠勝率樣本；較有利不代表能無視敵方控制。",
     "scope": "配裝、符文、召喚師技能、15級建議加點、機制對局；勝率與部分完整技能成長值尚待實機資料"
   },
-  "reviewStatus": "v115-first-pass-delta-reviewed",
-  "reviewedAt": "2026-10-01",
+  "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+  "reviewedAt": "2026-10-15",
   "guideContentAudit": "v112-7.3-three-lanes",
   "skillSequenceNote": "編輯建議：1級一技、2級三技、3級二技；主一技、副三技，大絕於 5／9／13 級提升。R 指「絕望螺旋」，不是選取主題時的取消操作。此表已比對激鬥峽谷攻略，未宣稱完成遊戲內實測。",
   "matchupReview113": {
@@ -458,7 +499,7 @@
   "skillDataCaveats": [
     "逐級表是可用的編輯建議，不是唯一加點。",
     "技能面板截圖未記錄完整等級／技能加速；截圖冷卻不當作零技能加速基礎冷卻。",
-    "二技護盾係數的 7.1%／71% 差異尚未實機確認，不強行覆寫。"
+    "明鏡止水現行初始／最大護盾已由英繁官方7.3b公告確認：50/70/90/110＋30%魔攻／98/118/138/158＋60%魔攻；舊截圖7.1%不再使用。其他未公告的完整技能成長表仍待遊戲內資料。"
   ],
   "patch73AttackSpeed": null,
   "officialReview114": {
@@ -471,10 +512,10 @@
     "durabilityChange": false,
     "attackSpeedListed": false,
     "changedSkills": [],
-    "note": "官方主題與子技能名稱已對照；保留你提供的被動原圖。官方7.3附錄未列赫威攻速；護盾係數與完整各級數值仍待實機確認。",
-    "warning": "明鏡止水的7.1%／71%係數疑義未解，不將其標為已核實。"
+    "note": "歷史紀錄：當時已核對主題與子技能名稱，並保留使用者提供的被動原圖。護盾數值後於7.3b取得官方確認；其他未公布的完整各級表仍待遊戲內資料。",
+    "warning": "歷史備註：當時明鏡止水7.1%／71%係數有疑義；此項已由7.3b官方公告解除，現行最大護盾請用60%魔攻，不沿用歷史警告。"
   },
-  "version": "v115",
+  "version": "v116",
   "patch73aReview": {
     "version": "v115",
     "date": "2026-10-01",
@@ -543,6 +584,110 @@
           "kind": "change"
         }
       ]
+    }
+  ],
+  "patch73bNumbers": [
+    {
+      "key": "P",
+      "title": "被動｜筆仙真跡",
+      "rows": [
+        {
+          "label": "傷害",
+          "before": "40–285（隨等級）＋30%魔攻",
+          "after": "30–280（隨等級）＋25%魔攻",
+          "kind": "change"
+        }
+      ]
+    },
+    {
+      "key": "W",
+      "title": "二技派生2｜明鏡止水",
+      "rows": [
+        {
+          "label": "初始護盾",
+          "before": "60/80/100/120＋35%魔攻",
+          "after": "50/70/90/110＋30%魔攻",
+          "kind": "change"
+        },
+        {
+          "label": "最大護盾",
+          "before": "108/128/148/168＋71%魔攻",
+          "after": "98/118/138/158＋60%魔攻",
+          "kind": "change"
+        }
+      ]
+    },
+    {
+      "key": "W",
+      "title": "二技派生3｜迴旋光暈",
+      "rows": [
+        {
+          "label": "額外基礎傷害",
+          "before": "30/40/50/60",
+          "after": "20/30/40/50",
+          "kind": "change"
+        }
+      ]
+    },
+    {
+      "key": "E",
+      "title": "三技派生3｜碎骨大顎",
+      "rows": [
+        {
+          "label": "命中框",
+          "before": "原命中框",
+          "after": "顎部命中框最佳化；未公布精確尺寸",
+          "kind": "rule"
+        },
+        {
+          "label": "施放距離",
+          "before": "7.5",
+          "after": "7",
+          "kind": "change"
+        },
+        {
+          "label": "傷害",
+          "before": "70/120/170/220＋70%魔攻",
+          "after": "60/110/160/210＋60%魔攻",
+          "kind": "change"
+        }
+      ]
+    }
+  ],
+  "patch73bReview": {
+    "version": "v116",
+    "date": "2026-10-15",
+    "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+    "status": "first-wave-official-delta",
+    "directChange": true,
+    "direction": "nerf",
+    "affectedItems": [],
+    "affectedRunes": [],
+    "jungleChange": false,
+    "previousTier": "A",
+    "currentTier": "A",
+    "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+    "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+    "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+    "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+    "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+    "notes": [
+      "被動、二技護盾／光暈及三技碎骨大顎下修；碎骨大顎距離縮至7，先重新抓站位與斬殺線。護盾採官方新值，不再用舊截圖7.1%推算。"
+    ],
+    "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+  },
+  "sourceCorrections": [
+    {
+      "id": "hwei-ww-shield-ratio",
+      "version": "v116",
+      "date": "2026-10-15",
+      "status": "resolved-by-official-patch",
+      "sources": [
+        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
+      ],
+      "previousIssue": "舊截圖轉錄為7.1%魔攻，外部資料為71%，此前沒有足夠證據覆寫。",
+      "resolution": "7.3b英繁官方一致列舊最大護盾71%魔攻、新最大護盾60%魔攻；現行頁改用官方7.3b完整護盾數值。"
     }
   ]
 }

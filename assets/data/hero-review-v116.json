@@ -1,0 +1,510 @@
+{
+  "version": "v116",
+  "patch": "7.3b",
+  "date": "2026-10-15",
+  "baseCommit": "4046a14e341f16b4e2a8ce51403e18b287d5c2ae",
+  "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+  "sources": [
+    "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+    "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
+  ],
+  "scope": "官方直接調整的8位英雄／12份分路配置首波校正；其餘191份尚未完成7.3b逐頁審查。",
+  "methodology": "官方英繁公告交叉核對；保留前版Tier及預設配置，不宣稱新版本勝率或遊戲內實測。",
+  "tierChanges": [],
+  "buildChanges": [],
+  "runeChanges": [],
+  "profiles": [
+    {
+      "id": "jhin",
+      "baseId": "jhin",
+      "name": "燼",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S",
+      "direction": "buff",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "S",
+        "currentTier": "S",
+        "tierReason": "保留S（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "暴擊修正提高，第四發已損失生命傷害於10級達25%；中期更早取得完整收尾能力，仍須處理換彈空窗。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "yunara",
+      "baseId": "yunara",
+      "name": "尤娜拉",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "S+",
+      "direction": "nerf",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [
+          "wr73-9087"
+        ],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "S+",
+        "currentTier": "S+",
+        "tierReason": "保留S+（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "保留原預設出裝與情境配置；引用的7.3b變動裝備由共用目錄同步，回城購買金額與被動門檻須按新值判斷。未宣稱這套已經過新版勝率驗證。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "一技主動、被動基礎傷害各減5；大絕二、三級冷卻增加。雲陶便宜100金幣不能直接視為抵銷全部英雄削弱。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "senna",
+      "baseId": "senna",
+      "name": "姍娜",
+      "role": "飛龍路",
+      "roleId": "duo",
+      "tier": "B",
+      "direction": "nerf",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "B",
+        "currentTier": "B",
+        "tierReason": "保留B（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每魂物攻改0.9，標準暴擊修正改80%，一技基礎傷害各減20；保留安全抽魂與團隊功能，不沿用舊版成長估算。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "tryndamere-baron",
+      "baseId": "tryndamere",
+      "name": "泰達米爾",
+      "role": "巴龍路",
+      "roleId": "baron",
+      "tier": "A",
+      "direction": "buff",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [
+          "wr73-9087"
+        ],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "保留原預設出裝與情境配置；引用的7.3b變動裝備由共用目錄同步，回城購買金額與被動門檻須按新值判斷。未宣稱這套已經過新版勝率驗證。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留E > Q > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每點怒氣固定提供0.5%暴擊率，三技基礎傷害與額外物攻係數提高；前期仍應先累積怒氣，雲陶降價不代表零裝備即可無視控制。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "volibear-baron",
+      "baseId": "volibear",
+      "name": "弗力貝爾",
+      "role": "巴龍路",
+      "roleId": "baron",
+      "tier": "S",
+      "direction": "buff",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [
+          "grasp"
+        ],
+        "jungleChange": false,
+        "previousTier": "S",
+        "currentTier": "S",
+        "tierReason": "保留S（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；已核對本配置引用的7.3b變動符文，新值由共用符文目錄呈現，不因削弱就自動替換整套。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留W > Q > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "二技物攻係數與後續等級的二次撕咬回血提高；仍需保留標記並撐到第二次二技，不能把首咬誤認為強化治療。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "yasuo-baron",
+      "baseId": "yasuo",
+      "name": "犽宿",
+      "role": "巴龍路",
+      "roleId": "baron",
+      "tier": "C",
+      "direction": "buff",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [
+          "grasp"
+        ],
+        "jungleChange": false,
+        "previousTier": "C",
+        "currentTier": "C",
+        "tierReason": "保留C（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；已核對本配置引用的7.3b變動符文，新值由共用符文目錄呈現，不因削弱就自動替換整套。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "標準暴擊修正提高至95%，護盾上限提高；維持原暴擊配置，沒有把被動修正誤當暴擊率，也不因官方增強就直接升Tier。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "nocturne-jungle",
+      "baseId": "nocturne",
+      "name": "夜曲",
+      "role": "打野",
+      "roleId": "jungle",
+      "tier": "S",
+      "direction": "nerf",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [],
+        "affectedRunes": [
+          "electrocute"
+        ],
+        "jungleChange": true,
+        "previousTier": "S",
+        "currentTier": "S",
+        "tierReason": "保留S（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；已核對本配置引用的7.3b變動符文，新值由共用符文目錄呈現，不因削弱就自動替換整套。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "生命成長與一技基礎傷害下降，大絕各級多10秒；一技物攻加成滿級反而提高，主要重估前期清野與開大頻率。",
+          "巨喙鳥生命提高，清野與入侵時機需重新觀察；本輪未提供未實測的清野秒數。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "tryndamere-jungle",
+      "baseId": "tryndamere",
+      "name": "泰達米爾",
+      "role": "打野",
+      "roleId": "jungle",
+      "tier": "A",
+      "direction": "buff",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [
+          "wr73-9087"
+        ],
+        "affectedRunes": [],
+        "jungleChange": true,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "保留原預設出裝與情境配置；引用的7.3b變動裝備由共用目錄同步，回城購買金額與被動門檻須按新值判斷。未宣稱這套已經過新版勝率驗證。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每點怒氣固定提供0.5%暴擊率，三技基礎傷害與額外物攻係數提高；前期仍應先累積怒氣，雲陶降價不代表零裝備即可無視控制。",
+          "巨喙鳥生命提高，清野與入侵時機需重新觀察；本輪未提供未實測的清野秒數。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "volibear-jungle",
+      "baseId": "volibear",
+      "name": "弗力貝爾",
+      "role": "打野",
+      "roleId": "jungle",
+      "tier": "A",
+      "direction": "buff",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": true,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留W > Q > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "二技物攻係數與後續等級的二次撕咬回血提高；仍需保留標記並撐到第二次二技，不能把首咬誤認為強化治療。",
+          "巨喙鳥生命提高，清野與入侵時機需重新觀察；本輪未提供未實測的清野秒數。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "yasuo-mid",
+      "baseId": "yasuo",
+      "name": "犽宿",
+      "role": "中路",
+      "roleId": "mid",
+      "tier": "B",
+      "direction": "buff",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "B",
+        "currentTier": "B",
+        "tierReason": "保留B（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "標準暴擊修正提高至95%，護盾上限提高；維持原暴擊配置，沒有把被動修正誤當暴擊率，也不因官方增強就直接升Tier。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "senna-support",
+      "baseId": "senna",
+      "name": "姍娜",
+      "role": "輔助",
+      "roleId": "support",
+      "tier": "A",
+      "direction": "nerf",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每魂物攻改0.9，標準暴擊修正改80%，一技基礎傷害各減20；保留安全抽魂與團隊功能，不沿用舊版成長估算。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    },
+    {
+      "id": "hwei-mid",
+      "baseId": "hwei",
+      "name": "赫威",
+      "role": "中路",
+      "roleId": "mid",
+      "tier": "A",
+      "direction": "nerf",
+      "review": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "被動、二技護盾／光暈及三技碎骨大顎下修；碎骨大顎距離縮至7，先重新抓站位與斬殺線。護盾採官方新值，不再用舊截圖7.1%推算。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "wr73-8995",
+      "name": "妖夢鬼刀",
+      "direction": "buff"
+    },
+    {
+      "id": "wr73-9261",
+      "name": "日輪的加冕",
+      "direction": "buff"
+    },
+    {
+      "id": "wr73-9291",
+      "name": "荊棘之甲",
+      "direction": "nerf"
+    },
+    {
+      "id": "wr73-9311",
+      "name": "好戰者鎧甲",
+      "direction": "nerf"
+    },
+    {
+      "id": "wr73-9068",
+      "name": "史提克彈簧刀",
+      "direction": "buff"
+    },
+    {
+      "id": "wr73-9087",
+      "name": "雲陶狂箭",
+      "direction": "buff"
+    }
+  ],
+  "runes": [
+    {
+      "id": "electrocute",
+      "name": "死亡電刑",
+      "direction": "buff"
+    },
+    {
+      "id": "cheap-shot",
+      "name": "凌虐",
+      "direction": "buff"
+    },
+    {
+      "id": "grasp",
+      "name": "不死之握",
+      "direction": "nerf"
+    },
+    {
+      "id": "aery",
+      "name": "艾莉",
+      "direction": "nerf"
+    }
+  ],
+  "pending": [
+    "其餘191份英雄分路攻略的7.3b逐頁重評尚未進行。",
+    "本輪沿用前版Tier、出裝與符文搭配，待新版對局樣本與同分路資料後再評估升降。",
+    "未做遊戲內手機連招／命中框／完整各級數值實測。",
+    "史矛德一技說明與維迦一技距離修正未公開精確前後值，不自行補造。"
+  ],
+  "resolved": [
+    {
+      "id": "hwei-ww-shield-ratio",
+      "version": "v116",
+      "date": "2026-10-15",
+      "status": "resolved-by-official-patch",
+      "sources": [
+        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
+      ],
+      "previousIssue": "舊截圖轉錄為7.1%魔攻，外部資料為71%，此前沒有足夠證據覆寫。",
+      "resolution": "7.3b英繁官方一致列舊最大護盾71%魔攻、新最大護盾60%魔攻；現行頁改用官方7.3b完整護盾數值。"
+    }
+  ],
+  "itemConditionNotes": {
+    "profileIds": [
+      "maokai-baron",
+      "nautilus-baron",
+      "skarner-baron",
+      "nunu-and-willump-jungle",
+      "poppy-jungle"
+    ],
+    "count": 5,
+    "scope": "僅補好戰之心1250額外生命觸發門檻與購買時機提醒，不更改裝備清單、Tier或英雄校正標章。"
+  },
+  "counts": {
+    "uniqueHeroes": 8,
+    "reviewedProfiles": 12,
+    "totalProfiles": 203,
+    "remainingProfiles": 191,
+    "officialHeroNumericRows": 25,
+    "officialHeroRuleRows": 1,
+    "updatedProfileRows": 36,
+    "items": 6,
+    "itemRows": 8,
+    "runes": 4,
+    "runeRows": 5,
+    "jungleRows": 4,
+    "aaaAugments": 9,
+    "aaaRows": 11,
+    "bugFixes": 4,
+    "tierChanges": 0,
+    "buildChanges": 0,
+    "runeBuildChanges": 0
+  }
+}

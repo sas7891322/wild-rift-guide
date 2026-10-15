@@ -1,6 +1,6 @@
 {
-  "version": "7.3a-v115",
-  "updatedAt": "2026-10-01",
+  "version": "7.3b-v116-first-pass",
+  "updatedAt": "2026-10-15",
   "source": "使用者提供的七類遊戲內截圖",
   "screenshotCount": 560,
   "categories": [
@@ -12,7 +12,7 @@
     "輔助",
     "鞋子"
   ],
-  "notes": "7.3a：4件公告裝備數值已同步；舊截圖只作歷史來源，以文字中的最新版本為準。 依使用者提供的遊戲內截圖整理；171 件可購買裝備及 6 件進化裝備。數值與效果為文字整理，合成材料依截圖建立；同名裝備跨分類共用。",
+  "notes": "7.3b：6件公告裝備數值已同步，保留7.3a與v115.3勘誤；舊截圖只作歷史來源，以文字中的最新版本為準。依使用者提供的遊戲內截圖整理；171 件可購買裝備及 6 件進化裝備。數值與效果為文字整理，合成材料依截圖建立；同名裝備跨分類共用。",
   "items": [
     {
       "id": "wr73-8894",
@@ -3306,7 +3306,7 @@
         "刺客"
       ],
       "stage": "高階裝備",
-      "price": 3000,
+      "price": 2900,
       "orderByCategory": {
         "刺客": 14
       },
@@ -3352,7 +3352,7 @@
           "description": "離開與英雄的戰鬥 3 秒後，獲得 30 跑速；遠程英雄為 20。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3b",
       "buildFrom": [
         "wr73-8978",
         "wr73-8914"
@@ -3361,7 +3361,21 @@
       "recipeSource": "IMG_8996.PNG",
       "descriptionSources": [
         "IMG_8995.PNG"
-      ]
+      ],
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "stats",
+            "title": "基礎能力值",
+            "rows": [
+              { "label": "價格", "before": "3000", "after": "2900", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "僅價格下調；其餘能力值與衝勁效果沿用。"
+      }
     },
     {
       "id": "wr73-8997",
@@ -4563,7 +4577,7 @@
         "法師"
       ],
       "stage": "高階裝備",
-      "price": 3000,
+      "price": 2900,
       "orderByCategory": {
         "射手": 30,
         "法師": 40
@@ -4632,14 +4646,14 @@
       "passives": [
         {
           "name": "電擊",
-          "description": "普攻額外賦予 5 層充能。"
+          "description": "普攻額外賦予 7 層充能。"
         },
         {
           "name": "電光",
           "description": "移動與普攻產生充能普攻，向 4–7 個目標（隨等級成長）發射連鎖閃電，造成 60 魔法傷害，對士兵與野怪提升為 90，並對次要彈射目標觸發命中效果。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3b",
       "buildFrom": [
         "wr73-8898",
         "wr73-9126",
@@ -4650,7 +4664,28 @@
       "descriptionSources": [
         "IMG_9193.PNG",
         "IMG_9194.PNG"
-      ]
+      ],
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "stats",
+            "title": "基礎能力值",
+            "rows": [
+              { "label": "價格", "before": "3000", "after": "2900", "kind": "change" }
+            ]
+          },
+          {
+            "key": "passive",
+            "title": "電擊",
+            "rows": [
+              { "label": "普攻額外充能堆層", "before": "5", "after": "7", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "更便宜且普攻充能加快；沒有新增暴擊率，不因此視為所有射手的固定成裝。"
+      }
     },
     {
       "id": "wr73-9070",
@@ -5076,7 +5111,7 @@
         "射手"
       ],
       "stage": "高階裝備",
-      "price": 3100,
+      "price": 3000,
       "orderByCategory": {
         "射手": 39
       },
@@ -5124,7 +5159,7 @@
           "description": "普攻敵方英雄時獲得35%攻速，持續6秒。冷卻25秒；普攻使冷卻縮短1秒，暴擊時縮短2秒。"
         }
       ],
-      "dataVersion": "7.3a",
+      "dataVersion": "7.3b",
       "buildFrom": [
         "wr73-9022",
         "wr73-9040"
@@ -5170,6 +5205,20 @@
           }
         ],
         "note": "攻速提高，但效果冷卻延長，並非全項增強。"
+      },
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "stats",
+            "title": "基礎能力值",
+            "rows": [
+              { "label": "價格", "before": "3100", "after": "3000", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "7.3b另修正攻速效果偶爾錯誤觸發的問題；7.3a的35%攻速與25秒冷卻保留。"
       }
     },
     {
@@ -9692,7 +9741,7 @@
         "輔助"
       ],
       "stage": "主動裝備",
-      "price": 2600,
+      "price": 2500,
       "orderByCategory": {
         "防禦": 21,
         "輔助": 21
@@ -9758,7 +9807,7 @@
         }
       ],
       "stats": [
-        "+200 最大生命",
+        "+300 最大生命",
         "+30 物理防禦",
         "+30 魔法防禦",
         "+10 技能加速"
@@ -9769,7 +9818,7 @@
           "description": "賦予自身及鄰近友方英雄護盾，各可吸收 250–370 傷害，持續 2.5 秒。冷卻 60 秒。目標若在最近 20 秒內已獲得其他壁飾效果，此效果減少 50%。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3b",
       "buildFrom": [
         "wr73-9130",
         "wr73-9225",
@@ -9780,7 +9829,22 @@
       "descriptionSources": [
         "IMG_9261.PNG",
         "IMG_9262.PNG"
-      ]
+      ],
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "stats",
+            "title": "基礎能力值",
+            "rows": [
+              { "label": "價格", "before": "2600", "after": "2500", "kind": "change" },
+              { "label": "生命", "before": "200", "after": "300", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "價格與生命調整；群體護盾數值及冷卻未改。"
+      }
     },
     {
       "id": "wr73-9264",
@@ -10581,7 +10645,7 @@
         "輔助"
       ],
       "stage": "高階裝備",
-      "price": 2700,
+      "price": 2850,
       "orderByCategory": {
         "防禦": 32,
         "輔助": 37
@@ -10645,7 +10709,7 @@
           "description": "遭敵方英雄普攻命中或對其造成傷害時，附加 50% 重創，持續 3 秒。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3b",
       "buildFrom": [
         "wr73-9231",
         "wr73-9241"
@@ -10654,7 +10718,21 @@
       "recipeSource": "IMG_9292.PNG",
       "descriptionSources": [
         "IMG_9291.PNG"
-      ]
+      ],
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "stats",
+            "title": "基礎能力值",
+            "rows": [
+              { "label": "價格", "before": "2700", "after": "2850", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "僅成裝價格提高；物防、反傷與重創效果沿用。"
+      }
     },
     {
       "id": "wr73-9293",
@@ -11230,10 +11308,10 @@
         },
         {
           "name": "好戰之心",
-          "description": "至少擁有 950 額外生命，且 5 秒內未受到任何傷害時，每秒回復 3.5% 最大生命。"
+          "description": "至少擁有 1250 額外生命，且 5 秒內未受到任何傷害時，每秒回復 3.5% 最大生命。"
         }
       ],
-      "dataVersion": "7.3",
+      "dataVersion": "7.3b",
       "buildFrom": [
         "wr73-9130",
         "wr73-9239"
@@ -11242,7 +11320,21 @@
       "recipeSource": "IMG_9312.PNG",
       "descriptionSources": [
         "IMG_9311.PNG"
-      ]
+      ],
+      "patch73bChange": {
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "groups": [
+          {
+            "key": "passive",
+            "title": "好戰之心",
+            "rows": [
+              { "label": "額外生命觸發門檻", "before": "900", "after": "1250", "kind": "change" }
+            ]
+          }
+        ],
+        "note": "調整前900依官方7.3b公告列示，本站舊截圖文字原記950，現以公告新值1250校正。裝備本身提供700額外生命，仍需其他來源補足門檻；不是總生命1250即可觸發。"
+      }
     },
     {
       "id": "wr73-9313",

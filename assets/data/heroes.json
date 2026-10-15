@@ -1,6 +1,6 @@
 {
-  "version": "7.3a-v115-first-review",
-  "updated": "2026-10-01",
+  "version": "7.3b-v116-first-wave",
+  "updated": "2026-10-15",
   "schemaVersion": 3,
   "roleSource": "heroCatalog",
   "roleOrder": [
@@ -11,6 +11,7 @@
     "support"
   ],
   "notes": [
+    "v116｜7.3b第一波：官方8位英雄／12份分路配置數值與現行文字同步；赫威護盾係數以英繁官方新值解除舊疑義。保留原Tier、出裝、符文與連招，未宣稱全英雄完成7.3b複核。",
     "v115｜7.3a第一次校正：官方12位英雄／17份位置數值、4件裝備與重擊燃燒同步；一般符文無直接改值。本站8份Tier首輪暫定調整、4份出裝順序／裝備與4份符文搭配調整，恢復頭像數值公告與Tier升降卡片。",
     "v114｜142位英雄／203份位置攻略完成本輪公開資料校正；補齊141位既有英雄攻速、51位續戰附錄、32位主公告調整的跨路數值，修正已確認技能機制與悠咪特殊加點。Tier沿用編輯暫定；赫威護盾係數等缺證項目仍明列。",
     "v104：飛龍路 23/23 完成 7.3 首輪編輯校正，五件出裝、符文、情境替換及相關技能差異已更新；所有 Tier 為暫定，其他路線尚未完成本輪。",
@@ -3907,7 +3908,7 @@
         "後期": "燼不靠高攻速持續站樁，而是依靠每發普攻、技能與跑速加成反覆拉扯。保持在前排後方，第四發優先打能安全命中的低血量目標；若敵方刺客仍未露面，大絕不要過早架槍。"
       },
       "summary": "以固定四發彈匣、第四發斬殺與超遠距控制掌握戰鬥節奏；爆發與收尾能力極強，但必須避開換彈空窗並保持安全站位。",
-      "sourceNote": "v104｜2026/09/22 飛龍路 7.3 首輪校正。裝備與召喚師技能依使用者提供的遊戲截圖；英雄改動與相關符文依 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 更新公告</a>。出裝、評級、對局與加點屬本站編輯建議，尚非新版勝率結論。",
+      "sourceNote": "v104｜2026/09/22 飛龍路 7.3 首輪校正。裝備與召喚師技能依使用者提供的遊戲截圖；英雄改動與相關符文依 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 更新公告</a>。出裝、評級、對局與加點屬本站編輯建議，尚非新版勝率結論。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/jhin.webp",
       "abilities": [
         {
@@ -3915,7 +3916,7 @@
           "label": "被動",
           "title": "低語",
           "icon": "../assets/images/heroes/skills/jhin_01.webp",
-          "summary": "固定四發彈匣，第四發必定暴擊並按目標已損失生命補傷害；暴擊倍率有英雄專屬修正，攻速不會像一般射手直接加快射擊。",
+          "summary": "固定四發彈匣，第四發必定暴擊並按目標已損失生命補傷害；7.3b標準暴擊傷害修正為85%，第四發已損失生命傷害11.5%–25%，於10級達上限。攻速不會像一般射手直接加快射擊。",
           "patch73Values": [
             {
               "label": "普攻暴擊修正",
@@ -3935,6 +3936,18 @@
             {
               "label": "暴擊跑速",
               "value": "14% + 0.44% × 額外攻速",
+              "kind": "change"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "被動｜低語 · 標準暴擊傷害係數",
+              "value": "85%",
+              "kind": "change"
+            },
+            {
+              "label": "被動｜低語 · 已損失生命傷害",
+              "value": "11.5%–25%（10級達上限）",
               "kind": "change"
             }
           ]
@@ -4003,8 +4016,8 @@
       "baseId": "jhin",
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "coreItems": [
         "wr73-9004",
         "wr73-9060",
@@ -4235,7 +4248,7 @@
           }
         ]
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "provisional": true,
       "patch73Review": {
         "version": "v114",
@@ -4416,6 +4429,48 @@
         "skillReason": "維持 Q > W > E 與既有15級分配；本次變動未改變可升級規則。",
         "notes": [],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "P",
+          "title": "被動｜低語",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "80%",
+              "after": "85%",
+              "kind": "change"
+            },
+            {
+              "label": "已損失生命傷害",
+              "before": "11%–25%（15級達上限）",
+              "after": "11.5%–25%（10級達上限）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "S",
+        "currentTier": "S",
+        "tierReason": "保留S（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "暴擊修正提高，第四發已損失生命傷害於10級達25%；中期更早取得完整收尾能力，仍須處理換彈空窗。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -11888,7 +11943,7 @@
         "後期": "保持在前排後方持續普攻，利用暴擊附加魔法傷害迫使對手同時處理物防與魔防。大絕是最重要的團戰窗口，先確認敵方主要控制與突進位置，再用強化二技壓制路線、強化三技調整距離；超凡狀態結束後不要繼續深追。"
       },
       "summary": "普攻累積解放層數後開啟靈心修真，獲得攻速與擴散普攻；大絕進入超凡狀態會自動強化一技，並升級二、三技。輸出窗口強，但需要掌握資源、冷卻與型態結束時間。",
-      "sourceNote": "v104｜2026/09/22 飛龍路 7.3 首輪校正。裝備與召喚師技能依使用者提供的遊戲截圖；英雄改動與相關符文依 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 更新公告</a>。出裝、評級、對局與加點屬本站編輯建議，尚非新版勝率結論。",
+      "sourceNote": "v104｜2026/09/22 飛龍路 7.3 首輪校正。裝備與召喚師技能依使用者提供的遊戲截圖；英雄改動與相關符文依 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 更新公告</a>。出裝、評級、對局與加點屬本站編輯建議，尚非新版勝率結論。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/yunara.webp",
       "abilities": [
         {
@@ -11917,6 +11972,18 @@
               "value": "25% / 35% / 45% / 55%",
               "kind": "change"
             }
+          ],
+          "patch73bValues": [
+            {
+              "label": "一技｜靈心修真 · 被動基礎傷害",
+              "value": "5/10/15/20",
+              "kind": "change"
+            },
+            {
+              "label": "一技｜靈心修真 · 主動基礎傷害",
+              "value": "5/10/15/20",
+              "kind": "change"
+            }
           ]
         },
         {
@@ -11938,7 +12005,14 @@
           "label": "4 技",
           "title": "超逸絕塵",
           "icon": "../assets/images/heroes/skills/yunara_05.webp",
-          "summary": "進入超凡狀態並強化基本技能：靈心修真自動啟動，審判靈珠與感銘迅步分別升級為毀滅弧光與追風躡影。"
+          "summary": "進入超凡狀態並強化基本技能：靈心修真自動啟動，審判靈珠與感銘迅步分別升級為毀滅弧光與追風躡影。",
+          "patch73bValues": [
+            {
+              "label": "大絕｜超逸絕塵 · 冷卻",
+              "value": "70/65/60秒",
+              "kind": "change"
+            }
+          ]
         }
       ],
       "skillSequence": [
@@ -12065,8 +12139,8 @@
         }
       ],
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
@@ -12215,7 +12289,7 @@
         "outcome": "updated",
         "evidence": "飛龍路數據與分路榜單均位於第一梯隊。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "provisional": true,
       "patch73Review": {
         "version": "v114",
@@ -12325,6 +12399,62 @@
           "雲陶狂箭常駐與觸發攻速皆為35%，但觸發冷卻延長至25秒；保留需要普攻疊暴擊的路線，開戰前留意效果是否可用。"
         ],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "Q",
+          "title": "一技｜靈心修真",
+          "rows": [
+            {
+              "label": "被動基礎傷害",
+              "before": "10/15/20/25",
+              "after": "5/10/15/20",
+              "kind": "change"
+            },
+            {
+              "label": "主動基礎傷害",
+              "before": "10/15/20/25",
+              "after": "5/10/15/20",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜超逸絕塵",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "70/60/50秒",
+              "after": "70/65/60秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [
+          "wr73-9087"
+        ],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "S+",
+        "currentTier": "S+",
+        "tierReason": "保留S+（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "保留原預設出裝與情境配置；引用的7.3b變動裝備由共用目錄同步，回城購買金額與被動門檻須按新值判斷。未宣稱這套已經過新版勝率驗證。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "一技主動、被動基礎傷害各減5；大絕二、三級冷卻增加。雲陶便宜100金幣不能直接視為抵銷全部英雄削弱。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -12390,7 +12520,7 @@
         "後期": "靈魂累積帶來長射程後，保持在敵方突進範圍外攻擊最近目標，不需要為點後排而往前。三技可掩護隊伍轉線或重新進場，但靠近敵人仍會被揭露；大絕應在隊友即將承受爆發前施放，並讓中央傷害路徑穿過主要目標。"
       },
       "summary": "補刀飛龍路以安全發育、點人抽魂和長距離消耗為主，同時用治療、禁錮與全圖護盾支援團隊；本頁不套用絕食流或輔助裝起手。",
-      "sourceNote": "v104｜2026/09/22 飛龍路 7.3 首輪校正。裝備與召喚師技能依使用者提供的遊戲截圖；英雄改動與相關符文依 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 更新公告</a>。出裝、評級、對局與加點屬本站編輯建議，尚非新版勝率結論。",
+      "sourceNote": "v104｜2026/09/22 飛龍路 7.3 首輪校正。裝備與召喚師技能依使用者提供的遊戲截圖；英雄改動與相關符文依 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">Riot 7.3 更新公告</a>。出裝、評級、對局與加點屬本站編輯建議，尚非新版勝率結論。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/senna.webp",
       "abilities": [
         {
@@ -12398,7 +12528,7 @@
           "label": "被動",
           "title": "赦罪",
           "icon": "../assets/images/heroes/skills/senna_01.png",
-          "summary": "附近單位陣亡時有機會生成黯霧靈魂；攻擊靈魂可永久提高物攻、攻擊距離與暴擊率。對同一英雄完成兩次攻擊也能抽取黯霧並造成目前生命傷害。",
+          "summary": "附近單位陣亡時有機會生成黯霧靈魂；收魂永久提高物攻、攻擊距離與暴擊率。7.3b每層黯霧提供0.9物攻，標準暴擊傷害修正為80%。對同一英雄完成兩次攻擊也能抽取黯霧並造成目前生命傷害。",
           "patch73Values": [
             {
               "label": "取決於目前生命的傷害",
@@ -12422,6 +12552,18 @@
               "value": "效果降低；官方未列精確倍率",
               "kind": "rule"
             }
+          ],
+          "patch73bValues": [
+            {
+              "label": "被動｜赦罪 · 標準暴擊傷害係數",
+              "value": "80%",
+              "kind": "change"
+            },
+            {
+              "label": "被動｜赦罪 · 每層黯霧的物攻",
+              "value": "0.9",
+              "kind": "change"
+            }
           ]
         },
         {
@@ -12434,6 +12576,13 @@
             {
               "label": "基礎傷害",
               "value": "50 / 80 / 110 / 140",
+              "kind": "change"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "一技｜刺骨幽闇 · 基礎傷害",
+              "value": "30/60/90/120",
               "kind": "change"
             }
           ]
@@ -12591,8 +12740,8 @@
           "note": "先看隊友血量與敵方位置預判大絕，護盾要在爆發落下前到達。抵達戰場後以三技掩護隊友，再用二技和一技維持控制與續戰。"
         }
       ],
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "duoTemplateSource": "jinx-v64",
@@ -12725,7 +12874,7 @@
           }
         ]
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "provisional": true,
       "patch73Review": {
         "version": "v114",
@@ -12952,6 +13101,60 @@
           }
         ],
         "note": "7.3基準加上7.3a更新後的現行攻速參數；比例1.1＝110%、0.025＝2.5%，不是直接填入每秒攻擊次數。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "P",
+          "title": "被動｜赦罪",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "90%",
+              "after": "80%",
+              "kind": "change"
+            },
+            {
+              "label": "每層黯霧的物攻",
+              "before": "1.25",
+              "after": "0.9",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜刺骨幽闇",
+          "rows": [
+            {
+              "label": "基礎傷害",
+              "before": "50/80/110/140",
+              "after": "30/60/90/120",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "B",
+        "currentTier": "B",
+        "tierReason": "保留B（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每魂物攻改0.9，標準暴擊修正改80%，一技基礎傷害各減20；保留安全抽魂與團隊功能，不沿用舊版成長估算。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -22471,7 +22674,7 @@
       },
       "playstyle": {
         "前期": "前期用被動回血維持線權，W-Q 打短換血後立即拉開。",
-        "中期": "日炎聖盾 → 寒冰霸拳成形後，再接荊棘之甲。保留日炎清線與寒冰霸拳黏人；好戰者放後段，確認額外生命門檻，不先用高價脫戰裝取代清線。",
+        "中期": "日炎聖盾 → 寒冰霸拳成形後，再接荊棘之甲。保留日炎清線與寒冰霸拳黏人；好戰者放後段，確認額外生命門檻，不先用高價脫戰裝取代清線。 7.3b好戰之心需至少1250額外生命；好戰者本身700生命計入，不能把英雄基礎生命算進門檻。提前購買或替換生命裝時，先重新合計額外生命，不滿門檻不會取得該脫戰回血效果。",
         "後期": "後期以保排與反開為主，優先綁住切自家後排的刺客或鬥士。"
       },
       "summary": "點控、擊退與範圍大絕讓他反開能力突出；樹苗可提前控制視野與草叢。",
@@ -23837,7 +24040,7 @@
       },
       "playstyle": {
         "前期": "前期靠被動定身與 E 清線，Q 沒把握時寧可留作威懾。",
-        "中期": "日炎聖盾 → 寒冰霸拳成形後，再接荊棘之甲。保留日炎與寒冰霸拳的坦克清線路線，主三技；二技護盾和被動定身支援短換血。",
+        "中期": "日炎聖盾 → 寒冰霸拳成形後，再接荊棘之甲。保留日炎與寒冰霸拳的坦克清線路線，主三技；二技護盾和被動定身支援短換血。 7.3b好戰之心需至少1250額外生命；好戰者本身700生命計入，不能把英雄基礎生命算進門檻。提前購買或替換生命裝時，先重新合計額外生命，不滿門檻不會取得該脫戰回血效果。",
         "後期": "後期站在隊伍前方做反開，Q 可勾牆位移，不一定只能拿來開敵人。"
       },
       "summary": "大量單體與範圍控制讓他線上配合打野、團戰強開都很可靠。",
@@ -30350,7 +30553,7 @@
       },
       "playstyle": {
         "前期": "前期用 Q 強化普攻打短換血，W 護盾用來吸收對手主要技能。",
-        "中期": "雄心之鋼 → 日炎聖盾成形後，再接荊棘之甲。雄心適合能安全疊層的對線；若清線或血線壓力大，先日炎再回補雄心，不把成長裝當每局固定首件。",
+        "中期": "雄心之鋼 → 日炎聖盾成形後，再接荊棘之甲。雄心適合能安全疊層的對線；若清線或血線壓力大，先日炎再回補雄心，不把成長裝當每局固定首件。 7.3b好戰之心需至少1250額外生命；好戰者本身700生命計入，不能把英雄基礎生命算進門檻。提前購買或替換生命裝時，先重新合計額外生命，不滿門檻不會取得該脫戰回血效果。",
         "後期": "後期大絕優先抓主 C 或敵方打野，物件前能直接製造人數差。"
       },
       "summary": "牆體互動、護盾與大絕拖拽提供強控制；7.2a 強化後續戰與控場更穩。",
@@ -31762,7 +31965,7 @@
         "後期": "後期以分推與側翼收割為主，團戰鎖定後排後再開大延長輸出時間。"
       },
       "summary": "怒氣暴擊、旋風位移與五秒不死讓他專注側線單挑與拆塔。",
-      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/tryndamere\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
+      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/tryndamere\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/tryndamere.webp",
       "abilities": [
         {
@@ -31770,7 +31973,7 @@
           "label": "被動",
           "title": "戰鬥狂怒",
           "icon": "../assets/images/heroes/skills/tryndamere_01.png",
-          "summary": "透過普攻與擊殺累積怒氣，怒氣提高暴擊率；7.3 已移除命中英雄後的額外攻速。",
+          "summary": "透過普攻與擊殺累積怒氣；7.3b每點怒氣固定提供0.5%暴擊率。7.3已移除命中英雄後的額外攻速。",
           "patch73Changes": [
             {
               "label": "被動命中英雄攻速",
@@ -31784,6 +31987,13 @@
               "label": "被動命中英雄攻速",
               "value": "移除",
               "kind": "removed"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "被動｜戰鬥狂怒 · 每點怒氣的暴擊率",
+              "value": "0.5%",
+              "kind": "change"
             }
           ]
         },
@@ -31873,6 +32083,13 @@
               "value": "士兵、野怪、英雄召喚單位，以及其他可以被暴擊的單位",
               "kind": "change"
             }
+          ],
+          "patch73bValues": [
+            {
+              "label": "三技｜旋風斬 · 傷害",
+              "value": "80/130/180/230＋110%額外物攻＋80%魔攻",
+              "kind": "change"
+            }
           ]
         },
         {
@@ -31923,8 +32140,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -32297,7 +32514,7 @@
         "changedSkills": [],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -32319,6 +32536,56 @@
           "雲陶狂箭常駐與觸發攻速皆為35%，但觸發冷卻延長至25秒；保留需要普攻疊暴擊的路線，開戰前留意效果是否可用。"
         ],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "P",
+          "title": "被動｜戰鬥狂怒",
+          "rows": [
+            {
+              "label": "每點怒氣的暴擊率",
+              "before": "0.3%–0.5%（隨等級）",
+              "after": "0.5%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技｜旋風斬",
+          "rows": [
+            {
+              "label": "傷害",
+              "before": "80/120/160/200＋100%額外物攻＋80%魔攻",
+              "after": "80/130/180/230＋110%額外物攻＋80%魔攻",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [
+          "wr73-9087"
+        ],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "保留原預設出裝與情境配置；引用的7.3b變動裝備由共用目錄同步，回城購買金額與被動門檻須按新值判斷。未宣稱這套已經過新版勝率驗證。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留E > Q > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每點怒氣固定提供0.5%暴擊率，三技基礎傷害與額外物攻係數提高；前期仍應先累積怒氣，雲陶降價不代表零裝備即可無視控制。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -33956,7 +34223,7 @@
         "後期": "後期開大吸收第一波並黏核心，E 護盾落點要提前預判自己的進場位置。"
       },
       "summary": "護盾、標記二技能與大絕禁塔讓他換血、越塔與正面長戰都很強。",
-      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/volibear\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
+      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/volibear\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/volibear.webp",
       "abilities": [
         {
@@ -33993,7 +34260,24 @@
           "label": "2 技",
           "title": "狂熊撕咬",
           "icon": "../assets/images/heroes/skills/volibear_03.webp",
-          "summary": "撕咬敵人並留下標記，再次咬中同一目標會造成更多傷害並治療自己。"
+          "summary": "撕咬敵人並留下標記，再次咬中同一目標會造成更多傷害並治療自己。",
+          "patch73bValues": [
+            {
+              "label": "二技｜狂熊撕咬 · 傷害物攻係數",
+              "value": "110%",
+              "kind": "change"
+            },
+            {
+              "label": "二技｜狂熊撕咬 · 強化傷害物攻係數",
+              "value": "176%",
+              "kind": "change"
+            },
+            {
+              "label": "二技｜狂熊撕咬 · 強化治療：已損失生命係數",
+              "value": "5%/8%/11%/14%",
+              "kind": "change"
+            }
+          ]
         },
         {
           "key": "E",
@@ -34035,8 +34319,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -34363,7 +34647,7 @@
         "changedSkills": [],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -34381,6 +34665,56 @@
         "skillReason": "維持 W > Q > E 與既有15級分配；本次變動未改變可升級規則。",
         "notes": [],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "W",
+          "title": "二技｜狂熊撕咬",
+          "rows": [
+            {
+              "label": "傷害物攻係數",
+              "before": "100%",
+              "after": "110%",
+              "kind": "change"
+            },
+            {
+              "label": "強化傷害物攻係數",
+              "before": "160%",
+              "after": "176%",
+              "kind": "change"
+            },
+            {
+              "label": "強化治療：已損失生命係數",
+              "before": "5%/6%/7%/8%",
+              "after": "5%/8%/11%/14%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [
+          "grasp"
+        ],
+        "jungleChange": false,
+        "previousTier": "S",
+        "currentTier": "S",
+        "tierReason": "保留S（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；已核對本配置引用的7.3b變動符文，新值由共用符文目錄呈現，不因削弱就自動替換整套。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留W > Q > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "二技物攻係數與後續等級的二次撕咬回血提高；仍需保留標記並撐到第二次二技，不能把首咬誤認為強化治療。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -35367,7 +35701,7 @@
         "後期": "後期大絕不是看到擊飛就按，先確認落點不會直接進敵方五人中心。"
       },
       "summary": "兵線位移、風牆與擊飛接大絕使他操作上限高，但巴龍路對兵線依賴很強。",
-      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/yasuo\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
+      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/yasuo\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/yasuo.webp",
       "abilities": [
         {
@@ -35400,6 +35734,18 @@
               "label": "普攻／一技暴擊修正",
               "value": "一般暴擊傷害 × 90%",
               "kind": "value"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "被動｜浪人之道 · 標準暴擊傷害係數",
+              "value": "95%",
+              "kind": "change"
+            },
+            {
+              "label": "被動｜浪人之道 · 護盾",
+              "value": "77–630（隨等級）",
+              "kind": "change"
             }
           ]
         },
@@ -35472,8 +35818,8 @@
       },
       "skillIconStatus": "complete",
       "generatedV29": true,
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "skillIconCount": 5,
       "detailAssetBatch": "second70-user-supplied",
       "abilityNamesVerified": "Riot TW",
@@ -35790,7 +36136,7 @@
         ],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -35808,6 +36154,50 @@
         "skillReason": "維持 Q > E > W 與既有15級分配；本次變動未改變可升級規則。",
         "notes": [],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "P",
+          "title": "被動｜浪人之道",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "90%",
+              "after": "95%",
+              "kind": "change"
+            },
+            {
+              "label": "護盾",
+              "before": "77–529（隨等級）",
+              "after": "77–630（隨等級）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [
+          "grasp"
+        ],
+        "jungleChange": false,
+        "previousTier": "C",
+        "currentTier": "C",
+        "tierReason": "保留C（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；已核對本配置引用的7.3b變動符文，新值由共用符文目錄呈現，不因削弱就自動替換整套。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "標準暴擊修正提高至95%，護盾上限提高；維持原暴擊配置，沒有把被動修正誤當暴擊率，也不因官方增強就直接升Tier。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -48636,7 +49026,7 @@
         "後期": "不要正面擔任坦克。團戰前找側翼或先手抓掉落單目標；若無法秒殺後排，也可用大絕關燈干擾敵方接戰，轉而保護己方主力。"
       },
       "summary": "五級後能用大絕關閉敵方視野並遠距突進，擅長抓落單與在團戰前製造人數差。",
-      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/nocturne\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
+      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/nocturne\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/nocturne.webp",
       "abilities": [
         {
@@ -48651,7 +49041,19 @@
           "label": "1 技",
           "title": "黃昏渠道",
           "icon": "../assets/images/heroes/skills/nocturne_02.webp",
-          "summary": "向前投出闇影之刃造成物理傷害並留下黑暗軌跡。夜曲站在軌跡上時獲得跑速與物攻，並可穿越單位。"
+          "summary": "向前投出闇影之刃造成物理傷害並留下黑暗軌跡。夜曲站在軌跡上時獲得跑速與物攻，並可穿越單位。",
+          "patch73bValues": [
+            {
+              "label": "一技｜黃昏渠道 · 物攻加成",
+              "value": "10/25/40/55",
+              "kind": "change"
+            },
+            {
+              "label": "一技｜黃昏渠道 · 基礎傷害",
+              "value": "60/115/170/225",
+              "kind": "change"
+            }
+          ]
         },
         {
           "key": "W",
@@ -48672,7 +49074,14 @@
           "label": "4 技",
           "title": "無盡夢魘",
           "icon": "../assets/images/heroes/skills/nocturne_05.webp",
-          "summary": "先降低所有敵方英雄的視野並切斷友軍視野共享，再次施放可遠距突進至指定敵方英雄並造成物理傷害。"
+          "summary": "先降低所有敵方英雄的視野並切斷友軍視野共享，再次施放可遠距突進至指定敵方英雄並造成物理傷害。",
+          "patch73bValues": [
+            {
+              "label": "大絕｜無盡夢魘 · 冷卻",
+              "value": "120/100/80秒",
+              "kind": "change"
+            }
+          ]
         }
       ],
       "skillSequence": [
@@ -48703,8 +49112,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -49006,7 +49415,7 @@
         "changedSkills": [],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -49026,6 +49435,75 @@
           "7.3a重擊野怪燃燒基礎傷害為每秒22–162（隨等級）；主動600／1000／1400未改。清野與搶物件分開估算，不沿用舊清野秒數。"
         ],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "每級生命成長",
+              "before": "134",
+              "after": "128",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜黃昏渠道",
+          "rows": [
+            {
+              "label": "物攻加成",
+              "before": "20/30/40/50",
+              "after": "10/25/40/55",
+              "kind": "change"
+            },
+            {
+              "label": "基礎傷害",
+              "before": "70/125/180/235",
+              "after": "60/115/170/225",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜無盡夢魘",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "110/90/70秒",
+              "after": "120/100/80秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [],
+        "affectedRunes": [
+          "electrocute"
+        ],
+        "jungleChange": true,
+        "previousTier": "S",
+        "currentTier": "S",
+        "tierReason": "保留S（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；已核對本配置引用的7.3b變動符文，新值由共用符文目錄呈現，不因削弱就自動替換整套。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "生命成長與一技基礎傷害下降，大絕各級多10秒；一技物攻加成滿級反而提高，主要重估前期清野與開大頻率。",
+          "巨喙鳥生命提高，清野與入侵時機需重新觀察；本輪未提供未實測的清野秒數。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -49088,7 +49566,7 @@
       },
       "playstyle": {
         "前期": "一技對野怪造成高額真實傷害並回復生命，能快速清野與安全爭奪物件。二技從河道或長直線開始滾動，利用速度與體積成長提高擊飛時間，頻繁製造早期 Gank。",
-        "中期": "日炎聖盾 → 荊棘之甲成形後，依坦克／高速遊走／物件控制定位處理團戰與兵線；第三件接好戰者鎧甲。後兩件按情境調整，保留主要輸出循環或承傷功能。支援前確認重擊層數、充能與物件時間，沒有線權時先交換另一側資源。",
+        "中期": "日炎聖盾 → 荊棘之甲成形後，依坦克／高速遊走／物件控制定位處理團戰與兵線；第三件接好戰者鎧甲。後兩件按情境調整，保留主要輸出循環或承傷功能。支援前確認重擊層數、充能與物件時間，沒有線權時先交換另一側資源。 7.3b好戰之心需至少1250額外生命；本頁前三件日炎350＋荊棘200＋好戰者700＝1250，剛好達標。若把好戰者提前至第二件，或換掉生命裝，需重新計算；英雄基礎生命不能計入門檻。",
         "後期": "擔任前排與開戰者，二技可在團戰前先滾出側翼角度。大絕最好在草叢、控制鏈中或敵方技能交完後蓄力，避免過早被打斷。"
       },
       "summary": "高速雪球帶來強大早期遊走，一技與重擊能穩定控制大型物件，三技和大絕則提供範圍控制與團戰威脅。",
@@ -50571,7 +51049,7 @@
       },
       "playstyle": {
         "前期": "一技兩段傷害能穩定清野，Gank 前先確認敵人與牆面的角度；三技只有撞牆才有完整控制。面對李星、卡蜜兒等位移英雄時，二技可用來反入侵和保護隊友。",
-        "中期": "日炎聖盾 → 寒冰霸拳成形後，再接荊棘之甲。保留日炎、寒冰霸拳與坦裝；二技反位移是選角理由，沒有牆角或隊友跟進時不硬追擊。",
+        "中期": "日炎聖盾 → 寒冰霸拳成形後，再接荊棘之甲。保留日炎、寒冰霸拳與坦裝；二技反位移是選角理由，沒有牆角或隊友跟進時不硬追擊。 7.3b好戰之心需至少1250額外生命；好戰者本身700生命計入，不能把英雄基礎生命算進門檻。提前購買或替換生命裝時，先重新合計額外生命，不滿門檻不會取得該脫戰回血效果。",
         "後期": "依敵方威脅選擇保排或開戰。對面刺客強時留在後排附近開二技；需要創造多打少時，蓄力大絕先移走前排再集中處理剩餘目標。"
       },
       "summary": "二技能直接封鎖突進，三技在牆邊提供長時間控制，大絕還能把敵人擊離物件區；對位移陣容特別強，進場角度則高度依賴地形。",
@@ -54318,7 +54796,7 @@
         "後期": "正面團戰容易被風箏，應從側翼切入或先在邊線製造壓力。無盡怒火結束前用三技脫離，再消耗怒氣用一技回復，避免大絕結束後立即倒下。"
       },
       "summary": "怒氣提供暴擊與續航，三技讓他快速穿越野區，大絕則可在瀕死狀態持續追擊；強在單挑與側翼，但怕緩速、硬控與風箏。",
-      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/tryndamere\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
+      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/tryndamere\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/tryndamere.webp",
       "abilities": [
         {
@@ -54326,7 +54804,7 @@
           "label": "被動",
           "title": "戰鬥狂怒",
           "icon": "../assets/images/heroes/skills/tryndamere_01.png",
-          "summary": "透過普攻與擊殺累積怒氣，怒氣提高暴擊率；7.3 已移除命中英雄後的額外攻速。",
+          "summary": "透過普攻與擊殺累積怒氣；7.3b每點怒氣固定提供0.5%暴擊率。7.3已移除命中英雄後的額外攻速。",
           "patch73Changes": [
             {
               "label": "被動命中英雄攻速",
@@ -54340,6 +54818,13 @@
               "label": "被動命中英雄攻速",
               "value": "移除",
               "kind": "removed"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "被動｜戰鬥狂怒 · 每點怒氣的暴擊率",
+              "value": "0.5%",
+              "kind": "change"
             }
           ]
         },
@@ -54427,6 +54912,13 @@
             {
               "label": "暴擊時會觸發冷卻時間減免的目標",
               "value": "士兵、野怪、英雄召喚單位，以及其他可以被暴擊的單位",
+              "kind": "change"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "三技｜旋風斬 · 傷害",
+              "value": "80/130/180/230＋110%額外物攻＋80%魔攻",
               "kind": "change"
             }
           ]
@@ -54551,8 +55043,8 @@
         "wr73-9056",
         "wr73-9101"
       ],
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "skillIconCount": 5,
@@ -54848,7 +55340,7 @@
         "changedSkills": [],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -54871,6 +55363,57 @@
           "7.3a重擊野怪燃燒基礎傷害為每秒22–162（隨等級）；主動600／1000／1400未改。清野與搶物件分開估算，不沿用舊清野秒數。"
         ],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "P",
+          "title": "被動｜戰鬥狂怒",
+          "rows": [
+            {
+              "label": "每點怒氣的暴擊率",
+              "before": "0.3%–0.5%（隨等級）",
+              "after": "0.5%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技｜旋風斬",
+          "rows": [
+            {
+              "label": "傷害",
+              "before": "80/120/160/200＋100%額外物攻＋80%魔攻",
+              "after": "80/130/180/230＋110%額外物攻＋80%魔攻",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [
+          "wr73-9087"
+        ],
+        "affectedRunes": [],
+        "jungleChange": true,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "保留原預設出裝與情境配置；引用的7.3b變動裝備由共用目錄同步，回城購買金額與被動門檻須按新值判斷。未宣稱這套已經過新版勝率驗證。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每點怒氣固定提供0.5%暴擊率，三技基礎傷害與額外物攻係數提高；前期仍應先累積怒氣，雲陶降價不代表零裝備即可無視控制。",
+          "巨喙鳥生命提高，清野與入侵時機需重新觀察；本輪未提供未實測的清野秒數。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -56110,7 +56653,7 @@
         "後期": "擔任前排或第二進場，利用大絕增加生命並跳向後排。三技護盾要提前放在預計落點，一技鎖定核心後持續普攻，靠二次二技維持血量。"
       },
       "summary": "被動與二技帶來極快清野及持續作戰，大絕可停用防禦塔，特別擅長五級後越塔建立優勢。",
-      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/volibear\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
+      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/volibear\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/volibear.webp",
       "abilities": [
         {
@@ -56147,7 +56690,24 @@
           "label": "2 技",
           "title": "狂熊撕咬",
           "icon": "../assets/images/heroes/skills/volibear_03.webp",
-          "summary": "撕咬敵人並留下標記，再次咬中同一目標會造成更多傷害並治療自己。"
+          "summary": "撕咬敵人並留下標記，再次咬中同一目標會造成更多傷害並治療自己。",
+          "patch73bValues": [
+            {
+              "label": "二技｜狂熊撕咬 · 傷害物攻係數",
+              "value": "110%",
+              "kind": "change"
+            },
+            {
+              "label": "二技｜狂熊撕咬 · 強化傷害物攻係數",
+              "value": "176%",
+              "kind": "change"
+            },
+            {
+              "label": "二技｜狂熊撕咬 · 強化治療：已損失生命係數",
+              "value": "5%/8%/11%/14%",
+              "kind": "change"
+            }
+          ]
         },
         {
           "key": "E",
@@ -56192,8 +56752,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "jungle-first10-v52",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "starterItems": [
@@ -56510,7 +57070,7 @@
         "changedSkills": [],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -56530,6 +57090,55 @@
           "7.3a重擊野怪燃燒基礎傷害為每秒22–162（隨等級）；主動600／1000／1400未改。清野與搶物件分開估算，不沿用舊清野秒數。"
         ],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "W",
+          "title": "二技｜狂熊撕咬",
+          "rows": [
+            {
+              "label": "傷害物攻係數",
+              "before": "100%",
+              "after": "110%",
+              "kind": "change"
+            },
+            {
+              "label": "強化傷害物攻係數",
+              "before": "160%",
+              "after": "176%",
+              "kind": "change"
+            },
+            {
+              "label": "強化治療：已損失生命係數",
+              "before": "5%/6%/7%/8%",
+              "after": "5%/8%/11%/14%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": true,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留W > Q > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "二技物攻係數與後續等級的二次撕咬回血提高；仍需保留標記並撐到第二次二技，不能把首咬誤認為強化治療。",
+          "巨喙鳥生命提高，清野與入侵時機需重新觀察；本輪未提供未實測的清野秒數。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -75384,7 +75993,7 @@
         "後期": "等待前排製造擊飛後再接大絕，落地立刻判斷要追後排或回到己方陣型。沒有兵線可位移時，站位要比平常更保守。"
       },
       "summary": "利用兵線位移與旋風掌握對線節奏，風牆阻擋關鍵遠程技能；團戰依靠隊友擊飛接大絕，再用暴擊與高攻速持續輸出。",
-      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/yasuo\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。",
+      "sourceNote": "v112｜2026/09/23 7.3 首輪校正。道具、符文與召喚師技能以提供的遊戲資料為基準；<a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/\" target=\"_blank\" rel=\"noopener noreferrer\">官方 7.3 公告</a>、<a href=\"https://www.wildriftfire.com/guide/yasuo\" target=\"_blank\" rel=\"noopener noreferrer\">英雄配置參考</a>。已核對同分路配置。評級暫定；逐級加點為編輯建議，對局名單未作新版勝率驗證。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/yasuo.webp",
       "abilities": [
         {
@@ -75417,6 +76026,18 @@
               "label": "普攻／一技暴擊修正",
               "value": "一般暴擊傷害 × 90%",
               "kind": "value"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "被動｜浪人之道 · 標準暴擊傷害係數",
+              "value": "95%",
+              "kind": "change"
+            },
+            {
+              "label": "被動｜浪人之道 · 護盾",
+              "value": "77–630（隨等級）",
+              "kind": "change"
             }
           ]
         },
@@ -75578,8 +76199,8 @@
           "note": "大絕優先接到關鍵後排或多人擊飛；落地後利用物理穿透強勢期持續輸出，但不要離開隊友保護範圍。"
         }
       ],
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "midMasterTemplate": "ahri-v58",
@@ -75820,7 +76441,7 @@
         ],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -75842,6 +76463,48 @@
           "死亡之舞總價3300，能力值與延遲傷害機制不變；仍依生存壓力購買，不能按舊3200金幣抓回城完成點。"
         ],
         "limitation": "依官方差異與配置互動作首輪複核，不代表台服勝率結論或所有技能完整數值重新實測。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "P",
+          "title": "被動｜浪人之道",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "90%",
+              "after": "95%",
+              "kind": "change"
+            },
+            {
+              "label": "護盾",
+              "before": "77–529（隨等級）",
+              "after": "77–630（隨等級）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "buff",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "B",
+        "currentTier": "B",
+        "tierReason": "保留B（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > E > W與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "標準暴擊修正提高至95%，護盾上限提高；維持原暴擊配置，沒有把被動修正誤當暴擊率，也不因官方增強就直接升Tier。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -88286,8 +88949,8 @@
         "中期": "先以黑色切割者提供團隊削甲，再補C44的長距離物攻收益；火炮服務安全接觸，不是靠大量攻速維持舊版前搖。依隊友需要治療、控制及蒐集靈魂，保留黯霧之鐮。",
         "後期": "靈魂帶來長射程後，攻擊最近且安全的目標即可，不必為點後排向前。敵方突進時用二技保護主力，一技持續治療；若選角時將治療改帶虛弱，再用虛弱壓制主要威脅。大絕應在爆發落下前施放，讓全隊先獲得護盾，並盡量讓中央傷害路徑穿過主要目標。"
       },
-      "summary": "姍娜輔助讓射手取得兵線經濟，自己透過黯霧永久成長射程與物攻，並提供穿透治療、禁錮、偽裝與全圖護盾。7.2a 已下調被動目前生命傷害與大絕每層黯霧護盾，玩法仍以功能與安全射程為核心。",
-      "sourceNote": "v113｜7.3 輔助配置複核。<a href=\"https://www.wildriftfire.com/guide/senna\" target=\"_blank\" rel=\"noopener noreferrer\">同位置攻略參考</a>，裝備／符文以現行遊戲資料為準；購買順序、技能表及對局說明為編輯建議，Tier 暫定。",
+      "summary": "姍娜輔助讓射手取得兵線經濟，自己靠安全抽取黯霧成長，並提供治療、禁錮、偽裝與全圖護盾。7.3b再下調黯霧物攻、暴擊修正與一技基礎傷害，功能與安全射程仍是配置重點。",
+      "sourceNote": "v113｜7.3 輔助配置複核。<a href=\"https://www.wildriftfire.com/guide/senna\" target=\"_blank\" rel=\"noopener noreferrer\">同位置攻略參考</a>，裝備／符文以現行遊戲資料為準；購買順序、技能表及對局說明為編輯建議，Tier 暫定。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
       "avatar": "../assets/images/heroes/portraits/senna.webp",
       "abilities": [
         {
@@ -88295,7 +88958,7 @@
           "label": "被動",
           "title": "赦罪",
           "icon": "../assets/images/heroes/skills/senna_01.png",
-          "summary": "附近單位陣亡時有機會生成黯霧靈魂；攻擊靈魂可永久提高物攻、攻擊距離與暴擊率。對同一英雄完成兩次攻擊也能抽取黯霧並造成目前生命傷害。",
+          "summary": "附近單位陣亡時有機會生成黯霧靈魂；收魂永久提高物攻、攻擊距離與暴擊率。7.3b每層黯霧提供0.9物攻，標準暴擊傷害修正為80%。對同一英雄完成兩次攻擊也能抽取黯霧並造成目前生命傷害。",
           "patch73Values": [
             {
               "label": "取決於目前生命的傷害",
@@ -88319,6 +88982,18 @@
               "value": "效果降低；官方未列精確倍率",
               "kind": "rule"
             }
+          ],
+          "patch73bValues": [
+            {
+              "label": "被動｜赦罪 · 標準暴擊傷害係數",
+              "value": "80%",
+              "kind": "change"
+            },
+            {
+              "label": "被動｜赦罪 · 每層黯霧的物攻",
+              "value": "0.9",
+              "kind": "change"
+            }
           ]
         },
         {
@@ -88331,6 +89006,13 @@
             {
               "label": "基礎傷害",
               "value": "50 / 80 / 110 / 140",
+              "kind": "change"
+            }
+          ],
+          "patch73bValues": [
+            {
+              "label": "一技｜刺骨幽闇 · 基礎傷害",
+              "value": "30/60/90/120",
               "kind": "change"
             }
           ]
@@ -88500,8 +89182,8 @@
       "skillIconCount": 5,
       "detailAssetBatch": "first70-user-supplied",
       "abilityNamesVerified": "Riot TW",
-      "reviewStatus": "v115-first-pass-delta-reviewed",
-      "reviewedAt": "2026-10-01",
+      "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+      "reviewedAt": "2026-10-15",
       "detailTemplate": "structured-baron-v40",
       "hideBan": true,
       "supportMasterTemplate": "thresh-v69",
@@ -88819,7 +89501,7 @@
         "changedSkills": [],
         "note": "公開資料校正完成；配裝與Tier是編輯建議，並非官方推薦或台服勝率。 7.3無單獨技能調整者保留既有技能資料，不代表完整成長表已重新實測。"
       },
-      "patch": "7.3a",
+      "patch": "7.3b",
       "patch73aReview": {
         "version": "v115",
         "date": "2026-10-01",
@@ -88905,6 +89587,60 @@
           }
         ],
         "note": "7.3基準加上7.3a更新後的現行攻速參數；比例1.1＝110%、0.025＝2.5%，不是直接填入每秒攻擊次數。"
+      },
+      "patch73bNumbers": [
+        {
+          "key": "P",
+          "title": "被動｜赦罪",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "90%",
+              "after": "80%",
+              "kind": "change"
+            },
+            {
+              "label": "每層黯霧的物攻",
+              "before": "1.25",
+              "after": "0.9",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜刺骨幽闇",
+          "rows": [
+            {
+              "label": "基礎傷害",
+              "before": "50/80/110/140",
+              "after": "30/60/90/120",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "patch73bReview": {
+        "version": "v116",
+        "date": "2026-10-15",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "status": "first-wave-official-delta",
+        "directChange": true,
+        "direction": "nerf",
+        "affectedItems": [],
+        "affectedRunes": [],
+        "jungleChange": false,
+        "previousTier": "A",
+        "currentTier": "A",
+        "tierReason": "保留A（沿用前版，尚未完成7.3b分路重評）；本輪只校正官方數值與直接文字衝突，不把增削直接換算為Tier。",
+        "buildReason": "本輪保留原出裝與情境配置；先更新技能數值，尚未作7.3b全裝備組合重評。",
+        "runeReason": "保留原符文配置；本配置未直接引用本次4項變動符文，其他符文仍沿用既有資料。",
+        "spellReason": "保留原召喚師技能；7.3b公告未直接改動召喚師技能。",
+        "skillReason": "保留Q > W > E與原15級加點；本次差異未改變技能升級規則。",
+        "notes": [
+          "每魂物攻改0.9，標準暴擊修正改80%，一技基礎傷害各減20；保留安全抽魂與團隊功能，不沿用舊版成長估算。"
+        ],
+        "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
       }
     },
     {
@@ -102515,5 +103251,20 @@
     "reviewedAt": "2026-10-10",
     "patch": "7.3a",
     "scope": "攻略文字、非預設召喚師技能條件與19份鞋子升級欄位校正；不是新一輪Tier評級或遊戲內全量實測。"
+  },
+  "patch73bProgress": {
+    "version": "v116",
+    "date": "2026-10-15",
+    "reviewed": 12,
+    "total": 203,
+    "directHeroes": 8,
+    "directProfiles": 12,
+    "numericHeroRows": 25,
+    "heroRuleRows": 1,
+    "tierChanges": 0,
+    "buildChanges": 0,
+    "runeChanges": 0,
+    "scope": "官方直接調整的8位英雄／12份分路配置首波校正；其餘191份尚未完成7.3b逐頁審查。",
+    "methodology": "官方英繁公告交叉核對；保留前版Tier及預設配置，不宣稱新版本勝率或遊戲內實測。"
   }
 }

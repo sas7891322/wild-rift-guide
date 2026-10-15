@@ -1,0 +1,747 @@
+{
+  "patch": "7.3b",
+  "version": "v116",
+  "published": "2026-10-14",
+  "reviewedAt": "2026-10-15",
+  "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+  "sources": [
+    "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+    "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
+  ],
+  "note": "數值為英／繁官方公告交叉核對的版本差異；官方增削不等同本站分路Tier。公告內容於版本期間陸續推出。",
+  "heroes": [
+    {
+      "baseId": "volibear",
+      "name": "弗力貝爾",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "W",
+          "title": "二技｜狂熊撕咬",
+          "rows": [
+            {
+              "label": "傷害物攻係數",
+              "before": "100%",
+              "after": "110%",
+              "kind": "change"
+            },
+            {
+              "label": "強化傷害物攻係數",
+              "before": "160%",
+              "after": "176%",
+              "kind": "change"
+            },
+            {
+              "label": "強化治療：已損失生命係數",
+              "before": "5%/6%/7%/8%",
+              "after": "5%/8%/11%/14%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "二技傷害成長提高；強化治療一級係數維持5%，後續等級提高。"
+    },
+    {
+      "baseId": "jhin",
+      "name": "燼",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜低語",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "80%",
+              "after": "85%",
+              "kind": "change"
+            },
+            {
+              "label": "已損失生命傷害",
+              "before": "11%–25%（15級達上限）",
+              "after": "11.5%–25%（10級達上限）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "暴擊係數是對標準暴擊傷害的修正，不是暴擊率；第四發生命傷害更早達到上限。"
+    },
+    {
+      "baseId": "tryndamere",
+      "name": "泰達米爾",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜戰鬥狂怒",
+          "rows": [
+            {
+              "label": "每點怒氣的暴擊率",
+              "before": "0.3%–0.5%（隨等級）",
+              "after": "0.5%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技｜旋風斬",
+          "rows": [
+            {
+              "label": "傷害",
+              "before": "80/120/160/200＋100%額外物攻＋80%魔攻",
+              "after": "80/130/180/230＋110%額外物攻＋80%魔攻",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "怒氣提供的暴擊率不再隨等級由0.3%起跳；三技魔攻係數不變。"
+    },
+    {
+      "baseId": "hwei",
+      "name": "赫威",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜筆仙真跡",
+          "rows": [
+            {
+              "label": "傷害",
+              "before": "40–285（隨等級）＋30%魔攻",
+              "after": "30–280（隨等級）＋25%魔攻",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技派生2｜明鏡止水",
+          "rows": [
+            {
+              "label": "初始護盾",
+              "before": "60/80/100/120＋35%魔攻",
+              "after": "50/70/90/110＋30%魔攻",
+              "kind": "change"
+            },
+            {
+              "label": "最大護盾",
+              "before": "108/128/148/168＋71%魔攻",
+              "after": "98/118/138/158＋60%魔攻",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技派生3｜迴旋光暈",
+          "rows": [
+            {
+              "label": "額外基礎傷害",
+              "before": "30/40/50/60",
+              "after": "20/30/40/50",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技派生3｜碎骨大顎",
+          "rows": [
+            {
+              "label": "命中框",
+              "before": "原命中框",
+              "after": "顎部命中框最佳化；未公布精確尺寸",
+              "kind": "rule"
+            },
+            {
+              "label": "施放距離",
+              "before": "7.5",
+              "after": "7",
+              "kind": "change"
+            },
+            {
+              "label": "傷害",
+              "before": "70/120/170/220＋70%魔攻",
+              "after": "60/110/160/210＋60%魔攻",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "英／繁7.3b公告一致列舊最大護盾71%魔攻、新值60%魔攻；現行資料採新值，舊截圖7.1%不再作為計算依據。"
+    },
+    {
+      "baseId": "nocturne",
+      "name": "夜曲",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "每級生命成長",
+              "before": "134",
+              "after": "128",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜黃昏渠道",
+          "rows": [
+            {
+              "label": "物攻加成",
+              "before": "20/30/40/50",
+              "after": "10/25/40/55",
+              "kind": "change"
+            },
+            {
+              "label": "基礎傷害",
+              "before": "70/125/180/235",
+              "after": "60/115/170/225",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜無盡夢魘",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "110/90/70秒",
+              "after": "120/100/80秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "整體削弱；一技物攻加成三級不變、四級提高，不能寫成各級全降。"
+    },
+    {
+      "baseId": "yunara",
+      "name": "尤娜拉",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "Q",
+          "title": "一技｜靈心修真",
+          "rows": [
+            {
+              "label": "被動基礎傷害",
+              "before": "10/15/20/25",
+              "after": "5/10/15/20",
+              "kind": "change"
+            },
+            {
+              "label": "主動基礎傷害",
+              "before": "10/15/20/25",
+              "after": "5/10/15/20",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜超逸絕塵",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "70/60/50秒",
+              "after": "70/65/60秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "一技傷害降低；一級大絕冷卻維持70秒，二、三級延長。"
+    },
+    {
+      "baseId": "senna",
+      "name": "姍娜",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜赦罪",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "90%",
+              "after": "80%",
+              "kind": "change"
+            },
+            {
+              "label": "每層黯霧的物攻",
+              "before": "1.25",
+              "after": "0.9",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜刺骨幽闇",
+          "rows": [
+            {
+              "label": "基礎傷害",
+              "before": "50/80/110/140",
+              "after": "30/60/90/120",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "飛龍路與輔助共用此技能改動；黯霧物攻、暴擊修正與一技基礎傷害下降，不把未列的治療量一起削減。"
+    },
+    {
+      "baseId": "yasuo",
+      "name": "犽宿",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜浪人之道",
+          "rows": [
+            {
+              "label": "標準暴擊傷害係數",
+              "before": "90%",
+              "after": "95%",
+              "kind": "change"
+            },
+            {
+              "label": "護盾",
+              "before": "77–529（隨等級）",
+              "after": "77–630（隨等級）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "標準暴擊傷害係數提高，不是暴擊率提高；護盾最低值不變、成長上限提高。"
+    }
+  ],
+  "items": [
+    {
+      "id": "wr73-8995",
+      "name": "妖夢鬼刀",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "總價",
+              "before": "3000",
+              "after": "2900",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "wr73-9261",
+      "name": "日輪的加冕",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "總價",
+              "before": "2600",
+              "after": "2500",
+              "kind": "change"
+            },
+            {
+              "label": "生命",
+              "before": "200",
+              "after": "300",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "wr73-9291",
+      "name": "荊棘之甲",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "總價",
+              "before": "2700",
+              "after": "2850",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "wr73-9311",
+      "name": "好戰者鎧甲",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "passive",
+          "title": "好戰之心",
+          "rows": [
+            {
+              "label": "觸發門檻（額外生命）",
+              "before": "900",
+              "after": "1250",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "提高被動所需額外生命門檻，不是把道具自帶生命改為1250。"
+    },
+    {
+      "id": "wr73-9068",
+      "name": "史提克彈簧刀",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "價格與充能",
+          "rows": [
+            {
+              "label": "總價",
+              "before": "3000",
+              "after": "2900",
+              "kind": "change"
+            },
+            {
+              "label": "普攻額外充能層數",
+              "before": "5",
+              "after": "7",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "強化價格與充能；未新增暴擊率，不因改版就把所有射手預設核心改成彈簧刀。"
+    },
+    {
+      "id": "wr73-9087",
+      "name": "雲陶狂箭",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "總價",
+              "before": "3100",
+              "after": "3000",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "另修正攻速效果偶爾錯誤觸發；7.3a的35%攻速與25秒觸發冷卻未被本次公告改動。"
+    }
+  ],
+  "runes": {
+    "changed": true,
+    "note": "以下4項為一般符文；符文大亂鬥增幅另列，不互相覆蓋。",
+    "entries": [
+      {
+        "id": "electrocute",
+        "name": "死亡電刑",
+        "direction": "buff",
+        "groups": [
+          {
+            "key": "rune",
+            "title": "觸發傷害",
+            "rows": [
+              {
+                "label": "傷害",
+                "before": "40–210（隨等級）＋10%額外物攻＋5%魔攻",
+                "after": "60–210（隨等級）＋10%額外物攻＋5%魔攻",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": ""
+      },
+      {
+        "id": "cheap-shot",
+        "name": "凌虐",
+        "direction": "buff",
+        "groups": [
+          {
+            "key": "rune",
+            "title": "冷卻",
+            "rows": [
+              {
+                "label": "冷卻",
+                "before": "7秒",
+                "after": "5秒",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": ""
+      },
+      {
+        "id": "grasp",
+        "name": "不死之握",
+        "direction": "nerf",
+        "groups": [
+          {
+            "key": "rune",
+            "title": "傷害與成長",
+            "rows": [
+              {
+                "label": "最大生命傷害係數",
+                "before": "3.3%",
+                "after": "3%",
+                "kind": "change"
+              },
+              {
+                "label": "最大生命成長",
+                "before": "10",
+                "after": "8",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": ""
+      },
+      {
+        "id": "aery",
+        "name": "艾莉",
+        "direction": "nerf",
+        "groups": [
+          {
+            "key": "rune",
+            "title": "護盾",
+            "rows": [
+              {
+                "label": "護盾",
+                "before": "25–120（隨等級）＋10%額外物攻＋5%魔攻",
+                "after": "20–100（隨等級）＋10%額外物攻＋5%魔攻",
+                "kind": "change"
+              }
+            ]
+          }
+        ],
+        "note": ""
+      }
+    ]
+  },
+  "battlefield": [
+    {
+      "name": "火紅巨喙鳥",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "野怪生命",
+          "rows": [
+            {
+              "label": "基礎生命",
+              "before": "1000",
+              "after": "1100",
+              "kind": "change"
+            },
+            {
+              "label": "每級生命成長",
+              "before": "110",
+              "after": "125",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "巨喙鳥",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "野怪生命",
+          "rows": [
+            {
+              "label": "基礎生命",
+              "before": "500",
+              "after": "550",
+              "kind": "change"
+            },
+            {
+              "label": "每級生命成長",
+              "before": "55",
+              "after": "65",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "aaa": {
+    "scope": "僅適用符文大亂鬥增幅；不等同一般符文，也不代表重新評定ARAM英雄Tier。",
+    "augments": [
+      {
+        "name": "舒緩湍流",
+        "rows": [
+          {
+            "label": "治療：最大生命係數",
+            "before": "1.5%",
+            "after": "1%",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "堅若磐石",
+        "rows": [
+          {
+            "label": "傷害減免",
+            "before": "3.75–14.25（隨等級）",
+            "after": "3.5–10.5（隨等級）",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "普羅頭",
+        "rows": [
+          {
+            "label": "傷害減免",
+            "before": "3–15（隨等級）",
+            "after": "3–12（隨等級）",
+            "kind": "change"
+          },
+          {
+            "label": "真實傷害減免",
+            "before": "50%",
+            "after": "40%",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "起源：致命節奏",
+        "rows": [
+          {
+            "label": "每層攻速",
+            "before": "9%",
+            "after": "6%",
+            "kind": "change"
+          },
+          {
+            "label": "滿層攻擊距離",
+            "before": "50",
+            "after": "25",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "靈光一閃",
+        "rows": [
+          {
+            "label": "轉化為技能加速",
+            "before": "25%額外物攻＋12%魔攻",
+            "after": "20%額外物攻＋10%魔攻",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "升級破曉綻放之劍",
+        "rows": [
+          {
+            "label": "減少的基礎物攻轉為治療係數",
+            "before": "100%",
+            "after": "300%",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "越來越大",
+        "rows": [
+          {
+            "label": "每次參與擊殺的額外生命",
+            "before": "15",
+            "after": "30",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "巨人",
+        "rows": [
+          {
+            "label": "額外生命加成",
+            "before": "20%",
+            "after": "30%",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "風馳電掣",
+        "rows": [
+          {
+            "label": "暴擊時獲得的跑速與攻速",
+            "before": "15%",
+            "after": "25%",
+            "kind": "change"
+          }
+        ]
+      }
+    ]
+  },
+  "bugFixes": [
+    {
+      "id": "yun-tal-proc",
+      "name": "雲陶狂箭",
+      "note": "修正攻速效果偶爾在不正確時機觸發。"
+    },
+    {
+      "id": "caitlyn-trap",
+      "name": "凱特琳｜捕獲陷阱",
+      "note": "修正啟動陷阱會降低雙防的異常；公告未列精確數值，不另編造減防量。"
+    },
+    {
+      "id": "smolder-q",
+      "name": "史矛德｜一技",
+      "note": "修正技能說明；公告未提供修正前後全文，不據此猜改傷害。"
+    },
+    {
+      "id": "veigar-q",
+      "name": "維迦｜一技",
+      "note": "修正施放距離異常；公告未提供新舊距離，不補推測值。"
+    }
+  ],
+  "guild": {
+    "name": "公會排行榜結算",
+    "note": "每週日23:55取積分計算排名，排行榜於00:00更新；依官方遊戲時區顯示，不另假定跨區時差。"
+  },
+  "scope": "完整遊戲性數值差異與錯誤修正；不收錄商城寶箱機率或造型銷售內容。"
+}
