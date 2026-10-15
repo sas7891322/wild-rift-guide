@@ -5,12 +5,12 @@
   "enName": "Hwei",
   "roleId": "mid",
   "role": "中路",
-  "tier": "A",
-  "provisional": true,
+  "tier": "S+",
+  "provisional": false,
   "patch": "7.3b",
   "position": "遠距法師／三主題施法",
   "tags": [
-    "暫定評級",
+    "本站評級",
     "遠距消耗",
     "區域控制",
     "技能切換"
@@ -21,19 +21,19 @@
     "manaflow-band",
     "transcendence",
     "scorch",
-    "bone-plating"
+    "legend-haste"
   ],
   "items": [
     "wr73-9182",
     "wr73-9215",
-    "wr73-9219",
-    "wr73-9200",
-    "wr73-9157"
+    "wr73-9204",
+    "wr73-9198",
+    "wr73-9219"
   ],
   "coreItems": [
     "wr73-9182",
     "wr73-9215",
-    "wr73-9219"
+    "wr73-9204"
   ],
   "starterItems": [
     "wr73-9110"
@@ -54,8 +54,8 @@
     "Q",
     "R",
     "Q",
-    "E",
     "Q",
+    "E",
     "R",
     "E",
     "E",
@@ -77,19 +77,19 @@
       "雷茲"
     ],
     "bad": [
-      "劫",
-      "飛斯",
-      "卡薩丁"
+      "犽宿",
+      "犽凝",
+      "星朵拉"
     ],
-    "ban": "劫"
+    "ban": "犽宿"
   },
   "playstyle": {
     "前期": "用一技清線與消耗，三技保留應付突進；二級可依控制或續航需求先學三技或二技。",
-    "中期": "黑焰火炬 → 無限寶珠成形後，依遠距法師／三主題施法定位處理團戰與兵線；第三件接死亡之帽。後兩件按情境調整，保留主要輸出循環或承傷功能。離線支援前先處理兵線，保留撤退手段與河道視野。",
+    "中期": "黑焰火炬 → 無限寶珠 → 黎安卓的折磨為預設前三件。黑焰與寶珠後第三件黎安卓，幽魂之花補穿透，帽子末件；全部情境配置同步五件基準，不再重複建議買已裝備的黎安卓。",
     "後期": "先看敵方控制與進場技能，再選傷害、增益或控制主題；不要急著交掉自保。"
   },
   "summary": "先選主題再選施法，以遠距清線與控制建立輸出空間；主一技、副三技，保留控制防突進。",
-  "sourceNote": "v113｜赫威上市初步配置。<a href=\"https://www.wildriftfire.com/guide/hwei\" target=\"_blank\" rel=\"noopener noreferrer\">配裝及技能優先級參考</a>、<a href=\"https://wildriftcore.com/en/guides/hwei-wild-rift-guide/\" target=\"_blank\" rel=\"noopener noreferrer\">15級加點交叉參考</a>。只採用可交叉核對的加點與機制，不採參考頁的舊鞋子附魔或未驗證勝率；裝備以本站7.3現行目錄為準。技能截圖數值保留來源限制。 v116｜2026/10/15 <a href=\"https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/\" target=\"_blank\" rel=\"noopener noreferrer\">7.3b官方數值首波校正</a>；技能新值已同步，配置與Tier保留前版，未宣稱完成全英雄重評。",
+  "sourceNote": "<strong>7.3b 分項校正（v118・2026-10-15）</strong>：本頁採本站評級與配置建議，不是官方排名或台服勝率。來源版本、判斷理由及個別待確認項目請展開「7.3b 校正重點」查看；v117首輪紀錄保留在歷史下拉欄。",
   "avatar": "../assets/images/heroes/hwei/portrait.webp",
   "abilities": [
     {
@@ -122,12 +122,13 @@
       "label": "1 技",
       "title": "主題：厄禍筆法",
       "icon": "../assets/images/heroes/hwei/q.webp",
-      "summary": "傷害主題：選取主題後，再選擇三種施法之一。截圖顯示冷卻：9.5 秒。",
+      "summary": "傷害主題：選取主題後，再選擇三種施法之一；同主題共用冷卻。",
       "details": [
         "1 → 1｜壞滅熾燄：火球命中後範圍爆炸；7.3a傷害為50/85/120/155＋70%魔攻＋4%/5%/6%/7%目標最大生命。",
         "1 → 2｜震顫轟雷：延遲攻擊遠距目標；對受硬控或單獨命中的目標，依已損失生命提高傷害的係數在7.3a改為100%/150%/200%/250%。本次公告未列完整基礎傷害成長，不沿用舊截圖的最高傷害作現行斬殺線。",
-        "1 → 3｜熔岩裂隙：畫出往前爆發的火柱並留下岩漿。每次噴發造成 20＋30% 魔攻的魔法傷害；岩漿區域每秒造成 20＋30% 魔攻的魔法傷害並緩速 30%，每塊岩漿區持續 2.5 秒。",
-        "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。"
+        "1 → 3｜熔岩裂隙：畫出往前爆發的火柱並留下岩漿；噴發與岩漿持續傷害分開計算，區域能限制走位。舊截圖的單一等級數字不再冒充完整成長表。",
+        "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。",
+        "局部待確認：Q各級零技能加速基礎冷卻、震顫轟雷完整基礎傷害與熔岩裂隙各級數值。舊截圖9.5秒未記錄技能等級與技能加速，已移到來源紀錄，不作現行固定冷卻。"
       ],
       "patch73aValues": [
         {
@@ -147,12 +148,13 @@
       "label": "2 技",
       "title": "主題：靜謐筆法",
       "icon": "../assets/images/heroes/hwei/w.webp",
-      "summary": "增益主題：提供移動、護盾或回魔效果。截圖顯示冷卻：17 秒。",
+      "summary": "增益主題：提供移動、護盾或回魔效果；同主題共用冷卻。",
       "details": [
-        "2 → 1｜川流湍急：畫出直線前進、持續 4 秒的水流，提高自身與友方英雄跑速；截圖顯示加成為 30%（30＋3% 魔攻）。",
+        "2 → 1｜川流湍急：畫出直線水流，提高自身與友軍跑速，協助轉線或拉開距離。舊截圖的4秒／30%未標完整等級條件，不作全等級固定數值。",
         "2 → 2｜明鏡止水：在目標位置創造持續3秒的防護水池；7.3b初始護盾為50/70/90/110＋30%魔攻，逐漸增強至最大98/118/138/158＋60%魔攻。最大護盾是上限，不與初始護盾相加。原來源記錄的1.5秒增強過程與對其他友軍減少15%護盾未在本次公告改動。",
-        "2 → 3｜迴旋光暈：畫出三道光暈圍繞自身；下三次技能或普攻的額外基礎傷害在7.3b改為20/30/40/50，原來源的15%魔攻係數未被本次公告改動。命中回魔原截圖為45，未取得完整各級回魔表，不將單一截圖值當作全等級數值。",
-        "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。"
+        "2 → 3｜迴旋光暈：畫出三道光暈圍繞自身，下三次技能或普攻附帶額外魔法傷害並在命中時回魔。7.3b官方額外基礎傷害為20/30/40/50；魔攻係數與完整回魔成長表尚未由本輪官方公告核定，不把舊截圖45回魔當作全等級值。",
+        "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。",
+        "局部待確認：W各級零技能加速基礎冷卻、川流湍急完整跑速／持續時間成長及迴旋光暈完整回魔數值。舊截圖17秒不再作現行固定冷卻；官方已公布的明鏡止水與迴旋光暈基礎傷害正常顯示。"
       ],
       "patch73bValues": [
         {
@@ -177,12 +179,13 @@
       "label": "3 技",
       "title": "主題：苦惱筆法",
       "icon": "../assets/images/heroes/hwei/e.webp",
-      "summary": "控制主題：阻止突進、限制走位或集中敵人。截圖顯示冷卻：13 秒。",
+      "summary": "控制主題：阻止突進、限制走位或集中敵人；同主題共用冷卻。",
       "details": [
-        "3 → 1｜死神面影：發射鬼面，對第一名命中的敵人造成 70＋70% 魔攻的魔法傷害，並使其恐懼 1 秒。",
-        "3 → 2｜深淵凝視：在目標位置畫出提供視野的魔眼，鎖定最近的敵方英雄並發射追蹤導彈。導彈對第一名命中的敵人造成 70＋70% 魔攻的魔法傷害，定身 1.25 秒，並揭露其位置 2.5 秒。",
+        "3 → 1｜死神面影：發射鬼面，對第一名命中的敵人造成魔法傷害並恐懼；適合預留來阻止正面突進。舊截圖70＋70%魔攻／1秒是單一等級觀察，不作全等級固定值。",
+        "3 → 2｜深淵凝視：在目標位置畫出提供視野的魔眼，鎖定最近的敵方英雄並發射追蹤導彈；命中造成魔法傷害、定身並揭露位置。舊截圖70＋70%魔攻／1.25秒定身不是完整成長表。",
         "3 → 3｜碎骨大顎：7.3b施放距離為7，傷害60/110/160/210＋60%魔攻，並調整顎部命中框（官方未列精確尺寸）。將命中敵人拉向中心；原來源記錄的40%緩速於1.25秒內衰減，本次公告未調整。",
-        "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。"
+        "同一主題內三種施法共用該主題冷卻；升級的是主題，不是把九個子技能各自分配技能點。",
+        "局部待確認：E各級零技能加速基礎冷卻，以及死神面影／深淵凝視的完整傷害和控制時長表。舊截圖13秒不作現行固定冷卻；碎骨大顎已公布的7.3b距離與傷害維持官方數值。"
       ],
       "patch73bValues": [
         {
@@ -207,11 +210,12 @@
       "label": "大絕",
       "title": "絕望螺旋",
       "icon": "../assets/images/heroes/hwei/r.webp",
-      "summary": "發射絕望幻象，附著在敵方英雄身上 3 秒並逐漸擴大。截圖顯示冷卻：70 秒。",
+      "summary": "發射絕望幻象並附著在敵方英雄身上，形成逐漸擴大的領域，最後引爆。",
       "details": [
-        "對敵人施加 10% 緩速，每 0.25 秒累加一次；每秒造成 10＋5% 魔攻的魔法傷害。",
+        "領域持續造成傷害並逐步加深緩速；舊截圖的每秒10＋5%魔攻未記錄完整技能等級，不能當作全等級固定傷害。",
         "領域引爆時的7.3a魔法傷害為200/300/400＋70%魔攻。",
-        "附著的敵方英雄提前陣亡也會引爆領域，不必一定等待擴張結束。"
+        "附著的敵方英雄提前陣亡也會引爆領域，不必一定等待擴張結束。",
+        "局部待確認：R各級零技能加速基礎冷卻及完整持續傷害表。舊截圖70秒未記錄技能等級／技能加速，已移到來源紀錄；最終引爆傷害採官方7.3a數值。"
       ],
       "patch73aValues": [
         {
@@ -224,7 +228,62 @@
   ],
   "detailTemplate": "structured-baron-v40",
   "hideBan": true,
-  "combos": [],
+  "combos": [
+    {
+      "name": "近距抓人消耗",
+      "steps": [
+        {
+          "key": "E",
+          "label": "3→3：碎骨大顎"
+        },
+        {
+          "key": "Q",
+          "label": "1→1：壞滅熾燄"
+        },
+        {
+          "key": "MOVE",
+          "label": "命中後拉開"
+        }
+      ],
+      "note": "手機先選主題再選子技能；EE範圍為現行7格，接QQ須重新選Q主題。兩個不同技能命中才觸發被動，不保證無條件必中。"
+    },
+    {
+      "name": "恐懼後遠距落雷",
+      "steps": [
+        {
+          "key": "E",
+          "label": "3→1：死神面影"
+        },
+        {
+          "key": "Q",
+          "label": "1→2：震顫轟雷"
+        }
+      ],
+      "note": "先EQ命中恐懼，再預判QW延遲落雷；未控制到人時可保留Q，不連按兩個E子技能。"
+    },
+    {
+      "name": "持續區域團戰",
+      "steps": [
+        {
+          "key": "W",
+          "label": "2→3：迴旋光暈"
+        },
+        {
+          "key": "Q",
+          "label": "1→3：熔岩裂隙"
+        },
+        {
+          "key": "E",
+          "label": "3→3：碎骨大顎"
+        },
+        {
+          "key": "R",
+          "label": "4技：絕望螺旋"
+        }
+      ],
+      "note": "先準備WE再用QE鋪地，EE把可命中的目標移進傷害區。選錯主題時按清洗毛筆取消後，才回到一般選單施放R；同主題共用冷卻。"
+    }
+  ],
   "mechanics": [
     {
       "title": "清洗毛筆",
@@ -236,11 +295,11 @@
     },
     {
       "title": "坦克多",
-      "text": "高生命前排多時，無限寶珠替換黎安卓的折磨；高魔防時虛空之杖提前。"
+      "text": "預設已含黎安卓；高魔防時以虛空之杖替換幽魂之花，兩件百分比穿透不要並列。"
     },
     {
       "title": "護盾多",
-      "text": "若仍需保命可保留中婭沙漏，改替換無限寶珠。"
+      "text": "護盾妨礙集火時可由帽子格改海洋之戟；若先前已換中婭保命，不要把必需的保命格又覆蓋。"
     },
     {
       "title": "先手控制多",
@@ -253,41 +312,42 @@
   ],
   "buildVariants": [
     {
-      "title": "坦克多",
-      "when": "坦克多",
+      "title": "高魔防",
+      "when": "高魔防",
       "items": [
         "wr73-9182",
+        "wr73-9215",
         "wr73-9204",
-        "wr73-9219",
         "wr73-9200",
-        "wr73-9157"
+        "wr73-9219"
       ],
       "runes": [
         "arcane-comet",
         "manaflow-band",
         "transcendence",
         "scorch",
-        "bone-plating"
+        "legend-haste"
       ],
       "spells": [
         "flash",
         "barrier"
       ],
       "boots": [
-        "wr73-9484"
+        "wr73-9484",
+        "wr73-9486"
       ],
-      "note": "以黎安卓的折磨替換無限寶珠；魔防高時虛空之杖提前。",
-      "reviewedAt": "2026-09-23",
-      "dataVersion": "7.3"
+      "note": "幽魂之花替換虛空之杖，保留黎安卓持續傷害。",
+      "reviewedAt": "2026-10-15",
+      "dataVersion": "7.3b-v117"
     },
     {
-      "title": "護盾多",
-      "when": "護盾多",
+      "title": "大量護盾",
+      "when": "大量護盾",
       "items": [
         "wr73-9182",
         "wr73-9215",
-        "wr73-9219",
-        "wr73-9200",
+        "wr73-9204",
+        "wr73-9198",
         "wr73-9165"
       ],
       "runes": [
@@ -295,27 +355,28 @@
         "manaflow-band",
         "transcendence",
         "scorch",
-        "bone-plating"
+        "legend-haste"
       ],
       "spells": [
         "flash",
         "barrier"
       ],
       "boots": [
-        "wr73-9484"
+        "wr73-9484",
+        "wr73-9486"
       ],
-      "note": "需要保命時保留沙漏，改換無限寶珠。",
-      "reviewedAt": "2026-09-23",
-      "dataVersion": "7.3"
+      "note": "帽子替換海洋之戟，犧牲面板魔攻取得破盾。",
+      "reviewedAt": "2026-10-15",
+      "dataVersion": "7.3b-v117"
     },
     {
-      "title": "先手控制多",
-      "when": "先手控制多",
+      "title": "法術先手",
+      "when": "法術先手",
       "items": [
         "wr73-9182",
         "wr73-9215",
-        "wr73-9219",
-        "wr73-9200",
+        "wr73-9204",
+        "wr73-9198",
         "wr73-9196"
       ],
       "runes": [
@@ -323,135 +384,204 @@
         "manaflow-band",
         "transcendence",
         "scorch",
-        "bone-plating"
+        "legend-haste"
       ],
       "spells": [
         "flash",
         "barrier"
       ],
       "boots": [
-        "wr73-9484"
+        "wr73-9484",
+        "wr73-9486"
       ],
-      "note": "女妖面紗防先手，不等同解控。",
-      "reviewedAt": "2026-09-23",
-      "dataVersion": "7.3"
+      "note": "帽子替換女妖面紗；女妖不是主動解控。",
+      "reviewedAt": "2026-10-15",
+      "dataVersion": "7.3b-v117"
     },
     {
-      "title": "回復多",
-      "when": "回復多",
+      "title": "高回復",
+      "when": "高回復",
       "items": [
         "wr73-9182",
         "wr73-9168",
-        "wr73-9219",
-        "wr73-9200",
-        "wr73-9157"
+        "wr73-9204",
+        "wr73-9198",
+        "wr73-9219"
       ],
       "runes": [
         "arcane-comet",
         "manaflow-band",
         "transcendence",
         "scorch",
-        "bone-plating"
+        "legend-haste"
       ],
       "spells": [
         "flash",
         "barrier"
       ],
       "boots": [
-        "wr73-9484"
+        "wr73-9484",
+        "wr73-9486"
       ],
-      "note": "無限寶珠替換黑魔禁書。",
-      "reviewedAt": "2026-09-23",
-      "dataVersion": "7.3"
+      "note": "寶珠替換黑魔禁書，先重創小件過渡。",
+      "reviewedAt": "2026-10-15",
+      "dataVersion": "7.3b-v117"
+    },
+    {
+      "title": "突進爆發",
+      "when": "突進爆發",
+      "items": [
+        "wr73-9182",
+        "wr73-9157",
+        "wr73-9204",
+        "wr73-9198",
+        "wr73-9219"
+      ],
+      "runes": [
+        "arcane-comet",
+        "manaflow-band",
+        "transcendence",
+        "scorch",
+        "legend-haste"
+      ],
+      "spells": [
+        "flash",
+        "barrier"
+      ],
+      "boots": [
+        "wr73-9484",
+        "wr73-9486"
+      ],
+      "note": "寶珠替換中婭沙漏，保留穿透與持續傷害。",
+      "reviewedAt": "2026-10-15",
+      "dataVersion": "7.3b-v117"
     }
   ],
   "matchupAdjustments": {
-    "intro": "以下替換均以本頁目前五件成裝為基準，同一格多項建議擇一；二級鞋與三級鞋是一條升級路線，不是同時穿兩雙。",
-    "logicVersion": "v112-7.3-three-lanes",
+    "intro": "依本頁目前五件成裝與鞋線替換；同一格多個建議擇一。先看實際傷害和控制，再決定是否犧牲輸出或保命。",
+    "logicVersion": "v117-7.3b-mid",
     "roleId": "mid",
     "archetype": "mage",
     "situations": [
       {
         "id": "tank",
         "icon": "",
-        "label": "坦克／普攻威脅",
+        "label": "魔防成形",
         "priority": "高",
-        "trigger": "敵方前排物防／魔防成形，或近身普攻威脅明顯。",
-        "changes": [],
-        "keepTitle": "配置原則",
-        "keepText": "已帶對應穿透或冰霜之心時保留，不重複購買；依實際傷害類型決定。",
-        "warning": ""
+        "trigger": "高魔防時幽魂之花替換虛空之杖，保留單一百分比穿透格，犧牲團戰回復換穿透。",
+        "changes": [
+          {
+            "type": "item",
+            "title": "魔防成形",
+            "fromId": "wr73-9198",
+            "toId": "wr73-9200",
+            "condition": "高魔防時幽魂之花替換虛空之杖，保留單一百分比穿透格，犧牲團戰回復換穿透。",
+            "reason": "高魔防時幽魂之花替換虛空之杖，保留單一百分比穿透格，犧牲團戰回復換穿透。"
+          }
+        ],
+        "keepTitle": "配置取捨",
+        "keepText": "同一格的多個替換方案擇一，依主要死因或妨礙擊殺的原因決定。",
+        "warning": "鞋子更換時需連同三級升級路線一起更換；五件成裝不含鞋，主動裝仍占成裝格。"
       },
       {
         "id": "burst",
         "icon": "",
-        "label": "爆發／暴擊多",
+        "label": "近身爆發",
         "priority": "高",
-        "trigger": "主要死亡原因是一輪集火，無法完成輸出或控制。",
-        "changes": [],
-        "keepTitle": "配置原則",
-        "keepText": "同一格有多個建議時擇一；核心成形後依實際威脅調整。",
-        "warning": ""
+        "trigger": "敵方一輪爆發使你無法完成輸出時，改中婭並保留使用時機；若已配中婭就先調整站位與啟動時間。",
+        "changes": [
+          {
+            "type": "item",
+            "title": "近身爆發",
+            "fromId": "wr73-9219",
+            "toId": "wr73-9157",
+            "condition": "敵方一輪爆發使你無法完成輸出時，改中婭並保留使用時機；若已配中婭就先調整站位與啟動時間。",
+            "reason": "敵方一輪爆發使你無法完成輸出時，改中婭並保留使用時機；若已配中婭就先調整站位與啟動時間。"
+          }
+        ],
+        "keepTitle": "配置取捨",
+        "keepText": "同一格的多個替換方案擇一，依主要死因或妨礙擊殺的原因決定。",
+        "warning": "鞋子更換時需連同三級升級路線一起更換；五件成裝不含鞋，主動裝仍占成裝格。"
       },
       {
         "id": "magic",
         "icon": "",
-        "label": "魔法傷害多",
+        "label": "關鍵法術先手",
         "priority": "高",
-        "trigger": "敵方法術先手或持續魔法傷害成為主要威脅。",
+        "trigger": "敵方單次關鍵技能先手決定生死時改女妖；護盾被遠程消耗後先退，女妖不是主動解控。",
         "changes": [
           {
             "type": "item",
-            "title": "擋關鍵先手",
-            "fromId": "wr73-9157",
+            "title": "關鍵法術先手",
+            "fromId": "wr73-9219",
             "toId": "wr73-9196",
-            "condition": "主要死亡原因是單次技能開戰時改女妖；護盾被消耗後仍要後退。",
-            "reason": "主要死亡原因是單次技能開戰時改女妖；護盾被消耗後仍要後退。"
+            "condition": "敵方單次關鍵技能先手決定生死時改女妖；護盾被遠程消耗後先退，女妖不是主動解控。",
+            "reason": "敵方單次關鍵技能先手決定生死時改女妖；護盾被遠程消耗後先退，女妖不是主動解控。"
           }
         ],
-        "keepTitle": "配置原則",
-        "keepText": "同一格有多個建議時擇一；核心成形後依實際威脅調整。",
-        "warning": ""
-      },
-      {
-        "id": "cc",
-        "icon": "",
-        "label": "控制多",
-        "priority": "高",
-        "trigger": "魔法傷害與控制鏈影響生存或輸出。",
-        "changes": [
-          {
-            "type": "item",
-            "title": "二級鞋轉魔防韌性",
-            "fromId": "wr73-9484",
-            "toId": "wr73-9476",
-            "condition": "魔法傷害與可受韌性影響的控制占主導時，鞋子整條改水星之靴→鎖鏈軍靴。",
-            "reason": "魔法傷害與可受韌性影響的控制占主導時，鞋子整條改水星之靴→鎖鏈軍靴。"
-          }
-        ],
-        "keepTitle": "配置原則",
-        "keepText": "同一格有多個建議時擇一；核心成形後依實際威脅調整。",
-        "warning": "韌性不能縮短所有控制，例如擊飛；護盾與解控各有適用條件。"
+        "keepTitle": "配置取捨",
+        "keepText": "同一格的多個替換方案擇一，依主要死因或妨礙擊殺的原因決定。",
+        "warning": "鞋子更換時需連同三級升級路線一起更換；五件成裝不含鞋，主動裝仍占成裝格。"
       },
       {
         "id": "heal",
         "icon": "",
-        "label": "治療／吸血多",
+        "label": "持續回復",
         "priority": "高",
-        "trigger": "敵人持續回復令集火失敗。",
+        "trigger": "回復妨礙擊殺且隊友無法穩定重創時，先遺忘寶珠過渡再改黑魔禁書；不要為小額治療過早打散核心。",
         "changes": [
           {
             "type": "item",
-            "title": "需要持續重創",
-            "fromId": "wr73-9157",
+            "title": "持續回復",
+            "fromId": "wr73-9219",
             "toId": "wr73-9168",
-            "condition": "敵方回復妨礙集火且隊友無法維持重創時，改黑魔禁書；可先用遺忘寶珠過渡。",
-            "reason": "敵方回復妨礙集火且隊友無法維持重創時，改黑魔禁書；可先用遺忘寶珠過渡。"
+            "condition": "回復妨礙擊殺且隊友無法穩定重創時，先遺忘寶珠過渡再改黑魔禁書；不要為小額治療過早打散核心。",
+            "reason": "回復妨礙擊殺且隊友無法穩定重創時，先遺忘寶珠過渡再改黑魔禁書；不要為小額治療過早打散核心。"
           }
         ],
-        "keepTitle": "配置原則",
-        "keepText": "已帶重創時保留；先確認隊友能否穩定維持，避免所有人都犧牲核心。",
-        "warning": ""
+        "keepTitle": "配置取捨",
+        "keepText": "同一格的多個替換方案擇一，依主要死因或妨礙擊殺的原因決定。",
+        "warning": "鞋子更換時需連同三級升級路線一起更換；五件成裝不含鞋，主動裝仍占成裝格。"
+      },
+      {
+        "id": "shield",
+        "icon": "",
+        "label": "大量護盾",
+        "priority": "高",
+        "trigger": "護盾持續擋住主要傷害時改海洋之戟；這是破盾功能，不能替代重創。",
+        "changes": [
+          {
+            "type": "item",
+            "title": "大量護盾",
+            "fromId": "wr73-9219",
+            "toId": "wr73-9165",
+            "condition": "護盾持續擋住主要傷害時改海洋之戟；這是破盾功能，不能替代重創。",
+            "reason": "護盾持續擋住主要傷害時改海洋之戟；這是破盾功能，不能替代重創。"
+          }
+        ],
+        "keepTitle": "配置取捨",
+        "keepText": "同一格的多個替換方案擇一，依主要死因或妨礙擊殺的原因決定。",
+        "warning": "鞋子更換時需連同三級升級路線一起更換；五件成裝不含鞋，主動裝仍占成裝格。"
+      },
+      {
+        "id": "cc",
+        "icon": "",
+        "label": "魔傷與可縮短控制",
+        "priority": "高",
+        "trigger": "魔法傷害與可被韌性縮短的控制占主導時，整條鞋線改水星之靴→鎖鏈軍靴；韌性不縮短擊飛。",
+        "changes": [
+          {
+            "type": "item",
+            "title": "魔傷與可縮短控制",
+            "fromId": "wr73-9484",
+            "toId": "wr73-9476",
+            "condition": "魔法傷害與可被韌性縮短的控制占主導時，整條鞋線改水星之靴→鎖鏈軍靴；韌性不縮短擊飛。",
+            "reason": "魔法傷害與可被韌性縮短的控制占主導時，整條鞋線改水星之靴→鎖鏈軍靴；韌性不縮短擊飛。"
+          }
+        ],
+        "keepTitle": "配置取捨",
+        "keepText": "同一格的多個替換方案擇一，依主要死因或妨礙擊殺的原因決定。",
+        "warning": "鞋子更換時需連同三級升級路線一起更換；五件成裝不含鞋，主動裝仍占成裝格。"
       }
     ]
   },
@@ -468,10 +598,22 @@
     "matchupBasis": "新英雄對局為射程、位移與控制互動的條件判斷，尚無可靠勝率樣本；較有利不代表能無視敵方控制。",
     "scope": "配裝、符文、召喚師技能、15級建議加點、機制對局；勝率與部分完整技能成長值尚待實機資料"
   },
-  "reviewStatus": "v116-7.3b-first-wave-official-delta-reviewed",
+  "reviewStatus": "7.3b-field-reviewed",
   "reviewedAt": "2026-10-15",
-  "guideContentAudit": "v112-7.3-three-lanes",
-  "skillSequenceNote": "編輯建議：1級一技、2級三技、3級二技；主一技、副三技，大絕於 5／9／13 級提升。R 指「絕望螺旋」，不是選取主題時的取消操作。此表已比對激鬥峽谷攻略，未宣稱完成遊戲內實測。",
+  "guideContentAudit": {
+    "version": "v118",
+    "date": "2026-10-15",
+    "status": "7.3b-field-reviewed",
+    "sourcePatch": "7.3b",
+    "previousVersion": {
+      "version": "v117",
+      "date": "2026-10-15",
+      "status": "7.3b-full-roster-first-pass",
+      "sourcePatch": "7.3b",
+      "previousVersion": "v112-7.3-three-lanes"
+    }
+  },
+  "skillSequenceNote": "預設1至15級主Q、副E、W最後，7級點滿Q；大絕在5／9／13級優先。升級的是主題，九個子技能不各自花技能點。",
   "matchupReview113": {
     "date": "2026-09-23",
     "status": "editorial-mechanics",
@@ -480,26 +622,26 @@
   },
   "matchupNotes": [
     {
-      "title": "對維迦／斯溫／雷茲",
-      "text": "保持距離、用地面技能處理兵線，對方控制未交時不靠近貪普攻；優勢條件是先取得施法空間。"
+      "title": "中路配置與節奏",
+      "text": "黑焰與寶珠後第三件黎安卓，幽魂之花補穿透，帽子末件；全部情境配置同步五件基準，不再重複建議買已裝備的黎安卓。"
     },
     {
-      "title": "劫｜應對窗口",
-      "text": "保留防禦技能處理大絕進場，不把所有自保資源用來清兵。"
+      "title": "犽宿｜應對窗口",
+      "text": "避開可連續E的小兵路徑，重要投射物等待風牆空窗再交。"
     },
     {
-      "title": "飛斯｜應對窗口",
-      "text": "等對手不可選取的躲招手段交掉，再安排主要控制與爆發。"
+      "title": "犽凝｜應對窗口",
+      "text": "Q旋風就緒時拉開直線，E靈體進場後避開返回路徑，等收身再重設站位。"
     },
     {
-      "title": "卡薩丁｜應對窗口",
-      "text": "前期用兵線施壓，等對手取得大絕後靠近隊友，不追入無視野區。"
+      "title": "星朵拉｜應對窗口",
+      "text": "斜向離開暗黑法球與推球直線，E交出後才接近；不要追過既有球的位置。"
     }
   ],
   "skillDataCaveats": [
-    "逐級表是可用的編輯建議，不是唯一加點。",
-    "技能面板截圖未記錄完整等級／技能加速；截圖冷卻不當作零技能加速基礎冷卻。",
-    "明鏡止水現行初始／最大護盾已由英繁官方7.3b公告確認：50/70/90/110＋30%魔攻／98/118/138/158＋60%魔攻；舊截圖7.1%不再使用。其他未公告的完整技能成長表仍待遊戲內資料。"
+    "本頁配置、加點與本站評級已完成覆核；以下只有技能局部數值缺少足夠的等級／技能加速條件，不影響整份攻略狀態。",
+    "官方7.3a／7.3b已公布的QQ、QW增傷係數、R引爆，以及被動、WW護盾、WE基礎傷害、EE距離與傷害均採已確認值；未補造公告沒有提供的完整表。",
+    "四個主動技能的基礎冷卻及部分未公告完整成長表，逐項列於該技能的待確認說明；舊截圖數字保存於來源紀錄，不再置於現行技能摘要。"
   ],
   "patch73AttackSpeed": null,
   "officialReview114": {
@@ -515,7 +657,7 @@
     "note": "歷史紀錄：當時已核對主題與子技能名稱，並保留使用者提供的被動原圖。護盾數值後於7.3b取得官方確認；其他未公布的完整各級表仍待遊戲內資料。",
     "warning": "歷史備註：當時明鏡止水7.1%／71%係數有疑義；此項已由7.3b官方公告解除，現行最大護盾請用60%魔攻，不沿用歷史警告。"
   },
-  "version": "v116",
+  "version": "7.3b-v118-field-reviewed",
   "patch73aReview": {
     "version": "v115",
     "date": "2026-10-01",
@@ -655,6 +797,68 @@
     }
   ],
   "patch73bReview": {
+    "date": "2026-10-15",
+    "version": "v117",
+    "source": "https://www.wildriftfire.com/guide/hwei",
+    "sources": [
+      "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "https://www.wildriftfire.com/guide/hwei"
+    ],
+    "sourcePatch": "7.3b",
+    "referenceRole": "mid",
+    "referenceTier": "S+",
+    "previousTier": "A",
+    "currentTier": "S+",
+    "tierReason": "赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。",
+    "buildReason": "黑焰與寶珠後第三件黎安卓，幽魂之花補穿透，帽子末件；全部情境配置同步五件基準，不再重複建議買已裝備的黎安卓。",
+    "runeReason": "彗星與焦灼保留遠程消耗，傳說技能疾速替代骨甲支援主題技能輪轉；要用站位補生存。",
+    "spellReason": "閃現光盾保留，EE射程縮短後更需留撤退空間；光盾不能代替控制命中。",
+    "skillReason": "主Q、副E、W最後；修正15級表為7級點滿Q，5／9／13優先大絕，主題而非九個子技能各自加點。",
+    "mechanicsReason": "保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招；相同主題共用冷卻不能連放不同Q。",
+    "matchupReason": "以中路分頁的威脅為主，重點為犽宿、犽凝、星朵拉；移除同時列於有利與不利的衝突，對局為機制建議而非勝率排序。",
+    "limitation": "指南是第三方編輯判斷。Tier與對局不是官方或台服勝率；未改動官方歷史數值，也未宣稱已逐招在手機實機測試。",
+    "notes": [
+      "A→S+是同分路攻略的編輯參考級別，不是官方7.3b削弱使英雄變強；需熟練九個子技能，先維持暫定標記。"
+    ],
+    "status": "full-roster-first-pass",
+    "officialDirectChange": true,
+    "winRateVerified": false,
+    "officialSource": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/"
+  },
+  "sourceCorrections": [
+    {
+      "id": "hwei-ww-shield-ratio",
+      "version": "v116",
+      "date": "2026-10-15",
+      "status": "resolved-by-official-patch",
+      "sources": [
+        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
+      ],
+      "previousIssue": "舊截圖轉錄為7.1%魔攻，外部資料為71%，此前沒有足夠證據覆寫。",
+      "resolution": "7.3b英繁官方一致列舊最大護盾71%魔攻、新最大護盾60%魔攻；現行頁改用官方7.3b完整護盾數值。"
+    },
+    {
+      "id": "hwei-single-screenshot-level-assumptions",
+      "version": "v118",
+      "date": "2026-10-15",
+      "status": "unverified-values-removed-from-current-summary",
+      "sources": [
+        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "https://www.wildriftfire.com/guide/hwei"
+      ],
+      "previousIssue": "技能摘要列9.5／17／13／70秒截圖冷卻，其他局部傷害、時長與回魔也只有單一等級轉錄，缺少完整等級及技能加速條件。",
+      "previousObservations": {
+        "Q": "9.5秒；QE噴發20＋30%魔攻，持續每秒20＋30%魔攻",
+        "W": "17秒；WQ4秒、30%（30＋3%魔攻）；WE15%魔攻、命中回魔45",
+        "E": "13秒；EQ70＋70%魔攻、恐懼1秒；EW70＋70%魔攻、定身1.25秒",
+        "R": "70秒；附著3秒；每秒10＋5%魔攻，緩速每0.25秒累加10%"
+      },
+      "resolution": "移除四個摘要的截圖冷卻，保留可核定的官方7.3a／7.3b現行數值及全部歷史附錄；未核定的完整表只在對應技能列待確認。原轉錄保留於本筆來源紀錄，不冒充零加速／全等級數值。"
+    }
+  ],
+  "patch73bFirstWaveReview": {
     "version": "v116",
     "date": "2026-10-15",
     "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
@@ -676,18 +880,172 @@
     ],
     "limitation": "第一波涵蓋官方直接調整的8位英雄／12份分路配置。其餘英雄尚未逐一完成7.3b複核；Tier、出裝與符文搭配沿用前版，未做遊戲內實測或新版勝率驗證。"
   },
-  "sourceCorrections": [
-    {
-      "id": "hwei-ww-shield-ratio",
-      "version": "v116",
-      "date": "2026-10-15",
-      "status": "resolved-by-official-patch",
-      "sources": [
-        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
-        "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
-      ],
-      "previousIssue": "舊截圖轉錄為7.1%魔攻，外部資料為71%，此前沒有足夠證據覆寫。",
-      "resolution": "7.3b英繁官方一致列舊最大護盾71%魔攻、新最大護盾60%魔攻；現行頁改用官方7.3b完整護盾數值。"
+  "tierLabel": "本站評級",
+  "editorialReview": {
+    "version": "v118",
+    "date": "2026-10-15",
+    "status": "reviewed",
+    "sourcePatch": "7.3b",
+    "sources": [
+      "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "https://www.wildriftfire.com/guide/hwei",
+      "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+    ],
+    "checks": [
+      {
+        "field": "source",
+        "title": "同日分路複核來源",
+        "status": "confirmed",
+        "detail": "本頁延續2026/10/15 v117的中路逐項複核，當前採用7.3b來源；來源只用作配置與機制參考，不等同官方推薦或台服即時勝率。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+        ]
+      },
+      {
+        "field": "mechanics",
+        "title": "赫威官方已公告現行數值",
+        "status": "confirmed",
+        "detail": "7.3b被動、WW初始與最大護盾、WE額外基礎傷害、EE距離／傷害及7.3a QQ、QW增傷係數、R引爆值有直接官方來源，保留顯示；舊版本附錄與圖示不改。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/"
+        ]
+      },
+      {
+        "field": "ability:Q",
+        "title": "Q技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖9.5秒缺少等級／技能加速；QW完整基礎傷害與QE各級數值未取得足以核定的當前實機條件。移除摘要的固定冷卻，不拿舊截圖最大傷害計算斬殺。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      },
+      {
+        "field": "ability:W",
+        "title": "W技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖17秒缺少等級／技能加速；WQ跑速／時長與WE完整回魔成長表未核定。WW官方護盾及WE官方基礎傷害已確認，沒有整個W都標不可信。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      },
+      {
+        "field": "ability:E",
+        "title": "E技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖13秒缺少等級／技能加速；EQ／EW全級傷害和控制時長未核定。EE官方7.3b距離7、60/110/160/210＋60%魔攻已確認。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      },
+      {
+        "field": "ability:R",
+        "title": "R技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖70秒缺少等級／技能加速，持續傷害也只單一等級；外站技能第四欄目前列Wash Brush取消選單，不能當成大絕資料。官方R引爆200/300/400＋70%魔攻維持顯示。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      },
+      {
+        "field": "tier",
+        "title": "本分路本站評級",
+        "status": "confirmed",
+        "detail": "赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+        ]
+      }
+    ],
+    "pending": [
+      {
+        "field": "ability:Q",
+        "title": "Q技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖9.5秒缺少等級／技能加速；QW完整基礎傷害與QE各級數值未取得足以核定的當前實機條件。移除摘要的固定冷卻，不拿舊截圖最大傷害計算斬殺。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      },
+      {
+        "field": "ability:W",
+        "title": "W技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖17秒缺少等級／技能加速；WQ跑速／時長與WE完整回魔成長表未核定。WW官方護盾及WE官方基礎傷害已確認，沒有整個W都標不可信。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      },
+      {
+        "field": "ability:E",
+        "title": "E技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖13秒缺少等級／技能加速；EQ／EW全級傷害和控制時長未核定。EE官方7.3b距離7、60/110/160/210＋60%魔攻已確認。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      },
+      {
+        "field": "ability:R",
+        "title": "R技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖70秒缺少等級／技能加速，持續傷害也只單一等級；外站技能第四欄目前列Wash Brush取消選單，不能當成大絕資料。官方R引爆200/300/400＋70%魔攻維持顯示。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      }
+    ],
+    "limitation": "Tier、出裝、符文與對局是本站編輯建議，不是官方推薦或已驗證台服勝率。v118延續同日v117的逐路複核，針對來源缺口及數值衝突再核對；未宣稱所有技能已在手機內逐級實測。",
+    "winRateVerified": false,
+    "previousReviewVersion": "v117",
+    "tier": {
+      "status": "site-rating",
+      "reason": "赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。",
+      "label": "本站評級"
+    },
+    "build": {
+      "status": "site-recommendation",
+      "reason": "黑焰與寶珠後第三件黎安卓，幽魂之花補穿透，帽子末件；全部情境配置同步五件基準，不再重複建議買已裝備的黎安卓。"
+    },
+    "runes": {
+      "status": "site-recommendation",
+      "reason": "彗星與焦灼保留遠程消耗，傳說技能疾速替代骨甲支援主題技能輪轉；要用站位補生存。"
+    },
+    "spells": {
+      "status": "site-recommendation",
+      "reason": "閃現光盾保留，EE射程縮短後更需留撤退空間；光盾不能代替控制命中。"
+    },
+    "skills": {
+      "status": "site-recommendation",
+      "reason": "主Q、副E、W最後；修正15級表為7級點滿Q，5／9／13優先大絕，主題而非九個子技能各自加點。"
+    },
+    "mechanics": {
+      "status": "site-recommendation",
+      "reason": "7.3b被動、WW初始與最大護盾、WE額外基礎傷害、EE距離／傷害及7.3a QQ、QW增傷係數、R引爆值有直接官方來源，保留顯示；舊版本附錄與圖示不改。 舊截圖9.5秒缺少等級／技能加速；QW完整基礎傷害與QE各級數值未取得足以核定的當前實機條件。移除摘要的固定冷卻，不拿舊截圖最大傷害計算斬殺。 舊截圖17秒缺少等級／技能加速；WQ跑速／時長與WE完整回魔成長表未核定。WW官方護盾及WE官方基礎傷害已確認，沒有整個W都標不可信。 舊截圖13秒缺少等級／技能加速；EQ／EW全級傷害和控制時長未核定。EE官方7.3b距離7、60/110/160/210＋60%魔攻已確認。 舊截圖70秒缺少等級／技能加速，持續傷害也只單一等級；外站技能第四欄目前列Wash Brush取消選單，不能當成大絕資料。官方R引爆200/300/400＋70%魔攻維持顯示。"
+    },
+    "matchups": {
+      "status": "site-recommendation",
+      "reason": "以中路分頁的威脅為主，重點為犽宿、犽凝、星朵拉；移除同時列於有利與不利的衝突，對局為機制建議而非勝率排序。"
     }
-  ]
+  }
 }
