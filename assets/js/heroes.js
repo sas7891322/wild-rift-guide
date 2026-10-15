@@ -32,24 +32,24 @@
     const roleLabel=state.role==='all'?'全英雄':(roleNames[state.role]||'英雄');
     const limited=Boolean(state.query)||state.filter!=='all';
     const roleSeo={
-      baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List',description:'巴龍路 50 份配置已完成 7.3a 首輪差異校正；缺少同分路參考者另標註，Tier 暫定、對局勝率未驗證。',count:'50／50 份 · 7.3a 首輪差異校正'},
-      jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List',description:'打野 51 份配置已完成 7.3a 首輪差異校正；缺少同分路參考者另標註，Tier 暫定、對局勝率未驗證。',count:'51／51 份 · 7.3a 首輪差異校正'},
-      mid:{title:'激鬥峽谷中路英雄推薦與 Tier List｜Wild Rift Guide',heading:'中路英雄推薦與 Tier List',description:'中路 47 份配置（含赫威）已完成 7.3a 首輪差異校正；缺少同分路參考者另標註，Tier 暫定、對局勝率未驗證。',count:'47／47 份 · 7.3a 首輪差異校正'},
-      duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List',description:'飛龍路 23 位已完成 7.3a 首輪差異校正；Tier 為編輯暫定，尚非新版勝率結論。',count:'23 / 23 位 · 7.3a 首輪差異校正'},
-      support:{title:'激鬥峽谷輔助英雄推薦與 Tier List｜Wild Rift Guide',heading:'輔助英雄推薦與 Tier List',description:'輔助 32／32 位完成 7.3a 首輪差異校正；保留任務裝占位，Tier 與對局為編輯參考，非勝率排名。',count:'32 位輔助攻略'}
+      baron:{title:'激鬥峽谷巴龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'巴龍路英雄推薦與 Tier List'},
+      jungle:{title:'激鬥峽谷打野英雄推薦與 Tier List｜Wild Rift Guide',heading:'打野英雄推薦與 Tier List'},
+      mid:{title:'激鬥峽谷中路英雄推薦與 Tier List｜Wild Rift Guide',heading:'中路英雄推薦與 Tier List'},
+      duo:{title:'激鬥峽谷飛龍路英雄推薦與 Tier List｜Wild Rift Guide',heading:'飛龍路英雄推薦與 Tier List'},
+      support:{title:'激鬥峽谷輔助英雄推薦與 Tier List｜Wild Rift Guide',heading:'輔助英雄推薦與 Tier List'}
     };
     const current=roleSeo[state.role];
     if(current){
-      const count=state.heroes.filter(h=>h.roleId===state.role&&h.patch73bReview).length;
-      current.description=`${roleLabel}攻略：本輪 ${count} 份完成 7.3b 官方差異校正；其餘沿用先前配置，尚待逐份複核。Tier 沿用前版，非新版勝率排名。`;
-      current.count=`7.3b 第一波 ${count} 份 · Tier 沿用`;
+      const count=state.heroes.filter(h=>h.roleId===state.role&&h.editorialReview?.version==='v118').length;
+      current.description=`${roleLabel} ${count} 份攻略完成 7.3b 本站校正，提供分路評級、出裝、符文、召喚師技能、加點與對局建議。待確認項目與來源版本分別註明；本站評級並非官方排名或勝率排行。`;
+      current.count=`7.3b 校正 ${count} 份 · 本站評級`;
     }
     const title=current?.title||'激鬥峽谷英雄攻略與 Tier List｜Wild Rift Guide';
-    const description=current?.description||'激鬥峽谷英雄資料庫：142 位英雄、203 份位置攻略；7.3b 第一波校正 8 位英雄／12 份分路數值，其餘配置尚待複核，Tier 沿用前版。';
+    const description=current?.description||'激鬥峽谷 7.3b：142 位英雄、203 份分路攻略，提供本站評級、出裝、符文、召喚師技能、加點與對局建議。待確認項目與來源版本分別註明；本站評級並非官方排名或勝率排行。';
     const heading=current?.heading||'英雄攻略與 Tier List';
     const path=state.role==='all'?'/pages/heroes.html':`/pages/heroes.html?role=${encodeURIComponent(state.role)}`;
     updateHeroPageHeading({
-      eyebrow:'激鬥峽谷 · PATCH 7.3b · 第一波',title:heading,description,
+      eyebrow:'激鬥峽谷 · PATCH 7.3b · 本站校正',title:heading,description,
       badgeLabel:state.role==='all'?'繁體中文英雄攻略':`${roleLabel}攻略資料`,
       badgeText:current?.count||'142 位英雄 · 203 份英雄位置配置'
     });
@@ -73,11 +73,11 @@
     const roleLabel=roleNames[hero.roleId]||hero.role||'英雄';
     const heading=`${hero.name}${roleLabel}攻略`;
     const title=`${hero.name}攻略｜${roleLabel}出裝、符文、技能加點｜激鬥峽谷`;
-    const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 ${hero.patch||'7.2e'} ${roleLabel}完整攻略，整理推薦出裝、符文搭配、召喚師技能、技能加點、對線與實戰節奏。${hero.summary||''}`);
+    const description=clipDescription(`${hero.name}（${hero.enName||''}）激鬥峽谷 ${hero.patch||'7.3b'} ${roleLabel}攻略；本站評級 ${hero.tier}${tierEvidencePending(hero)?'（此分路評級依據待補）':''}。整理出裝、符文、加點、機制與對局應對，待確認項目分別註明。${hero.summary||''}`);
     const path=heroCanonicalPath(hero);
     updateHeroPageHeading({
-      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH ${hero.patch||'7.2e'}${hero.provisional?' · 暫定':''}`,title:heading,description,
-      badgeLabel:'英雄完整攻略',badgeText:'出裝 · 符文 · 技能 · 對局'
+      eyebrow:`激鬥峽谷 ${roleLabel}攻略 · PATCH ${hero.patch||'7.3b'} · 本站校正`,title:heading,description,
+      badgeLabel:'本站評級與配置建議',badgeText:'出裝 · 符文 · 技能 · 對局'
     });
     window.WRGSeo.set({
       title,description,path,image:hero.avatar||undefined,type:'article',
@@ -124,6 +124,25 @@
   function byId(arr,id){ return arr.find(x=>x.id===id); }
   function safeIcon(x){ return x?.icon || ''; }
   function safeText(x){ return x || ''; }
+  function reviewText(value){ return String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char])); }
+  function tierEvidencePending(hero){
+    const profile=hero.editorialReview?hero:state.heroes.find(profile=>profile.id===(hero.detailHeroId||hero.id));
+    return profile?.editorialReview?.tier?.status==='limited-evidence';
+  }
+  function editorialChecks(hero){ return Array.isArray(hero.editorialReview?.checks)?hero.editorialReview.checks:[]; }
+  function renderEditorialWarnings(hero,field){
+    return editorialChecks(hero).filter(check=>check.status==='pending'&&check.field===field).map(check=>`<aside class="editorial-pending" data-review-field="${reviewText(field)}" data-review-status="pending"><strong>待確認｜${reviewText(check.title||'此項資料')}</strong><p>${reviewText(check.detail)}</p></aside>`).join('');
+  }
+  function reviewSourceLinks(sources){
+    const urls=[...new Set((sources||[]).map(source=>typeof source==='string'?source:source?.url).filter(source=>typeof source==='string'&&/^https:\/\//.test(source)))];
+    return urls.flatMap(url=>{
+      try{
+        const host=new URL(url).hostname.replace(/^www\./,'');
+        const label=host==='wildrift.leagueoflegends.com'?'Riot 官方資料':host==='wildriftfire.com'?'WildRiftFire 參考攻略':host;
+        return `<a href="${reviewText(url)}" target="_blank" rel="noopener noreferrer">${reviewText(label)} ↗</a>`;
+      }catch{return [];}
+    }).join(' · ');
+  }
   function abilityMedia(x, cls='ability-icon-placeholder'){ return safeIcon(x) ? `<img src="${safeIcon(x)}" alt="${safeText(x?.label)||safeText(x?.title)}" loading="lazy">` : `<span class="${cls}">${safeText(x?.key)||'?'}</span>`; }
   function abilityVariants(x){ const arr=Array.isArray(x?.variantIcons)?x.variantIcons:[]; if(arr.length<=1) return ''; return `<div class="ability-variants">${arr.map((src,i)=>`<img src="${src}" alt="${safeText(x?.label)||safeText(x?.title)} ${i+1}" loading="lazy">`).join('')}</div>`; }
 
@@ -426,7 +445,10 @@
         <div class="hero-overview-head"><div><span class="eyebrow">ALL CHAMPIONS</span><h2>全英雄列表</h2><p>同一英雄只顯示一次；下方位置標籤代表目前遊戲內可選路線。已完成詳細資料的英雄可直接點入。</p></div><span class="hero-overview-count">${heroes.length}</span></div>
         ${heroes.length?`<div class="tier-hero-grid all-hero-grid">${heroes.map(h=>{
           const media=`<span class="tier-hero-avatar-wrap">${h.avatar?`<img src="${h.avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy" data-hero-fallback data-fallback-letter="${h.name.slice(0,1)}">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
-          const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>`<i>${roleNames[r]}</i>`).join('')}${h.id==='hwei'?'<i>A・暫定</i>':''}</span>`;
+          const roleBadges=`<span class="all-role-badges">${h.roles.map(r=>{
+            const profile=state.heroes.find(profile=>h.detailIds?.includes(profile.id)&&profile.roleId===r);
+            return `<i${profile&&tierEvidencePending(profile)?' title="此分路評級依據待補"':''}>${roleNames[r]}</i>`;
+          }).join('')}</span>`;
           const label=`${media}<strong>${h.name}</strong><small>${h.enName||''}</small>${roleBadges}`;
           const detail=h.detailIds?.[0]||'';
           const card=h.introHref?`<a class="tier-hero-card all-hero-card" href="${safeText(h.introHref)}">${label}</a>`:detail?`<button class="tier-hero-card all-hero-card" data-hero="${detail}">${label}</button>`:`<div class="tier-hero-card all-hero-card is-pending" title="詳細攻略待補">${label}</div>`;
@@ -452,7 +474,7 @@
           ${members.map(h=>{
             const avatar=h.avatar||'';
             const media=`<span class="tier-hero-avatar-wrap">${avatar?`<img src="${avatar}" alt="${h.name}" class="tier-hero-avatar" loading="lazy" data-hero-fallback data-fallback-letter="${h.name.slice(0,1)}">`:`<span class="tier-hero-placeholder">${h.name.slice(0,1)}</span>`}</span>`;
-            const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}`;
+            const label=`${media}<strong>${h.name}</strong><small>${h.enName}</small>${h.origin==='cross'?'<span class="tier-cross-tag">跨路</span>':''}${tierEvidencePending(h)?'<span class="tier-evidence-note" title="此分路評級依據待補，詳細理由見攻略校正重點">評級依據待補</span>':''}`;
             const card=h.introHref?`<a class="tier-hero-card" href="${safeText(h.introHref)}">${label}</a>`:h.detailHeroId
               ? `<button class="tier-hero-card" data-hero="${h.detailHeroId}">${label}</button>`
               : `<div class="tier-hero-card is-pending" title="完整攻略待補">${label}</div>`;
@@ -463,7 +485,7 @@
     }).join('');
     const countCopy = crossCount>0 ? `原生 ${nativeCount}＋跨路 ${crossCount}` : `原生 ${nativeCount}`;
     content.innerHTML = `<section class="hero-overview-shell">
-      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>7.3b 第一波數值校正 · Tier 沿用前版 · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
+      <div class="hero-overview-head"><div><span class="eyebrow">${state.role==='duo'?'DRAGON LANE':title.toUpperCase()}</span><h2>${title} Tier 總覽</h2><p>7.3b 本站評級 · 非官方排名或勝率排行 · ${countCopy}${meta.detailComplete?' · 詳細攻略已開放':(state.role==='duo'?' · 已完成英雄可點擊查看詳細資料':(meta.avatarComplete?' · 英雄頭像已完成 · 詳細攻略後續補齊':' · 頭像與詳細資料後續補齊'))}</p></div><span class="hero-overview-count">${heroes.length}</span></div>
       ${groups || ((state.query||state.filter!=='all')?noResultHTML():`<div class="hero-profile-empty">${title}尚未匯入英雄資料。</div>`)}
     </section>`;
     bindOverviewActions(content);
@@ -547,6 +569,7 @@
           <strong>${labels[key]}｜${safeText(ability.title)}</strong>
           <p>${safeText(ability.summary)}</p>
           ${(Array.isArray(ability.details)?ability.details:[]).map(detail=>`<p>${safeText(detail)}</p>`).join('')}
+          ${renderEditorialWarnings(hero,`ability:${key}`)}
           ${ability.patch73bValues?.length?`<details class="ability-patch-values patch73b-values" open><summary>7.3b 最新調整數值</summary><dl>${ability.patch73bValues.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value)}</dd>`).join('')}</dl><p><small>完整前後對照見「7.3b 校正重點」；未列項目沿用先前數值。</small></p></details>`:''}
           ${ability.patch73aValues?.length?`<details class="ability-patch-values"><summary>7.3a 公告數值（歷史基準）</summary><dl>${ability.patch73aValues.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value)}</dd>`).join('')}</dl><p><small>與 7.3b 重疊的項目以新值為準；未變動項目沿用。</small></p></details>`:''}
           ${ability.patch73Values?.length?`<details class="ability-patch-values"><summary>7.3 公告數值（歷史基準）</summary><dl>${ability.patch73Values.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value)}</dd>`).join('')}</dl><p><small>本區保留7.3歷史值；有後續版本變動的項目以上方新值為準，未變動項目沿用。不是完整技能成長表。</small></p></details>`:''}
@@ -757,16 +780,50 @@
   }
 
   function renderPatchReview(hero){
+    const r=hero.editorialReview;
+    if(!r)return renderPatch73bFirstPassReview(hero);
+    const officialUrl='https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/';
+    const groups=(hero.patch73bNumbers||[]).map(g=>`<section class="patch-numeric-group"><h4>${reviewText(g.title)}</h4><div class="patch-numeric-scroll"><table><thead><tr><th scope="col">項目</th><th scope="col">調整前</th><th scope="col">7.3b 調整後</th></tr></thead><tbody>${g.rows.map(x=>`<tr><th scope="row">${reviewText(x.label)}</th><td>${reviewText(x.before)}</td><td>${reviewText(x.after)}</td></tr>`).join('')}</tbody></table></div></section>`).join('');
+    const checks=editorialChecks(hero);
+    const checkLabels={resolved:'已修正',confirmed:'已核對',pending:'待確認'};
+    const checkList=checks.length?`<details class="editorial-checks"><summary>逐項核對紀錄（${checks.length} 項）</summary><div>${checks.map(check=>`<article class="editorial-check ${check.status==='pending'?'is-pending':''}" data-review-field="${reviewText(check.field)}" data-review-status="${reviewText(check.status)}"><strong><span>${reviewText(checkLabels[check.status]||'核對紀錄')}</span> ${reviewText(check.title)}</strong><p>${reviewText(check.detail)}</p>${reviewSourceLinks(check.sources)?`<p class="hero-review-source-links">${reviewSourceLinks(check.sources)}</p>`:''}</article>`).join('')}</div></details>`:'';
+    const fields=[['tier','本站評級'],['build','出裝順序'],['runes','符文取捨'],['spells','召喚師技能'],['skills','技能加點'],['mechanics','機制與連招'],['matchups','對局與情境']];
+    return `<details class="hero-section hero-patch-review patch73b-review editorial-review-v118"><summary><span>7.3b 校正重點 · 本站評級與推薦</span><span class="patch-review-toggle"><span class="patch-review-expand">展開</span><span class="patch-review-collapse">收合</span><i aria-hidden="true">⌄</i></span></summary><div class="patch-review-body"><small>本站校正 · ${reviewText(r.date)} · ${reviewText(r.version)}</small>
+      <p class="hero-review-scope">評級與配置屬本站編輯建議，不是官方 Tier 或勝率排名。未解決的疑點只標在對應項目，並不代表整份攻略未完成。</p>
+      ${r.limitation?`<p>${reviewText(r.limitation)}</p>`:''}
+      <p class="hero-review-source"><b>參考資料標示版本：</b>${reviewText(r.sourcePatch||'未標示')}。來源版本與本頁校正版本分開列示。</p>
+      ${fields.filter(([key])=>r[key]?.reason).map(([key,label])=>`<section class="editorial-field" data-editorial-field="${key}"><p><b>${label}${key==='tier'?` ${reviewText(hero.tier)}`:''}：</b>${reviewText(r[key].reason)}</p>${r[key].status==='conditional-recommendation'?'<p class="editorial-condition">此配置有適用條件，請搭配上方理由與下方情境換裝使用。</p>':''}${renderEditorialWarnings(hero,key)}</section>`).join('')}
+      ${checks.some(check=>check.status==='pending')?`<p class="editorial-pending-summary">仍有 ${checks.filter(check=>check.status==='pending').length} 項資料待確認，細節見下方逐項核對紀錄及相關技能旁的提示。</p>`:''}
+      ${checkList}
+      ${groups?`<div class="patch-numeric"><h3>官方 7.3b 數值調整</h3>${groups}</div>`:'<p>官方 7.3b 公告未直接調整此英雄的數值；本頁的配置與分路評級仍按版本環境作本站判斷。</p>'}
+      ${reviewSourceLinks(r.sources)?`<p class="hero-review-source-links"><b>校正參考：</b>${reviewSourceLinks(r.sources)}</p>`:''}
+      <p><a href="${officialUrl}" target="_blank" rel="noopener noreferrer">Riot 官方 7.3b 公告 ↗</a> · <a href="../summoners-rift.html#updates">查看全站更新</a></p>
+      ${renderPatch73bFirstPassReview(hero)}</div></details>`;
+  }
+
+  function renderPatch73bFirstPassReview(hero){
     const r=hero.patch73bReview;
-    if(!r)return `<p class="hero-review-scope">此配置沿用 7.3a 與後續勘誤，尚未完成 7.3b 逐份複核；共用裝備與符文目錄已同步本次官方差異。</p>${renderPatch73aReview(hero)}`;
+    if(!r)return `<p class="hero-review-scope">此頁尚未載入 7.3b 校正紀錄，請重新整理後查看；以下保留較早版本紀錄。</p>${renderPatch73aReview(hero)}`;
+    const officialUrl='https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/';
     const groups=(hero.patch73bNumbers||[]).map(g=>`<section class="patch-numeric-group"><h4>${safeText(g.title)}</h4><div class="patch-numeric-scroll"><table><thead><tr><th scope="col">項目</th><th scope="col">調整前</th><th scope="col">7.3b 調整後</th></tr></thead><tbody>${g.rows.map(x=>`<tr><th scope="row">${safeText(x.label)}</th><td>${safeText(x.before)}</td><td>${safeText(x.after)}</td></tr>`).join('')}</tbody></table></div></section>`).join('');
-    return `<details class="hero-section hero-patch-review patch73b-review"><summary><span>7.3b 校正重點</span><span class="patch-review-toggle"><span class="patch-review-expand">展開</span><span class="patch-review-collapse">收合</span><i aria-hidden="true">⌄</i></span></summary><div class="patch-review-body"><small>第一波 · ${safeText(r.date)} · ${safeText(r.version)}</small>
+    const sources=[r.source,...(r.sources||[])].map(source=>typeof source==='string'?{url:source}:source).filter(source=>/^https:\/\//.test(source?.url||''));
+    const referenceSources=sources.filter((source,index)=>source.url!==officialUrl&&sources.findIndex(s=>s.url===source.url)===index);
+    const referenceLinks=referenceSources.map(source=>{
+      const host=new URL(source.url).hostname.replace(/^www\./,'');
+      const label=source.label||source.title||(host==='wildriftfire.com'?'WildRiftFire 攻略參考':host==='wildrift.leagueoflegends.com'?'Riot 公開資料':host+' 參考資料');
+      return `<a href="${safeText(source.url)}" target="_blank" rel="noopener noreferrer">${safeText(label)} ↗</a>`;
+    }).join(' · ');
+    const firstWave=hero.patch73bFirstWaveReview;
+    const firstWaveHistory=firstWave?`<details class="hero-patch-review"><summary>7.3b 官方數值首波紀錄（v116）</summary><div class="patch-review-body"><small>${safeText(firstWave.date)}</small><p>${safeText(firstWave.limitation)}</p>${(firstWave.notes||[]).map(note=>`<p>${safeText(note)}</p>`).join('')}<p>本段保留首波完成時的範圍；目前配置與評級以上方最新校正為準。</p></div></details>`:'';
+    return `<details class="hero-section hero-patch-review ${hero.editorialReview?'patch73b-first-pass-history':'patch73b-review'}"><summary><span>${hero.editorialReview?'7.3b 第一輪歷史（v117）':'7.3b 校正重點'}</span><span class="patch-review-toggle"><span class="patch-review-expand">展開</span><span class="patch-review-collapse">收合</span><i aria-hidden="true">⌄</i></span></summary><div class="patch-review-body">${hero.editorialReview?'<p class="hero-review-warning">以下保留第一輪當時的評級、配置理由與來源；現行推薦以上方 v118 校正及本頁配置為準。</p>':''}<small>全英雄首輪校正 · ${safeText(r.date)} · ${safeText(r.version)}</small>
       <p class="hero-review-scope">${safeText(r.limitation)}</p>
-      ${[['評級判斷',r.tierReason],['出裝順序',r.buildReason],['符文取捨',r.runeReason],['召喚師技能',r.spellReason],['技能加點',r.skillReason]].map(([label,value])=>`<p><b>${label}：</b>${safeText(value)}</p>`).join('')}
+      <p class="hero-review-source"><b>參考攻略標示版本：</b>${safeText(r.sourcePatch||'未標示')}${r.referenceRole?` · 參考分路：${safeText(r.referenceRole)}`:''}。本頁另依官方 7.3b 差異與此分路需求作編輯校正，參考版本不等於本頁版本。</p>
+      ${[['評級判斷',r.tierReason],['出裝順序',r.buildReason],['符文取捨',r.runeReason],['召喚師技能',r.spellReason],['技能加點',r.skillReason],['機制與連招',r.mechanicsReason],['對局與情境',r.matchupReason]].filter(([,value])=>value).map(([label,value])=>`<p><b>${label}：</b>${safeText(value)}</p>`).join('')}
       ${(r.notes||[]).map(x=>`<p>${safeText(x)}</p>`).join('')}
-      <div class="patch-numeric"><h3>官方 7.3b 數值調整</h3>${groups}</div>
-      <p><a href="${safeText(r.source)}" target="_blank" rel="noopener noreferrer">Riot 官方 7.3b 公告 ↗</a> · <a href="../summoners-rift.html#updates">查看全站更新</a></p>
-      ${renderPatch73aReview(hero)}</div></details>`;
+      ${hero.editorialReview?'':groups?`<div class="patch-numeric"><h3>官方 7.3b 數值調整</h3>${groups}</div>`:'<p>官方 7.3b 公告未直接調整此英雄的數值；本輪仍檢查裝備、符文、加點、機制與分路配置。</p>'}
+      ${referenceLinks?`<p class="hero-review-source-links"><b>配置與機制參考：</b>${referenceLinks}</p>`:''}
+      <p><a href="${officialUrl}" target="_blank" rel="noopener noreferrer">Riot 官方 7.3b 公告 ↗</a> · <a href="../summoners-rift.html#updates">查看全站更新</a></p>
+      ${firstWaveHistory}${renderPatch73aReview(hero)}</div></details>`;
   }
 
   function renderPatch73aReview(hero){
@@ -776,7 +833,7 @@
     const as=hero.patch73aAttackSpeed;
     return `<details class="hero-section hero-patch-review">
       <summary><span>7.3a 校正重點（歷史紀錄）</span><span class="patch-review-toggle"><span class="patch-review-expand">展開</span><span class="patch-review-collapse">收合</span><i aria-hidden="true">⌄</i></span></summary>
-      <div class="patch-review-body"><p class="hero-review-warning">以下依 7.3a 當時版本保留，不代表已完成 7.3b 複核；重疊數值以上方新值為準。</p><small>第一次校正 · ${safeText(r.date)} · ${safeText(r.version)}</small>
+      <div class="patch-review-body"><p class="hero-review-warning">以下依 7.3a 當時版本保留；目前配置、評級與重疊數值以上方 7.3b 校正為準。</p><small>第一次校正 · ${safeText(r.date)} · ${safeText(r.version)}</small>
       <p class="hero-review-scope">${safeText(r.limitation)}</p>
       <p><b>評級判斷：</b>${safeText(r.tierReason)}</p>
       <p><b>出裝順序：</b>${safeText(r.buildReason)}</p>
@@ -845,7 +902,7 @@
     const abilities = Array.isArray(hero.abilities) ? hero.abilities : [];
     const passive = abilities.find(x=>x.key==='P');
     const activeAbilities = abilities.filter(x=>x.key!=='P');
-    const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head">${abilityMedia(x)}<div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div>${abilityVariants(x)}<p>${safeText(x.summary)}</p></div>`).join('');
+    const abilityHTML = activeAbilities.map(x=>`<div class="ability-card ability-${(x.key||'').toLowerCase()}"><div class="ability-head">${abilityMedia(x)}<div><small>${safeText(x.label)}</small><strong>${safeText(x.title)}</strong></div></div>${abilityVariants(x)}<p>${safeText(x.summary)}</p>${renderEditorialWarnings(hero,`ability:${x.key}`)}</div>`).join('');
 
     const useStructuredYone=['structured-yone-v38','structured-baron-v40'].includes(hero.detailTemplate);
 
@@ -854,7 +911,7 @@
     const defaultSkillSection=`
       <section class="hero-section"><div class="hero-section-title"><h3>技能優先級</h3><span>Skill Priority</span></div>${renderSkillPriority(hero)}</section>
       <section class="hero-section"><div class="hero-section-title"><h3>技能加點</h3><span>Lv.1 ～ Lv.15</span></div>${renderSkillGrid(hero)}</section>
-      ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p></div></div></section>`:''}
+      ${passive?`<section class="hero-section"><div class="hero-section-title"><h3>被動</h3><span>Passive</span></div><div class="passive-feature">${abilityMedia(passive,'passive-icon-placeholder')}<div><small>${safeText(passive.label)}</small><strong>${safeText(passive.title)}</strong>${abilityVariants(passive)}<p>${safeText(passive.summary)}</p>${renderEditorialWarnings(hero,'ability:P')}</div></div></section>`:''}
       <section class="hero-section"><div class="hero-section-title"><h3>技能介紹</h3><span>Q / W / E / R</span></div><div class="ability-grid">${abilityHTML}</div></section>`;
 
     const defaultMatchupSection=`<section class="hero-section"><div class="hero-section-title"><h3>對局</h3><span>Matchup</span></div><div class="matchup-grid"><div class="matchup-box good"><span>較好打</span><div>${hero.matchups.good.map(matchupChip).join('')}</div></div><div class="matchup-box bad"><span>較難打</span><div>${hero.matchups.bad.map(matchupChip).join('')}</div></div><div class="matchup-box ban"><span>優先 Ban</span><div>${matchupChip(hero.matchups.ban)}</div></div></div></section>`;
@@ -876,10 +933,10 @@
       <section class="hero-profile">
         <section class="hero-profile-hero">
           ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy" data-hero-fallback data-fallback-letter="${hero.name.slice(0,1)}" data-fallback-class="hero-avatar hero-avatar-placeholder">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
-          <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large">${hero.tier}</span></div><div class="hero-en">${hero.enName} · ${hero.role} · ${hero.patch73bReview?'7.3b 第一波／Tier 沿用前版':hero.patch73aReview?'7.3a 配置沿用／7.3b 待複核':hero.patch73Review?(hero.tierReview113||hero.patch73Review.version==='v113'?'7.3a 首輪差異校正／評級暫定':'7.3a 首輪差異校正／評級暫定'):hero.provisional?'初步配置／評級暫定':'7.3 校正待完成'}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
+          <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large" title="本站評級，非官方排名${tierEvidencePending(hero)?'；此分路評級依據待補':''}">${hero.tier}</span>${tierEvidencePending(hero)?'<span class="tier-evidence-note" data-review-field="tier" data-review-status="pending" title="此分路評級依據待補，詳細理由見校正重點">評級依據待補</span>':''}</div><div class="hero-en">${hero.enName} · ${hero.role} · ${hero.editorialReview?'7.3b 校正／本站評級':'本站評級／最新校正紀錄尚未載入'}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
         </section>
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
-        <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>${safeText(hero.patch||'7.2e')}${hero.provisional?' · 暫定':''} · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
+        <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>${safeText(hero.patch||'7.3b')} · 本站評估 · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         ${buildSection}
         ${renderPatchReview(hero)}
@@ -916,10 +973,10 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData,hweiProfile,currentItems]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=116.0.0'), getJSON('../assets/data/runes.json?v=116.0.0'), getJSON('../assets/data/items.json?v=108.0.0'), getJSON('../assets/data/spells.json?v=115.3.0'), getJSON('../assets/data/hwei-profile.json?v=116.0.0'), getJSON('../assets/data/items-7.3.json?v=116.0.0')
+        getJSON('../assets/data/heroes.json?v=118.0.0'), getJSON('../assets/data/runes.json?v=118.0.0'), getJSON('../assets/data/items.json?v=108.0.0'), getJSON('../assets/data/spells.json?v=115.3.0'), getJSON('../assets/data/hwei-profile.json?v=118.0.0'), getJSON('../assets/data/items-7.3.json?v=118.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=[...normalizeItems(itemData),...normalizeItems(currentItems)]; state.spells=spellData;
-      // Hwei's standalone guide carries an explicitly provisional editorial tier.
+      // Include Hwei's standalone guide with the same editorial review UI.
       if(!state.heroes.some(h=>h.id===hweiProfile.id)) state.heroes.push(hweiProfile);
       if(!state.heroCatalog.some(h=>h.id==='hwei')) state.heroCatalog.push({id:'hwei',name:'赫威',enName:'Hwei',aliases:['赫威','Hwei'],avatar:hweiProfile.avatar,roles:[{roleId:'mid',tier:hweiProfile.tier,origin:'native',detailHeroId:hweiProfile.id}]});
 

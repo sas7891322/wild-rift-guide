@@ -139,7 +139,7 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
 
   Promise.all([
     getJSON(dataPath),
-    getJSON('assets/data/hwei-profile.json?v=116.0.0').catch(()=>null)
+    getJSON('assets/data/hwei-profile.json?v=118.0.0').catch(()=>null)
   ]).then(([data,hwei])=>{
     heroes=uniqueSearchHeroes(data);
     if(hwei && !heroes.some(hero=>hero.id==='hwei')){
@@ -235,7 +235,7 @@ async function getJSON(path){const r=await fetch(path);if(!r.ok)throw new Error(
 
   async function loadCatalog() {
     try {
-      const response = await fetch('assets/data/heroes.json?v=116.0.0', { cache: 'force-cache' });
+      const response = await fetch('assets/data/heroes.json?v=118.0.0', { cache: 'force-cache' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       catalog = Array.isArray(data.heroCatalog) ? data.heroCatalog : [];
