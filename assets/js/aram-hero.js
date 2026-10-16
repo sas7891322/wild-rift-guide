@@ -89,7 +89,10 @@
       const position=isAaa?aaa.position:hero.position;
       const tags=isAaa?aaa.tags:hero.tags;
       const summary=isAaa?aaa.summary:hero.summary;
-      const kicker=isAaa?`AAA ARAM · PATCH ${esc(aaaVersion)}`:`ARAM HERO GUIDE · PATCH ${esc(standardVersion)}`;
+      const kicker=isAaa?`AAA ARAM · ${esc(aaaVersion)} 歷史基底`:`ARAM HERO GUIDE · ${esc(standardVersion)} 資料`;
+      const versionBoundary=isAaa
+        ?`符文大亂鬥分類評級沿用 ${esc(aaaVersion)}；7.3a 僅部分增幅公告欄位校正，英雄配置尚未全面重評。`
+        :`標準 ARAM 資料最後校正 ${esc(hero.reviewedAt||data.updated)}，尚未完成 7.3b 全量複核；以下保留 ${esc(standardVersion)} 配置，不代表目前版本已確認的完整推薦。`;
       const badgeMain=isAaa?'正式':hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
       const reasonTitle=isAaa?'符文大亂鬥怎麼用？':`為什麼是 ${esc(hero.tier)}？`;
@@ -102,6 +105,7 @@
           <div class="aram-detail-titleline"><div><h1>${esc(hero.name)}</h1><span>${esc(hero.enName)}</span></div><div class="aram-detail-tier ${isAaa?'is-pilot':''}"><strong>${esc(badgeMain)}</strong><span>${esc(badgeSub)}</span></div></div>
           <p class="aram-detail-position">${esc(position)}</p><div class="aram-detail-tags">${pills}</div>
           <p class="aram-detail-summary">${isAaa?renderHighlightedAaaText(summary):esc(summary)}</p>
+          <p class="aram-detail-note">${versionBoundary} <a href="share/aram/${encodeURIComponent(hero.id)}.html">標準 ARAM 直接閱讀版</a></p>
           <div class="aram-tier-reason"><strong>${reasonTitle}</strong><span>${esc(reasonText)}</span></div>
         </div>
       </section>`;
@@ -364,18 +368,19 @@
         button.classList.toggle('is-active',active);
         button.setAttribute('aria-selected',active?'true':'false');
       });
-      if(modeNote)modeNote.textContent=isAaa?`符文大亂鬥資料版本 ${aaaVersion}：看遊戲卡片下方分類 → 點相同分類 → 優先看 S+／S／A，再依增幅方向選出裝。`:`目前已完成的標準 ARAM ${standardVersion} 攻略。`;
+      if(modeNote)modeNote.textContent=isAaa?`符文大亂鬥 ${aaaVersion} 分類評級參考，與標準 ARAM 分開；增幅公告差異請看增幅資料庫。`:`標準 ARAM ${standardVersion} 歷史配置；尚未完成 7.3b 全量複核。`;
       const titleMode=isAaa?'符文大亂鬥':'ARAM';
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');
       if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift ${aaaVersion} 符文大亂鬥攻略：官方增幅分類、S+ 至 D 單卡評級、增幅導向出裝與玩法。`:`${hero.name} Wild Rift ${standardVersion} 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
-      // Keep each hero and supported mode distinct; omit tracking parameters.
+      // The standard guide has a complete readable canonical. AAA retains its
+      // separate interactive canonical because its builds/ratings are distinct.
       const canonicalParams=new URLSearchParams({id:hero.id});
       if(isAaa)canonicalParams.set('mode','aaa');
       window.WRGSeo.set({
         title:document.title,
         description:meta?.getAttribute('content')||hero.summary,
-        path:`/aram-hero.html?${canonicalParams}`,
+        path:isAaa?`/aram-hero.html?${canonicalParams}`:`/share/aram/${encodeURIComponent(hero.id)}.html`,
         image:hero.avatar,
         robots:'index,follow,max-image-preview:large'
       });
@@ -399,6 +404,6 @@
     console.error(err);
     // Missing heroes or failed data loads should not index an error shell.
     document.querySelector('meta[name="robots"]')?.setAttribute('content','noindex,follow');
-    root.innerHTML='<section class="aram-detail-error"><h1>找不到這位 ARAM 英雄</h1><p>目前母版資料可能尚未建立。</p><a href="aram.html">← 回 ARAM 專區</a></section>';
+    root.innerHTML='<section class="aram-detail-error"><h1>攻略資料暫時無法載入</h1><p>可能是連線失敗或英雄網址有誤。你仍可從直接閱讀版查閱完整 ARAM 配置。</p><a href="pages/aram-guides.html">查看 141 位 ARAM 英雄攻略</a><p><a href="aram.html">← 回 ARAM 專區</a></p></section>';
   }
 })();
