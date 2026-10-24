@@ -1,6 +1,6 @@
 {
   "gameVersion": "7.2b",
-  "dataVersion": "115.3.0",
+  "dataVersion": "121.0.0",
   "title": "符文大亂鬥增幅裝置",
   "total": 151,
   "display": "name-effect-official-tags",
@@ -128,13 +128,19 @@
       "name": "緩速削弱",
       "order": 10,
       "sourceRef": "IMG_7898",
-      "effect": "目標的跑速每低你1%，目標對你造成的傷害就會減少0.3%。你每獲得10額外跑速，就會增加1.5雙防。",
+      "effect": "目標的跑速每低你1%，目標對你造成的傷害就會減少0.3%。你每獲得10額外跑速，就會增加2雙防。",
       "officialTags": [
         "大地回音"
       ],
       "classificationSourceRefs": [
         "IMG_8051"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3c",
+        "fields": "每10額外跑速增加雙防",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+        "previousSiteEffect": "目標的跑速每低你1%，目標對你造成的傷害就會減少0.3%。你每獲得10額外跑速，就會增加1.5雙防。"
+      }
     },
     {
       "id": "augment-011",
@@ -655,13 +661,19 @@
       "name": "溜之大吉",
       "order": 50,
       "sourceRef": "IMG_7938",
-      "effect": "命中敵軍三次會對其造成20物理傷害（20（隨等級成長）+ 20%額外物攻 + 10%魔攻），並附加命中效果和觸發衝刺。",
+      "effect": "命中敵軍三次會對其造成20物理傷害（20（隨等級成長）+ 20%額外物攻 + 10%魔攻），並附加命中效果和觸發衝刺。 7.3c：現在可觸發移動相關增幅，例如沙塵暴。",
       "officialTags": [
         "迷霧回音"
       ],
       "classificationSourceRefs": [
         "IMG_8091"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3c",
+        "fields": "移動相關增幅連動",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+        "previousSiteEffect": "命中敵軍三次會對其造成20物理傷害（20（隨等級成長）+ 20%額外物攻 + 10%魔攻），並附加命中效果和觸發衝刺。"
+      }
     },
     {
       "id": "augment-051",
@@ -882,13 +894,19 @@
       "name": "戰鬥軍庫",
       "order": 67,
       "sourceRef": "IMG_7955",
-      "effect": "道具傷害有20%機率額外觸發一次。",
+      "effect": "道具傷害有60%機率額外觸發一次。",
       "officialTags": [
         "單人強者"
       ],
       "classificationSourceRefs": [
         "IMG_8109"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3c",
+        "fields": "額外道具傷害觸發機率",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+        "previousSiteEffect": "道具傷害有20%機率額外觸發一次。"
+      }
     },
     {
       "id": "augment-068",
@@ -934,13 +952,19 @@
       "name": "利刃暗影",
       "order": 71,
       "sourceRef": "IMG_7959",
-      "effect": "衝刺後，召喚三把飛劍環繞自身，並自動追擊鄰近敵軍，每次造成30適性傷害（30 + 25%魔攻 + 10%額外物攻）。敵軍連續被命中時，第一把以後的飛劍只會造成50%的傷害。",
+      "effect": "衝刺後，召喚三把飛劍環繞自身，並自動追擊鄰近敵軍，每次造成30–120 + 20%物攻 + 40%魔攻的適性傷害。敵軍連續被命中時，第一把以後的飛劍只會造成50%的傷害。",
       "officialTags": [
         "身法"
       ],
       "classificationSourceRefs": [
         "IMG_8113"
-      ]
+      ],
+      "correction": {
+        "patch": "7.3c",
+        "fields": "傷害",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+        "previousSiteEffect": "衝刺後，召喚三把飛劍環繞自身，並自動追擊鄰近敵軍，每次造成30適性傷害（30 + 25%魔攻 + 10%額外物攻）。敵軍連續被命中時，第一把以後的飛劍只會造成50%的傷害。"
+      }
     },
     {
       "id": "augment-072",
@@ -2037,6 +2061,176 @@
     }
   },
   "classificationNote": "官方分類是卡片本身顯示的標籤；同一張增幅可能同時擁有多個標籤，例如「暴擊治療」同時屬於「暴擊」與「復原」。",
-  "versionLabel": "7.2b 基底・7.3a 部分校正",
-  "correctionNote": "4張增幅的公告變動欄位已更新至7.3a；其他效果、完整卡庫與分類評級仍待複核，不代表整庫已完成7.3a校正。"
+  "versionLabel": "7.2b 歷史基底／7.3a、7.3c 部分欄位校正",
+  "correctionNote": "7.3c 校正4張既有卡牌公告欄位；12個調整與5個新增完整列於上方公告，未公布的完整效果與分類不推定。卓越之巔與舊卡庫完美巔峰名稱不同，尚未據此合併卡牌。",
+  "officialPatch": "7.3c",
+  "official73c": {
+    "patch": "7.3c",
+    "version": "7.3c",
+    "published": "2026-10-21",
+    "reviewedAt": "2026-10-24",
+    "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+    "scope": "AAA ARAM／符文大亂鬥；未列召喚峽谷或標準 ARAM 專屬調整",
+    "newAugments": [
+      "炫彩衝撞",
+      "電玩高手",
+      "眼明手快",
+      "基本功夫",
+      "起源：不死之握"
+    ],
+    "augments": [
+      {
+        "name": "金屬之冠",
+        "label": "冷卻時間",
+        "before": "新增冷卻（公告未列舊值）",
+        "after": "20 秒"
+      },
+      {
+        "name": "冥血信標",
+        "label": "冷卻時間",
+        "before": "0.2 秒",
+        "after": "0 秒"
+      },
+      {
+        "name": "海克斯科技榴彈",
+        "label": "轉換後額外傷害",
+        "before": "30%",
+        "after": "50%"
+      },
+      {
+        "name": "戰鬥軍庫",
+        "label": "額外道具傷害觸發機率",
+        "before": "40%",
+        "after": "60%"
+      },
+      {
+        "name": "殞落之觸",
+        "label": "技能每秒轉換的額外傷害",
+        "before": "12%",
+        "after": "15%"
+      },
+      {
+        "name": "二重唱",
+        "label": "解除潛行後額外真實傷害",
+        "before": "30–90 +30%額外物攻 +10%魔攻",
+        "after": "60–150 +50%額外物攻 +20%魔攻"
+      },
+      {
+        "name": "卓越之巔",
+        "label": "暴擊傷害上限",
+        "before": "400%",
+        "after": "444%"
+      },
+      {
+        "name": "偷偷摸摸",
+        "label": "解除潛行後額外傷害時機",
+        "before": "0.1 秒",
+        "after": "0.5 秒"
+      },
+      {
+        "name": "偷偷摸摸",
+        "label": "額外傷害計算依據",
+        "before": "減傷後傷害",
+        "after": "減傷前傷害"
+      },
+      {
+        "name": "利刃暗影",
+        "label": "傷害",
+        "before": "30–90 +10%物攻 +25%魔攻",
+        "after": "30–120 +20%物攻 +40%魔攻"
+      },
+      {
+        "name": "緩速削弱",
+        "label": "每10額外跑速增加雙防",
+        "before": "1.5",
+        "after": "2"
+      },
+      {
+        "name": "雙重和聲、溜之大吉",
+        "label": "移動相關增幅連動",
+        "before": "原連動限制",
+        "after": "可觸發移動相關增幅，例如沙塵暴"
+      }
+    ],
+    "heroes": [
+      {
+        "baseId": "jarvan-iv",
+        "name": "嘉文四世",
+        "direction": "nerf",
+        "rows": [
+          {
+            "key": "damageDealt",
+            "label": "造成傷害",
+            "before": "105%",
+            "after": "100%"
+          },
+          {
+            "key": "damageTaken",
+            "label": "承受傷害",
+            "before": "95%",
+            "after": "100%"
+          }
+        ]
+      },
+      {
+        "baseId": "taliyah",
+        "name": "塔莉雅",
+        "direction": "buff",
+        "rows": [
+          {
+            "key": "damageDealt",
+            "label": "造成傷害",
+            "before": "100%",
+            "after": "110%"
+          }
+        ]
+      },
+      {
+        "baseId": "ryze",
+        "name": "雷茲",
+        "direction": "buff",
+        "rows": [
+          {
+            "key": "damageTaken",
+            "label": "承受傷害",
+            "before": "100%",
+            "after": "90%"
+          }
+        ]
+      },
+      {
+        "baseId": "kayn",
+        "name": "慨影",
+        "direction": "buff",
+        "rows": [
+          {
+            "key": "damageDealt",
+            "label": "造成傷害",
+            "before": "95%",
+            "after": "105%"
+          }
+        ]
+      },
+      {
+        "baseId": "vladimir",
+        "name": "弗拉迪米爾",
+        "direction": "buff",
+        "rows": [
+          {
+            "key": "damageDealt",
+            "label": "造成傷害",
+            "before": "90%",
+            "after": "100%"
+          },
+          {
+            "key": "damageTaken",
+            "label": "承受傷害",
+            "before": "110%",
+            "after": "105%"
+          }
+        ]
+      }
+    ],
+    "note": "內容於版本期間陸續推出；新增卡牌完整效果與分類未公布。"
+  }
 }

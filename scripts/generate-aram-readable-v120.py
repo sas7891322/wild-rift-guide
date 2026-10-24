@@ -97,6 +97,10 @@ def render_aram(hero, data):
         body.append(f'<section class="sg-section" id="aaa"><details><summary><strong>符文大亂鬥分類參考（7.2b 歷史資料）</strong></summary>{aaa_body}</details></section>')
     body.append(section('sources', '資料來源與校正範圍', f'<p>{e(hero.get("sourceNote"))}</p><ul class="sg-source-list">{sources_html(hero.get("sources"))}</ul><p>來源所列版本保留原紀錄；本站評級與配置理由屬編輯判斷，並非官方排名。<a href="../../pages/editorial.html">查看編輯原則</a>，或<a href="../../pages/contact.html">回報內容問題</a>。</p>'))
     body.append('</main>' + helpers.footer())
+    update = (hero.get('aaaAram') or {}).get('officialBalanceUpdate')
+    if update:
+        changes = ''.join(f'<p>{e(r["label"])}：{e(r["before"])} → <strong>{e(r["after"])}</strong></p>' for r in update['rows'])
+        body.insert(1, section('aaa-official-73c', '7.3c 符文大亂鬥官方調整', changes + '<p>僅適用符文大亂鬥；本頁標準 ARAM 倍率與歷史配置不因此改動。</p>'))
     return helpers.page_head(title, desc, canonical, helpers.abs_asset(hero.get('avatar')), structured) + '\n'.join(body)
 
 

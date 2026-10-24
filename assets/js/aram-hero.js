@@ -56,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=110.0.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=115.3.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=121.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=121.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -91,8 +91,8 @@
       const summary=isAaa?aaa.summary:hero.summary;
       const kicker=isAaa?`AAA ARAM · ${esc(aaaVersion)} 歷史基底`:`ARAM HERO GUIDE · ${esc(standardVersion)} 資料`;
       const versionBoundary=isAaa
-        ?`符文大亂鬥分類評級沿用 ${esc(aaaVersion)}；7.3a 僅部分增幅公告欄位校正，英雄配置尚未全面重評。`
-        :`標準 ARAM 資料最後校正 ${esc(hero.reviewedAt||data.updated)}，尚未完成 7.3b 全量複核；以下保留 ${esc(standardVersion)} 配置，不代表目前版本已確認的完整推薦。`;
+        ?`符文大亂鬥分類評級沿用 ${esc(aaaVersion)}；7.3a／7.3c 僅部分增幅公告欄位校正，7.3c 五位英雄另列官方模式倍率，英雄配置尚未全面重評。`
+        :`標準 ARAM 資料最後校正 ${esc(hero.reviewedAt||data.updated)}，尚未完成 7.3c 全量複核；以下保留 ${esc(standardVersion)} 配置，不代表目前版本已確認的完整推薦。`;
       const badgeMain=isAaa?'正式':hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
       const reasonTitle=isAaa?'符文大亂鬥怎麼用？':`為什麼是 ${esc(hero.tier)}？`;
@@ -192,7 +192,7 @@
         </div>
       </details>`).join('');
       const aaaRunes=renderRunes(aaa.runeReuse?.runes||hero.runes||[]);
-      return `<section class="aram-detail-section aaa-overview-section">
+      return `${aaa.officialBalanceUpdate?`<section class="aram-detail-section"><h2>7.3c 符文大亂鬥官方倍率</h2>${aaa.officialBalanceUpdate.rows.map(r=>`<p>${esc(r.label)}：${esc(r.before)} → <strong>${esc(r.after)}</strong></p>`).join('')}<p>${esc(aaa.officialBalanceUpdate.note)}</p><a href="${esc(aaa.officialBalanceUpdate.source)}" target="_blank" rel="noopener noreferrer">官方來源</a></section>`:''}<section class="aram-detail-section aaa-overview-section">
         <details class="aaa-shared-disclosure">
           <summary>
             <div class="aram-detail-section-head"><div><span>AAA ARAM</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>
@@ -368,7 +368,7 @@
         button.classList.toggle('is-active',active);
         button.setAttribute('aria-selected',active?'true':'false');
       });
-      if(modeNote)modeNote.textContent=isAaa?`符文大亂鬥 ${aaaVersion} 分類評級參考，與標準 ARAM 分開；增幅公告差異請看增幅資料庫。`:`標準 ARAM ${standardVersion} 歷史配置；尚未完成 7.3b 全量複核。`;
+      if(modeNote)modeNote.textContent=isAaa?`符文大亂鬥 ${aaaVersion} 分類評級參考，與標準 ARAM 分開；增幅公告差異請看增幅資料庫。`:`標準 ARAM ${standardVersion} 歷史配置；尚未完成 7.3c 全量複核。`;
       const titleMode=isAaa?'符文大亂鬥':'ARAM';
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');

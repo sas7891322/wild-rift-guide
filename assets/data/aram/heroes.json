@@ -53344,6 +53344,19 @@
           "patch": "7.2e",
           "date": "2026-09-12",
           "scope": "shared hero/item corrections and announced mode restrictions; augment rankings retain historical baseline"
+        },
+        "officialBalanceUpdate": {
+          "patch": "7.3c",
+          "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+          "rows": [
+            {
+              "key": "damageDealt",
+              "label": "造成傷害",
+              "before": "100%",
+              "after": "110%"
+            }
+          ],
+          "note": "只列本次官方變動欄位；未列欄位不推定為100%。僅適用符文大亂鬥，評級與配置未全面重評。"
         }
       },
       "standardAramAudit": {
@@ -57368,6 +57381,25 @@
           "patch": "7.2e",
           "date": "2026-09-12",
           "scope": "shared hero/item corrections and announced mode restrictions; augment rankings retain historical baseline"
+        },
+        "officialBalanceUpdate": {
+          "patch": "7.3c",
+          "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+          "rows": [
+            {
+              "key": "damageDealt",
+              "label": "造成傷害",
+              "before": "90%",
+              "after": "100%"
+            },
+            {
+              "key": "damageTaken",
+              "label": "承受傷害",
+              "before": "110%",
+              "after": "105%"
+            }
+          ],
+          "note": "只列本次官方變動欄位；未列欄位不推定為100%。僅適用符文大亂鬥，評級與配置未全面重評。"
         }
       },
       "aramPatchImpact": {
@@ -74031,6 +74063,25 @@
           "patch": "7.2e",
           "date": "2026-09-12",
           "scope": "shared hero/item corrections and announced mode restrictions; augment rankings retain historical baseline"
+        },
+        "officialBalanceUpdate": {
+          "patch": "7.3c",
+          "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+          "rows": [
+            {
+              "key": "damageDealt",
+              "label": "造成傷害",
+              "before": "105%",
+              "after": "100%"
+            },
+            {
+              "key": "damageTaken",
+              "label": "承受傷害",
+              "before": "95%",
+              "after": "100%"
+            }
+          ],
+          "note": "只列本次官方變動欄位；未列欄位不推定為100%。僅適用符文大亂鬥，評級與配置未全面重評。"
         }
       },
       "standardAramAudit": {
@@ -77268,6 +77319,19 @@
           "patch": "7.2e",
           "date": "2026-09-12",
           "scope": "shared hero/item corrections and announced mode restrictions; augment rankings retain historical baseline"
+        },
+        "officialBalanceUpdate": {
+          "patch": "7.3c",
+          "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+          "rows": [
+            {
+              "key": "damageDealt",
+              "label": "造成傷害",
+              "before": "95%",
+              "after": "105%"
+            }
+          ],
+          "note": "只列本次官方變動欄位；未列欄位不推定為100%。僅適用符文大亂鬥，評級與配置未全面重評。"
         }
       },
       "standardAramAudit": {
@@ -89569,6 +89633,19 @@
           "patch": "7.2e",
           "date": "2026-09-12",
           "scope": "shared hero/item corrections and announced mode restrictions; augment rankings retain historical baseline"
+        },
+        "officialBalanceUpdate": {
+          "patch": "7.3c",
+          "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+          "rows": [
+            {
+              "key": "damageTaken",
+              "label": "承受傷害",
+              "before": "100%",
+              "after": "90%"
+            }
+          ],
+          "note": "只列本次官方變動欄位；未列欄位不推定為100%。僅適用符文大亂鬥，評級與配置未全面重評。"
         }
       },
       "aramPatchImpact": {
@@ -112452,5 +112529,7 @@
     ],
     "date": "2026-09-12",
     "AAAProfilesSharedRulesReviewed": 140
-  }
+  },
+  "aaaOfficialPatch": "7.3c",
+  "aaaOfficialUpdated": "2026-10-24"
 }

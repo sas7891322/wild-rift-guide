@@ -1,0 +1,169 @@
+{
+  "patch": "7.3c",
+  "version": "7.3c",
+  "published": "2026-10-21",
+  "reviewedAt": "2026-10-24",
+  "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
+  "scope": "AAA ARAM／符文大亂鬥；未列召喚峽谷或標準 ARAM 專屬調整",
+  "newAugments": [
+    "炫彩衝撞",
+    "電玩高手",
+    "眼明手快",
+    "基本功夫",
+    "起源：不死之握"
+  ],
+  "augments": [
+    {
+      "name": "金屬之冠",
+      "label": "冷卻時間",
+      "before": "新增冷卻（公告未列舊值）",
+      "after": "20 秒"
+    },
+    {
+      "name": "冥血信標",
+      "label": "冷卻時間",
+      "before": "0.2 秒",
+      "after": "0 秒"
+    },
+    {
+      "name": "海克斯科技榴彈",
+      "label": "轉換後額外傷害",
+      "before": "30%",
+      "after": "50%"
+    },
+    {
+      "name": "戰鬥軍庫",
+      "label": "額外道具傷害觸發機率",
+      "before": "40%",
+      "after": "60%"
+    },
+    {
+      "name": "殞落之觸",
+      "label": "技能每秒轉換的額外傷害",
+      "before": "12%",
+      "after": "15%"
+    },
+    {
+      "name": "二重唱",
+      "label": "解除潛行後額外真實傷害",
+      "before": "30–90 +30%額外物攻 +10%魔攻",
+      "after": "60–150 +50%額外物攻 +20%魔攻"
+    },
+    {
+      "name": "卓越之巔",
+      "label": "暴擊傷害上限",
+      "before": "400%",
+      "after": "444%"
+    },
+    {
+      "name": "偷偷摸摸",
+      "label": "解除潛行後額外傷害時機",
+      "before": "0.1 秒",
+      "after": "0.5 秒"
+    },
+    {
+      "name": "偷偷摸摸",
+      "label": "額外傷害計算依據",
+      "before": "減傷後傷害",
+      "after": "減傷前傷害"
+    },
+    {
+      "name": "利刃暗影",
+      "label": "傷害",
+      "before": "30–90 +10%物攻 +25%魔攻",
+      "after": "30–120 +20%物攻 +40%魔攻"
+    },
+    {
+      "name": "緩速削弱",
+      "label": "每10額外跑速增加雙防",
+      "before": "1.5",
+      "after": "2"
+    },
+    {
+      "name": "雙重和聲、溜之大吉",
+      "label": "移動相關增幅連動",
+      "before": "原連動限制",
+      "after": "可觸發移動相關增幅，例如沙塵暴"
+    }
+  ],
+  "heroes": [
+    {
+      "baseId": "jarvan-iv",
+      "name": "嘉文四世",
+      "direction": "nerf",
+      "rows": [
+        {
+          "key": "damageDealt",
+          "label": "造成傷害",
+          "before": "105%",
+          "after": "100%"
+        },
+        {
+          "key": "damageTaken",
+          "label": "承受傷害",
+          "before": "95%",
+          "after": "100%"
+        }
+      ]
+    },
+    {
+      "baseId": "taliyah",
+      "name": "塔莉雅",
+      "direction": "buff",
+      "rows": [
+        {
+          "key": "damageDealt",
+          "label": "造成傷害",
+          "before": "100%",
+          "after": "110%"
+        }
+      ]
+    },
+    {
+      "baseId": "ryze",
+      "name": "雷茲",
+      "direction": "buff",
+      "rows": [
+        {
+          "key": "damageTaken",
+          "label": "承受傷害",
+          "before": "100%",
+          "after": "90%"
+        }
+      ]
+    },
+    {
+      "baseId": "kayn",
+      "name": "慨影",
+      "direction": "buff",
+      "rows": [
+        {
+          "key": "damageDealt",
+          "label": "造成傷害",
+          "before": "95%",
+          "after": "105%"
+        }
+      ]
+    },
+    {
+      "baseId": "vladimir",
+      "name": "弗拉迪米爾",
+      "direction": "buff",
+      "rows": [
+        {
+          "key": "damageDealt",
+          "label": "造成傷害",
+          "before": "90%",
+          "after": "100%"
+        },
+        {
+          "key": "damageTaken",
+          "label": "承受傷害",
+          "before": "110%",
+          "after": "105%"
+        }
+      ]
+    }
+  ],
+  "note": "內容於版本期間陸續推出；新增卡牌完整效果與分類未公布。"
+}
