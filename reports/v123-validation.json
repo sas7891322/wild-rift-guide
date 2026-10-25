@@ -1,0 +1,420 @@
+{
+  "release": "v123",
+  "patch": "7.3c",
+  "reviewCutoff": "2026-10-25",
+  "sourceArchive": "Wild_Rift_Guide_AdSense_Review5_TechFix_20261025.zip",
+  "counts": {
+    "riftGuides": 203,
+    "riftHeroes": 142,
+    "aramGuides": 142,
+    "aaaGuides": 142,
+    "aramBuildChanged": 44,
+    "aramTierChanged": 6,
+    "riftTierChanged": 0,
+    "augmentEffectsChanged": 8
+  },
+  "static": {
+    "metrics": {
+      "riftGuides": 203,
+      "buildRoutes": 650,
+      "aramGuides": 142,
+      "htmlFiles": 384,
+      "javascriptFiles": 20,
+      "jsonFiles": 35,
+      "newPythonSyntax": 3,
+      "riftExactDuplicateSummaries": 0,
+      "aramExactDuplicateSummaries": 0,
+      "pendingRiftChecks": 9
+    },
+    "errors": [],
+    "warnings": [],
+    "missingLocalReferences": {}
+  },
+  "activeAssetReferences": 9008,
+  "missingActiveAssetReferences": [],
+  "sitemapCanonicalUrls": 377,
+  "browser": {
+    "method": "Offline Chromium DOM and viewport tests. Actual local page scripts/data; fixture URL/history/fetch. External auth, analytics, ads and production networking not tested. Browser navigation is administratively disabled in this environment.",
+    "checks": [
+      {
+        "path": "/",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "激鬥峽谷中文攻略網｜英雄出裝、ARAM 與觀念專題｜Wild Rift Guide",
+        "h1": [
+          "激鬥峽谷中文攻略網"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/"
+        ],
+        "bodyTextChars": 2100,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/summoners-rift.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "召喚峽谷攻略｜英雄出裝、符文、Tier List｜Wild Rift Guide",
+        "h1": [],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/summoners-rift.html"
+        ],
+        "bodyTextChars": 502,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/heroes.html?hero=jinx",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "吉茵珂絲攻略｜飛龍路出裝、符文、技能加點｜激鬥峽谷",
+        "h1": [
+          "吉茵珂絲飛龍路攻略"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/share/heroes/jinx.html"
+        ],
+        "bodyTextChars": 2007,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/heroes.html?hero=hwei-mid",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "赫威攻略｜中路出裝、符文、技能加點｜激鬥峽谷",
+        "h1": [
+          "赫威中路攻略"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/share/heroes/hwei-mid.html"
+        ],
+        "bodyTextChars": 4471,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/heroes.html?hero=jayce-baron",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "杰西攻略｜巴龍路出裝、符文、技能加點｜激鬥峽谷",
+        "h1": [
+          "杰西巴龍路攻略"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/share/heroes/jayce-baron.html"
+        ],
+        "bodyTextChars": 1767,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "隨機單中 ARAM 攻略｜Wild Rift Guide",
+        "h1": [
+          "隨機單中 ARAM 攻略"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/aram.html"
+        ],
+        "bodyTextChars": 846,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram-hero.html?id=jinx",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "吉茵珂絲 ARAM 出裝、符文與攻略｜Wild Rift Guide",
+        "h1": [
+          "吉茵珂絲"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/share/aram/jinx.html"
+        ],
+        "bodyTextChars": 2385,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram-hero.html?id=jinx#switch-aaa",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "吉茵珂絲 符文大亂鬥 出裝、符文與攻略｜Wild Rift Guide",
+        "h1": [
+          "吉茵珂絲"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/aram-hero.html?id=jinx&mode=aaa"
+        ],
+        "bodyTextChars": 2229,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram-hero.html?id=hwei",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "赫威 ARAM 出裝、符文與攻略｜Wild Rift Guide",
+        "h1": [
+          "赫威"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/share/aram/hwei.html"
+        ],
+        "bodyTextChars": 2056,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram-hero.html?id=chogath&mode=aaa",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "科加斯 符文大亂鬥 出裝、符文與攻略｜Wild Rift Guide",
+        "h1": [
+          "科加斯"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/aram-hero.html?id=chogath&mode=aaa"
+        ],
+        "bodyTextChars": 2016,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram-augments.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "符文大亂鬥增幅裝置｜Wild Rift Guide",
+        "h1": [
+          "增幅裝置資料庫"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/aram-augments.html"
+        ],
+        "bodyTextChars": 13062,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/items.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "激鬥峽谷裝備大全｜屬性、效果與合成｜Wild Rift Guide",
+        "h1": [
+          "激鬥峽谷裝備大全"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/pages/items.html"
+        ],
+        "bodyTextChars": 808,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/runes.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "激鬥峽谷符文攻略｜關鍵符文與搭配效果｜Wild Rift Guide",
+        "h1": [
+          "激鬥峽谷符文攻略"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/pages/runes.html"
+        ],
+        "bodyTextChars": 496,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/spells.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "激鬥峽谷召喚師技能｜效果與冷卻時間｜Wild Rift Guide",
+        "h1": [
+          "激鬥峽谷召喚師技能"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/pages/spells.html"
+        ],
+        "bodyTextChars": 270,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/build-check.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "7.3c五件成裝檢查工具｜Wild Rift Guide",
+        "h1": [
+          "7.3c 五件成裝檢查"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/pages/build-check.html"
+        ],
+        "bodyTextChars": 4340,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/review-7-3c.html",
+        "viewport": {
+          "width": 1365,
+          "height": 900
+        },
+        "title": "7.3c全站校正紀錄與使用指南｜Wild Rift Guide",
+        "h1": [
+          "7.3c 全站整合校正"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/pages/review-7-3c.html"
+        ],
+        "bodyTextChars": 5987,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "title": "激鬥峽谷中文攻略網｜英雄出裝、ARAM 與觀念專題｜Wild Rift Guide",
+        "h1": [
+          "激鬥峽谷中文攻略網"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/"
+        ],
+        "bodyTextChars": 2083,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram-hero.html?id=jinx",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "title": "吉茵珂絲 ARAM 出裝、符文與攻略｜Wild Rift Guide",
+        "h1": [
+          "吉茵珂絲"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/share/aram/jinx.html"
+        ],
+        "bodyTextChars": 1722,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/aram-hero.html?id=hwei&mode=aaa",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "title": "赫威 符文大亂鬥 出裝、符文與攻略｜Wild Rift Guide",
+        "h1": [
+          "赫威"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/aram-hero.html?id=hwei&mode=aaa"
+        ],
+        "bodyTextChars": 1330,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/build-check.html",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "title": "7.3c五件成裝檢查工具｜Wild Rift Guide",
+        "h1": [
+          "7.3c 五件成裝檢查"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/pages/build-check.html"
+        ],
+        "bodyTextChars": 5641,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/share/heroes/hwei-mid.html",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "title": "赫威中路攻略｜7.3c 出裝、符文與技能｜Wild Rift Guide",
+        "h1": [
+          "赫威 中路攻略"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/share/heroes/hwei-mid.html"
+        ],
+        "bodyTextChars": 5040,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      },
+      {
+        "path": "/pages/review-7-3c.html",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "title": "7.3c全站校正紀錄與使用指南｜Wild Rift Guide",
+        "h1": [
+          "7.3c 全站整合校正"
+        ],
+        "canonicals": [
+          "https://wild-rift-guide.vercel.app/pages/review-7-3c.html"
+        ],
+        "bodyTextChars": 5977,
+        "pageErrors": [],
+        "horizontalOverflow": 0
+      }
+    ],
+    "failures": []
+  },
+  "notTested": [
+    "正式Vercel部署與Google實際檢索",
+    "Supabase登入、資料庫寫入與LINE／付款連結操作",
+    "實際AdSense廣告、Google CMP後台與廣告核准",
+    "每一位英雄的逐級遊戲內數值及每張新增卡牌實機效果"
+  ]
+}

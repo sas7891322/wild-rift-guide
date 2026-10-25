@@ -7,7 +7,7 @@
   "role": "中路",
   "tier": "S+",
   "provisional": false,
-  "patch": "7.3b",
+  "patch": "7.3c",
   "position": "遠距法師／三主題施法",
   "tags": [
     "本站評級",
@@ -89,7 +89,7 @@
     "後期": "先看敵方控制與進場技能，再選傷害、增益或控制主題；不要急著交掉自保。"
   },
   "summary": "先選主題再選施法，以遠距清線與控制建立輸出空間；主一技、副三技，保留控制防突進。",
-  "sourceNote": "<strong>7.3b 分項校正（v118・2026-10-15）</strong>：本頁採本站評級與配置建議，不是官方排名或台服勝率。來源版本、判斷理由及個別待確認項目請展開「7.3b 校正重點」查看；v117首輪紀錄保留在歷史下拉欄。",
+  "sourceNote": "<strong>7.3c 全站複核（2026-10-25）</strong>：本頁配置以最新一般裝備與符文檢查，Tier為本站判斷；官方最後一次一般英雄平衡來源仍可能是7.3b。未公開數值及分路證據不足處保留註記，不冒充實測。",
   "avatar": "../assets/images/heroes/hwei/portrait.webp",
   "abilities": [
     {
@@ -459,7 +459,7 @@
   ],
   "matchupAdjustments": {
     "intro": "依本頁目前五件成裝與鞋線替換；同一格多個建議擇一。先看實際傷害和控制，再決定是否犧牲輸出或保命。",
-    "logicVersion": "v117-7.3b-mid",
+    "logicVersion": "v123-7.3c",
     "roleId": "mid",
     "archetype": "mage",
     "situations": [
@@ -598,19 +598,25 @@
     "matchupBasis": "新英雄對局為射程、位移與控制互動的條件判斷，尚無可靠勝率樣本；較有利不代表能無視敵方控制。",
     "scope": "配裝、符文、召喚師技能、15級建議加點、機制對局；勝率與部分完整技能成長值尚待實機資料"
   },
-  "reviewStatus": "7.3b-field-reviewed",
-  "reviewedAt": "2026-10-15",
+  "reviewStatus": "7.3c-official-delta-and-configuration-reviewed",
+  "reviewedAt": "2026-10-25",
   "guideContentAudit": {
-    "version": "v118",
-    "date": "2026-10-15",
-    "status": "7.3b-field-reviewed",
-    "sourcePatch": "7.3b",
+    "version": "v123",
+    "date": "2026-10-25",
+    "status": "7.3c-official-delta-and-configuration-reviewed",
+    "sourcePatch": "7.3c",
     "previousVersion": {
-      "version": "v117",
+      "version": "v118",
       "date": "2026-10-15",
-      "status": "7.3b-full-roster-first-pass",
+      "status": "7.3b-field-reviewed",
       "sourcePatch": "7.3b",
-      "previousVersion": "v112-7.3-three-lanes"
+      "previousVersion": {
+        "version": "v117",
+        "date": "2026-10-15",
+        "status": "7.3b-full-roster-first-pass",
+        "sourcePatch": "7.3b",
+        "previousVersion": "v112-7.3-three-lanes"
+      }
     }
   },
   "skillSequenceNote": "預設1至15級主Q、副E、W最後，7級點滿Q；大絕在5／9／13級優先。升級的是主題，九個子技能不各自花技能點。",
@@ -882,37 +888,20 @@
   },
   "tierLabel": "本站評級",
   "editorialReview": {
-    "version": "v118",
-    "date": "2026-10-15",
+    "version": "v123",
+    "date": "2026-10-25",
     "status": "reviewed",
-    "sourcePatch": "7.3b",
+    "sourcePatch": "7.3c",
     "sources": [
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3/",
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3a/",
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/",
       "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
       "https://www.wildriftfire.com/guide/hwei",
       "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
     ],
     "checks": [
-      {
-        "field": "source",
-        "title": "同日分路複核來源",
-        "status": "confirmed",
-        "detail": "本頁延續2026/10/15 v117的中路逐項複核，當前採用7.3b來源；來源只用作配置與機制參考，不等同官方推薦或台服即時勝率。",
-        "sources": [
-          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
-          "https://www.wildriftfire.com/guide/hwei",
-          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
-        ]
-      },
-      {
-        "field": "mechanics",
-        "title": "赫威官方已公告現行數值",
-        "status": "confirmed",
-        "detail": "7.3b被動、WW初始與最大護盾、WE額外基礎傷害、EE距離／傷害及7.3a QQ、QW增傷係數、R引爆值有直接官方來源，保留顯示；舊版本附錄與圖示不改。",
-        "sources": [
-          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
-          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/"
-        ]
-      },
       {
         "field": "ability:Q",
         "title": "Q技能基礎冷卻與未公告成長表",
@@ -958,14 +947,22 @@
         ]
       },
       {
-        "field": "tier",
-        "title": "本分路本站評級",
+        "field": "source",
+        "title": "7.3c 適用範圍",
         "status": "confirmed",
-        "detail": "赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。",
+        "detail": "7.3c 的直接英雄倍率改動屬符文大亂鬥；本召喚峽谷配置承接 7.3b。未把模式專屬增削轉為峽谷增削。",
         "sources": [
-          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
-          "https://www.wildriftfire.com/guide/hwei",
-          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+          "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/"
+        ]
+      },
+      {
+        "field": "build",
+        "title": "配置結構與引用",
+        "status": "confirmed",
+        "detail": "五件成裝、獨立鞋線、起手、核心、情境替換引用與一般符文列別均重新檢查；移除裝備不列入當前推薦。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3/",
+          "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
         ]
       }
     ],
@@ -1015,12 +1012,12 @@
         ]
       }
     ],
-    "limitation": "Tier、出裝、符文與對局是本站編輯建議，不是官方推薦或已驗證台服勝率。v118延續同日v117的逐路複核，針對來源缺口及數值衝突再核對；未宣稱所有技能已在手機內逐級實測。",
+    "limitation": "本輪核對官方版本差異、道具/符文引用、五成裝與鞋線、逐級加點及情境替換一致性。Tier及玩法屬本站編輯判斷，不是官方排名或台服勝率；未公開的全級技能表不推算。",
     "winRateVerified": false,
-    "previousReviewVersion": "v117",
+    "previousReviewVersion": "v118",
     "tier": {
       "status": "site-rating",
-      "reason": "赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。",
+      "reason": "7.3c 維持 S+（本站判斷）。赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。 7.3c 未改動此分路的英雄數值，沒有新證據只因版本號而升降。",
       "label": "本站評級"
     },
     "build": {
@@ -1046,6 +1043,177 @@
     "matchups": {
       "status": "site-recommendation",
       "reason": "以中路分頁的威脅為主，重點為犽宿、犽凝、星朵拉；移除同時列於有利與不利的衝突，對局為機制建議而非勝率排序。"
+    }
+  },
+  "reviewHistory123": {
+    "patch": "7.3b",
+    "reviewedAt": "2026-10-15",
+    "editorialReview": {
+      "version": "v118",
+      "date": "2026-10-15",
+      "status": "reviewed",
+      "sourcePatch": "7.3b",
+      "sources": [
+        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+        "https://www.wildriftfire.com/guide/hwei",
+        "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+      ],
+      "checks": [
+        {
+          "field": "source",
+          "title": "同日分路複核來源",
+          "status": "confirmed",
+          "detail": "本頁延續2026/10/15 v117的中路逐項複核，當前採用7.3b來源；來源只用作配置與機制參考，不等同官方推薦或台服即時勝率。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+          ]
+        },
+        {
+          "field": "mechanics",
+          "title": "赫威官方已公告現行數值",
+          "status": "confirmed",
+          "detail": "7.3b被動、WW初始與最大護盾、WE額外基礎傷害、EE距離／傷害及7.3a QQ、QW增傷係數、R引爆值有直接官方來源，保留顯示；舊版本附錄與圖示不改。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/"
+          ]
+        },
+        {
+          "field": "ability:Q",
+          "title": "Q技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖9.5秒缺少等級／技能加速；QW完整基礎傷害與QE各級數值未取得足以核定的當前實機條件。移除摘要的固定冷卻，不拿舊截圖最大傷害計算斬殺。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        },
+        {
+          "field": "ability:W",
+          "title": "W技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖17秒缺少等級／技能加速；WQ跑速／時長與WE完整回魔成長表未核定。WW官方護盾及WE官方基礎傷害已確認，沒有整個W都標不可信。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        },
+        {
+          "field": "ability:E",
+          "title": "E技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖13秒缺少等級／技能加速；EQ／EW全級傷害和控制時長未核定。EE官方7.3b距離7、60/110/160/210＋60%魔攻已確認。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        },
+        {
+          "field": "ability:R",
+          "title": "R技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖70秒缺少等級／技能加速，持續傷害也只單一等級；外站技能第四欄目前列Wash Brush取消選單，不能當成大絕資料。官方R引爆200/300/400＋70%魔攻維持顯示。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        },
+        {
+          "field": "tier",
+          "title": "本分路本站評級",
+          "status": "confirmed",
+          "detail": "赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
+          ]
+        }
+      ],
+      "pending": [
+        {
+          "field": "ability:Q",
+          "title": "Q技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖9.5秒缺少等級／技能加速；QW完整基礎傷害與QE各級數值未取得足以核定的當前實機條件。移除摘要的固定冷卻，不拿舊截圖最大傷害計算斬殺。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        },
+        {
+          "field": "ability:W",
+          "title": "W技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖17秒缺少等級／技能加速；WQ跑速／時長與WE完整回魔成長表未核定。WW官方護盾及WE官方基礎傷害已確認，沒有整個W都標不可信。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        },
+        {
+          "field": "ability:E",
+          "title": "E技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖13秒缺少等級／技能加速；EQ／EW全級傷害和控制時長未核定。EE官方7.3b距離7、60/110/160/210＋60%魔攻已確認。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        },
+        {
+          "field": "ability:R",
+          "title": "R技能基礎冷卻與未公告成長表",
+          "status": "pending",
+          "detail": "舊截圖70秒缺少等級／技能加速，持續傷害也只單一等級；外站技能第四欄目前列Wash Brush取消選單，不能當成大絕資料。官方R引爆200/300/400＋70%魔攻維持顯示。",
+          "sources": [
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+            "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+            "https://www.wildriftfire.com/guide/hwei"
+          ]
+        }
+      ],
+      "limitation": "Tier、出裝、符文與對局是本站編輯建議，不是官方推薦或已驗證台服勝率。v118延續同日v117的逐路複核，針對來源缺口及數值衝突再核對；未宣稱所有技能已在手機內逐級實測。",
+      "winRateVerified": false,
+      "previousReviewVersion": "v117",
+      "tier": {
+        "status": "site-rating",
+        "reason": "赫威中路A→S+；同分路7.3b編輯參考。保留7.3b被動、WW、WE、EE現行數值與原圖，補手機兩段選單連招。",
+        "label": "本站評級"
+      },
+      "build": {
+        "status": "site-recommendation",
+        "reason": "黑焰與寶珠後第三件黎安卓，幽魂之花補穿透，帽子末件；全部情境配置同步五件基準，不再重複建議買已裝備的黎安卓。"
+      },
+      "runes": {
+        "status": "site-recommendation",
+        "reason": "彗星與焦灼保留遠程消耗，傳說技能疾速替代骨甲支援主題技能輪轉；要用站位補生存。"
+      },
+      "spells": {
+        "status": "site-recommendation",
+        "reason": "閃現光盾保留，EE射程縮短後更需留撤退空間；光盾不能代替控制命中。"
+      },
+      "skills": {
+        "status": "site-recommendation",
+        "reason": "主Q、副E、W最後；修正15級表為7級點滿Q，5／9／13優先大絕，主題而非九個子技能各自加點。"
+      },
+      "mechanics": {
+        "status": "site-recommendation",
+        "reason": "7.3b被動、WW初始與最大護盾、WE額外基礎傷害、EE距離／傷害及7.3a QQ、QW增傷係數、R引爆值有直接官方來源，保留顯示；舊版本附錄與圖示不改。 舊截圖9.5秒缺少等級／技能加速；QW完整基礎傷害與QE各級數值未取得足以核定的當前實機條件。移除摘要的固定冷卻，不拿舊截圖最大傷害計算斬殺。 舊截圖17秒缺少等級／技能加速；WQ跑速／時長與WE完整回魔成長表未核定。WW官方護盾及WE官方基礎傷害已確認，沒有整個W都標不可信。 舊截圖13秒缺少等級／技能加速；EQ／EW全級傷害和控制時長未核定。EE官方7.3b距離7、60/110/160/210＋60%魔攻已確認。 舊截圖70秒缺少等級／技能加速，持續傷害也只單一等級；外站技能第四欄目前列Wash Brush取消選單，不能當成大絕資料。官方R引爆200/300/400＋70%魔攻維持顯示。"
+      },
+      "matchups": {
+        "status": "site-recommendation",
+        "reason": "以中路分頁的威脅為主，重點為犽宿、犽凝、星朵拉；移除同時列於有利與不利的衝突，對局為機制建議而非勝率排序。"
+      }
     }
   }
 }

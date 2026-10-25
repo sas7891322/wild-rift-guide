@@ -67,7 +67,7 @@
       </a>`).join('');
   };
 
-  fetch('../assets/data/support.json?v=81.1.0', {cache:'no-store'})
+  fetch('../assets/data/support.json?v=123.0.0', {cache:'no-store'})
     .then(response => {
       if (!response.ok) throw new Error(String(response.status));
       return response.json();

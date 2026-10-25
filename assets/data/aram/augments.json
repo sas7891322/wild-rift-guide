@@ -1,10 +1,10 @@
 {
-  "gameVersion": "7.2b",
-  "dataVersion": "121.0.0",
+  "gameVersion": "7.3c",
+  "dataVersion": "123.0.0",
   "title": "符文大亂鬥增幅裝置",
   "total": 151,
   "display": "name-effect-official-tags",
-  "note": "依遊戲內增幅裝置資料庫截圖整理，收錄台服繁體中文名稱、完整效果文字與卡牌官方分類標籤；不加入增幅圖示。",
+  "note": "卡片原始效果來自站方留存遊戲截圖，已套用能核實的官方後續異動；卡池可能持續新增，151不是目前遊戲全部卡片總數。",
   "augments": [
     {
       "id": "augment-001",
@@ -17,7 +17,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8043"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-002",
@@ -30,7 +33,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8042"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-003",
@@ -43,7 +49,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8044"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-004",
@@ -56,7 +65,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8045"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-005",
@@ -69,7 +81,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8046"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-006",
@@ -82,7 +97,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8047"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-007",
@@ -95,7 +113,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8048"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-008",
@@ -108,7 +129,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8049"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-009",
@@ -121,7 +145,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8050"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-010",
@@ -140,7 +167,12 @@
         "fields": "每10額外跑速增加雙防",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
         "previousSiteEffect": "目標的跑速每低你1%，目標對你造成的傷害就會減少0.3%。你每獲得10額外跑速，就會增加1.5雙防。"
-      }
+      },
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-011",
@@ -153,20 +185,30 @@
       ],
       "classificationSourceRefs": [
         "IMG_8052"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-012",
       "name": "堅若磐石",
       "order": 12,
       "sourceRef": "IMG_7900",
-      "effect": "獲得緩速免疫與20%韌性。所受的物理與魔法傷害減少4（隨等級成長）。",
+      "effect": "獲得緩速免疫與20%韌性。所受物理與魔法傷害減少3.5–10.5（隨等級成長；7.3b公告）。",
       "officialTags": [
         "單人強者"
       ],
       "classificationSourceRefs": [
         "IMG_8053"
-      ]
+      ],
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture",
+      "officialNameEn": "Rock Solid",
+      "effectSource": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/"
     },
     {
       "id": "augment-013",
@@ -179,7 +221,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8054"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-014",
@@ -192,7 +237,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8055"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-015",
@@ -205,7 +253,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8056"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-016",
@@ -224,7 +275,10 @@
         "reviewedAt": "2026-10-10",
         "fields": "護盾係數",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-017",
@@ -237,7 +291,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8058"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-018",
@@ -250,7 +307,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8059"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-019",
@@ -263,7 +323,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8060"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-020",
@@ -276,7 +339,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8061"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-021",
@@ -289,7 +355,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8062"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-022",
@@ -302,7 +371,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8063"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-023",
@@ -315,7 +387,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8064"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-024",
@@ -328,7 +403,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8065"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-025",
@@ -341,7 +419,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8066"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-026",
@@ -354,7 +435,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8067"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-027",
@@ -367,7 +451,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8068"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-028",
@@ -380,7 +467,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8069"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-029",
@@ -393,7 +483,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8070"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-030",
@@ -406,7 +499,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8071"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-031",
@@ -419,7 +515,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8072"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-032",
@@ -432,7 +531,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8073"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-033",
@@ -445,7 +547,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8074"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-034",
@@ -459,7 +564,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8075"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-035",
@@ -472,7 +580,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8076"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-036",
@@ -485,7 +596,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8077"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-037",
@@ -498,7 +612,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8078"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-038",
@@ -511,7 +628,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8079"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-039",
@@ -524,7 +644,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8080"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-040",
@@ -537,7 +660,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8081"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-041",
@@ -550,7 +676,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8082"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-042",
@@ -563,7 +692,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8083"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-043",
@@ -576,7 +708,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8084"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-044",
@@ -589,7 +724,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8085"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-045",
@@ -602,20 +740,28 @@
       ],
       "classificationSourceRefs": [
         "IMG_8086"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-046",
       "name": "舒緩湍流",
       "order": 46,
       "sourceRef": "IMG_7934",
-      "effect": "給予治療與護盾時，使目標跑速提升25%。5秒內，目標移動時每0.75秒會釋放一波香氣，為附近友方英雄回復1.5%最大生命。（冷卻時間8秒）",
+      "effect": "給予治療與護盾時，使目標跑速提升25%。5秒內，目標移動時每0.75秒會釋放一波香氣，為附近友方英雄回復1%最大生命。（冷卻時間8秒）",
       "officialTags": [
         "流水回音"
       ],
       "classificationSourceRefs": [
         "IMG_8087"
-      ]
+      ],
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-047",
@@ -628,7 +774,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8088"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-048",
@@ -641,7 +790,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8089"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-049",
@@ -654,7 +806,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8090"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-050",
@@ -673,7 +828,10 @@
         "fields": "移動相關增幅連動",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
         "previousSiteEffect": "命中敵軍三次會對其造成20物理傷害（20（隨等級成長）+ 20%額外物攻 + 10%魔攻），並附加命中效果和觸發衝刺。"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-051",
@@ -686,7 +844,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8092"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-052",
@@ -699,7 +860,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8093"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-053",
@@ -718,7 +882,10 @@
         "reviewedAt": "2026-10-10",
         "fields": "攻擊距離",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-054",
@@ -731,7 +898,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8095"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-055",
@@ -744,7 +914,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8096"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-056",
@@ -757,7 +930,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8097"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-057",
@@ -770,7 +946,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8098"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-058",
@@ -783,7 +962,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8099"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-059",
@@ -796,7 +978,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8100"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-060",
@@ -809,7 +994,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8101"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-061",
@@ -822,7 +1010,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8103"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-062",
@@ -835,7 +1026,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8104"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-063",
@@ -848,7 +1042,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8105"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-064",
@@ -861,7 +1058,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8106"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-065",
@@ -874,7 +1074,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8107"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-066",
@@ -887,7 +1090,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8108"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-067",
@@ -906,7 +1112,12 @@
         "fields": "額外道具傷害觸發機率",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
         "previousSiteEffect": "道具傷害有20%機率額外觸發一次。"
-      }
+      },
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-068",
@@ -919,7 +1130,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8110"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-069",
@@ -932,7 +1146,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8111"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-070",
@@ -945,7 +1162,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8112"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-071",
@@ -964,7 +1184,12 @@
         "fields": "傷害",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
         "previousSiteEffect": "衝刺後，召喚三把飛劍環繞自身，並自動追擊鄰近敵軍，每次造成30適性傷害（30 + 25%魔攻 + 10%額外物攻）。敵軍連續被命中時，第一把以後的飛劍只會造成50%的傷害。"
-      }
+      },
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-072",
@@ -977,7 +1202,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8114"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-073",
@@ -990,7 +1218,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8115"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-074",
@@ -1003,7 +1234,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8116"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-075",
@@ -1016,7 +1250,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8117"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-076",
@@ -1029,7 +1266,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8118"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-077",
@@ -1042,7 +1282,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8119"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-078",
@@ -1055,7 +1298,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8120"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-079",
@@ -1068,7 +1314,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8121"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-080",
@@ -1081,7 +1330,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8122"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-081",
@@ -1094,7 +1346,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8123"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-082",
@@ -1107,7 +1362,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8124"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-083",
@@ -1120,7 +1378,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8125"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-084",
@@ -1133,7 +1394,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8126"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-085",
@@ -1146,7 +1410,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8127"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-086",
@@ -1159,7 +1426,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8128"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-087",
@@ -1172,7 +1442,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8129"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-088",
@@ -1185,7 +1458,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8130"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-089",
@@ -1198,7 +1474,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8131"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-090",
@@ -1211,7 +1490,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8132"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-091",
@@ -1224,7 +1506,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8133"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-092",
@@ -1237,20 +1522,31 @@
       ],
       "classificationSourceRefs": [
         "IMG_8134"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-093",
       "name": "靈光一閃",
       "order": 93,
       "sourceRef": "IMG_7981",
-      "effect": "獲得相當於自身15%額外物攻及10%魔攻的技能加速。",
+      "effect": "獲得相當於自身20%額外物攻及10%魔攻的技能加速。",
       "officialTags": [
         "好運系列"
       ],
       "classificationSourceRefs": [
         "IMG_8135"
-      ]
+      ],
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture",
+      "officialNameEn": "Eureka",
+      "effectSource": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "sourceDifference": "7.3b西文公告的魔攻係數與英／法／波蘭文不一致；本站採英文主公告20%額外物攻＋10%魔攻。"
     },
     {
       "id": "augment-094",
@@ -1263,20 +1559,28 @@
       ],
       "classificationSourceRefs": [
         "IMG_8136"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-095",
       "name": "風馳電掣",
       "order": 95,
       "sourceRef": "IMG_7983",
-      "effect": "[暴擊]暴擊時，增加15%跑速及15%攻速，持續2.5秒。",
+      "effect": "[暴擊]暴擊時，增加25%跑速及25%攻速，持續2.5秒。",
       "officialTags": [
         "暴擊"
       ],
       "classificationSourceRefs": [
         "IMG_8137"
-      ]
+      ],
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-096",
@@ -1289,7 +1593,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8138"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-097",
@@ -1302,7 +1609,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8139"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-098",
@@ -1315,20 +1625,28 @@
       ],
       "classificationSourceRefs": [
         "IMG_8140"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-099",
       "name": "巨人",
       "order": 99,
       "sourceRef": "IMG_7987",
-      "effect": "體型變大，增加20%生命及10%適性之力。",
+      "effect": "體型變大，增加30%生命及10%適性之力。",
       "officialTags": [
         "體型"
       ],
       "classificationSourceRefs": [
         "IMG_8141"
-      ]
+      ],
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-100",
@@ -1341,7 +1659,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8142"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-101",
@@ -1354,7 +1675,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8143"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-102",
@@ -1367,7 +1691,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8144"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-103",
@@ -1386,7 +1713,10 @@
         "reviewedAt": "2026-10-10",
         "fields": "層數上限",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-104",
@@ -1399,7 +1729,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8146"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-105",
@@ -1412,7 +1745,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8147"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-106",
@@ -1425,20 +1761,28 @@
       ],
       "classificationSourceRefs": [
         "IMG_8148"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-107",
       "name": "起源：致命節奏",
       "order": 107,
       "sourceRef": "IMG_7995",
-      "effect": "普攻賦予9%可累加的攻速（隨等級成長），最多6層。滿層時，增加50攻擊距離且可突破攻速上限。若為遠程英雄，普攻也會改為造成36%傷害的三連射（每次三連射只會觸發一次命中效果）。",
+      "effect": "普攻賦予6%可累加的攻速（隨等級成長），最多6層。滿層時，增加25攻擊距離且可突破攻速上限。若為遠程英雄，普攻也會改為造成36%傷害的三連射（每次三連射只會觸發一次命中效果）。",
       "officialTags": [
         "普攻"
       ],
       "classificationSourceRefs": [
         "IMG_8149"
-      ]
+      ],
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-108",
@@ -1451,7 +1795,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8150"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-109",
@@ -1464,7 +1811,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8151"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-110",
@@ -1477,14 +1827,17 @@
       ],
       "classificationSourceRefs": [
         "IMG_8152"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-111",
       "name": "完美巔峰",
       "order": 111,
       "sourceRef": "IMG_7999",
-      "effect": "暴擊率上限為44.44%。超出上限的暴擊率以444%的轉換率轉為暴擊傷害，轉換上限為400%。",
+      "effect": "暴擊率上限為44.44%。超出上限的暴擊率以444%的轉換率轉為暴擊傷害，暴擊傷害上限為444%（7.3c公告）。",
       "officialTags": [
         "暴擊"
       ],
@@ -1496,7 +1849,12 @@
         "reviewedAt": "2026-10-10",
         "fields": "暴擊率上限、轉換率與轉換上限",
         "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture",
+      "officialNameEn": "Pinnacle of Excellence",
+      "effectSource": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/"
     },
     {
       "id": "augment-112",
@@ -1509,7 +1867,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8154"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-113",
@@ -1522,7 +1883,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8155"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-114",
@@ -1535,7 +1899,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8156"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-115",
@@ -1549,7 +1916,10 @@
       "classificationSourceRefs": [
         "IMG_8157",
         "IMG_8158"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-116",
@@ -1562,7 +1932,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8159"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-117",
@@ -1575,7 +1948,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8160"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-118",
@@ -1588,7 +1964,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8161"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-119",
@@ -1601,7 +1980,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8162"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-120",
@@ -1615,7 +1997,10 @@
       "classificationSourceRefs": [
         "IMG_8163",
         "IMG_8164"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-121",
@@ -1628,7 +2013,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8165"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-122",
@@ -1641,7 +2029,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8166"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-123",
@@ -1654,7 +2045,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8167"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-124",
@@ -1667,7 +2061,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8168"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-125",
@@ -1680,7 +2077,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8169"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-126",
@@ -1693,7 +2093,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8170"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-127",
@@ -1706,7 +2109,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8171"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-128",
@@ -1719,7 +2125,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8172"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-129",
@@ -1732,7 +2141,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8173"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-130",
@@ -1745,7 +2157,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8174"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-131",
@@ -1758,7 +2173,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8175"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-132",
@@ -1771,7 +2189,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8176"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-133",
@@ -1784,7 +2205,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8177"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-134",
@@ -1797,7 +2221,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8178"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-135",
@@ -1810,7 +2237,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8179"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-136",
@@ -1823,7 +2253,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8180"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-137",
@@ -1836,7 +2269,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8181"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-138",
@@ -1849,7 +2285,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8182"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-139",
@@ -1862,7 +2301,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8183"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-140",
@@ -1875,7 +2317,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8184"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-141",
@@ -1888,7 +2333,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8185"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-142",
@@ -1901,7 +2349,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8186"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-143",
@@ -1914,20 +2365,28 @@
       ],
       "classificationSourceRefs": [
         "IMG_8187"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-144",
       "name": "越來越大",
       "order": 144,
       "sourceRef": "IMG_8034",
-      "effect": "體型增大20%，並增加400額外生命。參與擊殺時，體型額外增大0.8%，並增加15額外生命。",
+      "effect": "體型增大20%，並增加400額外生命。參與擊殺時，體型額外增大0.8%，並增加30額外生命。",
       "officialTags": [
         "體型"
       ],
       "classificationSourceRefs": [
         "IMG_8188"
-      ]
+      ],
+      "reviewedPatch": "7.3c",
+      "source": "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "official-delta-and-original-capture"
     },
     {
       "id": "augment-145",
@@ -1940,7 +2399,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8189"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-146",
@@ -1953,7 +2415,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8190"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-147",
@@ -1966,7 +2431,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8191"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-148",
@@ -1979,7 +2447,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8192"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-149",
@@ -1992,7 +2463,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8193"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-150",
@@ -2005,7 +2479,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8194"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     },
     {
       "id": "augment-151",
@@ -2018,7 +2495,10 @@
       ],
       "classificationSourceRefs": [
         "IMG_8195"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25",
+      "effectEvidence": "original-capture-no-matched-delta"
     }
   ],
   "officialTagGroups": {
@@ -2061,14 +2541,14 @@
     }
   },
   "classificationNote": "官方分類是卡片本身顯示的標籤；同一張增幅可能同時擁有多個標籤，例如「暴擊治療」同時屬於「暴擊」與「復原」。",
-  "versionLabel": "7.2b 歷史基底／7.3a、7.3c 部分欄位校正",
-  "correctionNote": "7.3c 校正4張既有卡牌公告欄位；12個調整與5個新增完整列於上方公告，未公布的完整效果與分類不推定。卓越之巔與舊卡庫完美巔峰名稱不同，尚未據此合併卡牌。",
+  "versionLabel": "7.3c 公告對照 · 151 張既有卡庫",
+  "correctionNote": "151張既有截圖卡庫已逐項對照7.3～7.3c公告；能明確對應的效果寫回卡片，無法對應卡名或完整效果者留在官方異動區，不自行補造新卡。",
   "officialPatch": "7.3c",
   "official73c": {
     "patch": "7.3c",
     "version": "7.3c",
     "published": "2026-10-21",
-    "reviewedAt": "2026-10-24",
+    "reviewedAt": "2026-10-25",
     "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3c/",
     "scope": "AAA ARAM／符文大亂鬥；未列召喚峽谷或標準 ARAM 專屬調整",
     "newAugments": [
@@ -2102,12 +2582,6 @@
         "label": "額外道具傷害觸發機率",
         "before": "40%",
         "after": "60%"
-      },
-      {
-        "name": "殞落之觸",
-        "label": "技能每秒轉換的額外傷害",
-        "before": "12%",
-        "after": "15%"
       },
       {
         "name": "二重唱",
@@ -2231,6 +2705,17 @@
         ]
       }
     ],
-    "note": "內容於版本期間陸續推出；新增卡牌完整效果與分類未公布。"
+    "note": "5項新增內容公告（含電玩高手相關彩蛋）；官方未在此公告完整列出全部新卡效果，不推算效果或分類。"
+  },
+  "officialPatchReview": {
+    "patch": "7.3c",
+    "reviewedAt": "2026-10-25",
+    "sources": [
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3/",
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3a/",
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
+      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/"
+    ],
+    "pending": "未收錄卡片的完整效果與卡名對應、跨語系差異需持續核對；不把無公告視為逐項實機證實。"
   }
 }

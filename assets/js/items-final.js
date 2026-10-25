@@ -32,7 +32,7 @@
     if (item.evolvesFrom) evolution = `<p>${escape(item.evolutionCondition)}後，由下列裝備自動進化。</p><div class="tree-level tree-materials">${node(item.evolvesFrom)}</div>`;
     if (item.evolvesTo?.length) evolution += item.evolvesTo.map(id => `<p>${escape(find(id).evolutionCondition)}後進化：</p><div class="tree-level tree-materials">${node(id)}</div>`).join('');
     return `${history.length ? '<button type="button" class="equipment-back" data-detail-back>← 返回上一件裝備</button>' : ''}
-      <div class="equipment-detail-brand"><span class="brand-mark">WR</span><span>Wild Rift Guide · 7.3b</span></div>
+      <div class="equipment-detail-brand"><span class="brand-mark">WR</span><span>Wild Rift Guide · 7.3c</span></div>
       <header class="equipment-detail-header">
         <div class="equipment-detail-icon"><img src="${escape(item.icon)}" alt="${escape(item.name)}"></div>
         <div class="equipment-detail-title"><h2 tabindex="-1">${escape(item.name)}</h2><div class="detail-meta">${escape(item.stage)}</div><div class="detail-categories">${item.categories.map(c => `<span>${escape(c)}</span>`).join('')}</div></div>
@@ -100,7 +100,7 @@
   $('#item-search').oninput = render;
   async function load() {
     try {
-      const response = await fetch('../assets/data/items-7.3.json?v=116.0.0');
+      const response = await fetch('../assets/data/items-7.3.json?v=123.0.0');
       if (!response.ok) throw new Error('無法讀取裝備資料');
       data = await response.json();
       if (!Array.isArray(data.items) || !data.items.length) throw new Error('裝備資料格式錯誤');

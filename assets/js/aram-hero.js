@@ -56,14 +56,14 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=121.0.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=121.0.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=123.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=123.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const augmentData=augmentRes.ok?await augmentRes.json():{augments:[]};
-    const standardVersion=data.standardGameVersion||data.gameVersion||'7.2e';
-    const aaaVersion=augmentData.gameVersion||data.aaaGameVersion||'7.2b';
+    const standardVersion=data.standardGameVersion||data.gameVersion||'7.3c';
+    const aaaVersion=augmentData.gameVersion||data.aaaGameVersion||'7.3c';
     const augmentMap=new Map((augmentData.augments||[]).map(item=>[item.id,item]));
     const hero=(data.heroes||[]).find(item=>item.id===id);
     if(!hero)throw new Error('Hero not found');
@@ -89,10 +89,10 @@
       const position=isAaa?aaa.position:hero.position;
       const tags=isAaa?aaa.tags:hero.tags;
       const summary=isAaa?aaa.summary:hero.summary;
-      const kicker=isAaa?`AAA ARAM · ${esc(aaaVersion)} 歷史基底`:`ARAM HERO GUIDE · ${esc(standardVersion)} 資料`;
+      const kicker=isAaa?`AAA ARAM · ${esc(aaaVersion)} 分類與配置`:`ARAM HERO GUIDE · ${esc(standardVersion)} 資料`;
       const versionBoundary=isAaa
-        ?`符文大亂鬥分類評級沿用 ${esc(aaaVersion)}；7.3a／7.3c 僅部分增幅公告欄位校正，7.3c 五位英雄另列官方模式倍率，英雄配置尚未全面重評。`
-        :`標準 ARAM 資料最後校正 ${esc(hero.reviewedAt||data.updated)}，尚未完成 7.3c 全量複核；以下保留 ${esc(standardVersion)} 配置，不代表目前版本已確認的完整推薦。`;
+        ?`符文大亂鬥 ${esc(aaaVersion)} · 2026/10/25核對。分類、條件式出裝與標準ARAM分開；官方模式倍率另列。未核實的新卡效果不推算。`
+        :`標準 ARAM ${esc(standardVersion)} · 校正 ${esc(hero.reviewedAt||data.updated)}。本站Tier與出裝為編輯建議；模式倍率保留來源界線，不冒稱官方勝率或逐項實機測試。`;
       const badgeMain=isAaa?'正式':hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
       const reasonTitle=isAaa?'符文大亂鬥怎麼用？':`為什麼是 ${esc(hero.tier)}？`;
@@ -118,14 +118,14 @@
       const spellCards=renderSpells(hero.spells||[]);
       const situational=(hero.situationalItems||[]).map(item=>`<article class="aram-situational-card"><img src="${esc(item.icon)}" alt="${esc(item.name)}"/><div><strong>${esc(item.name)}</strong>${item.when?`<span>${esc(item.when)}</span>`:''}<p>${esc(item.reason)}</p></div></article>`).join('');
       return `<section class="aram-detail-section">
-        <div class="aram-detail-section-head"><div><span>ARAM BALANCE</span><h2>模式平衡修正</h2></div><small>${esc(standardVersion)} 基準</small></div>
+        <div class="aram-detail-section-head"><div><span>ARAM BALANCE</span><h2>模式平衡修正</h2></div><small>官方來源記錄 · 核對至 ${esc(standardVersion)}</small></div>
         <div class="aram-balance-grid"><article><span>造成傷害</span><strong>${esc(hero.balance.damageDealt)}</strong></article><article><span>承受傷害</span><strong>${esc(hero.balance.damageTaken)}</strong></article><article><span>治療效果</span><strong>${esc(hero.balance.healing)}</strong></article><article><span>護盾效果</span><strong>${esc(hero.balance.shielding)}</strong></article></div>
         <p class="aram-detail-note">${esc(hero.balance.note)}</p>
       </section>
       <section class="aram-detail-section">
         <div class="aram-detail-section-head"><div><span>BUILD</span><h2>推薦出裝</h2></div><small>核心 5 件</small></div>
         <div class="aram-starter-row"><strong>開局</strong>${(hero.starterItems||[]).map(item=>`<span><img src="${esc(item.icon)}" alt="${esc(item.name)}"/>${esc(item.name)}</span>`).join('')}<p>${esc((hero.starterItems||[])[0]?.reason||'')}</p></div>
-        <div class="aram-loadout-grid">${itemCards}</div>
+        <div class="aram-loadout-grid">${itemCards}</div><p class="aram-detail-note">${esc(hero.buildOrderNote||'')} <a href="pages/build-check.html">檢查配裝組合</a></p>
         <div class="aram-subgrid"><div><h3>鞋子</h3>${bootCards}</div><div><h3>召喚師技能</h3>${spellCards}</div></div>
       </section>
       <section class="aram-detail-section">
@@ -340,7 +340,7 @@
         visibleCards.sort((a,b)=>(tierWeight[b.dataset.tier]||0)-(tierWeight[a.dataset.tier]||0));
         const grid=fitRoot.querySelector('.aaa-fit-grid');
         visibleCards.forEach(card=>grid?.appendChild(card));
-        if(state)state.textContent=activeCategory?`${visibleCards.length} 張 · S+ 最優先`:'';
+        if(state)state.textContent=activeCategory?(visibleCards.length?`${visibleCards.length} 張 · 本站適配建議`:'本英雄已提供分類策略；此分類尚無逐卡評級，請依上方觸發條件與卡片完整效果判斷。'):'';
       };
       categoryButtons.forEach(button=>button.addEventListener('click',()=>{
         activeCategory=button.dataset.aaaCategory||'';
@@ -368,11 +368,11 @@
         button.classList.toggle('is-active',active);
         button.setAttribute('aria-selected',active?'true':'false');
       });
-      if(modeNote)modeNote.textContent=isAaa?`符文大亂鬥 ${aaaVersion} 分類評級參考，與標準 ARAM 分開；增幅公告差異請看增幅資料庫。`:`標準 ARAM ${standardVersion} 歷史配置；尚未完成 7.3c 全量複核。`;
+      if(modeNote)modeNote.textContent=isAaa?`符文大亂鬥 ${aaaVersion} 分類評級參考，與標準 ARAM 分開；增幅公告差異請看增幅資料庫。`:`標準 ARAM ${standardVersion} 已完成本輪官方差異與配置核對；符文大亂鬥的增幅與倍率不混用。`;
       const titleMode=isAaa?'符文大亂鬥':'ARAM';
       document.title=`${hero.name} ${titleMode} 出裝、符文與攻略｜Wild Rift Guide`;
       const meta=document.querySelector('meta[name="description"]');
-      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift ${aaaVersion} 符文大亂鬥攻略：官方增幅分類、S+ 至 D 單卡評級、增幅導向出裝與玩法。`:`${hero.name} Wild Rift ${standardVersion} 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
+      if(meta)meta.setAttribute('content',isAaa?`${hero.name} Wild Rift ${aaaVersion} 符文大亂鬥攻略：增幅分類、條件式配裝、可核實單卡評級與玩法。`:`${hero.name} Wild Rift ${standardVersion} 隨機單中 ARAM 攻略：Tier、出裝、符文、模式平衡與玩法重點。`);
       // The standard guide has a complete readable canonical. AAA retains its
       // separate interactive canonical because its builds/ratings are distinct.
       const canonicalParams=new URLSearchParams({id:hero.id});
@@ -404,6 +404,6 @@
     console.error(err);
     // Missing heroes or failed data loads should not index an error shell.
     document.querySelector('meta[name="robots"]')?.setAttribute('content','noindex,follow');
-    root.innerHTML='<section class="aram-detail-error"><h1>攻略資料暫時無法載入</h1><p>可能是連線失敗或英雄網址有誤。你仍可從直接閱讀版查閱完整 ARAM 配置。</p><a href="pages/aram-guides.html">查看 141 位 ARAM 英雄攻略</a><p><a href="aram.html">← 回 ARAM 專區</a></p></section>';
+    root.innerHTML='<section class="aram-detail-error"><h1>攻略資料暫時無法載入</h1><p>可能是連線失敗或英雄網址有誤。你仍可從直接閱讀版查閱完整 ARAM 配置。</p><a href="pages/aram-guides.html">查看 142 位 ARAM 英雄攻略</a><p><a href="aram.html">← 回 ARAM 專區</a></p></section>';
   }
 })();

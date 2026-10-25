@@ -20,7 +20,7 @@
         "威嚇：返還 10% 已消耗的魔力。",
         "魔力補充：每次消耗魔力時，增加 5 最大魔力值，增加上限為 700。每 10 秒最多觸發 3 次。一次只能裝備一個女神之淚道具。"
       ],
-      "icon": "../assets/images/items/basic/藍水晶.webp",
+      "icon": "",
       "buildFrom": [],
       "upgrades": [
         "intermediate-01",
@@ -29,7 +29,9 @@
         "magic-high-19",
         "defense-high-12"
       ],
-      "order": 1
+      "order": 1,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "basic-long-sword",
@@ -78,13 +80,15 @@
         "+10% 暴擊率"
       ],
       "passives": [],
-      "icon": "../assets/images/items/basic/鐵刺鞭.webp",
+      "icon": "",
       "buildFrom": [],
       "upgrades": [
         "intermediate-03",
         "intermediate-10"
       ],
-      "order": 3
+      "order": 3,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "basic-dagger",
@@ -188,7 +192,7 @@
         "+5 技能加速"
       ],
       "passives": [],
-      "icon": "../assets/images/items/basic/魔力戒指.webp",
+      "icon": "",
       "buildFrom": [],
       "upgrades": [
         "ionian-boots",
@@ -196,7 +200,9 @@
         "magic-high-03",
         "defense-high-11"
       ],
-      "order": 7
+      "order": 7,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "basic-cloth-armor",
@@ -272,7 +278,7 @@
       "passives": [
         "燃燒：每秒對鄰近敵軍造成 5－10 魔法傷害。"
       ],
-      "icon": "../assets/images/items/basic/光輝火花.webp",
+      "icon": "",
       "buildFrom": [],
       "upgrades": [
         "magic-high-01",
@@ -290,7 +296,9 @@
         "defense-high-19",
         "defense-high-20"
       ],
-      "order": 10
+      "order": 10,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "support-spectral-sickle",
@@ -309,10 +317,12 @@
         "克制：擊殺士兵無法獲得金幣，但會獲得 50% 的賞金。擊殺士兵的賞金會給予最近的友軍。擊殺野怪獲得的金錢減少 50%。",
         "任務：透過此道具取得 750 枚金幣可升級成闇霧之鐮，且你和獻祭層數最多的友軍會結為完美隊友。"
       ],
-      "icon": "../assets/images/items/basic/幽魂鐮刀.webp",
+      "icon": "",
       "buildFrom": [],
       "upgrades": [],
-      "order": 1
+      "order": 1,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "support-relic-shield",
@@ -332,10 +342,12 @@
         "克制：擊殺士兵無法獲得金幣，但會獲得 50% 的賞金。擊殺士兵的賞金會給予最近的友軍。擊殺野怪獲得的金錢減少 50%。",
         "任務：透過此道具取得 750 枚金幣可升級成群山堡壘，且你和獻祭層數最多的友軍會結為完美隊友。"
       ],
-      "icon": "../assets/images/items/basic/聖物之盾.webp",
+      "icon": "",
       "buildFrom": [],
       "upgrades": [],
-      "order": 2
+      "order": 2,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "intermediate-01",
@@ -477,7 +489,7 @@
       "passives": [
         "適性：獲得 +15 物理攻擊或 +30 魔法攻擊。"
       ],
-      "icon": "../assets/images/items/納什之爪.webp",
+      "icon": "",
       "buildFrom": [
         "basic-long-sword"
       ],
@@ -487,7 +499,9 @@
         "magic-high-11",
         "magic-high-20"
       ],
-      "order": 6
+      "order": 6,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "intermediate-07",
@@ -556,7 +570,7 @@
         "+40 物理攻擊"
       ],
       "passives": [],
-      "icon": "../assets/images/items/暴風之劍.webp",
+      "icon": "../assets/images/items/official-v107/wr73-9040.webp",
       "buildFrom": [
         "basic-long-sword"
       ],
@@ -567,7 +581,8 @@
         "physical-high-17",
         "physical-high-39"
       ],
-      "order": 9
+      "order": 9,
+      "currentName": "暴風大劍"
     },
     {
       "id": "intermediate-10",
@@ -581,7 +596,7 @@
         "+20% 暴擊率"
       ],
       "passives": [],
-      "icon": "../assets/images/items/靈巧披風.webp",
+      "icon": "",
       "buildFrom": [
         "basic-iron-whip"
       ],
@@ -593,7 +608,9 @@
         "physical-high-26",
         "physical-high-32"
       ],
-      "order": 10
+      "order": 10,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "intermediate-11",
@@ -686,7 +703,7 @@
         "+10 技能加速"
       ],
       "passives": [],
-      "icon": "../assets/images/items/刺針劍.webp",
+      "icon": "",
       "buildFrom": [
         "basic-dagger"
       ],
@@ -697,7 +714,9 @@
         "magic-high-11",
         "magic-high-20"
       ],
-      "order": 14
+      "order": 14,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "intermediate-15",
@@ -1388,7 +1407,7 @@
       "passives": [
         "與敵方英雄交戰時，獲得 20% 緩速抗性。"
       ],
-      "icon": "../assets/images/items/波濤鱗甲.webp",
+      "icon": "",
       "buildFrom": [],
       "upgrades": [
         "defense-high-01",
@@ -1401,7 +1420,9 @@
         "defense-high-18",
         "defense-high-23"
       ],
-      "order": 42
+      "order": 42,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "boots-of-speed",
@@ -2829,13 +2850,15 @@
       "passives": [
         "靈魂轉移（主動）：與指定友方英雄交換位置；施放期間雙方獲得短暫保護（冷卻依版本規則）。"
       ],
-      "icon": "../assets/images/items/high/泰坦九頭蛇.webp",
+      "icon": "",
       "buildFrom": [
         "intermediate-09",
         "intermediate-16"
       ],
       "upgrades": [],
-      "order": 238
+      "order": 238,
+      "legacyOnly": true,
+      "iconNote": "舊版相容資料；原始圖示未隨現行資產保留，不作為7.3c商店依據。"
     },
     {
       "id": "physical-high-40",

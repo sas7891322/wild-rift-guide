@@ -23,12 +23,19 @@
             "key": "damage",
             "title": "死亡電刑",
             "rows": [
-              { "label": "傷害", "before": "40–210（隨等級）＋10%額外物攻＋5%魔攻", "after": "60–210（隨等級）＋10%額外物攻＋5%魔攻", "kind": "change" }
+              {
+                "label": "傷害",
+                "before": "40–210（隨等級）＋10%額外物攻＋5%魔攻",
+                "after": "60–210（隨等級）＋10%額外物攻＋5%魔攻",
+                "kind": "change"
+              }
             ]
           }
         ],
         "note": "前期基礎傷害提高；滿級基礎傷害、加成係數與冷卻未改。"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "dark-harvest",
@@ -44,7 +51,9 @@
         "冷卻：20 秒；擊殺或助攻時重置至 1 秒。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9679.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9679.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "first-strike",
@@ -60,7 +69,9 @@
         "冷卻：4 秒。傷害增幅僅對英雄有效。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9680.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9680.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "lethal-tempo",
@@ -78,7 +89,9 @@
         "以上沿用提供的遊戲截圖值；官方 7.3 公告列為每層攻速近戰 8%／遠程 6.4%、遠程追加傷害 6–24，以及每 1% 額外攻速使追加傷害提高近戰 1%／遠程 0.67%。兩份來源存在差異，待目前版本遊戲內核實；不將公告值視為已確認的實裝值。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9681.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9681.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "fleet-footwork",
@@ -99,7 +112,9 @@
       "sourceScreenshot": "關鍵符文/IMG_9682.PNG",
       "aliases": [
         "迅疾步法"
-      ]
+      ],
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "conqueror",
@@ -116,7 +131,9 @@
         "此處依遊戲截圖顯示值整理；官方公告中的魔攻上限為 8.33，兩份來源呈現不同，公告原文保留。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9683.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9683.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "grasp",
@@ -141,13 +158,25 @@
             "key": "effect",
             "title": "不死之握",
             "rows": [
-              { "label": "傷害", "before": "3.3%最大生命", "after": "3%最大生命", "kind": "change" },
-              { "label": "永久生命成長", "before": "10", "after": "8", "kind": "change" }
+              {
+                "label": "傷害",
+                "before": "3.3%最大生命",
+                "after": "3%最大生命",
+                "kind": "change"
+              },
+              {
+                "label": "永久生命成長",
+                "before": "10",
+                "after": "8",
+                "kind": "change"
+              }
             ]
           }
         ],
         "note": "傷害與永久生命成長降低；治療比例及遠程效果折減未改。"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "guardian",
@@ -164,7 +193,9 @@
         "冷卻：55–25 秒（隨等級）。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9685.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9685.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "aery",
@@ -189,12 +220,19 @@
             "key": "shield",
             "title": "艾莉",
             "rows": [
-              { "label": "護盾", "before": "25–120（隨等級）＋10%額外物攻＋5%魔攻", "after": "20–100（隨等級）＋10%額外物攻＋5%魔攻", "kind": "change" }
+              {
+                "label": "護盾",
+                "before": "25–120（隨等級）＋10%額外物攻＋5%魔攻",
+                "after": "20–100（隨等級）＋10%額外物攻＋5%魔攻",
+                "kind": "change"
+              }
             ]
           }
         ],
         "note": "僅基礎護盾降低；對敵傷害與護盾加成係數未改。"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "arcane-comet",
@@ -210,7 +248,9 @@
         "冷卻：16–8 秒（隨等級）。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9687.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9687.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "phase-rush",
@@ -227,7 +267,9 @@
         "冷卻：21–7 秒（隨等級）。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9688.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9688.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "empowerment",
@@ -244,7 +286,9 @@
         "正常冷卻：20–13 秒（隨等級）。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9689.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9689.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "glacial-augment",
@@ -262,7 +306,9 @@
         "魔法傷害：15–100（隨等級）＋5% 額外生命。冷卻：20 秒。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "關鍵符文/IMG_9690.PNG"
+      "sourceScreenshot": "關鍵符文/IMG_9690.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     }
   ],
   "conquest": [
@@ -290,12 +336,19 @@
             "key": "cooldown",
             "title": "凌虐",
             "rows": [
-              { "label": "冷卻", "before": "7秒", "after": "5秒", "kind": "change" }
+              {
+                "label": "冷卻",
+                "before": "7秒",
+                "after": "5秒",
+                "kind": "change"
+              }
             ]
           }
         ],
         "note": "本次調整的是凌虐（Cheap Shot），不是即刻衝擊（Sudden Impact）；額外真實傷害沿用。"
-      }
+      },
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "sudden-impact",
@@ -314,7 +367,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9693.PNG"
+      "sourceScreenshot": "征服/IMG_9693.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "empowered-attack",
@@ -331,7 +386,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9694.PNG"
+      "sourceScreenshot": "征服/IMG_9694.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "chain-assault",
@@ -349,7 +406,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9695.PNG"
+      "sourceScreenshot": "征服/IMG_9695.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "tyrant",
@@ -367,7 +426,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9696.PNG"
+      "sourceScreenshot": "征服/IMG_9696.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "arrogance",
@@ -384,7 +445,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9697.PNG"
+      "sourceScreenshot": "征服/IMG_9697.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "eyeball-collector",
@@ -400,7 +463,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9698.PNG"
+      "sourceScreenshot": "征服/IMG_9698.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "ingenious-hunter",
@@ -412,7 +477,9 @@
       "row": 3,
       "rowOrder": 2,
       "removedPatch": "7.3",
-      "available": false
+      "available": false,
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "relentless-hunter",
@@ -429,7 +496,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9699.PNG"
+      "sourceScreenshot": "征服/IMG_9699.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "zombie-ward",
@@ -447,7 +516,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "征服/IMG_9700.PNG"
+      "sourceScreenshot": "征服/IMG_9700.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     }
   ],
   "precision": [
@@ -466,7 +537,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9703.PNG"
+      "sourceScreenshot": "精準/IMG_9703.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "triumph",
@@ -483,7 +556,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9704.PNG"
+      "sourceScreenshot": "精準/IMG_9704.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "battle-fervor",
@@ -500,7 +575,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9705.PNG"
+      "sourceScreenshot": "精準/IMG_9705.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "last-stand",
@@ -517,7 +594,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9706.PNG"
+      "sourceScreenshot": "精準/IMG_9706.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "cut-down",
@@ -533,7 +612,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9708.PNG"
+      "sourceScreenshot": "精準/IMG_9708.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "coup-de-grace",
@@ -549,7 +630,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9709.PNG"
+      "sourceScreenshot": "精準/IMG_9709.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "legend-alacrity",
@@ -566,7 +649,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9710.PNG"
+      "sourceScreenshot": "精準/IMG_9710.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "legend-tenacity",
@@ -578,7 +663,9 @@
       "row": 3,
       "rowOrder": 2,
       "removedPatch": "7.3",
-      "available": false
+      "available": false,
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "legend-bloodline",
@@ -595,7 +682,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9712.PNG"
+      "sourceScreenshot": "精準/IMG_9712.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "legend-haste",
@@ -612,7 +701,9 @@
         "擊倒野怪、敵方英雄或士兵可累積額外技能加速，總加成上限為 15 技能加速。"
       ],
       "dataVersion": "7.3",
-      "sourceScreenshot": "精準/IMG_9711.PNG"
+      "sourceScreenshot": "精準/IMG_9711.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     }
   ],
   "resolve": [
@@ -632,7 +723,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9713.PNG"
+      "sourceScreenshot": "意志/IMG_9713.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "font-of-life",
@@ -652,7 +745,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9714.PNG"
+      "sourceScreenshot": "意志/IMG_9714.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "courage-of-colossus",
@@ -670,7 +765,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9715.PNG"
+      "sourceScreenshot": "意志/IMG_9715.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "steadfast-bulwark",
@@ -687,7 +784,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9716.PNG"
+      "sourceScreenshot": "意志/IMG_9716.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "second-wind",
@@ -705,7 +804,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9717.PNG"
+      "sourceScreenshot": "意志/IMG_9717.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "nullifying-orb",
@@ -722,7 +823,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9719.PNG"
+      "sourceScreenshot": "意志/IMG_9719.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "bone-plating",
@@ -739,7 +842,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9720.PNG"
+      "sourceScreenshot": "意志/IMG_9720.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "overgrowth",
@@ -756,7 +861,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9721.PNG"
+      "sourceScreenshot": "意志/IMG_9721.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "revitalize",
@@ -773,7 +880,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9722.PNG"
+      "sourceScreenshot": "意志/IMG_9722.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "perseverance",
@@ -791,7 +900,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "意志/IMG_9723.PNG"
+      "sourceScreenshot": "意志/IMG_9723.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     }
   ],
   "sorcery": [
@@ -810,7 +921,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9725.PNG"
+      "sourceScreenshot": "巫術/IMG_9725.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "manaflow-band",
@@ -826,7 +939,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9726.PNG"
+      "sourceScreenshot": "巫術/IMG_9726.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "botanist",
@@ -845,7 +960,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9727.PNG"
+      "sourceScreenshot": "巫術/IMG_9727.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "hextech-flashtraption",
@@ -862,7 +979,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9728.PNG"
+      "sourceScreenshot": "巫術/IMG_9728.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "transcendence",
@@ -880,7 +999,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9729.PNG"
+      "sourceScreenshot": "巫術/IMG_9729.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "celerity",
@@ -896,7 +1017,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9730.PNG"
+      "sourceScreenshot": "巫術/IMG_9730.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "absolute-focus",
@@ -912,7 +1035,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9731.PNG"
+      "sourceScreenshot": "巫術/IMG_9731.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "scorch",
@@ -929,7 +1054,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9732.PNG"
+      "sourceScreenshot": "巫術/IMG_9732.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "nimbus-cloak",
@@ -946,7 +1073,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9733.PNG"
+      "sourceScreenshot": "巫術/IMG_9733.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "gathering-storm",
@@ -963,7 +1092,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9734.PNG"
+      "sourceScreenshot": "巫術/IMG_9734.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     },
     {
       "id": "ixthal-seedjar",
@@ -981,7 +1112,9 @@
       ],
       "status": "7.3 遊戲截圖已校對",
       "dataVersion": "7.3",
-      "sourceScreenshot": "巫術/IMG_9735.PNG"
+      "sourceScreenshot": "巫術/IMG_9735.PNG",
+      "reviewedThrough": "7.3c",
+      "reviewedAt": "2026-10-25"
     }
   ]
 }
