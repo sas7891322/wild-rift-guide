@@ -54,3 +54,19 @@
   .update-v115 .official-change-title strong { font-size:16px; }
   .update-v115 .home-update-heading h3 { font-size:23px; }
 }
+
+/* v124.1: 7.3d cards have two children, unlike legacy three-column cards. */
+#official-73d .official-change-grid{grid-template-columns:minmax(0,1fr);padding:12px;gap:12px}
+#official-73d .official-change-card{grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:start}
+#official-73d .official-change-avatar{width:48px;height:48px;min-width:48px;max-width:none;aspect-ratio:1;object-fit:cover;box-sizing:border-box}
+#official-73d .official-change-card>div{min-width:0;width:auto}
+#official-73d .official-change-card p{display:block;margin:8px 0;font-size:14px;line-height:1.75;overflow-wrap:anywhere}
+#official-73d .official-change-card p strong{font-size:inherit}
+#official-73d .official-change-card h5{font-size:14px;line-height:1.5;margin:16px 0 6px}
+#official-73d .official-history-item>p,#official-73d .official-history-item>article{margin:12px 16px;line-height:1.75}
+#official-73d .official-history-item>article{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+@media(max-width:600px){
+ #official-73d .official-change-grid{padding:8px;gap:10px}
+ #official-73d .official-change-card{grid-template-columns:42px minmax(0,1fr);gap:10px;padding:14px 10px}
+ #official-73d .official-change-avatar{width:42px;height:42px;min-width:42px}
+}
