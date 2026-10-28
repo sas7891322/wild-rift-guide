@@ -7,7 +7,7 @@
   "role": "中路",
   "tier": "S+",
   "provisional": false,
-  "patch": "7.3c",
+  "patch": "7.3d",
   "position": "遠距法師／三主題施法",
   "tags": [
     "本站評級",
@@ -889,7 +889,7 @@
   "tierLabel": "本站評級",
   "editorialReview": {
     "version": "v123",
-    "date": "2026-10-25",
+    "date": "2026-10-28",
     "status": "reviewed",
     "sourcePatch": "7.3c",
     "sources": [
@@ -1215,5 +1215,15 @@
         "reason": "以中路分頁的威脅為主，重點為犽宿、犽凝、星朵拉；移除同時列於有利與不利的衝突，對局為機制建議而非勝率排序。"
       }
     }
+  },
+  "patch73dReview": {
+    "date": "2026-10-28",
+    "version": "v124",
+    "reason": "7.3d未列赫威直接調整；已核對現行裝備／符文識別碼與五件成裝，保留既有配置。",
+    "tierChanged": false,
+    "buildChanged": false,
+    "runesChanged": false,
+    "officialSource": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+    "limitation": "保留既有逐項待確認內容；不宣稱全技能實測。"
   }
 }

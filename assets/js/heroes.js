@@ -570,7 +570,8 @@
           <p>${safeText(ability.summary)}</p>
           ${(Array.isArray(ability.details)?ability.details:[]).map(detail=>`<p>${safeText(detail)}</p>`).join('')}
           ${renderEditorialWarnings(hero,`ability:${key}`)}
-          ${ability.patch73bValues?.length?`<details class="ability-patch-values patch73b-values" open><summary>7.3b 最近一次官方調整（7.3c沿用）</summary><dl>${ability.patch73bValues.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value)}</dd>`).join('')}</dl><p><small>完整前後對照見「7.3b 校正重點」；未列項目沿用先前數值。</small></p></details>`:''}
+          ${ability.patch73dValues?.length?`<details class="ability-patch-values" open><summary>7.3d 官方調整</summary><dl>${ability.patch73dValues.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value??row.after)}</dd>`).join('')}</dl></details>`:''}
+          ${ability.patch73bValues?.length?`<details class="ability-patch-values patch73b-values" open><summary>7.3b 歷史調整（有7.3d新值時以新值為準）</summary><dl>${ability.patch73bValues.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value)}</dd>`).join('')}</dl><p><small>完整前後對照見「7.3b 校正重點」；未列項目沿用先前數值。</small></p></details>`:''}
           ${ability.patch73aValues?.length?`<details class="ability-patch-values"><summary>7.3a 公告數值（歷史基準）</summary><dl>${ability.patch73aValues.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value)}</dd>`).join('')}</dl><p><small>與 7.3b 重疊的項目以新值為準；未變動項目沿用。</small></p></details>`:''}
           ${ability.patch73Values?.length?`<details class="ability-patch-values"><summary>7.3 公告數值（歷史基準）</summary><dl>${ability.patch73Values.map(row=>`<dt>${safeText(row.label)}</dt><dd>${safeText(row.value)}</dd>`).join('')}</dl><p><small>本區保留7.3歷史值；有後續版本變動的項目以上方新值為準，未變動項目沿用。不是完整技能成長表。</small></p></details>`:''}
         </div>
@@ -779,6 +780,12 @@
     setTimeout(goTop,40);
   }
 
+  function renderPatch73dReview(hero){
+    const r=hero.patch73dReview;
+    if(!r)return '';
+    const groups=(hero.patch73dNumbers||[]).map(g=>`<h4>${safeText(g.title)}</h4>${(g.rows||[]).map(x=>`<p>${safeText(x.label)}：${safeText(x.before)} → <strong>${safeText(x.after)}</strong></p>`).join('')}`).join('');
+    return `<details class="hero-section"><summary><strong>7.3d 校正重點（點開查看）</strong></summary><p>本頁已核對7.3d官方差異與配置參照；保留有依據的既有搭配，不以版本號自動升降Tier。</p>${groups}<p>${safeText(r.itemNote||'')}</p><p>${safeText(r.reason||r.summary||r.note||'')}</p><p><a href="../summoners-rift.html#official-73d">完整公告與裝備數值</a></p></details>`;
+  }
   function renderPatchReview(hero){
     const r=hero.editorialReview;
     if(!r)return renderPatch73bFirstPassReview(hero);
@@ -933,13 +940,13 @@
       <section class="hero-profile">
         <section class="hero-profile-hero">
           ${hero.avatar ? `<img class="hero-avatar hero-avatar-image" src="${hero.avatar}" alt="${hero.name}" loading="lazy" data-hero-fallback data-fallback-letter="${hero.name.slice(0,1)}" data-fallback-class="hero-avatar hero-avatar-placeholder">` : `<div class="hero-avatar hero-avatar-placeholder"><span>${hero.name.slice(0,1)}</span></div>`}
-          <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large" title="本站評級，非官方排名${tierEvidencePending(hero)?'；此分路評級依據待補':''}">${hero.tier}</span>${tierEvidencePending(hero)?'<span class="tier-evidence-note" data-review-field="tier" data-review-status="pending" title="此分路評級依據待補，詳細理由見校正重點">評級依據待補</span>':''}</div><div class="hero-en">${hero.enName} · ${hero.role} · ${hero.editorialReview?'7.3b 校正／本站評級':'本站評級／最新校正紀錄尚未載入'}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
+          <div class="hero-title-block"><div class="hero-title-row"><h2>${hero.name}</h2><span class="tier-badge-large" title="本站評級，非官方排名${tierEvidencePending(hero)?'；此分路評級依據待補':''}">${hero.tier}</span>${tierEvidencePending(hero)?'<span class="tier-evidence-note" data-review-field="tier" data-review-status="pending" title="此分路評級依據待補，詳細理由見校正重點">評級依據待補</span>':''}</div><div class="hero-en">${hero.enName} · ${hero.role} · ${hero.editorialReview?`${hero.patch||'7.3d'} 校正／本站評級`:'本站評級／最新校正紀錄尚未載入'}</div><div class="hero-position">${hero.position}</div><div class="hero-tags">${tags}</div></div>
         </section>
         <section class="hero-summary-box"><span>一句話玩法</span><p>${hero.summary}</p></section>
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>${safeText(hero.patch||'7.3c')} · 本站評估 · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         ${buildSection}
-        ${renderPatchReview(hero)}
+        ${renderPatch73dReview(hero)}${renderPatchReview(hero)}
         ${renderBuildVariants(hero)}
         ${matchupAdjustmentSection}
         ${skillSection}
@@ -973,7 +980,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData,hweiProfile,currentItems]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=123.0.0'), getJSON('../assets/data/runes.json?v=123.0.0'), getJSON('../assets/data/items.json?v=123.0.0'), getJSON('../assets/data/spells.json?v=123.0.0'), getJSON('../assets/data/hwei-profile.json?v=123.0.0'), getJSON('../assets/data/items-7.3.json?v=123.0.0')
+        getJSON('../assets/data/heroes.json?v=124.0.0'), getJSON('../assets/data/runes.json?v=124.0.0'), getJSON('../assets/data/items.json?v=124.0.0'), getJSON('../assets/data/spells.json?v=124.0.0'), getJSON('../assets/data/hwei-profile.json?v=124.0.0'), getJSON('../assets/data/items-7.3.json?v=124.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=[...normalizeItems(itemData),...normalizeItems(currentItems)]; state.spells=spellData;
       // Include Hwei's standalone guide with the same editorial review UI.

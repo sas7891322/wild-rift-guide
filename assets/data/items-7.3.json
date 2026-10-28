@@ -1,6 +1,6 @@
 {
-  "version": "7.3c-v123",
-  "updatedAt": "2026-10-25",
+  "version": "7.3d-v124",
+  "updatedAt": "2026-10-28",
   "source": "使用者提供的七類遊戲內截圖",
   "screenshotCount": 560,
   "categories": [
@@ -12,7 +12,7 @@
     "輔助",
     "鞋子"
   ],
-  "notes": "7.3c 裝備資料庫：沿用遊戲內截圖底稿並套用截至 2026-10-25 的官方 7.3、7.3a、7.3b 差異；7.3c 未列一般裝備新調整。共171件可購買與6件進化裝備，歷史截圖不作最新數值保證。",
+  "notes": "7.3d六件裝備公告欄位已更新；截圖保留歷史來源，當前值以最新文字與官方調整為準。7.3c 裝備資料庫：沿用遊戲內截圖底稿並套用截至 2026-10-25 的官方 7.3、7.3a、7.3b 差異；7.3c 未列一般裝備新調整。共171件可購買與6件進化裝備，歷史截圖不作最新數值保證。",
   "items": [
     {
       "id": "wr73-8894",
@@ -3200,7 +3200,7 @@
         "鬥士"
       ],
       "stage": "高階裝備",
-      "price": 3400,
+      "price": 3300,
       "orderByCategory": {
         "鬥士": 36
       },
@@ -3255,7 +3255,7 @@
           "description": "施放技能後，10 秒內的下一次普攻造成目標最大生命 10%（遠程 7%）的額外物理傷害；命中英雄時回復相當於目標最大生命 6%（遠程 2.5%）的生命。冷卻 1.5 秒；對建築物傷害降低。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3d",
       "buildFrom": [
         "wr73-8900",
         "wr73-9130",
@@ -3269,7 +3269,18 @@
       ],
       "lastReviewedPatch": "7.3c",
       "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "sourceDataVersion": "7.3",
+      "patch73d": {
+        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "rows": [
+          {
+            "label": "價格",
+            "before": "3400",
+            "after": "3300",
+            "kind": "change"
+          }
+        ]
+      }
     },
     {
       "id": "wr73-8978",
@@ -4174,10 +4185,10 @@
         },
         {
           "name": "連環轟擊",
-          "description": "施放大絕後，接下來 8 秒內的 3 次普攻增加 50% 攻速，並暴擊造成正常暴擊傷害 80% 的傷害；若該普攻本來就會暴擊，改為造成 15% 額外真實傷害。冷卻 45 秒。"
+          "description": "施放大絕後，接下來 8 秒內的 3 次普攻增加 50% 攻速，並暴擊造成正常暴擊傷害 85% 的傷害；若該普攻本來就會暴擊，改為造成 17.5% 額外真實傷害。冷卻 45 秒。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3d",
       "buildFrom": [
         "wr73-9038",
         "wr73-9022"
@@ -4189,7 +4200,24 @@
       ],
       "lastReviewedPatch": "7.3c",
       "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "sourceDataVersion": "7.3",
+      "patch73d": {
+        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "rows": [
+          {
+            "label": "正常暴擊傷害倍率",
+            "before": "80%",
+            "after": "85%",
+            "kind": "change"
+          },
+          {
+            "label": "額外真實傷害",
+            "before": "15%",
+            "after": "17.5%",
+            "kind": "change"
+          }
+        ]
+      }
     },
     {
       "id": "wr73-9050",
@@ -5073,7 +5101,7 @@
         }
       ],
       "stats": [
-        "+50 物理攻擊",
+        "+55 物理攻擊",
         "+25% 暴擊率",
         "+20 技能加速"
       ],
@@ -5083,7 +5111,7 @@
           "description": "施放技能後，10 秒內的下一次普攻造成 135% 基礎物理攻擊＋0–80（每 1% 暴擊率增加 0.8）的額外物理傷害，並將此傷害的 50% 轉為魔力。冷卻 1.5 秒。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3d",
       "buildFrom": [
         "wr73-8900",
         "wr73-8914",
@@ -5096,7 +5124,18 @@
       ],
       "lastReviewedPatch": "7.3c",
       "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "sourceDataVersion": "7.3",
+      "patch73d": {
+        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "rows": [
+          {
+            "label": "物理攻擊",
+            "before": "50",
+            "after": "55",
+            "kind": "change"
+          }
+        ]
+      }
     },
     {
       "id": "wr73-9078",
@@ -5293,10 +5332,10 @@
       "passives": [
         {
           "name": "閃電",
-          "description": "移動與普攻產生充能普攻，造成 120 額外魔法傷害，命中時獲得 45% 跑速，持續 1.5 秒。"
+          "description": "移動與普攻產生充能普攻，造成 100 額外魔法傷害，命中時獲得 35% 跑速，持續 1.5 秒。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3d",
       "buildFrom": [
         "wr73-9022",
         "wr73-9040",
@@ -5309,7 +5348,24 @@
       ],
       "lastReviewedPatch": "7.3c",
       "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "sourceDataVersion": "7.3",
+      "patch73d": {
+        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "rows": [
+          {
+            "label": "充能傷害",
+            "before": "120",
+            "after": "100",
+            "kind": "change"
+          },
+          {
+            "label": "命中跑速",
+            "before": "45%",
+            "after": "35%",
+            "kind": "change"
+          }
+        ]
+      }
     },
     {
       "id": "wr73-9087",
@@ -7500,7 +7556,7 @@
         "+200 最大生命",
         "+500 最大魔力",
         "+50% 魔力回復",
-        "+8% 治療和護盾量"
+        "+6% 治療和護盾量"
       ],
       "passives": [
         {
@@ -7512,7 +7568,7 @@
           "description": "每次消耗魔力增加 14 最大魔力，每 10 秒最多觸發 3 次；上限 700，滿層轉化為歌謠之冠。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3d",
       "buildFrom": [
         "wr73-8894",
         "wr73-9112",
@@ -7549,7 +7605,18 @@
       },
       "lastReviewedPatch": "7.3c",
       "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3a"
+      "sourceDataVersion": "7.3a",
+      "patch73d": {
+        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "rows": [
+          {
+            "label": "基礎治療與護盾強度",
+            "before": "8%",
+            "after": "6%",
+            "kind": "change"
+          }
+        ]
+      }
     },
     {
       "id": "wr73-9163",
@@ -13816,7 +13883,7 @@
         "輔助": 23.1
       },
       "icon": "../assets/images/items/official-v107/wr73-9159-evolved.webp",
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3d",
       "buildFrom": [],
       "upgrades": [],
       "evolvesFrom": "wr73-9159",
@@ -13830,7 +13897,7 @@
         "+200 最大生命",
         "+1200 最大魔力",
         "+50% 魔力回復",
-        "+8% 治療和護盾量"
+        "+6% 治療和護盾量"
       ],
       "passives": [
         {
@@ -13863,7 +13930,18 @@
       },
       "lastReviewedPatch": "7.3c",
       "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3a"
+      "sourceDataVersion": "7.3a",
+      "patch73d": {
+        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "rows": [
+          {
+            "label": "基礎治療與護盾強度",
+            "before": "8%",
+            "after": "6%",
+            "kind": "change"
+          }
+        ]
+      }
     },
     {
       "id": "wr73-9206-evolved",

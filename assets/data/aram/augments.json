@@ -1,6 +1,6 @@
 {
-  "gameVersion": "7.3c",
-  "dataVersion": "123.0.0",
+  "gameVersion": "7.3d",
+  "dataVersion": "124.0.0",
   "title": "符文大亂鬥增幅裝置",
   "total": 151,
   "display": "name-effect-official-tags",
@@ -2541,9 +2541,9 @@
     }
   },
   "classificationNote": "官方分類是卡片本身顯示的標籤；同一張增幅可能同時擁有多個標籤，例如「暴擊治療」同時屬於「暴擊」與「復原」。",
-  "versionLabel": "7.3c 公告對照 · 151 張既有卡庫",
-  "correctionNote": "151張既有截圖卡庫已逐項對照7.3～7.3c公告；能明確對應的效果寫回卡片，無法對應卡名或完整效果者留在官方異動區，不自行補造新卡。",
-  "officialPatch": "7.3c",
+  "versionLabel": "7.3d 公告對照 · 151 張既有卡庫",
+  "correctionNote": "既有卡片保留已核對至 7.3c 的效果；7.3d 六項增幅數值另列公告，未確認中文名稱者不強制套用。",
+  "officialPatch": "7.3d",
   "official73c": {
     "patch": "7.3c",
     "version": "7.3c",
@@ -2708,14 +2708,73 @@
     "note": "5項新增內容公告（含電玩高手相關彩蛋）；官方未在此公告完整列出全部新卡效果，不推算效果或分類。"
   },
   "officialPatchReview": {
-    "patch": "7.3c",
-    "reviewedAt": "2026-10-25",
+    "patch": "7.3d",
+    "reviewedAt": "2026-10-28",
     "sources": [
-      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3/",
-      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3a/",
-      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3b/",
-      "https://wildrift.leagueoflegends.com/en-us/news/game-updates/wild-rift-patch-notes-7-3c/"
+      "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/"
     ],
-    "pending": "未收錄卡片的完整效果與卡名對應、跨語系差異需持續核對；不把無公告視為逐項實機證實。"
+    "pending": "6 項 7.3d 增幅英文名稱尚待繁中官方卡名或遊戲截圖對照；既有 151 張卡不代表完整現行卡池。",
+    "matched73dCards": 0,
+    "unmatched73dAnnouncements": 6
+  },
+  "official73d": {
+    "patch": "7.3d",
+    "version": "7.3d",
+    "published": "2026-10-28",
+    "reviewedAt": "2026-10-28",
+    "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+    "scope": "僅符文大亂鬥。英文原名保留以避免未確認的中文卡牌對應。",
+    "heroes": [],
+    "augments": [
+      {
+        "name": "Violet Toxin",
+        "label": "命中傷害",
+        "before": "40–80＋40%額外物攻＋10%魔攻",
+        "after": "20–40＋40%額外物攻＋10%魔攻",
+        "matchStatus": "unmatched-official-name",
+        "matchedId": null
+      },
+      {
+        "name": "Chromacrash Series",
+        "label": "每秒傷害",
+        "before": "10–20＋30%額外物攻＋15%魔攻",
+        "after": "5–12＋30%額外物攻＋10%魔攻",
+        "matchStatus": "unmatched-official-name",
+        "matchedId": null
+      },
+      {
+        "name": "Rhythm Hunter",
+        "label": "每層鋼霸符倍率",
+        "before": "8",
+        "after": "6",
+        "matchStatus": "unmatched-official-name",
+        "matchedId": null
+      },
+      {
+        "name": "Red-Blue Remix",
+        "label": "每分鐘堆層上限",
+        "before": "60",
+        "after": "75",
+        "matchStatus": "unmatched-official-name",
+        "matchedId": null
+      },
+      {
+        "name": "Transmissible Agents",
+        "label": "可傳遞的治療與護盾",
+        "before": "50%",
+        "after": "40%",
+        "matchStatus": "unmatched-official-name",
+        "matchedId": null
+      },
+      {
+        "name": "Crimson Burst",
+        "label": "冷卻",
+        "before": "5秒",
+        "after": "4秒",
+        "matchStatus": "unmatched-official-name",
+        "matchedId": null
+      }
+    ],
+    "note": "6 項公告差異保留英文官方名稱；未確認與 151 張既有繁中卡片的對應，不猜測覆寫效果。7.3d 未列模式專屬英雄倍率調整。"
   }
 }

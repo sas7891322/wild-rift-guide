@@ -1,0 +1,660 @@
+{
+  "patch": "7.3d",
+  "version": "7.3d",
+  "published": "2026-10-28",
+  "reviewedAt": "2026-10-28",
+  "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+  "sourceLanguage": "en-sg",
+  "note": "依英文官方公告翻譯整理；繁中名稱沿本站對照。內容於版本期間陸續推出。",
+  "heroes": [
+    {
+      "baseId": "shyvana",
+      "name": "希瓦娜",
+      "direction": "adjust",
+      "groups": [
+        {
+          "key": "基礎",
+          "title": "基礎能力",
+          "rows": [
+            {
+              "label": "每級生命",
+              "before": "120",
+              "after": "130",
+              "kind": "change"
+            },
+            {
+              "label": "每級生命回復（英文公告標示）",
+              "before": "9",
+              "after": "12",
+              "kind": "change"
+            },
+            {
+              "label": "每級攻速",
+              "before": "0.012",
+              "after": "0.024",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "8.5/7.5/6.5/5.5秒",
+              "after": "7/6.5/6/5.5秒",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "13/12/11/10秒",
+              "after": "12/11/10/9秒",
+              "kind": "change"
+            },
+            {
+              "label": "雲龍進化額外跑速",
+              "before": "25%",
+              "after": "15%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "11/10/9/8秒",
+              "after": "10/9/8/7秒",
+              "kind": "change"
+            },
+            {
+              "label": "傷害係數",
+              "before": "30%物攻＋40%魔攻",
+              "after": "50%物攻＋80%魔攻",
+              "kind": "change"
+            },
+            {
+              "label": "龍型態爆炸傷害係數",
+              "before": "50%物攻＋70%魔攻",
+              "after": "100%物攻＋100%魔攻",
+              "kind": "change"
+            },
+            {
+              "label": "龍型態焦土物攻係數",
+              "before": "10%",
+              "after": "15%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕",
+          "rows": [
+            {
+              "label": "海洋進化全能吸血",
+              "before": "20%",
+              "after": "10%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "camille",
+      "name": "卡蜜兒",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "基礎",
+          "title": "基礎能力",
+          "rows": [
+            {
+              "label": "每級攻速",
+              "before": "0.016",
+              "after": "0.028",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "malphite",
+      "name": "墨菲特",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動",
+          "rows": [
+            {
+              "label": "護盾最大生命係數",
+              "before": "11%",
+              "after": "10%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技",
+          "rows": [
+            {
+              "label": "首次普攻基礎傷害",
+              "before": "40/60/80/100",
+              "after": "30/45/60/75",
+              "kind": "change"
+            },
+            {
+              "label": "首次普攻物防係數",
+              "before": "30%",
+              "after": "20%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "ekko",
+      "name": "艾克",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動",
+          "rows": [
+            {
+              "label": "對野怪傷害倍率",
+              "before": "120%",
+              "after": "110%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技",
+          "rows": [
+            {
+              "label": "對野怪傷害倍率",
+              "before": "115%",
+              "after": "100%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "僅對野怪生效；不能解讀成對英雄或ARAM輸出削弱。"
+    },
+    {
+      "baseId": "lee-sin",
+      "name": "李星",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "基礎",
+          "title": "基礎能力",
+          "rows": [
+            {
+              "label": "每級攻速",
+              "before": "0.02",
+              "after": "0.04",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕",
+          "rows": [
+            {
+              "label": "基礎傷害",
+              "before": "125/350/575",
+              "after": "150/375/600",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "akali",
+      "name": "阿卡莉",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "基礎",
+          "title": "基礎能力",
+          "rows": [
+            {
+              "label": "每級攻速",
+              "before": "0.02",
+              "after": "0.04",
+              "kind": "change"
+            },
+            {
+              "label": "基礎物防",
+              "before": "34",
+              "after": "37",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "nasus",
+      "name": "納瑟斯",
+      "direction": "adjust",
+      "groups": [
+        {
+          "key": "基礎",
+          "title": "基礎能力",
+          "rows": [
+            {
+              "label": "基礎物攻",
+              "before": "58",
+              "after": "62",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技",
+          "rows": [
+            {
+              "label": "基礎傷害",
+              "before": "55/110/165/220",
+              "after": "50/90/130/170",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕",
+          "rows": [
+            {
+              "label": "物防／魔防",
+              "before": "40/50/60",
+              "after": "40/55/70",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "samira",
+      "name": "煞蜜拉",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "Q",
+          "title": "一技",
+          "rows": [
+            {
+              "label": "物攻係數",
+              "before": "125%",
+              "after": "115%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕",
+          "rows": [
+            {
+              "label": "物攻係數",
+              "before": "50%",
+              "after": "45%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "ashe",
+      "name": "艾希",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動",
+          "rows": [
+            {
+              "label": "普攻對目標額外傷害（依暴擊屬性）",
+              "before": "0–130%",
+              "after": "0–123.5%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "miss-fortune",
+      "name": "好運姐",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動",
+          "rows": [
+            {
+              "label": "額外物攻係數",
+              "before": "40%",
+              "after": "50%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕",
+          "rows": [
+            {
+              "label": "暴擊傷害（依暴擊屬性）",
+              "before": "130–139%",
+              "after": "135–145.5%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "singed",
+      "name": "辛吉德",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "基礎",
+          "title": "基礎能力",
+          "rows": [
+            {
+              "label": "基礎生命",
+              "before": "690",
+              "after": "660",
+              "kind": "change"
+            },
+            {
+              "label": "跑速",
+              "before": "355",
+              "after": "350",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "11秒",
+              "after": "14/13/12/11秒",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "12秒",
+              "after": "13秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    }
+  ],
+  "items": [
+    {
+      "name": "獵魔弩箭",
+      "groups": [
+        {
+          "title": "7.3d調整",
+          "rows": [
+            {
+              "label": "正常暴擊傷害倍率",
+              "before": "80%",
+              "after": "85%",
+              "kind": "change"
+            },
+            {
+              "label": "額外真實傷害",
+              "before": "15%",
+              "after": "17.5%",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "聖裂之杖",
+      "groups": [
+        {
+          "title": "7.3d調整",
+          "rows": [
+            {
+              "label": "價格",
+              "before": "3400",
+              "after": "3300",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "奪魄之鐮",
+      "groups": [
+        {
+          "title": "7.3d調整",
+          "rows": [
+            {
+              "label": "物理攻擊",
+              "before": "50",
+              "after": "55",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "低語之環",
+      "groups": [
+        {
+          "title": "7.3d調整",
+          "rows": [
+            {
+              "label": "基礎治療與護盾強度",
+              "before": "8%",
+              "after": "6%",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "歌謠之冠",
+      "groups": [
+        {
+          "title": "7.3d調整",
+          "rows": [
+            {
+              "label": "基礎治療與護盾強度",
+              "before": "8%",
+              "after": "6%",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "狂暴利刃",
+      "groups": [
+        {
+          "title": "7.3d調整",
+          "rows": [
+            {
+              "label": "充能傷害",
+              "before": "120",
+              "after": "100",
+              "kind": "change"
+            },
+            {
+              "label": "命中跑速",
+              "before": "45%",
+              "after": "35%",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "runes": {
+    "changed": false,
+    "note": "本篇未列一般符文直接調整。"
+  },
+  "battlefield": {
+    "rows": [
+      {
+        "label": "巴龍強化：近戰／遠程兵對英雄減傷",
+        "before": "50–70%",
+        "after": "55–75%"
+      },
+      {
+        "label": "巴龍強化：砲車／攻城兵對英雄減傷",
+        "before": "30%",
+        "after": "35%"
+      },
+      {
+        "label": "巴龍強化：近戰兵對士兵減傷",
+        "before": "80%",
+        "after": "90%"
+      },
+      {
+        "label": "巴龍強化：其他士兵對士兵減傷（超級士兵除外）",
+        "before": "20%",
+        "after": "25%"
+      },
+      {
+        "label": "巴龍強化：對防禦塔減傷（超級士兵除外）",
+        "before": "25%",
+        "after": "30%"
+      },
+      {
+        "label": "防禦塔連續攻擊傷害倍率",
+        "before": "100%/150%/215%/300%",
+        "after": "100%/150%/210%/270%"
+      }
+    ],
+    "note": "兵線優勢的減傷提高，但官方本篇未提供數值；不自行填入。以上戰場內容不直接套用ARAM。"
+  },
+  "aaa": {
+    "scope": "僅符文大亂鬥。英文原名保留以避免未確認的中文卡牌對應。",
+    "augments": [
+      {
+        "name": "Violet Toxin",
+        "rows": [
+          {
+            "label": "命中傷害",
+            "before": "40–80＋40%額外物攻＋10%魔攻",
+            "after": "20–40＋40%額外物攻＋10%魔攻"
+          }
+        ]
+      },
+      {
+        "name": "Chromacrash Series",
+        "rows": [
+          {
+            "label": "每秒傷害",
+            "before": "10–20＋30%額外物攻＋15%魔攻",
+            "after": "5–12＋30%額外物攻＋10%魔攻"
+          }
+        ]
+      },
+      {
+        "name": "Rhythm Hunter",
+        "rows": [
+          {
+            "label": "每層鋼霸符倍率",
+            "before": "8",
+            "after": "6"
+          }
+        ]
+      },
+      {
+        "name": "Red-Blue Remix",
+        "rows": [
+          {
+            "label": "每分鐘堆層上限",
+            "before": "60",
+            "after": "75"
+          }
+        ]
+      },
+      {
+        "name": "Transmissible Agents",
+        "rows": [
+          {
+            "label": "可傳遞的治療與護盾",
+            "before": "50%",
+            "after": "40%"
+          }
+        ]
+      },
+      {
+        "name": "Crimson Burst",
+        "rows": [
+          {
+            "label": "冷卻",
+            "before": "5秒",
+            "after": "4秒"
+          }
+        ]
+      }
+    ]
+  },
+  "cosmetics": "K/DA三款阿璃造型的宣傳圖與展示模型修正臉部、手勢與陰影。",
+  "limitations": [
+    "希瓦娜每級生命回復英文公告列9→12，未擅自改解成基礎回復；待繁中或遊戲內交叉確認。",
+    "新增模式數值只採有明列者；不由共通英雄調整推定ARAM模式倍率。"
+  ]
+}

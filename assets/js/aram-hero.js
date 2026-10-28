@@ -56,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=123.0.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=123.0.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=124.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=124.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -91,7 +91,7 @@
       const summary=isAaa?aaa.summary:hero.summary;
       const kicker=isAaa?`AAA ARAM · ${esc(aaaVersion)} 分類與配置`:`ARAM HERO GUIDE · ${esc(standardVersion)} 資料`;
       const versionBoundary=isAaa
-        ?`符文大亂鬥 ${esc(aaaVersion)} · 2026/10/25核對。分類、條件式出裝與標準ARAM分開；官方模式倍率另列。未核實的新卡效果不推算。`
+        ?`符文大亂鬥 ${esc(aaaVersion)} · 2026/10/28核對。分類、條件式出裝與標準ARAM分開；官方模式倍率另列。未核實的新卡效果不推算。`
         :`標準 ARAM ${esc(standardVersion)} · 校正 ${esc(hero.reviewedAt||data.updated)}。本站Tier與出裝為編輯建議；模式倍率保留來源界線，不冒稱官方勝率或逐項實機測試。`;
       const badgeMain=isAaa?'正式':hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
@@ -111,6 +111,11 @@
       </section>`;
     };
 
+    const render73d=()=>{
+      const r=hero.review73d;if(!r)return '';
+      const groups=(r.officialDeltas||[]).map(g=>`<h4>${esc(g.title||'官方調整')}</h4>${(g.rows||[]).map(x=>`<p>${esc(x.label)}：${esc(x.before)} → <strong>${esc(x.after)}</strong></p>`).join('')}`).join('');
+      return `<details class="aram-detail-section"><summary><strong>7.3d 攻略校正與數值（點開查看）</strong></summary><ul>${(r.changes||[]).map(v=>`<li>${esc(v)}</li>`).join('')}</ul><p>${esc(r.excludedDeltaReason||'')}</p>${groups}<p>這是本版差異檢查，未改動無官方新依據的模式倍率，也未以版本號自動調整評級。</p></details>`;
+    };
     const renderStandard=()=>{
       const itemCards=renderItems(hero.items||[]);
       const runeCards=renderRunes(hero.runes||[]);
@@ -385,7 +390,7 @@
         robots:'index,follow,max-image-preview:large'
       });
       renderHeader(currentMode);
-      contentRoot.innerHTML=isAaa?renderAaa():renderStandard();
+      contentRoot.innerHTML=render73d()+(isAaa?renderAaa():renderStandard());
       if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
     };
 

@@ -32,7 +32,7 @@
     if (item.evolvesFrom) evolution = `<p>${escape(item.evolutionCondition)}後，由下列裝備自動進化。</p><div class="tree-level tree-materials">${node(item.evolvesFrom)}</div>`;
     if (item.evolvesTo?.length) evolution += item.evolvesTo.map(id => `<p>${escape(find(id).evolutionCondition)}後進化：</p><div class="tree-level tree-materials">${node(id)}</div>`).join('');
     return `${history.length ? '<button type="button" class="equipment-back" data-detail-back>← 返回上一件裝備</button>' : ''}
-      <div class="equipment-detail-brand"><span class="brand-mark">WR</span><span>Wild Rift Guide · 7.3c</span></div>
+      <div class="equipment-detail-brand"><span class="brand-mark">WR</span><span>Wild Rift Guide · 7.3d</span></div>
       <header class="equipment-detail-header">
         <div class="equipment-detail-icon"><img src="${escape(item.icon)}" alt="${escape(item.name)}"></div>
         <div class="equipment-detail-title"><h2 tabindex="-1">${escape(item.name)}</h2><div class="detail-meta">${escape(item.stage)}</div><div class="detail-categories">${item.categories.map(c => `<span>${escape(c)}</span>`).join('')}</div></div>
@@ -40,7 +40,8 @@
       </header>
       ${section('能力值', `<ul class="item-stats">${stats}</ul>`, 'stats-section')}
       ${section('裝備效果', effects ? `<div class="item-passives">${effects}</div>` : '<p class="detail-empty-note">此裝備僅提供上述能力值。</p>', 'passive-section')}
-      ${item.patch73bChange ? section('7.3b 官方調整', patchMarkup(item.patch73bChange)) : ''}
+      ${item.patch73d ? section('7.3d 官方調整', patchMarkup({groups:[{title:'本次數值',rows:item.patch73d.rows}],source:item.patch73d.source,note:'目前能力值與效果已套用本次更新。'})) : ''}
+      ${item.patch73bChange ? section('7.3b 官方調整（歷史）', patchMarkup(item.patch73bChange)) : ''}
       ${item.patch73a ? section('歷史調整', `<details><summary>7.3a 官方調整（展開）</summary><p>以下保留歷史前後值；與7.3b重疊的項目以本頁能力值、效果及7.3b調整為準，未變動項目沿用。</p>${patchMarkup(item.patch73a)}</details>`) : ''}
       ${section('合成材料', recipe, 'build-tree')}
       ${section('可合成裝備', upgrades.length ? `<div class="tree-level tree-materials">${upgrades.map(node).join('')}</div>` : '', 'build-tree')}
@@ -100,7 +101,7 @@
   $('#item-search').oninput = render;
   async function load() {
     try {
-      const response = await fetch('../assets/data/items-7.3.json?v=123.0.0');
+      const response = await fetch('../assets/data/items-7.3.json?v=124.0.0');
       if (!response.ok) throw new Error('無法讀取裝備資料');
       data = await response.json();
       if (!Array.isArray(data.items) || !data.items.length) throw new Error('裝備資料格式錯誤');
