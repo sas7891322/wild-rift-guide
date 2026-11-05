@@ -10,7 +10,7 @@
   let activeTag='';
 
   try{
-    const response=await fetch('assets/data/aram/augments.json?v=124.0.0',{cache:'no-store'});
+    const response=await fetch('assets/data/aram/augments.json?v=124.2.0',{cache:'no-store'});
     if(!response.ok)throw new Error('Augment data load failed');
     const data=await response.json();
     const augments=Array.isArray(data.augments)?data.augments:[];
@@ -22,7 +22,7 @@
       return counts;
     },new Map());
 
-    if(state)state.textContent=`${data.versionLabel||data.gameVersion||'7.3c'}｜共 ${augments.length} 個｜${tagCounts.size} 種官方分類`;
+    if(state)state.textContent=`${data.versionLabel||data.gameVersion||'7.3d'}｜共 ${augments.length} 個｜${tagCounts.size} 種官方分類`;
 
     if(filterRoot){
       const groupHtml=Object.entries(tagGroups).map(([groupKey,group])=>`<section class="aram-augment-filter-group" data-filter-group="${escapeHtml(groupKey)}">

@@ -56,14 +56,14 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=124.0.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=124.0.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=124.2.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=124.2.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const augmentData=augmentRes.ok?await augmentRes.json():{augments:[]};
-    const standardVersion=data.standardGameVersion||data.gameVersion||'7.3c';
-    const aaaVersion=augmentData.gameVersion||data.aaaGameVersion||'7.3c';
+    const standardVersion=data.standardGameVersion||data.gameVersion||'7.3d';
+    const aaaVersion=augmentData.gameVersion||data.aaaGameVersion||'7.3d';
     const augmentMap=new Map((augmentData.augments||[]).map(item=>[item.id,item]));
     const hero=(data.heroes||[]).find(item=>item.id===id);
     if(!hero)throw new Error('Hero not found');
@@ -197,7 +197,7 @@
         </div>
       </details>`).join('');
       const aaaRunes=renderRunes(aaa.runeReuse?.runes||hero.runes||[]);
-      return `${aaa.officialBalanceUpdate?`<section class="aram-detail-section"><h2>7.3c 符文大亂鬥官方倍率</h2>${aaa.officialBalanceUpdate.rows.map(r=>`<p>${esc(r.label)}：${esc(r.before)} → <strong>${esc(r.after)}</strong></p>`).join('')}<p>${esc(aaa.officialBalanceUpdate.note)}</p><a href="${esc(aaa.officialBalanceUpdate.source)}" target="_blank" rel="noopener noreferrer">官方來源</a></section>`:''}<section class="aram-detail-section aaa-overview-section">
+      return `${aaa.officialBalanceUpdate?`<section class="aram-detail-section"><h2>7.3d適用｜7.3c公告的符文大亂鬥官方倍率</h2>${aaa.officialBalanceUpdate.rows.map(r=>`<p>${esc(r.label)}：${esc(r.before)} → <strong>${esc(r.after)}</strong></p>`).join('')}<p>${esc(aaa.officialBalanceUpdate.note)}</p><a href="${esc(aaa.officialBalanceUpdate.source)}" target="_blank" rel="noopener noreferrer">官方來源</a></section>`:''}<section class="aram-detail-section aaa-overview-section">
         <details class="aaa-shared-disclosure">
           <summary>
             <div class="aram-detail-section-head"><div><span>AAA ARAM</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>

@@ -1,6 +1,6 @@
 {
-  "version": "7.3d-v124",
-  "updatedAt": "2026-10-28",
+  "version": "7.3d-v124.2",
+  "updatedAt": "2026-11-04",
   "source": "使用者提供的七類遊戲內截圖",
   "screenshotCount": 560,
   "categories": [
@@ -12,7 +12,7 @@
     "輔助",
     "鞋子"
   ],
-  "notes": "7.3d六件裝備公告欄位已更新；截圖保留歷史來源，當前值以最新文字與官方調整為準。7.3c 裝備資料庫：沿用遊戲內截圖底稿並套用截至 2026-10-25 的官方 7.3、7.3a、7.3b 差異；7.3c 未列一般裝備新調整。共171件可購買與6件進化裝備，歷史截圖不作最新數值保證。",
+  "notes": "7.3d 於2026/11/04對照Riot官方繁中公告：6件直接調整裝備已同步數值、日期與來源；其他現行裝備仍沿用先前可核對資料，早期截圖不能當作7.3d數值證明。",
   "items": [
     {
       "id": "wr73-8894",
@@ -3267,11 +3267,11 @@
         "IMG_8966.PNG",
         "IMG_8967.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
+      "lastReviewedPatch": "7.3d",
+      "lastReviewedAt": "2026-11-04",
       "sourceDataVersion": "7.3",
       "patch73d": {
-        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3d/",
         "rows": [
           {
             "label": "價格",
@@ -4198,20 +4198,20 @@
       "descriptionSources": [
         "IMG_9048.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
+      "lastReviewedPatch": "7.3d",
+      "lastReviewedAt": "2026-11-04",
       "sourceDataVersion": "7.3",
       "patch73d": {
-        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3d/",
         "rows": [
           {
-            "label": "正常暴擊傷害倍率",
+            "label": "一般暴擊傷害",
             "before": "80%",
             "after": "85%",
             "kind": "change"
           },
           {
-            "label": "額外真實傷害",
+            "label": "真實傷害",
             "before": "15%",
             "after": "17.5%",
             "kind": "change"
@@ -5122,11 +5122,11 @@
       "descriptionSources": [
         "IMG_9076.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
+      "lastReviewedPatch": "7.3d",
+      "lastReviewedAt": "2026-11-04",
       "sourceDataVersion": "7.3",
       "patch73d": {
-        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3d/",
         "rows": [
           {
             "label": "物理攻擊",
@@ -5346,20 +5346,20 @@
       "descriptionSources": [
         "IMG_9085.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
+      "lastReviewedPatch": "7.3d",
+      "lastReviewedAt": "2026-11-04",
       "sourceDataVersion": "7.3",
       "patch73d": {
-        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3d/",
         "rows": [
           {
-            "label": "充能傷害",
+            "label": "「閃電」傷害",
             "before": "120",
             "after": "100",
             "kind": "change"
           },
           {
-            "label": "命中跑速",
+            "label": "「閃電」跑速",
             "before": "45%",
             "after": "35%",
             "kind": "change"
@@ -7603,11 +7603,11 @@
         ],
         "note": "僅調整和諧的轉換係數，不把基本8%治療護盾強度減半。"
       },
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
+      "lastReviewedPatch": "7.3d",
+      "lastReviewedAt": "2026-11-04",
       "sourceDataVersion": "7.3a",
       "patch73d": {
-        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3d/",
         "rows": [
           {
             "label": "基礎治療與護盾強度",
@@ -13928,11 +13928,11 @@
         ],
         "note": "低語之環進化裝；冠冕每秒治療效果未在本次調整。"
       },
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
+      "lastReviewedPatch": "7.3d",
+      "lastReviewedAt": "2026-11-04",
       "sourceDataVersion": "7.3a",
       "patch73d": {
-        "source": "https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-3d/",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3d/",
         "rows": [
           {
             "label": "基礎治療與護盾強度",
