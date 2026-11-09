@@ -1,0 +1,735 @@
+{
+  "officialSource": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/",
+  "date": "2026-09-23",
+  "scope": "8 support profiles; editorial recommendations, not win-rate verification",
+  "profiles": [
+    {
+      "id": "alistar-support",
+      "name": "亞歷斯塔",
+      "guide": "https://www.wildriftfire.com/guide/alistar",
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "before": {
+        "items": [
+          "defense-high-20",
+          "defense-high-23",
+          "defense-high-14",
+          "defense-high-16",
+          "defense-high-09"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "Q > W > E",
+        "skillSequence": [
+          "Q",
+          "W",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9270",
+          "wr73-9288",
+          "wr73-9275",
+          "wr73-9278",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "glacial-augment",
+          "steadfast-bulwark",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "Q > W > E",
+        "skillSequence": [
+          "Q",
+          "W",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E"
+        ]
+      }
+    },
+    {
+      "id": "blitzcrank-support",
+      "name": "布里茨",
+      "guide": "https://www.wildriftfire.com/guide/blitzcrank",
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "before": {
+        "items": [
+          "defense-high-22",
+          "defense-high-09",
+          "defense-high-13",
+          "defense-high-14",
+          "defense-high-15"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "Q > E > W",
+        "skillSequence": [
+          "Q",
+          "E",
+          "W",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "E",
+          "R",
+          "E",
+          "E",
+          "W",
+          "R",
+          "W",
+          "W"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9270",
+          "wr73-9275",
+          "wr73-9280",
+          "wr73-9278",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "Q > E > W",
+        "skillSequence": [
+          "Q",
+          "E",
+          "W",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "E",
+          "R",
+          "E",
+          "E",
+          "W",
+          "R",
+          "W",
+          "W"
+        ]
+      }
+    },
+    {
+      "id": "braum-support",
+      "name": "布郎姆",
+      "guide": "https://www.wildriftfire.com/guide/braum",
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "before": {
+        "items": [
+          "defense-high-05",
+          "defense-high-09",
+          "defense-high-23",
+          "defense-high-14",
+          "defense-high-08"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "guardian",
+          "font-of-life",
+          "second-wind",
+          "perseverance",
+          "transcendence"
+        ],
+        "spells": [
+          "flash",
+          "heal"
+        ],
+        "skillOrder": "Q > E > W",
+        "skillSequence": [
+          "Q",
+          "E",
+          "W",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "E",
+          "R",
+          "E",
+          "E",
+          "W",
+          "R",
+          "W",
+          "W"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9278",
+          "wr73-9288",
+          "wr73-9275",
+          "wr73-9291",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "guardian",
+          "font-of-life",
+          "second-wind",
+          "perseverance",
+          "transcendence"
+        ],
+        "spells": [
+          "flash",
+          "heal"
+        ],
+        "skillOrder": "Q > E > W",
+        "skillSequence": [
+          "Q",
+          "E",
+          "W",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "E",
+          "R",
+          "E",
+          "E",
+          "W",
+          "R",
+          "W",
+          "W"
+        ]
+      }
+    },
+    {
+      "id": "leona-support",
+      "name": "雷歐娜",
+      "guide": "https://www.wildriftfire.com/guide/leona",
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "before": {
+        "items": [
+          "defense-high-06",
+          "defense-high-15",
+          "defense-high-23",
+          "defense-high-16",
+          "defense-high-09"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "glacial-augment",
+          "steadfast-bulwark",
+          "second-wind",
+          "overgrowth",
+          "transcendence"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "W > E > Q",
+        "skillSequence": [
+          "W",
+          "E",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9282",
+          "wr73-9275",
+          "wr73-9288",
+          "wr73-9278",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "glacial-augment",
+          "steadfast-bulwark",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "W > E > Q",
+        "skillSequence": [
+          "Q",
+          "E",
+          "W",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q"
+        ]
+      }
+    },
+    {
+      "id": "maokai-support",
+      "name": "茂凱",
+      "guide": "https://www.wildriftfire.com/guide/maokai",
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "before": {
+        "items": [
+          "defense-high-09",
+          "defense-high-14",
+          "defense-high-13",
+          "defense-high-16",
+          "defense-high-08"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "transcendence"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "W > E > Q",
+        "skillSequence": [
+          "W",
+          "E",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9282",
+          "wr73-9275",
+          "wr73-9278",
+          "wr73-9291",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "transcendence"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "Q > W > E",
+        "skillSequence": [
+          "Q",
+          "W",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E"
+        ]
+      }
+    },
+    {
+      "id": "nautilus-support",
+      "name": "納帝魯斯",
+      "guide": "https://www.wildriftfire.com/guide/nautilus",
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "before": {
+        "items": [
+          "defense-high-09",
+          "defense-high-14",
+          "defense-high-13",
+          "defense-high-16",
+          "defense-high-08"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "W > E > Q",
+        "skillSequence": [
+          "W",
+          "E",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9282",
+          "wr73-9275",
+          "wr73-9278",
+          "wr73-9291",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "Q > W > E",
+        "skillSequence": [
+          "Q",
+          "W",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E"
+        ]
+      }
+    },
+    {
+      "id": "rell-support",
+      "name": "銳兒",
+      "guide": "https://www.wildriftfire.com/guide/rell",
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "before": {
+        "items": [
+          "defense-high-20",
+          "defense-high-23",
+          "defense-high-15",
+          "defense-high-16",
+          "defense-high-09"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "W > E > Q",
+        "skillSequence": [
+          "W",
+          "E",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9270",
+          "wr73-9288",
+          "wr73-9278",
+          "wr73-9291",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "glacial-augment",
+          "steadfast-bulwark",
+          "second-wind",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "W > E > Q",
+        "skillSequence": [
+          "W",
+          "Q",
+          "E",
+          "W",
+          "R",
+          "W",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q"
+        ]
+      }
+    },
+    {
+      "id": "thresh-support",
+      "name": "瑟雷西",
+      "guide": "https://www.wildriftfire.com/guide/thresh",
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "before": {
+        "items": [
+          "defense-high-09",
+          "defense-high-14",
+          "defense-high-05",
+          "defense-high-16",
+          "defense-high-15"
+        ],
+        "boots": [
+          "plated-steelcaps",
+          "armored-warboots"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "bone-plating",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "E > Q > W",
+        "skillSequence": [
+          "E",
+          "Q",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W"
+        ]
+      },
+      "after": {
+        "items": [
+          "wr73-9270",
+          "wr73-9275",
+          "wr73-9278",
+          "wr73-9291",
+          "wr73-9340-evolved"
+        ],
+        "boots": [
+          "wr73-9480",
+          "wr73-9482"
+        ],
+        "runes": [
+          "glacial-augment",
+          "courage-of-colossus",
+          "bone-plating",
+          "perseverance",
+          "hextech-flashtraption"
+        ],
+        "spells": [
+          "flash",
+          "ignite"
+        ],
+        "skillOrder": "E > Q > W",
+        "skillSequence": [
+          "E",
+          "Q",
+          "W",
+          "E",
+          "R",
+          "E",
+          "E",
+          "Q",
+          "R",
+          "Q",
+          "Q",
+          "W",
+          "R",
+          "W",
+          "W"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "激鬥峽谷攻略網｜Wild Rift Guide",
+  "short_name": "激鬥攻略",
+  "description": "激鬥峽谷繁體中文英雄攻略、Tier List、出裝、符文、技能加點與對局資料庫。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#06101c",
+  "theme_color": "#06101c",
+  "lang": "zh-Hant-TW",
+  "icons": [
+    {
+      "src": "/assets/images/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

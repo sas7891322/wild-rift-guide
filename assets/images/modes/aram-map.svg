@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="t d">
+  <title id="t">隨機單中 ARAM 地圖示意</title><desc id="d">單一路線冰橋的隨機單中地圖俯視示意圖</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#172b42"/><stop offset="1" stop-color="#080f1b"/></linearGradient>
+    <linearGradient id="bridge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7895aa"/><stop offset=".5" stop-color="#b8c8d2"/><stop offset="1" stop-color="#607f96"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="240" height="240" rx="30" fill="url(#bg)"/>
+  <path d="M25 205 L205 25" stroke="#0f2235" stroke-width="58" stroke-linecap="round"/>
+  <path d="M25 205 L205 25" stroke="url(#bridge)" stroke-width="42" stroke-linecap="round"/>
+  <path d="M25 205 L205 25" stroke="#d7e6ee" stroke-width="2" stroke-dasharray="7 8" opacity=".55"/>
+  <g fill="#d9f1ff" opacity=".7"><circle cx="61" cy="169" r="3"/><circle cx="92" cy="138" r="2.5"/><circle cx="150" cy="80" r="3"/><circle cx="178" cy="52" r="2.5"/></g>
+  <g fill="#f1d78e" stroke="#fff0b5" stroke-width="1" filter="url(#g)">
+    <circle cx="67" cy="163" r="6"/><circle cx="100" cy="130" r="6"/><circle cx="140" cy="90" r="6"/><circle cx="173" cy="57" r="6"/>
+  </g>
+  <rect x="15" y="187" width="30" height="30" rx="9" fill="#2d6eab" stroke="#bce6ff" stroke-width="2"/>
+  <rect x="195" y="23" width="30" height="30" rx="9" fill="#8b3f63" stroke="#ffd2df" stroke-width="2"/>
+  <path d="M52 187 l12 -6 7 12 -12 6z" fill="#6bc0ea" opacity=".9"/><path d="M176 48 l12 -6 7 12 -12 6z" fill="#e18baa" opacity=".9"/>
+  <g stroke="#4f6879" stroke-width="3" opacity=".7"><path d="M45 194l-13-13M194 45l13 13M82 157l-13-13M157 82l13 13"/></g>
+</svg>

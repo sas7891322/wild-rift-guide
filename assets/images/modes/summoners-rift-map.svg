@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="t d">
+  <title id="t">召喚峽谷地圖示意</title><desc id="d">三路與野區的召喚峽谷俯視示意圖</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#183e36"/><stop offset="1" stop-color="#0a1e2c"/></linearGradient>
+    <linearGradient id="river" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#2c7282"/><stop offset="1" stop-color="#4aa0b0"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="240" height="240" rx="30" fill="url(#bg)"/>
+  <path d="M-10 190 C45 170 65 135 95 120 C135 100 165 80 250 48" fill="none" stroke="url(#river)" stroke-width="20" opacity=".75"/>
+  <path d="M35 200 L200 35" stroke="#ceb86d" stroke-width="7" stroke-linecap="round" opacity=".95"/>
+  <path d="M35 200 C35 120 50 70 92 35" fill="none" stroke="#8ea47c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M35 200 C110 205 165 188 200 148" fill="none" stroke="#8ea47c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M200 35 C120 35 70 50 35 92" fill="none" stroke="#8ea47c" stroke-width="5" stroke-linecap="round"/>
+  <path d="M200 35 C205 110 188 165 148 200" fill="none" stroke="#8ea47c" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#315d44" opacity=".95">
+    <circle cx="75" cy="72" r="23"/><circle cx="105" cy="62" r="17"/><circle cx="67" cy="105" r="18"/>
+    <circle cx="163" cy="136" r="23"/><circle cx="136" cy="166" r="18"/><circle cx="178" cy="168" r="16"/>
+  </g>
+  <g fill="#e9d889" filter="url(#glow)">
+    <circle cx="35" cy="200" r="8"/><circle cx="200" cy="35" r="8"/>
+    <circle cx="79" cy="155" r="4"/><circle cx="120" cy="120" r="5"/><circle cx="160" cy="80" r="4"/>
+  </g>
+  <g fill="#8ec6d7"><circle cx="88" cy="137" r="6"/><circle cx="151" cy="92" r="6"/></g>
+  <rect x="19" y="181" width="28" height="28" rx="8" fill="#2b6ca0" stroke="#b9e5ff" stroke-width="2"/>
+  <rect x="193" y="21" width="28" height="28" rx="8" fill="#8b4057" stroke="#ffd0d7" stroke-width="2"/>
+</svg>

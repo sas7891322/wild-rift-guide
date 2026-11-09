@@ -1,0 +1,130 @@
+{
+  "patch": "7.2d",
+  "siteVersion": "v92",
+  "reviewedAt": "2026-08-31",
+  "baseVersion": "v90-full-profile-calibration",
+  "audit": {
+    "uniqueHeroes": 141,
+    "profiles": 202,
+    "updatedProfiles": 9,
+    "retainedProfiles": 193,
+    "tierChanges": 9,
+    "runeChanges": 1,
+    "requiredShape": "5 items + 2 boot/active slots + 5 runes + 2 spells + 5 matchup situations"
+  },
+  "tierChanges": [
+    {
+      "profileId": "syndra-mid",
+      "from": "A",
+      "to": "S+"
+    },
+    {
+      "profileId": "veigar-mid",
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "profileId": "zyra-mid",
+      "from": "B",
+      "to": "A"
+    },
+    {
+      "profileId": "veigar-support",
+      "from": "B",
+      "to": "C"
+    },
+    {
+      "profileId": "vi-jungle",
+      "from": "S",
+      "to": "S+"
+    },
+    {
+      "profileId": "jax-baron",
+      "from": "S",
+      "to": "S+"
+    },
+    {
+      "profileId": "volibear-baron",
+      "from": "S",
+      "to": "S+"
+    },
+    {
+      "profileId": "ahri-mid",
+      "from": "S",
+      "to": "S+"
+    },
+    {
+      "profileId": "yunara",
+      "from": "S",
+      "to": "S+"
+    }
+  ],
+  "runeChanges": [
+    {
+      "profileId": "zyra-mid",
+      "from": "cut-down",
+      "to": "bone-plating",
+      "situation": "坦克多時由骨甲換回斷切；控制多時由骨甲換成堅毅"
+    }
+  ],
+  "retainedWatchlist": [
+    {
+      "profileId": "gwen-jungle",
+      "tier": "A",
+      "reason": "不同來源評級落差大，暫不二次調整"
+    },
+    {
+      "profileId": "thresh-support",
+      "tier": "S",
+      "reason": "高選取／禁用但勝率未達 S+，維持 v90 校正"
+    },
+    {
+      "profileId": "caitlyn",
+      "tier": "B",
+      "reason": "7.2d 增強後仍未穩定進入 A"
+    },
+    {
+      "profileId": "vladimir-mid",
+      "tier": "B",
+      "reason": "增強後數據尚未穩定"
+    },
+    {
+      "profileId": "vladimir-baron",
+      "tier": "B",
+      "reason": "增強後數據尚未穩定"
+    },
+    {
+      "profileId": "fiora-baron",
+      "tier": "A",
+      "reason": "高操作與對局依賴，維持 A"
+    },
+    {
+      "profileId": "renekton-baron",
+      "tier": "A",
+      "reason": "分路評級仍為 A"
+    },
+    {
+      "profileId": "yuumi-support",
+      "tier": "B",
+      "reason": "高禁用但整體勝率偏低，維持 B"
+    }
+  ],
+  "evidenceSnapshot": {
+    "sourceScope": "China ranked, Diamond+, all roles where applicable",
+    "syndraMidWinRate": 53.05,
+    "zyraMidWinRate": 52.68,
+    "viJungleWinRate": 52.25,
+    "jaxBaronWinRate": 51.92,
+    "volibearBaronWinRate": 51.5,
+    "ahriMidWinRate": 51.44,
+    "yunaraDuoWinRate": 50.98,
+    "veigarMidWinRate": 48.63,
+    "veigarSupportWinRate": 48.68
+  },
+  "sources": [
+    "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-2d/",
+    "https://www.wildriftfire.com/stats",
+    "https://www.wildriftfire.com/tier-list",
+    "https://wildlegends.net/tier-list"
+  ]
+}

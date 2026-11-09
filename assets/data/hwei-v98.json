@@ -1,0 +1,40 @@
+{
+  "version": "v98-hwei-initial-build",
+  "patch": "7.3",
+  "role": "mid",
+  "tier": "A",
+  "provisional": true,
+  "confidence": "low",
+  "tierBasis": "editorial assessment; source tier TBD, no usable sample",
+  "items": [
+    "magic-high-10",
+    "magic-high-21",
+    "magic-high-14",
+    "magic-high-08",
+    "magic-high-02"
+  ],
+  "boots": [
+    "mana-boots"
+  ],
+  "runes": [
+    "arcane-comet",
+    "manaflow-band",
+    "transcendence",
+    "scorch",
+    "bone-plating"
+  ],
+  "spells": [
+    "flash",
+    "barrier"
+  ],
+  "skillPriority": [
+    "R",
+    "Q",
+    "E",
+    "W"
+  ],
+  "sources": [
+    "https://www.wildriftfire.com/guide/hwei",
+    "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/"
+  ]
+}

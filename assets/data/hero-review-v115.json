@@ -1,0 +1,3211 @@
+{
+  "version": "v115",
+  "patch": "7.3a",
+  "date": "2026-10-01",
+  "baseCommit": "9223cc207838f878113db4c49ec1584bd498b94c",
+  "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+  "scope": "召喚峽谷142位英雄／203份位置配置的7.3a差異複核；12位直接調整英雄與受裝備／打野改動影響的配置。",
+  "methodology": "官方數值與本站建議分開。Tier為改版首輪、依技能／裝備互動推論的暫定評級；未取得台服7.3a分路勝率樣本，不聲稱重測所有技能成長表。",
+  "unchangedModes": [
+    "一般ARAM英雄資料",
+    "符文大亂鬥攻略及增幅資料"
+  ],
+  "tierChanges": [
+    {
+      "id": "samira",
+      "baseId": "samira",
+      "name": "煞蜜拉",
+      "role": "飛龍路",
+      "from": "A",
+      "to": "S",
+      "reason": "傷害係數與三項防禦成長同時提高，現有暴擊／吸血配置更能發揮進場收割；仍怕硬控中斷。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    },
+    {
+      "id": "tristana",
+      "baseId": "tristana",
+      "name": "崔絲塔娜",
+      "role": "飛龍路",
+      "from": "B",
+      "to": "A",
+      "reason": "三技基礎傷害及額外物攻、暴擊成長提高，搭配雲陶攻速加強；一技滿級略降，不直接跳到最高評級。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    },
+    {
+      "id": "draven",
+      "baseId": "draven",
+      "name": "達瑞文",
+      "role": "飛龍路",
+      "from": "A",
+      "to": "S",
+      "reason": "一技額外物攻、二技攻速及大絕係數回升，嗜血者高物攻核心的收益提高；接斧與對線風險仍在。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    },
+    {
+      "id": "rammus-jungle",
+      "baseId": "rammus",
+      "name": "拉姆斯",
+      "role": "打野",
+      "from": "S",
+      "to": "A",
+      "reason": "基礎物防與低等級二技一起降低，再遇重擊燃燒削弱，前期清野與入侵容錯下降；後期反普攻定位仍保留。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    },
+    {
+      "id": "malphite-baron",
+      "baseId": "malphite",
+      "name": "墨菲特",
+      "role": "巴龍路",
+      "from": "S+",
+      "to": "S",
+      "reason": "二、三技物防傷害與大絕週期下修，但坦克承傷與團控功能仍在；不把這個分路評級套給輔助。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    },
+    {
+      "id": "syndra-mid",
+      "baseId": "syndra",
+      "name": "星朵拉",
+      "role": "中路",
+      "from": "S+",
+      "to": "S",
+      "reason": "碎片門檻提高且二技成長下修，原本的成形速度優勢縮小；長手暈眩與單點爆發仍具價值。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    },
+    {
+      "id": "senna-support",
+      "baseId": "senna",
+      "name": "姍娜",
+      "role": "輔助",
+      "from": "S",
+      "to": "A",
+      "reason": "攻速係數、成長與前搖收益同步削弱，原先偏多攻速的功能出裝效益下降；射程、治療與物理減防價值仍在。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    },
+    {
+      "id": "viego-jungle",
+      "baseId": "viego",
+      "name": "維爾戈",
+      "role": "打野",
+      "from": "A",
+      "to": "S",
+      "reason": "一技被動與暴擊、大絕暴擊係數提高，現有暴擊配置的首殺能力受益；重擊燃燒下降及進場被秒風險另計。",
+      "confidence": "first-pass-editorial",
+      "winRateVerified": false
+    }
+  ],
+  "buildChanges": [
+    {
+      "id": "caitlyn",
+      "name": "凱特琳",
+      "role": "飛龍路",
+      "before": [
+        "wr73-9004",
+        "wr73-9060",
+        "wr73-9101",
+        "wr73-9096",
+        "wr73-8956"
+      ],
+      "after": [
+        "wr73-9004",
+        "wr73-9050",
+        "wr73-9101",
+        "wr73-9096",
+        "wr73-8956"
+      ],
+      "reason": "預設第二件由海克斯光學C44改衝擊火炮，補攻速並保留安全充能點射；C44保留為能安全連續輸出的高物攻情境方案。此為本站取捨，不代表官方指定出裝。"
+    },
+    {
+      "id": "senna-support",
+      "name": "姍娜",
+      "role": "輔助",
+      "before": [
+        "wr73-9068",
+        "wr73-8938",
+        "wr73-9050",
+        "wr73-9060",
+        "wr73-9335-evolved"
+      ],
+      "after": [
+        "wr73-8938",
+        "wr73-9060",
+        "wr73-9050",
+        "wr73-8956",
+        "wr73-9335-evolved"
+      ],
+      "reason": "不再以電刀首件疊攻速；改黑色切割者→C44建立物攻與團隊削甲，火炮留作安全接觸距離，末件嗜血者為高經濟續航位。黯霧之鐮占一格；功能急迫時先依情境補裝，不強求昂貴滿裝。"
+    },
+    {
+      "id": "sona-support",
+      "name": "索娜",
+      "role": "輔助",
+      "before": [
+        "wr73-9159",
+        "wr73-9385",
+        "wr73-9408",
+        "wr73-9149",
+        "wr73-9335-evolved"
+      ],
+      "after": [
+        "wr73-9408",
+        "wr73-9159",
+        "wr73-9385",
+        "wr73-9149",
+        "wr73-9335-evolved"
+      ],
+      "reason": "將和諧回音提前到第一件，先取得保排與技能加速；低語之環延後到第二件處理魔力，仍可進化歌謠之冠。長局且急需魔力時可用原魔力優先方案；和諧係數削弱不等於整件裝備失效。"
+    },
+    {
+      "id": "seraphine-support",
+      "name": "瑟菈紛",
+      "role": "輔助",
+      "before": [
+        "wr73-9159",
+        "wr73-9385",
+        "wr73-9408",
+        "wr73-9149",
+        "wr73-9335-evolved"
+      ],
+      "after": [
+        "wr73-9408",
+        "wr73-9159",
+        "wr73-9385",
+        "wr73-9149",
+        "wr73-9335-evolved"
+      ],
+      "reason": "將和諧回音提前到第一件，先取得保排與技能加速；低語之環延後到第二件處理魔力，仍可進化歌謠之冠。長局且急需魔力時可用原魔力優先方案；和諧係數削弱不等於整件裝備失效。"
+    }
+  ],
+  "runeChanges": [
+    {
+      "id": "caitlyn",
+      "name": "凱特琳",
+      "role": "飛龍路",
+      "from": "legend-bloodline",
+      "to": "legend-alacrity",
+      "reason": "每級攻速成長下修後，預設改傳奇：敏捷補持續普攻節奏；續航由瞬疾步法與後段嗜血者支援。對線回復壓力大時可改回血脈。"
+    },
+    {
+      "id": "syndra-mid",
+      "name": "星朵拉",
+      "role": "中路",
+      "from": "hextech-flashtraption",
+      "to": "manaflow-band",
+      "reason": "碎片門檻提高後，預設由海克斯閃現改附魔之帶支援發育與反覆清線；卓越、光輝披風和死亡電刑保留。需要特定隔牆先手時才回選海克斯閃現。"
+    },
+    {
+      "id": "rammus-jungle",
+      "name": "拉姆斯",
+      "role": "打野",
+      "from": "second-wind",
+      "to": "bone-plating",
+      "reason": "低等級雙防與清野能力下修，預設把偏換血回復的回春改成骨甲，支援遭英雄反野或第一次進場承傷；骨甲不減野怪傷害。"
+    },
+    {
+      "id": "viego-jungle",
+      "name": "維爾戈",
+      "role": "打野",
+      "from": "absolute-focus",
+      "to": "bone-plating",
+      "reason": "暴擊傷害提升但仍需活到首次收割；預設用骨甲換下要求高血量的絕對專注，降低英雄接戰時被一輪擊倒的風險，不把骨甲當清野減傷。"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "smolder",
+      "baseId": "smolder",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S+",
+      "tierAfter": "S+",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "miss-fortune",
+      "baseId": "miss-fortune",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ezreal",
+      "baseId": "ezreal",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S+",
+      "tierAfter": "S+",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "varus",
+      "baseId": "varus",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "zeri",
+      "baseId": "zeri",
+      "roleId": "duo",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "lucian",
+      "baseId": "lucian",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "xayah",
+      "baseId": "xayah",
+      "roleId": "duo",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jhin",
+      "baseId": "jhin",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kogmaw",
+      "baseId": "kogmaw",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "vayne",
+      "baseId": "vayne",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "corki",
+      "baseId": "corki",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kalista",
+      "baseId": "kalista",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "sivir",
+      "baseId": "sivir",
+      "roleId": "duo",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kaisa",
+      "baseId": "kaisa",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "draven",
+      "baseId": "draven",
+      "roleId": "duo",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ashe",
+      "baseId": "ashe",
+      "roleId": "duo",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jinx",
+      "baseId": "jinx",
+      "roleId": "duo",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "caitlyn",
+      "baseId": "caitlyn",
+      "roleId": "duo",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": true,
+      "runesChanged": true
+    },
+    {
+      "id": "twitch",
+      "baseId": "twitch",
+      "roleId": "duo",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "tristana",
+      "baseId": "tristana",
+      "roleId": "duo",
+      "direct": true,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "samira",
+      "baseId": "samira",
+      "roleId": "duo",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "yunara",
+      "baseId": "yunara",
+      "roleId": "duo",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "S+",
+      "tierAfter": "S+",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "senna",
+      "baseId": "senna",
+      "roleId": "duo",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "aatrox-baron",
+      "baseId": "aatrox",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "akali-baron",
+      "baseId": "akali",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ambessa-baron",
+      "baseId": "ambessa",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "aurora-baron",
+      "baseId": "aurora",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "camille-baron",
+      "baseId": "camille",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "darius-baron",
+      "baseId": "darius",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "dr-mundo-baron",
+      "baseId": "dr-mundo",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "fiora-baron",
+      "baseId": "fiora",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "garen-baron",
+      "baseId": "garen",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "gnar-baron",
+      "baseId": "gnar",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "gragas-baron",
+      "baseId": "gragas",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "gwen-baron",
+      "baseId": "gwen",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "irelia-baron",
+      "baseId": "irelia",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jarvan-iv-baron",
+      "baseId": "jarvan-iv",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jax-baron",
+      "baseId": "jax",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jayce-baron",
+      "baseId": "jayce",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ksante-baron",
+      "baseId": "ksante",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kayle-baron",
+      "baseId": "kayle",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kennen-baron",
+      "baseId": "kennen",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "malphite-baron",
+      "baseId": "malphite",
+      "roleId": "baron",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S+",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "maokai-baron",
+      "baseId": "maokai",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "mordekaiser-baron",
+      "baseId": "mordekaiser",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nasus-baron",
+      "baseId": "nasus",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nautilus-baron",
+      "baseId": "nautilus",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nidalee-baron",
+      "baseId": "nidalee",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "olaf-baron",
+      "baseId": "olaf",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ornn-baron",
+      "baseId": "ornn",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "pantheon-baron",
+      "baseId": "pantheon",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "poppy-baron",
+      "baseId": "poppy",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "renekton-baron",
+      "baseId": "renekton",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "riven-baron",
+      "baseId": "riven",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "rumble-baron",
+      "baseId": "rumble",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ryze-baron",
+      "baseId": "ryze",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "sett-baron",
+      "baseId": "sett",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "shen-baron",
+      "baseId": "shen",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "singed-baron",
+      "baseId": "singed",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "sion-baron",
+      "baseId": "sion",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "skarner-baron",
+      "baseId": "skarner",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "swain-baron",
+      "baseId": "swain",
+      "roleId": "baron",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "teemo-baron",
+      "baseId": "teemo",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "tryndamere-baron",
+      "baseId": "tryndamere",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "urgot-baron",
+      "baseId": "urgot",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "viego-baron",
+      "baseId": "viego",
+      "roleId": "baron",
+      "direct": true,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "vladimir-baron",
+      "baseId": "vladimir",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "volibear-baron",
+      "baseId": "volibear",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "warwick-baron",
+      "baseId": "warwick",
+      "roleId": "baron",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "wukong-baron",
+      "baseId": "wukong",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "yasuo-baron",
+      "baseId": "yasuo",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "yone-baron",
+      "baseId": "yone",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S+",
+      "tierAfter": "S+",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "aatrox-jungle",
+      "baseId": "aatrox",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ambessa-jungle",
+      "baseId": "ambessa",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "amumu-jungle",
+      "baseId": "amumu",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "camille-jungle",
+      "baseId": "camille",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "darius-jungle",
+      "baseId": "darius",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "diana-jungle",
+      "baseId": "diana",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "dr-mundo-jungle",
+      "baseId": "dr-mundo",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ekko-jungle",
+      "baseId": "ekko",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "evelynn-jungle",
+      "baseId": "evelynn",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "fiddlesticks-jungle",
+      "baseId": "fiddlesticks",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "fizz-jungle",
+      "baseId": "fizz",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "gragas-jungle",
+      "baseId": "gragas",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "graves-jungle",
+      "baseId": "graves",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "gwen-jungle",
+      "baseId": "gwen",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "hecarim-jungle",
+      "baseId": "hecarim",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jarvan-iv-jungle",
+      "baseId": "jarvan-iv",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jax-jungle",
+      "baseId": "jax",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kayn-jungle",
+      "baseId": "kayn",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "khazix-jungle",
+      "baseId": "khazix",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kindred-jungle",
+      "baseId": "kindred",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "lee-sin-jungle",
+      "baseId": "lee-sin",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "lillia-jungle",
+      "baseId": "lillia",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "maokai-jungle",
+      "baseId": "maokai",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "morgana-jungle",
+      "baseId": "morgana",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nidalee-jungle",
+      "baseId": "nidalee",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nilah-jungle",
+      "baseId": "nilah",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nocturne-jungle",
+      "baseId": "nocturne",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nunu-and-willump-jungle",
+      "baseId": "nunu-and-willump",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "olaf-jungle",
+      "baseId": "olaf",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "pantheon-jungle",
+      "baseId": "pantheon",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "poppy-jungle",
+      "baseId": "poppy",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "rammus-jungle",
+      "baseId": "rammus",
+      "roleId": "jungle",
+      "direct": true,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": true
+    },
+    {
+      "id": "rengar-jungle",
+      "baseId": "rengar",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "riven-jungle",
+      "baseId": "riven",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "shyvana-jungle",
+      "baseId": "shyvana",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "skarner-jungle",
+      "baseId": "skarner",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "taliyah-jungle",
+      "baseId": "taliyah",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "talon-jungle",
+      "baseId": "talon",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "tryndamere-jungle",
+      "baseId": "tryndamere",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-9087"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "vi-jungle",
+      "baseId": "vi",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "viego-jungle",
+      "baseId": "viego",
+      "roleId": "jungle",
+      "direct": true,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": true
+    },
+    {
+      "id": "volibear-jungle",
+      "baseId": "volibear",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "warwick-jungle",
+      "baseId": "warwick",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "wukong-jungle",
+      "baseId": "wukong",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "xin-zhao-jungle",
+      "baseId": "xin-zhao",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "yone-jungle",
+      "baseId": "yone",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "zed-jungle",
+      "baseId": "zed",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ahri-mid",
+      "baseId": "ahri",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S+",
+      "tierAfter": "S+",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "akali-mid",
+      "baseId": "akali",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "akshan-mid",
+      "baseId": "akshan",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "annie-mid",
+      "baseId": "annie",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "aurelion-sol-mid",
+      "baseId": "aurelion-sol",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "aurora-mid",
+      "baseId": "aurora",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "brand-mid",
+      "baseId": "brand",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "diana-mid",
+      "baseId": "diana",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ekko-mid",
+      "baseId": "ekko",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "fizz-mid",
+      "baseId": "fizz",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "galio-mid",
+      "baseId": "galio",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "heimerdinger-mid",
+      "baseId": "heimerdinger",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "irelia-mid",
+      "baseId": "irelia",
+      "roleId": "mid",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "jayce-mid",
+      "baseId": "jayce",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kassadin-mid",
+      "baseId": "kassadin",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "katarina-mid",
+      "baseId": "katarina",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kayle-mid",
+      "baseId": "kayle",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "kennen-mid",
+      "baseId": "kennen",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "lissandra-mid",
+      "baseId": "lissandra",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "lux-mid",
+      "baseId": "lux",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "mel-mid",
+      "baseId": "mel",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "morgana-mid",
+      "baseId": "morgana",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "norra-mid",
+      "baseId": "norra",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "orianna-mid",
+      "baseId": "orianna",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ryze-mid",
+      "baseId": "ryze",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "swain-mid",
+      "baseId": "swain",
+      "roleId": "mid",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "syndra-mid",
+      "baseId": "syndra",
+      "roleId": "mid",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S+",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": true
+    },
+    {
+      "id": "taliyah-mid",
+      "baseId": "taliyah",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "teemo-mid",
+      "baseId": "teemo",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "twisted-fate-mid",
+      "baseId": "twisted-fate",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "veigar-mid",
+      "baseId": "veigar",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "velkoz-mid",
+      "baseId": "velkoz",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "vex-mid",
+      "baseId": "vex",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "viktor-mid",
+      "baseId": "viktor",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "vladimir-mid",
+      "baseId": "vladimir",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "yasuo-mid",
+      "baseId": "yasuo",
+      "roleId": "mid",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "yone-mid",
+      "baseId": "yone",
+      "roleId": "mid",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "zed-mid",
+      "baseId": "zed",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "ziggs-mid",
+      "baseId": "ziggs",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "zoe-mid",
+      "baseId": "zoe",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "zyra-mid",
+      "baseId": "zyra",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "alistar-support",
+      "baseId": "alistar",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "bard-support",
+      "baseId": "bard",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "blitzcrank-support",
+      "baseId": "blitzcrank",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "brand-support",
+      "baseId": "brand",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "braum-support",
+      "baseId": "braum",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "galio-support",
+      "baseId": "galio",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "janna-support",
+      "baseId": "janna",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "karma-support",
+      "baseId": "karma",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "leona-support",
+      "baseId": "leona",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "lulu-support",
+      "baseId": "lulu",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "lux-support",
+      "baseId": "lux",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "malphite-support",
+      "baseId": "malphite",
+      "roleId": "support",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "maokai-support",
+      "baseId": "maokai",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "milio-support",
+      "baseId": "milio",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "morgana-support",
+      "baseId": "morgana",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nami-support",
+      "baseId": "nami",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nautilus-support",
+      "baseId": "nautilus",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "pyke-support",
+      "baseId": "pyke",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "rakan-support",
+      "baseId": "rakan",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "rell-support",
+      "baseId": "rell",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "senna-support",
+      "baseId": "senna",
+      "roleId": "support",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "A",
+      "buildChanged": true,
+      "runesChanged": false
+    },
+    {
+      "id": "seraphine-support",
+      "baseId": "seraphine",
+      "roleId": "support",
+      "direct": false,
+      "items": [
+        "wr73-9159"
+      ],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": true,
+      "runesChanged": false
+    },
+    {
+      "id": "ornn-support",
+      "baseId": "ornn",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "sona-support",
+      "baseId": "sona",
+      "roleId": "support",
+      "direct": false,
+      "items": [
+        "wr73-9159"
+      ],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": true,
+      "runesChanged": false
+    },
+    {
+      "id": "soraka-support",
+      "baseId": "soraka",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "swain-support",
+      "baseId": "swain",
+      "roleId": "support",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "thresh-support",
+      "baseId": "thresh",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "veigar-support",
+      "baseId": "veigar",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "velkoz-support",
+      "baseId": "velkoz",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "yuumi-support",
+      "baseId": "yuumi",
+      "roleId": "support",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "zilean-support",
+      "baseId": "zilean",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "zyra-support",
+      "baseId": "zyra",
+      "roleId": "support",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "master-yi-jungle",
+      "baseId": "master-yi",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [
+        "wr73-8961"
+      ],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "shen-jungle",
+      "baseId": "shen",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "nautilus-jungle",
+      "baseId": "nautilus",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "B",
+      "tierAfter": "B",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "corki-mid",
+      "baseId": "corki",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "karma-mid",
+      "baseId": "karma",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "talon-mid",
+      "baseId": "talon",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "rumble-mid",
+      "baseId": "rumble",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "seraphine-mid",
+      "baseId": "seraphine",
+      "roleId": "mid",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "chogath-baron",
+      "baseId": "chogath",
+      "roleId": "baron",
+      "direct": false,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "S",
+      "tierAfter": "S",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "chogath-jungle",
+      "baseId": "chogath",
+      "roleId": "jungle",
+      "direct": false,
+      "items": [],
+      "jungle": true,
+      "tierBefore": "C",
+      "tierAfter": "C",
+      "buildChanged": false,
+      "runesChanged": false
+    },
+    {
+      "id": "hwei-mid",
+      "baseId": "hwei",
+      "roleId": "mid",
+      "direct": true,
+      "items": [],
+      "jungle": false,
+      "tierBefore": "A",
+      "tierAfter": "A",
+      "buildChanged": false,
+      "runesChanged": false
+    }
+  ],
+  "items": [
+    {
+      "id": "wr73-9087",
+      "name": "雲陶狂箭",
+      "before": {
+        "id": "wr73-9087",
+        "name": "雲陶狂箭",
+        "categories": [
+          "射手"
+        ],
+        "stage": "高階裝備",
+        "price": 3100,
+        "orderByCategory": {
+          "射手": 39
+        },
+        "sourceGroups": [
+          {
+            "category": "射手",
+            "images": [
+              {
+                "src": "../assets/images/items/v101/IMG_9087.webp",
+                "file": "IMG_9087.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9088.webp",
+                "file": "IMG_9088.PNG",
+                "kind": "recipe"
+              }
+            ]
+          }
+        ],
+        "icon": "../assets/images/items/official-v107/wr73-9087.webp",
+        "images": [
+          {
+            "src": "../assets/images/items/v101/IMG_9087.webp",
+            "file": "IMG_9087.PNG",
+            "kind": "description"
+          },
+          {
+            "src": "../assets/images/items/v101/IMG_9088.webp",
+            "file": "IMG_9088.PNG",
+            "kind": "recipe"
+          }
+        ],
+        "stats": [
+          "+50 物理攻擊",
+          "+25% 攻擊速度"
+        ],
+        "passives": [
+          {
+            "name": "熱能致命",
+            "description": "普攻永久增加暴擊率；每次近戰普攻增加 0.4%、遠程增加 0.2%，上限 25%。"
+          },
+          {
+            "name": "無雙亂舞",
+            "description": "普攻敵方英雄時獲得 25% 攻速，持續 6 秒。冷卻 20 秒；普攻使冷卻縮短 1 秒，暴擊時縮短 2 秒。"
+          }
+        ],
+        "dataVersion": "7.3",
+        "buildFrom": [
+          "wr73-9022",
+          "wr73-9040"
+        ],
+        "upgrades": [],
+        "recipeSource": "IMG_9088.PNG",
+        "descriptionSources": [
+          "IMG_9087.PNG"
+        ]
+      },
+      "changes": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "攻速",
+              "before": "25%",
+              "after": "35%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "passive",
+          "title": "無雙亂舞",
+          "rows": [
+            {
+              "label": "攻速",
+              "before": "25%",
+              "after": "35%",
+              "kind": "change"
+            },
+            {
+              "label": "冷卻",
+              "before": "20秒",
+              "after": "25秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wr73-9159",
+      "name": "低語之環",
+      "before": {
+        "id": "wr73-9159",
+        "name": "低語之環",
+        "categories": [
+          "法師",
+          "輔助"
+        ],
+        "stage": "高階裝備",
+        "price": 2400,
+        "orderByCategory": {
+          "法師": 26,
+          "輔助": 23
+        },
+        "sourceGroups": [
+          {
+            "category": "法師",
+            "images": [
+              {
+                "src": "../assets/images/items/v101/IMG_9159.webp",
+                "file": "IMG_9159.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9160.webp",
+                "file": "IMG_9160.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9161.webp",
+                "file": "IMG_9161.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9162.webp",
+                "file": "IMG_9162.PNG",
+                "kind": "recipe"
+              }
+            ]
+          },
+          {
+            "category": "輔助",
+            "images": [
+              {
+                "src": "../assets/images/items/v101/IMG_9387.webp",
+                "file": "IMG_9387.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9388.webp",
+                "file": "IMG_9388.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9389.webp",
+                "file": "IMG_9389.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9390.webp",
+                "file": "IMG_9390.PNG",
+                "kind": "recipe"
+              }
+            ]
+          }
+        ],
+        "icon": "../assets/images/items/official-v107/wr73-9159.webp",
+        "images": [
+          {
+            "src": "../assets/images/items/v101/IMG_9159.webp",
+            "file": "IMG_9159.PNG",
+            "kind": "description"
+          },
+          {
+            "src": "../assets/images/items/v101/IMG_9160.webp",
+            "file": "IMG_9160.PNG",
+            "kind": "description"
+          },
+          {
+            "src": "../assets/images/items/v101/IMG_9161.webp",
+            "file": "IMG_9161.PNG",
+            "kind": "description"
+          },
+          {
+            "src": "../assets/images/items/v101/IMG_9162.webp",
+            "file": "IMG_9162.PNG",
+            "kind": "recipe"
+          }
+        ],
+        "stats": [
+          "+200 最大生命",
+          "+500 最大魔力",
+          "+50% 魔力回復",
+          "+8% 治療和護盾量"
+        ],
+        "passives": [
+          {
+            "name": "和諧",
+            "description": "獲得相當於 0.5% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
+          },
+          {
+            "name": "魔力補充",
+            "description": "每次消耗魔力增加 14 最大魔力，每 10 秒最多觸發 3 次；上限 700，滿層轉化為歌謠之冠。"
+          }
+        ],
+        "dataVersion": "7.3",
+        "buildFrom": [
+          "wr73-8894",
+          "wr73-9112",
+          "wr73-9108"
+        ],
+        "upgrades": [],
+        "recipeSource": "IMG_9162.PNG",
+        "descriptionSources": [
+          "IMG_9159.PNG",
+          "IMG_9160.PNG",
+          "IMG_9161.PNG"
+        ],
+        "evolvesTo": [
+          "wr73-9159-evolved"
+        ]
+      },
+      "changes": [
+        {
+          "key": "passive",
+          "title": "和諧",
+          "rows": [
+            {
+              "label": "最大魔力轉治療／護盾強度",
+              "before": "0.5%",
+              "after": "0.25%",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wr73-9159-evolved",
+      "name": "歌謠之冠",
+      "before": {
+        "id": "wr73-9159-evolved",
+        "name": "歌謠之冠",
+        "categories": [
+          "法師",
+          "輔助"
+        ],
+        "stage": "進化裝備",
+        "price": null,
+        "purchasePrice": 2400,
+        "orderByCategory": {
+          "法師": 26.1,
+          "輔助": 23.1
+        },
+        "icon": "../assets/images/items/official-v107/wr73-9159-evolved.webp",
+        "dataVersion": "7.3",
+        "buildFrom": [],
+        "upgrades": [],
+        "evolvesFrom": "wr73-9159",
+        "evolutionCondition": "魔力補充累積 700 最大魔力",
+        "descriptionSources": [
+          "IMG_9159.PNG",
+          "IMG_9160.PNG",
+          "IMG_9161.PNG"
+        ],
+        "stats": [
+          "+200 最大生命",
+          "+1200 最大魔力",
+          "+50% 魔力回復",
+          "+8% 治療和護盾量"
+        ],
+        "passives": [
+          {
+            "name": "和諧",
+            "description": "獲得相當於 0.5% 最大魔力的額外治療與護盾強度；施放技能返還 25% 魔力消耗。"
+          },
+          {
+            "name": "冠冕",
+            "description": "自身，或過去 3 秒內受你治療或護盾的友軍，正在與英雄交戰時，每秒治療周遭 800 距離單位內生命最低的友軍，回復量相當於 0.8% 最大魔力。"
+          }
+        ]
+      },
+      "changes": [
+        {
+          "key": "passive",
+          "title": "和諧",
+          "rows": [
+            {
+              "label": "最大魔力轉治療／護盾強度",
+              "before": "0.5%",
+              "after": "0.25%",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wr73-8961",
+      "name": "死亡之舞",
+      "before": {
+        "id": "wr73-8961",
+        "name": "死亡之舞",
+        "categories": [
+          "鬥士",
+          "防禦"
+        ],
+        "stage": "高階裝備",
+        "price": 3200,
+        "orderByCategory": {
+          "鬥士": 34,
+          "防禦": 50
+        },
+        "sourceGroups": [
+          {
+            "category": "鬥士",
+            "images": [
+              {
+                "src": "../assets/images/items/v101/IMG_8961.webp",
+                "file": "IMG_8961.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_8962.webp",
+                "file": "IMG_8962.PNG",
+                "kind": "recipe"
+              }
+            ]
+          },
+          {
+            "category": "防禦",
+            "images": [
+              {
+                "src": "../assets/images/items/v101/IMG_9333.webp",
+                "file": "IMG_9333.PNG",
+                "kind": "description"
+              },
+              {
+                "src": "../assets/images/items/v101/IMG_9334.webp",
+                "file": "IMG_9334.PNG",
+                "kind": "recipe"
+              }
+            ]
+          }
+        ],
+        "icon": "../assets/images/items/official-v107/wr73-8961.webp",
+        "images": [
+          {
+            "src": "../assets/images/items/v101/IMG_8961.webp",
+            "file": "IMG_8961.PNG",
+            "kind": "description"
+          },
+          {
+            "src": "../assets/images/items/v101/IMG_8962.webp",
+            "file": "IMG_8962.PNG",
+            "kind": "recipe"
+          }
+        ],
+        "stats": [
+          "+50 物理攻擊",
+          "+45 物理防禦",
+          "+15 技能加速"
+        ],
+        "passives": [
+          {
+            "name": "燒灼",
+            "description": "將受到的物理與魔法傷害的 30%（遠程 12%）改為持續 3 秒的真實傷害。"
+          },
+          {
+            "name": "違抗",
+            "description": "若敵方英雄受到傷害後 3 秒內死亡，清除尚未結算的延後傷害，並在 2 秒內回復相當於 90% 額外物理攻擊的生命。"
+          }
+        ],
+        "dataVersion": "7.3",
+        "buildFrom": [
+          "wr73-8898",
+          "wr73-8914",
+          "wr73-9231"
+        ],
+        "upgrades": [],
+        "recipeSource": "IMG_8962.PNG",
+        "descriptionSources": [
+          "IMG_8961.PNG"
+        ]
+      },
+      "changes": [
+        {
+          "key": "price",
+          "title": "價格",
+          "rows": [
+            {
+              "label": "總價",
+              "before": "3200",
+              "after": "3300",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "id": "hwei-mid",
+      "fields": [
+        "明鏡止水護盾係數",
+        "完整各級技能基礎值與零加速冷卻",
+        "官方附錄未列攻速"
+      ],
+      "reason": "缺乏可確認的遊戲內面板，不猜數值。"
+    }
+  ],
+  "counts": {
+    "heroes": 142,
+    "profiles": 203,
+    "directHeroes": 12,
+    "directProfiles": 17,
+    "affectedItemProfiles": 42,
+    "jungleProfiles": 51,
+    "tierChanges": 8,
+    "buildChanges": 4,
+    "runeChanges": 4,
+    "officialItems": 4,
+    "officialRuneChanges": 0
+  },
+  "runes": {
+    "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+    "directChanges": 0,
+    "retainedVersion": "7.3",
+    "count": 52,
+    "changes": [
+      {
+        "id": "caitlyn",
+        "name": "凱特琳",
+        "role": "飛龍路",
+        "from": "legend-bloodline",
+        "to": "legend-alacrity",
+        "reason": "每級攻速成長下修後，預設改傳奇：敏捷補持續普攻節奏；續航由瞬疾步法與後段嗜血者支援。對線回復壓力大時可改回血脈。"
+      },
+      {
+        "id": "syndra-mid",
+        "name": "星朵拉",
+        "role": "中路",
+        "from": "hextech-flashtraption",
+        "to": "manaflow-band",
+        "reason": "碎片門檻提高後，預設由海克斯閃現改附魔之帶支援發育與反覆清線；卓越、光輝披風和死亡電刑保留。需要特定隔牆先手時才回選海克斯閃現。"
+      },
+      {
+        "id": "rammus-jungle",
+        "name": "拉姆斯",
+        "role": "打野",
+        "from": "second-wind",
+        "to": "bone-plating",
+        "reason": "低等級雙防與清野能力下修，預設把偏換血回復的回春改成骨甲，支援遭英雄反野或第一次進場承傷；骨甲不減野怪傷害。"
+      },
+      {
+        "id": "viego-jungle",
+        "name": "維爾戈",
+        "role": "打野",
+        "from": "absolute-focus",
+        "to": "bone-plating",
+        "reason": "暴擊傷害提升但仍需活到首次收割；預設用骨甲換下要求高血量的絕對專注，降低英雄接戰時被一輪擊倒的風險，不把骨甲當清野減傷。"
+      }
+    ]
+  }
+}

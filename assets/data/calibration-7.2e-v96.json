@@ -1,0 +1,140 @@
+{
+  "version": "v96",
+  "date": "2026-09-19",
+  "base": "v95.1",
+  "scope": "落實已確認的三組 Tier 與吉茵珂絲出裝、科加斯情境配置；非重新宣稱全英雄配裝已逐一核驗。",
+  "tierChanges": {
+    "darius-baron": [
+      "S",
+      "A"
+    ],
+    "ornn-baron": [
+      "S+",
+      "S"
+    ],
+    "chogath-jungle": [
+      "A",
+      "C"
+    ]
+  },
+  "sources": [
+    "https://www.wildriftfire.com/stats",
+    "https://www.wildriftfire.com/guide/darius",
+    "https://www.wildriftfire.com/guide/ornn",
+    "https://www.wildriftfire.com/guide/chogath",
+    "https://www.wildriftfire.com/guide/jinx"
+  ],
+  "limitations": [
+    "統計為9/19中國服資料，不代表台服；無完整樣本量與對局窗口。",
+    "狂風之力鞋子分類缺乏足夠官方佐證，本輪不變更道具分類或數值，吉茵珂絲保留原鞋線。",
+    "ARAM及AAA本輪未改動。"
+  ],
+  "protectedHashes": {
+    "assets/js/players.js": "c7f8b94bb287d57c657030237f1554155e6716bd7d64dc25322c9e853b10dfc0",
+    "pages/players.html": "8a5f945aac51303d1e27de770a9d2b458695a28ba6d0ad06d29d0bc9baa2c06d",
+    "assets/js/auth.js": "cf77f686fd8703fcd2b89de4deefc7651a5c8245e1b66f2127961eeea83faade",
+    "assets/js/supabase-config.js": "6a8af619fba25d995510b2e6386b6b40b79c86bc843338c2e5d4a308af17e840",
+    "supabase/wild-rift-guide-v91-player-finder-check.sql": "a15daf392fca83163a8d908ba1205f0b8d91d28fb083cf26735546c88ab7b2e8",
+    "supabase/wild-rift-guide-v79-check.sql": "36ec51e611d6d08e300c18f5a9567a5c714b04c3957f7f480d65db49627d4804",
+    "supabase/wild-rift-guide-v79.5-traffic.sql": "490dbd37dcaa830f3332aa7bb04744e8a7cc0d524d16196de10bfff8a257cd01",
+    "supabase/README.md": "51d6c1375d4bb40388627baca87620b6b49ade8f4d59f73004c7b537f876bbca",
+    "supabase/v79.3-member-data-repair.sql": "4c72841746fd219504e34d38a16bd443e9244d09ea054d17e2614e517394e634",
+    "supabase/wild-rift-guide-v91-player-finder.sql": "62845806ed270e17fba0c3446b2334ab772d1e1807b6a292f756b3a64a3aa8a8",
+    "supabase/wild-rift-guide-member.sql": "2d34a55401eeb01dc27cbc83590813b5e38b76041635ad10f2c9e7cbf0954700"
+  },
+  "changes": [
+    {
+      "profileId": "darius-baron",
+      "changes": {
+        "tier": {
+          "from": "S",
+          "to": "A"
+        }
+      }
+    },
+    {
+      "profileId": "ornn-baron",
+      "changes": {
+        "tier": {
+          "from": "S+",
+          "to": "S"
+        }
+      }
+    },
+    {
+      "profileId": "chogath-jungle",
+      "changes": {
+        "tier": {
+          "from": "A",
+          "to": "C"
+        },
+        "buildVariants": {
+          "from": null,
+          "to": [
+            {
+              "id": "scaling-tank-v96",
+              "title": "成長坦裝（情境）",
+              "when": "能安全發育、隊伍需要後期前排時採用；原熾灼之冠路線仍保留。",
+              "items": [
+                "defense-high-19",
+                "defense-high-06",
+                "defense-high-08",
+                "defense-high-01",
+                "defense-high-16"
+              ],
+              "boots": [
+                "mercurys-treads",
+                "chain-army-boots"
+              ],
+              "runes": [
+                "glacial-augment",
+                "courage-of-colossus",
+                "bone-plating",
+                "overgrowth",
+                "transcendence"
+              ],
+              "spells": [
+                "flash",
+                "smite"
+              ],
+              "note": "雄心之鋼、日炎、荊棘、石像鬼磐核、雅瑪蘭為參考攻略的成長路線，並非勝率保證；整套與預設擇一，不追加第六件。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "profileId": "jinx",
+      "changes": {
+        "items": {
+          "from": [
+            "physical-high-03",
+            "physical-high-23",
+            "physical-high-18",
+            "physical-high-13",
+            "physical-high-17"
+          ],
+          "to": [
+            "physical-high-32",
+            "physical-high-23",
+            "physical-high-18",
+            "physical-high-13",
+            "physical-high-17"
+          ]
+        },
+        "coreItems": {
+          "from": [
+            "physical-high-03",
+            "physical-high-23",
+            "physical-high-18"
+          ],
+          "to": [
+            "physical-high-32",
+            "physical-high-23",
+            "physical-high-18"
+          ]
+        }
+      }
+    }
+  ]
+}

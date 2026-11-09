@@ -1,0 +1,3391 @@
+{
+  "version": "v114",
+  "patch": "7.3",
+  "reviewedAt": "2026-09-29",
+  "base": "v113 + v113.1",
+  "scope": "召喚峽谷142位英雄／203份位置攻略；官方7.3差異與附錄、技能名稱／已確認機制修正、配置引用和特殊加點驗證",
+  "limitations": [
+    "不等同所有技能每級數值均有官方完整面板。",
+    "Tier、配裝與對局仍為編輯建議；未取得台服勝率或遊戲內實測。",
+    "ARAM及符文大亂鬥不在本輪範圍。"
+  ],
+  "sources": [
+    {
+      "name": "亞歷斯塔",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/alistar/",
+      "abilities": 5
+    },
+    {
+      "name": "伊澤瑞爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ezreal/",
+      "abilities": 5
+    },
+    {
+      "name": "伊瑞莉雅",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/irelia/",
+      "abilities": 5
+    },
+    {
+      "name": "伊芙琳",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/evelynn/",
+      "abilities": 5
+    },
+    {
+      "name": "克黎思妲",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kalista/",
+      "abilities": 5
+    },
+    {
+      "name": "凱爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kayle/",
+      "abilities": 5
+    },
+    {
+      "name": "凱特琳",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/caitlyn/",
+      "abilities": 5
+    },
+    {
+      "name": "凱能",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kennen/",
+      "abilities": 5
+    },
+    {
+      "name": "凱莎",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kaisa/",
+      "abilities": 5
+    },
+    {
+      "name": "剎雅",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/xayah/",
+      "abilities": 5
+    },
+    {
+      "name": "加里歐",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/galio/",
+      "abilities": 5
+    },
+    {
+      "name": "努努和威朗普",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/nunu-and-willump/",
+      "abilities": 5
+    },
+    {
+      "name": "劫",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/zed/",
+      "abilities": 5
+    },
+    {
+      "name": "卡力斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/khazix/",
+      "abilities": 5
+    },
+    {
+      "name": "卡桑帝",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ksante/",
+      "abilities": 5
+    },
+    {
+      "name": "卡特蓮娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/katarina/",
+      "abilities": 5
+    },
+    {
+      "name": "卡瑪",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/karma/",
+      "abilities": 5
+    },
+    {
+      "name": "卡薩丁",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kassadin/",
+      "abilities": 5
+    },
+    {
+      "name": "卡蜜兒",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/camille/",
+      "abilities": 5
+    },
+    {
+      "name": "厄薩斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/aatrox/",
+      "abilities": 5
+    },
+    {
+      "name": "古拉格斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/gragas/",
+      "abilities": 5
+    },
+    {
+      "name": "史加納",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/skarner/",
+      "abilities": 5
+    },
+    {
+      "name": "史矛德",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/smolder/",
+      "abilities": 5
+    },
+    {
+      "name": "吉茵珂絲",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/jinx/",
+      "abilities": 5
+    },
+    {
+      "name": "吶兒",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/gnar/",
+      "abilities": 5
+    },
+    {
+      "name": "嘉文四世",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/jarvan-iv/",
+      "abilities": 5
+    },
+    {
+      "name": "圖奇",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/twitch/",
+      "abilities": 5
+    },
+    {
+      "name": "埃可尚",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/akshan/",
+      "abilities": 5
+    },
+    {
+      "name": "塔莉雅",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/taliyah/",
+      "abilities": 5
+    },
+    {
+      "name": "塔隆",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/talon/",
+      "abilities": 5
+    },
+    {
+      "name": "夜曲",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/nocturne/",
+      "abilities": 5
+    },
+    {
+      "name": "奈德麗",
+      "url": "https://wildrift.leagueoflegends.com/en-gb/champions/nidalee/",
+      "abilities": 5
+    },
+    {
+      "name": "奧莉安娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/orianna/",
+      "abilities": 5
+    },
+    {
+      "name": "好運姐",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/miss-fortune/",
+      "abilities": 5
+    },
+    {
+      "name": "姍娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/senna/",
+      "abilities": 5
+    },
+    {
+      "name": "威寇茲",
+      "url": "https://wildrift.leagueoflegends.com/en-us/champions/velkoz/",
+      "abilities": 5
+    },
+    {
+      "name": "娜米",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/nami/",
+      "abilities": 5
+    },
+    {
+      "name": "婕莉",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/zeri/",
+      "abilities": 5
+    },
+    {
+      "name": "安妮",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/annie/",
+      "abilities": 5
+    },
+    {
+      "name": "安比薩",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ambessa/",
+      "abilities": 5
+    },
+    {
+      "name": "寇格魔",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kogmaw/",
+      "abilities": 5
+    },
+    {
+      "name": "尤娜拉",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/yunara/",
+      "abilities": 5
+    },
+    {
+      "name": "崔絲塔娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/tristana/",
+      "abilities": 5
+    },
+    {
+      "name": "巴德",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/bard/",
+      "abilities": 5
+    },
+    {
+      "name": "布蘭德",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/brand/",
+      "abilities": 5
+    },
+    {
+      "name": "布郎姆",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/braum/",
+      "abilities": 5
+    },
+    {
+      "name": "布里茨",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/blitzcrank/",
+      "abilities": 5
+    },
+    {
+      "name": "希格斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ziggs/",
+      "abilities": 5
+    },
+    {
+      "name": "希瓦娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/shyvana/",
+      "abilities": 5
+    },
+    {
+      "name": "希維爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/sivir/",
+      "abilities": 5
+    },
+    {
+      "name": "庫奇",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/corki/",
+      "abilities": 5
+    },
+    {
+      "name": "弗力貝爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/volibear/",
+      "abilities": 5
+    },
+    {
+      "name": "弗拉迪米爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/vladimir/",
+      "abilities": 5
+    },
+    {
+      "name": "悟空",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/wukong/",
+      "abilities": 5
+    },
+    {
+      "name": "悠咪",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/yuumi/",
+      "abilities": 5
+    },
+    {
+      "name": "慨影",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kayn/",
+      "abilities": 5
+    },
+    {
+      "name": "慎",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/shen/",
+      "abilities": 5
+    },
+    {
+      "name": "拉克絲",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/lux/",
+      "abilities": 5
+    },
+    {
+      "name": "拉姆斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/rammus/",
+      "abilities": 5
+    },
+    {
+      "name": "提摩",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/teemo/",
+      "abilities": 5
+    },
+    {
+      "name": "斯溫",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/swain/",
+      "abilities": 5
+    },
+    {
+      "name": "易大師",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/master-yi/",
+      "abilities": 5
+    },
+    {
+      "name": "星朵拉",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/syndra/",
+      "abilities": 5
+    },
+    {
+      "name": "李星",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/lee-sin/",
+      "abilities": 5
+    },
+    {
+      "name": "杰西",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/jayce/",
+      "abilities": 5
+    },
+    {
+      "name": "枷蘿",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/zyra/",
+      "abilities": 5
+    },
+    {
+      "name": "柔依",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/zoe/",
+      "abilities": 5
+    },
+    {
+      "name": "梅爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/mel/",
+      "abilities": 5
+    },
+    {
+      "name": "極靈",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/zilean/",
+      "abilities": 5
+    },
+    {
+      "name": "歐拉夫",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/olaf/",
+      "abilities": 5
+    },
+    {
+      "name": "歐羅拉",
+      "url": "https://wildrift.leagueoflegends.com/en-gb/champions/aurora/",
+      "abilities": 5
+    },
+    {
+      "name": "汎",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/vayne/",
+      "abilities": 5
+    },
+    {
+      "name": "沃維克",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/warwick/",
+      "abilities": 5
+    },
+    {
+      "name": "法洛士",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/varus/",
+      "abilities": 5
+    },
+    {
+      "name": "波比",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/poppy/",
+      "abilities": 5
+    },
+    {
+      "name": "泰達米爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/tryndamere/",
+      "abilities": 5
+    },
+    {
+      "name": "派克",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/pyke/",
+      "abilities": 5
+    },
+    {
+      "name": "淣菈",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/nilah/",
+      "abilities": 5
+    },
+    {
+      "name": "漢默丁格",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/heimerdinger/",
+      "abilities": 5
+    },
+    {
+      "name": "潘森",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/pantheon/",
+      "abilities": 5
+    },
+    {
+      "name": "烏爾加特",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/urgot/",
+      "abilities": 5
+    },
+    {
+      "name": "煞蜜拉",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/samira/",
+      "abilities": 5
+    },
+    {
+      "name": "燼",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/jhin/",
+      "abilities": 5
+    },
+    {
+      "name": "犽凝",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/yone/",
+      "abilities": 5
+    },
+    {
+      "name": "犽宿",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/yasuo/",
+      "abilities": 5
+    },
+    {
+      "name": "珍娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/janna/",
+      "abilities": 5
+    },
+    {
+      "name": "瑟菈紛",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/seraphine/",
+      "abilities": 5
+    },
+    {
+      "name": "瑟雷西",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/thresh/",
+      "abilities": 5
+    },
+    {
+      "name": "科加斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/chogath/",
+      "abilities": 5
+    },
+    {
+      "name": "雷茲",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ryze/",
+      "abilities": 5
+    },
+    {
+      "name": "米里歐",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/milio/",
+      "abilities": 5
+    },
+    {
+      "name": "納帝魯斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/nautilus/",
+      "abilities": 5
+    },
+    {
+      "name": "納瑟斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/nasus/",
+      "abilities": 5
+    },
+    {
+      "name": "索娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/sona/",
+      "abilities": 5
+    },
+    {
+      "name": "索拉卡",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/soraka/",
+      "abilities": 5
+    },
+    {
+      "name": "維克特",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/viktor/",
+      "abilities": 5
+    },
+    {
+      "name": "維爾戈",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/viego/",
+      "abilities": 5
+    },
+    {
+      "name": "維迦",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/veigar/",
+      "abilities": 5
+    },
+    {
+      "name": "翱銳龍獸",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/aurelion-sol/",
+      "abilities": 5
+    },
+    {
+      "name": "艾克",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ekko/",
+      "abilities": 5
+    },
+    {
+      "name": "艾希",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ashe/",
+      "abilities": 5
+    },
+    {
+      "name": "茂凱",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/maokai/",
+      "abilities": 5
+    },
+    {
+      "name": "莉莉亞",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/lillia/",
+      "abilities": 5
+    },
+    {
+      "name": "菲歐拉",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/fiora/",
+      "abilities": 5
+    },
+    {
+      "name": "菲艾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/vi/",
+      "abilities": 5
+    },
+    {
+      "name": "葛雷夫",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/graves/",
+      "abilities": 5
+    },
+    {
+      "name": "蒙多醫生",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/dr-mundo/",
+      "abilities": 5
+    },
+    {
+      "name": "蓋倫",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/garen/",
+      "abilities": 5
+    },
+    {
+      "name": "薇可絲",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/vex/",
+      "abilities": 5
+    },
+    {
+      "name": "藍寶",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/rumble/",
+      "abilities": 5
+    },
+    {
+      "name": "諾拉",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/norra/",
+      "abilities": 5
+    },
+    {
+      "name": "費德提克",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/fiddlesticks/",
+      "abilities": 5
+    },
+    {
+      "name": "賈克斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/jax/",
+      "abilities": 5
+    },
+    {
+      "name": "賽恩",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/sion/",
+      "abilities": 5
+    },
+    {
+      "name": "賽特",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/sett/",
+      "abilities": 5
+    },
+    {
+      "name": "赫克林",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/hecarim/",
+      "abilities": 5
+    },
+    {
+      "name": "赫威",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/hwei/",
+      "abilities": 5
+    },
+    {
+      "name": "趙信",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/xin-zhao/",
+      "abilities": 5
+    },
+    {
+      "name": "路西恩",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/lucian/",
+      "abilities": 5
+    },
+    {
+      "name": "辛吉德",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/singed/",
+      "abilities": 5
+    },
+    {
+      "name": "逆命",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/twisted-fate/",
+      "abilities": 5
+    },
+    {
+      "name": "達瑞文",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/draven/",
+      "abilities": 5
+    },
+    {
+      "name": "達瑞斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/darius/",
+      "abilities": 5
+    },
+    {
+      "name": "鄂爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ornn/",
+      "abilities": 5
+    },
+    {
+      "name": "銳兒",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/rell/",
+      "abilities": 5
+    },
+    {
+      "name": "銳空",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/rakan/",
+      "abilities": 5
+    },
+    {
+      "name": "鏡爪",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/kindred/",
+      "abilities": 5
+    },
+    {
+      "name": "關",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/gwen/",
+      "abilities": 5
+    },
+    {
+      "name": "阿卡莉",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/akali/",
+      "abilities": 5
+    },
+    {
+      "name": "阿姆姆",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/amumu/",
+      "abilities": 5
+    },
+    {
+      "name": "阿璃",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/ahri/",
+      "abilities": 5
+    },
+    {
+      "name": "雷尼克頓",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/renekton/",
+      "abilities": 5
+    },
+    {
+      "name": "雷歐娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/leona/",
+      "abilities": 5
+    },
+    {
+      "name": "雷玟",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/riven/",
+      "abilities": 5
+    },
+    {
+      "name": "雷葛爾",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/rengar/",
+      "abilities": 5
+    },
+    {
+      "name": "露璐",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/lulu/",
+      "abilities": 5
+    },
+    {
+      "name": "飛斯",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/fizz/",
+      "abilities": 5
+    },
+    {
+      "name": "魔甘娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/morgana/",
+      "abilities": 5
+    },
+    {
+      "name": "魔鬥凱薩",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/mordekaiser/",
+      "abilities": 5
+    },
+    {
+      "name": "麗珊卓",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/lissandra/",
+      "abilities": 5
+    },
+    {
+      "name": "墨菲特",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/malphite/",
+      "abilities": 5
+    },
+    {
+      "name": "黛安娜",
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/champions/diana/",
+      "abilities": 5
+    }
+  ],
+  "profiles": [
+    {
+      "id": "smolder",
+      "baseId": "smolder",
+      "name": "史矛德",
+      "roleId": "duo",
+      "tier": "S+",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/smolder/",
+      "changedSkills": []
+    },
+    {
+      "id": "miss-fortune",
+      "baseId": "miss-fortune",
+      "name": "好運姐",
+      "roleId": "duo",
+      "tier": "S",
+      "officialGroups": 5,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/miss-fortune/",
+      "changedSkills": []
+    },
+    {
+      "id": "ezreal",
+      "baseId": "ezreal",
+      "name": "伊澤瑞爾",
+      "roleId": "duo",
+      "tier": "S+",
+      "officialGroups": 3,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ezreal/",
+      "changedSkills": []
+    },
+    {
+      "id": "varus",
+      "baseId": "varus",
+      "name": "法洛士",
+      "roleId": "duo",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/varus/",
+      "changedSkills": []
+    },
+    {
+      "id": "zeri",
+      "baseId": "zeri",
+      "name": "婕莉",
+      "roleId": "duo",
+      "tier": "S",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/zeri/",
+      "changedSkills": []
+    },
+    {
+      "id": "lucian",
+      "baseId": "lucian",
+      "name": "路西恩",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/lucian/",
+      "changedSkills": []
+    },
+    {
+      "id": "xayah",
+      "baseId": "xayah",
+      "name": "剎雅",
+      "roleId": "duo",
+      "tier": "S",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/xayah/",
+      "changedSkills": []
+    },
+    {
+      "id": "jhin",
+      "baseId": "jhin",
+      "name": "燼",
+      "roleId": "duo",
+      "tier": "S",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jhin/",
+      "changedSkills": []
+    },
+    {
+      "id": "kogmaw",
+      "baseId": "kogmaw",
+      "name": "寇格魔",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kogmaw/",
+      "changedSkills": []
+    },
+    {
+      "id": "vayne",
+      "baseId": "vayne",
+      "name": "汎",
+      "roleId": "duo",
+      "tier": "S",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/vayne/",
+      "changedSkills": []
+    },
+    {
+      "id": "corki",
+      "baseId": "corki",
+      "name": "庫奇",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/corki/",
+      "changedSkills": []
+    },
+    {
+      "id": "kalista",
+      "baseId": "kalista",
+      "name": "克黎思妲",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kalista/",
+      "changedSkills": []
+    },
+    {
+      "id": "sivir",
+      "baseId": "sivir",
+      "name": "希維爾",
+      "roleId": "duo",
+      "tier": "B",
+      "officialGroups": 5,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/sivir/",
+      "changedSkills": []
+    },
+    {
+      "id": "kaisa",
+      "baseId": "kaisa",
+      "name": "凱莎",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 5,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kaisa/",
+      "changedSkills": []
+    },
+    {
+      "id": "draven",
+      "baseId": "draven",
+      "name": "達瑞文",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 5,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/draven/",
+      "changedSkills": []
+    },
+    {
+      "id": "ashe",
+      "baseId": "ashe",
+      "name": "艾希",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ashe/",
+      "changedSkills": []
+    },
+    {
+      "id": "jinx",
+      "baseId": "jinx",
+      "name": "吉茵珂絲",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jinx/",
+      "changedSkills": []
+    },
+    {
+      "id": "caitlyn",
+      "baseId": "caitlyn",
+      "name": "凱特琳",
+      "roleId": "duo",
+      "tier": "B",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/caitlyn/",
+      "changedSkills": []
+    },
+    {
+      "id": "twitch",
+      "baseId": "twitch",
+      "name": "圖奇",
+      "roleId": "duo",
+      "tier": "B",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/twitch/",
+      "changedSkills": []
+    },
+    {
+      "id": "tristana",
+      "baseId": "tristana",
+      "name": "崔絲塔娜",
+      "roleId": "duo",
+      "tier": "B",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/tristana/",
+      "changedSkills": []
+    },
+    {
+      "id": "samira",
+      "baseId": "samira",
+      "name": "煞蜜拉",
+      "roleId": "duo",
+      "tier": "A",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/samira/",
+      "changedSkills": []
+    },
+    {
+      "id": "yunara",
+      "baseId": "yunara",
+      "name": "尤娜拉",
+      "roleId": "duo",
+      "tier": "S+",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/yunara/",
+      "changedSkills": []
+    },
+    {
+      "id": "senna",
+      "baseId": "senna",
+      "name": "姍娜",
+      "roleId": "duo",
+      "tier": "B",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/senna/",
+      "changedSkills": []
+    },
+    {
+      "id": "aatrox-baron",
+      "baseId": "aatrox",
+      "name": "厄薩斯",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/aatrox/",
+      "changedSkills": []
+    },
+    {
+      "id": "akali-baron",
+      "baseId": "akali",
+      "name": "阿卡莉",
+      "roleId": "baron",
+      "tier": "C",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/akali/",
+      "changedSkills": [
+        "Q"
+      ]
+    },
+    {
+      "id": "ambessa-baron",
+      "baseId": "ambessa",
+      "name": "安比薩",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ambessa/",
+      "changedSkills": [
+        "W"
+      ]
+    },
+    {
+      "id": "aurora-baron",
+      "baseId": "aurora",
+      "name": "歐羅拉",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/en-gb/champions/aurora/",
+      "changedSkills": [
+        "W",
+        "R"
+      ]
+    },
+    {
+      "id": "camille-baron",
+      "baseId": "camille",
+      "name": "卡蜜兒",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/camille/",
+      "changedSkills": []
+    },
+    {
+      "id": "darius-baron",
+      "baseId": "darius",
+      "name": "達瑞斯",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/darius/",
+      "changedSkills": []
+    },
+    {
+      "id": "dr-mundo-baron",
+      "baseId": "dr-mundo",
+      "name": "蒙多醫生",
+      "roleId": "baron",
+      "tier": "C",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/dr-mundo/",
+      "changedSkills": []
+    },
+    {
+      "id": "fiora-baron",
+      "baseId": "fiora",
+      "name": "菲歐拉",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/fiora/",
+      "changedSkills": []
+    },
+    {
+      "id": "garen-baron",
+      "baseId": "garen",
+      "name": "蓋倫",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/garen/",
+      "changedSkills": [
+        "W",
+        "E"
+      ]
+    },
+    {
+      "id": "gnar-baron",
+      "baseId": "gnar",
+      "name": "吶兒",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/gnar/",
+      "changedSkills": []
+    },
+    {
+      "id": "gragas-baron",
+      "baseId": "gragas",
+      "name": "古拉格斯",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/gragas/",
+      "changedSkills": []
+    },
+    {
+      "id": "gwen-baron",
+      "baseId": "gwen",
+      "name": "關",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/gwen/",
+      "changedSkills": []
+    },
+    {
+      "id": "irelia-baron",
+      "baseId": "irelia",
+      "name": "伊瑞莉雅",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/irelia/",
+      "changedSkills": []
+    },
+    {
+      "id": "jarvan-iv-baron",
+      "baseId": "jarvan-iv",
+      "name": "嘉文四世",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jarvan-iv/",
+      "changedSkills": []
+    },
+    {
+      "id": "jax-baron",
+      "baseId": "jax",
+      "name": "賈克斯",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jax/",
+      "changedSkills": []
+    },
+    {
+      "id": "jayce-baron",
+      "baseId": "jayce",
+      "name": "杰西",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jayce/",
+      "changedSkills": []
+    },
+    {
+      "id": "ksante-baron",
+      "baseId": "ksante",
+      "name": "卡桑帝",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ksante/",
+      "changedSkills": [
+        "W",
+        "R"
+      ]
+    },
+    {
+      "id": "kayle-baron",
+      "baseId": "kayle",
+      "name": "凱爾",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kayle/",
+      "changedSkills": []
+    },
+    {
+      "id": "kennen-baron",
+      "baseId": "kennen",
+      "name": "凱能",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kennen/",
+      "changedSkills": []
+    },
+    {
+      "id": "malphite-baron",
+      "baseId": "malphite",
+      "name": "墨菲特",
+      "roleId": "baron",
+      "tier": "S+",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/malphite/",
+      "changedSkills": []
+    },
+    {
+      "id": "maokai-baron",
+      "baseId": "maokai",
+      "name": "茂凱",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/maokai/",
+      "changedSkills": []
+    },
+    {
+      "id": "mordekaiser-baron",
+      "baseId": "mordekaiser",
+      "name": "魔鬥凱薩",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/mordekaiser/",
+      "changedSkills": [
+        "R"
+      ]
+    },
+    {
+      "id": "nasus-baron",
+      "baseId": "nasus",
+      "name": "納瑟斯",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nasus/",
+      "changedSkills": []
+    },
+    {
+      "id": "nautilus-baron",
+      "baseId": "nautilus",
+      "name": "納帝魯斯",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nautilus/",
+      "changedSkills": []
+    },
+    {
+      "id": "nidalee-baron",
+      "baseId": "nidalee",
+      "name": "奈德麗",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/en-gb/champions/nidalee/",
+      "changedSkills": []
+    },
+    {
+      "id": "olaf-baron",
+      "baseId": "olaf",
+      "name": "歐拉夫",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 3,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/olaf/",
+      "changedSkills": []
+    },
+    {
+      "id": "ornn-baron",
+      "baseId": "ornn",
+      "name": "鄂爾",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ornn/",
+      "changedSkills": []
+    },
+    {
+      "id": "pantheon-baron",
+      "baseId": "pantheon",
+      "name": "潘森",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/pantheon/",
+      "changedSkills": []
+    },
+    {
+      "id": "poppy-baron",
+      "baseId": "poppy",
+      "name": "波比",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/poppy/",
+      "changedSkills": []
+    },
+    {
+      "id": "renekton-baron",
+      "baseId": "renekton",
+      "name": "雷尼克頓",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/renekton/",
+      "changedSkills": []
+    },
+    {
+      "id": "riven-baron",
+      "baseId": "riven",
+      "name": "雷玟",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/riven/",
+      "changedSkills": []
+    },
+    {
+      "id": "rumble-baron",
+      "baseId": "rumble",
+      "name": "藍寶",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/rumble/",
+      "changedSkills": []
+    },
+    {
+      "id": "ryze-baron",
+      "baseId": "ryze",
+      "name": "雷茲",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ryze/",
+      "changedSkills": [
+        "Q",
+        "W"
+      ]
+    },
+    {
+      "id": "sett-baron",
+      "baseId": "sett",
+      "name": "賽特",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/sett/",
+      "changedSkills": []
+    },
+    {
+      "id": "shen-baron",
+      "baseId": "shen",
+      "name": "慎",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/shen/",
+      "changedSkills": []
+    },
+    {
+      "id": "singed-baron",
+      "baseId": "singed",
+      "name": "辛吉德",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/singed/",
+      "changedSkills": []
+    },
+    {
+      "id": "sion-baron",
+      "baseId": "sion",
+      "name": "賽恩",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/sion/",
+      "changedSkills": []
+    },
+    {
+      "id": "skarner-baron",
+      "baseId": "skarner",
+      "name": "史加納",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/skarner/",
+      "changedSkills": [
+        "E"
+      ]
+    },
+    {
+      "id": "swain-baron",
+      "baseId": "swain",
+      "name": "斯溫",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/swain/",
+      "changedSkills": []
+    },
+    {
+      "id": "teemo-baron",
+      "baseId": "teemo",
+      "name": "提摩",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/teemo/",
+      "changedSkills": []
+    },
+    {
+      "id": "tryndamere-baron",
+      "baseId": "tryndamere",
+      "name": "泰達米爾",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/tryndamere/",
+      "changedSkills": []
+    },
+    {
+      "id": "urgot-baron",
+      "baseId": "urgot",
+      "name": "烏爾加特",
+      "roleId": "baron",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/urgot/",
+      "changedSkills": []
+    },
+    {
+      "id": "viego-baron",
+      "baseId": "viego",
+      "name": "維爾戈",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/viego/",
+      "changedSkills": []
+    },
+    {
+      "id": "vladimir-baron",
+      "baseId": "vladimir",
+      "name": "弗拉迪米爾",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/vladimir/",
+      "changedSkills": []
+    },
+    {
+      "id": "volibear-baron",
+      "baseId": "volibear",
+      "name": "弗力貝爾",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/volibear/",
+      "changedSkills": []
+    },
+    {
+      "id": "warwick-baron",
+      "baseId": "warwick",
+      "name": "沃維克",
+      "roleId": "baron",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/warwick/",
+      "changedSkills": []
+    },
+    {
+      "id": "wukong-baron",
+      "baseId": "wukong",
+      "name": "悟空",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/wukong/",
+      "changedSkills": [
+        "P",
+        "Q",
+        "W"
+      ]
+    },
+    {
+      "id": "yasuo-baron",
+      "baseId": "yasuo",
+      "name": "犽宿",
+      "roleId": "baron",
+      "tier": "C",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/yasuo/",
+      "changedSkills": [
+        "R"
+      ]
+    },
+    {
+      "id": "yone-baron",
+      "baseId": "yone",
+      "name": "犽凝",
+      "roleId": "baron",
+      "tier": "S+",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/yone/",
+      "changedSkills": []
+    },
+    {
+      "id": "aatrox-jungle",
+      "baseId": "aatrox",
+      "name": "厄薩斯",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/aatrox/",
+      "changedSkills": []
+    },
+    {
+      "id": "ambessa-jungle",
+      "baseId": "ambessa",
+      "name": "安比薩",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ambessa/",
+      "changedSkills": [
+        "W"
+      ]
+    },
+    {
+      "id": "amumu-jungle",
+      "baseId": "amumu",
+      "name": "阿姆姆",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/amumu/",
+      "changedSkills": []
+    },
+    {
+      "id": "camille-jungle",
+      "baseId": "camille",
+      "name": "卡蜜兒",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/camille/",
+      "changedSkills": []
+    },
+    {
+      "id": "darius-jungle",
+      "baseId": "darius",
+      "name": "達瑞斯",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/darius/",
+      "changedSkills": []
+    },
+    {
+      "id": "diana-jungle",
+      "baseId": "diana",
+      "name": "黛安娜",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/diana/",
+      "changedSkills": []
+    },
+    {
+      "id": "dr-mundo-jungle",
+      "baseId": "dr-mundo",
+      "name": "蒙多醫生",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/dr-mundo/",
+      "changedSkills": []
+    },
+    {
+      "id": "ekko-jungle",
+      "baseId": "ekko",
+      "name": "艾克",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ekko/",
+      "changedSkills": []
+    },
+    {
+      "id": "evelynn-jungle",
+      "baseId": "evelynn",
+      "name": "伊芙琳",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/evelynn/",
+      "changedSkills": []
+    },
+    {
+      "id": "fiddlesticks-jungle",
+      "baseId": "fiddlesticks",
+      "name": "費德提克",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/fiddlesticks/",
+      "changedSkills": []
+    },
+    {
+      "id": "fizz-jungle",
+      "baseId": "fizz",
+      "name": "飛斯",
+      "roleId": "jungle",
+      "tier": "C",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/fizz/",
+      "changedSkills": []
+    },
+    {
+      "id": "gragas-jungle",
+      "baseId": "gragas",
+      "name": "古拉格斯",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/gragas/",
+      "changedSkills": []
+    },
+    {
+      "id": "graves-jungle",
+      "baseId": "graves",
+      "name": "葛雷夫",
+      "roleId": "jungle",
+      "tier": "C",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/graves/",
+      "changedSkills": []
+    },
+    {
+      "id": "gwen-jungle",
+      "baseId": "gwen",
+      "name": "關",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/gwen/",
+      "changedSkills": []
+    },
+    {
+      "id": "hecarim-jungle",
+      "baseId": "hecarim",
+      "name": "赫克林",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/hecarim/",
+      "changedSkills": []
+    },
+    {
+      "id": "jarvan-iv-jungle",
+      "baseId": "jarvan-iv",
+      "name": "嘉文四世",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jarvan-iv/",
+      "changedSkills": []
+    },
+    {
+      "id": "jax-jungle",
+      "baseId": "jax",
+      "name": "賈克斯",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jax/",
+      "changedSkills": []
+    },
+    {
+      "id": "kayn-jungle",
+      "baseId": "kayn",
+      "name": "慨影",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kayn/",
+      "changedSkills": []
+    },
+    {
+      "id": "khazix-jungle",
+      "baseId": "khazix",
+      "name": "卡力斯",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/khazix/",
+      "changedSkills": []
+    },
+    {
+      "id": "kindred-jungle",
+      "baseId": "kindred",
+      "name": "鏡爪",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kindred/",
+      "changedSkills": []
+    },
+    {
+      "id": "lee-sin-jungle",
+      "baseId": "lee-sin",
+      "name": "李星",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/lee-sin/",
+      "changedSkills": []
+    },
+    {
+      "id": "lillia-jungle",
+      "baseId": "lillia",
+      "name": "莉莉亞",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/lillia/",
+      "changedSkills": []
+    },
+    {
+      "id": "maokai-jungle",
+      "baseId": "maokai",
+      "name": "茂凱",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/maokai/",
+      "changedSkills": []
+    },
+    {
+      "id": "morgana-jungle",
+      "baseId": "morgana",
+      "name": "魔甘娜",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/morgana/",
+      "changedSkills": []
+    },
+    {
+      "id": "nidalee-jungle",
+      "baseId": "nidalee",
+      "name": "奈德麗",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/en-gb/champions/nidalee/",
+      "changedSkills": []
+    },
+    {
+      "id": "nilah-jungle",
+      "baseId": "nilah",
+      "name": "淣菈",
+      "roleId": "jungle",
+      "tier": "C",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nilah/",
+      "changedSkills": [
+        "P",
+        "Q",
+        "E"
+      ]
+    },
+    {
+      "id": "nocturne-jungle",
+      "baseId": "nocturne",
+      "name": "夜曲",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nocturne/",
+      "changedSkills": []
+    },
+    {
+      "id": "nunu-and-willump-jungle",
+      "baseId": "nunu-and-willump",
+      "name": "努努和威朗普",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nunu-and-willump/",
+      "changedSkills": []
+    },
+    {
+      "id": "olaf-jungle",
+      "baseId": "olaf",
+      "name": "歐拉夫",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 3,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/olaf/",
+      "changedSkills": []
+    },
+    {
+      "id": "pantheon-jungle",
+      "baseId": "pantheon",
+      "name": "潘森",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/pantheon/",
+      "changedSkills": []
+    },
+    {
+      "id": "poppy-jungle",
+      "baseId": "poppy",
+      "name": "波比",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/poppy/",
+      "changedSkills": []
+    },
+    {
+      "id": "rammus-jungle",
+      "baseId": "rammus",
+      "name": "拉姆斯",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/rammus/",
+      "changedSkills": []
+    },
+    {
+      "id": "rengar-jungle",
+      "baseId": "rengar",
+      "name": "雷葛爾",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/rengar/",
+      "changedSkills": []
+    },
+    {
+      "id": "riven-jungle",
+      "baseId": "riven",
+      "name": "雷玟",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/riven/",
+      "changedSkills": []
+    },
+    {
+      "id": "shyvana-jungle",
+      "baseId": "shyvana",
+      "name": "希瓦娜",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/shyvana/",
+      "changedSkills": []
+    },
+    {
+      "id": "skarner-jungle",
+      "baseId": "skarner",
+      "name": "史加納",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/skarner/",
+      "changedSkills": [
+        "E"
+      ]
+    },
+    {
+      "id": "taliyah-jungle",
+      "baseId": "taliyah",
+      "name": "塔莉雅",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/taliyah/",
+      "changedSkills": []
+    },
+    {
+      "id": "talon-jungle",
+      "baseId": "talon",
+      "name": "塔隆",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/talon/",
+      "changedSkills": [
+        "Q"
+      ]
+    },
+    {
+      "id": "tryndamere-jungle",
+      "baseId": "tryndamere",
+      "name": "泰達米爾",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/tryndamere/",
+      "changedSkills": []
+    },
+    {
+      "id": "vi-jungle",
+      "baseId": "vi",
+      "name": "菲艾",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/vi/",
+      "changedSkills": []
+    },
+    {
+      "id": "viego-jungle",
+      "baseId": "viego",
+      "name": "維爾戈",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/viego/",
+      "changedSkills": []
+    },
+    {
+      "id": "volibear-jungle",
+      "baseId": "volibear",
+      "name": "弗力貝爾",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/volibear/",
+      "changedSkills": []
+    },
+    {
+      "id": "warwick-jungle",
+      "baseId": "warwick",
+      "name": "沃維克",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/warwick/",
+      "changedSkills": []
+    },
+    {
+      "id": "wukong-jungle",
+      "baseId": "wukong",
+      "name": "悟空",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/wukong/",
+      "changedSkills": [
+        "P",
+        "Q",
+        "W"
+      ]
+    },
+    {
+      "id": "xin-zhao-jungle",
+      "baseId": "xin-zhao",
+      "name": "趙信",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/xin-zhao/",
+      "changedSkills": []
+    },
+    {
+      "id": "yone-jungle",
+      "baseId": "yone",
+      "name": "犽凝",
+      "roleId": "jungle",
+      "tier": "A",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/yone/",
+      "changedSkills": []
+    },
+    {
+      "id": "zed-jungle",
+      "baseId": "zed",
+      "name": "劫",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/zed/",
+      "changedSkills": []
+    },
+    {
+      "id": "ahri-mid",
+      "baseId": "ahri",
+      "name": "阿璃",
+      "roleId": "mid",
+      "tier": "S+",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ahri/",
+      "changedSkills": []
+    },
+    {
+      "id": "akali-mid",
+      "baseId": "akali",
+      "name": "阿卡莉",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/akali/",
+      "changedSkills": [
+        "Q"
+      ]
+    },
+    {
+      "id": "akshan-mid",
+      "baseId": "akshan",
+      "name": "埃可尚",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 5,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/akshan/",
+      "changedSkills": [
+        "P"
+      ]
+    },
+    {
+      "id": "annie-mid",
+      "baseId": "annie",
+      "name": "安妮",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/annie/",
+      "changedSkills": []
+    },
+    {
+      "id": "aurelion-sol-mid",
+      "baseId": "aurelion-sol",
+      "name": "翱銳龍獸",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/aurelion-sol/",
+      "changedSkills": [
+        "Q",
+        "W",
+        "E",
+        "R"
+      ]
+    },
+    {
+      "id": "aurora-mid",
+      "baseId": "aurora",
+      "name": "歐羅拉",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/en-gb/champions/aurora/",
+      "changedSkills": [
+        "W",
+        "R"
+      ]
+    },
+    {
+      "id": "brand-mid",
+      "baseId": "brand",
+      "name": "布蘭德",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/brand/",
+      "changedSkills": []
+    },
+    {
+      "id": "diana-mid",
+      "baseId": "diana",
+      "name": "黛安娜",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/diana/",
+      "changedSkills": []
+    },
+    {
+      "id": "ekko-mid",
+      "baseId": "ekko",
+      "name": "艾克",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ekko/",
+      "changedSkills": []
+    },
+    {
+      "id": "fizz-mid",
+      "baseId": "fizz",
+      "name": "飛斯",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/fizz/",
+      "changedSkills": []
+    },
+    {
+      "id": "galio-mid",
+      "baseId": "galio",
+      "name": "加里歐",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/galio/",
+      "changedSkills": [
+        "R"
+      ]
+    },
+    {
+      "id": "heimerdinger-mid",
+      "baseId": "heimerdinger",
+      "name": "漢默丁格",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/heimerdinger/",
+      "changedSkills": [
+        "Q"
+      ]
+    },
+    {
+      "id": "irelia-mid",
+      "baseId": "irelia",
+      "name": "伊瑞莉雅",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/irelia/",
+      "changedSkills": []
+    },
+    {
+      "id": "jayce-mid",
+      "baseId": "jayce",
+      "name": "杰西",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/jayce/",
+      "changedSkills": []
+    },
+    {
+      "id": "kassadin-mid",
+      "baseId": "kassadin",
+      "name": "卡薩丁",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kassadin/",
+      "changedSkills": []
+    },
+    {
+      "id": "katarina-mid",
+      "baseId": "katarina",
+      "name": "卡特蓮娜",
+      "roleId": "mid",
+      "tier": "C",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/katarina/",
+      "changedSkills": []
+    },
+    {
+      "id": "kayle-mid",
+      "baseId": "kayle",
+      "name": "凱爾",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kayle/",
+      "changedSkills": []
+    },
+    {
+      "id": "kennen-mid",
+      "baseId": "kennen",
+      "name": "凱能",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/kennen/",
+      "changedSkills": []
+    },
+    {
+      "id": "lissandra-mid",
+      "baseId": "lissandra",
+      "name": "麗珊卓",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/lissandra/",
+      "changedSkills": []
+    },
+    {
+      "id": "lux-mid",
+      "baseId": "lux",
+      "name": "拉克絲",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/lux/",
+      "changedSkills": []
+    },
+    {
+      "id": "mel-mid",
+      "baseId": "mel",
+      "name": "梅爾",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/mel/",
+      "changedSkills": [
+        "E"
+      ]
+    },
+    {
+      "id": "morgana-mid",
+      "baseId": "morgana",
+      "name": "魔甘娜",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/morgana/",
+      "changedSkills": []
+    },
+    {
+      "id": "norra-mid",
+      "baseId": "norra",
+      "name": "諾拉",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/norra/",
+      "changedSkills": []
+    },
+    {
+      "id": "orianna-mid",
+      "baseId": "orianna",
+      "name": "奧莉安娜",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/orianna/",
+      "changedSkills": []
+    },
+    {
+      "id": "ryze-mid",
+      "baseId": "ryze",
+      "name": "雷茲",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ryze/",
+      "changedSkills": [
+        "Q",
+        "W"
+      ]
+    },
+    {
+      "id": "swain-mid",
+      "baseId": "swain",
+      "name": "斯溫",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/swain/",
+      "changedSkills": []
+    },
+    {
+      "id": "syndra-mid",
+      "baseId": "syndra",
+      "name": "星朵拉",
+      "roleId": "mid",
+      "tier": "S+",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/syndra/",
+      "changedSkills": []
+    },
+    {
+      "id": "taliyah-mid",
+      "baseId": "taliyah",
+      "name": "塔莉雅",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/taliyah/",
+      "changedSkills": []
+    },
+    {
+      "id": "teemo-mid",
+      "baseId": "teemo",
+      "name": "提摩",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/teemo/",
+      "changedSkills": []
+    },
+    {
+      "id": "twisted-fate-mid",
+      "baseId": "twisted-fate",
+      "name": "逆命",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/twisted-fate/",
+      "changedSkills": []
+    },
+    {
+      "id": "veigar-mid",
+      "baseId": "veigar",
+      "name": "維迦",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/veigar/",
+      "changedSkills": []
+    },
+    {
+      "id": "velkoz-mid",
+      "baseId": "velkoz",
+      "name": "威寇茲",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/en-us/champions/velkoz/",
+      "changedSkills": []
+    },
+    {
+      "id": "vex-mid",
+      "baseId": "vex",
+      "name": "薇可絲",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/vex/",
+      "changedSkills": []
+    },
+    {
+      "id": "viktor-mid",
+      "baseId": "viktor",
+      "name": "維克特",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/viktor/",
+      "changedSkills": []
+    },
+    {
+      "id": "vladimir-mid",
+      "baseId": "vladimir",
+      "name": "弗拉迪米爾",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/vladimir/",
+      "changedSkills": []
+    },
+    {
+      "id": "yasuo-mid",
+      "baseId": "yasuo",
+      "name": "犽宿",
+      "roleId": "mid",
+      "tier": "B",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/yasuo/",
+      "changedSkills": [
+        "R"
+      ]
+    },
+    {
+      "id": "yone-mid",
+      "baseId": "yone",
+      "name": "犽凝",
+      "roleId": "mid",
+      "tier": "S",
+      "officialGroups": 6,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/yone/",
+      "changedSkills": []
+    },
+    {
+      "id": "zed-mid",
+      "baseId": "zed",
+      "name": "劫",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 2,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/zed/",
+      "changedSkills": []
+    },
+    {
+      "id": "ziggs-mid",
+      "baseId": "ziggs",
+      "name": "希格斯",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ziggs/",
+      "changedSkills": []
+    },
+    {
+      "id": "zoe-mid",
+      "baseId": "zoe",
+      "name": "柔依",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/zoe/",
+      "changedSkills": []
+    },
+    {
+      "id": "zyra-mid",
+      "baseId": "zyra",
+      "name": "枷蘿",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/zyra/",
+      "changedSkills": []
+    },
+    {
+      "id": "alistar-support",
+      "baseId": "alistar",
+      "name": "亞歷斯塔",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/alistar/",
+      "changedSkills": []
+    },
+    {
+      "id": "bard-support",
+      "baseId": "bard",
+      "name": "巴德",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/bard/",
+      "changedSkills": []
+    },
+    {
+      "id": "blitzcrank-support",
+      "baseId": "blitzcrank",
+      "name": "布里茨",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/blitzcrank/",
+      "changedSkills": []
+    },
+    {
+      "id": "brand-support",
+      "baseId": "brand",
+      "name": "布蘭德",
+      "roleId": "support",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/brand/",
+      "changedSkills": []
+    },
+    {
+      "id": "braum-support",
+      "baseId": "braum",
+      "name": "布郎姆",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/braum/",
+      "changedSkills": []
+    },
+    {
+      "id": "galio-support",
+      "baseId": "galio",
+      "name": "加里歐",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/galio/",
+      "changedSkills": [
+        "R"
+      ]
+    },
+    {
+      "id": "janna-support",
+      "baseId": "janna",
+      "name": "珍娜",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/janna/",
+      "changedSkills": []
+    },
+    {
+      "id": "karma-support",
+      "baseId": "karma",
+      "name": "卡瑪",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/karma/",
+      "changedSkills": []
+    },
+    {
+      "id": "leona-support",
+      "baseId": "leona",
+      "name": "雷歐娜",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/leona/",
+      "changedSkills": []
+    },
+    {
+      "id": "lulu-support",
+      "baseId": "lulu",
+      "name": "露璐",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/lulu/",
+      "changedSkills": []
+    },
+    {
+      "id": "lux-support",
+      "baseId": "lux",
+      "name": "拉克絲",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/lux/",
+      "changedSkills": []
+    },
+    {
+      "id": "malphite-support",
+      "baseId": "malphite",
+      "name": "墨菲特",
+      "roleId": "support",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/malphite/",
+      "changedSkills": []
+    },
+    {
+      "id": "maokai-support",
+      "baseId": "maokai",
+      "name": "茂凱",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/maokai/",
+      "changedSkills": []
+    },
+    {
+      "id": "milio-support",
+      "baseId": "milio",
+      "name": "米里歐",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/milio/",
+      "changedSkills": []
+    },
+    {
+      "id": "morgana-support",
+      "baseId": "morgana",
+      "name": "魔甘娜",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/morgana/",
+      "changedSkills": []
+    },
+    {
+      "id": "nami-support",
+      "baseId": "nami",
+      "name": "娜米",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nami/",
+      "changedSkills": []
+    },
+    {
+      "id": "nautilus-support",
+      "baseId": "nautilus",
+      "name": "納帝魯斯",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nautilus/",
+      "changedSkills": []
+    },
+    {
+      "id": "pyke-support",
+      "baseId": "pyke",
+      "name": "派克",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/pyke/",
+      "changedSkills": []
+    },
+    {
+      "id": "rakan-support",
+      "baseId": "rakan",
+      "name": "銳空",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/rakan/",
+      "changedSkills": []
+    },
+    {
+      "id": "rell-support",
+      "baseId": "rell",
+      "name": "銳兒",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/rell/",
+      "changedSkills": [
+        "Q",
+        "E"
+      ]
+    },
+    {
+      "id": "senna-support",
+      "baseId": "senna",
+      "name": "姍娜",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/senna/",
+      "changedSkills": []
+    },
+    {
+      "id": "seraphine-support",
+      "baseId": "seraphine",
+      "name": "瑟菈紛",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/seraphine/",
+      "changedSkills": []
+    },
+    {
+      "id": "ornn-support",
+      "baseId": "ornn",
+      "name": "鄂爾",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/ornn/",
+      "changedSkills": []
+    },
+    {
+      "id": "sona-support",
+      "baseId": "sona",
+      "name": "索娜",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/sona/",
+      "changedSkills": []
+    },
+    {
+      "id": "soraka-support",
+      "baseId": "soraka",
+      "name": "索拉卡",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/soraka/",
+      "changedSkills": []
+    },
+    {
+      "id": "swain-support",
+      "baseId": "swain",
+      "name": "斯溫",
+      "roleId": "support",
+      "tier": "C",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/swain/",
+      "changedSkills": []
+    },
+    {
+      "id": "thresh-support",
+      "baseId": "thresh",
+      "name": "瑟雷西",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/thresh/",
+      "changedSkills": []
+    },
+    {
+      "id": "veigar-support",
+      "baseId": "veigar",
+      "name": "維迦",
+      "roleId": "support",
+      "tier": "C",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/veigar/",
+      "changedSkills": []
+    },
+    {
+      "id": "velkoz-support",
+      "baseId": "velkoz",
+      "name": "威寇茲",
+      "roleId": "support",
+      "tier": "B",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/en-us/champions/velkoz/",
+      "changedSkills": []
+    },
+    {
+      "id": "yuumi-support",
+      "baseId": "yuumi",
+      "name": "悠咪",
+      "roleId": "support",
+      "tier": "C",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/yuumi/",
+      "changedSkills": []
+    },
+    {
+      "id": "zilean-support",
+      "baseId": "zilean",
+      "name": "極靈",
+      "roleId": "support",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/zilean/",
+      "changedSkills": []
+    },
+    {
+      "id": "zyra-support",
+      "baseId": "zyra",
+      "name": "枷蘿",
+      "roleId": "support",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/zyra/",
+      "changedSkills": []
+    },
+    {
+      "id": "master-yi-jungle",
+      "baseId": "master-yi",
+      "name": "易大師",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/master-yi/",
+      "changedSkills": []
+    },
+    {
+      "id": "shen-jungle",
+      "baseId": "shen",
+      "name": "慎",
+      "roleId": "jungle",
+      "tier": "S",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/shen/",
+      "changedSkills": []
+    },
+    {
+      "id": "nautilus-jungle",
+      "baseId": "nautilus",
+      "name": "納帝魯斯",
+      "roleId": "jungle",
+      "tier": "B",
+      "officialGroups": 1,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/nautilus/",
+      "changedSkills": []
+    },
+    {
+      "id": "corki-mid",
+      "baseId": "corki",
+      "name": "庫奇",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 4,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/corki/",
+      "changedSkills": []
+    },
+    {
+      "id": "karma-mid",
+      "baseId": "karma",
+      "name": "卡瑪",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/karma/",
+      "changedSkills": []
+    },
+    {
+      "id": "talon-mid",
+      "baseId": "talon",
+      "name": "塔隆",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/talon/",
+      "changedSkills": [
+        "Q"
+      ]
+    },
+    {
+      "id": "rumble-mid",
+      "baseId": "rumble",
+      "name": "藍寶",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/rumble/",
+      "changedSkills": []
+    },
+    {
+      "id": "seraphine-mid",
+      "baseId": "seraphine",
+      "name": "瑟菈紛",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/seraphine/",
+      "changedSkills": []
+    },
+    {
+      "id": "chogath-baron",
+      "baseId": "chogath",
+      "name": "科加斯",
+      "roleId": "baron",
+      "tier": "S",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/chogath/",
+      "changedSkills": []
+    },
+    {
+      "id": "chogath-jungle",
+      "baseId": "chogath",
+      "name": "科加斯",
+      "roleId": "jungle",
+      "tier": "C",
+      "officialGroups": 0,
+      "attackSpeed": true,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/chogath/",
+      "changedSkills": []
+    },
+    {
+      "id": "hwei-mid",
+      "baseId": "hwei",
+      "name": "赫威",
+      "roleId": "mid",
+      "tier": "A",
+      "officialGroups": 0,
+      "attackSpeed": false,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/champions/hwei/",
+      "changedSkills": []
+    }
+  ],
+  "skillCorrections": [
+    {
+      "id": "akali-baron",
+      "key": "Q",
+      "before": "扇形投擲苦無造成魔法傷害，是主要消耗與清線手段。",
+      "after": "向扇形區域擲出苦無造成魔法傷害，最遠端命中還會緩速；可用外緣命中後拉出被動範圍準備強化普攻。"
+    },
+    {
+      "id": "ambessa-baron",
+      "key": "W",
+      "before": "獲得護盾並向前猛擊造成物理傷害；若護盾吸收傷害，猛擊傷害會提高。",
+      "after": "先獲得護盾並擺出防禦姿態，再重擊周圍敵人；防禦期間擋下非士兵來源的傷害時，重擊會強化。"
+    },
+    {
+      "id": "aurora-baron",
+      "key": "W",
+      "before": "短距跳躍並進入靈界隱形，適合躲技能、調整位置或追擊。",
+      "after": "朝指定方向跳躍，落地後短暫隱形並加速；參與擊殺敵方英雄可重置此技能，用來轉位或撤退。"
+    },
+    {
+      "id": "aurora-baron",
+      "key": "R",
+      "before": "跳向指定區域造成傷害並形成靈界邊界，敵人接觸邊界時會被拉回區域內。",
+      "after": "躍向指定方向，落地時造成範圍傷害與緩速，留下靈界區域。歐羅拉可在區域兩側間穿梭；敵人穿越邊界會被緩速，不是被強制拉回的牢籠。"
+    },
+    {
+      "id": "garen-baron",
+      "key": "W",
+      "before": "被動增加防禦；主動短暫獲得高額韌性與減傷，之後維持較低減傷。",
+      "after": "主動短暫提高抗控能力並降低受到的傷害；應對準敵方爆發或控制施放，不把它當成永久疊防的被動。"
+    },
+    {
+      "id": "garen-baron",
+      "key": "E",
+      "before": "快速旋轉大劍持續造成物理傷害，對單一目標時傷害更高。",
+      "after": "旋轉大劍傷害周圍敵人；以外圈命中可造成暴擊，走位重點是維持外圈距離，不是要求附近只能有一名敵人。"
+    },
+    {
+      "id": "ksante-baron",
+      "key": "W",
+      "before": "蓄力進入防禦姿態並減傷、免疫控制，放開後向前衝撞並推動敵人。",
+      "after": "蓄力時減傷並抵抗位移控制，釋放後衝撞、擊退及暈眩敵人。拼死一搏期間此技能會刷新並強化傷害與衝刺，但不再擊退或暈眩；兩種型態不可混用控制效果。"
+    },
+    {
+      "id": "ksante-baron",
+      "key": "R",
+      "before": "把敵方英雄擊退；若撞到地形會穿牆並受到額外傷害，卡桑帝進入拼死一搏強化技能但犧牲部分防禦。",
+      "after": "擊退指定英雄，撞到地形時可將目標撞穿，自己跟進並進入拼死一搏。此型態強化技能，提供攻速、物理穿透與全能吸血，同時犧牲部分最大生命與雙防。"
+    },
+    {
+      "id": "mordekaiser-baron",
+      "key": "R",
+      "before": "把指定英雄拉入死亡領域單挑並偷取部分屬性；在領域內擊殺可暫時保留偷取屬性。",
+      "after": "把指定英雄帶進死亡領域並暫時偷取部分屬性；若在領域中擊殺目標，偷取的屬性保留到該目標復活。"
+    },
+    {
+      "id": "ryze-baron",
+      "key": "Q",
+      "before": "發射直線能量彈；其他基礎技能會重置冷卻，疊滿符文後命中可獲得爆發跑速。",
+      "after": "其他基礎技能會重置超負荷冷卻並累積符文；已有兩層符文時施放一技即可獲得短暫跑速，不必命中才觸發。命中法術湧動目標時增傷，並彈向附近同樣帶標記的敵人。"
+    },
+    {
+      "id": "ryze-baron",
+      "key": "W",
+      "before": "對單一目標造成魔法傷害與控制；目標帶有法術湧動時能形成更穩定的束縛。",
+      "after": "指定目標受到魔法傷害與緩速；目標已有法術湧動標記時，控制才改為定身。"
+    },
+    {
+      "id": "skarner-baron",
+      "key": "E",
+      "before": "加速並穿越地形，抓住第一名英雄後拖行；撞上牆體可造成控制與傷害。",
+      "after": "向前衝刺並穿過地形，可抓住英雄或大型野怪；帶著目標撞牆時造成傷害與暈眩，不只對英雄生效。"
+    },
+    {
+      "id": "wukong-baron",
+      "key": "P",
+      "before": "本尊與分身的普攻和技能會替目標疊加層數，使後續對該目標造成更多傷害。",
+      "after": "普攻或技能命中敵方英雄時累積仙山石猴，提供物防與生命回復，最多三層；不是替敵人疊加增傷印記。"
+    },
+    {
+      "id": "wukong-baron",
+      "key": "Q",
+      "before": "強化下一次普攻，增加距離與傷害並削弱目標物防，是主要短換血技能。",
+      "after": "黃金之杖會週期性準備強化普攻，主動施放也能強化下一擊；用來銜接普攻與技能，不再描述為命中直接削減敵人物防。"
+    },
+    {
+      "id": "wukong-baron",
+      "key": "W",
+      "before": "進入潛隱並向前位移，留下能模仿部分技能的分身，用來欺騙與延伸連招。",
+      "after": "向指定方向位移並進入潛隱，留下分身。分身可用搖桿操控，並模仿黃金之杖、筋斗突擊與無極風暴。"
+    },
+    {
+      "id": "yasuo-baron",
+      "key": "R",
+      "before": "瞬移到滯空敵人身旁並延長滯空，落地後獲得物理穿透。",
+      "after": "接近被擊飛的敵方英雄並延長其滯空，回滿風湧、清除一技層數；後續獲得的是暴擊的額外物理穿透，不是所有傷害都無條件增加穿透。"
+    },
+    {
+      "id": "ambessa-jungle",
+      "key": "W",
+      "before": "獲得護盾並向前猛擊造成物理傷害；若護盾吸收傷害，猛擊傷害會提高。",
+      "after": "先獲得護盾並擺出防禦姿態，再重擊周圍敵人；防禦期間擋下非士兵來源的傷害時，重擊會強化。"
+    },
+    {
+      "id": "nilah-jungle",
+      "key": "P",
+      "before": "淣菈尾刀士兵時可獲得額外經驗，並會強化與分享附近友軍提供的治療與護盾。打野時主要價值在於與隊友接戰後放大續航。",
+      "after": "普攻暴擊後，依造成的傷害治療自身，過量治療轉為短暫護盾。激鬥峽谷的被動不是尾刀額外經驗與分享隊友治療的電腦版機制。"
+    },
+    {
+      "id": "nilah-jungle",
+      "key": "Q",
+      "before": "向前揮擊並傷害直線敵人；命中後短時間提高攻擊距離與攻速，普攻也會轉為扇形傷害，是主要清野與持續輸出技能。",
+      "after": "被動依暴擊率獲得物理穿透；主動向直線揮鞭造成物理傷害。命中後短暫提高攻速與攻擊距離，普攻變為扇形傷害；對野怪有傷害折減，不能按完整英雄傷害估算刷野。"
+    },
+    {
+      "id": "nilah-jungle",
+      "key": "E",
+      "before": "穿越指定單位並造成傷害，可儲存多次。可用於穿過野怪調整位置、追擊敵人或撤退。",
+      "after": "朝指定方向衝刺並傷害穿過的敵人，不需要先指定單位。命中單位可觸發受內置間隔限制的冷卻刷新，強化普攻也能縮短冷卻；不是可任意連用的雙充能。"
+    },
+    {
+      "id": "skarner-jungle",
+      "key": "E",
+      "before": "加速並穿越地形，抓住第一名英雄後拖行；撞上牆體可造成控制與傷害。",
+      "after": "向前衝刺並穿過地形，可抓住英雄或大型野怪；帶著目標撞牆時造成傷害與暈眩，不只對英雄生效。"
+    },
+    {
+      "id": "talon-jungle",
+      "key": "Q",
+      "before": "跳向目標並造成物理傷害；貼身施放時改為近距離刺擊。擊殺目標可回復部分生命並返還冷卻，清野時可用來維持續航。",
+      "after": "遠距施放會躍向目標，近戰範圍施放則造成暴擊傷害；擊殺目標可回復生命並返還部分冷卻。"
+    },
+    {
+      "id": "wukong-jungle",
+      "key": "P",
+      "before": "本尊與分身的普攻和技能會替目標疊加層數，使後續對該目標造成更多傷害。",
+      "after": "普攻或技能命中敵方英雄時累積仙山石猴，提供物防與生命回復，最多三層；不是替敵人疊加增傷印記。"
+    },
+    {
+      "id": "wukong-jungle",
+      "key": "Q",
+      "before": "強化下一次普攻，增加距離與傷害並削弱目標物防，是主要短換血技能。",
+      "after": "黃金之杖會週期性準備強化普攻，主動施放也能強化下一擊；用來銜接普攻與技能，不再描述為命中直接削減敵人物防。"
+    },
+    {
+      "id": "wukong-jungle",
+      "key": "W",
+      "before": "進入潛隱並向前位移，留下能模仿部分技能的分身，用來欺騙與延伸連招。",
+      "after": "向指定方向位移並進入潛隱，留下分身。分身可用搖桿操控，並模仿黃金之杖、筋斗突擊與無極風暴。"
+    },
+    {
+      "id": "akali-mid",
+      "key": "Q",
+      "before": "扇形投擲苦無造成魔法傷害，是主要消耗與清線手段。",
+      "after": "向扇形區域擲出苦無造成魔法傷害，最遠端命中還會緩速；可用外緣命中後拉出被動範圍準備強化普攻。"
+    },
+    {
+      "id": "akshan-mid",
+      "key": "P",
+      "before": "普攻與技能會疊加印記；連續攻擊可觸發額外傷害，亦能取消第二發普攻換取跑速。",
+      "after": "普攻或技能連續命中三次會追加傷害，目標是英雄時還會取得護盾；普攻可接第二發，也能取消第二發改取跑速。"
+    },
+    {
+      "id": "aurelion-sol-mid",
+      "key": "Q",
+      "before": "持續向指定方向吐息，對首名敵人造成連續傷害並週期性爆發。",
+      "after": "持續吐息傷害首個目標，部分傷害濺射周圍；對同一目標持續命中會產生爆發並疊星塵。吐息期間可緩慢移動，仍需避開控制。"
+    },
+    {
+      "id": "aurelion-sol-mid",
+      "key": "W",
+      "before": "朝指定方向飛行，期間可持續施放星光吐息，適合追擊與轉線。",
+      "after": "向指定方向飛行並越過地形；飛行期間可使用其他技能，星光吐息獲得強化。星塵延長飛行距離，近期參與擊殺可縮短剩餘冷卻。"
+    },
+    {
+      "id": "aurelion-sol-mid",
+      "key": "E",
+      "before": "創造黑洞持續拉扯並傷害敵人，低生命敵人會被處決；星塵可擴大範圍。",
+      "after": "黑洞持續傷害並把敵人拉向中心；處決判定在中心區域。星塵提升範圍與處決門檻，範圍內敵人死亡或英雄持續停留可提供星塵。"
+    },
+    {
+      "id": "aurelion-sol-mid",
+      "key": "R",
+      "before": "召下星辰造成範圍傷害與擊飛；累積足夠星塵後升級為更大範圍的天界殞落。",
+      "after": "一般「降世星辰」造成範圍魔法傷害與暈眩；累積足夠星塵後，下一次變成「天界殞落」，才改為更大範圍的擊飛，並向外放出傷害與緩速衝擊波。"
+    },
+    {
+      "id": "aurora-mid",
+      "key": "W",
+      "before": "短距跳躍並進入靈界隱形，適合躲技能、調整位置或追擊。",
+      "after": "朝指定方向跳躍，落地後短暫隱形並加速；參與擊殺敵方英雄可重置此技能，用來轉位或撤退。"
+    },
+    {
+      "id": "aurora-mid",
+      "key": "R",
+      "before": "跳向指定區域造成傷害並形成靈界邊界，敵人接觸邊界時會被拉回區域內。",
+      "after": "躍向指定方向，落地時造成範圍傷害與緩速，留下靈界區域。歐羅拉可在區域兩側間穿梭；敵人穿越邊界會被緩速，不是被強制拉回的牢籠。"
+    },
+    {
+      "id": "galio-mid",
+      "key": "R",
+      "before": "選擇友方英雄作為落點，為其提供保護後從天而降，造成範圍傷害與擊飛。",
+      "after": "以友方英雄當下位置指定落點，先替該範圍友軍提供魔法護盾，再延遲降落、擊飛附近敵人；隊友之後移動不會把落點一起帶走。"
+    },
+    {
+      "id": "heimerdinger-mid",
+      "key": "Q",
+      "before": "部署自動攻擊的砲臺；海默丁格技能命中英雄可加速砲臺蓄能射擊。",
+      "after": "部署自動射擊的砲臺，並以光束攻擊協助控線；自己的技能命中英雄能幫助砲臺蓄能。砲臺站位要避免被同一個範圍技能一起清除。"
+    },
+    {
+      "id": "mel-mid",
+      "key": "E",
+      "before": "向前釋放光束形成控制區域，對敵人造成傷害、緩速並限制移動，方便接續一技與普攻。",
+      "after": "射出光球，對範圍內敵人造成傷害與緩速，中心命中另有定身；要打出控制鏈需讓中心區域命中。"
+    },
+    {
+      "id": "ryze-mid",
+      "key": "Q",
+      "before": "發射直線能量彈；其他基礎技能會重置冷卻，疊滿符文後命中可獲得爆發跑速。",
+      "after": "其他基礎技能會重置超負荷冷卻並累積符文；已有兩層符文時施放一技即可獲得短暫跑速，不必命中才觸發。命中法術湧動目標時增傷，並彈向附近同樣帶標記的敵人。"
+    },
+    {
+      "id": "ryze-mid",
+      "key": "W",
+      "before": "對單一目標造成魔法傷害與控制；目標帶有法術湧動時能形成更穩定的束縛。",
+      "after": "指定目標受到魔法傷害與緩速；目標已有法術湧動標記時，控制才改為定身。"
+    },
+    {
+      "id": "yasuo-mid",
+      "key": "R",
+      "before": "瞬移到滯空敵人身旁並延長滯空，落地後獲得物理穿透。",
+      "after": "接近被擊飛的敵方英雄並延長其滯空，回滿風湧、清除一技層數；後續獲得的是暴擊的額外物理穿透，不是所有傷害都無條件增加穿透。"
+    },
+    {
+      "id": "galio-support",
+      "key": "R",
+      "before": "選擇友方英雄作為落點，為其提供保護後從天而降，造成範圍傷害與擊飛。",
+      "after": "以友方英雄當下位置指定落點，先替該範圍友軍提供魔法護盾，再延遲降落、擊飛附近敵人；隊友之後移動不會把落點一起帶走。"
+    },
+    {
+      "id": "rell-support",
+      "key": "Q",
+      "before": "向前刺出長槍，對直線敵人造成魔法傷害並破壞護盾。適合破解關鍵保命盾與在進場後補上被動層數。",
+      "after": "向前刺擊，對直線上的敵人造成魔法傷害、摧毀護盾並暈眩；可銜接二技控制或打斷對方反擊。"
+    },
+    {
+      "id": "rell-support",
+      "key": "E",
+      "before": "提高銳兒的衝刺與接戰能力，讓她更快靠近敵人並強化進場節奏。適合在側翼或河道先加速，再接二技落地控制。",
+      "after": "替自己與一名友軍加速；朝敵人或彼此靠近時加速更強。下一次普攻或鐵碎之擊會附帶範圍魔法爆炸，可在二技進場前準備。"
+    },
+    {
+      "id": "talon-mid",
+      "key": "Q",
+      "before": "跳向目標並造成物理傷害；貼身施放時改為近距離刺擊。擊殺目標可回復部分生命並返還冷卻，清野時可用來維持續航。",
+      "after": "遠距施放會躍向目標，近戰範圍施放則造成暴擊傷害；擊殺目標可回復生命並返還部分冷卻。"
+    }
+  ],
+  "sourceConflicts": {
+    "wukong": {
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-5-0c/",
+      "note": "英雄介紹頁仍列舊被動；按官方重製公告修正為疊自身物防／續航機制，沒有把歷史係數冒充本版數值。"
+    },
+    "yuumi": {
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-6-3d/",
+      "note": "被動保留重製後治療，不採官網英雄頁殘留的護盾舊說明。逐級表按一技五級、二技開局自帶一級的例外修正。"
+    },
+    "alistar": {
+      "url": "https://www.wildriftfire.com/guide/alistar",
+      "note": "官網英雄頁被動充能文字與手游攻略不一致，保留受傷治療／控制減冷卻機制，未改成電腦版充能被動。"
+    },
+    "nilah": {
+      "url": "https://www.wildriftfire.com/guide/nilah",
+      "note": "官網簡介混有電腦版機制；依手游技能資料修正暴擊治療及方向位移，一技穿透係數另由官方7.2c公告支持。"
+    },
+    "zeri": {
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/",
+      "note": "7.3公告的被動普攻／超量攻速轉物攻優先於英雄介紹頁舊護盾說明。"
+    },
+    "miss-fortune": {
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3/",
+      "note": "使用7.3公告的愛的拍拍傷害機制，不回退官網簡介的新目標舊版被動。"
+    },
+    "janna": {
+      "url": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-72e/",
+      "note": "官網英雄頁三技內文誤列季風效果；保留7.2e官方確認的風暴之眼護盾。"
+    },
+    "aurora": {
+      "url": "https://www.wildriftfire.com/guide/aurora",
+      "note": "以官方英文英雄頁及手游技能交叉核對大絕邊界緩速，不套用舊版強制拉回。"
+    }
+  },
+  "counts": {
+    "uniqueHeroes": 142,
+    "profiles": 203,
+    "roles": {
+      "baron": 50,
+      "mid": 47,
+      "jungle": 51,
+      "duo": 23,
+      "support": 32
+    },
+    "attackSpeedChampions": 141,
+    "durabilityChampions": 51,
+    "directChangeChampions": 32,
+    "directChangeProfiles": 42,
+    "skillCorrectionProfiles": 27,
+    "skillCorrections": 43
+  },
+  "specialSkillCorrections": [
+    {
+      "id": "yuumi-support",
+      "before": [
+        "Q",
+        "E",
+        "W",
+        "Q",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "E",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "after": [
+        "Q",
+        "E",
+        "Q",
+        "E",
+        "R",
+        "Q",
+        "Q",
+        "E",
+        "R",
+        "Q",
+        "E",
+        "W",
+        "R",
+        "W",
+        "W"
+      ],
+      "explanation": "二技開局自帶一級，不占本表15點；本表是主一技、副三技的建議分配。一技投入5點、二技再投入3點、三技4點、大絕3點；勿套用一般英雄每個基礎技能4點的驗證方式。"
+    }
+  ],
+  "pending": [
+    {
+      "id": "hwei-mid",
+      "fields": [
+        "明鏡止水護盾係數",
+        "完整各級技能基礎值與零加速冷卻",
+        "官方附錄未列攻速"
+      ],
+      "reason": "缺乏可確認的遊戲內面板，不猜數值。"
+    }
+  ]
+}

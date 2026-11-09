@@ -1,0 +1,33 @@
+Wild Rift Guide v115.2｜ARAM 索引修正
+日期：2026-10-07
+
+使用方式
+此為更新包，只包含本次修改的 6 個檔案。解壓縮後，依資料夾路徑將檔案放入現有 GitHub 專案根目錄，覆蓋同名檔案；scripts/sync-aram-seo.py 與本說明為新增檔案。保留其他既有檔案，不要刪除專案或替換成只有本更新包的空專案。
+等待原有 Vercel 部署完成。以 2026-10-05 的最新 AdSense 6785 版本為基礎，抽查核心檔案與目前上線網站一致。
+
+本次修改
+1. aram-hero.html：從初始 HTML 移除 noindex，改為 index,follow,max-image-preview:large。
+2. assets/js/aram-hero.js：為每位英雄設定獨立 canonical、標題、描述與分享中繼資料；標準 ARAM 與支援的符文大亂鬥模式使用各自的網址，排除追蹤參數。
+3. 無效英雄或資料載入失敗時保留 noindex，避免收錄錯誤頁面。
+4. sitemap.xml：移除赫威分享跳轉網址，補入全部 141 位標準 ARAM 英雄攻略網址，合計 363 個不重複網址。
+5. scripts/sync-aram-seo.py：依現有 ARAM 資料產生 Sitemap 網址，清除召喚峽谷分享跳轉網址；重複執行不產生重複項目。
+6. scripts/refresh-share-v115.py：更新分享資料後自動執行 Sitemap 同步，不再加回赫威 noindex 分享頁。
+
+保留設定
+召喚峽谷分享跳轉頁與會員頁保留原有 noindex。
+英雄／出裝／符文／ARAM 資料、版面與 AdSense 帳戶內容未修改。
+
+完成部署後
+1. 在 Search Console 的 Sitemap 頁重新提交 sitemap.xml。
+2. 使用網址審查檢查以下兩頁，先執行「測試實際網址」，確認可建立索引，再按「要求建立索引」：
+   https://wild-rift-guide.vercel.app/aram-hero.html?id=zilean
+   https://wild-rift-guide.vercel.app/aram-hero.html?id=wukong
+3. 分享跳轉頁與會員頁仍可能顯示在 noindex 排除清單，這是保留的設定。不要為了清空這個分類而對整組 noindex 頁面執行驗證修正。
+4. 開放索引與提交要求不保證 Google 收錄，索引報表也不會立即更新。
+
+已完成檢查
+JavaScript／Python 語法檢查通過。
+以 DOM 執行環境逐一執行 141 位英雄攻略程式，確認內容、robots、canonical、標題與描述。
+模式切換、追蹤參數、預設英雄、不支援模式、無效英雄與資料載入失敗檢查通過。
+Sitemap XML、唯一網址、英雄全數涵蓋與腳本重跑檢查通過。
+本環境無可用 Chromium，未完成真實瀏覽器視覺驗證；部署後仍需在 Search Console 測試實際網址。

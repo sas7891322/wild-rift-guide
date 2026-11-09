@@ -1,0 +1,860 @@
+{
+  "patch": "7.3a",
+  "version": "v115",
+  "published": "2026-09-29",
+  "reviewedAt": "2026-10-01",
+  "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+  "note": "數值為官方版本差異；增削不等同本站分路Tier。公告內容於版本期間陸續推出。",
+  "heroes": [
+    {
+      "baseId": "hwei",
+      "name": "赫威",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜筆仙真跡",
+          "rows": [
+            {
+              "label": "傷害",
+              "before": "33–333（隨等級）＋33%魔攻",
+              "after": "40–285（隨等級）＋30%魔攻",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜壞滅熾燄",
+          "rows": [
+            {
+              "label": "傷害",
+              "before": "50/90/130/170＋75%魔攻＋4%/5%/6%/7%目標最大生命",
+              "after": "50/85/120/155＋70%魔攻＋4%/5%/6%/7%目標最大生命",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜震顫轟雷",
+          "rows": [
+            {
+              "label": "依已損失生命提高傷害的係數",
+              "before": "150%/200%/250%/300%",
+              "after": "100%/150%/200%/250%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜絕望螺旋",
+          "rows": [
+            {
+              "label": "爆炸傷害",
+              "before": "250/350/450＋75%魔攻",
+              "after": "200/300/400＋70%魔攻",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "整體削弱；被動低等級基礎值提高，不能把每個等級都描述為同幅下降。"
+    },
+    {
+      "baseId": "samira",
+      "name": "煞蜜拉",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "每級生命",
+              "before": "128",
+              "after": "136",
+              "kind": "change"
+            },
+            {
+              "label": "每級物防",
+              "before": "5",
+              "after": "5.5",
+              "kind": "change"
+            },
+            {
+              "label": "每級魔防",
+              "before": "1.4",
+              "after": "2",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "P",
+          "title": "被動｜敢死風采",
+          "rows": [
+            {
+              "label": "近戰最低物攻係數",
+              "before": "3.5%–10.5%（隨等級）",
+              "after": "5.8%–17%（隨等級）",
+              "kind": "change"
+            },
+            {
+              "label": "近戰最高物攻係數",
+              "before": "7%–21%（隨等級）",
+              "after": "11.6%–34%（隨等級）",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "Q",
+          "title": "一技｜狂戰本能",
+          "rows": [
+            {
+              "label": "物攻係數",
+              "before": "110%",
+              "after": "125%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜地獄火狂襲",
+          "rows": [
+            {
+              "label": "每次射擊物攻係數",
+              "before": "40%",
+              "after": "50%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "rammus",
+      "name": "拉姆斯",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "物防",
+              "before": "45",
+              "after": "40",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技｜尖刺防禦",
+          "rows": [
+            {
+              "label": "物防係數",
+              "before": "45%/50%/55%/60%",
+              "after": "30%/40%/50%/60%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "二技滿級係數不變，主要壓低前期清野與交戰。"
+    },
+    {
+      "baseId": "malphite",
+      "name": "墨菲特",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "W",
+          "title": "二技｜震雷之擊",
+          "rows": [
+            {
+              "label": "物防傷害係數",
+              "before": "20%",
+              "after": "15%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技｜大地震顫",
+          "rows": [
+            {
+              "label": "物防傷害係數",
+              "before": "45%",
+              "after": "40%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜勢不可擋",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "75/70/65秒",
+              "after": "85/80/75秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "tristana",
+      "name": "崔絲塔娜",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "Q",
+          "title": "一技｜急速射擊",
+          "rows": [
+            {
+              "label": "攻速",
+              "before": "50%/75%/100%/125%",
+              "after": "60%/80%/100%/120%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技｜火箭跳躍",
+          "rows": [
+            {
+              "label": "冷卻",
+              "before": "22/20/18/16秒",
+              "after": "20/18/16/14秒",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技｜爆炸射擊",
+          "rows": [
+            {
+              "label": "爆炸傷害",
+              "before": "（80/100/120/140＋100%額外物攻＋50%魔攻）×（1＋暴擊率×40%＋（暴擊傷害−2）×40%×暴擊率）",
+              "after": "（80/110/140/170＋120%額外物攻＋50%魔攻）×（1＋暴擊率×50%＋（暴擊傷害−2）×50%×暴擊率）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "整體增強，但一技滿級攻速125%→120%；保留完整公式，不只列傷害上下限。"
+    },
+    {
+      "baseId": "draven",
+      "name": "達瑞文",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "Q",
+          "title": "一技｜迴旋飛斧",
+          "rows": [
+            {
+              "label": "額外物攻係數",
+              "before": "80%/90%/100%/110%",
+              "after": "90%/100%/110%/120%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技｜好戲上場",
+          "rows": [
+            {
+              "label": "攻速",
+              "before": "20%/25%/30%/35%",
+              "after": "25%/30%/35%/40%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜迴轉死神",
+          "rows": [
+            {
+              "label": "額外物攻係數",
+              "before": "130%",
+              "after": "150%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "本版明列「額外物攻」係數；不把它寫成總物攻。"
+    },
+    {
+      "baseId": "caitlyn",
+      "name": "凱特琳",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "每級攻速",
+              "before": "0.04",
+              "after": "0.025",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "P",
+          "title": "被動｜爆頭",
+          "rows": [
+            {
+              "label": "公告列示百分比",
+              "before": "60%–100%（隨等級）",
+              "after": "60%–90%（隨等級）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "每級攻速0.04→0.025為成長參數，不代表每秒攻擊次數。被動只列官方本次修改項，不自行重組7.3有歧義的整條公式。"
+    },
+    {
+      "baseId": "senna",
+      "name": "姍娜",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "攻速係數",
+              "before": "0.4",
+              "after": "0.3",
+              "kind": "change"
+            },
+            {
+              "label": "基礎攻速",
+              "before": "0.4",
+              "after": "0.3",
+              "kind": "change"
+            },
+            {
+              "label": "基礎額外攻速",
+              "before": "0.6",
+              "after": "1.1",
+              "kind": "change"
+            },
+            {
+              "label": "每級攻速",
+              "before": "0.05",
+              "after": "0.025",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "P",
+          "title": "普攻施放前搖",
+          "rows": [
+            {
+              "label": "額外攻速的縮短效果",
+              "before": "原效果",
+              "after": "效果降低；官方未列精確倍率",
+              "kind": "rule"
+            }
+          ]
+        }
+      ],
+      "note": "基礎額外攻速0.6→1.1是60%→110%；不能單看此項就判成增強。"
+    },
+    {
+      "baseId": "syndra",
+      "name": "星朵拉",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜卓越",
+          "rows": [
+            {
+              "label": "升級門檻",
+              "before": "40/60/80/100/120",
+              "after": "50/75/100/125/150",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "W",
+          "title": "二技｜意志之力",
+          "rows": [
+            {
+              "label": "魔攻係數",
+              "before": "60%",
+              "after": "50%",
+              "kind": "change"
+            },
+            {
+              "label": "緩速",
+              "before": "20%/25%/30%/35%",
+              "after": "25%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "swain",
+      "name": "斯溫",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "P",
+          "title": "被動｜群鴉盛宴",
+          "rows": [
+            {
+              "label": "回復生命",
+              "before": "3%–4.5%（隨等級）＋0.5%魔攻",
+              "after": "4.5%–6%（隨等級）＋0.2%魔攻",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "E",
+          "title": "三技｜影之爪",
+          "rows": [
+            {
+              "label": "重複傷害魔攻係數",
+              "before": "25%",
+              "after": "40%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "被動基礎回復提高、魔攻係數降低；不把0.2%誤寫成20%。"
+    },
+    {
+      "baseId": "yuumi",
+      "name": "悠咪",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "W",
+          "title": "二技｜飛撲抱抱！",
+          "rows": [
+            {
+              "label": "治療與護盾強度",
+              "before": "8%/9%/10%/11%＋0.02%魔攻",
+              "after": "6%/7%/8%/9%＋0.01%魔攻",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "baseId": "viego",
+      "name": "維爾戈",
+      "direction": "buff",
+      "groups": [
+        {
+          "key": "Q",
+          "title": "一技｜殞落王者之劍",
+          "rows": [
+            {
+              "label": "被動傷害",
+              "before": "2%/3%/4%/5%",
+              "after": "3%/4%/5%/6%",
+              "kind": "change"
+            },
+            {
+              "label": "暴擊傷害係數",
+              "before": "80%",
+              "after": "85%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "R",
+          "title": "大絕｜破心者",
+          "rows": [
+            {
+              "label": "暴擊數值係數",
+              "before": "50%",
+              "after": "70%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": ""
+    }
+  ],
+  "items": [
+    {
+      "id": "wr73-9087",
+      "name": "雲陶狂箭",
+      "direction": "adjust",
+      "groups": [
+        {
+          "key": "stats",
+          "title": "基礎能力值",
+          "rows": [
+            {
+              "label": "攻速",
+              "before": "25%",
+              "after": "35%",
+              "kind": "change"
+            }
+          ]
+        },
+        {
+          "key": "passive",
+          "title": "無雙亂舞",
+          "rows": [
+            {
+              "label": "攻速",
+              "before": "25%",
+              "after": "35%",
+              "kind": "change"
+            },
+            {
+              "label": "冷卻",
+              "before": "20秒",
+              "after": "25秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "攻速提高，但效果冷卻延長，並非全項增強。"
+    },
+    {
+      "id": "wr73-9159",
+      "name": "低語之環",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "passive",
+          "title": "和諧",
+          "rows": [
+            {
+              "label": "最大魔力轉治療／護盾強度",
+              "before": "0.5%",
+              "after": "0.25%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "僅調整和諧的轉換係數，不把基本8%治療護盾強度減半。"
+    },
+    {
+      "id": "wr73-9159-evolved",
+      "name": "歌謠之冠",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "passive",
+          "title": "和諧",
+          "rows": [
+            {
+              "label": "最大魔力轉治療／護盾強度",
+              "before": "0.5%",
+              "after": "0.25%",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "低語之環進化裝；冠冕每秒治療效果未在本次調整。"
+    },
+    {
+      "id": "wr73-8961",
+      "name": "死亡之舞",
+      "direction": "nerf",
+      "groups": [
+        {
+          "key": "price",
+          "title": "價格",
+          "rows": [
+            {
+              "label": "總價",
+              "before": "3200",
+              "after": "3300",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "增加100金幣；能力值和被動未被本次公告削弱。"
+    }
+  ],
+  "runes": {
+    "changed": false,
+    "note": "7.3a未列一般召喚峽谷符文的直接數值改動，保留已核對的7.3數值。本站另依英雄與裝備變化複核搭配；符文大亂鬥增幅不屬於這份符文表。"
+  },
+  "battlefield": [
+    {
+      "name": "重擊",
+      "groups": [
+        {
+          "key": "smite",
+          "title": "野怪燃燒",
+          "rows": [
+            {
+              "label": "對野怪每秒基礎傷害",
+              "before": "30–198（隨等級）",
+              "after": "22–162（隨等級）",
+              "kind": "change"
+            }
+          ]
+        }
+      ],
+      "note": "這不是重擊主動斬殺的600／1000／1400真實傷害，不能混改。"
+    },
+    {
+      "name": "主堡",
+      "groups": [
+        {
+          "key": "nexus",
+          "title": "主堡",
+          "rows": [
+            {
+              "label": "最大生命",
+              "before": "5500",
+              "after": "4000",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "防禦塔護甲",
+      "groups": [
+        {
+          "key": "turret",
+          "title": "摧毀每層護甲後",
+          "rows": [
+            {
+              "label": "獲得雙防",
+              "before": "30",
+              "after": "20",
+              "kind": "change"
+            },
+            {
+              "label": "雙防持續時間",
+              "before": "20秒",
+              "after": "10秒",
+              "kind": "change"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "aaa": {
+    "scope": "以下僅為符文大亂鬥官方公告；不套用到一般符文或召喚峽谷配置。本輪未重排ARAM攻略。",
+    "augments": [
+      {
+        "name": "節奏獵手",
+        "rows": [
+          {
+            "label": "觸發距離",
+            "before": "7",
+            "after": "11",
+            "kind": "change"
+          },
+          {
+            "label": "每層鋼霸符倍率",
+            "before": "12",
+            "after": "8",
+            "kind": "change"
+          }
+        ],
+        "note": "同步改善視覺特效。"
+      },
+      {
+        "name": "永不落幕的安可",
+        "rows": [
+          {
+            "label": "第5回合或之後取得",
+            "before": "—",
+            "after": "立即補180層（等同6次重抽）",
+            "kind": "new"
+          }
+        ]
+      },
+      {
+        "name": "疾風斬",
+        "rows": [
+          {
+            "label": "攻擊距離",
+            "before": "8",
+            "after": "9",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "生命循環",
+        "rows": [
+          {
+            "label": "護盾係數",
+            "before": "150%",
+            "after": "200%",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "幻影武器",
+        "rows": [
+          {
+            "label": "觸發限制",
+            "before": "—",
+            "after": "每項技能對每個目標各有1秒冷卻",
+            "kind": "rule"
+          }
+        ]
+      },
+      {
+        "name": "二重唱",
+        "rows": [
+          {
+            "label": "每個目標冷卻",
+            "before": "5秒",
+            "after": "2秒",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "金屬之冠",
+        "rows": [
+          {
+            "label": "施放大絕後能力值",
+            "before": "35物攻／70魔攻／50物防／50魔防",
+            "after": "30物攻／60魔攻／40物防／40魔防",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "海克斯科技榴彈",
+        "rows": [
+          {
+            "label": "另一傷害類型增幅",
+            "before": "20%",
+            "after": "30%",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "冥血信標",
+        "rows": [
+          {
+            "label": "傷害記錄基準",
+            "before": "減傷後",
+            "after": "減傷前",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "再疊一層",
+        "rows": [
+          {
+            "label": "每層追加傷害",
+            "before": "8",
+            "after": "12",
+            "kind": "change"
+          }
+        ],
+        "note": "追加傷害冷卻受技能加速影響；取得層數本身沒有冷卻。"
+      },
+      {
+        "name": "加速巫術",
+        "rows": [
+          {
+            "label": "層數上限",
+            "before": "100",
+            "after": "66",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "完美巔峰",
+        "rows": [
+          {
+            "label": "暴擊率上限",
+            "before": "50%",
+            "after": "44.44%",
+            "kind": "change"
+          },
+          {
+            "label": "超出暴擊率的轉換率",
+            "before": "150%",
+            "after": "444%",
+            "kind": "change"
+          },
+          {
+            "label": "轉換上限",
+            "before": "305%",
+            "after": "400%",
+            "kind": "change"
+          }
+        ],
+        "note": "不需無盡之刃也能達暴擊傷害上限。"
+      }
+    ],
+    "heroes": [
+      {
+        "name": "費德提克",
+        "rows": [
+          {
+            "label": "承受傷害",
+            "before": "90%",
+            "after": "85%",
+            "kind": "change"
+          }
+        ]
+      },
+      {
+        "name": "納瑟斯",
+        "rows": [
+          {
+            "label": "承受傷害",
+            "before": "100%",
+            "after": "90%",
+            "kind": "change"
+          }
+        ]
+      }
+    ]
+  }
+}
