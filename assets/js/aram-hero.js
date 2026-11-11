@@ -56,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=124.2.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=124.2.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=125.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=125.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -91,7 +91,7 @@
       const summary=isAaa?aaa.summary:hero.summary;
       const kicker=isAaa?`AAA ARAM · ${esc(aaaVersion)} 分類與配置`:`ARAM HERO GUIDE · ${esc(standardVersion)} 資料`;
       const versionBoundary=isAaa
-        ?`符文大亂鬥 ${esc(aaaVersion)} · 2026/10/28核對。分類、條件式出裝與標準ARAM分開；官方模式倍率另列。未核實的新卡效果不推算。`
+        ?`符文大亂鬥 ${esc(aaaVersion)} · 2026/11/11核對。分類、條件式出裝與標準ARAM分開；官方模式倍率另列。未核實的新卡效果不推算。`
         :`標準 ARAM ${esc(standardVersion)} · 校正 ${esc(hero.reviewedAt||data.updated)}。本站Tier與出裝為編輯建議；模式倍率保留來源界線，不冒稱官方勝率或逐項實機測試。`;
       const badgeMain=isAaa?'正式':hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
@@ -111,6 +111,7 @@
       </section>`;
     };
 
+    const render73e=()=>{const r=hero.review73e;if(!r)return '';return `<details class="aram-detail-section"><summary><strong>7.3e 攻略校正（點開查看）</strong></summary><p>${esc(r.tierReason)}</p>${(r.buildNotes||[]).map(x=>`<p>${esc(x)}</p>`).join('')}<p>${esc(hero.aaaAram?.patch73eNote||'')}</p><a href="pages/review-7-3e.html">本輪紀錄</a></details>`;};
     const render73d=()=>{
       const r=hero.review73d;if(!r)return '';
       const groups=(r.officialDeltas||[]).map(g=>`<h4>${esc(g.title||'官方調整')}</h4>${(g.rows||[]).map(x=>`<p>${esc(x.label)}：${esc(x.before)} → <strong>${esc(x.after)}</strong></p>`).join('')}`).join('');
@@ -197,7 +198,7 @@
         </div>
       </details>`).join('');
       const aaaRunes=renderRunes(aaa.runeReuse?.runes||hero.runes||[]);
-      return `${aaa.officialBalanceUpdate?`<section class="aram-detail-section"><h2>7.3d適用｜7.3c公告的符文大亂鬥官方倍率</h2>${aaa.officialBalanceUpdate.rows.map(r=>`<p>${esc(r.label)}：${esc(r.before)} → <strong>${esc(r.after)}</strong></p>`).join('')}<p>${esc(aaa.officialBalanceUpdate.note)}</p><a href="${esc(aaa.officialBalanceUpdate.source)}" target="_blank" rel="noopener noreferrer">官方來源</a></section>`:''}<section class="aram-detail-section aaa-overview-section">
+      return `${aaa.officialBalanceUpdate?`<section class="aram-detail-section"><h2>7.3e適用｜7.3c公告的符文大亂鬥官方倍率</h2>${aaa.officialBalanceUpdate.rows.map(r=>`<p>${esc(r.label)}：${esc(r.before)} → <strong>${esc(r.after)}</strong></p>`).join('')}<p>${esc(aaa.officialBalanceUpdate.note)}</p><a href="${esc(aaa.officialBalanceUpdate.source)}" target="_blank" rel="noopener noreferrer">官方來源</a></section>`:''}<section class="aram-detail-section aaa-overview-section">
         <details class="aaa-shared-disclosure">
           <summary>
             <div class="aram-detail-section-head"><div><span>AAA ARAM</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>
@@ -390,7 +391,7 @@
         robots:'index,follow,max-image-preview:large'
       });
       renderHeader(currentMode);
-      contentRoot.innerHTML=render73d()+(isAaa?renderAaa():renderStandard());
+      contentRoot.innerHTML=render73e()+render73d()+(isAaa?renderAaa():renderStandard());
       if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
     };
 

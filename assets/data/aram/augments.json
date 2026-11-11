@@ -1,10 +1,10 @@
 {
-  "gameVersion": "7.3d",
-  "dataVersion": "124.2.0",
+  "gameVersion": "7.3e",
+  "dataVersion": "7.3e-v125",
   "title": "符文大亂鬥增幅裝置",
   "total": 151,
   "display": "name-effect-official-tags",
-  "note": "卡片原始效果來自站方留存遊戲截圖，已套用能核實的官方後續異動；卡池可能持續新增，151不是目前遊戲全部卡片總數。",
+  "note": "7.3e新增系列與特殊增幅分區列示；公告未公布完整卡面數字，不填造效果也不把系列算作單張卡。",
   "augments": [
     {
       "id": "augment-001",
@@ -2542,7 +2542,7 @@
     }
   },
   "classificationNote": "官方分類是卡片本身顯示的標籤；同一張增幅可能同時擁有多個標籤，例如「暴擊治療」同時屬於「暴擊」與「復原」。",
-  "versionLabel": "7.3d 官方繁中公告核對 · 151 張既有卡庫",
+  "versionLabel": "7.3e｜151張既有卡庫＋6組新增公告",
   "correctionNote": "既有卡片保留已核對至 7.3c 的效果；7.3d 六項增幅數值另列公告，未確認中文名稱者不強制套用。",
   "officialPatch": "7.3d",
   "official73c": {
@@ -2777,5 +2777,49 @@
       }
     ],
     "note": "有福同享已對應 augment-085 並校正為40%；另5項尚未與現有151張卡一一匹配，保留公告與前後數值。"
-  }
+  },
+  "official73e": [
+    {
+      "name": "K/DA系列",
+      "effect": "戰鬥中自動攻擊敵人；產生的稜鏡也屬召喚物，可與士兵系列連動。",
+      "status": "announcement-only",
+      "numbers": null,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/"
+    },
+    {
+      "name": "星光戰士系列",
+      "effect": "側重團隊增益及短時間強化，選擇時考慮隊友能否共同作戰。",
+      "status": "announcement-only",
+      "numbers": null,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/"
+    },
+    {
+      "name": "士兵系列",
+      "effect": "強化召喚單位；官方明確指出可作用於K/DA稜鏡。",
+      "status": "announcement-only",
+      "numbers": null,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/"
+    },
+    {
+      "name": "模仿流沙",
+      "effect": "屬新增特殊機制增幅；公告未逐卡對應英雄替換或模仿技能的條件。",
+      "status": "announcement-only",
+      "numbers": null,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/"
+    },
+    {
+      "name": "奧術影分身",
+      "effect": "屬新增特殊機制增幅；以當局卡面說明確認效果與觸發方式。",
+      "status": "announcement-only",
+      "numbers": null,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/"
+    },
+    {
+      "name": "鬧著玩",
+      "effect": "屬新增特殊機制增幅；未公開傷害、冷卻及完整適用限制。",
+      "status": "announcement-only",
+      "numbers": null,
+      "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/"
+    }
+  ]
 }

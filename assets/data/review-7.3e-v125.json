@@ -1,0 +1,227 @@
+{
+  "scope": {
+    "riftProfiles": 203,
+    "aramProfiles": 142,
+    "aaaProfiles": 142,
+    "runeSets": 507,
+    "spellsSets": 367
+  },
+  "issues": [],
+  "checks": [
+    "current item ID/name matches",
+    "current rune availability and 1+3+1 layout",
+    "spell pair uniqueness and ARAM mode restriction",
+    "jungle Smite present",
+    "build five finished unique items",
+    "penetration/lifeline exclusion",
+    "Warmog1250 bonusHP threshold"
+  ],
+  "pending": [
+    {
+      "id": "nidalee-baron",
+      "check": {
+        "field": "tier",
+        "title": "巴龍路Tier仍待同路證據",
+        "status": "pending",
+        "detail": "保留原巴龍路 B，但此項仍待確認：本次能核對的7.3b指南是打野，沒有可驗證的巴龍路樣本。遠程消耗與豹形收尾能運作，不足以證明她在單線的相對排名；不拿打野 S 改寫。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/nidalee"
+        ]
+      }
+    },
+    {
+      "id": "viego-baron",
+      "check": {
+        "field": "tier",
+        "title": "巴龍路Tier仍待同路證據",
+        "status": "pending",
+        "detail": "保留原巴龍路 B，Tier 單項仍待確認：當版可核對指南與公開評級集中打野，未找到足以判斷單線強度的同路資料。Q接普攻有續航不等於能穩定打贏專職鬥士，不能把打野高評級移植。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/viego"
+        ]
+      }
+    },
+    {
+      "id": "alistar-support",
+      "check": {
+        "field": "ability:P",
+        "title": "勝利怒吼精確自動觸發條件",
+        "status": "pending",
+        "detail": "官方英雄介紹採充能敘述，手機版專用攻略寫受傷觸發，WR資料模板寫自身或附近友軍缺血時按冷卻治療；缺少可排除這項差異的當前實機記錄。此項僅標記於被動，不影響本站正式配置與評級。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/champions/alistar/",
+          "https://www.wildriftfire.com/guide/alistar",
+          "https://wiki.leagueoflegends.com/en-us/Template%3AWR_Data_Alistar/Triumphant_Roar"
+        ]
+      }
+    },
+    {
+      "id": "shen-jungle",
+      "check": {
+        "field": "source",
+        "title": "同分路來源核對",
+        "status": "pending",
+        "detail": "參考頁只有打野標題及Coming soon，不能視為完整打野證據；上路資料不代填打野評級。",
+        "sources": [
+          "https://wr-meta.com/322-shen.html"
+        ]
+      }
+    },
+    {
+      "id": "shen-jungle",
+      "check": {
+        "field": "tier",
+        "title": "本站評級",
+        "status": "pending",
+        "detail": "僅保留前版S作待確認參考，不將它轉為已確認的本站評級。WR-META打野區塊仍為Coming soon，WildRiftFire只有上路完整配置；缺乏足以驗證目前S定位的同路新證據。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://wr-meta.com/322-shen.html"
+        ]
+      }
+    },
+    {
+      "id": "hwei-mid",
+      "check": {
+        "field": "ability:Q",
+        "title": "Q技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖9.5秒缺少等級／技能加速；QW完整基礎傷害與QE各級數值未取得足以核定的當前實機條件。移除摘要的固定冷卻，不拿舊截圖最大傷害計算斬殺。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      }
+    },
+    {
+      "id": "hwei-mid",
+      "check": {
+        "field": "ability:W",
+        "title": "W技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖17秒缺少等級／技能加速；WQ跑速／時長與WE完整回魔成長表未核定。WW官方護盾及WE官方基礎傷害已確認，沒有整個W都標不可信。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      }
+    },
+    {
+      "id": "hwei-mid",
+      "check": {
+        "field": "ability:E",
+        "title": "E技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖13秒缺少等級／技能加速；EQ／EW全級傷害和控制時長未核定。EE官方7.3b距離7、60/110/160/210＋60%魔攻已確認。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      }
+    },
+    {
+      "id": "hwei-mid",
+      "check": {
+        "field": "ability:R",
+        "title": "R技能基礎冷卻與未公告成長表",
+        "status": "pending",
+        "detail": "舊截圖70秒缺少等級／技能加速，持續傷害也只單一等級；外站技能第四欄目前列Wash Brush取消選單，不能當成大絕資料。官方R引爆200/300/400＋70%魔攻維持顯示。",
+        "sources": [
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
+          "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3b/",
+          "https://www.wildriftfire.com/guide/hwei"
+        ]
+      }
+    }
+  ],
+  "tierChanges": [
+    {
+      "id": "shyvana-jungle",
+      "currentTier": "C",
+      "targetTier": "A",
+      "reason": "7.3d提高生命與攻速成長、縮短前三技冷卻，改善未完全進化時的作戰窗口；7.3e的同分路專家攻略已列A。仍須先發育、管理怒氣與進化，不能把後期全能吸血下調忽略。這是本站綜合官方差異與專家評估的重評，非官方升Tier。",
+      "url": "https://www.wildriftfire.com/guide/shyvana",
+      "sourcePatch": "7.3e",
+      "buildDecision": "保留現有五件成裝、符文、召喚師技能；與當前同分路專家指南一致。",
+      "build": [
+        "Trinity Force",
+        "Blade of the Ruined King",
+        "Death's Dance",
+        "Force of Nature",
+        "Amaranth's Twinguard"
+      ],
+      "runes": [
+        "Fleet Footwork",
+        "Unshakeable",
+        "Second Wind",
+        "Overgrowth",
+        "Legend: Haste"
+      ],
+      "spells": [
+        "Flash",
+        "Smite"
+      ]
+    },
+    {
+      "id": "lee-sin-jungle",
+      "currentTier": "A",
+      "targetTier": "S",
+      "reason": "7.3d提升攻速成長與大絕基礎傷害，增加前中期接技和收尾能力；7.3e同分路專家攻略評為S。需要操作與早期節奏，這是編輯重評而非新增官方數值調整。",
+      "url": "https://www.wildriftfire.com/guide/lee-sin",
+      "sourcePatch": "7.3e",
+      "buildDecision": "現有配置與來源一致；巨蛇鋒牙只有敵方護盾重要時優先，無大量護盾可考慮保命或對應魔防，不能為版本號自動換裝。",
+      "build": [
+        "Youmuu's Ghostblade",
+        "Trinity Force",
+        "Serylda's Grudge",
+        "Serpent's Fang",
+        "Guardian Angel"
+      ],
+      "runes": [
+        "Conqueror",
+        "Battle Zeal",
+        "Cut Down",
+        "Legend: Alacrity",
+        "Absolute Focus"
+      ],
+      "spells": [
+        "Flash",
+        "Smite"
+      ]
+    },
+    {
+      "id": "samira",
+      "currentTier": "S",
+      "targetTier": "A",
+      "reason": "7.3d一技物攻係數125%→115%、大絕50%→45%，削減高額物攻裝的爆發回報；7.3e同分路專家攻略列A。仍依賴隊友控制、風牆使用與進場時機，不直接套用到ARAM。",
+      "url": "https://www.wildriftfire.com/guide/samira",
+      "sourcePatch": "7.3e",
+      "buildDecision": "五件成裝、符文與召喚師技能皆與7.3e專家頁一致，保留；控場多時以水星彎刀替嗜血者，減少被打斷，屬情境替換。",
+      "build": [
+        "The Collector",
+        "Infinity Edge",
+        "Lord Dominik's Regard",
+        "Bloodthirster",
+        "Immortal Shieldbow"
+      ],
+      "runes": [
+        "Conqueror",
+        "Sudden Impact",
+        "Hubris",
+        "Eyeball Collector",
+        "Legend: Bloodline"
+      ],
+      "spells": [
+        "Flash",
+        "Barrier"
+      ]
+    }
+  ],
+  "date": "2026-11-11",
+  "configChanges": 0
+}

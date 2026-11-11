@@ -780,6 +780,10 @@
     setTimeout(goTop,40);
   }
 
+  function renderPatch73eReview(hero){
+    const r=hero.patch73eReview;if(!r)return '';
+    return `<details class="hero-section"><summary><strong>7.3e 校正重點（點開查看）</strong></summary><p>Tier：${safeText(r.tierBefore)} → ${safeText(r.tierAfter)}。${safeText(r.tierReason)}</p><p>${safeText(r.build)}</p><p>${safeText(r.runes)}</p><p>${safeText(r.spells)}</p><p>${safeText(r.scope)}</p><p><a href="../pages/review-7-3e.html">本輪全部核對紀錄</a></p></details>`;
+  }
   function renderPatch73dReview(hero){
     const r=hero.patch73dReview;
     if(!r)return '';
@@ -946,7 +950,7 @@
         <details class="hero-section hero-rating-details"><summary><span><b>綜合評分</b><small>${safeText(hero.patch||'7.3d')} · 本站評估 · 點擊展開</small></span><i>⌄</i></summary><div class="hero-ratings rating-details-body">${renderRatings(hero)}</div></details>
         <section class="hero-section"><div class="hero-section-title"><h3>召喚師技能＋符文</h3><span>Summoner / Runes</span></div><div class="summoner-rune-layout"><div class="summoner-box"><div class="subsection-label">召喚師技能</div><div class="hero-spells">${spellHTML}</div></div><div class="rune-box"><div class="subsection-label">符文</div><div class="hero-runes">${runeHTML}</div></div></div></section>
         ${buildSection}
-        ${renderPatch73dReview(hero)}${renderPatchReview(hero)}
+        ${renderPatch73eReview(hero)}${renderPatch73dReview(hero)}${renderPatchReview(hero)}
         ${renderBuildVariants(hero)}
         ${matchupAdjustmentSection}
         ${skillSection}
@@ -980,7 +984,7 @@
     window.WRGAuth?.subscribe(()=>syncFavoriteButtons(document));
     try{
       const [heroData,runeData,itemData,spellData,hweiProfile,currentItems]=await Promise.all([
-        getJSON('../assets/data/heroes.json?v=124.2.0'), getJSON('../assets/data/runes.json?v=124.2.0'), getJSON('../assets/data/items.json?v=124.2.0'), getJSON('../assets/data/spells.json?v=124.2.0'), getJSON('../assets/data/hwei-profile.json?v=124.2.0'), getJSON('../assets/data/items-7.3.json?v=124.2.0')
+        getJSON('../assets/data/heroes.json?v=125.0.0'), getJSON('../assets/data/runes.json?v=125.0.0'), getJSON('../assets/data/items.json?v=125.0.0'), getJSON('../assets/data/spells.json?v=125.0.0'), getJSON('../assets/data/hwei-profile.json?v=125.0.0'), getJSON('../assets/data/items-7.3.json?v=125.0.0')
       ]);
       state.heroes=heroData.heroes||heroData||[]; state.heroCatalog=Array.isArray(heroData.heroCatalog)?heroData.heroCatalog:catalogFromLegacyLaneTiers(heroData.laneTiers||{}); state.laneMeta=heroData.laneMeta||{}; state.runes=flattenRunes(runeData); state.items=[...normalizeItems(itemData),...normalizeItems(currentItems)]; state.spells=spellData;
       // Include Hwei's standalone guide with the same editorial review UI.

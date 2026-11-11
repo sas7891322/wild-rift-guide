@@ -28,6 +28,6 @@ try{
  }
  function refreshHeroes(){heroSelect.innerHTML=pool().map(h=>`<option value="${esc(h.id)}">${esc(h.name)}${mode.value==='rift'?' · '+esc(h.role):''}</option>`).join('');load();}
  function load(){const hero=pool().find(x=>x.id===heroSelect.value);if(!hero)return;const ids=hero.items.map(x=>typeof x==='string'?x:x.id);selects.forEach((s,i)=>{s.value=ids[i]||'';});const path=(mode.value==='aram'?'aram':'heroes');guide.innerHTML=`<a href="../share/${path}/${encodeURIComponent(hero.id)}.html">閱讀${esc(hero.name)}完整攻略與使用理由 →</a>`;check();}
- mode.addEventListener('change',refreshHeroes);heroSelect.addEventListener('change',load);document.getElementById('build-load').addEventListener('click',load);extra.addEventListener('input',check);refreshHeroes();status.textContent='資料版本7.3d · 官方來源核對2026/11/04。此工具不儲存或上傳你的配裝。';
+ mode.addEventListener('change',refreshHeroes);heroSelect.addEventListener('change',load);document.getElementById('build-load').addEventListener('click',load);extra.addEventListener('input',check);refreshHeroes();status.textContent='資料版本7.3e · 官方來源核對2026/11/04。此工具不儲存或上傳你的配裝。';
 }catch(err){status.textContent='資料載入失敗，請重新整理，或使用下方完整閱讀版攻略。';console.error(err);}
 })();

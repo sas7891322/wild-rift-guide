@@ -1,0 +1,88 @@
+{
+  "reviewed": "2026-11-11",
+  "sourceAuthor": "iTzSTU4RT / WildRiftFire",
+  "evidenceType": "同版本同分路專家編輯評級，不是勝率統計或官方Tier",
+  "rows": [
+    {
+      "id": "shyvana-jungle",
+      "currentTier": "C",
+      "targetTier": "A",
+      "reason": "7.3d提高生命與攻速成長、縮短前三技冷卻，改善未完全進化時的作戰窗口；7.3e的同分路專家攻略已列A。仍須先發育、管理怒氣與進化，不能把後期全能吸血下調忽略。這是本站綜合官方差異與專家評估的重評，非官方升Tier。",
+      "url": "https://www.wildriftfire.com/guide/shyvana",
+      "sourcePatch": "7.3e",
+      "buildDecision": "保留現有五件成裝、符文、召喚師技能；與當前同分路專家指南一致。",
+      "build": [
+        "Trinity Force",
+        "Blade of the Ruined King",
+        "Death's Dance",
+        "Force of Nature",
+        "Amaranth's Twinguard"
+      ],
+      "runes": [
+        "Fleet Footwork",
+        "Unshakeable",
+        "Second Wind",
+        "Overgrowth",
+        "Legend: Haste"
+      ],
+      "spells": [
+        "Flash",
+        "Smite"
+      ]
+    },
+    {
+      "id": "lee-sin-jungle",
+      "currentTier": "A",
+      "targetTier": "S",
+      "reason": "7.3d提升攻速成長與大絕基礎傷害，增加前中期接技和收尾能力；7.3e同分路專家攻略評為S。需要操作與早期節奏，這是編輯重評而非新增官方數值調整。",
+      "url": "https://www.wildriftfire.com/guide/lee-sin",
+      "sourcePatch": "7.3e",
+      "buildDecision": "現有配置與來源一致；巨蛇鋒牙只有敵方護盾重要時優先，無大量護盾可考慮保命或對應魔防，不能為版本號自動換裝。",
+      "build": [
+        "Youmuu's Ghostblade",
+        "Trinity Force",
+        "Serylda's Grudge",
+        "Serpent's Fang",
+        "Guardian Angel"
+      ],
+      "runes": [
+        "Conqueror",
+        "Battle Zeal",
+        "Cut Down",
+        "Legend: Alacrity",
+        "Absolute Focus"
+      ],
+      "spells": [
+        "Flash",
+        "Smite"
+      ]
+    },
+    {
+      "id": "samira",
+      "currentTier": "S",
+      "targetTier": "A",
+      "reason": "7.3d一技物攻係數125%→115%、大絕50%→45%，削減高額物攻裝的爆發回報；7.3e同分路專家攻略列A。仍依賴隊友控制、風牆使用與進場時機，不直接套用到ARAM。",
+      "url": "https://www.wildriftfire.com/guide/samira",
+      "sourcePatch": "7.3e",
+      "buildDecision": "五件成裝、符文與召喚師技能皆與7.3e專家頁一致，保留；控場多時以水星彎刀替嗜血者，減少被打斷，屬情境替換。",
+      "build": [
+        "The Collector",
+        "Infinity Edge",
+        "Lord Dominik's Regard",
+        "Bloodthirster",
+        "Immortal Shieldbow"
+      ],
+      "runes": [
+        "Conqueror",
+        "Sudden Impact",
+        "Hubris",
+        "Eyeball Collector",
+        "Legend: Bloodline"
+      ],
+      "spells": [
+        "Flash",
+        "Barrier"
+      ]
+    }
+  ]
+}
