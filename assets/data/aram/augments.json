@@ -1,6 +1,6 @@
 {
-  "gameVersion": "7.3e",
-  "dataVersion": "7.3e-v125",
+  "gameVersion": "7.3f",
+  "dataVersion": "7.3f-v126",
   "title": "符文大亂鬥增幅裝置",
   "total": 151,
   "display": "name-effect-official-tags",
@@ -838,16 +838,22 @@
       "name": "隱霧反擊",
       "order": 51,
       "sourceRef": "IMG_7939",
-      "effect": "衝刺時，所受普攻傷害減少20%，且每0.75秒對鄰近敵軍造成120物理傷害（120（隨等級成長）+ 30%額外物攻 + 15%魔攻），持續3秒。",
+      "effect": "衝刺時，所受普攻傷害減少15%，每0.75秒對鄰近敵軍造成60–120（隨等級）+30%額外物攻+15%魔攻的物理傷害，持續3秒。",
       "officialTags": [
         "迷霧回音"
       ],
       "classificationSourceRefs": [
         "IMG_8092"
       ],
-      "reviewedThrough": "7.3c",
-      "reviewedAt": "2026-10-25",
-      "effectEvidence": "original-capture-no-matched-delta"
+      "reviewedThrough": "7.3f",
+      "reviewedAt": "2026-11-12",
+      "effectEvidence": "original-capture-no-matched-delta",
+      "previousEffect73e": "衝刺時，所受普攻傷害減少20%，且每0.75秒對鄰近敵軍造成120物理傷害（120（隨等級成長）+ 30%額外物攻 + 15%魔攻），持續3秒。",
+      "correction": {
+        "patch": "7.3f",
+        "fields": "官方本次變動欄位；未列部分保留既有卡面記錄",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/"
+      }
     },
     {
       "id": "augment-052",
@@ -956,32 +962,44 @@
       "name": "流轉碎礫",
       "order": 58,
       "sourceRef": "IMG_7946",
-      "effect": "當有敵軍在你15單位範圍內衝刺、被擊飛或被動位移，向其發射一枚飛彈，對在你2單位範圍內的敵軍造成60物理傷害（60 - 180（隨等級成長）+ 40%額外物理攻擊 + 30%魔攻 + 4%目標最大生命）。",
+      "effect": "敵軍在你15單位範圍內衝刺、被擊飛或被動位移時，向其發射飛彈；對你2單位範圍內的敵軍造成40–120（隨等級）+30%額外物攻+10%魔攻+2%目標最大生命的物理傷害。",
       "officialTags": [
         "大地回音"
       ],
       "classificationSourceRefs": [
         "IMG_8099"
       ],
-      "reviewedThrough": "7.3c",
-      "reviewedAt": "2026-10-25",
-      "effectEvidence": "original-capture-no-matched-delta"
+      "reviewedThrough": "7.3f",
+      "reviewedAt": "2026-11-12",
+      "effectEvidence": "original-capture-no-matched-delta",
+      "previousEffect73e": "當有敵軍在你15單位範圍內衝刺、被擊飛或被動位移，向其發射一枚飛彈，對在你2單位範圍內的敵軍造成60物理傷害（60 - 180（隨等級成長）+ 40%額外物理攻擊 + 30%魔攻 + 4%目標最大生命）。",
+      "correction": {
+        "patch": "7.3f",
+        "fields": "官方本次變動欄位；未列部分保留既有卡面記錄",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/"
+      }
     },
     {
       "id": "augment-059",
       "name": "移山者",
       "order": 59,
       "sourceRef": "IMG_7947",
-      "effect": "受到傷害時，增加4%跑速，持續8秒，最多可累加10層。滿層時，造成35物理傷害（35 - 105（隨等級成長）+ 1.5%目標最大生命），免疫控場效果，阻擋敵方投射物，並不斷擊退鄰近敵軍5秒。",
+      "effect": "受到傷害時獲得2%跑速，持續8秒，最多10層。滿層時造成35–105（隨等級）+1.5%目標最大生命的物理傷害，免疫控場、阻擋敵方投射物並持續擊退鄰近敵軍4秒。",
       "officialTags": [
         "大地回音"
       ],
       "classificationSourceRefs": [
         "IMG_8100"
       ],
-      "reviewedThrough": "7.3c",
-      "reviewedAt": "2026-10-25",
-      "effectEvidence": "original-capture-no-matched-delta"
+      "reviewedThrough": "7.3f",
+      "reviewedAt": "2026-11-12",
+      "effectEvidence": "original-capture-no-matched-delta",
+      "previousEffect73e": "受到傷害時，增加4%跑速，持續8秒，最多可累加10層。滿層時，造成35物理傷害（35 - 105（隨等級成長）+ 1.5%目標最大生命），免疫控場效果，阻擋敵方投射物，並不斷擊退鄰近敵軍5秒。",
+      "correction": {
+        "patch": "7.3f",
+        "fields": "官方本次變動欄位；未列部分保留既有卡面記錄",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/"
+      }
     },
     {
       "id": "augment-060",
@@ -1289,19 +1307,28 @@
     },
     {
       "id": "augment-078",
-      "name": "秘術拳擊",
+      "name": "祕術拳擊",
       "order": 78,
       "sourceRef": "IMG_7966",
-      "effect": "普攻可縮短所有基礎技能與大絕的冷卻時間0.5秒。",
+      "effect": "普攻使所有基礎技能與大絕的冷卻時間縮短0.8秒。",
       "officialTags": [
         "單人強者"
       ],
       "classificationSourceRefs": [
         "IMG_8120"
       ],
-      "reviewedThrough": "7.3c",
-      "reviewedAt": "2026-10-25",
-      "effectEvidence": "original-capture-no-matched-delta"
+      "reviewedThrough": "7.3f",
+      "reviewedAt": "2026-11-12",
+      "effectEvidence": "original-capture-no-matched-delta",
+      "previousEffect73e": "普攻可縮短所有基礎技能與大絕的冷卻時間0.5秒。",
+      "aliases": [
+        "秘術拳擊"
+      ],
+      "correction": {
+        "patch": "7.3f",
+        "fields": "官方本次變動欄位；未列部分保留既有卡面記錄",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/"
+      }
     },
     {
       "id": "augment-079",
@@ -1740,16 +1767,22 @@
       "name": "連鎖反應",
       "order": 105,
       "sourceRef": "IMG_7993",
-      "effect": "施放大絕時，會在自身或1秒內受到大絕傷害的敵軍周圍，生成半徑5單位的鎖定圈。如果鎖定圈在1秒內沒有擊中敵軍，將不會啟動鎖定，並返還50%冷卻時間。如果啟動鎖定，圈內所有敵方英雄都會被標記，並依序受到20次普攻，每次造成10%傷害。（冷卻時間8秒）",
+      "effect": "施放大絕時，在自身或1秒內被大絕傷害的敵軍周圍生成半徑5單位的鎖定圈。1秒內沒有擊中敵軍則不啟動並返還50%冷卻；啟動後標記圈內敵方英雄，依序進行20次、每次10%傷害的普攻。冷卻25秒。",
       "officialTags": [
         "疾風回音"
       ],
       "classificationSourceRefs": [
         "IMG_8147"
       ],
-      "reviewedThrough": "7.3c",
-      "reviewedAt": "2026-10-25",
-      "effectEvidence": "original-capture-no-matched-delta"
+      "reviewedThrough": "7.3f",
+      "reviewedAt": "2026-11-12",
+      "effectEvidence": "original-capture-no-matched-delta",
+      "previousEffect73e": "施放大絕時，會在自身或1秒內受到大絕傷害的敵軍周圍，生成半徑5單位的鎖定圈。如果鎖定圈在1秒內沒有擊中敵軍，將不會啟動鎖定，並返還50%冷卻時間。如果啟動鎖定，圈內所有敵方英雄都會被標記，並依序受到20次普攻，每次造成10%傷害。（冷卻時間8秒）",
+      "correction": {
+        "patch": "7.3f",
+        "fields": "官方本次變動欄位；未列部分保留既有卡面記錄",
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/"
+      }
     },
     {
       "id": "augment-106",
@@ -2542,9 +2575,9 @@
     }
   },
   "classificationNote": "官方分類是卡片本身顯示的標籤；同一張增幅可能同時擁有多個標籤，例如「暴擊治療」同時屬於「暴擊」與「復原」。",
-  "versionLabel": "7.3e｜151張既有卡庫＋6組新增公告",
+  "versionLabel": "7.3f｜151張既有卡＋官方變動專區",
   "correctionNote": "既有卡片保留已核對至 7.3c 的效果；7.3d 六項增幅數值另列公告，未確認中文名稱者不強制套用。",
-  "officialPatch": "7.3d",
+  "officialPatch": "7.3f",
   "official73c": {
     "patch": "7.3c",
     "version": "7.3c",
@@ -2821,5 +2854,160 @@
       "numbers": null,
       "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/"
     }
-  ]
+  ],
+  "official73f": {
+    "augments": [
+      {
+        "name": "鬧著玩",
+        "rows": [
+          {
+            "label": "冷卻",
+            "before": "150秒",
+            "after": "90秒"
+          }
+        ]
+      },
+      {
+        "name": "士兵救援",
+        "rows": [
+          {
+            "label": "剩餘冷卻時間縮短",
+            "before": "10%",
+            "after": "20%"
+          }
+        ]
+      },
+      {
+        "name": "奧術影分身",
+        "rows": [
+          {
+            "label": "召喚機率",
+            "before": "20%",
+            "after": "30%"
+          },
+          {
+            "label": "影分身效果",
+            "before": "50%",
+            "after": "80%"
+          }
+        ]
+      },
+      {
+        "name": "士兵打擊",
+        "rows": [
+          {
+            "label": "獲得暴擊率",
+            "before": "25%",
+            "after": "40%"
+          }
+        ]
+      },
+      {
+        "name": "輝耀誓約",
+        "rows": [
+          {
+            "label": "啟動時固定傷害格擋",
+            "before": "10–60 + 3000%治療和護盾強度",
+            "after": "10–30 + 2000%治療和護盾強度"
+          }
+        ]
+      },
+      {
+        "name": "與我同唱",
+        "rows": [
+          {
+            "label": "額外跑速",
+            "before": "30%",
+            "after": "15%"
+          },
+          {
+            "label": "護盾",
+            "before": "10%基礎生命",
+            "after": "5%基礎生命"
+          },
+          {
+            "label": "治療",
+            "before": "3%已損失生命",
+            "after": "2%已損失生命"
+          }
+        ]
+      },
+      {
+        "name": "流轉碎礫",
+        "rows": [
+          {
+            "label": "傷害",
+            "before": "60–180 + 40%額外物攻 + 30%魔攻 + 4%目標最大生命",
+            "after": "40–120 + 30%額外物攻 + 10%魔攻 + 2%目標最大生命"
+          }
+        ]
+      },
+      {
+        "name": "隱霧反擊",
+        "rows": [
+          {
+            "label": "衝刺時傷害減免",
+            "before": "20%",
+            "after": "15%"
+          },
+          {
+            "label": "每0.75秒傷害",
+            "before": "120–180 + 30%額外物攻 + 15%魔攻",
+            "after": "60–120 + 30%額外物攻 + 15%魔攻"
+          }
+        ]
+      },
+      {
+        "name": "祕術拳擊",
+        "rows": [
+          {
+            "label": "冷卻時間縮短",
+            "before": "0.5秒",
+            "after": "0.8秒"
+          }
+        ]
+      },
+      {
+        "name": "殘暴之力",
+        "rows": [
+          {
+            "label": "適性之力",
+            "before": "20",
+            "after": "30"
+          }
+        ]
+      },
+      {
+        "name": "連鎖反應",
+        "rows": [
+          {
+            "label": "冷卻",
+            "before": "8秒",
+            "after": "25秒"
+          }
+        ]
+      },
+      {
+        "name": "移山者",
+        "rows": [
+          {
+            "label": "跑速",
+            "before": "4%",
+            "after": "2%"
+          },
+          {
+            "label": "滿層持續時間",
+            "before": "5秒",
+            "after": "4秒"
+          }
+        ]
+      }
+    ],
+    "qualityOfLife": [
+      "K/DA增幅命中音效改善。"
+    ],
+    "bugfixes": [
+      "戰鬥軍庫：修正多名英雄的道具傷害同時命中敵人時可能未觸發。"
+    ]
+  }
 }

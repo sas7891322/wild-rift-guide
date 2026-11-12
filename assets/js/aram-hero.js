@@ -56,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=125.0.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=125.0.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=126.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=126.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -111,6 +111,7 @@
       </section>`;
     };
 
+    const render73f=()=>{const r=hero.review73f;if(!r)return '';const groups=(r.officialDeltas||[]).map(g=>`<h4>${esc(g.title)}</h4>${g.rows.map(x=>`<p>${esc(x.label)}：${esc(x.before)} → <strong>${esc(x.after)}</strong></p>`).join('')}`).join('');return `<details class="aram-detail-section" open><summary><strong>7.3f 初步校驗</strong></summary><p>${esc(r.tierReason)}</p>${groups}${(r.buildNotes||[]).map(t=>`<p>${esc(t)}</p>`).join('')}<p>${esc(r.scope)}</p><p>符文大亂鬥另有增幅調整，請於模式內查看。</p><a href="pages/review-7-3f.html">全英雄紀錄</a></details>`;};
     const render73e=()=>{const r=hero.review73e;if(!r)return '';return `<details class="aram-detail-section"><summary><strong>7.3e 攻略校正（點開查看）</strong></summary><p>${esc(r.tierReason)}</p>${(r.buildNotes||[]).map(x=>`<p>${esc(x)}</p>`).join('')}<p>${esc(hero.aaaAram?.patch73eNote||'')}</p><a href="pages/review-7-3e.html">本輪紀錄</a></details>`;};
     const render73d=()=>{
       const r=hero.review73d;if(!r)return '';
@@ -184,7 +185,7 @@
           <div class="aaa-fit-card-body">
             <p class="aaa-fit-effect"><b>效果：</b>${esc(augment.effect||'效果資料載入失敗')}</p>
             ${augment.correction?`<p><small>${esc(augment.correction.patch)} 已校正：${esc(augment.correction.fields)}；其他效果與推薦評級仍待複核。</small></p>`:''}
-            <p class="aaa-fit-reason"><b>推薦判斷：</b>${esc(rating.reason||'')}</p>
+            <p><small>分類評級沿用既有評估，7.3f效果以本卡新值為準。</small></p><p class="aaa-fit-reason"><b>推薦判斷：</b>${esc(rating.reason||'')}</p>
           </div>
         </details>`;
       }).join('');
@@ -198,7 +199,7 @@
         </div>
       </details>`).join('');
       const aaaRunes=renderRunes(aaa.runeReuse?.runes||hero.runes||[]);
-      return `${aaa.officialBalanceUpdate?`<section class="aram-detail-section"><h2>7.3e適用｜7.3c公告的符文大亂鬥官方倍率</h2>${aaa.officialBalanceUpdate.rows.map(r=>`<p>${esc(r.label)}：${esc(r.before)} → <strong>${esc(r.after)}</strong></p>`).join('')}<p>${esc(aaa.officialBalanceUpdate.note)}</p><a href="${esc(aaa.officialBalanceUpdate.source)}" target="_blank" rel="noopener noreferrer">官方來源</a></section>`:''}<section class="aram-detail-section aaa-overview-section">
+      return `<section class="aram-detail-section"><h2>7.3f 增幅選用提醒</h2><p>${esc(aaa.patch73fNote||'')}</p></section>${aaa.officialBalanceUpdate?`<section class="aram-detail-section"><h2>7.3f適用｜7.3c公告的符文大亂鬥官方倍率</h2>${aaa.officialBalanceUpdate.rows.map(r=>`<p>${esc(r.label)}：${esc(r.before)} → <strong>${esc(r.after)}</strong></p>`).join('')}<p>${esc(aaa.officialBalanceUpdate.note)}</p><a href="${esc(aaa.officialBalanceUpdate.source)}" target="_blank" rel="noopener noreferrer">官方來源</a></section>`:''}<section class="aram-detail-section aaa-overview-section">
         <details class="aaa-shared-disclosure">
           <summary>
             <div class="aram-detail-section-head"><div><span>AAA ARAM</span><h2>哪些資料可以共用？</h2></div><small>標準 ARAM 為基底</small></div>
@@ -217,7 +218,7 @@
       </section>
       <section class="aram-detail-section aaa-decision-section">
         <div class="aram-detail-section-head"><div><span>CATEGORY FIRST</span><h2>${esc(hero.name)}增幅分類</h2></div><small>先看分類，再看單卡</small></div>
-        <div class="aaa-category-howto"><b>遊戲看到 3 張增幅</b><span>看卡片下方分類 → 點下面相同分類 → 左側分級越高越優先</span></div>
+        <div class="aaa-category-howto"><b>遊戲看到 3 張增幅</b><span>${(compatibility.ratings||[]).length?'看卡片下方分類 → 點下面相同分類 → 左側分級越高越優先':'新英雄尚未完成逐卡評級；下列分類先提供玩法方向，選擇前仍須確認卡片效果。'}</span></div>
         <div class="aaa-category-grid" data-aaa-category-grid>${categoryCards}</div>
         <div class="aaa-category-results" data-aaa-category-results>
           <div class="aaa-category-empty" data-aaa-category-empty><strong>先點一個分類</strong><span>例如卡片寫「暴擊」，就直接點「暴擊」。</span></div>
@@ -231,7 +232,7 @@
         </div>
       </section>
       <section class="aram-detail-section" id="aaa-build-section" tabindex="-1">
-        <div class="aram-detail-section-head"><div><span>ADAPTIVE BUILD</span><h2>依增幅切換出裝</h2></div><small>${buildPlans.length} 條路線</small></div>
+        <div class="aram-detail-section-head"><div><span>ADAPTIVE BUILD</span><h2>依增幅切換出裝</h2></div><small>${(aaa.buildPlans||[]).length} 條路線</small></div>
         <div class="aaa-build-list">${buildPlans}</div>
       </section>
       <section class="aram-detail-section" id="aaa-runes-section" tabindex="-1">
@@ -391,7 +392,7 @@
         robots:'index,follow,max-image-preview:large'
       });
       renderHeader(currentMode);
-      contentRoot.innerHTML=render73e()+render73d()+(isAaa?renderAaa():renderStandard());
+      contentRoot.innerHTML=render73f()+render73e()+render73d()+(isAaa?renderAaa():renderStandard());
       if(isAaa){bindAaaSectionJumps();bindAugmentCompatibility();}
     };
 
@@ -410,6 +411,6 @@
     console.error(err);
     // Missing heroes or failed data loads should not index an error shell.
     document.querySelector('meta[name="robots"]')?.setAttribute('content','noindex,follow');
-    root.innerHTML='<section class="aram-detail-error"><h1>攻略資料暫時無法載入</h1><p>可能是連線失敗或英雄網址有誤。你仍可從直接閱讀版查閱完整 ARAM 配置。</p><a href="pages/aram-guides.html">查看 142 位 ARAM 英雄攻略</a><p><a href="aram.html">← 回 ARAM 專區</a></p></section>';
+    root.innerHTML='<section class="aram-detail-error"><h1>攻略資料暫時無法載入</h1><p>可能是連線失敗或英雄網址有誤。你仍可從直接閱讀版查閱完整 ARAM 配置。</p><a href="pages/aram-guides.html">查看 143 位 ARAM 英雄攻略</a><p><a href="aram.html">← 回 ARAM 專區</a></p></section>';
   }
 })();

@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-12",
+  "baselineCommit": "256ae6ef624d1b35208522f5266d68b24166c346",
+  "checks": [
+    {
+      "check": "143 distinct champions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rift existing tier values preserved",
+      "passed": true,
+      "detail": 203
+    },
+    {
+      "check": "aram existing tier values preserved",
+      "passed": true,
+      "detail": 142
+    },
+    {
+      "check": "Existing standard ARAM balance values preserved",
+      "passed": true,
+      "detail": 142
+    },
+    {
+      "check": "Official patch coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Every guide has current first-pass record",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Audit index covers every guide",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Ads verification legal and Supabase files unchanged",
+      "passed": true,
+      "detail": [
+        "ads.txt",
+        "google06366604ece17a8c.html",
+        "privacy.html",
+        "terms.html",
+        "pages/privacy.html",
+        "pages/terms.html",
+        "assets/js/supabase-config.js",
+        "supabase/v79.3-member-data-repair.sql",
+        "supabase/wild-rift-guide-member.sql",
+        "supabase/wild-rift-guide-v79.5-traffic.sql",
+        "supabase/wild-rift-guide-v79-check.sql",
+        "supabase/wild-rift-guide-v91-player-finder-check.sql",
+        "supabase/README.md",
+        "supabase/wild-rift-guide-v91-player-finder.sql"
+      ]
+    },
+    {
+      "check": "Existing AdSense script publisher and parameters preserved",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Sylas six supplied icon files match bytes",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "browserChecks": {
+    "officialTabAndDisclosure": "passed",
+    "siteAndNewChampionTabs": "passed",
+    "sylasSearchToDetail": "passed",
+    "sylasSkillIconsAndMatchupAdvice": "passed",
+    "finalSixSlotBuildWithTier3Boot": "passed",
+    "standardAramToAaaSwitch": "passed",
+    "aaaBuildCount": "passed: 1 route for Sylas",
+    "officialOnlyAugmentSearch": "passed: 奧術影分身",
+    "augmentAliasAndCurrentEffect": "passed: 祕術拳擊 0.8秒",
+    "itemDetail": "passed: 時光之杖 2600金、20%魔力返還、20生命/40魔力每層",
+    "smiteDetail": "passed: 18–158、20%雙防、30/55金",
+    "mobileFrames": {
+      "390px": "official announcement: clientWidth375/scrollWidth375",
+      "430px": "ARAM and Rift Sylas: clientWidth415/scrollWidth415; no missing loaded icons"
+    }
+  },
+  "limitations": [
+    "初步校驗涵蓋公告差異與配置引用，不代表143位英雄全部技能逐項遊戲內實測。",
+    "既有Tier保留，賽勒斯待評；完整技能成長與偷大絕互動尚待核實。",
+    "新版本增幅僅5張可匹配既有完整卡庫，7組僅列官方改動，不補造其他效果或分類。"
+  ]
+}

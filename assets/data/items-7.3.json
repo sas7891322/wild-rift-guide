@@ -1,6 +1,6 @@
 {
-  "version": "7.3e-v125",
-  "updatedAt": "2026-11-04",
+  "version": "7.3f",
+  "updatedAt": "2026-11-12",
   "source": "使用者提供的七類遊戲內截圖",
   "screenshotCount": 560,
   "categories": [
@@ -12,7 +12,7 @@
     "輔助",
     "鞋子"
   ],
-  "notes": "7.3d 於2026/11/04對照Riot官方繁中公告：6件直接調整裝備已同步數值、日期與來源；其他現行裝備仍沿用先前可核對資料，早期截圖不能當作7.3d數值證明。",
+  "notes": "7.3f：10件裝備官方變動已更新到文字與價格；舊截圖依來源保留，不代表現行數值。 7.3d 於2026/11/04對照Riot官方繁中公告：6件直接調整裝備已同步數值、日期與來源；其他現行裝備仍沿用先前可核對資料，早期截圖不能當作7.3d數值證明。",
   "items": [
     {
       "id": "wr73-8894",
@@ -1458,8 +1458,8 @@
         }
       ],
       "stats": [
-        "+350 最大生命",
-        "+40 物理攻擊",
+        "+400 最大生命",
+        "+45 物理攻擊",
         "+15 技能加速"
       ],
       "passives": [
@@ -1472,7 +1472,7 @@
           "description": "對鄰近敵軍造成相當於 175% 基礎物理攻擊的物理傷害。每命中一位敵方英雄，回復相當於 20% 物理攻擊＋10% 已損失生命的生命。冷卻 12 秒。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-8904",
         "wr73-9253",
@@ -1483,9 +1483,25 @@
       "descriptionSources": [
         "IMG_8920.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "物攻",
+            "before": "40",
+            "after": "45"
+          },
+          {
+            "label": "生命",
+            "before": "350",
+            "after": "400"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-8922",
@@ -1840,7 +1856,7 @@
         }
       ],
       "stats": [
-        "+65 物理攻擊",
+        "+60 物理攻擊",
         "+20 技能加速"
       ],
       "passives": [
@@ -1849,7 +1865,7 @@
           "description": "1.8 秒內以 2 次普攻或技能命中敵方英雄，造成相當於目標最大生命 7%（遠程 3.5%）的額外物理傷害，並獲得可吸收 150＋40% 額外物理攻擊（遠程 70＋18% 額外物理攻擊）傷害的護盾，持續 2 秒。冷卻 6 秒。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-8914",
         "wr73-8914"
@@ -1859,9 +1875,20 @@
       "descriptionSources": [
         "IMG_8930.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "物攻",
+            "before": "65",
+            "after": "60"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-8932",
@@ -7322,7 +7349,7 @@
         "法師"
       ],
       "stage": "主動裝備",
-      "price": 2700,
+      "price": 2650,
       "orderByCategory": {
         "法師": 24
       },
@@ -7357,17 +7384,17 @@
         }
       ],
       "stats": [
-        "+250 最大生命",
+        "+300 最大生命",
         "+70 魔法攻擊",
         "+20 技能加速"
       ],
       "passives": [
         {
           "name": "腰帶（主動）",
-          "description": "向前衝刺並朝扇形範圍發射飛彈，造成 100＋10% 魔法攻擊的魔法傷害。冷卻 30 秒。英雄或野怪遭多枚飛彈擊中時，第一枚之後只造成 10% 傷害。"
+          "description": "向前衝刺並朝扇形範圍發射飛彈，造成 110＋15% 魔法攻擊的魔法傷害。冷卻 30 秒。英雄或野怪遭多枚飛彈擊中時，第一枚之後只造成 10% 傷害。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-9134",
         "wr73-9130",
@@ -7378,9 +7405,30 @@
       "descriptionSources": [
         "IMG_9156.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "價格",
+            "before": "2700",
+            "after": "2650"
+          },
+          {
+            "label": "生命",
+            "before": "250",
+            "after": "300"
+          },
+          {
+            "label": "主動傷害",
+            "before": "100 + 10%魔攻",
+            "after": "110 + 15%魔攻"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-9157",
@@ -7813,7 +7861,7 @@
         "輔助"
       ],
       "stage": "高階裝備",
-      "price": 2650,
+      "price": 2550,
       "orderByCategory": {
         "法師": 29,
         "輔助": 35
@@ -7874,7 +7922,7 @@
           "description": "對敵方英雄造成魔法傷害時附加 50% 重創，持續 3 秒。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-9124",
         "wr73-9130",
@@ -7885,9 +7933,20 @@
       "descriptionSources": [
         "IMG_9168.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "價格",
+            "before": "2650",
+            "after": "2550"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-9170",
@@ -7962,7 +8021,7 @@
         "法師"
       ],
       "stage": "高階裝備",
-      "price": 2700,
+      "price": 2600,
       "orderByCategory": {
         "法師": 31
       },
@@ -8014,14 +8073,14 @@
       "passives": [
         {
           "name": "永續",
-          "description": "受到敵方英雄傷害後，回復相當於傷害量 15% 的魔力。消耗魔力後回復相當於魔力消耗 20% 的生命，每次施放技能最多回復 25 生命。"
+          "description": "受到敵方英雄傷害後，回復相當於傷害量 20% 的魔力。消耗魔力後回復相當於魔力消耗 20% 的生命，每次施放技能最多回復 25 生命。"
         },
         {
           "name": "精熟",
-          "description": "每 35 秒增加一層，每層增加 15 生命、30 魔力與 4 魔法攻擊；最多 10 層，共增加 150 生命、300 魔力與 40 魔法攻擊。"
+          "description": "每 35 秒增加一層，每層增加 20 生命、40 魔力與 4 魔法攻擊；最多 10 層，共增加 200 生命、400 魔力與 40 魔法攻擊。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-9114",
         "wr73-9132"
@@ -8032,9 +8091,35 @@
         "IMG_9172.PNG",
         "IMG_9173.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "價格",
+            "before": "2700",
+            "after": "2600"
+          },
+          {
+            "label": "永續｜魔力返還",
+            "before": "15%",
+            "after": "20%"
+          },
+          {
+            "label": "每層額外生命",
+            "before": "15",
+            "after": "20"
+          },
+          {
+            "label": "每層額外魔力",
+            "before": "30",
+            "after": "40"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-9175",
@@ -8387,10 +8472,10 @@
       "passives": [
         {
           "name": "回音",
-          "description": "下一次傷害性技能或強化普攻對主要目標與最多 4 名鄰近敵軍造成 75＋8% 魔法攻擊的魔法傷害。冷卻 9 秒。命中的次要目標每少一個，對主要目標多造成 20＋1.2% 魔法攻擊的魔法傷害。"
+          "description": "下一次傷害性技能或強化普攻對主要目標與最多 4 名鄰近敵軍造成 80＋9% 魔法攻擊的魔法傷害。冷卻 9 秒。命中的次要目標每少一個，對主要目標多造成 22.5＋1.4% 魔法攻擊的魔法傷害。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-9136",
         "wr73-9134"
@@ -8400,9 +8485,25 @@
       "descriptionSources": [
         "IMG_9185.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "異鳴回音｜第一發",
+            "before": "75 + 8%魔攻",
+            "after": "80 + 9%魔攻"
+          },
+          {
+            "label": "後續投射物",
+            "before": "20 + 1.2%魔攻",
+            "after": "22.5 + 1.4%魔攻"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-9187",
@@ -8448,15 +8549,15 @@
       "stats": [
         "+100 魔法攻擊",
         "+10 技能加速",
-        "+5% 跑速"
+        "+6% 跑速"
       ],
       "passives": [
         {
           "name": "魔法彎刀",
-          "description": "施放技能後，10 秒內的下一次普攻造成 75% 基礎物理攻擊＋45% 魔法攻擊的額外魔法傷害。冷卻 1.5 秒；對建築物傷害降低。"
+          "description": "施放技能後，10 秒內的下一次普攻造成 75% 基礎物理攻擊＋50% 魔法攻擊的額外魔法傷害。冷卻 1.5 秒；對建築物傷害降低。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-9126",
         "wr73-8900",
@@ -8467,9 +8568,25 @@
       "descriptionSources": [
         "IMG_9187.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "跑速",
+            "before": "5%",
+            "after": "6%"
+          },
+          {
+            "label": "魔法彎刀｜魔攻係數",
+            "before": "45%",
+            "after": "50%"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-9189",
@@ -8806,7 +8923,7 @@
       ],
       "stats": [
         "+300 最大生命",
-        "+70 魔法攻擊"
+        "+60 魔法攻擊"
       ],
       "passives": [
         {
@@ -8818,7 +8935,7 @@
           "description": "與敵方英雄交戰後，每秒提升 2% 傷害，3 秒後達上限 6%。"
         }
       ],
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [
         "wr73-9120",
         "wr73-9138"
@@ -8828,9 +8945,20 @@
       "descriptionSources": [
         "IMG_9204.PNG"
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "魔攻",
+            "before": "70",
+            "after": "60"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-9206",
@@ -14040,7 +14168,7 @@
         "輔助": 1.1
       },
       "icon": "../assets/images/items/official-v107/wr73-9335-evolved.webp",
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [],
       "upgrades": [],
       "evolvesFrom": "wr73-9335",
@@ -14058,7 +14186,7 @@
       "passives": [
         {
           "name": "鑄魂",
-          "description": "每 60 秒獲得 75 金幣、增加 25 生命，以及 2 物攻或 4 魔攻（適性）；累積上限為 250 生命、20 物攻或 40 魔攻。"
+          "description": "每 60 秒獲得 60 金幣、增加 25 生命，以及 2 物攻或 4 魔攻（適性）；累積上限為 250 生命、20 物攻或 40 魔攻。"
         },
         {
           "name": "清除守衛",
@@ -14069,9 +14197,20 @@
           "description": "脫離戰鬥後，朝完美拍檔移動時獲得 10% 跑速；相距超過 2,500 單位時提升為 30%。"
         }
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "鑄魂｜每分鐘金幣",
+            "before": "75",
+            "after": "60"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     },
     {
       "id": "wr73-9340-evolved",
@@ -14086,7 +14225,7 @@
         "輔助": 2.1
       },
       "icon": "../assets/images/items/official-v107/wr73-9340-evolved.webp",
-      "dataVersion": "7.3c",
+      "dataVersion": "7.3f",
       "buildFrom": [],
       "upgrades": [],
       "evolvesFrom": "wr73-9340",
@@ -14104,7 +14243,7 @@
       "passives": [
         {
           "name": "鑄魂",
-          "description": "每 60 秒獲得 75 金幣、增加 25 生命，以及 2 物攻或 4 魔攻（適性）；累積上限為 250 生命、20 物攻或 40 魔攻。"
+          "description": "每 60 秒獲得 60 金幣、增加 25 生命，以及 2 物攻或 4 魔攻（適性）；累積上限為 250 生命、20 物攻或 40 魔攻。"
         },
         {
           "name": "清除守衛",
@@ -14115,14 +14254,25 @@
           "description": "脫離戰鬥後，朝完美拍檔移動時獲得 10% 跑速；相距超過 2,500 單位時提升為 30%。"
         }
       ],
-      "lastReviewedPatch": "7.3c",
-      "lastReviewedAt": "2026-10-25",
-      "sourceDataVersion": "7.3"
+      "lastReviewedPatch": "7.3f",
+      "lastReviewedAt": "2026-11-12",
+      "sourceDataVersion": "7.3",
+      "patch73f": {
+        "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+        "rows": [
+          {
+            "label": "鑄魂｜每分鐘金幣",
+            "before": "75",
+            "after": "60"
+          }
+        ],
+        "note": "文字數值已依7.3f更新；原始截圖保留拍攝當時版本。"
+      }
     }
   ],
   "purchaseItemCount": 171,
   "evolvedItemCount": 6,
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "patch73eReview": {
     "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3e/",
     "date": "2026-11-11",

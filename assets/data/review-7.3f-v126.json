@@ -1,0 +1,3677 @@
+{
+  "patch": "7.3f",
+  "siteVersion": "v126",
+  "date": "2026-11-12",
+  "source": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/",
+  "scope": "官方差異與全名冊初步校驗",
+  "roster": 143,
+  "riftGuides": 204,
+  "aramGuides": 143,
+  "aaaGuides": 143,
+  "tierChanges": [],
+  "newUnrated": [
+    "sylas"
+  ],
+  "records": [
+    {
+      "mode": "rift",
+      "id": "smolder",
+      "name": "史矛德",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "miss-fortune",
+      "name": "好運姐",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ezreal",
+      "name": "伊澤瑞爾",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "varus",
+      "name": "法洛士",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "zeri",
+      "name": "婕莉",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "lucian",
+      "name": "路西恩",
+      "role": "飛龍路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "xayah",
+      "name": "剎雅",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jhin",
+      "name": "燼",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kogmaw",
+      "name": "寇格魔",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "vayne",
+      "name": "汎",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "corki",
+      "name": "庫奇",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kalista",
+      "name": "克黎思妲",
+      "role": "飛龍路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "sivir",
+      "name": "希維爾",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kaisa",
+      "name": "凱莎",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "draven",
+      "name": "達瑞文",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ashe",
+      "name": "艾希",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jinx",
+      "name": "吉茵珂絲",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "caitlyn",
+      "name": "凱特琳",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "twitch",
+      "name": "圖奇",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "tristana",
+      "name": "崔絲塔娜",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "samira",
+      "name": "煞蜜拉",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "yunara",
+      "name": "尤娜拉",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "senna",
+      "name": "姍娜",
+      "role": "飛龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "aatrox-baron",
+      "name": "厄薩斯",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "akali-baron",
+      "name": "阿卡莉",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ambessa-baron",
+      "name": "安比薩",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "aurora-baron",
+      "name": "歐羅拉",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "camille-baron",
+      "name": "卡蜜兒",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "darius-baron",
+      "name": "達瑞斯",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "dr-mundo-baron",
+      "name": "蒙多醫生",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "fiora-baron",
+      "name": "菲歐拉",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "garen-baron",
+      "name": "蓋倫",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "gnar-baron",
+      "name": "吶兒",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "gragas-baron",
+      "name": "古拉格斯",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "gwen-baron",
+      "name": "關",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "irelia-baron",
+      "name": "伊瑞莉雅",
+      "role": "巴龍路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jarvan-iv-baron",
+      "name": "嘉文四世",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jax-baron",
+      "name": "賈克斯",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jayce-baron",
+      "name": "杰西",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ksante-baron",
+      "name": "卡桑帝",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kayle-baron",
+      "name": "凱爾",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kennen-baron",
+      "name": "凱能",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "海克斯科技火箭腰帶"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "malphite-baron",
+      "name": "墨菲特",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "maokai-baron",
+      "name": "茂凱",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "mordekaiser-baron",
+      "name": "魔鬥凱薩",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "海克斯科技火箭腰帶",
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nasus-baron",
+      "name": "納瑟斯",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nautilus-baron",
+      "name": "納帝魯斯",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nidalee-baron",
+      "name": "奈德麗",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "olaf-baron",
+      "name": "歐拉夫",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ornn-baron",
+      "name": "鄂爾",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "pantheon-baron",
+      "name": "潘森",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "poppy-baron",
+      "name": "波比",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "renekton-baron",
+      "name": "雷尼克頓",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "riven-baron",
+      "name": "雷玟",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "rumble-baron",
+      "name": "藍寶",
+      "role": "巴龍路",
+      "directChange": true,
+      "affectedItems": [
+        "海克斯科技火箭腰帶",
+        "黎安卓的折磨"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ryze-baron",
+      "name": "雷茲",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "sett-baron",
+      "name": "賽特",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "shen-baron",
+      "name": "慎",
+      "role": "巴龍路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "singed-baron",
+      "name": "辛吉德",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "sion-baron",
+      "name": "賽恩",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "skarner-baron",
+      "name": "史加納",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "swain-baron",
+      "name": "斯溫",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "teemo-baron",
+      "name": "提摩",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "tryndamere-baron",
+      "name": "泰達米爾",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "urgot-baron",
+      "name": "烏爾加特",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "viego-baron",
+      "name": "維爾戈",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "vladimir-baron",
+      "name": "弗拉迪米爾",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "volibear-baron",
+      "name": "弗力貝爾",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "warwick-baron",
+      "name": "沃維克",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "wukong-baron",
+      "name": "悟空",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "yasuo-baron",
+      "name": "犽宿",
+      "role": "巴龍路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "yone-baron",
+      "name": "犽凝",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "aatrox-jungle",
+      "name": "厄薩斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ambessa-jungle",
+      "name": "安比薩",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "amumu-jungle",
+      "name": "阿姆姆",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "camille-jungle",
+      "name": "卡蜜兒",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "darius-jungle",
+      "name": "達瑞斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "diana-jungle",
+      "name": "黛安娜",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "dr-mundo-jungle",
+      "name": "蒙多醫生",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ekko-jungle",
+      "name": "艾克",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "evelynn-jungle",
+      "name": "伊芙琳",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "fiddlesticks-jungle",
+      "name": "費德提克",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "海克斯科技火箭腰帶"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "fizz-jungle",
+      "name": "飛斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "gragas-jungle",
+      "name": "古拉格斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "graves-jungle",
+      "name": "葛雷夫",
+      "role": "打野",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "gwen-jungle",
+      "name": "關",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "hecarim-jungle",
+      "name": "赫克林",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jarvan-iv-jungle",
+      "name": "嘉文四世",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jax-jungle",
+      "name": "賈克斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kayn-jungle",
+      "name": "慨影",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "khazix-jungle",
+      "name": "卡力斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kindred-jungle",
+      "name": "鏡爪",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "lee-sin-jungle",
+      "name": "李星",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "lillia-jungle",
+      "name": "莉莉亞",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "maokai-jungle",
+      "name": "茂凱",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "morgana-jungle",
+      "name": "魔甘娜",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nidalee-jungle",
+      "name": "奈德麗",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nilah-jungle",
+      "name": "淣菈",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nocturne-jungle",
+      "name": "夜曲",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nunu-and-willump-jungle",
+      "name": "努努和威朗普",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "olaf-jungle",
+      "name": "歐拉夫",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "pantheon-jungle",
+      "name": "潘森",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "poppy-jungle",
+      "name": "波比",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "rammus-jungle",
+      "name": "拉姆斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "rengar-jungle",
+      "name": "雷葛爾",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "riven-jungle",
+      "name": "雷玟",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "shyvana-jungle",
+      "name": "希瓦娜",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "skarner-jungle",
+      "name": "史加納",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "taliyah-jungle",
+      "name": "塔莉雅",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "talon-jungle",
+      "name": "塔隆",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "tryndamere-jungle",
+      "name": "泰達米爾",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "vi-jungle",
+      "name": "菲艾",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "viego-jungle",
+      "name": "維爾戈",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "volibear-jungle",
+      "name": "弗力貝爾",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "warwick-jungle",
+      "name": "沃維克",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "wukong-jungle",
+      "name": "悟空",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "xin-zhao-jungle",
+      "name": "趙信",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "yone-jungle",
+      "name": "犽凝",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "zed-jungle",
+      "name": "劫",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ahri-mid",
+      "name": "阿璃",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "巫妖之禍"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "akali-mid",
+      "name": "阿卡莉",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "akshan-mid",
+      "name": "埃可尚",
+      "role": "中路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "annie-mid",
+      "name": "安妮",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "海克斯科技火箭腰帶"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "aurelion-sol-mid",
+      "name": "翱銳龍獸",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "aurora-mid",
+      "name": "歐羅拉",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "brand-mid",
+      "name": "布蘭德",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "diana-mid",
+      "name": "黛安娜",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ekko-mid",
+      "name": "艾克",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "fizz-mid",
+      "name": "飛斯",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "galio-mid",
+      "name": "加里歐",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "heimerdinger-mid",
+      "name": "漢默丁格",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "irelia-mid",
+      "name": "伊瑞莉雅",
+      "role": "中路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "jayce-mid",
+      "name": "杰西",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kassadin-mid",
+      "name": "卡薩丁",
+      "role": "中路",
+      "directChange": true,
+      "affectedItems": [
+        "時光之杖"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "katarina-mid",
+      "name": "卡特蓮娜",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kayle-mid",
+      "name": "凱爾",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "kennen-mid",
+      "name": "凱能",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "海克斯科技火箭腰帶"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "lissandra-mid",
+      "name": "麗珊卓",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "lux-mid",
+      "name": "拉克絲",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "mel-mid",
+      "name": "梅爾",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "黎安卓的折磨"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "morgana-mid",
+      "name": "魔甘娜",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "norra-mid",
+      "name": "諾拉",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "orianna-mid",
+      "name": "奧莉安娜",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ryze-mid",
+      "name": "雷茲",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "swain-mid",
+      "name": "斯溫",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "syndra-mid",
+      "name": "星朵拉",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "taliyah-mid",
+      "name": "塔莉雅",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "teemo-mid",
+      "name": "提摩",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "twisted-fate-mid",
+      "name": "逆命",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "veigar-mid",
+      "name": "維迦",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "velkoz-mid",
+      "name": "威寇茲",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "vex-mid",
+      "name": "薇可絲",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "viktor-mid",
+      "name": "維克特",
+      "role": "中路",
+      "directChange": true,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "vladimir-mid",
+      "name": "弗拉迪米爾",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "yasuo-mid",
+      "name": "犽宿",
+      "role": "中路",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "yone-mid",
+      "name": "犽凝",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "zed-mid",
+      "name": "劫",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ziggs-mid",
+      "name": "希格斯",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "黎安卓的折磨"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "zoe-mid",
+      "name": "柔依",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "zyra-mid",
+      "name": "枷蘿",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "alistar-support",
+      "name": "亞歷斯塔",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "bard-support",
+      "name": "巴德",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍",
+        "黯霧之鐮"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "blitzcrank-support",
+      "name": "布里茨",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "brand-support",
+      "name": "布蘭德",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨",
+        "黯霧之鐮"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "braum-support",
+      "name": "布郎姆",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "galio-support",
+      "name": "加里歐",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "janna-support",
+      "name": "珍娜",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "karma-support",
+      "name": "卡瑪",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "leona-support",
+      "name": "雷歐娜",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "lulu-support",
+      "name": "露璐",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "lux-support",
+      "name": "拉克絲",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "黯霧之鐮"
+      ],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "malphite-support",
+      "name": "墨菲特",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "maokai-support",
+      "name": "茂凱",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "milio-support",
+      "name": "米里歐",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "morgana-support",
+      "name": "魔甘娜",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨",
+        "黯霧之鐮"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nami-support",
+      "name": "娜米",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nautilus-support",
+      "name": "納帝魯斯",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "pyke-support",
+      "name": "派克",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "rakan-support",
+      "name": "銳空",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "rell-support",
+      "name": "銳兒",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "senna-support",
+      "name": "姍娜",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "seraphine-support",
+      "name": "瑟菈紛",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "ornn-support",
+      "name": "鄂爾",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "sona-support",
+      "name": "索娜",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "soraka-support",
+      "name": "索拉卡",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "swain-support",
+      "name": "斯溫",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "thresh-support",
+      "name": "瑟雷西",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "群山堡壘"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "veigar-support",
+      "name": "維迦",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "黯霧之鐮"
+      ],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "velkoz-support",
+      "name": "威寇茲",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "yuumi-support",
+      "name": "悠咪",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "zilean-support",
+      "name": "極靈",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黯霧之鐮"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "zyra-support",
+      "name": "枷蘿",
+      "role": "輔助",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨",
+        "黯霧之鐮"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "master-yi-jungle",
+      "name": "易大師",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "C",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "shen-jungle",
+      "name": "慎",
+      "role": "打野",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "nautilus-jungle",
+      "name": "納帝魯斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖",
+        "巫妖之禍"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "corki-mid",
+      "name": "庫奇",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "karma-mid",
+      "name": "卡瑪",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "talon-mid",
+      "name": "塔隆",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "rumble-mid",
+      "name": "藍寶",
+      "role": "中路",
+      "directChange": true,
+      "affectedItems": [
+        "海克斯科技火箭腰帶",
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "seraphine-mid",
+      "name": "瑟菈紛",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "chogath-baron",
+      "name": "科加斯",
+      "role": "巴龍路",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "chogath-jungle",
+      "name": "科加斯",
+      "role": "打野",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "sylas-mid",
+      "name": "賽勒斯",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖",
+        "巫妖之禍"
+      ],
+      "tier": "待評",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "rift",
+      "id": "hwei-mid",
+      "name": "赫威",
+      "role": "中路",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書",
+        "黎安卓的折磨"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "amumu",
+      "name": "阿姆姆",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "aurelion-sol",
+      "name": "翱銳龍獸",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書",
+        "黎安卓的折磨"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "brand",
+      "name": "布蘭德",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書",
+        "黎安卓的折磨"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "fiddlesticks",
+      "name": "費德提克",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "galio",
+      "name": "加里歐",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "heimerdinger",
+      "name": "漢默丁格",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "janna",
+      "name": "珍娜",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "jayce",
+      "name": "杰西",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "karma",
+      "name": "卡瑪",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kennen",
+      "name": "凱能",
+      "directChange": false,
+      "affectedItems": [
+        "海克斯科技火箭腰帶"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "lux",
+      "name": "拉克絲",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "黑魔禁書"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "malphite",
+      "name": "墨菲特",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "maokai",
+      "name": "茂凱",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "mel",
+      "name": "梅爾",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書",
+        "黎安卓的折磨"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "miss-fortune",
+      "name": "好運姐",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "morgana",
+      "name": "魔甘娜",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "nami",
+      "name": "娜米",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "nautilus",
+      "name": "納帝魯斯",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "orianna",
+      "name": "奧莉安娜",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ornn",
+      "name": "鄂爾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "rell",
+      "name": "銳兒",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "seraphine",
+      "name": "瑟菈紛",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "swain",
+      "name": "斯溫",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖",
+        "黑魔禁書"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "veigar",
+      "name": "維迦",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "velkoz",
+      "name": "威寇茲",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ziggs",
+      "name": "希格斯",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "zyra",
+      "name": "枷蘿",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書",
+        "黎安卓的折磨"
+      ],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ahri",
+      "name": "阿璃",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "akshan",
+      "name": "埃可尚",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "annie",
+      "name": "安妮",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ashe",
+      "name": "艾希",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "blitzcrank",
+      "name": "布里茨",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "braum",
+      "name": "布郎姆",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "caitlyn",
+      "name": "凱特琳",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "diana",
+      "name": "黛安娜",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍",
+        "黑魔禁書"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ezreal",
+      "name": "伊澤瑞爾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "gragas",
+      "name": "古拉格斯",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍",
+        "黑魔禁書"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "irelia",
+      "name": "伊瑞莉雅",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "jhin",
+      "name": "燼",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "jinx",
+      "name": "吉茵珂絲",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S+",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ksante",
+      "name": "卡桑帝",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kaisa",
+      "name": "凱莎",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kayle",
+      "name": "凱爾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kogmaw",
+      "name": "寇格魔",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "leona",
+      "name": "雷歐娜",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "lillia",
+      "name": "莉莉亞",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "lissandra",
+      "name": "麗珊卓",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "lulu",
+      "name": "露璐",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "milio",
+      "name": "米里歐",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "nasus",
+      "name": "納瑟斯",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "nocturne",
+      "name": "夜曲",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "poppy",
+      "name": "波比",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "pyke",
+      "name": "派克",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "rakan",
+      "name": "銳空",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "rumble",
+      "name": "藍寶",
+      "directChange": true,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "samira",
+      "name": "煞蜜拉",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "senna",
+      "name": "姍娜",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "sett",
+      "name": "賽特",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "sion",
+      "name": "賽恩",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "sivir",
+      "name": "希維爾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "skarner",
+      "name": "史加納",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "smolder",
+      "name": "史矛德",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "sona",
+      "name": "索娜",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "soraka",
+      "name": "索拉卡",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "dr-mundo",
+      "name": "蒙多醫生",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "yuumi",
+      "name": "悠咪",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "syndra",
+      "name": "星朵拉",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "taliyah",
+      "name": "塔莉雅",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "thresh",
+      "name": "瑟雷西",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "varus",
+      "name": "法洛士",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "vex",
+      "name": "薇可絲",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "viktor",
+      "name": "維克特",
+      "directChange": true,
+      "affectedItems": [
+        "盧登回音",
+        "巫妖之禍"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "vladimir",
+      "name": "弗拉迪米爾",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "wukong",
+      "name": "悟空",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "xayah",
+      "name": "剎雅",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "zoe",
+      "name": "柔依",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "巫妖之禍"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "aatrox",
+      "name": "厄薩斯",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "akali",
+      "name": "阿卡莉",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "alistar",
+      "name": "亞歷斯塔",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ambessa",
+      "name": "安比薩",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "aurora",
+      "name": "歐羅拉",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "corki",
+      "name": "庫奇",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "darius",
+      "name": "達瑞斯",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "draven",
+      "name": "達瑞文",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ekko",
+      "name": "艾克",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "fizz",
+      "name": "飛斯",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "garen",
+      "name": "蓋倫",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "gnar",
+      "name": "吶兒",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "graves",
+      "name": "葛雷夫",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "gwen",
+      "name": "關",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "hecarim",
+      "name": "赫克林",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "jax",
+      "name": "賈克斯",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "jarvan-iv",
+      "name": "嘉文四世",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kassadin",
+      "name": "卡薩丁",
+      "directChange": true,
+      "affectedItems": [
+        "時光之杖"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kalista",
+      "name": "克黎思妲",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "katarina",
+      "name": "卡特蓮娜",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kayn",
+      "name": "慨影",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "lee-sin",
+      "name": "李星",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "lucian",
+      "name": "路西恩",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "master-yi",
+      "name": "易大師",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "mordekaiser",
+      "name": "魔鬥凱薩",
+      "directChange": false,
+      "affectedItems": [
+        "海克斯科技火箭腰帶",
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "nidalee",
+      "name": "奈德麗",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "nilah",
+      "name": "淣菈",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "norra",
+      "name": "諾拉",
+      "directChange": false,
+      "affectedItems": [
+        "盧登回音",
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "nunu-and-willump",
+      "name": "努努和威朗普",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "olaf",
+      "name": "歐拉夫",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "pantheon",
+      "name": "潘森",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "renekton",
+      "name": "雷尼克頓",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "rengar",
+      "name": "雷葛爾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "rammus",
+      "name": "拉姆斯",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "riven",
+      "name": "雷玟",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "ryze",
+      "name": "雷茲",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "singed",
+      "name": "辛吉德",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "teemo",
+      "name": "提摩",
+      "directChange": false,
+      "affectedItems": [
+        "黎安卓的折磨"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "tristana",
+      "name": "崔絲塔娜",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "twitch",
+      "name": "圖奇",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "urgot",
+      "name": "烏爾加特",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "vayne",
+      "name": "汎",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "vi",
+      "name": "菲艾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "viego",
+      "name": "維爾戈",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "volibear",
+      "name": "弗力貝爾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "warwick",
+      "name": "沃維克",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "xin-zhao",
+      "name": "趙信",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "yasuo",
+      "name": "犽宿",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "yone",
+      "name": "犽凝",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "yunara",
+      "name": "尤娜拉",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "zed",
+      "name": "劫",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "zeri",
+      "name": "婕莉",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "zilean",
+      "name": "極靈",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "bard",
+      "name": "巴德",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "twisted-fate",
+      "name": "逆命",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍"
+      ],
+      "tier": "A",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "camille",
+      "name": "卡蜜兒",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "evelynn",
+      "name": "伊芙琳",
+      "directChange": false,
+      "affectedItems": [
+        "巫妖之禍",
+        "海克斯科技火箭腰帶",
+        "黎安卓的折磨"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "fiora",
+      "name": "菲歐拉",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "khazix",
+      "name": "卡力斯",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "kindred",
+      "name": "鏡爪",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "shen",
+      "name": "慎",
+      "directChange": true,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "shyvana",
+      "name": "希瓦娜",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "talon",
+      "name": "塔隆",
+      "directChange": false,
+      "affectedItems": [
+        "星蝕"
+      ],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "tryndamere",
+      "name": "泰達米爾",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "B",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "chogath",
+      "name": "科加斯",
+      "directChange": false,
+      "affectedItems": [],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "hwei",
+      "name": "赫威",
+      "directChange": false,
+      "affectedItems": [
+        "黑魔禁書",
+        "黎安卓的折磨"
+      ],
+      "tier": "S",
+      "status": "initial-checked"
+    },
+    {
+      "mode": "aram",
+      "id": "sylas",
+      "name": "賽勒斯",
+      "directChange": false,
+      "affectedItems": [
+        "時光之杖",
+        "巫妖之禍",
+        "黑魔禁書",
+        "海克斯科技火箭腰帶"
+      ],
+      "tier": "待評",
+      "status": "initial-checked"
+    }
+  ],
+  "limitations": [
+    "未完成7.3f環境Tier重評",
+    "賽勒斯完整逐級數值與特殊大絕互動待核實",
+    "7組增幅未對應完整既有卡庫，僅列官方已知變動",
+    "原有9項待確認事項保留，見7.3e紀錄"
+  ]
+}

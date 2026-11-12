@@ -5,7 +5,7 @@
   const searchState=document.querySelector('[data-aram-search-state]');
   if(!root)return;
   try{
-    const res=await fetch('assets/data/aram/heroes.json?v=125.0.0',{cache:'no-store'});
+    const res=await fetch('assets/data/aram/heroes.json?v=126.0.0',{cache:'no-store'});
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
     const heroes=Array.isArray(data.heroes)?data.heroes:[];
@@ -24,7 +24,7 @@
     root.innerHTML=order.map(tier=>{
       const list=heroes.filter(hero=>hero.tier===tier);
       return `<section class="aram-tier-row" data-tier="${tier}">
-        <div class="aram-tier-badge"><strong>${tier}</strong><span>${tier==='S+'?'頂級強勢':tier==='S'?'強勢推薦':tier==='A'?'穩定可選':'情境選擇'}</span><small>${list.length} 位</small></div>
+        <div class="aram-tier-badge"><strong>${tier}</strong><span>${tier==='S+'?'頂級強勢':tier==='S'?'強勢推薦':tier==='A'?'穩定可選':tier==='待評'?'新英雄觀察':'情境選擇'}</span><small>${list.length} 位</small></div>
         <div class="aram-tier-heroes">${list.length?list.map(heroCard).join(''):'<div class="aram-tier-empty">尚未加入英雄</div>'}</div>
       </section>`;
     }).join('');

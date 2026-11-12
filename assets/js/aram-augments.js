@@ -10,10 +10,13 @@
   let activeTag='';
 
   try{
-    const response=await fetch('assets/data/aram/augments.json?v=125.0.0',{cache:'no-store'});
+    const response=await fetch('assets/data/aram/augments.json?v=126.0.0',{cache:'no-store'});
     if(!response.ok)throw new Error('Augment data load failed');
     const data=await response.json();
     const augments=Array.isArray(data.augments)?data.augments:[];
+    const known=new Set(augments.map(a=>a.name));
+    const officialOnly=(data.official73f?.augments||[]).filter(a=>!known.has(a.name)).map((a,i)=>({id:`official73f-${i}`,name:a.name,officialTags:[],officialOnly:true,effect:'7.3f官方已知調整：'+a.rows.map(r=>`${r.label} ${r.before} → ${r.after}`).join('；')+'。完整效果與分類尚未核定。'}));
+    const displayAugments=[...augments,...officialOnly];
     const tagGroups=data.officialTagGroups||{};
     const tagToGroup=new Map();
     Object.entries(tagGroups).forEach(([groupKey,group])=>(group.tags||[]).forEach(tag=>tagToGroup.set(tag,groupKey)));
@@ -22,23 +25,23 @@
       return counts;
     },new Map());
 
-    if(state)state.textContent=`${data.versionLabel||data.gameVersion||'7.3e'}｜共 ${augments.length} 個｜${tagCounts.size} 種官方分類`;
+    if(state)state.textContent=`${data.versionLabel||data.gameVersion||'7.3e'}｜${augments.length} 張既有卡＋${officialOnly.length} 組公告資料｜${tagCounts.size} 種官方分類`;
 
     if(filterRoot){
       const groupHtml=Object.entries(tagGroups).map(([groupKey,group])=>`<section class="aram-augment-filter-group" data-filter-group="${escapeHtml(groupKey)}">
         <strong>${escapeHtml(group.label||groupKey)}</strong>
         <div>${(group.tags||[]).map(tag=>`<button type="button" data-augment-filter="${escapeHtml(tag)}" aria-pressed="false"><span>${escapeHtml(tag)}</span><small>${tagCounts.get(tag)||0}</small></button>`).join('')}</div>
       </section>`).join('');
-      filterRoot.innerHTML=`<div class="aram-augment-filter-all"><button type="button" class="is-active" data-augment-filter="" aria-pressed="true"><span>全部分類</span><small>${augments.length}</small></button></div>${groupHtml}`;
+      filterRoot.innerHTML=`<div class="aram-augment-filter-all"><button type="button" class="is-active" data-augment-filter="" aria-pressed="true"><span>全部分類</span><small>${displayAugments.length}</small></button></div>${groupHtml}`;
     }
 
-    root.innerHTML=augments.map((augment,index)=>{
+    root.innerHTML=displayAugments.map((augment,index)=>{
       const name=escapeHtml(augment.name);
       const effect=escapeHtml(augment.effect||'');
-      const number=String(index+1).padStart(3,'0');
+      const number=augment.officialOnly?'公告':String(index+1).padStart(3,'0');
       const tags=Array.isArray(augment.officialTags)?augment.officialTags:[];
       const tagText=tags.join(' ');
-      const searchText=`${augment.name||''} ${augment.effect||''} ${tagText}`.toLowerCase();
+      const searchText=`${augment.name||''} ${(augment.aliases||[]).join(' ')} ${augment.effect||''} ${tagText}`.toLowerCase();
       const tagHtml=tags.length?`<div class="aram-augment-tags" aria-label="官方分類">${tags.map(tag=>`<button type="button" class="aram-augment-tag tag-${escapeHtml(tagToGroup.get(tag)||'other')}" data-card-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`).join('')}</div>`:'';
       const correction=augment.correction?`<p><small>${escapeHtml(augment.correction.patch)} 已校正：${escapeHtml(augment.correction.fields)}；其他效果仍待複核。</small></p>`:'';
       return `<article class="aram-augment-card" data-aram-augment-entry data-tags="${escapeHtml(tags.join('|'))}" data-search-text="${escapeHtml(searchText)}"><span>${number}</span><div><strong>${name}</strong>${tagHtml}<p>${effect}</p>${correction}</div></article>`;

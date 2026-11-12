@@ -15,8 +15,8 @@
     "sourceImages": [
       "IMG_9433.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   },
   {
     "id": "heal",
@@ -43,8 +43,8 @@
       "IMG_9434.PNG",
       "IMG_9435.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   },
   {
     "id": "barrier",
@@ -62,8 +62,8 @@
     "sourceImages": [
       "IMG_9436.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   },
   {
     "id": "exhaust",
@@ -81,8 +81,8 @@
     "sourceImages": [
       "IMG_9437.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   },
   {
     "id": "cleanse",
@@ -100,8 +100,8 @@
     "sourceImages": [
       "IMG_9439.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   },
   {
     "id": "flash",
@@ -119,8 +119,8 @@
     "sourceImages": [
       "IMG_9438.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   },
   {
     "id": "ignite",
@@ -147,8 +147,8 @@
       "IMG_9440.PNG",
       "IMG_9441.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   },
   {
     "id": "smite",
@@ -161,21 +161,21 @@
     ],
     "category": "打野",
     "description": "對士兵和怪物造成 600 真實傷害。透過獵手智謀層數升級後，傷害分別提升至 1,000、1,400。",
-    "dataVersion": "7.3a",
+    "dataVersion": "7.3f",
     "chargeCooldown": 45,
     "maxCharges": 2,
     "details": [
       {
         "title": "野區專精",
         "paragraphs": [
-          "重擊主動對士兵和野怪的600／1000／1400真實傷害不變。野區專精的野怪燃燒基礎傷害在7.3a改為每秒22–162（隨等級），持續2秒。其餘既有截圖值為額外物攻10%、額外魔攻12%、額外物防25%、額外魔防25%、額外生命4%；係數與7.3公告存在差異，詳見下方來源說明。",
-          "對野怪造成 10% 額外傷害。"
+          "重擊主動對士兵與野怪的600／1000／1400真實傷害未在7.3f改動。野怪燃燒基礎傷害改為18–158；額外物防與額外魔防係數均改為20%。",
+          "其餘魔攻、生命等係數及額外傷害來源仍有舊資料差異，7.3f未逐項重述，不能視為全部已核定。"
         ]
       },
       {
         "title": "獵手智謀",
         "paragraphs": [
-          "隨時間累積獵手智謀層數；清空一區野怪後消耗 1 層，獲得 40 額外金錢。",
+          "隨時間累積獵手智謀；清空野區後消耗層數的節約金幣，7.3f一般獎勵為30金，落後時為55金。",
           "普攻野怪時，每秒回復 5–35 生命，回復量取決於自身已損失生命。",
           "裝備重擊時，來自非史詩級野怪的傷害削減至 50%。"
         ]
@@ -191,8 +191,8 @@
       {
         "title": "來源差異・待遊戲內核實",
         "paragraphs": [
-          "7.3公告的燃燒係數列12%魔攻、20%額外物防、20%額外魔防、3%額外生命；獎勵為45金，並移除對野怪的額外技能與普攻傷害。本站既有截圖記錄則為12%額外魔攻、25%雙防、4%額外生命、40金及10%額外傷害，兩份來源不一致。",
-          "7.3a只明列基礎燃燒傷害22–162，不能據此判定其餘截圖值已獲官方確認。這些差異保留待最新遊戲內說明核實。"
+          "7.3f官方已明列雙防燃燒係數20%、節約30金及落後55金，這些欄位以新公告為準。",
+          "魔攻基數、額外生命係數與10%對野怪額外傷害的舊截圖／7.3公告差異，仍待完整當前遊戲說明核實。"
         ]
       },
       {
@@ -210,8 +210,9 @@
       "IMG_9446.PNG"
     ],
     "patch73aSource": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3a/",
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12",
+    "patch73fSource": "https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/wild-rift-patch-notes-7-3f/"
   },
   {
     "id": "teleport",
@@ -237,7 +238,7 @@
       "IMG_9447.PNG",
       "IMG_9448.PNG"
     ],
-    "reviewedThrough": "7.3e",
-    "reviewedAt": "2026-11-11"
+    "reviewedThrough": "7.3f",
+    "reviewedAt": "2026-11-12"
   }
 ]
