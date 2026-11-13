@@ -56,8 +56,8 @@
 
   try{
     const [res,augmentRes]=await Promise.all([
-      fetch('assets/data/aram/heroes.json?v=126.0.0',{cache:'no-store'}),
-      fetch('assets/data/aram/augments.json?v=126.0.0',{cache:'no-store'})
+      fetch('assets/data/aram/heroes.json?v=127.0.0',{cache:'no-store'}),
+      fetch('assets/data/aram/augments.json?v=127.0.0',{cache:'no-store'})
     ]);
     if(!res.ok)throw new Error('ARAM data load failed');
     const data=await res.json();
@@ -91,9 +91,9 @@
       const summary=isAaa?aaa.summary:hero.summary;
       const kicker=isAaa?`AAA ARAM · ${esc(aaaVersion)} 分類與配置`:`ARAM HERO GUIDE · ${esc(standardVersion)} 資料`;
       const versionBoundary=isAaa
-        ?`符文大亂鬥 ${esc(aaaVersion)} · 2026/11/11核對。分類、條件式出裝與標準ARAM分開；官方模式倍率另列。未核實的新卡效果不推算。`
+        ?`符文大亂鬥 ${esc(aaaVersion)} · 2026/11/13複核英雄路線；單卡分級保留原版本。分類、條件式出裝與標準ARAM分開；官方模式倍率另列。未核實的新卡效果不推算。`
         :`標準 ARAM ${esc(standardVersion)} · 校正 ${esc(hero.reviewedAt||data.updated)}。本站Tier與出裝為編輯建議；模式倍率保留來源界線，不冒稱官方勝率或逐項實機測試。`;
-      const badgeMain=isAaa?'正式':hero.tier;
+      const badgeMain=isAaa?(hero.id==='sylas'?'暫定':'條件式'):hero.tier;
       const badgeSub=isAaa?'符文大亂鬥':hero.tierLabel;
       const reasonTitle=isAaa?'符文大亂鬥怎麼用？':`為什麼是 ${esc(hero.tier)}？`;
       const reasonText=isAaa?aaa.pilotNote:hero.tierReason;
@@ -111,7 +111,7 @@
       </section>`;
     };
 
-    const render73f=()=>{const r=hero.review73f;if(!r)return '';const groups=(r.officialDeltas||[]).map(g=>`<h4>${esc(g.title)}</h4>${g.rows.map(x=>`<p>${esc(x.label)}：${esc(x.before)} → <strong>${esc(x.after)}</strong></p>`).join('')}`).join('');return `<details class="aram-detail-section" open><summary><strong>7.3f 初步校驗</strong></summary><p>${esc(r.tierReason)}</p>${groups}${(r.buildNotes||[]).map(t=>`<p>${esc(t)}</p>`).join('')}<p>${esc(r.scope)}</p><p>符文大亂鬥另有增幅調整，請於模式內查看。</p><a href="pages/review-7-3f.html">全英雄紀錄</a></details>`;};
+    const render73f=()=>{const r=hero.review73f;if(!r)return '';const groups=(r.officialDeltas||[]).map(g=>`<h4>${esc(g.title)}</h4>${g.rows.map(x=>`<p>${esc(x.label)}：${esc(x.before)} → <strong>${esc(x.after)}</strong></p>`).join('')}`).join('');return `<details class="aram-detail-section" open><summary><strong>7.3f 本站邏輯複核</strong></summary><p>${esc(r.tierReason)}</p>${groups}${(r.logicNotes||[]).map(t=>`<p>${esc(t)}</p>`).join('')}${(r.buildNotes||[]).map(t=>`<p>${esc(t)}</p>`).join('')}<p>${esc(r.scope)}</p><p>符文大亂鬥另有增幅調整，請於模式內查看。</p><a href="pages/review-7-3f.html">全英雄紀錄</a></details>`;};
     const render73e=()=>{const r=hero.review73e;if(!r)return '';return `<details class="aram-detail-section"><summary><strong>7.3e 攻略校正（點開查看）</strong></summary><p>${esc(r.tierReason)}</p>${(r.buildNotes||[]).map(x=>`<p>${esc(x)}</p>`).join('')}<p>${esc(hero.aaaAram?.patch73eNote||'')}</p><a href="pages/review-7-3e.html">本輪紀錄</a></details>`;};
     const render73d=()=>{
       const r=hero.review73d;if(!r)return '';

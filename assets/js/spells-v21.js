@@ -39,7 +39,7 @@
   }
   async function load() {
     try {
-      const response = await fetch('../assets/data/spells.json?v=126.0.0');
+      const response = await fetch('../assets/data/spells.json?v=127.0.0');
       if (!response.ok) throw new Error('Unable to load spells');
       spells = (await response.json()).sort((a,b) => a.order - b.order);
       if (!spells.length) throw new Error('No spells');

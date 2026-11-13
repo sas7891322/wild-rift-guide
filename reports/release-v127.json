@@ -1,0 +1,39 @@
+{
+  "version": "v127",
+  "date": "2026-11-13",
+  "baseCommit": "164b1c3702e2c2a699dfce0295251f2f9060e1a7",
+  "type": "delta-over-v126.1",
+  "counts": {
+    "champions": 143,
+    "riftGuides": 204,
+    "standardAramGuides": 143,
+    "aaaHeroRouteReviews": 143,
+    "tierChanges": 37,
+    "configurationChanges": 9,
+    "reviewedBuildRoutes": 653
+  },
+  "validation": {
+    "staticAndData": "passed",
+    "logicCoverage": "passed",
+    "searchEventChecks": "passed: champion, role, no results, reset",
+    "browser": "賽勒斯新增英雄卡與互動中路頁顯示正確；未進行全頁面瀏覽器測試。前往複核清單的導覽被瀏覽器URL政策阻擋，搜尋事件另以本地測試驗證。",
+    "mobile": "沿用v126.1響應式版面；本輪未重新執行手機瀏覽器測試。"
+  },
+  "deployment": "not performed",
+  "limitations": [
+    "6項技能資料待遊戲內確認",
+    "標準ARAM倍率保留既有來源，賽勒斯倍率未知",
+    "符文大亂鬥本輪為英雄路線複核，不是全部逐卡相容表重評"
+  ],
+  "preservedFiles": {
+    "ads.txt": true,
+    "pages/privacy.html": true,
+    "pages/terms.html": true,
+    "pages/disclaimer.html": true,
+    "assets/data/official-7.3f.json": true,
+    "assets/data/items-7.3.json": true,
+    "assets/data/runes.json": true,
+    "assets/data/spells.json": true,
+    "assets/data/aram/augments.json": true
+  }
+}
