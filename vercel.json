@@ -1,0 +1,108 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/privacy",
+      "destination": "/pages/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/pages/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/pages/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/disclaimer",
+      "destination": "/pages/disclaimer.html",
+      "permanent": true
+    },
+    {
+      "source": "/editorial",
+      "destination": "/pages/editorial.html",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/pages/privacy.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/pages/terms.html",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/share/heroes/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/share/aram/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/aram-hero.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/pages/hwei.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/pages/hwei-demonstrations.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/pages/heroes.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "hero"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    }
+  ]
+}

@@ -389,7 +389,7 @@
         description:meta?.getAttribute('content')||hero.summary,
         path:isAaa?`/aram-hero.html?${canonicalParams}`:`/share/aram/${encodeURIComponent(hero.id)}.html`,
         image:hero.avatar,
-        robots:'index,follow,max-image-preview:large'
+        robots:'noindex,follow'
       });
       renderHeader(currentMode);
       contentRoot.innerHTML=render73f()+render73e()+render73d()+(isAaa?renderAaa():renderStandard());

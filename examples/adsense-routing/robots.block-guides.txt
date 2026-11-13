@@ -1,0 +1,19 @@
+# Optional crawl restriction. This is NOT a reliable de-indexing method.
+# Do not use this to hide pages from AdSense review.
+# If used, copy this file to /robots.txt (replace the recommended version).
+User-agent: *
+Allow: /
+Disallow: /share/heroes/
+Disallow: /share/aram/
+Disallow: /aram-hero.html
+Disallow: /pages/heroes.html?hero=
+Disallow: /pages/heroes.html?*&hero=
+Disallow: /pages/hwei.html
+Disallow: /pages/hwei-demonstrations.html
+
+# AdSense still needs to be able to review all content.
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://wild-rift-guide.vercel.app/sitemap.xml
+Sitemap: https://wild-rift-guide.vercel.app/sitemap-editorial.xml

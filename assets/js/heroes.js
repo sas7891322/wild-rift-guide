@@ -81,7 +81,7 @@
     });
     window.WRGSeo.set({
       title,description,path,image:hero.avatar||undefined,type:'article',
-      robots:'index,follow,max-image-preview:large',
+      robots:'noindex,follow',
       structuredData:{
         '@context':'https://schema.org','@graph':[
           {'@type':'WebSite','@id':`${window.WRGSeo.SITE_ORIGIN}/#website`,url:window.WRGSeo.absolute('/'),name:'激鬥峽谷攻略網',alternateName:'Wild Rift Guide',inLanguage:'zh-Hant-TW'},

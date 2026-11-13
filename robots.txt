@@ -1,4 +1,9 @@
+# Keep guides crawlable so Google can read their noindex directives.
 User-agent: *
+Allow: /
+
+# Preserve access for the AdSense crawler.
+User-agent: Mediapartners-Google
 Allow: /
 
 Sitemap: https://wild-rift-guide.vercel.app/sitemap.xml
