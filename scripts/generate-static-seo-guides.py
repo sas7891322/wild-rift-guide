@@ -4,7 +4,7 @@ import json, html, re
 from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = 'https://wild-rift-guide.vercel.app'
+ORIGIN = 'https://www.wrguide.com'
 ADSENSE = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6785196021794818" crossorigin="anonymous"></script>'
 
 def e(v):

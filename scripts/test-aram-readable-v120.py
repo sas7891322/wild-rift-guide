@@ -40,7 +40,7 @@ def main():
         doc.feed(text)
         check('pagead2.googlesyndication' not in text, path, 'Unexpected advertising loader')
         check(not any(t == 'meta' and a.get('http-equiv') == 'refresh' for t, a in doc.tags), path, 'Unexpected redirect')
-        check(any(t == 'link' and a.get('rel') == 'canonical' and a.get('href') == f'https://wild-rift-guide.vercel.app/share/aram/{hero["id"]}.html' for t, a in doc.tags), path, 'Incorrect canonical')
+        check(any(t == 'link' and a.get('rel') == 'canonical' and a.get('href') == f'https://www.wrguide.com/share/aram/{hero["id"]}.html' for t, a in doc.tags), path, 'Incorrect canonical')
         check(any(t == 'meta' and a.get('name') == 'robots' and a.get('content', '').startswith('index,') for t, a in doc.tags), path, 'Guide not indexable')
         check('尚未完成 7.3b' in text and '7.2e' in text, path, 'Missing historical boundary')
         for key in ['summary', 'tierReason', 'skillOrder', 'skillNote', 'sourceNote']:

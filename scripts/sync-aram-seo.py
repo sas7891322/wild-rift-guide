@@ -6,7 +6,7 @@ import re
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = 'https://wild-rift-guide.vercel.app'
+ORIGIN = 'https://www.wrguide.com'
 
 def sync():
     heroes = json.loads((ROOT/'assets/data/aram/heroes.json').read_text())['heroes']

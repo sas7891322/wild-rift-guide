@@ -12,7 +12,7 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = 'https://wild-rift-guide.vercel.app'
+ORIGIN = 'https://www.wrguide.com'
 ROLES = {'baron':'巴龍路','jungle':'打野','mid':'中路','duo':'飛龍路','support':'輔助'}
 LABELS = {'P':'被動','Q':'1 技','W':'2 技','E':'3 技','R':'4 技','AA':'普攻','FLASH':'閃現','F':'閃現','IGNITE':'點燃','WAIT':'等待','MOVE':'移動'}
 

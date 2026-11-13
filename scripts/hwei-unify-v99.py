@@ -18,10 +18,10 @@ for a in soup.select('.hwei-nav a[href="#build"], .hwei-nav a[href="#leveling"]'
 soup.title.string='赫威技能實機示範｜Wild Rift Guide'
 soup.select_one('h1').string='赫威技能實機示範'
 soup.select_one('.hwei-note').string='本頁保留技能示範圖片；完整攻略請由英雄列表查看。'
-soup.select_one('link[rel="canonical"]')['href']='https://wild-rift-guide.vercel.app/pages/hwei-demonstrations.html'
+soup.select_one('link[rel="canonical"]')['href']='https://www.wrguide.com/pages/hwei-demonstrations.html'
 back=soup.new_tag('a',href='heroes.html?hero=hwei-mid');back.string='返回赫威完整攻略 →';soup.select_one('main').insert(0,back)
 (root/'pages/hwei-demonstrations.html').write_text(str(soup))
-(root/'pages/hwei.html').write_text('<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=heroes.html?hero=hwei-mid"><link rel="canonical" href="https://wild-rift-guide.vercel.app/pages/heroes.html?hero=hwei-mid"><title>赫威攻略</title></head><body><a href="heroes.html?hero=hwei-mid">前往赫威完整攻略</a></body></html>')
+(root/'pages/hwei.html').write_text('<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=heroes.html?hero=hwei-mid"><link rel="canonical" href="https://www.wrguide.com/pages/heroes.html?hero=hwei-mid"><title>赫威攻略</title></head><body><a href="heroes.html?hero=hwei-mid">前往赫威完整攻略</a></body></html>')
 for filename in ['index.html','summoners-rift.html','pages/heroes.html']:
  p=root/filename;s=p.read_text().replace('href="pages/hwei.html"','href="pages/heroes.html?hero=hwei-mid"').replace('heroes.js?v=98.0.0','heroes.js?v=99.0.0');p.write_text(s)
 print('Unified Hwei profile and legacy redirect created.')

@@ -46,7 +46,7 @@ for mode,hs,path in [('rift',H,'share/heroes'),('aram',A,'share/aram')]:
   p=R/path/(h['id']+'.html')
   if not p.is_file():err(['missingguide',str(p)]);continue
   so=BeautifulSoup(p.read_text(),'html.parser');can=so.select('link[rel=canonical]')
-  expected='https://wild-rift-guide.vercel.app/'+path+'/'+h['id']+'.html'
+  expected='https://www.wrguide.com/'+path+'/'+h['id']+'.html'
   if len(can)!=1 or can[0].get('href')!=expected:err(['canonical',str(p)])
   if '7.3f' not in so.title.get_text():err(['old-title',str(p)])
   actual=[x.get('data-config-id') for x in so.select('[data-config-group="items"]')]

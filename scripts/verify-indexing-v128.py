@@ -129,7 +129,7 @@ def main():
             assert not any('noindex' in x for x in Head(path.read_text()).robots), path
         if name == 'sitemap.xml':
             assert len(urls) == 35
-            assert 'https://wild-rift-guide.vercel.app/pages/privacy.html' in urls
+            assert 'https://www.wrguide.com/pages/privacy.html' in urls
 
     spec = importlib.util.spec_from_file_location('readable', ROOT / 'scripts/generate-rift-readable-v127.py')
     generator = importlib.util.module_from_spec(spec)

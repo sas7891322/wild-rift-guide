@@ -68,7 +68,7 @@ for name in ('sitemap.xml','sitemap-editorial.xml'):
  except Exception as exc:errors.append(f'{name} invalid: {exc}');continue
  if len(set(urls))!=len(urls):errors.append(f'{name} contains repeated <loc>')
  for url in urls:
-  if not url.startswith('https://wild-rift-guide.vercel.app/') or '?' in url:errors.append(f'Invalid URL in sitemap: {url}')
+  if not url.startswith('https://www.wrguide.com/') or '?' in url:errors.append(f'Invalid URL in sitemap: {url}')
 
 # Content scope preserved, and old review pages must not masquerade as the new version.
 if not (R/'pages/review-7-3c.html').is_file():errors.append('Historical 7.3c review unexpectedly removed')

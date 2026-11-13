@@ -7,4 +7,4 @@ for title,old,new,note in [('坦克多','magic-high-21','magic-high-16','以黎�
 p.write_text(json.dumps(h,ensure_ascii=False,indent=2)+'\n')
 for name in ['pages/heroes.html','assets/js/heroes.js']:
  p=root/name;s=p.read_text().replace('202 份英雄位置配置','203 份英雄位置配置').replace('（含赫威技能介紹）與 202 份 7.2e 英雄位置配置','與 203 份位置攻略（原有 7.2e 配置＋赫威 7.3 初步配置）');p.write_text(s)
-p=root/'sitemap.xml';s=p.read_text().replace('https://wild-rift-guide.vercel.app/pages/hwei.html','https://wild-rift-guide.vercel.app/pages/heroes.html?hero=hwei-mid');p.write_text(s)
+p=root/'sitemap.xml';s=p.read_text().replace('https://www.wrguide.com/pages/hwei.html','https://www.wrguide.com/pages/heroes.html?hero=hwei-mid');p.write_text(s)

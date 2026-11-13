@@ -29,20 +29,20 @@ Authentication → URL Configuration：
 Site URL：
 
 ```text
-https://wild-rift-guide.vercel.app
+https://www.wrguide.com
 ```
 
 Redirect URLs 建議加入精確網址：
 
 ```text
-https://wild-rift-guide.vercel.app/pages/auth-callback.html?flow=signup
-https://wild-rift-guide.vercel.app/pages/auth-callback.html?flow=recovery
+https://www.wrguide.com/pages/auth-callback.html?flow=signup
+https://www.wrguide.com/pages/auth-callback.html?flow=recovery
 ```
 
 也可另外加入：
 
 ```text
-https://wild-rift-guide.vercel.app/**
+https://www.wrguide.com/**
 ```
 
 ## 3. 部署後測試順序

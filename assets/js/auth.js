@@ -7,7 +7,7 @@
   try {
     siteRoot = scriptNode ? new URL('../../', scriptNode.src) : new URL('/', location.href);
   } catch (_) {
-    siteRoot = new URL('https://wild-rift-guide.vercel.app/');
+    siteRoot = new URL('https://www.wrguide.com/');
   }
 
   const projectUrl = String(config.url || '').trim().replace(/\/$/, '');

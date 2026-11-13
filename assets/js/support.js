@@ -73,7 +73,7 @@
       return response.json();
     })
     .then(data => {
-      const shareUrl = data.shareUrl || 'https://wild-rift-guide.vercel.app/';
+      const shareUrl = data.shareUrl || 'https://www.wrguide.com/';
       if (title) title.textContent = data.subtitle || data.title || '支持 Wild Rift Guide';
       if (description) description.textContent = data.description || '';
       if (status) {

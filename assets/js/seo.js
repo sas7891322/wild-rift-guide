@@ -1,5 +1,5 @@
 (() => {
-  const SITE_ORIGIN = 'https://wild-rift-guide.vercel.app';
+  const SITE_ORIGIN = 'https://www.wrguide.com';
   const DEFAULT_IMAGE = '/assets/images/brand/wild-rift-guide-og.png';
   const SITE_NAME = '激鬥峽谷攻略網';
   const SITE_BRAND = 'Wild Rift Guide';

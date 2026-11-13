@@ -11,7 +11,7 @@ const ok=(v,s)=>{checks++;if(!v)failures.push(s);};
 const pause=()=>new Promise(r=>setTimeout(r,120));
 function page(file,query='',failHwei=false){
   const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
-  const dom=new JSDOM(get(file),{url:'https://wild-rift-guide.vercel.app/'+file+query,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
+  const dom=new JSDOM(get(file),{url:'https://www.wrguide.com/'+file+query,runScripts:'outside-only',pretendToBeVisual:true,virtualConsole:vc});
   const w=dom.window;w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};
   w.matchMedia=()=>({matches:false,addEventListener:()=>{},removeEventListener:()=>{}});
   const localJSON=async p=>{if(failHwei&&String(p).includes('hwei-profile'))throw new Error('test optional profile unavailable');return read(new URL(p,w.location).pathname.slice(1));};

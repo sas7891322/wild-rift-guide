@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 import sys
 ROOT=Path(__file__).resolve().parents[1]
-ORIGIN="https://wild-rift-guide.vercel.app"
+ORIGIN="https://www.wrguide.com"
 class HeadParser(HTMLParser):
     def __init__(self):
         super().__init__();self.canonical=None;self.robots=None

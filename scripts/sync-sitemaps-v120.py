@@ -7,7 +7,7 @@ import subprocess
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = 'https://wild-rift-guide.vercel.app'
+ORIGIN = 'https://www.wrguide.com'
 DATE = '2026-10-16'
 NS = 'http://www.sitemaps.org/schemas/sitemap/0.9'
 ET.register_namespace('', NS)

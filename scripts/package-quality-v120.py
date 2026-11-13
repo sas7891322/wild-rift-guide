@@ -56,15 +56,15 @@ rollback 留有原本檔案備份，正常更新不需上傳。
 maintenance 為日後維護腳本，不屬於此次必傳網站檔。
 
 更新後檢查
-https://wild-rift-guide.vercel.app/
+https://www.wrguide.com/
 首頁應顯示 7.3b，並提供完整攻略閱讀入口。
-https://wild-rift-guide.vercel.app/share/heroes/galio-mid.html
+https://www.wrguide.com/share/heroes/galio-mid.html
 應停留在完整攻略，可直接看到配置與先閃現再二技說明；不會自動跳走。
-https://wild-rift-guide.vercel.app/share/heroes/hwei-mid.html
+https://www.wrguide.com/share/heroes/hwei-mid.html
 赫威技能與尚待確認欄位保留。
-https://wild-rift-guide.vercel.app/share/aram/chogath.html
+https://www.wrguide.com/share/aram/chogath.html
 可開啟完整 ARAM 攻略，且清楚顯示 7.2e 資料界線。
-https://wild-rift-guide.vercel.app/articles/itemization-by-enemy-comp.html#purchase-order
+https://www.wrguide.com/articles/itemization-by-enemy-comp.html#purchase-order
 應看到首件成裝與鞋子的購物情境。
 
 AdSense 下一步

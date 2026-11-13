@@ -14,13 +14,13 @@ if(aramFiles.length!==aramData.heroes.length) errors.push(`ARAM static guide cou
 for(const file of heroFiles){
   const html=read(path.join('share/heroes',file));
   if(!html.includes('name="robots" content="index,follow')) errors.push(`${file}: not indexable`);
-  if(!html.includes(`rel="canonical" href="https://wild-rift-guide.vercel.app/share/heroes/${file}"`)) errors.push(`${file}: bad canonical`);
+  if(!html.includes(`rel="canonical" href="https://www.wrguide.com/share/heroes/${file}"`)) errors.push(`${file}: bad canonical`);
   if(!html.includes('資料來源與本站判斷')) errors.push(`${file}: editorial section missing`);
 }
 for(const file of aramFiles){
   const html=read(path.join('share/aram',file));
   if(!html.includes('name="robots" content="index,follow')) errors.push(`ARAM ${file}: not indexable`);
-  if(!html.includes(`rel="canonical" href="https://wild-rift-guide.vercel.app/share/aram/${file}"`)) errors.push(`ARAM ${file}: bad canonical`);
+  if(!html.includes(`rel="canonical" href="https://www.wrguide.com/share/aram/${file}"`)) errors.push(`ARAM ${file}: bad canonical`);
   if(!html.includes('資料來源與版本說明')) errors.push(`ARAM ${file}: source section missing`);
 }
 

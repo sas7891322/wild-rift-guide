@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 import json, hashlib
-ROOT=Path(__file__).resolve().parents[1];ORIGIN='https://wild-rift-guide.vercel.app';NS='http://www.sitemaps.org/schemas/sitemap/0.9';DATE='2026-11-13';ET.register_namespace('',NS)
+ROOT=Path(__file__).resolve().parents[1];ORIGIN='https://www.wrguide.com';NS='http://www.sitemaps.org/schemas/sitemap/0.9';DATE='2026-11-13';ET.register_namespace('',NS)
 class Head(HTMLParser):
  def __init__(self):super().__init__();self.canon=[];self.noindex=False;self.refresh=False
  def handle_starttag(self,tag,attrs):

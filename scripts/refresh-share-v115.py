@@ -17,7 +17,7 @@ for h in heroes:
         page=(ROOT/'share/heroes/caitlyn.html').read_text()
         page=page.replace('caitlyn',h['id']).replace('凱特琳飛龍路',e(h['name']+h['role']))
         portrait=h['avatar'].replace('../','')
-        page=re.sub(r'https://wild-rift-guide\.vercel\.app/assets/images/heroes/portraits/[^" ]+', 'https://wild-rift-guide.vercel.app/'+portrait,page)
+        page=re.sub(r'https://wild-rift-guide\.vercel\.app/assets/images/heroes/portraits/[^" ]+', 'https://www.wrguide.com/'+portrait,page)
         page=re.sub(r'(<meta (?:name="description"|property="og:description"|name="twitter:description") content=")[^"]*(")',lambda m:m[1]+e(desc)+m[2],page)
         page=re.sub(r'(<body><main><h1>[^<]*</h1><p>).*?(</p>)',lambda m:m[1]+e(desc)+m[2],page)
     target.write_text(page)

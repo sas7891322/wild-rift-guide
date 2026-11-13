@@ -31,7 +31,7 @@ page='''<!DOCTYPE html>
 <html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>赫威｜技能與主題切換介紹｜Wild Rift Guide</title>
 <meta name="description" content="赫威技能介紹：筆仙真跡、三種主題與九種子技能、絕望螺旋及清洗毛筆，搭配激鬥峽谷實機示範。">
-<link rel="canonical" href="https://wild-rift-guide.vercel.app/pages/hwei.html">
+<link rel="canonical" href="https://www.wrguide.com/pages/hwei.html">
 <link rel="icon" href="../assets/images/brand/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/css/style.css?v=95.1.0">
 <link rel="stylesheet" href="../assets/css/hwei.css?v=97.0.0"></head><body>
@@ -70,5 +70,5 @@ p=root/'pages/heroes.html'
 html=p.read_text().replace('<main class="shell hero-page">','<main class="shell hero-page">\n<aside class="home-update-list"><a href="hwei.html"><strong>新英雄赫威登場</strong>｜查看技能介紹（Tier 與配裝待校正） →</a></aside>',1)
 p.write_text(html)
 p=root/'sitemap.xml'
-p.write_text(p.read_text().replace('</urlset>','<url><loc>https://wild-rift-guide.vercel.app/pages/hwei.html</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n</urlset>'))
+p.write_text(p.read_text().replace('</urlset>','<url><loc>https://www.wrguide.com/pages/hwei.html</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n</urlset>'))
 print('v97 Hwei page, 31 assets, two banners and new champion panel created.')
